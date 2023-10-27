@@ -132,11 +132,19 @@ void PrintConnectionTypeAndLatency(
         static_cast<int32_t>(connectionType));
 }
 ```
-### Implications of mid-session direct peer disconnect on guaranteed data
-Once a direct peer connection is established and during the normal gameplay/message flow, certain network conditions can distrupt the  connection and the link with remote peer may get disconnected.
-In such scenarios the Playfab Party SDK will make an effort to fallback the connection to the cloud relay in order for the game to continue sending data via the cloud relay.
-However, during the fallback of the connection the unacknowledged guaranteed message(s) i.e. using `GuaranteedDelivery` flag from the   [PartySendMessageOptions](reference/enums/partysendmessageoptions.md) sent on the direct peer connection will be lost.
-Hence take this behavior into consideration if your game sends guranteed data on a direct peer connection.
+### Changes in connection type
+
+It's possible that changing environmental conditions can disrupt a direct peer connection sufficiently to where PlayFab Party determines that it's no longer usable.
+If this happens, the devices will attempt to fall back to communicating via the cloud relay server.
+Assuming that was not also disrupted, then [PartyNetwork::GetDeviceConnectionType()](reference\classes\PartyNetwork\methods\partynetwork_getdeviceconnectiontype.md) will begin reporting [PartyDeviceConnectionType::RelayServer](reference/enums/partydeviceconnectiontype.md)) and the devices will remain in the Party network using the new connection type going forward.
+> [!WARNING]
+Chat and game messages that were still in the process of being transmitted or received on the direct peer connection when it was disrupted may never arrive, even if they were sent using [PartySendMessageOptions::GuaranteedDelivery](reference/enums/partysendmessageoptions.md), and even if they are no longer counted in the [PartyEndpointStatistic::CurrentlyQueuedSendMessages](reference/enums/partyendpointstatistic.md) or [PartyEndpointStatistic::CurrentlyActiveSendMessages](reference/enums/partyendpointstatistic.md) values returned by [PartyLocalEndpoint::GetEndpointStatistics()](reference\classes\PartyLocalEndpoint\methods\partylocalendpoint_getendpointstatistics.md).
+Additionally, they could arrive out of order even if sent using [PartySendMessageOptions::SequentialDelivery](reference/enums/partysendmessageoptions.md).
+Your title should be prepared for this possibility of data loss and misordering when using direct peer connections and these PartySendMessageOptions.
+
+A connection type of PartyDeviceConnectionType::RelayServer, whether that was determined originally when the device joined the network or had been a direct peer connection that later "fell back", will never change to another type.
+
+
 
 ## Billing meters
 
