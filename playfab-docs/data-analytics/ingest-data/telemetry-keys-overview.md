@@ -1,12 +1,12 @@
 ---
 title: Telemetry Keys
-author: sofiamarin
+author: sofiamarinv
 description: Using Telemetry Keys to ingest events
 ms.author: sofiamarin
 ms.date: 06/14/2023
 ms.topic: article
 ms.service: playfab
-keywords: playfab, simplified authentication telemetry, telemetry keys
+keywords: playfab, simplified authentication telemetry, telemetry keys, telemetry
 ms.localizationpriority: medium
 ---
 
