@@ -9,4 +9,14 @@
   - name: Event capabilities
     href: playstream-overview.md
 - name: Telemetry Keys
-  href: telemetry-keys-overview.md
+  items: 
+  - name: Overview
+    href: telemetry-keys-overview.md
+  - name: QuickStart
+    href: telemetry-keys-qs.md
+  - name: How-to
+    items:
+    - name: Delete Telemetry Keys
+      href: ht-telemetry-keys-delete.md
+    - name: Activate or Deactivate Telemetry Keys
+      href: ht-activate-deactivate-telemetry-keys.md
