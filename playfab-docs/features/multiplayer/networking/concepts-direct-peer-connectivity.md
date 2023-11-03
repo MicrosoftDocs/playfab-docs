@@ -135,14 +135,13 @@ void PrintConnectionTypeAndLatency(
 ### Changes in connection type
 
 It's possible that changing environmental conditions can disrupt a direct peer connection such that it becomes unusable for PlayFab Party.
-If this happens, the devices will attempt to fall back to communicating via the cloud relay server.
-The [PartyNetwork::GetDeviceConnectionType()](reference\classes\PartyNetwork\methods\partynetwork_getdeviceconnectiontype.md) will begin reporting [PartyDeviceConnectionType::RelayServer](reference/enums/partydeviceconnectiontype.md)) and the devices will remain in the Party network using the new connection type going forward.
+If this happens, the devices will attempt to fall back to communicating via the cloud relay server. If relayed communication is still possible then the [PartyNetwork::GetDeviceConnectionType()](reference\classes\PartyNetwork\methods\partynetwork_getdeviceconnectiontype.md) function will begin reporting [PartyDeviceConnectionType::RelayServer](reference/enums/partydeviceconnectiontype.md) and the devices will remain in the Party network using the new connection type going forward. Otherwise, the devices with disrupted connectivity will leave the network.
 > [!WARNING]
 > Chat and game messages that were still in the process of being transmitted or received on the direct peer connection when it was disrupted may never arrive, even if they were sent using [PartySendMessageOptions::GuaranteedDelivery](reference/enums/partysendmessageoptions.md), and even if they are no longer counted in the [PartyEndpointStatistic::CurrentlyQueuedSendMessages](reference/enums/partyendpointstatistic.md) or [PartyEndpointStatistic::CurrentlyActiveSendMessages](reference/enums/partyendpointstatistic.md) values returned by [PartyLocalEndpoint::GetEndpointStatistics()](reference\classes\PartyLocalEndpoint\methods\partylocalendpoint_getendpointstatistics.md).
 Additionally, messages transmitted during the connection type transition period could arrive out of order even if sent using [PartySendMessageOptions::SequentialDelivery](reference/enums/partysendmessageoptions.md).
 Your title should be prepared for this possibility of data loss and misordering when using direct peer connections and these PartySendMessageOptions.
 
-A connection type of PartyDeviceConnectionType::RelayServer will never change to another type, regardless of whether the connection type was determined when the device joined the network or was the result of a "fall back" from a disrupted direct peer connection.
+A connection type of PartyDeviceConnectionType::RelayServer will never change to another type, regardless of whether that value was assigned when the device initially joined the network or after a previously disrupted direct peer connection.
 
 
 
