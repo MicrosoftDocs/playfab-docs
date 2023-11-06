@@ -14,6 +14,12 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 231027
+
+Date: October 27, 2023
+
+- The BanDurationHours property of BanPlayerContent in the Admin API's CreateActionsOnPlayersInSegmentTask method is now optional
+
 ## 231013
 
 Date: October 13, 2023

@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 # Insights Scheduled Scaling
 
+> [!NOTE] 
+> PlayFab Insights Management will be deprecated starting December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Scheduled Scaling**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+
 The Insights Performance Level can be set to scale up and down at specific times of the day. This allows a studio to match their analytics resources demand to their supply and optimize costs. Scheduled Tasks can be found under automation in Game Manager. It can also be reached by clicking the *Add Insights scaling scheduled task* button in Insights Management. 
 <br>
 ![Insights Schedule](media/insights-schedule.png)

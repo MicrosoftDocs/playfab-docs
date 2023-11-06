@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 
 Data Connections now allows you to export to Azure Data Explorer for near-real time ingestion and distribution of your data. After you configure a data connection with your ADX cluster information, PlayFab exports your data into the ADX cluster specified. 
 
+> [!NOTE]
+> Don't have a ADX cluster yet? See [Create a free Azure Data Explorer cluster](/azure/data-explorer/start-for-free-web-ui).
+
 ## Create an Azure Data Explorer Data Connection in PlayFab
 
 ### Step 1: Navigate to the data connections tab
