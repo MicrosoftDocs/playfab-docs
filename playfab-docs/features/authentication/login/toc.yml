@@ -3,5 +3,7 @@
   items:
   - name: Login basics and Best Practices
     href: login-basics-best-practices.md
+  - name: Handling multiple logins
+    href: multiple-logins.md
 - name: Quickstart
   href: quickstart.md
