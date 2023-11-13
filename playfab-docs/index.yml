@@ -54,7 +54,6 @@ productDirectory:
           text: Social  
         - url: features/multiplayer/networking/index.md
           text: Party (Multiplayer infrastructure and cross-network gameplay)
-
     - title: Engage
       imageSrc: ./media/index/engage.svg
       links:

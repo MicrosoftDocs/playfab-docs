@@ -32,7 +32,7 @@ Another way a player may have multiple Master Player accounts is if you have con
 
 You can check your title's Publisher IDs in the PlayFab Game Manager, on each Title settings menu's **API Features** tab.
 
-![PlayFab - Settings - API Tab](../../features/data/playerdata/media/tutorials/playfab-settings-api-tab.png)  
+![PlayFab - Settings - API Tab](../../features/playerdata/media/tutorials/playfab-settings-api-tab.png)  
 
 You know your titles and how they authenticate your players. Before calling `DeleteMasterPlayerAccount` or `ExportMasterPlayerData`, make sure you collect the right set of device IDs and/or credentials from your players.
 

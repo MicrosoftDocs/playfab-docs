@@ -32,7 +32,7 @@ When viewing the Override, each of these key-value pairs is represented as a +, 
 Override Title Data could be called a subset of Primary Title Data, allowing to update the remote configuration of the game without the need to deploy a new build.
 
 > [!NOTE]
-> This override set of key/value pairs comes in-effect only using [Experiments](../../analytics/experiments/index.md) for now. 
+> This override set of key/value pairs comes in-effect only using [Experiments](../../data-analytics/learn-data/experiments/index.md) for now. 
 If the player belongs to an experiment variant which contain title data overrides, the overrides are applied automatically on server side and returned with the title data on client side.
 > Title Data Override values may take up to one minute to refresh and persist. 
 
