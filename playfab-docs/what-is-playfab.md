@@ -153,32 +153,7 @@ PlayFab provides the following services:
 
 ## SDKs
 
-SDKs are available for most popular engines and platforms.
-
-### Supported Languages
-
-* [Android Studio (Java)](sdks/androidstudio/index.md)
-* [C\#](sdks/c-sharp/index.md)
-* [Java](sdks/java/index.md)
-* [Objective-C (iOS)](sdks/objective-c/index.md)
-* [PlayFab CPP (C++)](sdks/playfab-cpp/index.md)
-
-### Frameworks
-
-* [Cocos2D](sdks/cocos2d-x/index.md)
-
-### Game Engines
-
-* [Lua](sdks/lua/index.md)
-* [Unity3D](sdks/unity3d/index.md)
-* [Unreal Engine (Blueprints & C++)](sdks/unreal/index.md)
-
-### Scripting
-
-* [ActionScript](sdks/actionscript/index.md)
-* [JavaScript](sdks/javascript/index.md)
-* [NodeJS](sdks/nodejs/index.md)
-* [Python](sdks/python/index.md)
+SDKs are available for most popular languages, platforms, and game engines. See the [SDKs overview](sdks/sdk-overview.md) to find the PlayFab SDK you need by feature area, then choose from among the languages, platforms, and game engines supported by each.
 
 ## Support
 
