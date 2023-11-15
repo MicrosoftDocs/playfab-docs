@@ -14,6 +14,15 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 231110
+
+Date: November 10, 2023
+
+ - Added the following Actions to those available in Admin/CreateActionsOnPlayersInSegmentTask:
+   - AddInventoryItemV2Content
+   - DeleteInventoryItemV2Content
+   - SubtractInventoryItemV2Content
+
 ## 231027
 
 Date: October 27, 2023
