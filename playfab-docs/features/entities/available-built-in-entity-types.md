@@ -1,7 +1,7 @@
 ---
 title: Available Built-In Entity Types
 author: joannaleecy
-description: Lists all of the available built in Entity types.
+description: Lists all of the available built-in Entity types.
 ms.author: joanlee
 ms.date: 11/08/2018
 ms.topic: article
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Available built-in entity types
 
-This topic describes the available entity types that you can use to construct an [EntityKey](../../../api-references/events/data-types/entitykey.md).
+This topic describes the available entity types that you can use to construct an [EntityKey](../../api-references/events/data-types/entitykey.md).
 
 Entity keys identify entities in most of the newer API methods.
 
@@ -74,9 +74,9 @@ Set the `ID` field to any `characterId` from `result.Characters[i].CharacterId`.
 
 ## group
 
-The `group` entity is a container  for other entities. It is currently limited to players and characters.
+The `group` entity is a container  for other entities. It's currently limited to players and characters.
 
-Set the `ID` field to the `result.Group.Id` if you are creating a group, or the `result.Groups[i].Group.Id` when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
+Set the `ID` field to the `result.Group.Id` if you're creating a group, or the `result.Groups[i].Group.Id` when [listing your memberships](xref:titleid.playfabapi.com.groups.groups.listmembership).
 
 ## game_server 
 
@@ -84,5 +84,5 @@ The `game_server` entity is a unique entity used by game servers primarily for u
 
 This entity gives game servers their own identity which is useful to uniquely identify them for subscribing to real-time updates for Matchmaking and Lobby, as well as supporting specific features like Lobby owner migration.
 
-To authenticate as a `game_server` entity, call the API [AuthenticateGameServerWithCustomId](xref:titleid.playfabapi.com.authentication.authentication.authenticategameserverwithcustomid) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md). 
+To authenticate as a `game_server` entity, call the API [AuthenticateGameServerWithCustomId](xref:titleid.playfabapi.com.authentication.authentication.authenticategameserverwithcustomid) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md). 
 

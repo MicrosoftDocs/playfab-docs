@@ -35,7 +35,7 @@ The **Search** query field accepts two types of queries:
 
 Sample complex queries can be accessed from the **Search Tips** button in the upper right. Selecting a sample query will automatically populate the search box with the correct KQL syntax. You can then edit the query to suit your use case.
 
-There are many attributes of the Player Profile table, not all of which are visualized in the UI. However, you may search on any of these [PlayerProfile](../../../api-references/events/data-types/playerprofile.md) columns using a complex query.
+There are many attributes of the Player Profile table, not all of which are visualized in the UI. However, you may search on any of these [PlayerProfile](../../api-references/events/data-types/playerprofile.md) columns using a complex query.
 
 > [!NOTE]
-> Remember - you can use any [searchable player field](../../../api-references/events/data-types/playerprofile.md) as a query parameter.
+> Remember - you can use any [searchable player field](../../api-references/events/data-types/playerprofile.md) as a query parameter.

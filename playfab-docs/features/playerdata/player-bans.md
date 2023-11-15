@@ -20,7 +20,7 @@ The following tutorial shows you how to utilize the ban system, using the PlayFa
 
 ## Identify
 
-While your game may have a custom system to identify cheaters and rule-breakers, PlayFab offers a player-to-player reporting mechanism. In essence, you rely on your players to report other problematic players.
+While your game might have a custom system to identify cheaters and rule-breakers, PlayFab offers a player-to-player reporting mechanism. In essence, you rely on your players to report other problematic players.
 
 Use the following snippet in your client code to let the client report a specific player.
 
@@ -39,7 +39,7 @@ public void ReportPlayer(string problematicPlayerId, string reason) {
 
 This API call will produce:
 
-- A **Report Event**, which you will be able to locate via the **Analytics** tool **(1)**.
+- A **Report Event**, which you'll be able to locate via the **Analytics** tool **(1)**.
 - Select the **player_reported_as_abusive** event type **(2)**.
 - This will show:
   - The **Event Name (3)**.
@@ -49,7 +49,7 @@ This API call will produce:
 
 ## Applying bans
 
-Once the problematic player is identified, you may apply a ban. A community management rep may also apply a ban using Game Manager.
+Once the problematic player is identified, you might apply a ban. A community management rep might also apply a ban using Game Manager.
 
 1. Navigate to the Players section.
 2. Locate and select the problematic Player.
@@ -60,13 +60,13 @@ Once the problematic player is identified, you may apply a ban. A community mana
 
 ![Game Manager - Players - Add Ban](media/tutorials/game-manager-players-add-ban.png)  
 
-If everything is set correctly, you will see a new **Ban** in the table. You may optionally remove a **Ban** manually by selecting it in the **REVOKE BANS** field.
+If everything is set correctly, you'll see a new **Ban** in the table. You might optionally remove a **Ban** manually by selecting it in the **REVOKE BANS** field.
 
 ![Game Manager - Players - Bans - Revoke Ban](media/tutorials/game-manager-players-bans-revoke-ban.png)  
 
 ### Creating a ban on the server
 
-Alternatively, you may use the Server SDK to apply a ban via code by using the snippet provided below.
+Alternatively, you might use the Server SDK to apply a ban via code by using the snippet provided below.
 
 ```csharp
 public void AddBan(string playerId, uint hours) {
@@ -99,4 +99,4 @@ Each ban you apply gets an assigned ID. Consider the following Server SDK API me
 - [UpdateBans](xref:titleid.playfabapi.com.server.accountmanagement.updatebans)
 
 > [!NOTE]
-> You can use CloudScript functions as part of an automated system that may ban a player. To find out more about CloudScript, see our tutorial [Writing Custom CloudScript](../../automation/cloudscript/writing-custom-cloudscript.md).
+> You can use CloudScript functions as part of an automated system that may ban a player. To find out more about CloudScript, see our tutorial [Writing Custom CloudScript](../automation/cloudscript/writing-custom-cloudscript.md).

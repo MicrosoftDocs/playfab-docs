@@ -32,13 +32,13 @@ In this tutorial you learn how to:
   * A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/550/Documentation/Manual/GettingStarted.html).
   * A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   * An existing project.
-* The PlayFab [Unity3D SDK](../../../sdks/unity3d/index.md).
+* The PlayFab [Unity3D SDK](../../sdks/unity3d/index.md).
 
 For this tutorial, basic knowledge of how to create a player for your title is needed, so that you can perform a `GetPlayerProfile` on the player.
 
-It is also worthwhile to read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where we configure profile constraints.
+It's also worthwhile to read the [Game Manager quickstart](../../gamemanager/quickstart.md) if you're unfamiliar with the Game Manager, as it's the place where we configure profile constraints.
 
-The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 ## Create a user with a display name
 
@@ -94,7 +94,7 @@ The response includes a [PlayerProfileModel](xref:titleid.playfabapi.com.server.
 
 ## Get Player Created time and Last Login time
 
-In the [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object there is a fair amount of data about the player. In the previous step, a `GetPlayerProfile` was issued, and the response that was received only contained display name information.
+In the [PlayerProfileModel](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofilemodel) object there's a fair amount of data about the player. In the previous step, a `GetPlayerProfile` was issued, and the response that was received only contained display name information.
 
 The next step is to get even *more* profile data for the player. To do so, call `GetPlayerProfile` with additional fields in the [PlayerProfileViewConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints) request parameter.
 
@@ -120,13 +120,13 @@ void CreatePlayerAndUpdateDisplayName(string playFabId) {
 
 If you run this sample code at this point, it returns an error with an `Error Code 1303`. `RequestViewConstraintParamsNotAllowed`, and an error message stating that there are `Invalid view constraints` with a JSON output of constraints that the title currently has set.
 
-The error occurs because you have not yet configured the ability to show `Created` and `LastLogin` in your title's profile constraint settings.
+The error occurs because you haven't yet configured the ability to show `Created` and `LastLogin` in your title's profile constraint settings.
 
 ## Configure the player profile view constraints for the title
 
 To get more data when you call the [GetPlayerProfile](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile) API, you need to configure the constraints on the data to be available. These settings are in the title's settings in Game Manager.
 
-By default, the **ALLOW CLIENT ACCESS TO PROFILE PROPERTIES:** had only **Display name** enable which allowed you to retrieve **Display Name** value.
+By default, the **ALLOW CLIENT ACCESS TO PROFILE PROPERTIES:** had only **Display name** enabled, which allowed you to retrieve **Display Name** value.
 
 To configure additional constraints for the title:
 

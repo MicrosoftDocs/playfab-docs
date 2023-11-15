@@ -29,22 +29,22 @@ For information on migrating from the legacy account and data systems to PlayFab
   >
 - The PlayFab Unity3D SDK.
 
-The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 ## Terminology
 
 Entities are any PlayFab concept that can contain data. The built-in entity types are:
 
-- **title** - A title contains global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It is identified by the title ID (`TitleId`) of the game/application.
-- **master_player_account** - This entity Type allows you to share information about a player across multiple games within a namespace. It is identified by the player ID (`PlayFabId`) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, the PlayFab Client API [GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
+- **title** - A title contains global information available to all players. This is similar to [TitleData](xref:titleid.playfabapi.com.client.title-widedatamanagement.gettitledata). It's identified by the title ID (`TitleId`) of the game/application.
+- **master_player_account** - This entity Type allows you to share information about a player across multiple games within a namespace. It's identified by the player ID (`PlayFabId`) of the player, which is returned as part of any login or any call to retrieve account information for the player account (for example, the PlayFab Client API [GetAccountInfo](xref:titleid.playfabapi.com.client.accountmanagement.getaccountinfo)).
 - **title_player_account** - Identifies a player account that contains some information for the current title. This is identified by the entity ID (`EntityKey.Id`) you get back in the [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object on any login.
-- **character** - Identifies a character that the player owns which contains information that you can retrieve. It is identified by the character ID (`CharacterId`) of the character.
+- **character** - Identifies a character that the player owns which contains information that you can retrieve. It's identified by the character ID (`CharacterId`) of the character.
 
-For more information on the built-in entity types, see [Available built-in Entity types](../../data/entities/available-built-in-entity-types.md).
+For more information on the built-in entity types, see [Available built-in Entity types](available-built-in-entity-types.md).
 
 ## Entity initialization
 
-To call any of the Entity API you must obtain the entity `ID` and  entity `Type`. You use the `ID` and `Type` to make calls to other Entity API methods. These are members of an [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object.
+To call any of the Entity API, you must obtain the entity `ID` and  entity `Type`. You use the `ID` and `Type` to make calls to other Entity API methods. These are members of an [EntityKey](xref:titleid.playfabapi.com.authentication.authentication.getentitytoken#entitykey) object.
 
 You do this by calling any of the login methods, such as `LoginWithCustomID`.
 
@@ -183,7 +183,7 @@ Use the [AbortFileUploads](xref:titleid.playfabapi.com.data.file.abortfileupload
     }
 ```
 
-Use the [FinalizeFileUploads](xref:titleid.playfabapi.com.data.file.finalizefileuploads) method to finalize file uploads to an entity's profile. The entity system does not consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation is successfully finalized.
+Use the [FinalizeFileUploads](xref:titleid.playfabapi.com.data.file.finalizefileuploads) method to finalize file uploads to an entity's profile. The entity system doesn't consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation is successfully finalized.
 
 ```csharp
     void FinalizeUpload(byte[] data)

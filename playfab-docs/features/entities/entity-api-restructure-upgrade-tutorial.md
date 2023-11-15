@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Introduction
 
-We have restructured the APIs that were lumped under the Entity API group into coherent logical groups that make their consumption easier, both via the [documentation site](../../../api-references/index.md), and the PlayFab SDKs.
+We have restructured the APIs that were lumped under the Entity API group into coherent logical groups that make their consumption easier, both via the [documentation site](../../api-references/index.md), and the PlayFab SDKs.
 
 The immediate impact is that if you have been using the entity-based APIs in your game, the code will need to be updated when you upgrade your SDKs.
 
@@ -22,7 +22,7 @@ The immediate impact is that if you have been using the entity-based APIs in you
 
 The following conditions must be true for this upgrade guide to apply to you:
 
-1. You are using the entity-based PlayFab APIs.
+1. You're using the entity-based PlayFab APIs.
 2. You have upgraded to a PlayFab SDK, published on 8/9/2018 or later.
 
 > [!Note]
@@ -76,7 +76,7 @@ public async void Example()
 }
 ```
 
-Please follow suit for other SDKs,
+Follow suit for other SDKs,
   using the mapping from [APPENDIX 1](#appendix-1-old-to-new-api-mappings) in this tutorial.
 
 ## Conclusion
@@ -87,7 +87,7 @@ If you have any questions and comments, please contact us via the [PlayFab Forum
 
 ## APPENDIX 1: OLD to NEW API mappings
 
-All of the APIs listed below were *previously* part of the `PlayFabEntityModel` API group. They are *now* categorized under the following new API groups.
+All of the APIs listed below were *previously* part of the `PlayFabEntityModel` API group. They're *now* categorized under the following new API groups.
 
 ### PlayFabProfilesApi
 

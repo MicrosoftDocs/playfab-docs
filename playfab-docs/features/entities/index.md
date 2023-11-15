@@ -56,7 +56,7 @@ The entity programming model is the foundation for PlayFab's next generation of 
 - [Groups](xref:titleid.playfabapi.com.groups.groups)
 - [Data - File](xref:titleid.playfabapi.com.data.file)
 - [Data - Object](xref:titleid.playfabapi.com.data.object)
-- [Events](../../../api-references/events/index.md)
+- [Events](../../api-references/events/index.md)
 - [CloudScript](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript)
 - [Multiplayer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver)
 
@@ -123,4 +123,4 @@ The `game_server` entity is a unique entity used by game servers primarily for u
 
 This entity gives game servers their own identity which is useful to uniquely identify them for subscribing to real-time updates for Matchmaking and Lobby, as well as supporting specific features like Lobby owner migration.
 
-To authenticate as a `game_server` entity, call the API [AuthenticateGameServerWithCustomId](xref:titleid.playfabapi.com.authentication.authentication.authenticategameserverwithcustomid) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md). 
+To authenticate as a `game_server` entity, call the API [AuthenticateGameServerWithCustomId](xref:titleid.playfabapi.com.authentication.authentication.authenticategameserverwithcustomid) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md). 

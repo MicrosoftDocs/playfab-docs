@@ -16,6 +16,15 @@ items:
     href: features/multiplayer/toc.yml
   - name: Social
     href: features/social/toc.yml
+  - name: Game configuration
+    expanded: true
+    items: 
+    - name: Entities
+      href: features/entities/toc.yml
+    - name: Player Data
+      href: features/playerdata/toc.yml
+    - name: Title Data
+      href: features/titledata/toc.yml
 - name: Engage
   expanded: true
   items:

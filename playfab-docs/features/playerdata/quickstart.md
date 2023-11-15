@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 Get started using PlayFab Player Data. This quickstart shows you how to set and retrieve player data using C# in Unity and using PlayFab CloudScript.
 
-Player data is information that applies to an individual player or player group (shared data) and is stored as Key/Value Pairs (KVPs) by PlayFab. This topic covers client API calls, which are safe to call from any process or context. It also covers server API calls, which should *only* be made from a dedicated server process you control, or a carefully secured CloudScript call. Server APIs require your dev secret key, which you should never provide-to or publish-with your client.
+Player data is information that applies to an individual player or player group (shared data) and is stored as Key/Value Pairs (KVPs) by PlayFab. This article covers client API calls, which are safe to call from any process or context. It also covers server API calls, which should *only* be made from a dedicated server process you control, or a carefully secured CloudScript call. Server APIs require your dev secret key, which you should never provide-to or publish-with your client.
 
-The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 ## Requirements
 
@@ -33,26 +33,26 @@ The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses a
   - An existing project.
 - The PlayFab Unity3D SDK.
 
-For information about setting up a PlayFab account and using PlayFab Game Manager, see [Getting started for developers](../../../personas/developer.md).
+For information about setting up a PlayFab account and using PlayFab Game Manager, see [Getting started for developers](../../personas/developer.md).
 
-For information about setting up the PlayFab Unity3D SDK, see [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md) topic which ensures you have a PlayFab account and have configured the Unity3D SDK.
+For information about setting up the PlayFab Unity3D SDK, see [Quickstart: PlayFab Client library for C# in Unity](../../sdks/unity3d/quickstart.md) article, which ensures you have a PlayFab account and have configured the Unity3D SDK.
 
 ## About the code examples
 
-The C# Samples in this topic are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
-While you can use an existing using Unity Project, the procedures in this quickstart assume that you are using the sample that you create when you complete the [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md).
+While you can use an existing using Unity Project, the procedures in this quickstart assume that you're using the sample that you create when you complete the [Quickstart: PlayFab Client library for C# in Unity](../../sdks/unity3d/quickstart.md).
 
 ## Player data in Game Manager
 
 You can always get and set player data through Game Manager by performing the following steps.
 
-- Open **Game Manager**. If you are unfamiliar with it, see the [Game Manager quickstart](../../../gamemanager/quickstart.md).
+- Open **Game Manager**. If you're unfamiliar with it, see the [Game Manager quickstart](../../gamemanager/quickstart.md).
 - Select the **Players** tab.
 - Select the name of the **Player**. This will put you into the **Players Account** tab.
 - Select the **Player Data** tab to see their data.
 
-## Add a methods to set the player data and retrieve the player data
+## Add a method to set the player data and retrieve the player data
 
 1. In the Unity Editor, open your sample project.
 2. In the **Project** window, open **Assets** > **Scripts** and then open the PlayFabLogin script.
@@ -79,7 +79,7 @@ You can always get and set player data through Game Manager by performing the fo
     }
     ```
 
-5. To get player data, add a `GetUserData` method to the `PlayFabLogin` class. `SetUserData` uses the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method to retrieved the player data for the specified player.
+5. To get player data, add a `GetUserData` method to the `PlayFabLogin` class. `SetUserData` uses the [GetUserData](xref:titleid.playfabapi.com.client.playerdatamanagement.getuserdata) method to retrieve the player data for the specified player.
 
     ```csharp
     void GetUserData(string myPlayFabId) {
@@ -120,6 +120,6 @@ In the Unity Editor, select the play button. On success, the results of the of c
 - [How to set read-only player data](how-to-set-read-only-player-data.md)
 - [How to get read-only player data](how-to-get-read-only-player-data.md)
 - [How to modify read-only or internal player data from CloudScript](how-to-modify-read-only-internal-player-data.md)
-- [Title Data quickstart](../../data/titledata/quickstart.md)  
-- [Using Publisher Data](../../data/titledata/using-publisher-data.md)  
-- [CloudScript quickstart](../../automation/cloudscript/quickstart.md)
+- [Title Data quickstart](../titledata/quickstart.md)  
+- [Using Publisher Data](../titledata/using-publisher-data.md)  
+- [CloudScript quickstart](../automation/cloudscript/quickstart.md)

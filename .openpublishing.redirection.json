@@ -795,5 +795,185 @@
             "redirect_url": "/gaming/playfab/data-analytics/legacy/content-delivery-network/quickstart",
             "redirect_document_id": false
         }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/entities/available-built-in-entity-types.md",
+            "redirect_url": "/gaming/playfab/features/entities/available-built-in-entity-types",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/entities/entity-api-restructure-upgrade-tutorial.md",
+            "redirect_url": "/gaming/playfab/features/entities/entity-api-restructure-upgrade-tutorial",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/entities/entity-files.md",
+            "redirect_url": "/gaming/playfab/features/entities/entity-files",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/entities/entity-objects.md",
+            "redirect_url": "/gaming/playfab/features/entities/entity-objects",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/entities/index.md",
+            "redirect_url": "/gaming/playfab/features/entities/index",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/entities/migration-information.md",
+            "redirect_url": "/gaming/playfab/features/entities/migration-information",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/entities/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/entities/quickstart",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/entities/tutorials.md",
+            "redirect_url": "/gaming/playfab/features/entities/tutorials",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/getting-player-profiles.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/getting-player-profiles",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/how-to-get-internal-player-data.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/how-to-get-internal-player-data",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/how-to-get-read-only-player-data.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/how-to-get-read-only-player-data",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/how-to-modify-read-only-internal-player-data.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/how-to-set-internal-player-data",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/how-to-set-internal-player-data.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/how-to-set-internal-player-data",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/how-to-set-read-only-player-data.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/how-to-set-read-only-player-data",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/index.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/index",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/player-bans.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/player-bans",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/player-details.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/player-details",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/player-inventory.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/player-inventory",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/player-logins.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/player-logins",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/player-segment-configuration.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/player-segment-configuration",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/player-segments.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/player-segments",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/quickstart",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/tutorials.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/tutorials",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/using-player-publisher-data.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/using-player-publisher-data",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/using-player-statistics.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/using-player-statistics",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/playerdata/using-the-players-page.md",
+            "redirect_url": "/gaming/playfab/features/playerdata/using-the-players-page",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/titledata/index.md",
+            "redirect_url": "/gaming/playfab/features/titledata/index",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/titledata/quickstart.md",
+            "redirect_url": "/gaming/playfab/features/titledata/quickstart",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/titledata/tutorials.md",
+            "redirect_url": "/gaming/playfab/features/titledata/tutorials",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/data/titledata/using-publisher-data.md",
+            "redirect_url": "/gaming/playfab/features/titledata/using-publisher-data",
+            "redirect_document_id": false
+        }
     ]
 }
