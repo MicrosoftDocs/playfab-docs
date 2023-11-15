@@ -107,7 +107,7 @@ To add overrides to the primary title data, perform the following steps.
 5.	Use the **Save** button to save the new Title Data Override.
 
 > [!NOTE]
-> This override set of key/value pairs comes in-effect only using [Experiments](../../analytics/experiments/index.md) for now. 
+> This override set of key/value pairs comes in-effect only using [Experiments](../../data-analytics/learn-data/experiments/index.md) for now. 
 If the player belongs to an experiment variant which contain title data overrides, the overrides are applied automatically on server side and returned with the title data on client side.
 > Title Data Override values may take up to one minute to refresh and persist. 
 
@@ -159,6 +159,6 @@ public void SetTitleInternalData() {
 
 ## See also
 
-- [Using Publisher Data](../../data/titledata/using-publisher-data.md)
-- [Player Data Quickstart](../../data/playerdata/quickstart.md)
-- [CloudScript Quickstart](../../automation/cloudscript/quickstart.md)
+- [Using Publisher Data](../../features/titledata/using-publisher-data.md)
+- [Player Data Quickstart](../../features/playerdata/quickstart.md)
+- [CloudScript Quickstart](../automation/cloudscript/quickstart.md)

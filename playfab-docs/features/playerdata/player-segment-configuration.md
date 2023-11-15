@@ -24,7 +24,7 @@ Each segment allows you to define useful or interesting groups of players, and p
 
 To access segment configuration:
 
-1. On the left side select the **Players** area.
+1. On the left side, select the **Players** area.
 2. Select the **Segments** tab. From there you can then opt to:
 
     - Use the **New Segment** button to create and configure a new Segment*.
@@ -43,11 +43,11 @@ Some things must already exist for you to configure a segment. There must alread
 - A defined CloudScript PlayStream hook.
 
 > [!NOTE]
-> For more about this, see [Using CloudScript actions with PlayStream](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md).
+> For more about this, see [Using CloudScript actions with PlayStream](../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md).
 
 ### Configuring
 
-In this example we are going to:
+In this example we're going to:
 
 - Configure a segment using the defining characteristic that: all players that come from Canada.
 - Run a CloudScript function **helloWorld** for each player that enters the segment.
@@ -69,9 +69,9 @@ When a segment is defined, you have a variety of action options to run when a pl
 
  CloudScript is by far the most flexible action, granting you full control of the player and segment information at the time of segment-transition.
 
-Use the second parameter - *context* - in your [CloudScript handler](../../automation/actions-rules/using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](../../data/playerdata/player-inventory.md), [virtual currency](../../economy/tutorials/currencies.md), [player data](../../data/playerdata/quickstart.md), or [statistics](using-player-statistics.md).
+Use the second parameter - *context* - in your [CloudScript handler](../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](player-inventory.md), [virtual currency](../economy/tutorials/currencies.md), [player data](quickstart.md), or [statistics](using-player-statistics.md).
 
-In our example shown here, the segment configuration requires 4 simple steps.
+In our example shown here, the segment configuration requires four simple steps.
 
 1. Assign an appropriate **Segment name (1)** (in our example, that's **Canadian Players**).
 
@@ -94,7 +94,7 @@ Formally speaking, area **(1)** on the left of the screen shown below is a set o
 
 So to be part of a segment:
 
-- A player must be part of at least 1 group.
+- A player must be part of at least one group.
 
   - To be part of a group, a player must meet all conditions (filters).
   - This is denoted by the OR/AND operators:
@@ -102,9 +102,9 @@ So to be part of a segment:
     - Filters are combined using the AND operator.
     - Groups are combined using the OR operator.
 
-The screenshot shown above is an example of how a segment can be defined. This segment consists of 2 groups:
+The screenshot shown above is an example of how a segment can be defined. This segment consists of two groups:
 
-1. The first group is defined by 2 filters:
+1. The first group is defined by two filters:
 
    - A player must be from Canada.
     a. And must have Apple push notifications enabled.
@@ -118,8 +118,8 @@ Each filter has a unique configuration and purpose. As of 4/30/2017 the followin
 
 - **First login (date)** filter - Allows you to filter based on the first login datetime (example - players that have first logged in after 1/1/2017).
 - **First login (timespan)** filter - Allows you to filter based on first login timespan relative to the current datetime (example - players that have first signed in 20 minutes ago [from now]).
-- **Last login (date)** filter - Allows you to filter based on the last login datetime (example - players that have not signed in since 1/1/2017).
-- **Last login (timespan)** filter - Allows you to filter based on the last login timespan relative to the current datetime  (example, players that have not signed in for a week [from now]).
+- **Last login (date)** filter - Allows you to filter based on the last login datetime (example - players that haven't signed in since 1/1/2017).
+- **Last login (timespan)** filter - Allows you to filter based on the last login timespan relative to the current datetime  (example, players that haven't signed in for a week [from now]).
 - **Linked user account to** filter  - Allows you to filter based on the users' linked accounts (example - players that have a Steam account linked with email).
 - **Location (country/region)** filter - Allows you to filter based on player's country/region (example - players from Canada).
 - **Push notifications enabled with** filter - Allows you to filter based on player push notification settings and capabilities (example - players that have Google push notifications enabled.
@@ -158,20 +158,20 @@ The general workflow for the **Actions** panel is the following:
 
 ## How to inspect player segments
 
-It is possible to look up what segments a player belongs to by means of the Player Segments page.
+It's possible to look up what segments a player belongs to with the Player Segments page.
 
 To access Player Segments:
 
 1. Select the **Players** section.
 2. Select the **Players** tab.
-3. Click on the **ID** label for the player you want to inspect. 
+3. Select on the **ID** label for the player you want to inspect. 
 4. Select **Segments** in the Players toolbar.
 
 ![Game Manager - players - access segments](media/tutorials/game-manager-access-player-segments-2.png)
 
-On the Player Segments page, you will see the following:
+On the Player Segments page, you'll see the following:
 
-- The **Player ID (1)** label identifies the player that you are currently inspecting.
+- The **Player ID (1)** label identifies the player that you're currently inspecting.
 - The **Segment** table contains a list of all the segments that a player belongs to.
 - Select the **Segment name** label **(2)** to configure the segment.
 

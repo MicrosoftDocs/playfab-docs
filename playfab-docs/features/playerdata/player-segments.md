@@ -39,4 +39,4 @@ The **Segments** page displays the segments that you currently have defined, and
 
 - For more information about defining segments and the filtering criteria, see our tutorial on [Player Segment configuration](player-segment-configuration.md).
 
-- For more information about executing custom code for all players in a segment (as a one-time event, or on a regular schedule), see our tutorial on [Bulk Actions for an Entire Player Segment](../../automation/actions-rules/bulk-actions-for-an-entire-player-segment.md).
+- For more information about executing custom code for all players in a segment (as a one-time event, or on a regular schedule), see our tutorial on [Bulk Actions for an Entire Player Segment](../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md).

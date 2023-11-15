@@ -192,10 +192,10 @@ public class EntityFileExample : MonoBehaviour
 
 ## Deconstructing this example
 
-- `GlobalFileLock` is a very simplistic way to avoid file collisions, specifically designed for this example.
-  - Independent file actions will not cause any issues.
+- `GlobalFileLock` is a simplistic way to avoid file collisions, specifically designed for this example.
+  - Independent file actions won't cause any issues.
   - Each file action requires many steps and multiple API calls, so don't try to access the same file in multiple ways at the same time.
-  - If you are very careful, you won't need any locking mechanism.
+  - If you're very careful, you won't need any locking mechanism.
   - If you want to do something complicated, your locking mechanism may be much more complex.
 - `OnGUI` is a very old (but very dense) way to build a Unity GUI entirely within script.
   - Your GUI will be much better, and game-specific.
@@ -210,7 +210,7 @@ public class EntityFileExample : MonoBehaviour
     - Initialize an atomic upload operation,
     - Upload all files,
     - Finalize an atomic upload operation.
-  - The entity will not consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation has been finalized successfully.
+  - The entity won't consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation has been finalized successfully.
 
 ## Game Manager and entities
 

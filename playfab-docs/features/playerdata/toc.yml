@@ -2,6 +2,7 @@
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: How-to
   items:
   - name: How to set internal player data
     href: how-to-set-internal-player-data.md
