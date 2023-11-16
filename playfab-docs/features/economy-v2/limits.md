@@ -10,64 +10,140 @@ keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---
 
-# Limits
+# Limits - Economy (V2)
 
 [!INCLUDE [notice](../../includes/_economy-release.md)]
 
-The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your catalog of items and adding, updating, and removing them from player inventories.
+The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your catalog of items and adding, updating, and removing them from player inventories. It now includes the most updated limits as per Economy (V2).
 
-## Item Creation/Updates
+## Catalog Throttling
+
+### Read
+
+| **API** | **Limit (Player)** | **Limit (Title)** |
+|---------|--------------------|-------------------|
+| **GetItem** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **GetItems** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **SearchItems** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **GetItemReviews** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **GetItemReviewsSummary** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **GetEntityItemReview** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **GetItemModerationState** | - | 1000 rps (10000 in 10 seconds) |
+
+### Write/Manage
+
+| **API** | **Limit (Player)** | **Limit (Title)** |
+|---------|--------------------|-------------------|
+| **CreateDraftItem** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **CreateUploadUrls** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **DeleteEntityItemReviews** | - | 100 rps (1000 in 10 seconds) |
+| **DeleteItem** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **GetDraftItem** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **GetDraftItems** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **GetEntityDraftItems** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **GetItemPublishStatus** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **PublishDraftItem** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **ReportItem** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **ReportItemReview** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **ReviewItem** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **SetItemModerationState** | - | 100 rps (1000 in 10 seconds) |
+| **SubmitItemReviewVote** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+| **TakedownItemReviews** | - | 100 rps (1000 in 10 seconds) |
+| **UpdateDraftItem** | 0.33 rps (10 in 30 seconds) | 100 rps (1000 in 10 seconds) |
+
+## Inventory Throttling
+
+### Read
+
+| **API** | **Limit (Player)** | **Limit (Title)** |
+|---------|--------------------|-------------------|
+| **GetInventoryItems** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **GetInventoryCollectionIds** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+
+### Read Transaction History
+
+| **API** | **Limit (Player)** | **Limit (Title)** |
+|---------|--------------------|-------------------|
+| **GetTransactionHistory** | 0.1 rps (30 in 300 seconds) | 10 rps (100 in 10 seconds) |
+
+### Write
+
+| **API** | **Limit (Player)** | **Limit (Title)** |
+|---------|--------------------|-------------------|
+| **AddInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **SubtractInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **UpdateInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **PurchaseInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **TransferInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **DeleteInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **ExecuteInventoryOperations** | 0.16 rps (15 in 90 seconds) | 50 rps (500 in 10 seconds) |
+| **DeleteInventoryCollection** | - | 50 rps (500 in 10 seconds) |
+
+### Redeem
+
+| **API** | **Limit (Player)** | **Limit (Title)** |
+|---------|--------------------|-------------------|
+| **RedeemAppleAppStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **RedeemGooglePlayInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **RedeemMicrosoftStoreInventorItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **RedeemNintendoEShopInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **RedeemPlayStationStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **RedeemSteamInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+
+## API Limits
 
 ### Binary Content Size
 
-Files or images that are **greater than 100MB** in size can't be added to items. It's recommended that larger files are split into several smaller partitions if possible.
-
-> [!NOTE]
-> Please contact us if you require storing content larger than 100 MBs.
+The maximum file size allowed is **500MB**.
 
 ### Binary Content Quantity
 
-**Up to 100 images and 100 files** can be added to an item. Files have no restrictions while only *.png*, *.jpg*, *.gif*, and *.bmp* file types can be uploaded as images.
+Up to **100 images** and **100 files** can be added to an item.   
+- Files have no restrictions.
+- Images can only be uploaded using **.png**, **.jpg**, **.gif**, or **.bmp** file types.
 
-> [!NOTE]
-  > Each blob should only be used in **one** item. If you wish to have a piece of content repeated in multiple items, you should re-upload the content to different blobs.
+### CreateUploadsUrls
 
-### CreateUploadUrls
+Content blobs/URLs will be garbage collected after **24 hours** if **not** attached to a draft or published item.
 
-Content blobs/urls will be **garbage collected after 24hrs** if not attached to a draft or published item.
-
-### Item Updates
-
-These limits affect calls to APIs that create items or modify existing item properties (such as `UpdateDraftItem`,`CreateDraftItem`, and `DeleteItem`)
-
-**[Title entities](/gaming/playfab/features/data/entities/#title)** are limited to **1000 requests over 10 seconds**
-
-**Players** are limited to **10 requests over 30 seconds**
-
-## Item Reads/Searches
-
-### RPS Limits
-
-These limits affect calls to APIs that query items and their properties (such as `SearchItems`,`GetItem`, and `GetDraftItem`)
-
-**[Title entities](/gaming/playfab/features/data/entities/#title)** are limited to **10000 requests over 10 seconds**
-
-**Players** are limited to **100 requests over 60 seconds**
-
-### Maximum Page Size
+### Catalog Maximum Page Size
 
 The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
 
 * `SearchItems` - 50 Items
-* `GetDraftItems` - 50 Items
 * `GetItems` - 50 Items
 * `GetItemReviews` - 50 Items
+* `GetItemContainers` - 50 Items
+* `GetEntityDraftItems` - 50 Items
 
-### Filter Complexity
+### Catalog Default Page Size
 
-There are checks enforced to prevent the use of overly complicated `Filter` queries used in `SearchItems` calls. More information can be found [here](/gaming/playfab/features/economy-v2/catalog/search#limits)
+* `SearchItems` - 10 Items
+* `GetItems` - 10 Items
+* `GetItemReviews` - 10 Items
+* `GetItemContainers` - 10 Items
+* `GetDraftItems` - 10 Items
+* `GetEntityDraftItems` - 10 Items
 
-## Item Metadata
+### Inventory Maximum Page Size
+
+The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
+
+* `GetInventoryItems` - 50 Items
+* `GetInventoryCollectionIds` - 50 Items
+* `GetTransactionHistory` - 50 Items
+
+### Inventory Default Page Size
+
+* `GetInventoryItems` - 10 Items
+* `GetInventoryCollectionIds` - 10 Items
+* `GetTransactionHistory` - 10 Items
+
+### Search Filter Complexity
+
+There are checks enforced to prevent the use of overly complicated `Filter` queries used in `SearchItems` calls. More information can be found [here](/gaming/playfab/features/economy-v2/catalog/search#limits).
+
+## Catalog Item
 
 ### Titles
 
@@ -83,7 +159,7 @@ Keywords have a **50 character limit** per keyword and up to **32 keywords** can
 
 ### Display Properties
 
-The Display Properties field has a **10000 character limit**.
+The Display Properties field has a **10000 byte limit**.
 
 ### Tags
 
@@ -95,3 +171,91 @@ up to **32 Tags** can be added to an item
 
 Content Types have a **32 character limit** per content type.
 Titles can have a maximum of **128 Content Types**.
+
+### PricesOptions
+
+The price options list has a length limit of **15 price options**.
+
+### Amounts
+
+The amounts list has a length limit of **15 amounts**.
+
+### UnitDurationInSeconds
+
+The unit duration has a limit of **100 years** (3,155,695,200 seconds).
+
+### AlternateIds
+
+Each alternate ID has a value length limit of **100 characters**.
+
+The list length of alternate IDs has a limit of **15 alternate IDs**.
+
+### DisplayVersion
+
+The display version field has a value length limit of **50 characters**.
+
+### ClientVersion
+
+The client version has a **3 segment limit**, with each segment allowing a maximum value of **65535**.   
+For example: "1.65535.234".
+
+### ItemReferences
+
+The ItemReferences field has a limit of **50 items**.
+
+## Catalog Config
+
+### AdminEntities
+
+The list for admin entities has a **64 entity limit**.
+
+### ReviewerEntities
+
+The list for admin entities has a **128 entity limit**.
+
+### Deep Links
+
+The max number of deep links is of **10 links**.
+
+### DisplayPropertyIndexInfo 
+
+There's a limit of **5 values** per each display property type.
+
+### Content Types
+
+The list of content types has a limit of **128 types**, each with a max length of **40 characters**.
+
+### Platforms
+
+The list of platforms has a limit of **128 platforms**, each with a max length of **40 characters**.
+
+### Tags
+
+The list of tags has a limit of **1024 tags**, each with a max length of **32 characters**.
+
+## Player Inventory
+
+### Batch Operations
+
+The max number of inventory operations to be executed is of **10 operations**.
+
+The max number of items to be modified is **250 items**.   
+(for example, you can add up to five full bundles because 5*50 = 250 that matches the 250 limit)
+
+### Inventory Collections
+
+The max collection size is **3500 items**.
+
+The length limit for the collection list is **unlimited**.
+
+### Transaction History
+
+The max date range for the transaction history is **unlimited**.
+
+The default date range is of **six months**.
+
+## Inventory Item
+
+### Display Properties
+
+The display properties field has a 1000 byte limit.
