@@ -28,6 +28,21 @@
       href: reports/thirty-day-new-user-retention-report.md
     - name: Thirty-day Retention Report
       href: reports/thirty-day-retention-report.md
+- name: Trends
+  expanded: true
+  items:
+  - name: Overview
+    expanded: true
+    items:
+    - name: Trends
+      href: trends/trends-overview.md
+    - name: Segments as a Dimension (Preview)
+      href: trends/segments-dimension-overview.md
+  - name: QuickStart
+    expanded: true
+    items:
+    - name: Segments as a Dimension (Preview)
+      href: trends/segments-dimension-qs.md
 - name: Player Churn Prediction
   expanded: false
   items:
