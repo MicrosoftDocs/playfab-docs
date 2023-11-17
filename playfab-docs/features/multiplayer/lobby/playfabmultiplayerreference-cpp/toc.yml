@@ -92,12 +92,16 @@
     href: pflobby/functions/pfmultiplayerstoplisteningforlobbyinvites.md
   - name: PFMatchmakingTicketCancel
     href: pfmatchmaking/functions/pfmatchmakingticketcancel.md
+  - name: PFMatchmakingTicketGetCustomContext
+    href: pfmatchmaking/functions/pfmatchmakingticketgetcustomcontext.md
   - name: PFMatchmakingTicketGetMatch
     href: pfmatchmaking/functions/pfmatchmakingticketgetmatch.md
   - name: PFMatchmakingTicketGetStatus
     href: pfmatchmaking/functions/pfmatchmakingticketgetstatus.md
   - name: PFMatchmakingTicketGetTicketId
     href: pfmatchmaking/functions/pfmatchmakingticketgetticketid.md
+  - name: PFMatchmakingTicketSetCustomContext
+    href: pfmatchmaking/functions/pfmatchmakingticketsetcustomcontext.md
   - name: PFMultiplayerCreateMatchmakingTicket
     href: pfmatchmaking/functions/pfmultiplayercreatematchmakingticket.md
   - name: PFMultiplayerCreateServerBackfillTicket
