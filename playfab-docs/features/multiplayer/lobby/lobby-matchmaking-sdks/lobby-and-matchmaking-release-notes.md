@@ -12,6 +12,20 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.6.5
+
+November 15, 2023
+
+### New Features
+
+- Added new [PFMatchmakingTicketGetCustomContext](..\playfabmultiplayerreference-cpp\pfmatchmaking\functions\pfmatchmakingticketgetcustomcontext.md) and
+[PFMatchmakingTicketSetCustomContext](..\playfabmultiplayerreference-cpp\pfmatchmaking\functions\pfmatchmakingticketsetcustomcontext.md)
+APIs to associate a custom context with a matchmaking ticket.
+
+### Bug fixes
+
+- Improved internal diagnostics.
+
 ## 1.6.4
 
 August 16, 2023
@@ -37,14 +51,14 @@ July 14, 2023
 
 - Fixed an issue where matchmaking operations started by PFMultiplayerJoinMatchmakingTicketFromId timed out prematurely.
 - Fixed an issue where PFMatchmakingTicketGetTicketId could provide a null value if called shortly after starting a matchmaking operation. Now, an empty string is provided as expected.
-- Fixed an issue where the macOS library was identifying as iOS via web request headers. This is primarily used for diagnostics.
+- Fixed an issue where the macOS library was identifying as iOS via web request headers. This identification is primarily used for diagnostics.
 - Improved internal diagnostics.
 
 ## 1.6.1
 
 June 14, 2023
 
-- On PlayStation&#174;4 and, PlayStation&#174;5, PlayFab Multiplayer will cleanup all resources associated with it and reinitialize if the title enters and remains in background mode for more than 10 minutes.
+- On PlayStation&#174;4 and, PlayStation&#174;5, PlayFab Multiplayer will clean up all resources associated with it and reinitialize if the title enters and remains in background mode for more than 10 minutes.
 
 “PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
@@ -149,7 +163,7 @@ September 9, 2022
 ### New features
 
 - Implemented a new function, [PFLobbyGetMemberConnectionStatus](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetmemberconnectionstatus.md), which can be used to detect whether a user is connected to the PubSub notification service. When a user's connection status changes, you'll receive a [PFLobbyUpdatedStateChange](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbyupdatedstatechange.md) with a [PFLobbyMemberUpdateSummary](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbymemberupdatesummary.md) where the `connectionStatusUpdated` field is `true`.
-- Updated the protocol used to exchange messages with the PubSub notification service from JSON to MessagePack, decreasing the message sizes. This has no impact on the API surface.
+- Updated the protocol used to exchange messages with the PubSub notification service from JSON to MessagePack, decreasing the message sizes. This change has no impact on the API surface.
 
 ### Bug fixes
 
@@ -176,8 +190,8 @@ July 13, 2022
 ### Bug fixes
 
 - Fixed incorrect constant string values for PFLobbyMemberCountSearchKey and PFLobbyAmMemberSearchKey in the PFLobby.h header
-- Fixed bug which could cause `PFMultiplayerUninitialize()` to block indefinitely if a websocket had previously closed unexpectedly
-- Fixed bug which caused PubSub notifications to become unusable and Lobby/Matchmaking API operations to stall out indefinitely after an unexpected websocket disconnect
+- Fixed a bug which could cause `PFMultiplayerUninitialize()` to block indefinitely if a websocket had previously closed unexpectedly
+- Fixed a bug which caused PubSub notifications to become unusable and Lobby/Matchmaking API operations to stall out indefinitely after an unexpected websocket disconnect
 
 ## 1.1.4
 
