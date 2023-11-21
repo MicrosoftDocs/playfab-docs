@@ -18,6 +18,7 @@ Multiplayer is a great addition to many titles, and PlayFab provides several ser
 |--|--|
 |[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards.|
 |[Entity Groups](../data/playerdata/index.md)|Create permanent or temporary groups of players and signal activity. |
+|[Lobby](./lobby/index.md)| Create lobbies for coordinating gameplay among groups pre-game or post matchmaking. |
 |[Matchmaking](./matchmaking/index.md)| Deploy custom matchmaking rules to group players quickly|
 |[Party](./networking/index.md)|Connect players with networking and accessible in-game chat|
 |[Servers](./servers/index.md)|Dynamically scale custom multiplayer servers in Azure |

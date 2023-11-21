@@ -22,7 +22,6 @@ These samples demonstrate how to use various PlayFab features.
 |[PlayFabLeaderboardsUnity](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/Unity/PlayFabLeaderboardsUnity) | Android, iOS, PC | Unity | This sample demonstrates reading and writing from/to leaderboards from within a Unity title. The sample covers lowest score/best time, high score and cumulative score leaderboards. | <ul><li>Leaderboards</li></ul> |
 |[SpaceRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/Unity/SpaceRumble) | Android, iOS, PC | Unity | This sample demonstrates a simple single-player mobile game. | <ul><li>User accounts</li><li>User title data</li><li>Title data</li><li>Events that trigger CloudScript</li><li>Leaderboards</li></ul> |
 |[ThunderRumble](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/Win32/ThunderRumble) | PC, Xbox | C++ DirectX Native | This sample demonstrates scalable cloud dedicated server functionality, using the PlayFab Multiplayer Servers technology to build a complete end-to-end game experience. | <ul><li>Login</li><li>Matchmaking</li><li>Multiplayer Servers</li></ul> |
-|[Endless Runner](EndlessRunner.md) | iOS, Android, PC | Unity | Demonstrates Integration of PlayFab into a game from the Unity Asset Store | - Log in <br> - Player Data <br> - Leaderboards <br> - Telemetry |
 
 ## See also
 
