@@ -5,7 +5,7 @@ description: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/11/2023
+ms.date: 11/15/2023
 ---
 
 # PFMultiplayer C/C++ API overview - PFMatchmaking.h
@@ -16,9 +16,11 @@ ms.date: 04/11/2023
 | Function | Description |  
 | --- | --- |  
 | [PFMatchmakingTicketCancel](functions/pfmatchmakingticketcancel.md) | Cancels the ticket. |  
+| [PFMatchmakingTicketGetCustomContext](functions/pfmatchmakingticketgetcustomcontext.md) | Retrieves the app's private, custom pointer-sized context value previously associated with this ticket object. |  
 | [PFMatchmakingTicketGetMatch](functions/pfmatchmakingticketgetmatch.md) | Provides the match, if one has been found. |  
 | [PFMatchmakingTicketGetStatus](functions/pfmatchmakingticketgetstatus.md) | Provides the matchmaking ticket status. |  
 | [PFMatchmakingTicketGetTicketId](functions/pfmatchmakingticketgetticketid.md) | Provides the ticket ID. |  
+| [PFMatchmakingTicketSetCustomContext](functions/pfmatchmakingticketsetcustomcontext.md) | Configures an optional, custom pointer-sized context value with this ticket object. |  
 | [PFMultiplayerCreateMatchmakingTicket](functions/pfmultiplayercreatematchmakingticket.md) | Creates a matchmaking ticket for one or more local users. |  
 | [PFMultiplayerCreateServerBackfillTicket](functions/pfmultiplayercreateserverbackfillticket.md) | Creates a server backfill ticket. |  
 | [PFMultiplayerDestroyMatchmakingTicket](functions/pfmultiplayerdestroymatchmakingticket.md) | Destroys the matchmaking ticket. |  

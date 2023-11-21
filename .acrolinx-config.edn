@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["main"]
- :allowed-filename-matches ["playfab-docs/features" "playfab-docs/gamemanager" "playfab-docs/miscellaneous" "playfab-docs/personas" "playfab-docs/release-notes" "playfab-docs/resources" "playfab-docs/roadmap" "playfab-docs/sdks"]
+ :allowed-filename-matches ["playfab-docs/features" "playfab-docs/data-analytics" "playfab-docs/playstream" "playfab-docs/gamemanager" "playfab-docs/miscellaneous" "playfab-docs/personas" "playfab-docs/release-notes" "playfab-docs/resources" "playfab-docs/roadmap" "playfab-docs/sdks"]
  
    :targets 
    {

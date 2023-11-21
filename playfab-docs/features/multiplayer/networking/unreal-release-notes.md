@@ -12,6 +12,12 @@ ms.localizationpriority: medium
 
 # PlayFab Unreal Engine OnlineSubsystem release notes
 Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md) for download and install instructions.
+## 2.3.1
+- Supported UE5.3 and previous UE versions (UE4.27+, UE5.0, UE5.1, and UE5.2. Refer to [QuickStart: Which versions of Unreal Engine are supported](party-unreal-engine-oss-overview.md#which-versions-of-unreal-engine-are-supported)).
+
+Known issue:
+- The WinGDK version of UE5.3 is known to have an issue related to HTTP requests. Epic Games has recognized this problem and addressed it in version 5.4. To work around this issue in UE5.3, launch your game using `-UseWinHttpGDK` command-line argument to switch to WinHTTP instead of xCurl. For more information, see Unreal Engine forum post about [5.3 WinGDK HTTP running issue with xCurl](https://udn.unrealengine.com/s/question/0D54z00009l9fK0CAI/53-wingdk-http-module-wont-compile-with-xcurl).
+
 ## 2.3.0
 - Supported UE5.2 and previous UE versions (UE4.27+, UE5.0, and UE5.1. Refer to [QuickStart: Which versions of Unreal Engine are supported](party-unreal-engine-oss-overview.md#which-versions-of-unreal-engine-are-supported)).
 

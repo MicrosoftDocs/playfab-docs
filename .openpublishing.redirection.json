@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-xbox.md",
+            "redirect_url": "/gaming/playfab/sdks/playfab-cpp/quickstart-gdk",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "playfab-docs/resources/recipes-and-samples.md",
             "redirect_url": "/gaming/playfab/resources/playfab-samples",
             "redirect_document_id": true
