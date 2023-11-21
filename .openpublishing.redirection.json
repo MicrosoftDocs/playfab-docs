@@ -980,5 +980,11 @@
             "redirect_url": "/gaming/playfab/features/titledata/using-publisher-data",
             "redirect_document_id": false
         }
+        ,
+        {
+            "source_path": "playfab-docs/resources/EndlessRunner.md",
+            "redirect_url": "/gaming/playfab/resources/playfab-samples",
+            "redirect_document_id": false
+        }
     ]
 }
