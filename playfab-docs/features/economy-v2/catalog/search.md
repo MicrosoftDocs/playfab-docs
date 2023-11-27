@@ -1,9 +1,9 @@
 ---
 title: Search
-author: wesjong
+author: fprotti96
 description: Tutorial outlining using the Search API to query published content.
-ms.author: wesjong
-ms.date: 06/13/2021
+ms.author: fprotti
+ms.date: 11/21/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, commerce, economy, monetization, ugc
@@ -28,7 +28,8 @@ An example `SearchItems` request:
   "Filter": "Tags/any(t:t eq 'desert') and ContentType eq 'map'",
   "OrderBy": "lastModifiedDate asc",
   "ContinuationToken": "abc=",
-  "Count": 2
+  "Count": 2,
+  "Language": "en-GB"
 }
 ```
 
@@ -59,11 +60,11 @@ Searches, filters, and orderings can be also done on specific `DisplayProperties
 
 ![Display Properties screenshot in Game Manager](../media/displayproperties.png)
 
-When you add a field to `DisplayProperties`, it will create a new index for you in the database. Only documents added or updated after index creation will be included. If you need the Display Property to apply to all items, you'll need to republish the entire catalog.
+When you add a field to `DisplayProperties`, it creates a new index for you in the database. Only documents added or updated after index creation will be included. If you need the Display Property to apply to all items, you need to republish the entire catalog.
 
 `DateTime`, `Double`, and `Queryable String` display properties are **queryable**, these properties can be used in Filter and OrderBy statements.
 
-`Searchable String` display properties are **searchable**, these properties will be queried with fuzzy search against the `Search` field. Searchable properties can't be used in _Filter_ and _OrderBy_ statements.
+`Searchable String` display properties are **searchable**, these properties are queried with fuzzy search against the `Search` field. Searchable properties can't be used in _Filter_ and _OrderBy_ statements.
 
 Titles are limited to five display properties of each type.
 
@@ -201,9 +202,9 @@ By Default, Search returns a rich set of item metadata:
 * `Id`
 * `Type`
 * `AlternateIds`
-* `Title` **(NEUTRAL or `Accept-Language` locale)**
-* `Description` **(NEUTRAL or `Accept-Language` locale)**
-* `Keywords` **(NEUTRAL or `Accept-Language` locale)**
+* `Title` **(NEUTRAL or `Language` locale)**
+* `Description` **(NEUTRAL or `Language` locale)**
+* `Keywords` **(NEUTRAL or `Language` locale)**
 * `ContentType`
 * `Images` **(Thumbnail only)**
 * `Tags`
@@ -215,7 +216,7 @@ By Default, Search returns a rich set of item metadata:
 
 Only the neutral strings used in title and description are returned by default. If a Thumbnail image exists, it's returned by default. Each item is limited to only one image of a "Thumbnail" type.
 
-With `Select` more fields can optionally be returned within the paged search results, including content metadata (contents), images, StartDate, EndDate and the full set of localized strings in title and description. If the select field is left empty, the search results will be a subset of the full document metadata, to facilitate faster load times.
+With `Select` more fields can optionally be returned within the paged search results, including content metadata (contents), images, StartDate, EndDate and the full set of localized strings in title and description. If the select field is left empty, the search results are a subset of the full document metadata, to facilitate faster load times.
 
 This request would return the default item metadata **in addition** to the content and images:
 
@@ -231,16 +232,25 @@ Selecting `title`, `description`, and/or `keywords` will return the full set of 
 
 ## Localization
 
-A locale can be passed into the `Accept-Language` header. Passing a locale causes all `Title`, `Description`, `Keywords` fields to return the locale by default or NEUTRAL if the item doesn't have that localization.
+A locale can be passed into the `Language` parameter. Passing a locale causes all `Title`, `Description`, `Keywords` fields to return the locale by default or NEUTRAL if the item doesn't have that localization.
+
+An example `SearchItems` request with a `Language` parameter can be found at the [top of this page](#searchitems).
+
+For more information about localization, see [Localization](../catalog/localization.md).
 
 ## Limits
 
 The complexity of search filter queries is limited per request. Expensive queries can be rejected and titles should ensure that they aren't attempting overly complicated queries. The following are examples of queries close to maximum complexity:
 
-* `contentType eq 'testType' and tags/any(t: t eq 'blue') or tags/any(t: t eq 'green') or tags/any(t: t eq 'violet')`
-* `contents/any(c: c/minClientVersion gt '1.2.3' and c/maxClientVersion lt '4.5.6')`
+```json
+contentType eq 'testType' and tags/any(t: t eq 'blue' or t eq 'green' or t eq 'violet') and platforms/any(p: p eq 'square' or p eq 'circle' or p eq 'triangle') and displayProperties/isFavorite eq true
+```
 
-High complexity filter queries will throw a 400 error with a message: `"The filter provided in the request does not meet the complexity requirements for source"`.
+```json
+contents/any(c: c/minClientVersion gt '1.2.3' and c/maxClientVersion lt '4.5.6' and c/tags/any(t: t eq 'map')) and rating/totalRatingsCount ge 20 and rating/averageRating ge 4.0
+```
+
+High complexity filter queries throw a 400 error with a message: `"The filter provided in the request does not meet the complexity requirements for source"`.
 
 ## Searching a Store
 
