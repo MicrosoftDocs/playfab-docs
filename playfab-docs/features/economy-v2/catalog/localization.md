@@ -1,9 +1,9 @@
 ---
 title: Economy v2 Localization
-author: cybtachyon
+author: fprotti96
 description: Economy v2 Localization Documentation
-ms.author: derekreese
-ms.date: 9/07/2022
+ms.author: fprotti
+ms.date: 11/21/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, commerce, economy, localization, internationalization, i8n
@@ -32,7 +32,7 @@ You can see suggested ISO-639-1 [language codes on the Microsoft Support site](h
         "fr-FR": "Mon Arme Enflammé Extraordinaire",
         "zh-CHS": "我的神奇火之武器",
         "ja-JP": "私の驚くべき炎の武器",
-        "pg-BR": "Minha Arma de Fogo Incrível",
+        "pt-PT": "Minha Arma de Fogo Incrível",
         "ru-RU": "Мое потрясающий огненное оружие",
         "ko-KR": "내 놀라운 화재 무기",
         "de-DE": "Meine Uberfeuerklingenwaffen",
@@ -46,3 +46,50 @@ You can see suggested ISO-639-1 [language codes on the Microsoft Support site](h
     }
 }
 ```
+
+## Localization in Search
+
+Our [SearchItems API](/rest/api/playfab/economy/catalog/search-items) now accepts a new **Language** parameter. Setting a language filter changes the language analyzer(s) being used to the languages provided.
+
+An example `SearchItems` request:
+
+```json
+{
+  "Search": "Pirates",
+  "Filter": "Tags/any(t:t eq 'desert') and ContentType eq 'map'",
+  "OrderBy": "lastModifiedDate asc",
+  "ContinuationToken": "abc=",
+  "Language": "en-GB"
+} 
+```
+
+> [!NOTE]
+> For more information about searching, see [Search](../catalog/search.md).
+
+## Supported Locale Codes
+
+The following list contains all the locale codes that are supported based on ISO-631-1.
+
+|  A-I  |  I-P  |  P-Z  |
+| ----- | ----- | ----- |
+| am-ET	| is-IS	| ps-AF |
+| ar-SA	| it-IT	| pt-PT |
+| be-BY	| ja-JP	| ro-RO |
+| bg-BG	| ka-GE	| ru-RU |
+| bn-BD	| kk-KZ	| rw-RW |
+| cs-CZ	| kl-GL	| si-LK |
+| da-DK	| km-KH	| sk-SK |
+| de-DE	| ko-KR	| sl-SI |
+| el-GR	| ky-KG	| sq-AL |
+| en-GB	| lb-LU	| sv-SE |
+| es-MX	| lt-LT	| sw-KE |
+| et-EE	| lv-LV	| th-TH |
+| fi-FI	| mk-MK	| tk-TM |
+| fo-FO	| mn-MN	| tr-TR |
+| fr-FR	| ms-MY	| uk-UA |
+| he-IL	| mt-MT	| ur-PK |
+| hi-IN	| nb-NO	| vi-VN |
+| hr-HR	| ne-NP	| wo-SN |
+| hu-HU	| nl-NL	| zh-CN |
+| hy-AM	| pl-PL	| zh-TW |
+| id-ID	| 	    |       |
