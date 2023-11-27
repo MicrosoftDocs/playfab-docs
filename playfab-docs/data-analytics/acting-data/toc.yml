@@ -37,3 +37,10 @@
       href: action-rules-bulk-actions-for-an-entire-player-segment.md
     - name: Using CloudScript actions with PlayStream
       href: action-rules-using-cloudscript-actions-with-playstream.md
+- name: Scheduled tasks
+  expanded: true
+  items:
+  - name: Overview
+    href: scheduled-tasks/index.md
+  - name: Quickstart
+    href: scheduled-tasks/quickstart.md
