@@ -983,19 +983,19 @@
         ,
         {
             "source_path": "playfab-docs/features/automation/scheduled-tasks/tutorials.md",
-            "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/tutorials.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/tutorials",
             "redirect_document_id": false
         }
         ,
         {
             "source_path": "playfab-docs/features/automation/scheduled-tasks/index.md",
-            "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/index",
             "redirect_document_id": false
         }
         ,
         {
             "source_path": "playfab-docs/features/automation/scheduled-tasks/quickstart.md",
-            "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/quickstart.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/quickstart",
             "redirect_document_id": false
         }
         ,
