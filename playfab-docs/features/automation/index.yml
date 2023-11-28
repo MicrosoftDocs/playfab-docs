@@ -25,8 +25,6 @@ landingContent:
             url: cloudscript/index.md
           - text: What are actions and rules?
             url: actions-rules/index.md
-          - text: What are scheduled tasks?
-            url: scheduled-tasks/index.md
           - text: What is a PlayStream event?
             url: playstream-events/index.md
           
@@ -36,9 +34,7 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: PlayStream events;
-            url: playstream-events/playstream-with-entity-events.md
-          - text: Scheduled tasks
-            url: scheduled-tasks/quickstart.md                                                        
+            url: playstream-events/playstream-with-entity-events.md                                                    
           - text: CloudScript
             url: cloudscript/quickstart.md 
           - text: Actions and rules

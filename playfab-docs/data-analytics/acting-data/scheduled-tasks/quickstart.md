@@ -30,7 +30,7 @@ In the **Game Manager**:
 > [!NOTE]
 > For the sharp-eyed, don’t worry - there’s a bug in there on purpose. Make sure you deploy the new revision, so that it is live in your game.
 
-You can learn more about using CloudScript in our [CloudScript quickstart](../cloudscript/quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
+You can learn more about using CloudScript in our [CloudScript quickstart](../../../features/automation/cloudscript/quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
 
 ```javascript
 handlers.adjustRareDropRate = function(args) {
@@ -90,7 +90,7 @@ Unfortunately, the task run has failed. Select the task instance to see what wen
 
 The **Task Instance Details** view provides diagnostic information on why the task failed.
 
-In this case, it’s pointing out that the call to **serverAPI.SetTitleData** is incorrect. It should *really* be **server.SetTitleData** (for an explanation, see the **Intermediate: Calling the Server APIs** section of the [Writing Custom CloudScript](../cloudscript/writing-custom-cloudscript.md#intermediate-calling-the-server-apis) tutorial).
+In this case, it’s pointing out that the call to **serverAPI.SetTitleData** is incorrect. It should *really* be **server.SetTitleData** (for an explanation, see the **Intermediate: Calling the Server APIs** section of the [Writing Custom CloudScript](../../../features/automation/cloudscript/writing-custom-cloudscript.md#intermediate-calling-the-server-apis) tutorial).
 
 There is other important information on the **Task Instance Details** view as well - such as the start and end times, the function that was called, any arguments passed in, the full CloudScript execution result, and more.
 

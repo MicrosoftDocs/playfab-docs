@@ -3,7 +3,7 @@ title: PlayFab OnlineSubsystem for Unreal Engine 4 and 5 Release Notes
 author: PushpadantK
 description: Release notes for PlayFab OnlineSubsystem for Unreal Engine 4 and 5
 ms.author: pkacha
-ms.date: 11/29/2021
+ms.date: 11/28/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, party, unreal, release notes, multiplayer, networking
@@ -11,7 +11,14 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Unreal Engine OnlineSubsystem release notes
+
 Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md) for download and install instructions.
+
+## 2.3.2
+Updated the following libraries:
+- Update the Multiplayer SDK C++ library to version 1.6.5 for both Windows and GDK.
+- Update the Party SDK C++ library to version 1.8.9 for both Windows and GDK.
+
 ## 2.3.1
 - Supported UE5.3 and previous UE versions (UE4.27+, UE5.0, UE5.1, and UE5.2. Refer to [QuickStart: Which versions of Unreal Engine are supported](party-unreal-engine-oss-overview.md#which-versions-of-unreal-engine-are-supported)).
 
