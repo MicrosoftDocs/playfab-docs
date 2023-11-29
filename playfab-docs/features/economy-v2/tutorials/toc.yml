@@ -7,5 +7,7 @@ items:
     href: craftingGame/toc.yml
   - name: Virtual currencies
     href: currencies.md
+  - name: Marketplace Integrations
+    href: marketplace-integrations/toc.yml
   - name: Marketplace Redemption
     href: marketplace-redemption/toc.yml
