@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Data Connections quickstart
 
-## Pre-requisite:
+## Prerequisites
 - For Data Connections, you need an Azure subscription and a storage account. 
 - For PlayFab to ingest data in your storage account, container details along with authorization using a SAS token are required. To create a SAS token using Microsoft Azure portal, follow the steps below.
 
@@ -21,6 +21,7 @@ ms.localizationpriority: medium
 A Connection is created to integrate your storage resource with PlayFab and retrieve the PlayStream and Telemetry data. You can configure up to three data connections in the “enabled (active)” state. 
 
 ### Azure Blog Storage
+
 From the Game Manager:
 - Navigate to your **Title**
 - Select **Data** from the menu on the left
@@ -37,9 +38,10 @@ From the Game Manager:
 
 ![Screenshot of Create Data Connection](media/create-data-connection.png "Create Data Connection")
 
-
 ### Microsoft Fabric KQL database
-From the PlayFab  Game Manager:
+
+From PlayFab Game Manager:
+
 - Navigate to your **Title**
 - Select **Data** from the menu on the left
 - Select **Data Connections** from the **Data** tabs
@@ -59,7 +61,8 @@ From the PlayFab  Game Manager:
 > [!Note]
 > To optimize your use of a Fabric KQL Data Connection and gain valuable insights into your game data, follow the tutorial on PlayFab and Microsoft Fabric Real-Time Analytics (RTA) for game creators: [PlayFab and Microsoft Fabric Real-Time Analytics (RTA) for game creators](../learn-data/reports/real-time-analytics-tutorial.md)
 
-## Manage Connections
+## Manage connections
+
 The Data Connections overview (landing) page displays the available connections categorized as **enabled** or **disabled** as a **status**. You can have up to 3 enabled connections to the blob storage account at any time. 
 The Data Connections overview page can also be used to manage connections by selecting any Connections’ ellipsis (…). Two actions comprising Edit and Delete can be taken on the connections. 
 

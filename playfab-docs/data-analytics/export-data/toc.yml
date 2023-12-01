@@ -19,4 +19,11 @@
     href: event-sampling-overview.md
   - name: Quickstart
     href: event-sampling-quickstart.md
+- name: Event Partitioning (Preview)
+  expanded: true
+  items:
+  - name: Overview
+    href: event-partitioning-overview.md
+  - name: Quickstart
+    href: event-partitioning-quickstart.md
     
