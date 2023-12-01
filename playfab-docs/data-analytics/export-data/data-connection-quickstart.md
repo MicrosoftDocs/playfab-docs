@@ -41,6 +41,7 @@ From the Game Manager:
 ### Microsoft Fabric KQL database
 
 From PlayFab Game Manager:
+
 - Navigate to your **Title**
 - Select **Data** from the menu on the left
 - Select **Data Connections** from the **Data** tabs
