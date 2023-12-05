@@ -1,9 +1,9 @@
 ---
-title: Catalog Limits
-author: wesjong
+title: Economy V2 Limits
+author: fprotti96
 description: Document detailing the various limits surrounding Economy V2.
-ms.author: wesjong
-ms.date: 03/17/2021
+ms.author: fprotti
+ms.date: 11/30/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, commerce, economy, monetization, ugc
@@ -108,36 +108,36 @@ Content blobs/URLs will be garbage collected after **24 hours** if **not** attac
 
 ### Catalog Maximum Page Size
 
-The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
+The following are the maximum number of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return more than the limit.
 
-* `SearchItems` - 50 Items
-* `GetItems` - 50 Items
-* `GetItemReviews` - 50 Items
-* `GetItemContainers` - 50 Items
-* `GetEntityDraftItems` - 50 Items
+* `SearchItems` - 50 Items per page
+* `GetItems` - 50 Items per page
+* `GetItemReviews` - 50 Items per page
+* `GetItemContainers` - 50 Items per page
+* `GetEntityDraftItems` - 50 Items per page
 
 ### Catalog Default Page Size
 
-* `SearchItems` - 10 Items
-* `GetItems` - 10 Items
-* `GetItemReviews` - 10 Items
-* `GetItemContainers` - 10 Items
-* `GetDraftItems` - 10 Items
-* `GetEntityDraftItems` - 10 Items
+* `SearchItems` - 10 Items per page
+* `GetItems` - 10 Items per page
+* `GetItemReviews` - 10 Items per page
+* `GetItemContainers` - 10 Items per page
+* `GetDraftItems` - 10 Items per page
+* `GetEntityDraftItems` - 10 Items per page
 
 ### Inventory Maximum Page Size
 
 The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
 
-* `GetInventoryItems` - 50 Items
-* `GetInventoryCollectionIds` - 50 Items
-* `GetTransactionHistory` - 50 Items
+* `GetInventoryItems` - 50 Items per page
+* `GetInventoryCollectionIds` - 50 Items per page
+* `GetTransactionHistory` - 50 Items per page
 
 ### Inventory Default Page Size
 
-* `GetInventoryItems` - 10 Items
-* `GetInventoryCollectionIds` - 10 Items
-* `GetTransactionHistory` - 10 Items
+* `GetInventoryItems` - 10 Items per page
+* `GetInventoryCollectionIds` - 10 Items per page
+* `GetTransactionHistory` - 10 Items per page
 
 ### Search Filter Complexity
 
@@ -247,6 +247,8 @@ The max number of items to be modified is **250 items**.
 The max collection size is **3500 items**.
 
 The length limit for the collection list is **unlimited**.
+
+The character limit for a collection's name is **75 characters**.
 
 ### Transaction History
 
