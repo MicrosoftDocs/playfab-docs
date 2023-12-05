@@ -70,14 +70,27 @@
   - name: Concepts
     expanded: true
     items:
+    - name: Scorecard metrics
+      href: experiments/scorecard-metrics.md
+    - name: Experimentation APIs
+      href: experiments/experimentation-apis.md
+    - name: Integrating Experiments with other PlayFab services
+      href: experiments/experiments-other-services.md
     - name: Benefits and recommendations
       href: experiments/experimentation-keys.md
     - name: Key terms
       href: experiments/experimentation-key-terms.md
   - name: Quickstart
     href: experiments/quickstart.md
-  - name: How to prevent interaction effects with exclusion groups
-    href: experiments/exclusion-groups.md
+  - name: How-to
+    expanded: true
+    items:
+    - name: Manage Experiments
+      href: experiments/manage-experiments.md
+    - name: Analyze Experiments
+      href: experiments/analyze-experiments.md
+    - name: Prevent interaction effects with exclusion groups
+      href: experiments/exclusion-groups.md
 - name: Quick insights
   expanded: false
   items:
