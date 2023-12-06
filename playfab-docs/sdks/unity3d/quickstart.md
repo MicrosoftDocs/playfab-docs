@@ -1,7 +1,7 @@
 ---
-title: Unity3D quickstart
+title: Unity quickstart
 author: DanBehrendt
-description: This guide will help you make your first PlayFab API call in the Unity3d engine.
+description: This guide helps you make your first PlayFab API call in the Unity engine.
 ms.author: joanlee
 ms.date: 1/25/2020
 ms.topic: article
@@ -14,19 +14,19 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Client library for C# in Unity. Follow steps to install the package and try out example code for a basic task.
 
-This quickstart helps you make your first PlayFab API call in the Unity3d engine. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call in the Unity engine. Before continuing, make sure you complete [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Requirements
 
 - A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
-- An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download).
+- An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity.com/download).
   > [!NOTE]
-  > The PlayFab Unity3D SDK supports Unity Editor version 5.3 (released December 2015) and higher.
-- A Unity Project - this can be any of the following:
-  - A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/GettingStarted.html).
+  > The PlayFab Unity SDK supports Unity Editor version 5.3 (released December 2015) and higher.
+- A Unity Project of any of the following types:
+  - A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/UnityOverview.html).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
-- The PlayFab Unity3D SDK.
+- The PlayFab Unity SDK.
 
 ## Download and install PlayFab SDK
 
@@ -38,7 +38,7 @@ Use the PlayFab Editor Extensions package to install the SDK. The PlayFab Editor
 
    ![Import Unity Asset package](media/import-uedex.png)
 4. To import the PlayFab Unity Editor Extensions into your project, select **Import**.
-5. When the import has completed, the PlayFab Unity Editor Extensions panel should open automatically. If you've already created a PlayFab developer account, select the **Log In** link to log in with your PlayFab username and password.
+5. When the import completes, the PlayFab Unity Editor Extensions panel should open automatically. If you already created a PlayFab developer account, select the **Log In** link to log in with your PlayFab username and password.
 
    ![Log in to PlayFab](media/extensions-login-dialog.png)
    > [!NOTE]
@@ -63,16 +63,18 @@ The **Developer Secret Key** is automatically set to the default secret key for 
 
 ![PlayFab Title Settings](media/save-title-settings-uedex.png)
 
+[!NOTE] The extensions allow you to customize the http transport used to make requests to PlayFab. The recommended default is Unity Web Request. Other options exist to provide compatibility with older engine versions or game-specific http implementations.
+
 ## Making your first API call
 
-This part of the guide provides the minimum steps to make your first PlayFab API call. This example does not provide any GUI or on-screen feedback. Confirmation is displayed in the Console log.
+This part of the guide provides the minimum steps to make your first PlayFab API call. This example doesn't provide any GUI or on-screen feedback. Confirmation is displayed in the Console log.
 
 1. If your Unity Project doesn't already have a *Scripts* folder (**HDRP** and **LWRP/URP** templates have one by default), right-click on the **Assets** folder in the Project panel and select **Create** > **Folder**.
 2. In the **Assets** window, name the folder *Scripts*.
 3. Right-click the Scripts folder and select **Create** > **C# Script**.
 4. Name the script PlayFabLogin.
-5. Double-click the file to open it in a code-editor. Depending on your settings/installed-programs, this is likely Visual Studio or MonoDevelop.
-6. In your code editor, replace the contents of PlayFabLogin.cs with the code shown below and save the file.
+5. Double-click the file to open it in a code-editor.
+6. In your code editor, replace the contents of PlayFabLogin.cs with the provided code and save the file.
 
     ```csharp
     using PlayFab;
@@ -109,7 +111,7 @@ This part of the guide provides the minimum steps to make your first PlayFab API
     ```
 
     > [!IMPORTANT]
-    > The code shown above is not for use with mobile Titles. This is only an example, and shows how to log in with a `CustomID`. To implement login for a mobile Title, use either
+    > The provided code is not for use with mobile Titles. This is only an example, and shows how to log in with a `CustomID`. To implement login for a mobile Title, use either
     [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid), [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid), or some form of social login such as [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook).
 7. In the **Hierarchy** panel, right-click your scene, then select **Create Empty** (or **Game Object** > **Create Empty** in older versions of Unity).
 8. Select the new Game Object and in the **Inspector** panel, select **Add Component**.
@@ -119,22 +121,22 @@ For more information on creating and using scripts in the Unity Editor, see [Cre
 
 ## Finish and execute
 
-You are now ready to test out this sample.
+You're now ready to test out this sample.
 
 - Be sure to save all files and return to the Unity Editor
 - Press the **Play** button at the top of the editor
 
-You should see the following in your Unity Console Panel.
+You should see the following message in your Unity Console Panel.
 
 ![Console log of first API call](media/first-call-log.png)  
 
 > [!TIP]
->Alternatively, you can log into PlayFab and navigate to the title in Game Manager, and select the **PlayStream Monitor** tab. Each time you **Alt+ TAB** focus away from the actively running Unity Title, it passes an event which you can see and confirm in the PlayStream Monitor.
+>Alternatively, you can log into PlayFab and navigate to the title in Game Manager, and select the **PlayStream Monitor** tab. Each time you switch focus away from the actively running Unity Title, it passes an event which you can see and confirm in the PlayStream Monitor.
 
 For a list of all available client API calls, see [PlayFab API References](../../api-references/index.md).
 
 ## Next steps
 
-This quickstart shows a simplified procedure for authenticating a user. For additional information on user authentication, see [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md).
+This quickstart shows a simplified procedure for authenticating a user. For more information on user authentication, see [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md).
 
 Learn how to bind an account to multiple devices and login mechanisms: [Account linking quickstart](../../features/authentication/login/quickstart.md).

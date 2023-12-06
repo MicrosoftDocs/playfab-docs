@@ -35,8 +35,8 @@ Instead of integrating your game server build with GSDK, it uses a wrapper as a 
 > A wrapper is a workaround by processing the standard output and error streams to call GSDK methods and it's not meant for production use. There is additional info about GSDK integration in the sample, see [Program.cs](https://github.com/PlayFab/MpsSamples/blob/master/wrappingGsdk/wrapper/Program.cs). For more information, see [Author a game server build](author-a-game-server-build.md).
 
 To deploy servers using a wrapper, see:
-1. [Use Wrapper on Fakegame](wrapper-sample.md#wrapper-with-fakegame)
-2. [Use Wrapper with your existing game server](wrapper-sample.md#wrapper-with-your-existing-game-server-build)
+1. [Use Wrapper on Fakegame](wrapper-sample.md#use-fakegame-game-server-with-the-wrapper)
+2. [Use Wrapper with your existing game server](wrapper-sample.md#use-your-own-game-server-files-with-the-wrapper)
 
 ## Next steps
 

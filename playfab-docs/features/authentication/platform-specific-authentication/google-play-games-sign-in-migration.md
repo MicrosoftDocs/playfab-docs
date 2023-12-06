@@ -1,7 +1,7 @@
 ---
 title: Migrating from Google Sign-in to Google Play Games Sign-in in Unity
 author: joannaleecy
-description: Guides you through an example of PlayFab authentication using Google Play Games Sign-In in Unity.
+description: Overview of procedures to migrate players identities from Google Account to Google Play Games
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article

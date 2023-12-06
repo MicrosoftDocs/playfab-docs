@@ -1,7 +1,7 @@
 ---
 title: Migrating from Google Sign-in to Google Play Games Sign-in in Unity Steps
 author: joannaleecy
-description: Guides you through an example of PlayFab authentication using Google Play Games Sign-In in Unity.
+description: Guides you through migration steps on how to switch players from Google Account to Google Play Games identity.
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
@@ -29,9 +29,9 @@ For more information, see [Google Official Documentation](https://developers.goo
 
 ### Choose the right version of "Play Games Plugin for Unity"
 
- Newest versions of the plugin won't work for migration since Google isn't allowing to request extra scopes anymore, so PlayFab's LoginWithGoogleAccount API will no longer work.
+ Newest versions of the plugin don't work for migration since Google isn't allowing to request extra scopes anymore, so PlayFab's LoginWithGoogleAccount API no longer works.
 
- These migration steps have been tested and documented using version 0.10.14 of "Play Games Plugin for Unity", which can be found here: [playgameservices/play-games-plugin-for-unity at v10.14 (github.com)](https://github.com/playgameservices/play-games-plugin-for-unity/tree/v10.14)
+ These migration steps were tested and documented using version 0.10.14 of "Play Games Plugin for Unity", which can be found here: [playgameservices/play-games-plugin-for-unity at v10.14 (github.com)](https://github.com/playgameservices/play-games-plugin-for-unity/tree/v10.14)
 
  For plugin installation and configuration steps, refer to plugin's  [README](https://github.com/playgameservices/play-games-plugin-for-unity/blob/v10.14/README.md)
 
@@ -66,7 +66,7 @@ For more information, see [Google Official Documentation](https://developers.goo
 
 ### Login into PlayFab using LoginWithGoogleAccount
 
- Log in to existing Player's account using  [LoginWithGoogleAccount](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-google-account?view=playfab-rest) Authentication API. In order to login successfully, you'll need to provide a Server Auth Token, which can be requested through GetServerAuthCode method.
+ Log in to existing Player's account using  [LoginWithGoogleAccount](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-google-account?view=playfab-rest) Authentication API. In order to login successfully, you need to provide a Server Auth Token, which can be requested through GetServerAuthCode method.
 
 ```csharp
  public void PlayFabLoginWithGoogleAccount()
@@ -93,13 +93,13 @@ For more information, see [Google Official Documentation](https://developers.goo
  }
 ```
 
- Before doing any migration, a user that is linked to the Google Account will show up like this on [Game Manager](https://developer.playfab.com):
+ Before doing any migration, a user that is linked to the Google Account shows up like this on [Game Manager](https://developer.playfab.com):
 
 ![Migrating to LoginWithGooglePlayGamesServices Step 1](media/tutorials/google-unity/LWGPGS-migration-procedure-1.png)
 
 ### Link player's Google Play Games profile with PlayFab Player account
 
- In this step, you'll link the player's Google Play Games account with the existing player's PlayFab account that was previously linked only to the Google Account.
+ In this step, you link the player's Google Play Games account with the existing player's PlayFab account that was previously linked only to the Google Account.
 
  ```csharp
  public void LinkGooglePlayGamesAccount()
@@ -128,7 +128,7 @@ For more information, see [Google Official Documentation](https://developers.goo
 
  After this step, the player should have both account profiles associated on PlayFab's end and should be able to start using [LoginWithGooglePlayGamesServices](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-google-play-games-services?view=playfab-rest) authentication API from now on.
 
- If you navigate to [Game Manager](https://developer.playfab.com), you'll see both accounts associated to the player as shown:
+ If you navigate to [Game Manager](https://developer.playfab.com), you see both accounts associated to the player as shown:
 
 ![Migrating to LoginWithGooglePlayGamesServices Step 2](media/tutorials/google-unity/LWGPGS-migration-procedure-2.png)
 
@@ -165,7 +165,7 @@ For more information, see [Google Official Documentation](https://developers.goo
 
 ### (Optional) Unlink your Google Account profile from the PlayFab Player account
 
- This step is optional. However, if you already confirmed that Google Play Games Services profile is linked to the player account and that it can successfully log in to PlayFab, then you'll probably want to unlink any previous Google Account profiles linked to the player's profile using [UnlinkGoogleAccount](https://learn.microsoft.com/rest/api/playfab/client/account-management/unlink-google-account?view=playfab-rest) API, and move to use only [LoginWithGooglePlayGamesServices](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-google-play-games-services?view=playfab-rest) API.
+ This step is optional. However, if you already confirmed that Google Play Games Services profile is linked to the player account and that it can successfully log in to PlayFab, then you probably want to unlink any previous Google Account profiles linked to the player's profile using [UnlinkGoogleAccount](https://learn.microsoft.com/rest/api/playfab/client/account-management/unlink-google-account?view=playfab-rest) API, and move to use only [LoginWithGooglePlayGamesServices](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-google-play-games-services?view=playfab-rest) API.
 
 ```csharp
  public void UnlinkGoogleAccountFromPlayer()

@@ -33,36 +33,16 @@ This sample consists of two .NET Core console applications.
 > [!Note]
 > In order to use and view the PlayFab Multiplayer Servers, you need to enable the feature from Game Manager. For instructions, see [Enable the PlayFab Server feature](enable-playfab-multiplayer-servers.md).
 
-## Wrapper with Fakegame
-
-If you don't have a game server portion for your game, you can use Fakegame. 
-
-1. Get the [GSDK wrapper sample](https://github.com/PlayFab/MpsSamples/tree/master/wrappingGsdk) using standard Git methods or downloading this as a zip file
-2. [Build Wrapper executable](#build-wrapper-executable)
-3. This step is different depending on the types of servers you want to deploy. 
-    * To deploy Windows game servers, see [Combine Fakegame and the above Wrapper application as a zip file](#combine-fakegame-and-wrapper-application).
-    * To deploy Linux game servers, see [Create and upload Linux container image](#create-and-upload-linux-container-image)
-4. [Deploy a build using Game Manager or API](#deploy-a-build-using-game-manager-or-api) to start creating game servers
-
+## Walkthrough
 For a live walkthrough of building this sample, check out our presentation from Microsoft Game Dev 2021 (starts at about 2.52):
 
 > [!VIDEO https://www.youtube.com/embed/kj2TcMlvWgk]
 
-## Wrapper with your existing game server build
 
-1. Get the [GSDK wrapper sample](https://github.com/PlayFab/MpsSamples/tree/master/wrappingGsdk) using standard Git methods or downloading this as a zip file
-2. [Build Wrapper executable](#build-wrapper-executable)
-3. This step is different depending on the types of servers you want to deploy. 
-    * To deploy Windows game servers, see [Add your game server files and combine them with the Wrapper application into a zip file](#add-your-game-server-files-and-combine-them-with-the-wrapper)
-    * To deploy Linux game servers, see [Create and upload Linux container image](#create-and-upload-linux-container-image)
-4. [Deploy a build using Game Manager or API](#deploy-a-build-using-game-manager-or-api) to start creating game servers
+## Acquire and build Wrapper executable
 
-## Detailed steps
-
-### Build Wrapper executable
-
-* Open Command Prompt
-* Use the cd command to change directory path to the wrapper.csproj file location. Example: __cd C:/ReplaceWithYourFilePath/wrappingGsdk/wrapper__
+* Get the [GSDK wrapper sample](https://github.com/PlayFab/MpsSamples/tree/master/wrappingGsdk) using standard Git methods or downloading this as a zip file
+* Open Command Prompt, and use the cd command to change directory path to the wrapper.csproj file location. Example: __cd C:/ReplaceWithYourFilePath/wrappingGsdk/wrapper__
 * Then run the following .NET Core CLI command:
 ```
 dotnet publish --self-contained -r win-x64 /p:PublishSingleFile=true /p:PublishTrimmed=true
@@ -72,7 +52,11 @@ When the wrapper build is successful, the executable is published in the ..\wrap
 
 ![Publish location of the wrapper executable](media/create-your-first-server/wrapper-exe-location.png)
 
-### Combine Fakegame and Wrapper application
+## Create a game server asset
+
+There are two ways to create a game server asset.
+
+### Use Fakegame game server with the wrapper
 
 Use the build.ps1 to build and package both projects (wrapper and fakegame). This script creates a drop folder with a .zip file containing the required files.
 
@@ -81,11 +65,11 @@ Use the build.ps1 to build and package both projects (wrapper and fakegame). Thi
 * Run __\build.ps1__
 * After the script runs successfully, go to ..\wrappingGsdk\drop\ folder. You'll find a __gameassets.zip__ file containing the fake game server build, wrapper executable (built in the earlier step), and other required files is created.
 
-### Add your game server files and combine them with the wrapper
+### Use your own game server files with the wrapper
 
 To use your game project in the evaluation, place the wrapper and your game server executable in the same folder.
 
-* Follow the instructions at [Build the wrapper executable](#build-wrapper-executable)
+* Follow the instructions at [Build the wrapper executable](#acquire-and-build-wrapper-executable)
 * Go to the wrapper publish location at ..\wrappingGsdk\wrapper\bin\Debug\netcoreapp3.1\win-x64\publish
 * In another window, go to your game server build and files needed to run your game server build. If you're unsure what files are needed, see [Determining DLL files needed](determining-required-dlls.md)
 * Copy the gamer server build and all required files into the wrapper publish location
@@ -93,9 +77,9 @@ To use your game project in the evaluation, place the wrapper and your game serv
 * With all the files selected, right-click and then select __Send to__ > __Compressed (zip) files to zip__. Don't select the wrapper publish folder and add to zip. This would cause incorrect mapping.
 
 > [!Tip]
-> To cross-check, follow the instructions at [Use fakegame project](#wrapper-with-fakegame) to build the gameassets.zip and use it as a reference.
+> To cross-check, follow the instructions at [Use Fakegame game server with the wrapper](#use-fakegame-game-server-with-the-wrapper) to build the gameassets.zip and use it as a reference.
 
-### Create and upload Linux container image
+## Create and upload Linux container image (For Linux servers only)
 
 To create a Linux container image, you would need a Dockerfile. A Dockerfile is a text file with no extension and contains all commands needed to build a given container image. In this sample, this file is already created for you. All you have to do is to build the container image and run it.
 
@@ -127,11 +111,11 @@ docker build -t ${ACR}/wrapper:${TAG} .
 docker push ${ACR}/wrapper:${TAG}
 ```
 
-### Deploy a build using Game Manager or API
+## Deploy a build using Game Manager or API
 
 The deploy build process is similar for both Windows and Linux game servers.
 
-#### Deploy Windows game servers
+### Deploy Windows game servers
 
 The steps are similar to the Windows Runner C# sample. Follow these steps with differences listed below.
 
@@ -148,7 +132,7 @@ If you prefer test this locally, see [Locally debugging game servers and integra
 * Network configuration: Name: **gameport**, Port: **80**, Protocol: **TCP**
 * Assets: When using FakeGame, upload __gameassets.zip__ as an asset.
 
-#### Deploy Linux game servers
+### Deploy Linux game servers
 
 Follow the general steps below to deploy.
 * [Use Game Manager to deploy and configure servers](deploy-using-game-manager.md)
@@ -195,6 +179,30 @@ If you're using LocalMultiplayerAgent with Windows Containers, you need to prope
 ```
 
 You're now ready to test with LocalMultiplayerAgent. If you have configured it correctly, as soon as LocalMultiplayerAgent launches your game server, you can connect to it via curl at **http://localhost:56100/Hello**.
+
+## How to connect to a Game Server on MPS
+
+To establish a connection with a game server on MPS, it is essential to determine the appropriate port number. This requirement arises from the configuration where multiple virtual machines, each possibly running numerous game server instances, are managed behind a load balancer. In such a setup, a single public IP port might correspond to different ports on these virtual machines, each associated with a distinct game server instance.
+
+### Use Game Manager
+
+You can use the Game Manager UI to allocate a game server and establish a connection to it.
+1. Log in to Game Manager
+1. Go to the Multiplayer => Servers page, select your build
+1. Go to the Servers page, and click the "Request server" button.
+1. On the next page, Take note of the public **IPv4 address** and the **Port**.
+1. Use curl to connect at **http://[IPV4Address]:[Ports->Num]/Hello**."
+
+### Use MPS Allocator sample
+
+Here's how you can use the [MPS Allocator Sample](mps-allocator-sample.md) to allocate a game server, and establish a connection to it.
+1. Compile and execute the MPS Allocator sample.
+1. Apply the "ListBuildSummaries" command to view the available builds and their corresponding build IDs.
+1. Invoke "RequestMultiplayerServer" to initiate a request for a game server instance.
+1. Input the selected build ID into the "ListMultiplayerServers" command to generate a list of available servers.
+1. Choose an active game server instance and then employ "GetMultiplayerServerDetails" with the build and session IDs obtained from the previous steps.
+1. Take note of the **IPV4Address** and **Ports->Num** displayed in the response.
+1. Use curl to connect at **http://[IPV4Address]:[Ports->Num]/Hello**.
 
 ## See also
 
