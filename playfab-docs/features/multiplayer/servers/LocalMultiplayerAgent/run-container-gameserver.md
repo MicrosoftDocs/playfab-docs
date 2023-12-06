@@ -28,7 +28,7 @@ We'll learn how to package an existing sample as a Windows or Linux container. Y
 ### Linux Container Build
 
 You can run the wrapper and fakegame executable on a Linux Build, using Linux containers. In this case, you need to create a Linux build.
-To learn how to create Wrapper Linux build, see [how to create a Linux container image](../wrapper-sample.md#create-and-upload-linux-container-image)
+To learn how to create Wrapper Linux build, see [how to create a Linux container image](../wrapper-sample.md#create-and-upload-linux-container-image-for-linux-servers-only)
 
 ### Windows Container Build
 

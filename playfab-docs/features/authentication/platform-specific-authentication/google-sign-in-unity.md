@@ -2,8 +2,8 @@
 title: PlayFab authentication with Google Play Games Sign-In in Unity
 author: joannaleecy
 description: Guides you through an example of PlayFab authentication using Google Play Games Sign-In in Unity.
-ms.author: joanlee
-ms.date: 06/11/2018
+ms.author: raulalbertog
+ms.date: 11/23/2023
 ms.topic: article
 ms.service: playfab
 keywords: playfab, authentication, google, unity
@@ -11,19 +11,6 @@ ms.localizationpriority: medium
 ---
 
 # Setting up PlayFab authentication using Google Play games sign-in in Unity
-
-## Tutorial video
-
-> [!NOTE]
-> The audio portion of the following video is currently unavailable. A new recording is pending, and will be available in the immediate future.
-
-[HowTo: Use Google SignIn (GPG) + PlayFab (Unity)](https://youtu.be/igup53sdmHg)
-
-This tutorial illustrates the steps to successfully add Google Play Games sign-in to your PlayFab games, built with the Unity SDK.
-
-However, finding all the required information can be tricky. So we'll try to centralize all the steps you need to get this feature working.
-
-You can also download the sample for this tutorial [here](https://github.com/PlayFab/PlayFab-Samples/tree/master/Recipes/GoogleSignInSample).
 
 ## Prerequisites
 
@@ -36,16 +23,17 @@ You can also download the sample for this tutorial [here](https://github.com/Pla
 
 ## Getting started
 
-First, we'll start by setting up some basic things in Google Play. There are a few good guides on how to do this, so we aren't going to reinvent the wheel.
+First, we start by setting up some basic things in Google Play. There are a few good guides on how to achieve some of these tasks, so we aren't going to reinvent the wheel.
 
-1. Create an **Application** - If you haven't done so already, you'll need to create an application in the [Google Play Developer Console](https://play.google.com/apps/publish).
-2. Build your game APK, and upload it as an Alpha Build.
-    - Select **Manage Releases**.
-    - Select **Manage Alpha**.
-    - Select **Upload APK**.
+1. Create an **Application** - If you don't have an application created, you need to do that in the [Google Play Developer Console](https://play.google.com/apps/publish).
+
+2. Build your game AAB, and upload it for internal testing. You can follow [this](https://support.google.com/googleplay/android-developer/answer/9859348?visit_id=638373214207471441-2235763004&rd=1) guide on how to release your app to **Internal testing** track. During the signing process consider that for your app bundle you have to use your own keystore for this purpose. Refer to [this](https://docs.unity3d.com/Manual/android-keystore-create.html) doc on how to create a keystore.
+
 3. Set up Google Play Games services following the instructions on this page: [Setting Up Google Play Games Services](https://developers.google.com/games/services/console/enabling).
-4. Download the [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity) (if you haven't done so already) and install it.
-5. Install the PlayFab Unity SDK (if you do not know how to do this, follow the [Unity3D quickstart guide](../../../sdks/unity3d/quickstart.md)).
+
+4. Download the [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity) and install it.
+
+5. Install the PlayFab Unity SDK (if you don't know how to do this task, follow the [Unity3D quickstart guide](../../../sdks/unity3d/quickstart.md)).
 
 ## Configuring Google Play Games
 
@@ -56,167 +44,152 @@ You can configure Google Play Games from the toolset that is installed with the 
 - Going to **Setup**.
 - Then accessing **Android Setup**.
 
-![Google Play Games toolset Android setup](media/tutorials/google-unity/gpg-toolset.png)  
+    ![Configuring Google Play Games](media/tutorials/google-unity/google-unity-configuring-google-play-games.png)  
+- The Android configuration window shows up, we need to input the Resources Definition and the Web App Client ID on this screen.
 
-- Copy your Application ID from the **Linked apps** section of **Game Services** in the [Google Play Developer Console](https://play.google.com/apps/publish), as shown in the example provided below.
+    ![Paste Android Resources Empty](media/tutorials/google-unity/google-unity-paste-android-resources-empty.png)  
 
-![Google Play Developer Console Linked apps](media/tutorials/google-unity/gpdc-linked-apps.png)  
+### Getting Resources Definition
 
-- Then, populate your `app_id` and `package_name` in the resource definition, as shown below.
+- Follow [these](https://developer.android.com/games/pgs/unity/unity-start#get-android-resources) steps to get your Android Resources definition.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-<string name="app_id">[your app_id]</string>
-<string name="package_name">[package name]</string>
-</resources>
-```
+### Getting Web App Client ID
 
-> [!NOTE]
-> The Client ID that is generated for you when you link the **App** (shown in this image) is NOT the correct one!
+In order to get the Google Sign-In working with PlayFab, you need to use a Web Client ID that you can get by creating an OAuth Client ID credential for "Web application" type.
 
-![Google Play Developer Console Web App Client ID](media/tutorials/google-unity/gpdc-client-id.png)  
+Before creating the OAuth Client ID you need to know your PlayFab **API Endpoint**, which you can found following these steps:
 
-In order to get the Google Sign-In working with PlayFab, you need to use a Web Client ID. To obtain your Web Client ID, you must link a Web Application in the **Game Services** section of the **Google Play Console** under the **Services and API** section.
+- Log in to [Game Manager](https://developer.playfab.com/).
+- Select your title.
+- Go to your title settings by clicking on the **gear icon** next to the title name and select **Title Settings**.
 
-![Google Play Developer Console game services](media/tutorials/google-unity/gpdc-game-services.png)  
+    ![PF Title Settings](media/tutorials/google-unity/google-unity-pf-title-settings.png)  
 
-Then configure your app for the web.
+- Select the **API Features** tab.
+- Copy to the **API endpoint** field.
 
-![Google Play Developer Console link to Web app configuration](media/tutorials/google-unity/gpdc-link-to-web-app-config.png)  
+    ![Google Play Developer Console enter API endpoint](media/tutorials/google-unity/google-unity-pf-api-endpoint.png)
 
-From here, you enter your **API Endpoint** which can be found in PlayFab:
+Now that you know your title API Endpoint, follow the steps outlined [here](https://developers.google.com/workspace/guides/create-credentials#web-application) for creating the OAuth Client ID Credential.
 
-- Look under **Settings**.
-- Select the **API** tab.
-- Go to the **API endpoint** field.
+- When creating the Client ID, you need to add the API endpoint as an **Authorized JavaScript origin** for your Client ID.
 
-![Google Play Developer Console enter API endpoint](media/tutorials/google-unity/gdpc-set-api-endpoint.png)  
+    ![Authorized Javascript Origins](media/tutorials/google-unity/google-unity-authorized-javascript-origins.png) 
 
-- Enter this endpoint `https://<titleid>.playfabapi.com` in the **Launch URL** field.
-- Select the **Save** button.
-- This will provide you with the proper **Client ID**.
+- Also, make sure to add `https://oauth.playfab.com/oauth2/google` as an **Authorized Redirect URI**. If you don't do this step, you get a **mismatch redirect_uri** error.
 
-To obtain your secret key, follow the link to your **API Console**.
+    ![Authorized Redirect URIs](media/tutorials/google-unity/google-unity-authorized-redirect-uris.png) 
 
-![Link to API Console](media/tutorials/google-unity/link-to-api-console.png)  
+After creating the Client ID, you'll get a screen similar to the following one, where you'll get the Client ID string generated and a Client Secret.
 
-- Select your **Web Application** (**Type**).
-- The **Client Secret** is at the top.
+![OAuth Client ID created](media/tutorials/google-unity/google-unity-client-id-created.png) 
 
-> [!IMPORTANT]
-> You must change the default callback for Authorized redirect URIs. The proper URI is `https://oauth.playfab.com/oauth2/google`.
-> If you do not do this step you will get a **mismatch redirect_uri** error.
+Now, you can go back to the Android Configuration window in Unity and paste the client ID in the **Client ID** textbox:
 
-## PlayFab Google Sign-In setup
+![Paste Client ID](media/tutorials/google-unity/google-unity-paste-client-id.png) 
 
-PlayFab has its own process for setting up a Google sign-in. You can do this in your PlayFab developer account. If you don't have one, you can [sign up for a free developer account](https://developer.playfab.com).
+Now that both values are populated, you can select **Setup**:
+
+![Setup completed Android configuration](media/tutorials/google-unity/google-unity-setup-android-configuration.png) 
+
+## PlayFab Google Sign in setup
+
+PlayFab has its own process for setting up a Google sign-in. You can do this set up in your PlayFab developer account. If you don't have one, you can [sign up for a free developer account](https://developer.playfab.com).
 
 To set up Google in PlayFab:
 
 - Navigate to the **Add-ons** section in your dashboard.
 - Go to the **Google Add-On**.
-- From there, select the **Install Add-on** button.
+- From there, select the **Install Google** button.
 
 There are a few things you need to enter into this form:
 
-- The **Google App Package ID** - This is the name of your Android package. For example, our sample uses `com.playfab.gpgexample`.
-- The **Google App License Key** - While this is a required field, it isn't related to the Google Sign-In. This field is for setting up a Receipt Validation using our **Receipt Validation APIs**.
+- The **Google App Package ID** - This field is the name of your Android package. For example, our sample uses `com.playfab.gpgexample`.
+- The **Google App License Key** - While this field is required, it isn't related to the Google Sign-In. This field is for setting up a Receipt Validation using our **Receipt Validation APIs**.
 
 > [!NOTE]
-> You can get this License Key from the [Google Developer Console](https://play.google.com/apps/publish) under the **Services & APIs** section. Look for a section entitled **YOUR LICENSE KEY FOR THIS APPLICATION**. Copy and paste the Base64-encoded RSA Public Key into this field.
+> You can get this License Key from the [Google Developer Console](https://play.google.com/apps/publish), navigate to your app,  under the **Monetize** section. Click on a section entitled **Monetization Setup**. In here, scroll down until you see a **Licensing** text box, copy and paste the Base64-encoded RSA Public Key into this field.
 
-- The **Google OAuth Client ID** - This is the Web Client ID that you used in the **Google Play Games SDK** setup in Unity.
-- The **Google OAuth Client Secret** - This is the secret key that you obtained in the last step.
+- The **Google OAuth Client ID** -The Web Client ID that you used in the **Google Play Games SDK** setup in Unity.
+- The **Google OAuth Client Secret** - The Secret Key that you obtained when creating the OAuth Client ID.
+- The **Service Account Key** - This field expects a service account key JSON string, you need to create a service account key following [these](https://developers.google.com/workspace/guides/create-credentials#create_a_service_account) steps. Then, create credentials for that service account following the steps [here](https://developers.google.com/workspace/guides/create-credentials#create_credentials_for_a_service_account). After you get the credentials JSON file, paste the whole JSON content in this field.
+
+The add-on configuration should look like this before saving:
+
+![Google Add-on Setup in PlayFab](media/tutorials/google-unity/google-unity-google-addon-config.png) 
+
 
 > [!TIP]
 > Be sure to **Save Settings**!
 
 ## Adding Google sign-in to your Unity Game
 
-The code to get Google sign-in working is fairly minimal. There's the initialization code, which you'll put in your Start (or anywhere you're initializing or starting up your app).
+The code to get Google sign-in working is fairly minimal. There's the initialization code, which you put in your Start (or anywhere you're initializing or starting up your app).
 
-This can be in different places, depending on the architecture and framework of your game or app. In any case, the code below will initialize Google Play Games.
+This code can be in different places, depending on the architecture and framework of your game or app. In any case, the following code initializes Google Play Games.
 
 > [!NOTE]
 > Make *sure* that you don't forget the **using** statements, so that you can use the Google Play Games SDK.
 
 ```csharp
-// These using statements are required.
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
-```
+using PlayFab;
+using PlayFab.ClientModels;
+using UnityEngine;
 
-```csharp
-// The following grants profile access to the Google Play Games SDK.
-// Note: If you also want to capture the player's Google email, be sure to add
-// .RequestEmail() to the PlayGamesClientConfiguration
-PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
-.AddOauthScope("profile")
-.RequestServerAuthCode(false)
-.Build();
-PlayGamesPlatform.InitializeInstance(config);
-
-// recommended for debugging:
-PlayGamesPlatform.DebugLogEnabled = true;
-
-// Activate the Google Play Games platform
-PlayGamesPlatform.Activate();
-```
-
-The next set of code, the `OnSignInButtonClicked()` function shown in the example provided below, is bound to a **Sign In** button in the UI in our example.
-
-![Google Sign-In button screen](media/tutorials/google-unity/sign-in-button-screen.png)  
-
-```csharp
-    private void OnSignInButtonClicked()
+public class PFGoogleSignInUnity : MonoBehaviour
+{
+    void Start()
     {
-        Social.localUser.Authenticate((bool success) => {
-
-            if (success)
-            {
-
-                GoogleStatusText.text = "Google Signed In";
-                var serverAuthCode = PlayGamesPlatform.Instance.GetServerAuthCode();
-                Debug.Log("Server Auth Code: " + serverAuthCode);
-
-                PlayFabClientAPI.LoginWithGoogleAccount(new LoginWithGoogleAccountRequest()
-                {
-                    TitleId = PlayFabSettings.TitleId,
-                    ServerAuthCode = serverAuthCode,
-                    CreateAccount = true
-                }, (result) =>
-                {
-                    GoogleStatusText.text = "Signed In as " + result.PlayFabId;
-
-                }, OnPlayFabError);
-            }
-            else
-            {
-                GoogleStatusText.text = "Google Failed to Authorize your login";
-            }
-
-        });
-
+        PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
     }
+
+    internal void ProcessAuthentication(SignInStatus status)
+    {
+        if (status == SignInStatus.Success)
+        {
+            PlayGamesPlatform.Instance.RequestServerSideAccess(false, ProcessServerAuthCode);
+        }
+    }
+
+    private void ProcessServerAuthCode(string serverAuthCode)
+    {
+        Debug.Log("Server Auth Code: " + serverAuthCode);
+
+        var request = new LoginWithGooglePlayGamesServicesRequest
+        {
+            ServerAuthCode = serverAuthCode,
+            CreateAccount = true,
+            TitleId = PlayFabSettings.TitleId
+        };
+
+        PlayFabClientAPI.LoginWithGooglePlayGamesServices(request, OnLoginWithGooglePlayGamesServicesSuccess, OnLoginWithGooglePlayGamesServicesFailure);
+    }
+
+    private void OnLoginWithGooglePlayGamesServicesSuccess(LoginResult result)
+    {
+        Debug.Log("PF Login Success LoginWithGooglePlayGamesServices");
+    }
+
+    private void OnLoginWithGooglePlayGamesServicesFailure(PlayFabError error)
+    {
+        Debug.Log("PF Login Failure LoginWithGooglePlayGamesServices: " + error.GenerateErrorReport());
+    }
+}
 ```
 
-The `OnSignInButtonClicked()` code can be a bit overwhelming, so let's break down exactly what is happening:
+Let's break down exactly what is happening:
 
-- First, we log in with `Social.localUser.Authenticate` - This will return a boolean if we're able to successfully login. Be aware that if you haven't added your test account to your app, this will always return *False* when testing.
-- When this happens - important step here - [add your test account](https://developers.google.com/games/services/console/testpub).
-- The link will take you to instructions on adding testers to your Google application.
+- First, we log in with `PlayGamesPlatform.Instance.Authenticate` - This function receives a callback function as a parameter that handles the result, and lets us know if the user was able to successfully login based on the *SignInStatus* received. 
+- If you don't add your test account to your app, the callback *SignInStatus* result is always *Canceled* when testing. In case this issue happens, follow the steps on [this](https://developers.google.com/games/services/console/testpub) guide to add testers to your Google application.
 
 > [!NOTE]
-> This is what will trigger the **Google Play Games** sign-in dialog to pop-up.
+> The call to `PlayGamesPlatform.Instance.Authenticate` is what will trigger the **Google Play Games** sign-in dialog to pop-up.
 
-- Next, if we have a successful login, we make a call to `PlayGamesPlatform.Instance.GetServerAuthCode`, and store it in a variable.
-- Lastly, we make the `LoginWithGoogleAccount` call, and pass the `AuthCode` we just got from Google in as the `ServerAuthCode` parameter.
+- Next, if we have a successful login, we make a call to `PlayGamesPlatform.Instance.RequestServerSideAccess`, which receives another callback and returns the ServerAuthCode string.
+- Then, we make the `PlayFabClientAPI.LoginWithGooglePlayGamesServices` call, and pass the `AuthCode` we just got from Google in as the `ServerAuthCode` parameter.
 
-There is a callback which will have the results of your login to PlayFab. At this point, you should see a successful login in your dashboard!
+- Lastly, depending on the result of `LoginWithGooglePlayGamesServices` call, either `OnLoginWithGooglePlayGamesServicesSuccess` or `OnLoginWithGooglePlayGamesServicesFailure` is called, these callbacks are the ones that handle your login operation result to PlayFab. At this point, you should see a successful login in your dashboard!
 
-![Google Play Games Sign-In Auth Example](media/tutorials/google-unity/gpg-sign-in-auth-example.png)  
-
-Hopefully, this guide has helped you. But if you have questions, feel free to ask them in our [community forums](https://community.playfab.com/).
-
-You can download the sample for this tutorial [here](https://s3-us-west-2.amazonaws.com/api-playfab-com-craft-files/FileAssets/GooglePlayGamesSignInExample.zip).
+Hopefully, this guide helped you. But if you have questions, feel free to ask them in our [community forums](https://community.playfab.com/).
