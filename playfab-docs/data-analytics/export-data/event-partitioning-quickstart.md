@@ -1,5 +1,5 @@
 ---
-title: Event Partitioning quickstart
+title: Event Partitioning quickstart (Preview)
 author: sofiamarinv
 description: Event Partitioning quickstart
 ms.author: sofiamarin
@@ -11,6 +11,9 @@ ms.localizationpriority: medium
 ---
 
 # Event Partitioning quickstart
+
+> [!NOTE]
+> The Event Partitioning feature is in private preview, this means it's only available to be used by specific titles we enable it for. We anticipate ongoing changes to it, without notice, as we continue gathering feedback and optimizing for customer use.
 
 Event Partitioning can be managed through Game Manager and through APIs.
 
@@ -26,11 +29,9 @@ Learn how to configure partitioning by adding, editing, and deleting Manage Even
 - Select **Manage Events (Preview)** tab.
 - Select **Add Managed Event**.
 - In the **Event Type** dropdown, choose the event you’d like to manage. If the custom event doesn't appear in the drop down you can type in your custom event name and select the option to create the event name.
-- In the **Sample Rate** % box, you can input your desired percentage.
-- - Check the box for **Partition in Data Connections** to enable partitioning for this event.
+- Leave the sampling percentage at the default value. If you also want to sample events, see [Event Sampling overview](event-sampling-overview.md) for details on setting this value.
+- Check the box for **Partition in Data Connections** to enable partitioning for this event.
 - Select **Save**.
-
-![Add a Managed Event](media/add-managed-event.png)
 
 ### Edit a Managed Event
 
@@ -46,29 +47,34 @@ Learn how to configure partitioning by adding, editing, and deleting Manage Even
 - Select  **Delete** at the top of the table.
 - Select **Delete** to confirm. 
 
-## Managing Event Partitioning through APIs
+### Managing Event Partitioning through APIs
 
 Event Partitioning can also be managed with the following ManageEvents APIs.
 
-**SetManagedEvents**: This API can be used to set a list of managed events for the title. If the event name and namespace combination is present already, it will update the existing settings with the new one. 
+#### SetManagedEvents
+
+This API can be used to set a list of managed events for the title. If the event name and namespace combination is present already, it will update the existing settings with the new one. 
+
+Request example: 
 
 ```HTTP
 
-POST request example: https://<titleid>.playfabapi.com/Event/SetManagedEvents 
-
-Request body example:
+POST : https://<titleid>.playfabapi.com/Event/SetManagedEvents 
 
 { 
     "ManagedEvents":[{ 
-                "demo_namespace": "foo, 
-                "demo_name": "bar", 
+                "Namespace": "demo_namespace, 
+                "Name": "demo_name", 
                 "SamplingRatio": 100, 
                 "isPartitioned": true 
             }] 
 }
+
 ```
 
-**DeleteManagedEvents**: This API can be used to delete an event name and event namespace combo from the list of managed events for the title. Use the API with the name and namespace in the body of the request.
+#### DeleteManagedEvents 
+
+This API can be used to delete an event name and event namespace combo from the list of managed events for the title. Use the API with the name and namespace in the body of the request.
 
 Request example: 
 
@@ -81,10 +87,11 @@ POST https://<titleid>.playfabapi.com/Event/DeleteManagedEvent
       "Name": "demo_name" 
 } 
 
-
 ```
 
-**GetManagedEvent**: This API can be used to get the settings for a managed event.
+#### GetManagedEvent
+
+This API can be used to get the settings for a managed event.
 
 Request example:
 
@@ -98,7 +105,10 @@ POST https://<titleid>.playfabapi.com/Event/GetManagedEvent
 }
 
 ```
-**GetManagedEvents**: This API can be used to get the list of all managed Events.  
+
+#### GetManagedEvents
+
+This API can be used to get the list of all managed Events.  
 
 Request example:
 
@@ -111,4 +121,3 @@ POST https://<titleid>.playfabapi.com/Event/GetManagedEvents
 ## Next steps
 
 * [Event Partitioning overview](event-partitioning-overview.md)
-  

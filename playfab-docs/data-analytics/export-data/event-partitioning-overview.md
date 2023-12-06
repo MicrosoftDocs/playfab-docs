@@ -1,5 +1,5 @@
 ---
-title: Event Partitioning overview
+title: Event Partitioning overview (Preview)
 author: sofiamarinv
 description: Event Partitioning overview
 ms.author: sofiamarin
@@ -12,7 +12,10 @@ ms.localizationpriority: medium
 
 # Event Partitioning overview
 
-Event Partitioning is an addition to PlayFab’s game data processing capabilities. This feature allows you to partition certain selected events into its own folder in the blob data connections. It also automatically creates their own individual table in Azure Data Explorer (ADX) data connections. 
+> [!NOTE]
+> The Event Partitioning feature is in private preview. This means it's only available to be used by specific titles we enable it for. We anticipate ongoing changes to it, without notice, as we continue gathering feedback and optimizing for customer use.
+
+Event Partitioning is an addition to PlayFab’s game data processing capabilities. This feature allows you to partition certain selected events into their own folder in the blob data connections and automatically creates their own individual table in Azure Data Explorer data connections. 
 
 ## What to expect after setting an event for partitioning? 
 
@@ -22,7 +25,7 @@ Changes happen in both Azure Blob Storage and Azure Data Explorer when an event 
 
 Once you set an event to be partitioned, those events are written to your Azure Blob Storage storage account in separate folder named “Partitioned”. 
 
-Within the event's subdirectory, the data is divided into further subdirectories by date and hour. The format of the data will be the same parquet format that is used for events that aren't partitioned.
+Within the event's subdirectory, the data will be divided into further subdirectories by date and hour. The format of the data will be the same parquet format that is used for events that aren't partitioned.
 
 ![Event Partitioning folder structure](media/event-partitioning-folder-structure.png)
 
