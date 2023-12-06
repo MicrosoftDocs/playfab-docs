@@ -2,9 +2,19 @@
   expanded: true
   items:
   - name: Overview
-    href: segmentation-overview.md
+    expanded: true
+    items:
+    - name: Segmentation
+      href: segmentation-overview.md
+    - name: Player Custom Properties (Preview)
+      href: player-custom-properties.md
   - name: Quickstart
-    href: segmentation-quickstart.md
+    expanded: true
+    items:
+    - name: Segmentation QuickStart 
+      href: segmentation-quickstart.md
+    - name: Player Custom Properties QuickStart (Preview)
+      href: player-custom-properties-qs.md
   - name: Tutorials
     expanded: true
     items:
@@ -12,6 +22,8 @@
       href: segmentation-configuration.md
     - name: Export Players of a Segment
       href: segmentation-export-players-in-a-segment.md
+    - name: Advanced Segmentation with Player Custom Properties (Preview)
+      href: advanced-segmentation.md
 - name: Webhooks
   href: webhooks-overview.md
 - name: Event Schemas
