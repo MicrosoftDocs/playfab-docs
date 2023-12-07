@@ -74,7 +74,7 @@ POST : https://<titleid>.playfabapi.com/Event/SetManagedEvents
 
 #### DeleteManagedEvents 
 
-This API can be used to delete an event name and event namespace combo from the list of managed events for the title. Use the API with the name and namespace in the body of the request.
+**DeleteManagedEvents** API is used to delete an event name and event namespace combo from the list of managed events for the title. Use the API with the name and namespace in the body of the request.
 
 Request example: 
 
@@ -91,7 +91,7 @@ POST https://<titleid>.playfabapi.com/Event/DeleteManagedEvent
 
 #### GetManagedEvent
 
-This API can be used to get the settings for a managed event.
+**GetManagedEvent** is used to get the settings for a managed event.
 
 Request example:
 
@@ -108,7 +108,7 @@ POST https://<titleid>.playfabapi.com/Event/GetManagedEvent
 
 #### GetManagedEvents
 
-This API can be used to get the list of all managed Events.  
+**GetManagedEvents** is used to get the list of all managed Events.  
 
 Request example:
 

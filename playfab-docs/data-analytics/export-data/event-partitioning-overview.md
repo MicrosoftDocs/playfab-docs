@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 > [!NOTE]
 > The Event Partitioning feature is in private preview. This means it's only available to be used by specific titles we enable it for. We anticipate ongoing changes to it, without notice, as we continue gathering feedback and optimizing for customer use.
 
-Event Partitioning is an addition to PlayFab’s game data processing capabilities. This feature allows you to partition certain selected events into their own folder in the blob data connections and automatically creates their own individual table in Azure Data Explorer data connections. 
+Event Partitioning is an addition to PlayFab’s game data processing capabilities. This feature allows you to partition certain selected events into their own folder in the blob data connections and automatically creates their own individual table in Azure Data Explorer (ADX) data connections. 
 
 ## What to expect after setting an event for partitioning? 
 
