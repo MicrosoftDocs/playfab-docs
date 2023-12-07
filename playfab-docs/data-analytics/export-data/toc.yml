@@ -22,8 +22,7 @@
 - name: Event Partitioning (Preview)
   expanded: true
   items:
-  - name: Overview
+  - name: Overview (Preview)
     href: event-partitioning-overview.md
-  - name: Quickstart
+  - name: Quickstart (Preview)
     href: event-partitioning-quickstart.md
-    
