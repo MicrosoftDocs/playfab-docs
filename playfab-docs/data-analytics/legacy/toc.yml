@@ -29,7 +29,7 @@
   - name: Tutorials
     expanded: true
     items:
-    - name: Create an Azure Active Directory (AAD) Application to use with Insights
+    - name: Create a Microsoft Entra ID Application to use with Insights
       href: connectivity/creating-AAD-app-for-insights.md
     - name: Connecting Power BI to Insights
       href: connectivity/connecting-power-bi-to-insights.md
@@ -52,3 +52,10 @@
     href: content-delivery-network/index.md
   - name: Quickstart
     href: content-delivery-network/quickstart.md
+- name: S3 Event Archiving
+  expanded: true
+  items:
+  - name: Overview
+    href: s3-event-archiving.md
+  - name: Quickstart
+    href: configure-s3-bucket.md

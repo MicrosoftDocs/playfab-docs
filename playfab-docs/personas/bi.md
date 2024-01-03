@@ -50,7 +50,7 @@ PlayFab has a number of ways to reach your data outside of our Game Manager tool
 
 Here are a few great ways to access your data:
 
-- [S3 Event Archiving](../features/analytics/metrics/s3-event-archiving.md) – PlayFab allows you to archive the entire event flow by using an Amazon S3 bucket. This guide shows step-by-step how to configure event archiving from scratch.
+- [S3 Event Archiving](../data-analytics/legacy/s3-event-archiving.md) – PlayFab allows you to archive the entire event flow by using an Amazon S3 bucket. This guide shows step-by-step how to configure event archiving from scratch.
 
 - **Snowflake** – See the entire event flow in Snowflake, for deep analytics query power.
 - [Webhooks](../features/data/webhooks/index.md) - In complex systems you may want to provide additional event handling on your custom server. PlayFab offers Webhooks to achieve this. Whenever a new event is detected, it can be forwarded to your server by making a POST request to your custom web endpoint, and the event data is passed as the JSON body of the request.

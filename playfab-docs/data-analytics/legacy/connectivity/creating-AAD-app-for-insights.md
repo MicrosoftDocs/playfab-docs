@@ -1,7 +1,7 @@
 ---
-title: Creating an AAD app and connecting it to title database
+title: Creating a Microsoft Entra ID app and connecting it to title database
 author: natashaorie
-description: Creating an AAD app and connecting it to title database
+description: Creating a Microsoft Entra ID app and connecting it to title database
 ms.author: norie
 ms.date: 03/20/2020    
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, insights
 ms.localizationpriority: medium
 ---
 
-# Tutorial: Create an Azure Active Directory (AAD) Application to use with Insights
+# Tutorial: Create a Microsoft Entra ID Application to use with Insights
 
-This tutorial covers creating an Azure Active Directory (AAD) application to use with Insights, which is one of the prerequisites for connecting the following tools with Insights:
+This tutorial covers creating a Microsoft Entra ID application to use with Insights, which is one of the prerequisites for connecting the following tools with Insights:
 * Azure Data Factory (ADF)
 * Grafana
 * Python
@@ -20,9 +20,9 @@ This tutorial covers creating an Azure Active Directory (AAD) application to use
 ## Prerequisites
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free)  
 
-## Create an Azure Active Directory (AAD) application
+## Create a Microsoft Entra ID application
 
-To create an AAD application to link to your title database:
+To create a Microsoft Entra ID application to link to your title database:
 
 1. Log into the [Azure portal](https://portal.azure.com). If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com).
 
@@ -30,11 +30,11 @@ To create an AAD application to link to your title database:
 
    ![ADF New Registrations](media/adf-new-registration.png)
 
-3. In the **Register an application** window enter a name for your registration, then select which account types you would like this registration to support. (If you need help deciding, select the **Help me choose** link which will open a window with more information.)
+3. In the Register an application window, enter a name for your registration, then select which account types you would like this registration to support. (If you need help deciding, select the **Help me choose** link, which will open a window with more information.)
 
    ![ADF Register App](media/adf-register-app.png)  
 
-4. Select **Register**. You will be directed to a page with an overview of your newly-registered applcation. Save the **Application (client) ID** and **Directory (tenant) ID** somewhere (you will need these later).
+4. Select **Register**. You'll be directed to a page with an overview of your newly registered application. Save the **Application (client) ID** and **Directory (tenant) ID** somewhere (you'll need these later).
 
 5. In the navigation panel on the left-hand side select **Certificates & secrets** -> **New client secret**. 
 
@@ -46,18 +46,18 @@ To create an AAD application to link to your title database:
 
 7. Select **Add**, and the new secret will appear below **Client secrets**. Now make sure to copy the secret key and save it somewhere secure. *It's essential that you do this now, since you won't be able to access the secret key once you leave this page.*
 
-## Connect the AAD app to your title database
+## Connect the Microsoft Entra ID app to your title database
 
-Now we will connect the Azure app to your title database. 
+Now we'll connect the Azure app to your title database. 
 
-1. From the **Explorer** page in GameManager or in Kusto.Explorer, run the following command, replacing with your own Title ID and client/tenant ID:
+1. From the **Explorer** page in GameManager or in Kusto Explorer, run the following command, replacing with your own Title ID and client/tenant ID:
    > `.add database <titleID> Admin ('aadapp=<app/client ID>;<tenant ID>') `
 
    `titleID` is case sensitive, so make sure it is in all caps.
 
    ![Explorer Add Database](media/explorer-add-database.png)
 
-   You can verify that this command was successful by going to the **Users** page in [GameManager](https://developer.playfab.com/login). There should be an entry that matches the Client/Tenant ID.
+   You can verify that this command was successful by going to the **Users** page in [GameManager](https://developer.playfab.com). There should be an entry that matches the Client/Tenant ID.
 
    Note that this will make the Azure app an Admin on your game in PlayFab. If you would like the Azure app to have lesser permissions, assign the Azure app a [custom role](../../../gamemanager/playfab-user-roles.md) in PlayFab that only has permissions for the Kusto database. The necessary permissions are:
    * **Explorer data & tab**.

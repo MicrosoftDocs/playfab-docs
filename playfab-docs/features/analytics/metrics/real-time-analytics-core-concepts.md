@@ -33,19 +33,19 @@ An event - as a data structure - represents a change in state for your game. Eve
 1. **Name** (or unique type identifier) -  (*What happened?*)
 2. **Entity** (player, title, or character) - (*Who's guilty?*)
 3. **Timestamp** - (*When did it happen?*)
-4. **Associated Data** ( a.k.a. **Body**) - (*What are the relevant details?*)
+4. **Associated Data** (also known as **Body**) - (*What are the relevant details?*)
 
-It is important to distinguish between *Automatic* and *Custom* events. Our [Generating PlayStream Events Tutorial](../../analytics/metrics/playstream-events.md) explains the difference.
+It's important to distinguish between *Automatic* and *Custom* events. Our [Generating PlayStream Events Tutorial](../../analytics/metrics/playstream-events.md) explains the difference.
 
 ## Event flow
 
-The core of any analytics system is the *event flow* - which is a all-inclusive list of events sorted by time.
+The core of any analytics system is the *event flow* - which is an all-inclusive list of events sorted by time.
 
-Your players are going to produce a large number of different events. But these events are not captured by themselves - you need an analytics system to capture them for later analysis.
+Your players are going to produce a large number of different events. But these events aren't captured by themselves - you need an analytics system to capture them for later analysis.
 
 A solid analytics system allows you to group, sort, filter, count, transform, and perform calculations on a given set of events, turning the event flow into valuable, up-to-date information that you can use to run efficient LiveOps.
 
 ## Guides
 
 - [Webhooks](../../data/webhooks/index.md): **Game Manager** page for automatically triggering non-PlayFab servers on specific game events.
-- [S3 Event Archiving](../../analytics/metrics/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.
+- [S3 Event Archiving](../../../data-analytics/legacy/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.
