@@ -27,11 +27,11 @@ When the user is fetching assets, their requests are automatically routed to the
 
 This, however, can introduce delays into file management actions, like those found in the following examples:
 
-- **File uploading**: Your file will be available immediately.
+- **File uploading**: Your file is available immediately.
 
-- **File overwriting**: The old file will appear to users for up to 24 hours, until it's overwritten with the new file.
+- **File overwriting**: The old file appears to users for up to 24 hours, until it's overwritten with the new file.
 
-- **File deletion**: The file will continue to exist for up to 24 hours, while the delete command removes it from all edge locations.
+- **File deletion**: The file continues to exist for up to 24 hours, while the delete command removes it from all edge locations.
 
 ## Uploading assets
 
@@ -43,16 +43,16 @@ Before your users are able to fetch an asset, it must be uploaded to the CDN. Th
 
 ![Game Manager - Content - File Management - Upload Files](media/tutorials/game-manager-content-file-management-upload-files.png)  
 
-You may:
+You can:
 
 - Select multiple **Files (1)**.
-- Every file selected will appear in the list **(2)**.
+- Every file selected appears in the list **(2)**.
 - Submit your files by selecting the **Upload Files** button **(3)**.
 
 ![Game Manager - Choose and Upload Files](media/tutorials/game-manager-choose-and-upload-files.png)  
 
-- Uploaded files will appear in the list **(1)**.
-- Keep in mind that you may also manage *folders*.
+- Uploaded files appear in the list **(1)**.
+- Keep in mind that you might also manage *folders*.
   - To create a folder, select the **New Folder** button **(2)**.
 
 
@@ -61,14 +61,14 @@ You may:
 
 ![Game Manager - Create New Folder](media/tutorials/game-manager-create-new-folder.png)  
 
-This will create a new folder in the tree. You may then select this folder, and upload the files normally.
+This creates a new folder in the tree. You might then select this folder, and upload the files normally.
 
-Alternatively, you may upload assets via code using the admin SDK. This is a two step process:
+Alternatively, you can upload assets via code using the admin SDK. This is a two step process:
 
-1. First, call [GetContentUploadUrl](xref:titleid.playfabapi.com.admin.content.getcontentuploadurl) and obtain the pre-signed URL that will authorize your upload.
+1. First, call [GetContentUploadUrl](xref:titleid.playfabapi.com.admin.content.getcontentuploadurl) and obtain the presigned URL that authorizes your upload.
 2. Then, use the URL to make a `HTTP PUT` request,  provide your data, and (optionally) content type.
 
-Consider using the snippet provided below that shows how to get a pre-signed URL.
+Consider using the snippet provided below that shows how to get a presigned URL.
 
 ```csharp
 public void UploadFileToCDN(string key, byte[] content, string contentType = "binary/octet-stream") {
@@ -92,14 +92,14 @@ void PutFile(string presignedUrl, byte[] content, string contentType = "binary/o
 }
 ```
 
-You may then check the result through the PlayFab Game Manager. Make sure the file is in the list.
+You can then check the result through the PlayFab Game Manager. Make sure the file is in the list.
 
 ## Fetching assets
 
-Downloading the asset via code is identical to uploading the asset. As wwe mentioned earlier, it is a two step process.
+Downloading the asset via code is identical to uploading the asset. As was mentioned earlier, it's a two step process.
 
-1. First, make a call to [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) and obtain a pre-signed URL that will authorize your download.
-2. You then use the  pre-signed URL to make a `HTTP GET` request, and fetch the data.
+1. First, make a call to [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) and obtain a presigned URL that authorizes your download.
+2. You then use the  presigned URL to make a `HTTP GET` request, and fetch the data.
 
 Consider using the snippet provided below that shows the bare bones of the process.
 
@@ -124,9 +124,9 @@ void GetFile(string preauthorizedUrl) {
 }
 ```
 
-As mentioned above, CDN may involve latency in regards to file updates. During development, it is sometimes useful to force-fetch the latest, freshest files.
+As mentioned before, CDN might involve latency in regards to file updates. During development, it's sometimes useful to force-fetch the latest, freshest files.
 
-The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the `ThruCDN` parameter to `False`. The URL returned will then point to non-cached fresh files.
+The  [GetContentDownloadUrl](xref:titleid.playfabapi.com.client.content.getcontentdownloadurl) call allows you to set the `ThruCDN` parameter to `False`. The URL returned points to noncached fresh files.
 
 > [!NOTE]
 > Your published game client should *never* use this option!
