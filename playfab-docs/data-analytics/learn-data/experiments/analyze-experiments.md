@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Experiments' results are shown in **Experiment details and scorecard page**. The scorecard is generated in a regular cadence. The first scorecard is generated in 12 hours, followed by scorecard(s) every 24 hours for the entire duration of an experiment.
 
-The experiment details and scorecard page lists the experiment name, description, start and end date, intended duration, audience, and variant count. The actions like Stop, Run, Clone as draft is available on the page based on the state of the experiment.
+The experiment details and scorecard page, lists the experiment name, description, start and end date, intended duration, audience, and variant count. The actions like Stop, Run, Clone as draft is available on the page based on the state of the experiment.
 
 Once the experiment is completed, select the **Completed** tab view, and select on the name of the experiment to view the **Scorecard**, along with the experiment details. Additionally, the at-run experiments’ scorecard and details can be viewed by selecting the name of the experiment. 
 
