@@ -1004,5 +1004,17 @@
             "redirect_url": "/gaming/playfab/resources/playfab-samples",
             "redirect_document_id": false
         }
+        ,
+        {
+            "source_path": "playfab-docs/features/analytics/metrics/configure-s3-bucket.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/configure-s3-bucket",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/analytics/metrics/s3-event-archiving.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/s3-event-archiving",
+            "redirect_document_id": false
+        }
     ]
 }

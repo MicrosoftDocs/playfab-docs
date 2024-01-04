@@ -32,7 +32,7 @@ You can configure the sampling ratio on both PlayStream and Custom events from t
          * The Event Name dropdown contains the comprehensive list of events that are applicable for event sampling and are yet to have any sampling configuration
 - Enter a whole number as the desired **Sample Rate** which ranges between 0% to 100% 
 - Select **Save**, the event sampling is configured
-    *	The configured event will show up in a new pane known as **Sampled Events**, just above the **Add Sample Rate** pane
+    *	The configured event shows up in a new pane known as **Sampled Events**, just above the **Add Sample Rate** pane
          * The Sampled Events overview pane shows all the configured **Event Name** with a categorization of **Event Namespace**, **Category** stating if it’s a standard PlayStream event or custom event, along with the configured **Sample Rate**
 
 ![Screenshot of Configure Sampling of Events](media/configure-sampling-for-events.png "Configure Events' Sampling Rate")

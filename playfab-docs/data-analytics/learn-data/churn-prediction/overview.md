@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Churn Prediction
 
-Identifying churn is a key metric to reduce player attrition and increase engagement. Churn has a direct impact on revenue because players leave or stop playing a game at a certain point after playing. To provide the ability to identify and mitigate churn, PlayFab is introducing its very first Azure Artificial Intelligence (AI) and Machine Learning (ML) based Predictive Service. Directly integrated into Segmentation and with no additional integration required from Titles, Churn Prediction can be easily enabled via Game Manager.
+Identifying churn is a key metric to reduce player attrition and increase engagement. Churn has a direct impact on revenue because players leave or stop playing a game at a certain point after playing. To provide the ability to identify and mitigate churn, PlayFab is introducing its first Azure Artificial Intelligence (AI) and Machine Learning (ML) based Predictive Service. Directly integrated into Segmentation and with no additional integration required from Titles, Churn Prediction can be easily enabled via Game Manager.
 
 PlayFab will consume different datapoints from Player Profile and PlayStream events and determine from the list of **Eligible Players** who are likely to **Churn** within the next **Churn Window**.
 
@@ -22,7 +22,7 @@ Let’s define some key terms used above:
 - **Churn** – Indicator of whether a player would stop playing within the next churn Window.
 - **Churn Window** – Specific period during which players are expected to churn based on their Risk Propensity. This parameter is set to seven days and is non configurable at this time.
 
-This feature is presented as **Churn Prediction** within the Segmentation Filters dropdown. Titles can further define their Segments via churn risk Factors of Low/Medium/High and in conjunction with other Segmentation Filters as well. Once the required Segments have been created, Mitigation Strategies can be applied via **Segment Actions** directly from the Segmentation page to reduce churn as much as possible.
+This feature is presented as **Churn Prediction** within the Segmentation Filters dropdown. Titles can further define their Segments via churn risk Factors of Low/Medium/High with other Segmentation Filters as well. Once the required Segments have been created, Mitigation Strategies can be applied via **Segment Actions** directly from the Segmentation page to reduce churn as much as possible.
 
 ## Opt in/out of Churn Prediction
 
@@ -69,7 +69,7 @@ These actions apply to all players real-time. A few of the actions that are offe
 - Send Emails: Custom Email Templates can be created to invite players to exclusive sales or sneak peek access to new levels/content.
 - Grant Items/Coins: Personalized rewards such as granting Virtual Currency or Catalog Items.
 
-If above actions are not applicable or do not suffice, Titles can always create customized solutions via [CloudScript using Azure Functions](../../../features/automation/cloudscript-af/index.md).
+If above actions aren't applicable or don't suffice, Titles can always create customized solutions via [CloudScript using Azure Functions](../../../features/automation/cloudscript-af/index.md).
 
 ## See also
 

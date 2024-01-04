@@ -12,8 +12,5 @@
     items:
     - name: Generating PlayStream events
       href: playstream-events.md
-      items:
-      - name: Set up an Amazon S3 bucket
-        href: configure-s3-bucket.md
     - name: Sessions
       href: sessions.md

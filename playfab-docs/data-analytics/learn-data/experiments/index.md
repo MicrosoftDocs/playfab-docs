@@ -20,8 +20,8 @@ You can elevate the player experience by comparing different versions of game co
 
 ### Capabilities of PlayFab's Experiments
 
-PlayFab Experiments is a tailored solution for running experiments in your games. It is powered by Microsoft's internal experimentation platform which unlocks the best-in-class capabilities which are used by Minecraft, Azure, Office, Bing, and many other Microsoft products.
-PlayFab Experiments empowers you by providing the following capabilities:
+PlayFab Experiments is a tailored solution for running experiments in your games. It's powered by Microsoft's internal experimentation platform, which unlocks the best-in-class capabilities, which are used by Minecraft, Azure, Office, Bing, and many other Microsoft products.
+PlayFab Experiments empower you by providing the following capabilities:
 -	Creation and management of multiple concurrent experiments with the (interactive and self-directing) user interface on PlayFab Game Manager and via scalable APIs.
 -	Targeting of the desired audience at random but in a controlled manner by making use of existing traffic. You can experiment over a segment and define the percentage of the target audience in each variant.
 -	Scheduling of experiments or to run immediately.
@@ -39,8 +39,8 @@ A control experience is mapped to a control variant and is compared against one 
 
 #### Overrides as Game Configuration (Requiring no game code change)
 -	Game configuration using PlayFab services can be experimented using Overrides without adding any extra code.
--	Overrides are subsets of configuration which contain modifications to the default title data, that can be used as variants in Experimentation. Currently, experiments with overrides are only available when using Title Data.
-    * Configurations involving Title Data are a set of key-value pairs that are ideal for storing and managing the game’s remote configuration on the server. It keeps the title wide configuration variables accessible and organized which can be retrieved on the client-side.
+-	Overrides are subsets of configuration, which contain modifications to the default title data that can be used as variants in Experimentation. Currently, experiments with overrides are only available when using Title Data.
+    * Configurations involving Title Data are a set of key-value pairs that are ideal for storing and managing the game’s remote configuration on the server. It keeps the title wide configuration variables accessible and organized, which can be retrieved on the client-side.
     
 > [!Note]
 > For concurrent experiments using overrides, it is recommended to experiment on a mutually exclusive target audience. This will ensure the correct assignment of overriding configuration and no interaction on the client-side. Thus, resulting in statistically correct experiment design and thereby analysis results. 
@@ -49,9 +49,9 @@ A control experience is mapped to a control variant and is compared against one 
 
 ![Screenshot of Experimentation at a Glance](media/tutorials/experiments-at-a-glance.png "Experiments at a Glance")
 
-PlayFab Experiments enables you to run multiple concurrent randomized experiments in a managed and controlled manner. In the process, 
+PlayFab Experiments enable you to run multiple concurrent randomized experiments in a managed and controlled manner. In the process, 
 
-- A unique identifier for each running experiment's variant groups called a variant ID is tagged to each player profile. These variant IDs are assigned to different treatments via client or server-side code. Thus, instrumenting different treatment behaviour.
+- A unique identifier for each running experiment's variant groups called a variant ID is tagged to each player profile. These variant IDs are assigned to different treatments via client or server-side code. Thus, instrumenting different treatment behavior.
 - Each variant group is supported and defined by variables. These variables are attributes on variant groups that allow you to bundle a different set of game experience via parameterization.
 -    Reliable computation of results of an experiment with statistical significance calculation is provided.
 -    Detection of issues when the targeted audience traffic is way off. This is often caused by a treatment causing crashes or affecting logging. PlayFab's experimentation feature flags such issues enabling you to run a reliable experiment.   

@@ -62,8 +62,6 @@ landingContent:
         links:
           - text: Generate custom PlayStream events
             url: metrics/playstream-events.md
-          - text: Set up an Amazon S3 bucket for events
-            url: metrics/configure-s3-bucket.md
 
   # Card
   - title: Reports
