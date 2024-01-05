@@ -12,6 +12,10 @@ ms.localizationpriority: medium
 
 # PlayFab Party Unity plugin release notes
 
+## 1.8.0.0
+
+* Updated binaries to Party 1.8.0 or greater for all platforms.
+
 ## 1.7.6.0
 
 PlayFab Party Unity SDK plugin is supported on Linux (Ubuntu 20.04 and Ubuntu 22.04).
