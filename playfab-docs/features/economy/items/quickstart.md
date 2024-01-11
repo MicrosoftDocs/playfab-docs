@@ -85,7 +85,7 @@ The bottom of the form has the **PRICES** section, where you define how much an 
 
 Let's use the PlayFab APIs to make a purchase in your game.
 
-1. Sign in as the player that was assigned 100 gold in virtual currency (as described in [Giving virtual currency to a player].
+1. Sign in as the player that was assigned 100 gold in virtual currency (as described in [Giving virtual currency to a player](#giving-virtual-currency-to-a-player)).
 1. Call [GetCatalogItems](xref:titleid.playfabapi.com.client.title-widedatamanagement.getcatalogitems) with the following parameter in the request:
     * `CatalogVersion = "main"`
 1. Verify that the `Catalog` in the result contains an **apple** with a **GD** price of **5**.
