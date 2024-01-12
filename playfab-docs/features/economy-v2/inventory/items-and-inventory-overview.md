@@ -33,7 +33,7 @@ For more information about these and other related concepts, please refer to the
 PlayFab provides a large interactive playing field for interaction with items and inventory, and the Item definition in the Catalog allows for quite a bit of customization. A rich set of APIs is available for interacting with items and inventories in your game. You can use these APIs to perform various actions, such as purchasing items, granting items, consuming items, updating inventory, and querying inventory. Most common interactions are through a few key APIs:
 
 * **PurchaseInventoryItems** - This API allows a player to buy catalog items or bundles with virtual currency. It deducts the currency from the player’s inventory and adds an item instance to the player’s inventory.
-* **GetInventoryItems** - Allows you to retrieve the current inventory of an Entity, adn will return a list of item instances for the specified player.
+* **GetInventoryItems** - Allows you to retrieve the current inventory of an Entity, and will return a list of item instances for the specified player.
 * **UpdateInventoryItems** - Used to make convenient changes to inventory items, especially to DisplayProperties for modifying custom attributes.
 * **GetTransactionHistory** - Will get the latest transaction events from the inventory, and allow you to page through to get the full transaction history.
 
