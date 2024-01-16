@@ -16,6 +16,12 @@ ms.localizationpriority: medium
 
 The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your catalog of items and adding, updating, and removing them from player inventories. It now includes the most updated limits as per Economy (V2).
 
+- Limit (Player) refers to when the entity being targeted is a Player.
+- Limit (Title) refers to when the entity being targeted is a Title.
+
+> [!NOTE]
+> All APIs are counted separately from one another.
+
 ## Catalog Throttling
 
 ### Read
@@ -53,42 +59,48 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 
 ## Inventory Throttling
 
+> [!NOTE]
+> - Inventory throttling will be calculated based on the target entity, individually for each API.
+> - For example, if a Player or a Title (game service, coudscript, etc.) calls an Inventory API to update the Player entity's inventory, the Limit (Player) throttling will be applied.
+> - Please note that calls are combined, if a Player makes 20 calls, and a Title makes 10 calls, the total bucket of 30 calls will be full.
+> - [Group entity](../../features/entities/index.md#group) inventories are also supported, and Group Entities share the same throttling rate as Player entities. See also [Groups, guilds and clans](../../features/social/groups/index.md).
+
 ### Read
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **GetInventoryItems** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
-| **GetInventoryCollectionIds** | 1.67 rps (100 in 60 seconds) | 1000 rps (10000 in 10 seconds) |
+| **GetInventoryItems** | 1.67 rps (100 in 60 seconds) | - |
+| **GetInventoryCollectionIds** | 1.67 rps (100 in 60 seconds) | - |
 
 ### Read Transaction History
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **GetTransactionHistory** | 0.1 rps (30 in 300 seconds) | 10 rps (100 in 10 seconds) |
+| **GetTransactionHistory** | 0.1 rps (30 in 300 seconds) | - |
 
 ### Write
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **AddInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **SubtractInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **UpdateInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **PurchaseInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **TransferInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **DeleteInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **ExecuteInventoryOperations** | 0.16 rps (15 in 90 seconds) | 50 rps (500 in 10 seconds) |
-| **DeleteInventoryCollection** | - | 50 rps (500 in 10 seconds) |
+| **AddInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **SubtractInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **UpdateInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **PurchaseInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **TransferInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **DeleteInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **ExecuteInventoryOperations** | 0.16 rps (15 in 90 seconds) | - |
+| **DeleteInventoryCollection** | 0.16 rps (15 in 90 seconds) | - |
 
 ### Redeem
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **RedeemAppleAppStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemGooglePlayInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemMicrosoftStoreInventorItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemNintendoEShopInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemPlayStationStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
-| **RedeemSteamInventoryItems** | 0.33 rps (30 in 90 seconds) | 100 rps (1000 in 10 seconds) |
+| **RedeemAppleAppStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **RedeemGooglePlayInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **RedeemMicrosoftStoreInventorItems** | 0.33 rps (30 in 90 seconds) | - |
+| **RedeemNintendoEShopInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **RedeemPlayStationStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **RedeemSteamInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
 
 ## API Limits
 
