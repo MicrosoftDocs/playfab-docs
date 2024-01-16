@@ -21,7 +21,7 @@ The following SDKs are available for game client development on PS4™ and PS5®
 | Unity          | Both an editor extension and stand-alone SDK for Unity3d. | [Unity SDK Overview](../unity3d/index.md) |
 | Legacy C++     | Our older cross-platform C++ SDK supports a simple REST-like interface with PlayFab across multiple platforms. | [Request Access](../../features/multiplayer/networking/request-access-for-sdks-samples.md) |
 
-## Getting Access to SDKs for PS4™ and PS5®;
+## Getting Access to SDKs for PS4™ and PS5®
 
 Our PlayFab Services SDKs for Unreal and Unity are platform-agnostic. As such, they require no special access or permissions from PlayFab to utilize on any platform.
 
