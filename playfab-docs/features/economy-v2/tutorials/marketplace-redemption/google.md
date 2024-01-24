@@ -95,7 +95,7 @@ To ensure that when a player purchases a bundle from your app, it gets properly 
 1. Navigate to your bundle in edit mode.
 2. Scroll down to the **Marketplace Mapping** section.
 3. From the **Marketplace** dropdown, select your desired marketplace. (For this tutorial, it will be **GooglePlay**).
-4. For your Marketplace ID,** make sure to use the same as your **Product ID** in the Google Play Console. In this tutorial, we used **Warrior_bundle**.
+4. For your **Marketplace ID**, make sure to use the same as your **Product ID** in the Google Play Console. In this tutorial, we used **Warrior_bundle**.
 5. To finish, select the **+** at the right side of that row.
 
 ![Marketplace Mapping](../../media/google-redemption/marketplace-mapping.png)

@@ -10,7 +10,7 @@ keywords: playfab, integration, marketplace
 ms.localizationpriority: medium
 ---
 
-# Marketplace Integration: Apple
+# Marketplace integration: Apple
 
 This tutorial shows you how to successfully integrate an Apple App Store application into your Title in Game Manager.
 
