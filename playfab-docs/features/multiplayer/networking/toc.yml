@@ -36,6 +36,8 @@
       href: concepts-multiple-networks.md
     - name: Integrate Party with Lobby
       href: party-lobby-integration.md
+    - name: Request Party from your own services
+      href: party-tutorial-requestpartyservice.md
   - name: Regions and QoS
     items:
     - name: QoS
