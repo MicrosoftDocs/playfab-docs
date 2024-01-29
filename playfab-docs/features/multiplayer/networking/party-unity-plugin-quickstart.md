@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking, unity, middleware
 
 # Quickstart: PlayFab Party Unity Plugin
 
-This quickstart helps you install the Party SDK for Unity and make your first API calls to join players together in a Party Network. Before continuing, make sure you have completed [Getting started for developers](../../../personas/developer.md) and [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
+This quickstart helps you install the Party SDK for Unity and make your first API calls to join players together in a Party Network. Before continuing, make sure you have completed [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
 
 > [!NOTE]
 >
@@ -123,7 +123,7 @@ This part of the guide shows you how to Create and Join a network.
     }
     ```
 
-3. Save and click Play in the Unity Editor. The Network ID displays in the Console window.
+3. Save and select Play in the Unity Editor. The Network ID displays in the Console window.
 
 ## Joining an existing network
 
@@ -222,7 +222,7 @@ Save HelloPartyLogic.cs and select Play in the Unity Editor.
 
 1. In a second client, repeat the steps from [Connecting to a network](#connecting-to-a-network) to create and join a network.
 1. Copy the Network ID returned to your first client and connect to the network.
-1. Click on the scene to send a message. "Hello (data message)" displays in the Console window.
+1. Select on the scene to send a message. "Hello (data message)" displays in the Console window.
 
 ## Sending and receiving chat messages
 
@@ -249,7 +249,7 @@ Save HelloPartyLogic.cs and press Play in the Unity Editor.
 
 1. In a second client, repeat the steps from [Connecting to a network](#connecting-to-a-network) to create and join a network.
 1. Copy the Network ID returned to your first client and connect to the network.
-1. When you click on your scene, it sends a message and which displays in the Console window.
+1. When you select on your scene, it sends a message and which displays in the Console window.
 1. If you want to give your players the option to mute other players, set the IsMuted property to true.
 
     ```csharp
@@ -262,7 +262,7 @@ Save HelloPartyLogic.cs and press Play in the Unity Editor.
     ```
 ## Connecting to a network with custom peer connectivity configuration options
 
-This part of the guide shows you how to Create and Join a network with custom peer connectity configuration options. The default
+This part of the guide shows you how to Create and Join a network with custom peer connectivity configuration options. The default
 option is P2P, however, using any combination of the flags presented here: [DirectPeerConnectivityOptions](unity-party-api-reference/enums/partyunitydirectpeerconnectivityoptions.md), the user can modify this option. This example shows how P2P is set:
 
 1. Open the HelloPartyLogic.cs  script. In the `OnLoginSuccess` method, add the following code to create and join a network:
@@ -281,10 +281,10 @@ When your title is suspended, the network stack becomes invalidated and PlayFab 
 Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
 
 ### iOS
-On iOS, you must leave and re-connect to the PlayFab Party network, which can be achieved by calling [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md)
+On iOS, you must leave and reconnect to the PlayFab Party network, which can be achieved by calling [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md)
 
 ### Switch and GDK
-On Nintendo Switch and Microsoft GDK, you must clean up PlayFab Party and all resources associated with PlayFabMultiplayerManager then wait until the title execution resumes before re-initializing PlayFab Party and reconnecting to your network.
+On Nintendo Switch and Microsoft GDK, you must clean up PlayFab Party and all resources associated with PlayFabMultiplayerManager then wait until the title execution resumes before reinitializing PlayFab Party and reconnecting to your network.
 
 "To clean up PlayFab Party during a title suspension call [Suspend()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunitysuspend.md). Once the title has resumed execution call [Resume()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresume.md) to reinitialize PlayFab Party.
 

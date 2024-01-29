@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Client library for C#. Follow steps to install the package and try out example code for a basic task.
 
-This quickstart helps you make your first PlayFab API call in the using the Client library for C#. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call in the using the Client library for C#.
 
 [API reference documentation](../../api-references/index.md) 
 
@@ -45,7 +45,7 @@ At this point, you should be able to successfully compile the project. The outpu
 
 This guide provides the minimum steps required to make your first PlayFab API call. Confirmation is done via a console print.
 
-Your new project should contain a file called Program.cs, which was created automatically by Visual Studio. Open that file, and replace the contents with the code in the example shown below (after pasting the code, you may need to refresh the file to see it). Confirmation of the API call will be done using messages written to the console output.
+Your new project should contain a file called Program.cs, which was created automatically by Visual Studio. Open that file, and replace the contents with the code in the example shown below (after pasting the code, you might need to refresh the file to see it). Confirmation of the API call will be done using messages written to the console output.
 
 ```csharp
 using System;
@@ -113,4 +113,4 @@ When you execute this program, following output displays in the consol
 
 - To build Admin utilities, see the alternate source files in the PlayFab CSharpSdk zip file located in `{CSharpSdk}/PlayFabClientSDK/sources`.
 
-For a list of all available client API calls, or many other topics, see [PlayFab API References](../../api-references/index.md).
+For a list of all available client API calls, or many other articles, see [PlayFab API References](../../api-references/index.md).

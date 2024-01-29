@@ -44,4 +44,3 @@ Many API calls require a TitleId, which is the string ID found beneath the title
 ## Next steps
 
 - [PlayFab User Roles](playfab-user-roles.md)
-- [Getting started for developers](../personas/developer.md)

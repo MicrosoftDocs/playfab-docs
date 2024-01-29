@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 [!INCLUDE [notice](../../includes/_economy-release.md)]
 
-After working through [Getting started for developers](../../personas/developer.md), you can:
+After becoming familiar with Game Manager, you can:
 
 1. Set up a v2 Catalog's permissions, settings, and items.
 1. Set up Receipt Validation

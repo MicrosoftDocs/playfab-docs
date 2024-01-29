@@ -24,7 +24,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
 - A [PlayFab developer account](https://developer.playfab.com/sign-up)
 - The [Postman native app](https://www.getpostman.com/)
-- An OS running running [TLS](/windows/win32/secauthn/transport-layer-security-protocol) 1.2 or higher ([Windows support for TLS 1.2](/dotnet/framework/network-programming/tls#support-for-tls-12))
+- An OS running [TLS](/windows/win32/secauthn/transport-layer-security-protocol) 1.2 or higher ([Windows support for TLS 1.2](/dotnet/framework/network-programming/tls#support-for-tls-12))
 
 ### Adding PlayFab Collections
 
@@ -53,7 +53,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
     https://raw.githubusercontent.com/PlayFab/PostmanCollection/master/playfabV2.json
 
-  - If you are trying to download the beta SDK, go to the playfabV2.json file in the [Postman Beta GitHub repository](https://github.com/PlayFab/PostmanCollection/blob/master/playfabV2.json)
+  - If you're trying to download the beta SDK, go to the playfabV2.json file in the [Postman Beta GitHub repository](https://github.com/PlayFab/PostmanCollection/blob/master/playfabV2.json)
   - Select **View Raw**
 
     > [!div class="mx-imgBorder"]
@@ -99,7 +99,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
 ### Getting a Title Entity Token
 
-One way to interact with PlayFab's [Entity Programming Model](../../features/data/entities/index.md) is to get a Title Entity Token. This can be useful if you want to make changes to title config data, or if you want to make adjustments to a large amount of players:
+One way to interact with PlayFab's [Entity Programming Model](../../features/data/entities/index.md) is to get a Title Entity Token. This can be useful if you want to make changes to title config data, or if you want to make adjustments to a large number of players:
 
 - Under the **PlayFab Collections** folder, expand the **Authentication** namespace and select `GetEntityToken`
 - Under **Headers**, uncheck `X-Authorization`
@@ -135,21 +135,19 @@ Another way to interact with PlayFab's [Entity Programming Model](../../features
 
 ## Troubleshooting
 
-- Title id / secret key mismatch
-  - If you are trying to get a title entity token and receiving a `401: Unauthorized` error, make sure the title id and secret keys are correct by logging into [Game Manager](https://developer.playfab.com/en-us/my-games)
+- Title ID / secret key mismatch
+  - If you're trying to get a title entity token and receiving a `401: Unauthorized` error, make sure the title ID and secret keys are correct by logging into [Game Manager](https://developer.playfab.com/en-us/my-games)
 - Expired entity token
   - If you previously obtained an entity token and are unsuccessfully attempting to call other APIs, your entity token might be expired. Get another entity token, save it into the `EntityToken` environment variable, and attempt to call the previous API again
 - Incorrect entity token type
   - There are different types of entities (see [Available built-in entity types](../../features/data/entities/available-built-in-entity-types.md)). Different APIs allow different entity types - for example, you might be attempting to call `GetLanguageList` with a title_player_account entity token instead of a title entity token 
 - Incorrect environment:
-  - Make sure you are using the proper environment by checking the environment dropdown *(top right of the window)*
+  - Make sure you're using the proper environment by checking the environment dropdown *(top right of the window)*
 
 ## Next Steps
 
 You now have an entity token to pass into other API calls to start setting up your PlayFab title.
 
-> [!div class="nextstepaction"]
-> [Getting Started: Developers >](../../personas/developer.md)
 > [!div class="nextstepaction"]
 > [PlayFab Quickstarts >](/gaming/playfab/gamemanager/quickstart)
 > [!div class="nextstepaction"]
