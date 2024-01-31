@@ -19,6 +19,7 @@ This tutorial shows you how to successfully create a PlayFab bundle, add it to y
 1. A Title in PlayFab's [Game Manager](https://developer.playfab.com/).
 2. An existing integration between the selected Title and your desired marketplace.
 3. An app already created and available in [Google Play](https://play.google.com/console/developers).
+    1. Make sure your app has the [Google Play Android Developer API](https://console.cloud.google.com/apis/library/androidpublisher.googleapis.com) enabled.
 
 ## Step 1: Create a bundle
 
