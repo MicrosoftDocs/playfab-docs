@@ -14,7 +14,7 @@ keywords: playfab, multiplayer, lobby, matchmaking, unity, middleware
 
 Get started with the PlayFab Multiplayer Unity plugin. Follow steps below to install the package and try out example code for a basic task.
 
-This quickstart helps you make your first API calls using the PlayFab Multiplayer SDK for Unity. Before continuing, make sure you have completed [Getting started for developers](../../../../personas/developer.md) and [Quickstart: PlayFab Client library for C# in Unity](../../../../sdks/unity3d/quickstart.md), which ensures you have a PlayFab account and are familiar with logging into PlayFab from your game and the PlayFab Game Manager.
+This quickstart helps you make your first API calls using the PlayFab Multiplayer SDK for Unity. Before continuing, make sure you complete [Quickstart: PlayFab Client library for C# in Unity](../../../../sdks/unity3d/quickstart.md), which ensures you have a PlayFab account and are familiar with logging into PlayFab from your game and the PlayFab Game Manager.
 
 > [!NOTE]
 >
@@ -38,12 +38,12 @@ This quickstart helps you make your first API calls using the PlayFab Multiplaye
 Following the steps to download and install the PlayFab Multiplayer Unity plugin.
 
 1. Download the PlayFab [Multiplayer Unity Plugin](https://github.com/PlayFab/PlayFabMultiplayerUnity) Asset Package (use a distribution point depending on your platform).
-1. **Important!** Please see information in README file published with plugin. It is tailored to each particular version and may include important instructions specific to your platform.
+1. **Important!** See information in README file published with plugin. It's tailored to each particular version and might include important instructions specific to your platform.
 1. Open your Unity Project.
 1. Navigate to the location where you saved the .unitypackage and double-click it to open the import dialog.
 1. To import the PlayFab Multiplayer Unity Plugin into your project, select  **Import**.
 
-Note: you may need to install a newer version of PlayFab "core" Unity SDK if necessary.
+Note: you might need to install a newer version of PlayFab "core" Unity SDK if necessary.
 
 ## Set up your scene
 This part of the guide shows you how to add the `PlayfabMultiplayerEventProcessor` to your scene to enable you to call PlayFab Multiplayer APIs from Unity.
@@ -51,7 +51,7 @@ This part of the guide shows you how to add the `PlayfabMultiplayerEventProcesso
 Before you can use Multiplayer API, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../../../sdks/unity3d/quickstart.md#making-your-first-api-call).
 
 1. In the Unity editor, in the Project window, navigate to  **Assets > PlayFabMultiplayerSDK > Prefabs**.
-1. From the Prefabs folder, drag and drop the **PlayfabMultiplayerEventProcessor** into your scene in the **Hierachy** window.
+1. From the Prefabs folder, drag and drop the **PlayfabMultiplayerEventProcessor** into your scene in the **Hierarchy** window.
 1. Create an empty Game Object in your scene called "HelloMultiplayerLogic".
 1. Select the HelloMultiplayerLogic Game Object to open the **Inspector**.
 1. Select  **Add Component**.
@@ -170,7 +170,7 @@ This part of the guide shows you how to Create and Join a lobby.
     }
     ```
 
-4. Save and click Play in the Unity Editor. The lobby connection string displays in the Console window.
+4. Save and select Play in the Unity Editor. The lobby connection string displays in the Console window.
 
 ## Join a lobby
 
@@ -265,7 +265,7 @@ This part of the guide shows you how to find existing lobbies that other clients
 
 ## Create a matchmaking ticket
 
-This part of the guide shows you how to Create a matchmaking ticket. Please run it in conjunction with scenario "Join a matchmaking ticket" on another client below.
+This part of the guide shows you how to Create a matchmaking ticket. Run it with the scenario "Join a matchmaking ticket" on another client below.
 
 1. Open the HelloMultiplayerLogic.cs  script. In the `OnLoginSuccess` method, add the following code to create a matchmaking ticket:
 
@@ -305,7 +305,7 @@ This part of the guide shows you how to Create a matchmaking ticket. Please run 
     }
     ```
 
-3. Save and click Play in the Unity Editor.
+3. Save and select Play in the Unity Editor.
 
 If membersToMatchWith is specified, one OnMatchmakingTicketStatusChanged event handler will be triggered and the Status will be WaitingForPlayers. In that case, once another client calls JoinMatchmakingTicketFromId a new OnMatchmakingTicketStatusChanged event handler will be triggered and the status this time will be WaitingForMatch.
 
@@ -313,7 +313,7 @@ Alternatively, one OnMatchmakingTicketStatusChanged event handler will be trigge
 
 ## Join a matchmaking ticket
 
-This part of the guide shows you how to join an existing matchmaking ticket that another client created. Please run it in conjunction with scenario "Create a matchmaking ticket" on another client above.
+This part of the guide shows you how to join an existing matchmaking ticket that another client created. Run it with the scenario "Create a matchmaking ticket" on another client above.
 
 1. Open the HelloMultiplayerLogic.cs  script. In the OnLoginSuccess method, add the following code to join a matchmaking ticket:
 
@@ -357,7 +357,7 @@ One OnMatchmakingTicketStatusChanged will be triggered with the Status being Wai
 
 ##  Complete a matchmaking ticket
 
-This part of the guide shows you how matchmaking is completed. Please run it in conjunction with scenario "Create a matchmaking ticket" on another client above. Optionally, you can run it in conjuction with scenario "Join a matchmaking ticket".
+This part of the guide shows you how matchmaking is completed. Run it with the scenario "Create a matchmaking ticket" on another client above. Optionally, you can run it with the scenario "Join a matchmaking ticket".
 
 1. A match will be found once multiple tickets in the same queue are eligible to be matched. In that case,
 OnMatchmakingTicketCompleted event handler is triggered.

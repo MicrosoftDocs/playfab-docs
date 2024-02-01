@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Client library for C++. Follow steps to install the package and try out example code for a basic task.
 
-This quickstart helps you make your first PlayFab API call in the using the Client library for C++. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call in the using the Client library for C++.
 
 [API reference documentation](../../api-references/index.md) | [Library source code](https://github.com/PlayFab/XPlatCppSdk)
 
@@ -32,7 +32,7 @@ Installation:
 
 1. Download and install the [PlayFab Cross-Platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk).
 2. Create a new C++ Console project.
-3. Right-click on the project in **Solution Explorer**, select **Manage NuGet packages**, and search using "playfab". There will be a small number of matches. Select **com.playfab.xplatcppsdk.vXXX**
+3. Right-click on the project in **Solution Explorer**, select **Manage NuGet packages**, and search using "playfab". There will be a few matches. Select **com.playfab.xplatcppsdk.vXXX**
 4. Verify that your project compiles in x64 Release 
 
 ## Set up your first API call
@@ -40,7 +40,7 @@ Installation:
 This guide provides the minimum steps to make your first PlayFab API call, without any GUI or on-screen feedback. Confirmation is performed using a console print statement.
 
 1. In Visual Studio, open your C++ Console Application.
-2. Open the main cpp document for the project. If you did not rename the project, the file name will be similar to ConsoleApplication1.cpp`.
+2. Open the main cpp document for the project. If you didn't rename the project, the file name will be similar to ConsoleApplication1.cpp`.
 3. Replace the contents of the file with the code shown below.
 
 ```cpp

@@ -1015,6 +1015,18 @@
             "source_path": "playfab-docs/features/analytics/metrics/s3-event-archiving.md",
             "redirect_url": "/gaming/playfab/data-analytics/legacy/s3-event-archiving",
             "redirect_document_id": false
+        }        
+        ,
+        {
+            "source_path": "playfab-docs/features/personas/bi.md",
+            "redirect_url": "/gaming/playfab/what-is-playfab",
+            "redirect_document_id": false
+        }
+        ,
+        {
+            "source_path": "playfab-docs/features/personas/developer.md",
+            "redirect_url": "/gaming/playfab/what-is-playfab",
+            "redirect_document_id": false
         }
     ]
 }

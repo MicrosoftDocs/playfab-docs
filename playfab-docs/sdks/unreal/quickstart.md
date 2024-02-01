@@ -43,7 +43,7 @@ In Unreal Engine, create a new Unreal Project. For detailed instructions, follow
 
 To enable the PlayFab Plugin:
 
-1. From the **Settings** menu, under **Game Specific Settings** click **Plugins**.
+1. From the **Settings** menu, under **Game Specific Settings** select **Plugins**.
 2. Enable the **PlayFab** plugin and restart Unreal Engine as required.
 
 ### Add PlayFab as a Module dependency in C++
@@ -76,7 +76,7 @@ The following steps walk you through creating a Tile that logs into PlayFab usin
 
 To create a new Actor:
 
-1. From the **File** menu, click **New C++ Class**.
+1. From the **File** menu, select **New C++ Class**.
 2. For **Parent Class** select **Actor**.
 3. Name your actor **LoginActor**. After you create the Actor, Unreal Engine automatically opens your C++ development environment and loads LoginActor.cpp and LoginActor.h.
     > [!IMPORTANT]
@@ -214,7 +214,6 @@ Actions used in this quickstart:
 Create your Blueprint as follows:
 
 * Select the output pin on `Event BeginPlay` and drag it to an open location in the **Event Graph**. In the **Executable Actions** dialog, search for `Set Play Fab Settings` and select it to add it to your Blueprint. In `Set Play Fab Settings`, if **Game Title id** is blank, set it to the **Title ID** of your game.
-    * For information on retrieving your Title ID, see "Retrieving your TitleId" in [Getting started for developers](../../personas/developer.md#retrieving-your-titleid).
 * Select the output pin on `Set Play Fab Settings` and drag it to an open location. In the **Executable Actions** dialog, search for `Login with Custom ID` and select it to add it to your Blueprint.
 * Select the **Request** pin on `Login with Custom ID` and drag it to an empty location. From the **Actions providing a(n) Client Login With Custom ID Request Structure**, select `Make ClientLoginWithCustomIDRequest`. 
 * On `Make ClientLoginWithCustomIDRequest`:
@@ -229,7 +228,7 @@ Create your Blueprint as follows:
 * Select the output pin on `OnLogin` and drag it to an empty location. In the **Executable Actions** dialog, search for `Print String` and select it to add it to the Blueprint.
   * On `Print String`, set the **In String** value to "Congratulations, you made your first successful PlayFab API call using Blueprint!".
 * Select the output pin of `OnFailure` and drag it to an empty location. In the **Executable Actions** dialog, search for `Print String` and select it to add it to the Blueprint.
-* Select the **Error** pin on `OnFailure` and drag it to an empty location. In the **Actions providing a(n) string** dialog, search for **Break PlayFabError** and select it to add it to the Blueprint. In the **Actions taking a(n) Play Fab error structure** dialog, search for **Break PlayFabError** and select it to add it to the Blueprint.
+* Select the **Error** pin on `OnFailure` and drag it to an empty location. In the **Actions providing a(n) string** dialog, search for **Break PlayFabError** and select it to add it to the Blueprint. In the **Actions taking a(n) PlayFab error structure** dialog, search for **Break PlayFabError** and select it to add it to the Blueprint.
 * Connect the **Error Message** pin of `Break PlayFabError` to the **In String** pin of on failure `Print String` Action.
 
 When you're finished, your Blueprint should look similar to this design:

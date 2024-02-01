@@ -38,8 +38,6 @@ items:
     href: features/engagement/toc.yml
 - name: Data and analytics
   href: data-analytics/toc.yml
-- name: Personas
-  href: personas/toc.yml
 - name: Pricing
   href: features/pricing/toc.yml
 - name: Roadmap

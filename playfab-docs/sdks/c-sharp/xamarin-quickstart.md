@@ -1,6 +1,6 @@
 ---
 title: Quickstart - PlayFab Client library for C# and Xamarin
-description: This guide will help you make your first PlayFab API call in the Xamarain IDE using C#.
+description: This guide helps you make your first PlayFab API call in the Xamarin IDE using C#.
 author: Jeffrey-Shi #Required; your GitHub user alias, with correct capitalization.
 ms.author: jeffshi #Required; microsoft alias of author; optional team alias.
 ms.date: 06/04/2020
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Client library for C# and Xamarin. Follow steps to install the package and try out example code for a basic task.
 
-This quickstart helps you make your first PlayFab API call in the using the Client library for C# and Xamarin. Before continuing, make sure you have completed [Getting started for developers](../../personas/developer.md), which ensures you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call in the using the Client library for C# and Xamarin.
 
 [API reference documentation](../../api-references/index.md) 
 
@@ -115,7 +115,7 @@ namespace App2
 > [!NOTE]
 > The first time you run a UWP program, it can take a long time to load.
 
-2. When the project loads, you will see the following text:
+2. When the project loads, you'll see the following text:
 
     "Congratulations, you made your first successful API call!"
 

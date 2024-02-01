@@ -30,13 +30,12 @@ This tutorial walks you through how to set the default language of your title an
 
 This tutorial assumes you have the following working knowledge about using PlayFab:
 
-- A basic knowledge of how to create a player. This is necessary, because players must *already exist* with a username and password before calling preferred language logic. Refer to [Getting started for developers](../../../personas/developer.md) for information on creating a player for the title.
-
+- A basic knowledge of how to create a player. This is necessary, because players must *already exist* with a username and password before calling preferred language logic.
 - That you have read the [Game Manager quickstart](../../../gamemanager/quickstart.md). If you're unfamiliar with the Game Manager, this is the place where language information is viewed.
 
 - That you have knowledge of how to work with player profiles, as it's necessary to confirm that a preferred language has been added to a player's profile.
 
-- Please take a moment to review the information provided on how to get a player's profile in the [Getting player profiles](../../data/playerdata/getting-player-profiles.md) tutorial.
+- Take a moment to review the information provided on how to get a player's profile in the [Getting player profiles](../../data/playerdata/getting-player-profiles.md) tutorial.
 
 ## Section 1 – Player's preferred language
 
@@ -89,7 +88,7 @@ The language can also be updated with the **Language** dropdown menu displayed i
 
 ![Game Manager - Player - Overview - Contact email - Language](../media/tutorials/game-manager-player-overview-contact-email-language.png)
 
-Next, navigate to the player's **PlayStream**, and it'll show an **Entity language updated** event.
+Next, navigate to the player's **PlayStream**, and it will show an **Entity language updated** event.
 
 ![Game Manager - Players - PlayStream - Entity Language Updated event](../media/tutorials/game-manager-players-playstream-entity-language-updated-event.png)
 
@@ -133,7 +132,7 @@ To begin, select **Settings** in the menu to the left, as shown below.
 
 In the **General** tab under the new **TITLE DEFAULTS** header, locate the **Default language** dropdown. You must set a default language before you can use any of the add localization features.
 
-When you are done, select the **SAVE** button. A message notification appears if the update was successful.
+When you're done, select the **SAVE** button. A message notification appears if the update was successful.
 
 When you return to the dashboard, you'll see a **Title API settings changed** event in your **PlayStream** event list, as shown below.
 
@@ -167,7 +166,7 @@ Select the info icon on the event and see a JSON similar to the example one belo
 
 ## Section 3 – Updating a title default language
 
-It's important to remember that setting a default for your title tells PlayFab to use that language when you issue communications to players who *don't* have a preferred language set or who have chosen a language which doesn't match one you support.
+It's important to remember that setting a default for your title tells PlayFab to use that language when you issue communications to players who *don't* have a preferred language set or who have chosen a language, which doesn't match one you support.
 
 Because the title's default is used as a *fallback* language, PlayFab expects that all your communications to support your default language.
 
@@ -182,7 +181,7 @@ Following this link, you'll see the same drop-down as before. However, if you tr
 
 ![Game manager - General - Edit Default Language](../media/tutorials/game-manager-general-edit-default-language.png)
 
-If there are errors, you can follow the links provided to update your content to support the language which is missing. When all errors have been addressed, the default language change will be accepted.
+If there are errors, you can follow the links provided to update your content to support the language, which is missing. When all errors have been addressed, the default language change will be accepted.
 
 ## Conclusion
 
