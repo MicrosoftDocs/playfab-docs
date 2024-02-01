@@ -30,7 +30,7 @@ landingContent:
           - text: Quickstart - C/C++
             url: ../c/quickstart-gdk.md
   # Card
-  - title: Sony PlayStation
+  - title: PlayStation
     linkLists:
       - linkListType: overview
         links:

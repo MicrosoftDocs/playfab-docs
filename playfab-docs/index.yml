@@ -24,19 +24,13 @@ highlightedContent:
       url: what-is-playfab.md
     - title: Game Manager
       itemType: overview
-      url: gamemanager/index.md
-    - title: Using Business Intelligence in PlayFab
-      itemType: get-started
-      url: personas/bi.md            
+      url: gamemanager/index.md          
     - title: Roadmap
       itemType: whats-new
       url: roadmap/index.md  
     - title: Pricing
       itemType: overview
       url: features/pricing/pricing-overview.md
-    - title: Making your first API call
-      itemType: quickstart      
-      url: personas/developer.md 
 
 productDirectory:
   items:

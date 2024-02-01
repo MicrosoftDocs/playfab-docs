@@ -33,13 +33,11 @@ The C# Samples in this article are written for the Unity SDK. The Unity SDK uses
   - An existing project.
 - The PlayFab Unity3D SDK.
 
-For information about setting up a PlayFab account and using PlayFab Game Manager, see [Getting started for developers](../../personas/developer.md).
-
 For information about setting up the PlayFab Unity3D SDK, see [Quickstart: PlayFab Client library for C# in Unity](../../sdks/unity3d/quickstart.md) article, which ensures you have a PlayFab account and have configured the Unity3D SDK.
 
 ## About the code examples
 
-The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle nonsynchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 While you can use an existing using Unity Project, the procedures in this quickstart assume that you're using the sample that you create when you complete the [Quickstart: PlayFab Client library for C# in Unity](../../sdks/unity3d/quickstart.md).
 
