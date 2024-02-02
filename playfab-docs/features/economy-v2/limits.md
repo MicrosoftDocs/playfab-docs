@@ -62,7 +62,6 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 > [!NOTE]
 > - Inventory throttling will be calculated based on the target entity, individually for each API.
 > - For example, if a Player or a Title (game service, coudscript, etc.) calls an Inventory API to update the Player entity's inventory, the Limit (Player) throttling will be applied.
-> - Please note that calls are combined, if a Player makes 20 calls, and a Title makes 10 calls, the total bucket of 30 calls will be full.
 > - [Group entity](../../features/entities/index.md#group) inventories are also supported, and Group Entities share the same throttling rate as Player entities. See also [Groups, guilds and clans](../../features/social/groups/index.md).
 
 ### Read
