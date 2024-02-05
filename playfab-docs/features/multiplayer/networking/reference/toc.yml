@@ -373,6 +373,10 @@
     href: structs/partyprofilingmethodexiteventdata.md
   - name: PartyRegion
     href: structs/partyregion.md
+  - name: PartyRegionQualityMeasurementConfiguration
+    href: structs/partyregionqualitymeasurementconfiguration.md
+  - name: PartyRegionUpdateConfiguration
+    href: structs/partyregionupdateconfiguration.md
   - name: PartySendMessageQueuingConfiguration
     href: structs/partysendmessagequeuingconfiguration.md
   - name: PartyTranslation
@@ -517,6 +521,8 @@
     href: enums/partynetworkstatistic.md
   - name: PartyOption
     href: enums/partyoption.md
+  - name: PartyRegionUpdateMode
+    href: enums/partyregionupdatemode.md
   - name: PartySendMessageOptions
     href: enums/partysendmessageoptions.md
   - name: PartyStateChangeResult

@@ -1,16 +1,16 @@
 ---
 author: jdeweyMSFT
 title: "PartyTextChatFilterLevel"
-description: "The level of filtering that will apply to incoming text chat when text moderation is enabled with [PartyLocalChatControl::SetTextChatOptions](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md)."
+description: "The level of filtering that applies to incoming text chat when text moderation is enabled with [PartyLocalChatControl::SetTextChatOptions](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md)."
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/07/2021
+ms.date: 01/29/2024
 ---
 
 # PartyTextChatFilterLevel  
 
-The level of filtering that will apply to incoming text chat when text moderation is enabled with [PartyLocalChatControl::SetTextChatOptions](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md).    
+The level of filtering that applies to incoming text chat when text moderation is enabled with [PartyLocalChatControl::SetTextChatOptions](../classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md).    
 
 ## Syntax  
   
@@ -27,9 +27,9 @@ enum class PartyTextChatFilterLevel  : uint32_t
   
 | Constant | Description |
 | --- | --- |
-| FamilyFriendly | Text chat will be filtered at a family-friendly level. |  
-| Medium | Text chat will be filtered at a medium level. |  
-| Mature | Text chat will be filtered at a mature level. |  
+| FamilyFriendly | Text chat is filtered at a family-friendly level.<br/><br/> This value is the default when [PartyOption::TextChatFilterLevel](partyoption.md) hasn't been configured. |  
+| Medium | Text chat is filtered at a medium level. |  
+| Mature | Text chat is filtered at a mature level. |  
   
   
 ## Requirements  
