@@ -5,7 +5,7 @@ description: "Information specific to the *ChatTextReceived* type of state chang
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 10/20/2023
+ms.date: 01/22/2024
 ---
 
 # PartyChatTextReceivedStateChange  
@@ -50,7 +50,7 @@ The local receiver chat controls to which the text message is addressed.
   
 The language of the chat text.
   
-The language is only provided when translation to the local language is enabled. If translation isn't enabled, or failure is encountered during translation, the language code is an empty string. <br /><br /> The language code is in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language support](/azure/cognitive-services/speech-service/language-support).
+The language is only provided when translation to the local language is enabled. If translation isn't enabled, or failure is encountered during translation, the language code is an empty string. <br /><br /> The language code is in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language support](/azure/ai-services/speech-service/language-support).
   
 **`chatText`** &nbsp; [PartyString](../typedefs.md)  
   

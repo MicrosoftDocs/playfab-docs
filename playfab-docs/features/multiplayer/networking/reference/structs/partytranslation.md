@@ -5,7 +5,7 @@ description: "A translation."
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 10/20/2023
+ms.date: 01/22/2024
 ---
 
 # PartyTranslation  
@@ -42,7 +42,7 @@ The human-readable form of this error detail can be retrieved via [PartyManager:
   
 The language code of the translation.
   
-The language code is in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language support](/azure/cognitive-services/speech-service/language-support).
+The language code is in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language support](/azure/ai-services/speech-service/language-support).
   
 **`options`** &nbsp; [PartyTranslationReceivedOptions](../enums/partytranslationreceivedoptions.md)  
   

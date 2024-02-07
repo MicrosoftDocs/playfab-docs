@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 04/14/2023
+ms.date: 01/29/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -21,6 +21,12 @@ PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You 
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.9.1
+
+February 5, 2024
+
+- Added [`PartyOption::RegionUpdateConfiguration`](reference/enums/partyoption.md) and [`PartyOption::RegionQualityMeasurementConfiguration`](reference/enums/partyoption.md) for advanced control over when and how the Party library performs automatic region discovery and connection quality measurements.
 
 ## 1.8.11
 
