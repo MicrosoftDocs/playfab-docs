@@ -1,16 +1,16 @@
 ---
 author: jdeweyMSFT
 title: "PartyGender"
-description: "Genders for text to speech profiles."
+description: "Genders for text-to-speech profiles."
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/07/2021
+ms.date: 01/22/2024
 ---
 
 # PartyGender  
 
-Genders for text to speech profiles.    
+Genders for text-to-speech profiles.    
 
 ## Syntax  
   
@@ -27,9 +27,9 @@ enum class PartyGender
   
 | Constant | Description |
 | --- | --- |
-| Neutral | The text to speech profile represents a gender-neutral voice. |  
-| Female | The text to speech profile represents a female voice. |  
-| Male | The text to speech profile represents a male voice. |  
+| Neutral | The text-to-speech profile represents a gender-neutral voice. |  
+| Female | The text-to-speech profile represents a female voice. |  
+| Male | The text-to-speech profile represents a male voice. |  
   
   
 ## Requirements  

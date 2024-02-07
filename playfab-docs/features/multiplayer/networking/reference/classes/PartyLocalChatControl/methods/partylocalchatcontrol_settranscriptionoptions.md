@@ -5,7 +5,7 @@ description: Configures the transcription options associated with voice chat aud
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/07/2021
+ms.date: 01/29/2024
 ---
 
 # PartyLocalChatControl::SetTranscriptionOptions  
@@ -40,7 +40,7 @@ PartyError
   
 ## Remarks  
   
-Transcription is the process of generating strings representing spoken phrases in voice chat. The options specified via `options` specify the chat controls that should generate these transcription strings, which are subsequently provided to the local chat control via [PartyVoiceChatTranscriptionReceivedStateChange](../../../structs/partyvoicechattranscriptionreceivedstatechange.md)s. <br /><br /> Only chat controls configured to use a language that supports transcription, via [PartyLocalDevice::CreateChatControl()](../../PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md), will provide transcriptions.
+Transcription is the process of generating strings representing spoken phrases in voice chat. The options specified via `options` specify the chat controls that should generate these transcription strings, which are subsequently provided to the local chat control via [PartyVoiceChatTranscriptionReceivedStateChange](../../../structs/partyvoicechattranscriptionreceivedstatechange.md)s. <br /><br /> Only chat controls configured to use a language that supports transcription, via [PartyLocalDevice::CreateChatControl()](../../PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md), will provide transcriptions.   <br /><br /> Speech-to-text transcription functionality internally uses available region and latency measurement estimates to optimize service usage. If the [PartyOption::RegionUpdateConfiguration](../../../enums/partyoption.md) option was used to configure an update mode of [PartyRegionUpdateMode::Deferred](../../../enums/partyregionupdatemode.md), then retrieving the set of available regions and measuring connection quality to them may not have started yet, or the last update may have exceeded the configured refresh interval age. If the local device isn't currently connecting or connected to any networks, and the application specifies option flags that include [PartyVoiceChatTranscriptionOptions::TranscribeSelfRegardlessOfNetworkState](../../../enums/partyvoicechattranscriptionoptions.md), then SetTranscriptionOptions() ensures any deferred region update has started and the associated [PartyRegionsChangedStateChange](../../../structs/partyregionschangedstatechange.md) is provided prior to this call's [PartySetTranscriptionOptionsCompletedStateChange](../../../structs/partysettranscriptionoptionscompletedstatechange.md) completion.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Information specific to the *VoiceChatTranscriptionReceived* type 
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 10/20/2023
+ms.date: 01/22/2024
 ---
 
 # PartyVoiceChatTranscriptionReceivedStateChange  
@@ -67,7 +67,7 @@ The audio source type can optionally be used for game scenarios in which transcr
   
 The language code of the transcription.
   
-The language code is always provided when the ```result``` field indicates success. Otherwise, the language code is an empty string. <br /><br /> The language code is in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language support](/azure/cognitive-services/speech-service/language-support).
+The language code is always provided when the ```result``` field indicates success. Otherwise, the language code is an empty string. <br /><br /> The language code is in BCP 47 format, such as en-US for English (United States). Supported language codes are enumerated in [Language support](/azure/ai-services/speech-service/language-support).
   
 **`transcription`** &nbsp; [PartyString](../typedefs.md)  
   

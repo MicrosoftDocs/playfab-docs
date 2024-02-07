@@ -5,7 +5,7 @@ description: "Party C/C++ API overview"
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/08/2023
+ms.date: 01/29/2024
 ---
 
 # Party C/C++ API overview
@@ -54,6 +54,8 @@ ms.date: 05/08/2023
 | [PartyProfilingMethodEntranceEventData](structs/partyprofilingmethodentranceeventdata.md) | Information specific to the *MethodEntrance* type of profiling event. |  
 | [PartyProfilingMethodExitEventData](structs/partyprofilingmethodexiteventdata.md) | Information specific to the *MethodExit* type of profiling event. |  
 | [PartyRegion](structs/partyregion.md) | Represents a Party library region. |  
+| [PartyRegionQualityMeasurementConfiguration](structs/partyregionqualitymeasurementconfiguration.md) | The configuration used by the Party library to control region quality measurement behavior. |  
+| [PartyRegionUpdateConfiguration](structs/partyregionupdateconfiguration.md) | The configuration used by the Party library to control how it performs automatic region discovery and connection quality measurement updates. |  
 | [PartySendMessageQueuingConfiguration](structs/partysendmessagequeuingconfiguration.md) | Optional configuration parameters for modifying local queuing behavior when sending a message. |  
 | [PartyTranslation](structs/partytranslation.md) | A translation. |  
   
@@ -126,7 +128,7 @@ ms.date: 05/08/2023
 | [PartyDeviceConnectionType](enums/partydeviceconnectiontype.md) | The type of connection used for transmitting endpoint message or chat data to a device.|  
 | [PartyDirectPeerConnectivityOptions](enums/partydirectpeerconnectivityoptions.md) | Flags controlling the attempted use of direct peer-to-peer connectivity among devices in a network.|  
 | [PartyEndpointStatistic](enums/partyendpointstatistic.md) | Types of statistics that can be retrieved for an endpoint.|  
-| [PartyGender](enums/partygender.md) | Genders for text to speech profiles.|  
+| [PartyGender](enums/partygender.md) | Genders for text-to-speech profiles.|  
 | [PartyInvitationRevocability](enums/partyinvitationrevocability.md) | Options for who may revoke an invitation.|  
 | [PartyLocalChatControlChatIndicator](enums/partylocalchatcontrolchatindicator.md) | Audio states for a local chat control.|  
 | [PartyLocalUdpSocketBindAddressOptions](enums/partylocaludpsocketbindaddressoptions.md) | Additional options to control how the Party library binds to the UDP socket specified by the [PartyLocalUdpSocketBindAddressConfiguration](structs/partylocaludpsocketbindaddressconfiguration.md) structure.|  
@@ -134,11 +136,12 @@ ms.date: 05/08/2023
 | [PartyMessageReceivedOptions](enums/partymessagereceivedoptions.md) | Flags describing how a message was received.|  
 | [PartyNetworkStatistic](enums/partynetworkstatistic.md) | Types of statistics that can be retrieved for a network.|  
 | [PartyOption](enums/partyoption.md) | Additional options that can be set to fine-tune Party library functionality.|  
+| [PartyRegionUpdateMode](enums/partyregionupdatemode.md) | Configuration modes representing how the Party library performs automatic region discovery and connection quality measurement as part of the [PartyRegionUpdateConfiguration](structs/partyregionupdateconfiguration.md) structure.|  
 | [PartySendMessageOptions](enums/partysendmessageoptions.md) | Options for controlling how a message is sent.|  
 | [PartyStateChangeResult](enums/partystatechangeresult.md) | Results for Party library operations that generate state changes.|  
 | [PartyStateChangeType](enums/partystatechangetype.md) | The types of state changes that can occur in the Party library.|  
 | [PartySynthesizeTextToSpeechType](enums/partysynthesizetexttospeechtype.md) | Types of text-to-speech operations.|  
-| [PartyTextChatFilterLevel](enums/partytextchatfilterlevel.md) | The level of filtering that will apply to incoming text chat when text moderation is enabled with [PartyLocalChatControl::SetTextChatOptions](classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md).|  
+| [PartyTextChatFilterLevel](enums/partytextchatfilterlevel.md) | The level of filtering that applies to incoming text chat when text moderation is enabled with [PartyLocalChatControl::SetTextChatOptions](classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md).|  
 | [PartyTextChatOptions](enums/partytextchatoptions.md) | Text chat options.|  
 | [PartyThreadId](enums/partythreadid.md) | High-level categorization of internal processing tasks.|  
 | [PartyTranslationReceivedOptions](enums/partytranslationreceivedoptions.md) | Flags describing how a translation was received.|  

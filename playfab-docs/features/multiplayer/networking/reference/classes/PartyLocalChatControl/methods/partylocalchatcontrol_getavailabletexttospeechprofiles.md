@@ -1,16 +1,16 @@
 ---
 author: jdeweyMSFT
 title: "PartyLocalChatControl::GetAvailableTextToSpeechProfiles"
-description: Gets the text to speech profiles for this chat control.
+description: Gets the text-to-speech profiles for this chat control.
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 11/08/2019
+ms.date: 01/22/2024
 ---
 
 # PartyLocalChatControl::GetAvailableTextToSpeechProfiles  
 
-Gets the text to speech profiles for this chat control.  
+Gets the text-to-speech profiles for this chat control.  
 
 ## Syntax  
   

@@ -5,7 +5,7 @@ description: The management class for chat operations related to the local devic
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/08/2023
+ms.date: 01/22/2024
 ---
 
 # PartyLocalChatControl  
@@ -30,8 +30,8 @@ class PartyLocalChatControl : public PartyChatControl
 | [GetAudioInput](methods/partylocalchatcontrol_getaudioinput.md) | Provides the preferred microphone or recording device that the chat control has been configured to use for audio input. |  
 | [SetAudioOutput](methods/partylocalchatcontrol_setaudiooutput.md) | Configures the preferred speakers or headset device that the chat control will use for audio output. |  
 | [GetAudioOutput](methods/partylocalchatcontrol_getaudiooutput.md) | Provides the preferred speakers or headset device that the chat control has been configured to use for audio output. |  
-| [PopulateAvailableTextToSpeechProfiles](methods/partylocalchatcontrol_populateavailabletexttospeechprofiles.md) | Populates the local chat control's list of supported text to speech profiles. |  
-| [GetAvailableTextToSpeechProfiles](methods/partylocalchatcontrol_getavailabletexttospeechprofiles.md) | Gets the text to speech profiles for this chat control. |  
+| [PopulateAvailableTextToSpeechProfiles](methods/partylocalchatcontrol_populateavailabletexttospeechprofiles.md) | Populates the local chat control's list of supported text-to-speech profiles. |  
+| [GetAvailableTextToSpeechProfiles](methods/partylocalchatcontrol_getavailabletexttospeechprofiles.md) | Gets the text-to-speech profiles for this chat control. |  
 | [SetTextToSpeechProfile](methods/partylocalchatcontrol_settexttospeechprofile.md) | Configures the profile to use for a specified type of text-to-speech operation. |  
 | [GetTextToSpeechProfile](methods/partylocalchatcontrol_gettexttospeechprofile.md) | Gets the profile that was last configured from a successfully completed [SetTextToSpeechProfile()](methods/partylocalchatcontrol_settexttospeechprofile.md) operation for a specified type of text-to-speech operation. |  
 | [SynthesizeTextToSpeech](methods/partylocalchatcontrol_synthesizetexttospeech.md) | Generates text-to-speech audio that is used to either displace the microphone audio associated with this chat control or render directly to the chat control's audio output. |  
