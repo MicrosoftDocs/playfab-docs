@@ -1,3 +1,5 @@
 items:
-  - name: Google Redemption
+  - name: Google redemption
     href: google.md
+  - name: Apple redemption
+    href: apple.md
