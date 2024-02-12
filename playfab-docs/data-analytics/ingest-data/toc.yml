@@ -14,9 +14,11 @@
       href: playstream-event-capabilities.md
     - name: Custom tags with PlayStream events
       href: playstream-custom-tags.md
-- name: Telemetry Keys
+- name: Telemetry
   items: 
   - name: Overview
+    href: telemetry-overview.md
+  - name: Telemetry Keys
     href: telemetry-keys-overview.md
   - name: QuickStart
     href: telemetry-keys-qs.md
