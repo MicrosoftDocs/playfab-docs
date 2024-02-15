@@ -16,9 +16,11 @@ Values representing the lobby's predefined search keys.
   
 ```cpp
 constexpr char PFLobbyMemberCountSearchKey[] = "lobby/memberCount";
+constexpr char PFLobbyMemberCountRemainingSearchKey[] = "lobby/memberCountRemaining"
 constexpr char PFLobbyAmMemberSearchKey[] = "lobby/amMember";
 constexpr char PFLobbyAmOwnerSearchKey[] = "lobby/amOwner";
 constexpr char PFLobbyMembershipLockSearchKey[] = "lobby/membershipLock";
+constexpr char PFLobbyAmServerSearchKey[] = "lobby/amServer"
 ```
   
 ## Constants
@@ -30,6 +32,7 @@ constexpr char PFLobbyMembershipLockSearchKey[] = "lobby/membershipLock";
 | PFLobbyAmMemberSearchKey | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies that you are currently a member of. | "lobby/amMember eq true" |
 | PFLobbyAmOwnerSearchKey | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies that you own. | "lobby/amOwner eq true" |
 | PFLobbyMembershipLockSearchKey | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies with a specific lock state. | "lobby/membershipLock eq 'Unlocked'" |
+| PFLobbyAmServerSearchKey | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies that the server has joined but does not own. | "lobby/amServer eq true" |
   
 ## Requirements
   

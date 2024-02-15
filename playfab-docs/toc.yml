@@ -25,6 +25,8 @@ items:
       href: features/playerdata/toc.yml
     - name: Title Data
       href: features/titledata/toc.yml
+  - name: Throttling
+    href: features/throttling/toc.yml
 - name: Engage
   expanded: true
   items:
