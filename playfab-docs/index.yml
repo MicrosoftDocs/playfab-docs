@@ -48,6 +48,8 @@ productDirectory:
           text: Social  
         - url: features/multiplayer/networking/index.md
           text: Party (Multiplayer infrastructure and cross-network gameplay)
+        - url: features/throttling/what-is-throttling.md
+          text: Throttling
     - title: Engage
       imageSrc: ./media/index/engage.svg
       links:

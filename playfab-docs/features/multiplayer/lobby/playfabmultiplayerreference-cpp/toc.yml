@@ -56,6 +56,14 @@
     href: pflobby/functions/pflobbygetsearchproperty.md
   - name: PFLobbyGetSearchPropertyKeys
     href: pflobby/functions/pflobbygetsearchpropertykeys.md
+  - name: PFLobbyGetServer
+    href: pflobby/functions/pflobbygetserver.md
+  - name: PFLobbyGetServerConnectionStatus
+    href: pflobby/functions/pflobbygetserverconnectionstatus.md
+  - name: PFLobbyGetServerProperty
+    href: pflobby/functions/pflobbygetserverproperty.md
+  - name: PFLobbyGetServerPropertyKeys
+    href: pflobby/functions/pflobbygetserverpropertykeys.md
   - name: PFLobbyLeave
     href: pflobby/functions/pflobbyleave.md
   - name: PFLobbyPostUpdate
@@ -64,8 +72,12 @@
     href: pflobby/functions/pflobbysendinvite.md
   - name: PFLobbyServerDeleteLobby
     href: pflobby/functions/pflobbyserverdeletelobby.md
+  - name: PFLobbyServerLeaveAsServer
+    href: pflobby/functions/pflobbyserverleaveasserver.md
   - name: PFLobbyServerPostUpdate
     href: pflobby/functions/pflobbyserverpostupdate.md
+  - name: PFLobbyServerPostUpdateAsServer
+    href: pflobby/functions/pflobbyserverpostupdateasserver.md
   - name: PFLobbySetCustomContext
     href: pflobby/functions/pflobbysetcustomcontext.md
   - name: PFMultiplayerClaimServerLobby
@@ -84,6 +96,8 @@
     href: pflobby/functions/pfmultiplayerjoinarrangedlobby.md
   - name: PFMultiplayerJoinLobby
     href: pflobby/functions/pfmultiplayerjoinlobby.md
+  - name: PFMultiplayerJoinLobbyAsServer
+    href: pflobby/functions/pfmultiplayerjoinlobbyasserver.md
   - name: PFMultiplayerStartListeningForLobbyInvites
     href: pflobby/functions/pfmultiplayerstartlisteningforlobbyinvites.md
   - name: PFMultiplayerStartProcessingLobbyStateChanges
@@ -132,6 +146,8 @@
     href: pflobby/enums/pflobbymembershiplock.md
   - name: PFLobbyOwnerMigrationPolicy
     href: pflobby/enums/pflobbyownermigrationpolicy.md
+  - name: PFLobbyServerConnectionStatus
+    href: pflobby/enums/pflobbyserverconnectionstatus.md
   - name: PFLobbyStateChangeType
     href: pflobby/enums/pflobbystatechangetype.md
   - name: PFMatchmakingStateChangeType
@@ -160,6 +176,10 @@
     href: pflobby/structs/pflobbysearchfriendsfilter.md
   - name: PFLobbySearchResult
     href: pflobby/structs/pflobbysearchresult.md
+  - name: PFLobbyServerDataUpdate
+    href: pflobby/structs/pflobbyserverdataupdate.md
+  - name: PFLobbyServerJoinConfiguration
+    href: pflobby/structs/pflobbyserverjoinconfiguration.md
   - name: PFMatchmakingMatchDetails
     href: pfmatchmaking/structs/pfmatchmakingmatchdetails.md
   - name: PFMatchmakingMatchMember
@@ -196,6 +216,8 @@
     href: pflobby/structs/pflobbyinvitereceivedstatechange.md
   - name: PFLobbyJoinArrangedLobbyCompletedStateChange
     href: pflobby/structs/pflobbyjoinarrangedlobbycompletedstatechange.md
+  - name: PFLobbyJoinLobbyAsServerCompletedStateChange
+    href: pflobby/structs/pflobbyjoinlobbyasservercompletedstatechange.md
   - name: PFLobbyJoinLobbyCompletedStateChange
     href: pflobby/structs/pflobbyjoinlobbycompletedstatechange.md
   - name: PFLobbyLeaveLobbyCompletedStateChange
@@ -210,6 +232,10 @@
     href: pflobby/structs/pflobbysendinvitecompletedstatechange.md
   - name: PFLobbyServerDeleteLobbyCompletedStateChange
     href: pflobby/structs/pflobbyserverdeletelobbycompletedstatechange.md
+  - name: PFLobbyServerLeaveLobbyAsServerCompletedStateChange
+    href: pflobby/structs/pflobbyserverleavelobbyasservercompletedstatechange.md
+  - name: PFLobbyServerPostUpdateAsServerCompletedStateChange
+    href: pflobby/structs/pflobbyserverpostupdateasservercompletedstatechange.md
   - name: PFLobbyServerPostUpdateCompletedStateChange
     href: pflobby/structs/pflobbyserverpostupdatecompletedstatechange.md
   - name: PFLobbyStateChange
