@@ -10,14 +10,14 @@ keywords: playfab, party, unreal, release notes, multiplayer, networking
 ms.localizationpriority: medium
 ---
 
-# PlayFab Unreal Engine OnlineSubsystem release notes
+# PlayFab Unreal Engine OnlineSubsystem Release Notes
 
 Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md) for download and install instructions.
 
 ## 2.3.4
 Feature Updates:
-- Added support for dedicated server scenarios. Refer to the [Dedicated Server Setup Guide](party-unreal-engine-oss-dedicated-servers.md) for more details.
-- Added better integration with the [PlayFab SDK UE Marketplace Plugin](https://www.unrealengine.com/marketplace/product/playfab-sdk). Refer to the [PlayFab SDK UE Marketplace Plugin Integration Guide](party-unreal-engine-oss-playfab-plugin-integration.md) for more details.
+- Added support for dedicated server scenarios. For more information on setting up Dedicated Servers for your game, see the [Dedicated Server Setup Guide](party-unreal-engine-oss-dedicated-servers.md).
+- Added better integration with the [PlayFab SDK Unreal Engine (UE) Marketplace Plugin](https://www.unrealengine.com/marketplace/product/playfab-sdk). For more information on integrating the PlayFab Plugin, see the [PlayFab SDK UE Marketplace Plugin Integration Guide](party-unreal-engine-oss-playfab-plugin-integration.md).
 - Introduced a new configuration boolean, `bForceAutoLoginOnTick`.
     - Previously on Win64 and PlayStation platforms, the default behavior was to always attempt to call `AutoLogin()` for the primary local user.
     - This new configuration boolean allows `AutoLogin()` to be disabled for Win64 and PlayStation platforms if you wish to call `Login()` elsewhere.
@@ -59,8 +59,8 @@ Known issue:
 
 ## 2.0.0
 - UE4 engine OSS PlayFab is updated to use Multiplayer features offered by Azure PlayFab such as Lobby, Matchmaking along with PlayFab Party.
-This replaces the Xbox provided MPSD with Azure PlayFab Lobby and XBL Smart match with Azure Matchmaking service.
-- XDK is not longer supported for this version of the OSS
+This update replaces the Xbox provided MPSD with Azure PlayFab Lobby and XBL Smart match with Azure Matchmaking service.
+- XDK is no longer supported for this version of the OSS.
 
 ## 1.0.7
 - UE4 Engine version 4.26 is the recommended version to use with this version of OnlineSubsystemPlayfab.

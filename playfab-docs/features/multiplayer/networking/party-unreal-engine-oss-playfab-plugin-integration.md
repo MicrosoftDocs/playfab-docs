@@ -1,6 +1,6 @@
 ---
-title: PlayFab SDK UE Marketplace Plugin Integration Guide
-description: Guidance on how to integrate the PlayFab SDK UE Marketplace Plugin into your existing PlayFab OSS project.
+title: PlayFab SDK Unreal Engine Marketplace Plugin Integration Guide
+description: Guidance on how to integrate the PlayFab SDK UE Marketplace Plugin into your existing PlayFab OnlineSubsystem project.
 author: SahilAshar
 ms.author: saashar
 ms.date: 02/15/2024
@@ -9,12 +9,12 @@ ms.service: playfab
 keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, ue4, ue5, middleware
 ---
 
-# Quickstart Guide: Integrating OnlineSubsystem PlayFab with the PlayFab Unreal Marketplace Plugin
+# Quickstart Guide: Integrating OnlineSubsystem PlayFab with the PlayFab Unreal Engine Marketplace Plugin
 
-This quickstart guide will help you authenticate via OSS PlayFab and then re-use that authentication with the PlayFab Plugin.
+This quickstart guide helps you authenticate via OnlineSubsystem (OSS) PlayFab and then reuse that authentication with the PlayFab Unreal Engine (UE) Marketplace Plugin.
 
 ## Prerequisites
-- Ensure that you've integrated OnlineSubsystem PlayFab as a plugin in your `<game>.build.cs` file. In the below example, we've created a toggle option to allow integration, and set a definition to allow for `#ifdef` guarding.
+- Ensure that you integrate OnlineSubsystem PlayFab as a plugin in your `<game>.build.cs` file. In the below example, we create a toggle option to allow integration, and set a definition to allow for `#ifdef` guarding.
     ```cs
     // OnlineSubsystem PlayFab Plugin Settings.
     //
@@ -30,7 +30,7 @@ This quickstart guide will help you authenticate via OSS PlayFab and then re-use
     }
     ```
 
-- Ensure that you've integrated the PlayFab Plugin in your `<game>.build.cs` file. In the below example, we've created a toggle option to allow integration, and set a definition to allow for `#ifdef` guarding.
+- Ensure that you integrate the PlayFab Plugin in your `<game>.build.cs` file. In the below example, we create a toggle option to allow integration, and set a definition to allow for `#ifdef` guarding.
     ```cs
     // PlayFab Unreal Marketplace Plugin Settings.
     //
@@ -45,7 +45,7 @@ This quickstart guide will help you authenticate via OSS PlayFab and then re-use
     }
     ```
 
-- After you're updated your `<game.build.cs>` file (and every subsequent time you update it), be sure to regenerate your game's Visual Studio project files by right-clicking your **.uproject** file and selecting `Generate Visual Studio Project Files`.
+- After you update your `<game.build.cs>` file (and every subsequent time you update it), be sure to regenerate your game's Visual Studio project files by right-clicking your `.uproject` file and selecting `Generate Visual Studio Project Files`.
 
 - OSS PlayFab now offers a public `AuthenticateUserComplete` delegate that triggers on completion of the OSS PF user authentication flow. Bind to this delegate to retrieve details of your OSS PlayFab authentication.
     ```cpp
@@ -63,9 +63,9 @@ This quickstart guide will help you authenticate via OSS PlayFab and then re-use
 
 ## Steps
 
-You can also jump to the [Full Code Example](#full-code-example) below.
+You can also jump to the [Full Code Example](#full-code-example).
 
-1. **Include the Corrrect Headers**
+1. **Include the Correct Headers**
     ```cpp
     #ifdef WITH_OSS_PLAYFAB
     #include "OnlineSubsystemPlayFab.h"
@@ -93,12 +93,12 @@ You can also jump to the [Full Code Example](#full-code-example) below.
     );
     ```
 
-    Note that any function that binds to this delegate must have the same signature as the delegate. e.g.
+    Functions that bind to this delegate, must have the same signature as the delegate. For example:
     ```cpp
     void UGameInstance::OnAuthenticateUserComplete(int32 localUserNum, bool bWasSuccessful, const FString& platformUserIdStr, const FString& error)
     ```
   
-    You can also bind a lambda to the delegate. e.g.
+    You can also bind a lambda to the delegate. For example:
     ```cpp
     // We don't pass the `FOnlineIdentityPlayFabPtr` pointer through the lambda capture since the original
     // local isn't guaranteed to live longer than the lambda and we want to avoid dangling references.
