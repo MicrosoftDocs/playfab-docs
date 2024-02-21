@@ -17,6 +17,11 @@ It's often useful for titles to let players find lobbies that meet a particular 
 
 This article explains how to use __FindLobbies__ to enable players to find lobbies. To see how to find lobbies can be used in game titles, see [Common Scenarios](#common-scenarios).
 
+> [!NOTE]
+> It is not recommended to use __FindLobbies__ to implement background matchmaking.
+> We highly recommend using the [matchmaking feature](../matchmaking/index.md) in that scenario. Otherwise you must
+> handle the collisions of players all trying to join the same lobbies through filtering, sorting, and other techniques such as using randomization values in your search data fields.
+
 ## Understanding the relationship between lobby search properties and finding lobbies
 
 Players make their lobbies discoverable by defining search properties. Players find these discoverable lobbies by calling __FindLobbies__ with query strings to filter and sort their search results based on the search properties defined across the currently active lobbies. Lobbies that match these queries are returned to the calling player.
@@ -47,21 +52,50 @@ Only a restricted set of keys are allowed to be used when defining custom search
 
 ### Constructing query strings for FindLobbies
 
-Query strings for the FindLobbies APIs are structured in an OData-like syntax.
+Query strings for the __FindLobbies__ APIs are structured in an OData-like syntax. The maximum size for the filter string is 600 characters. 
 
-These OData operators can be used to compose query strings
+These OData operators can be used to compose query strings. The operators are case sensitive. 
 
 | Operators  | Meaning                  | Example                                               |
 |------------|--------------------------|-------------------------------------------------------|
-| eq         | Equal to                 | string_key1 eq 'CaptureTheFlag'                       |
+| eq         | equal to                 | string_key1 eq 'CaptureTheFlag'                       |
 | lt         | less than                | number_key2 lt 10                                     |
 | le         | less than or equal to    | number_key2 le 10                                     |
 | gt         | greater than             | number_key3 gt 100                                    |
 | ge         | greater than or equal to | number_key3 ge 100                                    |
-| and        | AND                      | string_key1 eq 'CaptureTheFlag' AND number_key2 lt 10 |
-| not        | NOT                      | not string_key1 eq 'CaptureTheFlag'                   |
+| ne         | ne                       | string_key1 ne 'CaptureTheFlag'                       |
+| and        | and                      | string_key1 eq 'CaptureTheFlag' and number_key2 lt 10 |
 
-**NOTE**: When comparing string properties, be sure to wrap the compared value in single quotes. For example, "string_key1 eq **'SOME STRING VALUE'**". Numeric properties don't need to be wrapped.
+
+> [!NOTE]
+> When comparing string properties, be sure to wrap the compared value in single quotes. For example, "string_key1 eq **'SOME STRING VALUE'**". Numeric properties don't need to be wrapped.
+
+There are also predefined operators available to use. They must be prefixed by "lobby/" when specifying. 
+
+| Operators            | Meaning                                                                              | Example                            |
+|----------------------|--------------------------------------------------------------------------------------|------------------------------------|
+| memberCount          | number of players in a lobby                                                         | lobby/memberCount eq 5             |
+| maxMemberCount       | maximum number of players allowed in a lobby                                         | lobby/maxMemberCount gt 10         |
+| memberCountRemaining | remaining number of players who can join the lobby                                   | lobby/memberCountRemaining gt 0    |
+| membershipLock       | lock status of lobbies, must equal 'Unlocked' or 'Locked'                            | lobby/membershipLock eq 'Unlocked' |
+| amOwner              | lobbies which you are the owner, required to equal 'true'                            | lobby/amOwner eq 'true'            |
+| amMember             | lobbies which you are a member, required to equal 'true'                             | lobby/amMember eq 'true'           |
+| amServer             | lobbies which the server has joined client-owned lobbies, required to equal 'true'   | lobby/amServer eq 'true'           |
+
+The SDK definition for these constants is documented [here](playfabmultiplayerreference-cpp/pflobby/constants/pflobbysearchkeys.md). 
+
+### Sorting 
+	
+OData style string that contains sorting for this query in either ascending ("asc") or descending ("desc") order. OrderBy clauses can be used for any of the search number keys or the predefined search keys that are numeric. To sort by closest to a number, a moniker distance can be used to sort by distance from the given number search key. You cannot use ascending or descending with the distance sort. This field only supports either one sort clause or one distance clause. If no sort is provided or if a tiebreak is needed for the given sort, the default sort would be descending based on creation time.
+
+|Example                      | Meaning                                           |
+|-----------------------------|---------------------------------------------------|
+| number_key1 asc             | order by number search key ascending              |
+| lobby/memberCount desc      | order by number search key descending             |
+| distance(number_key1 = 5)   | sort on distance from the given number            |
+|                             | order by creation time descending                 |
+
+
 
 ## Example finding lobbies using the Lobby and Matchmaking SDK 
 
@@ -74,7 +108,6 @@ In this example, the player wants to find all lobbies with the following require
 Additionally, the player wants the results sorted with the following guidelines:
 
 * Lobbies with optimal skill levels closest to the player's skill level should sort higher
-* Then, lobbies with fewer current members should sort higher
 
 ```cpp
 static PFMultiplayerHandle g_pfmHandle = nullptr;
@@ -107,7 +140,7 @@ void FindGamesWithRuntimeQuery(
     // Create filter string based on player's search parameters.
     std::string filterString;
     filterString += PFLOBBY_SEARCH_KEY_GAME_MODE + std::string(" eq ") + GAME_MODE_DEATH_MATCH;
-    filterString += " and not";
+    filterString += " and ";
     filterString += PFLOBBY_SEARCH_KEY_COMPETITION_STYLE + std::string(" eq ") + COMPETITION_STYLE_RANKED;
     filterString += " and ";
     filterString += PFLOBBY_SEARCH_KEY_SKILL + std::string(" -ge ") + std::to_string(minimumSkill);
@@ -116,8 +149,7 @@ void FindGamesWithRuntimeQuery(
 
     // Create sort string based on player's sort preference.
     std::string sortString;
-    sortString += std::string("distance{") + PFLOBBY_SEARCH_KEY_SKILL + "=" + std::to_string(optimalSkill) + "} asc";
-    sortString += "," + std::string(c_lobbyMemberCountSearchKey) + " asc";
+    sortString += std::string("distance{") + PFLOBBY_SEARCH_KEY_SKILL + "=" + std::to_string(optimalSkill) + "}";
 
     searchConfiguration.filterString = filterString.c_str();
     searchConfiguration.sortString = sortString.c_str();
