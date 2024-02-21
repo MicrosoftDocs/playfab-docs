@@ -93,7 +93,7 @@ You can also jump to the [Full Code Example](#full-code-example).
     );
     ```
 
-    Functions that bind to this delegate, must have the same signature as the delegate. For example:
+    Functions that bind to this delegate must have the same signature as the delegate. For example:
     ```cpp
     void UGameInstance::OnAuthenticateUserComplete(int32 localUserNum, bool bWasSuccessful, const FString& platformUserIdStr, const FString& error)
     ```
