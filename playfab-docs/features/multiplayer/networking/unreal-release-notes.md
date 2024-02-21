@@ -14,6 +14,20 @@ ms.localizationpriority: medium
 
 Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md) for download and install instructions.
 
+## 2.3.4
+Feature Updates:
+- Added support for dedicated server scenarios. Refer to the [Dedicated Server Setup Guide](party-unreal-engine-oss-dedicated-servers.md) for more details.
+- Added better integration with the [PlayFab SDK UE Marketplace Plugin](https://www.unrealengine.com/marketplace/product/playfab-sdk). Refer to the [PlayFab SDK UE Marketplace Plugin Integration Guide](party-unreal-engine-oss-playfab-plugin-integration.md) for more details.
+- Introduced a new configuration boolean, `bForceAutoLoginOnTick`.
+    - Previously on Win64 and PlayStation platforms, the default behavior was to always attempt to call `AutoLogin()` for the primary local user.
+    - This new configuration boolean allows `AutoLogin()` to be disabled for Win64 and PlayStation platforms if you wish to call `Login()` elsewhere.
+    - The default behavior remains the same with `bForceAutoLoginOnTick` set to `true`. You can configure `bForceAutoLoginOnTick` in your `<Windows|PS4|PS5>Engine.ini` file under the `OnlineSubsystemPlayFab` section.
+        ```ini
+        [OnlineSubsystemPlayFab]
+        bForceAutoLoginOnTick=<true|false>
+        ```
+    - Login behavior for all other platforms remains unchanged.
+
 ## 2.3.2
 Updated the following libraries:
 - Update the Multiplayer SDK C++ library to version 1.6.5 for both Windows and GDK.
@@ -49,9 +63,6 @@ This replaces the Xbox provided MPSD with Azure PlayFab Lobby and XBL Smart matc
 - XDK is not longer supported for this version of the OSS
 
 ## 1.0.7
-UE4 Engine version 4.26 is the recommended version to use with this version of OnlineSubsystemPlayfab.
+- UE4 Engine version 4.26 is the recommended version to use with this version of OnlineSubsystemPlayfab.
 ### Notes:
-Rename OnlineSubsystemPlayFabParty to OnlineSubsystemPlayfab.
-
-
-
+- Rename OnlineSubsystemPlayFabParty to OnlineSubsystemPlayfab.
