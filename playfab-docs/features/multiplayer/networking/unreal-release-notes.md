@@ -18,13 +18,13 @@ Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-qu
 Feature Updates:
 - Added support for dedicated server scenarios. For more information on setting up Dedicated Servers for your game, see the [Dedicated Server Setup Guide](party-unreal-engine-oss-dedicated-servers.md).
 - Added better integration with the [PlayFab SDK Unreal Engine (UE) Marketplace Plugin](https://www.unrealengine.com/marketplace/product/playfab-sdk). For more information on integrating the PlayFab Plugin, see the [PlayFab SDK UE Marketplace Plugin Integration Guide](party-unreal-engine-oss-playfab-plugin-integration.md).
-- Introduced a new configuration boolean, `bForceAutoLoginOnTick`.
+- Introduced a new configuration boolean, `ForceAutoLogin`.
     - Previously on Win64 and PlayStation platforms, the default behavior was to always attempt to call `AutoLogin()` for the primary local user.
     - This new configuration boolean allows `AutoLogin()` to be disabled for Win64 and PlayStation platforms if you wish to call `Login()` elsewhere.
-    - The default behavior remains the same with `bForceAutoLoginOnTick` set to `true`. You can configure `bForceAutoLoginOnTick` in your `<Windows|PS4|PS5>Engine.ini` file under the `OnlineSubsystemPlayFab` section.
+    - The default behavior remains the same with `ForceAutoLogin` set to `true`. You can configure `ForceAutoLogin` in your `<Windows|PS4|PS5>Engine.ini` file under the `OnlineSubsystemPlayFab` section.
         ```ini
         [OnlineSubsystemPlayFab]
-        bForceAutoLoginOnTick=<true|false>
+        ForceAutoLogin=<true|false>
         ```
     - Login behavior for all other platforms remains unchanged.
 
