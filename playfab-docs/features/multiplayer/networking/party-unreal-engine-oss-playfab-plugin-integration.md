@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 # Quickstart Guide: Integrating the PlayFab Online Subsystem with the PlayFab Unreal Engine Marketplace Plugin
 
-This quickstart guide helps you integrate the [PlayFab SDK Unreal Engine (UE) Marketplace Plugin](..\..\..\..\playfab-docs\sdks\unreal\index.md) into your existing PlayFab Online Subsystem (OSS) integrated project.
+This quickstart guide helps you integrate the [PlayFab SDK Unreal Engine (UE) Marketplace Plugin](../../../../playfab-docs/sdks/unreal/index.md) into your existing PlayFab Online Subsystem (OSS) integrated project.
 
 The PlayFab SDK Plugin is used to perform PlayFab admin, client, and server operations such as player authentication, virtual item and currency management, and social feature creation. Used in conjunction with the PlayFab Online Subsystem, your project can access the full suite of PlayFab features for Unreal Engine projects.
 
