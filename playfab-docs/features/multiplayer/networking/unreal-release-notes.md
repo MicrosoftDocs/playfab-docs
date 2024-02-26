@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md) for download and install instructions.
 
-## 2.3.4
+## 2.3.3
 Feature Updates:
 - Added support for dedicated server scenarios. For more information on setting up Dedicated Servers for your game, see the [Dedicated Server Setup Guide](party-unreal-engine-oss-dedicated-servers.md).
 - Added better integration with the [PlayFab SDK Unreal Engine (UE) Marketplace Plugin](https://www.unrealengine.com/marketplace/product/playfab-sdk). For more information on integrating the PlayFab Plugin, see the [PlayFab SDK UE Marketplace Plugin Integration Guide](party-unreal-engine-oss-playfab-plugin-integration.md).

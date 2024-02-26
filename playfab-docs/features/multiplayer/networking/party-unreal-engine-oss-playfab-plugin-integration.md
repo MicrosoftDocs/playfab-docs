@@ -162,7 +162,7 @@ You can also jump to the [Full Code Example](#full-code-example).
                 LoginResult.PlayFabId = LocalUser->GetPlayFabId();
                 LoginResult.SessionTicket = LocalUser->GetSessionTicket();
 
-                // With `LoginResult` populated, we can now use the PlayFab SDK  Plugin APIs
+                // With `LoginResult` populated, we can now use the PlayFab SDK Plugin APIs
                 // however we wish. This state is considered "authenticated".
                 //
                 // This delegate signature functions does not return anything. You can pass `LoginResult`
