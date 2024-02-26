@@ -78,7 +78,7 @@ Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 * Replace the INI sections in the config if they already exist (for example, Engine.GameEngine) with the ones presented in the following sections.
 * Ensure you replace all the *\<REPLACE ME>* fields with your data:
 
-```config
+```ini
 [OnlineSubsystemPlayFab]
 bEnabled=true
 PlayFabTitleID=<REPLACE ME with your PlayFab title ID>
@@ -111,7 +111,7 @@ With all that done, we're nearly finished. There are only a few key platform-spe
 
 If you're developing games using GDK, define the platform services and, optionally, set your GDK sandbox:
 
-```config
+```ini
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab
 NativePlatformService=GDK
@@ -124,7 +124,7 @@ Sandbox=<Optional, REPLACE ME with the sandbox Id used for the title under devel
 
 If you're developing games for Win64 with Steam, define your platform services:
 
-```config
+```ini
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab
 NativePlatformService=Steam
@@ -142,7 +142,7 @@ For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.az
 
 Finally, if your game makes use PlayFab's cross-platform networking support, define which platforms you permit to connect:
 
-```config
+```ini
 [/Script/OnlineSubsystemUtils.OnlineEngineInterfaceImpl]
 !CompatibleUniqueNetIdTypes=ClearArray
 +CompatibleUniqueNetIdTypes=STEAM
@@ -153,7 +153,7 @@ Finally, if your game makes use PlayFab's cross-platform networking support, def
 ```
 
 All platforms allow VoIP by default. To disable VoIP for a specific platform, add the platform model name to your UE configuration file as shown in the following example.
-```config
+```ini
 [OnlineSubsystemPlayFabVoiceChatDisabledPlatforms]
 !Platforms=ClearArray
 +Platforms=WIN64
@@ -171,7 +171,7 @@ Add `PublicDependencyModuleNames.AddRange(new string[] { "OnlineSubsystem", "Onl
 
 Example code in GameSession.cpp:
 
-```
+```cpp
 #include "OnlineSubsystem.h"
 #include "OnlineSubsystemUtils.h"
 
@@ -195,7 +195,7 @@ bool Game::JoinSession(const FUniqueNetIdPtr UserId, FName SessionName, const FO
 ```
 
 Example code in GameFriends.cpp:
-```
+```cpp
 #include "OnlineSubsystem.h"
 #include "OnlineSubsystemUtils.h"
 
@@ -211,6 +211,7 @@ void Game::ViewFriendProfile()
 		{
 			// ....
 		}
+	}
 }
 ```
 ## Troubleshoot: Unreal Engine Installed Builds
@@ -225,7 +226,7 @@ Users may face issues when trying to create an Unreal Engine Installed Build wit
  * Repeat the process for XboxOneGDK (PlayFabParty_XboxOneGDK.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **BlacklistPlatforms**.
     
     Example Modules config in PlayFabParty.uplugin for UE4.27+::
-```config
+```ini
 	"Modules": [
 		{
 			"Name": "PlayFabParty",
@@ -239,7 +240,7 @@ Users may face issues when trying to create an Unreal Engine Installed Build wit
  * Locate the directory where Unreal Engine is installed on the machine.
  * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
  * Open PlayFabParty.uplugin, and update Modules config with **PlatformDenyList**:
-    ```
+    ```ini
     "Modules": [
             {
                 "Name": "PlayFabParty",
@@ -255,21 +256,22 @@ Users may face issues when trying to create an Unreal Engine Installed Build wit
 ## Workflow for OnlineSubsystemPlayFab
 
 The steps outlined in the [Platform Specific Considerations](#platform-specific-considerations) section ask you to include:
-```
+```ini
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab
 ```
-UE OnlineSubsystemModule creates an online subsystem instance for PlayFab and starts creating ⁠the PlayFabSingleton. At this point, SDK is initialized in⁠ FOnlineSubsystemPlayFab::Init(),
+UE OnlineSubsystemModule creates an online subsystem instance for PlayFab and starts creating ⁠the PlayFabSingleton. At this point, SDK is initialized in⁠ `FOnlineSubsystemPlayFab::Init()`,
 where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside the [Game Configuration](#game-configuration) file. During initialization,
-we'll ⁠CreatePlayFabSocketSubsystem() as the main online subsystem. 
+we'll `⁠CreatePlayFabSocketSubsystem()` as the main online subsystem. 
 
-Workflow of Multiplayer SDK: FOnlineSubsystemPlayFab::Init() initializes the InitializeMultiplayer() multiplayer SDK singleton for your title. In the PlayFabLobby.cpp, FPlayFabLobby::DoWork() processes the
-state changes triggered by Multiplayer APIs (view Platforms/GDK/Include/PFLobby.h for APIs).
+Workflow of Multiplayer SDK: `FOnlineSubsystemPlayFab::Init()` initializes the `InitializeMultiplayer()` multiplayer SDK singleton for your title. In the `PlayFabLobby.cpp`, `FPlayFabLobby::DoWork()` processes the
+state changes triggered by Multiplayer APIs (view `Platforms/GDK/Include/PFLobby.h` for APIs).
 
-Workflow of Party SDK: FOnlineSubsystemPlayFab::Init() initializes the InitializeParty() multiplayer SDK singleton for your title. In the OnlineSubsystemPlayFab.cpp, FOnlineSubsystemPlayFab::DoWork() processes the
-state changes triggered by Party APIs (view Platforms/GDK/Include/Party.h for APIs).
-
+Workflow of Party SDK: `FOnlineSubsystemPlayFab::Init()` initializes the `InitializeParty()` multiplayer SDK singleton for your title. In the `OnlineSubsystemPlayFab.cpp`, `FOnlineSubsystemPlayFab::DoWork()` processes the
+state changes triggered by Party APIs (view `Platforms/GDK/Include/Party.h` for APIs).
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 "PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.

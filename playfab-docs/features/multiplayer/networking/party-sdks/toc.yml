@@ -1,34 +1,38 @@
 - name: Overview
   href: ../party-sdks.md
-- name: Release notes
+- name: Release Notes
   href: ../release-notes.md
-- name: Android getting started
+- name: Android Getting Started
   href: ../android-specific-requirements.md
-- name: iOS and macOS getting started
+- name: iOS and macOS Getting Started
   href: ../apple-specific-requirements.md
 - name: Unity
   items:
-  - name: Party Unity plugin overview
+  - name: Party Unity Plugin Overview
     href: ../party-unity-overview.md
-  - name: Party Unity plugin quickstart
+  - name: Party Unity Plugin Quickstart
     href: ../party-unity-plugin-quickstart.md  
-  - name: Party Unity plugin API reference
+  - name: Party Unity Plugin API Reference
     href: ../unity-party-api-reference/index.md
-  - name: Party Unity plugin release notes
+  - name: Party Unity Plugin Release Notes
     href: ../party-unity-release-notes.md
 - name: Unreal Engine 4 and 5
   items:
-  - name: Multiplayer Unreal Online Subsystem (OSS)
+  - name: Unreal Engine PlayFab OnlineSubsystem (OSS)
     href: ../party-unreal-engine-oss-overview.md
-  - name: OSS quickstart
+  - name: PlayFab OnlineSubsystem Quickstart
     href: ../party-unreal-engine-oss-quickstart.md
-  - name: Get Party and Multiplayer libraries
+  - name: Get Party and Multiplayer Libraries
     href: ../party-unreal-engine-oss-obtaining-playfab-party-libraries.md
-  - name: Cognitive Services interface
+  - name: Cognitive Services Interface
     href: ../party-unreal-engine-oss-cognitive-services-interface.md
-  - name: Using older versions of Unreal Engine 4
+  - name: PlayFab SDK UE Marketplace Plugin Integration Guide
+    href: ../party-unreal-engine-oss-playfab-plugin-integration.md
+  - name: Dedicated Server Setup Guide
+    href: ../party-unreal-engine-oss-dedicated-servers.md
+  - name: Using Older Versions of Unreal Engine 4
     href: ../party-unreal-engine-using-older-versions.md
-  - name: Unreal Engine 4 and 5 Release notes
+  - name: PlayFab OnlineSubsystem Release notes
     href: ../unreal-release-notes.md
 - name: Xbox and Xbox Live
   items:
@@ -36,15 +40,15 @@
     href: ../xbox-requirements.md
   - name: Use Party with MPSD
     href: ../using-mpsd.md
-  - name: Xbox Live free program FAQ
+  - name: Xbox Live Free Program FAQ
     href: ../xbl-discount.yml
   - name: Xbox Live Helper Library
     items:
     - name: Overview
       href: ../party-xbox-live-guide.md
-    - name: Release notes
+    - name: Release Notes
       href: ../party-xboxlive-relnotes.md
-    - name: API reference
+    - name: API Reference
       href: ../xblreference/partyxboxlive_members.md
 - name: Logging
   href: ../party-logging.md
