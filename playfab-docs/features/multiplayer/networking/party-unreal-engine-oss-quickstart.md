@@ -211,7 +211,7 @@ void Game::ViewFriendProfile()
 		{
 			// ....
 		}
-  }
+	}
 }
 ```
 ## Troubleshoot: Unreal Engine Installed Builds

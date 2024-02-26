@@ -9,20 +9,20 @@ ms.service: playfab
 keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, ue4, ue5, middleware
 ---
 
-# Quickstart Guide: Dedicated Server Setup with OnlineSubsystem PlayFab
+# Quickstart Guide: Dedicated Server Setup with the PlayFab Online Subsystem
 
-This guide is to help you set up and prepare your game to use dedicated servers alongside OnlineSubsystem (OSS) PlayFab.
+This guide is to help you prepare your PlayFab Online Subsystem (OSS) integrated game, and validate it in dedicated server scenarios. This guide focuses on validation with locally hosted dedicated servers.
 
-OSS PlayFab defaults to using PlayFab Sockets for communication in client to client scenarios - however, these PlayFab Sockets won't work in dedicated server scenarios. 
+PlayFab OSS defaults to using PlayFab Party Sockets for communication in player-hosted scenarios. However, in server-hosted scenarios, PlayFab Party Sockets will fail to connect, and the game will need to explicitly call `ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)` in order to communicate to the server.
 
-OSS PlayFab recognizes when a client is connecting to a dedicated server and falls back to using the native `PLATFORM_SOCKETSUBSYSTEM` for client to server communication.
+PlayFab OSS recognizes when a client is connecting to a dedicated server and falls back to using the native `PLATFORM_SOCKETSUBSYSTEM` for client to server communication.
 
 ## Prerequisites
-- A version of your game that is set up and capable of default client to client communication and gameplay with OSS PlayFab.
+- A game that has integrated [PlayFab Online Subsystem](party-unreal-engine-oss-overview.md) and is able to create client-hosted scenarios.
 - A "client" PC you can use as a connecting client for your game.
 - A "server" PC you can use as a hosting server for your game.
   - A second PC is recommended, but you can use the same one, a virtual machine instance, or a Docker instance if you'd prefer. This quickstart guide walks you through setup with a second PC.
-  - Ensure that the IP address of your second PC is visible from your first PC.
+  - Ensure that the IP address of your second PC is network-accessible from your first PC.
 
 ## Setup
 

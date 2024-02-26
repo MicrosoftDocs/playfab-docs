@@ -1,6 +1,6 @@
 ---
 title: PlayFab SDK Unreal Engine Marketplace Plugin Integration Guide
-description: Guidance on how to integrate the PlayFab SDK UE Marketplace Plugin into your existing PlayFab OnlineSubsystem project.
+description: Guidance on how to integrate the PlayFab SDK UE Marketplace Plugin into your existing PlayFab Online Subsystem integrated project.
 author: SahilAshar
 ms.author: saashar
 ms.date: 02/15/2024
@@ -9,19 +9,25 @@ ms.service: playfab
 keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, ue4, ue5, middleware
 ---
 
-# Quickstart Guide: Integrating OnlineSubsystem PlayFab with the PlayFab Unreal Engine Marketplace Plugin
+# Quickstart Guide: Integrating the PlayFab Online Subsystem with the PlayFab Unreal Engine Marketplace Plugin
 
-This quickstart guide helps you authenticate via OnlineSubsystem (OSS) PlayFab and then reuse that authentication with the PlayFab Unreal Engine (UE) Marketplace Plugin.
+This quickstart guide helps you integrate the [PlayFab SDK Unreal Engine (UE) Marketplace Plugin](..\..\..\..\playfab-docs\sdks\unreal\index.md) into your existing PlayFab Online Subsystem (OSS) integrated project.
+
+The PlayFab SDK Plugin is used to perform PlayFab admin, client, and server operations such as player authentication, virtual item and currency management, and social feature creation. Used in conjunction with the PlayFab Online Subsystem, your project can access the full suite of PlayFab features for Unreal Engine projects.
+
+When using either the PlayFab OSS or PlayFab SDK Plugin independently of each other, the first step is authenticating a user. Using both in the same project without the appropriate setup means that the PlayFab OSS and PlayFab SDK Plugin will both make a separate authentication call for the same user.
+
+This quickstart guide helps you authenticate via the PlayFab OSS and reuse that authentication with the PlayFab SDK Plugin, for a seamless user auth experience.
 
 ## Prerequisites
-- Ensure that you integrate OnlineSubsystem PlayFab as a plugin in your `<game>.build.cs` file. In the below example, we create a toggle option to allow integration, and set a definition to allow for `#ifdef` guarding.
+- Ensure that you integrate the PlayFab OSS as a plugin in your `<game>.build.cs` file. In the below example, we create a toggle option to allow integration, and set a definition to allow for `#ifdef` guarding.
     ```cs
-    // OnlineSubsystem PlayFab Plugin Settings.
+    // PlayFab OnlineSubsystem Plugin Settings.
     //
-    // While OSS PlayFab is integrated with the game at an engine level, we cannot directly access
-    // OSS PF headers unless we integrate it as a plugin.
+    // While the PlayFab OSS is integrated with the game at an engine level, we cannot directly access
+    // PF OSS headers unless we integrate it as a plugin.
     //
-    // `bOSSPlayFabAsPlugin` must be set to true to expose OSS PlayFab headers directly to the game.
+    // `bOSSPlayFabAsPlugin` must be set to true to expose the PlayFab OSS headers directly to the game.
     bool bOSSPlayFabAsPlugin = false;
     if (bOSSPlayFabAsPlugin)
     {
@@ -30,13 +36,13 @@ This quickstart guide helps you authenticate via OnlineSubsystem (OSS) PlayFab a
     }
     ```
 
-- Ensure that you integrate the PlayFab Plugin in your `<game>.build.cs` file. In the below example, we create a toggle option to allow integration, and set a definition to allow for `#ifdef` guarding.
+- Ensure that you integrate the PlayFab SDK Plugin in your `<game>.build.cs` file. In the below example, we create a toggle option to allow integration, and set a definition to allow for `#ifdef` guarding.
     ```cs
-    // PlayFab Unreal Marketplace Plugin Settings.
+    // PlayFab SDK Plugin Settings.
     //
     // `bPlayFabPlugin` must be set to true to enable compilation and integration with the PlayFab
-    // Unreal Marketplace Plugin.
-    // Ensure that the PF Marketplace Plugin is installed via Engine plugin or as a local game plugin.
+    // SDK Plugin.
+    // Ensure that the PF SDK Plugin is installed via Engine plugin or as a local game plugin.
     bool bPlayFabPlugin = false;
     if (bPlayFabPlugin)
     {
@@ -47,7 +53,7 @@ This quickstart guide helps you authenticate via OnlineSubsystem (OSS) PlayFab a
 
 - After you update your `<game.build.cs>` file (and every subsequent time you update it), be sure to regenerate your game's Visual Studio project files by right-clicking your `.uproject` file and selecting `Generate Visual Studio Project Files`.
 
-- OSS PlayFab now offers a public `AuthenticateUserComplete` delegate that triggers on completion of the OSS PF user authentication flow. Bind to this delegate to retrieve details of your OSS PlayFab authentication.
+- PlayFab OSS now offers a public `AuthenticateUserComplete` delegate that triggers on completion of the PlayFab OSS user authentication flow. Bind to this delegate to retrieve the details of your PlayFab OSS authentication.
     ```cpp
     /**
     * Delegate used on the completion of FOnlineIdentityPlayFab::AuthenticateUser().
@@ -78,7 +84,7 @@ You can also jump to the [Full Code Example](#full-code-example).
     #endif // WITH_PLAYFAB_PLUGIN
     ```
 
-2. **Retrieve OSS PlayFab**
+2. **Retrieve the PlayFab OSS**
     ```cpp
     FOnlineSubsystemPlayFab* PFOnlineSub = static_cast<FOnlineSubsystemPlayFab*>(IOnlineSubsystem::Get(TEXT("PLAYFAB")));
     ```
@@ -115,7 +121,7 @@ You can also jump to the [Full Code Example](#full-code-example).
     ```
 
 
-4. **Handle Authentication Result**: In the function bound to the delegate, handle the result of the authentication. If the authentication is successful, retrieve the authenticated local user via the `platformUserIdStr` from the delegate trigger. Then, construct a PlayFab `LoginResult` from the OSS PlayFab `LocalUser`.
+4. **Handle Authentication Result**: In the function bound to the delegate, handle the result of the authentication. If the authentication is successful, retrieve the authenticated local user via the `platformUserIdStr` from the delegate trigger. Then, construct a PlayFab `LoginResult` from the PlayFab OSS `LocalUser`.
     ```cpp
     void UGameInstance::OnAuthenticateUserComplete(int32 localUserNum, bool bWasSuccessful, const FString& platformUserIdStr, const FString& error)
     {
@@ -156,7 +162,7 @@ You can also jump to the [Full Code Example](#full-code-example).
                 LoginResult.PlayFabId = LocalUser->GetPlayFabId();
                 LoginResult.SessionTicket = LocalUser->GetSessionTicket();
 
-                // With `LoginResult` populated, we can now use the PlayFab Marketplace Plug-in APIs
+                // With `LoginResult` populated, we can now use the PlayFab SDK  Plugin APIs
                 // however we wish. This state is considered "authenticated".
                 //
                 // This delegate signature functions does not return anything. You can pass `LoginResult`
@@ -169,7 +175,7 @@ You can also jump to the [Full Code Example](#full-code-example).
     }
     ```
 
-5. **Use PlayFab Marketplace Plug-in APIs**: With `LoginResult` populated, you can now use the PlayFab Marketplace Plug-in APIs however you wish. This state is considered "authenticated".
+5. **Use PlayFab SDK Plugin APIs**: With `LoginResult` populated, you can now use the PlayFab SDk Plugin APIs however you wish. This state is considered "authenticated".
 
 ## Full Code Example
 ```cpp
@@ -190,23 +196,23 @@ void UGameInstance::Init()
     Super::Init();
     ...
 
-    // This is an example scenario of integrating OnlineSubsystem PlayFab with the
-    // PlayFab Unreal Marketplace Plugin.
+    // This is an example scenario of integrating the PlayFab OnlineSubsystem with the
+    // PlayFab SDK Plugin.
     //
-    // In this scenario, you can authenticate via OSS PlayFab,
-    // and then re-use that authentication with the PlayFab Plugin.
+    // In this scenario, you can authenticate via the PlayFab OSS,
+    // and then re-use that authentication with the PlayFab SDK Plugin.
     // 
-    // OSS PF offers a public `AuthenticateUserComplete` delegate that can be bound;
-    // this delegate triggers on completion of the OSS PF user authentication flow.
+    // PF OSS offers a public `AuthenticateUserComplete` delegate that can be bound;
+    // this delegate triggers on completion of the PF OSS user authentication flow.
     // 
     // Below is an example of a game binding to that delegate, retrieving the
     // authenticated local user via the `platformUserIdStr` from the delegate
-    // trigger, and then constructing a PlayFab `LoginResult` from the OSS PF
+    // trigger, and then constructing a PlayFab `LoginResult` from the PF OSS
     // `LocalUser.`
     // 
     // These definitions are defined in `<game>.build.cs`.
 #if defined(WITH_OSS_PLAYFAB) && defined(WITH_PLAYFAB_PLUGIN)
-    // Explicitly retrieve OSS PlayFab - we can't assume it's the default OSS.
+    // Explicitly retrieve the PlayFab OSS - we can't assume it's the default OSS.
     FOnlineSubsystemPlayFab* PFOnlineSub = static_cast<FOnlineSubsystemPlayFab*>(IOnlineSubsystem::Get(TEXT("PLAYFAB")));
 
     UE_LOG(LogOnlineGame, Warning, TEXT("Retrieved PFOnlineSub"));
@@ -269,7 +275,7 @@ void UGameInstance::OnAuthenticateUserComplete(int32 localUserNum, bool bWasSucc
             LoginResult.PlayFabId = LocalUser->GetPlayFabId();
             LoginResult.SessionTicket = LocalUser->GetSessionTicket();
 
-            // With `LoginResult` populated, we can now use the PlayFab Marketplace Plug-in APIs
+            // With `LoginResult` populated, we can now use the PlayFab SDK Plugin APIs
             // however we wish. This state is considered "authenticated".
             //
             // This delegate signature functions does not return anything. You can pass `LoginResult`
