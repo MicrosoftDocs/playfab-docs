@@ -5,7 +5,7 @@ description: "Retrieves the unique PlayFab identifiers for the given set of Xbox
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32 and GDK. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResultSize](pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResult](pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresult.md) to get the result.
+This API is available on Win32, GDK, Linux, and macOS. When the asynchronous task is complete, call [PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResultSize](pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresultsize.md) and [PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResult](pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresult.md) to get the result.
   
 ## Requirements  
   

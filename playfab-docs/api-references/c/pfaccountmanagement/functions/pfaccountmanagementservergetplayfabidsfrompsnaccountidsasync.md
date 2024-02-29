@@ -5,7 +5,7 @@ description: "Retrieves the unique PlayFab identifiers for the given set of Play
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. When the asynchronous task is complete, call [PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsGetResultSize](pfaccountmanagementservergetplayfabidsfrompsnaccountidsgetresultsize.md) and [PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsGetResult](pfaccountmanagementservergetplayfabidsfrompsnaccountidsgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. When the asynchronous task is complete, call [PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsGetResultSize](pfaccountmanagementservergetplayfabidsfrompsnaccountidsgetresultsize.md) and [PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsGetResult](pfaccountmanagementservergetplayfabidsfrompsnaccountidsgetresult.md) to get the result.
   
 ## Requirements  
   

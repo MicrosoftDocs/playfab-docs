@@ -5,7 +5,7 @@ description: "Adds a given tag to a player profile. The tag's namespace is autom
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFSegmentsServerAddPlayerTagAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. This API will trigger a player_tag_added event and add a tag with the given TagName and PlayFabID to the corresponding player profile. TagName can be used for segmentation and it is limited to 256 characters. Also there is a limit on the number of tags a title can have. See also ServerGetPlayerTagsAsync, ServerRemovePlayerTagAsync. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be E_PF_PLAYER_TAG_COUNT_LIMIT_EXCEEDED or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+This API is available on Win32, Linux, and macOS. This API will trigger a player_tag_added event and add a tag with the given TagName and PlayFabID to the corresponding player profile. TagName can be used for segmentation and it is limited to 256 characters. Also there is a limit on the number of tags a title can have. See also ServerGetPlayerTagsAsync, ServerRemovePlayerTagAsync. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be E_PF_PLAYER_TAG_COUNT_LIMIT_EXCEEDED or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Requirements  
   

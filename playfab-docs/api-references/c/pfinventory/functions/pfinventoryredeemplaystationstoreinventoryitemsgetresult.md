@@ -5,7 +5,7 @@ description: "Gets the result of a successful PFInventoryRedeemPlayStationStoreI
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryRedeemPlayStationStoreInventoryItemsGetResult  

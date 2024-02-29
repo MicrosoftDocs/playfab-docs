@@ -5,7 +5,7 @@ description: "Optionally sets the memory hook functions to allow callers to cont
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFHCMemSetFunctions  

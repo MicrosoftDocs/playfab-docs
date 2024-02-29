@@ -5,7 +5,7 @@ description: "PFGroupsIsMemberResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFGroupsIsMemberResponse  

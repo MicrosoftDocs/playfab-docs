@@ -5,7 +5,7 @@ description: "PFInventoryRedeemPlayStationStoreInventoryItemsResponse data model
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/26/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryRedeemPlayStationStoreInventoryItemsResponse  

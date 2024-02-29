@@ -5,7 +5,7 @@ description: "Services C API overview - PFServices.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # Services C API overview - PFServices.h
@@ -16,4 +16,5 @@ ms.date: 03/09/2023
 | Function | Description |  
 | --- | --- |  
 | [PFServicesInitialize](functions/pfservicesinitialize.md) | Initializes PlayFab Services global state |  
+| [PFServicesInitialize](functions/pfservicesinitialize_2.md) | Initializes PlayFab Services global state |  
 | [PFServicesUninitializeAsync](functions/pfservicesuninitializeasync.md) | Cleanup PlayFab Services global state. |  

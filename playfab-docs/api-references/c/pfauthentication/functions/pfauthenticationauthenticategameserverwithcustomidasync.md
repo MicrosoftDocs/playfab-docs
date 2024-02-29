@@ -5,7 +5,7 @@ description: "Create a game_server entity token and return a new or existing gam
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFAuthenticationAuthenticateGameServerWithCustomIdAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. Create or return a game_server entity token. Caller must be a title entity. When the asynchronous task is complete, call [PFAuthenticationAuthenticateGameServerWithCustomIdGetResultSize](pfauthenticationauthenticategameserverwithcustomidgetresultsize.md) and [PFAuthenticationAuthenticateGameServerWithCustomIdGetResult](pfauthenticationauthenticategameserverwithcustomidgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. Create or return a game_server entity token. Caller must be a title entity. When the asynchronous task is complete, call [PFAuthenticationAuthenticateGameServerWithCustomIdGetResultSize](pfauthenticationauthenticategameserverwithcustomidgetresultsize.md) and [PFAuthenticationAuthenticateGameServerWithCustomIdGetResult](pfauthenticationauthenticategameserverwithcustomidgetresult.md) to get the result.
   
 ## Requirements  
   

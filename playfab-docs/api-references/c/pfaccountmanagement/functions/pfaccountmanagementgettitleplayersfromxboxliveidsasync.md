@@ -5,7 +5,7 @@ description: "Retrieves the title player accounts associated with the given XUID
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementGetTitlePlayersFromXboxLiveIDsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. Given a collection of Xbox IDs (XUIDs), returns all title player accounts. When the asynchronous task is complete, call [PFAccountManagementGetTitlePlayersFromXboxLiveIDsGetResultSize](pfaccountmanagementgettitleplayersfromxboxliveidsgetresultsize.md) and [PFAccountManagementGetTitlePlayersFromXboxLiveIDsGetResult](pfaccountmanagementgettitleplayersfromxboxliveidsgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. Given a collection of Xbox IDs (XUIDs), returns all title player accounts. When the asynchronous task is complete, call [PFAccountManagementGetTitlePlayersFromXboxLiveIDsGetResultSize](pfaccountmanagementgettitleplayersfromxboxliveidsgetresultsize.md) and [PFAccountManagementGetTitlePlayersFromXboxLiveIDsGetResult](pfaccountmanagementgettitleplayersfromxboxliveidsgetresult.md) to get the result.
   
 ## Requirements  
   

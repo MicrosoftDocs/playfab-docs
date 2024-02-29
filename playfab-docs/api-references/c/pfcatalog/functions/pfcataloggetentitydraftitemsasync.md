@@ -5,7 +5,7 @@ description: "Retrieves a paginated list of the items from the draft catalog cre
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFCatalogGetEntityDraftItemsAsync  

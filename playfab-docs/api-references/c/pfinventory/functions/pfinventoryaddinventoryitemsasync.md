@@ -5,7 +5,7 @@ description: "Add inventory items. Up to 3500 stacks of items can be added to a 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryAddInventoryItemsAsync  

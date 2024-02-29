@@ -5,7 +5,7 @@ description: "Creates a new item in the working catalog using provided metadata.
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFCatalogCreateDraftItemAsync  

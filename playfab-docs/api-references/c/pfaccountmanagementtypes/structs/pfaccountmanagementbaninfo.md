@@ -5,7 +5,7 @@ description: "PFAccountManagementBanInfo data model. Contains information for a 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/26/2023
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementBanInfo  

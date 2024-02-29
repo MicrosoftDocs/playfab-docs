@@ -422,12 +422,42 @@
     href: pfauthentication/functions/pfauthenticationgetentitywithsecretkeyasync.md
   - name: PFAuthenticationGetEntityWithSecretKeyGetResult
     href: pfauthentication/functions/pfauthenticationgetentitywithsecretkeygetresult.md
+  - name: PFAuthenticationLoginWithAppleAsync
+    href: pfauthentication/functions/pfauthenticationloginwithappleasync.md
+  - name: PFAuthenticationLoginWithAppleGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithapplegetresult.md
+  - name: PFAuthenticationLoginWithAppleGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithapplegetresultsize.md
   - name: PFAuthenticationLoginWithCustomIDAsync
     href: pfauthentication/functions/pfauthenticationloginwithcustomidasync.md
   - name: PFAuthenticationLoginWithCustomIDGetResult
     href: pfauthentication/functions/pfauthenticationloginwithcustomidgetresult.md
   - name: PFAuthenticationLoginWithCustomIDGetResultSize
     href: pfauthentication/functions/pfauthenticationloginwithcustomidgetresultsize.md
+  - name: PFAuthenticationLoginWithFacebookAsync
+    href: pfauthentication/functions/pfauthenticationloginwithfacebookasync.md
+  - name: PFAuthenticationLoginWithFacebookGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithfacebookgetresult.md
+  - name: PFAuthenticationLoginWithFacebookGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithfacebookgetresultsize.md
+  - name: PFAuthenticationLoginWithGameCenterAsync
+    href: pfauthentication/functions/pfauthenticationloginwithgamecenterasync.md
+  - name: PFAuthenticationLoginWithGameCenterGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithgamecentergetresult.md
+  - name: PFAuthenticationLoginWithGameCenterGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithgamecentergetresultsize.md
+  - name: PFAuthenticationLoginWithGoogleAccountAsync
+    href: pfauthentication/functions/pfauthenticationloginwithgoogleaccountasync.md
+  - name: PFAuthenticationLoginWithGoogleAccountGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithgoogleaccountgetresult.md
+  - name: PFAuthenticationLoginWithGoogleAccountGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithgoogleaccountgetresultsize.md
+  - name: PFAuthenticationLoginWithGooglePlayGamesServicesAsync
+    href: pfauthentication/functions/pfauthenticationloginwithgoogleplaygamesservicesasync.md
+  - name: PFAuthenticationLoginWithGooglePlayGamesServicesGetResult
+    href: pfauthentication/functions/pfauthenticationloginwithgoogleplaygamesservicesgetresult.md
+  - name: PFAuthenticationLoginWithGooglePlayGamesServicesGetResultSize
+    href: pfauthentication/functions/pfauthenticationloginwithgoogleplaygamesservicesgetresultsize.md
   - name: PFAuthenticationLoginWithNintendoServiceAccountAsync
     href: pfauthentication/functions/pfauthenticationloginwithnintendoserviceaccountasync.md
   - name: PFAuthenticationLoginWithNintendoServiceAccountGetResult
@@ -464,8 +494,18 @@
     href: pfauthentication/functions/pfauthenticationloginwithxusergetresult.md
   - name: PFAuthenticationLoginWithXUserGetResultSize
     href: pfauthentication/functions/pfauthenticationloginwithxusergetresultsize.md
+  - name: PFAuthenticationReLoginWithAppleAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithappleasync.md
   - name: PFAuthenticationReLoginWithCustomIDAsync
     href: pfauthentication/functions/pfauthenticationreloginwithcustomidasync.md
+  - name: PFAuthenticationReLoginWithFacebookAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithfacebookasync.md
+  - name: PFAuthenticationReLoginWithGameCenterAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithgamecenterasync.md
+  - name: PFAuthenticationReLoginWithGoogleAccountAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithgoogleaccountasync.md
+  - name: PFAuthenticationReLoginWithGooglePlayGamesServicesAsync
+    href: pfauthentication/functions/pfauthenticationreloginwithgoogleplaygamesservicesasync.md
   - name: PFAuthenticationReLoginWithNintendoServiceAccountAsync
     href: pfauthentication/functions/pfauthenticationreloginwithnintendoserviceaccountasync.md
   - name: PFAuthenticationReLoginWithOpenIdConnectAsync
@@ -630,6 +670,8 @@
     href: pfcloudscript/functions/pfcloudscriptserverexecutecloudscriptgetresultsize.md
   - name: PFInitialize
     href: pfcore/functions/pfinitialize.md
+  - name: PFInitialize
+    href: pfcore/functions/pfinitialize_2.md
   - name: PFUninitializeAsync
     href: pfcore/functions/pfuninitializeasync.md
   - name: PFDataAbortFileUploadsAsync
@@ -1046,6 +1088,18 @@
     href: pfinventory/functions/pfinventorypurchaseinventoryitemsgetresult.md
   - name: PFInventoryPurchaseInventoryItemsGetResultSize
     href: pfinventory/functions/pfinventorypurchaseinventoryitemsgetresultsize.md
+  - name: PFInventoryRedeemAppleAppStoreInventoryItemsAsync
+    href: pfinventory/functions/pfinventoryredeemappleappstoreinventoryitemsasync.md
+  - name: PFInventoryRedeemAppleAppStoreInventoryItemsGetResult
+    href: pfinventory/functions/pfinventoryredeemappleappstoreinventoryitemsgetresult.md
+  - name: PFInventoryRedeemAppleAppStoreInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventoryredeemappleappstoreinventoryitemsgetresultsize.md
+  - name: PFInventoryRedeemGooglePlayInventoryItemsAsync
+    href: pfinventory/functions/pfinventoryredeemgoogleplayinventoryitemsasync.md
+  - name: PFInventoryRedeemGooglePlayInventoryItemsGetResult
+    href: pfinventory/functions/pfinventoryredeemgoogleplayinventoryitemsgetresult.md
+  - name: PFInventoryRedeemGooglePlayInventoryItemsGetResultSize
+    href: pfinventory/functions/pfinventoryredeemgoogleplayinventoryitemsgetresultsize.md
   - name: PFInventoryRedeemMicrosoftStoreInventoryItemsAsync
     href: pfinventory/functions/pfinventoryredeemmicrosoftstoreinventoryitemsasync.md
   - name: PFInventoryRedeemMicrosoftStoreInventoryItemsGetResult
@@ -1296,6 +1350,8 @@
     href: pfserviceconfig/functions/pfserviceconfiggettitleidsize.md
   - name: PFServicesInitialize
     href: pfservices/functions/pfservicesinitialize.md
+  - name: PFServicesInitialize
+    href: pfservices/functions/pfservicesinitialize_2.md
   - name: PFServicesUninitializeAsync
     href: pfservices/functions/pfservicesuninitializeasync.md
   - name: PFTitleDataManagementClientGetPublisherDataAsync
@@ -1572,6 +1628,8 @@
     href: pfaccountmanagementtypes/structs/pfaccountmanagementnintendoswitchplayfabidpair.md
   - name: PFAccountManagementPSNAccountPlayFabIdPair
     href: pfaccountmanagementtypes/structs/pfaccountmanagementpsnaccountplayfabidpair.md
+  - name: PFAccountManagementPSNOnlinePlayFabIdPair
+    href: pfaccountmanagementtypes/structs/pfaccountmanagementpsnonlineplayfabidpair.md
   - name: PFAccountManagementRemoveContactEmailRequest
     href: pfaccountmanagementtypes/structs/pfaccountmanagementremovecontactemailrequest.md
   - name: PFAccountManagementReportPlayerClientRequest
@@ -1670,8 +1728,18 @@
     href: pfauthenticationtypes/structs/pfauthenticationgetentityrequest.md
   - name: PFAuthenticationLoginResult
     href: pfauthenticationtypes/structs/pfauthenticationloginresult.md
+  - name: PFAuthenticationLoginWithAppleRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithapplerequest.md
   - name: PFAuthenticationLoginWithCustomIDRequest
     href: pfauthenticationtypes/structs/pfauthenticationloginwithcustomidrequest.md
+  - name: PFAuthenticationLoginWithFacebookRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithfacebookrequest.md
+  - name: PFAuthenticationLoginWithGameCenterRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithgamecenterrequest.md
+  - name: PFAuthenticationLoginWithGoogleAccountRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithgoogleaccountrequest.md
+  - name: PFAuthenticationLoginWithGooglePlayGamesServicesRequest
+    href: pfauthenticationtypes/structs/pfauthenticationloginwithgoogleplaygamesservicesrequest.md
   - name: PFAuthenticationLoginWithNintendoServiceAccountRequest
     href: pfauthenticationtypes/structs/pfauthenticationloginwithnintendoserviceaccountrequest.md
   - name: PFAuthenticationLoginWithOpenIdConnectRequest
@@ -2078,6 +2146,14 @@
     href: pfinventorytypes/structs/pfinventorypurchaseinventoryitemsresponse.md
   - name: PFInventoryPurchasePriceAmount
     href: pfinventorytypes/structs/pfinventorypurchasepriceamount.md
+  - name: PFInventoryRedeemAppleAppStoreInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventoryredeemappleappstoreinventoryitemsrequest.md
+  - name: PFInventoryRedeemAppleAppStoreInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventoryredeemappleappstoreinventoryitemsresponse.md
+  - name: PFInventoryRedeemGooglePlayInventoryItemsRequest
+    href: pfinventorytypes/structs/pfinventoryredeemgoogleplayinventoryitemsrequest.md
+  - name: PFInventoryRedeemGooglePlayInventoryItemsResponse
+    href: pfinventorytypes/structs/pfinventoryredeemgoogleplayinventoryitemsresponse.md
   - name: PFInventoryRedeemMicrosoftStoreInventoryItemsRequest
     href: pfinventorytypes/structs/pfinventoryredeemmicrosoftstoreinventoryitemsrequest.md
   - name: PFInventoryRedeemMicrosoftStoreInventoryItemsResponse
@@ -2156,6 +2232,10 @@
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistqosserversfortitlerequest.md
   - name: PFMultiplayerServerListQosServersForTitleResponse
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverlistqosserversfortitleresponse.md
+  - name: PFMultiplayerServerPartyInvitationConfiguration
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverpartyinvitationconfiguration.md
+  - name: PFMultiplayerServerPartyNetworkConfiguration
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserverpartynetworkconfiguration.md
   - name: PFMultiplayerServerPort
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverport.md
   - name: PFMultiplayerServerPublicIpAddress

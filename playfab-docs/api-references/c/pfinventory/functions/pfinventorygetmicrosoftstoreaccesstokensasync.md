@@ -5,7 +5,7 @@ description: "Gets the access tokens."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryGetMicrosoftStoreAccessTokensAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32 and GDK. Gets the access tokens for Microsoft Store authentication. When the asynchronous task is complete, call [PFInventoryGetMicrosoftStoreAccessTokensGetResultSize](pfinventorygetmicrosoftstoreaccesstokensgetresultsize.md) and [PFInventoryGetMicrosoftStoreAccessTokensGetResult](pfinventorygetmicrosoftstoreaccesstokensgetresult.md) to get the result.
+This API is available on Win32, GDK, Linux, and macOS. Gets the access tokens for Microsoft Store authentication. When the asynchronous task is complete, call [PFInventoryGetMicrosoftStoreAccessTokensGetResultSize](pfinventorygetmicrosoftstoreaccesstokensgetresultsize.md) and [PFInventoryGetMicrosoftStoreAccessTokensGetResult](pfinventorygetmicrosoftstoreaccesstokensgetresult.md) to get the result.
   
 ## Requirements  
   

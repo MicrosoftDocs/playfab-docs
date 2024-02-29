@@ -5,7 +5,7 @@ description: "Services C API overview - PFMultiplayerServerTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # Services C API overview - PFMultiplayerServerTypes.h
@@ -30,6 +30,8 @@ ms.date: 06/20/2023
 | [PFMultiplayerServerListBuildSummariesResponse](structs/pfmultiplayerserverlistbuildsummariesresponse.md) | PFMultiplayerServerListBuildSummariesResponse data model. |  
 | [PFMultiplayerServerListQosServersForTitleRequest](structs/pfmultiplayerserverlistqosserversfortitlerequest.md) | PFMultiplayerServerListQosServersForTitleRequest data model. Returns a list of quality of service servers for a title. |  
 | [PFMultiplayerServerListQosServersForTitleResponse](structs/pfmultiplayerserverlistqosserversfortitleresponse.md) | PFMultiplayerServerListQosServersForTitleResponse data model. |  
+| [PFMultiplayerServerPartyInvitationConfiguration](structs/pfmultiplayerserverpartyinvitationconfiguration.md) | PFMultiplayerServerPartyInvitationConfiguration data model. |  
+| [PFMultiplayerServerPartyNetworkConfiguration](structs/pfmultiplayerserverpartynetworkconfiguration.md) | PFMultiplayerServerPartyNetworkConfiguration data model. |  
 | [PFMultiplayerServerPort](structs/pfmultiplayerserverport.md) | PFMultiplayerServerPort data model. |  
 | [PFMultiplayerServerPublicIpAddress](structs/pfmultiplayerserverpublicipaddress.md) | PFMultiplayerServerPublicIpAddress data model. |  
 | [PFMultiplayerServerQosServer](structs/pfmultiplayerserverqosserver.md) | PFMultiplayerServerQosServer data model. |  

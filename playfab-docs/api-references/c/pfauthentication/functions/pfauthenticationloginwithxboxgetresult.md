@@ -5,7 +5,7 @@ description: "Get the result from a PFAuthenticationLoginWithXboxAsync call. The
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/26/2023
+ms.date: 02/22/2024
 ---
 
 # PFAuthenticationLoginWithXboxGetResult  

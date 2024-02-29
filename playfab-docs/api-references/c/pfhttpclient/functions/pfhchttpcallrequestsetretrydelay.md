@@ -5,7 +5,7 @@ description: "Sets the HTTP retry delay in seconds. The default and minimum dela
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFHCHttpCallRequestSetRetryDelay  
