@@ -5,7 +5,7 @@ description: "Services C API overview - PFInventoryTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # Services C API overview - PFInventoryTypes.h
@@ -42,6 +42,10 @@ ms.date: 09/25/2023
 | [PFInventoryPurchaseInventoryItemsRequest](structs/pfinventorypurchaseinventoryitemsrequest.md) | PFInventoryPurchaseInventoryItemsRequest data model. Purchase a single item or bundle, paying the associated price. |  
 | [PFInventoryPurchaseInventoryItemsResponse](structs/pfinventorypurchaseinventoryitemsresponse.md) | PFInventoryPurchaseInventoryItemsResponse data model. |  
 | [PFInventoryPurchasePriceAmount](structs/pfinventorypurchasepriceamount.md) | PFInventoryPurchasePriceAmount data model. |  
+| [PFInventoryRedeemAppleAppStoreInventoryItemsRequest](structs/pfinventoryredeemappleappstoreinventoryitemsrequest.md) | PFInventoryRedeemAppleAppStoreInventoryItemsRequest data model. Redeem items from the Apple App Store. |  
+| [PFInventoryRedeemAppleAppStoreInventoryItemsResponse](structs/pfinventoryredeemappleappstoreinventoryitemsresponse.md) | PFInventoryRedeemAppleAppStoreInventoryItemsResponse data model. |  
+| [PFInventoryRedeemGooglePlayInventoryItemsRequest](structs/pfinventoryredeemgoogleplayinventoryitemsrequest.md) | PFInventoryRedeemGooglePlayInventoryItemsRequest data model. Redeem items from the Google Play Store. |  
+| [PFInventoryRedeemGooglePlayInventoryItemsResponse](structs/pfinventoryredeemgoogleplayinventoryitemsresponse.md) | PFInventoryRedeemGooglePlayInventoryItemsResponse data model. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsRequest](structs/pfinventoryredeemmicrosoftstoreinventoryitemsrequest.md) | PFInventoryRedeemMicrosoftStoreInventoryItemsRequest data model. Redeem items from the Microsoft Store. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsResponse](structs/pfinventoryredeemmicrosoftstoreinventoryitemsresponse.md) | PFInventoryRedeemMicrosoftStoreInventoryItemsResponse data model. |  
 | [PFInventoryRedeemNintendoEShopInventoryItemsRequest](structs/pfinventoryredeemnintendoeshopinventoryitemsrequest.md) | PFInventoryRedeemNintendoEShopInventoryItemsRequest data model. Redeem items from the Nintendo EShop. |  

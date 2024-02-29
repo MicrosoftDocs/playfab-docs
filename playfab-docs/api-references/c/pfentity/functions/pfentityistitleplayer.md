@@ -5,7 +5,7 @@ description: "Convenience method to check if an Entity is a Title Player. This i
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFEntityIsTitlePlayer  

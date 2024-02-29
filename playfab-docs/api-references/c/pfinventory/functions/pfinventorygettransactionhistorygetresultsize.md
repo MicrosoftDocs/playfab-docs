@@ -5,7 +5,7 @@ description: "Get the size in bytes needed to store the result of a GetTransacti
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryGetTransactionHistoryGetResultSize  

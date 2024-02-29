@@ -5,7 +5,7 @@ description: "Deletes a group and all roles, invitations, join requests, and blo
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFGroupsDeleteGroupAsync  

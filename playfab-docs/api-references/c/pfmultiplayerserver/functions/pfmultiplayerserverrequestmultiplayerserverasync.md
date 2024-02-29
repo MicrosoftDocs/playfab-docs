@@ -5,7 +5,7 @@ description: "Request a multiplayer server session. Accepts tokens for title and
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerAsync  

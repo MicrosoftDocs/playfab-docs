@@ -5,7 +5,7 @@ description: "Executes a CloudScript function, with the 'currentPlayerId' set to
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFCloudScriptClientExecuteCloudScriptAsync  

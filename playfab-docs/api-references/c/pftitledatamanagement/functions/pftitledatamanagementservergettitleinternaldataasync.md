@@ -5,7 +5,7 @@ description: "Retrieves the key-value store of custom internal title settings"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFTitleDataManagementServerGetTitleInternalDataAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. This API is designed to return title specific values which are accessible only to the server. This can be used to tweak settings on game servers and Cloud Scripts without needed to update and re-deploy them. Note that there may up to a minute delay in between updating title data and this API call returning the newest value. See also ServerSetTitleInternalDataAsync. When the asynchronous task is complete, call [PFTitleDataManagementServerGetTitleInternalDataGetResultSize](pftitledatamanagementservergettitleinternaldatagetresultsize.md) and [PFTitleDataManagementServerGetTitleInternalDataGetResult](pftitledatamanagementservergettitleinternaldatagetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. This API is designed to return title specific values which are accessible only to the server. This can be used to tweak settings on game servers and Cloud Scripts without needed to update and re-deploy them. Note that there may up to a minute delay in between updating title data and this API call returning the newest value. See also ServerSetTitleInternalDataAsync. When the asynchronous task is complete, call [PFTitleDataManagementServerGetTitleInternalDataGetResultSize](pftitledatamanagementservergettitleinternaldatagetresultsize.md) and [PFTitleDataManagementServerGetTitleInternalDataGetResult](pftitledatamanagementservergettitleinternaldatagetresult.md) to get the result.
   
 ## Requirements  
   

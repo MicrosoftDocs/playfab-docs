@@ -5,7 +5,7 @@ description: "Removes a specified user from the friend list of the local user"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFFriendsClientRemoveFriendAsync  

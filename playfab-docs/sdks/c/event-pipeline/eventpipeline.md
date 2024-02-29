@@ -84,6 +84,8 @@ The configurable properties are:
 - **maxWaitTimeInSeconds**: The maximum time the pipeline waits before sending out an incomplete batch.
 - **pollDelayInMs**: How long the pipeline will wait to read from the event buffer again after emptying it.
 - **compressionLevel**: Defines the compression level that is used on the compression algorithm. For more details about compression, see _[GZIP Compression](#gzip-compression)_.
+- **retryOnDisconnect**: The event pipeline will retry sending events that failed due to lost connection. Only available for Telemetry Event Pipeline.
+- **bufferSize**: The limit of the amount of events in the pipeline's buffer.
 
 In the case where **PFEventPipelineConfig** has only some properties specified, the ones being empty are overwritten and use the default values.
 
@@ -309,6 +311,12 @@ void EmitEvent(PFEventPipelineHandle handle)
 }
 ```
 
+If the buffer size limit is exceeded when an event is emitted, you will encounter an error from the SDK as follows:
+
+- `E_PF_API_CLIENT_REQUEST_RATE_LIMIT_EXCEEDED (0x892354dd)`
+
+Make sure to set an adequate size of a buffer for your needs.
+
 ### Switching to Entity auth or updating Entity
 
 If a pipeline was created using only a Telemetry Key configuration, there's a way to switch to Entity authentication or if you want to update your pipeline to use a different Entity.
@@ -399,13 +407,17 @@ void EventPipelineUpdateConfiguration(PFEventPipelineHandle handle)
     uint32_t maxWaitTime = 5;
     uint32_t pollDelay = 50;
     PFHCCompressionLevel compressionLevel = PFHCCompressionLevel::Medium;
+    bool retryOnDisconnect = true;
+    size_t bufferSize = 2048;
 
     PFEventPipelineConfig eventPipelineConfig
     {
         &maxEvents,             // maxEventsPerBatch
         &maxWaitTime,           // maxWaitTimeInSeconds
         &pollDelay,             // pollDelayInMs
-        &compressionLevel       // compressionLevel
+        &compressionLevel,      // compressionLevel
+        &retryOnDisconnect,     // retryOnDisconnect
+        &bufferSize,            // bufferSize
     };
 
     HRESULT hr = PFEventPipelineUpdateConfiguration(

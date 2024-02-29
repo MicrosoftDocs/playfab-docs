@@ -5,7 +5,7 @@ description: "Get Inventory Collection Ids. Up to 50 Ids can be returned at once
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryGetInventoryCollectionIdsAsync  

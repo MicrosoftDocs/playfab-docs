@@ -5,7 +5,7 @@ description: "Get all tags with a given Namespace (optional) from a player profi
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFSegmentsClientGetPlayerTagsAsync  

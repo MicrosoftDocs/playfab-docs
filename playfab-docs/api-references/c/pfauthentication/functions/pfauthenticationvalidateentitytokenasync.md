@@ -5,7 +5,7 @@ description: "Method for a server to validate a client provided EntityToken. Onl
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFAuthenticationValidateEntityTokenAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. Given an entity token, validates that it hasn't expired or been revoked and will return details of the owner. When the asynchronous task is complete, call [PFAuthenticationValidateEntityTokenGetResultSize](pfauthenticationvalidateentitytokengetresultsize.md) and [PFAuthenticationValidateEntityTokenGetResult](pfauthenticationvalidateentitytokengetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. Given an entity token, validates that it hasn't expired or been revoked and will return details of the owner. When the asynchronous task is complete, call [PFAuthenticationValidateEntityTokenGetResultSize](pfauthenticationvalidateentitytokengetresultsize.md) and [PFAuthenticationValidateEntityTokenGetResult](pfauthenticationvalidateentitytokengetresult.md) to get the result.
   
 ## Requirements  
   

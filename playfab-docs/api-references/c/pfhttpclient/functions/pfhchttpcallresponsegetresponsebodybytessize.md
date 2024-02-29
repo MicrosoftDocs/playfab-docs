@@ -5,7 +5,7 @@ description: "Get the response body buffer size of the HTTP call. This API opera
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFHCHttpCallResponseGetResponseBodyBytesSize  

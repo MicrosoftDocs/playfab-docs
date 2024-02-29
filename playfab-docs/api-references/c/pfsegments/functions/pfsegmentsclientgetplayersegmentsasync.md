@@ -5,7 +5,7 @@ description: "List all segments that a player currently belongs to at this momen
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFSegmentsClientGetPlayerSegmentsAsync  

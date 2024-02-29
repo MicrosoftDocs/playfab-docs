@@ -5,7 +5,7 @@ description: "Update the metadata for an item in the working catalog."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFCatalogUpdateDraftItemAsync  

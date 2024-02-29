@@ -5,7 +5,7 @@ description: "PFSegmentsAddPlayerTagRequest data model. This API will trigger a 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/26/2023
+ms.date: 02/22/2024
 ---
 
 # PFSegmentsAddPlayerTagRequest  

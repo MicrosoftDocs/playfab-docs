@@ -5,7 +5,7 @@ description: "Services C API overview - PFInventory.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # Services C API overview - PFInventory.h
@@ -40,6 +40,12 @@ ms.date: 09/25/2023
 | [PFInventoryPurchaseInventoryItemsAsync](functions/pfinventorypurchaseinventoryitemsasync.md) | Purchase an item or bundle. Up to 3500 stacks of items can be added to a single inventory collection. Stack size is uncapped. |  
 | [PFInventoryPurchaseInventoryItemsGetResult](functions/pfinventorypurchaseinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryPurchaseInventoryItemsAsync call. |  
 | [PFInventoryPurchaseInventoryItemsGetResultSize](functions/pfinventorypurchaseinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a PurchaseInventoryItems call. |  
+| [PFInventoryRedeemAppleAppStoreInventoryItemsAsync](functions/pfinventoryredeemappleappstoreinventoryitemsasync.md) | Redeem items. |  
+| [PFInventoryRedeemAppleAppStoreInventoryItemsGetResult](functions/pfinventoryredeemappleappstoreinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryRedeemAppleAppStoreInventoryItemsAsync call. |  
+| [PFInventoryRedeemAppleAppStoreInventoryItemsGetResultSize](functions/pfinventoryredeemappleappstoreinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a RedeemAppleAppStoreInventoryItems call. |  
+| [PFInventoryRedeemGooglePlayInventoryItemsAsync](functions/pfinventoryredeemgoogleplayinventoryitemsasync.md) | Redeem items. |  
+| [PFInventoryRedeemGooglePlayInventoryItemsGetResult](functions/pfinventoryredeemgoogleplayinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryRedeemGooglePlayInventoryItemsAsync call. |  
+| [PFInventoryRedeemGooglePlayInventoryItemsGetResultSize](functions/pfinventoryredeemgoogleplayinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a RedeemGooglePlayInventoryItems call. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsAsync](functions/pfinventoryredeemmicrosoftstoreinventoryitemsasync.md) | Redeem items. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResult](functions/pfinventoryredeemmicrosoftstoreinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryRedeemMicrosoftStoreInventoryItemsAsync call. |  
 | [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResultSize](functions/pfinventoryredeemmicrosoftstoreinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a RedeemMicrosoftStoreInventoryItems call. |  

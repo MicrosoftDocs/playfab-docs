@@ -5,6 +5,14 @@
     href: ../c/quickstart-win32.md
   - name: Quickstart - GDK
     href: ../c/quickstart-gdk.md
+  - name: Quickstart - Android
+    href: ../c/quickstart-android.md
+  - name: Quickstart - iOS
+    href: ../c/quickstart-ios.md
+  - name: Quickstart - macOS
+    href: ../c/quickstart-macos.md
+  - name: Quickstart - Linux
+    href: ../c/quickstart-linux.md
 - name:  C#
   href: ../c-sharp/index.md  
   items:

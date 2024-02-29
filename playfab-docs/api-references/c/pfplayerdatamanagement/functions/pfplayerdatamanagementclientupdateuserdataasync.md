@@ -5,7 +5,7 @@ description: "Creates and updates the title-specific custom data for the user wh
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFPlayerDataManagementClientUpdateUserDataAsync  

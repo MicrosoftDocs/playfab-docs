@@ -5,7 +5,7 @@ description: "Creates an event pipeline to upload Telemetry events using an Enti
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 02/22/2024
 ---
 
 # PFEventPipelineCreateTelemetryPipelineHandleWithEntity  

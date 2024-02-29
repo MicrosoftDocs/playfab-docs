@@ -5,7 +5,7 @@ description: "Logs in a user with an Open ID Connect JWT created by an existing 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFAuthenticationLoginWithOpenIdConnectAsync  

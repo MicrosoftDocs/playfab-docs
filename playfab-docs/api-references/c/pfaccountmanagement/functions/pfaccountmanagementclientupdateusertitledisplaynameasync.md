@@ -5,7 +5,7 @@ description: "Updates the title specific display name for the user"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFAccountManagementClientUpdateUserTitleDisplayNameAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. In addition to the PlayFab username, titles can make use of a DisplayName which is also a unique identifier, but specific to the title. This allows for unique names which more closely match the theme or genre of a title, for example. When the asynchronous task is complete, call [PFAccountManagementClientUpdateUserTitleDisplayNameGetResultSize](pfaccountmanagementclientupdateusertitledisplaynamegetresultsize.md) and [PFAccountManagementClientUpdateUserTitleDisplayNameGetResult](pfaccountmanagementclientupdateusertitledisplaynamegetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. In addition to the PlayFab username, titles can make use of a DisplayName which is also a unique identifier, but specific to the title. This allows for unique names which more closely match the theme or genre of a title, for example. When the asynchronous task is complete, call [PFAccountManagementClientUpdateUserTitleDisplayNameGetResultSize](pfaccountmanagementclientupdateusertitledisplaynamegetresultsize.md) and [PFAccountManagementClientUpdateUserTitleDisplayNameGetResult](pfaccountmanagementclientupdateusertitledisplaynamegetresult.md) to get the result.
   
 ## Requirements  
   

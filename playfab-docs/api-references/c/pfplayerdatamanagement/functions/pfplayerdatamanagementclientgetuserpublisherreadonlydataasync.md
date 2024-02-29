@@ -5,7 +5,7 @@ description: "Retrieves the publisher-specific custom data for the user which ca
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFPlayerDataManagementClientGetUserPublisherReadOnlyDataAsync  

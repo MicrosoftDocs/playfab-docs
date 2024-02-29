@@ -5,7 +5,7 @@ description: "Get transaction history for a player. Up to 50 Events can be retur
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryGetTransactionHistoryAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. Get transaction history for specified entity and collection. When the asynchronous task is complete, call [PFInventoryGetTransactionHistoryGetResultSize](pfinventorygettransactionhistorygetresultsize.md) and [PFInventoryGetTransactionHistoryGetResult](pfinventorygettransactionhistorygetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. Get transaction history for specified entity and collection. When the asynchronous task is complete, call [PFInventoryGetTransactionHistoryGetResultSize](pfinventorygettransactionhistorygetresultsize.md) and [PFInventoryGetTransactionHistoryGetResult](pfinventorygettransactionhistorygetresult.md) to get the result.
   
 ## Requirements  
   

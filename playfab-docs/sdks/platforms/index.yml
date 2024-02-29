@@ -61,6 +61,10 @@ landingContent:
         links:
           - text: Android
             url: ../platforms/android.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - Android
+            url: ../c/quickstart-android.md
   # Card
   - title: iOS
     linkLists:
@@ -68,6 +72,21 @@ landingContent:
         links:
           - text: iOS
             url: ../platforms/ios.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - iOS
+            url: ../c/quickstart-ios.md
+  # Card
+  - title: macOS
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: macOS
+            url: ../platforms/macos.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart - macOS
+            url: ../c/quickstart-macos.md
   # Card
   - title: Linux
     linkLists:
@@ -77,8 +96,8 @@ landingContent:
             url: ../platforms/linux.md
       - linkListType: quickstart
         links:
-          - text: Quickstart - Legacy C++
-            url: ../playfab-cpp/quickstart-linux.md
+          - text: Quickstart - Linux
+            url: ../c/quickstart-linux.md
   # Card
   - title: Services and Tools
     linkLists:

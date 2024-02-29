@@ -5,7 +5,7 @@ description: "PFProfilesEntityDataObject data model. An entity object and its as
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFProfilesEntityDataObject  

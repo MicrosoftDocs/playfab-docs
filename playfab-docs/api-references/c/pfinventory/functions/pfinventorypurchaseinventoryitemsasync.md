@@ -5,7 +5,7 @@ description: "Purchase an item or bundle. Up to 3500 stacks of items can be adde
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryPurchaseInventoryItemsAsync  

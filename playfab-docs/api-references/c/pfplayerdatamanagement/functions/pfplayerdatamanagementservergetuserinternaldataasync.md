@@ -5,7 +5,7 @@ description: "Retrieves the title-specific custom data for the user which cannot
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFPlayerDataManagementServerGetUserInternalDataAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. Data is stored as JSON key-value pairs. If the Keys parameter is provided, the data object returned will only contain the data specific to the indicated Keys. Otherwise, the full set of custom user data will be returned. See also ServerGetUserDataAsync, ServerGetUserReadOnlyDataAsync, ServerUpdateUserDataAsync, ServerUpdateUserInternalDataAsync, ServerUpdateUserReadOnlyDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementServerGetUserInternalDataGetResultSize](pfplayerdatamanagementservergetuserinternaldatagetresultsize.md) and [PFPlayerDataManagementServerGetUserInternalDataGetResult](pfplayerdatamanagementservergetuserinternaldatagetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. Data is stored as JSON key-value pairs. If the Keys parameter is provided, the data object returned will only contain the data specific to the indicated Keys. Otherwise, the full set of custom user data will be returned. See also ServerGetUserDataAsync, ServerGetUserReadOnlyDataAsync, ServerUpdateUserDataAsync, ServerUpdateUserInternalDataAsync, ServerUpdateUserReadOnlyDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementServerGetUserInternalDataGetResultSize](pfplayerdatamanagementservergetuserinternaldatagetresultsize.md) and [PFPlayerDataManagementServerGetUserInternalDataGetResult](pfplayerdatamanagementservergetuserinternaldatagetresult.md) to get the result.
   
 ## Requirements  
   
