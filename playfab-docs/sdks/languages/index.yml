@@ -31,6 +31,14 @@ landingContent:
             url: ../c/quickstart-win32.md
           - text: Quickstart - GDK
             url: ../c/quickstart-gdk.md
+          - text: Quickstart - Android
+            url: ../c/quickstart-android.md
+          - text: Quickstart - iOS
+            url: ../c/quickstart-ios.md
+          - text: Quickstart - macOS
+            url: ../c/quickstart-macos.md
+          - text: Quickstart - Linux
+            url: ../c/quickstart-linux.md
       - linkListType: how-to-guide
         links:
           - text: Making Async Calls

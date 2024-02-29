@@ -1,7 +1,7 @@
 ---
-title: PlayFab Services C/C++ SDK Release Notes 2023
+title: PlayFab Services C/C++ SDK Release Notes
 author: amccalib
-description: PlayFab Services C/C++ SDK Release Notes for 2023.
+description: PlayFab Services C/C++ SDK Release Notes.
 ms.author: andmcc
 ms.date: 09/28/2023
 ms.topic: article
@@ -9,12 +9,38 @@ ms.service: playfab
 keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---
-# PlayFab Services C/C++ SDK Release Notes 2023
+# PlayFab Services C/C++ SDK Release Notes
 
 These release notes are for __PlayFabCSdk__. For release notes for other PlayFab Services SDKs, see [Other Services SDK Release Notes](../index.md).
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 2403.0.0
+
+Date: February 28, 2024
+
+ - Release of new SDK projections with support for Linux, Android, iOS and macOS. The new APIs being exposed with this release are:
+
+    - **For Android**:
+      - LoginWithFacebook
+      - ClientLinkGoogleAccount
+      - ClientLinkGooglePlayGamesServicesAccount
+      - ClientUnlinkGoogleAccount
+      - ClientUnlinkGooglePlayGamesServicesAccount
+      - ClientAndroidDevicePushNotificationRegistration
+      - RedeemGooglePlayInventoryItems
+
+    - **For iOS**:
+      - LoginWithFacebook
+      - ClientLinkApple
+      - ClientUnlinkApple
+      - ClientLinkGameCenterAccount
+      - ClientUnlinkGameCenterAccount
+      - ClientRegisterForIOSPushNotification
+      - RedeemAppleAppStoreInventoryItems
+
+ - Added support for Event Buffering in Event pipelines.
 
 ## 2310.0.1
 
@@ -164,8 +190,6 @@ Date: September 28, 2023
      - ServerSetPublisherData
      - ServerSetTitleData
      - ServerSetTitleInternalData
-
-
 
 ## 2306.0.0
 

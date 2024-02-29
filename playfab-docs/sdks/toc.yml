@@ -16,6 +16,14 @@
         href: c/quickstart-win32.md
       - name: Quickstart - GDK
         href: c/quickstart-gdk.md
+      - name: Quickstart - Android
+        href: c/quickstart-android.md
+      - name: Quickstart - iOS
+        href: c/quickstart-ios.md
+      - name: Quickstart - macOS
+        href: c/quickstart-macos.md
+      - name: Quickstart - Linux
+        href: c/quickstart-Linux.md
       - name: Making Async Calls
         href: c/async.md
       - name: Managing Memory
@@ -84,6 +92,8 @@
     href: platforms/android.md
   - name: iOS
     href: platforms/ios.md
+  - name: macOS
+    href: platforms/macos.md
   - name: Linux
     href: platforms/linux.md
   - name: Microsoft GDK
