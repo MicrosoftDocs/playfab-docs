@@ -5,7 +5,7 @@ description: "Get the response body string of the HTTP call. This API operation 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFHCHttpCallResponseGetResponseString  

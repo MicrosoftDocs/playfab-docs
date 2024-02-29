@@ -5,7 +5,7 @@ description: "Retrieves an array of player segment definitions. Results from thi
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFSegmentsServerGetAllSegmentsAsync  
@@ -40,7 +40,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. Request has no paramaters. See also ServerGetPlayersInSegmentAsync. When the asynchronous task is complete, call [PFSegmentsServerGetAllSegmentsGetResultSize](pfsegmentsservergetallsegmentsgetresultsize.md) and [PFSegmentsServerGetAllSegmentsGetResult](pfsegmentsservergetallsegmentsgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. Request has no paramaters. See also ServerGetPlayersInSegmentAsync. When the asynchronous task is complete, call [PFSegmentsServerGetAllSegmentsGetResultSize](pfsegmentsservergetallsegmentsgetresultsize.md) and [PFSegmentsServerGetAllSegmentsGetResult](pfsegmentsservergetallsegmentsgetresult.md) to get the result.
   
 ## Requirements  
   

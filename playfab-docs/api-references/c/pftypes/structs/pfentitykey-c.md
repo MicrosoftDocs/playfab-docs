@@ -5,7 +5,7 @@ description: "PFEntityKey data model. Combined entity type and ID structure whic
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFEntityKey C API 

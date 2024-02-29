@@ -5,7 +5,7 @@ description: "Services C API overview - PFCore.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # Services C API overview - PFCore.h
@@ -16,4 +16,5 @@ ms.date: 03/09/2023
 | Function | Description |  
 | --- | --- |  
 | [PFInitialize](functions/pfinitialize.md) | Initialize PlayFabCore global state. Custom platform hooks must be configured prior to calling PFInitialize. |  
+| [PFInitialize](functions/pfinitialize_2.md) | Initializes PlayFabCore global state. Custom platform hooks must be configured prior to calling PFInitialize. |  
 | [PFUninitializeAsync](functions/pfuninitializeasync.md) | Cleanup PlayFab global state. |  

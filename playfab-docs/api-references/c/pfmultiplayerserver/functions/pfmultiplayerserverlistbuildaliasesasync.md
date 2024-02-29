@@ -5,7 +5,7 @@ description: "Lists details of all build aliases for a title. Accepts tokens for
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFMultiplayerServerListBuildAliasesAsync  

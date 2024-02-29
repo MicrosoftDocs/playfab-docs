@@ -5,7 +5,7 @@ description: "Redeem items."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryRedeemSteamInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. Redeem inventory items from Steam. When the asynchronous task is complete, call [PFInventoryRedeemSteamInventoryItemsGetResultSize](pfinventoryredeemsteaminventoryitemsgetresultsize.md) and [PFInventoryRedeemSteamInventoryItemsGetResult](pfinventoryredeemsteaminventoryitemsgetresult.md) to get the result.
+This API is available on Win32 and macOS. Redeem inventory items from Steam. When the asynchronous task is complete, call [PFInventoryRedeemSteamInventoryItemsGetResultSize](pfinventoryredeemsteaminventoryitemsgetresultsize.md) and [PFInventoryRedeemSteamInventoryItemsGetResult](pfinventoryredeemsteaminventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

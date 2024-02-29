@@ -5,7 +5,7 @@ description: "Services C API overview - PFHCTrace.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # Services C API overview - PFHCTrace.h

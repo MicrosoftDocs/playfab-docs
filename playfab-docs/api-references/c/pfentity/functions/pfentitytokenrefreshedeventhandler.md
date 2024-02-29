@@ -5,7 +5,7 @@ description: "A handler invoked every time an Entity is automatically re-authent
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 03/09/2023
+ms.date: 02/22/2024
 ---
 
 # PFEntityTokenRefreshedEventHandler  

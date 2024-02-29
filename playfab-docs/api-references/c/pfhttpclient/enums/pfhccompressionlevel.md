@@ -5,7 +5,7 @@ description: "Defines the compression level that will be used on the compression
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFHCCompressionLevel  

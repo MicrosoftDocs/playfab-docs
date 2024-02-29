@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayFab Services SDK for C/C++
 
-The new PlayFab Services SDK for C/C++ is currently available for the following platforms: Win32 (x64 only), Nintendo Switch, Sony PlayStation&#174; and the Microsoft GDK. Depending on the platform you're targeting, the way you acquire the SDK differs.
+The new PlayFab Services SDK for C/C++ is currently available for the following platforms: Win32 (x64 only), Nintendo Switch, Sony PlayStation&#174;, iOS, macOS, Android, Linux, and the Microsoft GDK. Depending on the platform you're targeting, the way you acquire the SDK differs.
 
 ## Win32
 
@@ -24,13 +24,13 @@ The Microsoft Game Development Kit (GDK) includes the PlayFab Services SDK as an
 
 To learn more about the GDK, see the public documentation: [GDK documentation homepage](/gaming/gdk/).
 
-## Switch
+## Nintendo Switch
 
-Before you can access the PlayFab Services SDK for Switch, you need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. See more information here: [Request access](../../features/multiplayer/networking/request-access-for-sdks-samples.md).
+Before you can access the PlayFab Services SDK for Nintendo Switch, you need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. See more information here: [Request access](../../features/multiplayer/networking/request-access-for-sdks-samples.md).
 
 Once you've been granted access to the Switch SDK, you can download it from the git repo here: [PlayFabCSdk.Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch).
 
-## PlayStation
+## Sony PlayStation
 
 Before you can access the PlayFab Services SDK for PlayStation, you need to confirm your registered developer status via the PlayFab page in Sony's middleware directory. See more information here: [Request access](../../features/multiplayer/networking/request-access-for-sdks-samples.md).
 
@@ -38,7 +38,7 @@ Once you've been granted access to the PlayStation SDK, you can download it from
 
 ## What this SDK includes
 
-The PlayFab Services SDK for C/C++ is for use by game clients on Windows, Xbox, Switch, and PlayStation as well as game servers on Windows. It includes only the subset of feature areas and service calls appropriate for games running on those platforms. We'll be adding support for more platforms and scenarios over time.
+The PlayFab Services SDK for C/C++ is for use by game clients on Win32 (x64 only), Nintendo Switch, Sony PlayStation&#174;, iOS, macOS, Android, Linux, and the Microsoft GDK. It includes only the subset of feature areas and service calls appropriate for games running on those platforms. We'll be adding support for more platforms and scenarios over time.
 
 Here are some notable differences when compared to other, more general purpose, PlayFab SDKs:
 - This SDK omits any service calls that require admin or developer-level authentication on all platforms except Windows, where they may be needed for game server scenarios. Specifically, any call that requires a developer secret key or title entity token to authorize isn't available outside of the Windows SDK.
@@ -59,14 +59,13 @@ Here are some notable differences when compared to other, more general purpose, 
 
 ## Platforms supported by this SDK
 
-This SDK is appropriate for x64 Win32 games and game servers, Switch games, PlayStation games and games utilizing the GDK on Windows and Xbox.
+This SDK is appropriate for x64 Win32 games and game servers, Nintendo Switch games, Sony PlayStation games, iOS games, Android games, macOS games, Linux games, and games utilizing the GDK on Windows and Xbox.
 
 ## When not to use this SDK
 
-There are two scenarios where this SDK is not appropriate:
+There are scenarios where this SDK is not appropriate:
 
 - If your game utilizes a game engine for which there's already an engine-specific PlayFab SDK, that SDK is a better fit: [Unreal Engine](../unreal/index.md), [Unity3D](../unity3d/index.md).
-- At this time, we don't have versions of this SDK available for platforms beyond Windows, Switch, PlayStation, and GDK. While expanded platform support is coming soon, if your game is already targeting unsupported platforms and you prefer to use a single SDK, you should continue to use the [Legacy C++ SDK](../playfab-cpp/index.md).
 
 ## Add this SDK to your project
 
@@ -74,6 +73,18 @@ There are two scenarios where this SDK is not appropriate:
     - The Win32 version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Win32](./quickstart-win32.md).
 - GDK
     - The GDK version of this SDK is a component of the GDK. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for GDK](./quickstart-gdk.md).
+- Android
+    - The Android version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Android](./quickstart-android.md).
+- iOS
+    - The iOS version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for iOS](./quickstart-ios.md).
+- macOS
+    - The macOS version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for macOS](./quickstart-macos.md).
+- Linux
+    - The Linux version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Linux](./quickstart-linux.md).
+- Sony Playstation
+    - See [Sony Playstation](#sony-playstation)
+- Nintendo Switch
+    - See [Nintendo Switch](#nintendo-switch)
 
 ## Reference
 

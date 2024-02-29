@@ -5,7 +5,7 @@ description: "PFProfilesEntityStatisticValue data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFProfilesEntityStatisticValue  
@@ -20,7 +20,7 @@ typedef struct PFProfilesEntityStatisticValue {
     uint32_t attributeStatisticsCount;  
     const char* metadata;  
     const char* name;  
-    int32_t const* scores;  
+    const char* const* scores;  
     uint32_t scoresCount;  
     int32_t const* value;  
     int32_t version;  
@@ -48,7 +48,7 @@ Count of attributeStatistics
   
 (Optional) Statistic name.
   
-**`scores`** &nbsp; int32_t const*  
+**`scores`** &nbsp; const char* const*  
 *may be nullptr*  
   
 (Optional) Statistic scores.

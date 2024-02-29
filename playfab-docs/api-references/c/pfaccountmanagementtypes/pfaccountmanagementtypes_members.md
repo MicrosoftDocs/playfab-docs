@@ -5,7 +5,7 @@ description: "Services C API overview - PFAccountManagementTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # Services C API overview - PFAccountManagementTypes.h
@@ -95,6 +95,7 @@ ms.date: 09/25/2023
 | [PFAccountManagementNintendoServiceAccountPlayFabIdPair](structs/pfaccountmanagementnintendoserviceaccountplayfabidpair.md) | PFAccountManagementNintendoServiceAccountPlayFabIdPair data model. |  
 | [PFAccountManagementNintendoSwitchPlayFabIdPair](structs/pfaccountmanagementnintendoswitchplayfabidpair.md) | PFAccountManagementNintendoSwitchPlayFabIdPair data model. |  
 | [PFAccountManagementPSNAccountPlayFabIdPair](structs/pfaccountmanagementpsnaccountplayfabidpair.md) | PFAccountManagementPSNAccountPlayFabIdPair data model. |  
+| [PFAccountManagementPSNOnlinePlayFabIdPair](structs/pfaccountmanagementpsnonlineplayfabidpair.md) | PFAccountManagementPSNOnlinePlayFabIdPair data model. |  
 | [PFAccountManagementRemoveContactEmailRequest](structs/pfaccountmanagementremovecontactemailrequest.md) | PFAccountManagementRemoveContactEmailRequest data model. This API removes an existing contact email from the player's profile. |  
 | [PFAccountManagementReportPlayerClientRequest](structs/pfaccountmanagementreportplayerclientrequest.md) | PFAccountManagementReportPlayerClientRequest data model. |  
 | [PFAccountManagementReportPlayerClientResult](structs/pfaccountmanagementreportplayerclientresult.md) | PFAccountManagementReportPlayerClientResult data model. Players are currently limited to five reports per day. Attempts by a single user account to submit reports beyond five will result in Updated being returned as false. |  

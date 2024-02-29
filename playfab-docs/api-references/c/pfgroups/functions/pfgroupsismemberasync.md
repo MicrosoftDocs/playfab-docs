@@ -5,7 +5,7 @@ description: "Checks to see if an entity is a member of a group or role within t
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFGroupsIsMemberAsync  

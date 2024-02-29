@@ -5,7 +5,7 @@ description: "Defines the Event Pipeline configuration."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFEventPipelineConfig  
@@ -20,6 +20,8 @@ struct PFEventPipelineConfig {
     uint32_t* maxWaitTimeInSeconds;  
     uint32_t* pollDelayInMs;  
     PFHCCompressionLevel* compressionLevel;  
+    bool* retryOnDisconnect;  
+    size_t* bufferSize;  
 }  
 ```
   
@@ -44,6 +46,16 @@ How long the pipeline will wait to read from the event buffer again after emptyi
 *may be nullptr*  
   
 The event pipeline will send events using GZIP compression with the level specified. If sent null, no compression will be made.
+  
+**`retryOnDisconnect`** &nbsp; bool*  
+*may be nullptr*  
+  
+The event pipeline will retry sending events that failed due to lost connection. If sent null, default behavior will be to retry (true) (not available for PlayStream).
+  
+**`bufferSize`** &nbsp; size_t*  
+*may be nullptr*  
+  
+The limit of the amount of events in the pipeline's buffer. If sent null, default value will be used (1024 for either type).
   
   
 ## Requirements  

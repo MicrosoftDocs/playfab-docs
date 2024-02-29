@@ -5,7 +5,7 @@ description: "Updates the publisher-specific custom data for the user which is r
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFPlayerDataManagementServerUpdateUserPublisherDataAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. This function performs an additive update of the arbitrary JSON object containing the custom data for the user. In updating the custom data object, keys which already exist in the object will have their values overwritten, while keys with null values will be removed. No other key-value pairs will be changed apart from those specified in the call. See also ServerGetUserPublisherDataAsync, ServerGetUserPublisherInternalDataAsync, ServerGetUserPublisherReadOnlyDataAsync, ServerUpdateUserPublisherInternalDataAsync, ServerUpdateUserPublisherReadOnlyDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementServerUpdateUserPublisherDataGetResult](pfplayerdatamanagementserverupdateuserpublisherdatagetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. This function performs an additive update of the arbitrary JSON object containing the custom data for the user. In updating the custom data object, keys which already exist in the object will have their values overwritten, while keys with null values will be removed. No other key-value pairs will be changed apart from those specified in the call. See also ServerGetUserPublisherDataAsync, ServerGetUserPublisherInternalDataAsync, ServerGetUserPublisherReadOnlyDataAsync, ServerUpdateUserPublisherInternalDataAsync, ServerUpdateUserPublisherReadOnlyDataAsync. When the asynchronous task is complete, call [PFPlayerDataManagementServerUpdateUserPublisherDataGetResult](pfplayerdatamanagementserverupdateuserpublisherdatagetresult.md) to get the result.
   
 ## Requirements  
   

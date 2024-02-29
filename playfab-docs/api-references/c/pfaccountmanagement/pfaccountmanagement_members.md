@@ -5,7 +5,7 @@ description: "Services C API overview - PFAccountManagement.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # Services C API overview - PFAccountManagement.h

@@ -5,7 +5,7 @@ description: "Dictionary entry for an associative array with PFProfilesEntitySta
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFProfilesEntityStatisticAttributeValueDictionaryEntry  

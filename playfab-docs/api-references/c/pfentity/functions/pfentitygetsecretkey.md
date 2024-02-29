@@ -5,7 +5,7 @@ description: "Gets the PlayFab secretKey associated with a title Entity. Will fa
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/26/2023
+ms.date: 02/22/2024
 ---
 
 # PFEntityGetSecretKey  

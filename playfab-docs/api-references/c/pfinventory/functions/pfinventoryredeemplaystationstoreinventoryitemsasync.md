@@ -5,7 +5,7 @@ description: "Redeem items."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryRedeemPlayStationStoreInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Sony PlayStation®. Redeem items from the PlayStation Store. When the asynchronous task is complete, call [PFInventoryRedeemPlayStationStoreInventoryItemsGetResultSize](pfinventoryredeemplaystationstoreinventoryitemsgetresultsize.md) and [PFInventoryRedeemPlayStationStoreInventoryItemsGetResult](pfinventoryredeemplaystationstoreinventoryitemsgetresult.md) to get the result.
+This API is available on Win32, Sony PlayStation®, Linux, and macOS. Redeem items from the PlayStation Store. When the asynchronous task is complete, call [PFInventoryRedeemPlayStationStoreInventoryItemsGetResultSize](pfinventoryredeemplaystationstoreinventoryitemsgetresultsize.md) and [PFInventoryRedeemPlayStationStoreInventoryItemsGetResult](pfinventoryredeemplaystationstoreinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

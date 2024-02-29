@@ -5,7 +5,7 @@ description: "Signs the user in using an Xbox ID and Sandbox ID, returning a ses
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 09/25/2023
+ms.date: 02/22/2024
 ---
 
 # PFAuthenticationServerLoginWithXboxIdAsync  
@@ -51,7 +51,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32. If this is the first time a user has signed in with the Xbox ID and CreateAccount is set to true, a new PlayFab account will be created and linked to the Xbox Live account. In this case, no email or username will be associated with the PlayFab account. Otherwise, if no PlayFab account is linked to the Xbox Live account, an error indicating this will be returned, so that the title can guide the user through creation of a PlayFab account. When the asynchronous task is complete, call [PFAuthenticationServerLoginWithXboxIdGetResult](pfauthenticationserverloginwithxboxidgetresult.md) to get the result.
+This API is available on Win32, Linux, and macOS. If this is the first time a user has signed in with the Xbox ID and CreateAccount is set to true, a new PlayFab account will be created and linked to the Xbox Live account. In this case, no email or username will be associated with the PlayFab account. Otherwise, if no PlayFab account is linked to the Xbox Live account, an error indicating this will be returned, so that the title can guide the user through creation of a PlayFab account. When the asynchronous task is complete, call [PFAuthenticationServerLoginWithXboxIdGetResult](pfauthenticationserverloginwithxboxidgetresult.md) to get the result.
   
 ## Requirements  
   

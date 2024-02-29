@@ -5,7 +5,7 @@ description: "Cloud Script is one of PlayFab's most versatile features. It allow
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/20/2023
+ms.date: 02/22/2024
 ---
 
 # PFCloudScriptExecuteFunctionAsync  

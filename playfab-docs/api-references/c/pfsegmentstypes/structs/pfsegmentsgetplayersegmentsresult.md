@@ -5,7 +5,7 @@ description: "PFSegmentsGetPlayerSegmentsResult data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 02/22/2024
 ---
 
 # PFSegmentsGetPlayerSegmentsResult  

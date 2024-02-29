@@ -5,7 +5,7 @@ description: "Get the size in bytes needed to store the result of a PurchaseInve
 ms.author: jasonsa
 ms.topic: reference
 ms.service: playfab
-ms.date: 05/24/2023
+ms.date: 02/22/2024
 ---
 
 # PFInventoryPurchaseInventoryItemsGetResultSize  
@@ -37,7 +37,7 @@ The buffer size in bytes required for the result.
 ### Return value
 Type: HRESULT
   
-Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_DATABASE_THROUGHPUT_EXCEEDED, E_PF_INSUFFICIENT_FUNDS, E_PF_ITEM_NOT_FOUND or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_DATABASE_THROUGHPUT_EXCEEDED, E_PF_INSUFFICIENT_FUNDS, E_PF_INVALID_CATALOG_ITEM_CONFIGURATION, E_PF_ITEM_NOT_FOUND or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
   
 ## Requirements  
