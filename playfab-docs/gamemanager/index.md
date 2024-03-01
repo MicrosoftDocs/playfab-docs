@@ -36,6 +36,10 @@ Management of a Title is divided into four major views:
 - [Engage](reference.md#engage) - Facilitate connections with players.
 - [Analyze](reference.md#analyze) - Monitor and act on player behaviors.
 
+## Recommended browsers
+
+To ensure a more seamless experience while using Game Manager, we recommend using either **Google Chrome** or **Microsoft Edge**. These browsers are tested and optimized for compatibility with Game Manager features.
+
 ## Next steps
 
 - [Game Manager quickstart](quickstart.md) - Sign up for a PlayFab account, create your studio, and your first game.
