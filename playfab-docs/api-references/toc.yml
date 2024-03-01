@@ -77,6 +77,32 @@
       href: events/group-role-updated.md
     - name: group_updated
       href: events/group-updated.md
+    - name: item_created
+      href: events/item-created.md
+    - name: item_deleted
+      href: events/item-deleted.md
+    - name: item_moderation_state_changed
+      href: events/item-moderation-state-changed.md
+    - name: item_publish_requested
+      href: events/item-publish-requested.md
+    - name: item_reported
+      href: events/item-reported.md
+    - name: item_updated
+      href: events/item-updated.md
+    - name: items_added
+      href: events/items-added.md
+    - name: items_deleted
+      href: events/items-deleted.md
+    - name: items_purchased
+      href: events/items-purchased.md
+    - name: items_redeemed
+      href: events/items-redeemed.md
+    - name: items_subtracted
+      href: events/items-subtracted.md
+    - name: items_transferred
+      href: events/items-transferred.md
+    - name: items_updated
+      href: events/items-updated.md
     - name: matchmaking_match_found
       href: events/matchmaking-match-found.md
     - name: matchmaking_ticket_completed
@@ -205,6 +231,10 @@
       href: events/player-verified-contact-email.md
     - name: player_virtual_currency_balance_changed  
       href: events/player-virtual-currency-balance-changed.md
+    - name: review_reported
+      href: events/review-reported.md
+    - name: reviews_takedown_requested
+      href: events/reviews-takedown-requested.md
     - name: sent_email  
       href: events/sent-email.md
     - name: sent_push_notification  
