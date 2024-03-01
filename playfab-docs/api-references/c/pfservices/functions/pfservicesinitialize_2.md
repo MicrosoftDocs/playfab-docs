@@ -29,7 +29,7 @@ HRESULT PFServicesInitialize(
 An XTaskQueue that should be used for background work. If no queue is provided then a default (threadpool) queue will be used.  
   
 **`initArgs`** &nbsp; HCInitArgs*  
-  
+
 Arguments for initializing libHttpClient. It contains a Java VM and an application context, both can be retrieved through an Android app activity.
 
 ### Return value
