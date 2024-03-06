@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2024
 author: amccalib
 description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
-ms.date: 02/02/2024
+ms.date: 03/01/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,15 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 240301
+
+Date: March 1, 2024
+
+ - Added support for compressed service responses to the C# SDK
+   - To utilize this feature, set the new __CompressResponses__ value in the __PlayFabApiSettings__ class.
+ - Removed AttributeStatistics from the EntityProfileBody property of Profiles/GetEntityProfileResponse
+ - Added error codes for new service errors.
 
 ## 240202
 
