@@ -42,7 +42,7 @@ You can configure the agent to run the game server as a containerized applicatio
 - There are additional fields in the *MultiplayerSettings.json* file you might want to edit:
   - `ResourceLimits` (optional) - If specified, docker limits CPU/memory usage. Warning: If your server goes over the allowed memory, it's killed. ResourceLimits can only be specified in container mode.
   - `SessionCookie` (optional) - Any session cookie that is passed to your game server as part of the [RequestMultiplayerServer API](xref:titleid.playfabapi.com.multiplayer.multiplayerserver.requestmultiplayerserver) call.
-  - `OutputFolder` (optional) -  Path to a drive or folder where the outputs and config files are generated. Ensure that there's sufficient space available since the game server will be extracted under this path. If not specified, the agent folder is used.
+  - `OutputFolder` (optional) -  Absolute path to a drive or folder where the outputs and config files are generated. Ensure that there's sufficient space available since the game server will be extracted under this path. If not specified, the agent folder is used.
   - `MountPath` - The path within the container at which to mount the asset. This field does not need to be specified when running in process mode. We recommend using the sample value - *C:\\\\Assets* (note that backslashes need to be escaped for JSON formatting).
   - `AgentListeningPort` - Specifies the port to which the agent binds to communicate with the game server. Any open port will work, if you have another process binding to 56001 you must change this value (or kill the other process).
 
@@ -166,6 +166,7 @@ If the game server is running in a container, there might be an additional level
 - If you get an error similar to: `Docker API responded with status code=InternalServerError, response={"message":"failed to create endpoint <container_name> on network playfab: hnsCall failed in Win32: The specified port already exists". It's likely there is already a container running on the specified port.` This can happen if **LocalMultiplayerAgent** exits prematurely. Use the command `docker ps` to find the container that is running, and then kill it using `docker kill <container_name>`.
 - If you get an error that contains `Failed to find network 'playfab'`. Try rerunning *Setup.ps1*
 - If you get an `Unhandled Exception` error, you may be running PowerShell as an Administrator.
+- `OutputFolder` may be used in turn by other system variables, so ensure you have used an absolute path. For instance, GSDK_CONFIG_FILE has such a dependency, so a relative path (or an incorrect value) here may result game server configuration loading errors.
 
 ### Known Limitations
 
