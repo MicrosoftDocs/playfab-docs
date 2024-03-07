@@ -1,0 +1,126 @@
+### YamlMime:Landing
+
+title: Azure PlayFab data and analytics documentation
+summary: PlayFab data and analytics helps you manage game data. It provides reporting functions for generating weekly reports and trends, tools for segmenting data and running experiments, and data management tools for ingesting, exporting, and managing data. # < 160 chars
+
+metadata:
+  title: PlayFab data and analytics documentation
+  description: Hub page for the PlayFab data and analytics documentation. Here you can find feature overviews, quickstart guides, and tutorials. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: sofiamarinv
+  ms.author: sofiamarin
+  ms.date: 02/14/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Ingesting data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: PlayStream
+            url: ingest-data/playstream-overview.md
+          - text: Telemetry
+            url: ingest-data/telemetry-overview.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with Telemetry Keys
+            url: ingest-data/telemetry-keys-qs.md
+
+  # Card (optional)
+  - title: Exporting data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Data Connections
+            url: export-data/data-connection-overview.md
+          - text: Event sampling
+            url: export-data/event-sampling-overview.md
+          - text: Event partitioning
+            url: export-data/event-partitioning-overview.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with Data Connections
+            url: export-data/data-connection-quickstart.md
+          - text: Get started with Event sampling
+            url: export-data/event-sampling-quickstart.md
+          - text: Get started with Event partitioning
+            url: export-data/event-partitioning-quickstart.md
+
+  # Card
+  - title: Learning with Data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Reporting
+            url: learn-data/reports/overview.md
+          - text: Trends
+            url: learn-data/trends/trends-overview.md
+          - text: Segments as a dimension
+            url: learn-data/trends/segments-dimension-overview.md
+          - text: Player Churn Prediction
+            url: learn-data/churn-prediction/overview.md     
+          - text: Experiments
+            url: learn-data/experiments/index.md   
+          - text: Data Explorer
+            url: learn-data/data-explorer/index.md  
+      - linkListType: quickstart
+        links:
+          - text: Get started with reporting
+            url: learn-data/reports/quickstart.md
+          - text: Get started with Segments as a dimension
+            url: learn-data/trends/segments-dimension-qs.md
+          - text: Get started with Churn Prediction
+            url: learn-data/churn-prediction/churn-prediction-quickstart.md
+                          
+  # Card
+  - title: Acting on data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Segmentation
+            url: acting-data/segmentation-overview.md
+          - text: Player custom properties
+            url: acting-data/player-custom-properties.md
+          - text: Webhooks
+            url: acting-data/webhooks-overview.md
+          - text: Event schemas
+            url: acting-data/schemas-overview.md
+          - text: Actions and rules
+            url: acting-data/action-rules-overview.md
+          - text: Scheduled tasks
+            url: acting-data/scheduled-tasks/index.md
+      - linkListType: quickstart
+        links:
+          - text: Get started with segmentation
+            url: acting-data/segmentation-quickstart.md
+          - text: Get started with Player custom properties
+            url: acting-data/player-custom-properties-qs.md
+          - text: Get started with actions and rules
+            url: acting-data/action-rules-quickstart.md
+          - text: Get started with scheduled tasks
+            url: acting-data/scheduled-tasks/quickstart.md
+
+  # Card
+  - title: Privacy and Compliance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Exporting and deleting Player data
+            url: privacy-compliance/playfab-gdpr-deleting-and-exporting-player-data.md
+
+  # Card
+  - title: Legacy
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Insights
+            url: legacy/insights/overview.md
+          - text: Content Delivery Network
+            url: legacy/content-delivery-network/index.md
+          - text: S3 Event archive
+            url: legacy/s3-event-archiving.md
