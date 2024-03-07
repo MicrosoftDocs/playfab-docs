@@ -1,3 +1,5 @@
+- name: PlayFab data and analytics
+  href: index.yml
 - name: Ingesting data
   href: ingest-data/toc.yml
 - name: Exporting data
