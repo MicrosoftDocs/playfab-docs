@@ -1,5 +1,15 @@
 {
     "redirections": [
+         {
+            "source_path": "playfab-docs/sdks/objective-c/quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/c/quickstart-ios",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/objective-c/index.md",
+            "redirect_url": "/gaming/playfab/sdks/c",
+            "redirect_document_id": false
+        },
         {
             "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-xbox.md",
             "redirect_url": "/gaming/playfab/sdks/playfab-cpp/quickstart-gdk",
