@@ -12,6 +12,16 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.2
+
+March 7, 2024
+
+### Bug fixes
+
+- Fixed an issue where the internal PubSub notification WebSocket was slow to detect and react to disconnects, which could lead to errors to create or join lobbies and matchmaking tickets.
+- Fixed an issue where failure of PubSub to establish connection with the SignalR service would not trigger a failed state change and would not allow subsequent Multiplayer API calls to subscribe to PubSub.
+- Improved internal diagnostics.
+
 ## 1.7.1
 
 February 14, 2024
