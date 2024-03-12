@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 PlayFab is committed to being General Data Protection Regulation (GDPR) compliant - and as your service provider, ensuring that we provide you with the hooks you need to allow players to view or delete the data stored about them.
 
-While we can’t provide you with legal advice—*and we do encourage you to seek legal counsel to ensure your compliance with the GDPR*—we are here to help you fulfill your obligations under GDPR.
+While we can’t provide you with legal advice—*and we do encourage you to seek legal counsel to ensure your compliance with the GDPR*—we're here to help you fulfill your obligations under GDPR.
 
 PlayFab has three available APIs to help you respond to Player data requests:
 
@@ -28,7 +28,7 @@ Before using the `DeleteMasterPlayerAccount` or `ExportMasterPlayerData` APIs, i
 
 This situation can happen when a player uses different devices or different credentials to play your title(s). Because they're providing different and unrelated credentials (for example, a different email address or social media account), we interpret them to be a unique player.
 
-Another way a player may have multiple Master Player accounts is if you have configured your studio to use multiple Publisher IDs; however, having multiple Publisher IDs is not common.
+Another way a player may have multiple Master Player accounts is if you have configured your studio to use multiple Publisher IDs; however, having multiple Publisher IDs isn't common.
 
 You can check your title's Publisher IDs in the PlayFab Game Manager, on each Title settings menu's **API Features** tab.
 
@@ -121,156 +121,13 @@ At this point you have a list of `PlayFabIds` for this player (based on the cred
 
 Now you’re ready to delete or export!
 
-## Deleting a Master Player account
-
-Deleting a Master Player account can be accomplished by using the new `DeleteMasterPlayerAccount` Admin API, which is available in all of our SDKs. Make sure you read the section above, which details how to make sure you have all of a player's PlayFabIds.
-
-When you make a request to delete a player, PlayFab will quickly remove the player's personal information from our core system before sending the request to a queue processing agent, which works to remove any remaining information about the player from ancillary systems and sub-processors.
-
-This API returns immediately and provides a `JobReceiptId`, which you should store for your records. The JobReceiptId is your validation that PlayFab received the request to delete the player.
-
-Once the delete is complete, an email will be sent to the notification email address configured for the title. It will contain the same `JobReceiptId`, which was initially returned by the API. The completion of the task will also trigger a PlayStream event.
-
-Using our Webhook feature, you can register to receive these events on an endpoint of your choosing, and process them as needed. The event will contain a JSON blob that has the `JobReceiptId`.
-
-The following example shows how to use the Admin API with the [C# SDK](../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../sdks/playfab-sdk-intro.md).
-
-```csharp
-public static async void StartDeleteMasterPlayerExample(Action<PlayFabError> callback)
-{
-    var task = await PlayFabAdminAPI.DeleteMasterPlayerAccountAsync(new DeleteMasterPlayerAccountRequest()
-    {
-        PlayFabId = PlayFabId
-    });
-
-    if(task.Error != null)
-    {
-        callback(task.Error);
-    }
-
-    var jobReceiptId = task.Result.JobReceiptId;
-    var AffectedTitleList = task.Result.TitleIds;
-    foreach (var title in AffectedTitleList)
-    {
-        Console.WriteLine(string.Format("Delete Player - Title Affected: {0}", title));
-    }
-
-}
-```
-
-> [!NOTE]
-> Because this deletion *cannot be undone*, we suggest confirming with your player that they are comfortable with the scope and impact of their deletion request.
-
-So, once the action has been confirmed… Back to pseudo code.
-
-```csharp
-//Make sure we are 100% sure we want to do this.
-if ( confirm successful ) {
-   //create a variable to store a list of titles the player has already been removed from.
-   listOfTitlesRemovedFrom
-   //Hang on to the receipts from successful deletes.
-   listOfReceipts
-   foreach(title in <all my titles>){
-
-       //You only need to remove the Master Player once per namespace, so check that you have not
-       //already performed this action in the namespace, or you will get an error that
-       //the player is already queued for deletion.
-       if(title not in listOfTitlesRemovedFrom){
-           foreach(pfid in PlayFabIdList){
-
-              //Note: you should do some error handling around this API call.
-              response = title.DeleteMasterPlayerAccount(pfid)
-              foreach(titleId in response.titleids){
-                listOfTitlesRemoved.add(titleId)
-              }
-              listOfReceipts.add(response.jobreceiptid)
-           }
-       }
-   }
-
-   //Save listOfReceipts somewhere as proof of deletion.
-
-}
-```
-
-## Exporting Master Player account data
-
-When you make a request to export a player's data, the request is sent to a **Queue Processing Agent** (similar to deleting a player).
-
-The `ExportMasterPlayerData` API exports all data associated with the given `PlayFabId`, including data across all your titles, such as:
-
-- **Statistics**
-- **Custom Data**
-- **Inventory**
-- **Purchases**
-- **Player-Created Items/UGC**
-- **Transaction History**
-- **Virtual Currency Balances**
-- **Characters**
-- **Group Memberships**
-- **Publisher Data**
-- **Credential Data**
-- **Account Linkages**
-- **Friends List**
-- **PlayStream Event History**.
-
-Make sure you read the first section above which details how to make sure you have all of a player’s PlayFabIds.
-
-This API immediately returns a `JobReceiptId`, which you should store in your records for future reference. It may take some time before the export is available for download.
-
-Upon completion of the export, an email containing the URL to download the export dump will be sent to the notification email address configured for the title.
-
-The completion of the task will also trigger a [`player_data_exported` PlayStream event](../../api-references/events/player-data-exported.md). The event contains the `JobReceiptId` as a property, as well as the `ExportDownloadUrl` property which provides access to the exported data. Using either [Automation Rules with Azure Functions](../../features/automation/cloudscript-af/quickstart.md#azure-functions-in-automation-rules) or [Webhooks](../acting-data/webhooks-overview.md), you can register to receive these events on an endpoint of your choosing and process as needed. 
-
-The following example is how to use the Admin API with the [C# SDK](../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../sdks/playfab-sdk-intro.md).
-
-```csharp
-public static async void ExportMasterPlayerExample(Action<PlayFabError> callback)
-{
-    var task = await PlayFabAdminAPI.ExportMasterPlayerDataAsync(new ExportMasterPlayerDataRequest()
-    {
-        PlayFabId = PlayFabId
-    });
-
-    if(task.Error != null)
-    {
-        callback(task.Error);
-    }
-
-    var jobReceiptId = task.Result.JobReceiptId;
-
-    Console.WriteLine(string.Format("Export Player Request Received - Receipt: {0}", jobReceiptId));
-
-    callback(null);
-}
-```
-
-> [!NOTE]
-> The URL will be available for up to 30 days after the export has completed. After this time, the file will be deleted, and you will need to initiate a *new* export request.
-
-### Format of Exported Data
-
-The exported data is packaged in a ZIP archive whose name contains the `JobReceiptId` and the time of the export. The archive contains multiple files organized into a directory structure.
-
-| File Path | Description |
-|-----------|-------------|
-| /master_player_export.json | <p>A JSON file that contains the player's data recorded in PlayFab. This includes data for each of the titles that the player participates in.</p><p>The schema for the JSON document is provided as an OpenAPI specfication. See object `MasterPlayerDataExport` in `https://<your_title_id>.playfabapi.com/Swagger/MasterPlayerDataExport.swagger.json`</p> |
-| /CustomFiles/MasterPlayerFiles/* | Contains the custom [Entity Files](../../features/data/entities/entity-files.md) associated with the player's `master_player_account` entity.|
-| /CustomFiles/TitlePlayerFiles/&lt;TitlePlayerAccountId&gt;/* | <p>Contains the custom [Entity Files](../../features/data/entities/entity-files.md) associated with the player's `title_player_account` entities.</p><p>The files are organized into one subdirectory per title that the player participates in. The name of each subdirectory is the player's `title_player_account` entity ID in the title.</p> |
-| /TitlePlayerEvents/&lt;TitleId&gt;/event-history_1.jsonl <br/>...<br/> /TitlePlayerEvents/&lt;TitleId&gt;/event-history_&lt;N&gt;.jsonl | <p>The PlayStream and Telemetry events recorded about the player.</p><p>The files are organized into one subdirectory per title that the player participates in. The name of each subdirectory is the title ID.</p><p>Each subdirectory contains one or more `event-history` files, depending on how much data the player has in the given title. The files contain the events serialized into JSON objects, one event per line.</p> |
-
 ## Other considerations
 
-It's easy to do harm with these APIs. Exporting data for or deleting the *wrong* player could be very damaging and it's *permanent*!
+It's easy to do harm with these APIs. Exporting data for or deleting the wrong player could be very damaging and it's **permanent**!
 
-It is your responsibility as the game developer to verify that the credentials match the player requesting an export or deletion of their player data. PlayFab does *not* provide any type of verification when using these APIs.
+It is your responsibility as the game developer to verify that the credentials match the player requesting an export or deletion of their player data. PlayFab doesn't provide any type of verification when using these APIs.
 
-However PlayFab *does* offer an [email verification feature](../../features/engagement/emails/using-a-rule-to-verify-a-contact-email-address.md). But our solution isn't the only option for verification. You can create your *own* process too.
+However PlayFab does offer an [email verification feature](../../features/engagement/emails/using-a-rule-to-verify-a-contact-email-address.md). But our solution isn't the only option for verification. You can create your own process too.
 
 Regardless of which technology you use, we suggest that you do some sort of verification before performing any of these actions.
 
-## Are we done yet?
-
-You should receive an email when your request has completed. If for some reason, it never arrives (because that happens sometimes in our digital world), contact us at [privacy@playfab.com](mailto:privacy@playfab.com) with a request for verification.
-
-Please provide the `JobReceiptId` in that email, and we'll respond letting you know the status of that job.
