@@ -1,2 +1,7 @@
-- name: Exporting and deleting Player Data
+- name: Overview
   href: playfab-gdpr-deleting-and-exporting-player-data.md
+- name: Deleting Player Data
+  href: gdpr-deleting-player-data.md
+- name: Exporting Player Data
+  href: gdpr-exporting-player-data.md
+  

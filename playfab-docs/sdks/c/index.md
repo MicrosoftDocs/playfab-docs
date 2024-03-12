@@ -3,10 +3,10 @@ title: PlayFab Services SDK
 author: amccalib
 description: Introduction to the PlayFab Services C/C++ SDK
 ms.author: andmcc
-ms.date: 02/15/2023
+ms.date: 03/04/2024
 ms.topic: article
 ms.service: playfab
-keywords: playfab, c++, windows, xbox, gdk, win32, nintendo, switch, sony, playstation, ps4, ps5
+keywords: playfab, c++, windows, xbox, gdk, win32, nintendo, switch, sony, playstation, ps4, ps5, iOS, MacOS, Android, Linux
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The new PlayFab Services SDK for C/C++ is currently available for the following platforms: Win32 (x64 only), Nintendo Switch, Sony PlayStation&#174;, iOS, macOS, Android, Linux, and the Microsoft GDK. Depending on the platform you're targeting, the way you acquire the SDK differs.
 
-## Win32
+## Win32, iOS, macOS, Android, Linux
 
 Download from GitHub: [PlayFabCSdk Releases](https://github.com/PlayFab/PlayFabCSdk/releases). Release binaries and headers are available alongside the SDK source.
 

@@ -12,6 +12,8 @@
     href: quickstart.md
   - name: Enable Party in Game Manager
     href: enable-party.md
+  - name: Linux quickstart
+    href: linux-specific-requirements.md
   - name: Android quickstart
     href: android-specific-requirements.md
   - name: iOS and macOS quickstart

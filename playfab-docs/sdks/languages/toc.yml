@@ -25,11 +25,6 @@
   items:
   - name: Quickstart
     href: ../java/quickstart.md
-- name:  Objective-C
-  href: ../objective-c/index.md
-  items:
-  - name: Quickstart
-    href: ../objective-c/quickstart.md
 - name: Legacy C++
   href: ../playfab-cpp/index.md
   items:
