@@ -3,7 +3,7 @@ title: Azure PlayFab SDKs
 author: joannaleecy
 description: Azure PlayFab SDKs
 ms.author: joanlee
-ms.date: 02/22/2021
+ms.date: 03/04/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, playfab sdk
@@ -27,23 +27,22 @@ For broad API categories in these SDKs, see [API REST operation groups](/rest/ap
 
 | Language                          | Platform/environments                     |
 |-----------------------------------|-------------------------------------------|
-| C/C++                             | [Windows (Win32)](c/index.md), [GDK (Xbox and Windows)](c/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5) |
-| Legacy C++                        | [Android, iOS, Linux, Windows](playfab-cpp/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5) |
+| C/C++                             | [Windows (Win32), iOS, MacOS, Android, Linux](c/index.md), [GDK (Xbox and Windows)](c/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5) |
+| Legacy C++                        | [Windows (Win32), iOS, Android, Linux](playfab-cpp/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5) |
 | C#                                | [Xamarin](c-sharp/index.md) and other C#/.NET environments besides Unity |
 | Java                              | [Android apps](java/index.md) |
 | JavaScript                        | [Web Development](javascript/index.md) |
 | Lua (community supported)         | [Corona (now Solar2D), Defold](lua/index.md) |
 | NodeJS                            | [Node.js applications](nodejs/index.md)|
-| Objective-C (community supported) | [iOS](objective-c/index.md)|
 | Python (community supported)      | [Python](python/index.md)|
 
 ## By platform/operating system
 
 | Platform/operating system | SDK/library                       |
 |---------------------------|-----------------------------------|
-| Android                   | [C# (using Xamarin)](c-sharp/index.md), [Java/Android Studio](java/index.md), [Lua](lua/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
-| iOS                       | [C# (using Xamarin)](c-sharp/index.md), [Lua](lua/index.md) (community supported), [Objective-C](objective-c/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
-| Linux                     | [Legacy C++](playfab-cpp/index.md), [Lua](lua/index.md) (community supported)|
+| Android                   | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [C# (using Xamarin)](c-sharp/index.md), [Java/Android Studio](java/index.md), [Lua](lua/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| iOS                       | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [C# (using Xamarin)](c-sharp/index.md), [Lua](lua/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| Linux                     | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [Lua](lua/index.md) (community supported)|
 | GDK (Xbox and Windows)    | [C/C++](c/index.md), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 | PlayStation 4             | [C/C++](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4), [Legacy C++](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 | PlayStation 5             | [C/C++](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5), [Legacy C++](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |

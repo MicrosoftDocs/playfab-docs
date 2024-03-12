@@ -28,8 +28,12 @@
       href: reports/thirty-day-new-user-retention-report.md
     - name: Thirty-day Retention Report
       href: reports/thirty-day-retention-report.md
+    - name: Daily Email Report
+      href: reports/daily-email-report.md
   - name: PlayFab and Microsoft Fabric real-time analytics (RTA) for game creators
     href: reports/real-time-analytics-tutorial.md
+  - name: Title Overview
+    href: reports/title-overview-report.md
 - name: Trends
   expanded: true
   items:
