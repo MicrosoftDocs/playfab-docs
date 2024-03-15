@@ -13,3 +13,5 @@ items:
   href: ratings.md
 - name: Search
   href: search.md
+- name: Catalog Views
+  href: catalog-views.md
