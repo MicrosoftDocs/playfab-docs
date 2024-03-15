@@ -81,25 +81,25 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **AddInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **SubtractInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **UpdateInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **PurchaseInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **TransferInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **DeleteInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **ExecuteInventoryOperations** | 0.16 rps (15 in 90 seconds) | - |
+| **AddInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **SubtractInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **UpdateInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **PurchaseInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **TransferInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **DeleteInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **ExecuteInventoryOperations** | 0.66 rps (60 in 90 seconds) | - |
 | **DeleteInventoryCollection** | 0.16 rps (15 in 90 seconds) | - |
 
 ### Redeem
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **RedeemAppleAppStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **RedeemGooglePlayInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **RedeemMicrosoftStoreInventorItems** | 0.33 rps (30 in 90 seconds) | - |
-| **RedeemNintendoEShopInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **RedeemPlayStationStoreInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
-| **RedeemSteamInventoryItems** | 0.33 rps (30 in 90 seconds) | - |
+| **RedeemAppleAppStoreInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemGooglePlayInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemMicrosoftStoreInventorItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemNintendoEShopInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemPlayStationStoreInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemSteamInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
 
 ## API Limits
 
@@ -140,9 +140,9 @@ The following are the maximum number of items returned for the various APIs. You
 
 The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
 
-* `GetInventoryItems` - 50 Items per page
-* `GetInventoryCollectionIds` - 50 Items per page
-* `GetTransactionHistory` - 50 Items per page
+* `GetInventoryItems` - 250 Items per page when using response compression
+* `GetInventoryCollectionIds` - 250 Items per page when using response compression
+* `GetTransactionHistory` - 250 Items per page when using response compression
 
 ### Inventory Default Page Size
 
@@ -212,7 +212,7 @@ For example: "1.65535.234".
 
 ### ItemReferences
 
-The ItemReferences field has a limit of **50 items**.
+The ItemReferences field has a limit of **250 items**.
 
 ## Catalog Config
 
@@ -248,14 +248,14 @@ The list of tags has a limit of **1024 tags**, each with a max length of **32 ch
 
 ### Batch Operations
 
-The max number of inventory operations to be executed is of **10 operations**.
+The max number of inventory operations to be executed is of **50 operations**.
 
-The max number of items to be modified is **250 items**.   
+The max number of items to be modified is **300 items**.   
 (for example, you can add up to five full bundles because 5*50 = 250 that matches the 250 limit)
 
 ### Inventory Collections
 
-The max collection size is **3500 items**.
+The max collection size is **10000 items**.
 
 The length limit for the collection list is **unlimited**.
 
