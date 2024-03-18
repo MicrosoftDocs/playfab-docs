@@ -94,8 +94,8 @@
     href: ea-billing.md
   - name: PlayFab services billing
     href: billing-for-thunderhead.md
-  - name: Detailed price sheet
-    href: multiplayer-servers-detailed-price-sheet.md
+  - name: Server comparison
+    href: server-comparison.md
   - name: Incident response commitment
     href: comm-sla.md
   - name: Monitor server capacity

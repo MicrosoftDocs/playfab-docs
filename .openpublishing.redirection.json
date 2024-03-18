@@ -1037,6 +1037,11 @@
             "source_path": "playfab-docs/features/personas/developer.md",
             "redirect_url": "/gaming/playfab/what-is-playfab",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/features/multiplayer/servers/multiplayer-servers-detailed-price-sheet.md",
+            "redirect_url": "/gaming/features/multiplayer/servers/server-comparison",
+            "redirect_document_id": false
         }
     ]
 }

@@ -13,6 +13,8 @@ items:
     href: bundles.md
   - name: Stores
     href: stores.md
+  - name: Targeted offers
+    href: targeted-offers.md
   - name: Subscriptions
     href: subscriptions.md
   - name: User Generated Content
