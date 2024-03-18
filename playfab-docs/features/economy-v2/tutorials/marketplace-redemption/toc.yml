@@ -1,5 +1,9 @@
 items:
   - name: Google redemption
     href: google.md
+  - name: Google subscription redemption
+    href: google-subscription-redemption.md
   - name: Apple redemption
     href: apple.md
+  - name: Apple subscription redemption
+    href: ios-subscription-redemption.md
