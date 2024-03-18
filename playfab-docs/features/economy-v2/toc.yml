@@ -15,7 +15,7 @@ items:
     href: stores.md
   - name: Targeted offers
     href: targeted-offers.md
-  - name: Economy V2 Actions
+  - name: Segment actions
     href: segment-actions.md
   - name: Subscriptions
     href: subscriptions.md
