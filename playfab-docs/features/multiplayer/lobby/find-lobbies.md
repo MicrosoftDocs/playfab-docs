@@ -88,12 +88,12 @@ The SDK definition for these constants is documented [here](playfabmultiplayerre
 	
 OData style string that contains sorting for this query in either ascending ("asc") or descending ("desc") order. OrderBy clauses can be used for any of the search number keys or the predefined search keys that are numeric. To sort by closest to a number, a moniker distance can be used to sort by distance from the given number search key. You cannot use ascending or descending with the distance sort. This field only supports either one sort clause or one distance clause. If no sort is provided or if a tiebreak is needed for the given sort, the default sort would be descending based on creation time.
 
-|Example                      | Meaning                                           |
+| Example                     | Meaning                                           |
 |-----------------------------|---------------------------------------------------|
 | number_key1 asc             | order by number search key ascending              |
 | lobby/memberCount desc      | order by number search key descending             |
 | distance(number_key1 = 5)   | sort on distance from the given number            |
-|                             | order by creation time descending                 |
+| *default*                   | order by creation time descending                 |
 
 
 
