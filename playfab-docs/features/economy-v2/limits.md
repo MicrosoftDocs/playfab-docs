@@ -140,9 +140,11 @@ The following are the maximum number of items returned for the various APIs. You
 
 The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
 
-* `GetInventoryItems` - 250 Items per page when using response compression
-* `GetInventoryCollectionIds` - 250 Items per page when using response compression
-* `GetTransactionHistory` - 250 Items per page when using response compression
+| **API** | **Limit with response compression** | **Limit without response compression** |
+|---------|--------------------|-------------------|
+| **GetInventoryItems** | 250 Items | 50 Items |
+| **GetInventoryCollectionIds** | 250 Items | 50 Items |
+| **GetTransactionHistory** | 250 Items | 50 Items |
 
 ### Inventory Default Page Size
 

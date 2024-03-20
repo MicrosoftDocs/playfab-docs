@@ -21,48 +21,33 @@ ms.localizationpriority: medium
 
 ## Configuring the Android notification channel
 
-> [!NOTE]
-> The Google and Firebase developer consoles experience changes regularly. The setup description in this section best describes the values you need - and how to get them - as of June 2017.
-
-### Google and Firebase setup
+### Firebase setup
 
 There are three Google websites that you must use and synchronize. In Google/Firebase, there are both Projects and Apps:
 
 - **Project**:
-  - Ensure that your project is set up and accessible from the [Google API Manager](https://console.developers.google.com/).
   - Import your project into the [Firebase Console](https://console.firebase.google.com/) if it's not already there.
 
 - **App**:
   - [Firebase](https://console.firebase.google.com/) Projects contain apps.
-  - The [Google Play Dev Console](https://play.google.com/apps/publish/) also contains apps.
   - Make sure your app exists in both locations, with the same name and identifier (for example, [Unicorn Battle and com.playfab.unicornbattle2](https://play.google.com/store/apps/details?id=com.playfab.unicornbattle2)).
 
-### PlayFab requires a server API key
+### PlayFab requires a server private key file
 
-- You can get this key from the [Google API Manager](https://console.developers.google.com/), or from the [Firebase Console](https://console.firebase.google.com/)
-- **Google API Manager**:
-  - Select your **Project**.
-  - Select **Credentials** (left menu).
-  - The **Firebase Project** import will have created a **ServerKey** for you here.
+- You can get this private key file from the [Firebase Console](https://console.firebase.google.com/)
 - **Firebase Console**:
   - Select your **Project** or **App**, and find the **Settings** option (there are many ways to do this, all of which lead you to the same place).
-  - In the **General** tab, this is listed as the **Web API Key**.
-  - In the **Cloud Messaging** tab, this is listed as the **Legacy server key**.
+  - In the **Service accounts** tab, select the **Generate new private key** button to download the JSON file.
 
-- All of the keys described above should be identical, and they are all the API key described in this document.
+## Using the private key file
 
-> [!NOTE]
-> If they are not identical, the **Legacy server key** is the one needed by PlayFab.
-
-## Using the API key
-
-- Provide your API key in one of two ways:
-  1. Input your key directly into the **Game Manager UI**: **Settings** (for your **Title**) > **Push Notifications** > **Android**.
+- Provide your private key file in one of two ways:
+  1. Upload the private key file directly into the **Game Manager UI**: **Settings** (for your **Title**) > **Push Notifications** > **Android**.
   2. Or call [SetupPushNotification](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setuppushnotification) using Postman or a Unity project with Server API methods enabled.
   
   - Name: **your_game_name**
   - Platform: **GCM**
-  - Credential: (**Google server API Key**): `AIza**ppo`
+  - Credential: (**private key file contents as a string**): `{ ... }`
   - Overwrite OldARN: `true`
   - You should receive an **HTTP 200 OK** response with data similar to the following.
 
@@ -88,7 +73,7 @@ To set up your Unity project:
 - Import the [Unity PlayFab SDK](https://aka.ms/playfabunitysdkdownload) package.
 - Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install FCM messaging, and set up a project for push notifications.
   - Once finished, you can continue with this guide to receive messages from PlayFab.
-  - We will give you a complete FCM-ready monoBehaviour script in the following example, which combines FCM and PlayFab.
+  - We'll give you a complete FCM-ready monoBehaviour script in the following example, which combines FCM and PlayFab.
 
 - In the FCM guide, you created a monobehavior script that set up the Firebase plugin.
   - You can continue using that monobehavior script, or replace it with the one in the example that follows.
@@ -201,7 +186,7 @@ Build and run your Unity project on a device. If you receive a push notification
 ### Troubleshooting Android
 
 - Verify that you can send a test push notifications from the Firebase Console.
-  - If you cannot, then your Firebase plugin is not set up correctly, and you should review the Firebase Documentation to find out why, or contact Firebase Support.
+  - If you can't, then your Firebase plugin isn't set up correctly, and you should review the Firebase Documentation to find out why, or contact Firebase Support.
 
 - Ensure your FCM client pushToken is set properly.
   - The `OnTokenReceived` function in the example should be called, and should have a valid token.
@@ -228,7 +213,7 @@ You can also use **[request.Package](xref:titleid.playfabapi.com.server.accountm
 
 For help, example bugs, and related questions, drop us a line in our [Forums](https://community.playfab.com/index.html).
 
-Currently, we only support our services for the standard flow described in this document. If you team is looking for additional functionality with other common push services or plugins, please let us know! We love getting feedback from our developer community.
+Currently, we only support our services for the standard flow described in this document. If your team is looking for additional functionality with other common push services or plugins, please let us know! We love getting feedback from our developer community.
 
 For documentation on the push payload via Amazon SNS:
 
