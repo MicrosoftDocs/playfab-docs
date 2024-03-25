@@ -22,6 +22,14 @@ PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.9.4
+
+March 20, 2024
+
+- Fixed a bug where [`PartyLocalDevice::CreateChatControl`](reference/classes/PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md) would fail on PlayStation&#174;4 and, PlayStation&#174;5 when Ukrainian is set as the console's language.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 ## 1.9.3
 
 March 14, 2024
