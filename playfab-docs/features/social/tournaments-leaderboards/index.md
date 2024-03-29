@@ -21,7 +21,7 @@ Using event or tournament leaderboards are great ways of increasing engagement w
 
 Leaderboards are essentially rankings of entities such as players, groups, or items. A leaderboard ranks a list of entities based on their respective values. For example, “High Scores” is one of the most common implementations of leaderboards.
 
-## Why Use Leaderboards?
+## Why use Leaderboards?
 
 Leaderboards encourage competition among players of your game, and create incentives for the players to get better at the game. Adopting leaderboards allows players to keep up with each other and facilitates building a community. It can also result in players spending more time with the game and higher retention.
 
