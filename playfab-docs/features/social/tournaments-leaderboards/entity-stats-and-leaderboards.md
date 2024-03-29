@@ -28,7 +28,7 @@ Along with this fundamental change to how these services are supported in PlayFa
 - On-demand friend-based leaderboards.
 - Full CRUD support, via API (UX pending).
 
-_Please note that feature availability may depend on the stage of release, with some only become available during Public Preview._
+_Please note that feature availability may depend on the stage of release, with some only becoming available during Public Preview._
 
 Both services are powered by our PlayFab cloud services platform, which ensures high availability, scalability, and security. Access will be made optimal via our easy-to-use APIs and SDKs.
 
