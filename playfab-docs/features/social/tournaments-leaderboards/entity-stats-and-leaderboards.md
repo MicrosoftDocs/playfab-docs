@@ -32,6 +32,6 @@ _Please note that feature availability may depend on the stage of release, with 
 
 Both services are powered by our PlayFab cloud services platform, which ensures high availability, scalability, and security. Access will be made optimal via our easy-to-use APIs and SDKs.
 
-Any studio with interest in our new services and a willingness to provide feedback are encouraged to request access for our Private Preview. To do so, please complete the following survey so that we may better understand your feature needs: LINK.
+Any studio with interest in our new services and a willingness to provide feedback are encouraged to request access for our Private Preview. To do so, please complete the following survey so that we may better understand your feature needs: [Private Preview Program Application](https://forms.office.com/r/RdiQuf9768).
 
 We're thrilled to be building these services and can't wait to see the experiences it enables. Thank you for joining us on this journey, and we look forward to what's to come.
