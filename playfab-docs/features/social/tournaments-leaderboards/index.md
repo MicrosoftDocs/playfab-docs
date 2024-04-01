@@ -15,18 +15,13 @@ ms.localizationpriority: medium
 Using event or tournament leaderboards are great ways of increasing engagement within your game. Using PlayFab, you can easily set up a recurring tournament that awards prizes to the winners, reaches out to the participants, and gets your players coming back into your game to try and get the highest score.
 
 > [!IMPORTANT]
-> There is no opportunity for adoption of "Leaderboards v2" at this moment. Stay tuned for upcoming announcements: [PlayFab Roadmap](/gaming/playfab/roadmap).
-
-## The future of Stats and Leaderboards
-Statistics and their leaderboards have been critical components of many games across every genre throughout the history of the industry. Their integration into a title drives player engagement by acting as a reflection of their experience both in isolation and as it relates to a broader community. We at PlayFab have seen how you've utilized these services in unique and exciting ways. We want to better enable these experiences by providing a new set of Stats & Leaderboard APIs built with the [Entity Programming Model](/gaming/playfab/features/data/entities) in mind. 
-
-While we're eager to share details, we aim to do so in a process that delights. We're thrilled to be building this system and can't wait to see the experiences it enables. Thank you for joining us on this journey, and we look forward to [what's to come](/gaming/playfab/roadmap).
+> Teams are invited to request access to our Private Preview of "Leaderboards v2". Find the latest, here: [PlayFab Blog](https://developer.microsoft.com/en-us/games/articles/tags/playfab/).
 
 ## What are Leaderboards? 
 
 Leaderboards are essentially rankings of entities such as players, groups, or items. A leaderboard ranks a list of entities based on their respective values. For example, “High Scores” is one of the most common implementations of leaderboards.
 
-## Why Use Leaderboards?
+## Why use Leaderboards?
 
 Leaderboards encourage competition among players of your game, and create incentives for the players to get better at the game. Adopting leaderboards allows players to keep up with each other and facilitates building a community. It can also result in players spending more time with the game and higher retention.
 
