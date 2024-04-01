@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 Using event or tournament leaderboards are great ways of increasing engagement within your game. Using PlayFab, you can easily set up a recurring tournament that awards prizes to the winners, reaches out to the participants, and gets your players coming back into your game to try and get the highest score.
 
 > [!IMPORTANT]
-> Teams are invited to request access to our Private Preview of "Leaderboards v2". Find the latest, included how to join, here: [Entity Stats & Leaderboards (Private Preview)](/gaming/playfab/features/social/tournaments-leaderboards/entity-stats-and-leaderboards.md).
+> Teams are invited to request access to our Private Preview of "Leaderboards v2". Find the latest, included how to join, here: [Entity Stats and Leaderboards (Private Preview)](/gaming/playfab/features/social/tournaments-leaderboards/entity-stats-and-leaderboards.md).
 
 ## What are Leaderboards? 
 
