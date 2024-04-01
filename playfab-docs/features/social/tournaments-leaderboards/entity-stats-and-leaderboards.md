@@ -1,7 +1,7 @@
 ---
-title: Entity Stats & Leaderboards
+title: Entity Stats and Leaderboards
 author: joannaleecy
-description: Landing page for Entity Stats & Leaderboards
+description: Landing page for Entity Stats and Leaderboards
 ms.author: madelaga
 ms.date: 03/29/2024
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, social, tournaments, leaderboards
 ms.localizationpriority: medium
 ---
 
-# Entity Stats & Leaderboards (Private Preview)
+# Entity Stats and Leaderboards (Private Preview)
 
 We are excited to announce two new services for game creators: Entity Stats and Leaderboards. These services will help you create engaging and competitive gaming experiences for your players, with more features, flexibility, and customization than ever before. The core capabilities of each product as you know them remain intact.
 
@@ -18,11 +18,11 @@ Entity Stats will enable you to collect and analyze various game metrics, such a
 
 Entity Leaderboards provide a means by which to rank and order profiles. These rankings can be based on a corresponding statistic, or they can be driven entirely by updates directly to a leaderboard. That's all to say that these two new services can not only be used in tandem but also support full independent adoption - you can create and manage leaderboards without collecting any stats, and you can collect and analyze stats without building any leaderboards.
 
-Along with this fundamental change to how these services are supported in PlayFab comes both returning & new features, including the following:
+Along with this fundamental change to how these services are supported in PlayFab comes both returning and new features, including the following:
 
 - Full integration with the [Entity Programming Model](/gaming/playfab/features/data/entities).
-- Resettable stats & leaderboards, and version retention. 
-- Metadata support for stats & leaderboards.
+- Resettable stats and leaderboards, with version retention. 
+- Metadata support for stats and leaderboards.
 - Multicolumn leaderboards for enhanced tie-breaking.
 - LiveOps Automation integration (PlayStream Events).
 - On-demand friend-based leaderboards.
