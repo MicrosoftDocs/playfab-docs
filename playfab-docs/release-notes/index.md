@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2024
 author: amccalib
 description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
-ms.date: 03/15/2024
+ms.date: 04/01/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,14 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 240401
+
+Date: April 1, 2024
+
+ - Added two new calls to the Economy API:
+   - Inventory/ExecuteTransferOperations
+   - Inventory/GetInventoryOperationStatus
 
 ## 240315
 
