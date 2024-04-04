@@ -1,80 +1,82 @@
 ---
 title: PlayFab Roadmap
-author: thomasgu
+author: shikha-tarware
 description: PlayFab Roadmap
-ms.author: thomg
-ms.date: 06/30/2022
+ms.author: shtarwar
+ms.date: 04/03/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, roadmap, features, development
 ms.localizationpriority: medium
 ---
 
-# Azure PlayFab roadmap
+# PlayFab Roadmap Update - April 2024
+_Last Update: 4/22/2024_
 
-_Last Update: 28 July 2023._
+At PlayFab, we are more committed than ever to the future development of our platform. Our team is constantly working to bring you new updates and features, and we're excited to share the latest updates to our roadmap with you. Your feedback is invaluable to us as we strive to tailor our platform to your evolving needs and aspirations. Whether you're already immersed in the PlayFab ecosystem or gearing up to integrate our services into your games, we're here to support you every step of the way. 
 
-Before we jump into our latest roadmap update, remember that we welcome your feedback. If you're using PlayFab for current or in-development titles, we love to hear from you. If you see anything on this roadmap that is critical to your success or want more information, let us know.
+Our commitment to understanding your needs remains steadfast. Don't hesitate to reach out if you have any thoughts or questions. The PlayFab leadership also hosts a series of ‘Outside-In’ sessions where game studios meet with our team to help us understand your needs and goals. If you're interested in participating, reach out to us at: PFOutsideInRequest@microsoft.com.
 
-PlayFab Leadership also hosts a series of ‘Outside-In’ sessions where game studios meet with our team to help us understand your needs and goals. If you're interested in participating, reach out to us at: PFOutsideInRequest@microsoft.com.
+So, let's dive into the exciting new features and enhancements, along with the future updates that await you!
 
-## What’s new
+## **What's New:**
 
-### Economy v2
+### **_Game Integration_**
+1. **Services SDK for C/C++ cross-platform refresh:**  We made the [the PlayFab Services SDK for C/C++](../sdks/c/index.md) available across all supported platforms to ensure a consistent development experience. This SDK is recommended for all new C++ projects, except the ones using a [game engine-specific SDK](../sdks/game-engines/index.yml), providing the following benefits compared to the [legacy cross-platform C++ SDK](../sdks/languages/index.yml):
+  - Allows titles to control memory allocations when calling Playfab Services. See [managing memory allocations to learn more](../sdks/c/memory.md) to learn more.
+  - Allows titles to gain full control of thread handling when calling Playfab Services. To learn more, see [making async calls in the PlayFab Services SDK](../sdks/c/async.md).
+  - Portable C interface that allows maximum compatibility across platforms, compilers, and languages.
+2. **Configurable PlayFab event pipelines (C/C++ SDK):** Our [event pipelines](../sdks/c/event-pipeline/eventpipeline.md) within the [PlayFab Services SDK](../sdks/playfab-sdk-intro.md) now support various optimizations such as telemetry keys, compression, batching, and more. Allowing for better cost and resource utilization for PlayStream and telemetry event ingestion.
+3. **Compressed service response handling (C# and Unity SDK):** The [PlayFab Services SDK for C#](../sdks/c-sharp/index.md) and [PlayFab Services SDK for Unity](../sdks/unity3d/index.md) now supports compressed service responses with transparent decompression, enhancing performance and supporting new features like [Economy v2 TurboLoading](../features/economy-v2/inventory/turboloading.md).
+4. **Online Subsystem for Unreal Engine:** We refreshed the [PlayFab Multiplayer Online Subsystem](../features/multiplayer/networking/party-unreal-engine-oss-overview.md) for Unreal Engine (through 5.3, latest version), offering improvements across various areas such as platform invites, search keys, session settings, compilation, and certification compliance.
 
-Economy v2 Public Preview has released this September! Player inventories and wallets, receipt validation on the most popular marketplaces, bundles, stores, currencies, and more. These updates take advantage of an optimized Azure backend design and improved task-oriented documentation with a focus on virtual economies and monetization. These updated APIs all interop with [the new Catalog v2](/gaming/playfab/features/economy-v2/overview) that has been released along with [Azure PlayFab User Generated Content (UGC)](/gaming/playfab/features/economy-v2/ugc).
+### **_Multiplayer Server and Multiplayer Experiences Services:_**
+1. **Matchmaking/Lobby/PubSub:** Added support for game_server entities to securely add data into client-owned lobbies, facilitating scenarios such as adding server connection details. The game_server entity joins similarly like another member and can access a new serverData field to store information for clients to read. 
+2. **Request Party Service API:** Added new API, to learn more, see  [request party API](https://developer.microsoft.com/games/articles/2023/10/playfab-party-request-party-service-launch/).
+3. **Entity Stats & Leaderboards (Private Preview):** The much-anticipated "Leaderboards v2" is now in Private Preview. See [The Future of Stats and Leaderboards](../features/social/tournaments-leaderboards/index.md) to learn more. Already eager to join? Studios with a willingness to provide feedback are encouraged to request access via the following survey: [Private Preview Program Application](https://forms.office.com/r/RdiQuf9768).
+4. **VmStartupScript:** Enables customers to run custom scripts on VMs, streamlining tasks such as software installation, configuration adjustments, custom logging, etc., providing extensibility and flexibility. To learn more, see [Running custom script during VM creation](../features/multiplayer/servers/vmstartupscript.md). 
 
-### Matchmaking
+### **_Economy Services:_**
+1. **Targeted Offers and Segment Actions:** Segmentation support for game monetization has been steadily rolling out over the last few quarters. You can now create dynamic pricing strategies for each of your player segments, and actions for those segments are supported in our automation tooling. To learn more, see [targeted offers](../features/economy-v2/targeted-offers.md). 
+2. **Limits Boosts:** Increased service limits for Catalog and Inventory to better accommodate our partners' needs. To learn more, see [economy limits](../features/economy-v2/limits.md).
+3. **Turbo Loading (Private Preview):** Streamlines inventory retrieval, eliminating the need for paging through multiple results. To learn more, see [turboloading](../features/economy-v2/inventory/turboloading.md).
+4. **Catalog Views (Private Preview):** Revolutionizes item loading by utilizing a Content Delivery Network (CDN) to access items easily with improved performance and lower costs through caching. To learn more, see [catalog view](../features/economy-v2/catalog/catalog-views.md).
+5. **Mobile Subscriptions:** Updates store redemption to link virtual subscriptions to real-world subscription offers in Apple and Google Play stores. To learn more, see [subscriptions](../features/economy-v2/subscriptions.md). 
 
-In March, we added integration with the new lobby feature and real-time notifications to reduce the need to poll. Now, after releasing new SDK binaries with important fixes, PlayFab Matchmaking is in general availablility (GA). Customers who have grabbed the earlier public preview SDK should download and use the latest [Lobby and Matchmaking SDKs](/gaming/playfab/features/multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks).
+### **_Data Analytics & LiveOps Services:_**
+1. **Churn Prediction:** Introduced PlayFab's first Azure Artificial Intelligence (AI) and Machine Learning (ML) Predictive Service for identifying player churn, directly integrated into Segmentation service to tailor engagement strategies. With no extra integration requirement, Churn Prediction can be easily enabled via Game Manager to build segments that identify potential low, medium, and high risk churn players. To learn more, see [Azure PlayFab churn prediction: all-in-one risk assessment and mitigation solution](../data-analytics/learn-data/churn-prediction/overview.md).
+2. **PlayFab and Microsoft Fabric Integration with open-source Power BI dashboards:** Land game data in Microsoft Fabric from PlayFab's Data Connections service to generate near-real-time analytics and insights. We have also provided a sample Power BI dashboard in an open-source GitHub repository to get you to from data to insights in under 10 minutes. To learn more, see [PlayFab data in Microsoft Fabric for Synapse real-time analytics](../data-analytics/learn-data/reports/real-time-analytics-tutorial.md).
+3. **Data Connections:** We introduced many new features and enhancements below for more powerful data management capabilities: 
+  - Introduced **Delta Tables (Private Preview)** for large-scale data processing. Using indexing and caching, they expedite query execution while ensuring data consistency and reliability through ACID transactions, even in the face of failures or concurrent access. Moreover, Delta tables simplify data management by enabling versioning, allowing you to track changes and roll back to previous versions with ease.
+  - Introduced **Event Partitioning (Private Preview)**, enabling creators to gain granular control over data organization. This feature empowers you to specify which events should be partitioned, resulting in the creation of dedicated Parquet files for each event. This streamlined approach facilitates efficient data storage and retrieval, optimizing your analytical workflows. To learn more, see [event partitioning](../data-analytics/export-data/event-partitioning-overview.md).
+  - Introduced **Telemetry keys**, enabling simplified authorization so creators can start getting game telemetry before logging in their first player. To learn more, see [PlayFab telemetry keys](../data-analytics/ingest-data/telemetry-keys-overview.md).
+  - Introduced **Multi-Region Support** providing creators with a flexibility to configure their data connections in any Azure supported region with Multi-Region Support. This empowers you to take control of your data and optimize its placement to extract maximum value. Whether you're targeting specific regions or using Azure's global infrastructure, Multi-Region Support ensures seamless data accessibility wherever you operate.
+  - **Simplified ADX** eliminates the need for adding secrets to use Data connections, streamlining the data access process. By removing the necessity to manage secrets, this enhancement reduces overhead and enhances security, allowing creators to focus on extracting insights from their data effortlessly.
+4. Introduced **Segments as a Dimension:** enabling creators to easily filter the Trends dashboard KPIs based on specific player groups, which enables them to analyze data that is relevant to their target audience. Using on Trends dashboard they are now able to compare data of their different segments, track trends and measure the effect of changes over time. To learn more, see [Segments as Dimensions](../data-analytics/learn-data/trends/segments-dimension-overview.md). 
+5. Introduced **Custom Properties:** enabling creators to enrich player profiles by adding key-value data pairs, facilitating personalized experiences. This information is stored with other player information such as display names, statistics, and tags. To learn more, see [Custom Properties](../data-analytics/acting-data/player-custom-properties.md).
 
-### Lobby
+## **What’s on-deck?**
 
-PlayFab Lobby was released in March as a public preview, adding a highly requested feature to help integrate gameplay in matchmaking and friend multiplayer scenarios. The feature leaves public preview and is now generally available. In preparation for the general available release, we released new SDK binaries with important fixes. Customers who have grabbed the earlier public preview SDK should download and use the latest [Lobby and Matchmaking SDKs](/gaming/playfab/features/multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks).
+### **_Game Integration:_**
+1. **SDK unification:** We know it can be confusing to choose from among the [many PlayFab](../sdks/sdk-overview.md) SDKs we offer across all the services that PlayFab exposes, so we’ve been working to rationalize and merge them. This will provide you with a set of common components to leverage, more predictable interoperability, and make it easier to understand and successfully integrate our SDK into your game. It will also help us to accelerate the pace of delivery of new features to help you build the most engaging and successful games.
+2. **Online Services Plugin for Unreal Engine:** Following the update we recently delivered for [PlayFab Multiplayer Online Subsystem](../features/multiplayer/networking/party-unreal-engine-oss-overview.md), we’re getting ready to deliver a PlayFab plugin that implements the new Online Services model that Epic has been previewing in beta.
+3. **Multiplayer Game Server SDKs:** We’re planning to enhance VM maintenance events in the [PlayFab Multiplayer Game Server SDK](../features/multiplayer/servers/server-sdks.md) to make it easier to plan for and handle scheduled service interruptions. We’re also planning to automate game server entity authentication workflows to make it easier to adopt recommended security best practices within your game servers.
+4. **Client-side event sampling:** We’re planning to complement server-side event sampling with support in our SDKs for sampling events before they leave the client.
 
-### Data Connections
+### **_Multiplayer Servers and Multiplayer Experiences Services:_**
+1. **Multi-IP and Routing Preference:** This feature aims to improve resilience, reliability of the game server hosting, and optimize latency for players by assigning multiple public IP addresses to game servers and selecting preferred routing paths (routed via Microsoft Premium Global Network or Transit ISP network).
+2. **Debugging Local Game Servers:** This feature aims to streamline local development in Multiplayer Servers (MPS) by integrating local compute resources with the MPS management layer, facilitating local iteration and boosting productivity.
+3. **Improved Certificate and Secrets Management:** This feature aims to simplify the management of secrets and certificates for your game servers, making adherence to security best practices more straightforward.
+4. **Predictive Standby:** This feature aims to predict and modify Standby server needs intelligently, using historical usage data from title, minimizing management efforts and responding to fluctuating player demand for optimized resource allocation.
 
-[Data Connections transitioned to public preview](https://blog.playfab.com/blog/take-control-of-data-in-your-resources-using-data-connections) earlier this year. This month, we expanded the feature to allow export to your own Azure Data Explorer (ADX). You can read more about the feature from [Configuring your data connection to ADX](/gaming/playfab/features/data/dataconnections/data-connection-adx). With this release, you'll be able to gain precise control of your cluster performance and cost through Data Explorer connections. As a result, PlayFab Insights Management will be deprecated soon.  
+### **_Economy Services:_**
+1. **Further Segment Integration:** We continue integration of PlayFab Segments within Economy V2. Next up is fully supporting Entity Segments and Player Profile.
+2. **Catalog Upload and Versioning:** Based on community feedback, we also have plans to further enhance usability of the V2 Catalog with improvements in catalog upload and item versioning.
+3. **Subscription Enhancements:** We continue to expand mobile support for Virtual Subscriptions to more marketplaces and enable scenarios like automated clawback.
 
-### Player Segments
+### **_Data Analytics & LiveOps Services:_**
+1. **PlayFab Copilot:** At GDC 2024, we showcased an early preview of our PlayFab Copilot, an AI chat experience within Game Manager, providing insights into your titles, their performance, and even let's you configure PlayFab services all through natural language. Sign up [here](https://aka.ms/playfabcopilot/signup) to hear more and be notified of preview releases for this feature.
 
-The **GetPlayersInSegment** API is on a path to be deprecated eventually. It is replaced by improved APIs: **ExportPlayersInSegment** and **GetSegmentExport**, and these new APIs are available now. You can use them to create snapshots of all player profiles that match the segment definition and retrieve the index URLs of the downloadable files containing the player profile of a given segment. This tutorial walks you through how to use these new APIs: [Tutorial to export players in a Segment](/gaming/playfab/features/analytics/segmentation/export-players-in-a-segment).
-
-### Player Churn Private Preview
-
-We're bringing predictive intelligence to the world of PlayFab! Player Churn Prediction is our first Azure Machine Learning (ML) based feature that allows studios to predict churn scores for players. Directly integrated into Segmentation, you can take the appropriate mitigation to increase player retention and improve game content based on player insights. Reach out to us at PlayerChurn@Microsoft.com if you're interested in piloting this new feature.
-
-### GDC demos, talks, and tutorials
-
-We published this content over the last few months to help you learn how to use PlayFab. For GDC, we put together a slew of demos, talks, and documentation around our features including:
-
-* [Multiplayer services](https://developer.microsoft.com/games/events/gdc/nomanssky/)
-* [Matchmaking, Party, and Lobby](https://youtu.be/pkkegRy94M0)
-* [Experiments](https://developer.microsoft.com/games/events/gdc/nbaclash/)
-* [Data Platform](https://developer.microsoft.com/games/events/gdc/forzahorizon5/)
-* [User Generated Content (UGC)](https://developer.microsoft.com/games/events/gdc/msflightsimulator/)
-
-Make sure you visit our [GDC event page](https://developer.microsoft.com/games/events/gdc/) to learn how some of the world’s most creative development teams use PlayFab and other Microsoft technologies to power their games.
-
-### The Art of LiveOps Podcast
-
-The Art of LiveOps podcast has connected with Mojang, Possibility Space, Niantic, and others to bring you the thinking behind the latest challenges faced at these studios and more. You can subscribe to this podcast on [iTunes](https://podcasts.apple.com/podcast/the-art-of-liveops/id1475548986), [Spotify](https://open.spotify.com/show/1CWGHYnXqsXeivngmKqENq?si=iG9ccaipSbO7yxxdFsoXPw), [BuzzSprout](https://www.buzzsprout.com/489403), or wherever you listen to podcasts.
-
-### PlayFab Video Series
-
-PlayFab’s Feature Video Series includes recent in depth explorations on UGC and Insights. These short videos introduce PlayFab’s key features and benefits. Each video is hosted by an Engineer or Program Manager who works on the feature. You can find these videos here: [Microsoft Game Dev - YouTube](https://www.youtube.com/c/MSFTGameDev/videos).
-
-### XFest for Everyone
-
-At XFest, we presented how you can use PlayFab to implement an end-to-end multiplayer experience, including matchmaking and lobby services with real-time notifications, networking, and voice chat. To watch the multiplayer presentation, see [Enabling Cross-Platform Play w/ Azure Playfab Matchmaking, Lobby, & Party Networking](https://www.youtube.com/watch?v=yez09HlqMvA&list=PLRs2lXTYCDQ3uPs2PBJoc69ET6LrM_EK5&index=5). For other public Xfest talks, see [Xfest for Everyone](https://developer.microsoft.com/games/events/xfestforeveryone/).
-
-## What's on-deck
-
-### Upcoming Stats & Leaderboard Services (Leaderboards v2)
-Major changes to our documentation, noting a pause of adoption opportunity at this time: [The Future of Stats and Leaderboards](/gaming/playfab/features/social/tournaments-leaderboards).
-
-Those who have been with PlayFab for some time may be wondering why we've changed the terminology associated with these upcoming services. Through our preview program, we've sought the perspective of our partners, heard your feedback, and have adjusted the design as a result. To enable these changes and make the best set of services that we can, we have removed the samples and tutorials. We look forward to providing more details as they become available to share.
-
-## Thank you!
-
-Thank you for your continued support! The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums.
+### **Thank you!**
+THANK YOU to all our amazing game creators building with PlayFab today. None of this would be possible without you. Your support is greatly appreciated, keep the feedback coming! 
+The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums.
