@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Roadmap Update - April 2024
+
 _Last Update: 4/4/2024_
 
 At PlayFab, we are more committed than ever to the future development of our platform. Our team is constantly working to bring you new updates and features, and we're excited to share the latest updates to our roadmap with you. Your feedback is invaluable to us as we strive to tailor our platform to your evolving needs and aspirations. Whether you're already immersed in the PlayFab ecosystem or gearing up to integrate our services into your games, we're here to support you every step of the way. 
@@ -22,6 +23,7 @@ So, let's dive into the exciting new features and enhancements, along with the f
 ## **What's New:**
 
 ### **_Game Integration_**
+
 - **Services SDK for C/C++ cross-platform refresh:**  We made [the PlayFab Services SDK for C/C++](../sdks/c/index.md) available across all supported platforms to ensure a consistent development experience. This SDK is recommended for all new C++ projects, except the ones using a [game engine-specific SDK](../sdks/game-engines/index.yml), providing the following benefits compared to the [legacy cross-platform C++ SDK](../sdks/languages/index.yml):
     - Allows titles to control memory allocations when calling Playfab Services. To learn more, see [managing memory allocations to learn more](../sdks/c/memory.md).
     - Allows titles to gain full control of thread handling when calling Playfab Services. To learn more, see [making async calls in the PlayFab Services SDK](../sdks/c/async.md).
@@ -58,6 +60,7 @@ So, let's dive into the exciting new features and enhancements, along with the f
 ## **What’s on-deck?**
 
 ### **_Game Integration:_**
+
 - **SDK unification:** We know it can be confusing to choose from among the [many PlayFab](../sdks/sdk-overview.md) SDKs we offer across all the services that PlayFab exposes, so we’ve been working to rationalize and merge them. This will provide you with a set of common components to leverage, more predictable interoperability, and make it easier to understand and successfully integrate our SDK into your game. It will also help us to accelerate the pace of delivery of new features to help you build the most engaging and successful games.
 - **Online Services Plugin for Unreal Engine:** Following the update we recently delivered for [PlayFab Multiplayer Online Subsystem](../features/multiplayer/networking/party-unreal-engine-oss-overview.md), we’re getting ready to deliver a PlayFab plugin that implements the new Online Services model that Epic has been previewing in beta.
 - **Multiplayer Game Server SDKs:** We’re planning to enhance VM maintenance events in the [PlayFab Multiplayer Game Server SDK](../features/multiplayer/servers/server-sdks.md) to make it easier to plan for and handle scheduled service interruptions. We’re also planning to automate game server entity authentication workflows to make it easier to adopt recommended security best practices within your game servers.
