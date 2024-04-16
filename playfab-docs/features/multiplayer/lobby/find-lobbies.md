@@ -139,9 +139,9 @@ void FindGamesWithRuntimeQuery(
 
     // Create filter string based on player's search parameters.
     std::string filterString;
-    filterString += PFLOBBY_SEARCH_KEY_GAME_MODE + std::string(" eq ") + GAME_MODE_DEATH_MATCH;
+    filterString += PFLOBBY_SEARCH_KEY_GAME_MODE + std::string(" eq ") + "'" + GAME_MODE_DEATH_MATCH + "'";
     filterString += " and ";
-    filterString += PFLOBBY_SEARCH_KEY_COMPETITION_STYLE + std::string(" eq ") + COMPETITION_STYLE_RANKED;
+    filterString += PFLOBBY_SEARCH_KEY_COMPETITION_STYLE + std::string(" eq ") + "'" + COMPETITION_STYLE_RANKED + "'";
     filterString += " and ";
     filterString += PFLOBBY_SEARCH_KEY_SKILL + std::string(" -ge ") + std::to_string(minimumSkill);
     filterString += " and ";
