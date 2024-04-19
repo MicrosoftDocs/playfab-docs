@@ -25,10 +25,10 @@ The type of logs and the way logging should be configured/captured depends on a 
 
 | Platform | Log format | Logging instruction guidance location |
 |------------|------------|------------|
-| Android | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabPartyUnity#logging) and `Android` in a table under that section. |
-| iOS | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabPartyUnity#logging) and `iOS` in a table under that section. |
-| MacOS | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabPartyUnity#logging) and `macOS` in a table under that section. |
-| Linux | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabPartyUnity#logging) and `Linux` in a table under that section. |
+| Android | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabParty#logging) and `Android` in a table under that section. |
+| iOS | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabParty#logging) and `iOS` in a table under that section. |
+| MacOS | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabParty#logging) and `macOS` in a table under that section. |
+| Linux | Plain text | See [`Logging` section of this `README.md` file](https://github.com/PlayFab/PlayFabParty#logging) and `Linux` in a table under that section. |
 | Switch | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 4 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |
 | PlayStation 5 | Plain text | See `Logging` section of `README.md` file included in a NuGet package for this SDK. |

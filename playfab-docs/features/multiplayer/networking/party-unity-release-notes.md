@@ -12,6 +12,10 @@ ms.localizationpriority: medium
 
 # PlayFab Party Unity plugin release notes
 
+## 1.9.3.0
+
+* Updated binaries to Party 1.9.3 or greater for all platforms.
+
 ## 1.8.0.0
 
 * Updated binaries to Party 1.8.0 or greater for all platforms.
@@ -23,7 +27,7 @@ PlayFab Party Unity SDK plugin is supported on Linux (Ubuntu 20.04 and Ubuntu 22
 ## New features for all platforms
 
 * Adds support for suspending and later resuming titles on Xbox and Switch.
-* Adds support for leaving and later re-joining a Party for iOS app suspension: [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md).
+* Adds support for leaving and later rejoining a Party for iOS app suspension: [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md).
 * Various bug fixes.
 
 ## 1.7.0.1
@@ -40,7 +44,7 @@ https://github.com/playfab/PlayFabPartyUnity
   - PS5&#8482;: https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabPartyUnityPS5 (restricted access)
 - Nintendo Switch&trade;: https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabPartyUnitySwitch (restricted access)
 
-“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
@@ -55,4 +59,4 @@ https://github.com/playfab/PlayFabPartyUnity
 
 ### Bug fixes
 
-- Numerous bug fixes and stability improvements since pre-release.
+- Numerous bug fixes and stability improvements since prerelease.
