@@ -54,6 +54,8 @@
     href: vm-metrics.md
   - name: Run custom script during VM creation (preview)
     href: vmstartupscript.md
+  - name: Secret management feature (preview)
+    href: secret-management.md
 - name: Debugging game servers
   items:
   - name: LocalMultiplayerAgent
