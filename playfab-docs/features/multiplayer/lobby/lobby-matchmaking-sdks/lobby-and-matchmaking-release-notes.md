@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.3
+
+April 23, 2024
+
+### Bug fixes
+
+- Resolved duplicate class error when Party and Multiplayer are used in the same app. This is an Android only release.
+
 ## 1.7.2
 
 March 7, 2024
