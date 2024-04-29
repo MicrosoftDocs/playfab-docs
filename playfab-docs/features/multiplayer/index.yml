@@ -28,6 +28,8 @@ landingContent:
         links:
           - text: What are Multiplayer servers?
             url: servers/index.md
+          - text: What is Lobby?
+            url: lobby/index.md
           - text: What is Matchmaking?
             url: matchmaking/index.md
           - text: What is Party?
@@ -42,6 +44,8 @@ landingContent:
             url: servers/basics-of-a-playfab-game-server.md
       - linkListType: quickstart
         links:
+          - text: Getting started with Lobby 
+            url: lobby/lobby-getting-started.md
           - text: Getting started with Matchmaking 
             url: matchmaking/quickstart.md          
           - text: Getting started with the Party SDK
@@ -54,6 +58,8 @@ landingContent:
             url: networking/enable-party.md
           - text: Matchmaking scenario and configuration examples
             url: matchmaking/config-examples.md
+          - text: Matchmaking scenario and configuration examples
+            url: lobby/lobby-and-matchmaking.md
           - text: Locally debugging game servers and integration with PlayFab
             url: servers/locally-debugging-game-servers-and-integration-with-playfab.md 
           - text: Deploying PlayFab multiplayer server builds
