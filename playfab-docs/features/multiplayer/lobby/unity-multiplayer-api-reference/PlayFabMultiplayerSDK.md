@@ -33,6 +33,9 @@ ms.date: 11/23/2021
 | class [LobbySearchConfiguration](./PlayFab.Multiplayer/LobbySearchConfiguration.md) | The configuration structure used to specify how a [`FindLobbies`](./PlayFab.Multiplayer/PlayFabMultiplayer/FindLobbies.md) operation should be performed. |
 | class [LobbySearchFriendsFilter](./PlayFab.Multiplayer/LobbySearchFriendsFilter.md) | The filter structure used to limit lobby search results to only those lobbies owned by the player's friends. |
 | class [LobbySearchResult](./PlayFab.Multiplayer/LobbySearchResult.md) | An entry in the collection of lobby search results received upon successful completion of a [`FindLobbies`](./PlayFab.Multiplayer/PlayFabMultiplayer/FindLobbies.md) operation. |
+| enum [LobbyServerConnectionStatus](./PlayFab.Multiplayer/LobbyServerConnectionStatus.md) | Values representing the current status of the Lobby Server's connection status to the notification service. |
+| class [LobbyServerDataUpdate](./PlayFab.Multiplayer/LobbyServerDataUpdate.md) | A request to make an update to the associated server state of a client-owned lobby. |
+| class [LobbyServerJoinConfiguration](./PlayFab.Multiplayer/LobbyServerJoinConfiguration.md) | The initial configuration data used when joining a client-owned lobby as a server. |
 | enum [LogLevelType](./PlayFab.Multiplayer/LogLevelType.md) | The amount of logging that is enabled. |
 | class [MatchmakingMatchDetails](./PlayFab.Multiplayer/MatchmakingMatchDetails.md) | The resulting match information found by a completed ticket. |
 | class [MatchmakingTicket](./PlayFab.Multiplayer/MatchmakingTicket.md) | Information for a matchmaking ticket. |
