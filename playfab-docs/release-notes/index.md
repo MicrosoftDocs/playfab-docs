@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2024
 author: amccalib
 description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
-ms.date: 04/01/2024
+ms.date: 04/26/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,20 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 240426
+
+Date: April 26, 2024
+
+ - Removed IncludeMicrosoftFamily in favor of UserFamilyType in the BanInfo and BanRequest data objects in the Admin and Server APIs
+ - Added two new calls to the CloudScript API:
+   - RegisterEventHubFunction
+   - ListEventHubFunctions
+ - Added ReviewConfig to CatalogConfig in the Economy API
+ - Added three new calls to the Multiplayer API:
+   - UploadSecret
+   - ListSecretSummaries
+   - DeleteSecret
 
 ## 240401
 
