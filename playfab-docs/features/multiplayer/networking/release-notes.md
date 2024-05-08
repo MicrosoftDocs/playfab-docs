@@ -22,6 +22,15 @@ PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.9.5
+
+May 3, 2024
+
+- Addressed intermittent fatal errors reported in [PartyRegionsChangedStateChange](reference/structs/partyregionschangedstatechange.md) and other operations by Windows devices using features such as connection sharing.
+- Fixed a potential crash on Windows and Xbox if process shuts down shortly after starting to use Party.
+- Fixed a bug where [`PartyChatControl`](reference/classes/PartyChatControl/partychatcontrol.md) resources would sometimes not be freed up after calling [PartyLocalDevice::DestroyChatControl](reference/classes/PartyLocalDevice/methods/partylocaldevice_destroychatcontrol.md) and would only be released after calling [PartyManager::Cleanup](reference/classes/PartyManager/methods/partymanager_cleanup.md).
+- Android: Resolved duplicate class error when Party and Multiplayer are used in the same app.
+
 ## 1.9.4
 
 March 20, 2024
