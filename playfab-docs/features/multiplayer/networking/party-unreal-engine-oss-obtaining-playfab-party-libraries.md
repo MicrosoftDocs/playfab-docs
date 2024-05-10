@@ -14,10 +14,14 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 The use of this subsystem requires PlayFab Party and Multiplayer headers, libraries, and DLLs. Explore the options available to you based on your selected platform.
 
 ## Using the GDK
-Headers, libraries, and DLLs for PlayFab Party and Multiplayer SDKs are located in https://github.com/PlayFab/PlayFabMultiplayerUnreal/tree/main/Platforms/GDK. They are built with OSS automatically.
+Headers, libraries, and DLLs for PlayFab Party and Multiplayer SDKs are located in [PlayFabMultiplayerUnreal GitHub repo](https://github.com/PlayFab/PlayFabMultiplayerUnreal/tree/main/Platforms/GDK). They're built with PlayFab OSS automatically.
 
 ## Using Windows
-Headers, library, and DLL for PlayFab Party and Multiplayer SDKs are located in https://github.com/PlayFab/PlayFabMultiplayerUnreal/tree/main/Platforms/Windows. They are built with OSS automatically.
+Headers, library, and DLL for PlayFab Party and Multiplayer SDKs are located in [PlayFabMultiplayerUnreal GitHub repo](https://github.com/PlayFab/PlayFabMultiplayerUnreal/tree/main/Platforms/Windows). They're built with PlayFab OSS automatically.
+Each time we release PlayFab OSS, we always update the Party and Multiplayer SDKs to the latest version. If you would like to upgrade the SDKs yourself:
+- Find Party SDK from [NuGet Windows](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows) and Multiplayer SDK from [PlayFabMultiplayer release repo](https://github.com/PlayFab/PlayFabMultiplayer/releases)
+- Replace the header in Platforms/Windows/Include by the include/ from the SDKs
+- Replace the binaries in Platforms/Windows/Lib and Platforms/Windows/Redist by the bin/ from the SDKs
 
 ## Using the Switch, PlayStation®5 and PlayStation®4
 * **Nuget.exe** Find the location of Nuget.exe on your machine and add it to the PATH environment variable.

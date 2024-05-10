@@ -37,7 +37,7 @@ Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 ### Game code base
 * Apply the following changes to the Plugins section of your **.uproject** file to add the OnlineSubsystemPlayFab to your plugin list.
   * You may remove any platforms that you're not shipping on
-  * Use XboxOneGDK instead of XB1 if you are using UE4, since UE5 deprecates XboxOneGDK
+  * Use XboxOneGDK instead of XB1 if you're using UE4, since UE5 deprecates XboxOneGDK
 
 ```json
 {
@@ -70,7 +70,7 @@ Go to [PlayFab Online SubSystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 * No matter which platform you're targeting, your game needs to configure certain PlayFab specific values in your intended platform target's INI file (located at [yourGameDirectory]/Platforms/[yourPlatform]/Config).
   * **Xbox Series X GDK:** XSXEngine.ini
   * **PC GDK:** WinGDKEngine.ini
-  * **Xbox One GDK:** XB1Engine.ini (or XboxOneGDKEngine.ini if you are using UE4)
+  * **Xbox One GDK:** XB1Engine.ini (or XboxOneGDKEngine.ini if you're using UE4)
   * **PC Steam:** WindowsEngine.ini (or find it in [yourGameDirectory]/Config/Windows)
   * **Nintendo Switch** SwitchEngine.ini
   * **PS4™** PS4Engine.ini
@@ -89,7 +89,8 @@ MaxUserCount=<REPLACE ME with your max player count (note: split screen is still
 MaxUsersPerDeviceCount=<REPLACE ME with your max player count per box (note: split screen is still 1 device)  In the example of an 8 player game, this would be 1.>
 DirectPeerConnectivityOptions=<REPLACE ME with your connectivity options, in the form of an array of strings. The default case corresponds to the following:
 +DirectPeerConnectivityOptions=AnyPlatformType
-+DirectPeerConnectivityOptions=AnyEntityLoginProvider>
++DirectPeerConnectivityOptions=AnyEntityLoginProvider.
+If you want to disable P2P and use cloud relay instead, set DirectPeerConnectivityOptions=None>
 bHasPlayFabVoiceEnabled=<REPLACE ME with true/false>
 
 [/Script/OnlineSubsystemPlayFab.PlayFabNetDriver]
@@ -109,15 +110,12 @@ With all that done, we're nearly finished. There are only a few key platform-spe
 
 ### GDK
 
-If you're developing games using GDK, define the platform services and, optionally, set your GDK sandbox:
+If you're developing games using GDK, define the platform services:
 
 ```ini
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab
 NativePlatformService=GDK
-
-[OnlineSubsystemPlayFab]
-Sandbox=<Optional, REPLACE ME with the sandbox Id used for the title under development >
 ```
 
 ### Steam
@@ -132,11 +130,11 @@ NativePlatformService=Steam
 
 ### Switch
 
-For more information about Switch, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS. If you do not have access, you can [request access](request-access-for-sdks-samples.md) to our private repositories.
+For more information about Switch, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS. If you don't have access, you can [request access](request-access-for-sdks-samples.md) to our private repositories.
 
 ### PS5™ and PS4™
 
-For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS. If you do not have access, you can [request access](request-access-for-sdks-samples.md) to our private repositories.
+For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS. If you don't have access, you can [request access](request-access-for-sdks-samples.md) to our private repositories.
 
 ### Cross-platform
 
@@ -165,6 +163,9 @@ All platforms allow VoIP by default. To disable VoIP for a specific platform, ad
 These steps complete the setup of OSS required to be used in your game.  Good luck!
 
 ## Use in Game Code
+>[!NOTE]
+> PlayFab Online Subsystem only supports Game Session naming as `NAME_GameSession`
+
 Similar to using other Online Subsystem plugins:
 
 Add `PublicDependencyModuleNames.AddRange(new string[] { "OnlineSubsystem", "OnlineSubsystemUtils" });` in **Game.Build.cs**, then use it the same way as other game plugins.
@@ -214,7 +215,10 @@ void Game::ViewFriendProfile()
 	}
 }
 ```
-## Troubleshoot: Unreal Engine Installed Builds
+## Troubleshoot:
+Ways to help you troubleshoot issues.
+
+### Unreal Engine Installed Builds
 
 Users may face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
 
@@ -252,6 +256,9 @@ Users may face issues when trying to create an Unreal Engine Installed Build wit
         ],
     ```
 * Repeat the above process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
+
+### HandShake failure on Steam
+If you are seeing handshake failure (such as `LogHandshake: IncomingConnectionless: Error reading handshake packet`), refer to this [UE Forum post](https://forums.unrealengine.com/t/ue-5-1-steam-sockets-problem/696726) to check the settings.
 
 ## Workflow for OnlineSubsystemPlayFab
 
