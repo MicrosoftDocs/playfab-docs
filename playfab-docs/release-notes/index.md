@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2024
 author: amccalib
 description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
-ms.date: 04/26/2024
+ms.date: 05/14/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,17 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 240514
+
+Date: May 14, 2024
+
+- Expanded AzureVmFamily and AzureVmSize in the Multiplayer API to include new options:
+  - HBv3
+  - Ddv5
+  - Ddsv5
+- Added LinuxInstrumentationConfiguration to CreateBuild calls in the Multiplayer API
+- Added LoginWithPSN to the Server API
 
 ## 240426
 
