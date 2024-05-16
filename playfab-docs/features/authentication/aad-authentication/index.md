@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Microsoft Authentication for Playfab Game Manager
 
-PlayFab now supports two methods of user authentication. The first is the original PlayFab user authentication system. The second is a Microsoft's authentication services Microsoft account and Microsoft Entra ID (formely know as Azure Active Directory).
+PlayFab now supports two methods of user authentication. The first is the original PlayFab user authentication system. The second is Microsoft's authentication services 'Microsoft Account' and 'Microsoft Entra ID (formely know as Azure Active Directory)'.
 
 ### To create a new Microsoft Authenicated user
 
