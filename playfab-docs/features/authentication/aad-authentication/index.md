@@ -24,17 +24,17 @@ PlayFab now supports two methods of user authentication. The first is the origin
 
     ![Select Microsoft Authentication](media/AADDoc2.png)
 
-3. Assign roles as normal and send an invite. The user has the option to sign in via a Microsoft account.
+3. Assign roles as normal and send an invite. The user has the option to sign in via a Microsoft Account.
 
     ![Sign in with Microsoft](media/AADDoc3.png )
 
 ### Sign-up with a Microsoft Authenticated Account
 
-You can start a new PlayFab studio using a Microsoft account.
+You can start a new PlayFab studio using a Microsoft Account.
 
 1. Navigate to [developer.microsoft.com](https://developer.playfab.com/en-US/sign-up).
 2. Select **Sign up with Microsoft**.
 
 ### Microsoft Account Limitations
 
-Microsoft Account authentication is functional for individual users, including Microsoft account token exchange for programmatic authentication. It doesn't support groups or graph.
+Microsoft Account authentication is functional for individual users, including Microsoft Account token exchange for programmatic authentication. It doesn't support groups or graph.
