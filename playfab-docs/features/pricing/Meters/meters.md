@@ -40,7 +40,7 @@ player_bought_item | 30 | 10 KB
 player_statistic_changed | 20 | 30 KB
 player_executed_cloudscript | 10 | 20 KB
 
-By adding up the total size (110 KB) and dividing by the total count (100), we get an average size of 1.1KB. Therefore, we need to multiply the total count by 1.1 to get the effective count of 110 PlayStream Events. Let's look at the same example with some adjusted numbers:
+By adding up the total size (110 KB) and dividing by the total count (100), we get an average size of 1.1 KB. Therefore, we need to multiply the total count by 1.1 to get the effective count of 110 PlayStream Events. Let's look at the same example with some adjusted numbers:
 
 Event Name | Count | Size
 --- | :---: | :---:
@@ -49,12 +49,12 @@ player_bought_item | 30 | 10 KB
 player_statistic_changed | 20 | 20 KB
 player_executed_cloudscript | 10 | 20 KB
 
-By adding up the total size (90 KB) and dividing by the total count (100), we get an average size of 0.9KB. Therefore, we don't multiply the total count by anything - we stick with 100 PlayStream Events, even though the *player_executed_cloudscript* event had an average size larger than 1KB.
+By adding up the total size (90 KB) and dividing by the total count (100), we get an average size of 0.9KB. Therefore, we don't multiply the total count by anything - we stick with 100 PlayStream Events, even though the *player_executed_cloudscript* event had an average size larger than 1 KB.
 
 ### Profile
 There's nothing more important to the success of your games than your players. The Profile is what helps you understand and engage with your players - it includes any stored data related to player profile, entity profile, character profile, groups membership, and inventory. Data reads, writes, and storage are billed as part of this metered service.
-* **Reads** - Metered based on the total number of reads to profile data that are processed by PlayFab. For a list of read APIs, see [Profile read APIs](profile-reads.md). This meter is weighted to 1KB.
-* **Writes** - Metered based on the total number of writes (and deletes) that are processed by PlayFab. For a list of write APIs, see [Profile write APIs](profile-writes.md). This meter is weighted to 1KB.
+* **Reads** - Metered based on the total number of reads to profile data that are processed by PlayFab. For a list of read APIs, see [Profile read APIs](profile-reads.md). This meter is weighted to 1 KB.
+* **Writes** - Metered based on the total number of writes (and deletes) that are processed by PlayFab. For a list of write APIs, see [Profile write APIs](profile-writes.md). This meter is weighted to 1 KB.
 * **Storage** - Metered based on the average total volume of profile data hosted by PlayFab across daily snapshots.
 
 ### Content & Configuration
@@ -83,7 +83,7 @@ PlayFab Multiplayer Servers deliver secure and reliable low-latency gameplay at 
 * **Network Egress** - The volume of data transmitted by your game servers to the Internet (in gigabytes). Network egress is billed depending on the originating datacenter. Price varies by zone.
 
 ### Party
-PlayFab Party is a low-latency chat and data communication solution for cross-platform and cross-device multiplayer games. The voice and text features in Party can be used as a standalone chat solution or in conjunction with other features in PlayFab's Multiplayer product. There are four key meters used to bill Party utilization:
+PlayFab Party is a low-latency chat and data communication solution for cross-platform and cross-device multiplayer games. The voice and text features in Party can be used as a standalone chat solution or with other features in PlayFab's Multiplayer product. There are four key meters used to bill Party utilization:
 
 * **Party Connectivity**: Metered by number of player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
 * **Party Voice**: Metered by number of player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured and metered.
@@ -94,6 +94,13 @@ You can also use this [Party pricing calculator](https://playfab.com/party-calcu
 
 > [!NOTE]
 > Party Network Egress is metered and priced separately from Multiplayer Servers Network Egress.
+
+### Matchmaking and Lobby
+PlayFab Matchmaking and Lobby are highly-customizable, proven solutions for building and orchestrating player groupings during a game session. Players can receive real-time notifications so they can quickly react when there are relevant updates in the Matchmaking or Lobby service. 
+
+* **MatchmakingRequests**: One Matchmaking Request is metered for each call to a [Matchmaking API](/rest/api/playfab/multiplayer/matchmaking) endpoint. 
+* **LobbyRequests**: One Lobby Request is metered for each call to a [Lobby API](/rest/api/playfab/multiplayer/lobby) endpoint.
+* **Messages**: Metered by the number of message recipients. [Lobby and Matchmaking real-time notifications](/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications) are dispatched to subscribed clients upon important events such as receiving invites, joining and updating lobbies, or finding matches. 
 
 ### Economy v2
 
