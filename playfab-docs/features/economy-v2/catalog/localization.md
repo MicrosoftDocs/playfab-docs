@@ -70,26 +70,23 @@ An example `SearchItems` request:
 
 The following list contains all the locale codes that are supported based on ISO-631-1.
 
-|  A-I  |  I-P  |  P-Z  |
-| ----- | ----- | ----- |
-| am-ET	| is-IS	| ps-AF |
-| ar-SA	| it-IT	| pt-PT |
-| be-BY	| ja-JP	| ro-RO |
-| bg-BG	| ka-GE	| ru-RU |
-| bn-BD	| kk-KZ	| rw-RW |
-| cs-CZ	| kl-GL	| si-LK |
-| da-DK	| km-KH	| sk-SK |
-| de-DE	| ko-KR	| sl-SI |
-| el-GR	| ky-KG	| sq-AL |
-| en-GB	| lb-LU	| sv-SE |
-| es-MX	| lt-LT	| sw-KE |
-| et-EE	| lv-LV	| th-TH |
-| fi-FI	| mk-MK	| tk-TM |
-| fo-FO	| mn-MN	| tr-TR |
-| fr-FR	| ms-MY	| uk-UA |
-| he-IL	| mt-MT	| ur-PK |
-| hi-IN	| nb-NO	| vi-VN |
-| hr-HR	| ne-NP	| wo-SN |
-| hu-HU	| nl-NL	| zh-CN |
-| hy-AM	| pl-PL	| zh-TW |
-| id-ID	| 	    |       |
+|  A-I  |  J-Z  |
+| ----- | ----- |
+| ar-SA | ja-JP |
+| bg-BG | ko-KR |
+| cs-CZ | nb-NO |
+| da-DK | nl-NL |
+| de-DE | pl-PL |
+| el-GR | pt-BR |
+| en-GB | pt-PT |
+| en-US | ro-RO |
+| es-ES | ru-RU |
+| es-MX | sk-SK |
+| fi-FI | sv-SE |
+| fr-CA | th-TH |
+| fr-FR | tr-TR |
+| he-IL | uk-UA |
+| hi-IN | zh-CN |
+| hu-HU | zh-TW |
+| id-ID |       |     
+| it-IT |       |
