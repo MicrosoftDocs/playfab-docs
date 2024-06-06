@@ -16,8 +16,6 @@ ms.localizationpriority: medium
 
 Simple localization is supported by using locale keys in your _Title_, _Description_, and _Keywords_ fields for Catalog Items. Both Game Manager and all Catalog Item API calls expose these fields.
 
-You can see suggested ISO-639-1 [language codes on the Microsoft Support site](https://support.microsoft.com/topic/country-region-and-language-codes-add36afe-804a-44f1-ae68-cfb9c9b72f8b).
-
 > [!TIP]
 > Setting up player accounts for a third party translation services to use with the API can save time during development. Set the Economy v2 Settings policies to allow item updates for that player ID.
 
@@ -30,7 +28,7 @@ You can see suggested ISO-639-1 [language codes on the Microsoft Support site](h
         "en-US": "My Lit Lit Weapon",
         "en-GB": "My Brilliant Flaming Weapon",
         "fr-FR": "Mon Arme Enflammé Extraordinaire",
-        "zh-CHS": "我的神奇火之武器",
+        "zh-CN": "我的神奇火之武器",
         "ja-JP": "私の驚くべき炎の武器",
         "pt-PT": "Minha Arma de Fogo Incrível",
         "ru-RU": "Мое потрясающий огненное оружие",
