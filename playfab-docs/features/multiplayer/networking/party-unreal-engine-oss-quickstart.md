@@ -222,6 +222,43 @@ Ways to help you troubleshoot issues.
 
 Users may face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
 
+**If you are using UE5.4:**
+ * You may encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and \Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`
+ * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\
+ * Open OnlineSubsystemGDK.uplugin and set `PlayFabParty` to disabled:
+    ```json
+    {
+        "Name": "PlayFabParty",
+        "Enabled": false
+    }
+	```
+
+ * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\Source\
+ * Open OnlineSubsystemGDK.Build.cs and comment out the inclusion of `PlayFabParty`:
+    ```csharp
+    if (Target.bCompileAgainstEngine)
+    {
+        //PublicDependencyModuleNames.Add("PlayFabParty");
+    }
+	```
+
+**If you are using UE5.0 - 5.3:**
+ * Locate the directory where Unreal Engine is installed on the machine.
+ * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
+ * Open PlayFabParty.uplugin, and update Modules config with **PlatformDenyList**:
+    ```ini
+    "Modules": [
+            {
+                "Name": "PlayFabParty",
+                "Type": "Runtime",
+                "LoadingPhase": "Default",
+                "HasExplicitPlatforms": true,
+                "PlatformDenyList": [ "WinGDK", "Win64" ]
+            }
+        ],
+    ```
+* Repeat the above process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
+
 **If you are using UE4.27+,**
  * Locate the directory where Unreal Engine is installed on the machine.
  * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
@@ -240,22 +277,6 @@ Users may face issues when trying to create an Unreal Engine Installed Build wit
 		}
 	],
 ```
-**If you are using UE5.0 - 5.2:**
- * Locate the directory where Unreal Engine is installed on the machine.
- * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
- * Open PlayFabParty.uplugin, and update Modules config with **PlatformDenyList**:
-    ```ini
-    "Modules": [
-            {
-                "Name": "PlayFabParty",
-                "Type": "Runtime",
-                "LoadingPhase": "Default",
-                "HasExplicitPlatforms": true,
-                "PlatformDenyList": [ "WinGDK", "Win64" ]
-            }
-        ],
-    ```
-* Repeat the above process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
 
 ### HandShake failure on Steam
 If you are seeing handshake failure (such as `LogHandshake: IncomingConnectionless: Error reading handshake packet`), refer to this [UE Forum post](https://forums.unrealengine.com/t/ue-5-1-steam-sockets-problem/696726) to check the settings.
