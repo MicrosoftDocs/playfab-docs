@@ -14,6 +14,26 @@ ms.localizationpriority: medium
 
 Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md) for download and install instructions.
 
+## 2.3.4
+- Supported the release of UE5.4.
+
+Updated the following libraries:
+- Updated the Multiplayer SDK C++ library to version 1.7.2 for both Windows and GDK.
+- Updated the Party SDK C++ library to version 1.9.5 for both Windows and GDK.
+
+Feature fixes:
+- Fixed the failure to create or join a session when the player name includes emojis or special types of characters.
+- Fixed the failure to update lobby access policy.
+- Fixed a potential crash caused by `GetBytes()` and `GetSize()`.
+- Added missing pass through functions and interfaces for native OSS.
+- [Steam] Fixed the game crash when launching a Steam game without first launching Steam application.
+- [Steam] Replaced `GetAuthSessionTicket()` with `GetAuthTicketForWebApi()` for Steam 1.57 SDK.
+
+Known issue:
+- When using the PlayFab Online Subsystem in UE5.4 GDK, you may encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and \Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`.
+  To resolve this issue, refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md#unreal-engine-installed-builds).
+- `NumPrivateConnections` of FOnlineSessionSettings isn't supported because PlayFab service doesn't track private connections.
+
 ## 2.3.3
 Feature Updates:
 - Added support for dedicated server scenarios. For more information on setting up dedicated servers for your game, see the [Dedicated Server Setup Guide](party-unreal-engine-oss-dedicated-servers.md).
@@ -30,8 +50,8 @@ Feature Updates:
 
 ## 2.3.2
 Updated the following libraries:
-- Update the Multiplayer SDK C++ library to version 1.6.5 for both Windows and GDK.
-- Update the Party SDK C++ library to version 1.8.9 for both Windows and GDK.
+- Updated the Multiplayer SDK C++ library to version 1.6.5 for both Windows and GDK.
+- Updated the Party SDK C++ library to version 1.8.9 for both Windows and GDK.
 
 ## 2.3.1
 - Supported UE5.3 and previous UE versions (UE4.27+, UE5.0, UE5.1, and UE5.2. Refer to [QuickStart: Which versions of Unreal Engine are supported](party-unreal-engine-oss-overview.md#which-versions-of-unreal-engine-are-supported)).
