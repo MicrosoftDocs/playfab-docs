@@ -75,7 +75,7 @@ There are some studio and title limits associated with development mode:
 | Insights Credits | Insights Performance Level 1 |
 
 **Definition of Unique Users:**
-Unique Users are simply the total number of player profiles you have in your title, which is different from MAU - you can delete player profiles through the Players page in Game Manager to reduce the total number of Unique Users if you're approaching the limit but aren't ready to launch your title
+Unique Users are the total number of players created in your title which is distinct from monthly active users or daily active users.
 
 > [!NOTE]
 > You can learn more about title limits at [PlayFab pricing](https://www.playfab.com/pricing).
