@@ -12,7 +12,10 @@ ms.localizationpriority: medium
 
 # Insights pricing
 
-The total combined usage of Insights features are billed in a virtual currency called "Insights Credits". Insight Credits are derived from conversion rates for usage of each Insight services. 
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for pricing details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+
+The total combined usage of Insights features are billed in a virtual currency called "Insights Credits". Insight Credits are derived from conversion rates for usage of each Insight services.
 
 The Standard and Premium pricing plans include a number of free monthly Insights credits. If usage exceeds the number of free credits, any additional credits are billed at the rate specified on your plan. The Pay-as-you-go pricing plan does not include free credits, so each credit is billed at the rate specified in the plan. For more information on the number of free credits and additional credit rates included in each plan, see [PlayFab pricing](http://playfab.com/pricing).
 

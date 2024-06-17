@@ -23,6 +23,9 @@ Currently, you can connect the following external tools to Insights:
   - [Connect to Python](#python)
   - [Connect to Kusto C# SDK](#kusto-c-sdk)
 
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+
 > [!IMPORTANT]
 > Insights only supports the V1 query response schema. For some tools, you may need to update your tool's settings to use the V1 parser and results protocol.
 >
