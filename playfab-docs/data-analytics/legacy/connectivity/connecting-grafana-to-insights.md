@@ -22,11 +22,14 @@ In this tutorial you learn how to:
 > * Create a dashboard in Grafana
 > * Run Kusto queries and commands using the dashboard
 
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+
 ## Prerequisites
 
-### PlayFab account authenticated with AAD
+### PlayFab account authenticated with Microsoft Entra ID
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user.
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Microsoft Entra ID (previously Azure Active Directory (AAD)) for authentication that is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md) for instructions on creating an Microsoft Entra ID authenticated account or user.
 
 To verify that the account, or user, is set to use the Microsoft authentication provider:
 
@@ -47,7 +50,7 @@ You can either create a new user role or add these permissions to an existing ro
 
 ### Other prerequisites
 
-* [Create an Azure Active Directory (AAD) application and connect it to your title database](creating-AAD-app-for-insights.md)
+* [Create a Microsoft Entra ID application and connect it to your title database](creating-AAD-app-for-insights.md)
 
 ## Get set up with Grafana
 
@@ -63,22 +66,22 @@ Now that your title database is linked to an Azure app, you can use the app to c
 
 2. On the **Welcome to Grafana** page, select **Add data source**.
 
-3. On the **Add Datasource** page, select the **Azure Data Explorer Datasource**. You can search for it with the searchbar or find it listed under the section **Others**. If you don't see the **Azure Data Explorer Datasource** option, you need to install the Azure Data Explorer Datasource For Grafana plugin.
+3. On the **Add Datasource** page, select the **Azure Data Explorer Datasource**. You can search for it with the search bar or find it listed under the section **Others**. If you don't see the **Azure Data Explorer Datasource** option, you need to install the Azure Data Explorer Datasource For Grafana plugin.
 
    ![Grafana Add Datasource](media/grafana-add-datasource.png)
 
 4. On the **Azure Data Explorer Datasource** configuration page:
 
    * For **Cluster URL**, enter the PlayFab API endpoint, which is `https://insights.playfab.com`.
-   * Enter your **Tenant Id**, **Client Id**, and **Client secret** from your Azure Active Directory (AAD) application into their respective fields.
+   * Enter your **Tenant Id**, **Client Id**, and **Client secret** from your Microsoft Entra ID application into their respective fields.
    * Select **Save & Test**. You should see a **Connection Successful** return message.
-   * From **Default Database**, select your Title ID or database name. This automatically populates after you successfully save and test the datasource. If it doesn't show up after a successful connection, try exiting and re-opening the configuration page.
+   * From **Default Database**, select your Title ID or database name. This field automatically populates after you successfully save and test the datasource. If it doesn't show up after a successful connection, try exiting and reopening the configuration page.
 
    ![Grafana Datasource Configuration](media/grafana-datasource-configuration.png)
 
 ## Create a dashboard
 
-From the Grafana homepage we will create a new dashboard. To create a dashboard:
+From the Grafana homepage we'll create a new dashboard. To create a dashboard:
 
 1. Select **New dashboard**.
 
@@ -88,13 +91,13 @@ From the Grafana homepage we will create a new dashboard. To create a dashboard:
 
    ![Grafana New Panel](media/grafana-new-panel.png)
 
-3. In the **Query** panel next to **Database** select your database from the drop-down menu. In this example the database name is **Unicorn Battle**.
+3. In the **Query** panel next to **Database**, select your database from the drop-down menu. In this example the database name is **Unicorn Battle**.
 
    ![Grafana New Query](media/grafana-new-query.png)
 
 ## Run Kusto queries and commands
 
-Now you are going to use your newly-created Dashboard to run Kusto queries and commands on your database. To run a query:
+Now you're going to use your newly created Dashboard to run Kusto queries and commands on your database. To run a query:
 
 1. In the **Query** panel next to **Format As**, select **Table** from the drop-down menu.
 
@@ -112,7 +115,7 @@ Now you are going to use your newly-created Dashboard to run Kusto queries and c
 
    ![Grafana Run Command](media/grafana-run-command.png)
 
-## Additional resources
+## More resources
 
 * [Grafana documentation](https://grafana.com/docs/grafana/latest/)
 * To learn about other tools to connect to Insights, see  [Connecting external tools to Insights](index.md).

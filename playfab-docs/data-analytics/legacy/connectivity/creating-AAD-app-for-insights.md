@@ -17,6 +17,9 @@ This tutorial covers creating a Microsoft Entra ID application to use with Insig
 * Grafana
 * Python
 
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+
 ## Prerequisites
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free)  
 

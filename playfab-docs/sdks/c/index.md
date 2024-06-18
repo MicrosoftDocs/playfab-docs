@@ -3,7 +3,7 @@ title: PlayFab Services SDK
 author: amccalib
 description: Introduction to the PlayFab Services C/C++ SDK
 ms.author: andmcc
-ms.date: 03/04/2024
+ms.date: 06/11/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, c++, windows, xbox, gdk, win32, nintendo, switch, sony, playstation, ps4, ps5, iOS, MacOS, Android, Linux
@@ -38,17 +38,12 @@ Once you've been granted access to the PlayStation SDK, you can download it from
 
 ## What this SDK includes
 
-The PlayFab Services SDK for C/C++ is for use by game clients on Win32 (x64 only), Nintendo Switch, Sony PlayStation&#174;, iOS, macOS, Android, Linux, and the Microsoft GDK. It includes only the subset of feature areas and service calls appropriate for games running on those platforms. We'll be adding support for more platforms and scenarios over time.
+The PlayFab Services SDK for C/C++ is for use by a game's runtime components (clients and servers) on Win32 (x64 only), Nintendo Switch, Sony PlayStation&#174;, iOS, macOS, Android, Linux, and the Microsoft GDK. It includes only the subset of feature areas and service calls appropriate for games running on those platforms.
 
 Here are some notable differences when compared to other, more general purpose, PlayFab SDKs:
-- This SDK omits any service calls that require admin or developer-level authentication on all platforms except Windows, where they may be needed for game server scenarios. Specifically, any call that requires a developer secret key or title entity token to authorize isn't available outside of the Windows SDK.
-- There is a limited set of player login methods:
-    - __PFAuthenticationLoginWithXUserAsync__ uses an __XUserHandle__ to authenticate the player with PlayFab.
-    - __PFAuthenticationLoginWithSteamAsync__ uses a Steam token to authenticate with PlayFab.
-    - __PFAuthenticationLoginWithCustomIdAsync__ uses a custom string provided by the developer.
-    - __PFAuthenticationLoginWithOpenIdConnectAsync__ allows for a custom, sever-authoritative auth flow that depends on an existing OpenId backend implementation.
-    - __PFAuthenticationLoginWithNintendoServiceAccountAsync__ authenticates with PlayFab using the player's Nintendo Service Account.
-    - __PFAuthenticationLoginWithPSNAsync__ authenticates with PlayFab using the player's Sony authorization token.
+- The PlayFab Admin API is not included. This SDK is intended to be part of the game runtime (or dedicated server), not for tools or generic services.
+- The PlayFab Server API is only available for select platforms that are used for hosting game servers, specifically Windows, Linux, and macOS.
+- The available login methods depend on the platform. For instance, LoginWithApple is only available on Apple devices.
 - This SDK removes some older or underutilized feature areas to reduce overall complexity. These areas include economy v1, player stats and leaderboards, and characters.
 
 ## Benefits of this SDK
@@ -56,6 +51,7 @@ Here are some notable differences when compared to other, more general purpose, 
 - Allows titles to control the memory allocations when calling Playfab Services. See [Managing Memory Allocations](./memory.md) to learn more.
 - Allows titles to gain full control of thread handling when calling Playfab Services. See [Making async calls in the PlayFab Services SDK](./async.md) to learn more.
 - Portable C interface that allows maximum compatibility across platforms, compilers, and languages.
+- High-performance telemetry pipeline with support for low-cost queuing and batch transmission of events.
 
 ## Platforms supported by this SDK
 
