@@ -12,6 +12,16 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.4
+
+June 17, 2024
+
+### Bug fixes
+
+- Fixed an issue where messages received by websockets on PlayStation&#174;4 and, PlayStation&#174;5 would not be parsed correctly by the SDK if they contained the `'\0'` character. Failure to parse these messages could lead to PubSub connectivity issues. This is a PlayStation&#174;4 and, PlayStation&#174;5 only release.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 ## 1.7.3
 
 April 23, 2024

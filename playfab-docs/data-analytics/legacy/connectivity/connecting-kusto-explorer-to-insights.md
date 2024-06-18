@@ -14,13 +14,16 @@ ms.localizationpriority: medium
 
 This guide helps you get started using Kusto Explorer along with Insights. After connecting, you can use Kusto Explorer to query and explore your game data. To learn more about other tools you can connect Insights with, see [Connecting external tools to Insights](index.md).
 
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+
 ## Prerequisites
 
 ### PlayFab account authenticated with AAD
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user.
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. For instructions on creating an AAD-authenticated account or user, see [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md).
 
-To verify that the account, or user, is set to use the Microsoft authentication provider:
+Verify that the account or user is set to use the Microsoft authentication provider.
 
 * Navigate to [developer.playfab.com](https://developer.playfab.com).
 * Select **Sign in with Microsoft** to access your PlayFab account.
@@ -29,7 +32,7 @@ If you can sign in, then the account is set to use the Microsoft authentication 
 
 ### Game Manager permissions for Insights
 
-You need to assign your account a [user role](/gaming/playfab/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
+You need to assign your account a [user role](/gaming/playfab/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled.
 
 * Admin status.
 * Access to the Explorer tab and associated data.
@@ -48,7 +51,7 @@ You can either create a new user role or add these permissions to an existing ro
 On your local machine, open Kusto.Explorer.
 
 1. Select the **Tools** tab, then select **Options...**
-1. Under the **Connections** category, change the following two properties:
+1. Under the **Connections** category, change the following two properties.
    * Set **Query results protocol** to **V1** from the dropdown options.
    * Set **KQL Parser version** to **V1** from the dropdown options.
 
@@ -62,15 +65,15 @@ On your local machine, open Kusto.Explorer.
    * Right-click on the **Connections** folder in the left navigation panel, then select **Add connection**.
 
 2. In the **Add connection** dialog box:
-   * Under **Cluster connection** enter the PlayFab API endpoint, which is `https://insights.playfab.com`.
+   * Under **Cluster connection** enter the PlayFab API endpoint, which is **https://insights.playfab.com**.
    * Under **Security**, make sure **AAD Federated** is selected.
-   * Expand the **Advanced: Connection String** box and change the value of **Initial Catalog** from `NetDefaultDB` to `<titleID>`. Note that `<titleID>` must be all uppercase here. In the example below, this change is highlighted in the string.
+   * Expand the **Advanced: Connection String** box and change the value of **Initial Catalog** from **NetDefaultDB** to `<titleID>`. Note that `<titleID>` must be all uppercase here. In the example below, this change is highlighted in the string.
   
    ![Kusto.Explorer add connection](media/kusto-explorer.png)
 
-3. Select **OK**, and you should now be able to visualize the results of the query.
+3. Select **OK**. Now, you should now be able to visualize the results of the query.
 
 ## Additional resources
 
 * [Kusto Explorer documentation](/azure/kusto/tools/kusto-explorer)
-* To learn about other tools to connect to Insights, see [Connecting external tools to Insights](index.md)
+* [Connecting external tools to Insights](index.md)

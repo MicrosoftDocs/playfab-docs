@@ -14,6 +14,9 @@ ms.localizationpriority: medium
 
 Here we examine some best practices for using PlayFab Insights and address the most frequently asked questions.
 
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for best practice details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+
 ## Best Practices
 
 - Each performance level comes with a certain quantity of cache. It's a good idea to calculate a daily data footprint and decide how many days of data you would like in cache. A small buffer or well known data footprint allows anyone performing queries to know when to expect optimal performance. Running visualizations against that expected performance is also recommended for quick results.

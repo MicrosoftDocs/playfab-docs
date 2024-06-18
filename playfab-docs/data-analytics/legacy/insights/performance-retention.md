@@ -11,8 +11,8 @@ ms.localizationpriority: medium
 ---
 # Insights Management: Performance Levels & Retention
 
-> [!NOTE] 
-> > PlayFab Insights Management will be deprecated starting December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Performance Levels & Retention**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+> [!NOTE]
+> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Performance Levels & Retention**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
 
 PlayFab Insights provides studios the ability to change the performance characteristics of their data system. Controls are located in **Management** under the data section in Game Manager.
 
