@@ -1,8 +1,8 @@
 ---
 title: Getting started with Economy v2, Unity IAP, and Android
-author: cybtachyon
+author: joannaleecy
 description: How to set up In-App Purchasing (IAP) using PlayFab Economy v2, Unity, and Android.
-ms.author: derekreese
+ms.author: joanlee
 ms.date: 09/07/2022
 ms.topic: tutorial
 ms.service: playfab
@@ -95,7 +95,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Purchasing;
 using UnityEngine.Purchasing.Extension;
@@ -104,84 +103,98 @@ using PlayFab;
 using PlayFab.ClientModels;
 using PlayFab.EconomyModels;
 
-using CatalogItem = PlayFab.EconomyModels.CatalogItem;
-
-/**
- * Unity behavior that implements the the Unity IAP Store interface.
- * 
- * Attach as an asset to your Scene.
- */
+/// <summary>
+/// Unity behavior that implements the the Unity IAP Store interface.
+/// Attach as an asset to your Scene.
+/// </summary>
 public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
 {
-
     // Bundles for sale on the Google Play Store.
-    private Dictionary<string, PlayFab.EconomyModels.CatalogItem> GooglePlayCatalog;
+    private Dictionary<string, PlayFab.EconomyModels.CatalogItem> _googlePlayCatalog;
 
     // In-game items for sale at the example vendor.
-    private Dictionary<string, PlayFab.EconomyModels.CatalogItem> StorefrontCatalog;
+    private Dictionary<string, PlayFab.EconomyModels.CatalogItem> _storefrontCatalog;
 
-    private string purchaseIdempotencyId = null;
+    private string _purchaseIdempotencyId = null;
 
-    private PlayFabEconomyAPIAsyncResult lastAPICallResult = null;
+    private PlayFabEconomyAPIAsyncResult _lastAPICallResult = null;
 
-    private static PlayFabEconomyAPIAsync economyAPI = new();
+    private static readonly PlayFabEconomyAPIAsync s_economyAPI = new();
 
-    private static IStoreController m_StoreController;
+    private static IStoreController s_storeController;
 
-    /**
-     * True if the Store Controller, extensions, and Catalog are set.
-     */
-    public bool IsInitialized
+    // TODO: This callback is for illustrations purposes, you should create one that fits your needs
+    public delegate void PlayFabProcessPurchaseCallback(PurchaseProcessingResult result);
+
+    /// <summary>
+    /// Event that is triggered when a purchase is processed.
+    /// </summary>
+    /// <remarks>
+    /// TODO: Subscribe to this event in your game code to handle purchase results.
+    /// </remarks>
+    public event PlayFabProcessPurchaseCallback PlayFabProcessPurchaseEvent;
+
+    /// <summary>
+    /// True if the Store Controller, extensions, and Catalog are set.
+    /// </summary>
+    public bool IsInitialized => s_storeController != null
+                             && _googlePlayCatalog != null
+                             && _storefrontCatalog != null;
+
+    // Start is called before the first frame update.
+    public void Start()
     {
-        get
-        {
-            return m_StoreController != null
-                && GooglePlayCatalog != null
-                && StorefrontCatalog != null;
-        }
+        Login();
     }
 
-    /**
-     * Returns false as this is just sample code.
-     * 
-     * @todo Implement this functionality for your game.
-     */
-    public bool UserHasExistingSave
+    /// <summary>
+    /// Attempts to log the player in via the Android Device ID.
+    /// </summary>
+    private void Login()
     {
-        get
+        // TODO: it is better to use LoginWithGooglePlayGamesService or a similar platform-specific login method for final game code.
+
+        // SystemInfo.deviceUniqueIdentifier will prompt for permissions on newer devices.
+        // Using a non-device specific GUID and saving to a local file
+        // is a better approach. PlayFab does allow you to link multiple
+        // Android device IDs to a single PlayFab account.
+        PlayFabClientAPI.LoginWithCustomID(new LoginWithCustomIDRequest()
         {
-            return false;
-        }
+            CreateAccount = true,
+            CustomId = SystemInfo.deviceUniqueIdentifier
+        }, result => RefreshIAPItems(), PlayFabSampleUtil.OnPlayFabError);
     }
 
-    /**
-     * Integrates game purchasing with the Unity IAP API.
-     */
-    public void BuyProductByID(string productID)
+    /// <summary>
+    /// Queries the PlayFab Economy Catalog V2 for updated listings
+    /// and then fills the local catalog objects.
+    /// </summary>
+    private async void RefreshIAPItems()
     {
-        if (!IsInitialized) throw new Exception("IAP Service is not initialized!");
-
-        m_StoreController.InitiatePurchase(productID);
-    }
-
-    /**
-     * Purchases a PlayFab inventory item by ID.
-     * 
-     * @see the PlayFabEconomyAPIAsync class for details on error handling
-     * and calling patterns.
-     */
-    async public Task<bool> PlayFabPurchaseItemByID(string itemID, PlayFabEconomyAPIAsyncResult result)
-    {
-        if (!IsInitialized) throw new Exception("IAP Service is not initialized!");
-
-        Debug.Log("Player buying product " + itemID);
-
-        if (string.IsNullOrEmpty(purchaseIdempotencyId))
+        _googlePlayCatalog = new Dictionary<string, PlayFab.EconomyModels.CatalogItem>();
+        SearchItemsRequest googlePlayCatalogRequest = new()
         {
-            purchaseIdempotencyId = Guid.NewGuid().ToString();
-        }
+            Count = 50,
+            Filter = "Platforms/any(platform: platform eq 'GooglePlay')"
+        };
 
-        GetItemRequest getVillagerStoreRequest = new GetItemRequest()
+        SearchItemsResponse googlePlayCatalogResponse;
+        do
+        {
+            googlePlayCatalogResponse = await s_economyAPI.SearchItemsAsync(googlePlayCatalogRequest);
+            Debug.Log("Search response: " + JsonUtility.ToJson(googlePlayCatalogResponse));
+
+            foreach (PlayFab.EconomyModels.CatalogItem item in googlePlayCatalogResponse.Items)
+            {
+                _googlePlayCatalog.Add(item.Id, item);
+            }
+
+        } while (!string.IsNullOrEmpty(googlePlayCatalogResponse.ContinuationToken));
+
+        Debug.Log($"Completed pulling from PlayFab Economy v2 googleplay Catalog: {_googlePlayCatalog.Count()} items retrieved");
+
+        _storefrontCatalog = new Dictionary<string, PlayFab.EconomyModels.CatalogItem>();
+        GetItemRequest storeCatalogRequest = new()
         {
             AlternateId = new CatalogAlternateId()
             {
@@ -189,54 +202,46 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
                 Value = "villagerstore"
             }
         };
-        GetItemResponse getStoreResponse = await economyAPI.getItemAsync(getVillagerStoreRequest);
-        if (getStoreResponse == null || string.IsNullOrEmpty(getStoreResponse?.Item?.Id))
+
+        GetItemResponse storeCatalogResponse;
+        storeCatalogResponse = await s_economyAPI.GetItemAsync(storeCatalogRequest);
+        List<string> itemIds = new();
+
+        foreach (CatalogItemReference item in storeCatalogResponse.Item.ItemReferences)
         {
-            result.error = "Unable to contact the store. Check your internet connection and try again in a few minutes.";
-            return false;
+            itemIds.Add(item.Id);
         }
 
-        CatalogPriceAmount price = StorefrontCatalog.FirstOrDefault(item => item.Key == itemID).Value.PriceOptions.Prices.FirstOrDefault().Amounts.FirstOrDefault();
-        PurchaseInventoryItemsRequest purchaseInventoryItemsRequest = new PurchaseInventoryItemsRequest()
+        GetItemsRequest itemsCatalogRequest = new()
         {
-            Amount = 1,
-            Item = new InventoryItemReference()
-            {
-                Id = itemID
-            },
-            PriceAmounts = new List<PurchasePriceAmount>
-            {
-                new PurchasePriceAmount()
-                {
-                    Amount = price.Amount,
-                    ItemId = price.ItemId
-                }
-            },
-            IdempotencyId = purchaseIdempotencyId,
-            StoreId = getStoreResponse.Item.Id
+            Ids = itemIds
         };
-        PurchaseInventoryItemsResponse purchaseInventoryItemsResponse = await economyAPI.purchaseInventoryItemsAsync(purchaseInventoryItemsRequest);
-        if (purchaseInventoryItemsResponse == null || purchaseInventoryItemsResponse?.TransactionIds.Count < 1)
+
+        GetItemsResponse itemsCatalogResponse = await s_economyAPI.GetItemsAsync(itemsCatalogRequest);
+        foreach (PlayFab.EconomyModels.CatalogItem item in itemsCatalogResponse.Items)
         {
-            result.error = "Unable to purchase. Try again in a few minutes.";
-            return false;
+            _storefrontCatalog.Add(item.Id, item);
         }
 
-        purchaseIdempotencyId = "";
-        result.message = "Purchasing!";
-        return true;
+        Debug.Log($"Completed pulling from PlayFab Economy v2 villagerstore store: {_storefrontCatalog.Count()} items retrieved");
+
+        InitializePurchasing();
     }
 
+    /// <summary>
+    /// Initializes the Unity IAP system for the Google Play Store.
+    /// </summary>
     private void InitializePurchasing()
     {
         if (IsInitialized) return;
 
         var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance(AppStore.GooglePlay));
 
-        foreach (CatalogItem item in GooglePlayCatalog.Values)
+        foreach (PlayFab.EconomyModels.CatalogItem item in _googlePlayCatalog.Values)
         {
-            var googlePlayItemId = item.AlternateIds.FirstOrDefault(item => item.Type == "GooglePlay")?.Value;
-            if (!googlePlayItemId.IsUnityNull()) {
+            string googlePlayItemId = item.AlternateIds.FirstOrDefault(item => item.Type == "GooglePlay")?.Value;
+            if (!string.IsNullOrWhiteSpace(googlePlayItemId))
+            {
                 builder.AddProduct(googlePlayItemId, ProductType.Consumable);
             }
         }
@@ -244,43 +249,10 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
         UnityPurchasing.Initialize(this, builder);
     }
 
-    /**
-     * Attempts to log the player in via the Android Device ID.
-     */
-    private void Login()
-    {
-        // Best practice is to soft-login with a unique ID, then prompt the player to finish 
-        // creating a PlayFab account in order to retrive cross-platform saves or other benefits.
-        if (UserHasExistingSave)
-        {
-            // @todo Integrate this with the save system.
-            LoginWithPlayFabRequest loginWithPlayFabRequest = new()
-            {
-                Username = "",
-                Password = ""
-            };
-            PlayFabClientAPI.LoginWithPlayFab(loginWithPlayFabRequest, OnRegistration, OnPlayFabError);
-            return;
-        }
-
-        // AndroidDeviceID will prompt for permissions on newer devices.
-        // Using a non-device specific GUID and saving to a local file
-        // is a better approach. PlayFab does allow you to link multiple
-        // Android device IDs to a single PlayFab account.
-        PlayFabClientAPI.LoginWithAndroidDeviceID(new LoginWithAndroidDeviceIDRequest()
-        {
-            CreateAccount = true,
-            AndroidDeviceId = SystemInfo.deviceUniqueIdentifier
-        }, result => {
-            RefreshIAPItems();
-        }, error => Debug.LogError(error.GenerateErrorReport()));
-    }
-
-    /**
-     * Draw a debug IMGUI for testing examples.
-     *
-     * Use UI Toolkit for your production game runtime UI instead.
-     */
+    /// <summary>
+    /// Draw a debug IMGUI for testing examples.
+    /// Use UI Toolkit for your production game runtime UI instead.
+    /// </summary>
     public void OnGUI()
     {
         // Support high-res devices.
@@ -292,27 +264,26 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
             return;
         }
 
-        if (!string.IsNullOrEmpty(purchaseIdempotencyId)
-            && (!string.IsNullOrEmpty(lastAPICallResult?.message)
-                || !string.IsNullOrEmpty(lastAPICallResult?.error)))
+        if (!string.IsNullOrEmpty(_purchaseIdempotencyId) && (!string.IsNullOrEmpty(_lastAPICallResult?.Message)
+                                                           || !string.IsNullOrEmpty(_lastAPICallResult?.Error)))
         {
-            GUILayout.Label(lastAPICallResult?.message + lastAPICallResult?.error);
+            GUILayout.Label(_lastAPICallResult?.Message + _lastAPICallResult?.Error);
         }
 
         GUILayout.Label("Shop for game currency bundles.");
         // Draw a purchase menu for each catalog item.
-        foreach (CatalogItem item in GooglePlayCatalog.Values)
+        foreach (PlayFab.EconomyModels.CatalogItem item in _googlePlayCatalog.Values)
         {
             // Use a dictionary to select the proper language.
             if (GUILayout.Button("Get " + (item.Title.ContainsKey("en-US") ? item.Title["en-US"] : item.Title["NEUTRAL"])))
             {
-                BuyProductByID(item.AlternateIds.FirstOrDefault(item => item.Type == "GooglePlay").Value);
+                BuyProductById(item.AlternateIds.FirstOrDefault(item => item.Type == "GooglePlay").Value);
             }
         }
 
         GUILayout.Label("Hmmm. (Translation: Welcome to my humble Villager store.)");
         // Draw a purchase menu for each catalog item.
-        foreach (CatalogItem item in StorefrontCatalog.Values)
+        foreach (PlayFab.EconomyModels.CatalogItem item in _storefrontCatalog.Values)
         {
             // Use a dictionary to select the proper language.
             if (GUILayout.Button("Buy "
@@ -322,9 +293,93 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
                 + " Diamonds"
                 )))
             {
-                PlayFabPurchaseItemByID(item.Id, lastAPICallResult);
+                Task.Run(() => PlayFabPurchaseItemById(item.Id));
             }
         }
+    }
+
+    /// <summary>
+    /// Integrates game purchasing with the Unity IAP API.
+    /// </summary>
+    public void BuyProductById(string productId)
+    {
+        if (!IsInitialized)
+        {
+            Debug.LogError("IAP Service is not initialized!");
+            return;
+        }
+
+        s_storeController.InitiatePurchase(productId);
+    }
+
+    /// <summary>
+    /// Purchases a PlayFab inventory item by ID.
+    /// See the <see cref="PlayFabEconomyAPIAsync"/> class for details on error handling
+    /// and calling patterns.
+    /// </summary>
+    async public Task<bool> PlayFabPurchaseItemById(string itemId)
+    {
+        if (!IsInitialized)
+        {
+            Debug.LogError("IAP Service is not initialized!");
+            return false;
+        }
+
+        _lastAPICallResult = new();
+
+        Debug.Log("Player buying product " + itemId);
+
+        if (string.IsNullOrEmpty(_purchaseIdempotencyId))
+        {
+            _purchaseIdempotencyId = Guid.NewGuid().ToString();
+        }
+
+        GetItemRequest getVillagerStoreRequest = new()
+        {
+            AlternateId = new CatalogAlternateId()
+            {
+                Type = "FriendlyId",
+                Value = "villagerstore"
+            }
+        };
+
+        GetItemResponse getStoreResponse = await s_economyAPI.GetItemAsync(getVillagerStoreRequest);
+        if (getStoreResponse == null || string.IsNullOrEmpty(getStoreResponse?.Item?.Id))
+        {
+            _lastAPICallResult.Error = "Unable to contact the store. Check your internet connection and try again in a few minutes.";
+            return false;
+        }
+
+        CatalogPriceAmount price = _storefrontCatalog.FirstOrDefault(item => item.Key == itemId).Value.PriceOptions.Prices.FirstOrDefault().Amounts.FirstOrDefault();
+        PurchaseInventoryItemsRequest purchaseInventoryItemsRequest = new()
+        {
+            Amount = 1,
+            Item = new InventoryItemReference()
+            {
+                Id = itemId
+            },
+            PriceAmounts = new List<PurchasePriceAmount>
+            {
+                new()
+                {
+                    Amount = price.Amount,
+                    ItemId = price.ItemId
+                }
+            },
+            IdempotencyId = _purchaseIdempotencyId,
+            StoreId = getStoreResponse.Item.Id
+        };
+
+        PurchaseInventoryItemsResponse purchaseInventoryItemsResponse = await s_economyAPI.PurchaseInventoryItemsAsync(purchaseInventoryItemsRequest);
+        if (purchaseInventoryItemsResponse == null || purchaseInventoryItemsResponse?.TransactionIds.Count < 1)
+        {
+            _lastAPICallResult.Error = "Unable to purchase. Try again in a few minutes.";
+            return false;
+        }
+
+        _purchaseIdempotencyId = "";
+        _lastAPICallResult.Message = "Purchasing!";
+        return true;
     }
 
     private void OnRegistration(LoginResult result)
@@ -334,7 +389,7 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
 
     public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
     {
-        m_StoreController = controller;
+        s_storeController = controller;
     }
 
     public void OnInitializeFailed(InitializationFailureReason error)
@@ -347,36 +402,30 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
         Debug.Log("OnInitializeFailed InitializationFailureReason:" + error + message);
     }
 
-    private void OnPlayFabError(PlayFabError error)
-    {
-        Debug.LogError(error.GenerateErrorReport());
-    }
-
     public void OnPurchaseFailed(UnityEngine.Purchasing.Product product, PurchaseFailureReason failureReason)
     {
-        Debug.Log(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}",
-            product.definition.storeSpecificId, failureReason));
+        Debug.Log($"OnPurchaseFailed: FAIL. Product: '{product.definition.storeSpecificId}', PurchaseFailureReason: {failureReason}");
     }
 
     public void OnPurchaseFailed(UnityEngine.Purchasing.Product product, PurchaseFailureDescription failureDescription)
     {
-        Debug.Log(string.Format("OnPurchaseFailed: FAIL. Product: '{0}', PurchaseFailureReason: {1}",
-            product.definition.storeSpecificId, failureDescription));
+        Debug.Log($"OnPurchaseFailed: FAIL. Product: '{product.definition.storeSpecificId}', PurchaseFailureReason: {failureDescription}");
     }
 
-    /**
-     * Callback for Store purchases.
-     * 
-     * @note This code does not account for purchases that were pending and are
-     *   delivered on application start. Production code should account for these
-     *   cases.
-     *
-     * @see https://docs.unity3d.com/Packages/com.unity.purchasing@4.8/api/UnityEngine.Purchasing.PurchaseProcessingResult.html
-     */
+    /// <summary>
+    /// Callback for Store purchases. Subscribe to PlayFabProcessPurchaseEvent to handle the final PurchaseProcessingResult.
+    /// <see href="https://docs.unity3d.com/Packages/com.unity.purchasing@4.8/api/UnityEngine.Purchasing.PurchaseProcessingResult.html"/>
+    /// </summary>
+    /// <remarks>
+    /// This code does not account for purchases that were pending and are
+    /// delivered on application start. Production code should account for these cases.
+    /// </remarks>
+    /// <returns>Complete immediately upon error. Pending if PlayFab Economy is handling final processing and will trigger PlayFabProcessPurchaseEvent with the final result.</returns>
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs purchaseEvent)
     {
         if (!IsInitialized)
         {
+            Debug.LogWarning("Not initialized. Ignoring.");
             return PurchaseProcessingResult.Complete;
         }
 
@@ -392,197 +441,141 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
             return PurchaseProcessingResult.Complete;
         }
 
-        Debug.Log("Attempting purchase with receipt " + purchaseEvent.purchasedProduct.receipt.Serialize().ToString());
+        Debug.Log("Attempting purchase with receipt " + purchaseEvent.purchasedProduct.receipt);
         GooglePurchase purchasePayload = GooglePurchase.FromJson(purchaseEvent.purchasedProduct.receipt);
         RedeemGooglePlayInventoryItemsRequest request = new()
         {
-            Purchases = new List<GooglePlayProductPurchase> {
-                new GooglePlayProductPurchase() {
+            Purchases = new List<GooglePlayProductPurchase>
+            {
+                new()
+                {
                     ProductId = purchasePayload.PayloadData?.JsonData?.productId,
                     Token = purchasePayload.PayloadData?.signature
                 }
             }
         };
-        RedeemGooglePlayInventoryItemsResponse redeemResponse = new();
-        PlayFabEconomyAPI.RedeemGooglePlayInventoryItems(request, result => {
-            redeemResponse = result;
+
+        PlayFabEconomyAPI.RedeemGooglePlayInventoryItems(request, result =>
+        {
             Debug.Log("Processed receipt validation.");
+            
+            if (result?.Failed.Count > 0)
+            {
+                Debug.Log($"Validation failed for {result.Failed.Count} receipts.");
+                Debug.Log(JsonUtility.ToJson(result.Failed));
+                PlayFabProcessPurchaseEvent?.Invoke(PurchaseProcessingResult.Pending);
+            }
+            else
+            {
+                Debug.Log("Validation succeeded!");
+                PlayFabProcessPurchaseEvent?.Invoke(PurchaseProcessingResult.Complete);
+            }
         },
-            error => Debug.Log("Validation failed: " + error.GenerateErrorReport()));
-        if (redeemResponse?.Failed.Count > 0)
-        {
-            Debug.Log("Validation failed for " + redeemResponse.Failed.Count + " receipts.");
-            Debug.Log(redeemResponse.Failed.Serialize().ToSafeString());
-            return PurchaseProcessingResult.Pending;
-        }
-        else
-        {
-            Debug.Log("Validation succeeded!");
-        }
+        PlayFabSampleUtil.OnPlayFabError);
 
-        return PurchaseProcessingResult.Complete;
+        return PurchaseProcessingResult.Pending;
     }
-
-    /**
-     * Queries the PlayFab Economy Catalog V2 for updated listings
-     * and then fills the local catalog objects.
-     */
-    private async void RefreshIAPItems()
-    {
-        GooglePlayCatalog = new Dictionary<string, PlayFab.EconomyModels.CatalogItem>();
-        SearchItemsRequest playCatalogRequest = new()
-        {
-            Count = 50,
-            Filter = "Platforms/any(platform: platform eq 'GooglePlay')"
-        };
-        SearchItemsResponse playCatalogResponse;
-        do
-        {
-            playCatalogResponse = await economyAPI.searchItemsAsync(playCatalogRequest);
-            Debug.Log("Search response: " + playCatalogResponse.Serialize().ToSafeString());
-            foreach (CatalogItem item in playCatalogResponse.Items)
-            {
-                GooglePlayCatalog.Add(item.Id, item);
-            }
-        } while (!string.IsNullOrEmpty(playCatalogResponse.ContinuationToken));
-        Debug.Log("Completed pulling from PlayFab Economy v2 googleplay Catalog: "
-            + GooglePlayCatalog.Count()
-            + " items retrieved");
-
-        StorefrontCatalog = new Dictionary<string, PlayFab.EconomyModels.CatalogItem>();
-        GetItemRequest storeCatalogRequest = new()
-        {
-            AlternateId = new CatalogAlternateId()
-            {
-                Type = "FriendlyId",
-                Value = "villagerstore"
-            }
-        };
-        GetItemResponse storeCatalogResponse;
-        storeCatalogResponse = await economyAPI.getItemAsync(storeCatalogRequest);
-        List<string> itemIds = new() { };
-        foreach (CatalogItemReference item in storeCatalogResponse.Item.ItemReferences)
-        {
-            itemIds.Add(item.Id);
-        }
-        GetItemsRequest itemsCatalogRequest = new()
-        {
-            Ids = itemIds
-        };
-        GetItemsResponse itemsCatalogResponse = await economyAPI.getItemsAsync(itemsCatalogRequest);
-        foreach (CatalogItem item in itemsCatalogResponse.Items)
-        {
-            StorefrontCatalog.Add(item.Id, item);
-        }
-        Debug.Log("Completed pulling from PlayFab Economy v2 villagerstore store: "
-            + StorefrontCatalog.Count()
-            + " items retrieved");
-        
-        InitializePurchasing();
-    }
-
-    // Start is called before the first frame update.
-    public void Start()
-    {
-        Login();
-    }
-
-    // Update is called once per frame.
-    public void Update() { }
 }
 
-// Utility classes for the sample.
+/// <summary>
+/// Utility classes for the sample.
+/// </summary>
 public class PlayFabEconomyAPIAsyncResult
 {
-    public string error = null;
+    public string Error { get; set; } = null;
 
-    public string message = null;
+    public string Message { get; set; } = null;
 }
 
-/**
- * Example Async wrapper for PlayFab API's.
- * 
- * This is just a quick sample for example purposes.
- * 
- * Write your own customer Logger implementation to log and handle errors
- * for user-facing scenarios. Use tags and map which PlayFab errors require your
- * game to handle GUI or gameplay updates vs which should be logged to crash and
- * error reporting services.
- */
+public static class PlayFabSampleUtil
+{
+    public static void OnPlayFabError(PlayFabError error)
+    {
+        Debug.LogError(error.GenerateErrorReport());
+    }
+}
+
+/// <summary>
+/// Example Async wrapper for PlayFab API's.
+/// 
+/// This is just a quick sample for example purposes.
+/// 
+/// Write your own customer Logger implementation to log and handle errors
+/// for user-facing scenarios. Use tags and map which PlayFab errors require your
+/// game to handle GUI or gameplay updates vs which should be logged to crash and
+/// error reporting services.
+/// </summary>
 public class PlayFabEconomyAPIAsync
 {
-    // @see https://learn.microsoft.com/en-us/rest/api/playfab/economy/catalog/get-item
-    private TaskCompletionSource<GetItemResponse> getItemAsyncTaskSource;
-
-    public void onGetItemRequestComplete(GetItemResponse response)
+    /// <summary>
+    /// <see href="https://learn.microsoft.com/rest/api/playfab/economy/catalog/get-item"/>
+    /// </summary>
+    public Task<GetItemResponse> GetItemAsync(GetItemRequest request)
     {
-        getItemAsyncTaskSource.SetResult(response);
-    }
-
-    public Task<GetItemResponse> getItemAsync(GetItemRequest request)
-    {
-        getItemAsyncTaskSource = new();
-        PlayFabEconomyAPI.GetItem(request, onGetItemRequestComplete, error => Debug.LogError(error.GenerateErrorReport()));
+        TaskCompletionSource<GetItemResponse> getItemAsyncTaskSource = new();
+        PlayFabEconomyAPI.GetItem(request, (response) => getItemAsyncTaskSource.SetResult(response), error => 
+        {
+            PlayFabSampleUtil.OnPlayFabError(error);
+            getItemAsyncTaskSource.SetResult(default);
+        });
         return getItemAsyncTaskSource.Task;
     }
 
-    // @see https://learn.microsoft.com/en-us/rest/api/playfab/economy/catalog/get-items
-    private TaskCompletionSource<GetItemsResponse> getItemsAsyncTaskSource;
-
-    public void onGetItemsRequestComplete(GetItemsResponse response)
+    /// <summary>
+    /// <see href="https://learn.microsoft.com/rest/api/playfab/economy/catalog/get-items"/>
+    /// </summary>
+    public Task<GetItemsResponse> GetItemsAsync(GetItemsRequest request)
     {
-        getItemsAsyncTaskSource.SetResult(response);
-    }
-
-    public Task<GetItemsResponse> getItemsAsync(GetItemsRequest request)
-    {
-        getItemsAsyncTaskSource = new();
-        PlayFabEconomyAPI.GetItems(request, onGetItemsRequestComplete, error => Debug.LogError(error.GenerateErrorReport()));
+        TaskCompletionSource<GetItemsResponse> getItemsAsyncTaskSource = new();
+        PlayFabEconomyAPI.GetItems(request, (response) => getItemsAsyncTaskSource.SetResult(response), error => 
+        {
+            PlayFabSampleUtil.OnPlayFabError(error);
+            getItemsAsyncTaskSource.SetResult(default);
+        });
         return getItemsAsyncTaskSource.Task;
     }
 
-    // @see https://learn.microsoft.com/en-us/rest/api/playfab/economy/inventory/purchase-inventory-items
-    private TaskCompletionSource<PurchaseInventoryItemsResponse> purchaseInventoryItemsAsyncTaskSource;
-
-    public void OnPurchaseInventoryItemsRequestComplete(PurchaseInventoryItemsResponse response)
+    /// <summary>
+    /// <see href="https://learn.microsoft.com/rest/api/playfab/economy/inventory/purchase-inventory-items"/>
+    /// </summary>
+    public Task<PurchaseInventoryItemsResponse> PurchaseInventoryItemsAsync(PurchaseInventoryItemsRequest request)
     {
-        purchaseInventoryItemsAsyncTaskSource.SetResult(response);
-    }
-
-    public Task<PurchaseInventoryItemsResponse> purchaseInventoryItemsAsync(PurchaseInventoryItemsRequest request)
-    {
-        purchaseInventoryItemsAsyncTaskSource = new();
-        PlayFabEconomyAPI.PurchaseInventoryItems(request,
-            OnPurchaseInventoryItemsRequestComplete,
-            error => { Debug.LogError(error.GenerateErrorReport()); });
+        TaskCompletionSource<PurchaseInventoryItemsResponse> purchaseInventoryItemsAsyncTaskSource = new();
+        PlayFabEconomyAPI.PurchaseInventoryItems(request, (response) => purchaseInventoryItemsAsyncTaskSource.SetResult(response), error => 
+        {
+            PlayFabSampleUtil.OnPlayFabError(error);
+            purchaseInventoryItemsAsyncTaskSource.SetResult(default);
+        });
         return purchaseInventoryItemsAsyncTaskSource.Task;
     }
 
-    // @see https://learn.microsoft.com/en-us/rest/api/playfab/economy/catalog/search-items
-    private TaskCompletionSource<SearchItemsResponse> searchItemsAsyncTaskSource;
-
-    public void OnSearchItemsRequestComplete(SearchItemsResponse response)
+    /// <summary>
+    /// <see href="https://learn.microsoft.com/rest/api/playfab/economy/catalog/search-items"/>
+    /// </summary>
+    public Task<SearchItemsResponse> SearchItemsAsync(SearchItemsRequest request)
     {
-        searchItemsAsyncTaskSource.SetResult(response);
-    }
-
-    public Task<SearchItemsResponse> searchItemsAsync(SearchItemsRequest request) {
-        searchItemsAsyncTaskSource = new();
-        PlayFabEconomyAPI.SearchItems(request, OnSearchItemsRequestComplete, error => Debug.LogError(error.GenerateErrorReport()));
+        TaskCompletionSource<SearchItemsResponse> searchItemsAsyncTaskSource = new();
+        PlayFabEconomyAPI.SearchItems(request, (response) => searchItemsAsyncTaskSource.SetResult(response), error => 
+        {
+            PlayFabSampleUtil.OnPlayFabError(error);
+            searchItemsAsyncTaskSource.SetResult(default);
+        });
         return searchItemsAsyncTaskSource.Task;
     }
 }
 
+[Serializable]
 public class PurchaseJsonData
 {
     public string orderId;
     public string packageName;
     public string productId;
+    public string purchaseToken;
     public long   purchaseTime;
     public int    purchaseState;
-    public string purchaseToken;
 }
 
+[Serializable]
 public class PurchasePayloadData
 {
     public PurchaseJsonData JsonData;
@@ -598,6 +591,7 @@ public class PurchasePayloadData
     }
 }
 
+[Serializable]
 public class GooglePurchase
 {
     public PurchasePayloadData PayloadData;
@@ -609,11 +603,13 @@ public class GooglePurchase
     public static GooglePurchase FromJson(string json)
     {
         var purchase = JsonUtility.FromJson<GooglePurchase>(json);
+
         // Only fake receipts are returned in Editor play.
         if (Application.isEditor)
         {
             return purchase;
         }
+        
         purchase.PayloadData = PurchasePayloadData.FromJson(purchase.Payload);
         return purchase;
     }
