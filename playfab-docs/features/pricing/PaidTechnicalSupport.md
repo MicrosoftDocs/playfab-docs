@@ -24,16 +24,14 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 
 **How to access:** To view PlayFab documentation, see [PlayFab Documentation](../../index.yml).
 
+### PLAYFAB DISCORD FORUMS
+**Purpose:** The PlayFab Discord Forums provide community based product support. Use the PlayFab category and channels to check on service status, post questions, share answers, and discuss the PlayFab product experience.
 
+**Minimum Required Account Plan:** No PlayFab account is needed to post, view, or engage with the community.
 
-### PLAYFAB FORUMS
-**Purpose:** The PlayFab Forums provide community based product support. Use the forums to post questions, share answers, and discuss the PlayFab product experience..
+**How to access:** The PlayFab Discord Forums is accessible via a free Discord account. Start by following this invite to the Microsoft Game Dev Server and opting-in to the PlayFab channel during the onboarding flow: [PlayFab Discord Forums](https://discord.com/invite/msftgamedev). 
 
-**Minimum Required Account Plan:** No account needed to view, free PlayFab user account needed to post.
-
-**How to access:** Anyone can read the forums. To contribute, you must sign in with your PlayFab account. To access the forums, visit [PlayFab Forums](https://community.playfab.com/index.html).
-
-
+**Move to Discord:** PlayFab moved its community forums from PlayFab.com to Discord on June 26, 2024. Read more about it here: [PlayFab Dev Forums Move to Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/) 
 
 ### SUPPORT TICKET SUBMISSION
 **Purpose:** Use support tickets to report a bug, to understand how to use a particular PlayFab feature, or to request help with a technical problem. Customers with paid accounts may submit support tickets directly to the PlayFab team through the "Contact Us" Page in Game Manager. Customers will receive a response within 1 business day.
