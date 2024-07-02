@@ -14,6 +14,15 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 240621
+
+Date: June 21, 2024
+
+ - Added XboxMobileStore to the LoginIdentityProvider and UserOrigination enums
+ - Expanded the IdentifiedDeviceType enum in the Authentication API to include a broader set of gaming platforms
+ - Updated documented numerical limits for multiple calls in the Economy API
+ - Added error codes for new service errors
+
 ## 240514
 
 Date: May 14, 2024

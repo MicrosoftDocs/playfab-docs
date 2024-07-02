@@ -81,5 +81,4 @@ So, let's dive into the exciting new features and enhancements, along with the f
 - **PlayFab Copilot:** At GDC 2024, we showcased an early preview of our PlayFab Copilot, an AI chat experience within Game Manager, providing insights into your titles, their performance, and even let's you configure PlayFab services all through natural language. Sign up [here](https://aka.ms/playfabcopilot/signup) to hear more and be notified of preview releases for this feature.
 
 ### **Thank you!**
-THANK YOU to all our amazing game creators building with PlayFab today. None of this would be possible without you. Your support is greatly appreciated, keep the feedback coming! 
-The [Feature Requests](https://community.playfab.com/spaces/24/index.html?sort=votes) section of our forum allows you to post, comment, and vote on ideas from our community. Addressing issues also remains a high priority so continue to share your findings in the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums.
+THANK YOU to all our amazing game creators building with PlayFab today. None of this would be possible without you. Your support is greatly appreciated, keep the feedback coming and engage with us on the PlayFab [Discord forums](https://discord.com/invite/msftgamedev)! 

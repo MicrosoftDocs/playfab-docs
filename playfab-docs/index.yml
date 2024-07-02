@@ -106,9 +106,9 @@ additionalContent:
   sections:
     - title: PlayFab Community & Support
       items:
-        - title: Forums
-          summary: Community based product support. Use the forums to post questions, share answers, and discuss the PlayFab product experience.
-          url: https://community.playfab.com/
+        - title: Discord forums
+          summary: Community based product support. Use the Discord forums to post questions, share answers, and discuss the PlayFab product experience.
+          url: https://discord.com/invite/msftgamedev
         - title: Support
           summary: PlayFab support options.
           url: features/pricing/paidtechnicalsupport.md
