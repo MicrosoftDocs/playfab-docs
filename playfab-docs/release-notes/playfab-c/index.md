@@ -16,6 +16,15 @@ These release notes are for __PlayFabCSdk__. For release notes for other PlayFab
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 2406.0.0
+
+Date: July 2, 2024
+
+ - Added support for optional gzip compression to __PFEventPipelineConfig__ for Linux and Android
+ - Added support for automatic response gzip compression (and decompression) using __PFHttpSettings__
+ - Enable print truncation when attempting to log XCurl traces
+ - Fixed various static code analysis warnings
+
 ## 2403.0.0
 
 Date: February 28, 2024
