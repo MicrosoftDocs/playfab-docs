@@ -450,7 +450,7 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
                 new()
                 {
                     ProductId = purchasePayload.PayloadData?.JsonData?.productId,
-                    Token = purchasePayload.PayloadData?.signature
+                    Token = purchasePayload.PayloadData?.purchaseToken
                 }
             }
         };
@@ -580,7 +580,7 @@ public class PurchasePayloadData
 {
     public PurchaseJsonData JsonData;
 
-    public string signature;
+    public string purchaseToken;
     public string json;
 
     public static PurchasePayloadData FromJson(string json)
