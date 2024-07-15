@@ -586,7 +586,7 @@ public class PurchasePayloadData
     public static PurchasePayloadData FromJson(string json)
     {
         var payload = JsonUtility.FromJson<PurchasePayloadData>(json);
-        payload.JsonData = JsonUtility.FromJson<PurchaseJsonData>(json);
+        payload.JsonData = JsonUtility.FromJson<PurchaseJsonData>(payload.json);
         return payload;
     }
 }
