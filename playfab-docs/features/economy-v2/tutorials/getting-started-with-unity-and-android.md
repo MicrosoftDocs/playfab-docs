@@ -376,10 +376,6 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
             _lastAPICallResult.Error = "Unable to purchase. Try again in a few minutes.";
             return false;
         }
-        else
-        {
-            Debug.LogWarning("Successfully purchased item " + itemId + " from store " + getStoreResponse.Item.Id);
-        }
 
         _purchaseIdempotencyId = "";
         _lastAPICallResult.Message = "Purchasing!";
