@@ -394,7 +394,7 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
         extensions.GetExtension<IGooglePlayStoreExtensions>().RestoreTransactions((result, error) => {
             if (result)
             {
-                Debug.LogWarning("Restoration process succeeded");
+                Debug.LogWarning("Restore transactions succeeded.");
             }
             else
             {
