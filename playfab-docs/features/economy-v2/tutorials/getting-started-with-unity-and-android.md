@@ -398,7 +398,7 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
             }
             else
             {
-                Debug.LogWarning("Restoration process failed.");
+                Debug.LogWarning("Restore transactions failed.");
             }
         });
     }
