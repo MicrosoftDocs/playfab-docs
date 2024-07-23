@@ -62,6 +62,8 @@ items:
     href: sdks/toc.yml
 - name: Recipes and samples
   href: resources/toc.yml
+- name: Videos
+  href: video/toc.yml
 - name: Tools and utilities
   href: sdks/tools/index.yml
   items:
