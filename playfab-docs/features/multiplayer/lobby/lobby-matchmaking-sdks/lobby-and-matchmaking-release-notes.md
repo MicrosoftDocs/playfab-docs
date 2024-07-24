@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.5
+
+July 17, 2024
+
+### Bug fixes
+
+- Fixed potential issue with PFMultiplayerUninitialize causing a crash when being used with custom memory hooks on Unix System.
+
 ## 1.7.4
 
 June 17, 2024
