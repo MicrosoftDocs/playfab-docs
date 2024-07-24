@@ -175,7 +175,7 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
         SearchItemsRequest googlePlayCatalogRequest = new()
         {
             Count = 50,
-            Filter = "Platforms/any(platform: platform eq 'GooglePlay')"
+            Filter = "AlternateIds/any(t: t/type eq 'GooglePlay')"
         };
 
         SearchItemsResponse googlePlayCatalogResponse;
@@ -390,6 +390,17 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
     public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
     {
         s_storeController = controller;
+
+        extensions.GetExtension<IGooglePlayStoreExtensions>().RestoreTransactions((result, error) => {
+            if (result)
+            {
+                Debug.LogWarning("Restore transactions succeeded.");
+            }
+            else
+            {
+                Debug.LogWarning("Restore transactions failed.");
+            }
+        });
     }
 
     public void OnInitializeFailed(InitializationFailureReason error)
@@ -450,7 +461,7 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
                 new()
                 {
                     ProductId = purchasePayload.PayloadData?.JsonData?.productId,
-                    Token = purchasePayload.PayloadData?.signature
+                    Token = purchasePayload.PayloadData?.JsonData?.purchaseToken
                 }
             }
         };
@@ -458,7 +469,7 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
         PlayFabEconomyAPI.RedeemGooglePlayInventoryItems(request, result =>
         {
             Debug.Log("Processed receipt validation.");
-            
+
             if (result?.Failed.Count > 0)
             {
                 Debug.Log($"Validation failed for {result.Failed.Count} receipts.");
@@ -469,6 +480,8 @@ public class AndroidIAPExample : MonoBehaviour, IDetailedStoreListener
             {
                 Debug.Log("Validation succeeded!");
                 PlayFabProcessPurchaseEvent?.Invoke(PurchaseProcessingResult.Complete);
+                s_storeController.ConfirmPendingPurchase(purchaseEvent.purchasedProduct);
+                Debug.Log("Confirmed purchase with Google Marketplace.");
             }
         },
         PlayFabSampleUtil.OnPlayFabError);
@@ -586,7 +599,7 @@ public class PurchasePayloadData
     public static PurchasePayloadData FromJson(string json)
     {
         var payload = JsonUtility.FromJson<PurchasePayloadData>(json);
-        payload.JsonData = JsonUtility.FromJson<PurchaseJsonData>(json);
+        payload.JsonData = JsonUtility.FromJson<PurchaseJsonData>(payload.json);
         return payload;
     }
 }
@@ -609,7 +622,7 @@ public class GooglePurchase
         {
             return purchase;
         }
-        
+
         purchase.PayloadData = PurchasePayloadData.FromJson(purchase.Payload);
         return purchase;
     }
