@@ -1,37 +1,32 @@
 ---
-title: VM Metrics (preview)
+title: VM metrics
 author: dgkanatsios
-description: VM Metrics.
+description: VM metrics.
 ms.author: digkanat
-ms.date: 06/12/2021
+ms.date: 07/15/2024
 ms.topic: article
 ms.service: playfab
 keywords: playfab, multiplayer, servers, performance metrics
 ms.localizationpriority: medium
 ---
 
-# VM Metrics (preview)
+# VM metrics
 
-## Introduction
+VM metrics provide unique insights about the Virtual Machines (VMs) resources that are created as part of the PlayFab VM Builds when you're using PlayFab Multiplayer Servers to create multiplayer game servers. This feature provides you access to the virtual machine's system level metrics such as CPU, RAM, and more. With these metrics, you can make informed decision about maximizing your utilization of the VM resources.
 
-Game developers sometimes need access to system level metrics (CPU/RAM/etc.) for the Virtual Machines that are created as part of their Builds. These metrics can provide unique insights to the game developer during the development of their multiplayer game server. Given these metrics, a game developer can make informed decision about utilizing VM resources.
+Performance metrics can support various development scenarios.
 
-Performance metrics can support various development scenarios:
+1. Use CPU and memory utilization data to measure the resource needs of multiplayer servers, so you can properly calculate the optimal number of game servers on a specific Virtual Machine SKU (type)
+2. Use network counters to detect an irregular network environment, such as attempted DDoS attacks or other network congestion
 
-1. Using CPU and memory utilization data to measure the resource needs of multiplayer servers, so game developer can properly calculate the optimal number of game servers on a specific Virtual Machine SKU (type)
-2. Using network counters to detect an irregular network environment, such as attempted DDoS attacks or other network congestion
-
-PlayFab Multiplayer Servers service supports a limited number of system metrics via the *VM Metrics (preview)* feature.
-
-> [!Important]
-> This feature is currently experimental and offered as a preview. This means that parts of it can change at any time. We are significantly iterating on the experience and asking customers for feedback.
+PlayFab Multiplayer Servers service supports a limited number of system metrics via the *VM Metrics* feature.
 
 ## Usage
 
 VM metrics for a Build can be enabled in two ways, depending on how a Build is created:
 
-1. Using Game Manager, you can enable the "Virtual machine metrics preview" checkbox on the "New Build" Game Manager page.
-2. Using the [PlayFab Multiplayer Servers API](/rest/api/playfab/multiplayer/), you can set the property "IsEnabled" to true in the following API objects:
+1. Using Game Manager, you can enable the "Virtual machine metrics" checkbox on the "New Build" Game Manager page.
+2. Using the [PlayFab Multiplayer Servers API](/rest/api/playfab/multiplayer/), you can set the property **IsEnabled** to **TRUE** in the following API objects.
   - [InstrumentationConfiguration in the CreateBuildWithManagedContainer API call](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-managed-container#instrumentationconfiguration) for a Windows Build with containers
   - [InstrumentationConfiguration in the CreateBuildWithProcessBasedServer API call](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-process-based-server#instrumentationconfiguration) for a process-based Windows Build
   - [LinuxInstrumentationConfiguration in the CreateBuildWithCustomContainer API call](/rest/api/playfab/multiplayer/multiplayer-server/create-build-with-custom-container#linuxinstrumentationconfiguration) for a Linux Build
@@ -40,7 +35,7 @@ When VM metrics feature is enabled for a Build, it will remain enabled for the e
 
 ### Windows
 
-On Windows, VM metrics collection is a feature of the existing PlayFab container/process orchestrator called `VmAgent`. `VmAgent` periodically (every 10 seconds) runs a task that will query the following system performance counters: 
+On Windows, VM metrics collection is a feature of the existing PlayFab container/process orchestrator called *VmAgent*. *VmAgent* periodically (every 10 seconds) runs a task that will query the following system performance counters.
 
 1. Available MBytes
 2. % Processor Time
@@ -54,9 +49,9 @@ Collected counter values are sent to our internal metrics collector running on t
 
 ### Linux
 
-On Linux, we're using the open-source [telegraf](https://github.com/influxdata/telegraf) agent for collecting and processing metrics. Telegraf collects metrics every 10 seconds and emits them to our internal collector agent every 60 seconds. For reference, below you can see the contents of the [telegraf.conf](https://docs.influxdata.com/telegraf/v1.15/administration/configuration/#agent-configuration) configuration file we're using, feel free to consult the [official telegraf docs](https://docs.influxdata.com/telegraf/v1.15) for further details.
+On Linux, we're using the open-source [telegraf](https://github.com/influxdata/telegraf) agent for collecting and processing metrics. Telegraf collects metrics every 10 seconds and emits them to our internal collector agent every 60 seconds. For reference, you can see the contents of the [telegraf.conf](https://docs.influxdata.com/telegraf/v1.15/administration/configuration/#agent-configuration) configuration file we're using below. For more details, go to the [official telegraf docs](https://docs.influxdata.com/telegraf/v1.15).
 
-We're also using an internal utility called `telegraf-geneva-processor` that emits the diff value for counter level metrics (like [net_bytes_recv](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md#measurements--fields)) metric. Emitting the diff value instead of the actual counter value results in better visualization in the provided Game Manager graphs.
+We're also using an internal utility called `telegraf-geneva-processor` that emits the diff value for counter level metrics like the [net_bytes_recv](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md#measurements--fields) metric. Emitting the diff value instead of the actual counter value results in better visualization in the provided Game Manager graphs.
 
 ```
 [agent]
@@ -150,6 +145,10 @@ You can also access the VM metrics by selecting your build, going to the servers
 
 ![View VM Metrics](media/viewMetricsUpdate.png)
 
-## How can I submit feedback for this preview feature?
+## How can I submit feedback for this feature?
 
 Join us on [Discord](https://aka.ms/msftgamedevdiscord) on the #multiplayer-servers channel, we would love to get in touch and hear your thoughts about this feature!
+
+## See also
+
+* [Archiving and retrieving multiplayer server logs](archiving-and-retrieving-multiplayer-server-logs.md)

@@ -50,7 +50,7 @@
     href: allocating-with-build-alias.md     
   - name: Archive and retrieve server logs
     href: archiving-and-retrieving-multiplayer-server-logs.md
-  - name: VM performance metrics (preview)
+  - name: VM performance metrics
     href: vm-metrics.md
   - name: Run custom script during VM creation (preview)
     href: vmstartupscript.md
