@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
 
-![PlayFab - Create your account](media/quickstart/playfab-create-account.png)
+![PlayFab - Create your account](media/quickstart/playfab-create-new-account.png)
 
 Once you have a PlayFab account, navigate to the PlayFab home page, [https://playfab.com](https://playfab.com), and sign in.
 

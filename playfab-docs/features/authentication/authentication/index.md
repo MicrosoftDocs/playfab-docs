@@ -13,4 +13,4 @@ ms.localizationpriority: medium
 
 PlayFab helps you authenticate players using a breadth of providers. You can provide players different ways to authenticate themselves and link their favorite accounts to enable roaming and recovery. Use this section to learn more about how PlayFab helps you enable Player Auth.
 
-PlayFab also supports multiple methods for GameManager Login, using Azure Active Directory (Azure AD) and PlayFab User Authentication. You can explore these in the Azure AD Authentication section.
+PlayFab also supports multiple methods for Game Manager account authentication through its own and Microsoft's authentication services. You can learn more about them in the Microsoft Authentication for Game Manager section.
