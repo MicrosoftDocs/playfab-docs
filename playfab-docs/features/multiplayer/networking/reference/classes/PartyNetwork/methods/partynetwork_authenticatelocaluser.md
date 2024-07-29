@@ -5,7 +5,7 @@ description: Queues an asynchronous operation to authenticate the specified loca
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 04/07/2021
+ms.date: 07/26/2024
 ---
 
 # PartyNetwork::AuthenticateLocalUser  
@@ -69,6 +69,7 @@ While any device with the appropriate network descriptor can establish a connect
 [PartyLocalUserRemovedStateChange](../../../structs/partylocaluserremovedstatechange.md)  
 [PartyNetworkConfiguration](../../../structs/partynetworkconfiguration.md)  
 [PartyManager::CreateLocalUser](../../PartyManager/methods/partymanager_createlocaluser.md)  
+[PartyManager::CreateLocalUserWithEntityType](../../PartyManager/methods/partymanager_createlocaluserwithentitytype.md)  
 [PartyNetwork::RemoveLocalUser](partynetwork_removelocaluser.md)  
 [PartyNetwork::GetLocalUsers](partynetwork_getlocalusers.md)  
 [PartyManager::CreateNewNetwork](../../PartyManager/methods/partymanager_createnewnetwork.md)  
