@@ -5,7 +5,7 @@ description: Gives details on how to integrate experiments with other PlayFab se
 ms.author: yegarci
 ms.date: 11/20/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, experiments
 ms.localizationpriority: medium
 ---
