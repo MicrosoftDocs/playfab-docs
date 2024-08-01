@@ -5,7 +5,7 @@ description: Introduction to the PlayFab Services C/C++ SDK
 ms.author: andmcc
 ms.date: 06/11/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, windows, xbox, gdk, win32, nintendo, switch, sony, playstation, ps4, ps5, iOS, MacOS, Android, Linux
 ms.localizationpriority: medium
 ---

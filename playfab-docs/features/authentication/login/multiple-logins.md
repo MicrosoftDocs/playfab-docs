@@ -5,7 +5,7 @@ description: Describes how to use SDK features to manage multiple logins from a 
 ms.author: andmcc
 ms.date: 10/27/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, authentication, sdk, unity, unreal
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
 ms.date: 05/14/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---
