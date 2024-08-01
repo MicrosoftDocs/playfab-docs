@@ -5,7 +5,7 @@ description: Getting started with rewarded Ads guide.
 ms.author: norie
 ms.date: 04/07/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, ads, ad rewards
 ms.localizationpriority: medium
 ---

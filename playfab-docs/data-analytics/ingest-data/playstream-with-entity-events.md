@@ -5,7 +5,7 @@ description: Page for PlayStream V2.
 ms.author: norie
 ms.date: 02/06/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, playstream, events
 ms.localizationpriority: medium
 ---

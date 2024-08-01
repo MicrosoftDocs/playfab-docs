@@ -5,7 +5,7 @@ description: An overview of PlayFab Analytics offerings and features.
 ms.author: norie
 ms.date: 05/02/2020
 ms.topic: overview
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, a/b testing, experiments, experimentation 
 ms.localizationpriority: medium
 ---
