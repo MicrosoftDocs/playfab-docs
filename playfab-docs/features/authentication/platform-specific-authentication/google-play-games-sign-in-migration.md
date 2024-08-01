@@ -5,7 +5,7 @@ description: Overview of procedures to migrate players identities from Google Ac
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, authentication, google, unity
 ms.localizationpriority: medium
 ---

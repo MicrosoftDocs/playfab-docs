@@ -5,7 +5,7 @@ description: Overview page for tutorials about use Entities in PlayFab.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, entities
 ms.localizationpriority: medium
 ---

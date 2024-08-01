@@ -5,7 +5,7 @@ description: Illustrates how to use Data Explorer basic mode to create queries.
 ms.author: joanlee
 ms.date: 09/22/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights, data explorer, basic
 ms.localizationpriority: medium
 ---

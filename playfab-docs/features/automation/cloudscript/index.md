@@ -5,7 +5,7 @@ description: Landing page for CloudScript.
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript, error handling
 ms.localizationpriority: medium
 ---

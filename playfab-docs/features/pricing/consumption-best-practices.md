@@ -5,7 +5,7 @@ description: Describes best practices for managing your costs in PlayFab.
 ms.author: joanlee
 ms.date: 5/29/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing
 ms.localizationpriority: medium
 ---

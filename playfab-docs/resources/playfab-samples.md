@@ -5,7 +5,7 @@ description: Code samples for PlayFab features and technologies.
 ms.author: joanlee
 ms.date: 02/25/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, recipes, samples, how-to, development
 ms.localizationpriority: medium
 ---

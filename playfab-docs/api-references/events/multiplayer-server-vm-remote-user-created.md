@@ -5,7 +5,7 @@ description: multiplayer_server_vm_remote_user_created event.
 ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---

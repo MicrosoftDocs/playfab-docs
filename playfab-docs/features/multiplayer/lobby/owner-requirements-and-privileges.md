@@ -5,7 +5,7 @@ description: Learn about lobby ownership and related privileges
 ms.author: joanlee
 ms.date: 02/28/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking, types
 ms.localizationpriority: medium
 ---

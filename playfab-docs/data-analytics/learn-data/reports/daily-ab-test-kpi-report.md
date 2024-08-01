@@ -5,7 +5,7 @@ description: Describes the report that is used to evaluate the effectiveness of 
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, reports, a/b testing
 ms.localizationpriority: medium
 ---

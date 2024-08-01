@@ -5,7 +5,7 @@ description: Describes how to setup and configure PlayFab Push Notifications for
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, engagement, push notification, google, android, firebase, unity
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Demonstrates how to bind an account to multiple devices and login m
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, authentication, accounts, linking
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Overview for PlayFab Insights Pricing
 ms.author: joanlee
 ms.date: 02/28/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights, archive
 ms.localizationpriority: medium
 ---

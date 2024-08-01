@@ -5,7 +5,7 @@ description: Describes how to set up an SMTP add-on to support sending custom em
 ms.author: joanlee
 ms.date: 11/08/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, engagement, email, servers, smtp
 ms.localizationpriority: medium
 ---

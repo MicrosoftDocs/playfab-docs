@@ -5,7 +5,7 @@ description: Provides an overview of automatic and custom PlayStream events in P
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, playstream, events, custom events, automatic events
 ms.localizationpriority: medium
 ---

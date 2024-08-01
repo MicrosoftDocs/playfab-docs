@@ -5,7 +5,7 @@ description: The SignalR license.
 ms.author: joanlee
 ms.date: 02/20/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, unity3d sdk, unity3d, signalr
 ms.localizationpriority: medium
 ---

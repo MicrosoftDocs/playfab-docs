@@ -5,7 +5,7 @@ description: Describes how to allocate multiplayer game servers and connect Visu
 ms.author: joanlee
 ms.date: 11/08/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, social, tournaments, leaderboards, servers, debugging
 ms.localizationpriority: medium
 ---

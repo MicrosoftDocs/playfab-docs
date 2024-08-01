@@ -5,7 +5,7 @@ description: License for zlib
 ms.author: joanlee
 ms.date: 02/19/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, zlib, sdk, cocos
 ms.localizationpriority: medium
 ---

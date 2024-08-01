@@ -5,7 +5,7 @@ description: Landing page for the PlayFab NodeJS SDK.
 ms.author: joanlee
 ms.date: 01/22/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, nodejs, javascript, npm javascript playfab, npm javascript
 ms.localizationpriority: medium
 ---

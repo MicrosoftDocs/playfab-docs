@@ -5,7 +5,7 @@ description: Describes how to launch titles in Game Manager.
 ms.author: joanlee
 ms.date: 7/20/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing, titles, launch, live
 ms.localizationpriority: medium
 ---

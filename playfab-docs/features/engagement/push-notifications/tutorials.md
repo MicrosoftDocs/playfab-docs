@@ -5,7 +5,7 @@ description: Overview page for tutorials about using Push Notifications in PlayF
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, engagement, title news
 ms.localizationpriority: medium
 ---

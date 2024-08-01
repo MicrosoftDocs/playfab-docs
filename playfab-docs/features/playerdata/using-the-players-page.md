@@ -5,7 +5,7 @@ description: Describes how to use the Players Page in the PlayFab Game Manager f
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, game manager, player data, queries
 ms.localizationpriority: medium
 ---

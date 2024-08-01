@@ -5,7 +5,7 @@ description: Landing page for Content Delivery Network.
 ms.author: joanlee
 ms.date: 02/05/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, content delivery network, cdn
 ms.localizationpriority: medium
 ---

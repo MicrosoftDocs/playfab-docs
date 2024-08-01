@@ -5,7 +5,7 @@ description: Learn about Azure PlayFab Lobby.
 ms.author: joanlee
 ms.date: 10/25/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking
 ms.localizationpriority: medium
 ---

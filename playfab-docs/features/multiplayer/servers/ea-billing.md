@@ -5,7 +5,7 @@ description: Describes the Azure Enterprise Agreement (EA) billing for PlayFab s
 ms.author: joanlee
 ms.date: 05/08/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, azure, billing, pricing, enterprise agreement
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Provides an introduction to Microsoft Account authentication and st
 ms.author: joanlee
 ms.date: 11/11/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics, webhooks, events
 ms.localizationpriority: medium
 ---

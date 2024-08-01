@@ -5,7 +5,7 @@ description: Takes you through three key points of integration between PlayFab a
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, authentication, integration, uwp
 ms.localizationpriority: medium
 ---

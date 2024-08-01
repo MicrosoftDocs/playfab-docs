@@ -5,7 +5,7 @@ description: Describes how game servers are packaged and integrated with PlayFab
 ms.author: joanlee
 ms.date: 04/19/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, containerized applications
 ms.localizationpriority: medium
 ---

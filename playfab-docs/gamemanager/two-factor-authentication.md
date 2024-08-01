@@ -5,7 +5,7 @@ description: Describes how to configure two-factor authentication between a devi
 ms.author: joanlee
 ms.date: 02/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config, game manager, two-factor authentication
 ms.localizationpriority: medium
 ---

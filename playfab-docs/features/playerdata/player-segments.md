@@ -5,7 +5,7 @@ description: Describes how to access and configure Player Segments in the PlayFa
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, game manager, player data, segments
 ms.localizationpriority: medium
 ---

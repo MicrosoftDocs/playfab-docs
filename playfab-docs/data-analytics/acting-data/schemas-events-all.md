@@ -5,7 +5,7 @@ description: Illustrates how to use the Explorer feature.
 ms.author: joanlee
 ms.date: 07/24/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights, schemas
 ms.localizationpriority: medium
 ---

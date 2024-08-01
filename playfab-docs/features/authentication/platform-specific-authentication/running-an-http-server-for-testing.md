@@ -5,7 +5,7 @@ description: Describes how to install and run an HTTP server for testing.
 ms.author: joanlee
 ms.date: 11/08/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config, testing, http, server
 ms.localizationpriority: medium
 ---

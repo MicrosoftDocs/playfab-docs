@@ -5,7 +5,7 @@ description: Describes how to view and access the features of the Player details
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, game manager, player data
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Shows step-by-step how to configure an Amazon S3 bucket for PlayFab
 ms.author: joanlee
 ms.date: 04/18/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics, events, s3, amazon
 ms.localizationpriority: medium
 ---

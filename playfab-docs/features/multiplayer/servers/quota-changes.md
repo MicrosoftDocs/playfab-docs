@@ -5,7 +5,7 @@ description: Managing quota changes
 ms.author: joanlee
 ms.date: 11/15/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, core quotas
 ms.localizationpriority: medium
 ---

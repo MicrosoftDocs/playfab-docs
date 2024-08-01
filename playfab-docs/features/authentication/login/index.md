@@ -5,7 +5,7 @@ description: Landing page for Player login topics.
 ms.author: joanlee
 ms.date: 02/19/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, authentication, accounts, login, linking
 ms.localizationpriority: medium
 ---

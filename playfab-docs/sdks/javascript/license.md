@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Javascript SDK.
 ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, javascript sdk, javascript, cpp
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Unity3D (C#) SDK.
 ms.author: joanlee
 ms.date: 01/22/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, unity3d, playfab unity sdk, csharp
 ms.localizationpriority: medium
 ---

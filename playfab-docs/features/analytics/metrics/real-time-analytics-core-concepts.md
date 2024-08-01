@@ -5,7 +5,7 @@ description: Describes the core concepts of the PlayFab analytics system.
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics, events
 ms.localizationpriority: medium
 ---

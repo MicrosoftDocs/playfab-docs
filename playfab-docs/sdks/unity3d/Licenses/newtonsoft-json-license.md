@@ -5,7 +5,7 @@ description: The Newton Jsoft license.
 ms.author: joanlee
 ms.date: 02/20/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, unity3d sdk, unity3d, zlib
 ms.localizationpriority: medium
 ---

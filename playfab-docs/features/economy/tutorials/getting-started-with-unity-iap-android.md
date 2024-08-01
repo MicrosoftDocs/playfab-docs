@@ -5,7 +5,7 @@ description: How to set up (In-App Purchasing) IAP using PlayFab Economy (Legacy
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, iap, unity, android billing api
 ms.localizationpriority: medium
 ---

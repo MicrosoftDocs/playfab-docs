@@ -5,7 +5,7 @@ description: Describes how to transition from the legacy pricing plan to the mod
 ms.author: joanlee
 ms.date: 10/15/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, move, change
 ms.localizationpriority: medium
 ---

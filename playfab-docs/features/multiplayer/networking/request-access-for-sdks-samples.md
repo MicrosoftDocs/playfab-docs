@@ -5,7 +5,7 @@ description: Learn how to request access for secured SDKs and samples.
 ms.author: joanlee
 ms.date: 10/28/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, sdk, sample, access
 ms.localizationpriority: medium
 ---

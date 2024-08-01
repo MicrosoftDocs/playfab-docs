@@ -5,7 +5,7 @@ description: Describes the features of the Player Logins page in the PlayFab Gam
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, game manager, player data, login
 ms.localizationpriority: medium
 ---

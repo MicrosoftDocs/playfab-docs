@@ -5,7 +5,7 @@ description: "Deploy builds using Game Manager"
 ms.author: joanlee
 ms.date: 04/01/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, game manager
 ms.localizationpriority: medium
 ---

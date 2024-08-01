@@ -5,7 +5,7 @@ description: Samples and resources for Azure PlayFab Multiplayer Game Servers.
 ms.author: joanlee
 ms.date: 04/01/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party, sdk, sample
 ms.localizationpriority: medium
 ---

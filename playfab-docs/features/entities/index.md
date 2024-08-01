@@ -5,7 +5,7 @@ description: Landing page for Entities.
 ms.author: joanlee
 ms.date: 03/12/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, entities
 ms.localizationpriority: medium
 ---

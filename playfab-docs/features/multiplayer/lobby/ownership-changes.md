@@ -5,7 +5,7 @@ description: Learn about lobby owner migration and proactive owner promotion.
 ms.author: joanlee
 ms.date: 02/28/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking, owner migration
 ms.localizationpriority: medium
 ---

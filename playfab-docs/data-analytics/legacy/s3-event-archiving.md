@@ -5,7 +5,7 @@ description: Shows step-by-step how to configure PlayFab event archiving from sc
 ms.author: joanlee
 ms.date: 10/31/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics, events
 ms.localizationpriority: medium
 ---

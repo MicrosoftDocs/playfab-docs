@@ -5,7 +5,7 @@ description: How to set up In-App Purchasing (IAP) using PlayFab Economy v2, Uni
 ms.author: joanlee
 ms.date: 09/07/2022
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, economy, settings
 ms.localizationpriority: medium
 ---

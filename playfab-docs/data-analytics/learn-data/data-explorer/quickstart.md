@@ -5,7 +5,7 @@ description: This quickstart guide shows how to query data created by PlayFab AP
 ms.author: joanlee
 ms.date: 09/22/2020    
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights, data explorer
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: This guide helps you to install the PlayFab Marketplace Plugin and 
 ms.author: joanlee
 ms.date: 03/10/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, unreal, playfab marketplace plugin, c++, blueprint
 ms.localizationpriority: medium
 ---

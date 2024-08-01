@@ -5,7 +5,7 @@ description: This guide will help you make your first PlayFab API call in Python
 ms.author: joanlee
 ms.date: 12/04/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, python 3, python sdk
 ms.localizationpriority: medium
 ---

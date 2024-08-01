@@ -5,7 +5,7 @@ description: Describes how to create and configure User Roles in PlayFab.
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config, game manager, user roles
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Describes how to access, recognize, and handle, API errors using th
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, errors, sdk
 ms.localizationpriority: medium
 ---

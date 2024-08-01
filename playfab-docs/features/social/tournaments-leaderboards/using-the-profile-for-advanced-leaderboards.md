@@ -5,7 +5,7 @@ description: Describes how to configure Player Profile Constraints to retrieve a
 ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, social, tournaments, leaderboards
 ms.localizationpriority: medium
 ---

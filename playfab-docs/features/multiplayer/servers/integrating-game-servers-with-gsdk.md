@@ -5,7 +5,7 @@ description: Describes how to integrate PlayFab multiplayer game servers with th
 ms.author: joanlee
 ms.date: 01/15/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, debugging, integration, thunderhead, playfab game server sdk
 ms.localizationpriority: medium
 ---

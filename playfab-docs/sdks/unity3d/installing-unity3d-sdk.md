@@ -5,7 +5,7 @@ description: This guide will help you install the PlayFab Unity 3D SDK and confi
 ms.author: joanlee
 ms.date: 1/25/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, unity3d, playfab unity sdk, csharp, unity
 ms.localizationpriority: medium
 ---

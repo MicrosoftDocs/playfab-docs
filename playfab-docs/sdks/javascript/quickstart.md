@@ -5,7 +5,7 @@ description: This guide will help you make your first PlayFab API call in JavaSc
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, javascript, playfab javascript sdk, native, phaser
 ms.localizationpriority: medium
 ---

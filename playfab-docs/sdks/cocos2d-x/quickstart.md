@@ -5,7 +5,7 @@ description: This guide will help you make your first PlayFab API call in the Co
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, cocos-2dx, playfab cocos-2dx sdk
 ms.localizationpriority: medium
 ---

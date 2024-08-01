@@ -6,7 +6,7 @@ ms.author: joanlee
 ms.date: 08/16/2019
 ms.topic: article
 ROBOTS: NOINDEX,NOFOLLOW
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking
 ---
 

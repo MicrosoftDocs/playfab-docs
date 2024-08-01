@@ -5,7 +5,7 @@ description: Landing page for Player Data.
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, player data
 ms.localizationpriority: medium
 ---

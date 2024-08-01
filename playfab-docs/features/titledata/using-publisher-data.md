@@ -5,7 +5,7 @@ description: Describes how to create and use publisher (studio) data.
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, configuration, publisher data, studio data
 ms.localizationpriority: medium
 ---

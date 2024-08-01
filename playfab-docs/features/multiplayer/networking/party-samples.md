@@ -5,7 +5,7 @@ description: Learn about the samples for Azure PlayFab Party.
 ms.author: joanlee
 ms.date: 10/13/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party, sample
 ms.localizationpriority: medium
 ---

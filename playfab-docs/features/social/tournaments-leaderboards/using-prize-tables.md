@@ -5,7 +5,7 @@ description: Tutorial about how to create and use a Prize Table.
 ms.author: joanlee
 ms.date: 10/25/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, social, prize table, tournaments, leaderboards
 ms.localizationpriority: medium
 ---

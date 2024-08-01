@@ -5,7 +5,7 @@ description: Describes the different PlayFab support offerings and how to access
 ms.author: joanlee
 ms.date: 02/6/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing, upgrade, upgrades, support, help, assistance, directions, support ticket, forum, slack
 ms.localizationpriority: medium
 ---

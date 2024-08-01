@@ -5,7 +5,7 @@ description: Overview page for tutorials about using title news for player engag
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, engagement, title news
 ms.localizationpriority: medium
 ---

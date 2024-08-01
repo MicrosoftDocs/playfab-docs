@@ -5,7 +5,7 @@ description: Tutorial that describes how to use the email template feature of Pl
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab
 ms.localizationpriority: medium
 ---

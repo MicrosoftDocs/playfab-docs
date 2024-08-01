@@ -5,7 +5,7 @@ description: Cross-platform (CPP) PlayFab SDK
 ms.author: joanlee
 ms.date: 01/22/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, linux, cocos2d-x, unreal, lua sdk, windows, cross-platform
 ms.localizationpriority: medium
 ---
