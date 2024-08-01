@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.Get().UpdateEntityToken
 description: Updates the Entity token for the current local user.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

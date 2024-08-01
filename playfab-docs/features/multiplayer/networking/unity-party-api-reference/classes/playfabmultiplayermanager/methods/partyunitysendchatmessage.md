@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.Get().SendChatMessage
 description: Sends a chat message to a specific list of players.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.LogLevel
 description: Gets or sets the amount of logging currently enabled.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

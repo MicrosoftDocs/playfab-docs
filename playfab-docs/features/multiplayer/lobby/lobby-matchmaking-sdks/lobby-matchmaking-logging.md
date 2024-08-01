@@ -5,7 +5,7 @@ description: Learn about tracing/logging in the SDKs for Azure PlayFab Lobby and
 ms.author: victorku
 ms.date: 10/26/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party, sdk, sample
 ms.localizationpriority: medium
 ---

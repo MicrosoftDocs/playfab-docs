@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.Get().JoinNetwork
 description: Joins this player to the specified network.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

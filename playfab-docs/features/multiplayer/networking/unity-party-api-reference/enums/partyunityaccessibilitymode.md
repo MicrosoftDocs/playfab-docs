@@ -4,7 +4,7 @@ title: AccessibilityMode
 description: Options that specify which accessibility settings are enabled.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

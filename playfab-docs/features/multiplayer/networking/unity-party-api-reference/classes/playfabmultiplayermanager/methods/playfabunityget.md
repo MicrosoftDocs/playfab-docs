@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.Get
 description: Returns a reference to the PlayFabMultiplayerManager singleton instance. 
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

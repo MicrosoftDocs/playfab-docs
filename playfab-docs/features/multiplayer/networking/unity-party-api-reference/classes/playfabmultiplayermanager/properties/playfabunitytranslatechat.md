@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.TranslateChat
 description: Gets or sets whether incoming chat messages should be translated.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

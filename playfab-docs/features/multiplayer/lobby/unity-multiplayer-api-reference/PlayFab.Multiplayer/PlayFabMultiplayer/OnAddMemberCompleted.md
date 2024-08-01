@@ -4,7 +4,7 @@ title: PlayFabMultiplayer.OnAddMemberCompleted
 description: PlayFabMultiplayer.OnAddMemberCompleted
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/23/2021
 ---
 
