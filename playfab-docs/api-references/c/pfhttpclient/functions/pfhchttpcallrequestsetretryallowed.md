@@ -4,7 +4,7 @@ title: "PFHCHttpCallRequestSetRetryAllowed"
 description: "Sets if retry is allowed for this HTTP call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

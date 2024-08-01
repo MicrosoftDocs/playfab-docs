@@ -4,7 +4,7 @@ title: "PFGroupsListMembershipAsync"
 description: "Lists all groups and roles for an entity"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

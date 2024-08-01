@@ -4,7 +4,7 @@ title: "PFGroupsBlockEntityRequest"
 description: "PFGroupsBlockEntityRequest data model. Blocks a list of entities from joining a group. Blocked entities may not create new applications to join, be invited to join, accept an invitation, or have an application accepted. Failure due to being blocked does not clean up existing applications or invitations to the group. No data is returned in the case of success."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

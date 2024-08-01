@@ -4,7 +4,7 @@ title: "PFAccountManagementSendCustomAccountRecoveryEmailRequest"
 description: "PFAccountManagementSendCustomAccountRecoveryEmailRequest data model. PlayFab accounts which have valid email address or username will be able to receive a password reset email using this API.The email sent must be an account recovery email template. The username or email can be passed in to send the email."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFAccountManagementBanUsersRequest"
 description: "PFAccountManagementBanUsersRequest data model. The existence of each user will not be verified. When banning by IP or MAC address, multiple players may be affected, so use this feature with caution. Returns information about the new bans."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

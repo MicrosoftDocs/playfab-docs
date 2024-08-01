@@ -4,7 +4,7 @@ title: "PFGroupsAcceptGroupInvitationRequest"
 description: "PFGroupsAcceptGroupInvitationRequest data model. Accepts an outstanding invitation to join the group if the invited entity is not blocked by the group. Only the invited entity or a parent in its chain (e.g. title) may accept the invitation on the invited entity's behalf. Nothing is returned in the case of success."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

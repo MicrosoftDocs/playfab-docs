@@ -4,7 +4,7 @@ title: "PFAccountManagementGetPlayFabIDsFromNintendoServiceAccountIdsResult"
 description: "PFAccountManagementGetPlayFabIDsFromNintendoServiceAccountIdsResult data model. For Nintendo Service Account identifiers which have not been linked to PlayFab accounts, null will be returned."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

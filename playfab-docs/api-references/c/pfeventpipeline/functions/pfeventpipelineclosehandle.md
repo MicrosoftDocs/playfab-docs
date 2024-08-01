@@ -4,7 +4,7 @@ title: "PFEventPipelineCloseHandle"
 description: "Closes a PFEventPipelineHandle."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

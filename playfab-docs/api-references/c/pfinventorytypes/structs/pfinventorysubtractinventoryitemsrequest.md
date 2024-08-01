@@ -4,7 +4,7 @@ title: "PFInventorySubtractInventoryItemsRequest"
 description: "PFInventorySubtractInventoryItemsRequest data model. Given an entity type, entity identifier and container details, will subtract the specified inventory items. ."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

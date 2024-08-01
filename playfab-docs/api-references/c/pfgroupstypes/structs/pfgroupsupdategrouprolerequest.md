@@ -4,7 +4,7 @@ title: "PFGroupsUpdateGroupRoleRequest"
 description: "PFGroupsUpdateGroupRoleRequest data model. Updates the role name. Returns information about whether the update was successful."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

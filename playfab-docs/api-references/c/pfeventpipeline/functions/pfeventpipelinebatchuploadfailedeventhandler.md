@@ -4,7 +4,7 @@ title: "PFEventPipelineBatchUploadFailedEventHandler"
 description: "A handler invoked when the SDK has attempted but failed to upload a batch of event pipeline events. It is up to the client to resubmit failed events as necessary using PFEventPipelineEmitEvent, though depending on the nature of the failure, resubmitting directly may not resolve the issue."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

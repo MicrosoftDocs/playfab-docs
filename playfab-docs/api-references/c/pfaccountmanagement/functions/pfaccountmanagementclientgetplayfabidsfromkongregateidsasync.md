@@ -4,7 +4,7 @@ title: "PFAccountManagementClientGetPlayFabIDsFromKongregateIDsAsync"
 description: "Retrieves the unique PlayFab identifiers for the given set of Kongregate identifiers. The Kongregate identifiers are the IDs for the user accounts, available as 'user_id' from the Kongregate API methods(ex: http://developers.kongregate.com/docs/client/getUserId)."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

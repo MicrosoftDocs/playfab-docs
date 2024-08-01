@@ -4,7 +4,7 @@ title: "PFInventoryGetInventoryCollectionIdsRequest"
 description: "PFInventoryGetInventoryCollectionIdsRequest data model. Get a list of Inventory Collection Ids for the specified Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

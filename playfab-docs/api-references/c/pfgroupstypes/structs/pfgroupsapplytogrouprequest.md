@@ -4,7 +4,7 @@ title: "PFGroupsApplyToGroupRequest"
 description: "PFGroupsApplyToGroupRequest data model. Creates an application to join a group. Calling this while a group application already exists will return the same application instead of an error and will not refresh the time before the application expires. By default, if the entity has an invitation to join the group outstanding, this will accept the invitation to join the group instead and return an error indicating such, rather than creating a duplicate application to join that will need to be cleaned up later. Returns information about the application or an error indicating an invitation was accepted instead."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

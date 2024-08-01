@@ -4,7 +4,7 @@ title: "PFEntityUnregisterTokenRefreshedEventHandler"
 description: "Unregisters a previously registered PFEntityTokenRefreshedCallback."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

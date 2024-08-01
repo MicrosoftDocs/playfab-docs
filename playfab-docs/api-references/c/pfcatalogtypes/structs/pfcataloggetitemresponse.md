@@ -4,7 +4,7 @@ title: "PFCatalogGetItemResponse"
 description: "PFCatalogGetItemResponse data model. Get item result."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

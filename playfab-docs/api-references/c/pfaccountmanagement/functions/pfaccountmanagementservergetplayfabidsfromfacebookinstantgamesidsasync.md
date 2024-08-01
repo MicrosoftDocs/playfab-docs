@@ -4,7 +4,7 @@ title: "PFAccountManagementServerGetPlayFabIDsFromFacebookInstantGamesIdsAsync"
 description: "Retrieves the unique PlayFab identifiers for the given set of Facebook Instant Games identifiers."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

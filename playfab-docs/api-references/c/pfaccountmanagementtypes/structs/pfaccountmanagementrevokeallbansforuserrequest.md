@@ -4,7 +4,7 @@ title: "PFAccountManagementRevokeAllBansForUserRequest"
 description: "PFAccountManagementRevokeAllBansForUserRequest data model. Setting the active state of all non-expired bans for a user to Inactive. Expired bans with an Active state will be ignored, however. Returns information about applied updates only."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

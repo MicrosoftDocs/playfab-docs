@@ -4,7 +4,7 @@ title: "PFAccountManagementClientAddOrUpdateContactEmailAsync"
 description: "Adds or updates a contact email to the player's profile."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

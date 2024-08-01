@@ -4,7 +4,7 @@ title: "PFAccountManagementClientGetPlayFabIDsFromGooglePlayGamesPlayerIDsAsync"
 description: "Retrieves the unique PlayFab identifiers for the given set of Google Play Games identifiers. The Google Play Games identifiers are the IDs for the user accounts, available as 'playerId' in the Google Play Games Services - Players API calls."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

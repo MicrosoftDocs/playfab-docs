@@ -4,7 +4,7 @@ title: "PFCloudScriptClientExecuteCloudScriptAsync"
 description: "Executes a CloudScript function, with the 'currentPlayerId' set to the PlayFab ID of the authenticated player. The PlayFab ID is the entity ID of the player's master_player_account entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

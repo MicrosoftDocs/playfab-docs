@@ -4,7 +4,7 @@ title: "PFAccountManagementServerLinkNintendoSwitchDeviceIdAsync"
 description: "Links the NintendoSwitchDeviceId to the user's PlayFab account"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

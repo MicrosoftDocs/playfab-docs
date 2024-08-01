@@ -4,7 +4,7 @@ title: "PFAccountManagementServerUnlinkServerCustomIdAsync"
 description: "Unlinks the custom server identifier from the user's PlayFab account."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

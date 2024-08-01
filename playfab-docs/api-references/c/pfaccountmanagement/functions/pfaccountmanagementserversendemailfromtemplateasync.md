@@ -4,7 +4,7 @@ title: "PFAccountManagementServerSendEmailFromTemplateAsync"
 description: "Sends an email based on an email template to a player's contact email"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

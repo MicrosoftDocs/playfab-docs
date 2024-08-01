@@ -4,7 +4,7 @@ title: "PFAuthenticationDeleteRequest"
 description: "PFAuthenticationDeleteRequest data model. Delete a game_server entity. The caller can be the game_server entity attempting to delete itself. Or a title entity attempting to delete game_server entities for this title."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

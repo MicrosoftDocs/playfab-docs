@@ -4,7 +4,7 @@ title: "PFDataInitiateFileUploadsRequest"
 description: "PFDataInitiateFileUploadsRequest data model. Returns URLs that may be used to upload the files for a profile 5 minutes. After using the upload calls FinalizeFileUploads must be called to move the file status from pending to live."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

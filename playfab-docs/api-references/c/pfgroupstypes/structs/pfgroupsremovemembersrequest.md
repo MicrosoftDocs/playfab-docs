@@ -4,7 +4,7 @@ title: "PFGroupsRemoveMembersRequest"
 description: "PFGroupsRemoveMembersRequest data model. Removes members from a group. A member can always remove themselves from a group, regardless of permissions. Returns nothing if successful."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

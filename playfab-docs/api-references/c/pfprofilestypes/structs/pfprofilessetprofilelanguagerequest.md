@@ -4,7 +4,7 @@ title: "PFProfilesSetProfileLanguageRequest"
 description: "PFProfilesSetProfileLanguageRequest data model. Given an entity profile, will update its language to the one passed in if the profile's version is equal to the one passed in."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

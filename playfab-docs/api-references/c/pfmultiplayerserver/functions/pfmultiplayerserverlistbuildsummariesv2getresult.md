@@ -4,7 +4,7 @@ title: "PFMultiplayerServerListBuildSummariesV2GetResult"
 description: "Gets the result of a successful PFMultiplayerServerListBuildSummariesV2Async call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

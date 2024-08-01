@@ -4,7 +4,7 @@ title: "PFMultiplayerServerRequestMultiplayerServerAsync"
 description: "Request a multiplayer server session. Accepts tokens for title and if game client access is enabled, allows game client to request a server with player entity token."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

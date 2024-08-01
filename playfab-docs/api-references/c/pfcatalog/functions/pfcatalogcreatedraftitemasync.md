@@ -4,7 +4,7 @@ title: "PFCatalogCreateDraftItemAsync"
 description: "Creates a new item in the working catalog using provided metadata."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFAuthenticationAuthenticateGameServerWithCustomIdAsync"
 description: "Create a game_server entity token and return a new or existing game_server entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

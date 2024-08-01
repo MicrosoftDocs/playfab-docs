@@ -4,7 +4,7 @@ title: "PFCatalogDeleteItemAsync"
 description: "Removes an item from working catalog and all published versions from the public catalog."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

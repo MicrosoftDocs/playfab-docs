@@ -4,7 +4,7 @@ title: "PFAuthenticationLoginWithNintendoServiceAccountAsync"
 description: "Signs in the user with a Nintendo service account token."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

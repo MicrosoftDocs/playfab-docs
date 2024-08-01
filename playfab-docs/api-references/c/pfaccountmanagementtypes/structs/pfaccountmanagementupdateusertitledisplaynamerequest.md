@@ -4,7 +4,7 @@ title: "PFAccountManagementUpdateUserTitleDisplayNameRequest"
 description: "PFAccountManagementUpdateUserTitleDisplayNameRequest data model. In addition to the PlayFab username, titles can make use of a DisplayName which is also a unique identifier, but specific to the title. This allows for unique names which more closely match the theme or genre of a title, for example."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

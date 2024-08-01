@@ -4,7 +4,7 @@ title: "PFHCMemSetFunctions"
 description: "Optionally sets the memory hook functions to allow callers to control route memory allocations to their own memory manager."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFProfilesSetEntityProfilePolicyRequest"
 description: "PFProfilesSetEntityProfilePolicyRequest data model. This will set the access policy statements on the given entity profile. This is not additive, any existing statements will be replaced with the statements in this request."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFAccountManagementGetPlayFabIDsFromKongregateIDsResult"
 description: "PFAccountManagementGetPlayFabIDsFromKongregateIDsResult data model. For Kongregate identifiers which have not been linked to PlayFab accounts, null will be returned."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

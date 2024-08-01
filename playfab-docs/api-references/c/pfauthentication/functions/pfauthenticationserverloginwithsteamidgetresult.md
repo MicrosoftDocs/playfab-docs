@@ -4,7 +4,7 @@ title: "PFAuthenticationServerLoginWithSteamIdGetResult"
 description: "Get the result from a PFAuthenticationServerLoginWithSteamIdAsync call. The PFEntityHandle will always be returned, but the additional info in the PFAuthenticationLoginResult is only returned if a buffer is provided."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

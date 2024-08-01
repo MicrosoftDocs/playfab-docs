@@ -4,7 +4,7 @@ title: "PFAccountManagementReportPlayerClientResult"
 description: "PFAccountManagementReportPlayerClientResult data model. Players are currently limited to five reports per day. Attempts by a single user account to submit reports beyond five will result in Updated being returned as false."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

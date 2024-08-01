@@ -4,7 +4,7 @@ title: "PFAccountManagementGetUserBansRequest"
 description: "PFAccountManagementGetUserBansRequest data model. Get all bans for a user, including inactive and expired bans. ."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFHCSetGlobalProxy"
 description: "Manually sets an explicit proxy address."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

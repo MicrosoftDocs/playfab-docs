@@ -4,7 +4,7 @@ title: "PFInventoryExecuteInventoryOperationsRequest"
 description: "PFInventoryExecuteInventoryOperationsRequest data model. Execute a list of Inventory Operations for an Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

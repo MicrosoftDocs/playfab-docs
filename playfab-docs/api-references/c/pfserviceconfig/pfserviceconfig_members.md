@@ -4,7 +4,7 @@ title: "Services C API overview - PFServiceConfig.h"
 description: "Services C API overview - PFServiceConfig.h"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

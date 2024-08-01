@@ -4,7 +4,7 @@ title: "PFEventsWriteEventsAsync"
 description: "Write batches of entity based events to PlayStream. The namespace of the Event must be 'custom' or start with 'custom.'."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

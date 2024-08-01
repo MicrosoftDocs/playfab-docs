@@ -4,7 +4,7 @@ title: "PFEntityIsTitlePlayer"
 description: "Convenience method to check if an Entity is a Title Player. This is equivalent to calling PFEntityGetEntityKey and comparing entityKey.type to PFTitlePlayerEntityType."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFHCHttpCallResponseGetNumHeaders"
 description: "Gets the number of response headers in the HTTP call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

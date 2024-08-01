@@ -4,7 +4,7 @@ title: "PFHCHttpCallRequestSetSSLValidation"
 description: "Enables or disables SSL server certificate validation for this specific HTTP call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

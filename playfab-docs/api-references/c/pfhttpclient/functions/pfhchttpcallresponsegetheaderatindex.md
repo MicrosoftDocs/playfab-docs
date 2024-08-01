@@ -4,7 +4,7 @@ title: "PFHCHttpCallResponseGetHeaderAtIndex"
 description: "Gets the response headers at specific zero based index in the HTTP call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

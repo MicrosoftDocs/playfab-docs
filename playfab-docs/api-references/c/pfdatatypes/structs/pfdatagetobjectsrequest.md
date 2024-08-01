@@ -4,7 +4,7 @@ title: "PFDataGetObjectsRequest"
 description: "PFDataGetObjectsRequest data model. Gets JSON objects from an entity profile and returns it. ."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

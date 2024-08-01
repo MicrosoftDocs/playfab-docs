@@ -4,7 +4,7 @@ title: "PFCatalogGetItemContainersRequest"
 description: "PFCatalogGetItemContainersRequest data model. Given an item, return a set of bundles and stores containing the item."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFMemGetFunctions"
 description: "Gets the memory hook functions to allow callers to control route memory allocations to their own memory manager. This method allows the application get the default memory allocation routines. This can be used along with PFMemSetFunctions() to monitor all memory allocations."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFGroupsUpdateRoleAsync"
 description: "Updates metadata about a role."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

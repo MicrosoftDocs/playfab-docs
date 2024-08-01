@@ -4,7 +4,7 @@ title: "PFAuthenticationLoginWithXUserAsync"
 description: "Signs the user in using an XUserHandle, returning a session identifier that can subsequently be used for API calls which require an authenticated user"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 
