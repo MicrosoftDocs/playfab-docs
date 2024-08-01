@@ -7,7 +7,7 @@ ms.date: 09/05/2023
 ms.topic: article
 keywords: playfab
 ms.localizationpriority: medium
-ms.service: playfab
+ms.service: azure-playfab
 ---
 
 # Title News quickstart

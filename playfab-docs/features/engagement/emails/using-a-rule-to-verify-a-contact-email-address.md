@@ -5,7 +5,7 @@ description: Tutorial that describes how to create a rule that sends an verifica
 ms.author: antnguyen
 ms.date: 08/18/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, engagement, email, rules
 ms.localizationpriority: medium
 ---

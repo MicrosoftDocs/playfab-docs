@@ -5,7 +5,7 @@ description: introduction on how PlayFab throttles API calls.
 ms.author: antnguyen
 ms.date: 01/26/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, throttling, throttle, api, token
 ms.localizationpriority: medium
 ---

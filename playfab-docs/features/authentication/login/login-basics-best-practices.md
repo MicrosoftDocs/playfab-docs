@@ -5,7 +5,7 @@ description: Describes the basics and Best Practices for login and authenticatio
 ms.author: antnguyen
 ms.date: 09/05/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, authentication
 ms.localizationpriority: medium
 ---
