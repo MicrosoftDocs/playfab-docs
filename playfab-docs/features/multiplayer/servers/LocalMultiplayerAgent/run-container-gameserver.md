@@ -5,7 +5,7 @@ description: How to run a game server using LocalMultiplayerAgent in Container m
 ms.author: emmapark
 ms.date: 03/01/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, multiplayerServer, localMultiplayerAgent, MPSAgent, GSDK, MPS Debugging tool
 ms.localizationpriority: medium
 ---
