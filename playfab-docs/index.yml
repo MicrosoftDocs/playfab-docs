@@ -8,7 +8,7 @@ metadata:
   title: Azure PlayFab documentation
   description: PlayFab is a complete backend platform for live games. 
   services: service
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: hub-page
   author: DanBehrendt
   ms.author: dabe
