@@ -5,7 +5,7 @@ description: This document provides information on the secret management feature
 ms.author: jvalenciano
 ms.date: 4/22/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, servers, vm, startup, script
 ms.localizationpriority: medium
 ---
