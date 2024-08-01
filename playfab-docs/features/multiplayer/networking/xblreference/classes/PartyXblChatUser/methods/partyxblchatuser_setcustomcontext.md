@@ -4,7 +4,7 @@ title: "PartyXblChatUser::SetCustomContext"
 description: Configures an optional, custom pointer-sized context value with this local chat user object.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/01/2019
 ---
 

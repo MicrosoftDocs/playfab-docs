@@ -4,7 +4,7 @@ title: "PFLobbyGetServer"
 description: "Gets the server entity joined to the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 

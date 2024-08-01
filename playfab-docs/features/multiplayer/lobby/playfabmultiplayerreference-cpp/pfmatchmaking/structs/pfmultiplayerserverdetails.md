@@ -4,7 +4,7 @@ title: "PFMultiplayerServerDetails"
 description: "Details about a Playfab Multiplayer Server."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/16/2022
 ---
 

@@ -4,7 +4,7 @@ title: "PartyXblHttpHeader"
 description: "Information about an HTTP header."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/22/2022
 ---
 

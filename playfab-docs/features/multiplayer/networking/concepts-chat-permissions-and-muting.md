@@ -5,7 +5,7 @@ author: ScottMunroMS
 ms.author: scmunro
 ms.date: 07/11/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, chat, mute, permissions
 ---
 

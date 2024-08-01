@@ -4,7 +4,7 @@ title: "PFLobbyServerLeaveAsServer"
 description: "Requests that the server leave the client-owned lobby it's currently in."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 

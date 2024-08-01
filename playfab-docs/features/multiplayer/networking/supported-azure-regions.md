@@ -5,7 +5,7 @@ author: ScottMunroMS
 ms.author: scmunro
 ms.date: 04/14/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, regions
 ---
 

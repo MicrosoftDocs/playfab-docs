@@ -4,7 +4,7 @@ title: "PFLobbyMembershipLock"
 description: "Values representing the state of the lobby's membership lock."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/03/2022
 ---
 

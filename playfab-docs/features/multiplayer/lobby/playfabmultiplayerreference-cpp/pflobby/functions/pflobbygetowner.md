@@ -4,7 +4,7 @@ title: "PFLobbyGetOwner"
 description: "Gets the current owner of the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/07/2023
 ---
 

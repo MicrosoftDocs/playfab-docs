@@ -5,7 +5,7 @@ author: ScottMunroMS
 ms.author: scmunro
 ms.date: 7/22/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking
 ---
 

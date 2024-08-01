@@ -4,7 +4,7 @@ title: "PFLobbyDisconnectingReason"
 description: "Reasons the client no longer has access to the Lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 

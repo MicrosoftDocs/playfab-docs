@@ -4,7 +4,7 @@ title: "PFMultiplayerClaimServerLobby"
 description: "Claim ownership of a pre-existing server lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/25/2023
 ---
 

@@ -4,7 +4,7 @@ title: "PFEntityKey - PlayFab Multiplayer SDK"
 description: "PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/10/2022
 ---
 

@@ -4,7 +4,7 @@ title: "PFLobbyGetMembershipLock"
 description: "Gets the lobby's current membership lock state."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/07/2023
 ---
 

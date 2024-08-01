@@ -4,7 +4,7 @@ title: "PFLobbySearchResult"
 description: "An entry in the collection of lobby search results received upon successful completion of a [PFMultiplayerFindLobbies](../functions/pfmultiplayerfindlobbies.md) operation."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 07/14/2023
 ---
 

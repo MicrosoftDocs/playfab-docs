@@ -4,7 +4,7 @@ title: "PFLobbyGetLobbyId"
 description: "Gets the ID of the Lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 

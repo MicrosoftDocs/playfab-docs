@@ -4,7 +4,7 @@ title: "PFLobbyServerPostUpdateCompletedStateChange"
 description: "Information specific to the *ServerPostUpdateCompleted* type of state change."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/25/2023
 ---
 

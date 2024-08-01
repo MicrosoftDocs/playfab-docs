@@ -4,7 +4,7 @@ title: "PFLobbyServerDeleteLobby"
 description: "Delete a lobby on behalf of the game_server entity that owns the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/25/2023
 ---
 

@@ -4,7 +4,7 @@ title: "PFMatchmakingTicketSetCustomContext"
 description: "Configures an optional, custom pointer-sized context value with this ticket object."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/15/2023
 ---
 

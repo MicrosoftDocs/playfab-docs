@@ -4,7 +4,7 @@ title: "PFLobbyGetMemberProperty"
 description: "Get the member property's value from its key."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/25/2023
 ---
 

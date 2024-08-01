@@ -5,7 +5,7 @@ description: Release notes for PlayFab Party Xbox Live Helper
 ms.author: scmunro
 ms.date: 04/14/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking, xbox, xbl
 ms.localizationpriority: medium
 ---

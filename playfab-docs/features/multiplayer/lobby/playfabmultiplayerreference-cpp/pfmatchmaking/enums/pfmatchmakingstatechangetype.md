@@ -4,7 +4,7 @@ title: "PFMatchmakingStateChangeType"
 description: "The types of state changes that can occur in the Matchmaking library."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

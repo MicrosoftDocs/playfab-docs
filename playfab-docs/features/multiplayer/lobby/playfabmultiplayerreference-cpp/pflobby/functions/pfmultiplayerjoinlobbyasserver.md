@@ -4,7 +4,7 @@ title: "PFMultiplayerJoinLobbyAsServer"
 description: "Join a client-owned lobby as a server."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 

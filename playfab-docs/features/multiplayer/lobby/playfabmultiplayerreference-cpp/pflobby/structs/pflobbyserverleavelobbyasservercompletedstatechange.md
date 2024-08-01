@@ -4,7 +4,7 @@ title: "PFLobbyServerLeaveLobbyAsServerCompletedStateChange"
 description: "Information specific to the *ServerLeaveLobbyAsServerCompleted* type of state change."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/12/2024
 ---
 

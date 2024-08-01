@@ -4,7 +4,7 @@ title: "PartyXblLocalChatUser::GetCrossNetworkCommunicationPrivacySetting"
 description: Gets the cross-network communication privacy setting for this chat user.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

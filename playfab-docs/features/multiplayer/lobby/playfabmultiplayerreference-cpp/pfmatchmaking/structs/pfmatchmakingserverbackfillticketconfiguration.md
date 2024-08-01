@@ -4,7 +4,7 @@ title: "PFMatchmakingServerBackfillTicketConfiguration"
 description: "Defines the configuration for a server backfill ticket."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/14/2023
 ---
 

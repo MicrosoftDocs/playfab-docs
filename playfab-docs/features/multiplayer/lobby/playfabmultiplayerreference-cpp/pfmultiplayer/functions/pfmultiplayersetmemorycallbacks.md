@@ -4,7 +4,7 @@ title: "PFMultiplayerSetMemoryCallbacks"
 description: "Optionally configures the memory allocation and freeing callbacks the Multiplayer library should use."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/11/2022
 ---
 

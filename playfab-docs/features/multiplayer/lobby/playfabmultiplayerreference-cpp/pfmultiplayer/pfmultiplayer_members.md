@@ -4,7 +4,7 @@ title: "PFMultiplayer C/C++ API overview - PFMultiplayer.h"
 description: "PFMultiplayer C/C++ API overview - PFMultiplayer.h"
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

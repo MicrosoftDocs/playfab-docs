@@ -4,7 +4,7 @@ title: "PFMultiplayerCreateMatchmakingTicket"
 description: "Creates a matchmaking ticket for one or more local users."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 

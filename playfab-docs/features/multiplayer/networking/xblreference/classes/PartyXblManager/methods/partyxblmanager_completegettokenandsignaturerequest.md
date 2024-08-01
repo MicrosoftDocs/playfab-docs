@@ -4,7 +4,7 @@ title: "PartyXblManager::CompleteGetTokenAndSignatureRequest"
 description: Completes a GetTokenAndSignature operation.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/07/2021
 ---
 

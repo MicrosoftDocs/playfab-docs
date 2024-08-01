@@ -5,7 +5,7 @@ description: Release notes for PlayFab Party
 ms.author: scmunro
 ms.date: 01/29/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
 ms.localizationpriority: medium
 ---

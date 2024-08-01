@@ -4,7 +4,7 @@ title: "PartyXblManager::FinishProcessingStateChanges"
 description: Returns an array of Party Xbox Live state changes that were being processed.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

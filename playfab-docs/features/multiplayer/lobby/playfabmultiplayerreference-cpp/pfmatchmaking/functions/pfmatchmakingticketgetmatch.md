@@ -4,7 +4,7 @@ title: "PFMatchmakingTicketGetMatch"
 description: "Provides the match, if one has been found."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/03/2022
 ---
 

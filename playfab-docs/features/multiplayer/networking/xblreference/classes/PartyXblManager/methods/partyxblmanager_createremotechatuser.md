@@ -4,7 +4,7 @@ title: "PartyXblManager::CreateRemoteChatUser"
 description: Creates a remote chat user. A remote chat user is an Xbox Live user currently communicating with at least one local user. Creating a remote chat user will cause the library to start tracking privacy information related to this user in relation to every local chat user.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/01/2019
 ---
 

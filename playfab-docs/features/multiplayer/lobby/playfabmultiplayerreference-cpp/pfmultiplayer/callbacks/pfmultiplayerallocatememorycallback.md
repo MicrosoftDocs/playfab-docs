@@ -4,7 +4,7 @@ title: "PFMultiplayerAllocateMemoryCallback"
 description: "A callback invoked every time a new memory buffer must be dynamically allocated by the PlayFab Multiplayer library."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/23/2021
 ---
 

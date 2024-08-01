@@ -4,7 +4,7 @@ title: "PFMatchmakingTicketGetCustomContext"
 description: "Retrieves the app's private, custom pointer-sized context value previously associated with this ticket object."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/15/2023
 ---
 

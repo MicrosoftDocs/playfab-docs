@@ -4,7 +4,7 @@ title: "PartyXblAccessibilitySettings"
 description: "Accessibility settings associated with an Xbox Live account."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/01/2019
 ---
 
