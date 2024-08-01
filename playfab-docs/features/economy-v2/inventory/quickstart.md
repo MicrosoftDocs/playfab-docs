@@ -5,7 +5,7 @@ description: In this quickstart, you purchase your first item and check your pla
 ms.author: wesjong
 ms.date: 7/09/2022
 ms.topic: quickstart
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, inventory
 ms.localizationpriority: medium
 ---

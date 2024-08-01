@@ -5,7 +5,7 @@ description: Guide to moderating content in your game.
 ms.author: wesjong
 ms.date: 08/09/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc, moderation
 ms.localizationpriority: medium
 ---

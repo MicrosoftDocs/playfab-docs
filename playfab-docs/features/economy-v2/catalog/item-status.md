@@ -5,7 +5,7 @@ description: Article outlining the different visibility and access states an ite
 ms.author: wesjong
 ms.date: 09/16/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---

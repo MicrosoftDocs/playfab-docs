@@ -5,7 +5,7 @@ description: Introduction to Economy v2 Stores and best practices.
 ms.author: wesjong
 ms.date: 9/07/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, localization, internationalization, i8n
 ms.localizationpriority: medium
 ---

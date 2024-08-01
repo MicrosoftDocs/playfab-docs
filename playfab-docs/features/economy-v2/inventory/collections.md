@@ -5,7 +5,7 @@ description: Overview of using Economy v2 Inventory Collections.
 ms.author: wesjong
 ms.date: 09/07/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, inventory
 ms.localizationpriority: medium
 ---
