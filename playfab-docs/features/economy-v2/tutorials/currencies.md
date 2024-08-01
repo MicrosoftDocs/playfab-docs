@@ -5,7 +5,7 @@ description: In this quickstart, you set up your first virtual currencies via th
 ms.author: derekreese
 ms.date: 7/27/2023
 ms.topic: quickstart
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, currency, virtual currency
 ms.localizationpriority: medium
 ---

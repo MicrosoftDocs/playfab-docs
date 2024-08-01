@@ -5,7 +5,7 @@ description: This article details the APIs that cause economy writes meter to in
 ms.author: derekreese
 ms.date: 09/07/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing
 ms.localizationpriority: medium
 ---

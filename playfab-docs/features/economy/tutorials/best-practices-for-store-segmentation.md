@@ -5,7 +5,7 @@ description: Lists the Best Practices for configuring and using Store Segmentati
 ms.author: derekreese
 ms.date: 10/29/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, stores
 ms.localizationpriority: medium
 ---

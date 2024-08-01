@@ -6,7 +6,7 @@ summary: PlayFab Economy provides you with the necessary features to more deeply
 metadata:
   title: PlayFab Economy documentation
   description: Hub page for the PlayFab Economy documentation. Here you can find feature overviews, quickstart guides, and tutorials.  # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: cybtachyon
   ms.author: derekreese

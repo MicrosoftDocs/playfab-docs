@@ -5,7 +5,7 @@ description: Add-ons are tools and services for extending and operating your gam
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab
 ms.localizationpriority: medium
 ---
