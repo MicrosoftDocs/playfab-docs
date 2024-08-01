@@ -5,7 +5,7 @@ description: Tutorial on how to use queue statistics
 ms.author: kkline
 ms.date: 03/15/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, matchmaking, match, tutorial
 ms.localizationpriority: medium
 ---
