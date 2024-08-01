@@ -5,7 +5,7 @@ description: Tutorial about how to use Shared Group Data.
 ms.author: chpalm
 ms.date: 10/25/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, social, friends, groups
 ms.localizationpriority: medium
 ---

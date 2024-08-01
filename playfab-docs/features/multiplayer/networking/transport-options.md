@@ -4,7 +4,7 @@ title: Transport options
 description: Summarizes transport options for Party
 ms.author: chpalm
 ms.topic: conceptual
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/13/2020
 ---
 
