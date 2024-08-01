@@ -5,7 +5,7 @@ description: How to successfully integrate a Steam app into Game Manager
 ms.author: fprotti
 ms.date: 07/05/2024
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, integration, marketplace
 ms.localizationpriority: medium
 ---

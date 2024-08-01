@@ -5,7 +5,7 @@ description: How to successfully integrate a Google app into Game Manager
 ms.author: fprotti
 ms.date: 11/23/2023
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, integration, marketplace
 ms.localizationpriority: medium
 ---

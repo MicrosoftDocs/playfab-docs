@@ -5,7 +5,7 @@ description: Introduction to Economy V2 targeted offers.
 ms.author: fprotti
 ms.date: 3/18/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, economy, stores, segmentation, targeted offers
 ms.localizationpriority: medium
 ---

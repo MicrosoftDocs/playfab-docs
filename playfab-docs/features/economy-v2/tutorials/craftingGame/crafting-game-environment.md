@@ -5,7 +5,7 @@ description: Setting up the environment before starting to code and creating ite
 ms.author: fprotti
 ms.date: 09/26/2023
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---

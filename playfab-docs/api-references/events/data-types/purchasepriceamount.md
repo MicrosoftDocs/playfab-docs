@@ -5,7 +5,7 @@ description: PurchasePriceAmount data type.
 ms.author: fprotti
 ms.date: 10/02/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---

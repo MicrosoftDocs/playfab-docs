@@ -5,7 +5,7 @@ description: marketplace_transaction_redeemed event.
 ms.author: fprotti
 ms.date: 04/26/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---

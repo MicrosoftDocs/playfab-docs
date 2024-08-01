@@ -5,7 +5,7 @@ description: Getting started with coding and adding some practical examples.
 ms.author: fprotti
 ms.date: 09/26/2023
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---
