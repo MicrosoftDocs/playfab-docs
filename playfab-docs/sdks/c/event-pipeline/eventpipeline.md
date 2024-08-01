@@ -5,7 +5,7 @@ description: Overview of the Event Pipeline features in the SDK
 ms.author: raulalbertog
 ms.date: 05/08/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, windows, xbox, gdk, telemetry, insights
 ms.localizationpriority: medium
 ---
