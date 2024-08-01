@@ -5,7 +5,7 @@ description: Accessing PlayFab with a title entity
 ms.author: jiwooyoo
 ms.date: 09/20/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, windows, server
 ms.localizationpriority: medium
 ---
