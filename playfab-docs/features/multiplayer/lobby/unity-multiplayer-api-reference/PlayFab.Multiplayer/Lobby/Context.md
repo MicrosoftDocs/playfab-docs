@@ -4,7 +4,7 @@ title: Lobby.Context
 description: Lobby.Context
 ms.author: sebastianp
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 12/13/2023
 ---
 
