@@ -5,7 +5,7 @@ description: How to create Telemetry Keys in Game Manager
 ms.author: sofiamarin
 ms.date: 10/13/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, simplified authentication telemetry, telemetry keys, quickstart
 ms.localizationpriority: medium
 ---

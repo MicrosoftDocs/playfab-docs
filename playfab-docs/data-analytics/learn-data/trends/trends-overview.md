@@ -5,7 +5,7 @@ description: Trends overview
 ms.author: sofiamarin
 ms.date: 11/08/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, trends
 ms.localizationpriority: medium
 ---

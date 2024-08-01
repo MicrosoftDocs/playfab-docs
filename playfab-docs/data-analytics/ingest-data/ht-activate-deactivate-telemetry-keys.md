@@ -5,7 +5,7 @@ description: How to activate or deactivate Telemetry Keys in Game Manager
 ms.author: sofiamarin
 ms.date: 10/16/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, simplified authentication telemetry, telemetry keys, how-to, how to, telemetry
 ms.localizationpriority: medium
 ---

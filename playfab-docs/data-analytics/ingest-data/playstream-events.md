@@ -5,7 +5,7 @@ description: PlayStream events
 ms.author: sofiamarin
 ms.date: 10/16/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data and analytics, automation, data, analytics, playstream, events
 ms.localizationpriority: medium
 ---

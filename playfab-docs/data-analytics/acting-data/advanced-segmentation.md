@@ -5,7 +5,7 @@ description: Overview on Advanced Segmentation with Player Custom Properties
 ms.author: sofiamarin
 ms.date: 10/18/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, player custom properties, custom properties, segmentation, advanced segmentation, data, analytics
 ms.localizationpriority: medium
 ---

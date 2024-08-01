@@ -5,7 +5,7 @@ description: QuickStart for Segments as a dimension
 ms.author: sofiamarin
 ms.date: 11/08/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, segmentation, segments, dimension, trends, trends with segments as a dimension, segments as a dimension, quickstart, how to
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Event Partitioning quickstart
 ms.author: sofiamarin
 ms.date: 11/22/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, event, events, event partitioning, partition, quickstart, tutorial, how-to
 ms.localizationpriority: medium
 ---

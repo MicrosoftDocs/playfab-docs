@@ -5,7 +5,7 @@ description: Data connections
 ms.author: sofiamarin
 ms.date: 11/27/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data connections, byos, connections, event ingestion
 ms.localizationpriority: medium
 ---
