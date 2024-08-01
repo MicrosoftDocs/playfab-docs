@@ -5,7 +5,7 @@ description: VM metrics.
 ms.author: digkanat
 ms.date: 07/15/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, servers, performance metrics
 ms.localizationpriority: medium
 ---
