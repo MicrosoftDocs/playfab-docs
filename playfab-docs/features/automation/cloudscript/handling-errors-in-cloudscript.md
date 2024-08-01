@@ -5,7 +5,7 @@ description: Describes how to recognize and handle errors within your CloudScrip
 ms.author: cjwill
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript, error handling
 ms.localizationpriority: medium
 ---

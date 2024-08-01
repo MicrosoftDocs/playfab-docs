@@ -5,7 +5,7 @@ description: Overview page for tutorials about CloudScript.
 ms.author: cjwill
 ms.date: 11/19/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript
 ms.localizationpriority: medium
 ---

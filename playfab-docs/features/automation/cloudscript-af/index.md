@@ -5,7 +5,7 @@ description: Overview of PlayFab CloudScript using Azure Functions
 ms.author: cjwill
 ms.date: 02/10/2020
 ms.topic: overview
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
 ---

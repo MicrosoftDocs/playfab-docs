@@ -5,7 +5,7 @@ description: Describes the PlayFab system for managing secret keys.
 ms.author: cjwill
 ms.date: 01/30/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config, game manager, secret keys
 ms.localizationpriority: medium
 ---

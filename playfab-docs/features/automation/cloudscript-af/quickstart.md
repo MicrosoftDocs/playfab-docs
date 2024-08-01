@@ -5,7 +5,7 @@ description: PlayFab CloudScript using Azure Functions Quickstart Guide
 ms.author: cjwill
 ms.date: 04/03/2020
 ms.topic: quickstart
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
 ---

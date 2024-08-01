@@ -5,7 +5,7 @@ description: Describes uploading and managing your CloudScript files in the Play
 ms.author: cjwill
 ms.date: 02/10/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, game manager, cloudscript
 ms.localizationpriority: medium
 ---
