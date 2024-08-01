@@ -5,7 +5,7 @@ description: Guide to help you integrate PlayFab Party SDK with PlayFab Multipla
 ms.author: raymondcha
 ms.date: 10/09/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, party, lobby, networking, communication
 ms.localizationpriority: medium
 ---
