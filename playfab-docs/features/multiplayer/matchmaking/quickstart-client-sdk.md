@@ -5,7 +5,7 @@ description: Quickstart which demonstrates a matchmaking flow using the SDK
 ms.author: kevinasg
 ms.date: 12/06/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, servers, matchmaking
 ms.localizationpriority: medium
 ---
