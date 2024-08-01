@@ -5,7 +5,7 @@ description: A set of guidelines to make the best use of PlayFab MPS
 ms.author: ravarna
 ms.date: 08/12/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, servers, best practices, launch checklist
 ms.localizationpriority: medium
 ---
