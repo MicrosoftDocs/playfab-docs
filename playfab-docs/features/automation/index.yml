@@ -6,7 +6,7 @@ summary: PlayFab automation features including actions, rules, CloudScript, and 
 metadata:
   title: PlayFab Automation documentation
   description: Guide on automating with CloudScript and more # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: xmcai2016
   ms.author: carocai
