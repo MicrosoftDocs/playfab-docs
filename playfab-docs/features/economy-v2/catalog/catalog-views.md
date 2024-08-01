@@ -5,7 +5,7 @@ description: Introduction to Economy v2 Catalog Views
 ms.author: sranthar
 ms.date: 3/7/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, views
 ms.localizationpriority: medium
 ---
