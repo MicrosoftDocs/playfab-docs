@@ -5,7 +5,7 @@ description: Release notes for PlayFab OnlineSubsystem for Unreal Engine 4 and 5
 ms.author: pkacha
 ms.date: 11/28/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, party, unreal, release notes, multiplayer, networking
 ms.localizationpriority: medium
 ---
