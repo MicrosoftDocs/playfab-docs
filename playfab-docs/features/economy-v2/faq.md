@@ -5,7 +5,7 @@ description: Answers to common Economy V2 questions.
 ms.author: thomg
 ms.date: 3/16/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, migration, FAQ, parity
 ms.localizationpriority: medium
 ---
