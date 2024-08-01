@@ -5,7 +5,7 @@ description: Describes how to allocate multiplayer game servers using the build 
 ms.author: raakisad
 ms.date: 10/16/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, social, tournaments, leaderboards, servers, debugging
 ms.localizationpriority: medium
 ---

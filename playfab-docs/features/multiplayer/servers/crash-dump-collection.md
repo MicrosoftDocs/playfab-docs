@@ -5,7 +5,7 @@ description: Enabling automatic crash dump collection
 ms.author: raakisad
 ms.date: 08/18/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, crash dump collection, automatic crash dump, archived servers, logs, debugging, game manager 
 ms.localizationpriority: medium
 ---

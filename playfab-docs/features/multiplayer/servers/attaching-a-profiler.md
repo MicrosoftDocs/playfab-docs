@@ -5,7 +5,7 @@ description: How to attach a profiler and gather logs.
 ms.author: raakisad
 ms.date: 10/18/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, profiler, attach a profiler, debugging, game manager 
 ms.localizationpriority: medium
 ---
