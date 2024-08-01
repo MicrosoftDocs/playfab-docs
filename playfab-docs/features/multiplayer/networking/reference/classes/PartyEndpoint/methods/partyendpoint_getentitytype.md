@@ -5,7 +5,7 @@ description: Gets the PlayFab entity type of the user associated with this endpo
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 07/26/2024
+ms.date: 08/01/2024
 ---
 
 # PartyEndpoint::GetEntityType  
@@ -35,7 +35,7 @@ PartyError
   
 ## Remarks  
   
-This returned string is the same value as the one found in the *type* field of a ```PFEntityKey``` structure representing the entity. The value returned from [GetEntityId()](partyendpoint_getentityid.md) would represent the other half of a ```PFEntityKey```. <br /><br /> If this endpoint is not associated with a user, `entityType` is set to nullptr.   <br /><br /> The memory for the entity type string remains valid for the life of the endpoint, which is until its [PartyEndpointDestroyedStateChange](../../../structs/partyendpointdestroyedstatechange.md) and/or [PartyDestroyEndpointCompletedStateChange](../../../structs/partydestroyendpointcompletedstatechange.md), depending on the type of destruction that occurred, has been provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) and all state changes referencing the endpoint have been returned to [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
+This returned string is the same value as the one found in the *type* field of a ```PFEntityKey``` structure representing the entity. The value returned from [GetEntityId()](partyendpoint_getentityid.md) would represent the other half of a ```PFEntityKey```. <br /><br /> If this endpoint isn't associated with a user, `entityType` is set to nullptr.   <br /><br /> The memory for the entity type string remains valid for the life of the endpoint, which is until its [PartyEndpointDestroyedStateChange](../../../structs/partyendpointdestroyedstatechange.md) and/or [PartyDestroyEndpointCompletedStateChange](../../../structs/partydestroyendpointcompletedstatechange.md), depending on the type of destruction that occurred, has been provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) and all state changes referencing the endpoint have been returned to [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
   
 ## Requirements  
   

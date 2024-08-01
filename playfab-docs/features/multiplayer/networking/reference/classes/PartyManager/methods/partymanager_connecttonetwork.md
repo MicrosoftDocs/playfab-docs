@@ -5,7 +5,7 @@ description: Queues an asynchronous attempt to connect to a network.
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 06/22/2021
+ms.date: 08/01/2024
 ---
 
 # PartyManager::ConnectToNetwork  
@@ -58,7 +58,7 @@ This method queues an asynchronous attempt to connect to the network associated 
 | NetworkLimitReached | Do not retry automatically. Instead, display a message to the user and wait for the user to initiate another attempt. |
 | NetworkNoLongerExists | Do not retry. |
 | VersionMismatch | Do not retry. |
-| FailedToBindToLocalUdpSocket | This result means that the library couldn't bind to the local UDP socket specified in the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option. The title must clean up its instance of the library, update the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option to a valid, available bind address, and re-initialize the library.
+| FailedToBindToLocalUdpSocket | This result means that the library couldn't bind to the local UDP socket specified in the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option. The title must clean up its instance of the library, update the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option to a valid, available bind address, and reinitialize the library.
   
 ## Requirements  
   
