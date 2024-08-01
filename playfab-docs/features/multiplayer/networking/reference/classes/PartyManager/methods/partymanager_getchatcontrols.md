@@ -4,7 +4,7 @@ title: "PartyManager::GetChatControls"
 description: Gets an array that contains a combined list of all chat controls on the local device and all remote devices.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

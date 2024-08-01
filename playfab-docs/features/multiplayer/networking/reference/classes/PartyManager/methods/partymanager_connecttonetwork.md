@@ -4,7 +4,7 @@ title: "PartyManager::ConnectToNetwork"
 description: Queues an asynchronous attempt to connect to a network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2021
 ---
 

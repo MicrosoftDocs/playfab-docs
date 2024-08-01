@@ -4,7 +4,7 @@ title: "PartyProfilingMethodEntranceEventData"
 description: "Information specific to the *MethodEntrance* type of profiling event."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/11/2022
 ---
 

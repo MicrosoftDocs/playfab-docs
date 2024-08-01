@@ -4,7 +4,7 @@ title: "PartyChatControl::GetCustomContext"
 description: Retrieves the app's private, custom pointer-sized context value previously associated with this chat control object.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/25/2019
 ---
 

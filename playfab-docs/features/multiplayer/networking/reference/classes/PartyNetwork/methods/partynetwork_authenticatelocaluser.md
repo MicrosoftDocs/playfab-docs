@@ -4,7 +4,7 @@ title: "PartyNetwork::AuthenticateLocalUser"
 description: Queues an asynchronous operation to authenticate the specified local user into the network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/07/2021
 ---
 

@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetTextToSpeechProfile"
 description: Configures the profile to use for a specified type of text-to-speech operation.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/29/2024
 ---
 

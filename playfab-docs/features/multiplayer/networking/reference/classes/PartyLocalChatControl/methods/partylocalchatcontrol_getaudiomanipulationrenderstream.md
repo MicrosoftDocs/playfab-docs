@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetAudioManipulationRenderStream"
 description: Retrieves the manipulation render stream associated with this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/10/2020
 ---
 

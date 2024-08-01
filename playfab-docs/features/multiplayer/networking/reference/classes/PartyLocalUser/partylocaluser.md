@@ -4,7 +4,7 @@ title: "PartyLocalUser"
 description: Represents a local user.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/22/2022
 ---
 

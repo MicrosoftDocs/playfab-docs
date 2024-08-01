@@ -4,7 +4,7 @@ title: "PartyStateChangeResult"
 description: "Results for Party library operations that generate state changes."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

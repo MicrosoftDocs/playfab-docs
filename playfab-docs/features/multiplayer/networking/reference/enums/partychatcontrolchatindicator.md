@@ -4,7 +4,7 @@ title: "PartyChatControlChatIndicator"
 description: "Audio states for a target chat control in relation to a local chat control."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2021
 ---
 

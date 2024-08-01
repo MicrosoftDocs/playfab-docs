@@ -4,7 +4,7 @@ title: "PartyNetworkStatistic"
 description: "Types of statistics that can be retrieved for a network."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/07/2021
 ---
 
