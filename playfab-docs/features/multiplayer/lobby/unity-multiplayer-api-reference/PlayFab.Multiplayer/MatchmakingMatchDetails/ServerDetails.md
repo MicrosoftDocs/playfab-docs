@@ -4,7 +4,7 @@ title: MatchmakingMatchDetails.ServerDetails
 description: MatchmakingMatchDetails.ServerDetails
 ms.author: aterzakis
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/18/2022
 ---
 

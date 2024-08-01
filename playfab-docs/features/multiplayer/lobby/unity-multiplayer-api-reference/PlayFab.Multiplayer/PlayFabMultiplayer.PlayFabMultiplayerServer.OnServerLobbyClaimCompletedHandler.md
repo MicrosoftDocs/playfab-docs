@@ -4,7 +4,7 @@ title: PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyClaimCompletedHa
 description: PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyClaimCompletedHandler
 ms.author: aterzakis
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/02/2023
 ---
 

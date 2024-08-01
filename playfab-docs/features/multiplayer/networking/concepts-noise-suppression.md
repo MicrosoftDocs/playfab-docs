@@ -5,7 +5,7 @@ author: nassosterz-ms
 ms.author: aterzakis
 ms.date: 05/10/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, chat
 ---
 
