@@ -5,7 +5,7 @@ description: Gets the local user associated with this local endpoint.
 ms.author: jdewey
 ms.topic: reference
 ms.service: playfab
-ms.date: 11/08/2019
+ms.date: 08/01/2024
 ---
 
 # PartyLocalEndpoint::GetLocalUser  
@@ -35,7 +35,7 @@ PartyError
   
 ## Remarks  
   
-If this endpoint is not associated with a user, `localUser` is set to nullptr.
+If this endpoint isn't associated with a user, `localUser` is set to nullptr.
   
 ## Requirements  
   
