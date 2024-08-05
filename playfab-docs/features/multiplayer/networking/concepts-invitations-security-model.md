@@ -29,7 +29,7 @@ An invitation (`PartyInvitation`) is an object within a network that grants user
 
 ## Invitation lifetime
 
-An invitation is active from the time it is created until it is revoked.
+An invitation is active from the time it's created until it's revoked.
 
 ### Creation
 
@@ -44,15 +44,15 @@ When an invitation is created (or when joining a network with an active initial 
 
 ### Enumeration
 
-Enumerating active invitations is done using `PartyNetwork::GetInvitations()`. Only the invitations created on the local device, along with the initial invitation if it is still active, can be enumerated.
+Enumerating active invitations is done using `PartyNetwork::GetInvitations()`. Only the invitations created on the local device, along with the initial invitation if it's still active, can be enumerated.
 
 ### Revocation
 
-An invitation is revoked by calling `PartyNetwork::RevokeInvitation()`. Only the creator of an invitation may revoke it, except for the initial invitation, which may be revoked by any user. Additionally, an invitation is automatically revoked when the user that created it is removed from the network.
+An invitation is revoked by calling `PartyNetwork::RevokeInvitation()`. Only the creator of an invitation may revoke it, except for the initial invitation, which may be revoked by any user. Additionally, an invitation is automatically revoked when the user that created it's removed from the network.
 
 When an invitation is revoked, a `PartyInvitationRevokedStateChange` is generated on all devices that could see the invitation.
 
-Once the initial invitation is revoked, it cannot be created again. Its identifier may be reused for a new invitation, but that new invitation will not have the special properties of the initial invitation.
+Once the initial invitation is revoked, it can't be created again. Its identifier may be reused for a new invitation, but that new invitation won't have the special properties of the initial invitation.
 
 > [!IMPORTANT]
 > Revoking an invitation has no effect on the devices and users that have already joined the network. To remove a user or device from the network, use `PartyNetwork::KickUser()` or `PartyNetwork::KickDevice()`. Note that these methods are not yet implemented.
@@ -63,33 +63,33 @@ The configuration of an invitation is specified during creation using the `Party
 
 ### Identifiers
 
-Each invitation has an identifier that uniquely identifies it within the network. If an identifier is not specified when creating an invitation, Party assigns one. For calls to `PartyManager::CreateNewNetwork()`, the assigned identifier is returned in an out parameter and also reported in `PartyCreateNewNetworkCompletedStateChange` when network creation completes. For calls to `PartyManager::CreateInvitation()`, the assigned identifier can be retrieved from the `invitation` out parameter or the `invitation` field in `PartyCreateInvitationCompletedStateChange` when the invitation creation completes.
+Each invitation has an identifier that uniquely identifies it within the network. If an identifier isn't specified when creating an invitation, Party assigns one. For calls to `PartyManager::CreateNewNetwork()`, the assigned identifier is returned in an out parameter and also reported in `PartyCreateNewNetworkCompletedStateChange` when network creation completes. For calls to `PartyManager::CreateInvitation()`, the assigned identifier can be retrieved from the `invitation` out parameter or the `invitation` field in `PartyCreateInvitationCompletedStateChange` when the invitation creation completes.
 
 Although an invitation identifier must be unique, after an invitation is revoked, its identifier may be reused when creating a new invitation.
 
 ### Initial invitation and other invitations
 
-Although there is only one type of invitation, the initial invitation created by the call to `PartyManager::CreateNewNetwork()` is a bit different from invitations created later via `PartyNetwork::CreateInvitation()`. The differences are summarized in the table below.
+Although there's only one type of invitation, the initial invitation created by the call to `PartyManager::CreateNewNetwork()` is a bit different from invitations created later via `PartyNetwork::CreateInvitation()`. The differences are summarized in the table below.
 
 Property | Initial invitation | Other invitations
 --- | --- | ---
-Visibility | All devices can see the initial invitation. As long as the initial invitation has not been revoked, calls to `PartyNetwork::GetInvitations()` return the initial invitation. Upon joining a network, each device receives a `PartyInvitationCreatedStateChange` for the initial invitation if it has not been previously revoked. | Only the device that created the invitation is able to see it. A non-initial invitation is only returned by `PartyNetwork::GetInvitations()` if it was created on that device, and a `PartyInvitationCreatedStateChange` is only generated for it on the creating device.
+Visibility | All devices can see the initial invitation. As long as the initial invitation hasn't been revoked, calls to `PartyNetwork::GetInvitations()` return the initial invitation. Upon joining a network, each device receives a `PartyInvitationCreatedStateChange` for the initial invitation if it hasn't been previously revoked. | Only the device that created the invitation is able to see it. A non-initial invitation is only returned by `PartyNetwork::GetInvitations()` if it was created on that device, and a `PartyInvitationCreatedStateChange` is only generated for it on the creating device.
 Revocability | Anyone may revoke the initial invitation. When explicitly specifying the invitation configuration, revocability must be set to `PartyInvitationRevocability::Anyone`. | Only the creator may revoke the invitation. When creating the invitation, revocability must be set to `PartyInvitationRevocability::Creator`.
-Lifetime | The initial invitation is active until it is explicitly revoked. | A non-initial invitation is active until it is explicitly revoked, or until the user that created it is removed from the network. When the user is removed from the network, all the invitations they created are automatically revoked.
+Lifetime | The initial invitation is active until it's explicitly revoked. | A non-initial invitation is active until it's explicitly revoked, or until the user that created it's removed from the network. When the user is removed from the network, all the invitations they created are automatically revoked.
 Creator | The initial invitation has no creator. `PartyInvitation::GetCreatorEntityId()` returns null. | The user specified when calling `PartyNetwork::CreateInvitation` is the creator. `PartyInvitation::GetCreatorEntityId()` returns that user's entity ID.
 
 Invitations (other than the initial invitation) are hidden from other devices for privacy reasons. See the [friends list usage pattern](#friends-list) for an example of why this is important.
 
 ### Users and open invitations
 
-An invitation contains 0 or more users specified as `title_player_account` [entity IDs](/gaming/playfab/features/data/entities/). If an invitation contains users, that invitation only grants access to join the network to those users. However, if an invitation contains no users, it is an open invitation. Any user may join the network with the identifier of an open invitation.
+An invitation contains 0 or more users specified as `title_player_account` [entity IDs](/gaming/playfab/features/data/entities/). If an invitation contains users, that invitation only grants access to join the network to those users. However, if an invitation contains no users, it's an open invitation. Any user may join the network with the identifier of an open invitation.
 
 > [!NOTE]
-> On a multi-user device, such as a game console, be sure to use the correct invitation with the correct user. Depending on which users are specified in each invitation, it is possible that different users on the device might need to use different invitations when authenticating a user into the network via PartyNetwork::AuthenticateLocalUser().
+> On a multi-user device, such as a game console, be sure to use the correct invitation with the correct user. Depending on which users are specified in each invitation, it's possible that different users on the device might need to use different invitations when authenticating a user into the network via PartyNetwork::AuthenticateLocalUser().
 
 ### Immutability
 
-Once an invitation is created, its configuration cannot be changed. However, after an invitation has been revoked, another can be created with the same identifier but a different configuration. See the [dynamic single invitation usage pattern](#dynamic-single-invitation).
+Once an invitation is created, its configuration can't be changed. However, after an invitation has been revoked, another can be created with the same identifier but a different configuration. See the [dynamic single invitation usage pattern](#dynamic-single-invitation).
 
 ## Usage patterns
 
@@ -145,16 +145,16 @@ Having a single user responsible for revoking the current invitation and creatin
 
 Having all users attempt to manage invitations leads to unpredictable invitation ownership, but prevents the external service from needing to select a single user. Instead, a user on each device does the following.
 
-- Attempt to revoke the current invitation. For the initial invitation, all users attempt this but only one will succeed. For other invitations, only the user who created the last invitation is able to attempt to revoke it, since the invitation is not visible to the other users.
-- Attempt to create a new invitation. Since invitations must have unique identifiers, only one of the users will succeed. That user must notify the others that it is the new invitation owner, since the invitation is not visible on other devices.
+- Attempt to revoke the current invitation. For the initial invitation, all users attempt this but only one will succeed. For other invitations, only the user who created the last invitation is able to attempt to revoke it, since the invitation isn't visible to the other users.
+- Attempt to create a new invitation. Since invitations must have unique identifiers, only one of the users will succeed. That user must notify the others that it's the new invitation owner, since the invitation isn't visible on other devices.
 - When the creator of the current invitation leaves the creating device, all users must again attempt to create a new invitation.
 
 > [!IMPORTANT]
-> When revoking an invitation and creating a new one with the same identifier, there is a small window of time where the invitation identifier is invalid. If you are using this approach, it is necessary to retry the call to `PartyNetwork::AuthenticateLocalUser()` if it fails after a reasonable waiting period.
+> When revoking an invitation and creating a new one with the same identifier, there's a small window of time where the invitation identifier is invalid. If you are using this approach, it's necessary to retry the call to `PartyNetwork::AuthenticateLocalUser()` if it fails after a reasonable waiting period.
 
 ### Rolling open invitation
 
-For games where a lobby or other external service controls who should join a given network, an alternative to the [dynamic single invitation](#dynamic-single-invitation) pattern is the rolling open invitation pattern. In this pattern, there is always a single open invitation. The invitation is revoked and re-created with a new identifier whenever a user that was previously allowed to join is removed from the external service's user list. The invitation identifier acts like a password, and should be similarly protected. The pattern can be implemented in these steps:
+For games where a lobby or other external service controls who should join a given network, an alternative to the [dynamic single invitation](#dynamic-single-invitation) pattern is the rolling open invitation pattern. In this pattern, there's always a single open invitation. The invitation is revoked and re-created with a new identifier whenever a user that was previously allowed to join is removed from the external service's user list. The invitation identifier acts like a password, and should be similarly protected. The pattern can be implemented in these steps:
 
 - The external service selects a device to create the network and specifies the invitation identifier to use.
 - The external service sends the invitation identifier to all other users that should join the network.
