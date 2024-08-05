@@ -35,7 +35,7 @@ PartyError
   
 ## Remarks  
   
-The memory for the Entity ID string remains valid for the life of the chat control, which is until its [PartyChatControlDestroyedStateChange](../../../structs/partychatcontroldestroyedstatechange.md) and/or [PartyDestroyChatControlCompletedStateChange](../../../structs/partydestroychatcontrolcompletedstatechange.md), depending on the type of destruction that occurred, has been provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) and all state changes referencing the chat control have been returned to [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
+The returned string is the same value as the one found in the *id* field of a ```PFEntityKey``` structure representing the entity. The value returned from [GetEntityType()](partychatcontrol_getentitytype.md) would represent the other half of a ```PFEntityKey```. <br /><br /> The memory for the Entity ID string remains valid for the life of the chat control, which is until its [PartyChatControlDestroyedStateChange](../../../structs/partychatcontroldestroyedstatechange.md) and/or [PartyDestroyChatControlCompletedStateChange](../../../structs/partydestroychatcontrolcompletedstatechange.md), depending on the type of destruction that occurred, has been provided via [PartyManager::StartProcessingStateChanges()](../../PartyManager/methods/partymanager_startprocessingstatechanges.md) and all state changes referencing the chat control have been returned to [PartyManager::FinishProcessingStateChanges()](../../PartyManager/methods/partymanager_finishprocessingstatechanges.md).
   
 ## Requirements  
   
@@ -43,6 +43,6 @@ The memory for the Entity ID string remains valid for the life of the chat contr
   
 ## See also  
 [PartyChatControl](../partychatcontrol.md)  
-
+[PartyChatControl::GetEntityType](partychatcontrol_getentitytype.md)
   
   

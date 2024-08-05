@@ -35,7 +35,7 @@ PartyError
   
 ## Remarks  
   
-If this endpoint is not associated with a user, `localUser` is set to nullptr.
+If this endpoint isn't associated with a user, `localUser` is set to nullptr.
   
 ## Requirements  
   
