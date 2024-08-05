@@ -55,9 +55,9 @@ landingContent:
           - text: Running an HTTP server for testing
             url: platform-specific-authentication/running-an-http-server-for-testing.md
 
-  - title: Azure Active Directory Authentication
+  - title: Authentication for PlayFab User Accounts
     linkLists:
       - linkListType: overview
         links:
-          - text: About Azure Active Directory Authentication for Playfab Game Manager
+          - text: Account Authentication for PlayFab Game Manager
             url: aad-authentication/index.md
