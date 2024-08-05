@@ -26,11 +26,11 @@ PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You 
 
 August 5, 2024
 
-- Added support for game_server entities, so the Party SDK can be used by servers and securely identified by game clients. After authenticating a game_server entity via AuthenticateGameServerWithCustomId, it can be added as a local user via PartyManager::CreateLocalUserWithEntityType().
-- Added methods for determining the entity type associated with each entity in the library. For more information, see PartyLocalUser::GetEntityType(), PartyEndpoint::GetEntityType(), and PartyChatControl::GetEntityType().
-- Added a direct peer connectivity option that support direct peer connections between title_player and game_server entities, but not between title_player entities and other title_player entities. For more information, see PartyDirectPeerConnectivityOptions::OnlyServers.
-- Added methods to retrieve a convenient list of endpoints based on filters. For more information, see PartyNetwork::GetEndpointsByUserType().
-- Consumers can use PartyManager::SetMemoryCallbacks so that memory allocations from third-party libraries would not be allocated using the standard heap. Titles can handle these allocations with specific memory functions that they can feed in the SetMemoryCallbacks call.
+- Added support for game_server entities, so the Party SDK can be used by servers and securely identified by game clients. After authenticating a game_server entity via AuthenticateGameServerWithCustomId, it can be added as a local user via [PartyManager::CreateLocalUserWithEntityType](reference/classes/PartyManager/methods/partymanager_createlocaluserwithentitytype.md).
+- Added methods for determining the entity type associated with each entity in the library. For more information, see [PartyLocalUser::GetEntityType](reference/classes/PartyLocalUser/methods/partylocaluser_getentitytype.md), [PartyEndpoint::GetEntityType](reference/classes/PartyEndpoint//methods/partyendpoint_getentitytype.md), and [PartyChatControl::GetEntityType](reference/classes/PartyChatControl/methods/partychatcontrol_getentitytype.md).
+- Added a direct peer connectivity option that supports direct peer connections between `title_player` and `game_server` entities, but not between `title_player` entities and other `title_player` entities. For more information, see [PartyDirectPeerConnectivityOptions::OnlyServers](reference/enums/partydirectpeerconnectivityoptions.md).
+- Added methods to retrieve a convenient list of endpoints based on filters. For more information, see [PartyNetwork::GetEndpointsByUserType](reference/classes/PartyNetwork/methods/partynetwork_getendpointsbyusertype.md).
+- Titles that desire to control memory allocations from third party libraries used in PlayFab Party can now feed in [PartyManager::SetMemoryCallbacks](reference/classes/PartyManager/methods/partymanager_setmemorycallbacks.md) title - specific memory functions to gain control over these allocations.
 
 ### Bug fixes
 
