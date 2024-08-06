@@ -4,7 +4,7 @@ title: "PartyManager::SetOption"
 description: Configures an option to fine-tune Party library functionality.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

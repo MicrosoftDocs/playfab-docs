@@ -4,8 +4,8 @@ title: "PartyChatControl"
 description: The management class for chat operations.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 04/22/2022
 ---
 
 # PartyChatControl  

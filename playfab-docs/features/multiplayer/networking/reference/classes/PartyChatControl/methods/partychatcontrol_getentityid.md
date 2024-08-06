@@ -4,8 +4,8 @@ title: "PartyChatControl::GetEntityId"
 description: Gets the PlayFab Entity ID of the user associated with this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 11/08/2019
 ---
 
 # PartyChatControl::GetEntityId  

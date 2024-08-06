@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetTextChatOptions"
 description: Configures the text chat options associated with text chat for this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/25/2019
 ---
 

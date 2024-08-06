@@ -4,7 +4,7 @@ title: "PartyNetwork::RemoveLocalUser"
 description: Queues an asynchronous operation to remove a local user from the network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

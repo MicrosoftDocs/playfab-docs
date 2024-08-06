@@ -4,7 +4,7 @@ title: "PartyManager::DeserializeNetworkDescriptor"
 description: Deserializes a network descriptor structure from an opaque string serialized via a prior call to [SerializeNetworkDescriptor()](partymanager_serializenetworkdescriptor.md).
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

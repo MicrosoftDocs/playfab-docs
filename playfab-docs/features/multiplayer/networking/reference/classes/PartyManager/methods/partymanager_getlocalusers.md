@@ -4,8 +4,8 @@ title: "PartyManager::GetLocalUsers"
 description: Gets an array containing all local users created by [CreateLocalUser()](partymanager_createlocaluser.md) or [CreateLocalUserWithEntityType()](partymanager_createlocaluserwithentitytype.md).
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 11/08/2019
 ---
 
 # PartyManager::GetLocalUsers  

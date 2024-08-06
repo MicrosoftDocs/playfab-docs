@@ -4,8 +4,8 @@ title: "PartyDirectPeerConnectivityOptions"
 description: "Flags controlling the attempted use of direct peer-to-peer connectivity among devices in a network."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 08/01/2024
+ms.service: azure-playfab
+ms.date: 08/05/2020
 ---
 
 # PartyDirectPeerConnectivityOptions  

@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSourceStream::GetNextBuffer"
 description: Gets the next buffer available in the stream.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/13/2020
 ---
 
@@ -25,7 +25,7 @@ PartyError GetNextBuffer(
 **`buffer`** &nbsp; [PartyMutableDataBuffer*](../../../structs/partymutabledatabuffer.md)  
 *output*  
   
-The output buffer. If no buffer is available, the PartyMutableDataBuffer's *bufferByteCount* field will be 0 and its *buffer* field will be nullptr.  
+The output buffer. If no buffer is available, the PartyMutableDataBuffer's *bufferByteCount* field is 0, and its *buffer* field is nullptr.  
   
   
 ### Return value  
@@ -35,7 +35,7 @@ PartyError
   
 ## Remarks  
   
-When voice activity is detected, a new buffer will be available every 40 ms. Otherwise, no buffers will be available. Buffers retrieved by this method must be returned to the library via [PartyAudioManipulationSourceStream::ReturnBuffer()](partyaudiomanipulationsourcestream_returnbuffer.md) when they are done being used. <br /><br /> The total number of buffers instantaneously available can be retrieved via [PartyAudioManipulationSourceStream::GetAvailableBufferCount()](partyaudiomanipulationsourcestream_getavailablebuffercount.md). Multiple buffers can be retrieved in succession before any are returned.   <br /><br /> Each buffer will be in the format specified by [PartyAudioManipulationSourceStream::GetFormat()](partyaudiomanipulationsourcestream_getformat.md).   <br /><br /> A mutable data buffer is provided so that the app can optionally modify the audio in place.
+When voice activity is detected, a new buffer is available every 40 ms. Otherwise, no buffers are available. Buffers retrieved by this method must be returned to the library via [PartyAudioManipulationSourceStream::ReturnBuffer()](partyaudiomanipulationsourcestream_returnbuffer.md) when they're done being used. <br /><br /> The total number of buffers instantaneously available can be retrieved via [PartyAudioManipulationSourceStream::GetAvailableBufferCount()](partyaudiomanipulationsourcestream_getavailablebuffercount.md). Multiple buffers can be retrieved in succession before any are returned.   <br /><br /> Each buffer is in the format specified by [PartyAudioManipulationSourceStream::GetFormat()](partyaudiomanipulationsourcestream_getformat.md).   <br /><br /> A mutable data buffer is provided so that the app can optionally modify the audio in place.
   
 ## Requirements  
   

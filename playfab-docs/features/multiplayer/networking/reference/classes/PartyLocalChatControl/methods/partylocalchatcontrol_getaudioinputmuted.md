@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetAudioInputMuted"
 description: Provides whether the user's audio input is in the mute state.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

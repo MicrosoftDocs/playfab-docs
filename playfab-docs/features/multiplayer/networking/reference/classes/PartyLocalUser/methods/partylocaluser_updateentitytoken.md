@@ -4,8 +4,8 @@ title: "PartyLocalUser::UpdateEntityToken"
 description: Updates the PlayFab Entity Token associated with this local user, for use in future authenticated operations.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 11/08/2019
 ---
 
 # PartyLocalUser::UpdateEntityToken  

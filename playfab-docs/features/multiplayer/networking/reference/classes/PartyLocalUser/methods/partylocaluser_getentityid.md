@@ -4,8 +4,8 @@ title: "PartyLocalUser::GetEntityId"
 description: Gets the PlayFab Entity ID associated with this local user.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 11/08/2019
 ---
 
 # PartyLocalUser::GetEntityId  

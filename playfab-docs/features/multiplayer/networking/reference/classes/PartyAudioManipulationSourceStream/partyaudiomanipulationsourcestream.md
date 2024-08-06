@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSourceStream"
 description: The management class for obtaining audio from an audio source stream.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

@@ -4,8 +4,8 @@ title: "PartyManager::CreateLocalUser"
 description: Creates a local user object that is used to represent a local player when performing networking and chat operations.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 11/08/2019
 ---
 
 # PartyManager::CreateLocalUser  

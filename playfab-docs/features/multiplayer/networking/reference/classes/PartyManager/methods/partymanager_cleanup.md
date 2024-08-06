@@ -4,7 +4,7 @@ title: "PartyManager::Cleanup"
 description: Immediately reclaims all resources associated with all Party library objects.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/05/2020
 ---
 

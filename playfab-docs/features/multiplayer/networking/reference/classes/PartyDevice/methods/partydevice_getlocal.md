@@ -4,7 +4,7 @@ title: "PartyDevice::GetLocal"
 description: Gets the [PartyLocalDevice](../../PartyLocalDevice/partylocaldevice.md) version of this device.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

@@ -4,8 +4,8 @@ title: "PartyNetworkConfiguration"
 description: "Network configuration data."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 03/11/2022
 ---
 
 # PartyNetworkConfiguration  

@@ -4,8 +4,8 @@ title: "PartyEndpoint::GetEntityId"
 description: Gets the PlayFab Entity ID of the user associated with this endpoint.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 08/01/2024
+ms.service: azure-playfab
+ms.date: 11/08/2019
 ---
 
 # PartyEndpoint::GetEntityId  

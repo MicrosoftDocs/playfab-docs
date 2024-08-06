@@ -4,7 +4,7 @@ title: "PartyTextChatOptions"
 description: "Text chat options."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/08/2021
 ---
 

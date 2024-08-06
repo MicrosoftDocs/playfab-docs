@@ -4,7 +4,7 @@ title: "PartyNetwork::RevokeInvitation"
 description: Queues an asynchronous attempt to revoke an invitation from the network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 
