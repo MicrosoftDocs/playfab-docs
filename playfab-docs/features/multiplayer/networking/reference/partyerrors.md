@@ -4,7 +4,7 @@ title: "PlayFab Party Error Codes"
 description: Error codes used by PlayFab Party APIs
 ms.author: fschober
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/11/2022
 ---
 

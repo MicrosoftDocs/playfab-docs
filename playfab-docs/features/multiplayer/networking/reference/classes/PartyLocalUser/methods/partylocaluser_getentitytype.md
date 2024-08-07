@@ -4,8 +4,8 @@ title: "PartyLocalUser::GetEntityType"
 description: Gets the PlayFab entity type associated with this local user.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 08/06/2024
 ---
 
 # PartyLocalUser::GetEntityType  

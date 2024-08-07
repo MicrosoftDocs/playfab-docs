@@ -4,8 +4,8 @@ title: "PartyEndpointLocationFilter"
 description: "Categories of owning device locations of endpoints that can be used to filter the results returned by PartyNetwork::GetEndpointsByUserType()."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 08/06/2024
 ---
 
 # PartyEndpointLocationFilter  
