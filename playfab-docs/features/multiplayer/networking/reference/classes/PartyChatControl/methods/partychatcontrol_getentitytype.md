@@ -4,8 +4,8 @@ title: "PartyChatControl::GetEntityType"
 description: Gets the PlayFab entity type of the user associated with this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
-ms.date: 07/26/2024
+ms.service: azure-playfab
+ms.date: 08/06/2024
 ---
 
 # PartyChatControl::GetEntityType  
