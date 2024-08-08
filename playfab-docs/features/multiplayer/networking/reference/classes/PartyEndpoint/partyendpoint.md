@@ -4,7 +4,7 @@ title: "PartyEndpoint"
 description: Represents an endpoint in a network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 10/20/2023
 ---
 
@@ -24,6 +24,7 @@ class PartyEndpoint
 | --- | --- |  
 | [GetLocal](methods/partyendpoint_getlocal.md) | Gets the [PartyLocalEndpoint](../PartyLocalEndpoint/partylocalendpoint.md) version of this endpoint. |  
 | [GetEntityId](methods/partyendpoint_getentityid.md) | Gets the PlayFab Entity ID of the user associated with this endpoint. |  
+| [GetEntityType](methods/partyendpoint_getentitytype.md) | Gets the PlayFab entity type of the user associated with this endpoint. |  
 | [GetNetwork](methods/partyendpoint_getnetwork.md) | Gets the network associated with this endpoint. |  
 | [GetDevice](methods/partyendpoint_getdevice.md) | Gets the device associated with this endpoint. |  
 | [GetUniqueIdentifier](methods/partyendpoint_getuniqueidentifier.md) | Gets the network-unique identifier for this endpoint. |  

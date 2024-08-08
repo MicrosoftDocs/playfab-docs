@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetIncomingAudioMuted"
 description: Configures whether the incoming audio from the target chat control, in relation to the local chat control, is muted.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/27/2019
 ---
 

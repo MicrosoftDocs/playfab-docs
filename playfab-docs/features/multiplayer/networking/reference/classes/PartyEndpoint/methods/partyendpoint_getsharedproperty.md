@@ -4,7 +4,7 @@ title: "PartyEndpoint::GetSharedProperty"
 description: Gets the value of a shared property.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 10/20/2023
 ---
 

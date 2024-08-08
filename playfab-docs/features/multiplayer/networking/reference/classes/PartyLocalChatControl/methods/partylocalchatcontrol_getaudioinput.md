@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetAudioInput"
 description: Provides the preferred microphone or recording device that the chat control has been configured to use for audio input.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/05/2020
 ---
 

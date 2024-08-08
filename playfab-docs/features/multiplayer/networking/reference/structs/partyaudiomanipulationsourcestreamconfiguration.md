@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSourceStreamConfiguration"
 description: "The configuration information needed to set up an audio source stream."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/21/2022
 ---
 

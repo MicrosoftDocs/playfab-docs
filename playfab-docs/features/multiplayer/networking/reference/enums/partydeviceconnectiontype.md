@@ -4,7 +4,7 @@ title: "PartyDeviceConnectionType"
 description: "The type of connection used for transmitting endpoint message or chat data to a device."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/07/2021
 ---
 

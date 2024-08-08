@@ -4,7 +4,7 @@ title: "PartyLocalDevice::CreateChatControl"
 description: Queues an asynchronous operation to create a local chat control for the specified user.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/22/2024
 ---
 

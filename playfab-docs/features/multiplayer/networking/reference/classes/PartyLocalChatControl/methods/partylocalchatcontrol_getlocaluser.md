@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetLocalUser"
 description: Gets the local user associated with this local chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

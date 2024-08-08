@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetIncomingTextMuted"
 description: Provides whether the incoming text messages from the target chat control, in relation to the local chat control, has previously been muted.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

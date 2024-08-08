@@ -4,7 +4,7 @@ title: "PartyNetwork::GetEndpoints"
 description: Gets the endpoints in this network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 
@@ -51,6 +51,7 @@ This method gets all endpoints currently associated with the network and visible
 [PartyNetwork](../partynetwork.md)  
 [PartyEndpointCreatedStateChange](../../../structs/partyendpointcreatedstatechange.md)  
 [PartyEndpointDestroyedStateChange](../../../structs/partyendpointdestroyedstatechange.md)  
-[PartyNetwork::CreateEndpoint](partynetwork_createendpoint.md)
+[PartyNetwork::CreateEndpoint](partynetwork_createendpoint.md)  
+[PartyNetwork::GetEndpointsByUserType](partynetwork_getendpointsbyusertype.md)
   
   

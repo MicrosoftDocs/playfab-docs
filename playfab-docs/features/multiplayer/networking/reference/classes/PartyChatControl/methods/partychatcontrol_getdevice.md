@@ -4,7 +4,7 @@ title: "PartyChatControl::GetDevice"
 description: Returns the device this chat control is associated with.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

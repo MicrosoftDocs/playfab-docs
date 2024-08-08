@@ -4,7 +4,7 @@ title: "PartyProfilingMethodExitCallback"
 description: "A callback invoked every time the Party library is about to exit an instrumented method."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2021
 ---
 
