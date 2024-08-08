@@ -4,7 +4,7 @@ title: "PartyNetwork"
 description: Represents a network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/22/2022
 ---
 
@@ -31,6 +31,7 @@ class PartyNetwork
 | [DestroyEndpoint](methods/partynetwork_destroyendpoint.md) | Queues an asynchronous operation to destroy a local endpoint. |  
 | [LeaveNetwork](methods/partynetwork_leavenetwork.md) | Queues an asynchronous operation to leave the network gracefully. |  
 | [GetEndpoints](methods/partynetwork_getendpoints.md) | Gets the endpoints in this network. |  
+| [GetEndpointsByUserType](methods/partynetwork_getendpointsbyusertype.md) | Gets a subset of endpoints in this network filtered by user type and owning device location. |  
 | [FindEndpointByUniqueIdentifier](methods/partynetwork_findendpointbyuniqueidentifier.md) | Finds the endpoint with the corresponding network-unique identifier in this network, if it exists. |  
 | [GetDevices](methods/partynetwork_getdevices.md) | Gets the devices in this network. |  
 | [GetLocalUsers](methods/partynetwork_getlocalusers.md) | Gets an array containing the local users that are authenticated or authenticating into the network. |  

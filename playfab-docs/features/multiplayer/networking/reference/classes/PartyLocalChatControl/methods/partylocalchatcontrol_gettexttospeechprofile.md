@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetTextToSpeechProfile"
 description: Gets the profile that was last configured from a successfully completed [SetTextToSpeechProfile()](partylocalchatcontrol_settexttospeechprofile.md) operation for a specified type of text-to-speech operation.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

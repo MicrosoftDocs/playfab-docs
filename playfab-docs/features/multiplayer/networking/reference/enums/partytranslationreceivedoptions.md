@@ -4,7 +4,7 @@ title: "PartyTranslationReceivedOptions"
 description: "Flags describing how a translation was received."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/25/2019
 ---
 

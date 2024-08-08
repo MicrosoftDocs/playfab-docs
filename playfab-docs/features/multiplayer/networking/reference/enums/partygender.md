@@ -4,7 +4,7 @@ title: "PartyGender"
 description: "Genders for text-to-speech profiles."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/22/2024
 ---
 

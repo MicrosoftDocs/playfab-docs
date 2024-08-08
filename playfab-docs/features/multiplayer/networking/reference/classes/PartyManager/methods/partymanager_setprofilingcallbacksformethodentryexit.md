@@ -4,7 +4,7 @@ title: "PartyManager::SetProfilingCallbacksForMethodEntryExit"
 description: Optionally configures the profiling event callbacks the Party library will make when entering or exiting instrumented methods.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/11/2022
 ---
 
@@ -41,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-This method allows the title to install custom profiling callback functions in order to record and visualize Party library performance metrics in external profiling tools. <br /><br /> This method can only be called when the Party library is uninitialized. Calling while Party is initialized will fail and return an error.   <br /><br /> Setting an optional callback equal to ```nullptr``` will cause the Party library to not make any profiling callbacks for that event type.   <br /><br /> In order to minimize the impact of profiling on title performance, callbacks for these events should be kept as lightweight as possible, as they are expected to fire hundreds or thousands of times per second.   <br /><br /> This method is only supported on the Windows, Xbox One XDK, and Microsoft Game Core versions of the library. Calls on other platforms will fail.
+This method allows the title to install custom profiling callback functions in order to record and visualize Party library performance metrics in external profiling tools. <br /><br /> This method can only be called when the Party library is uninitialized. Calling while Party is initialized will fail and return an error.   <br /><br /> Setting an optional callback equal to ```nullptr``` will cause the Party library to not make any profiling callbacks for that event type.   <br /><br /> In order to minimize the impact of profiling on title performance, callbacks for these events should be kept as lightweight as possible, as they are expected to fire hundreds or thousands of times per second.   <br /><br /> This method is only supported on the Windows and Microsoft Game Core versions of the library. Calls on other platforms will fail.
   
 ## Requirements  
   

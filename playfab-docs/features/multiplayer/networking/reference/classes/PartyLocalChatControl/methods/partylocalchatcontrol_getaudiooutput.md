@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetAudioOutput"
 description: Provides the preferred speakers or headset device that the chat control has been configured to use for audio output.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/05/2020
 ---
 

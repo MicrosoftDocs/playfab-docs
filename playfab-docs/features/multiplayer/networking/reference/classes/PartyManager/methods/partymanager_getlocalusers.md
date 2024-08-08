@@ -1,16 +1,16 @@
 ---
 author: jdeweyMSFT
 title: "PartyManager::GetLocalUsers"
-description: Gets an array containing all local users created by [CreateLocalUser()](partymanager_createlocaluser.md).
+description: Gets an array containing all local users created by [CreateLocalUser()](partymanager_createlocaluser.md) or [CreateLocalUserWithEntityType()](partymanager_createlocaluserwithentitytype.md).
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 
 # PartyManager::GetLocalUsers  
 
-Gets an array containing all local users created by [CreateLocalUser()](partymanager_createlocaluser.md).  
+Gets an array containing all local users created by [CreateLocalUser()](partymanager_createlocaluser.md) or [CreateLocalUserWithEntityType()](partymanager_createlocaluserwithentitytype.md).  
 
 ## Syntax  
   
@@ -41,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-Once a [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](partymanager_startprocessingstatechanges.md), the local user will no longer be present in the array returned by this method. <br /><br /> The memory for the returned array is invalidated whenever the title calls PartyManager::StartProcessingStateChanges() or CreateLocalUser() returns success.
+Once a [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md) has been provided by [PartyManager::StartProcessingStateChanges()](partymanager_startprocessingstatechanges.md), the local user will no longer be present in the array returned by this method. <br /><br /> The memory for the returned array is invalidated whenever the title calls PartyManager::StartProcessingStateChanges(), or when CreateLocalUser() or CreateLocalUserWithEntityType() returns success.
   
 ## Requirements  
   
@@ -50,6 +50,7 @@ Once a [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroy
 ## See also  
 [PartyManager](../partymanager.md)  
 [PartyManager::CreateLocalUser](partymanager_createlocaluser.md)  
+[PartyManager::CreateLocalUserWithEntityType](partymanager_createlocaluserwithentitytype.md)  
 [PartyManager::DestroyLocalUser](partymanager_destroylocaluser.md)  
 [PartyDestroyLocalUserCompletedStateChange](../../../structs/partydestroylocalusercompletedstatechange.md)
   

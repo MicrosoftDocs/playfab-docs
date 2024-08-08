@@ -4,7 +4,7 @@ title: "PartyManager::GetSingleton"
 description: Retrieves a reference to the PartyManager singleton instance.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/25/2019
 ---
 

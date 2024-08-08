@@ -4,7 +4,7 @@ title: "PartyManager"
 description: The primary management class for interacting with the Party library.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 10/20/2023
 ---
 
@@ -45,9 +45,10 @@ class PartyManager
 | [CreateNewNetwork](methods/partymanager_createnewnetwork.md) | Queues an asynchronous attempt to create a new network. |  
 | [ConnectToNetwork](methods/partymanager_connecttonetwork.md) | Queues an asynchronous attempt to connect to a network. |  
 | [GetLocalDevice](methods/partymanager_getlocaldevice.md) | Gets the local device. |  
-| [CreateLocalUser](methods/partymanager_createlocaluser.md) | Creates a local user object that is used to represent a local user when performing networking and chat operations. |  
+| [CreateLocalUser](methods/partymanager_createlocaluser.md) | Creates a local user object that is used to represent a local player when performing networking and chat operations. |  
+| [CreateLocalUserWithEntityType](methods/partymanager_createlocaluserwithentitytype.md) | Creates a local user object that is used to represent a supported PlayFab Entity ID and type when performing networking and chat operations. |  
 | [DestroyLocalUser](methods/partymanager_destroylocaluser.md) | Starts an asynchronous operation to destroy a local user. |  
-| [GetLocalUsers](methods/partymanager_getlocalusers.md) | Gets an array containing all local users created by [CreateLocalUser()](methods/partymanager_createlocaluser.md). |  
+| [GetLocalUsers](methods/partymanager_getlocalusers.md) | Gets an array containing all local users created by [CreateLocalUser()](methods/partymanager_createlocaluser.md) or [CreateLocalUserWithEntityType()](methods/partymanager_createlocaluserwithentitytype.md). |  
 | [GetNetworks](methods/partymanager_getnetworks.md) | Gets an array of all networks to which the local device is connected or connecting. |  
 | [GetChatControls](methods/partymanager_getchatcontrols.md) | Gets an array that contains a combined list of all chat controls on the local device and all remote devices. |  
 

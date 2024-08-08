@@ -4,7 +4,7 @@ title: "PartyRegionUpdateConfiguration"
 description: "The configuration used by the Party library to control how it performs automatic region discovery and connection quality measurement updates."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/30/2024
 ---
 
