@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSourceStream::GetFormat"
 description: Retrieves the format of the buffers that will be provided by [PartyAudioManipulationSourceStream::GetNextBuffer()](partyaudiomanipulationsourcestream_getnextbuffer.md).
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/10/2020
 ---
 

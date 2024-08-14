@@ -31,3 +31,5 @@ items:
     href: limits.md
   - name: Tutorials
     href: tutorials/toc.yml
+  - name: Error Handling
+    href: error-handling/toc.yml

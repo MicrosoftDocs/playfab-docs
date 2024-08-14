@@ -4,7 +4,7 @@ title: "PartyInvitation"
 description: Represents an invitation used to authenticate a user into a network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/22/2022
 ---
 

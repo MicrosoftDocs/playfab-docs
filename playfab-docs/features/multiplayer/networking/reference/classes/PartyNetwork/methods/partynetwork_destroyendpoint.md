@@ -4,7 +4,7 @@ title: "PartyNetwork::DestroyEndpoint"
 description: Queues an asynchronous operation to destroy a local endpoint.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

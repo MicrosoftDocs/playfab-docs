@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSinkStream::SetCustomContext"
 description: Configures an optional, custom pointer-sized context value with this sink stream object.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

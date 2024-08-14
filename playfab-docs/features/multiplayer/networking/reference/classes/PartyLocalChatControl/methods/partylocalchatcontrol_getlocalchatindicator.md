@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetLocalChatIndicator"
 description: Provides a chat indicator specifying the audio state of the local chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

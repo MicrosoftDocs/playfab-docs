@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetPermissions"
 description: Gets the voice communication relationship between the local chat control and a target chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

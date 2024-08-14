@@ -5,7 +5,7 @@ description: Learn about the SDKs for Azure PlayFab Lobby and Matchmaking.
 ms.author: pkacha
 ms.date: 11/30/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, matchmaking, lobby, sdk, sample
 ms.localizationpriority: medium
 ---

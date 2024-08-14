@@ -47,6 +47,8 @@
         href: classes/PartyChatControl/methods/partychatcontrol_getdevice.md
       - name: GetEntityId
         href: classes/PartyChatControl/methods/partychatcontrol_getentityid.md
+      - name: GetEntityType
+        href: classes/PartyChatControl/methods/partychatcontrol_getentitytype.md
       - name: GetNetworks
         href: classes/PartyChatControl/methods/partychatcontrol_getnetworks.md
       - name: GetCustomContext
@@ -79,6 +81,8 @@
         href: classes/PartyEndpoint/methods/partyendpoint_getlocal.md
       - name: GetEntityId
         href: classes/PartyEndpoint/methods/partyendpoint_getentityid.md
+      - name: GetEntityType
+        href: classes/PartyEndpoint/methods/partyendpoint_getentitytype.md
       - name: GetNetwork
         href: classes/PartyEndpoint/methods/partyendpoint_getnetwork.md
       - name: GetDevice
@@ -206,6 +210,8 @@
       items:
       - name: GetEntityId
         href: classes/PartyLocalUser/methods/partylocaluser_getentityid.md
+      - name: GetEntityType
+        href: classes/PartyLocalUser/methods/partylocaluser_getentitytype.md
       - name: UpdateEntityToken
         href: classes/PartyLocalUser/methods/partylocaluser_updateentitytoken.md
       - name: GetCustomContext
@@ -265,6 +271,8 @@
         href: classes/PartyManager/methods/partymanager_getlocaldevice.md
       - name: CreateLocalUser
         href: classes/PartyManager/methods/partymanager_createlocaluser.md
+      - name: CreateLocalUserWithEntityType
+        href: classes/PartyManager/methods/partymanager_createlocaluserwithentitytype.md
       - name: DestroyLocalUser
         href: classes/PartyManager/methods/partymanager_destroylocaluser.md
       - name: GetLocalUsers
@@ -296,6 +304,8 @@
         href: classes/PartyNetwork/methods/partynetwork_leavenetwork.md
       - name: GetEndpoints
         href: classes/PartyNetwork/methods/partynetwork_getendpoints.md
+      - name: GetEndpointsByUserType
+        href: classes/PartyNetwork/methods/partynetwork_getendpointsbyusertype.md
       - name: FindEndpointByUniqueIdentifier
         href: classes/PartyNetwork/methods/partynetwork_findendpointbyuniqueidentifier.md
       - name: GetDevices
@@ -503,8 +513,12 @@
     href: enums/partydeviceconnectiontype.md
   - name: PartyDirectPeerConnectivityOptions
     href: enums/partydirectpeerconnectivityoptions.md
+  - name: PartyEndpointLocationFilter
+    href: enums/partyendpointlocationfilter.md
   - name: PartyEndpointStatistic
     href: enums/partyendpointstatistic.md
+  - name: PartyEndpointUserTypeFilter
+    href: enums/partyendpointusertypefilter.md
   - name: PartyGender
     href: enums/partygender.md
   - name: PartyInvitationRevocability

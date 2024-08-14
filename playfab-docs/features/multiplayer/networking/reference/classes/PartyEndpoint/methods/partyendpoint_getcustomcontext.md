@@ -4,7 +4,7 @@ title: "PartyEndpoint::GetCustomContext"
 description: Retrieves the app's private, custom pointer-sized context value previously associated with this endpoint object.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/25/2019
 ---
 

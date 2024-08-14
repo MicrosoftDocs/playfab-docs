@@ -4,7 +4,7 @@ title: "PartyStateChange"
 description: "A generic, base structure representation of an event or change in state in the Party library."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

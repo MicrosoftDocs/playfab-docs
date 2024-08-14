@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SynthesizeTextToSpeech"
 description: Generates text-to-speech audio that is used to either displace the microphone audio associated with this chat control or render directly to the chat control's audio output.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/26/2019
 ---
 

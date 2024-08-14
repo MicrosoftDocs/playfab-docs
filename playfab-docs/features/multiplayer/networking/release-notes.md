@@ -22,6 +22,22 @@ PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.10.0
+
+August 5, 2024
+
+- Added support for game_server entities, so servers can connect to Party networks via the SDK and be securely identified by game clients. After authenticating a `game_server` entity via AuthenticateGameServerWithCustomId, it can be added as a local user via [PartyManager::CreateLocalUserWithEntityType](reference/classes/PartyManager/methods/partymanager_createlocaluserwithentitytype.md).
+- Added methods for determining the entity type associated with each entity in the library. For more information, see [PartyLocalUser::GetEntityType](reference/classes/PartyLocalUser/methods/partylocaluser_getentitytype.md), [PartyEndpoint::GetEntityType](reference/classes/PartyEndpoint//methods/partyendpoint_getentitytype.md), and [PartyChatControl::GetEntityType](reference/classes/PartyChatControl/methods/partychatcontrol_getentitytype.md).
+- Added a direct peer connectivity option that enables direct peer connections between `title_player` and `game_server` entities while disallowing direct peer connections between `title_player` entities and other `title_player` entities. For more information, see [PartyDirectPeerConnectivityOptions::OnlyServers](reference/enums/partydirectpeerconnectivityoptions.md).
+- Added methods to retrieve a convenient list of endpoints based on filters. For more information, see [PartyNetwork::GetEndpointsByUserType](reference/classes/PartyNetwork/methods/partynetwork_getendpointsbyusertype.md).
+- Memory allocations by third party libraries used in PlayFab Party on PlayStation&#174;4 and, PlayStation&#174;5 that were using default allocators have been updated to use Party's memory callbacks. Titles using [PartyManager::SetMemoryCallbacks](reference/classes/PartyManager/methods/partymanager_setmemorycallbacks.md) to configure title-specific memory allocation functions allocations will now see and have control over these allocations.
+
+### Bug fixes
+
+- Fixed an issue where the library may crash on Windows or Xbox while the process is terminating.
+- Addressed spurious direct peer connection failures after a previous connection attempt failed in certain cases for non Windows platforms.
+- Fixed an issue where the DestroyNetwork event was not fired during repeated Party network creation and destroying.
+
 ## 1.9.5
 
 May 3, 2024

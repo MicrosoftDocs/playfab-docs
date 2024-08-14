@@ -4,7 +4,7 @@ title: "PartyManager::CreateNewNetwork"
 description: Queues an asynchronous attempt to create a new network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/30/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PartyRemoveLocalUserCompletedStateChange"
 description: "Information specific to the *RemoveLocalUserCompleted* type of state change."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/21/2022
 ---
 

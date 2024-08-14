@@ -4,7 +4,7 @@ title: "PartyTextToSpeechProfile::GetName"
 description: Gets the human-readable name of this profile.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/05/2020
 ---
 

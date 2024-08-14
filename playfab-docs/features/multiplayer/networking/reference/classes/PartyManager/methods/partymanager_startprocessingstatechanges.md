@@ -4,7 +4,7 @@ title: "PartyManager::StartProcessingStateChanges"
 description: Retrieves an array of all PartyStateChanges to process since the last such call.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

@@ -4,7 +4,7 @@ title: "PartyNetwork::GetNetworkDescriptor"
 description: Gets the network descriptor for this network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

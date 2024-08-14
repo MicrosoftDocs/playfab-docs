@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SendText"
 description: Transmits a chat text string to each specified target chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/10/2020
 ---
 

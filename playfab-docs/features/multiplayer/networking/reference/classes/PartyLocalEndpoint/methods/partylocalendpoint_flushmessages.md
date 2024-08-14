@@ -4,7 +4,7 @@ title: "PartyLocalEndpoint::FlushMessages"
 description: Forces all queued messages to the specified endpoints from this local endpoint to be sent as soon as possible regardless of their coalesce settings.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

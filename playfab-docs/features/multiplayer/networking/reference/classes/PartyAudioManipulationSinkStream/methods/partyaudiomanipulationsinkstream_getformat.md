@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSinkStream::GetFormat"
 description: Retrieves the format of the buffers that will be submitted to [PartyAudioManipulationSinkStream::SubmitBuffer()](partyaudiomanipulationsinkstream_submitbuffer.md).
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/13/2020
 ---
 

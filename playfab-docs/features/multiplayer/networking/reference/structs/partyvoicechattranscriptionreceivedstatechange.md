@@ -4,7 +4,7 @@ title: "PartyVoiceChatTranscriptionReceivedStateChange"
 description: "Information specific to the *VoiceChatTranscriptionReceived* type of state change."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/22/2024
 ---
 

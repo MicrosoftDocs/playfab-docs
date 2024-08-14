@@ -4,7 +4,7 @@ title: "PartyNetwork::CreateInvitation"
 description: Queues an asynchronous attempt to create an invitation for the network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/10/2020
 ---
 

@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::ConfigureAudioManipulationCaptureStream"
 description: Queues an asynchronous operation to configure the audio manipulation capture stream.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/20/2023
 ---
 

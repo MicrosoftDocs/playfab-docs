@@ -4,7 +4,7 @@ title: "PartyNetwork::GetInvitations"
 description: Gets an array containing all invitations exposed to the local device.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

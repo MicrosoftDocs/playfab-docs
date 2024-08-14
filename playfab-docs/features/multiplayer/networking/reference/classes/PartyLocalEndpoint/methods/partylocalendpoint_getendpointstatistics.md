@@ -4,7 +4,7 @@ title: "PartyLocalEndpoint::GetEndpointStatistics"
 description: Gets one or more statistic counter values for the specified target endpoints.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

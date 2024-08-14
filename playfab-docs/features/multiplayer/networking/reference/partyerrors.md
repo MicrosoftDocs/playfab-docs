@@ -4,7 +4,7 @@ title: "PlayFab Party Error Codes"
 description: Error codes used by PlayFab Party APIs
 ms.author: fschober
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/11/2022
 ---
 
@@ -97,6 +97,8 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x00A2 | 162 | The network transport hostname didn't have any associated IP addresses. |
 | 0x00A3 | 163 | Resolving the network transport hostname didn't return any results. |
 | 0x00A9 | 169 | An operation failed due to an invalid URL. |
+| 0x00AC | 172 | The system denied access permissions to bind the UDP socket or other network transport operation. |
+| 0x00B9 | 185 | The entity type is not one of the currently supported types. |
 
 ## Client errors
 | Hex | Dec | Description |

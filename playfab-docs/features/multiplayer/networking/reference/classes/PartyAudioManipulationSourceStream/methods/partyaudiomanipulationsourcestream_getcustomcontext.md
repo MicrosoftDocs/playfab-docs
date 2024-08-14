@@ -4,7 +4,7 @@ title: "PartyAudioManipulationSourceStream::GetCustomContext"
 description: Retrieves the app's private, custom pointer-sized context value previously associated with this source stream object.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

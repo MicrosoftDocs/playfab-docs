@@ -5,7 +5,7 @@ description: Quickstart guide to manage events with Sampling
 ms.author: shtarwar
 ms.date: 11/17/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, sampling, manage events, playstream
 ms.localizationpriority: medium
 ---

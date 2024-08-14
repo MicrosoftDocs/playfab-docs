@@ -4,7 +4,7 @@ title: "PartyStateChangeType"
 description: "The types of state changes that can occur in the Party library."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetTranscriptionOptions"
 description: Configures the transcription options associated with voice chat audio for this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/29/2024
 ---
 

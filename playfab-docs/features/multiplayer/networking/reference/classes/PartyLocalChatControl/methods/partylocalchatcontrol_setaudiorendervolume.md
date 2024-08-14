@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetAudioRenderVolume"
 description: Configures the volume setting for audio received from a target chat control that will be used for the local chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/25/2019
 ---
 

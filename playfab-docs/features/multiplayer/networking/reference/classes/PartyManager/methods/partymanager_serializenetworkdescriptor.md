@@ -4,7 +4,7 @@ title: "PartyManager::SerializeNetworkDescriptor"
 description: Serializes a network descriptor structure into an opaque string that is safe to communicate over title and platform-specific communication channels.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/25/2019
 ---
 

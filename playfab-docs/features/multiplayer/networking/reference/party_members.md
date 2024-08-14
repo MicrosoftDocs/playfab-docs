@@ -4,7 +4,7 @@ title: "Party C/C++ API overview"
 description: "Party C/C++ API overview"
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/29/2024
 ---
 
@@ -127,7 +127,9 @@ ms.date: 01/29/2024
 | [PartyDestroyedReason](enums/partydestroyedreason.md) | Reasons an object might be destroyed.|  
 | [PartyDeviceConnectionType](enums/partydeviceconnectiontype.md) | The type of connection used for transmitting endpoint message or chat data to a device.|  
 | [PartyDirectPeerConnectivityOptions](enums/partydirectpeerconnectivityoptions.md) | Flags controlling the attempted use of direct peer-to-peer connectivity among devices in a network.|  
+| [PartyEndpointLocationFilter](enums/partyendpointlocationfilter.md) | Categories of owning device locations of endpoints that can be used to filter the results returned by PartyNetwork::GetEndpointsByUserType().|  
 | [PartyEndpointStatistic](enums/partyendpointstatistic.md) | Types of statistics that can be retrieved for an endpoint.|  
+| [PartyEndpointUserTypeFilter](enums/partyendpointusertypefilter.md) | Categories of users associated with endpoints that can be used to filter the results returned by PartyNetwork::GetEndpointsByUserType().|  
 | [PartyGender](enums/partygender.md) | Genders for text-to-speech profiles.|  
 | [PartyInvitationRevocability](enums/partyinvitationrevocability.md) | Options for who may revoke an invitation.|  
 | [PartyLocalChatControlChatIndicator](enums/partylocalchatcontrolchatindicator.md) | Audio states for a local chat control.|  

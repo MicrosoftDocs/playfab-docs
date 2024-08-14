@@ -4,7 +4,7 @@ title: "PartyNetwork::GetLocalUsers"
 description: Gets an array containing the local users that are authenticated or authenticating into the network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

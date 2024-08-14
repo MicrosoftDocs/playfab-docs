@@ -4,7 +4,7 @@ title: "PartyLocalEndpoint::SendMessage"
 description: Sends a message to other endpoints in the network.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2021
 ---
 

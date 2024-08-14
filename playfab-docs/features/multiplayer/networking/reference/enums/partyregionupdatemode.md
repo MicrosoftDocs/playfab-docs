@@ -4,7 +4,7 @@ title: "PartyRegionUpdateMode"
 description: "Configuration modes representing how the Party library performs automatic region discovery and connection quality measurement as part of the [PartyRegionUpdateConfiguration](../structs/partyregionupdateconfiguration.md) structure."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/30/2024
 ---
 

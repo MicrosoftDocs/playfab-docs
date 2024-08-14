@@ -4,7 +4,7 @@ title: "PartyEndpointStatistic"
 description: "Types of statistics that can be retrieved for an endpoint."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/07/2021
 ---
 

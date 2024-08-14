@@ -4,7 +4,7 @@ title: "PartySendMessageQueuingConfiguration"
 description: "Optional configuration parameters for modifying local queuing behavior when sending a message."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/11/2022
 ---
 

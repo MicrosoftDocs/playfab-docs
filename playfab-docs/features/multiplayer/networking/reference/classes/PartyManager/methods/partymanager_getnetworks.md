@@ -4,7 +4,7 @@ title: "PartyManager::GetNetworks"
 description: Gets an array of all networks to which the local device is connected or connecting.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

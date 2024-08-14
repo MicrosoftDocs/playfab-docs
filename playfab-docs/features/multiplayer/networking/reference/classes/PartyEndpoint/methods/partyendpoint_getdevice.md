@@ -4,7 +4,7 @@ title: "PartyEndpoint::GetDevice"
 description: Gets the device associated with this endpoint.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

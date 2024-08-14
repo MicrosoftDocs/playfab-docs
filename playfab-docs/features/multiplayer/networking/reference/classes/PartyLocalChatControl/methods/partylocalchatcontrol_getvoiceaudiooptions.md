@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::GetVoiceAudioOptions"
 description: Provides the voice audio options associated with this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 05/08/2023
 ---
 

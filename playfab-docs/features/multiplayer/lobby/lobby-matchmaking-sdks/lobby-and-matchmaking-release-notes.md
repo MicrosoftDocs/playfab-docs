@@ -12,6 +12,16 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.6
+
+Aug 12, 2024
+
+### Bug fixes
+
+- Fixed an issue for GDK Xbox where some events would not be queued after suspending and resuming a title.
+- Fixed a crash for GDK Xbox after suspending and resuming a title.
+- Updated [PFMultiplayerCreateServerBackfillTicket](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreateserverbackfillticket.md) to automatically handle failures where a match member is already a member of too many tickets. In this situation, the SDK automatically cancels existing tickets for members of the backfill ticket and retry ticket creation.
+
 ## 1.7.5
 
 July 17, 2024

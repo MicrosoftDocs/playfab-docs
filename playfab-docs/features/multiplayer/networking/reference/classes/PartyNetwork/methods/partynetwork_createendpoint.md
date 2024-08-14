@@ -4,7 +4,7 @@ title: "PartyNetwork::CreateEndpoint"
 description: Queues an asynchronous attempt to create a local endpoint.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 10/20/2023
 ---
 

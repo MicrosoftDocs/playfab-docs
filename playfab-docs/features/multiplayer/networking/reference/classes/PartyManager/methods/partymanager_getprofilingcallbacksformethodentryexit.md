@@ -4,7 +4,7 @@ title: "PartyManager::GetProfilingCallbacksForMethodEntryExit"
 description: Retrieves the profiling event callbacks the Party library is configured to use when entering or exiting instrumented methods.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/11/2022
 ---
 
@@ -41,7 +41,7 @@ PartyError
   
 ## Remarks  
   
-This method retrieves the profiling callback functions the Party library is calling for the instrumented event types. <br /><br /> A callback equal to ```nullptr``` indicates that the Party library will not make any profiling callbacks for that event type.   <br /><br /> This method is only supported on the Windows, Xbox One XDK, and Microsoft Game Core versions of the library. Calls on other platforms will fail.
+This method retrieves the profiling callback functions the Party library is calling for the instrumented event types. <br /><br /> A callback equal to ```nullptr``` indicates that the Party library will not make any profiling callbacks for that event type.   <br /><br /> This method is only supported on the Windows and Microsoft Game Core versions of the library. Calls on other platforms will fail.
   
 ## Requirements  
   

@@ -4,7 +4,7 @@ title: "PartyChatControl::SetCustomContext"
 description: Configures an optional, custom pointer-sized context value with this chat control object.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/25/2019
 ---
 

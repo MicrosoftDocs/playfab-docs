@@ -4,7 +4,7 @@ title: "PartyInvitation::GetCreatorEntityId"
 description: Gets the PlayFab Entity ID of the user that created this invitation or nullptr if this invitation was generated as part of a [PartyManager::CreateNewNetwork()](../../PartyManager/methods/partymanager_createnewnetwork.md) operation.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/08/2019
 ---
 

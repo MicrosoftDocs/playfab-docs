@@ -4,7 +4,7 @@ title: "PartyLocalChatControl::SetVoiceAudioOptions"
 description: Configures the voice audio options for this chat control.
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 05/08/2023
 ---
 

@@ -4,7 +4,7 @@ title: "PartyWorkMode"
 description: "Configuration modes representing how the Party library will manage an internal processing task."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/07/2021
 ---
 

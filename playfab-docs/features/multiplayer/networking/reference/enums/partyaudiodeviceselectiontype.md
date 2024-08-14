@@ -4,7 +4,7 @@ title: "PartyAudioDeviceSelectionType"
 description: "Options for selecting audio devices"
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/14/2023
 ---
 

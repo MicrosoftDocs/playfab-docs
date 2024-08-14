@@ -5,7 +5,7 @@ author: jdeweyMSFT
 ms.author: jdewey
 ms.date: 08/16/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking
 ---
 

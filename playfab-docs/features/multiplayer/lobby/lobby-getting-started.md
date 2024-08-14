@@ -5,7 +5,7 @@ description: Quickstart guide to using the PlayFab Multiplayer SDK to create a P
 ms.author: pkacha
 ms.date: 11/24/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking
 ms.localizationpriority: medium
 ---

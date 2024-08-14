@@ -4,7 +4,7 @@ title: "PartyProfilingMethodEntranceCallback"
 description: "A callback invoked every time the Party library enters an instrumented method."
 ms.author: jdewey
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2021
 ---
 
