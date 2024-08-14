@@ -5,7 +5,7 @@ description: PlayFab Roadmap
 ms.author: shtarwar
 ms.date: 04/03/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, roadmap, features, development
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Experiments Best Practices
 ms.author: shtarwar
 ms.date: 03/03/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, a/b testing, experimentation
 ms.localizationpriority: medium
 ---

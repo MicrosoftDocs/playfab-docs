@@ -5,7 +5,7 @@ description: Demonstrates how to use experimentation.
 ms.author: shtarwar
 ms.date: 08/03/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, a/b testing, experiments, experimentation 
 ms.localizationpriority: medium
 ---
