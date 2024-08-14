@@ -3,9 +3,9 @@ title: PlayFab Services SDK Release Notes 2024
 author: amccalib
 description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
-ms.date: 05/14/2024
+ms.date: 08/02/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---
@@ -13,6 +13,13 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 240802
+
+Date: August 2, 2024
+
+ - Added new Leaderboards and Statistics calls to the Leaderboards API. These will not be fully functional until a later update to the PlayFab service.
+ - Added error codes for new service errors
 
 ## 240621
 
