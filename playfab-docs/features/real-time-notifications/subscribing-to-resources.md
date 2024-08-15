@@ -4,7 +4,7 @@ title: Subscribing to resources for real-time notifications
 description: Subscribing to resources for real-time notifications
 ms.author: waralp
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/10/2022
 ---
 

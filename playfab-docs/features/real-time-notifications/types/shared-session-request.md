@@ -4,7 +4,7 @@ title: SharedSessionRequest real-time notifications type
 description: SharedSessionRequest real-time notifications type
 ms.author: waralp
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/10/2022
 ---
 
