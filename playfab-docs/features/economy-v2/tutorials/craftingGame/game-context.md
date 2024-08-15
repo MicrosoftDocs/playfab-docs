@@ -5,7 +5,7 @@ description: Getting to know Economy V2 by a practical example of creating a cra
 ms.author: fprotti
 ms.date: 09/26/2023
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---
