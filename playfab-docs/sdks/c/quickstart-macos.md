@@ -5,7 +5,7 @@ description: This guide helps you make your first PlayFab API call in the macOS 
 ms.author: raulalbertog
 ms.date: 01/25/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, macos
 ms.localizationpriority: medium
 ---
