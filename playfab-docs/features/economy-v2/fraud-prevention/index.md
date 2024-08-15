@@ -5,7 +5,7 @@ description: Learn about fraud prevention, item redemption, receipt validation, 
 ms.author: derekreese
 ms.date: 09/07/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, economy, catalog, receipts, purchases, fraud, piracy
 ms.localizationpriority: medium
 ---

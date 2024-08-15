@@ -5,7 +5,7 @@ description: Landing page for (Legacy) Items.
 ms.author: derekreese
 ms.date: 01/25/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---

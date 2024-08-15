@@ -6,7 +6,7 @@ summary: PlayFab Economy v2 provides a platform to build and grow marketplaces, 
 metadata:
   title: PlayFab Economy documentation
   description: Hub page for the PlayFab Economy v2 documentation. Here you can find feature overviews, quickstart guides, and tutorials.  # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: thomasgu
   ms.author: derekreese

@@ -5,7 +5,7 @@ description: Quickstart for (Economy Legacy) Stores.
 ms.author: derekreese
 ms.date: 05/02/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, stores
 ms.localizationpriority: medium
 ---

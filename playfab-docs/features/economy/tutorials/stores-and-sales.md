@@ -5,7 +5,7 @@ description: Describes how to configure a Store in Economy (Legacy)with a select
 ms.author: derekreese
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, stores, catalogs, currencies
 ms.localizationpriority: medium
 ---
