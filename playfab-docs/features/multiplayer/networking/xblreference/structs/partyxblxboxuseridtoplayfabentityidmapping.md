@@ -4,7 +4,7 @@ title: "PartyXblXboxUserIdToPlayFabEntityIdMapping"
 description: "Mapping between an Xbox Live User Id and a PlayFab Entity Id."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/22/2022
 ---
 

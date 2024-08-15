@@ -4,7 +4,7 @@ title: "PFMatchmakingMatchDetails"
 description: "The resulting match information found by a completed ticket."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/16/2022
 ---
 

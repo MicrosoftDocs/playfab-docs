@@ -4,7 +4,7 @@ title: "PFLobbyLeave"
 description: "Request one or all local users to leave the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/25/2023
 ---
 

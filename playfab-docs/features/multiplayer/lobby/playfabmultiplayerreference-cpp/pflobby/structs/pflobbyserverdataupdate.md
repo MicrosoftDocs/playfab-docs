@@ -4,7 +4,7 @@ title: "PFLobbyServerDataUpdate"
 description: "A request to make an update to the associated server state of a client-owned lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 

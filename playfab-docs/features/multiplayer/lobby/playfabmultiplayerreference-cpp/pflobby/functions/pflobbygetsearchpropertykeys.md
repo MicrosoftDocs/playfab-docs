@@ -4,7 +4,7 @@ title: "PFLobbyGetSearchPropertyKeys"
 description: "Get the list of search property keys."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/07/2023
 ---
 

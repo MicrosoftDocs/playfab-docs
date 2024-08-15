@@ -4,7 +4,7 @@ title: "PFLobbyGetLobbyPropertyKeys"
 description: "Get the list of lobby property keys."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/07/2023
 ---
 

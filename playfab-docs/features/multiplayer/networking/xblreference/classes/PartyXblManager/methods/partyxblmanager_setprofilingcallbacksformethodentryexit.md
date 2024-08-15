@@ -4,7 +4,7 @@ title: "PartyXblManager::SetProfilingCallbacksForMethodEntryExit"
 description: Optionally configures the profiling event callbacks the Party Xbox Live library will make when entering or exiting instrumented methods.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/14/2023
 ---
 

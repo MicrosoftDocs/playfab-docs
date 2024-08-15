@@ -4,7 +4,7 @@ title: "PartyXblChatPermissionMaskReason"
 description: "Reasons communication may be restricted."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/14/2023
 ---
 

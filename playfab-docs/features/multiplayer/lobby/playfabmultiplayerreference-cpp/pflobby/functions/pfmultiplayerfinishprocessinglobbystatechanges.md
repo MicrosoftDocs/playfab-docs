@@ -4,7 +4,7 @@ title: "PFMultiplayerFinishProcessingLobbyStateChanges"
 description: "Returns an array of PFLobbyStateChanges that were being processed."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/16/2022
 ---
 
