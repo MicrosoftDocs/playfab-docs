@@ -4,7 +4,7 @@ title: "PFLobbyForceRemoveMember"
 description: "Forcibly remove an entity from the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/14/2022
 ---
 

@@ -4,7 +4,7 @@ title: "PFMultiplayerJoinArrangedLobby"
 description: "Joins a lobby using an arrangement string provided by another service, such as matchmaking. If no one has joined the lobby yet, the lobby is initialized using the configuration parameters."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/15/2022
 ---
 

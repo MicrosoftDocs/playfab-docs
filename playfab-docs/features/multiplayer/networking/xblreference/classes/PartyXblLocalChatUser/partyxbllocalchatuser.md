@@ -4,7 +4,7 @@ title: "PartyXblLocalChatUser"
 description: The management class for Xbox Live operations related to a local chat user. Inherits from [PartyXblChatUser](../PartyXblChatUser/partyxblchatuser.md).
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/22/2022
 ---
 

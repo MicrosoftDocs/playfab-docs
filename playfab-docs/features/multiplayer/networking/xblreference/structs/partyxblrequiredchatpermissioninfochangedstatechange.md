@@ -4,7 +4,7 @@ title: "PartyXblRequiredChatPermissionInfoChangedStateChange"
 description: "Information specific to the *RequiredChatPermissionInfoChanged* type of state change."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/22/2022
 ---
 

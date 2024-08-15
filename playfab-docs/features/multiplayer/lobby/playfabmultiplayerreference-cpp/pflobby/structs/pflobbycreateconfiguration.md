@@ -4,7 +4,7 @@ title: "PFLobbyCreateConfiguration"
 description: "The initial configuration data used when creating a lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/25/2023
 ---
 

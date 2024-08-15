@@ -4,7 +4,7 @@ title: "PFLobbyStateChange"
 description: "A generic, base structure representation of an event or change in state in the Lobby library."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/11/2023
 ---
 

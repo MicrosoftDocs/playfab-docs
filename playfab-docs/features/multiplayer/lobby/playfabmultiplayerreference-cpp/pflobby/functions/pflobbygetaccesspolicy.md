@@ -4,7 +4,7 @@ title: "PFLobbyGetAccessPolicy"
 description: "Gets the access policy of the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/03/2022
 ---
 

@@ -4,7 +4,7 @@ title: "PartyXblManager::CreateLocalChatUser"
 description: Queues an asynchronous attempt to create a local chat user. Privacy and privilege information related to this user will be tracked by the helper library.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/07/2021
 ---
 

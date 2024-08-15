@@ -5,7 +5,7 @@ description: Learn how to manage PlayFab Lobbies with GameServer entities.
 ms.author: scmunro
 ms.date: 02/23/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking, server, gameserver
 ms.localizationpriority: medium
 ---

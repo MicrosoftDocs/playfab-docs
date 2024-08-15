@@ -5,7 +5,7 @@ author: ScottMunroMS
 ms.author: scmunro
 ms.date: 11/12/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, lobby, matchmaking, async, state change, notification
 ---
 

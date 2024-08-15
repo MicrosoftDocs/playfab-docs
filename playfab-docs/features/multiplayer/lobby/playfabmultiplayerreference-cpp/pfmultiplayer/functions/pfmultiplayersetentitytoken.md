@@ -4,7 +4,7 @@ title: "PFMultiplayerSetEntityToken"
 description: "Sets the token that should be used for authentication when performing library actions on behalf of an entity. If a token has previously been set for the entity, this replaces its previous token."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/15/2022
 ---
 

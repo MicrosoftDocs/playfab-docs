@@ -4,7 +4,7 @@ title: "PFLobbyServerConnectionStatus"
 description: "Values representing the current status of the Lobby Server's connection status to the notification service."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 
