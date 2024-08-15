@@ -5,7 +5,7 @@ description: Describes the concepts behind Entity Groups in the PlayFab APIs and
 ms.author: antnguyen
 ms.date: 08/18/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, entity groups, guilds
 ms.localizationpriority: medium
 ---
