@@ -5,7 +5,7 @@ description: Quickstart to using User Generated Content in PlayFab.
 ms.author: thomg
 ms.date: 01/17/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Landing page for Economy.
 ms.author: thomg
 ms.date: 07/01/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, game, items, virtual, currencies, stores, ugc, user generated content
 ms.localizationpriority: medium
 ---

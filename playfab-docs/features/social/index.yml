@@ -6,7 +6,7 @@ summary: Overviews, quickstarts, and tutorials that provide guidance on PlayFab'
 metadata:
   title: PlayFab Social documentation
   description: Central page for PlayFab Social Features. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: thomasgu
   ms.author: thomg
