@@ -5,7 +5,7 @@ description: Learn how to leverage PlayFab multiplayer in Xbox Live games.
 ms.author: joanlee
 ms.date: 02/27/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, xbox live, party
 ms.localizationpriority: medium
 ---

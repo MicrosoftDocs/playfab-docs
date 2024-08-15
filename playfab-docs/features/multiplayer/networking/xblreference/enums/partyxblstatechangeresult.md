@@ -4,7 +4,7 @@ title: "PartyXblStateChangeResult"
 description: "Results for Party Xbox Live Helper library operations that generate state changes."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 04/14/2023
 ---
 

@@ -5,7 +5,7 @@ description: Tutorial outlining the steps to publish your first user generated c
 ms.author: joanlee
 ms.date: 06/13/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---

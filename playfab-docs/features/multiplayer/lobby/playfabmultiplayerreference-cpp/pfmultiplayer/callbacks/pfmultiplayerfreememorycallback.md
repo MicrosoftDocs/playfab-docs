@@ -4,7 +4,7 @@ title: "PFMultiplayerFreeMemoryCallback"
 description: "A callback invoked every time a previously allocated memory buffer is no longer needed by the PlayFab Multiplayer library and can be freed."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/23/2021
 ---
 

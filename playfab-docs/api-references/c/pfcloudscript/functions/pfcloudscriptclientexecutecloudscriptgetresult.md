@@ -4,7 +4,7 @@ title: "PFCloudScriptClientExecuteCloudScriptGetResult"
 description: "Gets the result of a successful PFCloudScriptClientExecuteCloudScriptAsync call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

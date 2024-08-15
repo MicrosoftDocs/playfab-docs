@@ -4,7 +4,7 @@ title: "PFEntityGetEntityTokenAsync"
 description: "Get the cached PFEntityToken for an Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

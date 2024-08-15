@@ -4,7 +4,7 @@ title: "PFTitleDataManagementGetTimeResult"
 description: "PFTitleDataManagementGetTimeResult data model. Time is always returned as Coordinated Universal Time (UTC)."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

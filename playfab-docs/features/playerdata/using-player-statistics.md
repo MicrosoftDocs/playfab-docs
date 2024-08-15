@@ -5,7 +5,7 @@ description: Describes how to create and use player statistics in the PlayFab Ga
 ms.author: cjwill
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, game manager, player data, statistics
 ms.localizationpriority: medium
 ---

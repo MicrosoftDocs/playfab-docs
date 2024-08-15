@@ -4,7 +4,7 @@ title: PlayFabPlayer.IsLocal
 description: Returns true if this player is the local player. Returns false if it is a remote player.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

@@ -5,7 +5,7 @@ description: Telemetry Overview
 ms.author: sofiamarin
 ms.date: 01/29/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, telemetry, ingestion, playstream
 ms.localizationpriority: medium
 ---

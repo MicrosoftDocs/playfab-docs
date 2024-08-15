@@ -4,7 +4,7 @@ title: "PFEvent"
 description: "Event to be uploaded to PlayFab."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

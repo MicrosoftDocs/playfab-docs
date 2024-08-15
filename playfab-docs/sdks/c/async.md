@@ -5,7 +5,7 @@ description: Making async calls in the PlayFab Services SDK
 ms.author: andmcc
 ms.date: 03/03/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, windows, xbox, gdk, async
 ms.localizationpriority: medium
 ---

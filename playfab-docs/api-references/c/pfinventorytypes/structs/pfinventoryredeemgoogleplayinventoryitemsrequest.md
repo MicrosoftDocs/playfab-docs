@@ -4,7 +4,7 @@ title: "PFInventoryRedeemGooglePlayInventoryItemsRequest"
 description: "PFInventoryRedeemGooglePlayInventoryItemsRequest data model. Redeem items from the Google Play Store."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

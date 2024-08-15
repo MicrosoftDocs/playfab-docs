@@ -5,7 +5,7 @@ description: iOS and macOS supplement for PlayFab Party quickstart
 ms.author: debh
 ms.date: 08/05/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, party, networking, communication
 ms.localizationpriority: medium
 ---

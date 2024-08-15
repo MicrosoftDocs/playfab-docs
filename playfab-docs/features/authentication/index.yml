@@ -6,7 +6,7 @@ summary: Overviews, quickstarts, and tutorials that provide guidance on player l
 metadata:
   title: PlayFab Authentication Documentation
   description: Overview of PlayFab authentication support # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: joannaleecy
   ms.author: joanlee

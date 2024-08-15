@@ -5,7 +5,7 @@ description: Lists all of the available built-in Entity types.
 ms.author: joanlee
 ms.date: 11/08/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, entities
 ms.localizationpriority: medium
 ---

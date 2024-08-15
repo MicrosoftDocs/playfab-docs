@@ -4,7 +4,7 @@ title: "PFInventoryRedeemNintendoEShopInventoryItemsRequest"
 description: "PFInventoryRedeemNintendoEShopInventoryItemsRequest data model. Redeem items from the Nintendo EShop."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

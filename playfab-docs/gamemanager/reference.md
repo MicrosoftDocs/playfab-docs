@@ -5,7 +5,7 @@ description: Provides a reference for the features in the PlayFab Game Manager.
 ms.author: cjwill
 ms.date: 01/31/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config, game manager
 ms.localizationpriority: medium
 ---

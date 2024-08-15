@@ -4,7 +4,7 @@ title: LobbyConstants class
 description: LobbyConstants members
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/02/2023
 ---
 

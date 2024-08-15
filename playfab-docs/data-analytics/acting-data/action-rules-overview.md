@@ -5,7 +5,7 @@ description: Landing page for Actions & Rules.
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, actions, rules
 ms.localizationpriority: medium
 ---

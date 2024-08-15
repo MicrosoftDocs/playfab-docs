@@ -5,7 +5,7 @@ description: Data Connections to Azure Blob
 ms.author: thomg
 ms.date: 06/15/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data connections, byos, connections, event ingestion
 ms.localizationpriority: medium
 ---

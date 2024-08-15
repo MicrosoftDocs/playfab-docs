@@ -5,7 +5,7 @@ description: Overview for Segments as a dimension
 ms.author: sofiamarin
 ms.date: 11/08/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, segmentation, segments, dimension, trends, trends with segments as a dimension, segments as a dimension
 ms.localizationpriority: medium
 ---

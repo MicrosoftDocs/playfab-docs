@@ -5,7 +5,7 @@ description: Overall description of Items and Inventory in V2.
 ms.author: thomg
 ms.date: 07/01/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---

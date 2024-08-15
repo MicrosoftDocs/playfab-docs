@@ -5,7 +5,7 @@ description: Describes the Catalogs tab in the (Legacy) Economy section in Game 
 ms.author: derekreese
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---

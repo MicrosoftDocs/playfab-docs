@@ -4,7 +4,7 @@ title: "PFHCCompressionLevel"
 description: "Defines the compression level that will be used on the compression algorithm. Lower levels perform less compression but have the highest speed in the compression and higher levels perform better compression but have the slowest speed in the compression."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

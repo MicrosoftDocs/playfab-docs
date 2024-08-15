@@ -5,7 +5,7 @@ description: Guides you through an example of PlayFab authentication using Kongr
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, authentication, kongregate, unity
 ms.localizationpriority: medium
 ---

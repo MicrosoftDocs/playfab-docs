@@ -5,7 +5,7 @@ description: Guide to help you use the RequestPartyService API to Request Partie
 ms.author: rachelwu
 ms.date: 10/09/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, party, networking, communication 
 ms.localizationpriority: medium 
 ---

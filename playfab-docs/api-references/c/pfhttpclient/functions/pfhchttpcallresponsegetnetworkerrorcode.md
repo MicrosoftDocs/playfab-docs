@@ -4,7 +4,7 @@ title: "PFHCHttpCallResponseGetNetworkErrorCode"
 description: "Get the network error code of the HTTP call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

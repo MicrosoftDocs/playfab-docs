@@ -5,7 +5,7 @@ description: Describes the report that tracks the percentages of new players who
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, reports
 ms.localizationpriority: medium
 ---

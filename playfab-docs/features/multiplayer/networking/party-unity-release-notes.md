@@ -5,7 +5,7 @@ description: Release notes for PlayFab Party Unity SDK
 ms.author: victorku
 ms.date: 01/27/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, party, unity, release notes, multiplayer, networking
 ms.localizationpriority: medium
 ---

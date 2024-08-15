@@ -5,7 +5,7 @@ description: This guide helps you make your first PlayFab API call in the Linux 
 ms.author: jasonsa
 ms.date: 01/24/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, android
 ms.localizationpriority: medium
 ---

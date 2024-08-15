@@ -5,7 +5,7 @@ description: Supplemental guidance for using PlayFab Party on the Xbox platform 
 ms.author: scmunro
 ms.date: 04/24/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, party, networking, xbox, live, xr, requirements, certification
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Landing page for Scheduled tasks.
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, tasks
 ms.localizationpriority: medium
 ---

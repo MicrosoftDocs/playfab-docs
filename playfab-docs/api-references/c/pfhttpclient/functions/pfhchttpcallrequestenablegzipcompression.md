@@ -4,7 +4,7 @@ title: "PFHCHttpCallRequestEnableGzipCompression"
 description: "Enable GZIP compression on the provided body payload."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

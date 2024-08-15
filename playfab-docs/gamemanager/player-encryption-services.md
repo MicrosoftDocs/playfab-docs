@@ -7,7 +7,7 @@ ms.date: 01/11/2018
 ms.topic: article
 keywords: playfab, game manager
 ms.localizationpriority: medium
-ms.service: playfab
+ms.service: azure-playfab
 ---
 
 # Player encryption services

@@ -5,7 +5,7 @@ description: Overview page for tutorials about using email for player engagement
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, engagement, email
 ms.localizationpriority: medium
 ---

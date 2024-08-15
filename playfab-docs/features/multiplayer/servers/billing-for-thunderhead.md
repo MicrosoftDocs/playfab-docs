@@ -5,7 +5,7 @@ description: Describes how billing is done for PlayFab's multiplayer server host
 ms.author: joanlee
 ms.date: 01/15/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, billing, pricing
 ms.localizationpriority: medium
 ---

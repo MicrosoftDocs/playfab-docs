@@ -5,7 +5,7 @@ description: How to use PlayFab Admin APIs to export or delete a player’s data
 ms.author: shtarwar
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, playerdata, gdpr, compliance, admin api
 ms.localizationpriority: medium
 ---

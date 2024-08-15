@@ -5,7 +5,7 @@ description: Overview page for LocalMultiplayerAgent.
 ms.author: emmapark
 ms.date: 11/19/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, multiplayerServer, localMultiplayerAgent, MPS Agent, MPS Samples
 ms.localizationpriority: medium
 ---

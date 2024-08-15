@@ -4,7 +4,7 @@ title: "PFLobbyMemberUpdateSummary"
 description: "A collection of hints about an update which has been successfully applied to the lobby on behalf of a member."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/15/2022
 ---
 

@@ -5,7 +5,7 @@ description: Landing page for Trading.
 ms.author: joanlee
 ms.date: 01/30/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, social, trading
 ms.localizationpriority: medium
 ---

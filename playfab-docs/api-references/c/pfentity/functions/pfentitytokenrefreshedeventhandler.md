@@ -4,7 +4,7 @@ title: "PFEntityTokenRefreshedEventHandler"
 description: "A handler invoked every time an Entity is automatically re-authenticated, thus obtaining a new EntityToken. An entity will be automatically re-authenticated prior to its EntityToken expiring."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

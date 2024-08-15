@@ -5,7 +5,7 @@ description: Guide to connecting Python to Insights.
 ms.author: norie
 ms.date: 02/27/2020    
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights, python
 ms.localizationpriority: medium
 ---

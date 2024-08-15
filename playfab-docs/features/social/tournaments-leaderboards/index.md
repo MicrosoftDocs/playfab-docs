@@ -5,7 +5,7 @@ description: Landing page for Tournaments and& Leaderboards.
 ms.author: joanlee
 ms.date: 07/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, social, tournaments, leaderboards
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,7 @@ title: "PFHCHttpCallResponseSetResponseBodyWriteFunction"
 description: "Sets a custom callback function that will be used to write the response body when the HTTP call is performed. Using a custom write callback will cause subsequent calls to PFHCHttpCallResponseGetResponseBodyBytesSize, PFHCHttpCallResponseGetResponseBodyBytes, and PFHCHttpCallGetResponseBodyString to fail as these are mutually exclusive."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

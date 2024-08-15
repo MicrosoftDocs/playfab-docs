@@ -5,7 +5,7 @@ description: Describes how to connect clients to game servers.
 ms.author: joanlee
 ms.date: 11/09/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, social, tournaments, leaderboards, servers, clients
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Learn about custom properties in Lobby.
 ms.author: joanlee
 ms.date: 10/25/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking, types
 ms.localizationpriority: medium
 ---

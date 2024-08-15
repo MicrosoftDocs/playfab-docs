@@ -4,7 +4,7 @@ title: "PFCatalogReportItemReviewRequest"
 description: "PFCatalogReportItemReviewRequest data model. Submit a report for an inappropriate review, allowing the submitting user to specify their concern."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

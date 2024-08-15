@@ -5,7 +5,7 @@ description: PlayFab is a complete backend platform for live games with managed 
 ms.author: sebgrink
 ms.date: 03/23/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, multiplayer, authentication, leaderboards, liveops
 ms.localizationpriority: medium
 ---

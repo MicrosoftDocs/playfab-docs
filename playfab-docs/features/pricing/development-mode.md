@@ -5,7 +5,7 @@ description: Describes the features and limits of Development mode titles.
 ms.author: joanlee
 ms.date: 09/09/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing, dev mode, development mode, title, meter, meters
 ms.localizationpriority: medium
 ---

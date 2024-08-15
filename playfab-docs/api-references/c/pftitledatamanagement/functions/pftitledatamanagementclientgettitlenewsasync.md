@@ -4,7 +4,7 @@ title: "PFTitleDataManagementClientGetTitleNewsAsync"
 description: "Retrieves the title news feed, as configured in the developer portal"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.Get().SendDataMessage
 description: Sends a data message to the specified players.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

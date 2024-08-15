@@ -5,7 +5,7 @@ description:  Quickstart for Actions & Rules.
 ms.author: joanlee
 ms.date: 01/30/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript, playstream, events, rules, conditions, actions, hooks
 ms.localizationpriority: medium
 ---

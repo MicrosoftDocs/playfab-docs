@@ -4,7 +4,7 @@ title: Real-time notifications for Lobby and Matchmaking APIs
 description: Real-time notifications for Lobby and Matchmaking APIs
 ms.author: waralp
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/10/2022
 ---
 

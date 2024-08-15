@@ -5,7 +5,7 @@ description: Describes how to generate and redeem coupons in Economy (Legacy).
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, media, coupons, promotions, cloudscript
 ms.localizationpriority: medium
 ---

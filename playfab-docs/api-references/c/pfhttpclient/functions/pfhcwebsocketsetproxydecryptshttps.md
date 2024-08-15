@@ -4,7 +4,7 @@ title: "PFHCWebSocketSetProxyDecryptsHttps"
 description: "Allows proxy server to decrypt and inspect traffic; should be used only for debugging purposes This must be called after calling PFHCWebSocketSetProxyUri. Only applies to Win32 non-GDK builds"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

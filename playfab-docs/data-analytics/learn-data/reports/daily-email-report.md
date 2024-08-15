@@ -5,7 +5,7 @@ description: Describes the email sent daily with a report on engagement and reve
 ms.author: sofiamarin
 ms.date: 02/20/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, reports, email, daily email
 ms.localizationpriority: medium
 ---

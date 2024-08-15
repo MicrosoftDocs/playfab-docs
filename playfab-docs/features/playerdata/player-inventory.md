@@ -5,7 +5,7 @@ description: Describes how to view and work with the player inventory using the 
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playfab api, player data, inventory
 ms.localizationpriority: medium
 ---

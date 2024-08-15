@@ -5,7 +5,7 @@ description: Describes how to diagnose server availability issues using the Play
 ms.author: chpalm
 ms.date: 08/23/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, deploy, thunderhead, builds, availability, map, mapview
 ms.localizationpriority: medium
 ---

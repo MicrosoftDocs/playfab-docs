@@ -5,7 +5,7 @@ description: Describes how to programmatically create and use title data
 ms.author: shtarwar
 ms.date: 08/04/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, remote configuration, title data, overrides
 ms.localizationpriority: medium
 ---

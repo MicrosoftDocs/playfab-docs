@@ -4,7 +4,7 @@ title: PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyJoinAsServerComp
 description: PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyJoinAsServerCompletedHandler
 ms.author: raymondcha
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 4/19/2024
 ---
 

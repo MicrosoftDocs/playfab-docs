@@ -4,7 +4,7 @@ title: "PFGroupsEntityWithLineage"
 description: "PFGroupsEntityWithLineage data model. Entity wrapper class that contains the entity key and the entities that make up the lineage of the entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

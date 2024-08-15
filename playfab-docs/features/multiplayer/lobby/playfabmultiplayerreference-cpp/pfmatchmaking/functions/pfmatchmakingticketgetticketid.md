@@ -4,7 +4,7 @@ title: "PFMatchmakingTicketGetTicketId"
 description: "Provides the ticket ID."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 07/14/2023
 ---
 

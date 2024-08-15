@@ -5,7 +5,7 @@ description: Describes the PlayFab Party APIs, and focuses on text input and tex
 ms.author: joanlee
 ms.date: 03/11/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, bumblelion, party, networking, UX, speech-to-text, STT, text-to-speech, TTS
 ms.localizationpriority: medium
 ---

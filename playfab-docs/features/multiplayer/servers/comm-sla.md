@@ -5,7 +5,7 @@ description: Describes how customers can raise incidents and how PlayFab communi
 ms.author: chpalm
 ms.date: 06/12/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, outages, incidents, mitigation
 ms.localizationpriority: medium
 ---

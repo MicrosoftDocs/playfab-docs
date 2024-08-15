@@ -5,7 +5,7 @@ description: Describes how to write CloudScript code.
 ms.author: antnguyen
 ms.date: 01/30/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript, unity
 ms.localizationpriority: medium
 ---

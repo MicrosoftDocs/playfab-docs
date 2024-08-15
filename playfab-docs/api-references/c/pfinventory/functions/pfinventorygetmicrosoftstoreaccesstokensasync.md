@@ -4,7 +4,7 @@ title: "PFInventoryGetMicrosoftStoreAccessTokensAsync"
 description: "Gets the access tokens."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

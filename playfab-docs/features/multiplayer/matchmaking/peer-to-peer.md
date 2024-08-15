@@ -5,7 +5,7 @@ description: Describes how to share IP addresses through matchmaking
 ms.author: kkline
 ms.date: 03/21/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, peer-to-peer
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,7 @@ title: "PFMultiplayerCreateAndClaimServerLobby"
 description: "Create a new lobby as a game_server entity."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/25/2023
 ---
 

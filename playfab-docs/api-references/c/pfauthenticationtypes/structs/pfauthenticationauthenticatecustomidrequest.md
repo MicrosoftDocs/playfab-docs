@@ -4,7 +4,7 @@ title: "PFAuthenticationAuthenticateCustomIdRequest"
 description: "PFAuthenticationAuthenticateCustomIdRequest data model. Create or return a game_server entity token. Caller must be a title entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

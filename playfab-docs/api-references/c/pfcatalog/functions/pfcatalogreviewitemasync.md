@@ -4,7 +4,7 @@ title: "PFCatalogReviewItemAsync"
 description: "Creates or updates a review for the specified item. More information around the caching surrounding item ratings and reviews can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/ratings#ratings-design-and-caching"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

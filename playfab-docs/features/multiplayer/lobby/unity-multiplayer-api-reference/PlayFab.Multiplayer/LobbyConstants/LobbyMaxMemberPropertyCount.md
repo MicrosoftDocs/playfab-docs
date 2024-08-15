@@ -4,7 +4,7 @@ title: Lobby.LobbyMaxMemberPropertyCount
 description: Lobby.LobbyMaxMemberPropertyCount
 ms.author: aterzakis
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 08/02/2023
 ---
 

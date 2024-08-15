@@ -5,7 +5,7 @@ description: management commands for title adx
 ms.author: joanlee
 ms.date: 1/9/2020    
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights, explorer
 ms.localizationpriority: medium
 ---

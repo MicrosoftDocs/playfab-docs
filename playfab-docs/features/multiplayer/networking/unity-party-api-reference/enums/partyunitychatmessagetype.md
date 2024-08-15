@@ -4,7 +4,7 @@ title: ChatMessageType
 description: The type of a chat message.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

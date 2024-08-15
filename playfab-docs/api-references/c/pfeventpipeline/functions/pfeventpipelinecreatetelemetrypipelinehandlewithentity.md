@@ -4,7 +4,7 @@ title: "PFEventPipelineCreateTelemetryPipelineHandleWithEntity"
 description: "Creates an event pipeline to upload Telemetry events using an Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

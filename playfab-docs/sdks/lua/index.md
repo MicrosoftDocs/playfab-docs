@@ -5,7 +5,7 @@ description: Landing page for PlayFab Lua SDKs.
 ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, lua, corona, playfab client plugin
 ms.localizationpriority: medium
 ---

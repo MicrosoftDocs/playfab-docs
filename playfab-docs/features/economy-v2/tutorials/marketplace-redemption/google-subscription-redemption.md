@@ -5,7 +5,7 @@ description: Set up a PlayFab subscription that can be purchased from Google Pla
 ms.author: fprotti
 ms.date: 11/06/2023
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, integration, marketplace
 ms.localizationpriority: medium
 ---

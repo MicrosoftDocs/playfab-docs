@@ -4,7 +4,7 @@ title: "PFEntityGetEntityKeySize"
 description: "Get the size in bytes needed to store the PFEntityKey for an Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

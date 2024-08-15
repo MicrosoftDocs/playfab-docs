@@ -5,7 +5,7 @@ description: ItemUpdated event.
 ms.author: fprotti
 ms.date: 09/29/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,7 @@ title: "PFAccountManagementSendEmailFromTemplateRequest"
 description: "PFAccountManagementSendEmailFromTemplateRequest data model. Sends an email for only players that have contact emails associated with them. Takes in an email template ID specifyingthe email template to send."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

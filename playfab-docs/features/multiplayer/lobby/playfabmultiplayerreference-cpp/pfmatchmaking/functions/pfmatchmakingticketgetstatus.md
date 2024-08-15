@@ -4,7 +4,7 @@ title: "PFMatchmakingTicketGetStatus"
 description: "Provides the matchmaking ticket status."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/03/2022
 ---
 

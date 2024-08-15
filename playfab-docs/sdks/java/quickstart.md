@@ -5,7 +5,7 @@ description: This guide helps you get up and running with the PlayFab JavaSDK an
 ms.author: joanlee
 ms.date: 04/20/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, java, playfab java sdk, intellij
 ms.localizationpriority: medium
 ---

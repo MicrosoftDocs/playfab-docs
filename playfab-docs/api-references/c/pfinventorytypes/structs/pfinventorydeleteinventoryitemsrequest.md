@@ -4,7 +4,7 @@ title: "PFInventoryDeleteInventoryItemsRequest"
 description: "PFInventoryDeleteInventoryItemsRequest data model. Given an entity type, entity identifier and container details, will delete the entity's inventory items."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

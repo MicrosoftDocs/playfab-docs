@@ -5,7 +5,7 @@ description: Describes how to connect directly to debug a running server.
 ms.author: digkanat
 ms.date: 04/13/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, debugging, integration, thunderhead, playfab game server sdk
 ms.localizationpriority: medium
 ---
