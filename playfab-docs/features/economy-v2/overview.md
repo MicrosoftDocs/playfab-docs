@@ -5,7 +5,7 @@ description: Learn the differences and changes from PlayFab Economy v1 to v2
 ms.author: joanlee
 ms.date: 09/28/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---

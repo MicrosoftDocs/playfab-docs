@@ -5,7 +5,7 @@ description: Contains tables with definitions for analytics terminology, engagem
 ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics
 ms.localizationpriority: medium
 ---

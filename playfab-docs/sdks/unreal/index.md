@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Unreal SDK, and the PlayFab Marketplac
 ms.author: joanlee
 ms.date: 01/22/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, unreal, playfab marketplace plugin, c++, blueprint
 ms.localizationpriority: medium
 ---

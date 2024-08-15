@@ -5,7 +5,7 @@ description: Demonstrates how use Economy (Legacy) to get a player's Value to Da
 ms.author: joanlee
 ms.date: 10/30/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---

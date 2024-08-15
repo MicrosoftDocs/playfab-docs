@@ -5,7 +5,7 @@ author: xmcai2016
 ms.author: joanlee
 ms.date: 06/17/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, unity, middleware
 ---
 

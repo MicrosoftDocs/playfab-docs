@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Postman SDK.
 ms.author: joanlee
 ms.date: 01/22/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, postman, ssl/tls protocols, chrome, google
 ms.localizationpriority: medium
 ---

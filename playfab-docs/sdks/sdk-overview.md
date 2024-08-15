@@ -5,7 +5,7 @@ description: SDKs overview
 ms.author: joanlee
 ms.date: 01/12/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playfab sdk, sdk
 ms.localizationpriority: medium
 ---

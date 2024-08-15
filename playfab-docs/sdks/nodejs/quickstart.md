@@ -5,7 +5,7 @@ description: This guide will help you make your first API call in NodeJS.
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, nodejs, javascript
 ms.localizationpriority: medium
 ---

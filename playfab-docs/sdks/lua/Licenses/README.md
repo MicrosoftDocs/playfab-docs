@@ -5,7 +5,7 @@ description: The luasec license readme file.
 ms.author: joanlee
 ms.date: 02/20/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, lua sdk, lua, luasec
 ms.localizationpriority: medium
 ---

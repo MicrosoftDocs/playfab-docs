@@ -5,7 +5,7 @@ description: Describes the PlayFab Content Delivery Network in detail.
 ms.author: joanlee
 ms.date: 01/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, content delivery network
 ms.localizationpriority: medium
 ---

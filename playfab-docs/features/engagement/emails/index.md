@@ -5,7 +5,7 @@ description: Landing page for Emails.
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, engagement, email, servers, smtp
 ms.localizationpriority: medium
 ---

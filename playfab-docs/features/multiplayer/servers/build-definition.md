@@ -5,7 +5,7 @@ description: VM build definition and configuration.
 ms.author: joanlee
 ms.date: 04/01/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, deploy, powershell
 ms.localizationpriority: medium
 ---

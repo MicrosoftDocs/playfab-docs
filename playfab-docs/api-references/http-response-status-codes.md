@@ -5,7 +5,7 @@ description: HTTP response status codes.
 ms.author: joanlee
 ms.date: 06/08/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, http, development, testing, errors, error codes
 ms.localizationpriority: medium
 ---

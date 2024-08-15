@@ -5,7 +5,7 @@ description: This tutorial explains how to enable PlayFab Party and use it with 
 ms.author: joanlee
 ms.date: 08/15/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, party, networking, communication, prerequisites, enabling
 ms.localizationpriority: medium
 ---

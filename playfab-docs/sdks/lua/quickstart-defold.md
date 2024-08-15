@@ -5,7 +5,7 @@ description: This guide will help you make your first PlayFab API call using Def
 ms.author: joanlee
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, lua, defold, gui script
 ms.localizationpriority: medium
 ---

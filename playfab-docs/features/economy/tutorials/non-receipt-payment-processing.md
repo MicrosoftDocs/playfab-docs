@@ -5,7 +5,7 @@ description: Describes the PlayFab Economy (Legacy) mechanism for enabling purch
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, media, carts, payments, purchases
 ms.localizationpriority: medium
 ---

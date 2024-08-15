@@ -5,7 +5,7 @@ description: License for OpenSSL
 ms.author: joanlee
 ms.date: 02/19/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, openssl, sdk, cocos
 ms.localizationpriority: medium
 ---

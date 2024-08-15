@@ -5,7 +5,7 @@ description: Junit license.
 ms.author: joanlee
 ms.date: 02/20/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, java sdk, java, junit
 ms.localizationpriority: medium
 ---

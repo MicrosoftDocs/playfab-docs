@@ -5,7 +5,7 @@ description: Linux supplement for PlayFab Party quickstart
 ms.author: joanlee
 ms.date: 08/01/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party, sdk, sample
 ms.localizationpriority: medium
 ---

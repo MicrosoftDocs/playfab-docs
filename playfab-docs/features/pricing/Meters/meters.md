@@ -5,7 +5,7 @@ description: Describes each of the pricing meters in the new pricing model.
 ms.author: joanlee
 ms.date: 9/10/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing, meters
 ms.localizationpriority: medium
 ---

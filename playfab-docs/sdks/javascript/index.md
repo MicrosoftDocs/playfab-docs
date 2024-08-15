@@ -5,7 +5,7 @@ description: Landing page for the PlayFab JavaScript SDK.
 ms.author: joanlee
 ms.date: 01/22/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, javascript, playfab javascript sdk, native, phaser
 ms.localizationpriority: medium
 ---

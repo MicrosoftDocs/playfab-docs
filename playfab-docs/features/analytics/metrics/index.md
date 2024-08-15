@@ -5,7 +5,7 @@ description: Landing page for Metrics.
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Landing page for the PlayFab Cocos2D-x (C++) SDK.
 ms.author: joanlee
 ms.date: 07/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, cocos-2dx sdk, cpp
 ms.localizationpriority: medium
 ---

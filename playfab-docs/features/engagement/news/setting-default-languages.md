@@ -7,7 +7,7 @@ ms.date: 02/28/2019
 ms.topic: article
 keywords: playfab, title, players, language, localization
 ms.localizationpriority: medium
-ms.service: playfab
+ms.service: azure-playfab
 ---
 
 # Setting default languages

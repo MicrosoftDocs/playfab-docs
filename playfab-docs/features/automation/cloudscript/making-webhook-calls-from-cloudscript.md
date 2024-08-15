@@ -5,7 +5,7 @@ description: Describes how to make Webhook calls from CloudScript, for both nons
 ms.author: joanlee
 ms.date: 02/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript
 ms.localizationpriority: medium
 ---

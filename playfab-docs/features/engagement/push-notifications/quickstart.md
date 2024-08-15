@@ -5,7 +5,7 @@ description: Describes the Push Notification system in PlayFab.
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, engagement, push notification
 ms.localizationpriority: medium
 ---

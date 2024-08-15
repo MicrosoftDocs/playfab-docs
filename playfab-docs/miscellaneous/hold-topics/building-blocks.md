@@ -5,7 +5,7 @@ description: Describes the fundamental concepts on which PlayFab is based.
 ms.author: joanlee
 ms.date: 02/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config
 ms.localizationpriority: medium
 ---

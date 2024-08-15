@@ -5,7 +5,7 @@ description: This guide helps you make your first PlayFab API call in the Corona
 ms.author: joanlee
 ms.date: 04/30/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, lua, corona, playfab client plugin
 ms.localizationpriority: medium
 ---

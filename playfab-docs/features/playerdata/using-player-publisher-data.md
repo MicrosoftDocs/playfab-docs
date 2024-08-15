@@ -5,7 +5,7 @@ description: Tutorial that describes how to create and use player publisher data
 ms.author: joanlee
 ms.date: 10/26/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, publisher data
 ms.localizationpriority: medium
 ---

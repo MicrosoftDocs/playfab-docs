@@ -5,7 +5,7 @@ description: Describes how to use the API access policies in PlayFab.
 ms.author: joanlee
 ms.date: 03/25/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, config, game manager, api access policy
 ms.localizationpriority: medium
 ---
