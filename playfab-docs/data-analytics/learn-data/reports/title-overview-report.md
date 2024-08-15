@@ -5,7 +5,7 @@ description: Overview of the Title Overview page.
 ms.author: sofiamarin
 ms.date: 03/07/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, reports, title, title overview
 ms.localizationpriority: medium
 ---

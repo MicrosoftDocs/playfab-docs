@@ -5,7 +5,7 @@ description: End to end tutorial to get started with PlayFab reports on Fabric.
 ms.author: sofiamarin
 ms.date: 11/14/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, reports, microsoft fabric, fabric, template, kql, data connections, report
 ms.localizationpriority: medium
 ---
