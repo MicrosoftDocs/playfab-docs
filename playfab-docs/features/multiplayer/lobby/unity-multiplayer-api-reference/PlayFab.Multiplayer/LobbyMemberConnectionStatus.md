@@ -4,7 +4,7 @@ title: LobbyMemberConnectionStatus
 description: Values representing the current status of a member's connection status to the notification service
 ms.author: aterzakis
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 09/12/2022
 ---
 

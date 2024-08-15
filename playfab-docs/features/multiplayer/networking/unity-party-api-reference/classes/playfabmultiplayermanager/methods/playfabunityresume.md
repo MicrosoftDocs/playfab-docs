@@ -4,7 +4,7 @@ title: PlayFabMultiplayerManager.Get().Resume
 description: Resumes execution of Party.
 ms.author: aterzakis
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 10/09/2022
 ---
 
