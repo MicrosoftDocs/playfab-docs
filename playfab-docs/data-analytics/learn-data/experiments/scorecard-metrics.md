@@ -5,7 +5,7 @@ description: Provides descriptions for each scorecard metric.
 ms.author: yegarci
 ms.date: 11/20/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, experiments, experimentation
 ms.localizationpriority: medium
 ---
