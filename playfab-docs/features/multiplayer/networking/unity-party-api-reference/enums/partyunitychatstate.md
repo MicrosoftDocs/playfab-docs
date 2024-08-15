@@ -4,7 +4,7 @@ title: ChatState
 description: The visual state of the player for rendering in the game's UI.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 
