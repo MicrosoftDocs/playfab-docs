@@ -5,7 +5,7 @@ description: PlayFab Services C/C++ SDK Release Notes.
 ms.author: andmcc
 ms.date: 09/28/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---

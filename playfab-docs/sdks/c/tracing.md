@@ -5,7 +5,7 @@ description: Debug Tracing in the PlayFab Services SDK
 ms.author: andmcc
 ms.date: 02/24/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, windows, xbox, gdk, debug
 ms.localizationpriority: medium
 ---

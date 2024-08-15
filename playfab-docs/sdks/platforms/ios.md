@@ -5,7 +5,7 @@ description: PlayFab Services SDK options for iOS
 ms.author: andmcc
 ms.date: 06/23/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, iOS, mobile, apple, iphone
 ms.localizationpriority: medium
 ---

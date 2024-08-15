@@ -5,7 +5,7 @@ description: PlayFab Services SDK options for Backend Services and Tools
 ms.author: andmcc
 ms.date: 03/05/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, services, web, browser, cloud, c#, java, javascript, script, node, nodejs, node.js, python, C, C++
 ms.localizationpriority: medium
 ---
