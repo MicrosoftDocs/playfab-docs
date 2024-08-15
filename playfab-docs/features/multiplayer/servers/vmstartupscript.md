@@ -5,7 +5,7 @@ description: Documentation about the VmStartupScript feature that allows you to 
 ms.author: digkanat
 ms.date: 01/31/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, servers, performance metrics, monitoring, customization, vm, startup, script
 ms.localizationpriority: medium
 ---

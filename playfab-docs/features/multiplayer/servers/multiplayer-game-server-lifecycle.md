@@ -5,7 +5,7 @@ description: Describes the lifecycle of a multiplayer server
 ms.author: digkanat
 ms.date: 01/26/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, azure, server lifecycle, regions, mps, gsdk
 ms.localizationpriority: medium
 ---

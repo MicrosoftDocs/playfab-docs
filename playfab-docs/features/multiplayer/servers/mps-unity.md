@@ -5,7 +5,7 @@ description: Integrating the PlayFab GSDK into Unity.
 ms.author: digkanat
 ms.date: 04/15/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, api, unity
 ms.localizationpriority: medium
 ---
