@@ -5,7 +5,7 @@ description: PlayFab Churn Prediction Service Overview
 ms.author: sranthar
 ms.date: 03/16/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, churn prediction, AI, ML, predictive service 
 ms.localizationpriority: medium
 ---
