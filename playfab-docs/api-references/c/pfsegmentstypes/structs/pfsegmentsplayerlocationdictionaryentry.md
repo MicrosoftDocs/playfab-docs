@@ -4,7 +4,7 @@ title: "PFSegmentsPlayerLocationDictionaryEntry"
 description: "Dictionary entry for an associative array with PFSegmentsPlayerLocation values."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

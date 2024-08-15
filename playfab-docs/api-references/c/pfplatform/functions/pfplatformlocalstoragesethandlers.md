@@ -4,7 +4,7 @@ title: "PFPlatformLocalStorageSetHandlers"
 description: "Sets the storage event handlers. If custom storage handlers are not set, a default implementation based on cstdio and std::fstream objects will be used."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

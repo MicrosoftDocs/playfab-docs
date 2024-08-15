@@ -4,7 +4,7 @@ title: "PFInventoryRedeemPlayStationStoreInventoryItemsRequest"
 description: "PFInventoryRedeemPlayStationStoreInventoryItemsRequest data model. Redeem items from the PlayStation Store."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

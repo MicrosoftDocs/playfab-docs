@@ -4,7 +4,7 @@ title: "PFHCWebSocketSetProxyUri"
 description: "Set the proxy URI for the WebSocket."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

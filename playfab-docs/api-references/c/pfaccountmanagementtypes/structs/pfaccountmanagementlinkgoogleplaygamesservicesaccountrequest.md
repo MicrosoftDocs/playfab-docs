@@ -4,7 +4,7 @@ title: "PFAccountManagementLinkGooglePlayGamesServicesAccountRequest"
 description: "PFAccountManagementLinkGooglePlayGamesServicesAccountRequest data model. Google Play Games sign-in is accomplished by obtaining a Google OAuth 2.0 credential using the Google Play Games sign-in for Android APIs on the device and passing it to this API."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

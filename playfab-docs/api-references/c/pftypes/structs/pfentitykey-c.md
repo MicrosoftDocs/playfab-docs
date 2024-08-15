@@ -4,7 +4,7 @@ title: "PFEntityKey C API"
 description: "PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

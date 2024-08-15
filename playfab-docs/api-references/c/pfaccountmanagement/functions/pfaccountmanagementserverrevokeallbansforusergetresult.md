@@ -4,7 +4,7 @@ title: "PFAccountManagementServerRevokeAllBansForUserGetResult"
 description: "Gets the result of a successful PFAccountManagementServerRevokeAllBansForUserAsync call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

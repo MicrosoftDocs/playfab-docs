@@ -4,7 +4,7 @@ title: "PFSegmentsRemovePlayerTagRequest"
 description: "PFSegmentsRemovePlayerTagRequest data model. This API will trigger a player_tag_removed event and remove a tag with the given TagName and PlayFabID from the corresponding player profile. TagName can be used for segmentation and it is limited to 256 characters."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

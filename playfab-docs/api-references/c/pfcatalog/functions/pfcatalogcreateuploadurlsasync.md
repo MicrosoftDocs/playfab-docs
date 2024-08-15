@@ -4,7 +4,7 @@ title: "PFCatalogCreateUploadUrlsAsync"
 description: "Creates one or more upload URLs which can be used by the client to upload raw file data. Content URls and uploaded content will be garbage collected after 24 hours if not attached to a draft or published item. Detailed pricing info around uploading content can be found here: https://learn.microsoft.com/gaming/playfab/features/pricing/meters/catalog-meters"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

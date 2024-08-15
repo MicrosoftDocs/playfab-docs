@@ -4,7 +4,7 @@ title: "PFAccountManagementGetServerCustomIDsFromPlayFabIDsResult"
 description: "PFAccountManagementGetServerCustomIDsFromPlayFabIDsResult data model. For a PlayFab account that isn't associated with a server custom identity, ServerCustomId will be null."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

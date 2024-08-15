@@ -4,7 +4,7 @@ title: "PFAccountManagementClientGetPlayFabIDsFromGameCenterIDsAsync"
 description: "Retrieves the unique PlayFab identifiers for the given set of Game Center identifiers (referenced in the Game Center Programming Guide as the Player Identifier)."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

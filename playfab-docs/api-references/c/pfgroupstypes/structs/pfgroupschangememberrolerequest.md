@@ -4,7 +4,7 @@ title: "PFGroupsChangeMemberRoleRequest"
 description: "PFGroupsChangeMemberRoleRequest data model. Changes the role membership of a list of entities from one role to another in in a single operation. The destination role must already exist. This is equivalent to adding the entities to the destination role and removing from the origin role. Returns nothing if successful."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

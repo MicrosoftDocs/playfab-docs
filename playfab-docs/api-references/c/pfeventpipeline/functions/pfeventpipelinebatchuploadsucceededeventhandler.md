@@ -4,7 +4,7 @@ title: "PFEventPipelineBatchUploadSucceededEventHandler"
 description: "A handler invoked when the SDK successfully uploads a batch of events."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

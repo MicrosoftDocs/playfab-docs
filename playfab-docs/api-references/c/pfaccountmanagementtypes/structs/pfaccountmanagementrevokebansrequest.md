@@ -4,7 +4,7 @@ title: "PFAccountManagementRevokeBansRequest"
 description: "PFAccountManagementRevokeBansRequest data model. Setting the active state of all bans requested to Inactive regardless of whether that ban has already expired. BanIds that do not exist will be skipped. Returns information about applied updates only. ."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFHCWebSocketCloseHandle"
 description: "Decrements the reference count on the WebSocket object."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

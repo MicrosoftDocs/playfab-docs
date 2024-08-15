@@ -4,7 +4,7 @@ title: "PFInventoryDeleteInventoryCollectionRequest"
 description: "PFInventoryDeleteInventoryCollectionRequest data model. Delete an Inventory Collection by the specified Id for an Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

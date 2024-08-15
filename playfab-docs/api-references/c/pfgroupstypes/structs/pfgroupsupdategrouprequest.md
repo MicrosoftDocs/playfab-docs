@@ -4,7 +4,7 @@ title: "PFGroupsUpdateGroupRequest"
 description: "PFGroupsUpdateGroupRequest data model. Updates data about a group, such as the name or default member role. Returns information about whether the update was successful. Only title claimants may modify the administration role for a group."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

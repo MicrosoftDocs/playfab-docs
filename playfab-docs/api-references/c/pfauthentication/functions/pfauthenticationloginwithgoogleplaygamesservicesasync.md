@@ -4,7 +4,7 @@ title: "PFAuthenticationLoginWithGooglePlayGamesServicesAsync"
 description: "Signs the user in using their Google Play Games account credentials"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

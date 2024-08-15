@@ -4,7 +4,7 @@ title: "PFInventoryUpdateInventoryItemsRequest"
 description: "PFInventoryUpdateInventoryItemsRequest data model. Given an entity type, entity identifier and container details, will update the entity's inventory items."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

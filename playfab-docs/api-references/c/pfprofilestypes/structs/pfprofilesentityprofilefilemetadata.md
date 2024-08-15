@@ -4,7 +4,7 @@ title: "PFProfilesEntityProfileFileMetadata"
 description: "PFProfilesEntityProfileFileMetadata data model. An entity file's meta data. To get a download URL call File/GetFiles API."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

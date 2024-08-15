@@ -4,7 +4,7 @@ title: "PFAccountManagementClientUnlinkOpenIdConnectAsync"
 description: "Unlinks an OpenID Connect account from a user's PlayFab account, based on the connection ID of an existing relationship between a title and an Open ID Connect provider."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

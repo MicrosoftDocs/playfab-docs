@@ -4,7 +4,7 @@ title: "PFAccountManagementServerSendCustomAccountRecoveryEmailAsync"
 description: "Forces an email to be sent to the registered contact email address for the user's account based on an account recovery email template"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

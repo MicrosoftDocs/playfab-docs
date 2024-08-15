@@ -4,7 +4,7 @@ title: "PFGroupsDeleteGroupRequest"
 description: "PFGroupsDeleteGroupRequest data model. Deletes a group and all roles, invitations, join requests, and blocks associated with it. Permission to delete is only required the group itself to execute this action. The group and data cannot be cannot be recovered once removed, but any abuse reports about the group will remain. No data is returned in the case of success."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

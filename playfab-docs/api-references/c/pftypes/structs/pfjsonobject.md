@@ -4,7 +4,7 @@ title: "PFJsonObject"
 description: "String representation of a Json Object"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 
