@@ -4,7 +4,7 @@ title: "PFInventoryTransferInventoryItemsRequest"
 description: "PFInventoryTransferInventoryItemsRequest data model. Transfer the specified inventory items of an entity's container Id to another entity's container Id."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

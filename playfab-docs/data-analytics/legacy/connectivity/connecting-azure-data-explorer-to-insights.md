@@ -5,7 +5,7 @@ description: Guide to connecting Azure Data Explorer to Insights.
 ms.author: norie
 ms.date: 03/20/2020    
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Describes the steps needed to create a task to perform one or more 
 ms.author: joanlee
 ms.date: 01/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, actions, rules
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,7 @@ title: "PFCatalogGetItemReviewSummaryAsync"
 description: "Get a summary of all ratings and reviews associated with the specified item. Summary ratings data is cached with update data coming within 15 minutes."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

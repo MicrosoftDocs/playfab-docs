@@ -5,7 +5,7 @@ description: This guide helps you make your first PlayFab API call in Linux C++.
 ms.author: joanlee
 ms.date: 04/16/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, linux, cocos2d-x, unreal, lua sdk
 ms.localizationpriority: medium
 ---

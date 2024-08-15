@@ -4,7 +4,7 @@ title: "PFAccountManagementServerGetUserAccountInfoAsync"
 description: "Retrieves the relevant details for a specified user"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

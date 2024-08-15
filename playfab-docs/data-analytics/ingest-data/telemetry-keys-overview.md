@@ -5,7 +5,7 @@ description: Using Telemetry Keys to ingest events
 ms.author: sofiamarin
 ms.date: 06/14/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, simplified authentication telemetry, telemetry keys, telemetry
 ms.localizationpriority: medium
 ---

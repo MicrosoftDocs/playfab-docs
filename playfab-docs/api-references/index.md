@@ -5,7 +5,7 @@ description: Overview page for PlayFab REST API reference documentation.
 ms.author: joanlee
 ms.date: 11/19/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, api
 ms.localizationpriority: medium
 ---

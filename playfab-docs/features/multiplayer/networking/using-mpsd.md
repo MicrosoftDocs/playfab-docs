@@ -5,7 +5,7 @@ description: Supplemental guidance for using PlayFab Party with MPSD
 ms.author: scmunro
 ms.date: 04/24/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, party, networking, mpsd, roster
 ms.localizationpriority: medium
 ---

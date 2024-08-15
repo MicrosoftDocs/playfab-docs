@@ -5,7 +5,7 @@ description: Hamcrest license.
 ms.author: joanlee
 ms.date: 02/20/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, java sdk, hamcrest, 
 ms.localizationpriority: medium
 ---

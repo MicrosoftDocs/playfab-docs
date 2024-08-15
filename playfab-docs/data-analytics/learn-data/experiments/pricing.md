@@ -5,7 +5,7 @@ description: Demonstrates how to experiments pricing works.
 ms.author: shtarwar
 ms.date: 08/04/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, experiments pricing, experiments, experimentation 
 ms.localizationpriority: medium
 ---

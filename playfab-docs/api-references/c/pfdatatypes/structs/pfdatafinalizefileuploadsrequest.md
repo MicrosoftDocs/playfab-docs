@@ -4,7 +4,7 @@ title: "PFDataFinalizeFileUploadsRequest"
 description: "PFDataFinalizeFileUploadsRequest data model. Finalizes the upload of the requested files. Verifies that the files have been successfully uploaded and moves the file pointers from pending to live."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -5,7 +5,7 @@ description: Learn about the SDKs for Azure PlayFab Multiplayer Game Servers.
 ms.author: joanlee
 ms.date: 01/21/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party, sdk, sample
 ms.localizationpriority: medium
 ---

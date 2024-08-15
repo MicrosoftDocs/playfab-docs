@@ -4,7 +4,7 @@ title: "PFAccountManagementClientUnlinkXboxAccountAsync"
 description: "Unlinks the related Xbox Live account from the user's PlayFab account"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

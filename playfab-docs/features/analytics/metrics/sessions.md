@@ -5,7 +5,7 @@ description: Describes how to enable and manage logging events to calculate Focu
 ms.author: joanlee
 ms.date: 10/29/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, metrics, sessions
 ms.localizationpriority: medium
 ---

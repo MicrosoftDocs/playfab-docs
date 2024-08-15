@@ -4,7 +4,7 @@ title: "PFDataAbortFileUploadsRequest"
 description: "PFDataAbortFileUploadsRequest data model. Aborts the pending upload of the requested files."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

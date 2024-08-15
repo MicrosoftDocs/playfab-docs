@@ -4,7 +4,7 @@ title: PlayFabMultiplayer.PlayFabMultiplayerServer.JoinLobbyAsServer method
 description: This document describes the PlayFabMultiplayer.PlayFabMultiplayerServer.JoinLobbyAsServer.
 ms.author: raymondcha
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 4/19/2024
 ---
 

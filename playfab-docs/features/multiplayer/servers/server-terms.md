@@ -5,7 +5,7 @@ description: Playfab Multiplayer Server terms.
 ms.author: joanlee
 ms.date: 03/10/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party, sdk, sample
 ms.localizationpriority: medium
 ---

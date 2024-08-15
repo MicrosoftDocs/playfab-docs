@@ -5,7 +5,7 @@ description: Videos overview
 ms.author: joanlee
 ms.date: 04/17/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playfab videos
 ms.localizationpriority: medium
 ---

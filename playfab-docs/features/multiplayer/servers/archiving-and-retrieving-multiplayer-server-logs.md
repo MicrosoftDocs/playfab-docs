@@ -5,7 +5,7 @@ description: Describes how to archive and retrieve multiplayer server logs.
 ms.author: joanlee
 ms.date: 01/17/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, azure, gsdk
 ms.localizationpriority: medium
 ---

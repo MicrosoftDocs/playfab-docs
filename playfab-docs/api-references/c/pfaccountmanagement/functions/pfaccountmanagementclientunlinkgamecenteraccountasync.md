@@ -4,7 +4,7 @@ title: "PFAccountManagementClientUnlinkGameCenterAccountAsync"
 description: "Unlinks the related Game Center account from the user's PlayFab account"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

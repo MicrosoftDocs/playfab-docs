@@ -5,7 +5,7 @@ description: Learn about Azure PlayFab Party real-time chat and data communicati
 ms.author: joanlee
 ms.date: 10/13/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party
 ms.localizationpriority: medium
 ---

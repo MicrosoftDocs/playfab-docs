@@ -5,7 +5,7 @@ description: Describes how to properly configure matchmaking queues
 ms.author: kkline
 ms.date: 03/15/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer, matchmaking, match, config
 ms.localizationpriority: medium
 ---

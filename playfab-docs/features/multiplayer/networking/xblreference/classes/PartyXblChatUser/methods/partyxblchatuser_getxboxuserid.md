@@ -4,7 +4,7 @@ title: "PartyXblChatUser::GetXboxUserId"
 description: Gets the Xbox Live User Id associated with this user.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/17/2020
 ---
 

@@ -5,7 +5,7 @@ description: Learn about using custom tags to customize your events. Custom tags
 ms.author: kevinasg
 ms.date: 01/11/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, custom, tags, playstream, events
 ms.localizationpriority: medium
 ---

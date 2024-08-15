@@ -5,7 +5,7 @@ description: Video script for Connecting your Microsoft Azure PlayFab data to Mi
 ms.author: joanlee
 ms.date: 07/19/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, playfab videos
 ms.localizationpriority: medium
 ---

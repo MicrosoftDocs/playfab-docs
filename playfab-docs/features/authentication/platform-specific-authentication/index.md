@@ -5,7 +5,7 @@ description: Landing page for Platform-Specific Authentication.
 ms.author: joanlee
 ms.date: 06/12/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, authentication
 ms.localizationpriority: medium
 ---

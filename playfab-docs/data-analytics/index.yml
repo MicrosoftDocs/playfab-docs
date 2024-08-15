@@ -6,7 +6,7 @@ summary: PlayFab data and analytics helps you manage game data. It provides repo
 metadata:
   title: PlayFab data and analytics documentation
   description: Hub page for the PlayFab data and analytics documentation. Here you can find feature overviews, quickstart guides, and tutorials. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: sofiamarinv
   ms.author: sofiamarin

@@ -4,7 +4,7 @@ title: "PFMultiplayerSetThreadAffinityMask"
 description: "Optionally configures the processor on which internal Multiplayer library threads will run."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/03/2022
 ---
 

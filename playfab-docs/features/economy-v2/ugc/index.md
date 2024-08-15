@@ -5,7 +5,7 @@ description: Overview of the PlayFab User Generated Content feature.
 ms.author: thomg
 ms.date: 06/17/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---

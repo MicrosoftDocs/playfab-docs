@@ -5,7 +5,7 @@ author: Jeffrey-Shi #Required; your GitHub user alias, with correct capitalizati
 ms.author: jeffshi #Required; microsoft alias of author; optional team alias.
 ms.date: 06/11/2018
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, csharp, playfab api, login
 ms.localizationpriority: medium
 ---

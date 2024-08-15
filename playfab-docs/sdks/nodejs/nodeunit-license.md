@@ -5,7 +5,7 @@ description: The Node Unit license.
 ms.author: joanlee
 ms.date: 02/21/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, nodejs, javascript, npm javascript playfab, nodeunit, node unit
 ms.localizationpriority: medium
 ---

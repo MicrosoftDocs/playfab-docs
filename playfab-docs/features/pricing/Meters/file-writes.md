@@ -5,7 +5,7 @@ description: This file details the APIs that cause file writes meter to incremen
 ms.author: joanlee
 ms.date: 11/04/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing
 ms.localizationpriority: medium
 ---

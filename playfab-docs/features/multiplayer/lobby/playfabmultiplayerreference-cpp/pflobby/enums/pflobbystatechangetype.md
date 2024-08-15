@@ -4,7 +4,7 @@ title: "PFLobbyStateChangeType"
 description: "The types of state changes that can occur in the Lobby library."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/14/2024
 ---
 

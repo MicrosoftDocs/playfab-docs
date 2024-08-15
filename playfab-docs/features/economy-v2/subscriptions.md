@@ -5,7 +5,7 @@ description: Introduction to Economy v2 Subscriptions.
 ms.author: sranthar
 ms.date: 03/21/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, catalog, subscriptions
 ms.localizationpriority: medium
 ---

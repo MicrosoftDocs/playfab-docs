@@ -5,7 +5,7 @@ description: Deploying an Unreal GSDK Project to the local machine for testing
 ms.author: joanlee
 ms.date: 12/08/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, gsdk, unreal
 ms.localizationpriority: medium
 ---

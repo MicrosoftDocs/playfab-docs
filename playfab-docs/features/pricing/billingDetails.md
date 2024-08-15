@@ -5,7 +5,7 @@ description: Describes the billing summary page.
 ms.author: joanlee
 ms.date: 07/15/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing, billing, bill, invoice, meter, meters
 ms.localizationpriority: medium
 ---

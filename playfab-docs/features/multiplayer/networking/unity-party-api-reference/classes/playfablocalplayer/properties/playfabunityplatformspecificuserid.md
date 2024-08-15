@@ -4,7 +4,7 @@ title: PlayFabLocalPlayer.PlatformSpecificUserId
 description: Gets an additional identifier that represents the platform's user-specific identifier.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

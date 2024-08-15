@@ -4,7 +4,7 @@ title: "PartyXblManager::DestroyChatUser"
 description: Destroys a chat user.
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/01/2019
 ---
 

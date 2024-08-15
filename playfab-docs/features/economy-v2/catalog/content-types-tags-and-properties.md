@@ -5,7 +5,7 @@ description: Economy Catalog v2 APIs and Game Manager Interface provide item man
 ms.author: derekreese
 ms.date: 9/07/2022
 ms.topic: quickstart
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy
 ms.localizationpriority: medium
 ---

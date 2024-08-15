@@ -5,7 +5,7 @@ description: This guide helps you make your first PlayFab API call in the iOS SD
 ms.author: raulalbertog
 ms.date: 01/18/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, ios
 ms.localizationpriority: medium
 ---

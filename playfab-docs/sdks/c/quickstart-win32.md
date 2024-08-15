@@ -5,7 +5,7 @@ description: This guide helps you make your first PlayFab API call in the Win32 
 ms.author: andmcc
 ms.date: 06/16/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, windows
 ms.localizationpriority: medium
 ---

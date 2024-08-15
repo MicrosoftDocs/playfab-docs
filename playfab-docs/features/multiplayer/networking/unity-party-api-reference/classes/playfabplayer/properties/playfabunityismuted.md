@@ -4,7 +4,7 @@ title: bool PlayFabPlayer.IsMuted
 description: Returns true if the player is muted.
 ms.author: victorku
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 06/22/2020
 ---
 

@@ -5,7 +5,7 @@ description: This file details the different context variables that are availabl
 ms.author: cjwill
 ms.date: 02/23/2020
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, automation, cloudscript, azure functions
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: PlayFab Services SDK options for Sony PlayStation
 ms.author: andmcc
 ms.date: 06/23/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, sony, playstation, ps4, ps5
 ms.localizationpriority: medium
 ---

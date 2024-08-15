@@ -5,7 +5,7 @@ description: Describes the limits for each PlayFab resource by tier.
 ms.author: joanlee
 ms.date: 04/29/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, pricing, billing, essentials, tier, tiers, limit, limits
 ROBOTS: NOINDEX, NOFOLLOW
 ms.localizationpriority: medium

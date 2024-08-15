@@ -5,7 +5,7 @@ description: Compare servers for PlayFab Multiplayer Server 2.0.
 ms.author: joanlee
 ms.date: 01/17/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, pricing
 ms.localizationpriority: medium
 ---

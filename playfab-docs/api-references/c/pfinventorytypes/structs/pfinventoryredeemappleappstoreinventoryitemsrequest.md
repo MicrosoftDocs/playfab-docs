@@ -4,7 +4,7 @@ title: "PFInventoryRedeemAppleAppStoreInventoryItemsRequest"
 description: "PFInventoryRedeemAppleAppStoreInventoryItemsRequest data model. Redeem items from the Apple App Store."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

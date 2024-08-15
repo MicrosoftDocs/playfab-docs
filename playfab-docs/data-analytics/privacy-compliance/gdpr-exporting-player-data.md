@@ -5,7 +5,7 @@ description: How to use PlayFab to export a player’s data so that you can be G
 ms.author: sofiamarin
 ms.date: 02/12/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, playerdata, gdpr, compliance, admin api, delete player data, player data
 ms.localizationpriority: medium
 ---

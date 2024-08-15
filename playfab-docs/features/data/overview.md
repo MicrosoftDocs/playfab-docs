@@ -5,7 +5,7 @@ description: Learn about an overview of PlayFab Data offerings and features. Pla
 ms.author: shtarwar
 ms.date: 05/04/2020
 ms.topic: overview
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, title data, players data, characters data, group data, content delivery network, CDN, Entities, Webhooks 
 ms.localizationpriority: medium
 ---

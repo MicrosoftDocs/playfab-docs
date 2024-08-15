@@ -4,7 +4,7 @@ title: "PFLobbyDataUpdate"
 description: "A request to make an update to the shared portion of the lobby."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/25/2023
 ---
 

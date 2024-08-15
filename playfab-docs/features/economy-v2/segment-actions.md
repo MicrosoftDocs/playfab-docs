@@ -5,7 +5,7 @@ description: Introduction to Segment Actions
 ms.author: sranthar
 ms.date: 3/13/2024
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, catalog, segments, actions
 ms.localizationpriority: medium
 ---

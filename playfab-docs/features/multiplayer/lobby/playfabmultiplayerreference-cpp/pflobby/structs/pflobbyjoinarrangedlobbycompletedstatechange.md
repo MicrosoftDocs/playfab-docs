@@ -4,7 +4,7 @@ title: "PFLobbyJoinArrangedLobbyCompletedStateChange"
 description: "Information specific to the *JoinArrangedLobbyCompleted* type of state change."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 03/15/2022
 ---
 

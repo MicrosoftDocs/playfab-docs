@@ -5,7 +5,7 @@ description: Describes how to set up and interact with a timed consumable item u
 ms.author: timcra
 ms.date: 05/25/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, consumables
 ms.localizationpriority: medium
 ---

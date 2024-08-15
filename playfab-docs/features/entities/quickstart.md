@@ -5,7 +5,7 @@ description: Quickstart for using entities in PlayFab.
 ms.author: cjwill
 ms.date: 12/03/2019
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, data, entities, accounts
 ms.localizationpriority: medium
 ---

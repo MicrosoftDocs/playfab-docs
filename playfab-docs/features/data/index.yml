@@ -6,7 +6,7 @@ summary: Documentation pertaining to PlayFab Data. Contains overviews of feature
 metadata:
   title: PlayFab Data documentation
   description: Hub page for the PlayFab Data documentation. Here you can find featrue overviews, quickstart guides, and tutorials. # Required; article description that is displayed in search results. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: Shikha-tarware
   ms.author: shtarwar

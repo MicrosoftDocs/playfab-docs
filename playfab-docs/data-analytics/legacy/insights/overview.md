@@ -5,7 +5,7 @@ description: Overview for PlayFab Insights
 ms.author: joanlee
 ms.date: 02/28/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, insights
 ms.localizationpriority: medium
 ---

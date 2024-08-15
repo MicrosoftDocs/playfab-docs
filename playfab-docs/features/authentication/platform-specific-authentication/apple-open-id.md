@@ -5,7 +5,7 @@ author: antnguyen89
 ms.author: antnguyen
 ms.date: 08/09/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, OpenID, Apple, Auth 2.0
 ms.localizationpriority: medium
 ---

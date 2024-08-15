@@ -5,7 +5,7 @@ description: Windows Runner sample.
 ms.author: joanlee
 ms.date: 03/15/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers
 ms.localizationpriority: medium
 ---

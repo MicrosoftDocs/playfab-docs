@@ -4,7 +4,7 @@ title: "PFCatalogCreateDraftItemRequest"
 description: "PFCatalogCreateDraftItemRequest data model. The item will not be published to the public catalog until the PublishItem API is called for the item."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

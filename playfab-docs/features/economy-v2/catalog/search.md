@@ -5,7 +5,7 @@ description: Tutorial outlining using the Search API to query published content.
 ms.author: fprotti
 ms.date: 11/21/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc
 ms.localizationpriority: medium
 ---

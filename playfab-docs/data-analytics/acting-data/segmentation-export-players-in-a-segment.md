@@ -5,7 +5,7 @@ description: This is a tutorial document for customers to export players of a se
 ms.author: shtarwar
 ms.date: 04/29/2022
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, segments, segmentation, export player profile, export segments players
 ms.localizationpriority: medium
 ---

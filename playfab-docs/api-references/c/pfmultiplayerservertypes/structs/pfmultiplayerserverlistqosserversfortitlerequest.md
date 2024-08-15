@@ -4,7 +4,7 @@ title: "PFMultiplayerServerListQosServersForTitleRequest"
 description: "PFMultiplayerServerListQosServersForTitleRequest data model. Returns a list of quality of service servers for a title."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

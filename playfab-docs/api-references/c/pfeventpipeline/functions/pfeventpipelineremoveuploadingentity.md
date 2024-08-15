@@ -4,7 +4,7 @@ title: "PFEventPipelineRemoveUploadingEntity"
 description: "Remove an entity from an existing pipeline. If a valid Telemetry Key Configuration was added at pipeline creation it will switch to it."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

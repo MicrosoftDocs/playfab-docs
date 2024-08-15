@@ -4,7 +4,7 @@ title: "PFGroupsListGroupBlocksRequest"
 description: "PFGroupsListGroupBlocksRequest data model. Lists all entities blocked from joining a group. A list of blocked entities is returned."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFCatalogGetItemContainersAsync"
 description: "Search for a given item and return a set of bundles and stores containing the item. Up to 50 items can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. This API is intended for tooling/automation scenarios and has a reduced RPS with Player Entities limited to 30 requests in 300 seconds and Title Entities limited to 100 requests in 10 seconds."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFMultiplayerFindLobbies"
 description: "Search for lobbies on behalf of the local user."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 07/14/2023
 ---
 

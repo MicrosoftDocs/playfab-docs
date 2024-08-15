@@ -5,7 +5,7 @@ description: Handling errors in the PlayFab Services SDK
 ms.author: johlafo
 ms.date: 04/14/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, windows, xbox, gdk, login
 ms.localizationpriority: medium
 ---

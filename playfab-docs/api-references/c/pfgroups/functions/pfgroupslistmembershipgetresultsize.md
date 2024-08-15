@@ -4,7 +4,7 @@ title: "PFGroupsListMembershipGetResultSize"
 description: "Get the size in bytes needed to store the result of a ListMembership call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 

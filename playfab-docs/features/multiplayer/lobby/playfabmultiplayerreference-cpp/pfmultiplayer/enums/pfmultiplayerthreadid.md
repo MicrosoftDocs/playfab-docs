@@ -4,7 +4,7 @@ title: "PFMultiplayerThreadId"
 description: "Threads that Multiplayer library uses for internal purposes."
 ms.author: scmunro
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 01/03/2022
 ---
 

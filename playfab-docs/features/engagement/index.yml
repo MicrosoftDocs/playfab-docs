@@ -6,7 +6,7 @@ summary: An overview of features along with quickstart guides and tutorials on t
 metadata:
   title: PlayFab Engagement documentation
   description: Hub page for the PlayFab Engagement documentation. Here you can find feature overviews, quickstart guides, and tutorials. 
-  ms.service: playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab
   ms.topic: landing-page
   author: Shikha-tarware
   ms.author: shikha-tarware

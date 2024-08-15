@@ -5,7 +5,7 @@ description: An overview of the Catalog in Economy V2 Describes.
 ms.author: thomg
 ms.date: 6/28/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, catalogs
 ms.localizationpriority: medium
 ---

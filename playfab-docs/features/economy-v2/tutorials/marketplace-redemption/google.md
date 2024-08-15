@@ -5,7 +5,7 @@ description: Set up a PlayFab bundle that can be purchased from Google Play Stor
 ms.author: fprotti
 ms.date: 11/20/2023
 ms.topic: tutorial
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, integration, marketplace
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: Overview of rewarded Ads.
 ms.author: norie
 ms.date: 04/07/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, analytics, rewarded ads
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: This guide helps you make your first PlayFab API call in native C/C
 ms.author: andmcc
 ms.date: 05/19/2023
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, c++, windows, gdk, xbox
 ms.localizationpriority: medium
 ---

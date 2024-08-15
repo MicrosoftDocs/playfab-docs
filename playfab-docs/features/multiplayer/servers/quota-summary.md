@@ -5,7 +5,7 @@ description: Managing Summary
 ms.author: joanlee
 ms.date: 11/30/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, core quotas, quota summary
 ms.localizationpriority: medium
 ---

@@ -5,7 +5,7 @@ description: "How to set read-only player data"
 ms.author: joanlee
 ms.date: 06/16/2020
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, player data
 ms.localizationpriority: medium
 ---

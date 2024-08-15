@@ -4,7 +4,7 @@ title: "PFPlayerDataManagementServerUpdateUserDataRequest"
 description: "PFPlayerDataManagementServerUpdateUserDataRequest data model. This function performs an additive update of the arbitrary JSON object containing the custom data for the user. In updating the custom data object, keys which already exist in the object will have their values overwritten, while keys with null values will be removed. No other key-value pairs will be changed apart from those specified in the call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 02/22/2024
 ---
 
