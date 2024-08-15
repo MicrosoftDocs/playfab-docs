@@ -5,7 +5,7 @@ description: Servers overview page for Multiplayer Servers in Game Manager
 ms.author: raakisad
 ms.date: 08/18/2021
 ms.topic: article
-ms.service: playfab
+ms.service: azure-playfab
 keywords: playfab, multiplayer servers, servers details, servers list, archived servers, game manager 
 ms.localizationpriority: medium
 ---
