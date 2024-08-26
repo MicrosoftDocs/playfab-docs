@@ -1,8 +1,6 @@
 items:
 - name: Catalog overview
   href: catalog-overview.md
-- name: Catalog views
-  href: catalog-views.md
 - name: Content types, tags, and properties
   href: content-types-tags-and-properties.md
 - name: Deep links
