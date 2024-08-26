@@ -38,6 +38,10 @@ August 5, 2024
 - Addressed spurious direct peer connection failures after a previous connection attempt failed in certain cases for non Windows platforms.
 - Fixed an issue where the DestroyNetwork event was not fired during repeated Party network creation and destroying.
 
+### Known issues
+
+- The library may occasionally crash when establishing direct peer connections in networks with three or more devices.
+
 ## 1.9.5
 
 May 3, 2024

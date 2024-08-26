@@ -3,6 +3,8 @@ items:
   href: index.md
 - name: Quickstart
   href: quickstart.md
+- name: Items and inventory
+  href: items-and-inventory-overview.md
 - name: Collections
   href: collections.md
 - name: Stacks
