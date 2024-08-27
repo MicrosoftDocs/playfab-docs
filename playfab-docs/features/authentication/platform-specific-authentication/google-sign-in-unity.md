@@ -76,7 +76,7 @@ Now that you know your title API Endpoint, follow the steps outlined [here](http
 
     ![Authorized Javascript Origins](media/tutorials/google-unity/google-unity-authorized-javascript-origins.png) 
 
-- Also, make sure to add `https://oauth.playfab.com/oauth2/google` as an **Authorized Redirect URI**. If you don't do this step, you get a **mismatch redirect_uri** error.
+- Also, make sure to add your own application redirect URI as an **Authorized Redirect URI**. If you don't do this step, you'll get a **mismatch redirect_uri** error.
 
     ![Authorized Redirect URIs](media/tutorials/google-unity/google-unity-authorized-redirect-uris.png) 
 
