@@ -253,7 +253,7 @@ The list of tags has a limit of **1024 tags**, each with a max length of **32 ch
 The max number of inventory operations to be executed is of **50 operations**.
 
 The max number of items to be modified is **300 items**.   
-(for example, you can add up to five full bundles because 5*50 = 250 that matches the 250 limit)
+(for example, you can add one full bundle and up to 50 other items)
 
 ### Inventory Collections
 
