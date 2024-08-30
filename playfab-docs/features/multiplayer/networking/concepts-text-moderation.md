@@ -16,7 +16,7 @@ PlayFab Party offers a text moderation solution that is integrated with text cha
 
 ## Language support
 
-Text moderation is supported for more than 100 languages. However, you don't need to do anything to configure a language selection for text moderation; the language of each text message is automatically detected by Azure. For a complete list of supported languages that support auto-detection and profanity filtering, refer to Azure AI Content Safety's [list of supported languages](/azure/ai-services/content-safety/language-support).
+Text moderation is supported for more than 100 languages. However, you don't need to do anything to configure a language selection for text moderation; Azure automatically detects the language of each text message. For a complete list of supported languages that support autodetection and profanity filtering, refer to Azure AI Content Safety's [list of supported languages](/azure/ai-services/content-safety/language-support).
 
 ## Enabling text moderation
 
@@ -37,9 +37,9 @@ myLocalChatControl->SetTextChatOptions(PartyTextChatOptions::None, nullptr);
 
 All text sent to a chat control with moderation enabled have moderation applied, regardless of the sender's own moderation settings. Text messages received by a chat control with moderation enabled have the `chatText` field in `PartyChatTextReceivedStateChange` replaced with the moderated version.
 
-More fields are present on the `PartyChatTextReceivedStateChange` to enable more complex scenarios, such as giving users an option to view an unfiltered version of the text. Refer to the [PartyChatTextReceivedStateChange](reference/structs/partychattextreceivedstatechange.md) reference page for more information. 
+More fields are present on the `PartyChatTextReceivedStateChange` to enable more complex scenarios, such as giving users an option to view an unfiltered version of the text. For more information, see the [PartyChatTextReceivedStateChange](reference/structs/partychattextreceivedstatechange.md) reference page. 
 
-If moderating a text message fails, either due to a service error or because the text was deemed offensive by the service without being able to identify specific terms, then the entire text message is masked with asterisks. You can determine if this has happened by looking at `PartyChatTextReceivedOptions` enum provided in the `options` field of `PartyChatTextReceivedStateChange`.
+If moderating a text message fails, either due to a service error or because the text was deemed offensive by the service without being able to identify specific terms, then the entire text message is masked with asterisks. The `PartyChatTextReceivedOptions` enum provided in the `options` field of `PartyChatTextReceivedStateChange` contains more information when this error case occurs.
 
 ## Adjusting filtering levels
 
