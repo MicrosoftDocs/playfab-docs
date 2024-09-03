@@ -4,6 +4,7 @@
   href: quickstart-statistics.md
 - name: Tutorials
   items:
+<<<<<<< HEAD
   - name: Create a Basic Statistic
     href: create-basic-statistics.md
   - name: Doing More With Statistics
@@ -13,6 +14,17 @@
   - name: Add Extra Data to Statistics
     href: metadata-statistics.md
   - name: API Reference
+=======
+  - name: Create a basic statistic
+    href: create-basic-statistics.md
+  - name: Doing more with statistics
+    href: doing-more-statistics.md
+  - name: Seasonal statistics
+    href: seasonal-statistics.md
+  - name: Add contextual data to Statistics
+    href: metadata-statistics.md
+  - name: API reference
+>>>>>>> main
     href: api-reference.md
 
  
