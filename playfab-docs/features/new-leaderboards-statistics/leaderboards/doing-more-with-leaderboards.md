@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 title: Doing With More Leaderboards
 author: braulioal
 description: Learn how about the advanced features of Leaderboards
+=======
+title: Doing with more leaderboards
+author: braulioal
+description: Learn how about the advanced features of leaderboards
+>>>>>>> main
 ms.author: braulioal
 ms.date: 09/01/2024
 ms.topic: article

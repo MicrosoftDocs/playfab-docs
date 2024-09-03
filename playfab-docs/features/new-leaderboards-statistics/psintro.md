@@ -10,7 +10,11 @@ keywords: playfab, progression
 ms.localizationpriority: medium
 ---
 
+<<<<<<< HEAD
 # New Leaderboards and Stats services in PlayFab 
+=======
+# New Leaderboards and Statistics services in PlayFab 
+>>>>>>> main
 
 In essence, cross-progression in gaming focuses on providing a seamless and unified gaming experience that respects and
 maintains a player's investment in their gaming achievements across different platforms. Ensuring that their progress 
@@ -32,7 +36,11 @@ Learn more about the new features of Leaderboards, how to configure it and all t
 - [Quick start](./leaderboards/quickstart-leaderboards.md)
 - [Create Leaderboard](./leaderboards/create-basic-leaderboard.md)
 
+<<<<<<< HEAD
 ### Stats
+=======
+### Statistics
+>>>>>>> main
 
 Learn more about the new features of Statistics, how to configure it and all the different tutorials available.
 
