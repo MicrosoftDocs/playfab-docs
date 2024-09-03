@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Add Contextual Data to Leaderboards
-=======
 title: Add contextual data to leaderboards
->>>>>>> main
 author: braulioal
 description: Learn how to metadata to a leaderboard.
 ms.author: braulioal

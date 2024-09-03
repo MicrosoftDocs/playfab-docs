@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Leaderboard Linked to Stats
-=======
 title: Leaderboard linked to statistics
->>>>>>> main
 author: braulioal
 description: Learn how to create a leaderboard linked to stats.
 ms.author: braulioal

@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Create a Basic Statistic
-=======
 title: Create a basic statistic
->>>>>>> main
 author: braulioal
 description: Learn more about how to create a basic Statistics
 ms.author: braulioal

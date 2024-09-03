@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Seasonal Statistics
-=======
 title: Seasonal statistics
->>>>>>> main
 author: braulioal
 description: Learn more about versioning on statistics
 ms.author: braulioal
@@ -14,11 +10,7 @@ keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
 
-<<<<<<< HEAD
-# Seasonal Statistics
-=======
 # Seasonal statistics
->>>>>>> main
 
 In this tutorial, we explain the concept of versioning for statistics. There are multiple cases where we want to have 
 different versions of a given statistic. For example if a game has seasons, it's most likely going to reset the stats when
@@ -27,11 +19,7 @@ the new season begins.
 We continue with the example from the [Create Basic Statistic](create-basic-statistics.md). Imagine that our shooter game is getting really popular. Therefore, the concept of seasons is introduced. Every month, the game releases a new theme season for all the
 player base. So we want to keep independent stats per season.
 
-<<<<<<< HEAD
-## Creating a Statistic Definition For Versioning 
-=======
 ## Creating a statistic definition for versioning 
->>>>>>> main
 
 In the previous example, when creating a statistic definition, there was a hint about the importance of the `VersionConfiguration` 
 parameter for versioning. Here, we detail how to use it and how it works.
@@ -84,11 +72,7 @@ case, it means that the leaderboard is going to be reset automatically every mon
 
 [API Reference Creating a Statistic](/rest/api/playfab/progression/statistics/create-statistic-definition)
 
-<<<<<<< HEAD
-## Incrementing the Version of a Statistic
-=======
 ## Incrementing the version of a statistic
->>>>>>> main
 
 With this new configuration, we can have multiple versions of the same statistic for different seasons. 
 But what happens if we need to manually reset the leaderboard due to an issue and start over the season? 
