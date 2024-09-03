@@ -5,6 +5,10 @@ items:
     href: profile-reads.md
   - name: Profile Writes
     href: profile-writes.md
+  - name: Leaderboard Meters
+    href: leaderboard-meters.md  
+  - name: Statistics Meters
+    href: statistics-meters.md  
   - name: Content & Configuration Reads
     href: file-reads.md
   - name: Content & Configuration Writes
@@ -14,4 +18,5 @@ items:
   - name: Economy v2 Inventory Writes
     href: economy-writes.md
   - name: Economy v2 Catalog Meters
-    href: catalog-meters.md
+    href: catalog-meters.md 
+
