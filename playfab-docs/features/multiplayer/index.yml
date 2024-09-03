@@ -8,8 +8,8 @@ metadata:
   description: Guide on Multiplayer servers, matchmaking and Party # Required; article description that is displayed in search results. < 160 chars.
   ms.service: playfab multiplayer #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
-  author: xmcai2016
-  ms.author: carocai
+  author: joannaleecy
+  ms.author: joanlee
   ms.date: 04/27/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
