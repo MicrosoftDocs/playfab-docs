@@ -4,17 +4,17 @@
   href: quickstart-leaderboards.md
 - name: Tutorials
   items:
-  - name: Create a Basic Leaderboard
+  - name: Create a basic leaderboard
     href: create-basic-leaderboard.md  
-  - name: Seasonal Leaderboards
+  - name: Seasonal leaderboards
     href: seasonal-leaderboards.md
-  - name: Doing More With Leaderboards
+  - name: Doing more with leaderboards
     href: doing-more-with-leaderboards.md
-  - name: Add Contextual Data to Leaderboards
+  - name: Add contextual data to leaderboards
     href: metadata-leaderboards.md
-  - name: Ranking Players by Statistics 
+  - name: Ranking players by statistics 
     href: leaderboards-linked-to-stats.md
-  - name: API Reference 
+  - name: API reference 
     href: api-reference.md
 
 

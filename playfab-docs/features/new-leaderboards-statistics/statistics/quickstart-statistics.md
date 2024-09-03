@@ -1,5 +1,5 @@
 ---
-title: Quickstart on Statistics
+title: Quickstart on statistics
 author: braulioal
 description: Learn about how to start your set up of statistics
 ms.author: braulioal
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
 
-# Quick start statistics
+# Quickstart statistics
 
 In this guide, we're going to see how to set up the development environment for the Statistics service. We're also going
 to learn how to create a quick leaderboard from our website [Game Manager](https://developer.playfab.com/en-US/login).

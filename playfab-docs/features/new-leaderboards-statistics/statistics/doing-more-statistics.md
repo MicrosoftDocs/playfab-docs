@@ -1,5 +1,5 @@
 ---
-title: Doing more with Statistics
+title: Doing more with statistics
 author: braulioal
 description: Learn how about the advanced features of statistics
 ms.author: braulioal
