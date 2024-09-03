@@ -14,6 +14,8 @@ items:
     href: features/automation/toc.yml
   - name: Multiplayer
     href: features/multiplayer/toc.yml
+  - name: New Leaderboards and Statistics
+    href: features/new-leaderboards-statistics/toc.yml
   - name: Social
     href: features/social/toc.yml
   - name: Game configuration
