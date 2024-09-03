@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Metadata Statistics
-=======
 title: Metadata statistics
->>>>>>> main
 author: braulioal
 description: Learn more how to add contextual data to a statistic
 ms.author: braulioal

@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: Seasonal Leaderboards
-=======
 title: Seasonal leaderboards
->>>>>>> main
 author: braulioal
 description: Learn more about versioning on leaderboards
 ms.author: braulioal

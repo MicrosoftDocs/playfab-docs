@@ -1,13 +1,7 @@
 ---
-<<<<<<< HEAD
-title: API Leaderboard Reference
-author: braulioal
-description: Learn more about all the APIs available for Leaderboards.
-=======
 title: API Leaderboard reference
 author: braulioal
 description: Learn more about all the APIs available for leaderboards.
->>>>>>> main
 ms.author: braulioal
 ms.date: 09/01/2024
 ms.topic: article

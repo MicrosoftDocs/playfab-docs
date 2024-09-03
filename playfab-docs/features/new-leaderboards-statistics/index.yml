@@ -1,18 +1,10 @@
 ### YamlMime:Landing
 
-<<<<<<< HEAD
-title: Azure PlayFab New Leaderboards and Statistics Documentation
-summary: summary # < 160 chars
-
-metadata:
-  title: New Leaderboards and Statistics Documentation
-=======
 title: Azure PlayFab New Leaderboards and Statistics documentation
 summary: Information about the new versions of Leaderboards and Statistics. # < 160 chars
 
 metadata:
   title: New Leaderboards and Statistics documentation
->>>>>>> main
   description: Guide on Leaderboards and Statistics # Required; article description that is displayed in search results. < 160 chars.
   ms.service: playfab leaderboards and stats #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
@@ -26,11 +18,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-<<<<<<< HEAD
-  - title: Understand the New Leaderboards and Statistics Documentation
-=======
   - title: Understand the New Leaderboards and Statistics documentation
->>>>>>> main
     linkLists:
       - linkListType: overview
         links:
