@@ -1,0 +1,11 @@
+- name: New Leaderboards and Statistics
+  href: index.yml
+- name: Introduction to the new Leaderboards and Statistics
+  href: psintro.md
+- name: Statistics
+  href: statistics/toc.yml
+- name: Leaderboards
+  href: leaderboards/toc.yml
+  
+
+
