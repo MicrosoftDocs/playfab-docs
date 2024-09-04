@@ -1,5 +1,5 @@
 ---
-title: Leaderboard linked to statistics
+title: Ranking players by statistics
 author: braulioal
 description: Learn how to create a leaderboard linked to stats.
 ms.author: braulioal
@@ -110,9 +110,9 @@ With this information, we can link and unlink statistics from leaderboards whene
 
 In this tutorial, we learned how to create a leaderboard powered by statistics and also how to unlink the services.
 For more information about other features, see following pages:
-- [Create Basic Leaderboard](create-basic-leaderboard.md).
-- [Seasonal Leaderboards](seasonal-leaderboards.md).
-- [Doing More With Leaderboards](doing-more-with-leaderboards.md).
-- [Add Contextual Data to Leaderboards](metadata-leaderboards.md).
-- [API Reference](api-reference.md).
+- [Create basic leaderboard](create-basic-leaderboard.md).
+- [Seasonal leaderboards](seasonal-leaderboards.md).
+- [Doing more with leaderboards](doing-more-with-leaderboards.md).
+- [Add contextual data to leaderboards](metadata-leaderboards.md).
+- [API reference](api-reference.md).
 

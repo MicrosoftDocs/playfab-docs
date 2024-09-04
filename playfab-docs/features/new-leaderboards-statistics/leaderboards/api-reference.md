@@ -33,9 +33,9 @@ error codes, and response structures.
 
 ## See also
 
-- [Create Basic Leaderboard](create-basic-leaderboard.md).
-- [Doing More With Leaderboards](doing-more-with-leaderboards.md).
-- [Seasonal Leaderboards](seasonal-leaderboards.md).
-- [Ranking Players by Stats](leaderboards-linked-to-stats.md).
-- [Add Contextual Data to Leaderboards](metadata-leaderboards.md).
-- [Leaderboard Meters](../../pricing/meters/leaderboard-meters.md).
+- [Create basic leaderboard](create-basic-leaderboard.md).
+- [Doing more with leaderboards](doing-more-with-leaderboards.md).
+- [Seasonal leaderboards](seasonal-leaderboards.md).
+- [Ranking players by statistics](leaderboards-linked-to-stats.md).
+- [Add contextual data to leaderboards](metadata-leaderboards.md).
+- [Leaderboard meters](../../pricing/meters/leaderboard-meters.md).
