@@ -243,7 +243,7 @@ In this tutorial, we learned how to do the following operations:
 
 ## See also
 
-- [Doing More With Statistics](doing-more-statistics.md).
-- [Seasonal Statistics](seasonal-statistics.md).
-- [Add Contextual Data to Statistics](metadata-statistics.md).
-- [API Reference](api-reference.md).
+- [Doing more with statistics](doing-more-statistics.md).
+- [Seasonal statistics](seasonal-statistics.md).
+- [Add contextual data to statistics](metadata-statistics.md).
+- [API reference](api-reference.md).
