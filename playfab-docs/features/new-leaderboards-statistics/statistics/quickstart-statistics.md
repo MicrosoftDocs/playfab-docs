@@ -120,9 +120,9 @@ private static async Task<PlayFabAuthenticationContext> LoginAsPlayer(string cus
 
 ## See also
 
-- [Create Basic Statistics](create-basic-statistics.md).
-- [Doing More With Statistics](doing-more-statistics.md).
-- [Seasonal Statistics](seasonal-statistics.md).
-- [Add Contextual Data to Statistics](metadata-statistics.md).
-- [API Reference](api-reference.md).
-- [Statistics Meters](../../pricing/meters/statistics-meters.md).
+- [Create basic statistics](create-basic-statistics.md).
+- [Doing more with statistics](doing-more-statistics.md).
+- [Seasonal statistics](seasonal-statistics.md).
+- [Add contextual data to statistics](metadata-statistics.md).
+- [API reference](api-reference.md).
+- [Statistics meters](../../pricing/meters/statistics-meters.md).

@@ -237,11 +237,11 @@ In this tutorial, we learned how to do the following operations:
 * Understand the enhance tie-breaking mechanism.
  
 ## See also
-- [Create Basic Leaderboard](create-basic-leaderboard.md).
-- [Seasonal Leaderboards](seasonal-leaderboards.md).
-- [Ranking Players by Stats](leaderboards-linked-to-stats.md).
-- [Add Extra Data to Leaderboards](metadata-leaderboards.md).
-- [API Reference](api-reference.md).
+- [Create basic leaderboard](create-basic-leaderboard.md).
+- [Seasonal leaderboards](seasonal-leaderboards.md).
+- [Ranking players by statistics](leaderboards-linked-to-stats.md).
+- [Add extra data to leaderboards](metadata-leaderboards.md).
+- [API reference](api-reference.md).
 
 
 

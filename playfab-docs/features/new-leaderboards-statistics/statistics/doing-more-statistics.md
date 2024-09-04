@@ -163,7 +163,7 @@ In this tutorial, we learned how to do the following operations:
 
 ## See also
 
-- [Add Contextual Data to Statistics](metadata-statistics.md)..
-- [Create Basic Statistics](create-basic-statistics.md).
-- [Seasonal Statistics](seasonal-statistics.md).
-- [API Reference](api-reference.md).
+- [Add contextual data to statistics](metadata-statistics.md)..
+- [Create basic statistics](create-basic-statistics.md).
+- [Seasonal statistics](seasonal-statistics.md).
+- [API reference](api-reference.md).

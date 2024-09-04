@@ -18,7 +18,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Understand the New Leaderboards and Statistics documentation
+  - title: Understand the New Leaderboards and Statistics
     linkLists:
       - linkListType: overview
         links:
@@ -30,6 +30,71 @@ landingContent:
             url: leaderboards/index.md
           - text: What are Statistics?
             url: statistics/index.md
+
+  - title: Get started with Leaderboards
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Quickstart with Leaderboards
+            url: leaderboards/quickstart-leaderboards.md
+      - linkListType: tutorial
+        links:
+          - text: Create a basic leaderboard
+            url: leaderboards/create-basic-leaderboard.md
+          - text: Doing more with leaderboards
+            url: leaderboards/doing-more-with-leaderboards.md
+          - text: Add contextual data to leaderboards
+            url: leaderboards/metadata-leaderboards.md
+          - text: Seasonal leaderboards
+            url: leaderboards/seasonal-leaderboards.md
+          - text: Ranking players by statistics
+            url: leaderboards/leaderboards-linked-to-stats.md
+
+  - title: Get started with Statistics
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Quickstart with Statistics
+            url: statistics/quickstart-statistics.md
+      - linkListType: tutorial
+        links:
+          - text: Create a basic statistic
+            url: statistics/create-basic-statistics.md
+          - text: Doing more with statistics
+            url: statistics/doing-more-statistics.md
+          - text: Add contextual data to statistics
+            url: statistics/metadata-statistics.md
+          - text: Seasonal statistics
+            url: statistics/seasonal-statistics.md
+
+  - title: Refer to APIs
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Leaderboards reference
+            url: leaderboards/api-reference.md
+          - text: Statistics reference
+            url: statistics/api-reference.md
+
+  - title: Meters
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Meters in general
+            url: ../pricing/meters/meters.md
+          - text: Development mode limits
+            url: ../pricing/development-mode.md
+          - text: Leaderboards meters
+            url: ../pricing/meters/leaderboard-meters.md
+          - text: Statistics meters
+            url: ../pricing/meters/statistics-meters.md
+
+
+      
+       
+
+
+
          
 
   

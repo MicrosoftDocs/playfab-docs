@@ -58,9 +58,12 @@ productDirectory:
         - url: features/economy-v2/index.yml
           text: Economy v2
         - url: features/engagement/index.yml
-          text: Engagement  
-        - url: features/social/tournaments-leaderboards/index.md
+          text: Engagement
+        - url: features/new-leaderboards-statistics/leaderboards/index.md
           text: Leaderboards
+        - url: features/new-leaderboards-statistics/statistics/index.md
+          text: Statistics
+     
 
     - title: Data and Analytics
       imageSrc: ./media/index/analyze.svg

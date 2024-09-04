@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2024
 author: amccalib
 description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
-ms.date: 08/02/2024
+ms.date: 08/30/2024
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,14 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 240830
+
+Date: August 30, 2024
+
+ - Renamed Leaderboards API to Progression. It contains both Leaderboards and Statistics calls.
+ - Removed OfferId from redeem responses in the Economy API. Added the new field MarketplaceAlternateId instead. Callers should move to the new field, while the service will continue to respond with both fields for backward compatibility.
+ - Added the Addon API. It is used to manage add-ons for a title.
 
 ## 240802
 
