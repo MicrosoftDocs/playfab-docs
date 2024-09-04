@@ -67,6 +67,12 @@ There are some studio and title limits associated with development mode:
 | Profile Reads | 5M Reads |
 | Profile Writes | 1M Writes |
 | Profile Storage | 2 GB |
+| Entity Statistics Reads | 5M Reads |
+| Entity Statistics Writes | 1M Writes |
+| Entity Statistics Storage | 100 Stat Definitions, versions = 1 |
+| Entity Leaderboards Reads | 5M Reads |
+| Entity Leaderboards Writes | 1M Writes |
+| Entity Leaderboards Storage | 50 Leaderboard Definitions, 10 000 rows, versions = 1 |
 | Content and Configuration Reads | 20K Reads |
 | Content and Configuration Writes | 15 K Writes |
 | Content and Configuration Storage | 2 GB |

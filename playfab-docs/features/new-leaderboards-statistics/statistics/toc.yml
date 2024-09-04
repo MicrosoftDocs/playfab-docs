@@ -1,0 +1,18 @@
+- name: Overview
+  href: index.md
+- name: Quickstart
+  href: quickstart-statistics.md
+- name: Tutorials
+  items:
+  - name: Create a basic statistic
+    href: create-basic-statistics.md
+  - name: Doing more with statistics
+    href: doing-more-statistics.md
+  - name: Seasonal statistics
+    href: seasonal-statistics.md
+  - name: Add contextual data to Statistics
+    href: metadata-statistics.md
+  - name: API reference
+    href: api-reference.md
+
+ 

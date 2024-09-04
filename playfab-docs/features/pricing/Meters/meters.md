@@ -102,6 +102,25 @@ PlayFab Matchmaking and Lobby are highly-customizable, proven solutions for buil
 * **LobbyRequests**: One Lobby Request is metered for each call to a [Lobby API](/rest/api/playfab/multiplayer/lobby) endpoint.
 * **Messages**: Metered by the number of message recipients. [Lobby and Matchmaking real-time notifications](/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications) are dispatched to subscribed clients upon important events such as receiving invites, joining and updating lobbies, or finding matches. 
 
+### Leaderboard
+
+Azure Playfab Leaderboards is a cross-platform service that allows to create a sorted list of players with the purpose
+of ranking them by scores.
+
+* **[Leaderboard Reads](../../pricing/meters/leaderboard-meters.md)**: Metered by API calls that read from Leaderboards.
+* **[Leaderboard Writes](../../pricing/meters/leaderboard-meters.md)**: Metered by API calls that write to Leaderboards. 
+* **[Leaderboard Storage](../../pricing/meters/leaderboard-meters.md)**: Metered by API Storage tracks all the data within the Leaderboards service.
+
+
+### Statistics
+
+Azure Playfab Statistics is a cross-platform service that allows to track the activity of players within the game.
+
+* **[Statistics Reads](../../pricing/meters/statistics-meters.md)**: Metered by API calls that read from Statistics. 
+* **[Statistics Writes](../../pricing/meters/statistics-meters.md)**: Metered by API calls that write to Statistics. 
+* **[Statistics Storage](../../pricing/meters/statistics-meters.md)**: Metered by API Storage tracks all the data within the Statistics service.
+
+ 
 ### Economy v2
 
 PlayFab Economy v2 is a massively scalable read-oriented service that can handle hundreds of millions of active players with large inventories and catalogs.
