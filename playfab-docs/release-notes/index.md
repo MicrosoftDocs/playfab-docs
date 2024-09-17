@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 Date: September 13, 2024
 
-- Removed GetStatisticDefinitions from the Progression API. This call was not intended to be included as part of the publis preview.
+- Removed GetStatisticDefinitions from the Progression API. This call was not intended to be included as part of the public preview.
 - Added SetDisplayName to the Profile API.
 
 ## 240830
