@@ -14,6 +14,13 @@ ms.localizationpriority: medium
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 240913
+
+Date: September 13, 2024
+
+- Removed GetStatisticDefinitions from the Progression API. This call was not intended to be included as part of the publis preview.
+- Added SetDisplayName to the Profile API.
+
 ## 240830
 
 Date: August 30, 2024
