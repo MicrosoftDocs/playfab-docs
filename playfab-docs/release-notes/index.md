@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2024
 author: amccalib
 description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
-ms.date: 08/30/2024
+ms.date: 09/13/2024
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
