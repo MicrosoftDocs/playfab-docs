@@ -27,8 +27,7 @@ September 18, 2024
 
 ### Bug fixes
 
-- Fixed a crash Party that occurred when leaving and joining network on Windows, GDK, or PlayStation&#174;5.
-- Addressed an encoding issue of the Party header.
+- Fixed an issue where the library may crash when establishing direct peer connections in networks with three or more devices.
 
 ## 1.10.0
 
