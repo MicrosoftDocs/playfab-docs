@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2024
 author: amccalib
 description: PlayFab Services SDK Release Notes for 2024.
 ms.author: andmcc
-ms.date: 08/30/2024
+ms.date: 09/13/2024
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,13 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 240913
+
+Date: September 13, 2024
+
+- Removed GetStatisticDefinitions from the Progression API. This call was not intended to be included as part of the public preview.
+- Added SetDisplayName to the Profile API.
 
 ## 240830
 
