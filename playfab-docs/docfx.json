@@ -34,8 +34,7 @@
         "externalReference": [],
         "globalMetadata": {
             "breadcrumb_path": "/gaming/playfab/breadcrumb/toc.json",
-            "feedback_system": "GitHub",
-            "feedback_github_repo": "MicrosoftDocs/playfab-docs",
+            "feedback_system": "Standard",
             "feedback_product_url": "https://community.playfab.com/index.html",
             "searchScope": ["PlayFab"],
             "uhfHeaderId": "MSDocsHeader-PlayFab",
