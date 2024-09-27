@@ -21,6 +21,13 @@ PlayFab Party had a significant (up to 90%) price drop on October 13, 2020. You 
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+## 1.10.2
+
+September 18, 2024
+
+### Bug fixes
+
+- Fixed an issue where the library may crash when establishing direct peer connections in networks with three or more devices.
 
 ## 1.10.0
 
