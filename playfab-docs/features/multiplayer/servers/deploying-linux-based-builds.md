@@ -49,7 +49,7 @@ This step is needed only if you want to use Windows development device to create
 
 ## Get your PlayFab container registry sign-in credentials
 
-The Azure container registry account is associated with your PlayFab account. Only you have access to the containers uploaded there.
+The Azure container registry account is associated with your PlayFab account. Only you have access to the containers uploaded there. This Azure container registry is free of charge.
 
 * In Game Manager, select your game title, then __Multiplayer__ > __Servers__. Next, select __New build__  on the right to open the build creation page.
 * Select __Linux__ as the virtual machine operating system. 
