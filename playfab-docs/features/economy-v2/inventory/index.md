@@ -18,7 +18,7 @@ The PlayFab Inventory APIs gives you the ability to manage and store your player
 
 ## Managing Player Inventories
 
-The following APIs are used to help add, remove, update and delete items in a player's inventory. The current limit is 3500 items and you'll get an error if you go above that.
+The following APIs are used to help add, remove, update and delete items in a player's inventory. The current limit is 10000 items and you'll get an error if you go above that.
 
 ### Getting a Player's Inventory
 
