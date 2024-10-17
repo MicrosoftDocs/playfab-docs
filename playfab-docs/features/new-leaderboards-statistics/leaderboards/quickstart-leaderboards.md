@@ -46,7 +46,7 @@ The final result should be like this.
 ## Setting up the environment
 
 Here we're going to learn how to set up the developer environment to use the C# SDK, but the concepts
-presented here can also work with other SDKs or plain HTTP requests.
+presented here can also work with other SDK or plain HTTP requests.
 
 ## Setting TitleId and DeveloperSecretKey
 
@@ -102,8 +102,8 @@ public static async Task<PlayFabAuthenticationContext> LoginAsTitleEntity()
 
 ## Login as Player (create Player)
 
-Log in as the player for read operations directly against PlayFab APIs. This method is going to return the `AuthenticationContext` that is
-going to be used across all the requests we made.
+This method creates a player based on an identifier which returns an entity of type `title_player_account`. More information here:
+[Quickstart entities](../../entities/quickstart.md)
 
 ``` C#
 private static async Task<PlayFabAuthenticationContext> LoginAsPlayer(string customId = "GettingStartedGuide")
@@ -114,7 +114,30 @@ private static async Task<PlayFabAuthenticationContext> LoginAsPlayer(string cus
 
     return loginResult.Result.AuthenticationContext;
 }
+```
+    
+## Set the display name property for an entity
 
+In order to have the `DisplayName` property available as part of the response of the "Get Leaderboards APIs",
+we need to execute the following code per each entity that we created in order to map the entity to the custom 
+display name of the game. 
+
+``` C#
+private static async Task UpdateEntityDisplayName(PlayFabAuthenticationContext context, string customId)
+{
+    SetDisplayNameRequest request = new SetDisplayNameRequest()
+    {
+        AuthenticationContext = context,
+        DisplayName = customId,
+        Entity = new PlayFab.ProfilesModels.EntityKey()
+        {
+            Id = context.EntityId,
+            Type = context.EntityType,
+        },
+    };
+
+    PlayFabResult<SetDisplayNameResponse> updateNameResult = await PlayFabProfilesAPI.SetDisplayNameAsync(request);
+}
 ```
 
 
@@ -123,6 +146,7 @@ private static async Task<PlayFabAuthenticationContext> LoginAsPlayer(string cus
 - [Create basic leaderboard](create-basic-leaderboard.md).
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
 - [Seasonal leaderboards](seasonal-leaderboards.md).
+- [Group leaderboards](group-leaderboards.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).

@@ -93,10 +93,10 @@ definitions, you can use the next example to get all of your statistics definiti
 ``` C#
 public static async Task GetStatisticDefinitions(PlayFabAuthenticationContext context)
 {
-    PlayFabProgressionInstanceAPI statsAPI = new PlayFabProgressionInstanceAPI(context);
-    GetStatisticDefinitionsRequest request = new GetStatisticDefinitionsRequest();
-    PlayFabResult<GetStatisticDefinitionsResponse> getStatDefsResult = await statsAPI.GetStatisticDefinitionsAsync(request);
-    
+     PlayFabProgressionInstanceAPI leaderboardsAPI = new PlayFabProgressionInstanceAPI(context);
+     ListStatisticDefinitionsRequest request = new ListStatisticDefinitionsRequest();
+     PlayFabResult<ListStatisticDefinitionsResponse> getStatDefsResult = await leaderboardsAPI.ListStatisticDefinitionsAsync(request);
+           
 }
  ```
 

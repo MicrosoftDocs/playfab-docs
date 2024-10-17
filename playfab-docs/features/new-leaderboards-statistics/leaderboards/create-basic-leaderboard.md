@@ -54,15 +54,21 @@ Now, let's explain some key elements of this example:
 
 - `AuthenticationContext`: This parameter handles all the authentication behind every request to our services. For a detailed explanation,
 you can check the following page:  [Quickstart Leaderboard](quickstart-leaderboards.md).
-- `Name`: This parameter helps you identify the leaderboard definition. It's important to choose something relevant here since it's used to make other requests to retrieve information. Additionally, this name must be unique, so a new one should be used each time a leaderboard is created.
+- `Name`: This parameter helps you identify the leaderboard definition. It's important to choose something relevant here since it's used to make other requests to retrieve information. Additionally, this name must be unique, so a new one should be used to each time a leaderboard is created.
 - `EntityType`: This parameter specifies the type of entity you want to create your leaderboard for. 
 You can learn more here: [Entity Programming Model](../../entities/index.md).
+    - `title_player_acount`: This type of entity refers to players within PlayFab. In order to create a player, you can use the method of `LoginAsPlayer` that is described here: [Quickstart](quickstart-leaderboards.md).
+    - `group`: This type of entity refers to a group of players, usually this concept applies in games like "clans," "guilds,", etc. See more information here: [Group Leaderboards](group-leaderboards.md).
+    - `external`: This type of entity serves for adding custom data to our leaderboards. Each row doesn't need to be tied to anything on PlayFab, it is your own data. You can use your own identifiers in the `EntityId` field as long as they are strings.
+    - `master_player_account`: This type of entity refers to players across titles. This concept applies when a studio has multiple titles and you have players that either went from one title to the other or they're playing multiple titles from the same studio. Based on this concept, you can create leaderboards of players across multiple titles from the same studio. You need to use: Master player account ID also refers as PlayFabId to map it to the `EntityId`.
+    - `character`: This type of entity is related to games that has a series of characters from which a player can choose and start their journey. With this concept in mind, in order to create a leaderboard of characters you need to create a player first and then you can create a character associated to that player.
+    After that, you can use the `CharacterId` as the entity id and insert a row with the corresponding score.
 - `VersionConfiguration`: This parameter allows you to set a versioning strategy for leaderboards that reset themselves 
 after a certain period. This concept is covered in depth here:  [Seasonal Leaderboards](seasonal-leaderboards.md).
 - `Columns`: Here, we define the number of columns our leaderboard is going to have. In this example, we only set one column for the score.
 We also define the `SortDirection` as descending, meaning the player with the highest score is going to be at the top.
 
-With all of this information, you are now ready to run the example and create your first leaderboard.
+With all of this information, you're now ready to run the example and create your first leaderboard.
 
 ### Getting a leaderboard definition
 
@@ -123,7 +129,7 @@ Our next step is to start adding data to our leaderboard.
 
 Keep in mind that these are entity-based leaderboards, which means the entries are entities. We also support bringing your own external identities, which is discussed in detail in [Doing More With Leaderboards](doing-more-with-leaderboards.md).
 
-In our specific example, we are using the entity type title_player_account, so our leaderboard is filled with players. 
+In our specific example, we're using the entity type title_player_account, so our leaderboard is filled with players. 
 However, remember that there are other entity types you can use as well. 
 You can check them out here: [Available built-in entity types](../../entities/available-built-in-entity-types.md).
 
@@ -159,7 +165,7 @@ However, if you're using other PlayFab services, this value should be consistent
      You can check these concepts in depth here: [Doing More With Leaderboards](doing-more-with-leaderboards.md)
 - `Name`: This parameter corresponds to the leaderboard name set when you created the leaderboard definition.
 
-You are now ready to add data to your leaderboard.
+You're now ready to add data to your leaderboard.
 
 ## Retrieving data from a leaderboard
 
@@ -256,6 +262,7 @@ In this tutorial, we learned how to do the following operations:
 - [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
+- [Group leaderboards](group-leaderboards.md).
 - [API reference](api-reference.md).
 
 

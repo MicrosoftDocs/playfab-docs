@@ -241,6 +241,16 @@ A Party Network is a secured collection of one or more devices and their authori
 The following code snippet shows how we can create a Party Network.
 
 ```cpp
+    // Set the maximum number of devices allowed in a network to 16 devices
+    constexpr uint8_t c_maxSampleNetworkDeviceCount = 16;
+    static_assert(c_maxSampleNetworkDeviceCount <= c_maxNetworkConfigurationMaxDeviceCount, "Must be less than or equal to c_maxNetworkConfigurationMaxDeviceCount.");
+
+    // Initialize network configuration for Party Network.
+    PartyNetworkConfiguration cfg = {};
+    cfg.maxDeviceCount = c_maxSampleNetworkDeviceCount;
+    cfg.maxUserCount = c_maxSampleNetworkDeviceCount;
+    ...
+    
     // Initialize an empty network descriptor to hold the result of the following call.
     PartyNetworkDescriptor networkDescriptor = {};
 
@@ -286,6 +296,10 @@ PlayFab Lobby can be used to temporarily group players as they move into and out
 PlayFab Lobby is highly customizable to support a wide variety of gameplay needs on all supported platforms and across platforms. Refer to the [Multiplayer SDK Quickstart](../lobby/lobby-getting-started.md) for more detail about using PlayFab Lobby with real-time notifications.
 
 For details about using PlayFab Lobby together with PlayFab Party, refer to [Create a lobby with PlayFab Multiplayer SDK](party-lobby-integration.md).
+
+## Enable Scalable networks
+PlayFab Party networks can scale to support anywhere between 2 and 128 devices. The service will choose a relay configuration optimized for your scenario, so it's important to configure the `maxDeviceCount` in `PartyNetworkConfiguration` to match the max expected number of devices in your network.
+For a description of Scalable networks, see [Scalable networks](party-features.md#scalable-networks-up-to-128-devices-per-network).
 
 ## Connect to a Party network
 
