@@ -1,7 +1,7 @@
 ---
 title: Quickstart on statistics
 author: braulioal
-description: Learn about how to start your set up of statistics
+description: Learn about how to start your setup of statistics
 ms.author: braulioal
 ms.date: 09/01/2024
 ms.topic: article
@@ -30,7 +30,7 @@ We now select Statistics tab from the upper menu.
 
 ![PlayFab Statistics add statistic](media/statistic-menu.png)
 
-After, that we're going to go "New Statistic" button and create our statistic definition.
+After that, we're going to go "New Statistic" button and create our statistic definition.
 
 ![PlayFab Statistics Usage](media/new-statistic.png)
 
@@ -115,6 +115,31 @@ private static async Task<PlayFabAuthenticationContext> LoginAsPlayer(string cus
     return loginResult.Result.AuthenticationContext;
 }
 
+```
+
+## Set the display name property for an entity
+
+In order to have the `DisplayName` property available as part of the response of the Get Statistics APIs,
+we need to execute the following code per each entity that we have created. This process is going to map the entity to the custom 
+display name of the game. 
+
+``` C#
+private static async Task UpdateEntityDisplayName(PlayFabAuthenticationContext context, string customId)
+{
+    SetDisplayNameRequest request = new SetDisplayNameRequest()
+    {
+        AuthenticationContext = context,
+        DisplayName = customId,
+        Entity = new PlayFab.ProfilesModels.EntityKey()
+        {
+            Id = context.EntityId,
+            Type = context.EntityType,
+        },
+    };
+
+    PlayFabResult<SetDisplayNameResponse> updateNameResult = await PlayFabProfilesAPI.SetDisplayNameAsync(request);
+
+}
 ```
 
 

@@ -47,6 +47,8 @@ landingContent:
             url: leaderboards/metadata-leaderboards.md
           - text: Seasonal leaderboards
             url: leaderboards/seasonal-leaderboards.md
+          - text: Group Leaderboards
+            url: leaderboards/group-leaderboards.md
           - text: Ranking players by statistics
             url: leaderboards/leaderboards-linked-to-stats.md
 

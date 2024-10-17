@@ -138,6 +138,7 @@ In this tutorial, we learned how to do the following operations:
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
 - [Create basic leaderboard](create-basic-leaderboard.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
+- [Group leaderboards](group-leaderboards.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
 

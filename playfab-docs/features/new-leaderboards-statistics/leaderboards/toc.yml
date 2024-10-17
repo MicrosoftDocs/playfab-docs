@@ -14,6 +14,8 @@
     href: metadata-leaderboards.md
   - name: Ranking players by statistics 
     href: leaderboards-linked-to-stats.md
+  - name: Group Leaderboards 
+    href: group-leaderboards.md
   - name: API reference 
     href: api-reference.md
 

@@ -1,6 +1,8 @@
 items:
   - name: Google redemption
     href: google.md
+  - name: Steam redemption
+    href: steam.md
   - name: Google subscription redemption
     href: google-subscription-redemption.md
   - name: Apple redemption

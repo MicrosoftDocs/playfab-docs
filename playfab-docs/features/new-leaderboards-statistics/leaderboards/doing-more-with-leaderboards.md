@@ -240,6 +240,7 @@ In this tutorial, we learned how to do the following operations:
 - [Create basic leaderboard](create-basic-leaderboard.md).
 - [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
+- [Group leaderboards](group-leaderboards.md).
 - [Add extra data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
 

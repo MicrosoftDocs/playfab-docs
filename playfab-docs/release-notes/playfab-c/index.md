@@ -3,7 +3,7 @@ title: PlayFab Services C/C++ SDK Release Notes
 author: amccalib
 description: PlayFab Services C/C++ SDK Release Notes.
 ms.author: andmcc
-ms.date: 09/28/2023
+ms.date: 10/11/2024
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -15,6 +15,20 @@ These release notes are for __PlayFabCSdk__. For release notes for other PlayFab
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 2410.0.0
+
+Date: October 4, 2024
+
+ - Added public headers, source, and libraries for use with the Microsoft GDK to the GitHub release
+ - The http library, libHttpClient, is now a dynamic library dependency on all platforms.
+ This library must be included in the game's shipped package for PlayFab Services to function.
+ - Added public preview APIs for Leaderboards and Statistics
+ - Added authenticationToken optional parameter authenticationToken to PFAuthenticationLoginWithFacebookRequest
+ - Added support for new service error codes
+ - Removed OfferId from redeem responses in the Economy API. Added the new field MarketplaceAlternateId instead.
+ Callers should move to the new field, while the service will continue to respond with both fields for backward compatibility.
+ - Resolved an issue with PFFriendsExternalFriendSources not allowing multiple selections
 
 ## 2406.0.0
 

@@ -82,6 +82,11 @@ Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Se
 
 To learn more, see [Understanding how Party chat works](concepts-chat.md). For more guidance on how to use the accessibility features that are provided by Party, see [Text-to-speech guidelines](party-text-to-speech-ux-guidelines.md) and [Speech-to-text guidelines](party-speech-to-text-ux-guidelines.md).
 
+## Scalable networks (up to 128 devices per network)
+PlayFab Party networks can scale to support anywhere between 2 and 128 devices. The service will choose a network relay configuration optimized for your scenario, so it's important to configure the `maxDeviceCount` in `PartyNetworkConfiguration` to match the max expected number of devices in your network. For more information on configuration when allocating scalable networks, see [Enable Scalable networks](quickstart.md#enable-scalable-networks)
+
+With Party, one device can send data to multiple devices in a single transmission, dramatically reducing the overhead of sending data from device to device. This can have especially high impact in networks with large numbers of devices.
+
 ## Capabilities designed for multiplayer games
 
 #### Efficient game states and logic delivery

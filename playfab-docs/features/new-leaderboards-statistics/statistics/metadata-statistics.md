@@ -114,7 +114,7 @@ In this tutorial, we learned how to do the following operations:
 * Add metadata to the statistic.
 
 ## See also
-- [Doing more with statistics](doing-more-statistics.md).
 - [Create basic statistics](create-basic-statistics.md).
+- [Doing more with statistics](doing-more-statistics.md).
 - [Seasonal statistics](seasonal-statistics.md).
 - [API reference](api-reference.md).
