@@ -1,0 +1,4 @@
+- name: Game Manager
+- href: gamemanager/toc.yml
+- name: Entities
+- href: entities/toc.yml
