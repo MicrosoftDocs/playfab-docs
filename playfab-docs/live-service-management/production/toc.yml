@@ -1,4 +1,9 @@
-- name: Game Manager
-- href: gamemanager/toc.yml
-- name: Entities
-- href: entities/toc.yml
+items:
+  - name: Production services
+    items:
+      - name: Game Manager
+        href: gamemanager/toc.yml
+      - name: Entities
+        href: entities/toc.yml
+      - name: Title data
+        href: titledata/toc.yml
