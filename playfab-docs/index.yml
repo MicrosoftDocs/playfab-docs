@@ -11,8 +11,8 @@ metadata:
   services: service
   ms.service: azure-playfab
   ms.topic: hub-page
-  author: DanBehrendt
-  ms.author: dabe
+  author: natashaorie
+  ms.author: norie
   ms.date: 01/27/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
@@ -66,6 +66,7 @@ productDirectory:
       summary: Create ways for players to connect and build community.
 
     - title: Player progression
+      imageSrc: ./media/index/engage.svg
       summary: Create engaging gameplay with player statstics and leaderboard tracking.
     
     - title: Game data
