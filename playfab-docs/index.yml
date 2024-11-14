@@ -72,15 +72,15 @@ productDirectory:
       imageSrc: ./media/index/analyze.svg
       summary: Get deep insights on player activity and take action.
 
-    - title: Reference documentation
-      imageSrc: ./media/index/reference.svg
-      links:
-        - url: api-references/index.md
-          text: Rest APIs
-        - url: api-references/events/index.md
-          text: PlayStream Events
-        - url: resources/recipes-and-samples.md
-          text: Recipes and Samples          
+#    - title: Reference documentation
+#      imageSrc: ./media/index/reference.svg
+#      links:
+#        - url: api-references/index.md
+#          text: Rest APIs
+#        - url: api-references/events/index.md
+#          text: PlayStream Events
+#        - url: resources/recipes-and-samples.md
+#          text: Recipes and Samples          
 
 # tools section (optional)
 tools:
