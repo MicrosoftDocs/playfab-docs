@@ -2,6 +2,8 @@ items:
   - name: PlayFab
     href: ../index.yml
   - name: Production Services
+    expanded: true
     href: production/toc.yml
   - name: Runtime services
+    expanded: true
     href: runtime/toc.yml
