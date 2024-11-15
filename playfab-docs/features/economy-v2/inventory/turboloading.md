@@ -24,7 +24,7 @@ TurboLoading is currently available for all titles using the Economy V2 REST API
 
 For example, if you want to load your entire inventory of 700 items, you can make a single call to the `GetInventoryItems` API with a count of 700 and the `Accept-Encoding: gzip` header. You get a compressed response with all your inventory items. You need to decompress the response using gzip before you can use the data.
 
-### Using TurboLoading with PlayFab Services C#, Unity SDK, and PlayFabCSDK 
+### Using TurboLoading with PlayFab Services C# and Unity SDK 
 
 You can set compression (and automatic decompression) of all API responses using the PlayFab Services C# and Unity SDKs, as follows:
 
@@ -32,13 +32,14 @@ You can set compression (and automatic decompression) of all API responses using
 PlayFabSettings.staticSettings.CompressResponses = true;
 ```
 
-You can set compression (and automatic decompression) only for your Economy API instance, as follows:
+Or you can set compression only for your Economy API instance, as follows:
 
 ```csharp
 var economyApi = new PlayFabEconomyInstanceAPI(new PlayFabApiSettings { CompressResponses = true }, authContext);
 ```
 
-Or you can enable compression (and automatic decompression) for all API reponses using the Cross-Platform PlayFab C SDK using PFHttpSettings as follows:
+### Using TurboLoading with  PlayFabCSDK
+You can enable compression for all API responses using the Cross-Platform PlayFabCSDK with PFHttpSettings as follows:
 ```C++
 // Initialize PFHttpSettings struct
 PFHttpSettings* httpSettings = new PFHttpSettings;
@@ -48,13 +49,10 @@ httpSettings->requestResponseCompression = true;
 
 // Set PFHttpSettings
 HRESULT hr = PFSetHttpSettings(httpSettings); // Add your own error handling FAILED(hr) == true
-
-// Make GetInventoryItems Call(s)
-...
 ```
 
-Additionally, for the Cross-Platform PlayFab C SDK, you can disable compression (and automatic decompression) for all API reponses:
-```
+Additionally you can disable compression for all API reponses:
+```C++
 // Disable Response Compression
 httpSettings->requestResponseCompression = false;
 
