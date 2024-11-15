@@ -24,7 +24,7 @@ TurboLoading is currently available for all titles using the Economy V2 REST API
 
 For example, if you want to load your entire inventory of 700 items, you can make a single call to the `GetInventoryItems` API with a count of 700 and the `Accept-Encoding: gzip` header. You get a compressed response with all your inventory items. You need to decompress the response using gzip before you can use the data.
 
-### Using TurboLoading with PlayFab Services C# and Unity SDK
+### Using TurboLoading with PlayFab Services C#, Unity SDK, and PlayFabCSDK 
 
 You can set compression (and automatic decompression) of all API responses using the PlayFab Services C# and Unity SDKs, as follows:
 
@@ -32,10 +32,34 @@ You can set compression (and automatic decompression) of all API responses using
 PlayFabSettings.staticSettings.CompressResponses = true;
 ```
 
-Or you can set compression (and automatic decompression) only for your Economy API instance, as follows:
+You can set compression (and automatic decompression) only for your Economy API instance, as follows:
 
 ```csharp
 var economyApi = new PlayFabEconomyInstanceAPI(new PlayFabApiSettings { CompressResponses = true }, authContext);
+```
+
+Or you can enable compression (and automatic decompression) for all API reponses using the PlayFab C/C++ Cross Platform SDK using PFHttpSettings as follows:
+```C++
+// Initialize PFHttpSettings struct
+PFHttpSettings* httpSettings = new PFHttpSettings;
+
+// Enable Repsonse Compression (and automatic decompression)
+httpSettings->requestResponseCompression = true;
+
+// Set PFHttpSettings
+HRESULT hr = PFSetHttpSettings(httpSettings); // Add your own error handling FAILED(hr) == true
+
+// Make GetInventoryItems Calls
+...
+```
+
+Additionally, for the PlayFab C/C++ Cross Platform SDK, you can disable compression (and automatic decompression) for all API reponses:
+```
+// Disable Response Compression
+httpSettings->requestResponseCompression = false;
+
+// Update PFHttpSettings
+hr = PFSetHttpSettings(httpSettings); // Add your own error handling
 ```
 
 ## Billing
