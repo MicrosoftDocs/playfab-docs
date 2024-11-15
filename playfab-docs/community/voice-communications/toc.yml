@@ -1,0 +1,6 @@
+items:
+  - name: Party chat
+    expanded: true
+    items:
+      - name: Overview
+        href: partychat-overview.md

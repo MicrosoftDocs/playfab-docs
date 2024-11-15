@@ -1,0 +1,36 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Player progression documentation
+summary: summary # < 160 chars
+
+metadata:
+  title: PlayFab Multiplayer documentation
+  description: Guide on Multiplayer servers, matchmaking and Party # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: playfab multiplayer #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: joannaleecy
+  ms.author: joanlee
+  ms.date: 04/27/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Understand Player progression
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Multiplayer?
+            url: mpintro.md
+      - linkListType: concept
+        links:
+          - text: What are Multiplayer servers?
+            url: servers/index.md
+          - text: What is Lobby?
+            url: lobby/index.md
+          - text: What is Matchmaking?
+            url: matchmaking/index.md
+          - text: What is Party?
+            url: networking/index.md
