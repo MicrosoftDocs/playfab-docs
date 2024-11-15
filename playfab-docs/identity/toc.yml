@@ -1,0 +1,8 @@
+items:
+- name: Identity
+  expanded: true
+  items:
+    - name: Authentication
+      href: authentication/toc.yml
+    - name: Player identity
+      href: player-identity/toc.yml

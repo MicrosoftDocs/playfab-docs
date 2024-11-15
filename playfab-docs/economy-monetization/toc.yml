@@ -1,0 +1,7 @@
+items:
+  - name: Economy v2
+    href: economy-monetization/economy-v2/toc.yml
+  - name: Legacy economy
+    href: economy-monetization/economy/toc.yml
+  - name: Rewarded ads
+    href: economy-monetization/rewarded-ads/toc.yml
