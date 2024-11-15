@@ -7,22 +7,24 @@ items:
   href: gamemanager/toc.yml
 - name: Demo game
   href: demo-game/toc.yml
-- name: Build
-  expanded: true
-  items:
-    - name: Identity
-      href: identity/toc.yml
-    - name: Live service management
-      href: live-service-management/toc.yml
-    - name: Economy, Monetization, & UGC
-      expanded: true
-      items:
-        - name: Economy v2
-          href: economy-monetization/economy-v2/toc.yml
-        - name: Legacy economy
-          href: economy-monetization/economy/toc.yml
-        - name: Rewarded ads
-          href: economy-monetization/rewarded-ads/toc.yml
+# - name: Build
+#   expanded: true
+#   items:
+#     # - name: Identity
+#     #   href: identity/toc.yml
+#     # - name: Live service management
+#     #   href: live-service-management/toc.yml
+#     - name: Economy, Monetization, & UGC
+#       expanded: true
+#       items:
+#         - name: Economy v2
+#           href: economy-monetization/economy-v2/toc.yml
+#         - name: Legacy economy
+#           href: economy-monetization/economy/toc.yml
+#         - name: Rewarded ads
+#           href: economy-monetization/rewarded-ads/toc.yml
+#     - name: Multiplayer
+    
 #   - name: Authentication
 #     href: features/authentication/toc.yml
 #   - name: Automation
@@ -59,38 +61,38 @@ items:
 #   href: data-analytics/toc.yml
 # - name: Pricing
 #   href: features/pricing/toc.yml
-# - name: Roadmap
-#   href: roadmap/toc.yml
-# - name: Reference
-#   href: api-references/toc.yml
-# - name: SDKs
-#   items:
-#   - name: Overview
-#     href: sdks/sdk-overview.md
-#   - name: Request access
-#     href: features/multiplayer/networking/request-access-for-sdks-samples.md
-#   - name: Lobby and Matchmaking SDKs
-#     href: features/multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
-#   - name: Multiplayer Server SDKs
-#     href: features/multiplayer/servers/server-sdks.md
-#   - name: Party SDKs
-#     href: features/multiplayer/networking/party-sdks/toc.yml
-#   - name: PlayFab Services SDKs
-#     href: sdks/toc.yml
-# - name: Recipes and samples
-#   href: resources/toc.yml
-# - name: Videos
-#   href: video/toc.yml
-# - name: Tools and utilities
-#   href: sdks/tools/index.yml
-#   items:
-#     - name: SDK Generator
-#       href: sdks/sdkgenerator/index.md
-#       items:
-#       - name: Quickstart
-#         href: sdks/sdkgenerator/quickstart.md
-#     - name:  Postman
-#       href: sdks/postman/index.md
-#       items:
-#       - name: Quickstart
-#         href: sdks/postman/postman-quickstart.md
+- name: Roadmap
+  href: roadmap/toc.yml
+- name: Reference
+  href: api-references/toc.yml
+- name: SDKs
+  items:
+  - name: Overview
+    href: sdks/sdk-overview.md
+  - name: Request access
+    href: features/multiplayer/networking/request-access-for-sdks-samples.md
+  - name: Lobby and Matchmaking SDKs
+    href: features/multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
+  - name: Multiplayer Server SDKs
+    href: features/multiplayer/servers/server-sdks.md
+  - name: Party SDKs
+    href: features/multiplayer/networking/party-sdks/toc.yml
+  - name: PlayFab Services SDKs
+    href: sdks/toc.yml
+- name: Recipes and samples
+  href: resources/toc.yml
+- name: Videos
+  href: video/toc.yml
+- name: Tools and utilities
+  href: sdks/tools/index.yml
+  items:
+    - name: SDK Generator
+      href: sdks/sdkgenerator/index.md
+      items:
+      - name: Quickstart
+        href: sdks/sdkgenerator/quickstart.md
+    - name:  Postman
+      href: sdks/postman/index.md
+      items:
+      - name: Quickstart
+        href: sdks/postman/postman-quickstart.md

@@ -1,4 +1,6 @@
 items:
+  - name: PlayFab
+    href: ../index.yml
   - name: Economy v2
     href: economy-monetization/economy-v2/toc.yml
   - name: Legacy economy

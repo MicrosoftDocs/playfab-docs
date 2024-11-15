@@ -42,12 +42,12 @@ productDirectory:
       url: what-is-playfab.md
 
     - title: Identity
-      imageSrc: ./media/index/engage.svg
+      imageSrc: ./media/index/build.svg
       summary: Manage player and developer identities across game titles.
       url: identity/index.yml
 
     - title: Live service management
-      imageSrc: ./media/index/engage.svg
+      imageSrc: ./media/index/build.svg
       summary: Streamline every part of the development lifecycle from production to running a live game.
       url: live-service-management/index.yml
 
@@ -57,21 +57,24 @@ productDirectory:
       url: economy-monetization/economy-v2/index.yml
 
     - title: Multiplayer
-      imageSrc: ./media/index/build.svg
+      imageSrc: ./media/index/engage.svg
       summary: Enable different multiplayer modes to connect players.
       url: multiplayer/index.yml
 
     - title: Community
       imageSrc: ./media/index/engage.svg
       summary: Create ways for players to connect and build community.
+      url: community/index.yml
 
     - title: Player progression
       imageSrc: ./media/index/engage.svg
       summary: Create engaging gameplay with player statstics and leaderboard tracking.
+      url: player-progression/index.yml
     
     - title: Game data
       imageSrc: ./media/index/analyze.svg
       summary: Get deep insights on player activity and take action.
+      url: data-analytics/index.yml
 
 #    - title: Reference documentation
 #      imageSrc: ./media/index/reference.svg
