@@ -38,7 +38,7 @@ You can set compression (and automatic decompression) only for your Economy API 
 var economyApi = new PlayFabEconomyInstanceAPI(new PlayFabApiSettings { CompressResponses = true }, authContext);
 ```
 
-Or you can enable compression (and automatic decompression) for all API reponses using the PlayFab C/C++ Cross Platform SDK using PFHttpSettings as follows:
+Or you can enable compression (and automatic decompression) for all API reponses using the Cross-Platform PlayFab C SDK using PFHttpSettings as follows:
 ```C++
 // Initialize PFHttpSettings struct
 PFHttpSettings* httpSettings = new PFHttpSettings;
@@ -49,11 +49,11 @@ httpSettings->requestResponseCompression = true;
 // Set PFHttpSettings
 HRESULT hr = PFSetHttpSettings(httpSettings); // Add your own error handling FAILED(hr) == true
 
-// Make GetInventoryItems Calls
+// Make GetInventoryItems Call(s)
 ...
 ```
 
-Additionally, for the PlayFab C/C++ Cross Platform SDK, you can disable compression (and automatic decompression) for all API reponses:
+Additionally, for the Cross-Platform PlayFab C SDK, you can disable compression (and automatic decompression) for all API reponses:
 ```
 // Disable Response Compression
 httpSettings->requestResponseCompression = false;
