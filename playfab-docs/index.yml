@@ -34,6 +34,7 @@ highlightedContent:
       url: api-references/index.md
 
 productDirectory:
+  title: Game devlopers - start building with PlayFab
   items:
     - title: Get started
       # imageSrc should be square in ratio with no whitespace
