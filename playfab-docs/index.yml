@@ -69,7 +69,7 @@ productDirectory:
 
     - title: Player progression
       imageSrc: ./media/index/engage.svg
-      summary: Create engaging gameplay with player statstics and leaderboard tracking.
+      summary: Create engaging gameplay with player statistics and leaderboard tracking.
       url: player-progression/index.yml
     
     - title: Game data
@@ -87,23 +87,84 @@ productDirectory:
 #        - url: resources/recipes-and-samples.md
 #          text: Recipes and Samples          
 
+# conceptual content (optional)
+conceptualContent:
+  sections:
+    - title: Client libraries, scripting, and tools
+      items:
+        - title: Languages
+          links: 
+            - url: sdks/languages/c/index.md
+              itemType: reference
+              text: C/C++
+            - url: sdks/languages/c-sharp/index.md
+              itemType: reference
+              text: C#
+            - url: sdks/languages/java/index.md
+              itemType: reference
+              text: Java
+          footerLink: 
+            url: sdks/languages/index.md
+            text: See more
+            
+        - title: Platforms
+          links: 
+            - url: platforms/android.md
+              itemType: reference
+              text: Android
+            - url: sdks/platforms/ios.md
+              itemType: reference
+              text: iOS
+            - url: sdks/platforms/macos.md
+              itemType: reference
+              text: macOS
+            - url: sdks/platforms/linux.md
+              itemType: reference
+              text: Linux
+            - url: sdks/platforms/gdk.md
+              itemType: reference
+              text: Microsoft GDK
+          footerLink:
+            url: sdks/platforms/index.md
+            text: See more
+
+        - title: Game engines
+          links:
+            - url: sdks/unity3d/index.md
+              itemType: reference
+              text: Unity 3D
+            - url: sdks/unreal/index.md
+              itemType: reference
+              text: Unreal Engine
+            - url: sdks/cocos2d-x/index.md
+              itemType: reference
+              text: Cocos2D-x
+
+        - title: Tools & utilities
+          links:
+              - url: sdks/sdkgenerator/index.md
+                itemType: reference
+                text: SDK Generator
+              - url: sdks/postman/index.md
+                itemType: reference
+                text: Postman
 # tools section (optional)
-tools:
-  title: Client libraries, scripting, and tools
-  items:
-    - title: Languages
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/index/code-languages.svg
-      url: sdks/languages/index.yml
-    - title: Platforms
-      imageSrc: ./media/index/frameworks.svg
-      url: sdks/platforms/index.yml
-    - title: Game engines
-      imageSrc: ./media/index/game-engines.svg
-      url: sdks/game-engines/index.yml
-    - title: Tools and utilities
-      imageSrc: ./media/index/tools-utilities.svg
-      url: sdks/tools/index.yml      
+# tools:
+#   title: Client libraries, scripting, and tools
+#   items:
+#     - title: Languages
+#       # imageSrc should be square in ratio with no whitespace
+#       imageSrc: ./media/index/code-languages.svg
+#       url: sdks/languages/index.yml
+#     - title: Platforms
+#       imageSrc: ./media/index/frameworks.svg
+#       url: sdks/platforms/index.yml
+#     - title: Game engines
+#       imageSrc: ./media/index/game-engines.svg
+#       url: sdks/game-engines/index.yml
+#     - title: Tools and utilities
+#       imageSrc: ./media/index/tools-utilities.svg
+#       url: sdks/tools/index.yml      
 
 # additionalContent section (optional)
 # Card with summary style
