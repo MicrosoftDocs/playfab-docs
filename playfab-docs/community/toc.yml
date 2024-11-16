@@ -1,7 +1,7 @@
 items:
   - name: PlayFab
     href: ../index.yml
-  - name: PlayFab Community
+  - name: PlayFab Identity
     href: index.yml
   - name: Player associations
     href: social/toc.yml
