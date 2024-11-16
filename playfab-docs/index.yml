@@ -94,22 +94,28 @@ conceptualContent:
       items:
         - title: Languages
           links: 
-            - url: sdks/languages/c/index.md
+            - url: sdks/c/index.md
               itemType: reference
               text: C/C++
-            - url: sdks/languages/c-sharp/index.md
+            - url: sdks/c-sharp/index.md
               itemType: reference
               text: C#
-            - url: sdks/languages/java/index.md
+            - url: sdks/java/index.md
               itemType: reference
               text: Java
+            - url: sdks/javascript/index.md
+              itemType: reference
+              url: JavaScript
+            - url: sdks/python/index.md
+              itemType: reference
+              text: Python
           footerLink: 
-            url: sdks/languages/index.md
+            url: sdks/languages/index.yml
             text: See more
             
         - title: Platforms
           links: 
-            - url: platforms/android.md
+            - url: sdks/platforms/android.md
               itemType: reference
               text: Android
             - url: sdks/platforms/ios.md
@@ -125,7 +131,7 @@ conceptualContent:
               itemType: reference
               text: Microsoft GDK
           footerLink:
-            url: sdks/platforms/index.md
+            url: sdks/platforms/index.yml
             text: See more
 
         - title: Game engines
