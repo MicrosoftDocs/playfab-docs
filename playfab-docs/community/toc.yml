@@ -4,4 +4,4 @@ items:
   - name: Player associations
     href: social/toc.yml
   - name: Voice communications
-    href: party-chat-overview.md
+    href: voice-communications/toc.yml
