@@ -1,6 +1,8 @@
 items:
   - name: PlayFab
     href: ../index.yml
+  - name: PlayFab Community
+    href: index.yml
   - name: Player associations
     href: social/toc.yml
   - name: Voice communications

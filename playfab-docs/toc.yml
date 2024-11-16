@@ -1,8 +1,8 @@
 items:
 - name: PlayFab
   href: index.yml
-- name: What is PlayFab?
-  href: what-is-playfab.md
+# - name: What is PlayFab?
+#   href: what-is-playfab.md
 - name: Get started
   href: get-started/toc.yml  
 # - name: Game Manager

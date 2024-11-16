@@ -1,6 +1,7 @@
 items:
   - name: PlayFab
     href: ../index.yml
+  - name: PlayFab Live service management
   - name: Production Services
     expanded: true
     href: production/toc.yml
