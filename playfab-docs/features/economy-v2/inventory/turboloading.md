@@ -32,10 +32,32 @@ You can set compression (and automatic decompression) of all API responses using
 PlayFabSettings.staticSettings.CompressResponses = true;
 ```
 
-Or you can set compression (and automatic decompression) only for your Economy API instance, as follows:
+Or you can set compression only for your Economy API instance, as follows:
 
 ```csharp
 var economyApi = new PlayFabEconomyInstanceAPI(new PlayFabApiSettings { CompressResponses = true }, authContext);
+```
+
+### Using TurboLoading with PlayFabCSDK
+You can enable compression for all API responses using the Cross-Platform PlayFabCSDK with PFHttpSettings as follows:
+```C++
+// Initialize PFHttpSettings struct
+PFHttpSettings* httpSettings = new PFHttpSettings;
+
+// Enable Repsonse Compression (and automatic decompression)
+httpSettings->requestResponseCompression = true;
+
+// Set PFHttpSettings
+HRESULT hr = PFSetHttpSettings(httpSettings); // Add your own error handling FAILED(hr) == true
+```
+
+Additionally you can disable compression for all API reponses:
+```C++
+// Disable Response Compression
+httpSettings->requestResponseCompression = false;
+
+// Update PFHttpSettings
+hr = PFSetHttpSettings(httpSettings); // Add your own error handling
 ```
 
 ## Billing
