@@ -112,7 +112,7 @@ It's time to move on to the [Google Play Console](https://play.google.com/consol
 
     ![App selection](../../media/marketplace-integrations/google/app-selection.png)
 
-7. A window pops up asking you to specify the type of permissions you want to give that account in your app. Choose **Manage orders and subscriptions** under **Financial data** and then press **Apply**.
+7. A window pops up asking you to specify the type of permissions you want to give that account in your app. Choose **Manage orders and subscriptions** and **View financial data** under **Financial data** and then press **Apply**.
 
 8. You're redirected to the **Invite user** screen again (where you added the account's email address and set the app permissions). But this time, you should press **Invite user** at the bottom right of the screen. Then press the **Send invite** confirmation message.
 
