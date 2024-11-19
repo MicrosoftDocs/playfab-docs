@@ -22,15 +22,13 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Multiplayer? (PLACEHOLDER)
-            url: mpintro.md
+          - text: What is Community? (PLACEHOLDER)
+            url: what-is-community.md
       - linkListType: concept
         links:
-          - text: What are Multiplayer servers? (PLACEHOLDER)
-            url: servers/index.md
-          - text: What is Lobby?
-            url: lobby/index.md
-          - text: What is Matchmaking?
-            url: matchmaking/index.md
-          - text: What is Party?
-            url: networking/index.md
+          - text: What is PlayFab Social? (PLACEHOLDER)
+            url: social/social/index.md
+          - text: Tournaments quickstart
+            url: tournaments-leaderboards/quickstart.md
+          - text: Tournaments overview
+            url: tournaments-leaderboards/index.md
