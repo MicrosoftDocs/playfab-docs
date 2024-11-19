@@ -34,7 +34,7 @@ highlightedContent:
       url: api-references/index.md
 
 productDirectory:
-  title: Game devlopers - start building with PlayFab
+  title: Game developers - start building with PlayFab
   items:
     - title: Get started
       # imageSrc should be square in ratio with no whitespace
@@ -105,7 +105,7 @@ conceptualContent:
               text: Java
             - url: sdks/javascript/index.md
               itemType: reference
-              url: JavaScript
+              text: JavaScript
             - url: sdks/python/index.md
               itemType: reference
               text: Python
@@ -183,7 +183,7 @@ additionalContent:
           url: https://discord.com/invite/msftgamedev
         - title: Support
           summary: PlayFab support options.
-          url: features/pricing/paidtechnicalsupport.md
+          url: live-service-managment/production/pricing/paidtechnicalsupport.md
         - title: Blog
           summary: Latest news and updates from the PlayFab developers.
           url: https://blog.playfab.com/blog
