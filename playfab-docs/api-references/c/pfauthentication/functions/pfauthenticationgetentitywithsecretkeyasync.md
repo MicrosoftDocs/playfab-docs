@@ -4,8 +4,8 @@ title: "PFAuthenticationGetEntityWithSecretKeyAsync"
 description: "Method to exchange a legacy AuthenticationTicket or title SecretKey for an Entity Token or to refresh a still valid Entity Token."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationGetEntityWithSecretKeyAsync  

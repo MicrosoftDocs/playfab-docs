@@ -4,8 +4,8 @@ title: "PFGroupsCreateGroupRequest"
 description: "PFGroupsCreateGroupRequest data model. Creates a new group, as well as administration and member roles, based off of a title's group template. Returns information about the group that was created."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsCreateGroupRequest  

@@ -4,8 +4,8 @@ title: "PFMultiplayerServerListBuildSummariesRequest"
 description: "PFMultiplayerServerListBuildSummariesRequest data model. Returns a list of summarized details of all multiplayer server builds for a title."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFMultiplayerServerListBuildSummariesRequest  

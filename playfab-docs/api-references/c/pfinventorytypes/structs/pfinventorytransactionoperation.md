@@ -4,8 +4,8 @@ title: "PFInventoryTransactionOperation"
 description: "PFInventoryTransactionOperation data model."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFInventoryTransactionOperation  
@@ -18,6 +18,7 @@ PFInventoryTransactionOperation data model.
 typedef struct PFInventoryTransactionOperation {  
     int32_t const* amount;  
     double const* durationInSeconds;  
+    const char* itemFriendlyId;  
     const char* itemId;  
     const char* itemType;  
     const char* stackId;  
@@ -36,6 +37,11 @@ typedef struct PFInventoryTransactionOperation {
 *may be nullptr*  
   
 (Optional) The duration modified in this transaction.
+  
+**`itemFriendlyId`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The friendly id of the items in this transaction.
   
 **`itemId`** &nbsp; const char*  
 *is null-terminated*  

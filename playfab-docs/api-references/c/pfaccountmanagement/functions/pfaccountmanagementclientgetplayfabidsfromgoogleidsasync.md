@@ -4,8 +4,8 @@ title: "PFAccountManagementClientGetPlayFabIDsFromGoogleIDsAsync"
 description: "Retrieves the unique PlayFab identifiers for the given set of Google identifiers. The Google identifiers are the IDs for the user accounts, available as 'id' in the Google+ People API calls."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementClientGetPlayFabIDsFromGoogleIDsAsync  

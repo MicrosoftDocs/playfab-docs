@@ -4,8 +4,8 @@ title: "PFAccountManagementClientSendAccountRecoveryEmailAsync"
 description: "Forces an email to be sent to the registered email address for the user's account, with a link allowing the user to change the password.If an account recovery email template ID is provided, an email using the custom email template will be used."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementClientSendAccountRecoveryEmailAsync  

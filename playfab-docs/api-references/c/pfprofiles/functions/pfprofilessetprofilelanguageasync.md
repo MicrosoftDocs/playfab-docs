@@ -4,8 +4,8 @@ title: "PFProfilesSetProfileLanguageAsync"
 description: "Updates the entity's language. The precedence hierarchy for communication to the player is Title Player Account language, Master Player Account language, and then title default language if the first two aren't set or supported."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFProfilesSetProfileLanguageAsync  

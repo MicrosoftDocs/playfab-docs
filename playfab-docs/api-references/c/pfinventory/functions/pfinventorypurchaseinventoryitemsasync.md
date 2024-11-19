@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryPurchaseInventoryItemsAsync"
-description: "Purchase an item or bundle. Up to 10000 stacks of items can be added to a single inventory collection. Stack size is uncapped."
+description: "Purchase an item or bundle. Up to 10,000 stacks of items can be added to a single inventory collection. Stack size is uncapped."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFInventoryPurchaseInventoryItemsAsync  
 
-Purchase an item or bundle. Up to 10000 stacks of items can be added to a single inventory collection. Stack size is uncapped.  
+Purchase an item or bundle. Up to 10,000 stacks of items can be added to a single inventory collection. Stack size is uncapped.  
 
 ## Syntax  
   

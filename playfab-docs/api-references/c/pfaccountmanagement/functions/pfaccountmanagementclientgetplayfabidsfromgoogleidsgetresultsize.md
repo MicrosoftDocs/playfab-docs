@@ -4,8 +4,8 @@ title: "PFAccountManagementClientGetPlayFabIDsFromGoogleIDsGetResultSize"
 description: "Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromGoogleIDs call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementClientGetPlayFabIDsFromGoogleIDsGetResultSize  

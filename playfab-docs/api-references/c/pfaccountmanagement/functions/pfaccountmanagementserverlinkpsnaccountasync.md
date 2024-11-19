@@ -4,8 +4,8 @@ title: "PFAccountManagementServerLinkPSNAccountAsync"
 description: "Links the PlayStation :tm: Network account associated with the provided access code to the user's PlayFab account"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementServerLinkPSNAccountAsync  

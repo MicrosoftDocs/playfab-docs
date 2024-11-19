@@ -4,8 +4,8 @@ title: "PFCatalogSubmitItemReviewVoteAsync"
 description: "Submit a vote for a review, indicating whether the review was helpful or unhelpful."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFCatalogSubmitItemReviewVoteAsync  

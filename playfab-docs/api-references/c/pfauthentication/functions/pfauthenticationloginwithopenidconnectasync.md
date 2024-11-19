@@ -4,8 +4,8 @@ title: "PFAuthenticationLoginWithOpenIdConnectAsync"
 description: "Logs in a user with an Open ID Connect JWT created by an existing relationship between a title and an Open ID Connect provider."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationLoginWithOpenIdConnectAsync  

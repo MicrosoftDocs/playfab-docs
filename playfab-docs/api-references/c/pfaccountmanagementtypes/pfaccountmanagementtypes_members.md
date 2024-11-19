@@ -4,8 +4,8 @@ title: "Services C API overview - PFAccountManagementTypes.h"
 description: "Services C API overview - PFAccountManagementTypes.h"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # Services C API overview - PFAccountManagementTypes.h
@@ -139,3 +139,14 @@ ms.date: 02/22/2024
 | [PFAccountManagementUpdateUserTitleDisplayNameRequest](structs/pfaccountmanagementupdateusertitledisplaynamerequest.md) | PFAccountManagementUpdateUserTitleDisplayNameRequest data model. In addition to the PlayFab username, titles can make use of a DisplayName which is also a unique identifier, but specific to the title. This allows for unique names which more closely match the theme or genre of a title, for example. |  
 | [PFAccountManagementUpdateUserTitleDisplayNameResult](structs/pfaccountmanagementupdateusertitledisplaynameresult.md) | PFAccountManagementUpdateUserTitleDisplayNameResult data model. |  
 | [PFAccountManagementXboxLiveAccountPlayFabIdPair](structs/pfaccountmanagementxboxliveaccountplayfabidpair.md) | PFAccountManagementXboxLiveAccountPlayFabIdPair data model. |  
+  
+## State changes  
+  
+| State change | Description |  
+| --- | --- |  
+  
+## Enumerations  
+
+| Enumeration | Description |  
+| --- | --- |  
+| [PFAccountManagementUserFamilyType](enums/pfaccountmanagementuserfamilytype.md) | UserFamilyType enum.|  

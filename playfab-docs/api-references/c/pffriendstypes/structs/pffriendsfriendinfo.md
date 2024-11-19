@@ -4,8 +4,8 @@ title: "PFFriendsFriendInfo"
 description: "PFFriendsFriendInfo data model."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFFriendsFriendInfo  
@@ -35,7 +35,7 @@ typedef struct PFFriendsFriendInfo {
 **`facebookInfo`** &nbsp; [PFUserFacebookInfo](../../pftypes/structs/pfuserfacebookinfo.md) const*  
 *may be nullptr*  
   
-(Optional) Available Facebook information (if the user and PlayFab friend are also connected in Facebook).
+(Optional) Available Facebook information (if the user and connected Facebook friend both have PlayFab Accounts in the same title).
   
 **`friendPlayFabId`** &nbsp; const char*  
 *is null-terminated*  
@@ -45,7 +45,7 @@ typedef struct PFFriendsFriendInfo {
 **`gameCenterInfo`** &nbsp; [PFUserGameCenterInfo](../../pftypes/structs/pfusergamecenterinfo.md) const*  
 *may be nullptr*  
   
-(Optional) Available Game Center information (if the user and PlayFab friend are also connected in Game Center).
+(Optional) Available Game Center information (if the user and connected Game Center friend both have PlayFab Accounts in the same title).
   
 **`profile`** &nbsp; [PFPlayerProfileModel](../../pftypes/structs/pfplayerprofilemodel.md) const*  
 *may be nullptr*  
@@ -55,12 +55,12 @@ typedef struct PFFriendsFriendInfo {
 **`PSNInfo`** &nbsp; [PFUserPsnInfo](../../pftypes/structs/pfuserpsninfo.md) const*  
 *may be nullptr*  
   
-(Optional) Available PlayStation :tm: Network information, if the user and PlayFab friend are both connected to PlayStation :tm: Network.
+(Optional) Available PlayStation :tm: Network information, if the user connected PlayStation :tm Network friend both have PlayFab Accounts in the same title.
   
 **`steamInfo`** &nbsp; [PFUserSteamInfo](../../pftypes/structs/pfusersteaminfo.md) const*  
 *may be nullptr*  
   
-(Optional) Available Steam information (if the user and PlayFab friend are also connected in Steam).
+(Optional) Available Steam information (if the user and connected Steam friend both have PlayFab Accounts in the same title).
   
 **`tags`** &nbsp; const char* const*  
 *may be nullptr*  
@@ -84,7 +84,7 @@ Count of tags
 **`xboxInfo`** &nbsp; [PFUserXboxInfo](../../pftypes/structs/pfuserxboxinfo.md) const*  
 *may be nullptr*  
   
-(Optional) Available Xbox information, if the user and PlayFab friend are both connected to Xbox Live.
+(Optional) Available Xbox information, (if the user and connected Xbox Live friend both have PlayFab Accounts in the same title).
   
   
 ## Requirements  

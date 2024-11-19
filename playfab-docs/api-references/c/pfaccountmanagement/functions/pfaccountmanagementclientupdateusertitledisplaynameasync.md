@@ -4,8 +4,8 @@ title: "PFAccountManagementClientUpdateUserTitleDisplayNameAsync"
 description: "Updates the title specific display name for the user"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementClientUpdateUserTitleDisplayNameAsync  

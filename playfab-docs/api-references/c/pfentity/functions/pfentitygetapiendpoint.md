@@ -4,8 +4,8 @@ title: "PFEntityGetAPIEndpoint"
 description: "Gets the API endpoint for the PFServiceConfig associated with an entity handle."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFEntityGetAPIEndpoint  

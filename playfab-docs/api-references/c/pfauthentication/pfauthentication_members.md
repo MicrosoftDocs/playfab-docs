@@ -4,8 +4,8 @@ title: "Services C API overview - PFAuthentication.h"
 description: "Services C API overview - PFAuthentication.h"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # Services C API overview - PFAuthentication.h
@@ -16,8 +16,7 @@ ms.date: 02/22/2024
 | Function | Description |  
 | --- | --- |  
 | [PFAuthenticationAuthenticateGameServerWithCustomIdAsync](functions/pfauthenticationauthenticategameserverwithcustomidasync.md) | Create a game_server entity token and return a new or existing game_server entity. |  
-| [PFAuthenticationAuthenticateGameServerWithCustomIdGetResult](functions/pfauthenticationauthenticategameserverwithcustomidgetresult.md) | Gets the result of a successful PFAuthenticationAuthenticateGameServerWithCustomIdAsync call. |  
-| [PFAuthenticationAuthenticateGameServerWithCustomIdGetResultSize](functions/pfauthenticationauthenticategameserverwithcustomidgetresultsize.md) | Get the size in bytes needed to store the result of a AuthenticateGameServerWithCustomId call. |  
+| [PFAuthenticationAuthenticateGameServerWithCustomIdGetResult](functions/pfauthenticationauthenticategameserverwithcustomidgetresult.md) | Get the result from a PFAuthenticationAuthenticateGameServerWithCustomIdAsync call. |  
 | [PFAuthenticationDeleteAsync](functions/pfauthenticationdeleteasync.md) | Delete a game_server entity. |  
 | [PFAuthenticationGetEntityAsync](functions/pfauthenticationgetentityasync.md) | Method to exchange a legacy AuthenticationTicket or title SecretKey for an Entity Token or to refresh a still valid Entity Token. |  
 | [PFAuthenticationGetEntityGetResult](functions/pfauthenticationgetentitygetresult.md) | Gets the result of a successful PFAuthenticationGetEntityAsync call. |  

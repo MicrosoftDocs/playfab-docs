@@ -4,8 +4,8 @@ title: "PFSegmentsClientGetPlayerTagsAsync"
 description: "Get all tags with a given Namespace (optional) from a player profile."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFSegmentsClientGetPlayerTagsAsync  

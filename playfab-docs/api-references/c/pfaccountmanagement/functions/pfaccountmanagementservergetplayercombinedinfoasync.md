@@ -4,8 +4,8 @@ title: "PFAccountManagementServerGetPlayerCombinedInfoAsync"
 description: "Returns whatever info is requested in the response for the user. Note that PII (like email address, facebook id) may be returned. All parameters default to false."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementServerGetPlayerCombinedInfoAsync  

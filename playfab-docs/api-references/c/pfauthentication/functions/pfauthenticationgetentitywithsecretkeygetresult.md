@@ -4,8 +4,8 @@ title: "PFAuthenticationGetEntityWithSecretKeyGetResult"
 description: "Gets the result of a successful PFAuthenticationGetEntityWithSecretKeyAsync call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationGetEntityWithSecretKeyGetResult  
@@ -17,7 +17,7 @@ Gets the result of a successful PFAuthenticationGetEntityWithSecretKeyAsync call
 ```cpp
 HRESULT PFAuthenticationGetEntityWithSecretKeyGetResult(  
     XAsyncBlock* async,  
-    PFEntityHandle* result  
+    PFEntityHandle* entityHandle  
 )  
 ```  
   
@@ -28,10 +28,10 @@ HRESULT PFAuthenticationGetEntityWithSecretKeyGetResult(
   
 XAsyncBlock for the async operation.  
   
-**`result`** &nbsp; PFEntityHandle*  
+**`entityHandle`** &nbsp; PFEntityHandle*  
 *output*  
   
-TBD    
+PFEntityHandle which can be used to authenticate other PlayFab API calls.  
   
   
 ### Return value

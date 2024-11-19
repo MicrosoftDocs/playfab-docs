@@ -4,8 +4,8 @@ title: "PFGroupsListGroupApplicationsRequest"
 description: "PFGroupsListGroupApplicationsRequest data model. Lists all outstanding requests to join a group. Returns a list of all requests to join, as well as when the request will expire. To get the group applications for a specific entity, use ListMembershipOpportunities."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsListGroupApplicationsRequest  

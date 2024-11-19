@@ -4,8 +4,8 @@ title: "PFAccountManagementBanInfo"
 description: "PFAccountManagementBanInfo data model. Contains information for a ban."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementBanInfo  
@@ -23,6 +23,7 @@ typedef struct PFAccountManagementBanInfo {
     const char* IPAddress;  
     const char* playFabId;  
     const char* reason;  
+    const char* userFamilyType;  
 } PFAccountManagementBanInfo;  
 ```
   
@@ -61,6 +62,11 @@ The active state of this ban. Expired bans may still have this value set to true
 *is null-terminated*  
   
 (Optional) The reason why this ban was applied.
+  
+**`userFamilyType`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The family type of the suer that is included in the ban.
   
   
 ## Requirements  

@@ -4,8 +4,8 @@ title: "PFMultiplayerServerListBuildAliasesAsync"
 description: "Lists details of all build aliases for a title. Accepts tokens for title and if game client access is enabled, allows game client to request list of builds with player entity token."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFMultiplayerServerListBuildAliasesAsync  

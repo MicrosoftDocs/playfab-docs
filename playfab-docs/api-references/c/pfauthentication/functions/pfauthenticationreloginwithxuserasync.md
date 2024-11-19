@@ -4,8 +4,8 @@ title: "PFAuthenticationReLoginWithXUserAsync"
 description: "Reauthenticates an existing PFEntityHandle using an XUserHandle. Used to address situations where the EntityToken expired and the PlayFab SDK is unable to refresh it."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationReLoginWithXUserAsync  

@@ -4,8 +4,8 @@ title: "PFMultiplayerServerAzureVmSize"
 description: "AzureVmSize enum."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFMultiplayerServerAzureVmSize  
@@ -85,7 +85,17 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
     Standard_HB120_32rs_v3,  
     Standard_HB120_64rs_v3,  
     Standard_HB120_96rs_v3,  
-    Standard_HB120rs_v3  
+    Standard_HB120rs_v3,  
+    Standard_D2d_v5,  
+    Standard_D4d_v5,  
+    Standard_D8d_v5,  
+    Standard_D16d_v5,  
+    Standard_D32d_v5,  
+    Standard_D2ds_v5,  
+    Standard_D4ds_v5,  
+    Standard_D8ds_v5,  
+    Standard_D16ds_v5,  
+    Standard_D32ds_v5  
 }  
 ```  
   
@@ -162,6 +172,16 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
 | Standard_HB120_64rs_v3 | TBD   |  
 | Standard_HB120_96rs_v3 | TBD   |  
 | Standard_HB120rs_v3 | TBD   |  
+| Standard_D2d_v5 | TBD   |  
+| Standard_D4d_v5 | TBD   |  
+| Standard_D8d_v5 | TBD   |  
+| Standard_D16d_v5 | TBD   |  
+| Standard_D32d_v5 | TBD   |  
+| Standard_D2ds_v5 | TBD   |  
+| Standard_D4ds_v5 | TBD   |  
+| Standard_D8ds_v5 | TBD   |  
+| Standard_D16ds_v5 | TBD   |  
+| Standard_D32ds_v5 | TBD   |  
   
   
 ## Requirements  

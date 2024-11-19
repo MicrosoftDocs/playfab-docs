@@ -4,8 +4,8 @@ title: "PFGroupsListMembershipOpportunitiesRequest"
 description: "PFGroupsListMembershipOpportunitiesRequest data model. Lists all outstanding group applications and invitations for an entity. Anyone may call this for any entity, but data will only be returned for the entity or a parent of that entity. To list invitations or applications for a group to check if a player is trying to join, use ListGroupInvitations and ListGroupApplications."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsListMembershipOpportunitiesRequest  

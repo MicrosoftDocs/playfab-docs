@@ -4,8 +4,8 @@ title: "PFCatalogPublishDraftItemAsync"
 description: "Initiates a publish of an item from the working catalog to the public catalog. You can use the GetItemPublishStatus API to track the state of the item publish."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFCatalogPublishDraftItemAsync  
