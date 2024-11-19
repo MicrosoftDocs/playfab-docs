@@ -1,4 +1,5 @@
-- name: PlayFab Authentication
+items:
+- name: Player Authentication
   href: index.yml
 - name: What is Authentication
   href: authentication/index.md
