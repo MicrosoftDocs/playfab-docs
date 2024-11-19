@@ -1,2 +1,0 @@
-
-# Party chat (placeholder)

@@ -22,11 +22,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Multiplayer?
+          - text: What is Multiplayer? (PLACEHOLDER)
             url: mpintro.md
       - linkListType: concept
         links:
-          - text: What are Multiplayer servers?
+          - text: What are Multiplayer servers? (PLACEHOLDER)
             url: servers/index.md
           - text: What is Lobby?
             url: lobby/index.md

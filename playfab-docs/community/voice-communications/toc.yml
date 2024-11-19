@@ -1,6 +1,11 @@
 items:
-  - name: Party chat
-    expanded: true
+  - name: Chat Overview
+    href: concepts-chat.md
+  - name: Troubleshooting voice chat
+    href: concepts-audio-troubleshooting.md
+  - name: Accessibility Best Practices
     items:
-      - name: Overview
-        href: partychat-overview.md
+    - name: Text-to-speech and text input UX guidelines
+      href: party-text-to-speech-ux-guidelines.md
+    - name: Speech-to-text and text display UX guidelines
+      href: party-speech-to-text-ux-guidelines.md
