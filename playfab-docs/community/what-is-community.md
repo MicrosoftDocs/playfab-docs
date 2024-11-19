@@ -15,10 +15,13 @@ ms.localizationpriority: medium
 author: Kirsten Dearnley
 
 to do:
+
 Player associations
+
     1. Review docs and make sure there's no missing content
 
 Voice Communications
+
     1. Move Partychat docs into this section (done)
     1. I moved all the tutorials over here since they seemed to be chat related - please confirm if that is right
     1. Quickstart: link to Party docs in Multiplayer section that cover enabling the feature
