@@ -1,7 +1,4 @@
 items:
-- name: Segmentation
-  expanded: true
-  items:
   - name: Overview
     expanded: true
     items:

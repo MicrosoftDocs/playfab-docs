@@ -1,7 +1,4 @@
-- name: PlayFab Pricing
-  href: pricing-overview.md
-  expanded: true
-  items:
+items:
   - name: Billing Summary and Base Rates
     href: billingdetails.md
   - name: Development Mode Titles

@@ -1,7 +1,4 @@
 items:
-- name: Experimentation
-  expanded: false
-  items:
   - name: Overview
     expanded: true
     items:
