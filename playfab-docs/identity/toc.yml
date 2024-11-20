@@ -6,6 +6,8 @@ items:
 - name: Overview
   href: identity-overview.md
 - name: Player identity
+  expanded: true
   href: player-identity/toc.yml
 - name: Developer identity
+  expanded: true
   href: dev-identity/toc.yml

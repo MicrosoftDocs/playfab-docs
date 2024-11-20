@@ -54,12 +54,12 @@ Here are the steps to create a new role:
 1. [Login to PlayFab](https://developer.playfab.com/) with your developer account.
 2. Ensure you are a Studio Admin (you will know that you are if you see the following options next to your studio name). If you are *not* the Studio Admin, please contact the Studio Admin to setup the permissions according to this tutorial.
 
-   ![PlayFab - Studio Admin Options](media/tutorials/playfab-studio-admin-options.png)  
+   ![PlayFab - Studio Admin Options](../media/playfab-studio-admin-options.png)  
 
 3. Select **Users and Roles** from the list of options.
 4. Select the **Roles** tab at the top of the screen. You should now see a list of all the **Roles** in the system.
 
-   ![Game Manager - Roles](media/tutorials/game-manager-roles.png)  
+   ![Game Manager - Roles](../media/game-manager-roles.png)  
 
 5. Select the **New Custom Role** button to create a new role. Give your new role a name, and check off the permissions you wish to include. Generally, all permissions follow this pattern:
 
@@ -67,11 +67,11 @@ Here are the steps to create a new role:
     - You can show or hide the navigation tab using the **Permission** tab **(2)**.
     - Each **Permission** has a read-only and read-write option. The read-write option has **Edit** at the end **(3)** and **(4)**.
 
-      ![Game Manager - New Role - Permissions](media/tutorials/game-manager-new-role-permissions.png)  
+      ![Game Manager - New Role - Permissions](../media/game-manager-new-role-permissions.png)  
 
 6. Select the **Save Role** button when you're done.
 
-   ![Game Manager - Save Role](media/tutorials/game-manager-save-role.png)  
+   ![Game Manager - Save Role](../media/game-manager-save-role.png)  
 
 ## Assigning roles
 
