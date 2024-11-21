@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryExecuteInventoryOperationsAsync"
-description: "Execute a list of Inventory Operations. A maximum list of 10 operations can be performed by a single request. There is also a limit to 250 items that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. All operations must be done within a single inventory collection. This API has a reduced RPS compared to an individual inventory operation with Player Entities limited to 15 requests in 90 seconds and Title Entities limited to 500 requests in 10 seconds."
+description: "Execute a list of Inventory Operations. A maximum list of 50 operations can be performed by a single request. There is also a limit to 300 items that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. All operations must be done within a single inventory collection. This API has a reduced RPS compared to an individual inventory operation with Player Entities limited to 60 requests in 90 seconds."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFInventoryExecuteInventoryOperationsAsync  
 
-Execute a list of Inventory Operations. A maximum list of 10 operations can be performed by a single request. There is also a limit to 250 items that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. All operations must be done within a single inventory collection. This API has a reduced RPS compared to an individual inventory operation with Player Entities limited to 15 requests in 90 seconds and Title Entities limited to 500 requests in 10 seconds.  
+Execute a list of Inventory Operations. A maximum list of 50 operations can be performed by a single request. There is also a limit to 300 items that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. All operations must be done within a single inventory collection. This API has a reduced RPS compared to an individual inventory operation with Player Entities limited to 60 requests in 90 seconds.  
 
 ## Syntax  
   

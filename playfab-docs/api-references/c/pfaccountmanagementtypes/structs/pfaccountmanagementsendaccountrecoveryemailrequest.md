@@ -4,8 +4,8 @@ title: "PFAccountManagementSendAccountRecoveryEmailRequest"
 description: "PFAccountManagementSendAccountRecoveryEmailRequest data model. If the account in question is a \"temporary\" account (for example, one that was created via a call to LoginFromIOSDeviceID), thisfunction will have no effect. Only PlayFab accounts which have valid email addresses will be able to receive a password reset email using this API."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementSendAccountRecoveryEmailRequest  

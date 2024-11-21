@@ -4,8 +4,8 @@ title: "PFCatalogGetDraftItemsAsync"
 description: "Retrieves a paginated list of the items from the draft catalog. Up to 50 IDs can be retrieved in a single request. GetDraftItems does not work off a cache of the Catalog and should be used when trying to get recent item updates."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFCatalogGetDraftItemsAsync  

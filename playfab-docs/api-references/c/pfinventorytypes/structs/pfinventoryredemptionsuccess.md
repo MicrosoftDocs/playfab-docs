@@ -4,8 +4,8 @@ title: "PFInventoryRedemptionSuccess"
 description: "PFInventoryRedemptionSuccess data model."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFInventoryRedemptionSuccess  
@@ -16,23 +16,23 @@ PFInventoryRedemptionSuccess data model.
   
 ```cpp
 typedef struct PFInventoryRedemptionSuccess {  
+    const char* marketplaceAlternateId;  
     const char* marketplaceTransactionId;  
-    const char* offerId;  
     time_t successTimestamp;  
 } PFInventoryRedemptionSuccess;  
 ```
   
 ### Members  
   
+**`marketplaceAlternateId`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The Marketplace Alternate ID being redeemed.
+  
 **`marketplaceTransactionId`** &nbsp; const char*  
 *is null-terminated*  
   
 (Optional) The transaction id in the external marketplace.
-  
-**`offerId`** &nbsp; const char*  
-*is null-terminated*  
-  
-(Optional) The ID of the offer being redeemed.
   
 **`successTimestamp`** &nbsp; time_t  
   

@@ -4,8 +4,8 @@ title: "PFGroupsIsMemberRequest"
 description: "PFGroupsIsMemberRequest data model. Checks to see if an entity is a member of a group or role within the group. A result indicating if the entity is a member of the group is returned, or a permission error if the caller does not have permission to read the group's member list."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsIsMemberRequest  

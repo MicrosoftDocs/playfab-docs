@@ -4,8 +4,8 @@ title: "PFInventoryRedeemSteamInventoryItemsGetResult"
 description: "Gets the result of a successful PFInventoryRedeemSteamInventoryItemsAsync call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFInventoryRedeemSteamInventoryItemsGetResult  
@@ -54,7 +54,7 @@ The number of bytes in the provided buffer that were used.
 ### Return value
 Type: HRESULT
   
-Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_ACCOUNT_NOT_LINKED or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_ACCOUNT_NOT_LINKED, E_PF_INVALID_CATALOG_ITEM_CONFIGURATION or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Remarks  
   

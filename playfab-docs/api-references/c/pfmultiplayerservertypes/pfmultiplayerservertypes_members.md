@@ -4,8 +4,8 @@ title: "Services C API overview - PFMultiplayerServerTypes.h"
 description: "Services C API overview - PFMultiplayerServerTypes.h"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # Services C API overview - PFMultiplayerServerTypes.h
@@ -39,6 +39,8 @@ ms.date: 02/22/2024
 | [PFMultiplayerServerRequestMultiplayerServerResponse](structs/pfmultiplayerserverrequestmultiplayerserverresponse.md) | PFMultiplayerServerRequestMultiplayerServerResponse data model. |  
 | [PFMultiplayerServerSchedule](structs/pfmultiplayerserverschedule.md) | PFMultiplayerServerSchedule data model. |  
 | [PFMultiplayerServerScheduledStandbySettings](structs/pfmultiplayerserverscheduledstandbysettings.md) | PFMultiplayerServerScheduledStandbySettings data model. |  
+| [PFMultiplayerServerSecret](structs/pfmultiplayerserversecret.md) | PFMultiplayerServerSecret data model. |  
+| [PFMultiplayerServerSecretSummary](structs/pfmultiplayerserversecretsummary.md) | PFMultiplayerServerSecretSummary data model. |  
   
 ## State changes  
   

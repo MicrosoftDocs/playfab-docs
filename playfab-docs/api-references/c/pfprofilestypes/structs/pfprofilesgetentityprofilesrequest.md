@@ -4,8 +4,8 @@ title: "PFProfilesGetEntityProfilesRequest"
 description: "PFProfilesGetEntityProfilesRequest data model. Given a set of entity types and entity identifiers will retrieve all readable profiles properties for the caller. Profiles that the caller is not allowed to read will silently not be included in the results."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFProfilesGetEntityProfilesRequest  

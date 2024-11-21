@@ -4,8 +4,8 @@ title: "Services C API overview - PFCatalogTypes.h"
 description: "Services C API overview - PFCatalogTypes.h"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # Services C API overview - PFCatalogTypes.h
@@ -26,6 +26,7 @@ ms.date: 02/22/2024
 | [PFCatalogCatalogPriceOptionsOverride](structs/pfcatalogcatalogpriceoptionsoverride.md) | PFCatalogCatalogPriceOptionsOverride data model. |  
 | [PFCatalogCatalogPriceOverride](structs/pfcatalogcatalogpriceoverride.md) | PFCatalogCatalogPriceOverride data model. |  
 | [PFCatalogCatalogSpecificConfig](structs/pfcatalogcatalogspecificconfig.md) | PFCatalogCatalogSpecificConfig data model. |  
+| [PFCatalogCategoryRatingConfig](structs/pfcatalogcategoryratingconfig.md) | PFCatalogCategoryRatingConfig data model. |  
 | [PFCatalogContent](structs/pfcatalogcontent.md) | PFCatalogContent data model. |  
 | [PFCatalogCreateDraftItemRequest](structs/pfcatalogcreatedraftitemrequest.md) | PFCatalogCreateDraftItemRequest data model. The item will not be published to the public catalog until the PublishItem API is called for the item. |  
 | [PFCatalogCreateDraftItemResponse](structs/pfcatalogcreatedraftitemresponse.md) | PFCatalogCreateDraftItemResponse data model. |  
@@ -62,11 +63,13 @@ ms.date: 02/22/2024
 | [PFCatalogKeywordSet](structs/pfcatalogkeywordset.md) | PFCatalogKeywordSet data model. |  
 | [PFCatalogKeywordSetDictionaryEntry](structs/pfcatalogkeywordsetdictionaryentry.md) | Dictionary entry for an associative array with PFCatalogKeywordSet values. |  
 | [PFCatalogModerationState](structs/pfcatalogmoderationstate.md) | PFCatalogModerationState data model. |  
+| [PFCatalogPermissions](structs/pfcatalogpermissions.md) | PFCatalogPermissions data model. |  
 | [PFCatalogPublishDraftItemRequest](structs/pfcatalogpublishdraftitemrequest.md) | PFCatalogPublishDraftItemRequest data model. The call kicks off a workflow to publish the item to the public catalog. The Publish Status API should be used to monitor the publish job. |  
 | [PFCatalogRating](structs/pfcatalograting.md) | PFCatalogRating data model. |  
 | [PFCatalogReportItemRequest](structs/pfcatalogreportitemrequest.md) | PFCatalogReportItemRequest data model. |  
 | [PFCatalogReportItemReviewRequest](structs/pfcatalogreportitemreviewrequest.md) | PFCatalogReportItemReviewRequest data model. Submit a report for an inappropriate review, allowing the submitting user to specify their concern. |  
 | [PFCatalogReview](structs/pfcatalogreview.md) | PFCatalogReview data model. |  
+| [PFCatalogReviewConfig](structs/pfcatalogreviewconfig.md) | PFCatalogReviewConfig data model. |  
 | [PFCatalogReviewItemRequest](structs/pfcatalogreviewitemrequest.md) | PFCatalogReviewItemRequest data model. |  
 | [PFCatalogReviewTakedown](structs/pfcatalogreviewtakedown.md) | PFCatalogReviewTakedown data model. |  
 | [PFCatalogSearchItemsRequest](structs/pfcatalogsearchitemsrequest.md) | PFCatalogSearchItemsRequest data model. |  

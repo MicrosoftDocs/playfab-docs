@@ -4,8 +4,8 @@ title: "PFGroupsListGroupMembersRequest"
 description: "PFGroupsListGroupMembersRequest data model. Gets a list of members and the roles they belong to within the group. If the caller does not have permission to view the role, and the member is in no other role, the member is not displayed. Returns a list of entities that are members of the group."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsListGroupMembersRequest  

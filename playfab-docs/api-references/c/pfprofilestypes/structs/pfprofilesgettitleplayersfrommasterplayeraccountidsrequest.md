@@ -4,8 +4,8 @@ title: "PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsRequest"
 description: "PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsRequest data model. Given a master player account id (PlayFab ID), returns all title player accounts associated with it."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFProfilesGetTitlePlayersFromMasterPlayerAccountIdsRequest  

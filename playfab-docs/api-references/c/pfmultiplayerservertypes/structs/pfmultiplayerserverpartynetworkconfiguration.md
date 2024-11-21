@@ -4,8 +4,8 @@ title: "PFMultiplayerServerPartyNetworkConfiguration"
 description: "PFMultiplayerServerPartyNetworkConfiguration data model."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFMultiplayerServerPartyNetworkConfiguration  
@@ -35,7 +35,7 @@ typedef struct PFMultiplayerServerPartyNetworkConfiguration {
   
 **`maxDevices`** &nbsp; uint32_t  
   
-The maximum number of devices allowed to connect to the network. Must be between 1 and 32, inclusive.
+The maximum number of devices allowed to connect to the network. Must be between 1 and 128, inclusive.
   
 **`maxDevicesPerUser`** &nbsp; uint32_t  
   

@@ -4,8 +4,8 @@ title: "PFGroupsChangeMemberRoleAsync"
 description: "Changes the role membership of a list of entities from one role to another."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsChangeMemberRoleAsync  

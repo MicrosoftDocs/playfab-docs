@@ -4,8 +4,8 @@ title: "PFInventoryExecuteInventoryOperationsRequest"
 description: "PFInventoryExecuteInventoryOperationsRequest data model. Execute a list of Inventory Operations for an Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFInventoryExecuteInventoryOperationsRequest  
@@ -61,7 +61,7 @@ Count of customTags
 **`operations`** &nbsp; [PFInventoryInventoryOperation](pfinventoryinventoryoperation.md) const*  
 *may be nullptr*  
   
-(Optional) The operations to run transactionally. The operations will be executed in-order sequentially and will succeed or fail as a batch. Up to 10 operations can be added.
+(Optional) The operations to run transactionally. The operations will be executed in-order sequentially and will succeed or fail as a batch. Up to 50 operations can be added.
   
 **`operationsCount`** &nbsp; uint32_t  
   

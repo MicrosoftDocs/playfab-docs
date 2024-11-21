@@ -4,8 +4,8 @@ title: "PFFriendsServerSetFriendTagsRequest"
 description: "PFFriendsServerSetFriendTagsRequest data model. This operation is not additive. It will completely replace the tag list for the specified user. Please note that only users in the PlayFab friends list can be assigned tags. Attempting to set a tag on a friend only included in the friends list from a social site integration (such as Facebook or Steam) will return the AccountNotFound error."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFFriendsServerSetFriendTagsRequest  

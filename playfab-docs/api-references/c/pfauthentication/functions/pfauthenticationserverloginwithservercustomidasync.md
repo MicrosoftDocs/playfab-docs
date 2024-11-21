@@ -4,8 +4,8 @@ title: "PFAuthenticationServerLoginWithServerCustomIdAsync"
 description: "Securely login a game client from an external server backend using a custom identifier for that player. Server Custom ID and Client Custom ID are mutually exclusive and cannot be used to retrieve the same player account."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationServerLoginWithServerCustomIdAsync  

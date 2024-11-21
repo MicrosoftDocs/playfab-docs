@@ -4,8 +4,8 @@ title: "PFCloudScriptExecuteFunctionAsync"
 description: "Cloud Script is one of PlayFab's most versatile features. It allows client code to request execution of any kind of custom server-side functionality you can implement, and it can be used in conjunction with virtually anything."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFCloudScriptExecuteFunctionAsync  

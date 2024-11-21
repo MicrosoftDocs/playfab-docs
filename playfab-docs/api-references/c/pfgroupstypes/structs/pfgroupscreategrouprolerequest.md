@@ -4,8 +4,8 @@ title: "PFGroupsCreateGroupRoleRequest"
 description: "PFGroupsCreateGroupRoleRequest data model. Creates a new role within an existing group, with no members. Both the role ID and role name must be unique within the group, but the name can be the same as the ID. The role ID is set at creation and cannot be changed. Returns information about the role that was created."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsCreateGroupRoleRequest  

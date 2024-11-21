@@ -4,8 +4,8 @@ title: "PFCatalogPublishDraftItemRequest"
 description: "PFCatalogPublishDraftItemRequest data model. The call kicks off a workflow to publish the item to the public catalog. The Publish Status API should be used to monitor the publish job."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFCatalogPublishDraftItemRequest  

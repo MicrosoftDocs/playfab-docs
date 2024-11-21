@@ -4,8 +4,8 @@ title: "PFAuthenticationServerLoginWithXboxAsync"
 description: "Signs the user in using a Xbox Live Token from an external server backend, returning a session identifier that can subsequently be used for API calls which require an authenticated user"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationServerLoginWithXboxAsync  
