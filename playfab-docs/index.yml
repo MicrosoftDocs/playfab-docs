@@ -1,5 +1,6 @@
 ### YamlMime:Hub
 
+# root section (required)
 title: Azure PlayFab documentation
 summary: Learn how to build and manage engaging games using Microsoft Azure PlayFab services.
 # brand: playfab
@@ -10,8 +11,8 @@ metadata:
   services: service
   ms.service: azure-playfab
   ms.topic: hub-page
-  author: DanBehrendt
-  ms.author: dabe
+  author: natashaorie
+  ms.author: norie
   ms.date: 01/27/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
@@ -22,86 +23,154 @@ highlightedContent:
     - title: What is PlayFab?
       itemType: concept
       url: what-is-playfab.md
-    - title: Game Manager
-      itemType: overview
-      url: gamemanager/index.md          
-    - title: Roadmap
+    - title: What's new
       itemType: whats-new
-      url: roadmap/index.md  
-    - title: Pricing
-      itemType: overview
-      url: features/pricing/pricing-overview.md
+      url: roadmap/index.md          
+    - title: Download the SDK
+      itemType: download
+      url: sdks/sdk-overview.md  
+    - title: API reference
+      itemType: reference
+      url: api-references/index.md
 
 productDirectory:
+  title: Game developers - start building with PlayFab
   items:
-    - title: Build
+    - title: Get started
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/index/build.svg
-      links:
-        - url: features/authentication/index.yml
-          text: Authentication
-        - url: features/automation/index.yml
-          text: Automation
-        - url: features/multiplayer/mpintro.md
-          text: Multiplayer     
-        - url: features/social/index.yml
-          text: Social  
-        - url: features/multiplayer/networking/index.md
-          text: Party (Multiplayer infrastructure and cross-network gameplay)
-        - url: features/throttling/what-is-throttling.md
-          text: Throttling
-    - title: Engage
+      summary: Learn PlayFab’s fundamental concepts with tutorials and a demo game.
+      url: what-is-playfab.md
+
+    - title: Identity
+      imageSrc: ./media/index/build.svg
+      summary: Manage player and developer identities across game titles.
+      url: identity/index.yml
+
+    - title: Live service management
+      imageSrc: ./media/index/build.svg
+      summary: Streamline every part of the development lifecycle from production to running a live game.
+      url: live-service-management/index.yml
+
+    - title: Economy, Monetization, & UGC
       imageSrc: ./media/index/engage.svg
-      links:
-        - url: features/economy-v2/index.yml
-          text: Economy
-        - url: features/economy-v2/index.yml
-          text: Economy v2
-        - url: features/engagement/index.yml
-          text: Engagement
-        - url: features/new-leaderboards-statistics/leaderboards/index.md
-          text: Leaderboards
-        - url: features/new-leaderboards-statistics/statistics/index.md
-          text: Statistics
-     
+      summary: Set up thriving in-game economies and UGC.
+      url: economy-monetization/economy-v2/index.yml
 
-    - title: Data and Analytics
+    - title: Multiplayer
+      imageSrc: ./media/index/engage.svg
+      summary: Enable different multiplayer modes to connect players.
+      url: multiplayer/index.yml
+
+    - title: Community
+      imageSrc: ./media/index/engage.svg
+      summary: Create ways for players to connect and build community.
+      url: community/index.yml
+
+    - title: Player progression
+      imageSrc: ./media/index/engage.svg
+      summary: Create engaging gameplay with player statistics and leaderboard tracking.
+      url: player-progression/index.yml
+    
+    - title: Game data
       imageSrc: ./media/index/analyze.svg
-      links:
-        - url: features/analytics/index.yml
-          text: Analytics
-        - url: features/data/index.yml
-          text: Data
-        - url: features/analytics/experiments/index.md
-          text: Experiments          
+      summary: Get deep insights on player activity and take action.
+      url: data-analytics/index.yml
 
-    - title: Reference documentation
-      imageSrc: ./media/index/reference.svg
-      links:
-        - url: api-references/index.md
-          text: Rest APIs
-        - url: api-references/events/index.md
-          text: PlayStream Events
-        - url: resources/recipes-and-samples.md
-          text: Recipes and Samples          
+#    - title: Reference documentation
+#      imageSrc: ./media/index/reference.svg
+#      links:
+#        - url: api-references/index.md
+#          text: Rest APIs
+#        - url: api-references/events/index.md
+#          text: PlayStream Events
+#        - url: resources/recipes-and-samples.md
+#          text: Recipes and Samples          
 
+# conceptual content (optional)
+conceptualContent:
+  sections:
+    - title: Client libraries, scripting, and tools
+      items:
+        - title: Languages
+          links: 
+            - url: sdks/c/index.md
+              itemType: reference
+              text: C/C++
+            - url: sdks/c-sharp/index.md
+              itemType: reference
+              text: C#
+            - url: sdks/java/index.md
+              itemType: reference
+              text: Java
+            - url: sdks/javascript/index.md
+              itemType: reference
+              text: JavaScript
+            - url: sdks/python/index.md
+              itemType: reference
+              text: Python
+          footerLink: 
+            url: sdks/languages/index.yml
+            text: See more
+            
+        - title: Platforms
+          links: 
+            - url: sdks/platforms/android.md
+              itemType: reference
+              text: Android
+            - url: sdks/platforms/ios.md
+              itemType: reference
+              text: iOS
+            - url: sdks/platforms/macos.md
+              itemType: reference
+              text: macOS
+            - url: sdks/platforms/linux.md
+              itemType: reference
+              text: Linux
+            - url: sdks/platforms/gdk.md
+              itemType: reference
+              text: Microsoft GDK
+          footerLink:
+            url: sdks/platforms/index.yml
+            text: See more
+
+        - title: Game engines
+          links:
+            - url: sdks/unity3d/index.md
+              itemType: reference
+              text: Unity 3D
+            - url: sdks/unreal/index.md
+              itemType: reference
+              text: Unreal Engine
+            - url: sdks/cocos2d-x/index.md
+              itemType: reference
+              text: Cocos2D-x
+
+        - title: Tools & utilities
+          links:
+              - url: sdks/sdkgenerator/index.md
+                itemType: reference
+                text: SDK Generator
+              - url: sdks/postman/index.md
+                itemType: reference
+                text: Postman
 # tools section (optional)
-tools:
-  title: Client libraries, scripting, and tools
-  items:
-    - title: Languages
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/index/code-languages.svg
-      url: sdks/languages/index.yml
-    - title: Platforms
-      imageSrc: ./media/index/frameworks.svg
-      url: sdks/platforms/index.yml
-    - title: Game engines
-      imageSrc: ./media/index/game-engines.svg
-      url: sdks/game-engines/index.yml
-    - title: Tools and utilities
-      imageSrc: ./media/index/tools-utilities.svg
-      url: sdks/tools/index.yml      
+# tools:
+#   title: Client libraries, scripting, and tools
+#   items:
+#     - title: Languages
+#       # imageSrc should be square in ratio with no whitespace
+#       imageSrc: ./media/index/code-languages.svg
+#       url: sdks/languages/index.yml
+#     - title: Platforms
+#       imageSrc: ./media/index/frameworks.svg
+#       url: sdks/platforms/index.yml
+#     - title: Game engines
+#       imageSrc: ./media/index/game-engines.svg
+#       url: sdks/game-engines/index.yml
+#     - title: Tools and utilities
+#       imageSrc: ./media/index/tools-utilities.svg
+#       url: sdks/tools/index.yml      
 
 # additionalContent section (optional)
 # Card with summary style
@@ -114,7 +183,7 @@ additionalContent:
           url: https://discord.com/invite/msftgamedev
         - title: Support
           summary: PlayFab support options.
-          url: features/pricing/paidtechnicalsupport.md
+          url: live-service-managment/production/pricing/paidtechnicalsupport.md
         - title: Blog
           summary: Latest news and updates from the PlayFab developers.
           url: https://blog.playfab.com/blog

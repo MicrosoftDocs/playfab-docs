@@ -1,3 +1,4 @@
+items:
 - name: Azure
   tocHref: /gaming/playfab/
   topicHref: /azure/index
@@ -5,3 +6,20 @@
   - name: PlayFab
     tocHref: /gaming/playfab/
     topicHref: /gaming/playfab/index
+    items:
+    - name: Get started
+      topicHref: /gaming/playfab/get-started/index
+    - name: Live service management
+      topicHref: /gaming/playfab/live-service-management/index
+    - name: Identity
+      topicHref: /gaming/playfab/identity/index
+    - name: Economy, Monetization, & UGC.
+      topicHref: /gaming/playfab/economy-monetization/index
+    - name: Multiplayer
+      topicHref: /gaming/playfab/multiplayer/index
+    - name: Community
+      topicHref: /gaming/playfab/community/index
+    - name: Player progression
+      topicHref: /gaming/playfab/player-progression/index
+    - name: Game Data
+      topicHref: /gaming/playfab/data-analytics/index

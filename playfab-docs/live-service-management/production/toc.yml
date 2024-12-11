@@ -1,0 +1,13 @@
+items:
+    - name: Overview
+      href: overview.md
+    - name: Game Manager
+      href: gamemanager/toc.yml
+    - name: Entities
+      href: entities/toc.yml
+    - name: Title data
+      href: titledata/toc.yml
+    - name: Pricing
+      href: pricing/toc.yml
+    - name: Automation
+      href: automation/toc.yml

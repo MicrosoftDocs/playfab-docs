@@ -1,0 +1,11 @@
+items:
+- name: Player Authentication
+  href: index.yml
+- name: What is Authentication
+  href: authentication/index.md
+- name: Player login
+  href: login/toc.yml
+- name: Platform specific authentication
+  href: platform-specific-authentication/toc.yml
+- name: Player encryption
+  href: encryption/toc.yml

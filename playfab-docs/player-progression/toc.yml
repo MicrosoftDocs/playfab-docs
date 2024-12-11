@@ -1,0 +1,9 @@
+items:
+  - name: PlayFab
+    href: ../index.yml
+  - name: PlayFab Player progression
+    href: index.yml
+  - name: Player Data
+    href: player-data/toc.yml
+  - name: Leaderboards & Statistics
+    href: new-leaderboards-statistics/toc.yml
