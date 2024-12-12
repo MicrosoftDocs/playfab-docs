@@ -5,7 +5,7 @@ items:
     href: index.yml
   - name: Overview
     href: what-is-community.md
-  - name: Player associations
+  - name: Player Associations
     href: social/toc.yml
-  - name: Voice communications
+  - name: Party Player Communications
     href: voice-communications/toc.yml
