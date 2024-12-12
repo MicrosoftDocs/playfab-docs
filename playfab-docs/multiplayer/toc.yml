@@ -11,5 +11,5 @@ items:
     href: matchmaking/toc.yml
   - name: Lobby
     href: lobby/toc.yml
-  - name: Party
+  - name: Party Networking
     href: networking/toc.yml
