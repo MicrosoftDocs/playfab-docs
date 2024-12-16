@@ -74,7 +74,7 @@ landingContent:
             url: runtime/experiments/quickstart.md
           - text: Set up push notifications
             url: runtime/engagement/push-notifications/quickstart.md
-    - title: Billing & metering
+    - title: Billing and metering
       linkLists:
         - linkListType: concept
           links:
