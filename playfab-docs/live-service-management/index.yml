@@ -36,6 +36,7 @@ landingContent:
             url: production/gamemanager/audit-logs.md
           - text: Secret key management
             url: secret-key-management.md
+
   - title: Entity programming model
     linkLists:
       - linkListType: overview
@@ -46,6 +47,7 @@ landingContent:
         links:
           - text: Entities quickstart
             url: production/entities/quickstart.md
+
   - title: Production services
     linkLists:
       - linkListType: overview
@@ -54,6 +56,7 @@ landingContent:
             url: production/titledata/index.md
           - text: Serverless compute with CloudScript using Azure functions
             url: production/automation/cloudscript-af/index.md
+            
   - title: Running a live service
     linkLists:
       - linkListType: concept
@@ -66,14 +69,15 @@ landingContent:
             url: runtime/engagement/overview.md
           - text: Throttle API calls
             url: runtime/throttling/what-is-throttling.md
-      - linkListType: quickstart
-        links:
-          - text: Segmentation quickstart
-            url: runtime/segmentation/segmentation-quickstart.md
-          - text: Experimentation quickstart
-            url: runtime/experiments/quickstart.md
-          - text: Set up push notifications
-            url: runtime/engagement/push-notifications/quickstart.md
+        - linkListType: quickstart
+          links:
+            - text: Segmentation quickstart
+              url: runtime/segmentation/segmentation-quickstart.md
+            - text: Experimentation quickstart
+              url: runtime/experiments/quickstart.md
+            - text: Set up push notifications
+              url: runtime/engagement/push-notifications/quickstart.md
+              
     - title: Billing and metering
       linkLists:
         - linkListType: concept
