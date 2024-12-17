@@ -69,24 +69,24 @@ landingContent:
             url: runtime/engagement/overview.md
           - text: Throttle API calls
             url: runtime/throttling/what-is-throttling.md
-        - linkListType: quickstart
-          links:
-            - text: Segmentation quickstart
-              url: runtime/segmentation/segmentation-quickstart.md
-            - text: Experimentation quickstart
-              url: runtime/experiments/quickstart.md
-            - text: Set up push notifications
-              url: runtime/engagement/push-notifications/quickstart.md
+      - linkListType: quickstart
+        links:
+          - text: Segmentation quickstart
+            url: runtime/segmentation/segmentation-quickstart.md
+          - text: Experimentation quickstart
+            url: runtime/experiments/quickstart.md
+          - text: Set up push notifications
+            url: runtime/engagement/push-notifications/quickstart.md
               
-    - title: Billing and metering
-      linkLists:
-        - linkListType: concept
-          links:
-            - text: Billing meters explained
-              url: production/pricing/Meters/meters.md
-        - linkListType: learn
-          links:
-            - text: Checking monthly estimated charges
-              url: production/pricing/billingDetails.md
-            - text: Best practices for lowering consumption
-              url: production/pricing/consumption-best-practices.md
+  - title: Billing and metering
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Billing meters explained
+            url: production/pricing/Meters/meters.md
+      - linkListType: learn
+        links:
+          - text: Checking monthly estimated charges
+            url: production/pricing/billingDetails.md
+          - text: Best practices for lowering consumption
+            url: production/pricing/consumption-best-practices.md
