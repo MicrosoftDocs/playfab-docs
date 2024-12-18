@@ -35,7 +35,7 @@ landingContent:
           - text: Audit logs
             url: production/gamemanager/audit-logs.md
           - text: Secret key management
-            url: secret-key-management.md
+            url: production/gamemanager/secret-key-management.md 
 
   - title: Entity programming model
     linkLists:
