@@ -1,0 +1,96 @@
+### YamlMime:Landing
+
+title: Azure PlayFab UGC documentation # < 60 chars
+summary: summary # < 160 chars
+
+metadata:
+  title: PlayFab UGC documentation
+  description: Hub page for the PlayFab UGC documentation. Here you can find feature overviews, quickstart guides, and tutorials.  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab
+  ms.topic: landing-page
+  author: thomasgu
+  ms.author: derekreese
+  ms.date: 03/12/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: About PlayFab UGC (PLACEHOLDER)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is PlayFab UGC?
+            url: ugc/index.md
+      - linkListType: quickstart
+        links:
+          - text: UGC quickstart guide
+            url: ugc/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Publish your first user generated content
+            url: tutorials/publish-ugc.md
+
+# Card
+  - title: Ingest UGC content (PLACEHOLDER)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are content types and item properties?
+            url: catalog/content-types-tags-and-properties.md
+          - text: What are stores?
+            url: stores.md
+      - linkListType: quickstart
+        links:
+          - text: Fraud prevention, redemption, receipt validation quickstart
+            url: fraud-prevention/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Manage virtual currencies
+            url: tutorials/currencies.md
+          - text: Start with Unity and Android in-app purchases
+            url: tutorials/getting-started-with-unity-and-android.md
+
+# Card
+  - title: Searching and hydrating UGC for your players (PLACEHOLDER)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are bundles?
+            url: bundles.md
+      - linkListType: sample
+        links:
+          - text: Add a progressive reward system
+            url: https://github.com/PlayFab/PlayFab-Samples/tree/main/Recipes/ProgressiveRewardsv2
+
+  # Card
+  - title: Moderating UGC content (PLACEHOLDER)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is PlayFab UGC?
+            url: ugc/index.md
+      - linkListType: quickstart
+        links:
+          - text: UGC quickstart guide
+            url: ugc/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Publish your first user generated content
+            url: tutorials/publish-ugc.md
+
+  # Card
+  - title: Get involved with PlayFab
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Frequently asked questions
+            url: https://community.playfab.com/questions/index.html?sort=votes
+          - text: Community forum
+            url: https://community.playfab.com/spaces/31/index.html
+          - text: Feature requests
+            url: https://community.playfab.com/spaces/24/index.html
+          - text: Docs feedback
+            url: https://github.com/MicrosoftDocs/playfab-docs/issues
