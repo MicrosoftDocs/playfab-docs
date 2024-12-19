@@ -1,6 +1,8 @@
 items:
+- name: PlayFab UGC
+  href: index.yml
 - name: Overview
-  href: index.md
+  href: overview.md
 - name: Quickstart
   href: quickstart.md
 - name: Moderation

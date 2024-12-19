@@ -81,7 +81,7 @@ To create a new **Bundle** in **Game Manager** follow the next steps:
 
 A bundle by itself doesn't grant any items to a player, we must first link items to it and once redeemed, it grants those items to that specific player.
 
-Before adding items to a bundle, make sure you have the items already created and published in your Catalog. We already have a sword called **Fire Sword** and a shield called **Ice Shield**. If you don't know how to create an item, refer to [this step](../craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item).
+Before adding items to a bundle, make sure you have the items already created and published in your Catalog. We already have a sword called **Fire Sword** and a shield called **Ice Shield**. If you don't know how to create an item, refer to [this step](../tutorials/craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item).
 
 Now to add them to your bundle! To do so, you can either add them while creating your bundle the first time, assuming that the items are already created, or you can add them later by editing the bundle item.
 

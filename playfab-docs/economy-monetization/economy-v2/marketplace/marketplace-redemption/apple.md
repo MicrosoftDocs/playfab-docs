@@ -40,7 +40,7 @@ In order for you to properly test a purchase without incurring in real-money pay
 ## Step 2: Create a Bundle in Game Manager
 
 > [!NOTE]
-> Before creating a bundle in **Game Manager**, ensure that you have already created and published the items you want to add to the bundle in your Catalog. In this tutorial, we assume that you have already created a sword called **Super Awesome Sword**. If you need guidance on how to create an item, please refer to [this step](../craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item).
+> Before creating a bundle in **Game Manager**, ensure that you have already created and published the items you want to add to the bundle in your Catalog. In this tutorial, we assume that you have already created a sword called **Super Awesome Sword**. If you need guidance on how to create an item, please refer to [this step](../tutorials/craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item).
 
 To enable a marketplace mapping between **Game Manager** and the **App Store Connect**, you need to create a **Bundle** in Game Manager. A bundle can contain multiple items with different quantities, and PlayFab will add them to the player's inventory once redeemed. Follow these steps to create a new **Bundle** in **Game Manager**:
 

@@ -56,7 +56,7 @@ To create a new **Subscription** in **Game Manager** follow the next steps:
 
 A subscription by itself doesn't give any items to a player, we must first link items to it and once redeemed, it grants those items to that specific player.
 
-Before adding items to a subscription, make sure you have the items already created and published in your Catalog. We already have a sword item called **Oath Keeper** and another one called **Frostmourne**. If you don't know how to create an item, refer to [this step](../craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item).
+Before adding items to a subscription, make sure you have the items already created and published in your Catalog. We already have a sword item called **Oath Keeper** and another one called **Frostmourne**. If you don't know how to create an item, refer to [this step](../tutorials/craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item).
 
 Now to add them to your subscription! To do so, you can either add them while creating your subscription the first time, assuming that the items are already created. Or you can add them later by editing the subscription item.
 

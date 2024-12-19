@@ -43,7 +43,7 @@ In order for you to properly test a purchase without incurring in real-money pay
 ## Step 2: Create a Subscription in Game Manager
 
 > [!NOTE]
-> Before creating a subscription in **Game Manager**, ensure that you have already created and published the items you want to add to the bundle in your Catalog. In this tutorial, we assume that you have already created a PlayFab catalog item called the **Super Awesome Sword**. If you need guidance on how to create an item, please refer to [this step](../craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item). 
+> Before creating a subscription in **Game Manager**, ensure that you have already created and published the items you want to add to the bundle in your Catalog. In this tutorial, we assume that you have already created a PlayFab catalog item called the **Super Awesome Sword**. If you need guidance on how to create an item, please refer to [this step](../tutorials/craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item). 
 
 1. Go to [Game Manager](https://developer.playfab.com/) and navigate to your **Title**.
 2. From the left navigation menu, choose **Engage** > **Economy**.
