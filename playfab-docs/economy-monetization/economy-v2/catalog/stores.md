@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Economy v2 Stores
 
-[!INCLUDE [notice](../../includes/_economy-release.md)]
+[!INCLUDE [notice](../../../includes/_economy-release.md)]
 
 Stores are an excellent way to build upon and develop your in-game Economy. Stores are a special item type that hold a list of items and prices and allow you to override base catalog prices for items. Stores can be used to manage where items are purchasable in your game, offer in-game discounts and promotions, and much more!
 
