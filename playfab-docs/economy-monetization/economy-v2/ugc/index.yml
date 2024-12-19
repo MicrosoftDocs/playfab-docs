@@ -23,7 +23,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is PlayFab UGC?
-            url: ugc/index.md
+            url: ugc/overview.md
       - linkListType: quickstart
         links:
           - text: UGC quickstart guide
