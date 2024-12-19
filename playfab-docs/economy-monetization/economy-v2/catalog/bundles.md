@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 # Economy v2 Bundles
 
-[!INCLUDE [note](../../includes/_economy-release.md)]
+[!INCLUDE [note](../../../includes/_economy-release.md)]
 
 Bundles allow you to group multiple items together into a single item. You can create bundles of items that are often purchased together, or items that are only available for a limited time.
 
 ## Creating a Bundle
 
-To create a bundle, you must first make sure you have published Catalog Items, Currency, or UGC that you want to be accessible/purchaseable in your game. You can follow the steps in the [Economy V2 Quickstart](quickstart.md#step-3---publish-an-item-to-the-catalog)
+To create a bundle, you must first make sure you have published Catalog Items, Currency, or UGC that you want to be accessible/purchaseable in your game. You can follow the steps in the [Economy V2 Quickstart](../quickstart.md#step-3---publish-an-item-to-the-catalog)
 
 ### [GameManager](#tab/creating-bundle-game-manager)
 
