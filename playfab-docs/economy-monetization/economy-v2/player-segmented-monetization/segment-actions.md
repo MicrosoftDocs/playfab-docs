@@ -31,4 +31,4 @@ Actions can be executed in three key areas within the PlayFab platform: **Player
 
 ## See also
 
-* [Economy V2 overview](overview.md)
+* [Economy V2 overview](../overview.md)
