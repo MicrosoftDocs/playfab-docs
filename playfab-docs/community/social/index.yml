@@ -42,7 +42,7 @@ landingContent:
             url: friends/friends-leaderboards.md
   
   # Card
-  - title: Tournaments and Leaderboards
+  - title: Leaderboards
     linkLists:
       - linkListType: overview
         links:
@@ -64,7 +64,7 @@ landingContent:
             url: tournaments-leaderboards/using-the-profile-for-advanced-leaderboards.md
 
   # Card
-  - title: Groups, Guilds, and Clans
+  - title: Groups
     linkLists:
       - linkListType: overview
         links:
