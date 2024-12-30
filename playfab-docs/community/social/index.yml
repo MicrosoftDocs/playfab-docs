@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab Social documentation
-summary: Overviews, quickstarts, and tutorials that provide guidance on PlayFab's social features. # < 160 chars
+summary:Player associations include all the ways that two or more players might be related or compared to one another, including Friends, Groups, and Leaderboard rankings. # < 160 chars
 
 metadata:
   title: PlayFab Social documentation
@@ -17,14 +17,6 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: About PlayFab Social Features
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is PlayFab Social?
-            url: social/index.md
-
   # Card
   - title: Friends
     linkLists:
