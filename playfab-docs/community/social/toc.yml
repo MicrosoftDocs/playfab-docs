@@ -1,6 +1,6 @@
-- name: PlayFab Social
+- name: Player Associations
   href: index.yml
-- name: What is Social
+- name: What are Player Associations? 
   href: social/index.md
 - name: Friends
   href: friends/toc.yml
