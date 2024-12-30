@@ -4,7 +4,7 @@ title: Azure PlayFab Social documentation
 summary:Player associations include all the ways that two or more players might be related or compared to one another, including Friends, Groups, and Leaderboard rankings. # < 160 chars
 
 metadata:
-  title: PlayFab Social documentation
+  title: PlayFab Player Associations documentation
   description: Central page for PlayFab Social Features. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: azure-playfab
   ms.topic: landing-page
