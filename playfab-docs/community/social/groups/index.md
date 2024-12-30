@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, social, friends, groups
 ms.localizationpriority: medium
 ---
 
-# Groups, guilds and clans
+# Groups
 
 The Group entity type can be utilized by your game to create guild and clan interactions within your game. This entity type gives you the ability to create different roles for members, invite members into the group, and manage group membership.
 
