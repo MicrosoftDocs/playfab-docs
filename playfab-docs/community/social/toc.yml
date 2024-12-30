@@ -1,7 +1,5 @@
 - name: Player Associations
   href: index.yml
-- name: What are Player Associations? 
-  href: social/index.md
 - name: Friends
   href: friends/toc.yml
 - name: Groups
