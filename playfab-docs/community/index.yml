@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab Community documentation
-summary: summary # < 160 chars
+summary: PlayFab Community is a set of cross-platform tools and services that enable game creators to build engaging social experiences and foster long term player connections and communities.
 
 metadata:
   title: PlayFab Community documentation
@@ -22,13 +22,35 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Community? (PLACEHOLDER)
+          - text: What is Community?
             url: what-is-community.md
+
+  # Card (optional)
+  - title: Player Associations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are Player Associations?
+            url: social/social/index.md
+          - text: What is Friends?
+            url: social/friends/index.md
+          - text: What is Groups?
+            url: social/groups/index.md
+      - linkListType: quickstart
+        links:
+          - text: Friends Quickstart
+            url: social/friends/quickstart.md
+          - text: Groups Quickstart
+            url: social/groups/quickstart.md
+
+  # Card (optional)
+  - title: Synchronous Player Communications
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Synchronous Player Communications?
+            url: voice-communications/concepts-chat.md
       - linkListType: concept
         links:
-          - text: What is PlayFab Social? (PLACEHOLDER)
-            url: social/social/index.md
-          - text: Tournaments quickstart
-            url: tournaments-leaderboards/quickstart.md
-          - text: Tournaments overview
-            url: tournaments-leaderboards/index.md
+          - text: PlayFab Party chat permissions and muting
+            url: voice-communications/concepts-chat-permissions-and-muting.md
