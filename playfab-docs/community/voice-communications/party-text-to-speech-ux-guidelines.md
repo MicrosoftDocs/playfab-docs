@@ -216,8 +216,6 @@ PlayFab Party text-to-speech and speech-to-text APIs are highly effective featur
   *Gamasutra*
 - [Game Accessibility Guidelines](http://gameaccessibilityguidelines.com/)
 A straightforward reference for inclusive game design
-- Straub, Josh. [Game Accessibility: What It Is And Why It Matters](https://www.gameinformer.com/b/features/archive/2012/08/03/game-accessibility-what-it-is-and-why-it-matters.aspx)
-  *Game Informer*
 
 ### Inclusive design
 
