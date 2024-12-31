@@ -70,17 +70,17 @@ Party chat offers the following communication functionalities.
 
 - **Text-to-speech/voice synthesis:** Generate audio from text. It can be used to synthesize player voice to read incoming text to the recipient. Like speech-to-text, it can be used for making your game more accessible.
 
-- **Ability to add real-time custom voice effects:** Access to data in audio buffer enables you to add real-time custom effects like spatial sound using external sound engines. For more information, see [Using real-time audio manipulation to apply custom voice effects](concepts-realtime-audio-manipulation.md)
+- **Ability to add real-time custom voice effects:** Access to data in audio buffer enables you to add real-time custom effects like spatial sound using external sound engines. For more information, see [Using real-time audio manipulation to apply custom voice effects](../../community/voice-communications/concepts-realtime-audio-manipulation.md)
 
 - **Real-time translation:** Incoming speech and text can be translated in real-time.
    - Incoming speech can be translated into more than 60 languages. Your input source is voice. The output target is audio or text in a different language. For the latest information, see [Azure Cognitive Speech Translation](https://azure.microsoft.com/services/cognitive-services/speech-translation/).
    - Incoming text can be translated into more than 70 languages. Your input source is text. The output target is text or audio in a different language. For the latest information, see [Azure Cognitive Translator](https://azure.microsoft.com/services/cognitive-services/translator/).
 
-- **Text moderation:** Text chat can be moderated in real-time to filter out offensive language. For more information, see [Using text moderation](concepts-text-moderation.md).
+- **Text moderation:** Text chat can be moderated in real-time to filter out offensive language. For more information, see [Using text moderation](../../community/voice-communications/concepts-text-moderation.md).
 
-Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://playfab.com/pricing/) and [Party pricing](../../pricing/meters/meters.md#party).
+Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://playfab.com/pricing/) and [Party pricing](../../live-service-management/production/pricing/meters/meters.md#party).
 
-To learn more, see [Understanding how Party chat works](concepts-chat.md). For more guidance on how to use the accessibility features that are provided by Party, see [Text-to-speech guidelines](party-text-to-speech-ux-guidelines.md) and [Speech-to-text guidelines](party-speech-to-text-ux-guidelines.md).
+To learn more, see [Understanding how Party chat works](../../community/voice-communications/concepts-chat.md). For more guidance on how to use the accessibility features that are provided by Party, see [Text-to-speech guidelines](../../community/voice-communications/party-text-to-speech-ux-guidelines.md) and [Speech-to-text guidelines](../../community/voice-communications/party-speech-to-text-ux-guidelines.md).
 
 ## Scalable networks (up to 128 devices per network)
 PlayFab Party networks can scale to support anywhere between 2 and 128 devices. The service will choose a network relay configuration optimized for your scenario, so it's important to configure the `maxDeviceCount` in `PartyNetworkConfiguration` to match the max expected number of devices in your network. For more information on configuration when allocating scalable networks, see [Enable Scalable networks](quickstart.md#enable-scalable-networks)
