@@ -147,5 +147,5 @@ A connection type of PartyDeviceConnectionType::RelayServer will never change to
 
 ## Billing meters
 
-The same [billing meters](../../pricing/meters/meters.md#party) are applied in networks that use direct peer-to-peer connections as in networks that use the cloud relay service. However, only game or voice data that goes through the cloud relay service count toward the **Network egress** and **Party voice** meters.
+The same [billing meters](../../live-service-management/production/pricing/meters/meters.md#party) are applied in networks that use direct peer-to-peer connections as in networks that use the cloud relay service. However, only game or voice data that goes through the cloud relay service count toward the **Network egress** and **Party voice** meters.
 
