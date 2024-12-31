@@ -34,7 +34,7 @@ Alongside the core PlayFab Party library, we offer an [Xbox Live Helper library]
 
 ## Aligning PlayFab Party with an Xbox Live user's chat settings and privileges
 
-PlayFab Party uses an opt-in model of chat communication and, by default, restricts all communications between two [chat controls](concepts-objects.md#chat-control) to the set of communications which both participants have enabled. For more information, see the documentation for [chat permissions and muting](concepts-chat-permissions-and-muting.md).
+PlayFab Party uses an opt-in model of chat communication and, by default, restricts all communications between two [chat controls](concepts-objects.md#chat-control) to the set of communications which both participants have enabled. For more information, see the documentation for [chat permissions and muting](../../community/voice-communications/concepts-chat-permissions-and-muting.md).
 
 PlayFab Party's [Xbox Live Helper library](party-xbox-live-guide.md) indicates which set of chat permissions should be enabled to match the preferences and privileges of the Xbox Live users currently communicating in the Party session. For more information, see the documentation about [respecting an Xbox Live user's privacy settings and permissions](party-xbox-live-guide.md#respecting-an-xbox-live-users-privacy-settings-and-permissions).
 
