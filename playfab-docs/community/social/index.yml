@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab Social documentation
-summary:Player associations include all the ways that two or more players might be related or compared to one another, including Friends, Groups, and Leaderboard rankings. # < 160 chars
+summary: Player associations include all the ways that two or more players might be related or compared to one another, including Friends, Groups, and Leaderboard rankings. # < 160 chars
 
 metadata:
   title: PlayFab Player Associations documentation
