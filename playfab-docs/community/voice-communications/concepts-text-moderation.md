@@ -56,5 +56,5 @@ PartyError error = PartyManager::SetOption(nullptr, option, &filterLevel);
 ## See also
 
 * [Understanding how PlayFab Party chat works](concepts-chat.md)
-* [PartyLocalChatControl::SetTextChatOptions](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md)
-* [PartyChatTextReceivedOptions](reference/enums/partychattextreceivedoptions.md)
+* [PartyLocalChatControl::SetTextChatOptions](../../multiplayer/networking/reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_settextchatoptions.md)
+* [PartyChatTextReceivedOptions](../../multiplayer/networking/reference/enums/partychattextreceivedoptions.md)
