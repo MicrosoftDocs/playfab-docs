@@ -36,9 +36,9 @@ An example scenario for multiple networks is to manage "fire team chat" where a 
 
 The key takeaway from this example is that the extra Party network enabled real-time communication beyond the lifetime of a single game session for a group of active players.
 
-Multiple networks wouldn't have been appropriate if players were only partitioned into teams within the game session. In that scenario, it would be better to use [chat permissions](concepts-chat.md#chat-permissions-and-muting) in a single Party network to define each team's chat boundaries.
+Multiple networks wouldn't have been appropriate if players were only partitioned into teams within the game session. In that scenario, it would be better to use [chat permissions](../../community/voice-communications/concepts-chat.md#chat-permissions-and-muting) in a single Party network to define each team's chat boundaries.
 
-Additionally, using multiple networks would've been inappropriate if the long-lived group didn't represent players actively communicating with each other&mdash;for example, Guilds or chat-less lobbies. For these non-real-time scenarios, other features such as [PlayFab Lobbies](../lobby/index.md) or [PlayFab Entity Groups](../../social/groups/quickstart.md) may be more appropriate.
+Additionally, using multiple networks would've been inappropriate if the long-lived group didn't represent players actively communicating with each other&mdash;for example, Guilds or chat-less lobbies. For these non-real-time scenarios, other features such as [PlayFab Lobbies](../lobby/index.md) or [PlayFab Entity Groups](../../community/social/groups/quickstart.md) may be more appropriate.
 
 ## Endpoints vs Chat Controls across multiple networks
 
@@ -46,10 +46,10 @@ It's worth noting that Party endpoints and Party chat controls interact with mul
 
 Endpoints represent a data messaging channel created for a specific network. An endpoint from one network can't send messages to an endpoint on another network.
 
-Chat controls, on the other hand, more closely represent individual players. A single user can only have one chat control. Each chat control can be connected to multiple networks simultaneously, and chat controls can communicate across networks as long as the user associated with the given chat control is authenticated to all associated networks. Whether using a single network or multiple networks, defining communication boundaries between chat controls should be achieved with [chat permissions](concepts-chat.md#chat-permissions-and-muting).
+Chat controls, on the other hand, more closely represent individual players. A single user can only have one chat control. Each chat control can be connected to multiple networks simultaneously, and chat controls can communicate across networks as long as the user associated with the given chat control is authenticated to all associated networks. Whether using a single network or multiple networks, defining communication boundaries between chat controls should be achieved with [chat permissions](../../community/voice-communications/concepts-chat.md#chat-permissions-and-muting).
 
 ## Cost
 
 PlayFab Party's usage measurement is impacted by the number of networks a player is connected to. The *Party Connectivity* billing meter is calculated per-network, so using multiple networks simultaneously costs more than using a single network. Be sure to consider the cost-impact when planning your game architecture.
 
-You can view more information about PlayFab Party costs on the [PlayFab Party Pricing](../../pricing/meters/meters.md#party) page.
+You can view more information about PlayFab Party costs on the [PlayFab Party Pricing](../../live-service-management/production/pricing/meters/meters.md#party) page.
