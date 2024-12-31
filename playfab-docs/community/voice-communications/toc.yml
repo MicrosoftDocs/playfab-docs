@@ -22,8 +22,8 @@ items:
   - name: Reference
     items:
     - name: C++ SDK Reference
-      href: reference/party_members.md
+      href: ../../multiplayer/networking/reference/party_members.md
     - name: C++ SDK Error Codes
-      href: reference/partyerrors.md
+      href: ../../multiplayer/networking/reference/partyerrors.md
     - name: Samples
-      href: party-samples.md
+      href: ../../multiplayer/networking/party-samples.md
