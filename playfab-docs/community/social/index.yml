@@ -70,15 +70,3 @@ landingContent:
         links:
           - text: Using Shared Group Data
             url: groups/using-shared-group-data.md
-
-  # Card
-  - title: Trading
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview
-            url: trading/index.md
-      - linkListType: quickstart
-        links:
-          - text: Trading
-            url: trading/quickstart.md
