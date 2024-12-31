@@ -82,7 +82,7 @@ For both local and remote chat users it's important to keep in mind that the cor
 
 ## Creating PartyLocalChatControls from PartyXblLocalChatUsers
 
-`PartyXblLocalChatUser` objects are often only useful when associated with `PartyLocalUser` and `PartyLocalChatControl` objects in the Party library. Generating `PartyLocalUser` and `PartyLocalChatControl` objects, requires titles to log in their users to PlayFab and retrieve their user's `entityId` and `titlePlayerEntityToken`. Login can be performed via the [PlayFab CPP SDK](../../../sdks/playfab-cpp/index.md), but if a title intends to use Xbox Live credentials to log into PlayFab, they may use `PartyXblManager::LoginToPlayFab` to avoid pulling in an extra dependency.
+`PartyXblLocalChatUser` objects are often only useful when associated with `PartyLocalUser` and `PartyLocalChatControl` objects in the Party library. Generating `PartyLocalUser` and `PartyLocalChatControl` objects, requires titles to log in their users to PlayFab and retrieve their user's `entityId` and `titlePlayerEntityToken`. Login can be performed via the [PlayFab CPP SDK](../../sdks/playfab-cpp/index.md), but if a title intends to use Xbox Live credentials to log into PlayFab, they may use `PartyXblManager::LoginToPlayFab` to avoid pulling in an extra dependency.
 
 The following sample shows how the Xbox Live Helper library can help you create `PartyLocalUser` and `PartyLocalChatControl` objects, from `PartyXblLocalChatUser` objects. For more information on creating `PartyXblLocalChatUser` objects, see [Keeping Track of Xbox Live Users](#keeping-track-of-xbox-live-users).
 
