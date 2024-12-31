@@ -201,4 +201,4 @@ In this example, `Latencies` must match the field referenced by the `Path` field
 ```
 
 > [!NOTE]
-> When using the region selection rule for a queue that has server allocation enabled, the regions must be valid Azure Regions. You can find the list of valid Azure Regions [here](../../../api-references/events/data-types/azureregion.md).
+> When using the region selection rule for a queue that has server allocation enabled, the regions must be valid Azure Regions. You can find the list of valid Azure Regions [here](../../api-references/events/data-types/azureregion.md).
