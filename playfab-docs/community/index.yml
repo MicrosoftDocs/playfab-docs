@@ -56,3 +56,12 @@ landingContent:
         links:
           - text: PlayFab Party chat permissions and muting
             url: voice-communications/concepts-chat-permissions-and-muting.md
+      - linkListType: reference
+        links:
+          - text: C++ SDK Reference
+            url: voice-communications/reference/party_members.md
+          - text: C++ SDK Error Codes
+            url: voice-communications/reference/partyerrors.md
+          - text: Samples
+            url: ../multiplayer/networking/party-samples.md
+
