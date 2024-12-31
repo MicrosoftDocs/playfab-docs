@@ -37,7 +37,7 @@ myLocalChatControl->SetTextChatOptions(PartyTextChatOptions::None, nullptr);
 
 All text sent to a chat control with moderation enabled has moderation applied, regardless of the sender's own moderation settings. Text messages received by a chat control with moderation enabled has the `chatText` field in `PartyChatTextReceivedStateChange` replaced with the moderated version.
 
-More fields are present on `PartyChatTextReceivedStateChange` to enable more complex scenarios, such as giving users an option to view an unfiltered version of the text. For more information, see the [PartyChatTextReceivedStateChange](reference/structs/partychattextreceivedstatechange.md) reference page. 
+More fields are present on `PartyChatTextReceivedStateChange` to enable more complex scenarios, such as giving users an option to view an unfiltered version of the text. For more information, see the [PartyChatTextReceivedStateChange](../../multiplayer/networking/reference/structs/partychattextreceivedstatechange.md) reference page. 
 
 If moderating a text message fails, either due to a service error or because the text was deemed offensive by the service without being able to identify specific terms, then the entire text message is masked with asterisks. The `PartyChatTextReceivedOptions` enum provided in the `options` field of `PartyChatTextReceivedStateChange` contains more information when this error case occurs.
 
