@@ -28,7 +28,7 @@ The matchmaking service handles finding a match amongst tickets in a queue. When
 
 ## Prerequisites
 
-You need a [PlayFab account](https://playfab.com) to use PlayFab Matchmaking. For instructions to create an account, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
+You need a [PlayFab account](https://playfab.com) to use PlayFab Matchmaking. For instructions to create an account, see [Quickstart: Game Manager](../../live-service-management/production/gamemanager/quickstart.md).
 
 ## Configure a matchmaking queue in Game Manager
 
