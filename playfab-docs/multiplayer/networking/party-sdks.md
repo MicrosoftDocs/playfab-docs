@@ -18,12 +18,12 @@ If you don't find what you need, let us know by writing a post on our [forums](h
 
 Access to SDKs for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, and Xbox (GDK) require special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](request-access-for-sdks-samples.md).
 
-If you're looking for the core PlayFab SDK that helps you implement a majority of our features, including LiveOps, economy, and data analytics, see [PlayFab SDKs](../../../sdks/playfab-sdk-intro.md).
+If you're looking for the core PlayFab SDK that helps you implement a majority of our features, including LiveOps, economy, and data analytics, see [PlayFab SDKs](../../sdks/playfab-sdk-intro.md).
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 > [!TIP]
-> Unsure if this is the SDK you need? See [SDK overview - PlayFab SDK, Party SDK, Multiplayer Server SDK](../../../sdks/sdk-overview.md).
+> Unsure if this is the SDK you need? See [SDK overview - PlayFab SDK, Party SDK, Multiplayer Server SDK](../../sdks/sdk-overview.md).
 
 ## By content type
 
