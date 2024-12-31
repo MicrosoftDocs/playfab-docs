@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Azure PlayFab Social documentation
+title: Azure PlayFab Player Associations documentation
 summary: Player associations include all the ways that two or more players might be related or compared to one another, including Friends, Groups, and Leaderboard rankings. # < 160 chars
 
 metadata:
   title: PlayFab Player Associations documentation
-  description: Central page for PlayFab Social Features. # Required; article description that is displayed in search results. < 160 chars.
+  description: Central page for PlayFab Player Associations features. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: azure-playfab
   ms.topic: landing-page
   author: thomasgu
@@ -22,11 +22,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: Friends Overview
             url: friends/index.md
       - linkListType: quickstart
         links:
-          - text: Friends lists
+          - text: Friends Quickstart
             url: friends/quickstart.md
       - linkListType: tutorial
         links:
@@ -38,7 +38,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: Leaderboards Overview
             url: tournaments-leaderboards/index.md
       - linkListType: quickstart
         links:
@@ -60,7 +60,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: Groups Overview
             url: groups/index.md
       - linkListType: quickstart
         links:
