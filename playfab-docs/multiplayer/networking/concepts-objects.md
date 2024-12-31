@@ -124,13 +124,13 @@ It is never explicitly created or destroyed.
 
 ### User
 
-A PlayFab Party *user* is a unique human player for whom the game performs a [PlayFab Player Login](../../identity/player-identity/authentication/login/index.md) to acquire a `title_player_account` [Entity ID](/gaming/playfab/features/data/entities/) and token.
+A PlayFab Party *user* is a unique human player for whom the game performs a [PlayFab Player Login](../../identity/player-identity/login/index.md) to acquire a `title_player_account` [Entity ID](/gaming/playfab/features/data/entities/) and token.
 
 Remote users are identified within the PlayFab Party API solely by their Entity ID string associated with [chat controls](#chat-control) and optionally with [endpoints](#endpoint).
 They're not represented using a dedicated object. This is because PlayFab Party doesn't have functionality that meaningfully interacts with arbitrary users, other than for raw identification and as a label associated with those other objects.
 
 Conversely, for local *users* there are explicit `PartyLocalUser` objects, since games own the management of their lifetimes within PlayFab Party.
-The game will typically create a `PartyLocalUser` when the game has successfully logged that PlayFab player in using the applicable [login](../../identity/player-identity/authentication/login/index.md) method, and destroy the `PartyLocalUser` as appropriate when that user logs off.
+The game will typically create a `PartyLocalUser` when the game has successfully logged that PlayFab player in using the applicable [login](../../identity/player-identity/login/index.md) method, and destroy the `PartyLocalUser` as appropriate when that user logs off.
 For platforms and games that support multiple local players logged in, additional `PartyLocalUser` objects should be created for each player.
 
 `PartyLocalUser` objects are also important because they're the basis of all authentication. A valid local *user* must exist in order to either create a new [network](#network) or to authentication into one.
