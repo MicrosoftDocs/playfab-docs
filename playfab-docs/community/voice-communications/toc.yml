@@ -1,5 +1,5 @@
 items:
-  - name: Chat Overview
+  - name: Player communications overview
     href: concepts-chat.md
   - name: Troubleshooting voice chat
     href: concepts-audio-troubleshooting.md
