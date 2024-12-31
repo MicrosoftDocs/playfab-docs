@@ -59,8 +59,8 @@ landingContent:
             url: tutorials/custom-stores-for-player-segments.md
           - text: Create coupons
             url: tutorials/coupons-and-promotions.md
-          - name: Trading
-            url: items/trading-quickstart.md
+          - text: Trading
+            url: trading/trading-quickstart.md
 
       - linkListType: sample
         links:
