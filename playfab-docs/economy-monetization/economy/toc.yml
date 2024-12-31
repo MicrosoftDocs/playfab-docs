@@ -5,6 +5,8 @@ items:
   href: items/toc.yml
 - name: Stores
   href: stores/toc.yml
+- name: Trading
+  href: trading/toc.yml
 - name: Quickstart
   href: quickstart.md
 - name: Tutorials
