@@ -7,5 +7,5 @@ items:
     href: what-is-community.md
   - name: Player Associations
     href: social/toc.yml
-  - name: Party Player Communications
+  - name: Synchronous Player Communications
     href: voice-communications/toc.yml
