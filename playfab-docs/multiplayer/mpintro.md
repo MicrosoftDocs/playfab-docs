@@ -16,8 +16,8 @@ Multiplayer is a great addition to many titles, and PlayFab provides several ser
 
 |Service|Description|
 |--|--|
-|[Leaderboards](../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards.|
-|[Entity Groups](../data/playerdata/index.md)|Create permanent or temporary groups of players and signal activity. |
+|[Leaderboards](../community/social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards.|
+|[Entity Groups](..player-progression/player-data/index.md)|Create permanent or temporary groups of players and signal activity. |
 |[Lobby](./lobby/index.md)| Create lobbies for coordinating gameplay among groups pre-game or post matchmaking. |
 |[Matchmaking](./matchmaking/index.md)| Deploy custom matchmaking rules to group players quickly|
 |[Party](./networking/index.md)|Connect players with networking and accessible in-game chat|
@@ -51,9 +51,9 @@ Leaderboards can augment both single-player and multiplayer modes. For example a
 If player results do not need to be shared broadly with other players, player-associated PlayFab Entity data may be better suited to store this data. A benefit of PlayFab's Entity system is the ability to track cross-network progression of player's activity and other data across multiple accounts. Changes to PlayFab leaderboards and data both fire PlayStream events which can trigger custom CloudScript. This allows for highly customizable responses to player activity in real-time.
 
 Applicable services:
-- [Learn more about Leaderboards](../social/tournaments-leaderboards/index.md)
-- [Learn more about Entity data](../data/playerdata/index.md)
-- [Learn more about CloudScript](../automation/cloudscript/index.md)
+- [Learn more about Leaderboards](../community/social/tournaments-leaderboards/index.md)
+- [Learn more about Entity data](../player-progression/player-data/index.md)
+- [Learn more about CloudScript](../live-service-management/production/automation/cloudscript/index.md)
 
 ### In-game parties and unsolicited join-in-progress
 Players often want to commiserate outside of proper gameplay and your title may support this through an in-game guild or party experience. PlayFab Entity groups and PlayFab Party are designed with these scenarios in mind.
@@ -69,7 +69,7 @@ While you can use Entity groups for signaling and other *slow* data-sharing, Pla
 
 PlayFab Entity groups does not have a push notification system for players to be notified of Entity object changes and requires polling the service to keep updated. Platforms may provide built-in invitation and presence systems that launch toasts and have other beneficial experiences (join in progress from the player profile card) that you should consider integrating if applicable.
 
-- [Learn more about Entity groups](../social/groups/quickstart.md)
+- [Learn more about Entity groups](../community/social/groups/quickstart.md)
 - [Learn more about Party](./networking/index.md)
 
 ### Matchmaking and backfill
