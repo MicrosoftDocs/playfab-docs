@@ -23,7 +23,7 @@ This article describes how to set up the development environment for Azure PlayF
 
 ## Prerequisites
 
-You need a [PlayFab account](https://playfab.com) to use PlayFab Lobbies. For instructions to create an account, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
+You need a [PlayFab account](https://playfab.com) to use PlayFab Lobbies. For instructions to create an account, see [Quickstart: Game Manager](../../live-service-management/production/gamemanager/gamemanager/quickstart.md).
 
 ## Download and set up the PlayFab Multiplayer SDK
 
