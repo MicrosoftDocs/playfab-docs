@@ -26,7 +26,7 @@ For a deeper understanding, consult the linked reference and conceptual document
 
 You need a PlayFab account, and you *must enable* the Party feature to start using Party. 
 
-1. Create or sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../../gamemanager/quickstart.md).
+1. Create or sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../live-service-management/production/gamemanager/quickstart.md).
 1. [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
 
 ## Platform Prerequisites
@@ -192,7 +192,7 @@ At a high level, initializing Party involves the following steps:
 ```
 
 4. Set the transcription and translation options.  
- Transcription and translation are optional chat features that can significantly increase accessibility of your game. You can find more information about these features in the [Chat Overview](concepts-chat.md).
+ Transcription and translation are optional chat features that can significantly increase accessibility of your game. You can find more information about these features in the [Chat Overview](../../community/voice-communications/concepts-chat.md).
 
 ```cpp
         // Get the available list of text to speech profiles
@@ -436,7 +436,7 @@ The full code is available in [NetworkManager.cpp](https://github.com/PlayFab/Pl
 The final step is receiving messages sent by remote Party members and rendering (playing) them on your device. 
 
 > [!IMPORTANT]
-> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which is used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, see the [Chat Permissions](concepts-chat-permissions-and-muting.md) article.
+> While creating the chat control in one of the previous steps, you've already set up the audio input and output devices which is used by Party to send, receive and render audio data. To receive the audio messages, you'll also need to set the appropriate chat permission between each chat control if you want audio to flow. By default, the chat permissions are set to NONE. For more information, see the [Chat Permissions](../../community/voice-communications/concepts-chat-permissions-and-muting.md) article.
 
 The processing of other messages from the Party layer is best accomplished in a dedicated update thread or a high-frequency game loop. The game loop should be set up to run every frame and receive messages from the Party Manager via the StartProcessingStateChanges() function.
 
@@ -545,8 +545,8 @@ For more Xbox-specific guidance, refer to the [Xbox Requirements](xbox-requireme
 * [Party samples](party-samples.md)
 * [Multiplayer Services](../mpintro.md)
 * [Party objects and their relationships](concepts-objects.md)
-* [Party chat basics](concepts-chat.md)
+* [Party chat basics](../../community/voice-communications/concepts-chat.md)
 * [Party invitations and the security model](concepts-invitations-security-model.md)
 * [Party interacts with your discovery flows](concepts-discovery.md)
 * [Party API reference documentation](reference/party_members.md)
-* Party UX guidelines for [Text-to-speech](party-text-to-speech-ux-guidelines.md) and [Speech-to-text](party-speech-to-text-ux-guidelines.md)
+* Party UX guidelines for [Text-to-speech](../../community/voice-communications/party-text-to-speech-ux-guidelines.md) and [Speech-to-text](../../community/voice-communications/party-speech-to-text-ux-guidelines.md)
