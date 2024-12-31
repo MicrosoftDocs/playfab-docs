@@ -33,11 +33,11 @@ The following chart guides you through scenarios that players will experience wh
 
 #### Enabling transcription
 
-Transcription of incoming audio for the user associated with a local chat control can be enabled by calling [`PartyLocalChatControl::SetTranscriptionOptions()`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_settranscriptionoptions.md). When the operation completes, a [`PartySetTranscriptionOptionsCompletedStateChange`](reference/structs/partysettranscriptionoptionscompletedstatechange.md) will be provided by [`PartyManager::StartProcessingStateChanges()`](reference/classes/PartyManager/methods/partymanager_startprocessingstatechanges.md) indicating whether the asynchronous operation succeeded.
+Transcription of incoming audio for the user associated with a local chat control can be enabled by calling [`PartyLocalChatControl::SetTranscriptionOptions()`](../../multiplayer/networking/reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_settranscriptionoptions.md). When the operation completes, a [`PartySetTranscriptionOptionsCompletedStateChange`](../../multiplayer/networking/reference/structs/partysettranscriptionoptionscompletedstatechange.md) will be provided by [`PartyManager::StartProcessingStateChanges()`](../../multiplayer/networking/reference/classes/PartyManager/methods/partymanager_startprocessingstatechanges.md) indicating whether the asynchronous operation succeeded.
 
 #### Receiving transcriptions
 
-When audio is sent to a chat control associated with a local user that has enabled transcription, the audio will be transcribed. Each transcription will be indicated by a [`PartyVoiceChatTranscriptionReceivedStateChange`](reference/structs/partyvoicechattranscriptionreceivedstatechange.md) provided by `PartyManager::StartProcessingStateChanges()`. The speaker, receiver(s), and transcription text will be specified in the state change. Additionally, the state change will specify whether the transcription text is a `Hypothesis` or `Final` phrase. A `Hypothesis` phrase is a snapshot in the transcription process that indicates an iterative refinement of the transcription text. These can optionally be used to improve the perceived responsiveness of the transcription process. A `Final` phrase represents the end of the transcription process after a user has completed a sentence or phrase.
+When audio is sent to a chat control associated with a local user that has enabled transcription, the audio will be transcribed. Each transcription will be indicated by a [`PartyVoiceChatTranscriptionReceivedStateChange`](../../multiplayer/networking/reference/structs/partyvoicechattranscriptionreceivedstatechange.md) provided by `PartyManager::StartProcessingStateChanges()`. The speaker, receiver(s), and transcription text will be specified in the state change. Additionally, the state change will specify whether the transcription text is a `Hypothesis` or `Final` phrase. A `Hypothesis` phrase is a snapshot in the transcription process that indicates an iterative refinement of the transcription text. These can optionally be used to improve the perceived responsiveness of the transcription process. A `Final` phrase represents the end of the transcription process after a user has completed a sentence or phrase.
 
 #### Displaying transcriptions
 
@@ -86,9 +86,9 @@ This section will walk through a method for determining the best display, based 
 
 Different game features will drive varying chat density. For example - the game lobby during the game session, and end-of-game wrap-up are times when game chat is engaged. However, the types of discussions change the objectives of the screen. Knowing the type of discussion can help gauge whether a conversation window is critical or optional to gameplay needs.
 
-![Users Chat](media/users-chat.jpg)
+![Users Chat](../../multiplayer/networking/media/users-chat.jpg)
 
-![Users Chat - Game Action](media/users-chat-game-action.jpg)
+![Users Chat - Game Action](../../multiplayer/networking/media/users-chat-game-action.jpg)
 
 Discussion types
 
@@ -107,9 +107,9 @@ That data can then be applied to this simple strategy for determining conversati
 
 * **Reply length** - Determine the average word and character count of a single reply. *Example: A single reply averaged 10 words and 35 characters (with spaces) per reply.*
 
-* **Formatting** - Each chat-related state change includes useful information to help visualize it. The lengths of each field need to be taken into account when determining formatting. In the following example, the **message type**, i.e. whether the message is a result of speech-to-text or text message, can be inferred from the state change type. A `PartyVoiceChatTranscriptionReceivedStateChange` will always indicate text that is a result of voice input, and a [`PartyChatTextReceivedStateChange`](reference/structs/partychattextreceivedstatechange.md) will always indicate text that is a result of text input. The **reply origin**, i.e. who sent the communication, and the **reply** itself can be determined by the fields within each state change.
+* **Formatting** - Each chat-related state change includes useful information to help visualize it. The lengths of each field need to be taken into account when determining formatting. In the following example, the **message type**, i.e. whether the message is a result of speech-to-text or text message, can be inferred from the state change type. A `PartyVoiceChatTranscriptionReceivedStateChange` will always indicate text that is a result of voice input, and a [`PartyChatTextReceivedStateChange`](../../multiplayer/networking/reference/structs/partychattextreceivedstatechange.md) will always indicate text that is a result of text input. The **reply origin**, i.e. who sent the communication, and the **reply** itself can be determined by the fields within each state change.
 
-![Example - Numerical Value = Character Count](media/numerical-value-equals-character-count.png)
+![Example - Numerical Value = Character Count](../../multiplayer/networking/media/numerical-value-equals-character-count.png)
 
 #### Font size and type
 
@@ -120,7 +120,7 @@ Choosing a legible font is important for players who are reading any on-screen t
 
 *Example: Different typefaces of the same size can vary in readability.*
 
-![Typeface comparison](media/typeface-comparison.jpg)
+![Typeface comparison](../../multiplayer/networking/media/typeface-comparison.jpg)
 
 A minimum of **28px** for 1080p UI text (14sp) is recommended for chat transcriptions presented in a 10' experience. Like subtitles, these are displayed for a limited duration and so the text should be notably larger than the minimum acceptable (24pt for 10') for the rest of the UI.
 
@@ -130,7 +130,7 @@ Now that you have your average reply frequency, reply length, formatting conside
 
 *Example: The result of using the specs above inside a window size of **525px (w) x 395px (h)**.*
 
-![Calculating Chat Window Size](media/calculating-chat-window-size.png)
+![Calculating Chat Window Size](../../multiplayer/networking/media/calculating-chat-window-size.png)
 
 Start testing your design by using the **ConversationWindow_Template.ai**. Go to [Resources](#resources) for the native Adobe Illustrator (.ai) file.
 
@@ -155,7 +155,7 @@ Consider referencing multiple positions to accommodate varying screen complexity
 > [!NOTE]
 > Take care to position the conversation window so that it doesn't inhibit game activity. This will ensure speech-to-text users can enjoy a comparable experience as other users.
 
-![Users Chat](media/users-chat.jpg)
+![Users Chat](../../multiplayer/networking/media/users-chat.jpg)
 
 ### User-controlled customization
 
@@ -163,7 +163,7 @@ There may be screens where there simply isn't room to accommodate a conversation
 
 *Example: The end-of-game results UI fills the entire screen. A conversation window risks covering critical stats.*
 
-![Capture the Flag - Game with Chat](media/capture-the-flag-game-with-chat.jpg)
+![Capture the Flag - Game with Chat](../../multiplayer/networking/media/capture-the-flag-game-with-chat.jpg)
 
 ### Solutions for game UI and conversation window conflicts
 
@@ -175,7 +175,7 @@ There may be screens where there simply isn't room to accommodate a conversation
 
    *Example: Disabling the speech-to-text setting via OS Settings. (This shows a critical path for the Xbox One console)*
 
-   ![Critical Path for the Xbox One Console](media/critical-path-for-xbox-1-console.png)
+   ![Critical Path for the Xbox One Console](../../multiplayer/networking/media/critical-path-for-xbox-1-console.png)
 
 2. **The game provides a method for users to minimize the window**.
 
@@ -189,15 +189,15 @@ There may be screens where there simply isn't room to accommodate a conversation
 
    *Example: Minimize/maximize speech-to-text window via in-game Options menu (Xbox Console/PC critical path*
 
-   ![Critical Path for Xbox Console/PC](media/critical-path-xbox-console-pc.png)
+   ![Critical Path for Xbox Console/PC](../../multiplayer/networking/media/critical-path-xbox-console-pc.png)
 
    *Console example: Add a speech-to-text setting in the Pause menu.*
 
-   ![Console Example - Add speech-to-text setting in the Pause menu](media/console-example-add-stt-in-pause-menu.png)
+   ![Console Example - Add speech-to-text setting in the Pause menu](../../multiplayer/networking/media/console-example-add-stt-in-pause-menu.png)
 
    *PC example: Add a speech-to-text setting in the Pause menu.*
 
-   ![PC Example - Add speech-to-text setting in the Pause menu](media/pc-example-add-stt-in-pause-menu.png)
+   ![PC Example - Add speech-to-text setting in the Pause menu](../../multiplayer/networking/media/pc-example-add-stt-in-pause-menu.png)
 
    Enabling users to minimize or maximize the conversation window puts the choice in their hands. The game doesn't have to try to avoid compromising critical real estate.
 
@@ -207,11 +207,11 @@ There may be screens where there simply isn't room to accommodate a conversation
 
    *Console example: A button is mapped to toggle the display ON/OFF and is annotated in the legend.*
 
-   ![Capture the Flag Game - Console toggle for Chat](media/capture-the-flag-game-console-toggle-chat.jpg)
+   ![Capture the Flag Game - Console toggle for Chat](../../multiplayer/networking/media/capture-the-flag-game-console-toggle-chat.jpg)
 
    *PC example: A button is mapped to toggle the display ON/OFF and is annotated in the legend.*
 
-   ![Capture the Flag Game - PC toggle for Chat](media/capture-the-flag-game-pc-toggle-chat.jpg)
+   ![Capture the Flag Game - PC toggle for Chat](../../multiplayer/networking/media/capture-the-flag-game-pc-toggle-chat.jpg)
 
 #### Functional requirements
 
@@ -228,7 +228,7 @@ Automatically close the window when chat has been inactive for a set period.
 
 *Example: The speech-to-text window closes after 15s of inactivity. This number is based on the time it would take a user to read one message of 280 characters.*
 
-![Speech-to-text Window](media/stt-window.png)
+![Speech-to-text Window](../../multiplayer/networking/media/stt-window.png)
 
 > [!NOTE]
 > It's worth testing various settings to ensure that opening and closing a window isn't too distracting on a game screen with a lot of activity.
@@ -257,7 +257,7 @@ A game must determine when the conversation window remains active (while a user 
 
 *Console example: The Xbox One Guide is TCUI and has a transparent overlay that dims the screen.*
 
-![Conversation Window Obscured](media/conversation-window-obscured.jpg)
+![Conversation Window Obscured](../../multiplayer/networking/media/conversation-window-obscured.jpg)
 
 It's common for a platform’s system UI to be the ‘top’ visible layer of any game or app UI. For example, the Xbox One operating system-initiated UI (error messaging, a virtual keyboard, toasts, the Xbox One Guide, people picker, and other elements) applies a full screen, semi-transparent, black overlay with their content window.
 
