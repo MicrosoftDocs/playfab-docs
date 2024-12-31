@@ -56,6 +56,10 @@ landingContent:
         links:
           - text: PlayFab Party chat permissions and muting
             url: voice-communications/concepts-chat-permissions-and-muting.md
+      - linkListType: quickstart
+        links:
+          - text: Synchronous Player Communications Quickstart
+            url: ../multiplayer/networking/quickstart.md
       - linkListType: reference
         links:
           - text: C++ SDK Reference
