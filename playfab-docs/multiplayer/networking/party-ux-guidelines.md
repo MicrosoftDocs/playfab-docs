@@ -16,6 +16,6 @@ keywords: playfab, multiplayer, networking
 Recommendations on how to integrate UX elements into your game, particularly accessible STT / TTS.
 Maybe also opinions on squawkers, RTT bar meters, region lists, error/troubleshooting display in the future.
 
-* [PlayFab Party Speech-to-Text UX Guidelines](party-speech-to-text-ux-guidelines.md)
-* [PlayFab Party Text-to-Speech UX Guidelines](party-text-to-speech-ux-guidelines.md)
+* [PlayFab Party Speech-to-Text UX Guidelines](../../community/voice-communications/party-speech-to-text-ux-guidelines.md)
+* [PlayFab Party Text-to-Speech UX Guidelines](../../community/voice-communications/party-text-to-speech-ux-guidelines.md)
 
