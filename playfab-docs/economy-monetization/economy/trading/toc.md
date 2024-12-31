@@ -1,3 +1,4 @@
+items:
 - name: Trading
   href: index.md
 - name: Quickstart
