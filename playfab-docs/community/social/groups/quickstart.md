@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Let's say that you need guilds, clans, corporations, companies, tribes - or whatever your game calls them - PlayFab has them.
 
-PlayFab builds guilds using the new  [Entity Programming Model](../../data/entities/index.md), or more specifically - the entity type of groups. Entity groups are a broader concept than guilds, but fundamentally, entity groups have been created as a solution for guilds.
+PlayFab builds guilds using the new  [Entity Programming Model](../../../live-service-management/production/entities/index.md), or more specifically - the entity type of groups. Entity groups are a broader concept than guilds, but fundamentally, entity groups have been created as a solution for guilds.
 
 ## Entity groups
 
