@@ -59,9 +59,9 @@ landingContent:
       - linkListType: reference
         links:
           - text: C++ SDK Reference
-            url: voice-communications/reference/party_members.md
+            url: ../multiplayer/networking/reference/party_members.md
           - text: C++ SDK Error Codes
-            url: voice-communications/reference/partyerrors.md
+            url: ../multiplayer/networking/reference/partyerrors.md
           - text: Samples
             url: ../multiplayer/networking/party-samples.md
 
