@@ -28,7 +28,7 @@ This quickstart helps you install the Party SDK for Unity and make your first AP
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 
-- The PlayFab "core" Unity3D SDK. For information about installing the Unity3D SDK, see the "Download and install PlayFab SDK" section of [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#download-and-install-playfab-sdk).
+- The PlayFab "core" Unity3D SDK. For information about installing the Unity3D SDK, see the "Download and install PlayFab SDK" section of [Quickstart: PlayFab Client library for C# in Unity](../../sdks/unity3d/quickstart.md#download-and-install-playfab-sdk).
 
 ## Download and install the PlayFab Party Unity plugin
 
@@ -43,7 +43,7 @@ Following the steps to download and install the PlayFab Party Unity plugin.
 ## Set up your scene
 This part of the guide shows you how to add the `PlayFabMultiplayerManager` to your scene to enable you to call PlayFab Party APIs from Unity.
 
-Before you can create a network, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#making-your-first-api-call).
+Before you can create a network, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../sdks/unity3d/quickstart.md#making-your-first-api-call).
 
 1. In the Unity editor, in the Project window, navigate to  **Assets > PlayFabPartySDK > Prefabs**.
 1. From the Prefabs folder, drag and drop the  **PlayFabMultiplayerManager**  into your scene in the **Hierarchy** window.
