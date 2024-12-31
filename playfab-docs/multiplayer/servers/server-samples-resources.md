@@ -32,4 +32,4 @@ This topic lists samples and resources for PlayFab Multiplayer Game Servers.
 
 ## See also
 
-* [SDKs overview](../../../sdks/sdk-overview.md)
+* [SDKs overview](../../sdks/sdk-overview.md)
