@@ -1,5 +1,5 @@
 ---
-title: Identity overview page
+title: Community overview page
 author: kdearnley
 description: Overview page for Community product
 ms.author: kdearnley
