@@ -14,7 +14,7 @@ keywords: playfab, multiplayer, lobby, matchmaking, unity, middleware
 
 Get started with the PlayFab Multiplayer Unity plugin. Follow steps below to install the package and try out example code for a basic task.
 
-This quickstart helps you make your first API calls using the PlayFab Multiplayer SDK for Unity. Before continuing, make sure you complete [Quickstart: PlayFab Client library for C# in Unity](../../../../sdks/unity3d/quickstart.md), which ensures you have a PlayFab account and are familiar with logging into PlayFab from your game and the PlayFab Game Manager.
+This quickstart helps you make your first API calls using the PlayFab Multiplayer SDK for Unity. Before continuing, make sure you complete [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md), which ensures you have a PlayFab account and are familiar with logging into PlayFab from your game and the PlayFab Game Manager.
 
 > [!NOTE]
 >
@@ -31,7 +31,7 @@ This quickstart helps you make your first API calls using the PlayFab Multiplaye
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 
-- The PlayFab "core" Unity3D SDK (also included in Multiplayer Unity plugin). For information about installing the Unity3D SDK, see the "Download and install PlayFab SDK" section of [Quickstart: PlayFab Client library for C# in Unity](../../../../sdks/unity3d/quickstart.md#download-and-install-playfab-sdk).
+- The PlayFab "core" Unity3D SDK (also included in Multiplayer Unity plugin). For information about installing the Unity3D SDK, see the "Download and install PlayFab SDK" section of [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#download-and-install-playfab-sdk).
 
 ## Download and install the PlayFab Multiplayer Unity plugin
 
@@ -48,7 +48,7 @@ Note: you might need to install a newer version of PlayFab "core" Unity SDK if n
 ## Set up your scene
 This part of the guide shows you how to add the `PlayfabMultiplayerEventProcessor` to your scene to enable you to call PlayFab Multiplayer APIs from Unity.
 
-Before you can use Multiplayer API, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../../../sdks/unity3d/quickstart.md#making-your-first-api-call).
+Before you can use Multiplayer API, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#making-your-first-api-call).
 
 1. In the Unity editor, in the Project window, navigate to  **Assets > PlayFabMultiplayerSDK > Prefabs**.
 1. From the Prefabs folder, drag and drop the **PlayfabMultiplayerEventProcessor** into your scene in the **Hierarchy** window.
