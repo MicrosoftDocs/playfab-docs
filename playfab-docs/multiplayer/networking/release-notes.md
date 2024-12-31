@@ -122,7 +122,7 @@ For Android platforms, we follow [Google's target API guidelines](https://develo
     - The Compile SDK Version has been increased from Android API 28 to Android API 34.
     - Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
-If you experience any issues with integrating these packages, [please file a PlayFab Support Ticket](../../pricing/PaidTechnicalSupport.md).
+If you experience any issues with integrating these packages, [please file a PlayFab Support Ticket](../../live-service-management/production/pricing/PaidTechnicalSupport.md).
 
 ## 1.8.9
 
@@ -302,7 +302,7 @@ April 12, 2021
 ### New thread control and text moderation features
 
 - The library's work can now be run manually on game-controlled threads. For more information, see [`PartyManager::SetWorkMode`](reference/classes/PartyManager/methods/partymanager_setworkmode.md).
-- Offensive text chat can now optionally be filtered. For more information, see [Using text moderation](concepts-text-moderation.md).
+- Offensive text chat can now optionally be filtered. For more information, see [Using text moderation](../../community/voice-communications/concepts-text-moderation.md).
 
 ### Explicit enum numbering in the header
 
@@ -379,7 +379,7 @@ April 30, 2020
 
 ### Chat API Changes
 
-* The real-time audio manipulation functions, which can be used to modify outgoing or incoming voice chat audio, are implemented for Windows and Xbox. For more information, see [Using real-time audio manipulation to apply custom voice effects](concepts-realtime-audio-manipulation.md).
+* The real-time audio manipulation functions, which can be used to modify outgoing or incoming voice chat audio, are implemented for Windows and Xbox. For more information, see [Using real-time audio manipulation to apply custom voice effects](../../community/voice-communications/concepts-realtime-audio-manipulation.md).
 * The chat permission options have more options for optionally configuring text-to-speech and microphone audio permissions independently. For more information, see [`PartyChatPermissionOptions`](reference/enums/partychatpermissionoptions.md).
 * This breaks compatibility with previous releases of the Xbox Live Helper library. This release is compatible with version 1.2.0 of the Xbox Live Helper library. For more information, see the [Xbox Live Helper Library release notes](party-xboxlive-relnotes.md).
 * Each transcription state change now indicates whether it represents text-to-speech or microphone audio. For more information, see [`PartyVoiceChatTranscriptionReceivedStateChange`](reference/structs/partyvoicechattranscriptionreceivedstatechange.md).
