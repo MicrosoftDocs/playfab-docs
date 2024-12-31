@@ -24,8 +24,8 @@ Note that these SDKs are for the servers.
 * [Java Game Server SDK (GSDK) for Windows and Linux servers via Maven](https://mvnrepository.com/artifact/com.playfab/gameserverSDK)
 
 > [!Tip]
-> Unsure if this is the SDK you need? See [SDKs overview - PlayFab SDK, Party SDK, Multiplayer Game Server SDK](../../../sdks/sdk-overview.md).
+> Unsure if this is the SDK you need? See [SDKs overview - PlayFab SDK, Party SDK, Multiplayer Game Server SDK](../../sdks/sdk-overview.md).
 
 ## See also
 
-* [SDKs overview](../../../sdks/sdk-overview.md)
+* [SDKs overview](../../sdks/sdk-overview.md)
