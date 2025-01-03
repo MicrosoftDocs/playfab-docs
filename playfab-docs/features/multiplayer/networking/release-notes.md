@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 November 18, 2024
 
 - Fixed an issue where voice chat would sometimes not work for users remaining in a Party network after other users rejoined and left multiple times.
-- Fixed an issue where PartyLocalEndpoint::GetEndpointStatistics would report incorrect values for [PartyEndpointStatistic::CurrentlyQueuedSendMessages](reference/enums/partyendpointstatistic.md) and [PartyEndpointStatistic::CurrentlyQueuedSendMessageBytes](reference/enums/partyendpointstatistic.md) when used with direct peer connections.
+- Fixed an issue where [PartyLocalEndpoint::GetEndpointStatistics](reference/classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md) would report incorrect values for [PartyEndpointStatistic::CurrentlyQueuedSendMessages](reference/enums/partyendpointstatistic.md) and [PartyEndpointStatistic::CurrentlyQueuedSendMessageBytes](reference/enums/partyendpointstatistic.md) when used with direct peer connections.
 - Fixed broken symlinks for the framework on the macOS.
 - Improved handling log exceptions for non Windows platforms during collection of SDK logs.
 
