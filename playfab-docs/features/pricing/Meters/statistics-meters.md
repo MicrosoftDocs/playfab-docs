@@ -39,15 +39,28 @@ Here's the list of APIs that tick this meter:
 |----------------------|--------------
 |UpdateStatistics              | [Update Statistics](/rest/api/playfab/progression/statistics/update-statistics)    |
 
+## Transactional Writes
+
+The Transactional Write meter is a different variant of the Statistics Writes meter, it operates under the same conditions
+but adds the feature of handling requests as transactions, ensuring each request executes only once.
+
+This meter is limited to this API and requires a special parameter for a client Transaction ID. When you provide this parameter, the Transactional Write meter is activated.
+
+| API Name     | API Reference                                
+|----------------------|--------------
+|UpdateStatistics              | [Update Statistics](/rest/api/playfab/progression/statistics/update-statistics)    |
+
+
 
 ## Statistics Storage
 
 This meter keeps track on how much statistics data is stored in the service.
 
-For each entity statistic, the storage consumed per version of the statistic is computed as the sum of the following three:
+For each entity statistic, the storage consumed per version of the statistic is computed as the sum of the following elements:
 - Scores: Length of the list of scores multiplied by `sizeof(long)`.
 - Metadata: Length of the field.
 - Timestamp: `sizeof(long)`.
+- Length of the entity id.
 
 ## See Also
 
