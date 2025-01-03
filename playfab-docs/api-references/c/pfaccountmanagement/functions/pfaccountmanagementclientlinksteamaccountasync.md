@@ -4,8 +4,8 @@ title: "PFAccountManagementClientLinkSteamAccountAsync"
 description: "Links the Steam account associated with the provided Steam authentication ticket to the user's PlayFab account"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementClientLinkSteamAccountAsync  

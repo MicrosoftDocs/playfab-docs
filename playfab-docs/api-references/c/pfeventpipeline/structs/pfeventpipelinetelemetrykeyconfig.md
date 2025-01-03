@@ -4,8 +4,8 @@ title: "PFEventPipelineTelemetryKeyConfig"
 description: "Configuration struct that defines the properties required for using Telemetry Key."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFEventPipelineTelemetryKeyConfig  

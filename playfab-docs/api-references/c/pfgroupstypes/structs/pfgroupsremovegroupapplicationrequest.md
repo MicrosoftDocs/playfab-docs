@@ -4,8 +4,8 @@ title: "PFGroupsRemoveGroupApplicationRequest"
 description: "PFGroupsRemoveGroupApplicationRequest data model. Removes an existing application to join the group. This is used for both rejection of an application as well as withdrawing an application. The applying entity or a parent in its chain (e.g. title) may withdraw the application, and any caller with appropriate access in the group may reject an application. No data is returned in the case of success."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsRemoveGroupApplicationRequest  

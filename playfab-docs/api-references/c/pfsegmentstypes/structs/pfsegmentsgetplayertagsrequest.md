@@ -4,8 +4,8 @@ title: "PFSegmentsGetPlayerTagsRequest"
 description: "PFSegmentsGetPlayerTagsRequest data model. This API will return a list of canonical tags which includes both namespace and tag's name. If namespace is not provided, the result is a list of all canonical tags. TagName can be used for segmentation and Namespace is limited to 128 characters."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFSegmentsGetPlayerTagsRequest  

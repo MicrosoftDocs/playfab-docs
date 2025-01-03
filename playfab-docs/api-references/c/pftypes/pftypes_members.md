@@ -4,8 +4,8 @@ title: "Services C API overview - PFTypes.h"
 description: "Services C API overview - PFTypes.h"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # Services C API overview - PFTypes.h
@@ -67,6 +67,7 @@ ms.date: 02/22/2024
 | [PFUserXboxInfo](structs/pfuserxboxinfo.md) | PFUserXboxInfo data model. |  
 | [PFValueToDateModel](structs/pfvaluetodatemodel.md) | PFValueToDateModel data model. |  
 | [PFVariable](structs/pfvariable.md) | PFVariable data model. |  
+| [PFVersionConfiguration](structs/pfversionconfiguration.md) | PFVersionConfiguration data model. |  
 | [PFVirtualCurrencyRechargeTime](structs/pfvirtualcurrencyrechargetime.md) | PFVirtualCurrencyRechargeTime data model. |  
 | [PFVirtualCurrencyRechargeTimeDictionaryEntry](structs/pfvirtualcurrencyrechargetimedictionaryentry.md) | Dictionary entry for an associative array with PFVirtualCurrencyRechargeTime values. |  
   
@@ -86,6 +87,7 @@ ms.date: 02/22/2024
 | [PFLoginIdentityProvider](enums/pfloginidentityprovider.md) | LoginIdentityProvider enum.|  
 | [PFOperationTypes](enums/pfoperationtypes.md) | OperationTypes enum.|  
 | [PFPushNotificationPlatform](enums/pfpushnotificationplatform.md) | PushNotificationPlatform enum.|  
+| [PFResetInterval](enums/pfresetinterval.md) | ResetInterval enum.|  
 | [PFSubscriptionProviderStatus](enums/pfsubscriptionproviderstatus.md) | SubscriptionProviderStatus enum.|  
 | [PFTitleActivationStatus](enums/pftitleactivationstatus.md) | TitleActivationStatus enum.|  
 | [PFUserDataPermission](enums/pfuserdatapermission.md) | UserDataPermission enum.|  

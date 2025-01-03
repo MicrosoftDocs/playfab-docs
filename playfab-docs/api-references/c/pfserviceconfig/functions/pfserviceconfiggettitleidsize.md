@@ -4,8 +4,8 @@ title: "PFServiceConfigGetTitleIdSize"
 description: "Gets the size of the buffer needed to hold the PlayFab titleId for a service configuration."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFServiceConfigGetTitleIdSize  

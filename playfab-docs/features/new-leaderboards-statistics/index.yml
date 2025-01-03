@@ -49,6 +49,8 @@ landingContent:
             url: leaderboards/seasonal-leaderboards.md
           - text: Group Leaderboards
             url: leaderboards/group-leaderboards.md
+          - text: Manual Tiers
+            url: leaderboards/manual-tiers.md
           - text: Ranking players by statistics
             url: leaderboards/leaderboards-linked-to-stats.md
 

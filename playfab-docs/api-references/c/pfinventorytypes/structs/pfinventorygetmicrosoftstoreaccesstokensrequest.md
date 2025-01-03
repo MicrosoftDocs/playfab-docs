@@ -4,8 +4,8 @@ title: "PFInventoryGetMicrosoftStoreAccessTokensRequest"
 description: "PFInventoryGetMicrosoftStoreAccessTokensRequest data model. Gets the access tokens for Microsoft Store authentication."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFInventoryGetMicrosoftStoreAccessTokensRequest  

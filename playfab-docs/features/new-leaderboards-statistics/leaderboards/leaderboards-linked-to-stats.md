@@ -113,6 +113,7 @@ For more information about other features, see following pages:
 - [Create basic leaderboard](create-basic-leaderboard.md).
 - [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Group leaderboards](group-leaderboards.md).
+- [Manual tiers](manual-tiers.md).
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).

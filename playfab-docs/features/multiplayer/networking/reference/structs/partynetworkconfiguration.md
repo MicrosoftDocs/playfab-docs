@@ -37,7 +37,7 @@ This value must be greater than 0. <br /><br /> If a client would violate this l
   
 The maximum number of devices allowed to connect to the network.
   
-This value must be between 1 and ```c_maxNetworkConfigurationMaxDeviceCount``` inclusive. <br /><br /> If a client would violate this limit by calling [PartyManager::ConnectToNetwork()](../classes/PartyManager/methods/partymanager_connecttonetwork.md), the operation will fail asynchronously and [PartyConnectToNetworkCompletedStateChange::result](partyconnecttonetworkcompletedstatechange.md) will be set to [PartyStateChangeResult::NetworkLimitReached](../enums/partystatechangeresult.md).
+PlayFab Party networks can scale to support anywhere between 2 and 128 devices. The service will choose a network relay configuration optimized for your scenario, so it's important to configure the `maxDeviceCount` in `PartyNetworkConfiguration` to match the max expected number of devices in your network. <br /><br /> If a client would violate this limit by calling [PartyManager::ConnectToNetwork()](../classes/PartyManager/methods/partymanager_connecttonetwork.md), the operation will fail asynchronously and [PartyConnectToNetworkCompletedStateChange::result](partyconnecttonetworkcompletedstatechange.md) will be set to [PartyStateChangeResult::NetworkLimitReached](../enums/partystatechangeresult.md).
   
 **`maxUsersPerDeviceCount`** &nbsp; uint32_t  
   

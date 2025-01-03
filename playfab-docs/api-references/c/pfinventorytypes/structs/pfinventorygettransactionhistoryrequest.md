@@ -4,8 +4,8 @@ title: "PFInventoryGetTransactionHistoryRequest"
 description: "PFInventoryGetTransactionHistoryRequest data model. Get transaction history for specified entity and collection."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFInventoryGetTransactionHistoryRequest  
@@ -23,6 +23,7 @@ typedef struct PFInventoryGetTransactionHistoryRequest {
     uint32_t customTagsCount;  
     PFEntityKey const* entity;  
     const char* filter;  
+    const char* orderBy;  
 } PFInventoryGetTransactionHistoryRequest;  
 ```
   
@@ -60,6 +61,11 @@ Count of customTags
 *is null-terminated*  
   
 (Optional) An OData filter used to refine the TransactionHistory. Transaction properties 'timestamp', 'transactionid', 'apiname' and 'operationtype' can be used in the filter. Properties 'transactionid', 'apiname', and 'operationtype' cannot be used together in a single request. The 'timestamp' property can be combined with 'apiname' or 'operationtype' in a single request. For example: "timestamp ge 2023-06-20T23:30Z" or "transactionid eq '10'" or "(timestamp ge 2023-06-20T23:30Z) and (apiname eq 'AddInventoryItems')". By default, a 6 month timespan from the current date is used.
+  
+**`orderBy`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) An OData orderby to order TransactionHistory results. The only supported values are 'timestamp asc' or 'timestamp desc'. Default orderby is 'timestamp asc'.
   
   
 ## Requirements  

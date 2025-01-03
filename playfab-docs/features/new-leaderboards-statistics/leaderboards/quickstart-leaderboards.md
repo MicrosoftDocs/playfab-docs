@@ -147,6 +147,7 @@ private static async Task UpdateEntityDisplayName(PlayFabAuthenticationContext c
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
 - [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Group leaderboards](group-leaderboards.md).
+- [Manual tiers](manual-tiers.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).

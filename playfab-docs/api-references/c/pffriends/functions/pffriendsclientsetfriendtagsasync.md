@@ -4,8 +4,8 @@ title: "PFFriendsClientSetFriendTagsAsync"
 description: "Updates the tag list for a specified user in the friend list of the local user"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFFriendsClientSetFriendTagsAsync  

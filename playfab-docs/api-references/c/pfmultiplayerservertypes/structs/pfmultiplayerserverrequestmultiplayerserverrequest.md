@@ -4,8 +4,8 @@ title: "PFMultiplayerServerRequestMultiplayerServerRequest"
 description: "PFMultiplayerServerRequestMultiplayerServerRequest data model. Requests a multiplayer server session from a particular build in any of the given preferred regions."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerRequest  

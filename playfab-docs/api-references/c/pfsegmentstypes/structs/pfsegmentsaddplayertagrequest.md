@@ -4,8 +4,8 @@ title: "PFSegmentsAddPlayerTagRequest"
 description: "PFSegmentsAddPlayerTagRequest data model. This API will trigger a player_tag_added event and add a tag with the given TagName and PlayFabID to the corresponding player profile. TagName can be used for segmentation and it is limited to 256 characters. Also there is a limit on the number of tags a title can have."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFSegmentsAddPlayerTagRequest  

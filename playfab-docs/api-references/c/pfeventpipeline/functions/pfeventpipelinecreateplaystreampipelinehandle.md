@@ -4,8 +4,8 @@ title: "PFEventPipelineCreatePlayStreamPipelineHandle"
 description: "Creates an event pipeline to upload PlayStream events using an Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFEventPipelineCreatePlayStreamPipelineHandle  

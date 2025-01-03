@@ -4,8 +4,8 @@ title: "PFAccountManagementServerDeletePlayerAsync"
 description: "Removes a user's player account from a title and deletes all associated data"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementServerDeletePlayerAsync  

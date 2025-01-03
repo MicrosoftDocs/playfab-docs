@@ -17,7 +17,8 @@ This tutorial shows you how to successfully integrate a Google Play application 
 ## Prerequisites
 
 1. A Google Account.
-2. An app in the [Google Play Console](https://play.google.com/console/developers).
+2. An app already created and available in [Google Play](https://play.google.com/console/developers).
+    1. Make sure your app has the [Google Play Android Developer API](https://console.cloud.google.com/apis/library/androidpublisher.googleapis.com) enabled.
 3. Access to [Google Cloud](https://cloud.google.com/).
 4. An existing Google Cloud project.
 
@@ -37,9 +38,9 @@ The first step you need to complete is creating a service account. This is done 
 
     ![Service account details](../../media/marketplace-integrations/google/service-account-details.png)
 
-5. Grant access to the new service account from the **Select a role** dropdown options by looking for **Service Account Actor**.
+5. Grant access to the new service account from the **Select a role** dropdown options by looking for **Service Account User**.
 
-    ![Service account project access](../../media/marketplace-integrations/google/project-access.png)
+    ![Service account project access](../../media/marketplace-integrations/google/service-account-role.png)
 
 6. Press **Done** (you can skip the **Grant users access to this service account** step).
 
@@ -59,7 +60,7 @@ This substep intends to show you how to add the project permissions to an existi
 
     ![Search for your service account](../../media/marketplace-integrations/google/search-service-account.png)
 
-4. Assign the **Service Account Actor** role by searching for it in the **Select a role** dropdown.
+4. Assign the **Service Account User** role by searching for it in the **Select a role** dropdown.
 
 5. Press **Save**.
 
@@ -111,7 +112,7 @@ It's time to move on to the [Google Play Console](https://play.google.com/consol
 
     ![App selection](../../media/marketplace-integrations/google/app-selection.png)
 
-7. A window pops up asking you to specify the type of permissions you want to give that account in your app. Choose **Manage orders and subscriptions** under **Financial data** and then press **Apply**.
+7. A window pops up asking you to specify the type of permissions you want to give that account in your app. Choose **Manage orders and subscriptions** and **View financial data** under **Financial data** and then press **Apply**.
 
 8. You're redirected to the **Invite user** screen again (where you added the account's email address and set the app permissions). But this time, you should press **Invite user** at the bottom right of the screen. Then press the **Send invite** confirmation message.
 

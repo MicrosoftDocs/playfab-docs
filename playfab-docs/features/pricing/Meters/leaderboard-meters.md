@@ -17,7 +17,7 @@ Leaderboards meters are divided into three categories.
 ## Leaderboard Reads
 Whether based on ranked stats or otherwise, Leaderboard Reads are dependent on the size of a leaderboard in the 
 API response. If a request returns N entries, then the meter is ticked N/10 times, rounded up. 
-Note that *N* is influenced by the request parameters and leaderboard size.
+Note that *N* is influenced by the request parameters and leaderboard size and also if N < 10 the meter is going to tick once.
 
 Here's the list of APIs that tick this meter:
 
@@ -44,10 +44,11 @@ Here's the list of APIs that tick this meter:
 
 This meter keeps track on how much statistics data is stored in the service.
 
-For each leaderboard entry, the storage consumed is computed as the sum of the following three:
+For each leaderboard entry, the storage consumed is computed as the sum of the following elements:
 - Scores: Length of the list of scores multiplied by `sizeof(long)`.
 - Metadata: Length of the field.
 - Timestamp: `sizeof(long)`.
+- Length of the entity id.
 
 ## See Also
 

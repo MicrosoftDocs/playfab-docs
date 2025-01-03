@@ -4,8 +4,8 @@ title: "PFGroupsListGroupInvitationsRequest"
 description: "PFGroupsListGroupInvitationsRequest data model. Lists all outstanding invitations for a group. Returns a list of entities that have been invited, as well as when the invitation will expire. To get the group invitations for a specific entity, use ListMembershipOpportunities."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFGroupsListGroupInvitationsRequest  

@@ -191,6 +191,8 @@ In this tutorial, we learned how to do the following operations:
 ## See also
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
 - [Create basic leaderboard](create-basic-leaderboard.md)
+- [Manual tiers](manual-tiers.md).
+- [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md)
 - [Add contextual data to leaderboards](metadata-leaderboards.md)
 - [API reference](api-reference.md)

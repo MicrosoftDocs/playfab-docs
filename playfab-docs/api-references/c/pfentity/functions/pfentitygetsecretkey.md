@@ -4,8 +4,8 @@ title: "PFEntityGetSecretKey"
 description: "Gets the PlayFab secretKey associated with a title Entity. Will fail with E_PF_NOSECRETKEY if there is no Secret Key associated with the provided Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFEntityGetSecretKey  

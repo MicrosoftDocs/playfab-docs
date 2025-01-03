@@ -4,8 +4,8 @@ title: "PFEntityGetSecretKeySize"
 description: "Gets the size of the buffer needed to hold the PlayFab secretKey. Will fail with E_PF_NOSECRETKEY if there is no Secret Key associated with the provided Entity."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFEntityGetSecretKeySize  

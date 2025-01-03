@@ -4,8 +4,8 @@ title: "PFAccountManagementLinkPSNIdRequest"
 description: "PFAccountManagementLinkPSNIdRequest data model."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.service: playfab
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementLinkPSNIdRequest  
@@ -54,7 +54,7 @@ Unique PlayFab assigned ID of the user on whom the operation will be performed.
 **`PSNUserId`** &nbsp; const char*  
 *is null-terminated*  
   
-Id of the PlayStation :tm: Network user.
+Id of the PlayStation :tm: Network user. Also known as the PSN Account Id.
   
   
 ## Requirements  
