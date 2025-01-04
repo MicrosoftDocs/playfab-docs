@@ -1,7 +1,7 @@
 ---
-title: Transaction Writes
+title: Transaction writes
 author: braulioal
-description: Learn how to create transactional wirtes
+description: Learn how to create transactional writes for statistics
 ms.author: braulioal
 ms.date: 09/01/2024
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
 
-# Transactional Writes
+# Transactional writes
 
 In this tutorial, we're going to explain  how to perform a transactional write to a statistic. Depending on the
 process used to store statistics, developers might encounter scenarios that could result in the duplication of
@@ -66,7 +66,7 @@ public static async Task CreateStatisticDefinitionAsync(PlayFabAuthenticationCon
 }
 ```
 
-## Adding Data to a Statistic
+## Adding data to a statistic
 
 Continuing with our example, we are going to add data  to the previously defined Statistic. The key difference
 between a normal request and this one is the special `TransactionId` parameter. This parameter serves as an
@@ -75,7 +75,8 @@ transaction ID with those already processed. If a match is found, the request wi
 
 One key aspect to consider is that this transactional behavior establishes a relationship between the 
 `TransactionId` and the request being executed, not with the individual statistics within that request. 
-There isn't a mapping for each individual stat; the mapping is for the entire request.
+There isn't a mapping for each individual stat; the mapping is for the entire request. Also, when the this feature
+is being used we have a different meter for tracking this type of requests, learn more here: [Statistics meters](../../pricing/meters/statistics-meters.md)
 
 ``` C#
 public static async Task UpdateStatisticForPlayer(PlayFabAuthenticationContext context, string statName, string entityId, int score)
