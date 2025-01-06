@@ -1,0 +1,31 @@
+# Marketplace Redemption Overview
+
+After a successful marketplace integration, the next step is to focus on redeeming items or subscriptions into a player's inventory. This document provides an overview of the redemption process for various marketplaces.
+
+## Redemption Process
+
+### Apple
+
+Redemption from the Apple marketplace involves verifying the purchase receipt with Apple's servers and updating the player's inventory or account accordingly. For more details see [Apple redemption documentation](apple.md)
+
+### Google
+
+Redemption from the Google marketplace involves verifying the purchase receipt with Google's servers and updating the player's inventory or account accordingly. For more details see [Google redemption documentation](google.md)
+
+### Steam
+
+Redemption from the Steam marketplace involves verifying the purchase receipt with Steam's servers and updating the player's inventory accordingly. For more details see [Steam redemption documentation](steam.md)
+
+## Subscription Redemption
+
+### Apple Subscriptions
+
+Subscription redemption from the Apple marketplace involves verifying the subscription receipt with Apple's servers and updating the player's account accordingly. For more details see [Apple subscription documentation](ios-subscription-redemption.md).
+
+### Google Subscriptions
+
+Subscription redemption from the Google marketplace involves verifying the subscription receipt with Google's servers and updating the player's account accordingly. For more details see [Google subscription documentation](google-subscription-redemption.md).
+
+## Conclusion
+
+Redeeming items or subscriptions into a player's inventory is a crucial step after a successful marketplace integration. By following the steps outlined for each supported marketplace, you can ensure a smooth and efficient redemption process.
