@@ -158,9 +158,9 @@ There are checks enforced to prevent the use of overly complicated `Filter` quer
 
 ## Catalog Item
 
-### Catalog Size Limit
+### Catalog creator entity limit
 
-Up to 20GB of metadata are allowed per Catalog entity, with multiple entities supported.
+Up to 20GB of catalog data are allowed per Catalog creator entity. This limit is most likely to be encountered for Catalog Items created by the Title entity.
 
 ### Titles
 
