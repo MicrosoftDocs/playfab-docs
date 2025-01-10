@@ -135,14 +135,10 @@ landingContent:
         links:
           - text: UGC quickstart
             url: ugc/quickstart.md
-
-  # Card
-  - title: Search for and hydrate UGC for players
-    linkLists:
-      - linkListType: overview
+      - linkListType: tutorial
         links:
-          - text: Bundles
-            url: catalog/bundles.md
+          - text: Publish your first user generated content
+            url: tutorials/publish-ugc.md
 
   # Card
   - title: Moderate UGC content
