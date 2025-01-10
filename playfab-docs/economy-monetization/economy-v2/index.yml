@@ -29,7 +29,7 @@ highlightedContent:
       itemType: download
       url: ../../sdks/playfab-sdk-intro.md
 
-productDirectory:
+landingContent:
   title: PlayFab Economy - Build and grow marketplaces, progression, and engagement.
   # Card
   - title: Get started
