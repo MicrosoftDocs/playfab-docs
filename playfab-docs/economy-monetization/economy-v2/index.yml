@@ -32,24 +32,26 @@ highlightedContent:
 productDirectory:
   title: PlayFab Economy - Build and grow marketplaces, progression, and engagement.
   # Card
-  linkLists:
-    - linkListType: get-started
-      links:
-        - text: What is PlayFab Economy?
-          url: ../economy-what-is.md
-        - text: Economy v2 Catalog quickstart
-          url: quickstart.md
-        - text: Economy v2 Inventory quickstart
-          url: inventory/quickstart.md
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: What is PlayFab Economy?
+            url: ../economy-what-is.md
+          - text: Economy v2 Catalog quickstart
+            url: quickstart.md
+          - text: Economy v2 Inventory quickstart
+            url: inventory/quickstart.md
 
   # Card
-  linkLists:
-    - linkListType: reference
-      links:
-        - text: Catalog API reference
-          url: /rest/api/playfab/economy/catalog
-        - text: Inventory API reference
-          url: /rest/api/playfab/economy/inventory
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Catalog API reference
+            url: /rest/api/playfab/economy/catalog
+          - text: Inventory API reference
+            url: /rest/api/playfab/economy/inventory
 
   # Card
   - title: Learn Economy v2
