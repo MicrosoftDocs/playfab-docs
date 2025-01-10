@@ -1,3 +1,15 @@
+---
+title: Marketplace integration - Overview
+author: fprotti96
+description: Overview of PlayFab's marketplace integrations
+ms.author: fprotti
+ms.date: 1/10/2025
+ms.topic: tutorial
+ms.service: azure-playfab
+keywords: playfab, integration, marketplace
+ms.localizationpriority: medium
+---
+
 # Marketplace Integrations Overview
 
 Marketplace integration with PlayFab allows you to connect your game to various digital marketplaces, enabling seamless in-game purchases and content distribution. By enabling the Marketplace add-on in the Game Manager, you can configure and manage integrations with different marketplaces.
