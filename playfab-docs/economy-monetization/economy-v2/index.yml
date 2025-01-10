@@ -14,10 +14,23 @@ metadata:
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
+highlightedContent:
+  items:
+    - title: What is PlayFab Economy?
+      itemType: concept
+      url: economy-what-is.md
+    - title: Economy v2 Catalog quickstart
+      itemType: quickstart
+      url: quickstart.md
+    - title: Economy v2 Inventory quickstart
+      itemType: quickstart
+      url: inventory/quickstart.md
+    - title: Intro to the PlayFab SDK
+      itemType: download
+      url: ../../sdks/playfab-sdk-intro.md
 
+productDirectory:
+  title: PlayFab Economy - Build and grow marketplaces, progression, and engagement.
   # Card
   - title: Get started
     linkLists:
@@ -29,22 +42,6 @@ landingContent:
             url: quickstart.md
           - text: Economy v2 Inventory quickstart
             url: inventory/quickstart.md
-
-  # Card
-  - title: What's new
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: What's new (placeholder)
-            url: ../economy-what-is.md
-
-  # Card
-  - title: PlayFab SDK
-    linkLists:
-      - linkListType: download
-        links:
-          - text: Intro to the PlayFab SDK
-            url: ../../sdks/playfab-sdk-intro.md
 
   # Card
   - title: Reference
