@@ -62,11 +62,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Economy v2?
-            url: overview.md
+            url: /overview.md
       - linkListType: tutorial
         links:
           - text: Tutorial - Crafting game
-            url: tutorials/craftingGame/game-context.md
+            url: /tutorials/craftingGame/game-context.md
 
 # Card
   - title: Create your catalog and virtual currencies
@@ -74,19 +74,19 @@ landingContent:
       - linkListType: overview
         links:
           - text: Catalog Overview
-            url: catalog/catalog-overview.md
+            url: /catalog/catalog-overview.md
           - text: What are content types and item properties?
-            url: catalog/content-types-tags-and-properties.md
+            url: /catalog/content-types-tags-and-properties.md
       - linkListType: quickstart
         links:
           - text: Fraud prevention, redemption, receipt validation quickstart
-            url: fraud-prevention/quickstart.md
+            url: /fraud-prevention/quickstart.md
       - linkListType: tutorial
         links:
           - text: Manage virtual currencies
-            url: tutorials/currencies.md
+            url: /tutorials/currencies.md
           - text: Start with Unity and Android in-app purchases
-            url: tutorials/getting-started-with-unity-and-android.md
+            url: /tutorials/getting-started-with-unity-and-android.md
 
 # Card
   - title: Set up a player based inventory
@@ -94,11 +94,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Inventory Overview
-            url: inventory/items-and-inventory-overview.md
+            url: /inventory/items-and-inventory-overview.md
       - linkListType: quickstart
         links:
           - text: Add an item to a player's inventory
-            url: inventory/quickstart.md
+            url: /inventory/quickstart.md
 
   # Card
   - title: Link your game to real world marketplaces
@@ -106,11 +106,11 @@ landingContent:
       - linkListType: learn
         links:
           - text: Marketplace Integrations
-            url: marketplace/marketplace-integrations/overview.md
+            url: /marketplace/marketplace-integrations/overview.md
           - text: Marketplace Redemption
-            url: marketplace/marketplace-redemption/overview.md
+            url: /marketplace/marketplace-redemption/overview.md
           - text: Error handling
-            url: marketplace/marketplace-error-handling.md
+            url: /marketplace/marketplace-error-handling.md
 
   # Card
   - title: Run sales events and promotions
@@ -118,11 +118,11 @@ landingContent:
       - linkListType: learn
         links:
           - text: Bundles
-            url: catalog/bundles.md
+            url: /catalog/bundles.md
           - text: Targeted offers
-            url: player-segmented-monetization/targeted-offers.md
+            url: /player-segmented-monetization/targeted-offers.md
           - text: Segment Actions
-            url: player-segmented-monetization/segment-actions.md
+            url: /player-segmented-monetization/segment-actions.md
 
   # Card
   - title: Ingest UGC content
@@ -130,15 +130,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: UGC Overview
-            url: ugc/overview.md
+            url: /ugc/overview.md
       - linkListType: quickstart
         links:
           - text: UGC quickstart
-            url: ugc/quickstart.md
+            url: /ugc/quickstart.md
       - linkListType: tutorial
         links:
           - text: Publish your first user generated content
-            url: tutorials/publish-ugc.md
+            url: /tutorials/publish-ugc.md
 
   # Card
   - title: Moderate UGC content
@@ -146,4 +146,4 @@ landingContent:
       - linkListType: overview
         links:
           - text: UGC Moderation
-            url: ugc/moderation.md
+            url: /ugc/moderation.md
