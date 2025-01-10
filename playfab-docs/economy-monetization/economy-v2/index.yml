@@ -1,4 +1,4 @@
-### YamlMime:Hub
+### YamlMime:Landing
 
 title: Azure PlayFab Economy v2 documentation # < 60 chars
 summary: PlayFab Economy v2 provides a platform to build and grow marketplaces, progression, and engagement that scale with your players. # < 160 chars
@@ -14,24 +14,12 @@ metadata:
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
-highlightedContent:
-  items:
-    - title: What is PlayFab Economy?
-      itemType: concept
-      url: economy-what-is.md
-    - title: Economy v2 Catalog quickstart
-      itemType: quickstart
-      url: quickstart.md
-    - title: Economy v2 Inventory quickstart
-      itemType: quickstart
-      url: inventory/quickstart.md
-    - title: Intro to the PlayFab SDK
-      itemType: download
-      url: ../../sdks/playfab-sdk-intro.md
-
 landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
   # Card
-  - title: Get started
+  - title:
     linkLists:
       - linkListType: get-started
         links:
@@ -41,6 +29,22 @@ landingContent:
             url: quickstart.md
           - text: Economy v2 Inventory quickstart
             url: inventory/quickstart.md
+
+  # Card
+  - title:
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: What's new (placeholder)
+            url: ../economy-what-is.md
+
+  # Card
+  - title: PlayFab SDK
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Intro to the PlayFab SDK
+            url: ../../sdks/playfab-sdk-intro.md
 
   # Card
   - title: Reference
