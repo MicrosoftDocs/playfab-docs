@@ -19,7 +19,7 @@ landingContent:
 # Start card title with a verb
 
   # Card
-  - title:
+  - title: Get started
     linkLists:
       - linkListType: get-started
         links:
@@ -31,7 +31,7 @@ landingContent:
             url: inventory/quickstart.md
 
   # Card
-  - title:
+  - title: What's new
     linkLists:
       - linkListType: whats-new
         links:
