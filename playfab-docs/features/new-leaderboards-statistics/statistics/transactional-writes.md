@@ -14,16 +14,17 @@ ms.localizationpriority: medium
 
 In this tutorial, we're going to explain  how to perform a transactional write to a statistic. Depending on the
 process used to store statistics, developers might encounter scenarios that could result in the duplication of
-an operation. To address these complex scenarios, we added the transactional write feature.
+an operation, in particular with the SUM aggregation. To address these complex scenarios, we added the transactional write feature.
 
 We're going to start with an example involving a multiplayer game with many matches being played simultaneously.
 This game stores a large number of statistics and other telemetry values for each match. To avoid disrupting
-the player experience, the studio decided to push the stats every 10 minutes instead of in real-time.
+the player experience, the studio decided to push the stats every 10 minutes instead of real-time.
 
 This approach ensures a seamless experience for players jumping from one match to another. However, it 
 introduces new technical challenges. We now need a queue to execute requests every 10 minutes. But what
-happens if we fail to process one of the batches due to an unexpected error? We should have a retry mechanism,
-but if the error is unrelated to the Statistic Service, we might accidentally double-add the stats.
+happens if we fail to process one of the batches due to an unexpected error? The solution might involve 
+replaying the events in the queue. Specifically, if we have statistics with SUM aggregation, 
+we need to avoid double counting.
 
 With this context in mind, we're going to show how to solve this particular problem.
 
@@ -51,8 +52,8 @@ public static async Task CreateStatisticDefinitionAsync(PlayFabAuthenticationCon
         {
             new StatisticColumn()
             {
-                Name = "Distance",
-                AggregationMethod = StatisticAggregationMethod.Max,
+                Name = "Eliminations",
+                AggregationMethod = StatisticAggregationMethod.Sum,
             },
              new StatisticColumn()
             {
@@ -107,7 +108,7 @@ public static async Task UpdateStatisticForPlayer(PlayFabAuthenticationContext c
 
 Now, let's explain some key elements of this example:
 - `Entity`: This parameter corresponds to the entity from which we want to make the update of the stat.
-- `TransactionId`: This parameter corresponds to a string that represents a unique identifier for the client.
+- `TransactionId`: This parameter corresponds to a string that represents a unique identifier for the request.
 - `Statistics`: This parameter corresponds to the actual set of statistics of an entity. 
 - `StatisticUpdate`: This parameter corresponds to the statistics values that are going to be added.
     -  `Scores`: This parameter corresponds to the list of scores you can add to one entity. Remember, statistics can have more than one column. 
