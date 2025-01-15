@@ -72,7 +72,7 @@ public static async Task CreateStatisticDefinitionAsync(PlayFabAuthenticationCon
 Continuing with our example, we are going to add data  to the previously defined Statistic. The key difference
 between a normal request and this one is the special `TransactionId` parameter. This parameter serves as an
 identifier for the request being executed. Each time a new request arrives, the system compares the new
-transaction IDs with those identifiers that were already processed. If a match is found, the request is going not be executed.
+transaction IDs with those identifiers that were already processed. If a match is found, the request is not going be executed.
 
 One key aspect to consider is that this transactional behavior establishes a relationship between the 
 `TransactionId` and the request being executed, not with the individual statistics within that request. 
@@ -80,7 +80,7 @@ There isn't a mapping for each individual stat; the mapping is for the entire re
 is being used we have a different meter for tracking this type of requests, learn more here: [Statistics meters](../../pricing/meters/statistics-meters.md)
 
 ``` C#
-public static async Task UpdateStatisticForPlayer(PlayFabAuthenticationContext context, string statName, string entityId, int score)
+public static async Task UpdateStatisticForPlayer(PlayFabAuthenticationContext context, string statName, string entityId, int eliminationScore, int caliberScore)
 {
     PlayFabProgressionInstanceAPI statsAPI = new PlayFabProgressionInstanceAPI(context);
     UpdateStatisticsRequest updateStatRequest = new UpdateStatisticsRequest()
@@ -97,7 +97,7 @@ public static async Task UpdateStatisticForPlayer(PlayFabAuthenticationContext c
             new PlayFab.LeaderboardsModels.StatisticUpdate() 
             {
                 Name = statName,
-                Scores = new List<string> { score.ToString()},
+                Scores = new List<string> { eliminationScore.ToString(), caliberScore.ToString()},
             }
         }
     };
