@@ -1,6 +1,8 @@
 items:
   - name: PlayFab
     href: ../index.yml
+  - name: PlayFab Economy
+    href: index.yml
   - name: Economy v2
     href: economy-v2/toc.yml
   - name: Rewarded ads
