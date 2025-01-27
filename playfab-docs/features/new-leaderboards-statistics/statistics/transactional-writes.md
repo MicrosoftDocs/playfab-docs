@@ -72,7 +72,7 @@ public static async Task CreateStatisticDefinitionAsync(PlayFabAuthenticationCon
 Continuing with our example, we are going to add data  to the previously defined Statistic. The key difference
 between a normal request and this one is the special `TransactionId` parameter. This parameter serves as an
 identifier for the request being executed. Each time a new request arrives, the system compares the new
-transaction IDs with those identifiers that were already processed. If a match is found, the request is not going be executed.
+transaction IDs with those identifiers that were already processed. If a match is found, the request is not going to be executed.
 
 One key aspect to consider is that this transactional behavior establishes a relationship between the 
 `TransactionId` and the request being executed, not with the individual statistics within that request. 
