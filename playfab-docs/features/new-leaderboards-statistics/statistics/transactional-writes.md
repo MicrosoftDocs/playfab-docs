@@ -22,9 +22,8 @@ the player experience, the studio decided to push the stats every 10 minutes ins
 
 This approach ensures a seamless experience for players jumping from one match to another. However, it 
 introduces new technical challenges. We now need a queue to execute requests every 10 minutes. But what
-happens if we fail to process one of the batches due to an unexpected error? The solution might involve 
-replaying the events in the queue. Specifically, if we have statistics with SUM aggregation, 
-we need to avoid double counting.
+happens if we want to replay the events in the queue for any given reason. Then we need might have a challenge,
+specially if we have statistics with SUM aggregation, since we need to avoid double counting.
 
 With this context in mind, we're going to show how to solve this particular problem.
 
