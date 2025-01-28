@@ -1,45 +1,59 @@
 ### YamlMime:FAQ
 metadata:
-  title: Xbox Live Free Program FAQ
+  title: Xbox Developer Free Program for PlayFab Multiplayer Services FAQ
   author: joannaleecy
-  description: Xbox Live Free Program FAQ
+  description: Xbox Developer Free Program for PlayFab Multiplayer Services FAQ
   ms.author: joanlee
   ms.date: 02/27/2019
   ms.topic: faq
   ms.service: azure-playfab
-  keywords: playfab, multiplayer, xbox live, party
+  keywords: playfab, multiplayer, xbox network, party
   ms.localizationpriority: medium
-title: Xbox Live Free Program FAQ
+title: Xbox Developer Free Program for PlayFab Multiplayer Services FAQ
 summary: |
 
 sections:
   - name: Ignored
     questions:
       - question: |
-          How can I sign up for to get free usage of PlayFab services?
+          What is included?
         answer: |
-          By joining [the ID@Azure program](https://developer.microsoft.com/en-us/games/products/idazure/). This program provides developers with a number of great benefits, including free Azure credits as well as free usage of the PlayFab service, as described in the program's documentation.
-          
+          This offer includes free usage of PlayFab Party networking and voice capabilities, PlayFab Lobby with real-time notifications, and PlayFab Matchmaking with real-time notifications. 
+
+          Party connectivity, egress, and voice [meters](https://learn.microsoft.com/en-us/gaming/playfab/features/pricing/meters/meters#party) is priced at $0 for all Xbox players.
+
+          [Party Lobby requests and notifications, as well as Matchmaking requests and notifications](../../pricing/meters/meters.md#matchmaking-and-lobby) is priced at $0 for all Xbox players.
+
       - question: |
-          What limits are there to Xbox Live free usage of PlayFab Party or Matchmaking?
+          How do I apply?
         answer: |
-          The PlayFab Free tier is limited to 10 total titles in Development Mode. In Development Mode, overall usage of PlayFab is restricted to 100,000 unique player accounts and 10 unique titles. For all paid tiers, developers can elevate titles out of Development Mode, which removes the 100K player account limit, and in the Standard tier or higher, developers can create thousands of titles with as many of those in Development Mode as needed. 
+          No application necessary for PlayFab Party. All Xbox players authenticated using the `LoginWithXbox` API automatically enjoy zero-rated usage. 
+
+          To apply for the free offer on PlayFab Lobby or PlayFab Matchmaking, reach out to your Microsoft representative to ensure that your title is onboarded to the free offer. 
 
       - question: |
           Does this program apply only to Xbox consoles?
         answer: |
-          No. This free program applies to any platform where players sign in with Xbox Live, including PC, iOS, and Android.
+          No. This free program applies to any platform where players sign into the Xbox network, including PC, iOS, and Android.
 
       - question: |
-          How do I ensure my usage of PlayFab Party is compliant with Xbox Live Integration policies?
+          What if my title has a mix of Xbox and non-Xbox players? What do I pay for?
         answer: |
-          Party is intrinsically compliant with Xbox Live network security requirements, as it uses appropriately modern DTLS ciphers and complex keys.
+          The consumption meters are player-oriented: player connectivity minutes, player voice minutes, etc. Xbox players increment these meters at a $0 price point. PlayFab tracks this using the `LoginWithXbox` API, please use this API to enjoy this program.
           
-          There is an Xbox Live plug-in for Party that simplifies Xbox Live sign-in and automatically applies chat muting to comply with Xbox Live requirements and ensure player mutes/blocks are respected. [Check out the Xbox Live Party plug-in topic for more information.](./party-xbox-live-guide.md)
+          Usage from other identity providers or custom IDs is billed according to your pricing plan; check out [PlayFab pricing](https://playfab.com/pricing) and [PlayFab Party pricing](../../pricing/meters/meters.md#party) to see how standard Party activity is metered.
+
+      - question: |
+          How do I ensure my usage of PlayFab Party is compliant with Xbox integration policies?
+        answer: |
+          There is a helper library for Party that simplifies Xbox sign-in and automatically applies chat muting to comply with Xbox certification requirements. [Check out the Xbox Live Party plug-in topic for more information.](./party-xbox-live-guide.md)
           
       - question: |
-          What if a Party has a mix of Xbox Live and non-Xbox Live players? What do I pay for?
+          Can I get any free trials of other PlayFab services?
         answer: |
-          The consumption meters used to bill Party are player-oriented: player network-minutes, player voice-minutes, network egress etc. Xbox Live players will not increment these meters and effectively be zero rated. PlayFab tracks this using the `LoginWithXbox` API so please use this API to enjoy the Xbox Live program.
-          
-          Usage from other identity providers or custom IDs will be billed normally; check out [PlayFab pricing](https://playfab.com/pricing) and [PlayFab Party pricing](../../pricing/meters/meters.md#party) to see how standard Party activity is metered and zero-rating applied.
+          Yes! [PlayFab Development Mode](../../pricing/development-mode.md) provides ample monthly allotments for many of our PlayFab services including PlayStream Events, Telemetry Events, Profile and Entity storage, CloudScript, and Insights. Development Mode allows you to evaluate the breadth of PlayFab while developing your game without incurring any monthly costs.
+
+      - question: |
+          How long is this offer available? 
+        answer: |
+          There are no existing plans to discontinue the free usage of Multiplayer Services, as described in this article. However, fees and payment policies may be subject to change in accordance with the [PlayFab Terms of Service](https://playfab.com/terms/). 
