@@ -25,10 +25,10 @@ and overall error handling.
 
 > [!NOTE]
 > Default retry behavior occurs on all platforms, _except Nintendo Switch, Sony PlayStation&#174;4, and
-Sony PlayStation&#174;5. Please see [Retry behavior on Nintendo Switch and Sony PlayStation platforms](#retry-behavior-on-nintendo-switch-and-sony-playstation-platforms).
+Sony PlayStation&#174;5. See [Retry behavior on Nintendo Switch and Sony PlayStation platforms](#retry-behavior-on-nintendo-switch-and-sony-playstation-platforms).
 
 By default, the SDK retries all idempotent HTTP requests. These retries use an **exponential backoff** with jitter,
-meaning each subsequent delay before retrying roughly doubles (e.g. 2 seconds, 4 seconds, 8 seconds, etc.), up to
+meaning each subsequent delay before retrying roughly doubles (for example, 2 seconds, 4 seconds, 8 seconds, etc.), up to
 a maximum of 20 seconds between attempts.
 
 Each individual retry attempt defaults to a **per-attempt timeout** of five seconds. If an attempt hasn’t succeeded
@@ -43,15 +43,15 @@ retry indefinitely.
 
 The automatic retry logic is engaged when one of the following occurs:
 
-- A network error or timeout is encountered.  
+- A network error or time-out is encountered.  
 - The server responds with an HTTP error status code of **408 (Request Timeout)**, **429 (Too Many Requests)**,
 **500 (Internal Server Error)**, **502 (Bad Gateway)**, **503 (Service Unavailable)**, or **504 (Gateway Timeout)**.
 
-If the server responds with an error code outside these, the SDK will not automatically retry these failures.
+If the server responds with an error code outside these failures, the SDK won't automatically retry these requests.
 
 ## Impact on asynchronous errors
 
-Since the Multiplayer SDK is asynchronous, automatic retries may change how and when you see errors:
+Since the Multiplayer SDK is asynchronous, automatic retries might change how and when you see errors:
 
 - **Delayed final state**: Because the SDK retries in the background, you won’t see an error result until all retry
 attempts have been exhausted (or one attempt succeeds).
