@@ -1,6 +1,6 @@
 ---
 title: Underlying Lobby and Matchmaking C++ SDK Network Retry Behavior
-description: Guidance on how errors are surfaced in the C++ SDK and how titles should handle them
+description: Guidance on default retry behavior for the C++ SDK
 author: SahilAshar
 ms.author: saashar
 ms.date: 01/28/2025
@@ -18,7 +18,7 @@ and overall error handling.
 - [Default retry behavior](#default-retry-behavior)
 - [What triggers a retry](#what-triggers-a-retry)
 - [Impact on asynchronous errors](#impact-on-asynchronous-errors)
-- [Configuring retries and timeouts](#configuring-retries-and-timeouts)
+- [Configuring retries and time-outs](#configuring-retries-and-timeouts)
 - [Retry behavior on Nintendo Switch and Sony PlayStation platforms](#retry-behavior-on-nintendo-switch-and-sony-playstation-platforms)
 
 ## Default retry behavior
@@ -62,16 +62,16 @@ For more general guidance on handling asynchronous errors in the SDK, see [Handl
 
 For all HTTP error codes that the Multiplayer SDK surfaces, see [PlayFab Multiplayer C++ SDK Error Codes](playfabmultiplayerreference-cpp\pfmultiplayererrors.md#http-client)
 
-## Configuring retries and timeouts
+## Configuring retries and time-outs
 
-The Multiplayer SDK does not currently support configuring retries and timemout thresholds.
+The Multiplayer SDK doesn't currently support configuring retries and time-out thresholds.
 
 ## Retry behavior on Nintendo Switch and Sony PlayStation platforms
 
-By default, the Multiplayer SDK for Nintendo Switch and Sony PlayStation platforms _do not_ automatically retry failed
+By default, the Multiplayer SDK for Nintendo Switch and Sony PlayStation platforms _don't_ automatically retry failed
 HTTP requests. 
 
-The SDK will surface a "state change", e.g.
+The SDK surfaces a "state change", for example,
 [PFLobbyCreateAndJoinLobbyCompletedStateChange](playfabmultiplayerreference-cpp/pflobby/structs/pflobbycreateandjoinlobbycompletedstatechange.md),
 who's `HRESULT result` field will be populated by HTTP failure type.
 
