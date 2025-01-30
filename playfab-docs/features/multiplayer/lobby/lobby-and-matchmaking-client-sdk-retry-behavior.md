@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking, lobby, matchmaking, retry, retry beh
 
 # Lobby and Matchmaking C++ SDK Network Retry Behavior
 
-This page describe's the SDK's policy for automatically retrying certain failable network operations. It covers the default behavior, the scenarios which internally trigger retries, and the relationship between internal retries and external failure error handling.
+This page describes's the SDK's policy for automatically retrying certain failable network operations. It covers the default behavior, the scenarios which internally trigger retries, and the relationship between internal retries and external failure error handling.
 
 - [SDK retry behavior](#sdk-retry-behavior)
 - [What triggers a retry](#what-triggers-a-retry)
@@ -37,7 +37,7 @@ A **retry window** of 20 seconds limits the total time spent attempting all retr
 duration of all attempts reaches this threshold, the overall call fails with an error, rather than continuing to
 retry indefinitely.
 
-When the service returns an HTTP error that includes a `Retry-After` header, the SDK will cache the request and track the `Retry-After` duration. If the `Retry-After` specifies a delay that's within the 20 second retry window, the `Retry-After` controls the next delay offset. If the `Retry-After` specifies a delay that's outside the 20 second retry window, the operation is not retried.
+When the service returns an HTTP error that includes a `Retry-After` header, the SDK caches the request and track the `Retry-After` duration. If the `Retry-After` specifies a delay that's within the 20-second retry window, the `Retry-After` controls the next delay offset. If the `Retry-After` specifies a delay that's outside the 20-second retry window, the operation isn't retried.
 
 ## What triggers a retry
 
@@ -52,7 +52,7 @@ The automatic retry logic is engaged when one of the following occurs:
     - **503 (Service Unavailable)**
     - **504 (Gateway Timeout)**
 
-Other failures will not trigger a retry and will be processed immediately.
+Other failures won't trigger a retry and are processed immediately.
 
 ## Impact on asynchronous errors
 
