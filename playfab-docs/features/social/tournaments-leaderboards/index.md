@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 
 # Leaderboards
 
-Using event or tournament leaderboards are great ways of increasing engagement within your game. By using PlayFab you can easily set up a recurring tournament that awards prizes to the winners, reaches out to the participants, and gets your players to come back into your game to try and get the highest score.
+Using event or tournament leaderboards are great ways of increasing engagement within your game. By using PlayFab you can easily set up a recurring tournament that awards prizes to the winners, reaches out to the participants, and gets your players to come back into your game to try to get the highest score.
 
 > [!IMPORTANT]
-> There is no opportunity for adoption of "Leaderboards v2" at this moment. Stay tuned for upcoming announcements: [PlayFab Roadmap](/gaming/playfab/roadmap).
+> There's no opportunity for adoption of "Leaderboards v2" at this moment. Stay tuned for upcoming announcements: [PlayFab Roadmap](/gaming/playfab/roadmap).
 
 ## The future of Stats and Leaderboards
 
@@ -47,7 +47,7 @@ When creating your tournament, it's important to design your game play with the 
 
 3. **What ends your tournament?**  
 
-    Is your tournament an ongoing daily or weekly event? If so, you can configure your leaderboard to reset automatically. If not, you need to define what ends your tournament -- and trigger the [resetting of the statistic manually](using-resettable-statistics-and-leaderboards.md).
+    Is your tournament an ongoing daily or weekly event? If so, you can configure your leaderboard to reset automatically. If not, you need to define what ends your tournament and trigger the [resetting of the statistic manually](using-resettable-statistics-and-leaderboards.md).
 
 4. **How are you going to reward your players?**  
 
