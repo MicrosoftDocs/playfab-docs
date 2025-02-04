@@ -55,7 +55,7 @@ productDirectory:
     - title: Economy, Monetization, & UGC
       imageSrc: ./media/index/engage.svg
       summary: Set up thriving in-game economies and UGC.
-      url: economy-monetization/economy-v2/index.yml
+      url: economy-monetization/index.yml
 
     - title: Multiplayer
       imageSrc: ./media/index/engage.svg

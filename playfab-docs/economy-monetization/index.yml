@@ -1,0 +1,111 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Economy v2 documentation # < 60 chars
+summary: PlayFab Economy v2 provides a platform to build and grow marketplaces, progression, and engagement that scale with your players. # < 160 chars
+
+metadata:
+  title: PlayFab Economy v2 documentation
+  description: Hub page for the PlayFab Economy v2 documentation. Here you can find feature overviews, quickstart guides, and tutorials.  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab
+  ms.topic: landing-page
+  author: fprotti96
+  ms.author: fprotti
+  ms.date: 01/06/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card
+  - title: Learn Economy v2
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: What is PlayFab Economy?
+            url: economy-what-is.md
+          - text: What is Economy v2?
+            url: economy-v2/overview.md
+          - text: Economy v2 Catalog quickstart
+            url: economy-v2/quickstart.md
+          - text: Economy v2 Inventory quickstart
+            url: economy-v2/inventory/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Tutorial - Crafting game
+            url: economy-v2/tutorials/craftingGame/game-context.md
+
+# Card
+  - title: Create your catalog and virtual currencies
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Catalog Overview
+            url: economy-v2/catalog/catalog-overview.md
+          - text: What are content types and item properties?
+            url: economy-v2/catalog/content-types-tags-and-properties.md
+      - linkListType: quickstart
+        links:
+          - text: Fraud prevention, redemption, receipt validation quickstart
+            url: economy-v2/fraud-prevention/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Manage virtual currencies
+            url: economy-v2/tutorials/currencies.md
+          - text: Start with Unity and Android in-app purchases
+            url: economy-v2/tutorials/getting-started-with-unity-and-android.md
+
+# Card
+  - title: Set up a player based inventory
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Inventory Overview
+            url: economy-v2/inventory/items-and-inventory-overview.md
+      - linkListType: quickstart
+        links:
+          - text: Add an item to a player's inventory
+            url: economy-v2/inventory/quickstart.md
+
+  # Card
+  - title: Link your game to real world marketplaces
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Marketplace Integrations
+            url: economy-v2/marketplace/marketplace-integrations/overview.md
+          - text: Marketplace Redemption
+            url: economy-v2/marketplace/marketplace-redemption/overview.md
+          - text: Error handling
+            url: economy-v2/marketplace/marketplace-error-handling.md
+
+  # Card
+  - title: Run sales events and promotions
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Bundles
+            url: economy-v2/catalog/bundles.md
+          - text: Targeted offers
+            url: economy-v2/player-segmented-monetization/targeted-offers.md
+          - text: Segment Actions
+            url: economy-v2/player-segmented-monetization/segment-actions.md
+
+  # Card
+  - title: Ingest and Moderate UGC content
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: UGC Overview
+            url: economy-v2/ugc/overview.md
+          - text: UGC Moderation
+            url: economy-v2/ugc/moderation.md
+      - linkListType: quickstart
+        links:
+          - text: UGC quickstart
+            url: economy-v2/ugc/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Publish your first user generated content
+            url: economy-v2/tutorials/publish-ugc.md
