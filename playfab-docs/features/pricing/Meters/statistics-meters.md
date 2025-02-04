@@ -39,6 +39,18 @@ Here's the list of APIs that tick this meter:
 |----------------------|--------------
 |UpdateStatistics              | [Update Statistics](/rest/api/playfab/progression/statistics/update-statistics)    |
 
+## Transactional Writes
+
+The Transactional Write meter is a different variant of the Statistics Writes meter, it operates under the same conditions
+but adds the feature of handling requests as transactions, ensuring each request executes only once.
+
+This meter is limited to this API and requires a special parameter for a client Transaction Id. When you provide this parameter, the Transactional Write meter is activated.
+
+| API Name     | API Reference                                
+|----------------------|--------------
+|UpdateStatistics              | [Update Statistics](/rest/api/playfab/progression/statistics/update-statistics)    |
+
+
 
 ## Statistics Storage
 
