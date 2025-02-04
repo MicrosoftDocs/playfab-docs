@@ -4,7 +4,7 @@ title: "PFProfilesEntityDataObject"
 description: "PFProfilesEntityDataObject data model. An entity object and its associated meta data."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFFriendsClientRemoveFriendAsync"
 description: "Removes a specified user from the friend list of the local user"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

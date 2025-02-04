@@ -4,7 +4,7 @@ title: "PFInventoryAddInventoryItemsAsync"
 description: "Add inventory items. Up to 10,000 stacks of items can be added to a single inventory collection. Stack size is uncapped."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

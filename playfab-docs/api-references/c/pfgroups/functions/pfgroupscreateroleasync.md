@@ -4,7 +4,7 @@ title: "PFGroupsCreateRoleAsync"
 description: "Creates a new group role."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

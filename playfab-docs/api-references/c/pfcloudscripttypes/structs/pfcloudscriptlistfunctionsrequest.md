@@ -4,7 +4,7 @@ title: "PFCloudScriptListFunctionsRequest"
 description: "PFCloudScriptListFunctionsRequest data model. A title can have many functions, ListHttpFunctions will return a list of all the currently registered HTTP triggered functions for a given title."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

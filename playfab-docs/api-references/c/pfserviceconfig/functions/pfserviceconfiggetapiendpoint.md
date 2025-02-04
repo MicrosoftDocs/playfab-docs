@@ -4,7 +4,7 @@ title: "PFServiceConfigGetAPIEndpoint"
 description: "Gets the API endpoint for a service configuration."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

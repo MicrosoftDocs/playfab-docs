@@ -4,7 +4,7 @@ title: "PFAccountManagementClientGetAccountInfoAsync"
 description: "Retrieves the user's PlayFab account details"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

@@ -4,7 +4,7 @@ title: "PFTitleDataManagementClientGetPublisherDataGetResult"
 description: "Gets the result of a successful PFTitleDataManagementClientGetPublisherDataAsync call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 
