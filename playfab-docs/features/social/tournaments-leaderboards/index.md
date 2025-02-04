@@ -35,7 +35,7 @@ Leaderboards encourage competition among players of your game, and create incent
 
 ### Designing your tournament
 
-When creating your tournament, it is important to design your game play with the following four items in mind:
+When creating your tournament, it's important to design your game play with the following four items in mind:
 
 1. **How are you going to advertise the tournament to your players?**  
 
