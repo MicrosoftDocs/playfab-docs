@@ -4,7 +4,7 @@ title: "PFAccountManagementServerGetServerCustomIDsFromPlayFabIDsAsync"
 description: "Retrieves the associated PlayFab account identifiers for the given set of server custom identifiers."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

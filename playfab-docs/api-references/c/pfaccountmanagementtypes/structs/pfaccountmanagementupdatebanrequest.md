@@ -4,7 +4,7 @@ title: "PFAccountManagementUpdateBanRequest"
 description: "PFAccountManagementUpdateBanRequest data model. Represents a single update ban request."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

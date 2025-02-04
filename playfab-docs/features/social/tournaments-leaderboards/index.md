@@ -24,7 +24,7 @@ While we're eager to share details, we aim to do so in a process that delights. 
 
 ## What are Leaderboards? 
 
-Leaderboards are essentially rankings of entities such as players, groups, or items. A leaderboard ranks a list of entities based on their respective values. For example, “High Scores” is one of the most common implementations of leaderboards.
+Leaderboards are essentially rankings of entities such as players, groups, or items. A leaderboard ranks a list of entities based on their respective values. For example, "High Scores" is one of the most common implementations of leaderboards.
 
 ## Why Use Leaderboards?
 

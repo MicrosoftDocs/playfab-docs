@@ -4,7 +4,7 @@ title: "PFTitleDataManagementServerSetTitleDataAsync"
 description: "Updates the key-value store of custom title settings"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 
