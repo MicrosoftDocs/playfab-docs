@@ -4,7 +4,7 @@ title: "PFAccountManagementClientUpdateAvatarUrlAsync"
 description: "Update the avatar URL of the player"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

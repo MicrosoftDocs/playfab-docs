@@ -4,7 +4,7 @@ title: "PFGroupsBlockEntityAsync"
 description: "Blocks a list of entities from joining a group."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

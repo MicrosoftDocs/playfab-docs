@@ -4,7 +4,7 @@ title: "PFInventoryDeleteInventoryItemsGetResultSize"
 description: "Get the size in bytes needed to store the result of a DeleteInventoryItems call."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 
