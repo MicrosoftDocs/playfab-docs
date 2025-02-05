@@ -5,7 +5,7 @@ description: "PFInventoryTransferInventoryItemsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFInventoryTransferInventoryItemsResponse  
@@ -21,6 +21,7 @@ typedef struct PFInventoryTransferInventoryItemsResponse {
     uint32_t givingTransactionIdsCount;  
     const char* idempotencyId;  
     const char* operationStatus;  
+    const char* operationToken;  
     const char* const* receivingTransactionIds;  
     uint32_t receivingTransactionIdsCount;  
 } PFInventoryTransferInventoryItemsResponse;  
@@ -51,6 +52,11 @@ Count of givingTransactionIds
 *is null-terminated*  
   
 (Optional) The transfer operation status. Possible values are 'InProgress' or 'Completed'. If the operation has completed, the response code will be 200. Otherwise, it will be 202.
+  
+**`operationToken`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The token that can be used to get the status of the transfer operation. This will only have a value if OperationStatus is 'InProgress'.
   
 **`receivingTransactionIds`** &nbsp; const char* const*  
 *may be nullptr*  

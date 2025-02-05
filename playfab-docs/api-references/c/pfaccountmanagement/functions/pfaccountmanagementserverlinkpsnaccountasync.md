@@ -5,7 +5,7 @@ description: "Links the PlayStation :tm: Network account associated with the pro
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementServerLinkPSNAccountAsync  

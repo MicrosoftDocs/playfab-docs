@@ -5,7 +5,7 @@ description: "PFCatalogReview data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFCatalogReview  
@@ -16,6 +16,8 @@ PFCatalogReview data model.
   
 ```cpp
 typedef struct PFCatalogReview {  
+    PFInt32DictionaryEntry const* categoryRatings;  
+    uint32_t categoryRatingsCount;  
     int32_t helpfulNegative;  
     int32_t helpfulPositive;  
     bool isInstalled;  
@@ -33,6 +35,15 @@ typedef struct PFCatalogReview {
 ```
   
 ### Members  
+  
+**`categoryRatings`** &nbsp; [PFInt32DictionaryEntry](../../pftypes/structs/pfint32dictionaryentry.md) const*  
+*may be nullptr*  
+  
+(Optional) The star rating associated with each selected category in this review.
+  
+**`categoryRatingsCount`** &nbsp; uint32_t  
+  
+Count of categoryRatings
   
 **`helpfulNegative`** &nbsp; int32_t  
   

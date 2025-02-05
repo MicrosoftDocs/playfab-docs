@@ -1,26 +1,24 @@
 ---
 author: jasonsandlin
 title: "PFAuthenticationAuthenticateGameServerWithCustomIdGetResult"
-description: "Gets the result of a successful PFAuthenticationAuthenticateGameServerWithCustomIdAsync call."
+description: "Get the result from a PFAuthenticationAuthenticateGameServerWithCustomIdAsync call."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationAuthenticateGameServerWithCustomIdGetResult  
 
-Gets the result of a successful PFAuthenticationAuthenticateGameServerWithCustomIdAsync call.  
+Get the result from a PFAuthenticationAuthenticateGameServerWithCustomIdAsync call.  
 
 ## Syntax  
   
 ```cpp
 HRESULT PFAuthenticationAuthenticateGameServerWithCustomIdGetResult(  
     XAsyncBlock* async,  
-    size_t bufferSize,  
-    void* buffer,  
-    PFAuthenticationAuthenticateCustomIdResult** result,  
-    size_t* bufferUsed  
+    PFEntityHandle* entityHandle,  
+    bool* newlyCreated  
 )  
 ```  
   
@@ -31,34 +29,25 @@ HRESULT PFAuthenticationAuthenticateGameServerWithCustomIdGetResult(
   
 XAsyncBlock for the async operation.  
   
-**`bufferSize`** &nbsp; size_t  
+**`entityHandle`** &nbsp; PFEntityHandle*  
+*output*  
   
-The size of the buffer for the result object.  
+PFEntityHandle which can be used to authenticate other PlayFab API calls.  
   
-**`buffer`** &nbsp; void*  
-*_Out_writes_bytes_to_(bufferSize,*bufferUsed)*  
-  
-Byte buffer used for the result value and its fields.  
-  
-**`result`** &nbsp; [PFAuthenticationAuthenticateCustomIdResult**](../../pfauthenticationtypes/structs/pfauthenticationauthenticatecustomidresult.md)  
-*library-allocated output*  
-  
-Pointer to the result object.  
-  
-**`bufferUsed`** &nbsp; size_t*  
+**`newlyCreated`** &nbsp; bool*  
 *optional output*  
   
-The number of bytes in the provided buffer that were used.  
+Will be set to true if the account was newly created on this authentication and false otherwise  
   
   
 ### Return value
 Type: HRESULT
   
-Result code for this API operation.
+Result code for this API operation. If the service call is unsuccessful, the result will be one of global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Remarks  
   
-result is a pointer within buffer and does not need to be freed separately.
+If the PFAuthenticationAuthenticateGameServerWithCustomIdAsync call fails, entityHandle with be null. Otherwise, the handle must be closed with PFEntityCloseHandle when it is no longer needed.
   
 ## Requirements  
   

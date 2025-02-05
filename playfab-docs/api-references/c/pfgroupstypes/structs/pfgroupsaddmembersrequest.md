@@ -5,7 +5,7 @@ description: "PFGroupsAddMembersRequest data model. Adds members to a group or r
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFGroupsAddMembersRequest  

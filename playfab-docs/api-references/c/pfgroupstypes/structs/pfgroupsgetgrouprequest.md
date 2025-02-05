@@ -5,7 +5,7 @@ description: "PFGroupsGetGroupRequest data model. Returns the ID, name, role lis
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFGroupsGetGroupRequest  

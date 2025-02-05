@@ -5,7 +5,7 @@ description: "Links the vendor-specific iOS device identifier to the user's Play
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementClientLinkIOSDeviceIDAsync  

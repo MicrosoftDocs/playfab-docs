@@ -20,12 +20,24 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.10.8
+
+January 24, 2025
+
+- PlayStation&#174;4 and, PlayStation&#174;5: Resolved a crash related to profanity masking on PlayStation platforms.
+
+## 1.10.6
+
+December 10, 2024
+
+- PlayStation&#174;4 and, PlayStation&#174;5: Resolved build warnings and errors for integration with C++14 and above.
+
 ## 1.10.5
 
 November 18, 2024
 
 - Fixed an issue where voice chat would sometimes not work for users remaining in a Party network after other users rejoined and left multiple times.
-- Fixed an issue where PartyLocalEndpoint::GetEndpointStatistics would report incorrect values for PartyEndpointStatistic::CurrentlyQueuedSendMessages and PartyEndpointStatistic::CurrentlyQueuedSendMessageBytes when used with direct peer connections.
+- Fixed an issue where [PartyLocalEndpoint::GetEndpointStatistics](reference/classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md) would report incorrect values for [PartyEndpointStatistic::CurrentlyQueuedSendMessages](reference/enums/partyendpointstatistic.md) and [PartyEndpointStatistic::CurrentlyQueuedSendMessageBytes](reference/enums/partyendpointstatistic.md) when used with direct peer connections.
 - Fixed broken symlinks for the framework on the macOS.
 - Improved handling log exceptions for non Windows platforms during collection of SDK logs.
 

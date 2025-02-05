@@ -5,7 +5,7 @@ description: "Defines the Event Pipeline configuration."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFEventPipelineConfig  
@@ -19,7 +19,7 @@ struct PFEventPipelineConfig {
     uint32_t* maxEventsPerBatch;  
     uint32_t* maxWaitTimeInSeconds;  
     uint32_t* pollDelayInMs;  
-    PFHCCompressionLevel* compressionLevel;  
+    HCCompressionLevel* compressionLevel;  
     bool* retryOnDisconnect;  
     size_t* bufferSize;  
 }  
@@ -42,7 +42,7 @@ The maximum time the pipeline will wait before sending out an incomplete batch. 
   
 How long the pipeline will wait to read from the event buffer again after emptying it. If sent null, default value will be used (10 for Telemetry / 10 for PlayStream).
   
-**`compressionLevel`** &nbsp; [PFHCCompressionLevel*](../../pfhttpclient/enums/pfhccompressionlevel.md)  
+**`compressionLevel`** &nbsp; HCCompressionLevel*  
 *may be nullptr*  
   
 The event pipeline will send events using GZIP compression with the level specified. If sent null, no compression will be made.
