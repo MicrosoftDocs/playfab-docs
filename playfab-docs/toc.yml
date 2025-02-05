@@ -5,6 +5,8 @@ items:
   href: what-is-playfab.md  
 - name: Game Manager
   href: gamemanager/toc.yml
+- name: Demo game
+  href: demo-game/toc.yml
 - name: Build
   expanded: true
   items:

@@ -149,5 +149,6 @@ private static async Task UpdateEntityDisplayName(PlayFabAuthenticationContext c
 - [Doing more with statistics](doing-more-statistics.md).
 - [Seasonal statistics](seasonal-statistics.md).
 - [Add contextual data to statistics](metadata-statistics.md).
+- [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).
 - [Statistics meters](../../pricing/meters/statistics-meters.md).

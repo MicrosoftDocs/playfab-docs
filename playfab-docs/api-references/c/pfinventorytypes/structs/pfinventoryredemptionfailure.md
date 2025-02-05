@@ -5,7 +5,7 @@ description: "PFInventoryRedemptionFailure data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFInventoryRedemptionFailure  
@@ -18,8 +18,8 @@ PFInventoryRedemptionFailure data model.
 typedef struct PFInventoryRedemptionFailure {  
     const char* failureCode;  
     const char* failureDetails;  
+    const char* marketplaceAlternateId;  
     const char* marketplaceTransactionId;  
-    const char* offerId;  
 } PFInventoryRedemptionFailure;  
 ```
   
@@ -35,15 +35,15 @@ typedef struct PFInventoryRedemptionFailure {
   
 (Optional) The marketplace error details explaining why the offer failed to redeem.
   
+**`marketplaceAlternateId`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The Marketplace Alternate ID being redeemed.
+  
 **`marketplaceTransactionId`** &nbsp; const char*  
 *is null-terminated*  
   
 (Optional) The transaction id in the external marketplace.
-  
-**`offerId`** &nbsp; const char*  
-*is null-terminated*  
-  
-(Optional) The ID of the offer being redeemed.
   
   
 ## Requirements  

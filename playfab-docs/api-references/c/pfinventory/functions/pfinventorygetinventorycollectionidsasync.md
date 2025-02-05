@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryGetInventoryCollectionIdsAsync"
-description: "Get Inventory Collection Ids. Up to 50 Ids can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. It can take a few seconds for new collection Ids to show up."
+description: "Get Inventory Collection Ids. Up to 50 Ids can be returned at once (or 250 with response compression enabled). You can use continuation tokens to paginate through results that return greater than the limit. It can take a few seconds for new collection Ids to show up."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFInventoryGetInventoryCollectionIdsAsync  
 
-Get Inventory Collection Ids. Up to 50 Ids can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. It can take a few seconds for new collection Ids to show up.  
+Get Inventory Collection Ids. Up to 50 Ids can be returned at once (or 250 with response compression enabled). You can use continuation tokens to paginate through results that return greater than the limit. It can take a few seconds for new collection Ids to show up.  
 
 ## Syntax  
   

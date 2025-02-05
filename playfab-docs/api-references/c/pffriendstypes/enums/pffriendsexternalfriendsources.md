@@ -5,7 +5,7 @@ description: "ExternalFriendSources enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFFriendsExternalFriendSources  
@@ -17,12 +17,12 @@ ExternalFriendSources enum.
 ```cpp
 enum class PFFriendsExternalFriendSources  : uint32_t  
 {  
-    None,  
-    Steam,  
-    Facebook,  
-    Xbox,  
-    Psn,  
-    All  
+    None = 0x0,  
+    Steam = 0x1,  
+    Facebook = 0x2,  
+    Xbox = 0x4,  
+    Psn = 0x8,  
+    All = 0x10  
 }  
 ```  
   

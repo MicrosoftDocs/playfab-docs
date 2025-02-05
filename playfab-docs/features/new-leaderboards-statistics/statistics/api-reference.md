@@ -22,7 +22,7 @@ error codes, and response structures.
 |DeleteStatisticDefinition              | [Delete a Statistic Definition](/rest/api/playfab/progression/statistics/delete-statistic-definition)    |
 |DeleteStatistic               | [Delete Statistic](/rest/api/playfab/progression/statistics/delete-statistics)    |
 |GetStatisticDefinition               | [Get Statistic Definition](/rest/api/playfab/progression/statistics/get-statistic-definition)    |
-|GetStatisticDefinitions               | [Get Statistic Definitions](/rest/api/playfab/progression/statistics/get-statistic-definitions)    |
+|ListStatisticDefinitions               | [Get Statistic Definitions](/rest/api/playfab/progression/statistics/list-statistic-definitions)    |
 |IncrementStatisticVersion               | [Increment Statistic Version](/rest/api/playfab/progression/statistics/increment-statistic-version)    |
 |GetStatistics               | [Get Statistics](/rest/api/playfab/progression/statistics/get-statistics)    |
 |GetStatisticsForEntities              | [Get Statistics For Entities](/rest/api/playfab/progression/statistics/get-statistics-for-entities)    |

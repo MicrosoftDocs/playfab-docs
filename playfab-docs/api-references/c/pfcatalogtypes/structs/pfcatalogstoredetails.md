@@ -5,7 +5,7 @@ description: "PFCatalogStoreDetails data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFCatalogStoreDetails  
@@ -17,6 +17,7 @@ PFCatalogStoreDetails data model.
 ```cpp
 typedef struct PFCatalogStoreDetails {  
     PFCatalogFilterOptions const* filterOptions;  
+    PFCatalogPermissions const* permissions;  
     PFCatalogCatalogPriceOptionsOverride const* priceOptionsOverride;  
 } PFCatalogStoreDetails;  
 ```
@@ -27,6 +28,11 @@ typedef struct PFCatalogStoreDetails {
 *may be nullptr*  
   
 (Optional) The options for the filter in filter-based stores. These options are mutually exclusive with item references.
+  
+**`permissions`** &nbsp; [PFCatalogPermissions](pfcatalogpermissions.md) const*  
+*may be nullptr*  
+  
+(Optional) The permissions that control which players can purchase from the store.
   
 **`priceOptionsOverride`** &nbsp; [PFCatalogCatalogPriceOptionsOverride](pfcatalogcatalogpriceoptionsoverride.md) const*  
 *may be nullptr*  

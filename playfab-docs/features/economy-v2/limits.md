@@ -158,6 +158,10 @@ There are checks enforced to prevent the use of overly complicated `Filter` quer
 
 ## Catalog Item
 
+### Catalog creator entity limit
+
+Up to 20GB of catalog data are allowed per Catalog creator entity. This limit is most likely to be encountered for Catalog Items created by the Title entity.
+
 ### Titles
 
 Tiles have a **512 character limit** per country code.
@@ -259,13 +263,13 @@ The max number of items to be modified is **300 items**.
 
 The max collection size is **10000 items**.
 
-The length limit for the collection list is **unlimited**.
+The length limit for the collection list is **1000 collections** per entity.
 
 The character limit for a collection's name is **75 characters**.
 
 ### Transaction History
 
-The max date range for the transaction history is **unlimited**.
+The max date range for the transaction history is **4 years**.
 
 The default date range is of **six months**.
 

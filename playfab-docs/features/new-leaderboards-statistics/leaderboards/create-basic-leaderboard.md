@@ -263,6 +263,7 @@ In this tutorial, we learned how to do the following operations:
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [Group leaderboards](group-leaderboards.md).
+- [Manual tiers](manual-tiers.md).
 - [API reference](api-reference.md).
 
 

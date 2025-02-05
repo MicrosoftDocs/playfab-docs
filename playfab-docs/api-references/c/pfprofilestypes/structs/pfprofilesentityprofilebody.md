@@ -5,7 +5,7 @@ description: "PFProfilesEntityProfileBody data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFProfilesEntityProfileBody  
@@ -31,7 +31,7 @@ typedef struct PFProfilesEntityProfileBody {
     uint32_t objectsCount;  
     PFProfilesEntityPermissionStatement const* permissions;  
     uint32_t permissionsCount;  
-    PFProfilesEntityStatisticValueDictionaryEntry const* statistics;  
+    PFEntityStatisticValueDictionaryEntry const* statistics;  
     uint32_t statisticsCount;  
     int32_t versionNumber;  
 } PFProfilesEntityProfileBody;  
@@ -109,7 +109,7 @@ Count of objects
   
 Count of permissions
   
-**`statistics`** &nbsp; PFProfilesEntityStatisticValueDictionaryEntry const*  
+**`statistics`** &nbsp; PFEntityStatisticValueDictionaryEntry const*  
 *may be nullptr*  
   
 (Optional) The statistics on this profile.

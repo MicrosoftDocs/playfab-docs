@@ -166,4 +166,5 @@ In this tutorial, we learned how to do the following operations:
 - [Add contextual data to statistics](metadata-statistics.md)..
 - [Create basic statistics](create-basic-statistics.md).
 - [Seasonal statistics](seasonal-statistics.md).
+- [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).

@@ -5,7 +5,7 @@ description: "Retrieves an array of player segment definitions. Results from thi
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFSegmentsServerGetAllSegmentsAsync  

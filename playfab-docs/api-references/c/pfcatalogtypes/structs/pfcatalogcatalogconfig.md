@@ -5,7 +5,7 @@ description: "PFCatalogCatalogConfig data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFCatalogCatalogConfig  
@@ -28,6 +28,7 @@ typedef struct PFCatalogCatalogConfig {
     bool isCatalogEnabled;  
     const char* const* platforms;  
     uint32_t platformsCount;  
+    PFCatalogReviewConfig const* review;  
     PFEntityKey const* reviewerEntities;  
     uint32_t reviewerEntitiesCount;  
     PFCatalogUserGeneratedContentSpecificConfig const* userGeneratedContent;  
@@ -90,6 +91,11 @@ Flag defining whether catalog is enabled.
 **`platformsCount`** &nbsp; uint32_t  
   
 Count of platforms
+  
+**`review`** &nbsp; [PFCatalogReviewConfig](pfcatalogreviewconfig.md) const*  
+*may be nullptr*  
+  
+(Optional) The set of configuration that only applies to Ratings and Reviews.
   
 **`reviewerEntities`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
 *may be nullptr*  

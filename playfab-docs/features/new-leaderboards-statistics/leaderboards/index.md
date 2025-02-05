@@ -63,6 +63,7 @@ has a Statistics engine doing the aggregation.
 - [Create basic leaderboard](create-basic-leaderboard.md).
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
 - [Seasonal leaderboards](seasonal-leaderboards.md).
+- [Manual tiers](manual-tiers.md).
 - [Ranking players by stats](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
