@@ -5,7 +5,7 @@ description: "PFAccountManagementBanRequest data model. Represents a single ban 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementBanRequest  
@@ -20,6 +20,7 @@ typedef struct PFAccountManagementBanRequest {
     const char* IPAddress;  
     const char* playFabId;  
     const char* reason;  
+    PFAccountManagementUserFamilyType const* userFamilyType;  
 } PFAccountManagementBanRequest;  
 ```
   
@@ -44,6 +45,11 @@ Unique PlayFab assigned ID of the user on whom the operation will be performed.
 *is null-terminated*  
   
 (Optional) The reason for this ban. Maximum 140 characters.
+  
+**`userFamilyType`** &nbsp; [PFAccountManagementUserFamilyType](../enums/pfaccountmanagementuserfamilytype.md) const*  
+*may be nullptr*  
+  
+(Optional) The family type of the user that should be included in the ban if applicable. May affect multiple players.
   
   
 ## Requirements  

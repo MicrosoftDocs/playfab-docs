@@ -12,6 +12,8 @@
     href: seasonal-statistics.md
   - name: Add contextual data to Statistics
     href: metadata-statistics.md
+  - name: Transactional writes
+    href: transactional-writes.md
   - name: API reference
     href: api-reference.md
 

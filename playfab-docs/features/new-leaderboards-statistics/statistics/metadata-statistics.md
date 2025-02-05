@@ -117,4 +117,5 @@ In this tutorial, we learned how to do the following operations:
 - [Create basic statistics](create-basic-statistics.md).
 - [Doing more with statistics](doing-more-statistics.md).
 - [Seasonal statistics](seasonal-statistics.md).
+- [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).

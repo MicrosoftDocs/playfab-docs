@@ -5,7 +5,7 @@ description: "Securely login a game client from an external server backend using
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationServerLoginWithServerCustomIdAsync  

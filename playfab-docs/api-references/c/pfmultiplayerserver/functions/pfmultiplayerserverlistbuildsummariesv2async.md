@@ -5,7 +5,7 @@ description: "Lists summarized details of all multiplayer server builds for a ti
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFMultiplayerServerListBuildSummariesV2Async  

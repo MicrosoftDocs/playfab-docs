@@ -5,7 +5,7 @@ description: "PFAccountManagementUpdateBanRequest data model. Represents a singl
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementUpdateBanRequest  
@@ -22,6 +22,7 @@ typedef struct PFAccountManagementUpdateBanRequest {
     const char* IPAddress;  
     bool const* permanent;  
     const char* reason;  
+    PFAccountManagementUserFamilyType const* userFamilyType;  
 } PFAccountManagementUpdateBanRequest;  
 ```
   
@@ -56,6 +57,11 @@ The id of the ban to be updated.
 *is null-terminated*  
   
 (Optional) The updated reason for the ban to be updated. Maximum 140 characters. Null for no change.
+  
+**`userFamilyType`** &nbsp; [PFAccountManagementUserFamilyType](../enums/pfaccountmanagementuserfamilytype.md) const*  
+*may be nullptr*  
+  
+(Optional) The updated family type of the user that should be included in the ban. Null for no change.
   
   
 ## Requirements  
