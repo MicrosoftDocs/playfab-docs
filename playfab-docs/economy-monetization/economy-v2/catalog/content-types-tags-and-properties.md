@@ -232,7 +232,7 @@ When you add a field to `DisplayProperties`, it creates a new index for you in t
 
 `Searchable String` display properties are **searchable**; these properties are queried with fuzzy search against the `Search` field. Searchable properties can't be used in Filter and OrderBy statements
 
-Titles are limited to five display properties of each type. For more information, see [Limits](limits.md).
+Titles are limited to five display properties of each type. For more information, see [Limits](../limits.md).
 
 > [!WARNING]
 > Display property mappings are stored as an indexed list of key-value pairs. Deleting existing display property mappings can shift indexes and break the behavior of all remaining properties. It's suggested to add an additional property rather than deleting or editing an existing one and you should avoid deleting property mappings unless absolutely necessary
@@ -262,4 +262,4 @@ Prices allow you to assign in-game currency costs to items. They're optional, bu
 
 ## Files and Images
 
-These fields use File Storage instead of Config Storage. File storage is meant for game assets that are frequently updated or modified such as icons or asset game engine metadata. For more information on what sorts of files PlayFab handles, see [Limits](limits.md).
+These fields use File Storage instead of Config Storage. File storage is meant for game assets that are frequently updated or modified such as icons or asset game engine metadata. For more information on what sorts of files PlayFab handles, see [Limits](../limits.md).

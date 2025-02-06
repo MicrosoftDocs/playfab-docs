@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyFindLobbiesCompletedHandler delegate
 
-Handler for when the operation started by a previous call to [`FindLobbies`](./PlayFabMultiplayer/FindLobbies.md) completed.
+Handler for when the operation started by a previous call to [`FindLobbies`](PlayFabMultiplayer/FindLobbies.md) completed.
 
 ```csharp
 public delegate void OnLobbyFindLobbiesCompletedHandler(IList<LobbySearchResult> searchResults, 
@@ -25,7 +25,7 @@ public delegate void OnLobbyFindLobbiesCompletedHandler(IList<LobbySearchResult>
 
 ## See Also
 
-* class [LobbySearchResult](./LobbySearchResult.md)
+* class [LobbySearchResult](LobbySearchResult.md)
 * class [PFEntityKey](./PFEntityKey.md)
 * class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)

@@ -207,7 +207,7 @@ The following APIs cause the Profile read meter to increment.
     Retrieves a purchase along with its current PlayFab status. Returns inventory items from the purchase that are still active.
 
 - [GetSharedGroupData](/rest/api/playfab/client/shared-group-data/get-shared-group-data?view=playfab-rest&preserve-view=true)
-    Retrieves data stored in a shared group object, as well as the list of members in the group. Non-members of the group may use this to retrieve group data, including membership, but they will not receive data for keys marked as private. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../social/groups/using-shared-group-data.md).
+    Retrieves data stored in a shared group object, as well as the list of members in the group. Non-members of the group may use this to retrieve group data, including membership, but they will not receive data for keys marked as private. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../../../community/social/groups/using-shared-group-data.md).
 
 - [GetStoreItems](/rest/api/playfab/client/title-wide-data-management/get-store-items?view=playfab-rest&preserve-view=true)
     Retrieves the set of items defined for the specified store, including all prices defined.
@@ -415,7 +415,7 @@ The following APIs cause the Profile read meter to increment.
     Retrieves the associated PlayFab account identifiers for the given set of server custom identifiers.
 
 - [GetSharedGroupData](/rest/api/playfab/server/shared-group-data/get-shared-group-data?view=playfab-rest&preserve-view=true)
-    Retrieves data stored in a shared group object, as well as the list of members in the group. The server can access all public and private group data. Shared Groups are designed for sharing data between a very small number of players,  see [Using Shared Group Data](../../social/groups/using-shared-group-data.md).
+    Retrieves data stored in a shared group object, as well as the list of members in the group. The server can access all public and private group data. Shared Groups are designed for sharing data between a very small number of players,  see [Using Shared Group Data](../../../../community/social/groups/using-shared-group-data.md).
 
 - [GetStoreItems](/rest/api/playfab/server/title-wide-data-management/get-store-items?view=playfab-rest&preserve-view=true)
     Retrieves the set of items defined for the specified store, including all prices defined, for the specified player.

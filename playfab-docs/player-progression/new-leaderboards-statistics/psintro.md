@@ -26,13 +26,13 @@ and standing in the gaming community aren't bounded by the limitations of any de
 Learn more about the new features of Leaderboards, how to configure it and all the different tutorials available.
 
 - [Learn more about Leaderboards](./leaderboards/index.md)
-- [Quickstart](./leaderboards/quickstart-leaderboards.md)
-- [Create Leaderboard](./leaderboards/create-basic-leaderboard.md)
+- [Quickstart](leaderboards/quickstart-leaderboards.md)
+- [Create Leaderboard](leaderboards/create-basic-leaderboard.md)
 
 ### Stats
 
 Learn more about the new features of Statistics, how to configure it and all the different tutorials available.
 
 - [Learn more about Statistics](./statistics/index.md)
-- [Quickstart](./statistics/quickstart-statistics.md)
-- [Create statistics](./statistics/create-basic-statistics.md)
+- [Quickstart](statistics/quickstart-statistics.md)
+- [Create statistics](statistics/create-basic-statistics.md)

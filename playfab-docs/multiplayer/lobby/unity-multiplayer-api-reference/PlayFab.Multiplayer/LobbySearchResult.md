@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # Class LobbySearchResult
 
-An entry in the collection of lobby search results received upon successful completion of a [`FindLobbies`](./PlayFabMultiplayer/FindLobbies.md) operation.
+An entry in the collection of lobby search results received upon successful completion of a [`FindLobbies`](PlayFabMultiplayer/FindLobbies.md) operation.
 
 ```csharp
 public class LobbySearchResult

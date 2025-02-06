@@ -135,7 +135,7 @@ The `PurchaseInventoryItems` API uses the catalog-defined price of the item, and
 There are a few key parameters specific to the `PurchaseInventoryItems` API:
 
 * `PriceAmounts` is a list of items and amounts that are **per-item** prices of the item. These prices must match a value configured in the Catalog or specified Store.
-* `StoreId` is an optional parameter of the Store the item is to be purchased from. More about Stores can be found [here](../stores.md)
+* `StoreId` is an optional parameter of the Store the item is to be purchased from. More about Stores can be found [here](../catalog/stores.md)
 
 An example `PurchaseInventoryItems` request:
 

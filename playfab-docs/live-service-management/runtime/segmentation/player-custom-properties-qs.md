@@ -24,7 +24,7 @@ To get started using Player Custom Properties, follow the guides below.
 - Select the **Player Data** tab. 
 - Select the **Custom** subtab.
 
-![Navigate to Player Custom Properties](media/navigate-to-custom-properties.png)
+![Navigate to Player Custom Properties](../../../data-analytics/acting-data/media/navigate-to-custom-properties.png)
 
 ### Create a new custom property: 
 
@@ -34,7 +34,7 @@ To get started using Player Custom Properties, follow the guides below.
 - You'll notice the **New** label at the bottom increase by the number of custom properties you add.
 - Select **Save player data** 
 
-![Create new Player Custom Properties](media/create-new-custom-property.png)
+![Create new Player Custom Properties](../../../data-analytics/acting-data/media/create-new-custom-property.png)
 
 ### Remove a custom property: 
 
@@ -42,18 +42,18 @@ To get started using Player Custom Properties, follow the guides below.
 - You'll notice the **Removed** label at the bottom increase by the number of custom properties you remove.
 - Select **Save player data**.
 
-![Remove Player Custom Properties](media/remove-custom-property.png)
+![Remove Player Custom Properties](../../../data-analytics/acting-data/media/remove-custom-property.png)
 
-![Remove Player Custom Properties result](media/remove-custom-property-result.png)
+![Remove Player Custom Properties result](../../../data-analytics/acting-data/media/remove-custom-property-result.png)
 
 To modify a custom property: 
 - Select **Key** and **Value** fields and change the values in them.
 - You'll notice the **Changed** label at the bottom increase by the number of custom properties you modify.
 - Select **Save player data**.
 
-![Modify Player Custom Properties](media/modify-custom-property.png)
+![Modify Player Custom Properties](../../../data-analytics/acting-data/media/modify-custom-property.png)
 
-![Modify Player Custom Properties result](media/modify-custom-property-result.png)
+![Modify Player Custom Properties result](../../../data-analytics/acting-data/media/modify-custom-property-result.png)
 
 ## Creating and modifying custom properties on a player via PlayStream Rules 
 
@@ -69,7 +69,7 @@ To modify a custom property:
 - To modify a custom property, under **Actions** select **Update player custom properties**. The action accepts an expandable list of properties as shown below.
 - Select **Save action**.
 
-![Create and modify Player Custom Properties with PlayStream rules](media/custom-properties-with-playstream-rules.png)
+![Create and modify Player Custom Properties with PlayStream rules](../../../data-analytics/acting-data/media/custom-properties-with-playstream-rules.png)
 
 > [!NOTE]
 > If the event chosen for the rule is a standard event, you will have a list of available properties to choose from. If the event is a custom event, then this will be an open text field.

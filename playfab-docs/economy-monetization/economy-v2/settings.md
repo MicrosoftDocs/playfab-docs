@@ -44,7 +44,7 @@ Players that you add to **Catalog reviewers** can administrate and update their 
 
 ### Display property mappings
 
-Administer deep link formats here. For more information, see [Display Properties](catalog/content-types-tags-and-properties.md) to configure and see [Limits](catalog/limits.md) for limitations.
+Administer deep link formats here. For more information, see [Display Properties](catalog/content-types-tags-and-properties.md) to configure and see [Limits](limits.md) for limitations.
 
 > [!WARNING]
 > Renaming or removing a value will result in broken behavior for existing items. The catalog will need to be refreshed after changes have been made.
@@ -86,5 +86,5 @@ Even if APIs are enabled, Players are only able to publish, edit, and delete con
 
 * [Economy v2 overview](overview.md)
 * [Quickstart](quickstart.md)
-* [Stores](stores.md)
-* [Bundles](bundles.md)
+* [Stores](catalog/stores.md)
+* [Bundles](catalog/bundles.md)

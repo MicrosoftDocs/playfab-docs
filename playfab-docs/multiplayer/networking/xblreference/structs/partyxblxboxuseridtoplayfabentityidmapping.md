@@ -27,7 +27,7 @@ struct PartyXblXboxUserIdToPlayFabEntityIdMapping {
   
 The Xbox Live User Id.
   
-**`playfabEntityId`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
+**`playfabEntityId`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
 The PlayFab Entity Id.
   

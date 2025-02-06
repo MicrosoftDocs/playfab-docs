@@ -19,14 +19,14 @@ This tutorial walks you through how to use the email template feature of PlayFab
 > [!IMPORTANT]
 > This is an advanced tutorial. Please make sure that all requirements have been met, or you will not be able to complete this tutorial.
 
-- To send custom emails with email templates, you will need to have your own SMTP server with a username and password. Please be sure that you have your own SMTP server *before* using our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
+- To send custom emails with email templates, you will need to have your own SMTP server with a username and password. Please be sure that you have your own SMTP server *before* using our tutorial [Setting up an SMTP server with add-ons](setting-up-an-smtp-server-with-add-ons.md).
 
 > [!NOTE]
 > You can use Gmail for testing, but Gmail limits you to 2,000 emails per day.
 
 - Basic knowledge of how to create a player will be necessary, since there will need to be players with a usernames and passwords before calling account recovery logic.
 - Read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you are unfamiliar with the Game Manager, as it is the place where email templates are created.
-- Knowledge of how to work with player profiles will be required to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
+- Knowledge of how to work with player profiles will be required to confirm that emails will be necessary for checking that a contact email has been added to a player's profile. Please read up on how to get a player profile in the [Getting Player Profiles](../../../../player-progression/player-data/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
 
 ## Step 1 - Create an email template
 

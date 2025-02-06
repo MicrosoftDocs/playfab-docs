@@ -31,7 +31,7 @@ Output lobby object which can be used to queue operations for immediate executio
 
 ## Remarks (1 of 2)
 
-This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyMemberAdded`](./OnLobbyMemberAdded.md) followed by a [`OnLobbyCreateAndJoinCompleted`](./OnLobbyCreateAndJoinCompleted.md) with the `OnLobbyCreateAndJoinCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnLobbyCreateAndJoinCompleted`](./OnLobbyCreateAndJoinCompleted.md) with the `OnLobbyCreateAndJoinCompleted.result` field set to a failed error code.
+This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyMemberAdded`](OnLobbyMemberAdded.md) followed by a [`OnLobbyCreateAndJoinCompleted`](OnLobbyCreateAndJoinCompleted.md) with the `OnLobbyCreateAndJoinCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnLobbyCreateAndJoinCompleted`](OnLobbyCreateAndJoinCompleted.md) with the `OnLobbyCreateAndJoinCompleted.result` field set to a failed error code.
 
 ---
 
@@ -56,7 +56,7 @@ Output lobby object which can be used to queue operations for immediate executio
 
 ## Remarks (2 of 2)
 
-This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyMemberAdded`](./OnLobbyMemberAdded.md) followed by a [`OnLobbyCreateAndJoinCompleted`](./OnLobbyCreateAndJoinCompleted.md) with the `OnLobbyCreateAndJoinCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnLobbyCreateAndJoinCompleted`](./OnLobbyCreateAndJoinCompleted.md) with the `OnLobbyCreateAndJoinCompleted result` field set to a failed error code.
+This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyMemberAdded`](OnLobbyMemberAdded.md) followed by a [`OnLobbyCreateAndJoinCompleted`](OnLobbyCreateAndJoinCompleted.md) with the `OnLobbyCreateAndJoinCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnLobbyCreateAndJoinCompleted`](OnLobbyCreateAndJoinCompleted.md) with the `OnLobbyCreateAndJoinCompleted result` field set to a failed error code.
 
 ## See Also
 

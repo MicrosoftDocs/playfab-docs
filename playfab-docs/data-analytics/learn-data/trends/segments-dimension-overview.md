@@ -25,5 +25,5 @@ One limitation regarding Segments as a Dimension is the rate limit, if you try t
 
 ## See also
 
-[Segmentation overview](../../acting-data/segmentation-overview.md)
+[Segmentation overview](../../../live-service-management/runtime/segmentation/segmentation-overview.md)
   

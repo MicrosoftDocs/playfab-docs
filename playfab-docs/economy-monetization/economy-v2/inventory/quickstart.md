@@ -101,7 +101,7 @@ Now that you purchased the player's first item, you can consume the item, you ca
 > [Player inventory tutorial](../tutorials/getting-started-with-unity-and-android.md)
 
 > [!div class="nextstepaction"]
-> [Stores](../stores.md)
+> [Stores](../catalog/stores.md)
 
 > [!div class="nextstepaction"]
-> [Bundles](../bundles.md)
+> [Bundles](../catalog/bundles.md)

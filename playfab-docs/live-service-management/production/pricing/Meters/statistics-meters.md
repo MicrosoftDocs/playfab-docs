@@ -52,4 +52,4 @@ For each entity statistic, the storage consumed per version of the statistic is 
 
 ## See Also
 
-- [Leaderboards Meters](../../pricing/meters/leaderboard-meters.md).
+- [Leaderboards Meters](leaderboard-meters.md).

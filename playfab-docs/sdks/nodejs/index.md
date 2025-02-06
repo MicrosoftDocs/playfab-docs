@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # NodeJS
 
-![NodeJS](./media/nodejs1.png)
+![NodeJS](media/nodejs1.png)
 
 Our Node.js SDK provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization.
 

@@ -25,9 +25,9 @@ public delegate void OnLobbyMemberRemovedHandler(Lobby lobby, PFEntityKey member
 
 ## See Also
 
-* class [Lobby](./Lobby.md)
+* class [Lobby](Lobby.md)
 * class [PFEntityKey](./PFEntityKey.md)
-* enum [LobbyMemberRemovedReason](./LobbyMemberRemovedReason.md)
+* enum [LobbyMemberRemovedReason](LobbyMemberRemovedReason.md)
 * class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)
 

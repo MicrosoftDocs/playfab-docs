@@ -22,7 +22,7 @@ public delegate void OnErrorEventHandler(PlayFabMultiplayerErrorArgs args);
 
 ## See Also
 
-* class [PlayFabMultiplayerErrorArgs](./PlayFabMultiplayerErrorArgs.md)
+* class [PlayFabMultiplayerErrorArgs](PlayFabMultiplayerErrorArgs.md)
 * class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)
 

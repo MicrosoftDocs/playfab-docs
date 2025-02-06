@@ -29,7 +29,7 @@ This is an asynchronous operation. Upon successful completion, the title is prov
 
 This method is used to add an extra local PlayFab entity to a pre-existing lobby object. Because the lobby object must have already been created either via a call to [`CreateAndJoinLobby`](../PlayFabMultiplayer/CreateAndJoinLobby.md) or [`JoinLobby`](../PlayFabMultiplayer/JoinLobby.md), this method is primarily useful for multiple local user scenarios.
 
-This is an asynchronous operation. The member added via this method will not be reflected in the lists returned by [`GetMembers`](./GetMembers.md) until the asynchronous operation successfully completes.
+This is an asynchronous operation. The member added via this method will not be reflected in the lists returned by [`GetMembers`](GetMembers.md) until the asynchronous operation successfully completes.
 
 ---
 
@@ -53,7 +53,7 @@ This is an asynchronous operation. Upon successful completion, the title is prov
 
 This method is used to add an extra local PlayFab entity to a pre-existing lobby object. Because the lobby object must have already been created either via a call to [`CreateAndJoinLobby`](../PlayFabMultiplayer/CreateAndJoinLobby.md) or [`JoinLobby`](../PlayFabMultiplayer/JoinLobby.md), this method is primarily useful for multiple local user scenarios.
 
-This is an asynchronous operation. The member added via this method will not be reflected in the lists returned by [`GetMembers`](./GetMembers.md) until the asynchronous operation successfully completes.
+This is an asynchronous operation. The member added via this method will not be reflected in the lists returned by [`GetMembers`](GetMembers.md) until the asynchronous operation successfully completes.
 
 ## See Also
 

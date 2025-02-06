@@ -29,7 +29,7 @@ PlayFab Economy covers various aspects of your game's virtual economy, such as i
 * **[Catalog Items](economy-v2/inventory/items-and-inventory-overview.md)** - Catalog Items can represent just about any type of virtual good that you might use, from Durables, to Bundles, to UGC.
 * **[Inventory Collections](economy-v2/inventory/index.md)** - Player inventories contain all owned Item Instances.
 * **[Virtual Currency](economy/tutorials/currencies.md)** - Currencies can be used to purchase Items from the Catalog or a Store, can represent soft currency converted from In-App Purchases, or can be used as a mechanic to drive game-play.
-* **[Stores](economy-v2/stores.md)** - Stores serve up a subset of Catalog Item that can be offered at alternative prices.
+* **[Stores](economy-v2/catalog/stores.md)** - Stores serve up a subset of Catalog Item that can be offered at alternative prices.
 * **[User Generated Content](economy-v2/ugc/index.md)** - Empower players to create, upload and search for moderated content. See our [UGC Quickstart](economy-v2/ugc/quickstart.md) for more information on how to begin using PlayFab UGC.
 
 PlayFab Economy also provides a suite of tools to support game economy best practices.
@@ -41,7 +41,7 @@ PlayFab Economy also provides a suite of tools to support game economy best prac
 
 * **Server-side receipt validation**: To prevent fraud and ensure that the money you think you are making is, in fact, being made. See our [Getting Started with Unity and Android](economy-v2/tutorials/getting-started-with-unity-and-android.md) tutorial.
 
-* **Bundles**: Bundles are useful structures for grouping items, generally to sell virtual goods as a group. See our [Bundles](economy-v2/bundles.md) documentation for more information on how to use Bundles.
+* **Bundles**: Bundles are useful structures for grouping items, generally to sell virtual goods as a group. See our [Bundles](economy-v2/catalog/bundles.md) documentation for more information on how to use Bundles.
 
 * **Virtual Subscriptions**: Use subscriptions to grant time based access to durables. See our [Economy V2 Subscriptions](economy-v2/subscriptions.md) documentation.
 

@@ -28,7 +28,7 @@ The connection status of a member of the lobby.
 
 When joining a lobby, the library establishes a WebSocket connection to the PlayFab PubSub notification service. This connection is used to provide real-time updates to the library about the lobby. This method can be used to determine a member's connection status, which is useful for diagnosing a member's ability to receive updates about the lobby.
 
-A local member which is still in the process of asychronously joining the lobby, via a call to any of [`CreateAndJoinLobby`](../PlayFabMultiplayer/CreateAndJoinLobby.md), [`JoinLobby`](../PlayFabMultiplayer/JoinLobby.md), or [`AddMember`](./AddMember.md) will see their connection status as NotConnected until the connection is established. When a user's connection status changes from Connected to NotConnected, they may be experiencing connectivity issues - or their game may have crashed. The lobby owner can remove such users from the lobby via [`ForceRemoveMember`](./ForceRemoveMember.md)
+A local member which is still in the process of asychronously joining the lobby, via a call to any of [`CreateAndJoinLobby`](../PlayFabMultiplayer/CreateAndJoinLobby.md), [`JoinLobby`](../PlayFabMultiplayer/JoinLobby.md), or [`AddMember`](AddMember.md) will see their connection status as NotConnected until the connection is established. When a user's connection status changes from Connected to NotConnected, they may be experiencing connectivity issues - or their game may have crashed. The lobby owner can remove such users from the lobby via [`ForceRemoveMember`](ForceRemoveMember.md)
 
 ## See Also
 

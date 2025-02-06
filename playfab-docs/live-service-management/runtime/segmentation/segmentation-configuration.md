@@ -28,7 +28,7 @@ You may then choose to:
   3. Use the **New Segment** button to create and configure a new **Segment**.
   4. Locate an *existing* **Segment**, and select the name label to configure the **Segment**.
 
-![Game Manager - Players - Segments - Create or Configure New Segment](media/tutorials/game-manager-players-segments-create-or-configure-new-segment.png)  
+![Game Manager - Players - Segments - Create or Configure New Segment](../../../data-analytics/acting-data/media/tutorials/game-manager-players-segments-create-or-configure-new-segment.png)  
 
 ## How to configure a segment
 
@@ -37,7 +37,7 @@ You may then choose to:
 To configure a segment like the example in this tutorial, you will need:
 
 - Players with and without a distinctive characteristic defined in PlayFab.
-- A defined [CloudScript PlayStream Hook](../acting-data/action-rules-using-cloudscript-actions-with-playstream.md).
+- A defined [CloudScript PlayStream Hook](action-rules-using-cloudscript-actions-with-playstream.md).
 
 In this example we are going to:
 
@@ -80,7 +80,7 @@ In this particular case, segment configuration requires 4 simple steps:
 3. Add a **CloudScript** action for the entered segment trigger. Configure the action to run the function you want. In this example, we want: **helloWorld**.
 4. Commit by selecting the **Save Segment** button.
 
-![Game Manager - Players - Segments - New Segment Configuration](media/tutorials/game-manager-players-segments-new-segment-configuration.png)  
+![Game Manager - Players - Segments - New Segment Configuration](../../../data-analytics/acting-data/media/tutorials/game-manager-players-segments-new-segment-configuration.png)  
 
 **Group (2)** is a set of players that meet all defined conditions called **Filters (3)**.
 
@@ -95,7 +95,7 @@ The screenshot shown below offers an example of how a segment can be defined. Th
 
 The second group is also for players from Canada, but they must have Google **Push notifications enabled**.
 
-![Game Manager - Players - Segments - Segment Filtering](media/tutorials/game-manager-players-segments-segment-filtering.png)  
+![Game Manager - Players - Segments - Segment Filtering](../../../data-analytics/acting-data/media/tutorials/game-manager-players-segments-segment-filtering.png)  
 In the end, we have a segment of players from Canada with either Google or Apple push notifications.
 
 Each filter has a unique configuration and purpose. As of 4/30/2017, the following filters are available:
@@ -131,7 +131,7 @@ A trigger defines the *context* of the action. For example, a *player entered se
 4. Select **REMOVE** to remove the action from the trigger.
 5. Select **Add Action** to add action to the trigger.
 
-![Game Manager - Actions panel](media/tutorials/game-manager-actions-panel.png)
+![Game Manager - Actions panel](../../../data-analytics/acting-data/media/tutorials/game-manager-actions-panel.png)
 
 ## How to inspect player segments
 
@@ -142,7 +142,7 @@ It is possible to look up what segments a player belongs to by means of the **Pl
 3. Locate the player you want to inspect, and select the **ID** label.
 4. Finally, select **Segments** in the **Players Toolbar**.
 
-![Game Manager - Open - Players Segments page](media/tutorials/game-manager-open-players-segments-page.png)  
+![Game Manager - Open - Players Segments page](../../../data-analytics/acting-data/media/tutorials/game-manager-open-players-segments-page.png)  
 
 On the **Player Segments** page, note the following:
 

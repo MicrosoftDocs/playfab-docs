@@ -23,12 +23,12 @@ PartyError GetMemoryCallbacks(
   
 ### Parameters  
   
-**`allocateMemoryCallback`** &nbsp; [PartyAllocateMemoryCallback*](../../../../../networking/reference/callbacks/partyallocatememorycallback.md)  
+**`allocateMemoryCallback`** &nbsp; [PartyAllocateMemoryCallback*](../../../../reference/callbacks/partyallocatememorycallback.md)  
 *output*  
   
 A place to store a pointer to the memory allocation callback currently used.  
   
-**`freeMemoryCallback`** &nbsp; [PartyFreeMemoryCallback*](../../../../../networking/reference/callbacks/partyfreememorycallback.md)  
+**`freeMemoryCallback`** &nbsp; [PartyFreeMemoryCallback*](../../../../reference/callbacks/partyfreememorycallback.md)  
 *output*  
   
 A place to store a pointer to the memory freeing callback currently used.  

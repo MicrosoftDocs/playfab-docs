@@ -47,4 +47,4 @@ On the **Trends** page:
  
 ## See also
 
-[Segmentation overview](../../acting-data/segmentation-overview.md)
+[Segmentation overview](../../../live-service-management/runtime/segmentation/segmentation-overview.md)

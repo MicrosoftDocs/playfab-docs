@@ -27,7 +27,7 @@ PartyError FinishProcessingStateChanges(
   
 The number of changes, provided in the list specified by `stateChanges`, previously returned by StartProcessingStateChanges() that have now been handled by the title.  
   
-**`stateChanges`** &nbsp; [PartyXblStateChangeArray](../../../../../networking/xblreference/xbltypedefs.md)  
+**`stateChanges`** &nbsp; [PartyXblStateChangeArray](../../../xbltypedefs.md)  
 *input array of size `stateChangeCount`*  
   
 The pointer to the array of changes previously returned by StartProcessingStateChanges() that have now been handled by the title.  

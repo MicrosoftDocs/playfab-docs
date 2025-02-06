@@ -55,4 +55,4 @@ If throttling errors persist, consider adopting the following strategies:
 
 ## See also
 
-* [Economy v2 Limits](../economy-v2/limits.md)
+* [Economy v2 Limits](../../../economy-monetization/economy-v2/limits.md)

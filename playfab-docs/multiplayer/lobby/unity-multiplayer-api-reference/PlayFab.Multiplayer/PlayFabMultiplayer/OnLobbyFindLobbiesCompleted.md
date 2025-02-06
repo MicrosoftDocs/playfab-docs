@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyFindLobbiesCompleted event
 
-Event triggered when the operation started by a previous call to [`FindLobbies`](./FindLobbies.md) completed.
+Event triggered when the operation started by a previous call to [`FindLobbies`](FindLobbies.md) completed.
 
 ```csharp
 public static event OnLobbyFindLobbiesCompletedHandler OnLobbyFindLobbiesCompleted;

@@ -19,14 +19,14 @@ This tutorial walks you through the steps for creating a rule that sends a verif
 > [!IMPORTANT]
 > This is an *advanced* tutorial. Please make sure that all of the requirements have been met, or you will *not* be able to complete this tutorial.
 
-- To send custom emails with email templates, you'll need to have your own SMTP server with a username and password. Verify that you have your own SMTP server *before* following our tutorial [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md).
+- To send custom emails with email templates, you'll need to have your own SMTP server with a username and password. Verify that you have your own SMTP server *before* following our tutorial [Setting up an SMTP server with add-ons](setting-up-an-smtp-server-with-add-ons.md).
 
 > [!NOTE]
 > You can use Gmail for testing - but with Gmail you are limited to 2,000 emails per day.
 
 - Basic knowledge of how to create a player will be necessary, since there will need to be players with a username and password before calling account recovery logic.
 - Read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you're unfamiliar with the Game Manager, as it's the place where email templates are created.
-- Knowledge of how to work with player profiles will be required, to confirm that emails are necessary for checking that a contact email has been added to a player's profile. Read up on how to get a player's profile in the [Getting Player Profiles](../../data/playerdata/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
+- Knowledge of how to work with player profiles will be required, to confirm that emails are necessary for checking that a contact email has been added to a player's profile. Read up on how to get a player's profile in the [Getting Player Profiles](../../../../player-progression/player-data/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
 - Creating a rule is necessary in this tutorial it's a good idea to read up on how [Rules](../../automation/actions-rules/quickstart.md) work.
 
 ## Step 1 - Create an email template

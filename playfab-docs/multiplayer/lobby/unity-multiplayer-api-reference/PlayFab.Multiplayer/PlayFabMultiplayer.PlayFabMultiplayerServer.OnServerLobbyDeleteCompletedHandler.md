@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyDeleteCompletedHandler delegate
 
-Handler for when the operation started by a previous call to [`ServerDeleteLobby`](./Lobby/ServerDeleteLobby.md) completed.
+Handler for when the operation started by a previous call to [`ServerDeleteLobby`](Lobby/ServerDeleteLobby.md) completed.
 
 ```csharp
 public delegate void OnServerLobbyDeleteCompletedHandler(Lobby lobby);
@@ -22,7 +22,7 @@ public delegate void OnServerLobbyDeleteCompletedHandler(Lobby lobby);
 
 ## See Also
 
-* class [Lobby](./Lobby.md)
-* class [PlayFabMultiplayerServer](./PlayFabMultiplayer.PlayFabMultiplayerServer.md)
+* class [Lobby](Lobby.md)
+* class [PlayFabMultiplayerServer](PlayFabMultiplayer.PlayFabMultiplayerServer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)
 

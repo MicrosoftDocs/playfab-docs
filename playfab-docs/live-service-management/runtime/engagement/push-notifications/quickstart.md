@@ -63,7 +63,7 @@ First, consider a virtual currency as shown in the example screenshot below (see
 
 ![PlayFab Economy - Currencies - New Currency](../media/tutorials/playfab-new-currency.png)
 
-Now, consider the following statistics defined for each player (see the [Accessing Archived Tournament Results](../../social/tournaments-leaderboards/accessing-archived-tournament-results.md) tutorial for information on how to generate a test leaderboard).
+Now, consider the following statistics defined for each player (see the [Accessing Archived Tournament Results](../../../../community/social/tournaments-leaderboards/accessing-archived-tournament-results.md) tutorial for information on how to generate a test leaderboard).
 
 ![PlayFab player Statistics - Rank](../media/tutorials/playfab-statistics-player-rank.png)  
 
@@ -172,4 +172,4 @@ The following resources provide additional information about the topics in this 
 - [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup):  An all-in-one FCM solution for Unity. This SDK, among all other features, allows you to receive and process push notifications sent via FCM.
 - [Push It Real Good: How to Get Players to Say Yes to Push Notifications](https://blog.playfab.com/blog/push-it-real-good-how-get-players-say-yes-push-notifications/): This blog post details additional strategies and techniques for using push notifications.
 - [Push Notifications](https://blog.playfab.com/blog/push-sep-17): This blog post describes the most recent upgrade in Push functionality, and switching to FCM as the primary plugin for Android.
-- [Postman Quickstart](../../../sdks/postman/postman-quickstart.md): This quickstart shows you how to test our APIs using Postman.
+- [Postman Quickstart](../../../../sdks/postman/postman-quickstart.md): This quickstart shows you how to test our APIs using Postman.

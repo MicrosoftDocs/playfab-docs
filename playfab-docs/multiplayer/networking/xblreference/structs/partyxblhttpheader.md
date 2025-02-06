@@ -23,11 +23,11 @@ struct PartyXblHttpHeader {
   
 ### Members  
   
-**`name`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
+**`name`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
 The header's name.
   
-**`value`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
+**`value`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
 The header's value.
   

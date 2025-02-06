@@ -10,7 +10,7 @@ ms.date: 4/19/2024
 
 # PlayFabMultiplayer.PlayFabMultiplayerServer.OnJoinLobbyAsServerCompleted event
 
-Event triggered when a previous call to [`JoinLobbyAsServer`](./JoinLobbyAsServer.md) completed.
+Event triggered when a previous call to [`JoinLobbyAsServer`](JoinLobbyAsServer.md) completed.
 
 ```csharp
 public static event OnServerLobbyJoinAsServerCompletedHandler OnJoinLobbyAsServerCompleted;

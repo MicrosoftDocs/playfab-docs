@@ -59,4 +59,4 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 4. Select **Contact Us** to access the form. The **Emergency On-Call Alert** option displays after completing the **Problem Type** and **Sub-Type** fields.
 6. To submit the ticket, select **Yes**.
 
-To learn more about upgrading to a paid account plan, see [Account Upgrades and Title Launches](../pricing/account-upgrades.md).
+To learn more about upgrading to a paid account plan, see [Account Upgrades and Title Launches](account-upgrades.md).

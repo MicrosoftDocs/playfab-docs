@@ -20,14 +20,14 @@ Here's how you can use PlayFab to create targeted offers for your title.
 
 ### Segment-exclusive stores
 
-These are stores that can only be accessed by players who belong to one or more [segments](../playerdata/player-segments.md). Segments are groups of players that share certain attributes or behaviors, such as location, virtual currency balance, last sign in date, or churn risk. You can create segments in PlayFab using various predicates, and assign actions that are performed when a player enters or exits a segment. Segment-exclusive stores allow you to create different stores for different segments, and show them only to the relevant players.
+These are stores that can only be accessed by players who belong to one or more [segments](../../../player-progression/player-data/player-segments.md). Segments are groups of players that share certain attributes or behaviors, such as location, virtual currency balance, last sign in date, or churn risk. You can create segments in PlayFab using various predicates, and assign actions that are performed when a player enters or exits a segment. Segment-exclusive stores allow you to create different stores for different segments, and show them only to the relevant players.
 
 > [!NOTE]
-> For more information about configuring segments, see our [player segment configuration guide](../playerdata/player-segment-configuration.md).
+> For more information about configuring segments, see our [player segment configuration guide](../../../player-progression/player-data/player-segment-configuration.md).
 
 ## Create a segment-exclusive store
 
-Targeted offers reach players by using [stores](../economy-v2/stores.md). To cater to different player segments, you can set up individual stores, each offering the same items but with varying prices. To ensure that these distinct price points align with their intended segments, you need to configure each store accordingly. For this example, we're going to create a segment-exlusive store for pizzas targeting players that have eaten more than 10 pizzas. Here’s how:
+Targeted offers reach players by using [stores](../catalog/stores.md). To cater to different player segments, you can set up individual stores, each offering the same items but with varying prices. To ensure that these distinct price points align with their intended segments, you need to configure each store accordingly. For this example, we're going to create a segment-exlusive store for pizzas targeting players that have eaten more than 10 pizzas. Here’s how:
 
 ### Prerequisites
 
@@ -44,7 +44,7 @@ Targeted offers reach players by using [stores](../economy-v2/stores.md). To cat
 4. For the **Player** section, select **statistic value**, then **pizzas eaten** is greater than 10.
 5. Save your segment.
 
-![Segment information](../economy-v2/media/targeted-offers/segment-information.png)
+![Segment information](../media/targeted-offers/segment-information.png)
 
 ### Create a segment-exclusive store
 
@@ -54,11 +54,11 @@ Targeted offers reach players by using [stores](../economy-v2/stores.md). To cat
 4. Add an item to your store, we're adding an item called "Pizza".
 5. Add a price to your item, we're adding "Gold".
 
-    ![Store item with price](../economy-v2/media/targeted-offers/store-item.png)
+    ![Store item with price](../media/targeted-offers/store-item.png)
 
 6. Under **Permissions**, from the **Segments** drop-down menu, select your segment, we're selecting "Pizzas eaten greater than 10".
 
-    ![Segment linking](../economy-v2/media/targeted-offers/segment-linking.png)
+    ![Segment linking](../media/targeted-offers/segment-linking.png)
 
 7. Save your store.
 
@@ -69,7 +69,7 @@ Targeted offers reach players by using [stores](../economy-v2/stores.md). To cat
 3. Select the **Segments** tab where you see a list of all the segments a player belongs to.
 4. You see a segment if the player complies with the condition you set when creating said segment.
 
-    ![Player segments](../economy-v2/media/targeted-offers/player-segments.png)
+    ![Player segments](../media/targeted-offers/player-segments.png)
 
 ## Examples of targeted offers
 
@@ -110,5 +110,5 @@ By using PlayFab's features for targeted offers, you can reduce the complexity a
 ## See also
 
 * [Economy V2 overview](../economy-v2/overview.md)
-* [Segments](../playerdata/player-segments.md)
-* [Stores](../economy-v2/stores.md)
+* [Segments](../../../player-progression/player-data/player-segments.md)
+* [Stores](../catalog/stores.md)

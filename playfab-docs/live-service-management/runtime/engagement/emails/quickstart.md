@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Email messaging quickstart
 
-To send emails from PlayFab, you will need to have your own external SMTP server with a username and password. Once you have an SMTP server available, check out [Setting up an SMTP server with add-ons](../../engagement/emails/setting-up-an-smtp-server-with-add-ons.md) to configure your title to send emails.
+To send emails from PlayFab, you will need to have your own external SMTP server with a username and password. Once you have an SMTP server available, check out [Setting up an SMTP server with add-ons](setting-up-an-smtp-server-with-add-ons.md) to configure your title to send emails.
 
 > [!NOTE]
 > You can use Gmail as an SMTP server for testing - but with Gmail, you are limited to 2,000 emails per day.

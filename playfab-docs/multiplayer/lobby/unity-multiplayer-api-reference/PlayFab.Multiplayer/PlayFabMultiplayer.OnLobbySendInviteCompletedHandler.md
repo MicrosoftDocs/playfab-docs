@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbySendInviteCompletedHandler delegate
 
-Handler for when the operation started by a previous call to [`SendInvite`](./Lobby/SendInvite.md) completed.
+Handler for when the operation started by a previous call to [`SendInvite`](Lobby/SendInvite.md) completed.
 
 ```csharp
 public delegate void OnLobbySendInviteCompletedHandler(Lobby lobby, PFEntityKey sender, 
@@ -26,7 +26,7 @@ public delegate void OnLobbySendInviteCompletedHandler(Lobby lobby, PFEntityKey 
 
 ## See Also
 
-* class [Lobby](./Lobby.md)
+* class [Lobby](Lobby.md)
 * class [PFEntityKey](./PFEntityKey.md)
 * class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)

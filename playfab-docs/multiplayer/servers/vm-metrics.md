@@ -143,7 +143,7 @@ When you enable the VM metrics feature for a new Build, metrics will be emitted 
 
 You can also access the VM metrics by selecting your build, going to the servers tab, and hitting the menu inline with the VM you would like to see the metrics on, and select "View Metrics"
 
-![View VM Metrics](media/viewMetricsUpdate.png)
+![View VM Metrics](media/viewMetricsUpdate.PNG)
 
 ## How can I submit feedback for this feature?
 

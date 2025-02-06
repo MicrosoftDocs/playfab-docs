@@ -25,7 +25,7 @@ public delegate void OnLobbyInviteListenerStatusChangedHandler(PFEntityKey liste
 ## See Also
 
 * class [PFEntityKey](./PFEntityKey.md)
-* enum [LobbyInviteListenerStatus](./LobbyInviteListenerStatus.md)
+* enum [LobbyInviteListenerStatus](LobbyInviteListenerStatus.md)
 * class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)
 

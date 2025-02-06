@@ -136,7 +136,7 @@ For more information on the differences between client-owned lobbies and server-
 
 ## See also
 
-* [Lobby SDK reference](playfabmultiplayerreference-cpp\pflobby\pflobby_members.md)
+* [Lobby SDK reference](playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
 * [Create searchable lobbies](define-search-keywords.md)
 * [Invite players to a lobby](lobby-invites.md)
 * [Lobby properties](lobby-properties.md)

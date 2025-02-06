@@ -23,7 +23,7 @@ public delegate void OnMatchmakingTicketCompletedHandler(MatchmakingTicket ticke
 
 ## See Also
 
-* class [MatchmakingTicket](./MatchmakingTicket.md)
+* class [MatchmakingTicket](MatchmakingTicket.md)
 * class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)
 

@@ -32,11 +32,11 @@ struct PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange : PartyXblSta
   
 Indicates that the operation succeeded or the reason that it failed.
   
-**`errorDetail`** &nbsp; [PartyError](../../../networking/reference/typedefs.md)  
+**`errorDetail`** &nbsp; [PartyError](../../reference/typedefs.md)  
   
 A diagnostic value providing additional troubleshooting information regarding any potential error condition.
   
-**`xboxLiveSandbox`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
+**`xboxLiveSandbox`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
 The device's Xbox Live sandbox which was used for this operation.
   

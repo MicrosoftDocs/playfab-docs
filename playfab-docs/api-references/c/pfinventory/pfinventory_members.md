@@ -18,7 +18,7 @@ ms.date: 02/22/2024
 | [PFInventoryAddInventoryItemsAsync](functions/pfinventoryaddinventoryitemsasync.md) | Add inventory items. Up to 10000 stacks of items can be added to a single inventory collection. Stack size is uncapped. |  
 | [PFInventoryAddInventoryItemsGetResult](functions/pfinventoryaddinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryAddInventoryItemsAsync call. |  
 | [PFInventoryAddInventoryItemsGetResultSize](functions/pfinventoryaddinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a AddInventoryItems call. |  
-| [PFInventoryDeleteInventoryCollectionAsync](functions/pfinventorydeleteinventorycollectionasync.md) | Delete an Inventory Collection. More information about Inventory Collections can be found here: [Collections](../../../features/economy-v2/inventory/collections.md) |
+| [PFInventoryDeleteInventoryCollectionAsync](functions/pfinventorydeleteinventorycollectionasync.md) | Delete an Inventory Collection. More information about Inventory Collections can be found here: [Collections](../../../economy-monetization/economy-v2/inventory/collections.md) |
 | [PFInventoryDeleteInventoryItemsAsync](functions/pfinventorydeleteinventoryitemsasync.md) | Delete inventory items |  
 | [PFInventoryDeleteInventoryItemsGetResult](functions/pfinventorydeleteinventoryitemsgetresult.md) | Gets the result of a successful PFInventoryDeleteInventoryItemsAsync call. |  
 | [PFInventoryDeleteInventoryItemsGetResultSize](functions/pfinventorydeleteinventoryitemsgetresultsize.md) | Get the size in bytes needed to store the result of a DeleteInventoryItems call. |  

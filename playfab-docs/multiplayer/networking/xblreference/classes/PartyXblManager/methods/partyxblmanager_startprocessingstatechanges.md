@@ -28,7 +28,7 @@ PartyError StartProcessingStateChanges(
   
 A place to write the number of PartyXblStateChange entries for the title to handle in the `stateChanges` array.  
   
-**`stateChanges`** &nbsp; [PartyXblStateChangeArray*](../../../../../networking/xblreference/xbltypedefs.md)  
+**`stateChanges`** &nbsp; [PartyXblStateChangeArray*](../../../xbltypedefs.md)  
 *library-allocated output array of size `*stateChangeCount`*  
   
 A place to store a pointer to the array of all PartyXblStateChange entries for the title to handle and then pass to FinishProcessingStateChanges().  

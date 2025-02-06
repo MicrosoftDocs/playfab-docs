@@ -33,8 +33,8 @@ Tab | Description | Reference
 **Items** | Things that have a value in virtual currency or real money that can be purchased or awarded. | [PlayFab Economy V2 Items](../inventory/items-and-inventory-overview.md)
 **Currency** | Virtual currency can be used to purchase other catalog items. | [PlayFab Economy V2 Currencies](../tutorials/currencies.md)
 **UGC** | User Created items. | [PlayFab Economy V2 UGC](../ugc/index.md)
-**Bundles** | Collections of items and virtual currency that unpack into a player's inventory when granted. A bundle can be linked to real world purchases using the Marketplace Mapping field. | [PlayFab Economy V2 Bundles](../bundles.md)
-**Stores** | Stores allow you to override base catalog prices for items. | [PlayFab Economy V2 Stores](../stores.md)
+**Bundles** | Collections of items and virtual currency that unpack into a player's inventory when granted. A bundle can be linked to real world purchases using the Marketplace Mapping field. | [PlayFab Economy V2 Bundles](bundles.md)
+**Stores** | Stores allow you to override base catalog prices for items. | [PlayFab Economy V2 Stores](stores.md)
 **Subscriptions** |   Virtual subscriptions allow you to grant time based access to durable goods. | [PlayFab Economy V2 Subscriptions](../subscriptions.md).
 
 Each of these is an Item Type that can be used within your Catalog. Bundles 
@@ -55,11 +55,11 @@ The **New Item** page contains these fields. Unless *_noted_*, these fields are 
   * **Friendly ID**:
   A field that can used for easier reference in code. Friendly IDs are optional for all items and must be unique within the catalog.
   * **Title**:
-  A *_required_* field for the common name of the Item that is normally displayed to the player. Simple localization of **Title** is supported by using locale keys. For more information, see [Economy V2 Localization](../catalog/Localization.md).
+  A *_required_* field for the common name of the Item that is normally displayed to the player. Simple localization of **Title** is supported by using locale keys. For more information, see [Economy V2 Localization](localization.md).
   * **Default Stack ID**:
   Items can be stored in inventory as stacks each with their own amount and differentiated by StackId. If not defined, inventory actions will use _default_ as the StackId.  For more information, see [Economy Stacks](../inventory/stacks.md).
   * **Keywords**:
-  Keywords can be used for basic search filtering. They are a dictionary of localized keywords in JSON format. For an example, see [Economy V2 Localization](../catalog/Localization.md).
+  Keywords can be used for basic search filtering. They are a dictionary of localized keywords in JSON format. For an example, see [Economy V2 Localization](localization.md).
   * **Description**:
   A dictionary of localized item descriptions in JSON format. 
   * **Content Type**:
@@ -93,7 +93,7 @@ The **New Item** page contains these fields. Unless *_noted_*, these fields are 
     You can specify which platforms this item is for. The Platform list is defined in Catalog Settings (Title Settings > Economy).  
 
 ### Saving your items to a Draft or a Publish state
-The Economy V2 catalog supports a *_Draft_* item state. When you *Save as Draft* the item metadata is available via direct call but is not exposed to public search. When you are ready to make your item public you set it to a *_Published_* state. You can read more about this on our [Item Status](../catalog/item-status.md) page.
+The Economy V2 catalog supports a *_Draft_* item state. When you *Save as Draft* the item metadata is available via direct call but is not exposed to public search. When you are ready to make your item public you set it to a *_Published_* state. You can read more about this on our [Item Status](item-status.md) page.
 
 ## Example of item creation
 
@@ -132,7 +132,7 @@ This page contains all of the fields in [Catalog V2 Item Fields](#catalog-v2-ite
 
 * **ITEMS**
   * **Add**:
-Bundles allow you to group multiple items together into a single item. You can create bundles of items that are often purchased together, or items that are only available for a limited time. For more information, see our documentation on [Economy V2 Bundles](../bundles.md). 
+Bundles allow you to group multiple items together into a single item. You can create bundles of items that are often purchased together, or items that are only available for a limited time. For more information, see our documentation on [Economy V2 Bundles](bundles.md). 
 
 * **MARKETPLACE MAPPING**
   * **Marketplace**, **Marketplace ID**:
@@ -146,7 +146,7 @@ Stores Contain all of the same fields in [Catalog V2 Item Fields](#catalog-v2-it
 
 * **ITEMS**
   * **Add**:
-Stores can contain any other item type in the Catalog. All Catalog content will retain their base cost or can be purchased from this store for the prices listed here. For more information, see our documentation on [Economy V2 Stores](../stores.md).
+Stores can contain any other item type in the Catalog. All Catalog content will retain their base cost or can be purchased from this store for the prices listed here. For more information, see our documentation on [Economy V2 Stores](stores.md).
 
 We hope you find the new Catalog to be a powerful and flexible tool for creating engaging and rewarding experiences for your players. To learn more, take a closer look at [Economy V2 Quickstart](../quickstart.md).
 
@@ -154,6 +154,6 @@ We hope you find the new Catalog to be a powerful and flexible tool for creating
 * [PlayFab Economy V2 Items](../inventory/items-and-inventory-overview.md)
 * [PlayFab Economy V2 Currencies](../tutorials/currencies.md)
 * [PlayFab Economy V2 UGC](../ugc/index.md)
-* [PlayFab Economy V2 Bundles](../bundles.md)
-* [PlayFab Economy V2 Stores](../stores.md)
+* [PlayFab Economy V2 Bundles](bundles.md)
+* [PlayFab Economy V2 Stores](stores.md)
 * [PlayFab Economy V2 Subscriptions](../subscriptions.md) 

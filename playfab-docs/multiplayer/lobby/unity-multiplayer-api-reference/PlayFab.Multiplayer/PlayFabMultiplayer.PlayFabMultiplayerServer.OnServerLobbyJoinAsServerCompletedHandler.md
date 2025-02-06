@@ -10,7 +10,7 @@ ms.date: 4/19/2024
 
 # PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyJoinAsServerCompletedHandler delegate
 
-Handler for when the operation started by a previous call to [`JoinLobbyAsServer`](./PlayFabMultiplayer.PlayFabMultiplayerServer/JoinLobbyAsServer.md) completed.
+Handler for when the operation started by a previous call to [`JoinLobbyAsServer`](PlayFabMultiplayer.PlayFabMultiplayerServer/JoinLobbyAsServer.md) completed.
 
 ```csharp
 public delegate void OnServerLobbyJoinAsServerCompletedHandler(Lobby lobby, int result);
@@ -23,7 +23,7 @@ public delegate void OnServerLobbyJoinAsServerCompletedHandler(Lobby lobby, int 
 
 ## See Also
 
-* class [Lobby](./Lobby.md)
-* class [PlayFabMultiplayerServer](./PlayFabMultiplayer.PlayFabMultiplayerServer.md)
+* class [Lobby](Lobby.md)
+* class [PlayFabMultiplayerServer](PlayFabMultiplayer.PlayFabMultiplayerServer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)
 

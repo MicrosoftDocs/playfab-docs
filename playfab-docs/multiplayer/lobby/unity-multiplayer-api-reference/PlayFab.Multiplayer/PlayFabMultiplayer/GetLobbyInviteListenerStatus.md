@@ -30,7 +30,7 @@ The output status value.
 
 This value is used to understand the state of an entity's invite listener. If the invite listener encounters a fatal error, non-fatal error, or diagnostic change, the listener's status value will reflect it.
 
-When the invite listener's status changes, a [`OnLobbyInviteListenerStatusChanged`](./OnLobbyInviteListenerStatusChanged.md) struct will be provided by [`ProcessLobbyStateChanges`](./ProcessLobbyStateChanges.md). This method can then be called to retrieve the latest status and act accordingly.
+When the invite listener's status changes, a [`OnLobbyInviteListenerStatusChanged`](OnLobbyInviteListenerStatusChanged.md) struct will be provided by [`ProcessLobbyStateChanges`](ProcessLobbyStateChanges.md). This method can then be called to retrieve the latest status and act accordingly.
 
 ---
 
@@ -55,7 +55,7 @@ The output status value.
 
 This value is used to understand the state of an entity's invite listener. If the invite listener encounters a fatal error, non-fatal error, or diagnostic change, the listener's status value will reflect it.
 
-When the invite listener's status changes, a [`OnLobbyInviteListenerStatusChanged`](./OnLobbyInviteListenerStatusChanged.md) struct will be provided by [`ProcessLobbyStateChanges`](./ProcessLobbyStateChanges.md). This method can then be called to retrieve the latest status and act accordingly.
+When the invite listener's status changes, a [`OnLobbyInviteListenerStatusChanged`](OnLobbyInviteListenerStatusChanged.md) struct will be provided by [`ProcessLobbyStateChanges`](ProcessLobbyStateChanges.md). This method can then be called to retrieve the latest status and act accordingly.
 
 ## See Also
 

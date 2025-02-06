@@ -24,7 +24,7 @@ To begin authoring your own queries in basic mode, it's important to first under
 
 ### The events.all table
 
-The `events.all` table is the default destination for all incoming events. It's a single semi-structured table with columns for common values such as time & event name. You'll quickly become familiar with the EventData column, which contains the full original JSON payload and is useful in almost all queries. You can read the following documentation on the [events.all table](../../acting-data/schemas-events-all.md).
+The `events.all` table is the default destination for all incoming events. It's a single semi-structured table with columns for common values such as time & event name. You'll quickly become familiar with the EventData column, which contains the full original JSON payload and is useful in almost all queries. You can read the following documentation on the [events.all table](../../../live-service-management/runtime/segmentation/schemas-events-all.md).
 
 ### Query
 

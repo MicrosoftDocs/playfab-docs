@@ -236,7 +236,7 @@ A locale can be passed into the `Language` parameter. Passing a locale causes al
 
 An example `SearchItems` request with a `Language` parameter can be found at the [top of this page](#searchitems).
 
-For more information about localization, see [Localization](../catalog/localization.md).
+For more information about localization, see [Localization](localization.md).
 
 ## Limits
 
@@ -254,7 +254,7 @@ High complexity filter queries throw a 400 error with a message: `"The filter pr
 
 ## Searching a Store
 
-One of the properties you can pass in is the `Store` parameter. This allows you to search within the context of a store. In addition to being able to check if an item exists in a particular store, it also can be used to display the overridden prices of the store's items/contents. You can also use the `AlternateId` of the store to search for it. Learn more about using stores [here](../stores.md)
+One of the properties you can pass in is the `Store` parameter. This allows you to search within the context of a store. In addition to being able to check if an item exists in a particular store, it also can be used to display the overridden prices of the store's items/contents. You can also use the `AlternateId` of the store to search for it. Learn more about using stores [here](stores.md)
 
 ```json
 {

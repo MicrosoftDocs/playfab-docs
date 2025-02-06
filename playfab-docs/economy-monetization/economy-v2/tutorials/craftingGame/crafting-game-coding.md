@@ -16,8 +16,8 @@ Now that you have your environment ready and are familiar with Game Manager, we 
 
 ## Prerequisites
 
-1. [Part 1 - Environment Setup](../craftingGame/crafting-game-environment.md)
-2. [Part 2 - Using Game Manager](../craftingGame/crafting-game-game-manager.md)
+1. [Part 1 - Environment Setup](crafting-game-environment.md)
+2. [Part 2 - Using Game Manager](crafting-game-game-manager.md)
 
 ## Step 1 - Configure Environment Settings
 
@@ -202,7 +202,7 @@ var request = new ExecuteInventoryOperationsRequest
 await PlayFabEconomyAPI.ExecuteInventoryOperationsAsync(request);
 ```
 
-In the above code, to successfully use `AlternateId` and `FriendlyId` in your code, your items must have those values configured in Game Manager. To do this, I suggest you check [Part 2 - Using Game Manager](../craftingGame/crafting-game-game-manager.md), where we detail the steps you should follow.
+In the above code, to successfully use `AlternateId` and `FriendlyId` in your code, your items must have those values configured in Game Manager. To do this, I suggest you check [Part 2 - Using Game Manager](crafting-game-game-manager.md), where we detail the steps you should follow.
 
 ### [API](#tab/starting-inventory-api)
 

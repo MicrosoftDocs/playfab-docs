@@ -35,12 +35,12 @@ You can create segments with Player Custom properties either via API or Game man
 - Add custom property predicates by selecting **Add filter** under **Player**.
 - Save segment. 
 
-![Create new segment](media/create-new-segment.png)
+![Create new segment](../../../data-analytics/acting-data/media/create-new-segment.png)
 
 ## Exporting players from a segment with custom properties 
  
 1.	[Create a segment](segmentation-quickstart.md) that references custom property predicates.
-2.	Use the [ExportPlayersInSegment API](../acting-data/segmentation-export-players-in-a-segment.md) to export player profiles 
+2.	Use the [ExportPlayersInSegment API](segmentation-export-players-in-a-segment.md) to export player profiles 
 
 ## Scheduled Tasks 
  

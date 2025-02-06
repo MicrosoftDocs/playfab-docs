@@ -18,12 +18,12 @@ Customers can upgrade their account plan and launch titles using the self-servic
 
 A PlayFab title has two possible modes.
 
-1. **Development mode:** A title in development mode doesn't incur costs when you're using the core services. Use this mode to experiment with most of PlayFab offerings. A title in development mode is subjected to specific total player accounts and meter usage limits as determined by PlayFab. For more information about the included limits, see [Development mode](../pricing/Development-mode.md).
+1. **Development mode:** A title in development mode doesn't incur costs when you're using the core services. Use this mode to experiment with most of PlayFab offerings. A title in development mode is subjected to specific total player accounts and meter usage limits as determined by PlayFab. For more information about the included limits, see [Development mode](development-mode.md).
 
     > [!NOTE]
-    > [Multiplayer server hosting](../multiplayer/servers/billing-for-thunderhead.md), [Party](../multiplayer/networking/pricing.md), and [Insights](../insights/pricing.md) aren't part of the core services. But they do have limited free usage available in Development mode.
+    > [Multiplayer server hosting](../../../multiplayer/servers/billing-for-thunderhead.md), [Party](../multiplayer/networking/pricing.md), and [Insights](../insights/pricing.md) aren't part of the core services. But they do have limited free usage available in Development mode.
 
-1. **Live:** A live title uses metering to measure your usage. You're charged according to the paid service account plan and rate. Any meter usage over what is included in the account plan's base rate results in charges per meter consumed. For more information, see [Meters](../pricing/Meters/meters.md).
+1. **Live:** A live title uses metering to measure your usage. You're charged according to the paid service account plan and rate. Any meter usage over what is included in the account plan's base rate results in charges per meter consumed. For more information, see [Meters](Meters/meters.md).
 
     > [!NOTE]
     > Your title could still be in development when your PlayFab title is Live. In the same way, you could have actual players in the game when the PlayFab title is in Development mode. A title in Development mode will continue to have the total player accounts limit as determined by PlayFab. Moving to Live removes that limit. To convert a title from Development mode to Live, go to the title in PlayFab portal and select the **Launch** button. For instructions, see below.
@@ -53,7 +53,7 @@ To launch a title within a paid account plan:
 
 5. If the title is linked to a free account plan, **Launch Title** takes you to the account upgrade flow described in the **Upgrading from Free to Paid** section. Once the title is linked to a paid account, continue to the next step.
 
-6. A pop-up will prompt you to confirm the title launch. Once **Launch Title** is selected, the launch is complete, and the title is no longer bound by [Development mode](../pricing/Development-mode.md) limits.
+6. A pop-up will prompt you to confirm the title launch. Once **Launch Title** is selected, the launch is complete, and the title is no longer bound by [Development mode](development-mode.md) limits.
 
 ## Frequently asked questions
 

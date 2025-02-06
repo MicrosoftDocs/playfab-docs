@@ -20,7 +20,7 @@ to the "Edit Queue" sub tab.  As long as matchmaking activity is occuring in
 that queue, selecting the Usage tab will render various charts that depict
 matchmaking activity (or possibly lack thereof) within it.
 
-![Matchmaking Usage](media/matchusage.png)
+![Matchmaking Usage](media/matchusage.PNG)
 
 
 ## Charts

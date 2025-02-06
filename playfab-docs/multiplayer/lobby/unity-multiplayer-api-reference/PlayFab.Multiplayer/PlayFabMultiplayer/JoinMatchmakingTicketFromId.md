@@ -32,9 +32,9 @@ The resulting ticket object.
 
 ## Remarks (1 of 2)
 
-The library automatically, and asynchronously, will submit all local users to join the ticket on the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be quered at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Joining` state.
+The library automatically, and asynchronously, will submit all local users to join the ticket on the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be quered at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Joining` state.
 
-When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
+When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
 
 All existing tickets in which a local user is a member will be canceled as part of this operation.
 
@@ -62,9 +62,9 @@ The resulting ticket object.
 
 ## Remarks (2 of 2)
 
-The library automatically, and asynchronously, will submit all local users to join the ticket on the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be quered at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Joining` state.
+The library automatically, and asynchronously, will submit all local users to join the ticket on the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be quered at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Joining` state.
 
-When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
+When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
 
 All existing tickets in which a local user is a member will be canceled as part of this operation.
 

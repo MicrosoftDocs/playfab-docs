@@ -25,21 +25,21 @@ PlayFab Services SDKs enable you to use a majority of our features, including Li
 
 ## PlayFab Party SDK
 
-PlayFab Party SDKs provide networking and voice/text chat communication for games. For more information, see [Party SDKs](../features/multiplayer/networking/party-sdks.md).
+PlayFab Party SDKs provide networking and voice/text chat communication for games. For more information, see [Party SDKs](../multiplayer/networking/party-sdks.md).
 
 ## PlayFab Multiplayer Game Server SDK
 
-PlayFab Multiplayer Game Server SDKs (GSDKs) provide native C++, C#, and Java libraries to help you manage your PlayFab Multiplayer Servers (MPS). For more information, see [Multiplayer Game Server SDKs](../features/multiplayer/servers/server-sdks.md).
+PlayFab Multiplayer Game Server SDKs (GSDKs) provide native C++, C#, and Java libraries to help you manage your PlayFab Multiplayer Servers (MPS). For more information, see [Multiplayer Game Server SDKs](../multiplayer/servers/server-sdks.md).
 
 ## PlayFab Lobby and Matchmaking SDK
 
-PlayFab Lobby and Matchmaking SDKs enable you to use lobby and matchmaking features. For more information, see [Lobby and Matchmaking SDKs](../features/multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md).
+PlayFab Lobby and Matchmaking SDKs enable you to use lobby and matchmaking features. For more information, see [Lobby and Matchmaking SDKs](../multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md).
 
 ## See also
 
-* [PlayFab Party SDKs](../features/multiplayer/networking/party-sdks.md)
+* [PlayFab Party SDKs](../multiplayer/networking/party-sdks.md)
 * [PlayFab Party quickstart](../features/multiplayer/networking/quickstart.md) 
-* [PlayFab Multiplayer Game Server SDKs](../features/multiplayer/servers/server-sdks.md)
-* [PlayFab Lobby and Matchmaking SDKs](../features/multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
-* [PlayFab Multiplayer Server quickstart (API/PowerShell)](../features/multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell.md)
-* [PlayFab Multiplayer Server quickstart (Game Manager)](../features/multiplayer/servers/quickstart-for-multiplayer-servers-game-manager.md)  
+* [PlayFab Multiplayer Game Server SDKs](../multiplayer/servers/server-sdks.md)
+* [PlayFab Lobby and Matchmaking SDKs](../multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
+* [PlayFab Multiplayer Server quickstart (API/PowerShell)](../multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell.md)
+* [PlayFab Multiplayer Server quickstart (Game Manager)](../multiplayer/servers/quickstart-for-multiplayer-servers-game-manager.md)  

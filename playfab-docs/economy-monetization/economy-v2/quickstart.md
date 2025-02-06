@@ -519,4 +519,4 @@ If you don't set `Publish` to `true`, then you must push it to the published sta
 
 * [Economy v2 overview](overview.md)
 * [Settings](settings.md)
-* [Stores](stores.md)
+* [Stores](catalog/stores.md)

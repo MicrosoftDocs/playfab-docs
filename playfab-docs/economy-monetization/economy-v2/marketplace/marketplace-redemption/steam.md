@@ -93,7 +93,7 @@ Once you have your **Publisher Web API Key** follow the next steps to set it as 
 
 Now that you have **Inventory Service** enabled for your Steam app, and your item definition uploaded, it's time to go into [Game Manager](https://developer.playfab.com/) and configure your items.
 
-For more information about creating a new item, see our [documentation](../tutorials/craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item).
+For more information about creating a new item, see our [documentation](../../tutorials/craftingGame/crafting-game-game-manager.md#step-4---create-your-first-item).
 
 After your item was created, you must now add this item to a new (or existing) **Bundle**. If this is your first time creating a **Bundle**, you can refer to our tutorial: [Set up a PlayFab bundle that can be purchased from Google Play Store](../marketplace-redemption/google.md) for information on [creating a new Bundle](../marketplace-redemption/google.md#create-a-bundle-using-game-manager) and [adding items to a Bundle](../marketplace-redemption/google.md#add-items-to-your-bundle).
 
@@ -148,6 +148,6 @@ This means that **before** making a redemption call using `RedeemSteamInventoryI
 
 ## See also
 
-- [Get started: Crafting game](../tutorials/craftingGame/game-context.md)
+- [Get started: Crafting game](../../tutorials/craftingGame/game-context.md)
 
 - [Fraud prevention quickstart](/gaming/playfab/features/economy-v2/fraud-prevention/quickstart)

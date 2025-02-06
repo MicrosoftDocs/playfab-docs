@@ -66,4 +66,4 @@ However, also this service can work in a standalone fashion if needed.
 - [Add contextual data to statistics](metadata-statistics.md).
 - [API reference](api-reference.md).
 - [Ranking players by statistics](../leaderboards/leaderboards-linked-to-stats.md).
-- [Statistics meters](../../pricing/meters/statistics-meters.md).
+- [Statistics meters](../../../live-service-management/production/pricing/Meters/statistics-meters.md).

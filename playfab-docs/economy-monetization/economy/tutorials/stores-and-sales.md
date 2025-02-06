@@ -29,7 +29,7 @@ This tutorial illustrates the best practices for defining stores based on virtua
   * **SP** (**Silver Pieces**)
   * **GP** (**Gold Pieces**).
 * You must have a _primary catalog_ with one or more items defined.
-  * The first example uses multiple item/bundles, similar to the ones described in the [Drop Tables](../tutorials/drop-tables.md) tutorial.
+  * The first example uses multiple item/bundles, similar to the ones described in the [Drop Tables](drop-tables.md) tutorial.
   * The second example in this tutorial uses small, medium, and large health potions.
 
 ### Best practices
@@ -57,7 +57,7 @@ In your **Game Manager**:
 * On the **Catalogs** tab, select your primary catalog and select **Stores**.
 * Select the **New Store** button.
 
-In the [Drop Tables](../tutorials/drop-tables.md) example, we created an 11-item drop bundle. For this example, we'll make three similar bundles available in a real money store.
+In the [Drop Tables](drop-tables.md) example, we created an 11-item drop bundle. For this example, we'll make three similar bundles available in a real money store.
 
 > [!NOTE]
 > Any item can be sold for real money, but it is a best practice to make only _specific_ valuable items or bundles directly available.
@@ -207,6 +207,6 @@ Stores work with any kind of virtual currency. Stores can also work with real mo
   * [PayForPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.payforpurchase)
   * [ConfirmPurchase](xref:titleid.playfabapi.com.client.playeritemmanagement.confirmpurchase)
 
-For more information on real money purchases, see [Non-Receipt Payment Processing](../tutorials/non-receipt-payment-processing.md).
+For more information on real money purchases, see [Non-Receipt Payment Processing](non-receipt-payment-processing.md).
 
 For advanced store usage, see [Custom Stores for Player Segments](custom-stores-for-player-segments.md) tutorial.

@@ -67,4 +67,4 @@ has a Statistics engine doing the aggregation.
 - [Ranking players by stats](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
-- [Leaderboard meters](../../pricing/meters/leaderboard-meters.md).
+- [Leaderboard meters](../../../live-service-management/production/pricing/Meters/leaderboard-meters.md).

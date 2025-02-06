@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyJoinArrangedLobbyCompleted event
 
-Event triggered when the operation started by a previous call to [`JoinArrangedLobby`](./JoinArrangedLobby.md) completed.
+Event triggered when the operation started by a previous call to [`JoinArrangedLobby`](JoinArrangedLobby.md) completed.
 
 ```csharp
 public static event OnLobbyJoinArrangedLobbyCompletedHandler OnLobbyJoinArrangedLobbyCompleted;

@@ -75,4 +75,4 @@ To set the title:
     ![PlayFab Inspector window](media/playfab-settings-inspector-window.png)
 
  > [!NOTE]
- > Refer to [Secret key Management](../../gamemanager/secret-key-management.md) to find your secret key, also called a developer key to your PlayFab Title.
+ > Refer to [Secret key Management](../../live-service-management/production/gamemanager/secret-key-management.md) to find your secret key, also called a developer key to your PlayFab Title.

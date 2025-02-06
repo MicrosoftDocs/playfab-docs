@@ -26,7 +26,7 @@ public static void FindLobbies(PFEntityKey searchingEntity,
 
 ## Remarks (1 of 2)
 
-This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyFindLobbiesCompleted`](./OnLobbyFindLobbiesCompleted.md) with the with the `OnLobbyFindLobbiesCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a Upon a failed completion, the title will be provided a [`OnLobbyFindLobbiesCompleted`](./OnLobbyFindLobbiesCompleted.md) with the `OnLobbyFindLobbiesCompleted result` field set to a failed error code.
+This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyFindLobbiesCompleted`](OnLobbyFindLobbiesCompleted.md) with the with the `OnLobbyFindLobbiesCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a Upon a failed completion, the title will be provided a [`OnLobbyFindLobbiesCompleted`](OnLobbyFindLobbiesCompleted.md) with the `OnLobbyFindLobbiesCompleted result` field set to a failed error code.
 
 ---
 
@@ -46,7 +46,7 @@ public static void FindLobbies(PlayFabAuthenticationContext searchingEntity,
 
 ## Remarks (2 of 2)
 
-This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyFindLobbiesCompleted`](./OnLobbyFindLobbiesCompleted.md) with the with the `OnLobbyFindLobbiesCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a Upon a failed completion, the title will be provided a [`OnLobbyFindLobbiesCompleted`](./OnLobbyFindLobbiesCompleted.md) with the `OnLobbyFindLobbiesCompleted result` field set to a failed error code.
+This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyFindLobbiesCompleted`](OnLobbyFindLobbiesCompleted.md) with the with the `OnLobbyFindLobbiesCompleted result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a Upon a failed completion, the title will be provided a [`OnLobbyFindLobbiesCompleted`](OnLobbyFindLobbiesCompleted.md) with the `OnLobbyFindLobbiesCompleted result` field set to a failed error code.
 
 ## See Also
 

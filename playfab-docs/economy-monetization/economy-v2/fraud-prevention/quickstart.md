@@ -44,7 +44,7 @@ You need to set up each IAP Market integration in GameManager under the Add-ons 
 
 ### Step 2 - Creating a bundle for receipt validation
 
-You can [create a bundle](../bundles.md) either within GameManager or by calling `CreateDraftItem`. Minimally a Bundle requires a Title, Description, and Items. In GameManager, you can link Marketplace entries using the Marketplace Mapping section.
+You can [create a bundle](../catalog/bundles.md) either within GameManager or by calling `CreateDraftItem`. Minimally a Bundle requires a Title, Description, and Items. In GameManager, you can link Marketplace entries using the Marketplace Mapping section.
 
 If you're building the Bundle using the API, you need to add your IAP Marketplace Mappings under the alternateIds section of a bundle. Marketplace Enums are specific and case sensitive; you must use one of the following Add-ons:
 

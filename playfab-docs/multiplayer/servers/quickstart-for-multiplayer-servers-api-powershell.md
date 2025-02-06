@@ -34,7 +34,7 @@ Make sure you have completed the following steps.
     * In Game Manager, select your title > settings (gear icon)
     * Select **Title settings**, then select the **Secret Keys** tab to get the developer secret key
 
-For more information about secret keys, see [Secret key management](../../../gamemanager/secret-key-management.md)
+For more information about secret keys, see [Secret key management](../../live-service-management/production/gamemanager/secret-key-management.md)
 
 ## 2. Install the PlayFab Multiplayer PowerShell module
 

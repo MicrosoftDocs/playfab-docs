@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Pricing Meters
 
-PlayFab's pricing is calculated from a set of consumption-based meters. This page outlines and defines the full set of PlayFab's pricing meters and how they're measured and calculated. For more information on PlayFab's pricing model, see the [PlayFab pricing overview](../../pricing/pricing-overview.md).
+PlayFab's pricing is calculated from a set of consumption-based meters. This page outlines and defines the full set of PlayFab's pricing meters and how they're measured and calculated. For more information on PlayFab's pricing model, see the [PlayFab pricing overview](../pricing-overview.md).
 
 > [!NOTE]
 > This page does not include Add-ons like Community Sift, Snowflake, or Photon, and is subject to change as new services and capabilities are added to PlayFab.
@@ -107,18 +107,18 @@ PlayFab Matchmaking and Lobby are highly-customizable, proven solutions for buil
 Azure Playfab Leaderboards is a cross-platform service that allows to create a sorted list of players with the purpose
 of ranking them by scores.
 
-* **[Leaderboard Reads](../../pricing/meters/leaderboard-meters.md)**: Metered by API calls that read from Leaderboards.
-* **[Leaderboard Writes](../../pricing/meters/leaderboard-meters.md)**: Metered by API calls that write to Leaderboards. 
-* **[Leaderboard Storage](../../pricing/meters/leaderboard-meters.md)**: Metered by API Storage tracks all the data within the Leaderboards service.
+* **[Leaderboard Reads](leaderboard-meters.md)**: Metered by API calls that read from Leaderboards.
+* **[Leaderboard Writes](leaderboard-meters.md)**: Metered by API calls that write to Leaderboards. 
+* **[Leaderboard Storage](leaderboard-meters.md)**: Metered by API Storage tracks all the data within the Leaderboards service.
 
 
 ### Statistics
 
 Azure Playfab Statistics is a cross-platform service that allows to track the activity of players within the game.
 
-* **[Statistics Reads](../../pricing/meters/statistics-meters.md)**: Metered by API calls that read from Statistics. 
-* **[Statistics Writes](../../pricing/meters/statistics-meters.md)**: Metered by API calls that write to Statistics. 
-* **[Statistics Storage](../../pricing/meters/statistics-meters.md)**: Metered by API Storage tracks all the data within the Statistics service.
+* **[Statistics Reads](statistics-meters.md)**: Metered by API calls that read from Statistics. 
+* **[Statistics Writes](statistics-meters.md)**: Metered by API calls that write to Statistics. 
+* **[Statistics Storage](statistics-meters.md)**: Metered by API Storage tracks all the data within the Statistics service.
 
  
 ### Economy v2

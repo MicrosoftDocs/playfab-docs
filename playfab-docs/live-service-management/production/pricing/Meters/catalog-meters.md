@@ -32,7 +32,7 @@ The storage meter is determined by the total size of all content (both files and
 
 ![UGC Storage Pricing](../pricingV2-media/ugc-pricing-storage.png)
 
-The meter includes content associated with items that haven't been published, and items that aren't visible via the public catalog. For more information on how items can be hidden from the public catalog, see [Catalog Item Status](../../economy-v2/catalog/item-status.md).
+The meter includes content associated with items that haven't been published, and items that aren't visible via the public catalog. For more information on how items can be hidden from the public catalog, see [Catalog Item Status](../../../../economy-monetization/economy-v2/catalog/item-status.md).
 
 ## Included Meters
 
