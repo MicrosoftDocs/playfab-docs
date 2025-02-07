@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 
 # Unity3D (C#)
 
-![Unity3d Software](./media/unity-logo-main-page-new.png)
+![Unity3d Software](media/unity-logo-main-page-new.png)
 
-Our Unity3d PlayFab SDK provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization.
+Our Unity3d PlayFab SDK provides everything you need to access the PlayFab API including models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization.
 
 This SDK is auto-generated using our open-sourced tool&mdash;[SDKGenerator](../sdkgenerator/index.md). We generally build SDKs every other week to stay current with the latest API changes.
 
-Check out our [Editor Extensions](https://github.com/PlayFab/UnityEditorExtensions), for the easiest and fastest way to get started using PlayFab in Unity. This tool provides a UI for managing SDK settings, as well as an automatic SDK upgrade with the ability to stay current with the latest APIs.
+Check out our Editor Extensions in the Unity PlayFab SDK repo for the easiest and fastest way to get started using PlayFab in Unity. This tool provides a UI for automatically upgrading the SDK to stay current with the latest APIs.
 
-PlayFab Party seamlessly integrate multiplayer networking and voice/text chat into Unity games. To get started, see [Party Unity Plugin](https://github.com/playfab/PlayFabPartyUnity). 
+PlayFab Party seamlessly integrates multiplayer networking and voice/text chat into Unity games. To get started, see [Party Unity Plugin](https://github.com/playfab/PlayFabPartyUnity). 
 
 ## Download links
 
