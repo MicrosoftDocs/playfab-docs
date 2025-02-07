@@ -42,11 +42,11 @@ To set the title:
 3. Select the PlayFabSettings Asset.
 4. In the **Inspector** window, set the **Title ID**.
 
-    ![PlayFab Inspector window](media/playfab-shared-settings-title-id.png)
+    ![PlayFab Inspector Title ID Setting](media/playfab-shared-settings-title-id.png)
 
 If you are making a server build, be sure to provide the **Developer Secret Key** as well.
 
-    ![PlayFab Developer Secret Key Setting](media/playfab-shared-settings-secret-key.png)
+![PlayFab Developer Secret Key Setting](media/playfab-shared-settings-secret-key.png)
 
 Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../gamemanager/secret-key-management.md).
 

@@ -23,7 +23,7 @@ This quickstart helps you make your first PlayFab API call in the Unity engine.
   > [!NOTE]
   > The PlayFab Unity SDK supports Unity Editor version 5.3 (released December 2015) and higher.
 - A Unity Project of any of the following types:
-  - A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/UnityOverview.html).
+  - A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/get-started-with-unity.html).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 - The PlayFab Unity SDK.
@@ -58,7 +58,7 @@ Before you can make an API call, you must create a **PlayFabSharedSettings.asset
 
 The **Developer Secret Key** is not set by default. If you are making a server build, be sure to provide the secret key in the **PlayFabSharedSettings.asset**.
 
-    ![PlayFab Developer Secret Key Setting](media/playfab-shared-settings-secret-key.png)
+![PlayFab Developer Secret Key Setting](media/playfab-shared-settings-secret-key.png)
 
 Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../gamemanager/secret-key-management.md).
 
