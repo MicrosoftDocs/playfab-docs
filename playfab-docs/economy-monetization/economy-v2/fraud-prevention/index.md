@@ -85,10 +85,10 @@ Techniques to combat piracy and convert pirates to paying customers:
 * Ability to play on as many platforms supported by each marketplace as possible:
     Not providing a port to a popular platform can cause users to create unofficial ports. Providing a way to add official paid licenses to unofficial game clients can increase revenue and limit piracy.
 * Use PlayFab Anonymous sign-in methods with the ability to register for more features:
-    PlayFab [supports authenticating without a PlayFab account](../../authentication/login/login-basics-best-practices.md#anonymous-login-mechanisms), and then linking registering later. Many players will resist registering for an account, but will be willing to play anonymously. Anonymous sign-in is a good way to get players to try your game, and then convert them to paying customers later.
+    PlayFab [supports authenticating without a PlayFab account](../../../identity/player-identity/login/login-basics-best-practices.md#anonymous-login-mechanisms), and then linking registering later. Many players will resist registering for an account, but will be willing to play anonymously. Anonymous sign-in is a good way to get players to try your game, and then convert them to paying customers later.
 * Incentivize online account registration & linking:
     Features that work best with an online account, such as cloud saves, leaderboards, and cross-platform play, can be used to incentivize players to register for an account.
 * Provide a purchase path for pirates:
     Even if a player is using an unofficial game client, provide them with a link to the official store page, so they can purchase a license for the game. Some players are unaware they're using a pirated copy.
 * Use PlayFab player segmentation to separate "low-trust" player pools:
-    PlayFab [supports player segmentation](../../../features/analytics/segmentation/segment-configuration.md), which can be used to separate players into "high-trust" and "low-trust" pools. Trust segments are used to limit access to features that are more likely to be abused by pirates. Some examples of such features are cross-platform play, cloud saves, and leaderboards.
+    PlayFab  [supports player segmentation](../../../live-service-management/runtime/segmentation/segmentation-configuration.md), which can be used to separate players into "high-trust" and "low-trust" pools. Trust segments are used to limit access to features that are more likely to be abused by pirates. Some examples of such features are cross-platform play, cloud saves, and leaderboards.

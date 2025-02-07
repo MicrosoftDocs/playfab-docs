@@ -43,4 +43,4 @@ Many API calls require a TitleId, which is the string ID found beneath the title
 
 ## Next steps
 
-- [PlayFab User Roles](playfab-user-roles.md)
+- [PlayFab User Roles](../../../identity/dev-identity/permissions/playfab-user-roles.md)

@@ -16,7 +16,7 @@ Before we start coding, we need to understand [Game Manager](https://developer.p
 
 ## Prerequisites
 
-1. [Part 1 - Environment Setup](../craftingGame/crafting-game-environment.md)
+1. [Part 1 - Environment Setup](crafting-game-environment.md)
 2. A [PlayFab developer account](https://developer.playfab.com). It's free to sign up for one.
 
 ## Step 1 - Create your Studio

@@ -43,7 +43,7 @@ While PlayFab records a lot of events automatically, sometimes you need events t
 
 The concept of custom events allows you to post events with an arbitrary type and name.
 
-Similar to automatic events, custom events are fully reflected through [real-time analytics tools](../../analytics/metrics/real-time-analytics-core-concepts.md). Unlike automatic events, you need a little bit of custom code to post custom events.
+Similar to automatic events, custom events are fully reflected through [real-time analytics tools](real-time-analytics-core-concepts.md). Unlike automatic events, you need a little bit of custom code to post custom events.
 
 Custom events can be classified by entity. A custom event can be bound to a player, character, or title. An event entity reference is specified using these two fields:
 

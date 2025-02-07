@@ -23,7 +23,7 @@ struct PartyXblChatPermissionInfo {
   
 ### Members  
   
-**`chatPermissionMask`** &nbsp; [PartyChatPermissionOptions](../../../networking/reference/enums/partychatpermissionoptions.md)  
+**`chatPermissionMask`** &nbsp; [PartyChatPermissionOptions](../../reference/enums/partychatpermissionoptions.md)  
   
 The chat permission options mask that should be applied to the target chat user.
   

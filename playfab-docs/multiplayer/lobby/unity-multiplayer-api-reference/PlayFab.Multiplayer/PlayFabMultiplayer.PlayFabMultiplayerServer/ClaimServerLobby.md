@@ -29,7 +29,7 @@ Output lobby object which can be used to queue operations for immediate executio
 
 ## Remarks (1 of 2)
 
-This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnServerLobbyClaimCompleted`](./OnServerLobbyClaimCompleted.md) with the `OnServerLobbyClaimCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnServerLobbyClaimCompleted`](./OnServerLobbyClaimCompleted.md) with the with the `OnServerLobbyClaimCompleted.result` field set to a failed error code.
+This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnServerLobbyClaimCompleted`](OnServerLobbyClaimCompleted.md) with the `OnServerLobbyClaimCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnServerLobbyClaimCompleted`](OnServerLobbyClaimCompleted.md) with the with the `OnServerLobbyClaimCompleted.result` field set to a failed error code.
 
 While this method is present in the unified, cross-platform header, it is only implemented for Windows and, Xbox. The method will return errors on other platforms.
 
@@ -54,7 +54,7 @@ Output lobby object which can be used to queue operations for immediate executio
 
 ## Remarks (2 of 2)
 
-This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnServerLobbyClaimCompleted`](./OnServerLobbyClaimCompleted.md) with the `OnServerLobbyClaimCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnServerLobbyClaimCompleted`](./OnServerLobbyClaimCompleted.md) with the with the `OnServerLobbyClaimCompleted.result` field set to a failed error code.
+This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnServerLobbyClaimCompleted`](OnServerLobbyClaimCompleted.md) with the `OnServerLobbyClaimCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnServerLobbyClaimCompleted`](OnServerLobbyClaimCompleted.md) with the with the `OnServerLobbyClaimCompleted.result` field set to a failed error code.
 
 While this method is present in the unified, cross-platform header, it is only implemented for Windows and, Xbox. The method will return errors on other platforms.
 

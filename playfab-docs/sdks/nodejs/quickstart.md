@@ -163,6 +163,6 @@ For the Node SDK, the functions in `PlayFabClientSDK` are named after the HTTP r
 
 ## Next Steps
 
-This quickstart shows a simplified procedure for authenticating a user. For additional information about user authentication, see [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md).
+This quickstart shows a simplified procedure for authenticating a user. For additional information about user authentication, see [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md).
 
 Happy coding!

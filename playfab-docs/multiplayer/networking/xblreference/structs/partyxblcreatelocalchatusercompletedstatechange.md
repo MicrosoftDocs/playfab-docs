@@ -29,7 +29,7 @@ struct PartyXblCreateLocalChatUserCompletedStateChange : PartyXblStateChange {
   
 Indicates that the local chat user creation operation Succeeded or provides the reason that it failed.
   
-**`errorDetail`** &nbsp; [PartyError](../../../networking/reference/typedefs.md)  
+**`errorDetail`** &nbsp; [PartyError](../../reference/typedefs.md)  
   
 A diagnostic value providing additional troubleshooting information regarding any potential error condition.
   

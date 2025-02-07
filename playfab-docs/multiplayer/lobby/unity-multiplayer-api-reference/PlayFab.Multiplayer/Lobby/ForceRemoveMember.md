@@ -27,7 +27,7 @@ This is an asynchronous operation. Upon successful completion, the title is prov
 
 One of the local PlayFab entities present in this lobby must be the owner for this operation to succeed. If the local owning entity who initiated this operation loses their ownership status while the operation is in progress, the operation fails asynchronously.
 
-This is an asynchronous operation. The member removed via this method will not be removed from the lists returned by [`GetMembers`](./GetMembers.md) until the asynchronous operation successfully completes and a [`OnLobbyMemberRemoved`](../PlayFabMultiplayer/OnLobbyMemberRemoved.md) event is generated.
+This is an asynchronous operation. The member removed via this method will not be removed from the lists returned by [`GetMembers`](GetMembers.md) until the asynchronous operation successfully completes and a [`OnLobbyMemberRemoved`](../PlayFabMultiplayer/OnLobbyMemberRemoved.md) event is generated.
 
 ## See Also
 

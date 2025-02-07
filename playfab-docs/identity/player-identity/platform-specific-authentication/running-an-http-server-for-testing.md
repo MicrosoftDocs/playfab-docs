@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Running an HTTP server for testing
 
-In some scenarios, you may need to run a local HTTP server for test purposes. For example, if you're following our tutorials for setting up PlayFab authentication using [Facebook and HTML5](../../authentication/platform-specific-authentication/facebook-html5.md), [Google and HTML5](../../authentication/platform-specific-authentication/google-html5.md), or [Twitch and HTML5](../../authentication/platform-specific-authentication/twitch-html5.md), and you don't have a remote server with a domain, you may find this tutorial useful.
+In some scenarios, you may need to run a local HTTP server for test purposes. For example, if you're following our tutorials for setting up PlayFab authentication using [Facebook and HTML5](facebook-html5.md), [Google and HTML5](google-html5.md), or [Twitch and HTML5](twitch-html5.md), and you don't have a remote server with a domain, you may find this tutorial useful.
 
 ## Prerequisites
 
@@ -63,7 +63,7 @@ You can optionally specify a port to run the server on.
 
 ### Serving files with a custom domain name
 
-When testing different SDKs, for example, [Google](../../authentication/platform-specific-authentication/google-html5.md) or [Facebook](../../authentication/platform-specific-authentication/facebook-html5.md), you'll notice that some services can only be configured with a certain valid domain name.
+When testing different SDKs, for example, [Google](google-html5.md) or [Facebook](facebook-html5.md), you'll notice that some services can only be configured with a certain valid domain name.
 
 For instance, they don't accept a plain IP address + port. Certain services use such a configuration to ensure that your browser fetches your code from a specific, secure domain.
 

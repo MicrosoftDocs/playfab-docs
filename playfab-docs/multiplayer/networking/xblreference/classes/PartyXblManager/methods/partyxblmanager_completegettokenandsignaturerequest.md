@@ -29,16 +29,16 @@ PartyError CompleteGetTokenAndSignatureRequest(
   
 The correlation id of the web request for which the token and signature were requested.  
   
-**`succeeded`** &nbsp; [PartyBool](../../../../../networking/reference/typedefs.md)  
+**`succeeded`** &nbsp; [PartyBool](../../../../reference/typedefs.md)  
   
 The title succeeded the token and signature request.  
   
-**`token`** &nbsp; [PartyString](../../../../../networking/reference/typedefs.md)  
+**`token`** &nbsp; [PartyString](../../../../reference/typedefs.md)  
 *optional*  
   
 The token for the request, if necessary, as a null terminated string.  
   
-**`signature`** &nbsp; [PartyString](../../../../../networking/reference/typedefs.md)  
+**`signature`** &nbsp; [PartyString](../../../../reference/typedefs.md)  
 *optional*  
   
 The signature for the request, if necessary, as a null terminated string.  

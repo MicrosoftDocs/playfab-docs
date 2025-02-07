@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyCreateAndClaimCompleted event
 
-Event triggered when a previous call to [`CreateAndClaimServerLobby`](./CreateAndClaimServerLobby.md) completed.
+Event triggered when a previous call to [`CreateAndClaimServerLobby`](CreateAndClaimServerLobby.md) completed.
 
 ```csharp
 public static event OnServerLobbyCreateAndClaimCompletedHandler 

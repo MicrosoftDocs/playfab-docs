@@ -10,7 +10,7 @@ ms.date: 08/02/2023
 
 # PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyClaimCompleted event
 
-Event triggered when a previous call to [`ClaimServerLobby`](./ClaimServerLobby.md) completed.
+Event triggered when a previous call to [`ClaimServerLobby`](ClaimServerLobby.md) completed.
 
 ```csharp
 public static event OnServerLobbyClaimCompletedHandler OnServerLobbyClaimCompleted;

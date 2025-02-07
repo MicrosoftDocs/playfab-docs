@@ -25,11 +25,11 @@ struct PartyXblAccessibilitySettings {
   
 ### Members  
   
-**`speechToTextEnabled`** &nbsp; [PartyBool](../../../networking/reference/typedefs.md)  
+**`speechToTextEnabled`** &nbsp; [PartyBool](../../reference/typedefs.md)  
   
 True if the user has enabled speech to text in its Xbox Live settings
   
-**`textToSpeechEnabled`** &nbsp; [PartyBool](../../../networking/reference/typedefs.md)  
+**`textToSpeechEnabled`** &nbsp; [PartyBool](../../reference/typedefs.md)  
   
 True if the user has enabled text to speech in its Xbox Live settings
   
@@ -37,7 +37,7 @@ True if the user has enabled text to speech in its Xbox Live settings
   
 Language code associated with this user's accessibility settings. Can be used as a hint when choosing the PartyTextToSpeechProfile for this user.
   
-**`gender`** &nbsp; [PartyGender](../../../networking/reference/enums/partygender.md)  
+**`gender`** &nbsp; [PartyGender](../../reference/enums/partygender.md)  
   
 Gender associated with this user's accessibility settings. Can be used as a hint when choosing the PartyTextToSpeechProfile for this user.
   

@@ -31,7 +31,7 @@ Output lobby object which can be used to queue operations for immediate executio
 
 ## Remarks (1 of 2)
 
-This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyMemberAdded`](./OnLobbyMemberAdded.md) followed by a [`OnLobbyUpdated`](./OnLobbyUpdated.md) and [`OnLobbyJoinCompleted`](./OnLobbyJoinCompleted.md) with the `OnLobbyJoinCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnLobbyJoinCompleted`](./OnLobbyJoinCompleted.md) with the `result` field set to a failure.
+This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyMemberAdded`](OnLobbyMemberAdded.md) followed by a [`OnLobbyUpdated`](OnLobbyUpdated.md) and [`OnLobbyJoinCompleted`](OnLobbyJoinCompleted.md) with the `OnLobbyJoinCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnLobbyJoinCompleted`](OnLobbyJoinCompleted.md) with the `result` field set to a failure.
 
 ---
 
@@ -56,7 +56,7 @@ Output lobby object which can be used to queue operations for immediate executio
 
 ## Remarks (2 of 2)
 
-This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyMemberAdded`](./OnLobbyMemberAdded.md) followed by a [`OnLobbyUpdated`](./OnLobbyUpdated.md) and [`OnLobbyJoinCompleted`](./OnLobbyJoinCompleted.md) with the `OnLobbyJoinCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnLobbyJoinCompleted`](./OnLobbyJoinCompleted.md) with the `result` field set to a failure.
+This is an asynchronous operation. Upon successful completion, the title will be provided a [`OnLobbyMemberAdded`](OnLobbyMemberAdded.md) followed by a [`OnLobbyUpdated`](OnLobbyUpdated.md) and [`OnLobbyJoinCompleted`](OnLobbyJoinCompleted.md) with the `OnLobbyJoinCompleted.result` field set to [`Success`](../LobbyError/Success.md). Upon a failed completion, the title will be provided a [`OnLobbyJoinCompleted`](OnLobbyJoinCompleted.md) with the `result` field set to a failure.
 
 ## See Also
 

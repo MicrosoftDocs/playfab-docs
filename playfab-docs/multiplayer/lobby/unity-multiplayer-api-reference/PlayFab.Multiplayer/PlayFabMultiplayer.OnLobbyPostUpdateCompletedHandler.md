@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # PlayFabMultiplayer.OnLobbyPostUpdateCompletedHandler delegate
 
-Handler for when the operation started by a previous call to [`PostUpdate`](./Lobby/PostUpdate.md) completed.
+Handler for when the operation started by a previous call to [`PostUpdate`](Lobby/PostUpdate.md) completed.
 
 ```csharp
 public delegate void OnLobbyPostUpdateCompletedHandler(Lobby lobby, PFEntityKey localUser, 
@@ -25,7 +25,7 @@ public delegate void OnLobbyPostUpdateCompletedHandler(Lobby lobby, PFEntityKey 
 
 ## See Also
 
-* class [Lobby](./Lobby.md)
+* class [Lobby](Lobby.md)
 * class [PFEntityKey](./PFEntityKey.md)
 * class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)

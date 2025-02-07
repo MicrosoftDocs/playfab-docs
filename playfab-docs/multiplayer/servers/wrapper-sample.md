@@ -50,7 +50,7 @@ dotnet publish --self-contained -r win-x64 /p:PublishSingleFile=true /p:PublishT
 
 When the wrapper build is successful, the executable is published in the ..\wrappingGsdk\wrapper\bin\Debug\netcoreapp3.1\win-x64\publish folder, as shown in the image below.
 
-![Publish location of the wrapper executable](media/create-your-first-server/wrapper-exe-location.png)
+![Publish location of the wrapper executable](media/create-your-first-server/wrapper-exe-location.PNG)
 
 ## Create a game server asset
 

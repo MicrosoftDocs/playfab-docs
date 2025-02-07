@@ -59,7 +59,7 @@ Before you can make an API call, you must specify the Title to receive the call 
 2. Select the **Studio** entry to open the studio drop-down menu. Select the studio that contains the Title to which you would like to connect.
 3. Select the **Title ID** entry to open a drop-down menu of Titles associated with the selected studio.
 
-The **Developer Secret Key** is automatically set to the default secret key for the Title. For more information about secret keys, see [Secret key management](../../gamemanager/secret-key-management.md).
+The **Developer Secret Key** is automatically set to the default secret key for the Title. For more information about secret keys, see [Secret key management](../../live-service-management/production/gamemanager/secret-key-management.md).
 
 ![PlayFab Title Settings](media/save-title-settings-uedex.png)
 
@@ -137,6 +137,6 @@ For a list of all available client API calls, see [PlayFab API References](../..
 
 ## Next steps
 
-This quickstart shows a simplified procedure for authenticating a user. For more information on user authentication, see [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md).
+This quickstart shows a simplified procedure for authenticating a user. For more information on user authentication, see [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md).
 
 Learn how to bind an account to multiple devices and login mechanisms: [Account linking quickstart](../../features/authentication/login/quickstart.md).

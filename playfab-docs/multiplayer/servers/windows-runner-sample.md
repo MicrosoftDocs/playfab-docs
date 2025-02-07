@@ -35,7 +35,7 @@ This tutorial lists the steps to get the sample set up ready for use with the Pl
 
 * Under __Options__, select __Allow client to start games__ as shown in the image below.
 
-![Select allow client to start games in Game Manager](media/create-your-first-server/windowsrunner-api-settings-option.png)
+![Select allow client to start games in Game Manager](media/create-your-first-server/windowsrunner-api-settings-option.PNG)
 
 ## Server set up
 

@@ -24,7 +24,7 @@ public static void StartListeningForLobbyInvites(PFEntityKey listeningEntity)
 
 ## Remarks (1 of 2)
 
-This operation will synchronously start listening for invites on behalf of the provided entity. When invites are received, they will be provided via [`OnLobbyInviteReceived`](./OnLobbyInviteReceived.md) events. When the status of the invite listener changes, notifications will be provided via [`OnLobbyInviteListenerStatusChanged`](./OnLobbyInviteListenerStatusChanged.md) events.
+This operation will synchronously start listening for invites on behalf of the provided entity. When invites are received, they will be provided via [`OnLobbyInviteReceived`](OnLobbyInviteReceived.md) events. When the status of the invite listener changes, notifications will be provided via [`OnLobbyInviteListenerStatusChanged`](OnLobbyInviteListenerStatusChanged.md) events.
 
 Only invites sent after the listener has been started will be received on this client. Invites sent while this listener is not active will not be queued.
 
@@ -50,7 +50,7 @@ public static void StartListeningForLobbyInvites(PlayFabAuthenticationContext li
 
 ## Remarks (2 of 2)
 
-This operation will synchronously start listening for invites on behalf of the provided entity. When invites are received, they will be provided via [`OnLobbyInviteReceived`](./OnLobbyInviteReceived.md) events. When the status of the invite listener changes, notifications will be provided via [`OnLobbyInviteListenerStatusChanged`](./OnLobbyInviteListenerStatusChanged.md) events.
+This operation will synchronously start listening for invites on behalf of the provided entity. When invites are received, they will be provided via [`OnLobbyInviteReceived`](OnLobbyInviteReceived.md) events. When the status of the invite listener changes, notifications will be provided via [`OnLobbyInviteListenerStatusChanged`](OnLobbyInviteListenerStatusChanged.md) events.
 
 Only invites sent after the listener has been started will be received on this client. Invites sent while this listener is not active will not be queued.
 

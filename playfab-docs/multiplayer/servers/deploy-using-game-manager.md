@@ -86,7 +86,7 @@ For example, in Game Manager for a container server type, you could specify:
 * Port number: 7777
 * Protocol: UDP
 
-![Network settings in Game Manager for container server type](media/create-your-first-server/server-network-settings-2.png)
+![Network settings in Game Manager for container server type](media/create-your-first-server/server-network-settings-2.PNG)
 
 Then in your code you would do something like the following
 ```C#
@@ -101,7 +101,7 @@ gs.start();
 ### Setting port for process server types
 For process server type, you should use the GSDK to retrieve your port number. Don't include a port number as part of the build definition.
 
-![Network settings in Game Manager for process server type](media/create-your-first-server/server-network-settings-process.png)
+![Network settings in Game Manager for process server type](media/create-your-first-server/server-network-settings-process.PNG)
 
 Then in your code you would do something like: 
 ```C#
@@ -140,7 +140,7 @@ To configure regional settings:
 * On the __Regions__ tab, go to the **Servers by region** section
 * Add/remove region and modify the server numbers
 
-![Deployed builds in Game Manager](media/create-your-first-server/server-region-settings.png)
+![Deployed builds in Game Manager](media/create-your-first-server/server-region-settings.PNG)
 
 > [!Tip]
 > During development, shut off any unused or unhealthy regions to avoid VM core hour usage. Core hour usage begins during VM startup and continues until the VM is shut off. VMs in a region will not automatically be shut off unless the region's target standby servers reach 0, or a region is deleted. 

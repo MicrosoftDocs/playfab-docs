@@ -31,13 +31,13 @@ The resulting ticket object.
 
 ## Remarks (1 of 3)
 
-The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
+The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
 
-When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
+When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
 
 All existing tickets in which a local user is a member will be canceled as part of this operation.
 
-A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](./JoinMatchmakingTicketFromId.md).
+A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](JoinMatchmakingTicketFromId.md).
 
 ---
 
@@ -62,13 +62,13 @@ The resulting ticket object.
 
 ## Remarks (2 of 3)
 
-The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
+The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
 
-When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
+When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
 
 All existing tickets in which a local user is a member will be canceled as part of this operation.
 
-A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](./JoinMatchmakingTicketFromId.md).
+A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](JoinMatchmakingTicketFromId.md).
 
 ---
 
@@ -94,13 +94,13 @@ The resulting ticket object.
 
 ## Remarks (3 of 3)
 
-The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
+The library automatically, and asynchronously, will submit all local users on a ticket to the matchmaking service. Each time the ticket status changes, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. The ticket status can be queried at any time via [`Status`](../MatchmakingTicket/Status.md). The ticket immediately starts in the `MatchmakingTicketStatus.Creating` state.
 
-When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](./OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
+When the ticket has completed, a [`OnMatchmakingTicketStatusChanged`](OnMatchmakingTicketStatusChanged.md) will be provided. At that point, a match will have been found or the ticket stopped due to failure. On success, the match that was found can be queried via [`GetMatchDetails`](../MatchmakingTicket/GetMatchDetails.md).
 
 All existing tickets in which a local user is a member will be canceled as part of this operation.
 
-A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](./JoinMatchmakingTicketFromId.md).
+A match can't be found until all remote users specified in the `membersToMatchWith` field of the `configuration` parameter have joined the ticket via [`JoinMatchmakingTicketFromId`](JoinMatchmakingTicketFromId.md).
 
 ## See Also
 

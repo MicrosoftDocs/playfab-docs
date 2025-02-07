@@ -53,4 +53,4 @@ TurboLoading offers several benefits, such as:
 
 * [Economy V2 overview](../../economy-v2/overview.md)
 * [GetInventoryItems](/rest/api/playfab/economy/inventory/get-inventory-items)
-* [Limits](../../economy-v2/limits.md)
+* [Limits](../limits.md)

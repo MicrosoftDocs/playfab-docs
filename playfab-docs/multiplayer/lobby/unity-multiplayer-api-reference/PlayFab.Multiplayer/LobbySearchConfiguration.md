@@ -10,7 +10,7 @@ ms.date: 11/23/2021
 
 # Class LobbySearchConfiguration
 
-The configuration structure used to specify how a [`FindLobbies`](./PlayFabMultiplayer/FindLobbies.md) operation should be performed.
+The configuration structure used to specify how a [`FindLobbies`](PlayFabMultiplayer/FindLobbies.md) operation should be performed.
 
 ```csharp
 public class LobbySearchConfiguration

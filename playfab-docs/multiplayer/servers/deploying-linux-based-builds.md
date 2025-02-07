@@ -55,7 +55,7 @@ The Azure container registry account is associated with your PlayFab account. On
 * Select __Linux__ as the virtual machine operating system. 
 * Take note of the sign-in credentials&mdash;name, password, and customer5555555.azurecr.io, as this information is needed later
 
-![New build with Linux platform selected](media/create-your-first-server/server-new-build-container-linux.png)
+![New build with Linux platform selected](media/create-your-first-server/server-new-build-container-linux.PNG)
 
 If you wish to use PowerShell/API, call the [GetContainerRegistryCredentials](/rest/api/playfab/multiplayer/multiplayerserver/getcontainerregistrycredentials) API to retrieve a container registry address, user name, and password.
 

@@ -32,5 +32,5 @@ This collection of examples shows familiar patterns and mechanics implemented us
 ## See also
 
 * [General PlayFab samples](playfab-samples.md)
-* [Multiplayer Servers samples](../features/multiplayer/servers/server-samples-resources.md)
-* [Party samples](../features/multiplayer/networking/party-samples.md)
+* [Multiplayer Servers samples](../multiplayer/servers/server-samples-resources.md)
+* [Party samples](../multiplayer/networking/party-samples.md)

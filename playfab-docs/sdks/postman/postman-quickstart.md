@@ -31,23 +31,23 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 - Create Workspace
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Select Create Workspace](./media/tutorials/postman-new-create-workspace.png "Postman Select Create Workspace")
+  > ![Postman Select Create Workspace](media/tutorials/postman-new-create-workspace.png "Postman Select Create Workspace")
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Create Workspace](./media/tutorials/postman-new-create-workspace2.png "Postman Create Workspace")
+  > ![Postman Create Workspace](media/tutorials/postman-new-create-workspace2.png "Postman Create Workspace")
 
 - Select **Import** *(top left of the window)*
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Import](./media/tutorials/postman-new-import.png "Postman Import")
+  > ![Postman Import](media/tutorials/postman-new-import.png "Postman Import")
 
 - Select **Link**
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Select Import From Link](./media/tutorials/postman-new-import-from-link.png "Postman Select Import From Link")
+  > ![Postman Select Import From Link](media/tutorials/postman-new-import-from-link.png "Postman Select Import From Link")
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Import From Link](./media/tutorials/postman-new-import-from-link2.png "Postman Import From Link")
+  > ![Postman Import From Link](media/tutorials/postman-new-import-from-link2.png "Postman Import From Link")
 
 - Paste the following link into the URL text box and select **Continue** and **Import**
 
@@ -57,20 +57,20 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
   - Select **View Raw**
 
     > [!div class="mx-imgBorder"]
-    > ![Postman View Raw Beta JSON](./media/tutorials/postman-new-view-raw-beta.png "Postman View Raw Beta JSON")
+    > ![Postman View Raw Beta JSON](media/tutorials/postman-new-view-raw-beta.png "Postman View Raw Beta JSON")
   - Copy the URL from the browser, paste the link into the URL text box and select **Continue** and **Import**
 
 - You should now see the PlayFab Postman SDK under the Collections tab *(top left of the window)*
 
   > [!div class="mx-imgBorder"]
-  > ![Postman PlayFab Collection](./media/tutorials/postman-new-playfab-collection.png "Postman PlayFab Collection")
+  > ![Postman PlayFab Collection](media/tutorials/postman-new-playfab-collection.png "Postman PlayFab Collection")
 
 ### Adding Environment Variables
 
 - Select **Environments** and **Create Environment** to create a new environment
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Manage Environments](./media/tutorials/postman-new-manage-environments.png "Postman Manage Environments")
+  > ![Postman Manage Environments](media/tutorials/postman-new-manage-environments.png "Postman Manage Environments")
 
 - Name your environment - we recommend "[titleId] - Test Environment"
 
@@ -86,16 +86,16 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
   | EntityToken |                |               |
 
 > [!NOTE]
-> You can learn more about title secret keys and where to find them in the [Secret Key Management](../../gamemanager/secret-key-management.md) documentation.
+> You can learn more about title secret keys and where to find them in the [Secret Key Management](../../live-service-management/production/gamemanager/secret-key-management.md) documentation.
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Create Environment](./media/tutorials/postman-new-create-environment.png "Postman Create Environment")
+  > ![Postman Create Environment](media/tutorials/postman-new-create-environment.png "Postman Create Environment")
 
 - When finished, select **Save** to save your new environment
 - Select the environment dropdown to switch to your new environment *(top right of the window)*
 
   > [!div class="mx-imgBorder"]
-  > ![Postman Select Environment](./media/tutorials/postman-new-select-environment.png "Postman Select Environment")
+  > ![Postman Select Environment](media/tutorials/postman-new-select-environment.png "Postman Select Environment")
 
 ### Getting a Title Entity Token
 
@@ -105,7 +105,7 @@ One way to interact with PlayFab's [Entity Programming Model](../../features/dat
 - Under **Headers**, uncheck `X-Authorization`
   
   > [!div class="mx-imgBorder"]
-  > ![Postman Get Entity Token Header](./media/tutorials/postman-new-get-entity-token-header.png "Postman Get Entity Token Header")
+  > ![Postman Get Entity Token Header](media/tutorials/postman-new-get-entity-token-header.png "Postman Get Entity Token Header")
 - Select **Send**
 - Set the returned entity token to your `EntityToken` environment variable
   - In the response, highlight the `EntityToken` string
@@ -113,7 +113,7 @@ One way to interact with PlayFab's [Entity Programming Model](../../features/dat
   - Select **EntityToken**
   
     > [!div class="mx-imgBorder"]
-    > ![Postman Set Entity Token Variable](./media/tutorials/postman-new-set-entity-token-variable.png "Postman Set Entity Token Variable")
+    > ![Postman Set Entity Token Variable](media/tutorials/postman-new-set-entity-token-variable.png "Postman Set Entity Token Variable")
 
 > [!NOTE]
 > Entity tokens expire after **24 hours**. Afterwards, you need to re-run `GetEntityToken` to get a new entity token and update your environment variable
@@ -131,7 +131,7 @@ Another way to interact with PlayFab's [Entity Programming Model](../../features
   - Select **EntityToken**
 
     > [!div class="mx-imgBorder"]
-    > ![Postman Get Title_Player_Account Entity Token](./media/tutorials/postman-new-get-title_player_account-entity-token.png "Postman Get Title_Player_Account Entity Token")
+    > ![Postman Get Title_Player_Account Entity Token](media/tutorials/postman-new-get-title_player_account-entity-token.png "Postman Get Title_Player_Account Entity Token")
 
 ## Troubleshooting
 
@@ -140,7 +140,7 @@ Another way to interact with PlayFab's [Entity Programming Model](../../features
 - Expired entity token
   - If you previously obtained an entity token and are unsuccessfully attempting to call other APIs, your entity token might be expired. Get another entity token, save it into the `EntityToken` environment variable, and attempt to call the previous API again
 - Incorrect entity token type
-  - There are different types of entities (see [Available built-in entity types](../../features/data/entities/available-built-in-entity-types.md)). Different APIs allow different entity types - for example, you might be attempting to call `GetLanguageList` with a title_player_account entity token instead of a title entity token 
+  - There are different types of entities (see [Available built-in entity types](../../live-service-management/production/entities/available-built-in-entity-types.md)). Different APIs allow different entity types - for example, you might be attempting to call `GetLanguageList` with a title_player_account entity token instead of a title entity token 
 - Incorrect environment:
   - Make sure you're using the proper environment by checking the environment dropdown *(top right of the window)*
 

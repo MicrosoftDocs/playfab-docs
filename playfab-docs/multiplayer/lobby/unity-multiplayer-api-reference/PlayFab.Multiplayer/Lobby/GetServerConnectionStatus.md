@@ -28,7 +28,7 @@ Nonowning Lobby servers can only join client-owned lobbies. If no server is join
 
 A lobby server, which is still in the process of asynchronously joining the lobby, via a call to [PlayFabMultiplayer.JoinLobbyAsServer()](../PlayFabMultiplayer.PlayFabMultiplayerServer/JoinLobbyAsServer.md) sees its connection status as NotConnected until the connection is established.
 
-A change to a lobby server's connection status is indicated to the title via a [LobbyUpdatedStateChange](../../../../lobby/playfabmultiplayerreference-cpp/pflobby/structs/pflobbyupdatedstatechange.md) with the `LobbyUpdatedStateChange.serverConnectionStatusUpdated` field set to true.
+A change to a lobby server's connection status is indicated to the title via a [LobbyUpdatedStateChange](../../../playfabmultiplayerreference-cpp/pflobby/structs/pflobbyupdatedstatechange.md) with the `LobbyUpdatedStateChange.serverConnectionStatusUpdated` field set to true.
 
 ## See Also
 

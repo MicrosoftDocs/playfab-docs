@@ -31,7 +31,7 @@ Import PlayFabServicesSDK.Win32.props to your project. You can do this manually 
 
 If you have issues linking the SDK in your project, you may need to install 17.5 build tools and libs via the Visual Studio Installer. Click __Modify__ for VS2022, and install these two components.
 
-![Install 17.5 Build Tools](./media/win32_1.png)
+![Install 17.5 Build Tools](media/win32_1.png)
 
 ## Init and Logging in
 
@@ -179,7 +179,7 @@ To see detailed error messages returned by the service see the next section on d
 
 ## Debugging
 
-The easiest way to see the results and debug any calls in the PlayFab Services SDK is to enable [Debug Tracing](./tracing.md). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
+The easiest way to see the results and debug any calls in the PlayFab Services SDK is to enable [Debug Tracing](tracing.md). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
 
 ## Reference
 

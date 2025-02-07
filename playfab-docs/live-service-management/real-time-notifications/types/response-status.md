@@ -14,9 +14,9 @@ ms.date: 03/10/2022
 > Using Lobby, Matchmaking, and real-time notifications directly with REST and
 > SignalR APIs is significantly more complex than using client SDKs such as the
 > [Lobby C++
-> SDK](../../multiplayer/lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> SDK](../../../multiplayer/lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
 > and [Matchmaking C++
-> SDK](../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
+> SDK](../../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
 > and should only be done if the SDKs don't meet your needs.
 
 Possible values for the **status** member of [SignalR server
@@ -29,7 +29,7 @@ method](../signalr-hub.md#server-methods) responses.
 | **`Success`** |  |
 | **`InternalServerError`** | An error occurred in the service. The request can be retried a few times with exponential backoff. |
 | **`SharedSessionEntityLimitExceeded`** | An [AddEntityToSession](../server-methods/add-entity-to-session.md) request attempted to add more than `8` entities to the connection. |
-| **`UnsupportedEntityType`** | An [AddEntityToSession](../server-methods/add-entity-to-session.md) request attempted to add an entity type other than [title_player_account](../../data/entities/available-built-in-entity-types.md#title_player_account) to the session. |
+| **`UnsupportedEntityType`** | An [AddEntityToSession](../server-methods/add-entity-to-session.md) request attempted to add an entity type other than [title_player_account](../../production/entities/available-built-in-entity-types.md#title_player_account) to the session. |
 | **`InvalidRequest`** | Fields in the request were invalid. |
 | **`Unavailable`** | The service is temporarily unavailable. The request can be retried a few times with exponential backoff. |
 | **`TooManyRequests`** | The individual client or title all-up has exceeded its request rate limit, and the request was throttled. The request can be retried a few times with exponential backoff. |

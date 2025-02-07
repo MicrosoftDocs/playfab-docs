@@ -38,4 +38,4 @@ error codes, and response structures.
 - [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
-- [Leaderboard meters](../../pricing/meters/leaderboard-meters.md).
+- [Leaderboard meters](../../../live-service-management/production/pricing/Meters/leaderboard-meters.md).

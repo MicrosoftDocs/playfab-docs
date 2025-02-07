@@ -62,7 +62,7 @@ An example `SearchItems` request:
 ```
 
 > [!NOTE]
-> For more information about searching, see [Search](../catalog/search.md).
+> For more information about searching, see [Search](search.md).
 
 ## Supported Locale Codes
 

@@ -117,7 +117,7 @@ Each of these APIs takes a parameter **KeysToRemove** which takes in a list of P
 
 #### Entity Object
 
-[Entity Objects](../../features/entities/entity-objects.md) can be deleted using the SetObjects API. In the request body’s Objects array, create an entry for each object you want to delete by specifying its ObjectName and setting DeleteObject to true. Below is an example request body. 
+[Entity Objects](../../live-service-management/production/entities/entity-objects.md) can be deleted using the SetObjects API. In the request body’s Objects array, create an entry for each object you want to delete by specifying its ObjectName and setting DeleteObject to true. Below is an example request body. 
 
 ```HTTP
 { 
@@ -136,4 +136,4 @@ Each of these APIs takes a parameter **KeysToRemove** which takes in a list of P
 
 #### Entity Files
 
-[Entity Files](../../features/entities/entity-files.md) are deleted using the [DeleteFiles](/rest/api/playfab/data/file/delete-files) API.  
+[Entity Files](../../live-service-management/production/entities/entity-files.md) are deleted using the [DeleteFiles](/rest/api/playfab/data/file/delete-files) API.  

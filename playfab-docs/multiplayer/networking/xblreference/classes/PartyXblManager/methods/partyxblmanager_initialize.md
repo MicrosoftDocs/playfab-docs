@@ -22,7 +22,7 @@ PartyError Initialize(
   
 ### Parameters  
   
-**`titleId`** &nbsp; [PartyString](../../../../../networking/reference/typedefs.md)  
+**`titleId`** &nbsp; [PartyString](../../../../reference/typedefs.md)  
   
 The app's PlayFab Title Id.  
   

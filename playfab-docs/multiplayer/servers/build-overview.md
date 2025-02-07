@@ -20,7 +20,7 @@ From the Builds page, you can view summary information and edit shared settings 
 * **Access** to managing components **shared** across builds such as assets and aliases
 * View complimentary services available to the build. 
 
-![PlayFab Multiplayer Server build overview](media/build-overview.png)
+![PlayFab Multiplayer Server build overview](media/build-overview.PNG)
 
 ## Build aliases
 
@@ -41,7 +41,7 @@ The **Manage Assets** page allows you to view and manage your title's assets. Th
 Both assets associated and unassociated with a build may be downloaded to a local disk. Only assets unassociated with a build can be selected for deletion. 
 
 ## Services summary
-![PlayFab Multiplayer Server services summary](media/services-summary.png)
+![PlayFab Multiplayer Server services summary](media/services-summary.PNG)
 Under the **Services summary** you can view your current cost, amount of free compute hour remaining, and free network egress you have left for the month. For more information on billing, select the “View billing summary” on the page. For an expanded view, select "More details".  
 
 ## See also

@@ -30,7 +30,7 @@ Per-member properties are only visible to members of the lobby.
 
 This constructs a new Dictionary upon each API call so it should not be called with high frequency
 
-If the member is still in the process of asynchronously joining this lobby either via [`CreateAndJoinLobby`](../PlayFabMultiplayer/CreateAndJoinLobby.md), [`JoinLobby`](../PlayFabMultiplayer/JoinLobby.md), or [`AddMember`](./AddMember.md), this method returns no keys.
+If the member is still in the process of asynchronously joining this lobby either via [`CreateAndJoinLobby`](../PlayFabMultiplayer/CreateAndJoinLobby.md), [`JoinLobby`](../PlayFabMultiplayer/JoinLobby.md), or [`AddMember`](AddMember.md), this method returns no keys.
 
 ## See Also
 

@@ -21,7 +21,7 @@ Economy v2 is a major change from the existing PlayFab Monetization suite of fea
 * Handling of high [concurrency](catalog/etags.md) rates, especially with inventory interactions
 * Large unified catalog (unlimited number of items) of in-game goods or user-generated content (UGC)  
 * Individual Catalog Item documents instead of all items being stored in a single document
-* Large player inventories ([3,000+ items](catalog/limits.md))
+* Large player inventories ([3,000+ items](limits.md))
 * Integration with PlayFab Entities
 
 Economy v2 is designed with the same flexibility and extensibility that you would expect from other PlayFab services. Although the architecture is new to PlayFab, it's battle-tested and it supports internal Microsoft titles, such as **Minecraft**, **Sea of Thieves**, and **Flight Simulator**.
@@ -56,10 +56,10 @@ Economy v2 brings new useful features:
 * Simple way to [localize](catalog/localization.md) item descriptions and titles.
 * APIs that support PlayerEntity-facing [Item Ratings and Reviews](catalog/ratings.md).
 * Support for custom workflow in [authoring with draft states](catalog/item-status.md) and [policy permissions sets for catalog admins and reviewers](settings.md). You can prepublish catalog items with a future start date.
-* [Bundle items](bundles.md) that can be linked to multiple external marketplace items.
+* [Bundle items](catalog/bundles.md) that can be linked to multiple external marketplace items.
 
 ## See also
 
 * [Quickstart](quickstart.md)
 * [Settings](settings.md)
-* [Stores](stores.md)
+* [Stores](catalog/stores.md)

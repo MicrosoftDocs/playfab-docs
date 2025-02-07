@@ -28,9 +28,9 @@ This method takes a PlayFabAuthenticationContext `authContext` returned by a Pla
 
 A PlayFab Entity Key and Entity Token can be obtained from the output of a PlayFab login operation and then provided as input to this method.
 
-The provided `authContext` must have been acquired using the same PlayFab Title ID that was passed to [`Initialize`](./Initialize.md).
+The provided `authContext` must have been acquired using the same PlayFab Title ID that was passed to [`Initialize`](Initialize.md).
 
-The Multiplayer library makes a copy of the supplied PlayFab Entity Token for use in subsequent operations that require authentication or authorization of the local user, such as [`CreateAndJoinLobby`](./CreateAndJoinLobby.md). If the token provided to this call is expired or otherwise invalid, operations that require a valid token will fail. A new, valid token can be provided to the Multiplayer library by calling this method again using the same entity key.
+The Multiplayer library makes a copy of the supplied PlayFab Entity Token for use in subsequent operations that require authentication or authorization of the local user, such as [`CreateAndJoinLobby`](CreateAndJoinLobby.md). If the token provided to this call is expired or otherwise invalid, operations that require a valid token will fail. A new, valid token can be provided to the Multiplayer library by calling this method again using the same entity key.
 
 The caller is responsible for monitoring the expiration of the entity token provided to this method. When the token is nearing or past the expiration time a new token should be obtained by performing a PlayFab login operation and provided to the Multiplayer library by calling this method again. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or otherwise cause the application to pause execution for a long time, preventing the token from being refreshed before it expires, the token should be checked for expiration once execution resumes.
 
@@ -55,15 +55,15 @@ This method takes a PlayFab Entity Key as *localMember* and a PlayFab Entity Tok
 
 A PlayFab Entity Key and Entity Token can be obtained from the output of a PlayFab login operation and then provided as input to this method.
 
-The provided *localMember* and *entityToken* must have been acquired using the same PlayFab Title ID that was passed to [`Initialize`](./Initialize.md).
+The provided *localMember* and *entityToken* must have been acquired using the same PlayFab Title ID that was passed to [`Initialize`](Initialize.md).
 
-The Multiplayer library makes a copy of the supplied PlayFab Entity Token for use in subsequent operations that require authentication or authorization of the local user, such as [`CreateAndJoinLobby`](./CreateAndJoinLobby.md). If the token provided to this call is expired or otherwise invalid, operations that require a valid token will fail. A new, valid token can be provided to the Multiplayer library by calling this method again using the same entity key.
+The Multiplayer library makes a copy of the supplied PlayFab Entity Token for use in subsequent operations that require authentication or authorization of the local user, such as [`CreateAndJoinLobby`](CreateAndJoinLobby.md). If the token provided to this call is expired or otherwise invalid, operations that require a valid token will fail. A new, valid token can be provided to the Multiplayer library by calling this method again using the same entity key.
 
 The caller is responsible for monitoring the expiration of the entity token provided to this method. When the token is nearing or past the expiration time a new token should be obtained by performing a PlayFab login operation and provided to the Multiplayer library by calling this method again. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or otherwise cause the application to pause execution for a long time, preventing the token from being refreshed before it expires, the token should be checked for expiration once execution resumes.
 
 ## See Also
 
-* method [Initialize](./Initialize.md)
+* method [Initialize](Initialize.md)
 * class [PFEntityKey](../PFEntityKey.md)
 * class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)

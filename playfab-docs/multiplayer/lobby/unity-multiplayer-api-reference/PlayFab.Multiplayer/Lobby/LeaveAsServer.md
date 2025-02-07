@@ -18,7 +18,7 @@ public void LeaveAsServer()
 
 ## Remarks
 
-This method queues an asynchronous operation to exit the client-owned lobby. On completion, a [PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyLeaveAsServerCompleted](../../PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer.md) is provided indicating that the operation completed.
+This method queues an asynchronous operation to exit the client-owned lobby. On completion, a [PlayFabMultiplayer.PlayFabMultiplayerServer.OnServerLobbyLeaveAsServerCompleted](../PlayFabMultiplayer.PlayFabMultiplayerServer.md) is provided indicating that the operation completed.
 
 This operation is restricted to client-owned lobbies that are using connections.
 

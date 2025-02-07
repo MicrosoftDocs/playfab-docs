@@ -84,13 +84,13 @@ February 14, 2024
 ### New Features
 
 - Added new APIs to enable PlayFab GameServer entities to join and interact with client-owned lobbies:
-  - [PFMultiplayerJoinLobbyAsServer](..\playfabmultiplayerreference-cpp\pflobby\functions\pfmultiplayerjoinlobbyasserver.md)
-  - [PFLobbyServerPostUpdateAsServer](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbyserverpostupdateasserver.md)
-  - [PFLobbyServerLeaveAsServer](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbyserverleaveasserver.md)
-  - [PFLobbyGetServer](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetserver.md)
-  - [PFLobbyGetServerPropertyKeys](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetserverpropertykeys.md)
-  - [PFLobbyGetServerProperty](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetserverproperty.md)
-  - [PFLobbyGetServerConnectionStatus](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetserverconnectionstatus.md)
+  - [PFMultiplayerJoinLobbyAsServer](../playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerjoinlobbyasserver.md)
+  - [PFLobbyServerPostUpdateAsServer](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbyserverpostupdateasserver.md)
+  - [PFLobbyServerLeaveAsServer](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbyserverleaveasserver.md)
+  - [PFLobbyGetServer](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetserver.md)
+  - [PFLobbyGetServerPropertyKeys](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetserverpropertykeys.md)
+  - [PFLobbyGetServerProperty](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetserverproperty.md)
+  - [PFLobbyGetServerConnectionStatus](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetserverconnectionstatus.md)
 
 ## 1.6.5
 
@@ -98,8 +98,8 @@ November 15, 2023
 
 ### New Features
 
-- Added new [PFMatchmakingTicketGetCustomContext](..\playfabmultiplayerreference-cpp\pfmatchmaking\functions\pfmatchmakingticketgetcustomcontext.md) and
-[PFMatchmakingTicketSetCustomContext](..\playfabmultiplayerreference-cpp\pfmatchmaking\functions\pfmatchmakingticketsetcustomcontext.md)
+- Added new [PFMatchmakingTicketGetCustomContext](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmatchmakingticketgetcustomcontext.md) and
+[PFMatchmakingTicketSetCustomContext](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmatchmakingticketsetcustomcontext.md)
 APIs to associate a custom context with a matchmaking ticket.
 
 ### Bug fixes
@@ -121,7 +121,7 @@ August 14, 2023
 ### Bug fixes
 
 - Fixed an issue where the library may crash while handling a change notification.
-- Added new [PFLobbyMemberCountRemainingSearchKey](..\playfabmultiplayerreference-cpp\pflobby\constants\pflobbysearchkeys.md) constant to make it easier to search for and sort lobbies based on their remaining member counts.
+- Added new [PFLobbyMemberCountRemainingSearchKey](../playfabmultiplayerreference-cpp/pflobby/constants/pflobbysearchkeys.md) constant to make it easier to search for and sort lobbies based on their remaining member counts.
 
 ## 1.6.2
 
@@ -181,12 +181,12 @@ March 16, 2023
 ### New Features
 
 - Added new APIs and support for server-owned lobbies:
-    - [PFMultiplayerCreateAndClaimServerLobby](..\playfabmultiplayerreference-cpp\pflobby\functions\pfmultiplayercreateandclaimserverlobby.md)
-    - [PFMultiplayerClaimServerLobby](..\playfabmultiplayerreference-cpp\pflobby\functions\pfmultiplayerclaimserverlobby.md)
-    - [PFLobbyServerPostUpdate](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbyserverpostupdate.md)
-    - [PFLobbyServerDeleteLobby](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbyserverdeletelobby.md)
-- Added new support for creating matchmaking server backfill tickets with [PFMultiplayerCreateServerBackfillTicket](..\playfabmultiplayerreference-cpp\pfmatchmaking\functions\pfmultiplayercreateserverbackfillticket.md).
-- Added new [PFLobbyMembershipLockSearchKey](..\playfabmultiplayerreference-cpp\pflobby\constants\pflobbysearchkeys.md) constant to make it easier to search for only locked or unlocked lobbies when calling PFMultiplayerFindLobbies().
+    - [PFMultiplayerCreateAndClaimServerLobby](../playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayercreateandclaimserverlobby.md)
+    - [PFMultiplayerClaimServerLobby](../playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerclaimserverlobby.md)
+    - [PFLobbyServerPostUpdate](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbyserverpostupdate.md)
+    - [PFLobbyServerDeleteLobby](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbyserverdeletelobby.md)
+- Added new support for creating matchmaking server backfill tickets with [PFMultiplayerCreateServerBackfillTicket](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreateserverbackfillticket.md).
+- Added new [PFLobbyMembershipLockSearchKey](../playfabmultiplayerreference-cpp/pflobby/constants/pflobbysearchkeys.md) constant to make it easier to search for only locked or unlocked lobbies when calling PFMultiplayerFindLobbies().
 
 For more information on using server-owned lobbies, see [Game servers and lobbies](../lobby-server-overview.md).
 
@@ -234,7 +234,7 @@ September 20, 2022
 
 ### Bug fixes
 
-- Fixed a bug that caused websocket resources to leak memory when [PFMultiplayerUninitialize](..\playfabmultiplayerreference-cpp\pfmultiplayer\functions\pfmultiplayeruninitialize.md) was called or when the library internally handled app suspension on Xbox consoles.
+- Fixed a bug that caused websocket resources to leak memory when [PFMultiplayerUninitialize](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) was called or when the library internally handled app suspension on Xbox consoles.
 
 ## 1.3.0
 
@@ -242,12 +242,12 @@ September 9, 2022
 
 ### New features
 
-- Implemented a new function, [PFLobbyGetMemberConnectionStatus](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetmemberconnectionstatus.md), which can be used to detect whether a user is connected to the PubSub notification service. When a user's connection status changes, you receive a [PFLobbyUpdatedStateChange](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbyupdatedstatechange.md) with a [PFLobbyMemberUpdateSummary](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbymemberupdatesummary.md) where the `connectionStatusUpdated` field is `true`.
+- Implemented a new function, [PFLobbyGetMemberConnectionStatus](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberconnectionstatus.md), which can be used to detect whether a user is connected to the PubSub notification service. When a user's connection status changes, you receive a [PFLobbyUpdatedStateChange](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbyupdatedstatechange.md) with a [PFLobbyMemberUpdateSummary](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbymemberupdatesummary.md) where the `connectionStatusUpdated` field is `true`.
 - Updated the protocol used to exchange messages with the PubSub notification service from JSON to MessagePack, decreasing the message sizes. This change has no impact on the API surface.
 
 ### Bug fixes
 
-- Improved the message reported by [PFMultiplayerGetErrorCode](..\playfabmultiplayerreference-cpp\pfmultiplayer\functions\pfmultiplayergeterrormessage.md) for several errors related to rate limiting.
+- Improved the message reported by [PFMultiplayerGetErrorCode](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayergeterrormessage.md) for several errors related to rate limiting.
 
 ## 1.2.0
 
@@ -255,12 +255,12 @@ August 17, 2022
 
 ### New features
 
-- The match details now report server details associated with the multiplayer server allocated when a match is found, if the matchmaking queue is configured to allocate multiplayer servers. For more information, see [PFMatchmakingMatchDetails](..\playfabmultiplayerreference-cpp\pfmatchmaking\structs\pfmatchmakingmatchdetails.md).
-- A new constant, `PFLobbyAmOwnerSearchKey`, is defined for the `lobby/amOwner` search key. For more information on using search keys, see [PFLobbySearchConfiguration](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbysearchconfiguration.md).
+- The match details now report server details associated with the multiplayer server allocated when a match is found, if the matchmaking queue is configured to allocate multiplayer servers. For more information, see [PFMatchmakingMatchDetails](../playfabmultiplayerreference-cpp/pfmatchmaking/structs/pfmatchmakingmatchdetails.md).
+- A new constant, `PFLobbyAmOwnerSearchKey`, is defined for the `lobby/amOwner` search key. For more information on using search keys, see [PFLobbySearchConfiguration](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbysearchconfiguration.md).
 
 ### Bug fixes
 
-- Improved the message reported by [PFMultiplayerGetErrorCode](..\playfabmultiplayerreference-cpp\pfmultiplayer\functions\pfmultiplayergeterrormessage.md) for several error codes.
+- Improved the message reported by [PFMultiplayerGetErrorCode](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayergeterrormessage.md) for several error codes.
 - Fixed a bug where entities weren't unsubscribed from the notification service under some failure conditions.
 
 ## 1.1.5

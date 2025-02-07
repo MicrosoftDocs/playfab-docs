@@ -22,7 +22,7 @@ public delegate void OnLobbyDisconnectedHandler(Lobby lobby);
 
 ## See Also
 
-* class [Lobby](./Lobby.md)
+* class [Lobby](Lobby.md)
 * class [PlayFabMultiplayer](./PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../PlayFabMultiplayerSDK.md)
 

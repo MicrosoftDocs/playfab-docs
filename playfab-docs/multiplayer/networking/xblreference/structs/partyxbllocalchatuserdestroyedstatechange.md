@@ -32,7 +32,7 @@ The local chat user provided to the call associated with this state change.
   
 The reason the local chat user was destroyed.
   
-**`errorDetail`** &nbsp; [PartyError](../../../networking/reference/typedefs.md)  
+**`errorDetail`** &nbsp; [PartyError](../../reference/typedefs.md)  
   
 A diagnostic value providing additional troubleshooting information regarding any potential error condition.
   

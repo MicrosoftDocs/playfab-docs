@@ -32,7 +32,7 @@ struct PartyXblLoginToPlayFabCompletedStateChange : PartyXblStateChange {
   
 Indicates that the login operation succeeded or the reason that it failed.
   
-**`errorDetail`** &nbsp; [PartyError](../../../networking/reference/typedefs.md)  
+**`errorDetail`** &nbsp; [PartyError](../../reference/typedefs.md)  
   
 A diagnostic value providing additional troubleshooting information regarding any potential error condition.
   
@@ -44,11 +44,11 @@ The local chat user who was logged in to PlayFab.
   
 The async identifier provided to the call associated with this state change.
   
-**`entityId`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
+**`entityId`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
 The PlayFab Entity Id associated with the local chat user's Xbox Live identity.
   
-**`titlePlayerEntityToken`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
+**`titlePlayerEntityToken`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
 The PlayFab Entity Token associated with the local chat user's Xbox Live identity.
   

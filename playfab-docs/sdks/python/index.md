@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Python
 
-![Python](./media/Python1.png)
+![Python](media/Python1.png)
 
 >[!Important]
 >This is a community supported SDK. Information on this page is no longer maintained and updated.

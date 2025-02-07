@@ -23,7 +23,7 @@ To view the billing details page for your studio navigate to the My Studios and 
 
 ## Billing Summary Overview
 
-![Screenshot of Billing Details](pricingV2-media/BillingSummary.png "Billing Details")
+![Screenshot of Billing Details](pricingV2-media/BillingSummary.PNG "Billing Details")
 
 1. **Last Refreshed Date**
    * This is the date or time that the billing summary page was last refreshed. The billing details page is refreshed on a daily basis.
@@ -44,9 +44,9 @@ To view the billing details page for your studio navigate to the My Studios and 
 8. **Month Filter**
    * Use this filter to choose the month to display. All billing summary data from the time the account was updated to usage-based pricing is visible through the billing summary page.
 9. **Meter Category**
-   * The **Pay as you Go** section buckets the full set of meters into logical categories. You can find the full set of meters in [meter documentation](../pricing/Meters/meters.md).
+   * The **Pay as you Go** section buckets the full set of meters into logical categories. You can find the full set of meters in [meter documentation](Meters/meters.md).
 10. **Meter**
-    * This is a billable meter that at least one of your titles is consuming. You only see meters that you are using. For a full list of meters, see [meter documentation](../pricing/Meters/meters.md).
+    * This is a billable meter that at least one of your titles is consuming. You only see meters that you are using. For a full list of meters, see [meter documentation](Meters/meters.md).
 11. **Usage**
     * This column provides estimated, rounded usage (for readability purposes) for each tier/SKU, as well as the aggregated amount. To see the exact usage, download the .csv (5).
 12. **Rate**
@@ -54,7 +54,7 @@ To view the billing details page for your studio navigate to the My Studios and 
 13. **Cost**
     * This column provides the estimated cost for each tier/SKU, as well as the aggregated amount.
 14. **Description**
-    * Each meter provides a brief description in the billing summary page. You can find a  more detailed explanation of the meters in [meter documentation](../pricing/Meters/meters.md).
+    * Each meter provides a brief description in the billing summary page. You can find a  more detailed explanation of the meters in [meter documentation](Meters/meters.md).
 
 ## Understanding the Base Rate
 
@@ -65,9 +65,9 @@ The base rate charge includes:
 1. **Meter usage** amounts that are specified at [PlayFab pricing](https://www.playfab.com/pricing). Once meter usage across live titles associated to an account has surpassed the included amounts (above), an account's live title usage will be charged based on the meter rates found at [PlayFab pricing](https://www.playfab.com/pricing) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
 
     > [!NOTE]
-    > Titles in [Development Mode](../pricing/development-mode.md) are not counted against included base rate usage.
+    > Titles in [Development Mode](development-mode.md) are not counted against included base rate usage.
 
-2. **[Technical support](../pricing/PaidTechnicalSupport.md)** that is determined by the [account level](../pricing/account-upgrades.md).
+2. **[Technical support](PaidTechnicalSupport.md)** that is determined by the [account level](account-upgrades.md).
 
 ## Additional Section Definitions
 
@@ -77,6 +77,6 @@ The base rate charge includes:
 
 ## Learn More
 
-> [Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md)
+> [Multiplayer Server Pricing](../../../multiplayer/servers/billing-for-thunderhead.md)
 >
 > [Party Pricing](../multiplayer/networking/pricing.md)

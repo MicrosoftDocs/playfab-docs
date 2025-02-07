@@ -20,7 +20,7 @@ Coupons are string tokens that you can generate for your customers use to redeem
 
 - Familiarity with [Catalogs](../items/catalogs.md), bundles, and containers.
 - Familiarity with [Game Manager](../../../gamemanager/quickstart.md).
-- Familiarity with [Player Inventory](../../data/playerdata/player-inventory.md).
+- Familiarity with [Player Inventory](../../../player-progression/player-data/player-inventory.md).
 
 ## Generate and redeem coupon instructions
 
@@ -103,7 +103,7 @@ Multiple items work the same way:
 - Out-of-game communication such as forums, [Push Notifications](../../engagement/push-notifications/quickstart.md) and email.
   - Send your players coupon codes *directly*, as part of re-acquisition campaigns or other community outreach.
 - Tournaments:
-  - Send coupons to the top ranked players when using [Resettable Leaderboards](../../social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+  - Send coupons to the top ranked players when using [Resettable Leaderboards](../../../community/social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 > [!NOTE]
 > You can also give out inventory items directly in this case, so pick whichever is more relevant to your game.

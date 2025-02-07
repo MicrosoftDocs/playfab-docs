@@ -23,11 +23,11 @@ PartyError GetErrorMessage(
   
 ### Parameters  
   
-**`error`** &nbsp; [PartyError](../../../../../networking/reference/typedefs.md)  
+**`error`** &nbsp; [PartyError](../../../../reference/typedefs.md)  
   
 An error code.  
   
-**`errorMessage`** &nbsp; [PartyString*](../../../../../networking/reference/typedefs.md)  
+**`errorMessage`** &nbsp; [PartyString*](../../../../reference/typedefs.md)  
 *library-allocated output*  
   
 The output, human-readable error message. The memory for the returned string remains valid for the lifetime of the process.  

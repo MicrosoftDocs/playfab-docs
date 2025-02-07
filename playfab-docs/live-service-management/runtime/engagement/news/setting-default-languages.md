@@ -35,7 +35,7 @@ This tutorial assumes you have the following working knowledge about using PlayF
 
 - That you have knowledge of how to work with player profiles, as it's necessary to confirm that a preferred language has been added to a player's profile.
 
-- Take a moment to review the information provided on how to get a player's profile in the [Getting player profiles](../../data/playerdata/getting-player-profiles.md) tutorial.
+- Take a moment to review the information provided on how to get a player's profile in the [Getting player profiles](../../../../player-progression/player-data/getting-player-profiles.md) tutorial.
 
 ## Section 1 – Player's preferred language
 

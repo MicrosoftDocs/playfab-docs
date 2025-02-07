@@ -25,5 +25,5 @@ These samples demonstrate how to use various PlayFab features.
 
 ## See also
 
-* [Multiplayer Servers samples](../features/multiplayer/servers/server-samples-resources.md)
-* [Party samples](../features/multiplayer/networking/party-samples.md)
+* [Multiplayer Servers samples](../multiplayer/servers/server-samples-resources.md)
+* [Party samples](../multiplayer/networking/party-samples.md)

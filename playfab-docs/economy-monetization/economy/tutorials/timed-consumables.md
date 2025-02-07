@@ -18,7 +18,7 @@ This tutorial walks you through creating timed consumables using the PlayFab Gam
 
 ## Requirements
 
-- We assume that you're already  familiar with [Catalogs](../items/catalogs.md), [Inventory](../../data/playerdata/player-inventory.md), and the PlayFab [Game Manager](../../../gamemanager/quickstart.md).
+- We assume that you're already  familiar with [Catalogs](../items/catalogs.md), [Inventory](../../../player-progression/player-data/player-inventory.md), and the PlayFab [Game Manager](../../../gamemanager/quickstart.md).
 - You must have a *primary catalog*.
 
 ## Create a Stackable Timed Consumable

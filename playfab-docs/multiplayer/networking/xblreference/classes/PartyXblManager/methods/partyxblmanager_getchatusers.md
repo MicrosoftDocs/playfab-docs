@@ -28,7 +28,7 @@ PartyError GetChatUsers(
   
 An output value indicating the number of chat users provided in `chatUsers`.  
   
-**`chatUsers`** &nbsp; [PartyXblChatUserArray*](../../../../../networking/xblreference/xbltypedefs.md)  
+**`chatUsers`** &nbsp; [PartyXblChatUserArray*](../../../xbltypedefs.md)  
 *library-allocated output array of size `*endpointCount`*  
   
 A library-allocated output array containing the local and remote chat users.  

@@ -19,7 +19,7 @@ PlayFab provides two ways to store player data:
 - [Entities](../entities/index.md): Allows you to store data in objects and files across Players, Characters, and Groups.
 - [Player Data/UserData](quickstart.md): Allows you to store Key/Value pair data for players.
 
-To provide the most flexibility and best performance, we recommended that *all* new titles use [Entity objects](../entities/entity-objects.md).
+To provide the most flexibility and best performance, we recommended that *all* new titles use [Entity objects](../../live-service-management/production/entities/entity-objects.md).
 
 In the PlayFab APIs, the function names use the term **UserData**. In the **Game Manager**, this concept is described as **Player Data**. They are identical, and interchangeable.
 
@@ -42,7 +42,7 @@ All titles within a studio in PlayFab share a Publisher ID by default, and that 
 If you need to have titles in a studio that have different Publisher IDs, or titles in different studios that share the same Publisher ID, you can open a ticket in the [PlayFab community forums](https://community.playfab.com/) and our **Developer Success** team will help you out.
 
 > [!NOTE]
-> Please don't confuse *player* Publisher data with [Publisher data](../titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
+> Please don't confuse *player* Publisher data with [Publisher data](../../live-service-management/production/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).
 
 Player Publisher data usage is nearly identical to player data usage. They are *both* dictionaries mapping a string to a JSON blob (or other arbitrary string value).
 

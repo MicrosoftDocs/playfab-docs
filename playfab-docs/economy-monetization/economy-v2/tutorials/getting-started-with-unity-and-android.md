@@ -726,7 +726,7 @@ Our last step is configuring a PlayFab title to reflect our products, and integr
 1. Select **Add-ons**.
 1. Then, select the **Google** add-on.
 
-![PlayFab open Google Add-on](../../authentication/platform-specific-authentication/media/tutorials/google-html5/open-google-add-on.png)  
+![PlayFab open Google Add-on](../../../identity/player-identity/platform-specific-authentication/media/tutorials/google-html5/open-google-add-on.png)  
 
 1. Fill in your **Package ID**.
 1. Fill in the **Google App License Key** that you acquired in the previous section.

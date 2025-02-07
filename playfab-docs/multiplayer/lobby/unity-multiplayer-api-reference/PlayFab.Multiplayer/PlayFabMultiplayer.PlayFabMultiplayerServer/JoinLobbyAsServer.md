@@ -32,9 +32,9 @@ Output lobby object, which can be used to queue operations for immediate executi
 
 JoinLobbyAsServer() is an asynchronous operation. Completion of this method's execution isn't necessarily completion of the operation.
 
-Upon successful completion, the title is provided a [LobbyUpdatedStateChange](../../../../lobby/playfabmultiplayerreference-cpp/pflobby/structs/pflobbyupdatedstatechange.md) with the `LobbyUpdatedStateChange.serverUpdate` member appropriately populated, and a [OnJoinLobbyAsServerCompleted](./OnJoinLobbyAsServerCompleted.md) with the `OnJoinLobbyAsServerCompleted.result` field set to [Success](../LobbyError/Success.md).
+Upon successful completion, the title is provided a [LobbyUpdatedStateChange](../../../playfabmultiplayerreference-cpp/pflobby/structs/pflobbyupdatedstatechange.md) with the `LobbyUpdatedStateChange.serverUpdate` member appropriately populated, and a [OnJoinLobbyAsServerCompleted](OnJoinLobbyAsServerCompleted.md) with the `OnJoinLobbyAsServerCompleted.result` field set to [Success](../LobbyError/Success.md).
 
-Upon a failed completion, the title is provided a [OnJoinLobbyAsServerCompleted](./OnJoinLobbyAsServerCompleted.md) with the `OnJoinLobbyAsServerCompleted.result` field set to a failed error code.
+Upon a failed completion, the title is provided a [OnJoinLobbyAsServerCompleted](OnJoinLobbyAsServerCompleted.md) with the `OnJoinLobbyAsServerCompleted.result` field set to a failed error code.
 
 JoinLobbyAsServer() operation is restricted to client-owned lobbies that are using connections.
 
@@ -63,9 +63,9 @@ Output lobby object, which can be used to queue operations for immediate executi
 
 JoinLobbyAsServer() is an asynchronous operation. Completion of this method's execution isn't necessarily completion of the operation.
 
-Upon successful completion, the title is provided a [LobbyUpdatedStateChange](../../../../lobby/playfabmultiplayerreference-cpp/pflobby/structs/pflobbyupdatedstatechange.md) with the `LobbyUpdatedStateChange.serverUpdate` member appropriately populated, and a [OnJoinLobbyAsServerCompleted](./OnJoinLobbyAsServerCompleted.md) with the `OnJoinLobbyAsServerCompleted.result` field set to [Success](../LobbyError/Success.md).
+Upon successful completion, the title is provided a [LobbyUpdatedStateChange](../../../playfabmultiplayerreference-cpp/pflobby/structs/pflobbyupdatedstatechange.md) with the `LobbyUpdatedStateChange.serverUpdate` member appropriately populated, and a [OnJoinLobbyAsServerCompleted](OnJoinLobbyAsServerCompleted.md) with the `OnJoinLobbyAsServerCompleted.result` field set to [Success](../LobbyError/Success.md).
 
-Upon a failed completion, the title is provided a [OnJoinLobbyAsServerCompleted](./OnJoinLobbyAsServerCompleted.md) with the `OnJoinLobbyAsServerCompleted.result` field set to a failed error code.
+Upon a failed completion, the title is provided a [OnJoinLobbyAsServerCompleted](OnJoinLobbyAsServerCompleted.md) with the `OnJoinLobbyAsServerCompleted.result` field set to a failed error code.
 
 This operation is restricted to client-owned lobbies that are using connections.
 

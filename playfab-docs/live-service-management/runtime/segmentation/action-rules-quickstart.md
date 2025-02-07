@@ -17,7 +17,7 @@ A PlayStream rule allows you to react to a subset of one type of PlayStream even
 ## Requirements
 
 - [Game Manager quickstart](../../gamemanager/quickstart.md)
-- [Using player statistics](../../features/data/playerdata/using-player-statistics.md) (contains information that can help you with the example in this tutorial).
+- [Using player statistics](../../../player-progression/player-data/using-player-statistics.md) (contains information that can help you with the example in this tutorial).
 
 A quick glossary of relevant terms:
 
@@ -37,7 +37,7 @@ A quick glossary of relevant terms:
 
 A rule consists of exactly one Trigger, an optional list of Conditions, and typically at least one Action (not required, but quite useless without it).
 
-Triggers, Conditions, and Actions are also part of other systems: [bulk actions](action-rules-bulk-actions-for-an-entire-player-segment.md) and [tournament leaderboards](../../features/social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+Triggers, Conditions, and Actions are also part of other systems: [bulk actions](action-rules-bulk-actions-for-an-entire-player-segment.md) and [tournament leaderboards](../../../community/social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 ## Example Case: Count custom events from the client
 
@@ -68,7 +68,7 @@ Go to your **Game Manager**:
 - Go to **Rules**.
 - Select **New Rule**.
 
-![Game Manager - automation - new rule](media/tutorials/game-manager-automation-new-rule.png)  
+![Game Manager - automation - new rule](../../../data-analytics/acting-data/media/tutorials/game-manager-automation-new-rule.png)  
 
 Let's evaluate the **New Rule** in this example piece by piece:
 
@@ -84,7 +84,7 @@ Let's evaluate the **New Rule** in this example piece by piece:
 
 In the Game Manager **PlayStream Debugger** (shown below), you can watch as the trigger takes effect.
 
-![Game Manager - PlayStream - debugger - event trigger](media/tutorials/game-manager-playstream-debugger-event-trigger.png)  
+![Game Manager - PlayStream - debugger - event trigger](../../../data-analytics/acting-data/media/tutorials/game-manager-playstream-debugger-event-trigger.png)  
 
 As you can see, the custom `ForumPostEvent` automatically triggers the statistic that we set under **Actions** for our new Rule.
 
@@ -98,10 +98,10 @@ Let's edit the **Rule**.
 - Set the **Action** to **Execute CloudScript**.
 - Select the **Save Action** button.
 
-![Game Manager - automation - edit rule](media/tutorials/game-manager-automation-edit-rule.png)  
+![Game Manager - automation - edit rule](../../../data-analytics/acting-data/media/tutorials/game-manager-automation-edit-rule.png)  
 
 Now, if we post a new **ForumPostEvent**, we will see a CloudScript execution.
 
-![Game Manager - PlayStream - debugger - CloudScript execution](media/tutorials/game-manager-playstream-debugger-cloudscript-execution.png)  
+![Game Manager - PlayStream - debugger - CloudScript execution](../../../data-analytics/acting-data/media/tutorials/game-manager-playstream-debugger-cloudscript-execution.png)  
 
 Writing your CloudScript to react to PlayStream Rules is an advanced topic covered in our tutorial: [using CloudScript actions with PlayStream](action-rules-using-cloudscript-actions-with-playstream.md).

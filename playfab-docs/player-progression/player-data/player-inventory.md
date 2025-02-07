@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Requirements
 
-In order to use the player inventory, you must have a catalog defined for your title. Read our [Catalogs](../economy/items/catalogs.md) tutorial for more information.
+In order to use the player inventory, you must have a catalog defined for your title. Read our [Catalogs](../../economy-monetization/economy/items/catalogs.md) tutorial for more information.
 
 > [!NOTE]
 > Optionally, you can also define stores for your catalog.

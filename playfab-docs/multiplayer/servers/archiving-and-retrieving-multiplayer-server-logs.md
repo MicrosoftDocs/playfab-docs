@@ -24,7 +24,7 @@ See [Integrating game servers with the PlayFab game server SDK (GSDK)](integrati
 
 To do this using Game Manager first, go to the **Builds** page in the **Multiplayer tab**, and select the build that is associated to the server you're looking for. 
 
-![PlayFab Multiplayer Server build overview](media/build-overview.png)
+![PlayFab Multiplayer Server build overview](media/build-overview.PNG)
 
 Next, select the **Servers tab** located at the top and you'll see a list of VM's and servers, select the **Archived servers** link at the bottom 
 
@@ -32,4 +32,4 @@ Next, select the **Servers tab** located at the top and you'll see a list of VM'
 
 Use the **Search bar** at the top of the page and use either the **Host ID or VM ID** to download logs for a specific server. 
 
-![Multiplayer - Servers - Search logs](media/build-server-archived.png)
+![Multiplayer - Servers - Search logs](media/build-server-archived.PNG)

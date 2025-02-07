@@ -52,4 +52,4 @@ For each leaderboard entry, the storage consumed is computed as the sum of the f
 
 ## See Also
 
-- [Statistics Meters](../../pricing/meters/statistics-meters.md).
+- [Statistics Meters](statistics-meters.md).

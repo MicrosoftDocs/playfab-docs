@@ -73,7 +73,7 @@ const onLogin = useCallback(() => {
 }, [ClientLoginWithEmailAddress, data.email, data.password, dispatch, navigate, onError, postLoginFunctions]);
 ```
 
-The game offers 3 recoverable methods for player authentication: email, Google, and Facebook, so that player accounts will never be lost. For more information, see [Login best practices](../features/authentication/login/login-basics-best-practices.md).
+The game offers 3 recoverable methods for player authentication: email, Google, and Facebook, so that player accounts will never be lost. For more information, see [Login best practices](../identity/player-identity/login/login-basics-best-practices.md).
 
 ### Post login: Getting player data
 
@@ -252,4 +252,4 @@ export function useEconomyStoreSell(): IEconomyStoreSellItemResults {
 	- [Player login documentation](../features/authentication/login/index.md)
 - Purchase flow
 	- [Economy V2 documentation](../features/economy-v2/overview.md)
-	- Another good next step to learning more about Economy V2 is to try out the [crafting game tutorial](../features/economy-v2/tutorials/craftingGame/game-context.md), which focuses on building a sample game using the store and inventory functions.
+	- Another good next step to learning more about Economy V2 is to try out the [crafting game tutorial](../economy-monetization/economy-v2/tutorials/craftingGame/game-context.md), which focuses on building a sample game using the store and inventory functions.

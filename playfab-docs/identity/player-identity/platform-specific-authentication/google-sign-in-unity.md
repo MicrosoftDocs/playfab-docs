@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 - A PlayFab developer account that has access to a game title in PlayFab.
 - The [PlayFab Unity Editor Extensions & Unity SDK](../../../sdks/unity3d/quickstart.md).
 - The [Google Play Games SDK](https://github.com/playgameservices/play-games-plugin-for-unity).
-- Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
+- Familiarity with [Login basics and Best Practices](../login/login-basics-best-practices.md).
 
 ## Getting started
 

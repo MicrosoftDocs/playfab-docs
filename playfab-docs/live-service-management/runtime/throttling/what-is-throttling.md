@@ -36,4 +36,4 @@ Target entity throttling is a mechanism that enforces limits on certain operatio
 ## See also
 
 * [Throttling best practices and recommendations](best-practices.md)
-* [Economy v2 Limits](../economy-v2/limits.md)
+* [Economy v2 Limits](../../../economy-monetization/economy-v2/limits.md)

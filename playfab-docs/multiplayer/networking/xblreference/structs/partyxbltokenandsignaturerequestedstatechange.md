@@ -35,11 +35,11 @@ struct PartyXblTokenAndSignatureRequestedStateChange : PartyXblStateChange {
   
 Opaque identifier used to associate the token and signature request with the internal HTTP request. Use this identifier when calling [PartyXblManager::CompleteGetTokenAndSignatureRequest()](../classes/PartyXblManager/methods/partyxblmanager_completegettokenandsignaturerequest.md) to complete the operation.
   
-**`method`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
+**`method`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
 The HTTP method for the request, such as "GET" or "POST".
   
-**`url`** &nbsp; [PartyString](../../../networking/reference/typedefs.md)  
+**`url`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
 The URL for the HTTP request that needs a token and signature (fully escaped).
   
@@ -61,11 +61,11 @@ The size of the request body in bytes.
   
 The request body.
   
-**`forceRefresh`** &nbsp; [PartyBool](../../../networking/reference/typedefs.md)  
+**`forceRefresh`** &nbsp; [PartyBool](../../reference/typedefs.md)  
   
 If ```true``` the token must be refreshed, ignoring any cached token.
   
-**`allUsers`** &nbsp; [PartyBool](../../../networking/reference/typedefs.md)  
+**`allUsers`** &nbsp; [PartyBool](../../reference/typedefs.md)  
   
 If ```true```, a token should be requested for all users rather than a specific user. In the case ```localChatUser``` will be nullptr.
   

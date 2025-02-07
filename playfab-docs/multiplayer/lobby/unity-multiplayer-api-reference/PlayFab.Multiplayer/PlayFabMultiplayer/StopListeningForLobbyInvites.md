@@ -26,7 +26,7 @@ public static void StopListeningForLobbyInvites(PFEntityKey listeningEntity)
 
 This operation will synchronously stop listening for invites on behalf of the provided entity.
 
-Invite notifications which have already been queued internally will still be provided via the next call to [`ProcessLobbyStateChanges`](./ProcessLobbyStateChanges.md).
+Invite notifications which have already been queued internally will still be provided via the next call to [`ProcessLobbyStateChanges`](ProcessLobbyStateChanges.md).
 
 Lobby invites and this invite listener are unrelated to and unaffected by platform invite mechanisms.
 
@@ -50,7 +50,7 @@ public static void StopListeningForLobbyInvites(PlayFabAuthenticationContext lis
 
 This operation will synchronously stop listening for invites on behalf of the provided entity.
 
-Invite notifications which have already been queued internally will still be provided via the next call to [`ProcessLobbyStateChanges`](./ProcessLobbyStateChanges.md).
+Invite notifications which have already been queued internally will still be provided via the next call to [`ProcessLobbyStateChanges`](ProcessLobbyStateChanges.md).
 
 Lobby invites and this invite listener are unrelated to and unaffected by platform invite mechanisms.
 

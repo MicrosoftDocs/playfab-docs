@@ -18,15 +18,15 @@ public static void Initialize()
 
 ## Remarks
 
-Initialize() cannot be called again without a subsequent [`Uninitialize`](./Uninitialize.md) call.
+Initialize() cannot be called again without a subsequent [`Uninitialize`](Uninitialize.md) call.
 
 Every call to Initialize() should have a corresponding Uninitialize() call.
 
-The playFabTitleId is read from PlayFab's static PlayFabSettings asset. It can be changed Using Unity menu, PlayFab &#x7C; MakePlayFabSharedSettings menu. It must be the same PlayFab Title ID used to acquire the PlayFab Entity Keys and Entity Tokens that will be passed to [`SetEntityToken`](./SetEntityToken.md).
+The playFabTitleId is read from PlayFab's static PlayFabSettings asset. It can be changed Using Unity menu, PlayFab &#x7C; MakePlayFabSharedSettings menu. It must be the same PlayFab Title ID used to acquire the PlayFab Entity Keys and Entity Tokens that will be passed to [`SetEntityToken`](SetEntityToken.md).
 
 ## See Also
 
-* method [Uninitialize](./Uninitialize.md)
+* method [Uninitialize](Uninitialize.md)
 * class [PlayFabMultiplayer](../PlayFabMultiplayer.md)
 * namespace [PlayFab.Multiplayer](../../PlayFabMultiplayerSDK.md)
 

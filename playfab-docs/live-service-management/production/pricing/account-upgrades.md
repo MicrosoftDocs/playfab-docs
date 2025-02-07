@@ -15,10 +15,10 @@ Customers can upgrade their account plan using the self-serve plans experience f
 
 ## Account Plans 
 A PlayFab account has five plan options:
-1. **FREE TO START :** This plan has no cost to the customer. Studios that belong to free accounts may only contain titles that are in [development mode](../pricing/Development-Mode.md). Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.
+1. **FREE TO START :** This plan has no cost to the customer. Studios that belong to free accounts may only contain titles that are in [development mode](development-mode.md). Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.
 2. **PAY-AS-YOU-GO :** This paid plan has no monthly base rate. Accounts are only charged for their monthly consumption for live titles. 
-3. **STANDARD :** This paid plan has a monthly base rate and private support options ([Paid Technical Support](../pricing/PaidTechnicalSupport.md)). This plan comes with included meter usage amounts that live titles associated with the account may access. Once the included meter amounts have been used, the account will be charged for additional consumption.
-4. **PREMIUM :** This paid plan has a monthly base rate and private support options ([Paid Technical Support](../pricing/PaidTechnicalSupport.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
+3. **STANDARD :** This paid plan has a monthly base rate and private support options ([Paid Technical Support](PaidTechnicalSupport.md)). This plan comes with included meter usage amounts that live titles associated with the account may access. Once the included meter amounts have been used, the account will be charged for additional consumption.
+4. **PREMIUM :** This paid plan has a monthly base rate and private support options ([Paid Technical Support](PaidTechnicalSupport.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
 5. **ENTERPRISE :** An Enterprise account has a monthly base rate and private support channels that offer 24/7 assistance. This plan comes with more included meter usage than the Premium plan. Once the included meter amounts have been used, the account will be charged for additional consumption. An account can upgrade to an Enterprise plan through contacting the [PlayFab Team](https://playfab.com/contact/) .
 
 The base rate's included consumption is cumulative across titles linked to an account.
@@ -85,4 +85,4 @@ The amount of the base rate will represent the paid subscription plan of an acco
 **How do I know which subscription plan I am upgrading my account to?**
 All accounts upgraded through Game Manager are automatically upgraded to the Standard plan, as indicated by the agreed-to base rate listed within the **Upgrade Account**(1) flow.
 
-To upgrade to a Premium plan, please [contact PlayFab](./paidtechnicalsupport.md).
+To upgrade to a Premium plan, please [contact PlayFab](PaidTechnicalSupport.md).

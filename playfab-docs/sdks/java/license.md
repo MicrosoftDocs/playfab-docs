@@ -14,6 +14,6 @@ ms.localizationpriority: medium
 
 Licenses are available at the following links:
 
-- [googlegson](licenses/google-gson-license.md)
-- [hamcrest](licenses/hamcrest-license.md)
-- [junit](licenses/junit-license.md)
+- [googlegson](Licenses/google-gson-license.md)
+- [hamcrest](Licenses/hamcrest-license.md)
+- [junit](Licenses/junit-license.md)
