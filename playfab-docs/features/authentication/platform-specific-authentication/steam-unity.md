@@ -87,8 +87,16 @@ public class SteamScript : MonoBehaviour
     {
         m_OnGetSteamAuthTicket = Callback<GetTicketForWebApiResponse_t>.Create(OnGetSteamAuthTicket);
     }
+    
+    public void OnGUI()
+    {
+        if (GUILayout.Button("Log In") && SteamManager.Initialized)
+        {
+            GetSteamAuthTicket();
+        }
+    }
 
-    public void GetSteamAuthTicket()
+    private void GetSteamAuthTicket()
     {
         m_hTicket = SteamUser.GetAuthTicketForWebApi("AzurePlayFab");
 
@@ -123,14 +131,6 @@ public class SteamScript : MonoBehaviour
             SteamTicket = sb.ToString(),
             TicketIsServiceSpecific = true
         }, OnComplete, OnFailed);
-    }
-
-    public void OnGUI()
-    {
-        if (GUILayout.Button("Log In") && SteamManager.Initialized)
-        {
-            GetSteamAuthTicket();
-        }
     }
 
     private void OnComplete(LoginResult obj)
