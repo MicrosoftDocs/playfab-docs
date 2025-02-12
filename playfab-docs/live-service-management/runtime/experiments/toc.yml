@@ -5,7 +5,7 @@ items:
     - name: Experiments
       href: index.md
     - name: Pricing
-      href: experiments/pricing.md
+      href: pricing.md
   - name: Concepts
     expanded: true
     items:
