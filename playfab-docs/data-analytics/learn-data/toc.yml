@@ -6,7 +6,7 @@ items:
     href: reports/overview.md
   - name: Quickstart
     href: reports/quickstart.md
-  - name: How-to
+  - name: Tutorials
     expanded: true
     items:
     - name: Daily A/B Test KPI Report
