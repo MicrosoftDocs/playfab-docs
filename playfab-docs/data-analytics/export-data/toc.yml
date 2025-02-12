@@ -6,7 +6,7 @@ items:
     href: data-connection-overview.md
   - name: Quickstart
     href: data-connection-quickstart.md
-  - name: How-To
+  - name: Tutorials
     expanded: true
     items:
     - name: Azure Data Explorer Export
