@@ -3,7 +3,7 @@
 - name: Quickstart
   href: quickstart.md
 - name: Tutorials
-  href: tutorials.md
+  expanded: true
   items:
   - name: Using publisher data
     href: using-publisher-data.md
