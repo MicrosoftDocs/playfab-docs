@@ -5,25 +5,25 @@ items:
   expanded: true
   items:
   - name: Overview
-    href: schemas-overview.md
+    href: ../../live-service-management/runtime/segmentation/schemas-overview.md
   - name: About the events.all table
-    href: schemas-events-all.md
+    href: ../../live-service-management/runtime/segmentation/schemas-events-all.md
   - name: Quickstart
-    href: schemas-quickstart.md
+    href: ../../live-service-management/runtime/segmentation/schemas-quickstart.md
 - name: Actions and Rules
   expanded: true
   items:
   - name: Overview
-    href: action-rules-overview.md
+    href: ../../live-service-management/runtime/segmentation/action-rules-overview.md
   - name: Quickstart
-    href: action-rules-quickstart.md
+    href: ../../live-service-management/runtime/segmentation/action-rules-quickstart.md
   - name: Tutorials
     expanded: true
     items:
     - name: Bulk Actions for an entire player segment
-      href: action-rules-bulk-actions-for-an-entire-player-segment.md
+      href: ../../live-service-management/runtime/segmentation/action-rules-overview.md
     - name: Using CloudScript actions with PlayStream
-      href: action-rules-using-cloudscript-actions-with-playstream.md
+      href: ../../live-service-management/runtime/segmentation/action-rules-using-cloudscript-actions-with-playstream.md
 - name: Scheduled tasks
   expanded: true
   items:
