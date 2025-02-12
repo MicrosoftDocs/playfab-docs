@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Setting up PlayFab authentication using Steam and Unity
 
-This tutorial guides you through the steps for logging into PlayFab using Steam through SteamWorks and Unity.
+This tutorial guides you through the steps for logging into PlayFab using Steam through **SteamWorks** and Unity.
 
 ## Prerequisites
 
@@ -20,11 +20,11 @@ Before beginning, you should have:
 
 - A Unity project with an imported PlayFab SDK, and a configured title ID.
 - A Steam Application with:
-  - The AppID already set up. The AppID is usually acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
-  - A Steam Publisher Web API Key. Follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the Steamworks documentation to generate a publisher key.
+  - The AppID already set up. The AppID can be acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
+  - A Steam Publisher Web API Key. To generate a publisher key, follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the **Steamworks** documentation.
 - Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
 
-## Setting up a PlayFab title
+## Setting up a PlayFab title with Steam integration
 
 To enable support for Steam authorization, PlayFab requires you to enable the Steam add-on.
 
@@ -33,15 +33,13 @@ Go to your **Game Manager** page:
 1. Select the **Add-ons** menu item.
 2. In the list of available **Add-ons**, locate **Steam** and select the title link:
 
-![Game Manager Add-ons tab](media/tutorials/steam-unity/game-manager-addons-tab-steam.png)  
+![Game Manager Add-ons tab](media/tutorials/steam-unity/game-manager-addons-tab-steam.png)
 
 1. Enter your **App ID**.
 2. Enter the **Web API Key**.
 3. Then select **Install Steam**.
 
-![Game Manager install Steam Add-on](media/tutorials/steam-unity/game-manager-install-steam-addon.png)  
-
-This concludes setting up a PlayFab title for Steam integration.
+![Game Manager install Steam Add-on](media/tutorials/steam-unity/game-manager-install-steam-addon.png)
 
 ## Setting up a Unity project
 
@@ -57,10 +55,10 @@ Start by downloading the latest release of Steamworks.NET from the [Releases pag
 
 Re-open Unity and create a new scene.
 
-Inside that scene create a new **gameobject** called **Steam**:
+Inside that scene, create a new **GameObject** called **Steam**:
 
-1. Add a **SteamManager** component to the **gameobject**. This component is part of Steamworks.Net.
-2. Create and add a **SteamScript** component to the **gameobject**.
+1. Add a **SteamManager** component to the **GameObject**. This component is part of Steamworks.Net.
+2. Create and add a **SteamScript** component to the **GameObject**.
 
 ![Unity project - Add Steam object](media/tutorials/steam-unity/unity-project-add-steam-object.png)  
 
