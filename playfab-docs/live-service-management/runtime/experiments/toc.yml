@@ -1,11 +1,8 @@
 items:
   - name: Overview
-    expanded: true
-    items:
-    - name: Experiments
-      href: index.md
-    - name: Pricing
-      href: pricing.md
+    href: index.md
+  - name: Pricing
+    href: pricing.md
   - name: Concepts
     expanded: true
     items:
