@@ -12,6 +12,20 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.9
+
+February 11, 2025
+
+### Bug fixes
+
+- Fixed an issue where the library would incorrectly retry some operations associated with the real-time notification service when HTTP 401 was received.
+- Fixed a regression introduced in v1.7.8 that assigned the `PFMultiplayerServerDetails::region` value to `PFMultiplayerServerDetails::fqdn`.
+- Fixed an issue where the properties associated with a new member weren't immediately available until a subsequent `Updated` state change was provided. Now, as soon as a `MemberAdded` state change is provided to the game, [PFLobbyGetMemberConnectionStatus()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberconnectionstatus.md), [PFLobbyGetMemberPropertyKeys()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberpropertykeys.md), and [PFLobbyGetMemberProperty()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberproperty.md) provide the most up-to-date information associated with the member. In order to preserve compatibility for games that took a dependency on the previous behavior, the first `Updated` state change after the member is added will continue to provide this initial list of property keys as if they were new properties.
+- Fixed a couple of issues where the library could crash when [PFMultiplayerUninitialize()](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) was called while cleaning up internal web request resources.
+- Fixed an issue for GDK Xbox where the library could crash during suspend while cleaning up internal state associated with the invite listener.
+- Fixed an issue for Android where the library could crash when when [PFMultiplayerUninitialize()](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) was called while cleaning up JavaVM attached threads.
+- Fixed an issue for macOS where the library was incorrectly symlinked, which could surface as build breaks when integrating the library.
+
 ## 1.7.8
 
 Nov 5, 2024
