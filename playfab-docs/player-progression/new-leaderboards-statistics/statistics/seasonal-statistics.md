@@ -106,4 +106,5 @@ In this tutorial, we learned how to do the following operations:
 - [Doing more with statistics](doing-more-statistics.md).
 - [Create basic statistics](create-basic-statistics.md).
 - [Add contextual data to statistics](metadata-statistics.md).
+- [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).

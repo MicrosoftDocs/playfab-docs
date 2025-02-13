@@ -135,16 +135,19 @@ Alongside the record in the player's transaction history, a PlaySteam event is a
 >
 > In Steam's case, consumption is done when the `RedeemSteamInventoryItems` API call is made, so there's no need for any additional steps after redeeming items. Nonetheless, it's worth noting that because consumption is made automatically during a successful redemption, the items matching the `itemdefid` will not longer be available in Steam's inventory.
 
-## Step 7: Durable support (optional)
+## Step 7: DLC and promo items
 
 Steam DLC (Downloadable Content) is a system PlayFab doesn't currently integrate with. We suggest developers use Steam promo rules to grant inventory items from an app ownership perspective.
 
 This means that **before** making a redemption call using `RedeemSteamInventoryItems`, you must call [AddPromoItems](https://aka.ms/SteamPromoItems) from the Steam client using their SDK.
 
-`AddPromoItems` checks the promo:owns:**ID** and confirms it exists in the player's owned apps. If so, then it adds the item whose ID matches the `itemdefid` in the item definition.
+`AddPromoItems` checks the promo:owns:**ID** and confirms it exists in the player's owned apps (for example, DLC). If so, then it adds the item in itemdefs with the promo rule to Steam's inventory. Redemption will then add the item in Steam's inventory that matches the `itemdefid`.
 
 >[!NOTE]
 > We don't currently support subscriptions.
+
+>[!NOTE]
+> To learn more about item definitions, see [ItemDef Schema Overview](https://aka.ms/SteamItemDefinition).
 
 ## See also
 

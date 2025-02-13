@@ -5,7 +5,7 @@ description: "Search for a given item and return a set of bundles and stores con
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFCatalogGetItemContainersAsync  

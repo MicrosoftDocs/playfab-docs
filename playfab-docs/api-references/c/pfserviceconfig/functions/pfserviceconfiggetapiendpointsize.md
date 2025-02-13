@@ -5,7 +5,7 @@ description: "Gets the size of the buffer needed to hold the API endpoint for a 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFServiceConfigGetAPIEndpointSize  

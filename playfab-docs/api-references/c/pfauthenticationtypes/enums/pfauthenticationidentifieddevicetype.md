@@ -5,7 +5,7 @@ description: "IdentifiedDeviceType enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFAuthenticationIdentifiedDeviceType  
@@ -19,7 +19,14 @@ enum class PFAuthenticationIdentifiedDeviceType  : uint32_t
 {  
     Unknown,  
     XboxOne,  
-    Scarlett  
+    Scarlett,  
+    WindowsOneCore,  
+    WindowsOneCoreMobile,  
+    Win32,  
+    android,  
+    iOS,  
+    PlayStation,  
+    Nintendo  
 }  
 ```  
   
@@ -30,6 +37,13 @@ enum class PFAuthenticationIdentifiedDeviceType  : uint32_t
 | Unknown | TBD   |  
 | XboxOne | TBD   |  
 | Scarlett | TBD   |  
+| WindowsOneCore | TBD   |  
+| WindowsOneCoreMobile | TBD   |  
+| Win32 | TBD   |  
+| android | TBD   |  
+| iOS | TBD   |  
+| PlayStation | TBD   |  
+| Nintendo | TBD   |  
   
   
 ## Requirements  

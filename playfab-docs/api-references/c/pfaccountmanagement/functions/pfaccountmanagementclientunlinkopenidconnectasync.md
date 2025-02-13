@@ -5,7 +5,7 @@ description: "Unlinks an OpenID Connect account from a user's PlayFab account, b
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/22/2024
+ms.date: 11/19/2024
 ---
 
 # PFAccountManagementClientUnlinkOpenIdConnectAsync  

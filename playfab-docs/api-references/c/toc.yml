@@ -42,10 +42,6 @@
     href: pfgroups/pfgroups_members.md
   - name: PFGroupsTypes
     href: pfgroupstypes/pfgroupstypes_members.md
-  - name: PFHCTrace
-    href: pfhctrace/pfhctrace_members.md
-  - name: PFHttpClient
-    href: pfhttpclient/pfhttpclient_members.md
   - name: PFInventory
     href: pfinventory/pfinventory_members.md
   - name: PFInventoryTypes
@@ -410,8 +406,6 @@
     href: pfauthentication/functions/pfauthenticationauthenticategameserverwithcustomidasync.md
   - name: PFAuthenticationAuthenticateGameServerWithCustomIdGetResult
     href: pfauthentication/functions/pfauthenticationauthenticategameserverwithcustomidgetresult.md
-  - name: PFAuthenticationAuthenticateGameServerWithCustomIdGetResultSize
-    href: pfauthentication/functions/pfauthenticationauthenticategameserverwithcustomidgetresultsize.md
   - name: PFAuthenticationDeleteAsync
     href: pfauthentication/functions/pfauthenticationdeleteasync.md
   - name: PFAuthenticationGetEntityAsync
@@ -922,122 +916,6 @@
     href: pfgroups/functions/pfgroupsupdaterolegetresult.md
   - name: PFGroupsUpdateRoleGetResultSize
     href: pfgroups/functions/pfgroupsupdaterolegetresultsize.md
-  - name: PFHCSettingsGetTraceLevel
-    href: pfhctrace/functions/pfhcsettingsgettracelevel.md
-  - name: PFHCSettingsSetTraceLevel
-    href: pfhctrace/functions/pfhcsettingssettracelevel.md
-  - name: PFHCTraceImplGetAreaVerbosity
-    href: pfhctrace/functions/pfhctraceimplgetareaverbosity.md
-  - name: PFHCTraceImplMessage
-    href: pfhctrace/functions/pfhctraceimplmessage.md
-  - name: PFHCTraceImplSetAreaVerbosity
-    href: pfhctrace/functions/pfhctraceimplsetareaverbosity.md
-  - name: PFHCTraceSetClientCallback
-    href: pfhctrace/functions/pfhctracesetclientcallback.md
-  - name: PFHCTraceSetPlatformCallbacks
-    href: pfhctrace/functions/pfhctracesetplatformcallbacks.md
-  - name: PFHCTraceSetTraceToDebugger
-    href: pfhctrace/functions/pfhctracesettracetodebugger.md
-  - name: PFHCGetLibVersion
-    href: pfhttpclient/functions/pfhcgetlibversion.md
-  - name: PFHCGetWebSocketConnectResult
-    href: pfhttpclient/functions/pfhcgetwebsocketconnectresult.md
-  - name: PFHCGetWebSocketSendMessageResult
-    href: pfhttpclient/functions/pfhcgetwebsocketsendmessageresult.md
-  - name: PFHCHttpCallCloseHandle
-    href: pfhttpclient/functions/pfhchttpcallclosehandle.md
-  - name: PFHCHttpCallCreate
-    href: pfhttpclient/functions/pfhchttpcallcreate.md
-  - name: PFHCHttpCallGetRequestUrl
-    href: pfhttpclient/functions/pfhchttpcallgetrequesturl.md
-  - name: PFHCHttpCallPerformAsync
-    href: pfhttpclient/functions/pfhchttpcallperformasync.md
-  - name: PFHCHttpCallRequestEnableGzipCompression
-    href: pfhttpclient/functions/pfhchttpcallrequestenablegzipcompression.md
-  - name: PFHCHttpCallRequestSetHeader
-    href: pfhttpclient/functions/pfhchttpcallrequestsetheader.md
-  - name: PFHCHttpCallRequestSetRequestBodyBytes
-    href: pfhttpclient/functions/pfhchttpcallrequestsetrequestbodybytes.md
-  - name: PFHCHttpCallRequestSetRequestBodyReadFunction
-    href: pfhttpclient/functions/pfhchttpcallrequestsetrequestbodyreadfunction.md
-  - name: PFHCHttpCallRequestSetRequestBodyString
-    href: pfhttpclient/functions/pfhchttpcallrequestsetrequestbodystring.md
-  - name: PFHCHttpCallRequestSetRetryAllowed
-    href: pfhttpclient/functions/pfhchttpcallrequestsetretryallowed.md
-  - name: PFHCHttpCallRequestSetRetryCacheId
-    href: pfhttpclient/functions/pfhchttpcallrequestsetretrycacheid.md
-  - name: PFHCHttpCallRequestSetRetryDelay
-    href: pfhttpclient/functions/pfhchttpcallrequestsetretrydelay.md
-  - name: PFHCHttpCallRequestSetSSLValidation
-    href: pfhttpclient/functions/pfhchttpcallrequestsetsslvalidation.md
-  - name: PFHCHttpCallRequestSetTimeout
-    href: pfhttpclient/functions/pfhchttpcallrequestsettimeout.md
-  - name: PFHCHttpCallRequestSetTimeoutWindow
-    href: pfhttpclient/functions/pfhchttpcallrequestsettimeoutwindow.md
-  - name: PFHCHttpCallRequestSetUrl
-    href: pfhttpclient/functions/pfhchttpcallrequestseturl.md
-  - name: PFHCHttpCallResponseGetHeader
-    href: pfhttpclient/functions/pfhchttpcallresponsegetheader.md
-  - name: PFHCHttpCallResponseGetHeaderAtIndex
-    href: pfhttpclient/functions/pfhchttpcallresponsegetheaderatindex.md
-  - name: PFHCHttpCallResponseGetNetworkErrorCode
-    href: pfhttpclient/functions/pfhchttpcallresponsegetnetworkerrorcode.md
-  - name: PFHCHttpCallResponseGetNumHeaders
-    href: pfhttpclient/functions/pfhchttpcallresponsegetnumheaders.md
-  - name: PFHCHttpCallResponseGetPlatformNetworkErrorMessage
-    href: pfhttpclient/functions/pfhchttpcallresponsegetplatformnetworkerrormessage.md
-  - name: PFHCHttpCallResponseGetResponseBodyBytes
-    href: pfhttpclient/functions/pfhchttpcallresponsegetresponsebodybytes.md
-  - name: PFHCHttpCallResponseGetResponseBodyBytesSize
-    href: pfhttpclient/functions/pfhchttpcallresponsegetresponsebodybytessize.md
-  - name: PFHCHttpCallResponseGetResponseString
-    href: pfhttpclient/functions/pfhchttpcallresponsegetresponsestring.md
-  - name: PFHCHttpCallResponseGetStatusCode
-    href: pfhttpclient/functions/pfhchttpcallresponsegetstatuscode.md
-  - name: PFHCHttpCallResponseSetResponseBodyWriteFunction
-    href: pfhttpclient/functions/pfhchttpcallresponsesetresponsebodywritefunction.md
-  - name: PFHCHttpCallSetTracing
-    href: pfhttpclient/functions/pfhchttpcallsettracing.md
-  - name: PFHCHttpDisableAssertsForSSLValidationInDevSandboxes
-    href: pfhttpclient/functions/pfhchttpdisableassertsforsslvalidationindevsandboxes.md
-  - name: PFHCIsInitialized
-    href: pfhttpclient/functions/pfhcisinitialized.md
-  - name: PFHCMemGetFunctions
-    href: pfhttpclient/functions/pfhcmemgetfunctions.md
-  - name: PFHCMemSetFunctions
-    href: pfhttpclient/functions/pfhcmemsetfunctions.md
-  - name: PFHCRemoveCallRoutedHandler
-    href: pfhttpclient/functions/pfhcremovecallroutedhandler.md
-  - name: PFHCRemoveWebSocketRoutedHandler
-    href: pfhttpclient/functions/pfhcremovewebsocketroutedhandler.md
-  - name: PFHCSetGlobalProxy
-    href: pfhttpclient/functions/pfhcsetglobalproxy.md
-  - name: PFHCWebSocketCloseHandle
-    href: pfhttpclient/functions/pfhcwebsocketclosehandle.md
-  - name: PFHCWebSocketConnectAsync
-    href: pfhttpclient/functions/pfhcwebsocketconnectasync.md
-  - name: PFHCWebSocketCreate
-    href: pfhttpclient/functions/pfhcwebsocketcreate.md
-  - name: PFHCWebSocketDisconnect
-    href: pfhttpclient/functions/pfhcwebsocketdisconnect.md
-  - name: PFHCWebSocketGetBinaryMessageFragmentEventFunction
-    href: pfhttpclient/functions/pfhcwebsocketgetbinarymessagefragmenteventfunction.md
-  - name: PFHCWebSocketGetEventFunctions
-    href: pfhttpclient/functions/pfhcwebsocketgeteventfunctions.md
-  - name: PFHCWebSocketSendBinaryMessageAsync
-    href: pfhttpclient/functions/pfhcwebsocketsendbinarymessageasync.md
-  - name: PFHCWebSocketSendMessageAsync
-    href: pfhttpclient/functions/pfhcwebsocketsendmessageasync.md
-  - name: PFHCWebSocketSetBinaryMessageFragmentEventFunction
-    href: pfhttpclient/functions/pfhcwebsocketsetbinarymessagefragmenteventfunction.md
-  - name: PFHCWebSocketSetHeader
-    href: pfhttpclient/functions/pfhcwebsocketsetheader.md
-  - name: PFHCWebSocketSetMaxReceiveBufferSize
-    href: pfhttpclient/functions/pfhcwebsocketsetmaxreceivebuffersize.md
-  - name: PFHCWebSocketSetProxyDecryptsHttps
-    href: pfhttpclient/functions/pfhcwebsocketsetproxydecryptshttps.md
-  - name: PFHCWebSocketSetProxyUri
-    href: pfhttpclient/functions/pfhcwebsocketsetproxyuri.md
   - name: PFInventoryAddInventoryItemsAsync
     href: pfinventory/functions/pfinventoryaddinventoryitemsasync.md
   - name: PFInventoryAddInventoryItemsGetResult
@@ -1168,6 +1046,8 @@
     href: pfmultiplayerserver/functions/pfmultiplayerserverrequestmultiplayerservergetresultsize.md
   - name: PFMemGetFunctions
     href: pfplatform/functions/pfmemgetfunctions.md
+  - name: PFMemIsUsingCustomMemoryFunctions
+    href: pfplatform/functions/pfmemisusingcustommemoryfunctions.md
   - name: PFMemSetFunctions
     href: pfplatform/functions/pfmemsetfunctions.md
   - name: PFPlatformLocalStorageSetHandlers
@@ -1414,6 +1294,8 @@
     href: pftrace/functions/pftraceenabletracetofile.md
 - name: Enumerations
   items:
+  - name: PFAccountManagementUserFamilyType
+    href: pfaccountmanagementtypes/enums/pfaccountmanagementuserfamilytype.md
   - name: PFAuthenticationIdentifiedDeviceType
     href: pfauthenticationtypes/enums/pfauthenticationidentifieddevicetype.md
   - name: PFCatalogConcernCategory
@@ -1430,12 +1312,6 @@
     href: pfcloudscripttypes/enums/pfcloudscriptcloudscriptrevisionoption.md
   - name: PFFriendsExternalFriendSources
     href: pffriendstypes/enums/pffriendsexternalfriendsources.md
-  - name: PFHCTraceLevel
-    href: pfhctrace/enums/pfhctracelevel.md
-  - name: PFHCCompressionLevel
-    href: pfhttpclient/enums/pfhccompressionlevel.md
-  - name: PFHCConfigSetting
-    href: pfhttpclient/enums/pfhcconfigsetting.md
   - name: PFMultiplayerServerAzureVmSize
     href: pfmultiplayerservertypes/enums/pfmultiplayerserverazurevmsize.md
   - name: PFMultiplayerServerProtocolType
@@ -1458,6 +1334,8 @@
     href: pftypes/enums/pfoperationtypes.md
   - name: PFPushNotificationPlatform
     href: pftypes/enums/pfpushnotificationplatform.md
+  - name: PFResetInterval
+    href: pftypes/enums/pfresetinterval.md
   - name: PFSubscriptionProviderStatus
     href: pftypes/enums/pfsubscriptionproviderstatus.md
   - name: PFTitleActivationStatus
@@ -1788,6 +1666,8 @@
     href: pfcatalogtypes/structs/pfcatalogcatalogpriceoverride.md
   - name: PFCatalogCatalogSpecificConfig
     href: pfcatalogtypes/structs/pfcatalogcatalogspecificconfig.md
+  - name: PFCatalogCategoryRatingConfig
+    href: pfcatalogtypes/structs/pfcatalogcategoryratingconfig.md
   - name: PFCatalogContent
     href: pfcatalogtypes/structs/pfcatalogcontent.md
   - name: PFCatalogCreateDraftItemRequest
@@ -1860,6 +1740,8 @@
     href: pfcatalogtypes/structs/pfcatalogkeywordsetdictionaryentry.md
   - name: PFCatalogModerationState
     href: pfcatalogtypes/structs/pfcatalogmoderationstate.md
+  - name: PFCatalogPermissions
+    href: pfcatalogtypes/structs/pfcatalogpermissions.md
   - name: PFCatalogPublishDraftItemRequest
     href: pfcatalogtypes/structs/pfcatalogpublishdraftitemrequest.md
   - name: PFCatalogRating
@@ -1870,6 +1752,8 @@
     href: pfcatalogtypes/structs/pfcatalogreportitemreviewrequest.md
   - name: PFCatalogReview
     href: pfcatalogtypes/structs/pfcatalogreview.md
+  - name: PFCatalogReviewConfig
+    href: pfcatalogtypes/structs/pfcatalogreviewconfig.md
   - name: PFCatalogReviewItemRequest
     href: pfcatalogtypes/structs/pfcatalogreviewitemrequest.md
   - name: PFCatalogReviewTakedown
@@ -1894,6 +1778,8 @@
     href: pfcatalogtypes/structs/pfcataloguploadurlmetadata.md
   - name: PFCatalogUserGeneratedContentSpecificConfig
     href: pfcatalogtypes/structs/pfcatalogusergeneratedcontentspecificconfig.md
+  - name: PFCloudScriptEventHubFunctionModel
+    href: pfcloudscripttypes/structs/pfcloudscripteventhubfunctionmodel.md
   - name: PFCloudScriptExecuteCloudScriptRequest
     href: pfcloudscripttypes/structs/pfcloudscriptexecutecloudscriptrequest.md
   - name: PFCloudScriptExecuteCloudScriptResult
@@ -1908,6 +1794,8 @@
     href: pfcloudscripttypes/structs/pfcloudscriptexecutefunctionresult.md
   - name: PFCloudScriptFunctionExecutionError
     href: pfcloudscripttypes/structs/pfcloudscriptfunctionexecutionerror.md
+  - name: PFCloudScriptListFunctionsRequest
+    href: pfcloudscripttypes/structs/pfcloudscriptlistfunctionsrequest.md
   - name: PFCloudScriptLogStatement
     href: pfcloudscripttypes/structs/pfcloudscriptlogstatement.md
   - name: PFCloudScriptScriptExecutionError
@@ -2088,10 +1976,6 @@
     href: pfgroupstypes/structs/pfgroupsupdategrouprolerequest.md
   - name: PFGroupsUpdateGroupRoleResponse
     href: pfgroupstypes/structs/pfgroupsupdategrouproleresponse.md
-  - name: PFHCInitArgs
-    href: pfhttpclient/structs/pfhcinitargs.md
-  - name: PFWebSocketCompletionResult
-    href: pfhttpclient/structs/pfwebsocketcompletionresult.md
   - name: PFInventoryAddInventoryItemsOperation
     href: pfinventorytypes/structs/pfinventoryaddinventoryitemsoperation.md
   - name: PFInventoryAddInventoryItemsRequest
@@ -2250,6 +2134,10 @@
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverschedule.md
   - name: PFMultiplayerServerScheduledStandbySettings
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverscheduledstandbysettings.md
+  - name: PFMultiplayerServerSecret
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserversecret.md
+  - name: PFMultiplayerServerSecretSummary
+    href: pfmultiplayerservertypes/structs/pfmultiplayerserversecretsummary.md
   - name: PFLocalStorageHooks
     href: pfplatform/structs/pflocalstoragehooks.md
   - name: PFMemoryHooks
@@ -2268,6 +2156,10 @@
     href: pfplayerdatamanagementtypes/structs/pfplayerdatamanagementupdateuserdataresult.md
   - name: PFPlayerDataManagementUpdateUserInternalDataRequest
     href: pfplayerdatamanagementtypes/structs/pfplayerdatamanagementupdateuserinternaldatarequest.md
+  - name: PFEntityStatisticValue
+    href: pfprofilestypes/structs/pfentitystatisticvalue.md
+  - name: PFEntityStatisticValueDictionaryEntry
+    href: pfprofilestypes/structs/pfentitystatisticvaluedictionaryentry.md
   - name: PFProfilesEntityDataObject
     href: pfprofilestypes/structs/pfprofilesentitydataobject.md
   - name: PFProfilesEntityDataObjectDictionaryEntry
@@ -2280,14 +2172,6 @@
     href: pfprofilestypes/structs/pfprofilesentityprofilefilemetadata.md
   - name: PFProfilesEntityProfileFileMetadataDictionaryEntry
     href: pfprofilestypes/structs/pfprofilesentityprofilefilemetadatadictionaryentry.md
-  - name: PFProfilesEntityStatisticAttributeValue
-    href: pfprofilestypes/structs/pfprofilesentitystatisticattributevalue.md
-  - name: PFProfilesEntityStatisticAttributeValueDictionaryEntry
-    href: pfprofilestypes/structs/pfprofilesentitystatisticattributevaluedictionaryentry.md
-  - name: PFProfilesEntityStatisticValue
-    href: pfprofilestypes/structs/pfprofilesentitystatisticvalue.md
-  - name: PFProfilesEntityStatisticValueDictionaryEntry
-    href: pfprofilestypes/structs/pfprofilesentitystatisticvaluedictionaryentry.md
   - name: PFProfilesGetEntityProfileRequest
     href: pfprofilestypes/structs/pfprofilesgetentityprofilerequest.md
   - name: PFProfilesGetEntityProfileResponse
@@ -2468,6 +2352,8 @@
     href: pftypes/structs/pfvaluetodatemodel.md
   - name: PFVariable
     href: pftypes/structs/pfvariable.md
+  - name: PFVersionConfiguration
+    href: pftypes/structs/pfversionconfiguration.md
   - name: PFVirtualCurrencyRechargeTime
     href: pftypes/structs/pfvirtualcurrencyrechargetime.md
   - name: PFVirtualCurrencyRechargeTimeDictionaryEntry

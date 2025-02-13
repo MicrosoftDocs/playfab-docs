@@ -19,7 +19,7 @@ Economy v2 is a major change from the existing PlayFab Monetization suite of fea
 * Idempotent transactions
 * Batch operations
 * Handling of high [concurrency](catalog/etags.md) rates, especially with inventory interactions
-* Large unified catalog (unlimited number of items) of in-game goods or user-generated content (UGC)  
+* Large unified catalog (up to 20GB per entity) of in-game goods or user-generated content (UGC), supporting multiple entities
 * Individual Catalog Item documents instead of all items being stored in a single document
 * Large player inventories ([3,000+ items](limits.md))
 * Integration with PlayFab Entities
