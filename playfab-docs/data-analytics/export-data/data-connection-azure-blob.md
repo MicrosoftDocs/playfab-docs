@@ -24,6 +24,9 @@ For existing PlayFab who are new to Azure, you can sign up for an [Azure subscri
 
 For PlayFab to ingest data in your storage account, container details along with authorization using a SAS token are required. To create a SAS token using the Microsoft Azure portal, follow the steps below.
 
+> [!Note]
+> A Storage Account with a restricted network is not supported. All networks must be allowed in the firewall.
+
 ### Option 1: Create the SAS token on the container level. 
 > [!Important]
 > Generate and retrieve the shared access signature for your container, not for the storage account itself.
