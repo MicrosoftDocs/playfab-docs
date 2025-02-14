@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab Player progression documentation
-summary: Product landing page for cross=platform progression services. # < 160 chars
+summary: Product landing page for cross-platform progression services. # < 160 chars
 
 metadata:
   title: PlayFab Player Progression documentation
@@ -18,6 +18,28 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
+
+  - title: Get started with Player Data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What is Player Data?
+            url: player-data/index.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart with Player Data
+            url: player-data/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Getting player profiles
+            url: player-data/getting-player-profiles.md
+          - text: Player Details
+            url: player-data/player-details.md
+          - text: Player Inventory
+            url: player-data/player-inventory.md
+          - text: Player Segments
+            url: player-data/player-segments.md
+
 
   - title: Get started with Statistics
     linkLists:
@@ -42,20 +64,27 @@ landingContent:
           - text: Transactional writes
             url: statistics/transactional-writes.md
 
-  - title: Refer to APIs
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Statistics reference
-            url: statistics/api-reference.md
+  # - title: Refer to APIs
+  #   linkLists:
+  #     - linkListType: reference
+  #       links:
+  #         - text: Statistics reference
+  #           url: statistics/api-reference.md
 
-  - title: Meters
-    linkLists:
-      - linkListType: reference
+  # - title: Meters
+  #   linkLists:
+  #     - linkListType: reference
+  #       links:
+  #         - text: Meters in general
+  #           url: ../pricing/meters/meters.md
+  #         - text: Development mode limits
+  #           url: ../pricing/development-mode.md
+  #         - text: Statistics meters
+  #           url: ../pricing/meters/statistics-meters.md
+
+  - title: Deleting and Exporting Data
+     linkLists:
+       - linkListType: reference
         links:
-          - text: Meters in general
-            url: ../pricing/meters/meters.md
-          - text: Development mode limits
-            url: ../pricing/development-mode.md
-          - text: Statistics meters
-            url: ../pricing/meters/statistics-meters.md
+           - text: PlayFab GDPR
+             url: ../data-analytics/privacy-compliance/playfab-gdpr-deleting-and-exporting-player-data.md

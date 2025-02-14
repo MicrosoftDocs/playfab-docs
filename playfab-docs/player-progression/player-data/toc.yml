@@ -4,7 +4,6 @@ items:
 - name: Quickstart
   href: quickstart.md
 - name: Tutorials
-  href: tutorials.md
   items:
   - name: Getting Player Profiles
     href: getting-player-profiles.md
