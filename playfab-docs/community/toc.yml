@@ -9,3 +9,81 @@ items:
     href: social/toc.yml
   - name: Synchronous Player Communications
     href: voice-communications/toc.yml
+### YamlMime:Landing
+
+title: Azure PlayFab Player Associations documentation
+summary: Player associations include all the ways that two or more players might be related or compared to one another, including Friends, Groups, and Leaderboard rankings. # < 160 chars
+
+metadata:
+  title: PlayFab Player Associations documentation
+  description: Central page for PlayFab Player Associations features. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab
+  ms.topic: landing-page
+  author: thomasgu
+  ms.author: thomg
+  ms.date: 06/10/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Friends
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Friends Overview
+            url: friends/index.md
+      - linkListType: quickstart
+        links:
+          - text: Friends Quickstart
+            url: friends/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Friend Leaderboards
+            url: friends/friends-leaderboards.md
+  
+
+  - title: Get started with Leaderboards
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What is a Leaderboard?
+            url: leaderboards/index.md
+      - linkListType: quickstart
+        links:
+          - text: Quickstart with Leaderboards
+            url: leaderboards/quickstart-leaderboards.md
+      - linkListType: tutorial
+        links:
+          - text: Create a basic leaderboard
+            url: leaderboards/create-basic-leaderboard.md
+          - text: Doing more with leaderboards
+            url: leaderboards/doing-more-with-leaderboards.md
+          - text: Add contextual data to leaderboards
+            url: leaderboards/metadata-leaderboards.md
+          - text: Seasonal leaderboards
+            url: leaderboards/seasonal-leaderboards.md
+          - text: Group Leaderboards
+            url: leaderboards/group-leaderboards.md
+          - text: Manual Tiers
+            url: leaderboards/manual-tiers.md
+          - text: Ranking players by statistics
+            url: leaderboards/leaderboards-linked-to-stats.md
+
+  # Card
+  - title: Groups
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Groups Overview
+            url: groups/index.md
+      - linkListType: quickstart
+        links:
+          - text: Entity groups
+            url: groups/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Using Shared Group Data
+            url: groups/using-shared-group-data.md

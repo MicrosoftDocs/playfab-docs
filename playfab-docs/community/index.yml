@@ -69,3 +69,22 @@ landingContent:
           - text: Samples
             url: ../multiplayer/networking/party-samples.md
 
+  - title: Refer to APIs
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Leaderboards reference
+            url: leaderboards/api-reference.md
+          - text: Statistics reference
+            url: statistics/api-reference.md
+
+  - title: Meters
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Meters in general
+            url: ../pricing/meters/meters.md
+          - text: Development mode limits
+            url: ../pricing/development-mode.md
+          - text: Leaderboards meters
+            url: ../pricing/meters/leaderboard-meters.md
