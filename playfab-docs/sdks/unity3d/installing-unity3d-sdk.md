@@ -48,7 +48,7 @@ If you are making a server build, be sure to provide the **Developer Secret Key*
 
 ![PlayFab Developer Secret Key Setting](media/playfab-shared-settings-secret-key.png)
 
-Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../gamemanager/secret-key-management.md).
+Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../live-service-management/production/gamemanager/secret-key-management.md).
 
  > [!NOTE]
  > Refer to [Secret key Management](../../live-service-management/production/gamemanager/secret-key-management.md) to find your secret key, also called a developer key to your PlayFab Title.

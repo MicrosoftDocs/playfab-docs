@@ -25,7 +25,7 @@ Each time we release PlayFab OSS, we always update the Party and Multiplayer SDK
 
 ## Using the Switch, PlayStation®5 and PlayStation®4
 * **Nuget.exe** Find the location of Nuget.exe on your machine and add it to the PATH environment variable.
-* **Specific platform PlayFab Multiplayer and Party libraries:** run **SetUpPrivateOSS.ps1 -Platform <Switch | PlayStation>** located in the **OnlineSubsystemPlayFab** folder. This script pulls the binaries and source code for the supported private platforms. You must have [access](request-access-for-sdks-samples.md) to our private repositories. If you want to use a different version of NuGet package, you can change the **packages.config** file in the **\Platforms\[Switch|PS4|PS5]\** to the version you want. After you make changes to the **packages.config** file, you must perform SetUpPrivateOSS.ps1 again.
+* **Specific platform PlayFab Multiplayer and Party libraries:** run **SetUpPrivateOSS.ps1 -Platform <Switch | PlayStation>** located in the **OnlineSubsystemPlayFab** folder. This script pulls the binaries and source code for the supported private platforms. You must have [access](../../sdks/request-access-for-sdks-samples.md) to our private repositories. If you want to use a different version of NuGet package, you can change the **packages.config** file in the **\Platforms\[Switch|PS4|PS5]\** to the version you want. After you make changes to the **packages.config** file, you must perform SetUpPrivateOSS.ps1 again.
 
     If you see patch errors on `Source/OnlineSubsystemPlayFab.Build.cs`, please check if `Source/OnlineSubsystemPlayFab.Build.cs` has already been patched in your previous runs of the script. If yes, please feel free to ignore the patch error.
 

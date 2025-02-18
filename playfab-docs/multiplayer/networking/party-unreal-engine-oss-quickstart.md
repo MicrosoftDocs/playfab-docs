@@ -130,11 +130,11 @@ NativePlatformService=Steam
 
 ### Switch
 
-For more information about Switch, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS. If you don't have access, you can [request access](request-access-for-sdks-samples.md) to our private repositories.
+For more information about Switch, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabMultiplayerUnrealSwitch?path=/README.md) file that comes with the Switch PlayFab OSS. If you don't have access, you can [request access](../../sdks/request-access-for-sdks-samples.md) to our private repositories.
 
 ### PS5™ and PS4™
 
-For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS. If you don't have access, you can [request access](request-access-for-sdks-samples.md) to our private repositories.
+For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabMultiplayerUnrealPlayStation?path=/README.md) file that comes with the PS5™ and PS4™ PlayFab OSS. If you don't have access, you can [request access](../../sdks/request-access-for-sdks-samples.md) to our private repositories.
 
 ### Cross-platform
 

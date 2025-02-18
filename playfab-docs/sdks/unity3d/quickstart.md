@@ -61,7 +61,7 @@ The **Developer Secret Key** is not set by default. If you are making a server b
 ![PlayFab Developer Secret Key Setting](media/playfab-shared-settings-secret-key.png)
 The **Developer Secret Key** is automatically set to the default secret key for the Title. For more information about secret keys, see [Secret key management](../../live-service-management/production/gamemanager/secret-key-management.md).
 
-Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../gamemanager/secret-key-management.md).
+Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../live-service-management/production/gamemanager/secret-key-management.md).
 
 > [!NOTE]
 > The extensions allow you to customize the HTTP transport used to make requests to PlayFab. The recommended default is Unity Web Request. Other options exist to provide compatibility with older engine versions or game-specific HTTP implementations.

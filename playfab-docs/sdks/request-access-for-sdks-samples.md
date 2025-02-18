@@ -45,6 +45,6 @@ If you have more questions, post them on [PlayFab forums](https://community.play
 
 ## See also
 
-* [Party SDKs](party-sdks.md)
-* [Party samples](party-samples.md)
+* [Party SDKs](../multiplayer/networking/party-sdks.md)
+* [Party samples](../multiplayer/networking/party-samples.md)
 * [Party Quickstart](quickstart.md)

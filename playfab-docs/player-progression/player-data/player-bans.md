@@ -101,7 +101,7 @@ Each ban you apply gets an assigned ID. Consider the following Server SDK API me
 - [UpdateBans](xref:titleid.playfabapi.com.server.accountmanagement.updatebans)
 
 > [!NOTE]
-> You can use CloudScript functions as part of an automated system that may ban a player. To find out more about CloudScript, see our tutorial [Writing Custom CloudScript](../automation/cloudscript/writing-custom-cloudscript.md).
+> You can use CloudScript functions as part of an automated system that may ban a player. To find out more about CloudScript, see our tutorial [Writing Custom CloudScript](../../live-service-management/production/automation/cloudscript/writing-custom-cloudscript.md).
 
 ## See Also
 [BanUsers](xref:titleid.playfabapi.com.server.accountmanagement.banusers)

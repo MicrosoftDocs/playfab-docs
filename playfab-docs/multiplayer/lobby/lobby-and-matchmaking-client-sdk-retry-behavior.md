@@ -64,7 +64,7 @@ successfully, avoiding a final failure code that would otherwise appear without 
 
 For guidance on handling asynchronous errors in the SDK, see [Handling Lobby and Matchmaking SDK errors](lobby-and-matchmaking-client-sdk-errors.md).
 
-For all HTTP error codes that the Multiplayer SDK surfaces, see [PlayFab Multiplayer C++ SDK Error Codes](playfabmultiplayerreference-cpp\pfmultiplayererrors.md#http-client).
+For all HTTP error codes that the Multiplayer SDK surfaces, see [PlayFab Multiplayer C++ SDK Error Codes](playfabmultiplayerreference-cpp/pfmultiplayererrors.md#http-client).
 
 ## Configuring retries and time-outs
 
@@ -78,4 +78,4 @@ HTTP requests.
 All network failures are treated as unretryable and exposed as asynchronous errors in the SDK. For guidance on handling asynchronous errors in the SDK, see [Handling Lobby and Matchmaking SDK errors](lobby-and-matchmaking-client-sdk-errors.md).
 
 For all HTTP error codes that the Multiplayer SDK surfaces, see
-[PlayFab Multiplayer C++ SDK Error Codes](playfabmultiplayerreference-cpp\pfmultiplayererrors.md#http-client).
+[PlayFab Multiplayer C++ SDK Error Codes](playfabmultiplayerreference-cpp/pfmultiplayererrors.md#http-client).

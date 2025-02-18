@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 5. **[Party Pricing](../multiplayer/networking/pricing.md):** Learn about Party pricing when Party is enabled.
 
-6. **[Economy V2 Catalog Pricing](meters/catalog-meters.md):** Learn about Economy V2 Catalog pricing.
+6. **[Economy V2 Catalog Pricing](Meters/catalog-meters.md):** Learn about Economy V2 Catalog pricing.
 
 7. **[Experiments Pricing](../analytics/experiments/pricing.md):** Learn about Experiments pricing when used.
 

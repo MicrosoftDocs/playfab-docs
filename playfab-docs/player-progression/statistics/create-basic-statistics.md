@@ -128,7 +128,7 @@ Our next step is to start adding data to our statistic.
 Keep in mind that these statistics are entity-based statistics, which means the entries are entities. 
 In our specific example, we're using the entity type title_player_account, so our statistics tracks the information of a player. 
 However, remember that there are other entity types you can use as well. 
-You can check them out here: [Available built-in entity types](../../../live-service-management/production/entities/available-built-in-entity-types.md).
+You can check them out here: [Available built-in entity types](../../live-service-management/production/entities/available-built-in-entity-types.md).
 
 Now let's dive into how we can add data to our statistic.
 

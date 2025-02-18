@@ -26,13 +26,13 @@ To learn more about the GDK, see the public documentation: [GDK documentation ho
 
 ## Nintendo Switch
 
-Before you can access the PlayFab Services SDK for Nintendo Switch, you need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. See more information here: [Request access](../../multiplayer/networking/request-access-for-sdks-samples.md).
+Before you can access the PlayFab Services SDK for Nintendo Switch, you need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. See more information here: [Request access](../request-access-for-sdks-samples.md).
 
 Once you've been granted access to the Switch SDK, you can download it from the git repo here: [PlayFabCSdk.Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch).
 
 ## Sony PlayStation
 
-Before you can access the PlayFab Services SDK for PlayStation, you need to confirm your registered developer status via the PlayFab page in Sony's middleware directory. See more information here: [Request access](../../multiplayer/networking/request-access-for-sdks-samples.md).
+Before you can access the PlayFab Services SDK for PlayStation, you need to confirm your registered developer status via the PlayFab page in Sony's middleware directory. See more information here: [Request access](../request-access-for-sdks-samples.md).
 
 Once you've been granted access to the PlayStation SDK, you can download it from the git repo here: [PlayFabCSdk.PS4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4) and [PlayFabCSdk.PS5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5).
 

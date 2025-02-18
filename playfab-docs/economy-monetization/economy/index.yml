@@ -9,8 +9,8 @@ metadata:
   ms.service: azure-playfab
   ms.topic: landing-page
   author: cybtachyon
-  ms.author: derekreese
-  ms.date: 09/07/2022
+  ms.author: fprotti
+  ms.date: 02/18/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -21,9 +21,7 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Economy v1 APIs are in maintenance mode and will not be receiving any new features, only bug fixes. **The v1 APIs will be maintained for the foreseeable future.**
-            url: ../../includes/_economy-deprecation.md
-          - text: Learn more about the next version of PlayFab Economy!
+          - text: Economy v1 APIs are in maintenance mode and will not be receiving any new features, only bug fixes. **The v1 APIs will be maintained for the foreseeable future.** Learn more about the next version of PlayFab Economy!
             url: ../economy-v2/overview.md
 
   # Card

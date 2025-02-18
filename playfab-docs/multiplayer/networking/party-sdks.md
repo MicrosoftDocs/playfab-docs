@@ -16,7 +16,7 @@ This topic describes all the Azure PlayFab Party SDKs that are currently availab
 
 If you don't find what you need, let us know by writing a post on our [forums](https://community.playfab.com/index.html).
 
-Access to SDKs for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, and Xbox (GDK) require special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](request-access-for-sdks-samples.md).
+Access to SDKs for Nintendo Switch, PlayStation&#174;4, PlayStation&#174;5, and Xbox (GDK) require special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](../../sdks/request-access-for-sdks-samples.md).
 
 If you're looking for the core PlayFab SDK that helps you implement a majority of our features, including LiveOps, economy, and data analytics, see [PlayFab SDKs](../../sdks/playfab-sdk-intro.md).
 

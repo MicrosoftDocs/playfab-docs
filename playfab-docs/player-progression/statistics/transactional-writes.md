@@ -76,7 +76,7 @@ transaction IDs with those identifiers that were already processed. If a match i
 One key aspect to consider is that this transactional behavior establishes a relationship between the 
 `TransactionId` and the request being executed, not with the individual statistics within that request. 
 There isn't a mapping for each individual stat; the mapping is for the entire request. Also, when this feature
-is being used we have a different meter for tracking this type of requests, learn more here: [Statistics meters](../../pricing/meters/statistics-meters.md)
+is being used we have a different meter for tracking this type of requests, learn more here: [Statistics meters](../../live-service-management/production/pricing/Meters/statistics-meters.md)
 
 ``` C#
 public static async Task UpdateStatisticForPlayer(PlayFabAuthenticationContext context, string statName, string entityId, int eliminationScore, int caliberScore)
@@ -124,4 +124,4 @@ With these concepts clear, you're now ready to add data to your statistic and av
 - [Seasonal statistics](seasonal-statistics.md).
 - [Add contextual data to statistics](metadata-statistics.md).
 - [API reference](api-reference.md).
-- [Statistics meters](../../pricing/meters/statistics-meters.md).
+- [Statistics meters](../../live-service-management/production/pricing/Meters/statistics-meters.md).
