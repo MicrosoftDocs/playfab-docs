@@ -83,8 +83,8 @@ landingContent:
   #           url: ../pricing/meters/statistics-meters.md
 
   - title: Deleting and Exporting Data
-     linkLists:
+    linkLists:
        - linkListType: reference
-        links:
+         links:
            - text: PlayFab GDPR
              url: ../data-analytics/privacy-compliance/playfab-gdpr-deleting-and-exporting-player-data.md
