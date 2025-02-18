@@ -21,7 +21,9 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Economy v1 APIs are in maintenance mode and will not be receiving any new features, only bug fixes. The v1 APIs will be maintained for the foreseeable future.
+          - text: Economy v1 APIs are in maintenance mode and will not be receiving any new features, only bug fixes. **The v1 APIs will be maintained for the foreseeable future.**
+            url: ../../includes/_economy-deprecation.md
+          - text: Learn more about the next version of PlayFab Economy!
             url: ../economy-v2/overview.md
 
   # Card
