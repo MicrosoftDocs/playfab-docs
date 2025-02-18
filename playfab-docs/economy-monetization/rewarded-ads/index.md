@@ -11,12 +11,15 @@ ms.localizationpriority: medium
 ---
 
 # Rewarded ads
-Rewarded video ads let your players choose to watch a short video in exchange for an incentive (usually in-game currency, special items, etc). They are a great way of generating revenue, especially for free-to-play games. 
+Rewarded video ads are a popular monetization strategy in free-to-play games. They offer players the option to watch a short video in exchange for in-game rewards, such as currency or special items. This approach not only generates revenue but also enhances player engagement.
 
 ## What is an ad placement?
-An ad placement consists of a list of defined rewards to grant once a player watches an ad. You control the odds of a player recieving a randomized reward by giving each reward a different weight. Additional customization is available by setting a limit on the number of times a player can be rewarded for watching an ad. For example, it's common to set a limit of 3 times per day, per player. This incentivizes players to return to your game day after day.  
+An ad placement consists of a list of defined rewards to grant once a player watches an ad. You control the odds of a player receiving a randomized reward by giving each reward a different weight, which determines the likelihood of a player receiving that reward. (For example, a rare item might have a lower weight compared to common currency.) Additional customization is available by setting a limit on the number of times a player can be rewarded for watching an ad, this is crucial for maintaining game balance and encouraging daily engagement. For example, it's common to set a limit of 3 times per day, per player.
 
-Addtionally, leverage player [Segments](../../live-service-management,runtime,segmentation,segmentation-overview.md) to set overrides that allow different groups of players to receive different rewards. For example, reward your VIP players with a special item while other players are rewarded with currency. 
+> [!TIP]
+> Additionally, leverage player [Segments](../../live-service-management/runtime/segmentation/segmentation-overview.md) to set overrides that allow different groups of players to receive different rewards. For example, reward your VIP players with a special item while other players are rewarded with currency. 
 
 ## Why use rewarded ads?
-Rewarded ads create incentives for players to engage regularly with your game and offer them greater control over how they choose to engage with in-game advertising. It can result in players spending more time with the game and promote higher retention. 
+Rewarded ads create incentives for players to engage regularly with your game and offer them greater control over how they choose to engage with in-game advertising. This can lead to increased playtime, higher retention rates, and ultimately, greater revenue.
+
+Incorporating rewarded ads into your game can significantly boost player engagement and revenue. By carefully designing ad placements and leveraging player segments, you can create a rewarding experience for your players while achieving your monetization goals.
