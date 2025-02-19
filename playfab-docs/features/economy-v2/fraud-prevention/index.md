@@ -46,6 +46,8 @@ You can convert a pirate player to a paying customer via [Anti-Piracy techniques
 
 PlayFab Economy v2 transactions are idempotent, meaning they can be retried any number of times, and if the transaction has already been completed, the transaction will be ignored. When a player attempts to make a purchase and the request is duplicated, the player won't be charged twice.
 
+It's important to note that while most transactions require an IdempotencyId to ensure idempotency, redeem APIs function slightly differently. Redeem APIs are also idempotent but do not require an IdempotencyId. They will only grant a marketplace offer once. If you make a redeem request with the same marketplace receipt from a previously successful request, PlayFab will not grant anything on the second call.
+
 Learn more about Idempotency in our [Inventory Overview](../inventory/index.md#idempotency).
 
 ## Receipt validation
