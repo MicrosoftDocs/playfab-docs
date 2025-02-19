@@ -17,7 +17,7 @@ This quickstart guide walks you through the entire process for adding matchmakin
 
 This tutorial illustrates how to submit a ticket to a specific queue in order to find a game. A queue likely maps to a game mode or multiple game modes (ex.: a capture the flag mode and a king of the hill mode in the same queue).
 
-The matchmaking service handles finding a match amongst tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay.
+The matchmaking service handles finding a match among tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay.
 
 > [!NOTE]
 > The PlayFab Multiplayer SDK also provides APIs for PlayFab Lobbies.
@@ -48,7 +48,7 @@ Download the [C/C++ SDK](../lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.
 To use the PlayFab Lobby SDK, you need to authenticate your client using PlayFab entity keys and entity tokens. Acquire a PlayFab entity key and token pair by logging in with [LoginWithCustomId](/rest/api/playfab/client/authentication/login-with-custom-id) REST API. This API is also available as a C/C++ projection via the [PlayFab REST SDK](/gaming/playfab/sdks/playfab-sdk-intro).
 
 > [!NOTE]
-> LoginWithCustomId is a quick way to get started with PlayFab features but is not intended to be the login mechanism you ship with. For login guidance, see [Login basics and best practices](/features/authentication/login/login-basics-best-practices).
+> LoginWithCustomId is a quick way to get started with PlayFab features but isn't intended to be the login mechanism you ship with. For login guidance, see [Login basics and best practices](../../../features/authentication/login/login-basics-best-practices.md).
 
 ## Initialize the PlayFab Multiplayer SDK
 
@@ -278,11 +278,13 @@ PFMultiplayerDestroyMatchmakingTicket(g_pfmHandle, ticket);
 
 If for some reason your client wants to cancel the matchmaking process prior to the timeout set in the ```PFMatchmakingTicketConfiguration```, call [PFMatchmakingTicketCancel](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmatchmakingticketcancel.md) with the ticket handle.
 
-Calling this API doesn't guarantee the ticket will be canceled. The ticket could still complete before the cancelation can be processed, or the cancelation request may fail due to networking or service errors. You should still process matchmaking state changes to get the result of the ticket.
+Calling this API doesn't guarantee the ticket will be cancelled. The ticket could still complete before the cancellation can be processed, or the cancellation request may fail due to networking or service errors. You can still process matchmaking state changes to get the result of the ticket if you'd like to confirm the ticket cancellation has completed prior to moving on. Otherwise, you can immediately call [PFMultiplayerDestroyMatchmakingTicket](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerdestroymatchmakingticket.md).
 
 ### Example using the Matchmaking client SDK
 ```cpp
 HRESULT hr = PFMatchmakingTicketCancel(ticket);
+
+PFMultiplayerDestroyMatchmakingTicket(g_pfmHandle, ticket);
 ```
 
 ## (Optional) Connecting your players together into a Lobby

@@ -19,7 +19,9 @@
     href: config-examples.md
   - name: Specifying attributes with your tickets
     href: ticket-attributes.md
-  - name: Using server backfill tickets
+  - name: Using server backfill tickets - Multiplayer SDK
+    href: backfill-tickets-multiplayer-sdk.md
+  - name: Using server backfill tickets - REST API
     href: backfill-tickets.md
   - name: Analyzing Your Matchmaking Queue Usage
     href: usage.md
