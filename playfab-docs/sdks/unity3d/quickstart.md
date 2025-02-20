@@ -23,14 +23,14 @@ This quickstart helps you make your first PlayFab API call in the Unity engine.
   > [!NOTE]
   > The PlayFab Unity SDK supports Unity Editor version 5.3 (released December 2015) and higher.
 - A Unity Project of any of the following types:
-  - A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/UnityOverview.html).
+  - A brand new project. For more information, see [Starting Unity for the first time](https://docs.unity3d.com/Manual/get-started-with-unity.html).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 - The PlayFab Unity SDK.
 
 ## Download and install PlayFab SDK
 
-Use the PlayFab Editor Extensions package to install the SDK. The PlayFab Editor Extensions are a stand-alone Unity plug-in that streamlines installing the SDK and configuring the PlayFab settings for your Title. For information about installing the SDK without using the PlayFab Editor Extensions, see [Installing the PlayFab SDK for Unity](installing-unity3d-sdk.md#download-and-install-the-sdk-only).
+Either use the PlayFab Editor Extensions package to install the SDK or install the SDK directly. The PlayFab Editor Extensions are a stand-alone Unity plug-in that streamlines installing the SDK and configuring some PlayFab settings for your Title. For information about installing the SDK without using the PlayFab Editor Extensions, see [Installing the PlayFab SDK Without Editor Extensions for Unity](installing-unity3d-sdk.md#download-and-install-the-sdk-only).
 
 1. Download the [PlayFab Unity Editor Extensions Asset Package](https://aka.ms/PlayFabUnityEdEx).
 2. Open your Unity Project.
@@ -38,32 +38,32 @@ Use the PlayFab Editor Extensions package to install the SDK. The PlayFab Editor
 
    ![Import Unity Asset package](media/import-uedex.png)
 4. To import the PlayFab Unity Editor Extensions into your project, select **Import**.
-5. When the import completes, the PlayFab Unity Editor Extensions panel should open automatically. If you already created a PlayFab developer account, select the **Log In** link to log in with your PlayFab username and password.
-
-   ![Log in to PlayFab](media/extensions-login-dialog.png)
+5. When the import completes, the PlayFab Unity Editor Extensions panel should open automatically displaying the SDK installation dialog.
    > [!NOTE]
    > If the panel did not open, or if you close the panel and want to reopen it, you can do so by selecting **Window** > **PlayFab** > **Editor Extensions**
-6. After logging in, the extension displays the SDK installation dialog.
 
    ![Install PlayFab SDK](media/install-sdk.png)
-7. Select **Install PlayFab SDK** to automatically import the SDK into your project or upgrade the version that is currently installed.
+6. Select **Install PlayFab SDK** to automatically import the SDK into your project or upgrade the version that is currently installed.
 
 ## Set your title settings
 
-Before you can make an API call, you must specify the Title to receive the call in the PlayFab **Title Settings**. To set the Title:
+Before you can make an API call, you must create a **PlayFabSharedSettings.asset** and specify the Title ID to receive the call. To set the Title ID:
 
-1. Select **SET MY TITLE** in the **Editor Extensions**.
+1. Select **PlayFab** > **MakePlayFabSharedSettings** which should create the settings asset and open it in the Inspector panel.
+2. Set your **Title ID** in the inspector.
 
-    ![Set my title in the Editor Extensions](media/sdk-installation-success.png)
+    ![PlayFab Title ID Setting](media/playfab-shared-settings-title-id.png)
 
-2. Select the **Studio** entry to open the studio drop-down menu. Select the studio that contains the Title to which you would like to connect.
-3. Select the **Title ID** entry to open a drop-down menu of Titles associated with the selected studio.
+3. Now at any time, you may also see and change the current Title ID from the **Settings** tab in the Editor Extensions panel.
 
-The **Developer Secret Key** is automatically set to the default secret key for the Title. For more information about secret keys, see [Secret key management](../../gamemanager/secret-key-management.md).
+The **Developer Secret Key** is not set by default. If you are making a server build, be sure to provide the secret key in the **PlayFabSharedSettings.asset**.
 
-![PlayFab Title Settings](media/save-title-settings-uedex.png)
+![PlayFab Developer Secret Key Setting](media/playfab-shared-settings-secret-key.png)
 
-[!NOTE] The extensions allow you to customize the http transport used to make requests to PlayFab. The recommended default is Unity Web Request. Other options exist to provide compatibility with older engine versions or game-specific http implementations.
+Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../gamemanager/secret-key-management.md).
+
+> [!NOTE]
+> The extensions allow you to customize the HTTP transport used to make requests to PlayFab. The recommended default is Unity Web Request. Other options exist to provide compatibility with older engine versions or game-specific HTTP implementations.
 
 ## Making your first API call
 
