@@ -38,13 +38,15 @@ You can check for refunds with PlayFab's [Refund process](#refunds).
 
 ### Piracy, cracking, and authentication bypasses
 
-Piracy is the act of copying and distributing software without the permission of the copyright holder. Cracking is the act of modifying software to remove or bypass its copy protection. Authentication bypasses are techniques that are used avoid account registration and sign-in.
+Piracy is the act of copying and distributing software without the permission of the copyright holder. Cracking is the act of modifying software to remove or bypass its copy protection. Authentication bypasses are techniques that are used to avoid account registration and sign-in.
 
 You can convert a pirate player to a paying customer via [Anti-Piracy techniques](#anti-piracy).
 
 ## Idempotent transactions
 
 PlayFab Economy v2 transactions are idempotent, meaning they can be retried any number of times, and if the transaction has already been completed, the transaction will be ignored. When a player attempts to make a purchase and the request is duplicated, the player won't be charged twice.
+
+It's important to note that while most transactions require an IdempotencyId to ensure idempotency, redeem APIs function slightly differently. Redeem APIs are also idempotent but don't require an IdempotencyId. They'll only grant a marketplace offer once. If you make a redeem request with the same marketplace receipt from a previously successful request, PlayFab won't grant anything on the second call.
 
 Learn more about Idempotency in our [Inventory Overview](../inventory/index.md#idempotency).
 
@@ -85,7 +87,7 @@ Techniques to combat piracy and convert pirates to paying customers:
 * Ability to play on as many platforms supported by each marketplace as possible:
     Not providing a port to a popular platform can cause users to create unofficial ports. Providing a way to add official paid licenses to unofficial game clients can increase revenue and limit piracy.
 * Use PlayFab Anonymous sign-in methods with the ability to register for more features:
-    PlayFab [supports authenticating without a PlayFab account](../../authentication/login/login-basics-best-practices.md#anonymous-login-mechanisms), and then linking registering later. Many players will resist registering for an account, but will be willing to play anonymously. Anonymous sign-in is a good way to get players to try your game, and then convert them to paying customers later.
+    PlayFab [supports authenticating without a PlayFab account](../../authentication/login/login-basics-best-practices.md#anonymous-login-mechanisms), and then linking registering later. Many players resist registering for an account, but will be willing to play anonymously. Anonymous sign-in is a good way to get players to try your game, and then convert them to paying customers later.
 * Incentivize online account registration & linking:
     Features that work best with an online account, such as cloud saves, leaderboards, and cross-platform play, can be used to incentivize players to register for an account.
 * Provide a purchase path for pirates:
