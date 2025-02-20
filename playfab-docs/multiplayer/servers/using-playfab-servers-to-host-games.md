@@ -73,6 +73,6 @@ Image below illustrates how PlayFab Multiplayer Servers hosting works, incorpora
 
 * [Create your first server](create-your-first-server.md)
 * [Scaling game servers](scaling-standby.md)
-* [Pricing](multiplayer-servers-detailed-price-sheet.md)
+* [Pricing](https://playfab.com/mps-detailed-pricing/)
 * [Terminology](server-terms.md)
 * [Resources and samples](server-samples-resources.md)

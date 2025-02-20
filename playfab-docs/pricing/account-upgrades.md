@@ -15,16 +15,16 @@ Customers can upgrade their account plan using the self-serve plans experience f
 
 ## Account Plans 
 A PlayFab account has five plan options:
-1. **FREE TO START :** This plan has no cost to the customer. Studios that belong to free accounts may only contain titles that are in [development mode](development-mode.md). Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.
+1. **FREE TO START :** This plan has no cost to the customer. Studios that belong to free accounts may only contain titles that are in [development-mode.md](development-mode.md). Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.
 2. **PAY-AS-YOU-GO :** This paid plan has no monthly base rate. Accounts are only charged for their monthly consumption for live titles. 
-3. **STANDARD :** This paid plan has a monthly base rate and private support options ([Paid Technical Support](PaidTechnicalSupport.md)). This plan comes with included meter usage amounts that live titles associated with the account may access. Once the included meter amounts have been used, the account will be charged for additional consumption.
-4. **PREMIUM :** This paid plan has a monthly base rate and private support options ([Paid Technical Support](PaidTechnicalSupport.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
-5. **ENTERPRISE :** An Enterprise account has a monthly base rate and private support channels that offer 24/7 assistance. This plan comes with more included meter usage than the Premium plan. Once the included meter amounts have been used, the account will be charged for additional consumption. An account can upgrade to an Enterprise plan through contacting the [PlayFab Team](https://playfab.com/contact/) .
+3. **STANDARD :** This paid plan has a monthly base rate and private support options ([PaidTechnicalSupport.md](PaidTechnicalSupport.md)). This plan comes with included meter usage amounts that live titles associated with the account may access. Once the included meter amounts have been used, the account will be charged for additional consumption.
+4. **PREMIUM :** This paid plan has a monthly base rate and private support options ([PaidTechnicalSupport.md](PaidTechnicalSupport.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
+5. **ENTERPRISE :** An Enterprise account has a monthly base rate and private support channels that offer 24/7 assistance. This plan comes with more included meter usage than the Premium plan. Once the included meter amounts have been used, the account will be charged for additional consumption. An account can upgrade to an Enterprise plan through contacting the [https://playfab.com/contact/](https://playfab.com/contact/) .
 
 The base rate's included consumption is cumulative across titles linked to an account.
 
 >[! NOTE]
-> All PlayFab account plans adhere to the [PlayFab Terms of Service](https://playfab.com/terms/).
+> All PlayFab account plans adhere to the [https://playfab.com/terms/](https://playfab.com/terms/).
 
 
 ## Understanding the Account-Studio-Title Relationship
@@ -38,7 +38,7 @@ You can change your account's plan via Game Manager using the **Plan Recommendat
 ### Upgrading from Free to Start
 You can upgrade your account plan at any time on the **My Studios and Titles** page. Use the following steps to upgrade your account from Free to Start. Upgrading an account will upgrade all studios owned by the account.
 
-1. Log in to [PlayFab.com](https://playfab.com/).
+1. Log in to [https://playfab.com/](https://playfab.com/).
 
 2. On the **My Studios and Titles** page, locate the header of a Studio whose linked account should be upgraded. Select **Upgrade Account**.
 
@@ -55,7 +55,7 @@ After an account is upgraded, the provided payment instrument is charged a month
 ### Upgrading and Downgrading
 You can upgrade or downgrade your account plan at any time on the Studio Settings page of any studio owned by the account. Use the following steps to change your account's plan. Changing the account plan will change all studios owned by the account.
 
-1. Log in to [PlayFab.com](https://playfab.com/).
+1. Log in to [https://playfab.com/](https://playfab.com/).
 
 2. On the **My Studios and Titles** page, locate the header of a Studio whose linked account should be upgraded. Select the options button indicated by the 3 dots and select **Studio Settings**. On the **Studio Settings** page, locate the header of a Studio whose linked account should be upgraded. Select **Change Plan**.
 
@@ -69,7 +69,7 @@ You can upgrade or downgrade your account plan at any time on the Studio Setting
 
 ### Upgrading to Enterprise
 
-Any account is eligible to upgrade to an Enterprise account plan. The PlayFab team must be contacted to upgrade to an Enterprise account plan. [Contact PlayFab](https://playfab.com/contact/)
+Any account is eligible to upgrade to an Enterprise account plan. The PlayFab team must be contacted to upgrade to an Enterprise account plan. [https://playfab.com/contact/](https://playfab.com/contact/)
 
 ## FAQ
 
@@ -85,4 +85,4 @@ The amount of the base rate will represent the paid subscription plan of an acco
 **How do I know which subscription plan I am upgrading my account to?**
 All accounts upgraded through Game Manager are automatically upgraded to the Standard plan, as indicated by the agreed-to base rate listed within the **Upgrade Account**(1) flow.
 
-To upgrade to a Premium plan, please [contact PlayFab](PaidTechnicalSupport.md).
+To upgrade to a Premium plan, please [PaidTechnicalSupport.md](PaidTechnicalSupport.md).

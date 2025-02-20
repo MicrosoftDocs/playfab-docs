@@ -17,15 +17,15 @@ Customers can understand changes to monthly costs and initiate their account's p
 
 
 ## Understanding how Existing Title Usage Translates into Modern Pricing Costs
- For some accounts moving to modern pricing, monthly costs may change due to a title's usage of PlayFab features. To understand monthly costs on a modern pricing scale, customers can utilize the [Billing Summary](billingDetails.md) and [Pricing](https://playfab.com/pricing/) page.
+ For some accounts moving to modern pricing, monthly costs may change due to a title's usage of PlayFab features. To understand monthly costs on a modern pricing scale, customers can utilize the [billingDetails.md](billingDetails.md) and [https://playfab.com/pricing/](https://playfab.com/pricing/) page.
 
- **The Billing Summary page** will allow customers to view [meter](Meters/meters.md) usage by account or by title. Customers can also use the page to understand if existing title usage is included in the modern pricing base rate.
+ **The Billing Summary page** will allow customers to view [Meters/meters.md](Meters/meters.md) usage by account or by title. Customers can also use the page to understand if existing title usage is included in the modern pricing base rate.
 
 **The Pricing page** will allow customers to view the cost of meter usage.
 
 ## Self-Serve Account Transition to Modern Pricing
 
-1. Sign in to [Game Manager](https://developer.playfab.com).
+1. Sign in to [https://developer.playfab.com/](https://developer.playfab.com/).
 
 2. From the **My Studios and Titles** page, select **Update Pricing** on the navigation bar of the Studio whose billing account will move to usage-based pricing.
 
@@ -37,7 +37,7 @@ Customers can understand changes to monthly costs and initiate their account's p
 
 6. Select **Confirm this Plan** from the review stage to complete the billing account update to usage-based pricing.
 
-To learn more about plans, see [Account Upgrades](account-upgrades.md)
+To learn more about plans, see [account-upgrades.md](account-upgrades.md)
 
 ## FAQ
 
@@ -63,14 +63,14 @@ Those customers who need Platinum Support with emergency escalations or estimate
 
 Customers that estimate low title usage or who do not need ticketed support, can select the Pay-as-you-Go plan with no monthly minimum (available in October).  You will still have access to the Public Forums and can upgrade your plan as you grow.
 
-For more information, go to [Accessing PlayFab technical support](PaidTechnicalSupport.md).
+For more information, go to [PaidTechnicalSupport.md](PaidTechnicalSupport.md).
 
 #### Q. I have not selected a plan, will my account be shut off?
 No. Based on your current tier, your titles will either be transitioned to Dev Mode or the Standard Plan.  However, If you are an Essentials customers with titles with over 100k users, you will need to select a plan in order for new users to play your game. We recommend understanding which of your titles are currently exceeding 100k users so that you can select that plan that works best for you prior to the transition date of November 1, 2020.
 
 #### Q. I am an Enterprise customer. What will happen to my account?
 
-Enterprise accounts will be migrated to the new pricing plans according to their contract renewal date and will not automatically transition on November 1. If you have questions about your Enterprise contract, email us at: [sales@playfab.com](mailto:sales@playfab.com)
+Enterprise accounts will be migrated to the new pricing plans according to their contract renewal date and will not automatically transition on November 1. If you have questions about your Enterprise contract, email us at: [mailto:sales@playfab.com](mailto:sales@playfab.com)
 
 #### Q. How can I understand the costs for my studio prior to the transition?
 

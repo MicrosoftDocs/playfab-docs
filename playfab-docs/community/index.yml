@@ -74,9 +74,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Leaderboards reference
-            url: leaderboards/api-reference.md
-          - text: Statistics reference
-            url: statistics/api-reference.md
+            url: social/leaderboards/api-reference.md
 
   - title: Meters
     linkLists:

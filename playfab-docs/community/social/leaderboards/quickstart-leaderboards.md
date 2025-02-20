@@ -151,4 +151,4 @@ private static async Task UpdateEntityDisplayName(PlayFabAuthenticationContext c
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
-- [Leaderboard meters](../../../live-service-management/production/pricing/Meters/leaderboard-meters.md).
+- [Leaderboard meters](../../../get-started/pricing/Meters/leaderboard-meters.md).

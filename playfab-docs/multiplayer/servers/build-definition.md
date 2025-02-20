@@ -31,7 +31,7 @@ For sample values you can use to deploy a simple server, see [Walk-through of de
 | Parameter | Description                                  | Usage             |
 |------------|----------------------------------------------|-------------------|
 | Build Name |This is a string used to refer to the build.  | Easy identifier for the different builds that you maintain                |
-| Virtual machine (VM) selection | A drop-down list of global distributed Azure VMs with different technical specifications | Select the VMs based on what you need&mdash;number of cores, RAM, storage, region. For details, see [Multiplayer Servers details and price sheet](multiplayer-servers-detailed-price-sheet.md).  |
+| Virtual machine (VM) selection | A drop-down list of global distributed Azure VMs with different technical specifications | Select the VMs based on what you need&mdash;number of cores, RAM, storage, region. For details, see [Multiplayer Servers details and price sheet](https://playfab.com/mps-detailed-pricing/).  |
 | Servers per machine | Number of game servers hosted on each VM. The number of cores in the VM is split by the number of servers. | |
 | Virtual machine OS | Select Windows or Linux platform. | |
 | Container | The container that will host your game server. | For Windows, you can simply select the managed Windows Server Core containers. For Linux-based VMs, see [Deploying Linux-based builds](deploying-linux-based-builds.md).|

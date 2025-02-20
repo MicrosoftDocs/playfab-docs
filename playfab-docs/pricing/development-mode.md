@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 All PlayFab titles are in one of two possible states - development mode and live. Development mode is, as the name suggests, meant for titles currently in development. This mode provides developers with the flexibility to connect a title to PlayFab without running up the bill.
 
-A title in development mode can only have up to 100 K users. These titles can be [launched](account-upgrades.md) through Game Manager and is then considered live. Launching a title removes all development mode limitations and allows the title to expand outside of test markets.
+A title in development mode can only have up to 100 K users. These titles can be [account-upgrades.md](account-upgrades.md) through Game Manager and is then considered live. Launching a title removes all development mode limitations and allows the title to expand outside of test markets.
 
 By default, every title created starts in development mode. The **My Studios and Titles** main page will indicate which state a title is in through a mark on the bottom, left corner of the title block. This indicator can also be viewed at the top of the left nav within a title. Titles in development mode are labeled **Development**. Live titles are blank.
 
@@ -46,9 +46,9 @@ The example below shows how meter consumption is reflected in the billing for a 
 When Fun Studios visits their Billing Summary page, they only see the consumption for their Live title, Fun Game, count against their Standard Plan included resources.
 
 **For more information on these topics, check out these pages:**
- - [Meters](Meters/meters.md)
- - [Upgrades](account-upgrades.md)
- - [Billing Summary](billingDetails.md)
+ - [Meters/meters.md](Meters/meters.md)
+ - [account-upgrades.md](account-upgrades.md)
+ - [billingDetails.md](billingDetails.md)
 
 ## Limits
 There are some studio and title limits associated with development mode:
@@ -84,4 +84,4 @@ There are some studio and title limits associated with development mode:
 Unique Users are the total number of players created in your title which is distinct from monthly active users or daily active users.
 
 > [!NOTE]
-> You can learn more about title limits at [PlayFab pricing](https://www.playfab.com/pricing).
+> You can learn more about title limits at [https://www.playfab.com/pricing](https://www.playfab.com/pricing).

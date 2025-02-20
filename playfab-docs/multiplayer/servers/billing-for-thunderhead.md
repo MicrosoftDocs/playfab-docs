@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Billing for PlayFab Multiplayer Servers 2.0
 
-Most PlayFab services, including PlayFab Multiplayer Matchmaking, are included with every paid PlayFab pricing mode, as part of our core offering. However, PlayFab Multiplayer Servers are billed on a consumption basis. This document describes that billing plan.
+PlayFab Multiplayer Servers are billed on a consumption basis. This document describes that billing plan.
 
 ## What comes with your basic PlayFab Core Services package?
 
@@ -45,7 +45,7 @@ To learn more about these different virtual machines, see [Azure VM Sizes](/azur
 
 Games that require Multiplayer Servers must purchase additional capacity through PlayFab's consumption pricing plan. Below are the PlayFab resources that are used to bill for server utilization:
 
-- **Virtual machine instance hours** - The hours of virtual machine time that your game servers are utilizing. Different virtual machine and container selections are priced at different rates. See [Multiplayer Servers detailed price sheet](multiplayer-servers-detailed-price-sheet.md) for more information.
+- **Virtual machine instance hours** - The hours of virtual machine time that your game servers are utilizing. Different virtual machine and container selections are priced at different rates. See [Multiplayer Servers detailed price sheet](https://playfab.com/mps-detailed-pricing/) for more information.
 - **Network egress** - The volume of data transmitted by your game servers to the Internet (in gigabytes). Network egress is billed at different rates depending on the originating data center.
 
 A typical monthly bill might be:

@@ -35,4 +35,4 @@ error codes, and response structures.
 - [Seasonal statistics](seasonal-statistics.md).
 - [Add contextual data to statistics](metadata-statistics.md).
 - [API reference](api-reference.md).
-- [Statistics meters](../../live-service-management/production/pricing/Meters/statistics-meters.md).
+- [Statistics meters](../../get-started/pricing/Meters/statistics-meters.md).

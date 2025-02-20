@@ -23,10 +23,10 @@ Here's the list of APIs that tick this meter:
 
 | API Name     | API Reference                                
 |----------------------|--------------
-|GetFriendLeaderboardForEntity               | [Get Friend Leaderboard For Entity](/rest/api/playfab/progression/leaderboards/get-friend-leaderboard-for-entity)    |
-|GetLeaderboard               | [Get Leaderboard](/rest/api/playfab/progression/leaderboards/get-leaderboard)    |
-|GetLeaderboardAroundEntity              | [Get Leaderboard Around Entity](/rest/api/playfab/progression/leaderboards/get-leaderboard-around-entity)    |
-|GetLeaderboardForEntities              | [Get Leaderboard For Entities](/rest/api/playfab/progression/leaderboards/get-leaderboard-for-entities)    |
+|GetFriendLeaderboardForEntity               | [/rest/api/playfab/progression/leaderboards/get-friend-leaderboard-for-entity](/rest/api/playfab/progression/leaderboards/get-friend-leaderboard-for-entity)    |
+|GetLeaderboard               | [/rest/api/playfab/progression/leaderboards/get-leaderboard](/rest/api/playfab/progression/leaderboards/get-leaderboard)    |
+|GetLeaderboardAroundEntity              | [/rest/api/playfab/progression/leaderboards/get-leaderboard-around-entity](/rest/api/playfab/progression/leaderboards/get-leaderboard-around-entity)    |
+|GetLeaderboardForEntities              | [/rest/api/playfab/progression/leaderboards/get-leaderboard-for-entities](/rest/api/playfab/progression/leaderboards/get-leaderboard-for-entities)    |
 
 
 ## Leaderboard Writes
@@ -37,7 +37,7 @@ Here's the list of APIs that tick this meter:
 
 | API Name     | API Reference                                
 |----------------------|--------------
-|UpdateLeaderboardEntries              | [Update Leaderboard Entries](/rest/api/playfab/progression/leaderboards/update-leaderboard-entries)    |
+|UpdateLeaderboardEntries              | [/rest/api/playfab/progression/leaderboards/update-leaderboard-entries](/rest/api/playfab/progression/leaderboards/update-leaderboard-entries)    |
 
 
 ## Leaderboard Storage
@@ -52,4 +52,4 @@ For each leaderboard entry, the storage consumed is computed as the sum of the f
 
 ## See Also
 
-- [Statistics Meters](statistics-meters.md).
+- [statistics-meters.md](statistics-meters.md).

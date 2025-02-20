@@ -25,7 +25,7 @@ For general steps to deploy a build, see the section below. If you already have 
 
 Details about each available option are provided in [Build definition and configuration](build-definition.md).
 
-1. Select from a broad range of VMs distributed globally based on number of cores, storage space, and RAM. For more information about the VMs, see [Multiplayer Servers details and price](multiplayer-servers-detailed-price-sheet.md)
+1. Select from a broad range of VMs distributed globally based on number of cores, storage space, and RAM. For more information about the VMs, see [Multiplayer Servers details and price](https://playfab.com/mps-detailed-pricing/)
 2. Select the OS for the VM&mdash;Windows or Linux. The way builds are deployed for Linux servers are similar to Windows servers with a few important differences. To learn more, see [Using Windows and Linux servers](deploying-linux-based-builds.md).
 3. Upload your assets like the PlayFab Multiplayer Game Server Build. For more information on how to create this, see [Author a game server build](author-a-game-server-build.md).
 4. Determine network settings&mdash;port number and protocol

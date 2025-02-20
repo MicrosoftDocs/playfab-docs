@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 > [!WARNING]
 > PlayFab customers on the legacy pricing model (MAU based pricing) will need to update their account plans to the modern pricing model prior to **10/31/2020** at which time MAU based pricing will no longer be supported. **[Learn how to update your account](transition.md)**.
 
-**Want to learn more about PlayFab pricing?** The following articles can help you understand PlayFab's pricing model, how to view your estimated bill, and how to manage account upgrades and titles launches through Game Manager. View the most up-to-date offers and prices at [PlayFab pricing](https://www.playfab.com/pricing).
+**Want to learn more about PlayFab pricing?** The following articles can help you understand PlayFab's pricing model, how to view your estimated bill, and how to manage account upgrades and titles launches through Game Manager. View the most up-to-date offers and prices at [https://www.playfab.com/pricing](https://www.playfab.com/pricing).
 
 1. **[Billing Summary](billingDetails.md):** View past and present estimated costs.
 
@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 3. **[Pricing Meters](Meters/meters.md):** Learn about meter pricing and related APIs.
 
-4. **[Multiplayer Server Pricing](../../../multiplayer/servers/billing-for-thunderhead.md):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
+4. **[Multiplayer Server Pricing](../../multiplayer/servers/billing-for-thunderhead.md):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
 
 5. **[Party Pricing](../multiplayer/networking/pricing.md):** Learn about Party pricing when Party is enabled.
 

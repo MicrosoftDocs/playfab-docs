@@ -62,21 +62,21 @@ To view the billing details page for your studio navigate to the My Studios and 
 
 The base rate charge includes:
 
-1. **Meter usage** amounts that are specified at [PlayFab pricing](https://www.playfab.com/pricing). Once meter usage across live titles associated to an account has surpassed the included amounts (above), an account's live title usage will be charged based on the meter rates found at [PlayFab pricing](https://www.playfab.com/pricing) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
+1. **Meter usage** amounts that are specified at [https://www.playfab.com/pricing](https://www.playfab.com/pricing). Once meter usage across live titles associated to an account has surpassed the included amounts (above), an account's live title usage will be charged based on the meter rates found at [https://www.playfab.com/pricing](https://www.playfab.com/pricing) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
 
     > [!NOTE]
     > Titles in [Development Mode](development-mode.md) are not counted against included base rate usage.
 
-2. **[Technical support](PaidTechnicalSupport.md)** that is determined by the [account level](account-upgrades.md).
+2. **[Technical support](PaidTechnicalSupport.md)** that is determined by the [account-upgrades.md](account-upgrades.md).
 
 ## Additional Section Definitions
 
-**Pay-As-You-Go Charges:** Pay-As-You-Go charges are the cost of individual meter usage per title in an account that exceed usage amounts that are part of the plan. The per-meter prices can be found at [PlayFab pricing](https://www.playfab.com/pricing) or under the "Rate" column on the billing summary page.
+**Pay-As-You-Go Charges:** Pay-As-You-Go charges are the cost of individual meter usage per title in an account that exceed usage amounts that are part of the plan. The per-meter prices can be found at [https://www.playfab.com/pricing](https://www.playfab.com/pricing) or under the "Rate" column on the billing summary page.
 
 **Additional Charges:** Additional charges include any charges not directly tied to the meter-usage pricing plan. For example, charges for MPS and Add-Ons may appear in the additional charges section.
 
 ## Learn More
 
-> [Multiplayer Server Pricing](../../../multiplayer/servers/billing-for-thunderhead.md)
+> [../../../multiplayer/servers/billing-for-thunderhead.md](../../multiplayer/servers/billing-for-thunderhead.md)
 >
-> [Party Pricing](../multiplayer/networking/pricing.md)
+> [../multiplayer/networking/pricing.md](../multiplayer/networking/pricing.md)

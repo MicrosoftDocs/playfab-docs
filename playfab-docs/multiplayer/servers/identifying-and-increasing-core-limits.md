@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Accessing increased core limits and additional Azure regions
 
 > [!NOTE]
-> This topic frequently references available Azure compute series and regions. To review PlayFab's current selection and pricing see [Multiplayer Servers - detailed price sheet](multiplayer-servers-detailed-price-sheet.md).
+> This topic frequently references available Azure compute series and regions. To review PlayFab's current selection and pricing see [Multiplayer Servers - detailed price sheet](https://playfab.com/mps-detailed-pricing/).
 
 Usage of PlayFab multiplayer servers has limits that are applied on a per-title basis. A key limit is the aggregate number of Azure compute cores.
 

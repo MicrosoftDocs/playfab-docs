@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Catalog Pricing Meters
 
-PlayFab Economy V2 Catalog APIs have two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it's measured and calculated. For more information on PlayFab's pricing model, see the [PlayFab pricing overview](../pricing-overview.md).
+PlayFab Economy V2 Catalog APIs have two categories of consumption-based meters - Requests and Storage. This page outlines and defines those meters, including how it's measured and calculated. For more information on PlayFab's pricing model, see the [../pricing-overview.md](../pricing-overview.md).
 
 > [!NOTE]
 > General usage of PlayFab Economy V2 may contribute toward other PlayFab meters, like PlayStream Events.
@@ -32,7 +32,7 @@ The storage meter is determined by the total size of all content (both files and
 
 ![UGC Storage Pricing](../pricingV2-media/ugc-pricing-storage.png)
 
-The meter includes content associated with items that haven't been published, and items that aren't visible via the public catalog. For more information on how items can be hidden from the public catalog, see [Catalog Item Status](../../../../economy-monetization/economy-v2/catalog/item-status.md).
+The meter includes content associated with items that haven't been published, and items that aren't visible via the public catalog. For more information on how items can be hidden from the public catalog, see [../../../../economy-monetization/economy-v2/catalog/item-status.md](../../../economy-monetization/economy-v2/catalog/item-status.md).
 
 ## Included Meters
 
@@ -86,37 +86,37 @@ If a title is the only title using UGC in the studio, and the title has 4 GB of 
 
 ## Resources
 
-* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)
-* See [Consumption Best Practices](../consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game
+* For the most up-to-date view of prices per meter, see [https://playfab.com/pricing/](https://playfab.com/pricing/)
+* See [../consumption-best-practices.md](../consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game
 
 ## Relevant APIs
 
 The following APIs cause the Economy Catalog meter to increment:
 
-* [CreateDraftItem](/rest/api/playfab/economy/catalog/create-draft-item)
-* [CreateUploadUrls](/rest/api/playfab/economy/catalog/create-upload-urls)
-* [DeleteEntityItemReviews](/rest/api/playfab/economy/catalog/delete-entity-item-reviews)
-* [DeleteItem](/rest/api/playfab/economy/catalog/delete-item)
-* [GetCatalogConfig](/rest/api/playfab/economy/catalog/get-catalog-config)
-* [GetDraftItem](/rest/api/playfab/economy/catalog/get-draft-item)
-* [GetEntityDraftItems](/rest/api/playfab/economy/catalog/get-entity-draft-items)
-* [GetEntityItemReview](/rest/api/playfab/economy/catalog/get-entity-item-review)
-* [GetItem](/rest/api/playfab/economy/catalog/get-item)
-* [GetItemModerationState](/rest/api/playfab/economy/catalog/get-item-moderation-state)
-* [GetItemPublishStatus](/rest/api/playfab/economy/catalog/get-item-publish-status)
-* [GetItemReviews](/rest/api/playfab/economy/catalog/get-item-reviews)
-* [GetItemReviewSummary](/rest/api/playfab/economy/catalog/get-item-review-summary)
-* [GetItems](/rest/api/playfab/economy/catalog/get-items)
-* [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item)
-* [ReportItem](/rest/api/playfab/economy/catalog/report-item)
-* [ReportItemReview](/rest/api/playfab/economy/catalog/report-item-review)
-* [ReviewItem](/rest/api/playfab/economy/catalog/review-item)
-* [SearchItems](/rest/api/playfab/economy/catalog/search-items)
-* [SetItemModerationState](/rest/api/playfab/economy/catalog/set-item-moderation-state)
-* [SubmitItemReviewVote](/rest/api/playfab/economy/catalog/submit-item-review-vote)
-* [TakedownItemReviews](/rest/api/playfab/economy/catalog/takedown-item-reviews)
-* [UpdateCatalogConfig](/rest/api/playfab/economy/catalog/update-catalog-config)
-* [UpdateDraftItem](/rest/api/playfab/economy/catalog/update-draft-item)
+* [/rest/api/playfab/economy/catalog/create-draft-item](/rest/api/playfab/economy/catalog/create-draft-item)
+* [/rest/api/playfab/economy/catalog/create-upload-urls](/rest/api/playfab/economy/catalog/create-upload-urls)
+* [/rest/api/playfab/economy/catalog/delete-entity-item-reviews](/rest/api/playfab/economy/catalog/delete-entity-item-reviews)
+* [/rest/api/playfab/economy/catalog/delete-item](/rest/api/playfab/economy/catalog/delete-item)
+* [/rest/api/playfab/economy/catalog/get-catalog-config](/rest/api/playfab/economy/catalog/get-catalog-config)
+* [/rest/api/playfab/economy/catalog/get-draft-item](/rest/api/playfab/economy/catalog/get-draft-item)
+* [/rest/api/playfab/economy/catalog/get-entity-draft-items](/rest/api/playfab/economy/catalog/get-entity-draft-items)
+* [/rest/api/playfab/economy/catalog/get-entity-item-review](/rest/api/playfab/economy/catalog/get-entity-item-review)
+* [/rest/api/playfab/economy/catalog/get-item](/rest/api/playfab/economy/catalog/get-item)
+* [/rest/api/playfab/economy/catalog/get-item-moderation-state](/rest/api/playfab/economy/catalog/get-item-moderation-state)
+* [/rest/api/playfab/economy/catalog/get-item-publish-status](/rest/api/playfab/economy/catalog/get-item-publish-status)
+* [/rest/api/playfab/economy/catalog/get-item-reviews](/rest/api/playfab/economy/catalog/get-item-reviews)
+* [/rest/api/playfab/economy/catalog/get-item-review-summary](/rest/api/playfab/economy/catalog/get-item-review-summary)
+* [/rest/api/playfab/economy/catalog/get-items](/rest/api/playfab/economy/catalog/get-items)
+* [/rest/api/playfab/economy/catalog/publish-draft-item](/rest/api/playfab/economy/catalog/publish-draft-item)
+* [/rest/api/playfab/economy/catalog/report-item](/rest/api/playfab/economy/catalog/report-item)
+* [/rest/api/playfab/economy/catalog/report-item-review](/rest/api/playfab/economy/catalog/report-item-review)
+* [/rest/api/playfab/economy/catalog/review-item](/rest/api/playfab/economy/catalog/review-item)
+* [/rest/api/playfab/economy/catalog/search-items](/rest/api/playfab/economy/catalog/search-items)
+* [/rest/api/playfab/economy/catalog/set-item-moderation-state](/rest/api/playfab/economy/catalog/set-item-moderation-state)
+* [/rest/api/playfab/economy/catalog/submit-item-review-vote](/rest/api/playfab/economy/catalog/submit-item-review-vote)
+* [/rest/api/playfab/economy/catalog/takedown-item-reviews](/rest/api/playfab/economy/catalog/takedown-item-reviews)
+* [/rest/api/playfab/economy/catalog/update-catalog-config](/rest/api/playfab/economy/catalog/update-catalog-config)
+* [/rest/api/playfab/economy/catalog/update-draft-item](/rest/api/playfab/economy/catalog/update-draft-item)
 
 > [!NOTE]
 > Any calls to the CDN will also cause Economy Catalog meters to increment
