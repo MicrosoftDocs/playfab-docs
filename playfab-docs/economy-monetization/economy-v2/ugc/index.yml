@@ -23,15 +23,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is PlayFab UGC?
-            url: ugc/overview.md
+            url: overview.md
       - linkListType: quickstart
         links:
           - text: UGC quickstart guide
-            url: ugc/quickstart.md
+            url:  quickstart.md
       - linkListType: tutorial
         links:
           - text: Publish your first user generated content
-            url: tutorials/publish-ugc.md
+            url: ../tutorials/publish-ugc.md 
 
 # Card
   - title: Ingest UGC content (PLACEHOLDER)
@@ -39,19 +39,19 @@ landingContent:
       - linkListType: overview
         links:
           - text: What are content types and item properties?
-            url: catalog/content-types-tags-and-properties.md
+            url: ../catalog/content-types-tags-and-properties.md
           - text: What are stores?
-            url: stores.md
+            url: ../catalog/stores.md
       - linkListType: quickstart
         links:
           - text: Fraud prevention, redemption, receipt validation quickstart
-            url: fraud-prevention/quickstart.md
+            url: ../fraud-prevention/quickstart.md
       - linkListType: tutorial
         links:
           - text: Manage virtual currencies
-            url: tutorials/currencies.md
+            url: ../tutorials/currencies.md
           - text: Start with Unity and Android in-app purchases
-            url: tutorials/getting-started-with-unity-and-android.md
+            url: ../tutorials/getting-started-with-unity-and-android.md
 
 # Card
   - title: Searching and hydrating UGC for your players (PLACEHOLDER)
@@ -59,7 +59,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What are bundles?
-            url: bundles.md
+            url: ../bundles.md
       - linkListType: sample
         links:
           - text: Add a progressive reward system
@@ -71,15 +71,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is PlayFab UGC?
-            url: ugc/index.md
+            url: index.md
       - linkListType: quickstart
         links:
           - text: UGC quickstart guide
-            url: ugc/quickstart.md
+            url: quickstart.md
       - linkListType: tutorial
         links:
           - text: Publish your first user generated content
-            url: tutorials/publish-ugc.md
+            url: ../tutorials/publish-ugc.md
 
   # Card
   - title: Get involved with PlayFab

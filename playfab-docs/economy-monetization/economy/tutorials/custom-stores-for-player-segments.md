@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 In our [Stores and Sales](stores-and-sales.md) tutorial, we demonstrate how to set up a store and make a few items available to a player at special or alternate prices.
 
-In our [Player segmentation quickstart](../../analytics/segmentation/quickstart.md), we provide an example of how to group your players into segments, based on player information or behavior.
+In our [Player segmentation quickstart](../../../live-service-management/runtime/segmentation/segmentation-quickstart.md), we provide an example of how to group your players into segments, based on player information or behavior.
 
 This tutorial describes how to _combine_ these features, and produce alternate stores available _only_ to players from defined player segments.
 

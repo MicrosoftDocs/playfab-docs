@@ -27,7 +27,7 @@ These are stores that can only be accessed by players who belong to one or more 
 
 ## Create a segment-exclusive store
 
-Targeted offers reach players by using [stores](../catalog/stores.md). To cater to different player segments, you can set up individual stores, each offering the same items but with varying prices. To ensure that these distinct price points align with their intended segments, you need to configure each store accordingly. For this example, we're going to create a segment-exlusive store for pizzas targeting players that have eaten more than 10 pizzas. Here’s how:
+Targeted offers reach players by using [stores](../catalog/stores.md). To cater to different player segments, you can set up individual stores, each offering the same items but with varying prices. To ensure that these distinct price points align with their intended segments, you need to configure each store accordingly. For this example, we're going to create a segment-exlusive store for pizzas targeting players that have eaten more than 10 pizzas. Here's how:
 
 ### Prerequisites
 
@@ -109,6 +109,6 @@ By using PlayFab's features for targeted offers, you can reduce the complexity a
 
 ## See also
 
-* [Economy V2 overview](../economy-v2/overview.md)
+* [Economy V2 overview](../overview.md)
 * [Segments](../../../player-progression/player-data/player-segments.md)
 * [Stores](../catalog/stores.md)

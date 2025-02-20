@@ -72,7 +72,7 @@ PlayFab's [Player Item Management (Server)](xref:titleid.playfabapi.com.server.p
 * Locked (with a loot-able/purchasable key) and unlocked boxes
 * Random result tables
 * Non-purchasable items that are granted based on paid or free events within a game
-* And more scenarios, especially with [Azure Functions](../automation/cloudscript-af/index.md)
+* And more scenarios, especially with [PlayFab CloudScript using Azure Functions](../../live-service-management/production/automation/cloudscript-af/index.md)
 
 **Add an item to a player's inventory by purchasing it with virtual currency.**
 
@@ -98,4 +98,4 @@ Once you have a Catalog with Items supported by Virtual Currencies, you can ligh
 * **Using Item attributes**: To define multiple prices and specify stackable, tradable, and limited edition [Items](items/index.md).
 * **Setting up unique in-game vendors or Sales events**: Using [Stores and Sales](tutorials/stores-and-sales.md).
 * **Creating some player Segments and use Stores**: To drive different item and bundle offers to your players regardless of where they are in your game lifecycle. For an example, see our [Custom stores for player segments](tutorials/custom-stores-for-player-segments.md) tutorial.
-* **Gathering economic data**: Enabling you to improve and iterate your game using PlayFab [Reports](../analytics/reports/index.md).
+* **Gathering economic data**: Enabling you to improve and iterate your game using PlayFab [Reports](../../data-analytics/learn-data/reports/overview.md).

@@ -31,7 +31,7 @@ The first step is to enable the catalog in the settings page in the Game Manager
 To interact with the Catalog, you either need to Log into GameManger and use the site tools, or get an Entity Token for using the APIs. The easiest way to get an entity token is with the [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token) API.
 
 > [!NOTE]
-> To call the API as an admin or authoritative service, which you will need to do before you create your first Catalog item, you’ll need to include an X-SecretKey header with a title secret key. You can create title secret keys in the Game Manager UI under ⚙️ **Title Settings** > **Secret Keys**.
+> To call the API as an admin or authoritative service, which you will need to do before you create your first Catalog item, you'll need to include an X-SecretKey header with a title secret key. You can create title secret keys in the Game Manager UI under ⚙️ **Title Settings** > **Secret Keys**.
 
 #### [API](#tab/secret-key-api)
 
@@ -104,7 +104,7 @@ private static async Task PlayFabEconomyv2QuickStart()
 
 #### [Game Manager](#tab/catalog-settings-game-manager)
 
-1. In [Game Manager](../../gamemanager/index.md), navigate to ⚙️ **Title Settings** > **Economy**.
+1. In [Game Manager](../../live-service-management/production/gamemanager/index.md), navigate to ⚙️ **Title Settings** > **Economy**.
 1. Under the **Catalog (V2)** tab, go to **Catalog Settings**
 1. Create a default _Content Type_ (creating a "Game Item" type is a good place to start).
 
@@ -197,7 +197,7 @@ Fill in the required metadata – there are only four required properties (_Crea
 Create a "Draft" Catalog Item by calling the [CreateDraftItem](/rest/api/playfab/economy/catalog/create-draft-item) endpoint:
 
 * The EntityToken (from GetEntityToken or other PlayFab `login` call) in the X-EntityToken header
-* The Playfab Title ID in the item’s CreatorEntity.Id
+* The Playfab Title ID in the item's CreatorEntity.Id
 
 ```bash
 curl \
@@ -287,9 +287,9 @@ private static async Task PlayFabEconomyv2QuickStart()
 ***
 
 > [!NOTE]
-> Putting the item into a Draft state is not required – Draft is meant for when you expect to iterate on the metadata for some period of time. We support the parameter "publish”, that when set to "true" will publish the item immediately. This could save you some call volume depending on your pattern.
+> Putting the item into a Draft state is not required – Draft is meant for when you expect to iterate on the metadata for some period of time. We support the parameter "publish", that when set to "true" will publish the item immediately. This could save you some call volume depending on your pattern.
 
-Once an Item is in Draft, you can then push it to a ‘Published’ state using the [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item) endpoint (this step is handled invisibly in GameManager). Once an item is Published, it's searchable and available publicly. You need to use the ItemId returned from the CreateDraftItem response in order to publish.
+Once an Item is in Draft, you can then push it to a 'Published' state using the [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item) endpoint (this step is handled invisibly in GameManager). Once an item is Published, it's searchable and available publicly. You need to use the ItemId returned from the CreateDraftItem response in order to publish.
 
 ### Step 4 - Do a search
 
@@ -328,7 +328,7 @@ Save the ID returned for later in this Quickstart.
 
 ## Part 2: Inventory and Virtual Currencies overview
 
-Inventory Items and Virtual Currencies are the two in-game ‘buckets’ of virtual goods that PlayFab supports for Player Entities. The process is:
+Inventory Items and Virtual Currencies are the two in-game 'buckets' of virtual goods that PlayFab supports for Player Entities. The process is:
 
 1. Set up an initial Virtual Currency
 1. Create an Item with a Virtual Currency Cost
@@ -354,9 +354,9 @@ Items can have a cost in either a virtual currency or real money. Each title can
 Create a Draft Currency Catalog Item by calling the [CreateDraftItem](/rest/api/playfab/economy/catalog/create-draft-item) endpoint with type set to "currency" using:
 
 * An EntityToken with Catalog Permissions  
-* The Entity.Id as the item ‘Creator’  
+* The Entity.Id as the item 'Creator'  
 * The Playfab Title ID
-* The Item should be a Bundle of type ‘Currency’ and contain a Title and Description
+* The Item should be a Bundle of type 'Currency' and contain a Title and Description
 
 Call PublishItem with the ItemId returned from the CreateDraftItem.
 
@@ -421,7 +421,7 @@ Your entity player needs virtual currency in order to make a Purchase.
 
 #### [API](#tab/grant-currency-api)
 
-You can call [AddInventoryItems](/rest/api/playfab/economy/inventory/add-inventory-items) to add currency to an Entity Wallet. By default, you need to use Title Level Entity Auth to arbitrarily add virtual currencies to a player’s inventory.
+You can call [AddInventoryItems](/rest/api/playfab/economy/inventory/add-inventory-items) to add currency to an Entity Wallet. By default, you need to use Title Level Entity Auth to arbitrarily add virtual currencies to a player's inventory.
 
 ***
 
@@ -446,7 +446,7 @@ An item must have a currency value in order for it to be purchasable with virtua
 Get the draft of your Catalog Item by calling the [GetDraftItem](/rest/api/playfab/economy/catalog/get-draft-item) endpoint. Then update the draft with the [UpdateDraftItem](/rest/api/playfab/economy/catalog/update-draft-item) endpoint using:
 
 * The EntityToken (from GetEntityToken or other PlayFab `login` call) in the X-EntityToken header
-* The Entity.Id from the previous call in the item’s EntityKey.Id
+* The Entity.Id from the previous call in the item's EntityKey.Id
 
 ```bash
 curl \
