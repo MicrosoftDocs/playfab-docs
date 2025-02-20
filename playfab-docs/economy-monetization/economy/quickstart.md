@@ -1,9 +1,9 @@
 ---
 title: Economy (Legacy) quickstart
-author: cybtachyon
+author: fprotti96
 description: Quickstart for Legacy Economy.
-ms.author: derekreese
-ms.date: 05/02/2019
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, media, coupons, promotions, cloudscript

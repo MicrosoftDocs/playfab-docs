@@ -1,9 +1,9 @@
 ---
 title: Drop Tables in Economy (Legacy)
-author: cybtachyon
+author: fprotti96
 description: Describes how to create Drop Tables using Economy (Legacy) the PlayFab Game Manager.
-ms.author: derekreese
-ms.date: 10/26/2018
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, catalogs, drop tables
@@ -18,7 +18,7 @@ This tutorial shows you the steps for creating drop tables using the PlayFab Gam
 
 Drop tables allow you to randomly generate [inventory items](../../../player-progression/player-data/player-inventory.md), and *sequential* drop tables can provide some randomness to player rewards.
 
-- We assume that you're already  familiar with [Catalogs](../items/catalogs.md), [Inventory](../../../player-progression/player-data/player-inventory.md), and the PlayFab [Game Manager](../../../gamemanager/quickstart.md).
+- We assume that you're already  familiar with [Catalogs](../items/catalogs.md), [Inventory](../../../player-progression/player-data/player-inventory.md), and the PlayFab [Game Manager](../../../live-service-management/production/gamemanager/quickstart.md).
 - You must have a *primary catalog* - which contains standard, non-bundle/non-container items.
 - You must have defined at least *one* virtual currency, which you'll use as a "free" in-game currency.
 

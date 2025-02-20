@@ -6,11 +6,11 @@ summary: PlayFab Community is a set of cross-platform tools and services that en
 metadata:
   title: PlayFab Community documentation
   description: Guide on community features # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab community #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
-  author: natashaorie
-  ms.author: norie
-  ms.date: 04/27/2020 
+  author: m-kdearnley
+  ms.author: kdearnley
+  ms.date: 02/20/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

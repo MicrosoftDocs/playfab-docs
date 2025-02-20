@@ -1,9 +1,9 @@
 ---
 title: Publish your first user generated content
-author: joannaleecy
+author: fprotti96
 description: Tutorial outlining the steps to publish your first user generated content.
-ms.author: joanlee
-ms.date: 06/13/2021
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc

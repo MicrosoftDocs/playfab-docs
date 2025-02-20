@@ -1,9 +1,9 @@
 ---
 title: Best Practices for Store Segmentation in Economy (Legacy)
-author: cybtachyon
+author: fprotti96
 description: Lists the Best Practices for configuring and using Store Segmentation with Economy (Legacy).
-ms.author: derekreese
-ms.date: 10/29/2018
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, stores

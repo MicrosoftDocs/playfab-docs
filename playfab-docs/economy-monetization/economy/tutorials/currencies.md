@@ -1,9 +1,9 @@
 ---
 title: Manage Virtual Currencies in Economy (Legacy)
-author: cybtachyon
+author: fprotti96
 description: Describes the Currency tab in the (Legacy) Economy section in Game Manager, and how to configure virtual currencies.
-ms.author: derekreese
-ms.date: 10/26/2018
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, currency, virtual currency

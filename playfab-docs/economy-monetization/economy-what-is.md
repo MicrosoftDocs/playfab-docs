@@ -3,7 +3,7 @@ title: What is PlayFab Economy?
 author: thomasgu
 description: Landing page for Economy.
 ms.author: thomg
-ms.date: 07/01/2023
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, game, items, virtual, currencies, stores, ugc, user generated content

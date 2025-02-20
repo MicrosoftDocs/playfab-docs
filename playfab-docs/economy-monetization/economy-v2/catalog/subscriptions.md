@@ -3,7 +3,7 @@ title: Economy v2 Subscriptions
 author: sranthar
 description: Introduction to Economy v2 Subscriptions.
 ms.author: sranthar
-ms.date: 03/21/2023
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, catalog, subscriptions
@@ -23,7 +23,7 @@ Subscriptions allow you to grant time based access to durable goods. Items withi
 
 ## Creating a Subscription
 
-To create a subscription, you must first make sure you have published [Catalog Items](../quickstart.md?pivots=API#step-3---publish-an-item-to-the-catalog), [Currency](quickstart.md?pivots=API#part-2-inventory-and-virtual-currencies-overview), or [User Generated Content (UGC)](..ugc/quickstart.md) that you want to be accessible/purchaseable in your game. To set up your catalog before creating a subscription, see [Economy V2 Quickstart](quickstart.md)
+To create a subscription, you must first make sure you have published [Catalog Items](../quickstart.md?pivots=API#step-3---publish-an-item-to-the-catalog), [Currency](../quickstart.md?pivots=API#part-2-inventory-and-virtual-currencies-overview), or [User Generated Content (UGC)](../ugc/quickstart.md) that you want to be accessible/purchaseable in your game. To set up your catalog before creating a subscription, see [Economy V2 Quickstart](../quickstart.md)
 
 ### [GameManager](#tab/creating-store-game-manager)
 

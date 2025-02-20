@@ -1,9 +1,9 @@
 ---
 title: Stores (Legacy Economy)
-author: cybtachyon
+author: fprotti96
 description: Landing page for (Legacy Economy) Stores.
-ms.author: derekreese
-ms.date: 01/25/2019
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, stores

@@ -3,7 +3,7 @@ title: Redeem Apple App Store In-App Purchases
 author: fprotti96
 description: Set up an In-App Purchase using PlayFab and the Apple App Store
 ms.author: fprotti
-ms.date: 01/15/2024
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, integration, marketplace

@@ -2,8 +2,8 @@
 title: Timed Consumables in Economy (Legacy) 
 author: tcrawf23
 description: Describes how to set up and interact with a timed consumable item using Economy (Legacy).
-ms.author: timcra
-ms.date: 05/25/2021
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, consumables
@@ -18,7 +18,7 @@ This tutorial walks you through creating timed consumables using the PlayFab Gam
 
 ## Requirements
 
-- We assume that you're already  familiar with [Catalogs](../items/catalogs.md), [Inventory](../../../player-progression/player-data/player-inventory.md), and the PlayFab [Game Manager](../../../gamemanager/quickstart.md).
+- We assume that you're already  familiar with [Catalogs](../items/catalogs.md), [Inventory](../../../player-progression/player-data/player-inventory.md), and the PlayFab [Game Manager](../../../live-service-management/production/gamemanager/quickstart.md).
 - You must have a *primary catalog*.
 
 ## Create a Stackable Timed Consumable

@@ -3,7 +3,7 @@ title: Crafting Game Part 2 - Game Manager
 author: fprotti96
 description: Includes everything Game Manager-related, from configuring to using it to create items, stores, and others.
 ms.author: fprotti
-ms.date: 09/26/2023
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, commerce, economy

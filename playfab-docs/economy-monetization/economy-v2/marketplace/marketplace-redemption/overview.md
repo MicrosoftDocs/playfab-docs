@@ -3,7 +3,7 @@ title: Marketplace redemption - Overview
 author: fprotti96
 description: Overview of PlayFab's marketplace redemptions
 ms.author: fprotti
-ms.date: 1/10/2025
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, redemption, marketplace

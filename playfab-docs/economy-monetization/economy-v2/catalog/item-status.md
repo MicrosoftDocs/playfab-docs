@@ -3,7 +3,7 @@ title: Item Status & Moderation
 author: wesjong
 description: Article outlining the different visibility and access states an item can be in
 ms.author: wesjong
-ms.date: 09/16/2021
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc

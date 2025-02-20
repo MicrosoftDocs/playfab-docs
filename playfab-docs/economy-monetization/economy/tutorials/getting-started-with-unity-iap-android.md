@@ -1,9 +1,9 @@
 ---
 title: Getting started with PlayFab Economy (Legacy), Unity IAP, and Android
-author: joannaleecy
+author: fprotti96
 description: How to set up (In-App Purchasing) IAP using PlayFab Economy (Legacy), the Unity + IAP Service, and the Android Billing API.
-ms.author: joanlee
-ms.date: 06/11/2018
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, iap, unity, android billing api

@@ -3,7 +3,7 @@ title: Subscription Redemption with the Google Marketplace
 author: fprotti96
 description: Set up a PlayFab subscription that can be purchased from Google Play Store
 ms.author: fprotti
-ms.date: 11/06/2023
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, integration, marketplace

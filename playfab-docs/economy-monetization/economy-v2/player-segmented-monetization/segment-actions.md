@@ -3,7 +3,7 @@ title: Economy V2 Segment Actions
 author: sranthar
 description: Introduction to Segment Actions
 ms.author: sranthar
-ms.date: 3/13/2024
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, catalog, segments, actions

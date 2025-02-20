@@ -1,9 +1,9 @@
 ---
 title: Economy v2 settings overview
-author: cybtachyon
+author: fprotti96
 description: Economy v2 settings.
-ms.author: derekreese
-ms.date: 09/07/2022
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, economy, settings

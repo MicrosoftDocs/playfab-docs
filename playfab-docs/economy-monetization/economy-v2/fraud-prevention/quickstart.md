@@ -1,9 +1,9 @@
 ---
 title: Fraud prevention quickstart
-author: cybtachyon
+author: fprotti96
 description: Get started with receipt validation for PlayFab Economy v2.
-ms.author: derekreese
-ms.date: 09/07/2022
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: quickstart
 ms.service: azure-playfab
 keywords: playfab, economy, catalog, receipts, purchases, fraud, piracy

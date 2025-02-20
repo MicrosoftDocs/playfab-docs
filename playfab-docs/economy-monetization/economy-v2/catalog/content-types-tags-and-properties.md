@@ -1,9 +1,9 @@
 ---
 title: Economy v2 Catalog Content Types, Tags, & Properties
-author: cybtachyon
+author: fprotti96
 description: Economy Catalog v2 APIs and Game Manager Interface provide item management and tooling.
-ms.author: derekreese
-ms.date: 9/07/2022
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: quickstart
 ms.service: azure-playfab
 keywords: playfab, commerce, economy

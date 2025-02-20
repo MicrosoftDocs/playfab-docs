@@ -59,7 +59,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What are bundles?
-            url: ../bundles.md
+            url: ../catalog/bundles.md
       - linkListType: sample
         links:
           - text: Add a progressive reward system
@@ -71,7 +71,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is PlayFab UGC?
-            url: index.md
+            url: overview.md
       - linkListType: quickstart
         links:
           - text: UGC quickstart guide

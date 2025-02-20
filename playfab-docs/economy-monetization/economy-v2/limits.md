@@ -3,7 +3,7 @@ title: Economy V2 Limits
 author: fprotti96
 description: Document detailing the various limits surrounding Economy V2.
 ms.author: fprotti
-ms.date: 11/30/2023
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc

@@ -3,7 +3,7 @@ title: Marketplace Error Handling
 author: fprotti96
 description: Overview of how errors are handled with marketplace redemption processes.
 ms.author: fprotti
-ms.date: 08/09/2024
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, marketplace, redemption, error handling

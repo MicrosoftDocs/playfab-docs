@@ -1,9 +1,9 @@
 ---
 title: Non-Receipt Payment Processing in Economy (Legacy)
-author: joannaleecy
+author: fprotti96
 description: Describes the PlayFab Economy (Legacy) mechanism for enabling purchases via payment providers that don’t use a receipt or entitlement based system.
-ms.author: joanlee
-ms.date: 10/26/2018
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, media, carts, payments, purchases

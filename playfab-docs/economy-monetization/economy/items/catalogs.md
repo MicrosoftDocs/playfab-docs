@@ -1,9 +1,9 @@
 ---
 title: Catalogs (Legacy Economy)
-author: cybtachyon
+author: fprotti96
 description: Describes the Catalogs tab in the (Legacy) Economy section in Game Manager and the Catalog item type.
-ms.author: derekreese
-ms.date: 10/26/2018
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, catalogs
@@ -22,7 +22,7 @@ Many games offer the player items for purchase such as a shield, a level-unlock,
 
 Before a player can purchase an item from a catalog, you must first create the items.
 
-PlayFab’s [Player Item Management (Server)](xref:titleid.playfabapi.com.server.playeritemmanagement) and [Player Item Management (Client)](xref:titleid.playfabapi.com.client.playeritemmanagement) APIs support many strategies for item purchasing, including:
+PlayFab's [Player Item Management (Server)](xref:titleid.playfabapi.com.server.playeritemmanagement) and [Player Item Management (Client)](xref:titleid.playfabapi.com.client.playeritemmanagement) APIs support many strategies for item purchasing, including:
 
 * Simple real money or virtual currency purchases of items.
 * Triggered item grants based on buying another item.

@@ -6,7 +6,7 @@ summary: summary # < 160 chars
 metadata:
   title: PlayFab Live service management documentation
   description: Guide on Live service management features # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab live service management #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
   author: natashaorie
   ms.author: norie

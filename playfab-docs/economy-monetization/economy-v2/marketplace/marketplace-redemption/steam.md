@@ -3,7 +3,7 @@ title: Redemption with the Steam Marketplace
 author: fprotti96
 description: Set up PlayFab and Steam to enable purchases
 ms.author: fprotti
-ms.date: 10/07/2024
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, integration, marketplace, steam, purchase

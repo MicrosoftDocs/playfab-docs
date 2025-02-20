@@ -1,9 +1,9 @@
 ---
 title: Items (Legacy Economy) quickstart
-author: cybtachyon
+author: fprotti96
 description: Quickstart for (Legacy Economy) Items.
-ms.author: derekreese
-ms.date: 05/02/2019
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, catalogs

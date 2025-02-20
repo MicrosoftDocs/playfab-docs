@@ -1,9 +1,9 @@
 ---
 title: Getting started with Economy v2, Unity IAP, and Android
-author: joannaleecy
+author: fprotti96
 description: How to set up In-App Purchasing (IAP) using PlayFab Economy v2, Unity, and Android.
-ms.author: joanlee
-ms.date: 09/07/2022
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, economy, settings

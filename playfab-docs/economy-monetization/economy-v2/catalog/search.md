@@ -3,7 +3,7 @@ title: Search
 author: fprotti96
 description: Tutorial outlining using the Search API to query published content.
 ms.author: fprotti
-ms.date: 11/21/2023
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc

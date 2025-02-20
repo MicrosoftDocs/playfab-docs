@@ -1,9 +1,9 @@
 ---
 title: Economy v2 deep links
-author: cybtachyon
+author: fprotti96
 description: Introduction to Economy v2 deep links and best practices.
-ms.author: derekreese
-ms.date: 9/07/2022
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, localization, internationalization, i8n

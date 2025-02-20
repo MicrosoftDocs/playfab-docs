@@ -1,9 +1,9 @@
 ---
 title: Fraud prevention, redemption, receipt validation
-author: cybtachyon
+author: fprotti96
 description: Learn about fraud prevention, item redemption, receipt validation, and other piracy protection measures.
-ms.author: derekreese
-ms.date: 09/07/2022
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, economy, catalog, receipts, purchases, fraud, piracy

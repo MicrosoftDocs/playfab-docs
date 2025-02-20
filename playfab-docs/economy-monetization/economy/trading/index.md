@@ -1,9 +1,9 @@
 ---
 title: Trading
-author: joannaleecy
+author: fprotti96
 description: Landing page for Trading.
-ms.author: joanlee
-ms.date: 01/30/2019
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, social, trading

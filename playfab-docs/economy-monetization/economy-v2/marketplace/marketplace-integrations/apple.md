@@ -3,7 +3,7 @@ title: Marketplace Integration - Apple
 author: fprotti96
 description: How to successfully integrate an Apple app into Game Manager
 ms.author: fprotti
-ms.date: 11/23/2023
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, integration, marketplace

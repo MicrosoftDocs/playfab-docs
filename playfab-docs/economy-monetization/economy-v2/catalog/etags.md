@@ -3,7 +3,7 @@ title: Economy v2 ETags
 author: wesjong
 description: Tutorial outlining using the ETags to manage content updates
 ms.author: wesjong
-ms.date: 03/17/2021
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc

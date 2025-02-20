@@ -6,7 +6,7 @@ summary: Product landing page for cross-platform progression services. # < 160 c
 metadata:
   title: PlayFab Player Progression documentation
   description: Quick links for player progression topics # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab progression #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
   author: braulioal
   ms.author: braulioal

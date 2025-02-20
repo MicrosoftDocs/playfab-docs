@@ -1,9 +1,9 @@
 ---
 title: Stores and sales in Economy (Legacy)
-author: cybtachyon
+author: fprotti96
 description: Describes how to configure a Store in Economy (Legacy)with a selection of items available in real money or virtual currency.
-ms.author: derekreese
-ms.date: 10/26/2018
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, stores, catalogs, currencies
@@ -24,7 +24,7 @@ This tutorial illustrates the best practices for defining stores based on virtua
 
 ## Requirements
 
-* Familiarity with the PlayFab [Game Manager](../../../gamemanager/quickstart.md).
+* Familiarity with the PlayFab [Game Manager](../../../live-service-management/production/gamemanager/quickstart.md).
 * You must have defined one or more [Virtual Currencies](../tutorials/currencies.md). The latter example in this tutorial uses:
   * **SP** (**Silver Pieces**)
   * **GP** (**Gold Pieces**).

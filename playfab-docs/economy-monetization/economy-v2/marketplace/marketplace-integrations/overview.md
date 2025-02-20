@@ -3,7 +3,7 @@ title: Marketplace integration - Overview
 author: fprotti96
 description: Overview of PlayFab's marketplace integrations
 ms.author: fprotti
-ms.date: 1/10/2025
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, integration, marketplace

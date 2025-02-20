@@ -1,9 +1,9 @@
 ---
 title: What are rewarded Ads?
-author: natashaorie
+author: fprotti96
 description: Overview of rewarded Ads.
-ms.author: norie
-ms.date: 04/07/2020
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, analytics, rewarded ads

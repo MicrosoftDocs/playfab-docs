@@ -1,9 +1,9 @@
 ---
 title: Economy v2 overview
-author: joannaleecy
+author: fprotti96
 description: Learn the differences and changes from PlayFab Economy v1 to v2
-ms.author: joanlee
-ms.date: 09/28/2022
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy

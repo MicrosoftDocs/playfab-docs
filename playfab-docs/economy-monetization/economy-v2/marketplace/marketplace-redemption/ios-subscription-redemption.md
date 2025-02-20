@@ -3,7 +3,7 @@ title: Redemption with the Apple App Store
 author: thomasgu
 description: Set up a PlayFab subscription that can be purchased from applestore Store
 ms.author: thomg
-ms.date: 11/06/2023
+ms.date: 02/20/2025
 ms.topic: tutorial
 ms.service: azure-playfab
 keywords: playfab, integration, marketplace, Apple, IOS

@@ -3,7 +3,7 @@ title: Economy v2 Localization
 author: fprotti96
 description: Economy v2 Localization Documentation
 ms.author: fprotti
-ms.date: 11/21/2023
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, localization, internationalization, i8n

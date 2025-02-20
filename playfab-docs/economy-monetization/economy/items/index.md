@@ -1,9 +1,9 @@
 ---
 title: Items (Legacy Economy)
-author: cybtachyon
+author: fprotti96
 description: Landing page for (Legacy) Items.
-ms.author: derekreese
-ms.date: 01/25/2019
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, items, catalogs
@@ -26,4 +26,4 @@ Items and inventories are common mechanisms that you can use to add customizatio
 PlayFab provides a large interactive playing field for interaction with items and inventory, and the Item definition in the Catalog allows for quite a bit of customization. However, most common interactions are through just a few key APIs:
 
 * [PurchaseItem](xref:titleid.playfabapi.com.client.playeritemmanagement.purchaseitem) - Buys a single catalog item with virtual currency, subtracting the currency and adding an Item Instance into the Player/Character Inventory.
-* [GetCharacterInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getcharacterinventory) and [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory) – These APIs retrieve the specified Character or the player’s current Inventory of virtual goods.
+* [GetCharacterInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getcharacterinventory) and [GetUserInventory](xref:titleid.playfabapi.com.client.playeritemmanagement.getuserinventory) – These APIs retrieve the specified Character or the player's current Inventory of virtual goods.

@@ -3,7 +3,7 @@ title: Economy version 2 (V2) FAQ
 author: thomasgu
 description: Answers to common Economy V2 questions.
 ms.author: thomg
-ms.date: 3/16/2023
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, migration, FAQ, parity

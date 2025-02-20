@@ -1,9 +1,9 @@
 ---
 title: Custom Stores for Player Segments in Economy (Legacy)
-author: cybtachyon
+author: fprotti96
 description: Tutorial for Economy (Legacy) that describes how to create alternate stores that are available only to players from defined Player Segments.
-ms.author: derekreese
-ms.date: 10/26/2018
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, stores, segmentation

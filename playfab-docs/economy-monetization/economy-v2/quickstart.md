@@ -1,9 +1,9 @@
 ---
 title: Quickstart
-author: cybtachyon
+author: fprotti96
 description: Get started with the new Economy v2 features.
-ms.author: derekreese
-ms.date: 07/27/2023
+ms.author: fprotti
+ms.date: 02/20/2025
 ms.topic: quickstart
 ms.service: azure-playfab
 keywords: playfab, commerce, economy

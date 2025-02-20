@@ -3,7 +3,7 @@ title: Player Inventory Quickstart
 author: wesjong
 description: In this quickstart, you purchase your first item and check your player's inventory via the APIs.
 ms.author: wesjong
-ms.date: 7/09/2022
+ms.date: 02/20/2025
 ms.topic: quickstart
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, inventory
@@ -25,7 +25,7 @@ Get familiarized with Player Inventories by using the PlayFab Beta SDK to purcha
 
 ## Sign in as the player
 
-You first need to sign in the player to receive the security token required for the remainder of the API calls in this quickstart. You can find more information on the [Player Authentication](../../authentication/login/index.md) page.
+You first need to sign in the player to receive the security token required for the remainder of the API calls in this quickstart. You can find more information on the [Player Authentication](../../../identity/player-identity/login/index.md) page.
 
 ## Search for the item
 

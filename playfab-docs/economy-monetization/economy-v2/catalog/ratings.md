@@ -3,7 +3,7 @@ title: Adding ratings to your content
 author: wesjong
 description: Guide to managing ratings and reviews for your game's content.
 ms.author: wesjong
-ms.date: 08/09/2021
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc, ratings, reviews
