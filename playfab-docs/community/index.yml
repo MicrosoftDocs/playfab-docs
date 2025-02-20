@@ -31,19 +31,19 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Friends?
-            url: social/friends/index.md
+            url: associations/friends/index.md
           - text: What is Groups?
-            url: social/groups/index.md
+            url: associations/groups/index.md
           - text: What is Leaderboards?
-            url: social/tournaments-leaderboards/index.md
+            url: associations/tournaments-leaderboards/index.md
       - linkListType: quickstart
         links:
           - text: Friends Quickstart
-            url: social/friends/quickstart.md
+            url: associations/friends/quickstart.md
           - text: Groups Quickstart
-            url: social/groups/quickstart.md
+            url: associations/groups/quickstart.md
           - text: Leaderboards Quickstart
-            url: social/tournaments-leaderboards/quickstart.md
+            url: associations/tournaments-leaderboards/quickstart.md
 
   # Card (optional)
   - title: Synchronous Player Communications

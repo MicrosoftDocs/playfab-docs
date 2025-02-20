@@ -74,7 +74,7 @@ Economy v2 supports the following add-on API endpoints:
 > [!TIP]
 > Keep a local copy of older events beyond the limit of your Insights retention period.
 
-You can use [Insights](../../insights/data-explorer/index.md) to detect and prevent this fraud vector.
+You can use [Insights](../../../data-analytics/learn-data/data-explorer/index.md) to detect and prevent this fraud vector.
 
 ## Anti-piracy
 

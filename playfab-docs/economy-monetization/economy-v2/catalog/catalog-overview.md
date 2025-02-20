@@ -32,10 +32,10 @@ Tab | Description | Reference
 ---|---|---
 **Items** | Things that have a value in virtual currency or real money that can be purchased or awarded. | [PlayFab Economy V2 Items](../inventory/items-and-inventory-overview.md)
 **Currency** | Virtual currency can be used to purchase other catalog items. | [PlayFab Economy V2 Currencies](../tutorials/currencies.md)
-**UGC** | User Created items. | [PlayFab Economy V2 UGC](../ugc/index.md)
+**UGC** | User Created items. | [PlayFab Economy V2 UGC](../ugc/index.yml)
 **Bundles** | Collections of items and virtual currency that unpack into a player's inventory when granted. A bundle can be linked to real world purchases using the Marketplace Mapping field. | [PlayFab Economy V2 Bundles](bundles.md)
 **Stores** | Stores allow you to override base catalog prices for items. | [PlayFab Economy V2 Stores](stores.md)
-**Subscriptions** |   Virtual subscriptions allow you to grant time based access to durable goods. | [PlayFab Economy V2 Subscriptions](../subscriptions.md).
+**Subscriptions** |   Virtual subscriptions allow you to grant time based access to durable goods. | [PlayFab Economy V2 Subscriptions](subscriptions.md).
 
 Each of these is an Item Type that can be used within your Catalog. Bundles 
 
@@ -153,7 +153,7 @@ We hope you find the new Catalog to be a powerful and flexible tool for creating
 ### See Also
 * [PlayFab Economy V2 Items](../inventory/items-and-inventory-overview.md)
 * [PlayFab Economy V2 Currencies](../tutorials/currencies.md)
-* [PlayFab Economy V2 UGC](../ugc/index.md)
+* [PlayFab Economy V2 UGC](../ugc/index.yml)
 * [PlayFab Economy V2 Bundles](bundles.md)
 * [PlayFab Economy V2 Stores](stores.md)
-* [PlayFab Economy V2 Subscriptions](../subscriptions.md) 
+* [PlayFab Economy V2 Subscriptions](subscriptions.md) 

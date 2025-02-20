@@ -24,7 +24,7 @@ The following APIs are used to help add, remove, update and delete items in a pl
 
 #### [Game Manager](#tab/inventory-game-manager)
 
-1. In [Game Manager](../../../gamemanager/index.md), navigate to `Players`
+1. In [Game Manager](../../../live-service-management/production/gamemanager/index.md), navigate to `Players`
 1. Select the player you wish to view or create a `New Player`, then go to `Inventory (V2)`
 
 #### [API](#tab/inventory-api)
@@ -55,7 +55,7 @@ The `ContinuationToken` field that is returned from a search response can be pas
 
 ### Add Inventory Items
 
-The `AddInventoryItems` API is used to directly add items to a specific player's Inventory. It takes an `EntityId`,`ItemId`, and `Amount` parameters, and adds the given item to a player’s inventory
+The `AddInventoryItems` API is used to directly add items to a specific player's Inventory. It takes an `EntityId`,`ItemId`, and `Amount` parameters, and adds the given item to a player's inventory
 
 An example `AddInventoryItems` request:
 

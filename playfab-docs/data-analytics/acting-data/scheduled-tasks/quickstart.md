@@ -30,7 +30,7 @@ In the **Game Manager**:
 > [!NOTE]
 > For the sharp-eyed, don’t worry - there’s a bug in there on purpose. Make sure you deploy the new revision, so that it is live in your game.
 
-You can learn more about using CloudScript in our [CloudScript quickstart](../../../features/automation/cloudscript/quickstart.md), and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
+You can learn more about using CloudScript in our [CloudScript quickstart](../../../features/automation/cloudscript/quickstart.md) , and in documentation for the method [ExecuteCloudScript](xref:titleid.playfabapi.com.client.server-sidecloudscript.executecloudscript).
 
 ```javascript
 handlers.adjustRareDropRate = function(args) {

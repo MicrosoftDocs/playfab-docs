@@ -18,7 +18,7 @@ Stores are an excellent way to build upon and develop your in-game Economy. Stor
 
 ## Creating a Store
 
-To create a store, you must first make sure you have other published Catalog Items, Currency, or UGC that you want to be accessible/purchasable in your game. You can follow the steps in the [Economy v2 Quickstart](quickstart.md#step-3---publish-an-item-to-the-catalog)
+To create a store, you must first make sure you have other published Catalog Items, Currency, or UGC that you want to be accessible/purchasable in your game. You can follow the steps in the [Economy v2 Quickstart](../quickstart.md#step-3---publish-an-item-to-the-catalog)
 
 ### [GameManager](#tab/creating-store-game-manager)
 

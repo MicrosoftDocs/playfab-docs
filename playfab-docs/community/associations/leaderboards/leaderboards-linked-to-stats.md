@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 # Ranking players by statistics
 
 In this tutorial, we're going to learn how to use both Leaderboards and Statistics services together. The end result is that, when a statistic is updated on an entity, is automatically reflected on the corresponding leaderboard.
-For more information about Azure PlayFab Statistics, see [playfab-docs\player-progression\index.yml](playfab-docs\player-progression\index.yml).
+For more information about Azure PlayFab Statistics, see [Statistics Overview]([Azure PlayFab Statistics overview](../../../player-progression/statistics/index.md)).
 
 
 Let's start with an example of a shooter game that uses both services. Here we're going to take advantage of the 
-tutorial of [../../../player-progression/statistics/create-basic-statistics.md](../../../player-progression/statistics/create-basic-statistics.md) and continue with assumption that we already
+tutorial of [Create a Basic Statistic](../../../player-progression/statistics/create-basic-statistics.md) and continue with assumption that we already
 have statistics created for the game. Now, we want to track long shots every time a player hits one in a match. We're going to have 
 a statistic that records the best long shot of a player and a leaderboard with the best players hitting longshots.
 
@@ -110,11 +110,11 @@ With this information, we can link and unlink statistics from leaderboards whene
 
 In this tutorial, we learned how to create a leaderboard powered by statistics and also how to unlink the services.
 For more information about other features, see following pages:
-- [create-basic-leaderboard.md](create-basic-leaderboard.md).
-- [seasonal-leaderboards.md](seasonal-leaderboards.md).
-- [group-leaderboards.md](group-leaderboards.md).
-- [manual-tiers.md](manual-tiers.md).
-- [doing-more-with-leaderboards.md](doing-more-with-leaderboards.md).
-- [metadata-leaderboards.md](metadata-leaderboards.md).
-- [api-reference.md](api-reference.md).
+- [Create basic leaderboard](create-basic-leaderboard.md).
+- [Seasonal leaderboards](seasonal-leaderboards.md).
+- [Group leaderboards](group-leaderboards.md).
+- [Manual tiers](manual-tiers.md).
+- [Doing more with leaderboards](doing-more-with-leaderboards.md).
+- [Add contextual data to leaderboards](metadata-leaderboards.md).
+- [API reference](api-reference.md).
 
