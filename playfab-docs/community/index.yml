@@ -35,7 +35,7 @@ landingContent:
           - text: What is Groups?
             url: associations/groups/index.md
           - text: What is Leaderboards?
-            url: associations/tournaments-leaderboards/index.md
+            url: associations/leaderboards/index.md
       - linkListType: quickstart
         links:
           - text: Friends Quickstart
@@ -43,7 +43,7 @@ landingContent:
           - text: Groups Quickstart
             url: associations/groups/quickstart.md
           - text: Leaderboards Quickstart
-            url: associations/tournaments-leaderboards/quickstart.md
+            url: associations/leaderboards/quickstart-leaderboards.md
 
   # Card (optional)
   - title: Synchronous Player Communications

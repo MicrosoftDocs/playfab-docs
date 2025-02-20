@@ -1,7 +1,7 @@
 ---
 title: Tournaments & Leaderboards
 author: joannaleecy
-description: Landing page for Tournaments and& Leaderboards.
+description: Landing page for Tournaments and Leaderboards.
 ms.author: joanlee
 ms.date: 07/12/2018
 ms.topic: article
@@ -12,16 +12,15 @@ ms.localizationpriority: medium
 
 # Leaderboards
 
-Using event or tournament leaderboards are great ways of increasing engagement within your game. By using PlayFab you can easily set up a recurring tournament that awards prizes to the winners, reaches out to the participants, and gets your players to come back into your game to try to get the highest score.
-
-> [!IMPORTANT]
-> The new version of leaderboard is here: [Leaderboards v2](../leaderboards/index.md).
+Event and tournament leaderboards are great tools for increasing engagement within your game. By using PlayFab you can easily set up a recurring tournament that awards prizes to the winners, reaches out to the participants, and gets your players to come back into your game to try for a high score.
 
 ## The future of Stats and Leaderboards
 
-Statistics and their leaderboards have been critical components of many games across every genre throughout the history of the industry. Their integration into a title drives player engagement by acting as a reflection of their experience both in isolation and as it relates to a broader community. We at PlayFab have seen how you've utilized these services in unique and exciting ways. We want to better enable these experiences by providing a new set of Stats & Leaderboard APIs built with the [Entity Programming Model](/gaming/playfab/features/data/entities) in mind. 
+Statistics and leaderboards have been critical components of many games across every genre throughout the history of the industry. Their integration into a title drives player engagement by acting as a reflection of their experience both in isolation and as it relates to a broader community. We at PlayFab have seen how you've utilized these services in unique and exciting ways. We want to better enable these experiences by providing a new set of Stats & Leaderboard APIs built with the [Entity Programming Model](/gaming/playfab/features/data/entities) in mind. 
 
-While we're eager to share details, we aim to do so in a process that delights. We're thrilled to be building this system and can't wait to see the experiences it enables. Thank you for joining us on this journey, and we look forward to [what's to come](/gaming/playfab/roadmap).
+> [!IMPORTANT]
+> The new version of leaderboards is here: [Leaderboards v2](../leaderboards/index.md).
+
 
 ## What are Leaderboards? 
 

@@ -14,6 +14,8 @@
     href: metadata-leaderboards.md
   - name: Ranking players by statistics 
     href: leaderboards-linked-to-stats.md
+  - name: Friends Leaderboards
+    href: friends-leaderboards.md
   - name: Group Leaderboards 
     href: group-leaderboards.md
   - name: Manual Tiers 

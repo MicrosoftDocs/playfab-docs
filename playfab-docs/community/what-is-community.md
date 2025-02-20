@@ -32,4 +32,4 @@ For more information about in-game player communications, see the [Player Commun
 ### Leaderboards
 Rank players based on their achievements and performance. Use leaderboards to rank players on any arbitrary ranking criteria, across multiple columns with column-based filtering, to build highly customizable experiences for any game. 
 
-For more information about ranking and leaderboards, see the [Leaderboards overview](associations/tournaments-leaderboards/index.md). 
+For more information about ranking and leaderboards, see the [Leaderboards overview](associations/leaderboards/index.md). 

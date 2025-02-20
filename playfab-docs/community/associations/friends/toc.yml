@@ -2,7 +2,3 @@
   href: index.md
 - name: Quickstart
   href: quickstart.md
-- name: Tutorials
-  items:
-  - name: Friends Leaderboards
-    href: friends-leaderboards.md
