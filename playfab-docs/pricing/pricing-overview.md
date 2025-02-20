@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 3. **[Pricing Meters](Meters/meters.md):** Learn about meter pricing and related APIs.
 
-4. **[Multiplayer Server Pricing](../../multiplayer/servers/billing-for-thunderhead.md):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
+4. **[Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
 
 5. **[Party Pricing](../multiplayer/networking/pricing.md):** Learn about Party pricing when Party is enabled.
 

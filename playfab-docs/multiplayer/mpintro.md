@@ -16,7 +16,7 @@ Multiplayer is a great addition to many titles, and PlayFab provides several ser
 
 |Service|Description|
 |--|--|
-|[Leaderboards](../community/social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards.|
+|[Leaderboards](../community/associations/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)| Track and respond to player activity with statistics and leaderboards.|
 |[Entity Groups](..player-progression/player-data/index.md)|Create permanent or temporary groups of players and signal activity. |
 |[Lobby](./lobby/index.md)| Create lobbies for coordinating gameplay among groups pre-game or post matchmaking. |
 |[Matchmaking](./matchmaking/index.md)| Deploy custom matchmaking rules to group players quickly|

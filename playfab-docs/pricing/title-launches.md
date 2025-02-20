@@ -21,7 +21,7 @@ A PlayFab title has two possible modes.
 1. **Development mode:** A title in development mode doesn't incur costs when you're using the core services. Use this mode to experiment with most of PlayFab offerings. A title in development mode is subjected to specific total player accounts and meter usage limits as determined by PlayFab. For more information about the included limits, see [development-mode.md](development-mode.md).
 
     > [!NOTE]
-    > [Multiplayer server hosting](../../multiplayer/servers/billing-for-thunderhead.md), [Party](../multiplayer/networking/pricing.md), and [Insights](../insights/pricing.md) aren't part of the core services. But they do have limited free usage available in Development mode.
+    > [Multiplayer server hosting](../multiplayer/servers/billing-for-thunderhead.md), [Party](../multiplayer/networking/pricing.md), and [Insights](../insights/pricing.md) aren't part of the core services. But they do have limited free usage available in Development mode.
 
 1. **Live:** A live title uses metering to measure your usage. You're charged according to the paid service account plan and rate. Any meter usage over what is included in the account plan's base rate results in charges per meter consumed. For more information, see [Meters/meters.md](Meters/meters.md).
 

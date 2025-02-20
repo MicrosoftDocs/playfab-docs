@@ -63,7 +63,7 @@ First, consider a virtual currency as shown in the example screenshot below (see
 
 ![PlayFab Economy - Currencies - New Currency](../media/tutorials/playfab-new-currency.png)
 
-Now, consider the following statistics defined for each player (see the [Accessing Archived Tournament Results](../../../../community/social/tournaments-leaderboards/accessing-archived-tournament-results.md) tutorial for information on how to generate a test leaderboard).
+Now, consider the following statistics defined for each player (see the [Accessing Archived Tournament Results](../../../../community/associations/tournaments-leaderboards/accessing-archived-tournament-results.md) tutorial for information on how to generate a test leaderboard).
 
 ![PlayFab player Statistics - Rank](../media/tutorials/playfab-statistics-player-rank.png)  
 

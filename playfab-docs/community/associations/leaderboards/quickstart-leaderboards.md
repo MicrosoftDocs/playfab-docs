@@ -18,7 +18,7 @@ to learn how to create a quick leaderboard from our website [Game Manager](https
 ## Prerequisites
 
 We're going to need a PlayFab account to use the PlayFab Leaderboards service. For instructions to create an account, 
-see [Authentication](../../authentication/authentication/index.md).
+see [Authentication](playfab-docs\identity\player-identity\authentication\index.md).
 
 ## Creating a leaderboard
 
@@ -103,7 +103,7 @@ public static async Task<PlayFabAuthenticationContext> LoginAsTitleEntity()
 ## Login as Player (create Player)
 
 This method creates a player based on an identifier which returns an entity of type `title_player_account`. More information here:
-[Quickstart entities](../../entities/quickstart.md)
+[Quickstart entities](playfab-docs\live-service-management\production\entities\quickstart.md)
 
 ``` C#
 private static async Task<PlayFabAuthenticationContext> LoginAsPlayer(string customId = "GettingStartedGuide")
@@ -151,4 +151,4 @@ private static async Task UpdateEntityDisplayName(PlayFabAuthenticationContext c
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
-- [Leaderboard meters](../../../get-started/pricing/Meters/leaderboard-meters.md).
+- [Leaderboard meters](../../../pricing/Meters/leaderboard-meters.md).

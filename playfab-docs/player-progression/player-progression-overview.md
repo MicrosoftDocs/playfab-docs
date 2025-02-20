@@ -27,8 +27,8 @@ and standing in the gaming community aren't bounded by the limitations of any de
 Learn more about the new features of Leaderboards, how to configure it and all the different tutorials available.
 
 - [Learn more about Leaderboards](./leaderboards/index.md)
-- [Quickstart](../community/social/leaderboards/quickstart-leaderboards.md)
-- [Create Leaderboard](../community/social/leaderboards/create-basic-leaderboard.md)
+- [Quickstart](../community/associations/leaderboards/quickstart-leaderboards.md)
+- [Create Leaderboard](../community/associations/leaderboards/create-basic-leaderboard.md)
 
 ### Stats
 

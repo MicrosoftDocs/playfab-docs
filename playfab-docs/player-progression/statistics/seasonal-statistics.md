@@ -94,7 +94,7 @@ public static async Task ResetStatistic(PlayFabAuthenticationContext context, st
 
 Now we're set to handle any challenges with versioning on statistics. One important aspect here's that the number of statistics definitions 
 that we decide to keep as versions are going to be meter as they use storage within the service. See more about this here:
-- [Statistics](../../get-started/pricing/Meters/statistics-meters.md).
+- [Statistics](../../pricing/Meters/statistics-meters.md).
 
 ## Conclusions
 

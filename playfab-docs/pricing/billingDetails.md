@@ -77,6 +77,6 @@ The base rate charge includes:
 
 ## Learn More
 
-> [../../../multiplayer/servers/billing-for-thunderhead.md](../../multiplayer/servers/billing-for-thunderhead.md)
+> [../../../multiplayer/servers/billing-for-thunderhead.md](../multiplayer/servers/billing-for-thunderhead.md)
 >
 > [../multiplayer/networking/pricing.md](../multiplayer/networking/pricing.md)
