@@ -2,7 +2,9 @@ items:
 - name: PlayFab
   href: index.yml
 - name: Get started
-  href: get-started/toc.yml  
+  href: get-started/toc.yml
+- name: What's New
+  href: whats-new/toc.yml
 - name: Demo game
   href: demo-game/toc.yml
 - name: Reference

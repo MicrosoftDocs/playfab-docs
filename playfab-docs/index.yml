@@ -25,7 +25,7 @@ highlightedContent:
       url: what-is-playfab.md
     - title: What's new
       itemType: whats-new
-      url: roadmap/index.md          
+      url: whats-new/whats-new.md         
     - title: Download the SDK
       itemType: download
       url: sdks/sdk-overview.md  

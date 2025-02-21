@@ -1,0 +1,35 @@
+items:
+- name: What's New in March 2025
+  href: whats-new/whats-new.md
+- name: Previous Release Notes
+  items:
+  - name: 2025 SDK Release Notes
+    href: /playfab-docs/release-notes/index.md
+  - name: Lobby and Matchmaking SDK Release Notes
+    href: ../multiplayer/lobby/lobby-matchmaking-sdks/lobby-and-matchmaking-release-notes.md
+  - name: PlayFab Party SDK Release Notes
+    href: /playfab-docs/multiplayer/party/party-release-notes.md
+  - name: Party Unity Release Notes
+    href: /playfab-docs/multiplayer/party/party-unity-release-notes.md
+  - name: PlayFab Multiplayer Unreal Engine OnlineSubsystem Release Notes
+    href: /playfab-docs/multiplayer/networking/unreal-release-notes.md
+  - name: 2024 SDK Release Notes
+    href: /playfab-docs/release-notes/2024.md
+  - name: 2023 SDK Release Notes
+    href: /playfab-docs/release-notes/2023.md
+  - name: 2022 SDK Release Notes
+    href: /playfab-docs/release-notes/2022.md
+  - name: 2021 SDK Release Notes
+    href: /playfab-docs/release-notes/2021.md
+  - name: 2020 SDK Release Notes
+    href: /playfab-docs/release-notes/2020.md
+  - name: 2019 SDK Release Notes
+    href: /playfab-docs/release-notes/2019.md
+  - name: 2018 SDK Release Notes
+    href: /playfab-docs/release-notes/2018.md
+  - name: 2017 SDK Release Notes
+    href: /playfab-docs/release-notes/2017.md
+  - name: 2016 SDK Release Notes
+    href: /playfab-docs/release-notes/2016.md
+  - name: 2015 SDK Release Notes
+    href: /playfab-docs/release-notes/2015.md
