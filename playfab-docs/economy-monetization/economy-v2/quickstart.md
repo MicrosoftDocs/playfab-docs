@@ -417,7 +417,7 @@ Your entity player needs virtual currency in order to make a Purchase.
 6. Select **Save**.
 
 > [!WARNING]
-> The pages exposing player Currency Grants are not in GameManager today. See the [Roadmap](../../roadmap/index.md).
+> The pages exposing player Currency Grants are not in GameManager today. 
 
 #### [API](#tab/grant-currency-api)
 

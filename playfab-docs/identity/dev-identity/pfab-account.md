@@ -1,9 +1,9 @@
 ---
 title: Creating a PlayFab Account
-author: joannaleecy
+author: antnguyen89
 description: Describes how to create a PlayFab account.
-ms.author: joanlee
-ms.date: 06/03/2019
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, developer account, game manager, sdk, api

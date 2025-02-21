@@ -37,9 +37,9 @@ You should use version 2. If you're on version 1, you should look at upgrading. 
 
 Features of Economy that were too restrictive to be useful didn't make the cut to v2. To remediate this, we launched Azure Functions as an enhanced successor to CloudScript. We also provided a recipe-style documentation as a starting point for your own custom implementations. We then focused our efforts on what you told us was most important.
 
-The following v1 features aren’t included in Economy v2:
+The following v1 features aren't included in Economy v2:
 
-* Trading (see the [Roadmap](../../roadmap/index.md))
+* Trading
 * Converting items  
 * Limited items
 * Drop tables

@@ -1,9 +1,9 @@
 ---
 title: Platform-Specific Authentication
-author: joannaleecy
+author: antnguyen89
 description: Landing page for Platform-Specific Authentication.
-ms.author: joanlee
-ms.date: 06/12/2018
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication

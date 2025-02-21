@@ -5,8 +5,6 @@ items:
   href: get-started/toc.yml  
 - name: Demo game
   href: demo-game/toc.yml
-- name: Roadmap
-  href: roadmap/toc.yml
 - name: Reference
   href: api-references/toc.yml
 - name: SDKs

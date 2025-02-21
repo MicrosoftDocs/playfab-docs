@@ -1,9 +1,9 @@
 ---
 title: Migrating from Google Sign-in to Google Play Games Sign-in in Unity Fallback
-author: joannaleecy
+author: antnguyen89
 description: Fallback method for players that are still not using Google Play Games identity after upgrading Play Games Plugin for Unity plugin. 
-ms.author: joanlee
-ms.date: 06/11/2018
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication, google, unity

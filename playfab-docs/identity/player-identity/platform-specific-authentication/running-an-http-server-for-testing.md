@@ -1,9 +1,9 @@
 ---
 title: Running an HTTP server for testing
-author: joannaleecy
+author: antnguyen89
 description: Describes how to install and run an HTTP server for testing.
-ms.author: joanlee
-ms.date: 11/08/2018
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, config, testing, http, server

@@ -1,9 +1,9 @@
 ---
 title: Platform-Specific Authentication Tutorials
-author: joannaleecy
+author: antnguyen89
 description: Overview page for tutorials about setting up PlayFab authentication for specific platforms.
-ms.author: joanlee
-ms.date: 11/19/2018
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication, platforms

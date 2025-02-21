@@ -1,9 +1,9 @@
 ---
 title: Login basics and best Practices
-author: antnguyen
+author: antnguyen89
 description: Describes the basics and Best Practices for login and authentication of players in PlayFab.
-ms.author: antnguyen
-ms.date: 09/05/2023
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication

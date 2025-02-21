@@ -1,9 +1,9 @@
 ---
 title: Player Login
-author: joannaleecy
+author: antnguyen89
 description: Landing page for Player login topics.
-ms.author: joanlee
-ms.date: 02/19/2019
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication, accounts, login, linking

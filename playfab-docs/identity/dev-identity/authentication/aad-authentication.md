@@ -1,9 +1,9 @@
 ---
 title: Microsoft Accounts Authentication for PlayFab
-author: joannaleecy
+author: antnguyen89
 description: Provides an introduction to Microsoft Account authentication and steps for how to create a user with this auth method
-ms.author: joanlee
-ms.date: 11/11/2019
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, analytics, metrics, webhooks, events

@@ -1,9 +1,9 @@
 ---
 title: Encrypted Logins
-author: williacj
+author: antnguyen89
 description: Shows you how to enable encryption for your client.
-ms.author: cjwill
-ms.date: 02/11/2018
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, config, game manager, encrypted login

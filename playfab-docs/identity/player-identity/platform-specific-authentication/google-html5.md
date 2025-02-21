@@ -1,9 +1,9 @@
 ---
 title: Setting up PlayFab authentication using Google and HTML5
-author: antnguyen
+author: antnguyen89
 description: Guides you through an example of PlayFab authentication using Google and HTML5.
-ms.author: antnguyen
-ms.date: 08/18/2023
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication, google, html5, javascript

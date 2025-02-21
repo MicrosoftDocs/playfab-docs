@@ -1,9 +1,9 @@
 ---
 title: Identity overview page
-author: natashaorie
+author: antnguyen89
 description: Overview page for Identity product
-ms.author: norie
-ms.date: 08/18/2021
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer servers, new build, game manager 

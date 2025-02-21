@@ -1,9 +1,9 @@
 ---
 title: Setting up PlayFab authentication using Facebook and HTML5
-author: antnguyen
+author: antnguyen89
 description: Guides you through an example of PlayFab authentication using Facebook and HTML5/JavaScript.
-ms.author: antnguyen
-ms.date: 08/18/2023
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication, facebook, html5, javascript

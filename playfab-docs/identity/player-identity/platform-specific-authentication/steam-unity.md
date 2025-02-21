@@ -1,9 +1,9 @@
 ---
 title: Setting up PlayFab authentication using Steam and Unity
-author: joannaleecy
+author: antnguyen89
 description: Guides you through an example of PlayFab authentication using Steam and Unity.
-ms.author: joanlee
-ms.date: 06/11/2018
+author: antnguyen
+ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication, steam, unity
