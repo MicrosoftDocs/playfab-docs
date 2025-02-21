@@ -21,14 +21,14 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is player authentication?
-            url: authentication/index.md
+            url: player-identity/index.md
 
   - title: Using Player Login
     linkLists:
       - linkListType: overview
         links:
           - text: About Player Login
-            url: authentication/login/index.md
+            url: player-identity/login/index.md
       - linkListType: quickstart
         links:
           - text: Player Login
@@ -43,9 +43,9 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Setting up PlayFab authentication using Facebook and Unity
-            url: player-identityplatform-specific-authentication/facebook-unity.md
+            url: player-identity/platform-specific-authentication/facebook-unity.md
           - text: Setting up PlayFab authentication using Steam and Unity
-            url: player-identityplatform-specific-authentication/steam-unity.md
+            url: player-identity/platform-specific-authentication/steam-unity.md
           - text: Setting up PlayFab authentication using Kongregate and Unity
             url: player-identity/platform-specific-authentication/kongregate-unity.md
           - text: Setting up PlayFab authentication using Google Play Games Sign-In in Unity
@@ -60,12 +60,12 @@ landingContent:
       - linkListType: overview
         links:
           - text: Account Authentication for PlayFab Game Manager
-            url: dev-identity/authentication/aad-authentication/index.md
+            url: dev-identity/authentication/aad-authentication.md
 
 
-  - title: Account Linking
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: 
-            url: 
+  # - title: Account Linking
+  #   linkLists:
+  #     - linkListType: overview
+  #       links:
+  #         - text: 
+  #           url: 
