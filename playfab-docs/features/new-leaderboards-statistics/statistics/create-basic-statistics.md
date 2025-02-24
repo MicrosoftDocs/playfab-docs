@@ -100,6 +100,30 @@ public static async Task GetStatisticDefinitions(PlayFabAuthenticationContext co
 }
  ```
 
+### Updating a statistic definition
+
+If you want to update your statistic definition `MaxQueryableVersions` you can do so as follows:
+``` C#
+public static async Task UpdateStatisticDefinitionAsync(PlayFabAuthenticationContext context, string statisticName, VersionConfiguration version)
+{
+    PlayFabProgressionInstanceAPI leaderboardsAPI = new PlayFabProgressionInstanceAPI(context);
+    UpdateStatisticDefinitionRequest updateStatDefinitionRequest = new UpdateStatisticDefinitionRequest()
+    {
+        AuthenticationContext = context,
+        Name = statisticName,
+        VersionConfiguration = version
+
+    };
+    PlayFabResult<PlayFab.ProgressionModels.EmptyResponse> updateStatDefinitionResult = await leaderboardsAPI.UpdateStatisticDefinitionAsync(updateStatDefinitionRequest);
+
+}
+
+ ```
+ Now, there some limitations when updating a statistic definition such as you can't change the columns fields, the entity type or the `ResetInterval`.
+
+
+``` C#
+
 ### Deleting statistic definition
 
 If you want to delete your statistic definition to add more columns or fix some errors, you can do so as follows:
@@ -236,6 +260,7 @@ Now, let's explain some key elements of this example:
 In this tutorial, we learned how to do the following operations: 
 * Create a statistic
 * Check the configuration of a statistic
+* Update the configuration of a statistic
 * Delete the statistic configuration
 * Populate the statistic
 * Delete entries in the statistic.

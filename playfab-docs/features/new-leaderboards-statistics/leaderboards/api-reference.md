@@ -20,6 +20,7 @@ error codes, and response structures.
 |----------------------|-----------------------------------|
 |CreateLeaderboardDefinition               | [Create a Leaderboard Definition](/rest/api/playfab/progression/leaderboards/create-leaderboard-definition)    |
 |DeleteLeaderboardDefinition              | [Delete a Leaderboard Definition](/rest/api/playfab/progression/leaderboards/delete-leaderboard-definition)    |
+|UpdateLeaderboardDefinition              | [Update a Leaderboard Definition](/rest/api/playfab/progression/leaderboards/update-leaderboard-definition)    |
 |DeleteLeaderboardEntries               | [Delete Leaderboard Entries](/rest/api/playfab/progression/leaderboards/delete-leaderboard-entries)    |
 |GetLeaderboardDefinition               | [Get Leaderboard Definition](/rest/api/playfab/progression/leaderboards/get-leaderboard-definition)    |
 |IncrementLeaderboardVersion               | [Increment Leaderboard Version](/rest/api/playfab/progression/leaderboards/increment-leaderboard-version)    |
