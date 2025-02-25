@@ -122,7 +122,8 @@ definitions, you can use the next example to get a set of them.
             
   }
   ```
-Now, there some limitations when updating a leaderboard definition such as you can't change the columns fields, the entity type or the `ResetInterval`.
+
+Note that, Columns, EntityType and `ResetInterval` cannot be modifed as part of the update.
 
  ### Deleting leaderboard definition
 

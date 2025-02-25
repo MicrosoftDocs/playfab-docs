@@ -102,11 +102,11 @@ public static async Task GetStatisticDefinitions(PlayFabAuthenticationContext co
 
 ### Updating a statistic definition
 
-If you want to update your statistic definition `MaxQueryableVersions` you can do so as follows:
+If you want to update your statistic definition, you can do so as follows:
 ``` C#
 public static async Task UpdateStatisticDefinitionAsync(PlayFabAuthenticationContext context, string statisticName, VersionConfiguration version)
 {
-    PlayFabProgressionInstanceAPI leaderboardsAPI = new PlayFabProgressionInstanceAPI(context);
+    PlayFabProgressionInstanceAPI statsAPI = new PlayFabProgressionInstanceAPI(context);
     UpdateStatisticDefinitionRequest updateStatDefinitionRequest = new UpdateStatisticDefinitionRequest()
     {
         AuthenticationContext = context,
@@ -114,13 +114,12 @@ public static async Task UpdateStatisticDefinitionAsync(PlayFabAuthenticationCon
         VersionConfiguration = version
 
     };
-    PlayFabResult<PlayFab.ProgressionModels.EmptyResponse> updateStatDefinitionResult = await leaderboardsAPI.UpdateStatisticDefinitionAsync(updateStatDefinitionRequest);
+    PlayFabResult<PlayFab.ProgressionModels.EmptyResponse> updateStatDefinitionResult = await statsAPI.UpdateStatisticDefinitionAsync(updateStatDefinitionRequest);
 
 }
 
  ```
- Now, there some limitations when updating a statistic definition such as you can't change the columns fields, the entity type or the `ResetInterval`.
-
+Note that, Columns, EntityType and ResetInterval cannot be modifed as part of the update.
 
 ``` C#
 
