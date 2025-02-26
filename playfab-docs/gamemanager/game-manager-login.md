@@ -35,7 +35,7 @@ For Microsoft account users, select the "Sign in with Microsoft" button and comp
 Once logged in, you're redirected to the My Studios and Titles page. 
 
 ## Still can't sign in? 
-If you still can't sign in, [contact us](https://playfab.com/contact/) with the email and sign in type that you're having issues with. 
+If you still can't sign in, [contact us](https://playfab.com/contact/) and provide the email and sign in type that you're having issues with. 
 
 ## FAQ
 
@@ -44,7 +44,7 @@ If you still can't sign in, [contact us](https://playfab.com/contact/) with the 
 
 ### I don't see my studios and titles after migrating? 
 - If you don't see your studios and titles after running the self-service migration tool, your account may be under a different Microsoft account. Sign out of your current Microsoft account and try signing into a different Microsoft account. 
-- If you still don't see your studio and titles, [contact us](https://playfab.com/contact/). 
+- If you still don't see your studio and titles, [contact us](https://playfab.com/contact/) with the email and sign in type you're having issues with. 
 
 ### After I attempted account migration, my PlayFab account is disabled and I can't log into my Microsoft account.
 - If you encounter an issue where you receive the error message saying AccountDisabled when using the legacy PlayFab authentication or "You aren't authorized to view this page" when using a Microsoft account, [contact us](https://playfab.com/contact/) with both your PlayFab and Microsoft account information.  
