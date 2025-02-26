@@ -35,7 +35,7 @@ For Microsoft account users, select the "Sign in with Microsoft" button and comp
 Once logged in, you're redirected to the My Studios and Titles page. 
 
 ## Still can't sign in? 
-If you still can't sign in, [contact us](https://playfab.com/contact/). 
+If you still can't sign in, [contact us](https://playfab.com/contact/) with the email and sign in type that you're having issues with. 
 
 ## FAQ
 
