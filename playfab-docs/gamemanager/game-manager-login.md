@@ -46,7 +46,10 @@ If you still can't sign in, [contact us](https://playfab.com/contact/) and provi
 - A PlayFab authenticated account is the legacy account system that utilized email and password. To improve security of PlayFab's services, new PlayFab developer accounts creation was disabled on July 29, 2024. When you migrate to a Microsoft account, you're able to utilize one identity throughout all of Microsoft Gaming's developer portals. 
 
 ### I don't see my studios and titles after migrating? 
-- If you don't see your studios and titles after running the self-service migration tool, your account might be under a different Microsoft account. Sign out of your current Microsoft account and try signing into a different Microsoft account. 
+- If you don't see your studios and titles after running the self-service migration tool, your account might be under a different Microsoft account. Try the following steps:
+        
+     - Sign out of your current Microsoft account and try signing into a different Microsoft account. 
+     - Use a private browser to ensure your browser isn't using your windows credentials to authenticate to Game Manager.
 - If you still don't see your studio and titles, [contact us](https://playfab.com/contact/) and provide the email and sign in type you're having issues with. 
 
 ### After I attempted account migration, my PlayFab account is disabled and I can't log into my Microsoft account.
