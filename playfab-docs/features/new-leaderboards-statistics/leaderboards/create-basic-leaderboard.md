@@ -103,9 +103,31 @@ definitions, you can use the next example to get a set of them.
     
  }
  ```
+ ### Updating a leaderboard definition
+
+ If you want to update your leaderboard definition  you can do so as follows:
+ ``` C#
+
+  public static async Task UpdateLeaderboardDefinitionAsync(PlayFabAuthenticationContext context, string leaderboardName, int sizeLimit, VersionConfiguration version)
+  {
+     PlayFabProgressionInstanceAPI leaderboardsAPI = new PlayFabProgressionInstanceAPI(context);
+     UpdateLeaderboardDefinitionRequest updateLbDefinitionRequest = new UpdateLeaderboardDefinitionRequest()
+     {
+         AuthenticationContext = context,
+         Name = leaderboardName,
+         SizeLimit = sizeLimit,
+         VersionConfiguration = version,
+      };
+      PlayFabResult<PlayFab.ProgressionModels.EmptyResponse> updateLbDefinitionResult = await leaderboardsAPI.UpdateLeaderboardDefinitionAsync(updateLbDefinitionRequest);
+            
+  }
+  ```
+
+Note that, Columns, EntityType and `ResetInterval` cannot be modifed as part of the update.
+
  ### Deleting leaderboard definition
 
- If you want to delete your leaderboard definition to add more columns or fix some errors, you can do so as follows:
+ If you want to delete your leaderboard definition, you can do so as follows:
 
  ``` C#
 
@@ -251,6 +273,7 @@ Now, let's explain some key elements of this example:
 In this tutorial, we learned how to do the following operations: 
 * Create a leaderboard.
 * Check the configuration of a leaderboard.
+* Update the leaderboard configuration.
 * Delete the leaderboard configuration.
 * Populate the leaderboard.
 * Understand how tie-breaking works.
