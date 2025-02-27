@@ -13,16 +13,15 @@ ms.localizationpriority: medium
 # Limits on Statistics
 
 The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your statistics on the Statistic service.
-- Caller: This type of limit is enforced on the caller of the API, this could be either a player or a title.
+- Caller: This type of limit is enforced on the caller of the API. This constraint could be either a player or a title.
 - Target: This type of limit is enforced on the target of the API, in our specific case an entity.
 
-The following table defines the limits for the different set of APIs available on the Statistics service, now if
-the API doesn't explicitly appear here, it means that the default behavior is going to be applied.
+The following table defines the limits for the various APIs available in the Statistics service. If an API is not explicitly listed here, the default behavior is going to be applied.
 
 | API | Limit | Caller | Target entity |
 | --- | --- | --- | --- |
 | Default | 50 requests under 2 minutes | Player | title_player_account |
-| GetStatistics | 30 requests under 2 minutes / 1200 requests under 2 minutes  | Player / Title | title_player_account, master_player_account |
+| GetStatistics | 30 requests under 2 minutes / 1,200 requests under 2 minutes  | Player / Title | title_player_account, master_player_account |
 | UpdateStatistics | 30 requests under 2 minutes  | Title  | title_player_account |
 | DeleteStatistics | 30 requests under 2 minutes  | Title  | title_player_account |
 | CreateStatisticDefinition | 30 requests under 2 minutes  | Title  | N/A |
@@ -32,12 +31,11 @@ the API doesn't explicitly appear here, it means that the default behavior is go
 | IncrementStatisticVersion | 30 requests under 2 minutes  | Title  |  N/A |
 | GetStatisticsForEntities | 30 requests per entity under 2 minutes | Title  | title_player_account, group, character |
 
-NOTE: The last API (GetStatisticsForEntities) receives a list of entites as a parameter, the limit is enforced per each entity in the list, so that
-the limit of 30 requests applies independently to each entity in the list.
+Note: The GetStatisticsForEntities API accepts a list of entities as a parameter. The limit of 30 requests is applied independently to each entity in the list.
 
 ## API callers
 
-The following table defines which type of entity is allow to call each API:
+The following table defines which type of entity is allowed to call each API:
 
 | API | Caller |
 | --- | --- |

@@ -13,16 +13,15 @@ ms.localizationpriority: medium
 # Limits on Leaderboards
 
 The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your leaderboards on the Leaderboards service.
-- Caller: This type of limit is enforced on the caller of the API, this could be either a player or a title.
+- Caller: This type of limit is enforced on the caller of the API. This constraint could be either a player or a title.
 - Target: This type of limit is enforced on the target of the API, in our specific case an entity.
 
-The following table defines the limits for the different set of APIs available on the Leaderboards service, now if
-the API doesn't explicitly appear here, it means that the default behavior is going to be applied.
+The table below outlines the limits for the various APIs available in the Leaderboards service. If an API is not explicitly listed here, the default behavior is going to be applied.
 
 | API | Limit | Caller | Target entity |
 | --- | --- | --- | --- |
 | Default | 50 requests under 2 minutes | Player | title_player_account |
-| GetLeaderboard | 30 requests under 2 minutes / 1200 requests under 2 minutes  | Player / Title | N/A |
+| GetLeaderboard | 30 requests under 2 minutes / 1,200 requests under 2 minutes  | Player / Title | N/A |
 | GetLeaderboardAroundEntity | 30 requests under 2 minutes  | Player  | title_player_account |
 | GetFriendLeaderboardForEntity | 30 requests under 2 minutes  | Player  | title_player_account |
 | GetLeaderboardDefinition | 30 requests under 2 minutes  | Title  | N/A |
@@ -34,12 +33,12 @@ the API doesn't explicitly appear here, it means that the default behavior is go
 | DeleteLeaderboardEntries | 30 requests per entity under 2 minutes | Title  | title_player_account, group, character |
 | GetLeaderboardForEntities | 30 requests per entity under 2 minutes | Title  | title_player_account, group, character |
 
-NOTE: The last three APIs (UpdateLeaderboardEntries,DeleteLeaderboardEntries and GetLeaderboardForEntities) receives a list of entites as a parameter, the limit is enforced per each entity in the list, so that
-the limit of 30 requests applies independently to each entity in the list.
+The last three APIs (UpdateLeaderboardEntries, DeleteLeaderboardEntries, and GetLeaderboardForEntities) receive a list of entities as a parameter. The limit is enforced per entity in the list,
+meaning the limit of 30 requests applies independently to each entity.
 
 ## API callers
 
-The following table defines which type of entity is allow to call each API:
+The following table defines which type of entity is allowed to call each API:
 
 | API | Caller |
 | --- | --- |
