@@ -20,41 +20,22 @@ The table below outlines the limits for the various APIs available in the Leader
 
 | API | Limit | Caller | Target entity |
 | --- | --- | --- | --- |
-| Default | 50 requests under 2 minutes | Player | title_player_account |
-| GetLeaderboard | 30 requests under 2 minutes / 1,200 requests under 2 minutes  | Player / Title | N/A |
-| GetLeaderboardAroundEntity | 30 requests under 2 minutes  | Player  | title_player_account |
-| GetFriendLeaderboardForEntity | 30 requests under 2 minutes  | Player  | title_player_account |
-| GetLeaderboardDefinition | 30 requests under 2 minutes  | Title  | N/A |
-| ListLeaderboardDefinitions | 30 requests under 2 minutes  | Title  | N/A |
-| CreateLeaderboardDefinition | 30 requests under 2 minutes  | Title  | N/A |
-| UnlinkLeaderboardFromStatistic | 30 requests under 2 minutes  | Title  | N/A |
+| Default | 50 requests per 120 seconds | Player | title_player_account , group, character |
+| GetLeaderboard | 30 requests per 120 seconds / 1,200 requests per 120 seconds  | Player / Title | N/A |
+| GetLeaderboardAroundEntity | 30 requests per 120 seconds  | Player  | title_player_account , group, character |
+| GetFriendLeaderboardForEntity | 30 requests per 120 seconds  | Player  | title_player_account , group, character |
+| GetLeaderboardDefinition | 30 requests per 120 seconds  | Title  | N/A |
+| ListLeaderboardDefinitions | 30 requests per 120 seconds  | Title  | N/A |
+| CreateLeaderboardDefinition | 30 requests per 120 seconds  | Title  | N/A |
+| UnlinkLeaderboardFromStatistic | 30 requests per 120 seconds  | Title  | N/A |
 | IncrementLeaderboardVersion | 30 requests under 2 minutes  | Title  | N/A |
-| UpdateLeaderboardEntries | 30 requests per entity under 2 minutes | Title  | title_player_account, group, character |
-| DeleteLeaderboardEntries | 30 requests per entity under 2 minutes | Title  | title_player_account, group, character |
-| GetLeaderboardForEntities | 30 requests per entity under 2 minutes | Title  | title_player_account, group, character |
+| UpdateLeaderboardEntries | 30 requests per entity per 120 seconds | Title  | title_player_account, group, character |
+| DeleteLeaderboardEntries | 30 requests per entity per 120 seconds | Title  | title_player_account, group, character |
+| GetLeaderboardForEntities | 30 requests per entity per 120 seconds | Title  | title_player_account, group, character |
 
 The last three APIs (UpdateLeaderboardEntries, DeleteLeaderboardEntries, and GetLeaderboardForEntities) receive a list of entities as a parameter. The limit is enforced per entity in the list,
 meaning the limit of 30 requests applies independently to each entity.
 
-## API callers
-
-The following table defines which type of entity is allowed to call each API:
-
-| API | Caller |
-| --- | --- |
-|CreateLeaderboardDefinition | Title |
-|DeleteLeaderboardDefinition | Title | 
-|UpdateLeaderboardDefinition | Title | 
-|DeleteLeaderboardEntries  |   Title, title_player_account  |
-|GetLeaderboardDefinition  |  Title | 
-|IncrementLeaderboardVersion | Title |
-|ListLeaderboardDefinitions  | Title |
-|UnlinkLeaderboardFromStatistic | Title |
-|GetFriendLeaderboardForEntity | Title, title_player_account  |
-|GetLeaderboard |   Title, title_player_account  |            
-|GetLeaderboardAroundEntity | Title, title_player_account  |
-|GetLeaderboardForEntities  |  Title |
-|UpdateLeaderboardEntries  |  Title, title_player_account  |
     		
 
 ## See also
