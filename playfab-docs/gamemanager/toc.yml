@@ -25,3 +25,5 @@ items:
     href: secret-key-management.md
   - name: Two-Factor Authentication
     href: two-factor-authentication.md
+  - name: Game Manager Sign In
+    href: game-manager-login.md
