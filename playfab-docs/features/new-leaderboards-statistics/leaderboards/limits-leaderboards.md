@@ -29,12 +29,7 @@ The following table outlines the limits for the various APIs available in the Le
 | CreateLeaderboardDefinition | 30 requests per 120 seconds  | Title  | N/A |
 | UnlinkLeaderboardFromStatistic | 30 requests per 120 seconds  | Title  | N/A |
 | IncrementLeaderboardVersion | 30 requests under 2 minutes  | Title  | N/A |
-| UpdateLeaderboardEntries | 30 requests per entity per 120 seconds | Title  | `title_player_account`, `master_player_account`, `group`, `character` |
-| DeleteLeaderboardEntries | 30 requests per entity per 120 seconds | Title  | `title_player_account`, `master_player_account`, `group`, `character` |
-| GetLeaderboardForEntities | 30 requests per entity per 120 seconds | Title  | `title_player_account`, `master_player_account`, `group`, `character` |
 
-The last three APIs (UpdateLeaderboardEntries, DeleteLeaderboardEntries, and GetLeaderboardForEntities) receive a list of entities as a parameter. The limit is enforced per entity in the list,
-meaning the limit of 30 requests applies independently to each entity.
 
     		
 

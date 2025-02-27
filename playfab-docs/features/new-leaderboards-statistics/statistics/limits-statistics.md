@@ -29,9 +29,6 @@ The following table defines the limits for the various APIs available in the Sta
 | ListStatisticDefinitions | 30 requests per 120 seconds  | Title  |  N/A |
 | DeleteStatisticsDefinition | 30 requests per 120 seconds  | Title  |  N/A |
 | IncrementStatisticVersion | 30 requests per 120 seconds  | Title  |  N/A |
-| GetStatisticsForEntities | 30 requests per entity per 120 seconds | Title  | `title_player_account` , `master_player_account` , `group`, `character` |
-
-Note: The GetStatisticsForEntities API accepts a list of entities as a parameter. The limit of 30 requests is applied independently to each entity in the list.
 
 
 ## See also
