@@ -2,6 +2,8 @@
   href: index.md
 - name: Quickstart
   href: quickstart-statistics.md
+- name: Limits
+  href: limits-statistics.md
 - name: Tutorials
   items:
   - name: Create a basic statistic
