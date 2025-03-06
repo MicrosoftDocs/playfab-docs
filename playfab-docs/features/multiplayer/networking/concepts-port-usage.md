@@ -1,8 +1,8 @@
 ---
 title: PlayFab Party port usage and firewall requirements
 description: Details on PlayFab Party chat and data communication port usage and firewall configuration requirements.
-author: fschober-atg
-ms.author: fschober
+author: ScottMunroMS
+ms.author: scmunro
 ms.date: 09/03/2021
 ms.topic: article
 ms.service: azure-playfab

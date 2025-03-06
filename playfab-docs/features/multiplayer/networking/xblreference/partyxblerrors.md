@@ -1,8 +1,8 @@
 ---
-author: fschober-atg
+author: ScottMunroMS
 title: "PlayFab Party Xbox Live Helper Error Codes"
 description: List of error codes used by the PlayFab Party's Xbox Live Helper Library
-ms.author: fschober
+ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
 ms.date: 08/11/2022

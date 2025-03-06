@@ -1,8 +1,8 @@
 ---
-author: fschober-atg
+author: ScottMunroMS
 title: "PlayFab Multiplayer C++ SDK Error Codes"
 description: "Error codes used by the PlayFab Multiplayer, Lobby and Matchmaking APIs"
-ms.author: fschober
+ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
 ms.date: 08/19/2022
