@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 
 March 11, 2025
 
-- Nintendo Switch: Resolved a crash related to loading shipping nupkg.
+- Nintendo Switch: Bug fix addressing a crash when loading DLLs in the shipping variant of the library.
 
 
 ## 1.10.8
