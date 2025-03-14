@@ -1,53 +1,12 @@
 items:
 - name: PlayFab
   href: index.yml
-- name: What is PlayFab?
-  href: what-is-playfab.md  
-- name: Game Manager
-  href: gamemanager/toc.yml
+- name: Get started
+  href: get-started/toc.yml
+- name: What's New
+  href: whats-new/toc.yml
 - name: Demo game
   href: demo-game/toc.yml
-- name: Build
-  expanded: true
-  items:
-  - name: Authentication
-    href: features/authentication/toc.yml
-  - name: Automation
-    href: features/automation/toc.yml
-  - name: Multiplayer
-    href: features/multiplayer/toc.yml
-  - name: New Leaderboards and Statistics
-    href: features/new-leaderboards-statistics/toc.yml
-  - name: Social
-    href: features/social/toc.yml
-  - name: Game configuration
-    expanded: true
-    items: 
-    - name: Entities
-      href: features/entities/toc.yml
-    - name: Player Data
-      href: features/playerdata/toc.yml
-    - name: Title Data
-      href: features/titledata/toc.yml
-  - name: Throttling
-    href: features/throttling/toc.yml
-- name: Engage
-  expanded: true
-  items:
-  - name: What is Economy?
-    href: features/economy-what-is.md
-  - name: Economy v2
-    href: features/economy-v2/toc.yml
-  - name: Legacy Economy
-    href: features/economy/toc.yml
-  - name: Engagement (Player retention)
-    href: features/engagement/toc.yml
-- name: Data and analytics
-  href: data-analytics/toc.yml
-- name: Pricing
-  href: features/pricing/toc.yml
-- name: Roadmap
-  href: roadmap/toc.yml
 - name: Reference
   href: api-references/toc.yml
 - name: SDKs
@@ -55,13 +14,13 @@ items:
   - name: Overview
     href: sdks/sdk-overview.md
   - name: Request access
-    href: features/multiplayer/networking/request-access-for-sdks-samples.md
+    href: sdks/request-access-for-sdks-samples.md
   - name: Lobby and Matchmaking SDKs
-    href: features/multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
+    href: multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
   - name: Multiplayer Server SDKs
-    href: features/multiplayer/servers/server-sdks.md
+    href: multiplayer/servers/server-sdks.md
   - name: Party SDKs
-    href: features/multiplayer/networking/party-sdks/toc.yml
+    href: multiplayer/networking/party-sdks/toc.yml
   - name: PlayFab Services SDKs
     href: sdks/toc.yml
 - name: Recipes and samples

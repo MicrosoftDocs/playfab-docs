@@ -46,34 +46,34 @@ Lines 144 -169 defines the callback function for login in with an email address,
 
 ```typescript
 const onLogin = useCallback(() => {
-	setIsLoading(true);
-	setLoginMethodInProgress("email");
+    setIsLoading(true);
+    setLoginMethodInProgress("email");
 
-	dispatch(siteSlice.actions.loginSteps(loginEventCount));
+    dispatch(siteSlice.actions.loginSteps(loginEventCount));
 
-	ClientLoginWithEmailAddress({ Email: data.email, Password: data.password })
-		.then(result => {
-			dispatch(siteSlice.actions.login(result));
-			dispatch(siteSlice.actions.loginStepsAdvance());
-			// Track logins from returning users
-			trackEvent({ name: "Returning User", properties: {} });
-		})
-		.then(() => {
-			return postLoginFunctions();
-		})
-		.then(() => {
-			setIsLoading(false);
-			navigate(routes.Explore());
-		})
-		.catch(problem => {
-			dispatch(siteSlice.actions.loginStepsReset());
-			onError(problem);
-		})
-		.finally(() => dispatch(siteSlice.actions.loginStepsReset()));
+    ClientLoginWithEmailAddress({ Email: data.email, Password: data.password })
+        .then(result => {
+            dispatch(siteSlice.actions.login(result));
+            dispatch(siteSlice.actions.loginStepsAdvance());
+            // Track logins from returning users
+            trackEvent({ name: "Returning User", properties: {} });
+        })
+        .then(() => {
+            return postLoginFunctions();
+        })
+        .then(() => {
+            setIsLoading(false);
+            navigate(routes.Explore());
+        })
+        .catch(problem => {
+            dispatch(siteSlice.actions.loginStepsReset());
+            onError(problem);
+        })
+        .finally(() => dispatch(siteSlice.actions.loginStepsReset()));
 }, [ClientLoginWithEmailAddress, data.email, data.password, dispatch, navigate, onError, postLoginFunctions]);
 ```
 
-The game offers 3 recoverable methods for player authentication: email, Google, and Facebook, so that player accounts will never be lost. For more information, see [Login best practices](../features/authentication/login/login-basics-best-practices.md).
+The game offers 3 recoverable methods for player authentication: email, Google, and Facebook, so that player accounts will never be lost. For more information, see [Login best practices](../identity/player-identity/login/login-basics-best-practices.md).
 
 ### Post login: Getting player data
 
@@ -83,44 +83,44 @@ Lines 340 - 378 defines **postLoginFunctions**, which calls various Economy and 
 
 ```typescript
 return new Promise<void>((resolve, reject) => {
-	ClientGetTitleData({ Keys: TITLE_DATA_KEYS_ALL })
-		.then(result => {
-			dispatch(siteSlice.actions.titleData(result));
-			dispatch(siteSlice.actions.loginStepsAdvance());
-			loadScripts();
-		})
-		.then(() =>
-			EconomySearchItems({
-				Count: SEARCH_ITEMS_MAX_COUNT,
-				Filter: "type eq 'currency' or type eq 'catalogItem'",
-			})
-		)
-		.then(result => {
-			dispatch(siteSlice.actions.catalog(result.Items));
-			dispatch(siteSlice.actions.loginStepsAdvance());
-		})
-		.then(() => EconomyGetInventoryItems({ Count: SEARCH_ITEMS_MAX_COUNT }))
-		.then(result => {
-			dispatch(siteSlice.actions.inventory(result.Items));
-			dispatch(siteSlice.actions.loginStepsAdvance());
-		})
-		.then(() => ClientGetUserData({ Keys: USER_DATA_KEYS_PLAYER_ALL }))
-		.then(result => {
-			dispatch(siteSlice.actions.userDataPlayer(result));
-			dispatch(siteSlice.actions.loginStepsAdvance());
-		})
-		.then(() => ClientGetUserReadOnlyData({ Keys: USER_DATA_KEYS_READONLY_ALL }))
-		.then(result => {
-			dispatch(siteSlice.actions.userDataReadOnly(result));
-			dispatch(siteSlice.actions.loginStepsAdvance());
-		})
-		.then(() => {
-			resolve();
-		})
-		.catch(problem => {
-			dispatch(siteSlice.actions.loginStepsReset());
-			reject(problem);
-		});
+    ClientGetTitleData({ Keys: TITLE_DATA_KEYS_ALL })
+        .then(result => {
+            dispatch(siteSlice.actions.titleData(result));
+            dispatch(siteSlice.actions.loginStepsAdvance());
+            loadScripts();
+        })
+        .then(() =>
+            EconomySearchItems({
+                Count: SEARCH_ITEMS_MAX_COUNT,
+                Filter: "type eq 'currency' or type eq 'catalogItem'",
+            })
+        )
+        .then(result => {
+            dispatch(siteSlice.actions.catalog(result.Items));
+            dispatch(siteSlice.actions.loginStepsAdvance());
+        })
+        .then(() => EconomyGetInventoryItems({ Count: SEARCH_ITEMS_MAX_COUNT }))
+        .then(result => {
+            dispatch(siteSlice.actions.inventory(result.Items));
+            dispatch(siteSlice.actions.loginStepsAdvance());
+        })
+        .then(() => ClientGetUserData({ Keys: USER_DATA_KEYS_PLAYER_ALL }))
+        .then(result => {
+            dispatch(siteSlice.actions.userDataPlayer(result));
+            dispatch(siteSlice.actions.loginStepsAdvance());
+        })
+        .then(() => ClientGetUserReadOnlyData({ Keys: USER_DATA_KEYS_READONLY_ALL }))
+        .then(result => {
+            dispatch(siteSlice.actions.userDataReadOnly(result));
+            dispatch(siteSlice.actions.loginStepsAdvance());
+        })
+        .then(() => {
+            resolve();
+        })
+        .catch(problem => {
+            dispatch(siteSlice.actions.loginStepsReset());
+            reject(problem);
+        });
 });
 ```
 
@@ -135,65 +135,65 @@ At certain points in the game, the player has the option to purchase and sell in
 
 ```typescript
 export function useEconomyStoreSingle(storeName: string): IEconomyStoreSingleResults {
-	const dispatch = useDispatch();
-	const store = useSelector((state: AppState) => state.site.stores).find(store =>
-		store.AlternateIds?.find(friendlyId => friendlyId.Type === FRIENDLYID && friendlyId.Value === storeName)
-	);
-	const { isLoading, error, setError, EconomyGetItem } = usePlayFab();
+    const dispatch = useDispatch();
+    const store = useSelector((state: AppState) => state.site.stores).find(store =>
+        store.AlternateIds?.find(friendlyId => friendlyId.Type === FRIENDLYID && friendlyId.Value === storeName)
+    );
+    const { isLoading, error, setError, EconomyGetItem } = usePlayFab();
 
-	useEffect(() => {
-		if (!is.null(store) || isStoreLoading) {
-			return;
-		}
+    useEffect(() => {
+        if (!is.null(store) || isStoreLoading) {
+            return;
+        }
 
-		isStoreLoading = true;
+        isStoreLoading = true;
 
-		EconomyGetItem({
-			AlternateId: { Type: FRIENDLYID, Value: storeName },
-		})
-			.then(results => {
-				dispatch(siteSlice.actions.storeAdd(results.Item as PlayFabEconomyModels.CatalogItem));
-			})
-			.catch(setError)
-			.finally(() => {
-				isStoreLoading = false;
-			});
-	}, [EconomyGetItem, dispatch, setError, store, storeName]);
+        EconomyGetItem({
+            AlternateId: { Type: FRIENDLYID, Value: storeName },
+        })
+            .then(results => {
+                dispatch(siteSlice.actions.storeAdd(results.Item as PlayFabEconomyModels.CatalogItem));
+            })
+            .catch(setError)
+            .finally(() => {
+                isStoreLoading = false;
+            });
+    }, [EconomyGetItem, dispatch, setError, store, storeName]);
 
-	return {
-		error,
-		isLoading,
-		store,
-	};
+    return {
+        error,
+        isLoading,
+        store,
+    };
 }
 ```
 `EconomyGetItem` is defined in [use-playfab.tsx](https://github.com/PlayFab/winter-starfall/blob/main/website/src/hooks/use-playfab.ts) at lines 423 - 446, within which the PlayFab Economy API `GetItems` is used to search the catalog and return items.
 
 ```typescript
 const EconomyGetItems = useCallback(
-		(request: PlayFabEconomyModels.GetItemsRequest): Promise<PlayFabEconomyModels.GetItemsResponse> => {
-			const date = startRequest("EconomyApi", "GetItems", request);
+        (request: PlayFabEconomyModels.GetItemsRequest): Promise<PlayFabEconomyModels.GetItemsResponse> => {
+            const date = startRequest("EconomyApi", "GetItems", request);
 
-			return new Promise((resolve, reject) => {
-				PlayFab.EconomyApi.GetItems(request, (result, problem) => {
-					endRequest(date, problem, result);
+            return new Promise((resolve, reject) => {
+                PlayFab.EconomyApi.GetItems(request, (result, problem) => {
+                    endRequest(date, problem, result);
 
-					if (!is.null(problem)) {
-						return reject(problem);
-					}
+                    if (!is.null(problem)) {
+                        return reject(problem);
+                    }
 
-					if (result.code !== 200) {
-						return reject(formatPlayFabNon200Error(result));
-					}
+                    if (result.code !== 200) {
+                        return reject(formatPlayFabNon200Error(result));
+                    }
 
-					return resolve(result.data);
-				}).catch(reason => {
-					catchRequest(reject, reason);
-				});
-			});
-		},
-		[catchRequest, endRequest, startRequest]
-	);
+                    return resolve(result.data);
+                }).catch(reason => {
+                    catchRequest(reject, reason);
+                });
+            });
+        },
+        [catchRequest, endRequest, startRequest]
+    );
 ```
 
 When a purchase is conducted, a call to the `PurchaseInventoryItems` API is made. This is defined in [use-playfab.tsx](https://github.com/PlayFab/winter-starfall/blob/main/website/src/hooks/use-playfab.ts) at lines 540 - 565.
@@ -215,32 +215,32 @@ The CloudScript function then gets called in lines 161- 187 of [use-store.ts](ht
 
 ```typescript
 export function useEconomyStoreSell(): IEconomyStoreSellItemResults {
-	const { isLoading, error, setError, CloudScriptExecuteFunction, EconomyGetInventoryItems } = usePlayFab();
-	const dispatch = useDispatch();
+    const { isLoading, error, setError, CloudScriptExecuteFunction, EconomyGetInventoryItems } = usePlayFab();
+    const dispatch = useDispatch();
 
-	const onSell = useCallback(
-		(itemId: string, amount: number) => {
-			return new Promise<void>((resolve, reject) => {
-				CloudScriptExecuteFunction({
-					FunctionName: "SellItem",
-					FunctionParameter: {
-						ItemId: itemId,
-						Amount: amount,
-					},
-				})
-					.then(() => EconomyGetInventoryItems({ Count: SEARCH_ITEMS_MAX_COUNT }))
-					.then(data => {
-						dispatch(siteSlice.actions.inventory(data.Items));
-						resolve();
-					})
-					.catch(issue => {
-						setError(issue);
-						reject(issue);
-					});
-			});
-		},
-		[CloudScriptExecuteFunction, EconomyGetInventoryItems, dispatch, setError]
-	);
+    const onSell = useCallback(
+        (itemId: string, amount: number) => {
+            return new Promise<void>((resolve, reject) => {
+                CloudScriptExecuteFunction({
+                    FunctionName: "SellItem",
+                    FunctionParameter: {
+                        ItemId: itemId,
+                        Amount: amount,
+                    },
+                })
+                    .then(() => EconomyGetInventoryItems({ Count: SEARCH_ITEMS_MAX_COUNT }))
+                    .then(data => {
+                        dispatch(siteSlice.actions.inventory(data.Items));
+                        resolve();
+                    })
+                    .catch(issue => {
+                        setError(issue);
+                        reject(issue);
+                    });
+            });
+        },
+        [CloudScriptExecuteFunction, EconomyGetInventoryItems, dispatch, setError]
+    );
 ```
 
 > [!NOTE]
@@ -249,7 +249,7 @@ export function useEconomyStoreSell(): IEconomyStoreSellItemResults {
 ## See also
 
 - Login flow
-	- [Player login documentation](../features/authentication/login/index.md)
+    - [Player login documentation](../identity/player-identity/login/index.md)
 - Purchase flow
-	- [Economy V2 documentation](../features/economy-v2/overview.md)
-	- Another good next step to learning more about Economy V2 is to try out the [crafting game tutorial](../features/economy-v2/tutorials/craftingGame/game-context.md), which focuses on building a sample game using the store and inventory functions.
+    - [Economy V2 documentation](../economy-monetization/economy-v2/overview.md)
+    - Another good next step to learning more about Economy V2 is to try out the [crafting game tutorial](../economy-monetization/economy-v2/tutorials/craftingGame/game-context.md), which focuses on building a sample game using the store and inventory functions.

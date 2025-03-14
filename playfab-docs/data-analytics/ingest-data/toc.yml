@@ -1,3 +1,4 @@
+items:
 - name: PlayStream
   items:
   - name: Overviews
@@ -22,7 +23,7 @@
     href: telemetry-keys-overview.md
   - name: QuickStart
     href: telemetry-keys-qs.md
-  - name: How-to
+  - name: Tutorials
     items:
     - name: Delete Telemetry Keys
       href: ht-telemetry-keys-delete.md

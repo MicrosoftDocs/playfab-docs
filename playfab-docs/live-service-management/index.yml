@@ -1,0 +1,92 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Live service management documentation
+summary: summary # < 160 chars
+
+metadata:
+  title: PlayFab Live service management documentation
+  description: Guide on Live service management features # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: natashaorie
+  ms.author: norie
+  ms.date: 04/27/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Navigating the developer portal
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Game Manager
+            url: production/gamemanager/index.md
+      - linkListType: quickstart
+        links:
+          - text: Game Manager quickstart
+            url: production/gamemanager/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: API feature settings in Game Manager
+            url: production/gamemanager/api-feature-settings-in-the-playfab-game-manager.md
+          - text: Audit logs
+            url: production/gamemanager/audit-logs.md
+          - text: Secret key management
+            url: production/gamemanager/secret-key-management.md 
+
+  - title: Entity programming model
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Entity programming model overview
+            url: production/entities/index.md
+      - linkListType: quickstart
+        links:
+          - text: Entities quickstart
+            url: production/entities/quickstart.md
+
+  - title: Production services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Title data
+            url: production/titledata/index.md
+          - text: Serverless compute with CloudScript using Azure functions
+            url: production/automation/cloudscript-af/index.md
+            
+  - title: Running a live service
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Work with player segments
+            url: runtime/segmentation/segmentation-overview.md
+          - text: Run live experiments
+            url: runtime/experiments/index.md
+          - text: Boost player engagement through title communications
+            url: runtime/engagement/overview.md
+          - text: Throttle API calls
+            url: runtime/throttling/what-is-throttling.md
+      - linkListType: quickstart
+        links:
+          - text: Segmentation quickstart
+            url: runtime/segmentation/segmentation-quickstart.md
+          - text: Experimentation quickstart
+            url: runtime/experiments/quickstart.md
+          - text: Set up push notifications
+            url: runtime/engagement/push-notifications/quickstart.md
+              
+  - title: Billing and metering
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Billing meters explained
+            url: production/pricing/Meters/meters.md
+      - linkListType: learn
+        links:
+          - text: Checking monthly estimated charges
+            url: production/pricing/billingDetails.md
+          - text: Best practices for lowering consumption
+            url: production/pricing/consumption-best-practices.md

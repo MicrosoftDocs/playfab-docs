@@ -59,8 +59,9 @@ Before you can make an API call, you must create a **PlayFabSharedSettings.asset
 The **Developer Secret Key** is not set by default. If you are making a server build, be sure to provide the secret key in the **PlayFabSharedSettings.asset**.
 
 ![PlayFab Developer Secret Key Setting](media/playfab-shared-settings-secret-key.png)
+The **Developer Secret Key** is automatically set to the default secret key for the Title. For more information about secret keys, see [Secret key management](../../live-service-management/production/gamemanager/secret-key-management.md).
 
-Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../gamemanager/secret-key-management.md).
+Otherwise, be sure the secret key **is not set** when building your game client. For more information about secret keys, see [Secret key management](../../live-service-management/production/gamemanager/secret-key-management.md).
 
 > [!NOTE]
 > The extensions allow you to customize the HTTP transport used to make requests to PlayFab. The recommended default is Unity Web Request. Other options exist to provide compatibility with older engine versions or game-specific HTTP implementations.
@@ -137,6 +138,6 @@ For a list of all available client API calls, see [PlayFab API References](../..
 
 ## Next steps
 
-This quickstart shows a simplified procedure for authenticating a user. For more information on user authentication, see [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md).
+This quickstart shows a simplified procedure for authenticating a user. For more information on user authentication, see [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md).
 
 Learn how to bind an account to multiple devices and login mechanisms: [Account linking quickstart](../../features/authentication/login/quickstart.md).

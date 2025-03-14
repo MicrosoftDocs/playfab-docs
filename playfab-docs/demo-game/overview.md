@@ -18,7 +18,7 @@ The game is available to play at [WinterStarfall.com](https://winterstarfall.com
 
 ![game manager homepage showing demo games](media/demo-games-overview.png)
 
-The game is built as a web app and uses APIs from the PlayFab SDK along with PlayFab’s Azure Functions integration to implement custom functionality. The game currently makes use of the following PlayFab features:
+The game is built as a web app and uses APIs from the PlayFab SDK along with PlayFab's Azure Functions integration to implement custom functionality. The game currently makes use of the following PlayFab features:
 
 - Economy V2 (catalog, currency, bundles, stores)
 - Title data, player data, and other core PlayFab functions
@@ -27,7 +27,7 @@ The game is built as a web app and uses APIs from the PlayFab SDK along with Pla
 
 ## Additional demo features
 
-Winter Starfall comes with features that make it easier to see what is going on ‘under the hood’ with PlayFab. The game is available for anyone to play, but to get the full use of these features you’ll need to sign up for a [free developer account](https://developer.playfab.com/en-us/sign-up).
+Winter Starfall comes with features that make it easier to see what is going on 'under the hood' with PlayFab. The game is available for anyone to play, but to get the full use of these features you'll need to sign up for a [free developer account](https://developer.playfab.com/en-us/sign-up).
 
 Next to the profile icon in the upper right there is a PlayFab icon that will open the PlayFab activity sidebar when clicked.
 
@@ -39,13 +39,13 @@ Next to the profile icon in the upper right there is a PlayFab icon that will op
 1. **Clear** will remove all the current notifications from the activity bar.
 
 <!---
-You’ll also notice throughout the game these various callouts. Each of these indicates where a specific PlayFab feature is used to power a certain aspect of the game and hovering over will show more information and take you to the related pages in Game Manager.
+You'll also notice throughout the game these various callouts. Each of these indicates where a specific PlayFab feature is used to power a certain aspect of the game and hovering over will show more information and take you to the related pages in Game Manager.
 
 [screenshot - callouts]
 --->
 
 > [!NOTE]
-> You can play the demo game at any time, but to access Game Manager you’ll need to sign up for a [free developer account](https://developer.playfab.com/en-us/sign-up).
+> You can play the demo game at any time, but to access Game Manager you'll need to sign up for a [free developer account](https://developer.playfab.com/en-us/sign-up).
 
 ## Included PlayFab features
 
@@ -55,13 +55,13 @@ The following section breaks down in more detail the different PlayFab features 
 
 The first thing that happens in any PlayFab game is logging in a player, which returns an authentication token that is required for all subsequent API calls. Winter Starfall supports multiple forms of recoverable login with email, Microsoft (via OpenID), Google, and Facebook. The [source code and scenarios tutorial](source-code-and-best-practices.md) gives an in depth walkthrough of the login flow and best practices for player authentication.
 
-[Learn more about PlayFab Authentication](../features/authentication/login/index.md)
+[Learn more about PlayFab Authentication](../identity/player-identity/authentication/index.md)
 
 ### Economy
 
-As a fantasy RPG style game, Winter Starfall includes an economy system for the player to visit stores, purchase items, and earn currency through battles. PlayFab’s newest economy service handles everything related to inventory and commerce in the game. The [source code and scenarios tutorial](source-code-and-best-practices.md) gives an in depth walkthrough of the purchase flow that occurs in the game.
+As a fantasy RPG style game, Winter Starfall includes an economy system for the player to visit stores, purchase items, and earn currency through battles. PlayFab's newest economy service handles everything related to inventory and commerce in the game. The [source code and scenarios tutorial](source-code-and-best-practices.md) gives an in depth walkthrough of the purchase flow that occurs in the game.
 
-[Learn more about Economy V2](../features/economy-v2/overview.md)
+[Learn more about Economy V2](../economy-monetization/economy-v2/overview.md)
 
 ### Player data
 
@@ -112,7 +112,7 @@ For example, these are the API request and response body from the call to `GetUs
 }
 ```
 
-[Learn more about the Player data feature](../features/playerdata/index.md)
+[Learn more about the Player data feature](../player-progression/player-data/index.md)
 
 ### Title data
 
@@ -120,7 +120,7 @@ Title data is similar to Player data in that it stores key-value pairs, only the
 
 ![winterstarfall title data overview in game manager](media/winterstarfall-title-data.jpg)
 
-[Learn more about Title data](../features/titledata/index.md)
+[Learn more about Title data](../live-service-management/production/titledata/index.md)
 
 ### CloudScript with Azure Functions
 
@@ -134,7 +134,7 @@ The game uses this feature to solve for a number of scenarios:
 - [ResetPlayer](https://github.com/PlayFab/winter-starfall/blob/main/azure-functions/ResetPlayer.cs) - Wipes user data, items, and statistics for a full reset.
 - [SellItem](https://github.com/PlayFab/winter-starfall/blob/main/azure-functions/SellItem.cs) - Enables selling items at a discount, which is not an inherent feature of the economy system. The purchase/sale flow is covered in more detail in the [source code and scenarios tutorial](source-code-and-best-practices.md).
 
-[Learn more about CloudScript with Azure Functions](../features/automation/cloudscript-af/index.md)
+[Learn more about CloudScript with Azure Functions](../live-service-management/production/automation/cloudscript-af/index.md)
 
 > [!NOTE]
 > Winter Starfall's CloudScript functions are written in C#, but you can use any language supported by [Azure Functions](https://learn.microsoft.com/azure/azure-functions/supported-languages?tabs=isolated-process%2Cv4&pivots=programming-language-csharp).
@@ -148,14 +148,14 @@ Title news is used to communicate with all players scoped to a title. Winter Sta
 
 In addition to title news, PlayFab offers other communication features like templating for email and push notifications. 
 
-[Learn more about title communication methods](../features/engagement/overview.md)
+[Learn more about title communication methods](../live-service-management/runtime/engagement/overview.md)
 
 ## Demo limitations
 
 Because Winter Starfall is powered by real player data, some features are limited in scope in the Game Manager view. This section will give an overview of what the limited features would look like in Game Manager. To explore these pages in more detail, you can [download the source code](https://github.com/PlayFab/winter-starfall) and run a local instance of the game, or create your own new title from scratch.
 
 > [!NOTE]
-> For a full guide to the features in the developer portal, see the [Game Manager documentation](../gamemanager/index.md).
+> For a full guide to the features in the developer portal, see the [Game Manager documentation](../live-service-management/production/gamemanager/index.md)
 
 ### Players
 
@@ -169,21 +169,21 @@ Some of the features under the **Analyze** section are also limited to protect t
 
 ![data page](media/demo-game-data.png)
 
-[Audit history](../gamemanager/audit-logs.md) gives a view into the history of changes made to the title by anyone with edit access.
+[Audit history](../live-service-management/production/gamemanager/audit-logs.md) gives a view into the history of changes made to the title by anyone with edit access.
 
 For a full view of what other features are part of the **Data** section, see the [Data & analytics documentation](../data-analytics/index.yml).
 
 ### Other
 
-Under title settings, the **Secret keys** tab is hidden. See the [documention for secret key management](../gamemanager/secret-key-management.md).
+Under title settings, the **Secret keys** tab is hidden. See the [documention for secret key management](../live-service-management/production/gamemanager/secret-key-management.md).
 
 ![Game Manager UI showing Secret Keys page](media/secret-keys.jpg)
 
 ## Next steps
 
 After trying the demo, we recommend starting with these topics to learn more about how PlayFab works:
-- Learn more about [Game Manager](../gamemanager/index.md)
-- Learn about the [Entity model](../features/entities/index.md)
+- Learn more about [Game Manager](../live-service-management/production/gamemanager/index.md)
+- Learn about the [Entity model](../live-service-management/production/entities/index.md)
 - Learn about [PlayFab Services SDK](../sdks/sdk-overview.md)
 
 ## See also

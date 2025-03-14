@@ -46,7 +46,7 @@ Navigate to [Azure Data Explorer](https://dataexplorer.azure.com/).
 
 ### Game Manager permissions for Insights
 
-You need to assign your account a [user role](../../../gamemanager/playfab-user-roles.md) with the following Game Manager permissions enabled:
+You need to assign your account a [user role](../../../identity/dev-identity/permissions/playfab-user-roles.md) with the following Game Manager permissions enabled:
 
 * Admin status.
 * Access to the Explorer tab and associated data.

@@ -53,7 +53,7 @@ Prior to opting out, please ensure to **Modify** or **Delete** any Segments that
 2. Select **Players** from the menu on the left
 3. Move to the **Segments** Tab above
 4. Delete or modify any existing segments with the Churn Filter prior to deactivation
- ![Modify/Delete Segments prior to Deactivation](Media/Modify-DeleteSegments.png)
+ ![Modify/Delete Segments prior to Deactivation](media/Modify-DeleteSegments.png)
 5. Opt out of Churn Prediction by selecting **Deactivate Player Churn**
 ![Deactivate Player Churn Button](media/UpdatedDeactivateButton.png)
 6. Confirm your action by selecting **Confirm Player Churn Deactivation**

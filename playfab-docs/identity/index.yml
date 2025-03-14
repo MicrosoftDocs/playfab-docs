@@ -1,0 +1,71 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Identity documentation
+summary: Overviews, quickstarts, and tutorials that provide guidance on player login and GameManager authentication.  # < 160 chars
+
+metadata:
+  title: PlayFab Identity documentation
+  description: Guide on devloper identity, authentication # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: antnguyen89
+  ms.author: antnguyen
+  ms.date: 02/20/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+  - title: About PlayFab Authentication
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is player authentication?
+            url: player-identity/authentication/index.md
+
+  - title: Using Player Login
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Player Login
+            url: player-identity/login/index.md
+      - linkListType: quickstart
+        links:
+          - text: Player Login
+            url: player-identity/login/quickstart.md
+
+  - title: Platform-Specific Authentication
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Platform-Specific Authentication
+            url: player-identity/platform-specific-authentication/index.md
+      - linkListType: tutorial
+        links:
+          - text: Setting up PlayFab authentication using Facebook and Unity
+            url: player-identity/platform-specific-authentication/facebook-unity.md
+          - text: Setting up PlayFab authentication using Steam and Unity
+            url: player-identity/platform-specific-authentication/steam-unity.md
+          - text: Setting up PlayFab authentication using Kongregate and Unity
+            url: player-identity/platform-specific-authentication/kongregate-unity.md
+          - text: Setting up PlayFab authentication using Google Play Games Sign-In in Unity
+            url: player-identity/platform-specific-authentication/google-sign-in-unity.md            
+          - text: Setup Sign In with Apple for PlayFab
+            url: player-identity/platform-specific-authentication/apple-open-id.md
+          - text: Running an HTTP server for testing
+            url: player-identity/platform-specific-authentication/running-an-http-server-for-testing.md
+
+  - title: Authentication for PlayFab Developer Accounts
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Account Authentication for PlayFab Game Manager
+            url: dev-identity/authentication/aad-authentication.md
+
+
+  # - title: Account Linking
+  #   linkLists:
+  #     - linkListType: overview
+  #       links:
+  #         - text: 
+  #           url: 

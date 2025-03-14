@@ -173,6 +173,6 @@ The functions in `PlayFabClientSDK` are named after the corresponding HTTP reque
 
 ## Next Steps
 
-This quickstart shows a simplified procedure for authenticating a user. For additional information about user authentication, see [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md).
+This quickstart shows a simplified procedure for authenticating a user. For additional information about user authentication, see [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md).
 
 Happy coding!

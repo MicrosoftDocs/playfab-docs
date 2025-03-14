@@ -1,0 +1,13 @@
+items:
+  - name: PlayFab
+    href: ../index.yml
+  - name: PlayFab Economy
+    href: index.yml
+  - name: What is PlayFab Economy?
+    href: economy-what-is.md
+  - name: Economy v2 and UGC
+    href: economy-v2/toc.yml
+  - name: Rewarded ads
+    href: rewarded-ads/toc.yml
+  - name: Legacy economy
+    href: economy/toc.yml

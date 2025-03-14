@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # C#
 
-![C# Image](./media/csharp1.png)
+![C# Image](media/csharp1.png)
 
 This C# SDK is used in the .NET environment, including Common Language Runtime (CLR). It is frequently used in cross-platform iOS and Android app titles created using the free, open-source Xamarin platform. This SDK is also used in games and apps coded in native C# for the Windows platform.
 

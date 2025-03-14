@@ -1,0 +1,7 @@
+items:
+- name: Marketplace integrations
+  href: marketplace-integrations/toc.yml
+- name: Marketplace redemption
+  href: marketplace-redemption/toc.yml
+- name: Marketplace error handling
+  href: marketplace-error-handling.md

@@ -16,7 +16,7 @@ The PlayFab Services SDKs are organized by language, platform, and game engine t
 
 PlayFab Services SDKs enable you to implement all of the PlayFab features not explicitly called out in one of our [other SDKs](sdk-overview.md), including LiveOps, economy, and data analytics.
 
-Access to SDKs for Nintendo Switch and Sony PlayStation&#174; requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](../features/multiplayer/networking/request-access-for-sdks-samples.md).
+Access to SDKs for Nintendo Switch and Sony PlayStation&#174; requires special approval and adherence to platform policies. For more information, see [Request access for SDKs and samples](request-access-for-sdks-samples.md).
 
 For broad API categories in these SDKs, see [API REST operation groups](/rest/api/playfab/admin/).
 
