@@ -24,8 +24,7 @@ ms.localizationpriority: medium
 
 March 11, 2025
 
-- Nintendo Switch: Bug fix addressing a crash when loading DLLs in the shipping variant of the library.
-
+- Nintendo Switch: Bug fix addressing a crash when loading DLLs of the shipping variant of the library. The crash happened on start up as the library tries to call logging functions that are not avaliable.
 
 ## 1.10.8
 
