@@ -2,7 +2,7 @@
 title: Player Login
 author: antnguyen89
 description: Landing page for Player login topics.
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab

@@ -21,7 +21,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is player authentication?
-            url: player-identity/index.md
+            url: authentication/index.md
 
   - title: Using Player Login
     linkLists:

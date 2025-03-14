@@ -1,7 +1,6 @@
 - name: Overview
   href: index.md
 - name: Tutorials
-  href: tutorials.md
   items:
   - name: Running an HTTP server for testing
     href: running-an-http-server-for-testing.md

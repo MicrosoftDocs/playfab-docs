@@ -1,6 +1,6 @@
 ---
 title: Entity Groups
-author: antnguyen
+author: antnguyen89
 description: Describes the concepts behind Entity Groups in the PlayFab APIs and the basics of how to use them.
 ms.author: antnguyen
 ms.date: 08/18/2023

@@ -2,7 +2,7 @@
 title: Account linking quickstart
 author: antnguyen89
 description: Demonstrates how to bind an account to multiple devices and login mechanisms.
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab

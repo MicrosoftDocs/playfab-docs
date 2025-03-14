@@ -2,7 +2,7 @@
 title: PlayFab User Roles
 author: antnguyen89
 description: Describes how to create and configure User Roles in PlayFab.
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab

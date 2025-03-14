@@ -2,7 +2,7 @@
 title: Encrypted Logins
 author: antnguyen89
 description: Shows you how to enable encryption for your client.
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab

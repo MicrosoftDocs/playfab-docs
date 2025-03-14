@@ -2,7 +2,7 @@
 title: Handling Multiple PlayFab Logins
 author: antnguyen89
 description: Describes how to use SDK features to manage multiple logins from a single client.
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab

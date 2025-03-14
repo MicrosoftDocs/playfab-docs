@@ -1,6 +1,6 @@
 ---
 title: Title News quickstart
-author: antnguyen
+ms.author: antnguyen
 description: What Title News is and how to create it.
 ms.author: antnguyen
 ms.date: 09/05/2023

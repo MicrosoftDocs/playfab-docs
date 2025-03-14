@@ -1,6 +1,6 @@
 ---
 title: Throttling best practices
-author: antnguyen
+ms.author: antnguyen
 description: introduction on how PlayFab throttles API calls.
 ms.author: antnguyen
 ms.date: 01/26/2024

@@ -5,7 +5,7 @@ items:
   href: index.yml
 - name: Overview
   href: identity-overview.md
-- name: Player authentication
+- name: Player identity
   expanded: true
   href: player-identity/toc.yml
 - name: Developer identity

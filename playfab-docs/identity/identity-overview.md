@@ -2,7 +2,7 @@
 title: Identity overview page
 author: antnguyen89
 description: Overview page for Identity product
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
@@ -10,20 +10,12 @@ keywords: playfab, multiplayer servers, new build, game manager
 ms.localizationpriority: medium
 ---
 
-# Overview: Identity in PlayFab (placeholder)
+# What is Identity in PlayFab?
 
-What is Identity in PlayFab?
+## Player Identity 
 
-- author: Anthony Nguyen
-- topic: overview of developer and player identity in PlayFab and current features
+PlayFab enables game creators to manage and integrate player data effectively by associating it with players' identities across various platforms. PlayFab creates a single player identity that allows players to authenticate [multiple authentication methods](platform-specific-authentication/index.md) (Google, Facebook, Apple, and more) and link their favorite accounts to PlayFab's player identity. This allows comprehensive tracking of players, regardless of the identity provider they select. Having a single player identity across studios and games allows game developers to build a cohesive experience for players, such as granting players who have completed the first two games of a series a bonus items or avatars in the third installment of a game.  
 
-to do:
+## Developer Identity 
 
-    1. write overview article
-    1. rename docs in authentication section to refer to Player authentication
-
-Can adapt the following content from "What is Authentication?" and delete that article:
-
-PlayFab helps you authenticate players using a breadth of providers. You can provide players different ways to authenticate themselves and link their favorite accounts to enable roaming and recovery. Use this section to learn more about how PlayFab helps you enable Player Auth.
-
-PlayFab also supports multiple methods for Game Manager account authentication through its own and Microsoft's authentication services. You can learn more about them in the Microsoft Authentication for Game Manager section.
+Developer identity refers to the method by which game creators engage with PlayFab for the purposes of building, analyzing, and operating their games. PlayFab employs Microsoft accounts, enabling creators to utilize a single account across the entire Microsoft gaming ecosystem. This system grants creators the flexibility to use a developer identity to allocate access to various sections or entire projects within their studio and titles to collaborators via designated [permissions and roles](permissions/playfab-user-roles.md). 

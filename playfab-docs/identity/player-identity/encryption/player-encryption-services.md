@@ -2,7 +2,7 @@
 title: Player Encryption Services
 author: antnguyen89
 description: Describes the various types of encryption that are available.
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 keywords: playfab, game manager

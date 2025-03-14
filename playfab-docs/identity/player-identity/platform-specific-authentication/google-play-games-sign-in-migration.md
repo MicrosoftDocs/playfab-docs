@@ -2,7 +2,7 @@
 title: Migrating from Google Sign-in to Google Play Games Sign-in in Unity
 author: antnguyen89
 description: Overview of procedures to migrate players identities from Google Account to Google Play Games
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab

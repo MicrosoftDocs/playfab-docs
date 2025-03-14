@@ -1,6 +1,6 @@
 ---
 title: Throttling in PlayFab
-author: antnguyen
+ms.author: antnguyen
 description: PlayFab throttling overview.
 ms.author: antnguyen
 ms.date: 01/26/2024

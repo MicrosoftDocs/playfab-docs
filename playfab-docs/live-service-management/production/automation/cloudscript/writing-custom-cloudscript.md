@@ -1,6 +1,6 @@
 ---
 title: Writing custom CloudScript
-author: antnguyen
+ms.author: antnguyen
 description: Describes how to write CloudScript code.
 ms.author: antnguyen
 ms.date: 01/30/2023

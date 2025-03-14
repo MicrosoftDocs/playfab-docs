@@ -2,7 +2,7 @@
 title: Setting up PlayFab authentication using Universal Windows Platform
 author: antnguyen89
 description: Guides you through an example of PlayFab authentication using the Universal Windows Platform (UWP).
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab

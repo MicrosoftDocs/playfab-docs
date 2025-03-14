@@ -2,7 +2,7 @@
 title: Authentication
 author: antnguyen89
 description: Overview for PlayFab Authentication
-author: antnguyen
+ms.author: antnguyen
 ms.date: 02/20/2025
 ms.topic: article
 ms.service: azure-playfab
