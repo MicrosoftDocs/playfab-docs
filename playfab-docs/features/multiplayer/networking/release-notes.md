@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 ## 1.10.9
 
-January 24, 2025
+March 11, 2025
 
 - Nintendo Switch: Resolved a crash related to loading shipping nupkg.
 
