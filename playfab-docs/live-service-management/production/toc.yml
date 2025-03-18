@@ -7,7 +7,5 @@ items:
       href: entities/toc.yml
     - name: Title data
       href: titledata/toc.yml
-    - name: Pricing
-      href: pricing/toc.yml
     - name: Automation
       href: automation/toc.yml

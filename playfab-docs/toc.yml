@@ -7,6 +7,8 @@ items:
   href: whats-new/toc.yml
 - name: Demo game
   href: demo-game/toc.yml
+- name: Pricing
+  href: pricing/toc.yml
 - name: Reference
   href: api-references/toc.yml
 - name: SDKs
