@@ -118,6 +118,7 @@ For additional guidance on handling these errors, check out [Handling Lobby and 
 |	0x8923631F	|	-1994169569	|	The request was malformed.	|
 |	0x89236320	|	-1994169568	|	Match details can only be provided when the ticket is in the matched state.	|
 |	0x89236321	|	-1994169567	|	The provided multiplayer protocol type is invalid.	|
+|	0x89236322	|	-1994169566	|	The ticket was canceled by the service.	|
 
 ## Global HRESULT error codes
 
