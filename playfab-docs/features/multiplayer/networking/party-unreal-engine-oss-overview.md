@@ -50,7 +50,7 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides o
 | 5.1          | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  |
 | 5.2          | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  |
 | 5.3          | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  |
-| 5.4          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
+| 5.4          | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  |
 | 5.5          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
 
 
