@@ -10,7 +10,7 @@ keywords: playfab, player custom properties, custom properties, segmentation, ad
 ms.localizationpriority: medium
 ---
 
-# Player Custom Properties Quickstart
+# Player Custom Properties Quickstart (Public Preview)
 
 > [!NOTE]
 > The Player Custom Properties feature is in private preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
