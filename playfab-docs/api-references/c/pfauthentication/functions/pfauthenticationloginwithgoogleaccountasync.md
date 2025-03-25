@@ -4,7 +4,7 @@ title: "PFAuthenticationLoginWithGoogleAccountAsync"
 description: "Signs the user in using their Google account credentials"
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

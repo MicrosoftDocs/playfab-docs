@@ -12,32 +12,54 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.10
+
+March 6, 2025
+
+### Bug fixes
+
+- Fixed an issue where the library could crash if the app suspended at the same time that a local user was being disconnected. This is a GDK-only release.
+
+## 1.7.9
+
+February 11, 2025
+
+### Bug fixes
+
+- Fixed an issue where the library would incorrectly retry some operations associated with the real-time notification service when HTTP 401 was received.
+- Fixed a regression introduced in v1.7.8 that assigned the `PFMultiplayerServerDetails::region` value to `PFMultiplayerServerDetails::fqdn`.
+- Fixed an issue where the properties associated with a new member weren't immediately available until a subsequent `Updated` state change was provided. Now, as soon as a `MemberAdded` state change is provided to the game, [PFLobbyGetMemberConnectionStatus()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberconnectionstatus.md), [PFLobbyGetMemberPropertyKeys()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberpropertykeys.md), and [PFLobbyGetMemberProperty()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberproperty.md) provide the most up-to-date information associated with the member. In order to preserve compatibility for games that took a dependency on the previous behavior, the first `Updated` state change after the member is added will continue to provide this initial list of property keys as if they were new properties.
+- Fixed a couple of issues where the library could crash when [PFMultiplayerUninitialize()](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) was called while cleaning up internal web request resources.
+- Fixed an issue for GDK Xbox where the library could crash during suspend while cleaning up internal state associated with the invite listener.
+- Fixed an issue for Android where the library could crash when when [PFMultiplayerUninitialize()](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) was called while cleaning up JavaVM attached threads.
+- Fixed an issue for macOS where the library was incorrectly symlinked, which could surface as build breaks when integrating the library.
+
 ## 1.7.8
 
-Nov 5, 2024
+November 5, 2024
 
 ### Bug fixes
 
 - Fixed an issue where calling [PFMatchmakingTicketCancel](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmatchmakingticketcancel.md) for a backfill ticket created with [PFMultiplayerCreateServerBackfillTicket](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreateserverbackfillticket.md) would fail.
 - Fixed an issue where the SDK treated all values in [PFMultiplayerServerDetails](../playfabmultiplayerreference-cpp/pfmatchmaking/structs/pfmultiplayerserverdetails.md) as mandatory.
-- Fixed an issue where the Sony (PlayStation&#174;4 and PlayStation&#174;5) versions of the SDK did not correctly handle intermittent HTTP request failures from the Sony (PlayStation&#174;4 and PlayStation&#174;5) HTTP library. Additionally, improved error reporting to provide more detailed information in such cases.
+- Fixed an issue where the Sony (PlayStation&#174;4 and PlayStation&#174;5) versions of the SDK didn't correctly handle intermittent HTTP request failures from the Sony (PlayStation&#174;4 and PlayStation&#174;5) HTTP library. Additionally, improved error reporting to provide more detailed information in such cases.
 
 'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## 1.7.7
 
-Oct 25, 2024
+October 25, 2024
 
 ### Bug fixes
 - Fixed an issue with exposed OpenSSL symbols on the macOS platform. This is a macOS-only release.
 
 ## 1.7.6
 
-Aug 12, 2024
+August 12, 2024
 
 ### Bug fixes
 
-- Fixed an issue for GDK Xbox where some events would not be queued after suspending and resuming a title.
+- Fixed an issue for GDK Xbox where some events wouldn't be queued after suspending and resuming a title.
 - Fixed a crash for GDK Xbox after suspending and resuming a title.
 - Updated [PFMultiplayerCreateServerBackfillTicket](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreateserverbackfillticket.md) to automatically handle failures where a match member is already a member of too many tickets. In this situation, the SDK automatically cancels existing tickets for members of the backfill ticket and retry ticket creation.
 
@@ -55,7 +77,7 @@ June 17, 2024
 
 ### Bug fixes
 
-- Fixed an issue where messages received by websockets on PlayStation&#174;4 and, PlayStation&#174;5 would not be parsed correctly by the SDK if they contained the `'\0'` character. Failure to parse these messages could lead to PubSub connectivity issues. This is a PlayStation&#174;4 and, PlayStation&#174;5 only release.
+- Fixed an issue where messages received by WebSockets on PlayStation&#174;4 and, PlayStation&#174;5 wouldn't be parsed correctly by the SDK if they contained the `'\0'` character. Failure to parse these messages could lead to PubSub connectivity issues. This is a PlayStation&#174;4 and PlayStation&#174;5 only release.
 
 'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
@@ -73,8 +95,8 @@ March 7, 2024
 
 ### Bug fixes
 
-- Fixed an issue where the internal PubSub notification WebSocket was slow to detect and react to disconnects, which could lead to errors to create or join lobbies and matchmaking tickets.
-- Fixed an issue where failure of PubSub to establish connection with the SignalR service would not trigger a failed state change and would not allow subsequent Multiplayer API calls to subscribe to PubSub.
+- Fixed an issue where the internal PubSub notification WebSocket was slow to detect and react to disconnections, which could lead to errors to create or join lobbies and matchmaking tickets.
+- Fixed an issue where failure of PubSub to establish connection with the SignalR service wouldn't trigger a failed state change and wouldn't allow subsequent Multiplayer API calls to subscribe to PubSub.
 - Improved internal diagnostics.
 
 ## 1.7.1
@@ -120,7 +142,7 @@ August 14, 2023
 
 ### Bug fixes
 
-- Fixed an issue where the library may crash while handling a change notification.
+- Fixed an issue where the library might crash while handling a change notification.
 - Added new [PFLobbyMemberCountRemainingSearchKey](..\playfabmultiplayerreference-cpp\pflobby\constants\pflobbysearchkeys.md) constant to make it easier to search for and sort lobbies based on their remaining member counts.
 
 ## 1.6.2
@@ -192,7 +214,7 @@ For more information on using server-owned lobbies, see [Game servers and lobbie
 
 ### Bug fixes
 
-- Mitigation to reduce unexpected PubSub disconnects due to background thread contention
+- Mitigation to reduce unexpected PubSub disconnections due to background thread contention
 
 ## 1.4.3
 
@@ -217,7 +239,7 @@ October 25, 2022
 ### Bug fixes
 
 - Fixed a bug where unnecessary, short-lived threads would spawn.
-- On Windows, Xbox, and Android, fixed a bug where the library may attempt web requests before a previously recorded retry-after period expires.
+- On Windows, Xbox, and Android, fixed a bug where the library might attempt web requests before a previously recorded retry-after period expires.
 - Improve the error message if a web server can’t be reached.
 
 ## 1.4.0
@@ -243,7 +265,7 @@ September 9, 2022
 ### New features
 
 - Implemented a new function, [PFLobbyGetMemberConnectionStatus](..\playfabmultiplayerreference-cpp\pflobby\functions\pflobbygetmemberconnectionstatus.md), which can be used to detect whether a user is connected to the PubSub notification service. When a user's connection status changes, you receive a [PFLobbyUpdatedStateChange](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbyupdatedstatechange.md) with a [PFLobbyMemberUpdateSummary](..\playfabmultiplayerreference-cpp\pflobby\structs\pflobbymemberupdatesummary.md) where the `connectionStatusUpdated` field is `true`.
-- Updated the protocol used to exchange messages with the PubSub notification service from JSON to MessagePack, decreasing the message sizes. This change has no impact on the API surface.
+- Updated the protocol used to exchange messages with the PubSub notification service from JSON to MessagePack, decreasing the message sizes. This change has no effect on the API surface.
 
 ### Bug fixes
 

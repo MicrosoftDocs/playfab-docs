@@ -100,7 +100,30 @@ public static async Task GetStatisticDefinitions(PlayFabAuthenticationContext co
 }
  ```
 
-### Deleting Statistic Definition
+### Updating a statistic definition
+
+If you want to update your statistic definition, you can do so as follows:
+``` C#
+public static async Task UpdateStatisticDefinitionAsync(PlayFabAuthenticationContext context, string statisticName, VersionConfiguration version)
+{
+    PlayFabProgressionInstanceAPI statsAPI = new PlayFabProgressionInstanceAPI(context);
+    UpdateStatisticDefinitionRequest updateStatDefinitionRequest = new UpdateStatisticDefinitionRequest()
+    {
+        AuthenticationContext = context,
+        Name = statisticName,
+        VersionConfiguration = version
+
+    };
+    PlayFabResult<PlayFab.ProgressionModels.EmptyResponse> updateStatDefinitionResult = await statsAPI.UpdateStatisticDefinitionAsync(updateStatDefinitionRequest);
+
+}
+
+ ```
+Note that, Columns, EntityType and ResetInterval cannot be modifed as part of the update.
+
+``` C#
+
+### Deleting statistic definition
 
 If you want to delete your statistic definition to add more columns or fix some errors, you can do so as follows:
 
@@ -120,7 +143,7 @@ public static async Task DeleteStatisticDefinition(PlayFabAuthenticationContext 
 }
 ```
 
-## Adding Data to a Statistic
+## Adding data to a statistic
 
 Continuing with our shooter example, we now know how to create a statistic definition, retrieve it, and delete it if necessary.
 Our next step is to start adding data to our statistic.
@@ -168,7 +191,7 @@ Now, let's explain some key elements of this example:
 
 With these concepts clear, you're now ready to add data to your statistic.
 
-## Retrieving Data From a Statistic
+## Retrieving data from a statistic
 
 Let's do a quick recap. At this point, you created a statistic, checked all the configuration details, 
 and started adding data to it. Now, let's imagine some players already started using your game,
@@ -202,7 +225,7 @@ public static async Task GetStatsForEntity(PlayFabAuthenticationContext context,
 
 Here we query all the statistics associated to an entity and then we print the name with their corresponding value.
 
-## Deleting Statistics Values
+## Deleting statistics values
 
 Our statistics are working as expected, and we have a bunch of players in your game. However, 
 we start noticing some unusual behavior in the game. So we decided to start fresh and delete the data of our statistic.
@@ -236,6 +259,7 @@ Now, let's explain some key elements of this example:
 In this tutorial, we learned how to do the following operations: 
 * Create a statistic
 * Check the configuration of a statistic
+* Update the configuration of a statistic
 * Delete the statistic configuration
 * Populate the statistic
 * Delete entries in the statistic.
@@ -246,4 +270,6 @@ In this tutorial, we learned how to do the following operations:
 - [Doing more with statistics](doing-more-statistics.md).
 - [Seasonal statistics](seasonal-statistics.md).
 - [Add contextual data to statistics](metadata-statistics.md).
+- [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).
+

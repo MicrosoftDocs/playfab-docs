@@ -20,6 +20,7 @@ error codes, and response structures.
 |----------------------|-----------------------------------|
 |CreateStatisticDefinition               | [Create a Statistic Definition](/rest/api/playfab/progression/statistics/create-statistic-definition)    |
 |DeleteStatisticDefinition              | [Delete a Statistic Definition](/rest/api/playfab/progression/statistics/delete-statistic-definition)    |
+|UpdateStatisticDefinition              | [Update a Statistic Definition](/rest/api/playfab/progression/statistics/update-statistic-definition)    |
 |DeleteStatistic               | [Delete Statistic](/rest/api/playfab/progression/statistics/delete-statistics)    |
 |GetStatisticDefinition               | [Get Statistic Definition](/rest/api/playfab/progression/statistics/get-statistic-definition)    |
 |ListStatisticDefinitions               | [Get Statistic Definitions](/rest/api/playfab/progression/statistics/list-statistic-definitions)    |

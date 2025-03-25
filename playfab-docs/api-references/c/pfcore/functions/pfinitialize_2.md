@@ -4,7 +4,7 @@ title: "PFInitialize"
 description: "Initializes PlayFabCore global state. Custom platform hooks must be configured prior to calling PFInitialize."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 

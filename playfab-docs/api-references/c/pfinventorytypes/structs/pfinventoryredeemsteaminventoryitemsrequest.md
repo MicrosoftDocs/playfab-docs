@@ -4,7 +4,7 @@ title: "PFInventoryRedeemSteamInventoryItemsRequest"
 description: "PFInventoryRedeemSteamInventoryItemsRequest data model. Redeem inventory items from Steam."
 ms.author: jasonsa
 ms.topic: reference
-ms.service: playfab
+ms.service: azure-playfab
 ms.date: 11/19/2024
 ---
 
