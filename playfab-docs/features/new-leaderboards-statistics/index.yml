@@ -6,7 +6,7 @@ summary: Information about the new versions of Leaderboards and Statistics. # < 
 metadata:
   title: New Leaderboards and Statistics documentation
   description: Guide on Leaderboards and Statistics # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: playfab leaderboards and stats #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
   author: braulioal
   ms.author: braulioal
@@ -37,6 +37,8 @@ landingContent:
         links:
           - text: Quickstart with Leaderboards
             url: leaderboards/quickstart-leaderboards.md
+          - text: Limits on Leaderboards
+            url: leaderboards/limits-leaderboards.md
       - linkListType: tutorial
         links:
           - text: Create a basic leaderboard
@@ -60,6 +62,8 @@ landingContent:
         links:
           - text: Quickstart with Statistics
             url: statistics/quickstart-statistics.md
+          - text: Limits on Statistics
+            url: statistics/limits-statistics.md
       - linkListType: tutorial
         links:
           - text: Create a basic statistic
