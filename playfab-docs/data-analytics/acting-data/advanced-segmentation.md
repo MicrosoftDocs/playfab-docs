@@ -84,7 +84,7 @@ You can create segments with Player Custom properties either via API or Game man
      - `AmountSpent = Payload.Amount`  
      - `ItemName = Payload.ItemId`  
 
-   ![Rule Configuration](media/scenario1_rule.png)  
+   ![Virtual Currency Rule Configuration](media/scenario1_rule.png)  
 
 3. Navigate to the **Segments** page under **Players -> Segments**.  
 4. Create a new segment with the following configuration:  
@@ -92,7 +92,7 @@ You can create segments with Player Custom properties either via API or Game man
    - Custom property (numeric) `AmountSpent` is `>= 25`  
    - Custom property (numeric) `AmountSpent` is `<= 50`  
 
-   ![Segment Configuration](media/scenario1_segment.png)  
+   ![Virtual Currency Segment Configuration](media/scenario1_segment.png)  
 
 ---
 
@@ -109,7 +109,7 @@ You can create segments with Player Custom properties either via API or Game man
      - `ItemAmountSpent = Payload.Amount`  
      - `ItemUpdateDate = Timestamp`  
 
-   ![Rule Configuration](media/scenario2_rule.png)  
+   ![Inventory Granted Rule Configuration](media/scenario2_rule.png)  
 
 3. Navigate to the **Segments** page under **Players -> Segments**.  
 4. Create a segment with the following configuration:  
@@ -117,7 +117,7 @@ You can create segments with Player Custom properties either via API or Game man
    - Custom property (datetime) `ItemUpdateDate > 3/1/2025`  
    - Custom property (numeric) `ItemAmountSpent >= 10`  
 
-   ![Segment Configuration](media/scenario2_segment.png)  
+   ![Inventory Granted Segment Configuration](media/scenario2_segment.png)  
 
 ---
 
@@ -134,13 +134,13 @@ You can create segments with Player Custom properties either via API or Game man
    - Update custom properties  
      - `ChocolateBarPurchased = Payload.Amount`  
 
-   ![Rule Configuration](media/scenario3_rule.png)  
+   ![Catalog Purchase Rule Configuration](media/scenario3_rule.png)  
 
 3. Navigate to the **Segments** page under **Players -> Segments**.  
 4. Create a segment with the following configuration:  
    - Custom property (numeric) `ChocolateBarPurchased >= 1`  
 
-   ![Segment Configuration](media/scenario3_segment.png)  
-   ![Segment Configuration](media/scenario3_segment2.png)  
+   ![Catalog Purchase Segment Configuration](media/scenario3_segment.png)  
+   ![Catalog Purchase Segment Configuration Pop Up](media/scenario3_segment2.png)  
 
 5. **How It Works:**  Whenever a player purchases a **Chocolate Bar**, the rule condition triggers, executing the action to add the custom property. The player then enters the segment and can receive the configured reward or notification.  
