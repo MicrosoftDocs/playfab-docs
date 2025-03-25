@@ -16,7 +16,6 @@ The following SDKs are available for backend services and tools development outs
 
 | PlayFab&nbsp;SDK | Description |
 |-------------|-------------|
-| [C#](../c-sharp/index.md) | A .NET Framework SDK built in C#. Also used for game client development with Xamarin. |
 | [Java](../java/index.md) | An SDK built on the Java runtime. Also used for Android development. |
 | [JavaScript](../javascript/index.md) | Commonly used for web development and browser games. |
 | [Node.js](../nodejs/index.md) | Used for server-side scripting and running JavaScript code outside of a browser. |

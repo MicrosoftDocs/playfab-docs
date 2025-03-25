@@ -29,7 +29,7 @@ For information on migrating from the legacy account and data systems to PlayFab
   >
 - The PlayFab Unity3D SDK.
 
-The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# or Xamarin C# SDKs, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the standard C# SDK, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the standard C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 ## Terminology
 
@@ -231,7 +231,7 @@ public class EntityFileExample : MonoBehaviour
     public string ActiveUploadFileName;
     public string NewFileName;
     // GlobalFileLock provides is a simplistic way to avoid file collisions, specifically designed for this example.
-    public int GlobalFileLock = 0; 
+    public int GlobalFileLock = 0;
 
     void OnSharedFailure(PlayFabError error)
     {
@@ -409,7 +409,7 @@ The Game Manager allows you to manipulate objects and files for players. The pla
 
 In addition, files and objects now have their own sections in the **Players** tab.
 
-![Game Manager - Entities - Player Files and Objects](../entities/media/tutorials/game-manager-entities-player-files.png) 
+![Game Manager - Entities - Player Files and Objects](../entities/media/tutorials/game-manager-entities-player-files.png)
 
 ## See also
 

@@ -6,7 +6,7 @@ ms.author: joanlee
 ms.date: 01/22/2021
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, sdk, csharp, xamarin
+keywords: playfab, sdk, csharp
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ![C# Image](./media/csharp1.png)
 
-This C# SDK is used in the .NET environment, including Common Language Runtime (CLR). It is frequently used in cross-platform iOS and Android app titles created using the free, open-source Xamarin platform. This SDK is also used in games and apps coded in native C# for the Windows platform.
+This C# SDK is used in the .NET environment, including Common Language Runtime (CLR). The SDK is used in games and apps coded in native C# for the Windows platform.
 
 If you have questions about the SDK or need help in resolving issues, go to [PlayFab forums](https://community.playfab.com/index.html) > **API and SDK**.
 
