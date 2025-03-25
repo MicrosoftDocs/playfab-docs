@@ -55,7 +55,7 @@ You can create segments with Player Custom properties either via API or Game man
 2. Create a **Chocolate Bar** currency as an item.    
    - **Required parameters:** Friendly ID, Title, and Start Date (March 1)  
    ![Economy V2 Catalog Setup](media/economy_v2_catalog.png)  
-3. Create an catalog item **Chocolate Bar**:  
+3. Create a catalog item **Chocolate Bar**:  
    3a. Navigate to **Settings -> Economy (V2) -> Catalog (V2)**.  
    3b. Under **Catalog Settings**, add a new **Content Type** - **Chocolate Bar** and select **Save**.  
 
