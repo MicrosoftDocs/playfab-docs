@@ -63,6 +63,8 @@ However, also this service can work in a standalone fashion if needed.
 - [Create basic statistics](create-basic-statistics.md).
 - [Doing more with statistics](doing-more-statistics.md).
 - [Seasonal statistics](seasonal-statistics.md).
+- [Limits](limits-statistics.md).
+- [Quota](quota-statistics.md)
 - [Add contextual data to statistics](metadata-statistics.md).
 - [API reference](api-reference.md).
 - [Ranking players by statistics](../leaderboards/leaderboards-linked-to-stats.md).

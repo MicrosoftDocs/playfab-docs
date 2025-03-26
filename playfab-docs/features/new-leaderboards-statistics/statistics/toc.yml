@@ -4,6 +4,8 @@
   href: quickstart-statistics.md
 - name: Limits
   href: limits-statistics.md
+- name: Quota
+  href: quota-statistics.md
 - name: Tutorials
   items:
   - name: Create a basic statistic

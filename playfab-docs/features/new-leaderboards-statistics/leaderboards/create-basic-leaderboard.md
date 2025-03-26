@@ -282,6 +282,8 @@ In this tutorial, we learned how to do the following operations:
 ## See also
 
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
+- [Limits Leaderboards](limits-leaderboards.md).
+- [Quota Leaderboards](quota-leaderboards.md).
 - [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).

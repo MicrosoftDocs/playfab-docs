@@ -239,6 +239,8 @@ In this tutorial, we learned how to do the following operations:
 ## See also
 - [Create basic leaderboard](create-basic-leaderboard.md).
 - [Seasonal leaderboards](seasonal-leaderboards.md).
+- [Limits Leaderboards](limits-leaderboards.md).
+- [Quota Leaderboards](quota-leaderboards.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Group leaderboards](group-leaderboards.md).
 - [Manual tiers](manual-tiers.md).
