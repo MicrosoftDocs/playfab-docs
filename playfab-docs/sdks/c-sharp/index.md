@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ![C# Image](./media/csharp1.png)
 
-This C# SDK is used in the .NET environment, including Common Language Runtime (CLR). The SDK is used in games and apps coded in native C# for the Windows platform.
+This C# SDK is used in the .NET environment. It's built primarily for game services, tools, and applications designed to run on Cloud, Windows, and any other platform supported by .NET.
 
 If you have questions about the SDK or need help in resolving issues, go to [PlayFab forums](https://community.playfab.com/index.html) > **API and SDK**.
 
