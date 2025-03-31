@@ -14,6 +14,26 @@ ms.localizationpriority: medium
 
 Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md) for download and install instructions.
 
+## 2.3.6
+**Release 2.3.6 is ready to use with Unreal Engine 5.5.**
+
+Library Updates:
+- Multiplayer SDK C++ library (Windows/GDK) : From 1.7.2 to 1.7.9.
+- Party SDK C++ library (Windows/GDK) : From 1.9.5 to 1.10.5.
+
+UE5.5 Upgrade Fixes:
+- `OnSessionParticipantsChanged` ([deprecated](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5.2-release-notes?application_version=5.2#onlinesubsystem-2) in UE5.2) was removed in UE5.5. Updated PF OSS to use the new `OnSessionParticipantJoined` and `OnSessionParticipantLeft`.
+- `GDKUserManager.h` was moved from `Engine\Platforms\GDK\Source\Runtime\GDKRuntime\Public\GDKUserManager.h` to `Engine\Platforms\GDK\Source\Runtime\GDKRuntime\Private\GDKUserManager.h`. Updated PF OSS to no longer depend on this header.
+
+Bug fixes:
+- Fixed an issue where a player who would unexpectedly lose connectivity might be unable to join or create another session.
+- Fixed an issue where `FindSessionById` and `CreateSession` could potentially be called out of order.
+
+Known issue:
+- When using the PlayFab Online Subsystem in UE5.5 GDK, you may encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and \Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`.
+  To resolve this issue, refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md#unreal-engine-installed-builds).
+- `NumPrivateConnections` of FOnlineSessionSettings isn't supported because the PlayFab service doesn't track private connections.
+
 ## 2.3.4
 - Supported the release of UE5.4.
 

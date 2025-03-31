@@ -1,8 +1,8 @@
 ---
-author: fschober-atg
+author: ScottMunroMS
 title: "PlayFab Party Error Codes"
 description: Error codes used by PlayFab Party APIs
-ms.author: fschober
+ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
 ms.date: 08/11/2022
@@ -13,7 +13,7 @@ The following error codes are used by the PlayFab Party APIs:
 
 ## Common errors
 | Hex | Dec | Description |
-| ------ | ------ | ------ |
+| --- | --- | ----------- |
 | 0x0001 | 1 | Encountered unknown error. |
 | 0x0002 | 2 | Failed to allocate memory. |
 | 0x0003 | 3 | API not implemented. |
@@ -44,13 +44,13 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x0039 | 57 | Insufficient buffer supplied to network transport. |
 | 0x003A | 58 | Network interface not ready. |
 | 0x003B | 59 | Network interface has failed. |
-| 0x003C | 60 | Failed to bind because the local address is already in use. |
+| 0x003C | 60 | Failed to bind or connect the UDP socket because the address is already in local use. |
 | 0x003D | 61 | Failed to complete the operation because a system limit was reached. |
 | 0x003E | 62 | Network transport failed to complete operation because associated data was too large. |
 | 0x003F | 63 | Failed to establish or maintain a connection to a network or remote peer. |
 | 0x0040 | 64 | The remote side denied an incoming connection. |
 | 0x0044 | 68 | A packet was dropped on the wire. |
-| 0x0045 | 69 | A packet with malformed data was received. |
+| 0x0045 | 69 | Received a packet with malformed data. |
 | 0x0046 | 70 | A duplicate handle was supplied to network transport. |
 | 0x0048 | 72 | Network transport channel was terminated. |
 | 0x0049 | 73 | Network transport link was remotely terminated. |
@@ -71,10 +71,10 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x005D | 93 | The http request was throttled by the service. |
 | 0x0069 | 105 | The http request failed due to an invalid certificate. |
 | 0x006D | 109 | The target device isn't in the network. |
-| 0x006F | 111 | The operation couldn't be completed because the neceessary DTLS handshake state already expired or was missing. |
+| 0x006F | 111 | The operation couldn't be completed because the necessary DTLS handshake state already expired or was missing. |
 | 0x0070 | 112 | The remote address for the link hasn't yet been set. |
 | 0x0071 | 113 | The network transport operation isn't supported on this platform. |
-| 0x0072 | 114 | An invalid platform type was encountered. |
+| 0x0072 | 114 | Encountered an invalid platform type. |
 | 0x0073 | 115 | The string couldn't be converted to a UUID. |
 | 0x0077 | 119 | No network transport DTLS handshake data bytes were generated even after a retry. |
 | 0x0078 | 120 | The local network transport device doesn't have the required secure transport enabled. |
@@ -87,7 +87,7 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x0089 | 137 | Setting work mode after Party initialization is forbidden. |
 | 0x008D | 141 | The operation couldn't be performed in the current work mode. |
 | 0x008E | 142 | The operation couldn't be performed because it wasn't invoked from a thread in a COM multithreaded apartment. |
-| 0x008F | 143 | Text moderation service isn't enabled for this title; please contact Microsoft to enable. |
+| 0x008F | 143 | Text moderation service isn't enabled for this title; contact Microsoft to enable. |
 | 0x0090 | 144 | The service encountered an error performing text moderation. |
 | 0x0093 | 147 | Moderation of text chat on direct peer connections is unsupported. |
 | 0x0095 | 149 | Setting profiling callbacks after Party initialization is forbidden. |
@@ -98,11 +98,11 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x00A3 | 163 | Resolving the network transport hostname didn't return any results. |
 | 0x00A9 | 169 | An operation failed due to an invalid URL. |
 | 0x00AC | 172 | The system denied access permissions to bind the UDP socket or other network transport operation. |
-| 0x00B9 | 185 | The entity type is not one of the currently supported types. |
+| 0x00B9 | 185 | The entity type isn't one of the currently supported types. |
 
 ## Client errors
 | Hex | Dec | Description |
-| ------ | ------ | ------ |
+| --- | --- | ----------- |
 | 0x1000 | 4096 | The Party library must be initialized. |
 | 0x1001 | 4097 | A user is already associated with the specified chat control. |
 | 0x1002 | 4098 | The operation was called with an invalid handle. |
@@ -175,7 +175,7 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x107A | 4218 | Attempted to synthesize text without setting a text to speech profile. |
 | 0x107B | 4219 | The provided gender wasn't recognized. |
 | 0x107C | 4220 | The remote transcription operation failed. |
-| 0x107D | 4221 | An invalid transcription error type was received. |
+| 0x107D | 4221 | Received an invalid transcription error type. |
 | 0x107E | 4222 | The specified text to speech profile identifier was too long. |
 | 0x107F | 4223 | The specified text to speech profile name was too long. |
 | 0x1080 | 4224 | The specified language code was too long. |
@@ -192,7 +192,7 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x108C | 4236 | The network's configuration doesn't allow this user to authenticate on any more devices. |
 | 0x108D | 4237 | The network's configuration doesn't allow this device to connect because the maximum number of devices are already connected. |
 | 0x108E | 4238 | The operation failed because it depended on a user authentication that also failed. |
-| 0x108F | 4239 | An invalid translation result type was received. |
+| 0x108F | 4239 | Received an invalid translation result type. |
 | 0x1090 | 4240 | Endpoints can't be created without a successfully authenticated user or an authentication in progress. |
 | 0x1092 | 4242 | The request to populate text-to-speech profiles encountered an unhandled service error. |
 | 0x1094 | 4244 | A translation request returned an unexpected response. |
@@ -218,7 +218,7 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x10BD | 4285 | The service couldn't allocate a network because the requested version was invalid. |
 | 0x10C7 | 4295 | This device was disconnected from the Party network because it had no authenticated users for an extended period of time. |
 | 0x10C8 | 4296 | The audio device selection context was invalid. |
-| 0x10C9 | 4297 | The chat text string must not be empty. |
+| 0x10C9 | 4297 | The chat text string can't be empty. |
 | 0x10CB | 4299 | XAudio 2.8 and 2.9 not found. These libraries are built in to Windows 8 and Windows 10, respectively. |
 | 0x10CD | 4301 | The requested operation can't be performed because the network is already being destroyed. |
 | 0x10CE | 4302 | The audio device is already in use by another application and couldn't be initialized. |
@@ -227,7 +227,7 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x10D1 | 4305 | The specified PartyOption is unsupported. |
 | 0x10D2 | 4306 | The specified object type isn't supported for this PartyOption. |
 | 0x10D4 | 4308 | The memory allocate callback and memory free callback must both be null or both be non-null. |
-| 0x10D5 | 4309 | SetMemoryCallbacks has already been called and may not be called again for the lifetime of this process. |
+| 0x10D5 | 4309 | SetMemoryCallbacks has already been called and can't be called again for the lifetime of this process. |
 | 0x10D7 | 4311 | The Cognitive Services token has expired but hasn't refreshed yet. |
 | 0x10D8 | 4312 | The audio stream doesn't have enough space to handle the buffer. |
 | 0x10DA | 4314 | The source text didn't contain any characters that could be synthesized. |
@@ -236,12 +236,12 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x10E0 | 4320 | Failed to process the profanity tags in the transcription provided by the speech service. |
 | 0x10E1 | 4321 | Failed to parse the string within the profanity tags indicated by the speech service. |
 | 0x10E3 | 4323 | Failed to parse the transcription because it contained an XML tag reserved for the Party network protocol. |
-| 0x10E5 | 4325 | The memory callbacks may not be set after any other API call has been made for the lifetime of the process. |
+| 0x10E5 | 4325 | The memory callbacks can't be set after any other API call has been made for the lifetime of the process. |
 | 0x10E6 | 4326 | A request provided to the PlayFab service had invalid parameters. An invalid region may have been provided to CreateNewNetwork. |
-| 0x10EA | 4330 | An unknown error code was returned by the PlayFab service. |
-| 0x10EB | 4331 | An unexpected error code was returned by the PlayFab service. |
-| 0x10EC | 4332 | An unexpected error code was returned by the PlayFab service with a 4XX response code. |
-| 0x10ED | 4333 | An unexpected error code was returned by the PlayFab service with a 5XX response code. |
+| 0x10EA | 4330 | The PlayFab service returned an unknown error code. |
+| 0x10EB | 4331 | The PlayFab service returned an unexpected error code. |
+| 0x10EC | 4332 | The PlayFab service returned an unexpected error with a 4XX status code. |
+| 0x10ED | 4333 | The PlayFab service returned an unexpected error with a 5XX status code. |
 | 0x10FD | 4349 | The target endpoint list contained multiple endpoints while the statistic list contained a statistic type that only supports a single endpoint. |
 | 0x10FE | 4350 | The target endpoint list contained a local endpoint while the statistic list contained a statistic type that only supports remote endpoints. |
 | 0x110B | 4363 | The service couldn't allocate a network matching the request. The build alias may be set incorrectly. |
@@ -263,10 +263,11 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x112B | 4395 | The region quality measurement high latency hint value is invalid. |
 | 0x112C | 4396 | The region quality measurement minimum required successful responses value is invalid. |
 | 0x112D | 4397 | The region quality measurement ideal number of successful responses value is invalid. |
+| 0x1136 | 4406 | The network is being destroyed because it is idle. |
 
 ## Platform-specific errors
 | Hex | Dec | Description |
-| ------ | ------ | ------ |
+| --- | --- | ----------- |
 | 0x3000 | 12288 | The thread affinity mask didn't specify any processors that are valid for XAudio2 to affinitize its threads to. |
 | 0x3001 | 12289 | Unmapped XAudio2 error. |
 | 0x3002 | 12290 | Audio operation failed because Windows audio service isn't running. |
