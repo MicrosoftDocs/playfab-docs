@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Player Custom Properties Quickstart (Public Preview)
 
 > [!NOTE]
-> The Player Custom Properties feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
+> The Player Custom Properties feature is in public preview. While the core functionality is in place, we’re refining the experience based on feedback and usage patterns.
 
 To get started using Player Custom Properties, follow the guides here. 
 

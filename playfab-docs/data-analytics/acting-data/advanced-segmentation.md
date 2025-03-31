@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Advanced Segmentation with Custom Properties (Public Preview)
 
 > [!NOTE]
-> The Advanced Segmentation with Custom Properties feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
+> The Advanced Segmentation with Custom Properties feature is in public preview. While the core functionality is in place, we’re refining the experience based on feedback and usage patterns.
 
 Advanced Segmentation with [Custom Properties (Public Preview)](player-custom-properties.md) enables dynamic player segments using your own commerce, engagement, and custom data. You can store and manage player's custom information using Custom Properties and then use it to create segments based on those specific properties. These properties can be set on players via APIs, Game Manager, or PlayStream rules, and can be used to define segments that group players based on shared characteristics. Once these segments are created, they can be used to generate actions on players. Additionally, these segments can be used to define scheduled or manual tasks.
 
@@ -45,8 +45,6 @@ You can create segments with Player Custom properties either via API or Game man
 ## Scheduled Tasks 
  
 1.	[Run scheduled task](../acting-data/scheduled-tasks/index.md) on a segment using custom property predicates. 
-
-## Commerce Scenarios
 
 ## Quick Start Scenarios  
 
