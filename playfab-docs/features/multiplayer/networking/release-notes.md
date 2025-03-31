@@ -20,6 +20,12 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.10.9
+
+March 11, 2025
+
+- Nintendo Switch: Bug fix addressing a crash when loading DLLs of the shipping variant of the library with logging enabled.
+
 ## 1.10.8
 
 January 24, 2025
