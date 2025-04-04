@@ -11,9 +11,9 @@ metadata:
   services: service
   ms.service: azure-playfab
   ms.topic: hub-page
-  author: natashaorie
-  ms.author: norie
-  ms.date: 01/27/2020 #Required; mm/dd/yyyy format.
+  author: m-kdearnley
+  ms.author: kdearnley
+  ms.date: 03/19/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -22,7 +22,7 @@ highlightedContent:
   items:
     - title: What is PlayFab?
       itemType: concept
-      url: what-is-playfab.md
+      url: get-started/concepts.md
     - title: What's new
       itemType: whats-new
       url: whats-new/whats-new.md         
@@ -36,7 +36,7 @@ highlightedContent:
 productDirectory:
   title: Game developers - start building with PlayFab
   items:
-    - title: Get started
+    - title: Fundamentals
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/index/build.svg
       summary: Learn PlayFab’s fundamental concepts with tutorials and a demo game.
