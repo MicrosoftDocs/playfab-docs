@@ -55,7 +55,7 @@ else
 }
 ```
 
-To run this code, you need a developer secret key. For more information about secret keys, see [Secret key management](../../../live-service-management/production/gamemanager/secret-key-management.md).
+To run this code, you need a developer secret key. For more information about secret keys, see [Secret key management](../../../live-service-management/gamemanager/secret-key-management.md).
 
 This application should print a newly created player-shared secret. *Make sure to save it*. If it is lost, you will have to generate a new secret by running the application again.
 

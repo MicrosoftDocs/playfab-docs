@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial walks you through how to create a prize table that triggers a set of actions on a group of players within a range of ranks, in a [Resettable Leaderboard](using-resettable-statistics-and-leaderboards.md).
 
-In particular, this is a way to trigger emails, send push notifications, grant [Inventory Items](../../../player-progression/player-data/player-inventory.md) and [Virtual Currency](../../../economy-monetization/economy/tutorials/currencies.md), or execute a [CloudScript](../../../live-service-management/production/automation/cloudscript/writing-custom-cloudscript.md) function at the reset of a leaderboard.
+In particular, this is a way to trigger emails, send push notifications, grant [Inventory Items](../../../player-progression/player-data/player-inventory.md) and [Virtual Currency](../../../economy-monetization/economy/tutorials/currencies.md), or execute a [CloudScript](../../../live-service-management/service-gateway/automation/cloudscript/writing-custom-cloudscript.md) function at the reset of a leaderboard.
 
 In this example, we show you how to create prize table end tournament prizes, which grants virtual currency to 5 players based on their rank in a leaderboard after a reset is performed.
 

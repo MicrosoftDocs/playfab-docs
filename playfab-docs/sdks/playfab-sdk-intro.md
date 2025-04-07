@@ -61,7 +61,7 @@ For broad API categories in these SDKs, see [API REST operation groups](/rest/ap
 ## See also
 
 * [SDKs overview](sdk-overview.md)
-* [What is PlayFab?](../what-is-playfab.md)
+* [What is PlayFab?](../get-started/what-is-playfab.md)
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 

@@ -169,13 +169,13 @@ Some of the features under the **Analyze** section are also limited to protect t
 
 ![data page](media/demo-game-data.png)
 
-[Audit history](../live-service-management/production/gamemanager/audit-logs.md) gives a view into the history of changes made to the title by anyone with edit access.
+[Audit history](../live-service-management/gamemanager/audit-logs.md) gives a view into the history of changes made to the title by anyone with edit access.
 
 For a full view of what other features are part of the **Data** section, see the [Data & analytics documentation](../data-analytics/index.yml).
 
 ### Other
 
-Under title settings, the **Secret keys** tab is hidden. See the [documention for secret key management](../live-service-management/production/gamemanager/secret-key-management.md).
+Under title settings, the **Secret keys** tab is hidden. See the [documention for secret key management](../live-service-management/gamemanager/secret-key-management.md).
 
 ![Game Manager UI showing Secret Keys page](media/secret-keys.jpg)
 

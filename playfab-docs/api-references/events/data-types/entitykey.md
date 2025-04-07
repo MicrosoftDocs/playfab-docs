@@ -17,5 +17,5 @@ ms.localizationpriority: medium
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
 |Id|String|Unique ID of the entity.|
-|Type|String|One of the [available built-in entity types](../../../live-service-management/production/entities/available-built-in-entity-types.md).|
+|Type|String|One of the [available built-in entity types](../../../live-service-management/game-configuration/entities/available-built-in-entity-types.md).|
 |TypeString|String|Alternate name for Type.|

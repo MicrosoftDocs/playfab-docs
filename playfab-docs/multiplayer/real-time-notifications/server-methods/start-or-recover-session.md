@@ -14,9 +14,9 @@ ms.date: 03/10/2022
 > Using Lobby, Matchmaking, and real-time notifications directly with REST and
 > SignalR APIs is significantly more complex than using client SDKs such as the
 > [Lobby C++
-> SDK](../../../multiplayer/lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
 > and [Matchmaking C++
-> SDK](../../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
+> SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
 > and should only be done if the SDKs don't meet your needs.
 
 Starts a session.

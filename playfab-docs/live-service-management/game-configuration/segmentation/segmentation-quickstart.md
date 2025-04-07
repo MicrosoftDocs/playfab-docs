@@ -18,7 +18,7 @@ Player segmentation is defined in [Game Manager](../../gamemanager/quickstart.md
 
 - Players with and without a distinctive characteristic defined in PlayFab.
 
-- A defined [CloudScript PlayStream Hook](action-rules-using-cloudscript-actions-with-playstream.md).
+- A defined [CloudScript PlayStream Hook](../../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md).
 
 ### Example case: Run a custom CloudScript for every player who reaches an in-game goal
 
@@ -50,7 +50,7 @@ The screen shown below is an example of the **Segment** described above.
 
 ![Game Manager - players - segments - new segment](media/tutorials/game-manager-players-segments-new-segment.png)  
 
-The most complex part of this example is the CloudScript. Utilize the second parameter, *Context*, in your [CloudScript handler](action-rules-using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition.
+The most complex part of this example is the CloudScript. Utilize the second parameter, *Context*, in your [CloudScript handler](../../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition.
 
 Afterwards, perform any action you wish on the player, such as granting [inventory items](../../../player-progression/player-data/player-inventory.md), [virtual currency](../../features/economy/tutorials/currencies.md), [player data](../../features/data/playerdata/quickstart.md), or [statistics](../../../player-progression/player-data/using-player-statistics.md).
 

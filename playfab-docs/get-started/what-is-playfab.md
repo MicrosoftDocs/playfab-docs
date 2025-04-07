@@ -153,7 +153,7 @@ PlayFab provides the following services:
 
 ## SDKs
 
-SDKs are available for most popular languages, platforms, and game engines. See the [SDKs overview](sdks/sdk-overview.md) to find the PlayFab SDK you need by feature area, then choose from among the languages, platforms, and game engines supported by each.
+SDKs are available for most popular languages, platforms, and game engines. See the [SDKs overview](../sdks/sdk-overview.md) to find the PlayFab SDK you need by feature area, then choose from among the languages, platforms, and game engines supported by each.
 
 ## Support
 

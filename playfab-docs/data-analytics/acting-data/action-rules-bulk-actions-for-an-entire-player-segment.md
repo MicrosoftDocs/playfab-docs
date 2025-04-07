@@ -28,11 +28,11 @@ In this tutorial, based on our **Unicorn Battle Sample App**, we will grant a sp
 
 You will need to install the Unicorn Battle Sample App to run this tutorial. You can read more about it [in our blog](https://blog.playfab.com/blog/check-out-unicorn-battle), or go directly to the [GitHub repository](https://github.com/PlayFab/UnicornBattle) and follow the instructions there.
 
-![Unicorn Battle - Launch Screen](../../../data-analytics/acting-data/media/tutorials/unicorn-battle-launch-screen.png)  
+![Unicorn Battle - Launch Screen](media/tutorials/unicorn-battle-launch-screen.png)  
 
 You will want to play *several* battles, in order to level up your character to at least **Level 2**, which you reach at **2,725 XP** points.
 
-![Unicorn Battle - Level 2](../../../data-analytics/acting-data/media/tutorials/unicorn-battle-level-two.png)
+![Unicorn Battle - Level 2](media/tutorials/unicorn-battle-level-two.png)
 
 ## Step 1 - Create the segment
 
@@ -45,18 +45,18 @@ The first step is to create the segment that defines the group of players who wi
 - Define it as **Player**, where the **Statistic Value** called **Total_XP Gained** is greater than **2725**.
 > **NOTE:** The current scheduled task system can process 10-15 tasks per second per segment.  When designing your segments plan ahead for how large they will be and how long the task execution will run.  There is no limit for how long a task can run but if they task needs to be executed in a specific timeframe then the segment needs to be sized properly.
 
-![Game Manager - PlayStream - Segments - High XP Players](../../../data-analytics/acting-data/media/tutorials/game-manager-segments-high-xp-players.png)
+![Game Manager - PlayStream - Segments - High XP Players](media/tutorials/game-manager-segments-high-xp-players.png)
 
 ## Step 2 - Create a task for this segment
 
 - Select the **Segments** tab.
 - Then select **RUN TASK …**
 
-![Game Manager - PlayStream - Segments - Run Task](../../../data-analytics/acting-data/media/tutorials/game-manager-segments-run-task.png)
+![Game Manager - PlayStream - Segments - Run Task](media/tutorials/game-manager-segments-run-task.png)
 
 This will take you to the **Create Task** view in the **Servers**->**Tasks** tab, and will pre-populate various fields based on your selected segment.
 
-![Game Manager - Servers - Task - Create Task](../../../data-analytics/acting-data/media/tutorials/game-manager-servers-task-create-task.png)
+![Game Manager - Servers - Task - Create Task](media/tutorials/game-manager-servers-task-create-task.png)
 
 ## Step 3 - Add actions to the task
 
@@ -71,13 +71,13 @@ Next, you can finish setting up the task.
 - Leave the scheduling set to **Manually** for now.
 - Select the **SAVE AND RUN** button to run the task.
 
-![Game Manager - Servers - Task - Add Action - Save and Run](../../../data-analytics/acting-data/media/tutorials/game-manager-servers-task-add-action-save-and-run.png)
+![Game Manager - Servers - Task - Add Action - Save and Run](media/tutorials/game-manager-servers-task-add-action-save-and-run.png)
 
 ## Step 4 - Monitor your task
 
 The **Tasks** view will show you your running task. Initially the task status will be **InProgress**, but it will quickly change to **Succeeded**, since the segment is small.
 
-![Game Manager - Servers - Tasks - Task Succeeded](../../../data-analytics/acting-data/media/tutorials/game-manager-servers-tasks-task-succeeded.png)
+![Game Manager - Servers - Tasks - Task Succeeded](media/tutorials/game-manager-servers-tasks-task-succeeded.png)
 
 Now, let's check out the task execution detail. Select the completed task in the previously run **Tasks** list. You will see important information, such as:
 
@@ -90,7 +90,7 @@ Now, let's check out the task execution detail. Select the completed task in the
 
 If the task is still in progress, you can check the **Task Instance Detail** view for the progress, and see the estimated time remaining.
 
-![Game Manager - Servers - Tasks - Task Instance Details](../../../data-analytics/acting-data/media/tutorials/game-manager-servers-tasks-task-instance-details.png)
+![Game Manager - Servers - Tasks - Task Instance Details](media/tutorials/game-manager-servers-tasks-task-instance-details.png)
 
 To verify that the task ran successfully:
 
@@ -102,7 +102,7 @@ To verify that the task ran successfully:
 > [!NOTE]
 > You can expand this event to see the details.
 
-![Game Manager - Event History - Event Detail](../../../data-analytics/acting-data/media/tutorials/game-manager-event-history-event-detail.png)
+![Game Manager - Event History - Event Detail](media/tutorials/game-manager-event-history-event-detail.png)
 
 ## What’s next
 
@@ -114,9 +114,9 @@ Here are a few ideas for other things you can try...
 
 You don’t need to run tasks manually - you can schedule a task to run *automatically* on a *recurring* basis. For example, you could create a segment of all players who played the game in the last 24 hours, then run a scheduled tasks each day to give those players an XP boost.
 
-![Game Manager - PlayStream - Segments - Players in 24 hours](../../../data-analytics/acting-data/media/tutorials/game-manager-segments-players-in-24-hours.png)
+![Game Manager - PlayStream - Segments - Players in 24 hours](media/tutorials/game-manager-segments-players-in-24-hours.png)
 
-![Game Manager - Servers - Tasks - Scheduled Task](../../../data-analytics/acting-data/media/tutorials/game-manager-servers-tasks-scheduled-task.png)
+![Game Manager - Servers - Tasks - Scheduled Task](media/tutorials/game-manager-servers-tasks-scheduled-task.png)
 
 ### Run CloudScript for each player
 
@@ -126,11 +126,11 @@ For example, imagine you have an event leaderboard that resets every week, and y
 
 1. Create a new stat **Event_QuestsCompleted**, that resets weekly and uses the aggregation method **Last**.
 
-   ![Players - Leaderboards - Edit Leaderboard](../../../data-analytics/acting-data/media/tutorials/players-leaderboards-edit-leaderboard.png)
+   ![Players - Leaderboards - Edit Leaderboard](media/tutorials/players-leaderboards-edit-leaderboard.png)
 
 2. Create a new PlayStream action that increments this `Event_QuestsCompleted` stat, whenever `Total_QuestsCompleted` is changed.
 
-   ![PlayStream - Event Actions - Edit Event Action](../../../data-analytics/acting-data/media/tutorials/playstream-event-actions-edit-event-action.png)
+   ![PlayStream - Event Actions - Edit Event Action](media/tutorials/playstream-event-actions-edit-event-action.png)
 
 3. Write a CloudScript function to be called by a Bulk Action task, which will go through players and give rewards based on the last value.
 
@@ -171,12 +171,12 @@ handlers.GiveTieredReward = function (args, context) {
 
 4. Set the new CloudScript version to **Live**, and create a new task that calls the `GiveTieredReward` function for all players. Don't forget to **Save** and **Run** the task.
 
-   ![Servers - Tasks - New Scheduled Task](../../../data-analytics/acting-data/media/tutorials/servers-tasks-new-scheduled-task.png)
+   ![Servers - Tasks - New Scheduled Task](media/tutorials/servers-tasks-new-scheduled-task.png)
 
 5. You should notice events from this task appear in the PlayStream event debugger.
 
-   ![PlayStream - Dashboard - Event Debugger](../../../data-analytics/acting-data/media/tutorials/playstream-dashboard-event-debugger.png)
+   ![PlayStream - Dashboard - Event Debugger](media/tutorials/playstream-dashboard-event-debugger.png)
 
 6. You can select any player triggered action executed CloudScript event (by selecting the time stamp), and see the detailed result of CloudScript execution for each player. This includes useful diagnostic information such as the snapshot of the player profile at the time of the CloudScript execution.
 
-   ![PlayStream - Dashboard - Raw Event JSON](../../../data-analytics/acting-data/media/tutorials/playstream-dashboard-raw-event-json.png)
+   ![PlayStream - Dashboard - Raw Event JSON](media/tutorials/playstream-dashboard-raw-event-json.png)

@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 
 These tutorials teach you how to use metrics.
 
-- [Generating PlayStream events](playstream-events.md)
+- [Generating PlayStream events](../../../../data-analytics/ingest-data/playstream-events.md)
 - [Metrics and Terminology](metrics-and-terminology.md)
 - [Real-Time Analytics - Core Concepts](real-time-analytics-core-concepts.md)
-- [S3 Event Archiving](../../../data-analytics/legacy/s3-event-archiving.md)
+- [S3 Event Archiving](../../../../data-analytics/legacy/s3-event-archiving.md)
 - [Sessions](sessions.md)

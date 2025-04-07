@@ -90,7 +90,7 @@ Unfortunately, the task run has failed. Select the task instance to see what wen
 
 The **Task Instance Details** view provides diagnostic information on why the task failed.
 
-In this case, it’s pointing out that the call to **serverAPI.SetTitleData** is incorrect. It should *really* be **server.SetTitleData** (for an explanation, see the **Intermediate: Calling the Server APIs** section of the [Writing Custom CloudScript](../../../live-service-management/production/automation/cloudscript/writing-custom-cloudscript.md#intermediate-calling-the-server-apis) tutorial).
+In this case, it’s pointing out that the call to **serverAPI.SetTitleData** is incorrect. It should *really* be **server.SetTitleData** (for an explanation, see the **Intermediate: Calling the Server APIs** section of the [Writing Custom CloudScript](../../../live-service-management/service-gateway/automation/cloudscript/writing-custom-cloudscript.md#intermediate-calling-the-server-apis) tutorial).
 
 There is other important information on the **Task Instance Details** view as well - such as the start and end times, the function that was called, any arguments passed in, the full CloudScript execution result, and more.
 

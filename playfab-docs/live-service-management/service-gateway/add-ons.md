@@ -16,4 +16,4 @@ Add-ons are tools and services for extending and operating your game. You can co
 
 Extend your game, and reduce SDK fatigue, with Add-ons from the PlayFab Marketplace. Add-ons are tools and services from across the gaming ecosystem, fully integrated for use with PlayFab. In most cases they can be provisioned and scaled with just a few clicks, no separate SDK needed. Add-ons provide services for analytics, community, payments, authentication, and more.
 
-[!INCLUDE [add-ons-enum](../../../includes/_add-ons-enum.md)]
+[!INCLUDE [add-ons-enum](../../includes/_add-ons-enum.md)]

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Webhooks
 
 > [!NOTE] 
-> We recommend using [Automation Rules](../../live-service-management/runtime/segmentation/action-rules-quickstart.md) instead of Webhooks, as Automation Rules supports V2 actions and provides the same functionality as Webhooks.
+> We recommend using [Automation Rules](action-rules-quickstart.md) instead of Webhooks, as Automation Rules supports V2 actions and provides the same functionality as Webhooks.
 
 In complex systems, you may want to provide additional event handling on your custom server. To achieve this, PlayFab offers Webhooks.
 

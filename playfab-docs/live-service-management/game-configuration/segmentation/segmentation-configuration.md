@@ -37,7 +37,7 @@ You may then choose to:
 To configure a segment like the example in this tutorial, you will need:
 
 - Players with and without a distinctive characteristic defined in PlayFab.
-- A defined [CloudScript PlayStream Hook](action-rules-using-cloudscript-actions-with-playstream.md).
+- A defined [CloudScript PlayStream Hook](../../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md).
 
 In this example we are going to:
 

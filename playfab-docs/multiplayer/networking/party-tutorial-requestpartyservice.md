@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 This tutorial describes the steps to request parties from your own services rather than strictly from the client using the ***RequestPartyService API***, giving you more flexibility and control over how you integrate PlayFab Party into your game through a HTTP call. 
 
 * It allows you to use your own authentication and authorization mechanisms, or customize the user interface and user experience of party creation and joining.
-* It enables you to allocate PlayFab Party strictly on your own terms. By managing the relay network from the service side, you can effectively and reliably set up complex network topologies using your own service or with the help of [PlayStream and CloudScript](../../live-service-management/runtime/segmentation/action-rules-using-cloudscript-actions-with-playstream.md).
+* It enables you to allocate PlayFab Party strictly on your own terms. By managing the relay network from the service side, you can effectively and reliably set up complex network topologies using your own service or with the help of [PlayStream and CloudScript](../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md).
 * It adds additional defense against abuse by clients by giving you the power to restrict Party creation to services only.
 
 ## Prerequisites
@@ -36,7 +36,7 @@ You need a PlayFab account and have enabled the Party feature.
 3. In the upper-right corner, select the gear icon.
 4. Select **Title settings**, then select the **Secret Keys** tab.
    
-For more information, see [Secret Key Management](../../live-service-management/production/gamemanager/secret-key-management.md). 
+For more information, see [Secret Key Management](../../live-service-management/gamemanager/secret-key-management.md). 
 
 ### 2. Obtain a PlayFab entity token
 

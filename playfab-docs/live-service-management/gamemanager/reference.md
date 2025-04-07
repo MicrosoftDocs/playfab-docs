@@ -172,7 +172,7 @@ The following example shows the **Edit Currency** page for **Great Game**.
 
 Additional Information:
 
-- [Catalogs](../../../economy-monetization/economy/items/catalogs.md)
+- [Catalogs](../../economy-monetization/economy/items/catalogs.md)
 - [Currencies Tutorial](../features/economy/tutorials/currencies.md)
 
 [Back to About the Game Manager](#about-game-manager)
@@ -216,7 +216,7 @@ Select the orange **EDIT LEADERBOARD** button to edit your leaderboard name as w
 
 **Additional information**:
 
-- [Using resettable statistics and leaderboards](../../../community/associations/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
+- [Using resettable statistics and leaderboards](../../community/associations/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
 - [Back to About the Game Manager](#about-game-manager)
 
 ### Content

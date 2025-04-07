@@ -48,7 +48,7 @@ For more information, see [Lobby properties](lobby-properties.md).
 
 ## Example creating a client-owned lobby using the Lobby and Matchmaking SDK
 
-This example uses a local player who has been logged into PlayFab as a [title_player_account](../../live-service-management/production/entities/available-built-in-entity-types.md) entity.
+This example uses a local player who has been logged into PlayFab as a [title_player_account](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md) entity.
 
 In this code snippet, Lobby properties are passed in as __lobbyConfiguration__ and the player creating the lobby passes in their initial member properties via __creatorMemberConfiguration__. The local player becomes the lobby owner, so it's a client-owned lobby. After the lobby is successfully created, the __PFLobbyHandle__ can be used to invite other players with [PFLobbySendInvite](playfabmultiplayerreference-cpp/pflobby/functions/pflobbysendinvite.md).
 
@@ -95,7 +95,7 @@ When the call to create a lobby completes, a [PFLobbyCreateAndJoinLobbyCompleted
 
 ## Example creating a server-owned lobby using the Lobby and Matchmaking SDK
 
-This example is similar to the [client-owned lobby example](#example-creating-a-client-owned-lobby-using-the-lobby-and-matchmaking-sdk) except that it creates the lobby as a [game_server](../../live-service-management/production/entities/available-built-in-entity-types.md) entity and [PFMultiplayerCreateAndClaimServerLobby](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayercreateandclaimserverlobby.md) is called in place of [PFMultiplayerCreateAndJoinLobby](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayercreateandjoinlobby.md).
+This example is similar to the [client-owned lobby example](#example-creating-a-client-owned-lobby-using-the-lobby-and-matchmaking-sdk) except that it creates the lobby as a [game_server](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md) entity and [PFMultiplayerCreateAndClaimServerLobby](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayercreateandclaimserverlobby.md) is called in place of [PFMultiplayerCreateAndJoinLobby](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayercreateandjoinlobby.md).
 
 ```cpp
     // Retrieved elsewhere from SDK's PFMultiplayerInitialize API

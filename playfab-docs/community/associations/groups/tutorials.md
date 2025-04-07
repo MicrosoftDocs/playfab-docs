@@ -16,8 +16,8 @@ These tutorials teach you how to use groups functionality for your games, and ho
 
 To store data for your groups, guilds or clans:
 
-- [Objects](../../../live-service-management/production/entities/entity-objects.md)
-- [Files](../../../live-service-management/production/entities/entity-files.md)
+- [Objects](../../../live-service-management/game-configuration/entities/entity-objects.md)
+- [Files](../../../live-service-management/game-configuration/entities/entity-files.md)
 
 For turn based games:
 

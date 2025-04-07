@@ -59,7 +59,7 @@ Here we examine some best practices for using PlayFab Insights and address the m
    2. You can also implement your own telemetry [through PlayStream, or our Telemetry system](/gaming/playfab/features/automation/playstream-events/).
    3. You can use [Management Commands](/gaming/playfab/features/insights/management-commands) to ingest custom datasets.
 ###  What is the standard data schema for PlayFab events?
-   - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you'll see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table](../../../live-service-management/runtime/segmentation/schemas-events-all.md) for more complete information. 
+   - In PlayFab Insights we load all the data from all events into a single table. This table is named ['events.all]. Inside that table you'll see a column called "EventData" that contains the payload of JSON information for each event. For complete information about the events.all table, see [About the events.all table](../../acting-data/schemas-events-all.md) for more complete information. 
 ###  Why can't I write SQL?
    - As of now, we only support KQL (Kusto Query Language) queries in most scenarios. We're actively exploring adding SQL support. While KQL takes some getting used to, we think you'll like it once you do. For information on converting SQL to Kusto queries, see [SQL to Kusto query translation](/azure/data-explorer/kusto/query/sqlcheatsheet).
 ###  What's the difference between Events Per Second in my Insights performance level and the costs of sending PlayStream events?

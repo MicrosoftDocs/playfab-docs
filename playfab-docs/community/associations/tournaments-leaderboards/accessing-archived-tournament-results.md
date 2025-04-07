@@ -106,7 +106,7 @@ By default, **PlayFab** generates an **All Players** segment for you. This segme
 4. Finally, select **Run Task...**.
 
 > [!NOTE]
-> If you have no All Players segment in the list, please, refer to our [Player Segmentation](../../../live-service-management/runtime/segmentation/segmentation-quickstart.md) quickstart to create one.
+> If you have no All Players segment in the list, please, refer to our [Player Segmentation](../../../live-service-management/game-configuration/segmentation/segmentation-quickstart.md) quickstart to create one.
 
 ![Game Manager - Players - Segments - All Players - Run Task](media/tutorials/game-manager-players-segments-all-players-run-task.png)  
 

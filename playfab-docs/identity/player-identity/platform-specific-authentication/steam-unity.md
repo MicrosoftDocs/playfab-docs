@@ -22,7 +22,7 @@ Before beginning, you should have:
 - A Steam Application with:
   - The AppID already set up. The AppID can be acquired through the [Steam Direct (Formerly Greenlight)](https://partner.steamgames.com/steamdirect) process.
   - A Steam Publisher Web API Key. To generate a publisher key, follow [Creating a Publisher Web API Key](https://partner.steamgames.com/doc/webapi_overview/auth#create_publisher_key) in the **Steamworks** documentation.
-- Familiarity with [Login basics and Best Practices](../../authentication/login/login-basics-best-practices.md).
+- Familiarity with [Login basics and Best Practices](../login/login-basics-best-practices.md).
 
 ## Setting up a PlayFab title with Steam integration
 

@@ -86,7 +86,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
   | EntityToken |                |               |
 
 > [!NOTE]
-> You can learn more about title secret keys and where to find them in the [Secret Key Management](../../live-service-management/production/gamemanager/secret-key-management.md) documentation.
+> You can learn more about title secret keys and where to find them in the [Secret Key Management](../../live-service-management/gamemanager/secret-key-management.md) documentation.
 
   > [!div class="mx-imgBorder"]
   > ![Postman Create Environment](media/tutorials/postman-new-create-environment.png "Postman Create Environment")
@@ -140,7 +140,7 @@ Another way to interact with PlayFab's [Entity Programming Model](../../features
 - Expired entity token
   - If you previously obtained an entity token and are unsuccessfully attempting to call other APIs, your entity token might be expired. Get another entity token, save it into the `EntityToken` environment variable, and attempt to call the previous API again
 - Incorrect entity token type
-  - There are different types of entities (see [Available built-in entity types](../../live-service-management/production/entities/available-built-in-entity-types.md)). Different APIs allow different entity types - for example, you might be attempting to call `GetLanguageList` with a title_player_account entity token instead of a title entity token 
+  - There are different types of entities (see [Available built-in entity types](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md)). Different APIs allow different entity types - for example, you might be attempting to call `GetLanguageList` with a title_player_account entity token instead of a title entity token 
 - Incorrect environment:
   - Make sure you're using the proper environment by checking the environment dropdown *(top right of the window)*
 

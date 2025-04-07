@@ -40,5 +40,5 @@ With the ability to break down KPIs by platform and region and segments as dimen
 
 ## See also
 
-[Segmentation overview](../../../live-service-management/runtime/segmentation/segmentation-overview.md)
+[Segmentation overview](../../../live-service-management/game-configuration/segmentation/segmentation-overview.md)
 

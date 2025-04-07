@@ -28,6 +28,6 @@ The events.all table is the destination for all incoming events regardless of th
 | EventData                             | Dynamic     | The original JSON payload of the event. |
 | EventId                               | String      | A unique GUID identifier for each event. |
 | Timestamp                             | DateTime    | The time the event was received by PlayFab. |
-| EntityLineage_title_player_account    | String      | The title player ID associated with the event. For more information, see [Available built-in entity types](../../production/entities/available-built-in-entity-types.md). |
-| EntityLineage_master_player_account   | String      | The main player ID associated with the event. For more information, see [Available built-in entity types](../../production/entities/available-built-in-entity-types.md). |
-| EntityLineage_namespace               | String      | The namespace associated with the event. For more information, see [Available built-in entity types](../../production/entities/available-built-in-entity-types.md). |
+| EntityLineage_title_player_account    | String      | The title player ID associated with the event. For more information, see [Available built-in entity types](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md). |
+| EntityLineage_master_player_account   | String      | The main player ID associated with the event. For more information, see [Available built-in entity types](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md). |
+| EntityLineage_namespace               | String      | The namespace associated with the event. For more information, see [Available built-in entity types](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md). |

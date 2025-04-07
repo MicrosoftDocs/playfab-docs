@@ -46,7 +46,7 @@ greater than 30 days can't configure Telemetry Keys at this time.
 
 ## Specifying Entities for Events
 
-PlayFab events indicate the subject of the event via their `Entity` property. When you send telemetry using Entity Token authentication, this field is automatically populated with information about the signed-in entity. However, when you use a Telemetry Key, there's no entity that is signed-in. Telemetry events sent using a Telemetry Key are therefore not allowed to specify [PlayFab Built-In Entities](../../live-service-management/production/entities/available-built-in-entity-types.md) as their subject.
+PlayFab events indicate the subject of the event via their `Entity` property. When you send telemetry using Entity Token authentication, this field is automatically populated with information about the signed-in entity. However, when you use a Telemetry Key, there's no entity that is signed-in. Telemetry events sent using a Telemetry Key are therefore not allowed to specify [PlayFab Built-In Entities](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md) as their subject.
 
 When using Telemetry Keys, you might still want to associate your telemetry events with some subject, for example, a custom player identifier used in your game. To do that, you can specify an *external* entity when forming the events in your client.
 

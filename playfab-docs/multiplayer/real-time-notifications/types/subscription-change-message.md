@@ -14,9 +14,9 @@ ms.date: 03/10/2022
 > Using Lobby, Matchmaking, and real-time notifications directly with REST and
 > SignalR APIs is significantly more complex than using client SDKs such as the
 > [Lobby C++
-> SDK](../../../multiplayer/lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
 > and [Matchmaking C++
-> SDK](../../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
+> SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
 > and should only be done if the SDKs don't meet your needs.
 
 ```json
@@ -35,7 +35,7 @@ ms.date: 03/10/2022
 **`entityType`** &nbsp; string
 
 The [type of the
-entity](../../production/entities/available-built-in-entity-types.md#title_player_account)
+entity](../../../live-service-management/game-configuration/entities/available-built-in-entity-types.md#title_player_account)
 whose subscription changed. Clients may only care about this field if they
 [added multiple entities](../server-methods/add-entity-to-session.md) to the
 same session.
@@ -45,7 +45,7 @@ Example: `title_player_account`
 **`entityId`** &nbsp; string
 
 The [ID of the
-entity](../../production/entities/available-built-in-entity-types.md#title_player_account)
+entity](../../../live-service-management/game-configuration/entities/available-built-in-entity-types.md#title_player_account)
 whose subscription changed. Clients may only care about this field if they
 [added multiple entities](../server-methods/add-entity-to-session.md) to the
 same session.

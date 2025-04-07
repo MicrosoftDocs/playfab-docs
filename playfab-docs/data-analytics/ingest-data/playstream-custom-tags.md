@@ -21,7 +21,7 @@ There are many things you can accomplish using Custom Tags. Here are some sugges
 ### Automation
 PlayStream metadata can act as criteria that trigger certain events. When a task needs to be accomplished, a PlayFab customer can set up a rule to say “if [Custom Tags] satisfies xyz requirement, then fire action A.” 
  
-You can integrate CloudScript with Custom Tags to achieve automation. CloudScript [Actions and Rules](../../live-service-management/runtime/segmentation/action-rules-overview.md) allow you to fire off events automatically based on certain criteria.  
+You can integrate CloudScript with Custom Tags to achieve automation. CloudScript [Actions and Rules](../acting-data/action-rules-overview.md) allow you to fire off events automatically based on certain criteria.  
 
 For example, if your game studio is investing in performance marketing for your game, and you are running a variety of different marketing campaigns to acquire new players, you can now track the marketing campaign that acquired a player and add that campaign ID to all PlayStream events. Then you can use that campaign ID to automate processes. For example, if your ad promised “1,000 free gold coins for signing up” then send the “new player” event and use marketing campaign to decide what incentive to give the player. E.g., ‘if marketing campaign = ‘FREE_GOLD_COINS’ then give player 1,000 gold coins.
 

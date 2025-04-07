@@ -31,7 +31,7 @@ If this is your first time deploying a build, we recommend deploying a build usi
     * In Game Manager, select your title > settings (gear icon)
     * Select **Title settings**, then select the **Secret Keys** tab to get the developer secret key
 
-For more information about secret keys, see [Secret key management](../../live-service-management/production/gamemanager/secret-key-management.md).
+For more information about secret keys, see [Secret key management](../../live-service-management/gamemanager/secret-key-management.md).
 
 ## Install the PlayFab MultiplayerAPI PowerShell module
 

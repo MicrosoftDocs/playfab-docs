@@ -35,7 +35,7 @@ An event - as a data structure - represents a change in state for your game. Eve
 3. **Timestamp** - (*When did it happen?*)
 4. **Associated Data** (also known as **Body**) - (*What are the relevant details?*)
 
-It's important to distinguish between *Automatic* and *Custom* events. Our [Generating PlayStream Events Tutorial](../../analytics/metrics/playstream-events.md) explains the difference.
+It's important to distinguish between *Automatic* and *Custom* events. Our [Generating PlayStream Events Tutorial](../../../../data-analytics/ingest-data/playstream-events.md) explains the difference.
 
 ## Event flow
 
@@ -48,4 +48,4 @@ A solid analytics system allows you to group, sort, filter, count, transform, an
 ## Guides
 
 - [Webhooks](../../data/webhooks/index.md): **Game Manager** page for automatically triggering non-PlayFab servers on specific game events.
-- [S3 Event Archiving](../../../data-analytics/legacy/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.
+- [S3 Event Archiving](../../../../data-analytics/legacy/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.

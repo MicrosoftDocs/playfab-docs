@@ -153,7 +153,7 @@ Keep in mind that these are entity-based leaderboards, which means the entries a
 
 In our specific example, we're using the entity type title_player_account, so our leaderboard is filled with players. 
 However, remember that there are other entity types you can use as well. 
-You can check them out here: [Available built-in entity types](../../../live-service-management/production/entities/available-built-in-entity-types.md).
+You can check them out here: [Available built-in entity types](../../../live-service-management/game-configuration/entities/available-built-in-entity-types.md).
 
 Now let's dive into how we can add data to our leaderboard.
 

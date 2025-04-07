@@ -119,5 +119,5 @@ In the Unity Editor, select the play button. On success, the results of the of c
 - [How to get read-only player data](how-to-get-read-only-player-data.md)
 - [How to modify read-only or internal player data from CloudScript](how-to-modify-read-only-internal-player-data.md)
 - [Title Data quickstart](../live-service-management/production/titledata/quickstart.md)  
-- [Using Publisher Data](../../live-service-management/production/titledata/using-publisher-data.md)  
+- [Using Publisher Data](../../live-service-management/game-configuration/titledata/using-publisher-data.md)  
 - [CloudScript quickstart](../automation/cloudscript/quickstart.md)

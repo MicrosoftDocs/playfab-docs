@@ -26,7 +26,7 @@ Since **Day 0** is an initiation date for a new Cohort, this column always has *
 
 Then **33.84%** of those players logged in again the *next day*, **24.64%** in *two days* later, and so on. **10.84%** of the Cohort returned on the *30th day*, which corresponds to **2/5/2018**.
 
-For additional details, see [Metrics and Terminology](../../../live-service-management/analytics/metrics/metrics-and-terminology.md).
+For additional details, see [Metrics and Terminology](../../../miscellaneous/hold-topics/analytics/metrics/metrics-and-terminology.md).
 
 ## Populating the report
 

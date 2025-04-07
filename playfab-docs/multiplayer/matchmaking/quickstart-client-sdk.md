@@ -48,7 +48,7 @@ Download the [C/C++ SDK](../lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.
 To use the PlayFab Lobby SDK, you need to authenticate your client using PlayFab entity keys and entity tokens. Acquire a PlayFab entity key and token pair by logging in with [LoginWithCustomId](/rest/api/playfab/client/authentication/login-with-custom-id) REST API. This API is also available as a C/C++ projection via the [PlayFab REST SDK](/gaming/playfab/sdks/playfab-sdk-intro).
 
 > [!NOTE]
-> LoginWithCustomId is a quick way to get started with PlayFab features but isn't intended to be the login mechanism you ship with. For login guidance, see [Login basics and best practices](../../../features/authentication/login/login-basics-best-practices.md).
+> LoginWithCustomId is a quick way to get started with PlayFab features but isn't intended to be the login mechanism you ship with. For login guidance, see [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md).
 
 ## Initialize the PlayFab Multiplayer SDK
 
