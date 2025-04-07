@@ -8,9 +8,9 @@ metadata:
   description: Guide on Live service management features # Required; article description that is displayed in search results. < 160 chars.
   ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
-  author: natashaorie
-  ms.author: norie
-  ms.date: 04/27/2020 
+  author: shikha-tarware
+  ms.author: shtarwar
+  ms.date: 04/07/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -23,19 +23,19 @@ landingContent:
       - linkListType: overview
         links:
           - text: Game Manager
-            url: production/gamemanager/index.md
+            url: gamemanager/index.md
       - linkListType: quickstart
         links:
           - text: Game Manager quickstart
-            url: production/gamemanager/quickstart.md
+            url: gamemanager/quickstart.md
       - linkListType: tutorial
         links:
           - text: API feature settings in Game Manager
-            url: production/gamemanager/api-feature-settings-in-the-playfab-game-manager.md
+            url: gamemanager/api-feature-settings-in-the-playfab-game-manager.md
           - text: Audit logs
-            url: production/gamemanager/audit-logs.md
+            url: gamemanager/audit-logs.md
           - text: Secret key management
-            url: production/gamemanager/secret-key-management.md 
+            url: gamemanager/secret-key-management.md 
 
   - title: Entity programming model
     linkLists:
@@ -57,7 +57,7 @@ landingContent:
           - text: Serverless compute with CloudScript using Azure functions
             url: production/automation/cloudscript-af/index.md
             
-  - title: Running a live service
+  - title: Segmentation and Experimentation
     linkLists:
       - linkListType: concept
         links:
@@ -77,7 +77,41 @@ landingContent:
             url: runtime/experiments/quickstart.md
           - text: Set up push notifications
             url: runtime/engagement/push-notifications/quickstart.md
+          - text: Bulk Actions for an entire player segment
+            url: ../data-analytics/acting-data/action-rules-bulk-actions-for-an-entire-player-segment.md
               
+
+  - title: Automate with CloudScript and Azure Functions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is CloudScript?
+            url: cloudscript/index.md
+          - text: What is CloudScript using Azure Functions?
+            url: cloudscript-af/index.md      
+          - text: What are actions and rules?
+            url: actions-rules/index.md
+          - text: What is a PlayStream event?
+            url: playstream-events/index.md
+      - linkListType: quickstart
+        links:
+          - text: CloudScript
+            url: cloudscript/quickstart.md 
+
+      - linkListType: tutorial
+        links:
+          - text: Writing custom CloudScript
+            url: cloudscript/writing-custom-cloudscript.md 
+          - text: ES6 features in CloudScript
+            url: cloudscript/es6-features-in-cloudscript.md
+          - text: Handling errors in CloudScript
+            url: cloudscript/handling-errors-in-cloudscript.md
+          - text: Using CloudScript context models
+            url: cloudscript-af/cloudscript-af-context.md
+          - text: Using CloudScript actions with PlayStream
+            url: actions-rules/using-cloudscript-actions-with-playstream.md
+
+
   - title: Billing and metering
     linkLists:
       - linkListType: concept

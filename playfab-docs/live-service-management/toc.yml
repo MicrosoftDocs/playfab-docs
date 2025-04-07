@@ -3,9 +3,12 @@ items:
     href: ../index.yml
   - name: PlayFab Live service management
     href: index.yml
-  - name: Production Services
+  - name: Game manager
     expanded: true
-    href: production/toc.yml
-  - name: Runtime services
+    href: gamemanager/toc.yml
+  - name: Game configuration
     expanded: true
-    href: runtime/toc.yml
+    href: game-configuration/toc.yml
+  - name: Service gateway
+    expanded: true
+    href: service-gateway/toc.yml

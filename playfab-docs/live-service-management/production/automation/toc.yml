@@ -1,9 +1,0 @@
-items:
-- name: PlayFab Automation
-  href: index.yml
-- name: What is Automation
-  href: intro.md  
-- name: CloudScript
-  href: cloudscript/toc.yml
-- name: CloudScript using Azure Functions
-  href: cloudscript-af/toc.yml
