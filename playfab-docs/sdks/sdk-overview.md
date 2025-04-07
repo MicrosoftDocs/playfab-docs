@@ -1,23 +1,21 @@
 ---
-title: SDKs overview
+title: Standalone SDKs overview
 author: joannaleecy
 description: SDKs overview
 ms.author: joanlee
-ms.date: 01/12/2021
+ms.date: 03/17/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playfab sdk, sdk
 ms.localizationpriority: medium
 ---
 
-# SDKs overview
+# Standalone SDKs overview
 
-This topic describes the four different SDKs we have.
-
-These SDKs facilitate the use of PlayFab features and services in your title, on the platform of your choice. Each type of SDK is available in different flavors to support your title development on popular engines and platforms. They are typically wrappers around REST APIs.
+This topic describes the four standalone SDKs that facilitate the use of PlayFab features and services within your title. Each SDK is available in a variety of different versions to support title development targeting multiple platforms and engines.
 
 > [!TIP]
-> We strongly recommend that you use the latest versions of the SDKs. All SDK versions released in the past 6 months are fully supported unless specified otherwise. For Unreal Engine and Unity plugins, we generally support the latest 2 versions. With each release of the SDKs, we support compatibility with newest partner platform versions. Please reach out to developer support if you have any questions.
+> The PlayFab SDK is being redesigned to provide improved end-to-end interoperability and a uniform integration pattern across components to simplify client integration work. For new titles, we recommend starting with the unified [PlayFab SDK](playfab-unified-sdk.md), which is presently in public preview and scheduled for general availabilty in the second half of 2025. Once this SDK reaches general availability, we will continue supporting titles that have adopted our standalone SDKs, but all new investments will build on the unified SDK. Note that the PlayFab Multiplayer Game Server SDK is not yet part of this unification effort.
 
 ## PlayFab Services SDK
 
