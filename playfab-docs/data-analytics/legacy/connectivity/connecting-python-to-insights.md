@@ -2,7 +2,7 @@
 title: Connecting Python to Insights
 author: natashaorie
 description: Guide to connecting Python to Insights.
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 02/27/2020    
 ms.topic: article
 ms.service: azure-playfab

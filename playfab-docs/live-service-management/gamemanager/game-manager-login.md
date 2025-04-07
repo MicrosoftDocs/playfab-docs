@@ -1,6 +1,6 @@
 ---
 title: Signing into Game Manager
-author: antnguyen
+author: antnguyen89
 description: Describes which sign in flow to use when signing into Game Manager
 ms.author: antnguyen
 ms.date: 02/24/2025
@@ -30,7 +30,7 @@ For users who recently migrated from their legacy PlayFab authenticated account 
 ## Microsoft Account
 For Microsoft account users, select the "Sign in with Microsoft" button and complete the sign in process. 
 
-![Game Manager sign in - PlayFab authentication](media/tutorials/game-manager-login-microsoft-authentication.png)
+![Game Manager sign in - Microsoft authentication](media/tutorials/game-manager-login-microsoft-authentication.png)
 
 Once logged in, you're redirected to the My Studios and Titles page. 
 

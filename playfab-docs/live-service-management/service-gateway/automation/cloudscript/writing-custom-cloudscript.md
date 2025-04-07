@@ -1,6 +1,6 @@
 ---
 title: Writing custom CloudScript
-ms.author: antnguyen
+author: antnguyen89
 description: Describes how to write CloudScript code.
 ms.author: antnguyen
 ms.date: 01/30/2023
@@ -24,7 +24,7 @@ This tutorial covers writing your CloudScript code. See the [CloudScript quickst
 
 Prerequisites for this tutorial:
 
-- [**Unity** environment set up with the PlayFab **Unity SDK**](../../../sdks/unity3d/quickstart.md)
+- [**Unity** environment set up with the PlayFab **Unity SDK**](../../../../sdks/unity3d/quickstart.md)
   - The title ID is set in the `PlayFabSharedSettings` object.
   - The project can successfully log in a user.
 
@@ -128,13 +128,13 @@ private static void OnErrorShared(PlayFabError error)
 
 ## Intermediate Overview: Globals and advanced arguments
 
-CloudScript is a set of JavaScript functions compiled with V8 and hosted on PlayFab's servers. It has access to any server API listed in the [PlayFab API reference documentation](../../../api-references/index.md), along with a *logger*, the PlayFab ID of the player making the CloudScript request, and any information included with the request, all in the form of preset objects.
+CloudScript is a set of JavaScript functions compiled with V8 and hosted on PlayFab's servers. It has access to any server API listed in the [PlayFab API reference documentation](../../../../api-references/index.md), along with a *logger*, the PlayFab ID of the player making the CloudScript request, and any information included with the request, all in the form of preset objects.
 
 CloudScript functions themselves are properties of a global handlers object. The following table shows a complete list of these predefined variables.
 
 | Name                | Use                                                                                                                                                                                                                                                                                                                                                              |
 | :------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **server**          | Has access to all server-side API calls listed in the [PlayFab API reference documentation](../../../api-references/index.md). They can be called (synchronously) like so: `var result = server.AuthenticateUserTicket(request);`                                                                                                                                |
+| **server**          | Has access to all server-side API calls listed in the [PlayFab API reference documentation](../../../../api-references/index.md). They can be called (synchronously) like so: `var result = server.AuthenticateUserTicket(request);`                                                                                                                                |
 | **http**            | Performs synchronous HTTP requests, like so: `http.request(url, method, content, contentType, headers, logRequestAndResponse)`. The `headers` object contains properties corresponding to various headers and their values. `logRequestAndResponse` is a boolean that determines whether the title should log any errors in the request as part of the response. |
 | **log**             | Creates log statements and adds them to the response. Logs have three levels: `log.info()`, `log.debug()`, and `log.error()`. All three levels take a message string, along with an optional object containing extra data to include with the log. For example, `log.info('hello!', { time: new Date() });`                                                      |
 | **currentPlayerId** | PlayFab ID of the player who triggered the CloudScript call.                                                                                                                                                                                                                                                                                            |
@@ -146,7 +146,7 @@ In addition, all handler functions are passed two parameters, detailed below.
 | Name        | Use                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **args**    | First parameter to a handler function. An object representation of the `FunctionParameter` field of an `ExecuteCloudscript` request.                                                                                                                                                                                                                                                                                                             |
-| **context** | Second parameter to a handler function. Additional information about the request when it is triggered by a PlayStream event action, including the [data from the event](../../../api-references/events/index.md) that triggered the action (context.playStreamEvent) and the [profile data](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel) for the player associated with it. (context.playerProfile) |
+| **context** | Second parameter to a handler function. Additional information about the request when it is triggered by a PlayStream event action, including the [data from the event](../../../../api-references/events/index.md) that triggered the action (context.playStreamEvent) and the [profile data](xref:titleid.playfabapi.com.client.accountmanagement.getplayerprofile#playerprofilemodel) for the player associated with it. (context.playerProfile) |
 
 CloudScript functions can be called through the `ExecuteCloudScript` API, or by a preset PlayStream event action.
 
@@ -212,7 +212,7 @@ Common server tasks:
 - Randomly generate game data.
 - Securely calculate battle results and more...
 
-See the Server APIs listed in our [PlayFab API Reference documentation](../../../api-references/index.md) for required parameters and object structures.
+See the Server APIs listed in our [PlayFab API Reference documentation](../../../../api-references/index.md) for required parameters and object structures.
 
 The following example is from within a potential CloudScript handler.
 
@@ -335,7 +335,7 @@ Setting `GeneratePlayStreamEvent` makes the CloudScript function call generate a
 
    ![Game Manager - PlayStream - debugger](media/tutorials/game-manager-playstream-debugger.png)  
 
-Selecting this will display the raw JSON of the event, which is detailed for each event [here](../../../api-references/events/index.md). An example of this JSON can be seen in the following example.
+Selecting this will display the raw JSON of the event, which is detailed for each event [here](../../../../api-references/events/index.md). An example of this JSON can be seen in the following example.
 
 - If we add the `LogScript` MonoBehavior to the scene, running the game will yield this in PlayStream.
 

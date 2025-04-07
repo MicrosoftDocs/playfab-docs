@@ -65,7 +65,7 @@ landingContent:
           - text: Player Churn Prediction
             url: learn-data/churn-prediction/overview.md     
           - text: Experiments
-            url: ../live-service-management/runtime/experiments/index.md
+            url: ../../live-service-management/game-configuration/experiments/index.md
           - text: Data Explorer
             url: learn-data/data-explorer/index.md  
       - linkListType: quickstart
@@ -83,9 +83,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Segmentation
-            url: ../live-service-management/runtime/segmentation/segmentation-overview.md
+            url: ../live-service-management/game-configuration/segmentation/segmentation-overview.md
           - text: Player custom properties
-            url: ../live-service-management/runtime/segmentation/player-custom-properties.md
+            url: ../live-service-management/game-configuration/segmentation/player-custom-properties.md
           - text: Webhooks
             url: acting-data/webhooks-overview.md
           - text: Event schemas
@@ -97,9 +97,9 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Get started with segmentation
-            url: acting-data/segmentation-quickstart.md
+            url: ../live-service-management/game-configuration/segmentation/segmentation-quickstart.md
           - text: Get started with Player custom properties
-            url: acting-data/player-custom-properties-qs.md
+            url: ../live-service-management/game-configuration/segmentation/player-custom-properties-qs.md
           - text: Get started with actions and rules
             url: acting-data/action-rules-quickstart.md
           - text: Get started with scheduled tasks

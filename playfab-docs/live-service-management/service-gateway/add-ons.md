@@ -2,7 +2,7 @@
 title: PlayFab Add-ons
 author: cybtachyon
 description: Add-ons are tools and services for extending and operating your game.
-ms.author: derekreese
+ms.author: antnguyen
 ms.date: 09/07/2022
 ms.topic: article
 ms.service: azure-playfab

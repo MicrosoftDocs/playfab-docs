@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Services SDK for Android. Follow these steps to include the libraries in your project and try out the sample code for basic PlayFab functionality.
 
-This quickstart helps you make your first PlayFab API call using the Android SDK. Before continuing, make sure you have completed the steps in [Quickstart: Game Manager](../../gamemanager/quickstart.md), which ensure you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call using the Android SDK. Before continuing, make sure you have completed the steps in [Quickstart: Game Manager](../../live-service-management/gamemanager/quickstart.md), which ensure you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Requirements
 

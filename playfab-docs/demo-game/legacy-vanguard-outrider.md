@@ -2,7 +2,7 @@
 title: Vanguard Outrider (legacy)
 author: natashaorie
 description: Overview for Vanguard Outrider, a legacy PlayFab demo game.
-ms.author: norie
+ms.author: joroher
 ms.date: 09/26/2024
 ms.topic: article
 ms.service: azure-playfab

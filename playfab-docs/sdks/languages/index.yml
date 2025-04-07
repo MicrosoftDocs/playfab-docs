@@ -6,8 +6,7 @@ summary: PlayFab support for popular game development languages. # < 160 chars
 metadata:
   title: PlayFab supported languages # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: description # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: azure-playfab # Optional; Remove if no subservice is used.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: joannaleecy #Required; your GitHub user alias, with correct capitalization.
   ms.author: joanlee #Required; microsoft alias of author; optional team alias.

@@ -53,7 +53,7 @@ If player results do not need to be shared broadly with other players, player-as
 Applicable services:
 - [Learn more about Leaderboards](../community/social/tournaments-leaderboards/index.md)
 - [Learn more about Entity data](../player-progression/player-data/index.md)
-- [Learn more about CloudScript](../live-service-management/production/automation/cloudscript/index.md)
+- [Learn more about CloudScript](../live-service-management/service-gateway/automation/cloudscript/index.md)
 
 ### In-game parties and unsolicited join-in-progress
 Players often want to commiserate outside of proper gameplay and your title may support this through an in-game guild or party experience. PlayFab Entity groups and PlayFab Party are designed with these scenarios in mind.

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This tutorial will get you up and running quickly by showing you in a few steps how to enable the use of PlayFab Party with the PlayFab Party demo app.
 
-For more on the PlayFab Game Manager, see the [Game Manager quickstart](../../live-service-management/production/gamemanager/quickstart.md).
+For more on the PlayFab Game Manager, see the [Game Manager quickstart](../../live-service-management/gamemanager/quickstart.md).
 
 >[!NOTE]
 >You must [launch your title on Game Manager](../../pricing/title-launches.md) before shipping your title to avoid Dev Mode limits. Failing to do so can cause your title to not function as more players engage in your game.

@@ -24,7 +24,7 @@ The following APIs are used to help add, remove, update and delete items in a pl
 
 #### [Game Manager](#tab/inventory-game-manager)
 
-1. In [Game Manager](../../../live-service-management/production/gamemanager/index.md), navigate to `Players`
+1. In [Game Manager](../../../live-service-management/gamemanager/index.md), navigate to `Players`
 1. Select the player you wish to view or create a `New Player`, then go to `Inventory (V2)`
 
 #### [API](#tab/inventory-api)

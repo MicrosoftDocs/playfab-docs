@@ -19,7 +19,7 @@ Coupons are string tokens that you can generate for your customers use to redeem
 ## Requirements
 
 - Familiarity with [Catalogs](../items/catalogs.md), bundles, and containers.
-- Familiarity with [Game Manager](../../../live-service-management/production/gamemanager/index.md).
+- Familiarity with [Game Manager](../../../live-service-management/gamemanager/index.md).
 - Familiarity with [Player Inventory](../../../player-progression/player-data/player-inventory.md).
 
 ## Generate and redeem coupon instructions
@@ -100,7 +100,7 @@ Multiple items work the same way:
 
 - Physical rewards at conventions:
   - You can print your list of coupon codes, and hand them out as swag at conventions.
-- Out-of-game communication such as forums, [Push Notifications](../../../live-service-management/runtime/engagement/push-notifications/quickstart.md) and email.
+- Out-of-game communication such as forums, [Push Notifications](../../../live-service-management/game-configuration/title-communications/push-notifications/quickstart.md) and email.
   - Send your players coupon codes *directly*, as part of re-acquisition campaigns or other community outreach.
 - Tournaments:
   - Send coupons to the top ranked players when using [Resettable Leaderboards](../../../community/associations/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).

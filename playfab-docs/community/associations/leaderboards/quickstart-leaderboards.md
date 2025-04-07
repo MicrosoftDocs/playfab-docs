@@ -103,7 +103,7 @@ public static async Task<PlayFabAuthenticationContext> LoginAsTitleEntity()
 ## Login as Player (create Player)
 
 This method creates a player based on an identifier which returns an entity of type `title_player_account`. More information here: 
-[Entities quickstart](../../../live-service-management/production/entities/quickstart.md)
+[Entities quickstart](../../../live-service-management/game-configuration/entities/quickstart.md)
 
 ``` C#
 private static async Task<PlayFabAuthenticationContext> LoginAsPlayer(string customId = "GettingStartedGuide")

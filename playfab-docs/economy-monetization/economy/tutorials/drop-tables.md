@@ -18,7 +18,7 @@ This tutorial shows you the steps for creating drop tables using the PlayFab Gam
 
 Drop tables allow you to randomly generate [inventory items](../../../player-progression/player-data/player-inventory.md), and *sequential* drop tables can provide some randomness to player rewards.
 
-- We assume that you're already  familiar with [Catalogs](../items/catalogs.md), [Inventory](../../../player-progression/player-data/player-inventory.md), and the PlayFab [Game Manager](../../../live-service-management/production/gamemanager/quickstart.md).
+- We assume that you're already  familiar with [Catalogs](../items/catalogs.md), [Inventory](../../../player-progression/player-data/player-inventory.md), and the PlayFab [Game Manager](../../../live-service-management/gamemanager/quickstart.md).
 - You must have a *primary catalog* - which contains standard, non-bundle/non-container items.
 - You must have defined at least *one* virtual currency, which you'll use as a "free" in-game currency.
 

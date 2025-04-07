@@ -16,7 +16,7 @@ A virtual economy isn't just buying and selling in-game items. A strong virtual 
 
 You need to balance between what can be earned in game and what can be purchased, while supporting both highly engaged players and those players with light engagements. This is all on top of maintaining a highly scalable backend content management system and marketplace redemption abstraction.
 
-PlayFab Economy is a suite of [REST APIs](/rest/api/playfab/economy) with [multiple SDKs](../sdks/playfab-sdk-intro.md) and a portal called [Game Manager](../live-service-management/production/gamemanager/index.md) with tools to help you build, iterate on, and scale your game while engaging your players.
+PlayFab Economy is a suite of [REST APIs](/rest/api/playfab/economy) with [multiple SDKs](../sdks/playfab-sdk-intro.md) and a portal called [Game Manager](../live-service-management/gamemanager/index.md) with tools to help you build, iterate on, and scale your game while engaging your players.
 
 > [!NOTE]
 > Economy v2 GA has released. You can learn more about the differences between v1 and v2 in the [v2 Overview](economy-v2/overview.md).

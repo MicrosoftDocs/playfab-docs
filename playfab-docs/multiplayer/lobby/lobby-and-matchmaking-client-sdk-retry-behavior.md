@@ -2,7 +2,7 @@
 title: Lobby and Matchmaking C++ SDK Network Retry Behavior
 description: Guidance on default retry behavior for the C++ SDK
 author: SahilAshar
-ms.author: saashar
+ms.author: rachelwu
 ms.date: 01/28/2025
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Analytics Overview
 author: natashaorie
 description: An overview of PlayFab Analytics offerings and features.
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 05/02/2020
 ms.topic: overview
 ms.service: azure-playfab

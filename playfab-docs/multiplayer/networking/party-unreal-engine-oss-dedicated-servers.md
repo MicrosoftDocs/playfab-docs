@@ -2,7 +2,7 @@
 title: PlayFab Online Subsystem (OSS) Dedicated Server Setup
 description: Guidance on how to set up Dedicated Servers for your project.
 author: SahilAshar
-ms.author: saashar
+ms.author: rachelwu
 ms.date: 02/15/2024
 ms.topic: article
 ms.service: azure-playfab

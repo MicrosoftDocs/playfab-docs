@@ -1,3 +1,4 @@
+items:
 - name: Overview
   href: index.md
 - name: Quickstart
@@ -14,4 +15,4 @@
   - name: Using the Profile for Advanced Leaderboards
     href: using-the-profile-for-advanced-leaderboards.md
   - name: Friends Leaderboards
-    href: ../friends/friends-leaderboards.md
+    href: friends-leaderboards.md

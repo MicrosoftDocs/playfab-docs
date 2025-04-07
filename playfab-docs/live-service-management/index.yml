@@ -42,41 +42,41 @@ landingContent:
       - linkListType: overview
         links:
           - text: Entity programming model overview
-            url: production/entities/index.md
+            url: game-configuration/entities/index.md
       - linkListType: quickstart
         links:
           - text: Entities quickstart
-            url: production/entities/quickstart.md
+            url: game-configuration/entities/quickstart.md
 
   - title: Production services
     linkLists:
       - linkListType: overview
         links:
           - text: Title data
-            url: production/titledata/index.md
+            url: game-configuration/titledata/index.md
           - text: Serverless compute with CloudScript using Azure functions
-            url: production/automation/cloudscript-af/index.md
+            url: service-gateway/automation/cloudscript-af/index.md
             
   - title: Segmentation and Experimentation
     linkLists:
       - linkListType: concept
         links:
           - text: Work with player segments
-            url: runtime/segmentation/segmentation-overview.md
+            url: game-configuration/segmentation/segmentation-overview.md
           - text: Run live experiments
-            url: runtime/experiments/index.md
+            url: game-configuration/experiments/index.md
           - text: Boost player engagement through title communications
-            url: runtime/engagement/overview.md
+            url: game-configuration/title-communications/overview.md
           - text: Throttle API calls
-            url: runtime/throttling/what-is-throttling.md
+            url: service-gateway/throttling/what-is-throttling.md
       - linkListType: quickstart
         links:
           - text: Segmentation quickstart
-            url: runtime/segmentation/segmentation-quickstart.md
+            url: game-configuration/segmentation/segmentation-quickstart.md
           - text: Experimentation quickstart
-            url: runtime/experiments/quickstart.md
+            url: game-configuration/experiments/quickstart.md
           - text: Set up push notifications
-            url: runtime/engagement/push-notifications/quickstart.md
+            url: game-configuration/title-communications/push-notifications/quickstart.md
           - text: Bulk Actions for an entire player segment
             url: ../data-analytics/acting-data/action-rules-bulk-actions-for-an-entire-player-segment.md
               
@@ -86,30 +86,30 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is CloudScript?
-            url: cloudscript/index.md
+            url: service-gateway/automation/cloudscript/index.md
           - text: What is CloudScript using Azure Functions?
-            url: cloudscript-af/index.md      
+            url: service-gateway/automation/cloudscript-af/index.md      
           - text: What are actions and rules?
-            url: actions-rules/index.md
+            url: ../data-analytics/acting-data/action-rules-overview.md
           - text: What is a PlayStream event?
-            url: playstream-events/index.md
+            url: ../data-analytics/ingest-data/playstream-overview.md
       - linkListType: quickstart
         links:
           - text: CloudScript
-            url: cloudscript/quickstart.md 
+            url: service-gateway/automation/cloudscript/quickstart.md
 
       - linkListType: tutorial
         links:
           - text: Writing custom CloudScript
-            url: cloudscript/writing-custom-cloudscript.md 
+            url: service-gateway/automation/cloudscript/writing-custom-cloudscript.md 
           - text: ES6 features in CloudScript
-            url: cloudscript/es6-features-in-cloudscript.md
+            url: service-gateway/automation/cloudscript/es6-features-in-cloudscript.md
           - text: Handling errors in CloudScript
-            url: cloudscript/handling-errors-in-cloudscript.md
+            url: service-gateway/automation/cloudscript/handling-errors-in-cloudscript.md
           - text: Using CloudScript context models
-            url: cloudscript-af/cloudscript-af-context.md
+            url: service-gateway/automation/cloudscript-af/cloudscript-af-context.md
           - text: Using CloudScript actions with PlayStream
-            url: actions-rules/using-cloudscript-actions-with-playstream.md
+            url: ../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md
 
 
   - title: Billing and metering
@@ -117,10 +117,10 @@ landingContent:
       - linkListType: concept
         links:
           - text: Billing meters explained
-            url: production/pricing/Meters/meters.md
+            url: ../pricing/Meters/meters.md
       - linkListType: learn
         links:
           - text: Checking monthly estimated charges
-            url: production/pricing/billingDetails.md
+            url: ../pricing/billingDetails.md
           - text: Best practices for lowering consumption
-            url: production/pricing/consumption-best-practices.md
+            url: ../pricing/consumption-best-practices.md

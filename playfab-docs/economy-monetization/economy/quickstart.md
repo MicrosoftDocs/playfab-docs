@@ -72,7 +72,7 @@ PlayFab's [Player Item Management (Server)](xref:titleid.playfabapi.com.server.p
 * Locked (with a loot-able/purchasable key) and unlocked boxes
 * Random result tables
 * Non-purchasable items that are granted based on paid or free events within a game
-* And more scenarios, especially with [PlayFab CloudScript using Azure Functions](../../live-service-management/production/automation/cloudscript-af/index.md)
+* And more scenarios, especially with [PlayFab CloudScript using Azure Functions](../../live-service-management/service-gateway/automation/cloudscript-af/index.md)
 
 **Add an item to a player's inventory by purchasing it with virtual currency.**
 

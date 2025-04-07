@@ -2,7 +2,7 @@
 title: Connecting Azure Data Factory (ADF) to Insights
 author: natashaorie
 description: Guide to connecting Azure Data Factory (ADF) to Insights.
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 03/20/2020    
 ms.topic: article
 ms.service: azure-playfab

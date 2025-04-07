@@ -2,7 +2,7 @@
 title: Creating a Microsoft Entra ID app and connecting it to title database
 author: natashaorie
 description: Creating a Microsoft Entra ID app and connecting it to title database
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 03/20/2020    
 ms.topic: article
 ms.service: azure-playfab

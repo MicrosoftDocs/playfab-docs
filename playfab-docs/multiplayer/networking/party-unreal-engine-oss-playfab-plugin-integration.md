@@ -2,7 +2,7 @@
 title: PlayFab SDK Unreal Engine Marketplace Plugin Integration Guide
 description: Guidance on how to integrate the PlayFab SDK UE Marketplace Plugin into your existing PlayFab Online Subsystem integrated project.
 author: SahilAshar
-ms.author: saashar
+ms.author: rachelwu
 ms.date: 02/15/2024
 ms.topic: article
 ms.service: azure-playfab

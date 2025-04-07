@@ -24,7 +24,7 @@ Some events such as CollectionCreated and CollectionDeleted aren't presented in 
 
 ### [Game Manager](#tab/transaction-history-game-manager)
 
-1. In [Game Manager](../../../live-service-management/production/gamemanager/index.md), navigate to `Players`
+1. In [Game Manager](../../../live-service-management/gamemanager/index.md), navigate to `Players`
 1. Select the player you wish to view, then go to `Transaction History`
 
 ### [API](#tab/transaction-history-api)

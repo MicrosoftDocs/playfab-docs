@@ -2,7 +2,7 @@
 title: Source code and best practices - Winter Starfall
 author: natashaorie
 description: Tutorial for downloading Winter Starfall source code and best practices for login and purchase scenarios.
-ms.author: norie
+ms.author: joroher
 ms.date: 09/26/2024
 ms.topic: article
 ms.service: azure-playfab

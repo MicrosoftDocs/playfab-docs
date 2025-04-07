@@ -2,7 +2,7 @@
 title: Connecting Power BI to Insights
 author: natashaorie
 description: Guide to connecting Power BI with Insights. 
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 03/20/2020    
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Connecting Kusto C# SDK to Insights
 author: natashaorie
 description: Guide to connecting Kusto C# SDK to Insights.
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 05/05/2020    
 ms.topic: article
 ms.service: azure-playfab

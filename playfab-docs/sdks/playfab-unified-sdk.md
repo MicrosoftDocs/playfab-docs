@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The PlayFab SDK has been redesigned to provide improved end-to-end interoperability and a uniform integration pattern across components to simplify client integration work.
 
-The release of the standalone [PlayFab Services C/C++ SDK](https://learn.microsoft.com/en-us/gaming/playfab/sdks/c/) in 2023
+The release of the standalone [PlayFab Services C/C++ SDK](c/index.md) in 2023
 began PlayFab's move towards a modern SDK experience; providing a new authentication system with automatic token refresh,
 memory allocation management, and thread handling control. However, current standalone SDKs, such as PlayFab Party and PlayFab
 Multiplayer, don't integrate smoothly with the new SDK patterns.
@@ -32,12 +32,12 @@ will recommend that all new titles choose the unified SDK or the specific compon
 ## Supported platforms
 - Windows, Xbox (GDK), Linux, macOS, iOS, Android - [Releases](https://github.com/PlayFab/PlayFabSDK/releases)
 
-#### NDA-required repos - [More information](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/request-access-for-sdks-samples)
-- [PlayStation®4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabSDK.PS4)
-- [PlayStation®5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabSDK.PS5)
+#### NDA-required repos - [More information](request-access-for-sdks-samples.md)
+- [PlayStation&reg;4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabSDK.PS4)
+- [PlayStation&reg;5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabSDK.PS5)
 - [Nintendo Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabSDK.Switch)
 
-“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Supported engines
 - Unreal
@@ -46,9 +46,9 @@ will recommend that all new titles choose the unified SDK or the specific compon
 ## Packaging
 The PlayFab SDK ships as a single archive (.zip) that contains the necessary headers and binaries for the
 [libHttpClient](https://github.com/microsoft/libHttpClient),
-[PlayFab Core and Services](https://learn.microsoft.com/en-us/gaming/playfab/sdks/playfab-sdk-intro),
-[PlayFab Party](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/party-sdks), and
-[PlayFab Multiplayer](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks)
+[PlayFab Core and Services](playfab-sdk-intro.md),
+[PlayFab Party](../multiplayer/networking/party-sdks.md), and
+[PlayFab Multiplayer](../multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
 C/C++ component libraries.
 
 ```
@@ -83,20 +83,20 @@ The PlayFab SDK is broken down into several component libraries with clearly def
     Services, and Multiplayer.
     - Titles are _required_ to integrate the libHttpClient component library as a dependency for other component libraries.
     - Titles can _optionally_ use libHttpClient's platform-abstracted
-    [XTaskQueue](https://learn.microsoft.com/en-us/gaming/gdk/_content/gc/reference/system/xtaskqueue/xtaskqueue_members)
-    implementation, for [dedicated control](https://learn.microsoft.com/en-us/gaming/gdk/_content/gc/system/overviews/async-libraries/async-library-xtaskqueue)
+    [XTaskQueue](https://learn.microsoft.com/gaming/gdk/_content/gc/reference/system/xtaskqueue/xtaskqueue_members)
+    implementation, for [dedicated control](https://learn.microsoft.com/gaming/gdk/_content/gc/system/overviews/async-libraries/async-library-xtaskqueue)
     over which threads work is done on, and how frequently that work is completed, regardless of target platform.
-- ### [PlayFab Core](https://learn.microsoft.com/en-us/gaming/playfab/sdks/playfab-sdk-intro)
+- ### [PlayFab Core]playfab-sdk-intro.md)
     - PlayFab Core is the base component library for all other PlayFab components. Titles are required to integrate PlayFab Core
     in order to use any PlayFab component libraries.
     - PlayFab Core offers public APIs for handling PlayFab login, authentication, entity management,
     service configuration, telemetry, logging, and error handling.
-- ### [PlayFab Services](https://learn.microsoft.com/en-us/gaming/playfab/sdks/playfab-sdk-intro)
+- ### [PlayFab Services](playfab-sdk-intro.md)
     - PlayFab Services provides all of the PlayFab features not explicitly called out in one of the other components,
     including LiveOps, economy, and progression.
-- ### [PlayFab Party](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/party-sdks)
+- ### [PlayFab Party](../multiplayer/networking/party-sdks.md)
     - PlayFab Party is a low-latency, cross-platform chat and data communications solution.
-- ### [PlayFab Multiplayer](https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks)
+- ### [PlayFab Multiplayer](../multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
     - PlayFab Multiplayer supports matchmaking for helping players find each other in a game and lobby services for creating temporary groups of players.
 
 ### Component library dependency graph
@@ -109,7 +109,7 @@ graph TD;
 ```
 
 ## Changes from standalone SDKs
-The major changes included in the unified PlayFab SDK should be familiar to those already using the standalone [PlayFab Services C/C++ SDK](https://learn.microsoft.com/en-us/gaming/playfab/sdks/c/). The following material serves as a refernce to the changes first introduced there and as documentation for how these changes affect the other SDK components within the unified SDK, including Party and Multiplayer.
+The major changes included in the unified PlayFab SDK should be familiar to those already using the standalone [PlayFab Services C/C++ SDK](c/index.md). The following material serves as a refernce to the changes first introduced there and as documentation for how these changes affect the other SDK components within the unified SDK, including Party and Multiplayer.
 
 - ### [Authentication]()
 - ### [Async model]()

@@ -1,6 +1,6 @@
 ---
 title: Using a Rule to Verify a Contact Email Address
-ms.author: antnguyen
+author: antnguyen89
 description: Tutorial that describes how to create a rule that sends an verification email when a player changes their contact email address.
 ms.author: antnguyen
 ms.date: 08/18/2023
@@ -27,7 +27,7 @@ This tutorial walks you through the steps for creating a rule that sends a verif
 - Basic knowledge of how to create a player will be necessary, since there will need to be players with a username and password before calling account recovery logic.
 - Read the [Game Manager quickstart](../../../gamemanager/quickstart.md) if you're unfamiliar with the Game Manager, as it's the place where email templates are created.
 - Knowledge of how to work with player profiles will be required, to confirm that emails are necessary for checking that a contact email has been added to a player's profile. Read up on how to get a player's profile in the [Getting Player Profiles](../../../../player-progression/player-data/getting-player-profiles.md) tutorial, and make sure that under the **Client Profile Options** on your **Title** you allow **Contact email addresses**.
-- Creating a rule is necessary in this tutorial it's a good idea to read up on how [Rules](../../automation/actions-rules/quickstart.md) work.
+- Creating a rule is necessary in this tutorial it's a good idea to read up on how [Rules](../../../../data-analytics/acting-data/action-rules-quickstart.md) work.
 
 ## Step 1 - Create an email template
 

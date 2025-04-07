@@ -2,7 +2,7 @@
 title: Local debugging for Cloudscript using Azure Functions
 author: natashaorie
 description: Setting up local debugging for Cloudscript using Azure Functions
-ms.author: norie
+ms.author: antnguyen
 ms.date: 08/18/2023
 ms.topic: tutorial
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Overview - Winter Starfall
 author: natashaorie
 description: Landing page overview for Winter Starfall, a PlayFab demo game.
-ms.author: norie
+ms.author: joroher
 ms.date: 09/26/2024
 ms.topic: article
 ms.service: azure-playfab
@@ -120,7 +120,7 @@ Title data is similar to Player data in that it stores key-value pairs, only the
 
 ![winterstarfall title data overview in game manager](media/winterstarfall-title-data.jpg)
 
-[Learn more about Title data](../live-service-management/production/titledata/index.md)
+[Learn more about Title data](../live-service-management/game-configuration/titledata/index.md)
 
 ### CloudScript with Azure Functions
 
@@ -134,7 +134,7 @@ The game uses this feature to solve for a number of scenarios:
 - [ResetPlayer](https://github.com/PlayFab/winter-starfall/blob/main/azure-functions/ResetPlayer.cs) - Wipes user data, items, and statistics for a full reset.
 - [SellItem](https://github.com/PlayFab/winter-starfall/blob/main/azure-functions/SellItem.cs) - Enables selling items at a discount, which is not an inherent feature of the economy system. The purchase/sale flow is covered in more detail in the [source code and scenarios tutorial](source-code-and-best-practices.md).
 
-[Learn more about CloudScript with Azure Functions](../live-service-management/production/automation/cloudscript-af/index.md)
+[Learn more about CloudScript with Azure Functions](../live-service-management/service-gateway/automation/cloudscript-af/index.md)
 
 > [!NOTE]
 > Winter Starfall's CloudScript functions are written in C#, but you can use any language supported by [Azure Functions](https://learn.microsoft.com/azure/azure-functions/supported-languages?tabs=isolated-process%2Cv4&pivots=programming-language-csharp).
@@ -148,14 +148,14 @@ Title news is used to communicate with all players scoped to a title. Winter Sta
 
 In addition to title news, PlayFab offers other communication features like templating for email and push notifications. 
 
-[Learn more about title communication methods](../live-service-management/runtime/engagement/overview.md)
+[Learn more about title communication methods](../live-service-management/game-configuration/title-communications/overview.md)
 
 ## Demo limitations
 
 Because Winter Starfall is powered by real player data, some features are limited in scope in the Game Manager view. This section will give an overview of what the limited features would look like in Game Manager. To explore these pages in more detail, you can [download the source code](https://github.com/PlayFab/winter-starfall) and run a local instance of the game, or create your own new title from scratch.
 
 > [!NOTE]
-> For a full guide to the features in the developer portal, see the [Game Manager documentation](../live-service-management/production/gamemanager/index.md)
+> For a full guide to the features in the developer portal, see the [Game Manager documentation](../live-service-management/gamemanager/index.md)
 
 ### Players
 
@@ -182,8 +182,8 @@ Under title settings, the **Secret keys** tab is hidden. See the [documention fo
 ## Next steps
 
 After trying the demo, we recommend starting with these topics to learn more about how PlayFab works:
-- Learn more about [Game Manager](../live-service-management/production/gamemanager/index.md)
-- Learn about the [Entity model](../live-service-management/production/entities/index.md)
+- Learn more about [Game Manager](../live-service-management/gamemanager/index.md)
+- Learn about the [Entity model](../live-service-management/game-configuration/entities/index.md)
 - Learn about [PlayFab Services SDK](../sdks/sdk-overview.md)
 
 ## See also

@@ -20,4 +20,4 @@ If **Julie** adds **Bob** as a friend, there is *no* approval process for **Bob*
 
 **Bob** must separately add **Julie** for the friendship to be *mutual*.
 
-If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or [CloudScript](../../../live-service-management/production/automation/cloudscript/index.md) logic, if necessary.
+If you wish to have reciprocity rules, it is your title's responsibility to enforce these conditions with a custom game server or [CloudScript](../../../live-service-management/service-gateway/automation/cloudscript/index.md) logic, if necessary.

@@ -104,7 +104,7 @@ private static async Task PlayFabEconomyv2QuickStart()
 
 #### [Game Manager](#tab/catalog-settings-game-manager)
 
-1. In [Game Manager](../../live-service-management/production/gamemanager/index.md), navigate to ⚙️ **Title Settings** > **Economy**.
+1. In [Game Manager](../../live-service-management/gamemanager/index.md), navigate to ⚙️ **Title Settings** > **Economy**.
 1. Under the **Catalog (V2)** tab, go to **Catalog Settings**
 1. Create a default _Content Type_ (creating a "Game Item" type is a good place to start).
 

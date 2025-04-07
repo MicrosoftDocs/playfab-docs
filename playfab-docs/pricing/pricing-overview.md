@@ -2,7 +2,7 @@
 title: PlayFab Pricing Overview
 author: cybtachyon
 description: Overview of PlayFab pricing and easy access to pricing documentation.
-ms.author: derekreese
+ms.author: shtarwar
 ms.date: 09/17/2020
 ms.topic: article
 ms.service: azure-playfab

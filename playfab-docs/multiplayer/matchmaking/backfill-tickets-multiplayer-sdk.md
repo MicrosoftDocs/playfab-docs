@@ -2,7 +2,7 @@
 title: Using Server Backfill Tickets - Multiplayer SDK
 author: SahilAshar
 description: Describes how to use backfill tickets with the Multiplayer SDK
-ms.author: saashar
+ms.author: rachelwu
 ms.date: 02/19/2025
 ms.topic: article
 ms.service: azure-playfab

@@ -38,4 +38,4 @@ The base definitions of the items are defined in the catalog while the pricing c
 
 Stores are built on top of your game's Virtual Catalogs and Currencies. Think of your primary Catalog as a definition of all the items in your game, and Stores as an override.
 
-Although you can use the Title Data Management APIs [SetStoreItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setstoreitems) and [UpdateStoreItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.updatestoreitems) to control them programmatically, Stores are normally set up in [Game Manager](../../../live-service-management/production/gamemanager/index.md).
+Although you can use the Title Data Management APIs [SetStoreItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.setstoreitems) and [UpdateStoreItems](xref:titleid.playfabapi.com.admin.title-widedatamanagement.updatestoreitems) to control them programmatically, Stores are normally set up in [Game Manager](../../../live-service-management/gamemanager/index.md).
