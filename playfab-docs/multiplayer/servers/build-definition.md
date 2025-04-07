@@ -67,6 +67,5 @@ This is the fastest way to view what's required when deploying/creating a VM bui
 * [Create your first server](create-your-first-server.md)
 * [Walk-through of deploying builds using Game Manager](quickstart-for-multiplayer-servers-game-manager.md)
 * [Using PlayFab Multiplayer Servers to host multiplayer games](using-playfab-servers-to-host-games.md)
-* [Pricing](multiplayer-servers-detailed-price-sheet.md)
 * [Terminology](server-terms.md)
 * [Resources and samples](server-samples-resources.md)
