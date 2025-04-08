@@ -17,7 +17,7 @@ CloudScript offers a fast, secure and scalable alternative to dedicated servers.
 > [!NOTE]
 > [CloudScript using Azure Functions](../cloudscript-af/quickstart.md) supports more languages and has improved debugging workflows.
 
-From here, your code can be called *directly* by your game clients - or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's [Server](/api-references/index.md) API set.
+From here, your code can be called *directly* by your game clients - or indirectly via PlayStream actions. Additionally, CloudScript methods have full access to PlayFab's [Server](/playfab-docs/api-references/index.md) API set.
 
 This quickstart covers uploading and managing your CloudScript files in the PlayFab Game Manager.
 

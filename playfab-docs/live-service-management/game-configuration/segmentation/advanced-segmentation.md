@@ -44,4 +44,4 @@ You can create segments with Player Custom properties either via API or Game man
 
 ## Scheduled Tasks 
  
-1. [Run scheduled task](/data-analytics/acting-data/scheduled-tasks/index.md) on a segment using custom property predicates. 
+1. [Run scheduled task](/playfab-docs/data-analytics/acting-data/scheduled-tasks/index.md) on a segment using custom property predicates. 

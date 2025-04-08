@@ -48,10 +48,10 @@ From the **Game Manager** screen:
 
 The screen shown below is an example of the **Segment** described above.
 
-![Game Manager - players - segments - new segment](/data-analytics/acting-data/media/tutorials/game-manager-players-segments-new-segment.png)  
+![Game Manager - players - segments - new segment](/playfab-docs/data-analytics/acting-data/media/tutorials/game-manager-players-segments-new-segment.png)  
 
 The most complex part of this example is the CloudScript. Utilize the second parameter, *Context*, in your [CloudScript handler](../../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md) to identify the player, and segment transition.
 
-Afterwards, perform any action you wish on the player, such as granting [inventory items](../../../player-progression/player-data/player-inventory.md), [virtual currency](/economy-monetization/economy-v2/tutorials/currencies.md), [player data](/player-progression/player-data/quickstart.md), or [statistics](../../../player-progression/player-data/using-player-statistics.md).
+Afterwards, perform any action you wish on the player, such as granting [inventory items](../../../player-progression/player-data/player-inventory.md), [virtual currency](/playfab-docs/economy-monetization/economy-v2/tutorials/currencies.md), [player data](/playfab-docs/player-progression/player-data/quickstart.md), or [statistics](../../../player-progression/player-data/using-player-statistics.md).
 
-See also: [Best Practices for store segmentation](/economy-monetization/economy-v2/overview.md)
+See also: [Best Practices for store segmentation](/playfab-docs/economy-monetization/economy-v2/overview.md)

@@ -149,4 +149,4 @@ On the **Player Segments** page, note the following:
 1. The **Player ID** label identifies the player you currently inspecting.
 2. The **Segments** table contains a list of all segments a player belongs to. Select the **Segment name** label to configure a segment.
 
-![Game Manager - Players Segments Page](/data-analytics/acting-data/media/tutorials/game-manager-players-segments-page.png)  
+![Game Manager - Players Segments Page](/playfab-docs/data-analytics/acting-data/media/tutorials/game-manager-players-segments-page.png)  
