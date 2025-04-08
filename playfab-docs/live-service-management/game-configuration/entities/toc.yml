@@ -18,6 +18,6 @@ items:
   href: tutorials.md
   items:
   - name: Entity Groups
-    href: ..\social\groups\quickstart.md
+    href: ../../../community/associations/groups/quickstart.md
   - name: Entity API Restructure Upgrade Tutorial
     href: entity-api-restructure-upgrade-tutorial.md

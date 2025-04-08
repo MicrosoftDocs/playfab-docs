@@ -66,7 +66,7 @@ For more information, see [Google Official Documentation](https://developers.goo
 
 ### Login into PlayFab using LoginWithGoogleAccount
 
- Log in to existing Player's account using  [LoginWithGoogleAccount](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-google-account?view=playfab-rest) Authentication API. In order to login successfully, you need to provide a Server Auth Token, which can be requested through GetServerAuthCode method.
+ Log in to existing Player's account using  [LoginWithGoogleAccount](/rest/api/playfab/client/authentication/login-with-google-account?view=playfab-rest) Authentication API. In order to login successfully, you need to provide a Server Auth Token, which can be requested through GetServerAuthCode method.
 
 ```csharp
  public void PlayFabLoginWithGoogleAccount()
@@ -126,7 +126,7 @@ For more information, see [Google Official Documentation](https://developers.goo
  }
 ```
 
- After this step, the player should have both account profiles associated on PlayFab's end and should be able to start using [LoginWithGooglePlayGamesServices](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-google-play-games-services?view=playfab-rest) authentication API from now on.
+ After this step, the player should have both account profiles associated on PlayFab's end and should be able to start using [LoginWithGooglePlayGamesServices](/rest/api/playfab/client/authentication/login-with-google-play-games-services?view=playfab-rest) authentication API from now on.
 
  If you navigate to [Game Manager](https://developer.playfab.com), you see both accounts associated to the player as shown:
 
@@ -165,7 +165,7 @@ For more information, see [Google Official Documentation](https://developers.goo
 
 ### (Optional) Unlink your Google Account profile from the PlayFab Player account
 
- This step is optional. However, if you already confirmed that Google Play Games Services profile is linked to the player account and that it can successfully log in to PlayFab, then you probably want to unlink any previous Google Account profiles linked to the player's profile using [UnlinkGoogleAccount](https://learn.microsoft.com/rest/api/playfab/client/account-management/unlink-google-account?view=playfab-rest) API, and move to use only [LoginWithGooglePlayGamesServices](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-google-play-games-services?view=playfab-rest) API.
+ This step is optional. However, if you already confirmed that Google Play Games Services profile is linked to the player account and that it can successfully log in to PlayFab, then you probably want to unlink any previous Google Account profiles linked to the player's profile using [UnlinkGoogleAccount](/rest/api/playfab/client/account-management/unlink-google-account?view=playfab-rest) API, and move to use only [LoginWithGooglePlayGamesServices](/rest/api/playfab/client/authentication/login-with-google-play-games-services?view=playfab-rest) API.
 
 ```csharp
  public void UnlinkGoogleAccountFromPlayer()

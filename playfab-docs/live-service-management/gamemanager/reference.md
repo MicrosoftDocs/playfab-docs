@@ -113,7 +113,7 @@ Multiplayer allows you to configure server hosting and matchmaking.
 
 Additional information:
 
-- [CloudScript Quickstart](../features/automation/cloudscript/quickstart.md)
+- [CloudScript Quickstart](/playfab-docs/live-service-management/service-gateway/automation/cloudscript/quickstart.md)
 
 [Back to About the Game Manager](#about-game-manager)
 
@@ -173,7 +173,7 @@ The following example shows the **Edit Currency** page for **Great Game**.
 Additional Information:
 
 - [Catalogs](../../economy-monetization/economy/items/catalogs.md)
-- [Currencies Tutorial](../features/economy/tutorials/currencies.md)
+- [Currencies Tutorial](../../economy-monetization/economy-v2/tutorials/currencies.md)
 
 [Back to About the Game Manager](#about-game-manager)
 
@@ -197,8 +197,8 @@ The User Generated Content tab displays all published content for your title. Wh
 
 Additional Information:
 
-- [UGC Overview](../features/economy-v2/ugc/index.md)
-- [UGC Quickstart](../features/economy-v2/ugc/quickstart.md)
+- [UGC Overview](/playfab-docs/economy-monetization/economy-v2/ugc/index.yml)
+- [UGC Quickstart](/playfab-docs/economy-monetization/economy-v2/ugc/quickstart.md)
 
 [Back to About the Game Manager](#about-game-manager)
 
@@ -358,7 +358,6 @@ In this section you learn how to create and manage studios and game titles.
 1. Select the elipsis drop-down menu to the right side of your **Studio name**, then select **Studio settings**.
 
   ![Game manager - Edit Studio](media/tutorials/game-manager-mystudiosandtitles-settings.png)
-
 2. Make your edits.
 3. Select **Save Studio** to return to the **My Studios and Titles** page.
 
@@ -368,7 +367,6 @@ In this section you learn how to create and manage studios and game titles.
 2. Enter the details and click the **CREATE TITLE** button.
 
   ![Game manager - Create a new game](media/tutorials/game-manager-create-title.png)
-
 3. Save your changes and return to the My Studios and Titles page.
 
 #### To edit an existing title
@@ -376,7 +374,6 @@ In this section you learn how to create and manage studios and game titles.
 1. Select the gear icon on the title name you wish to edit and select **Edit title info**.
 
   ![Game manager - Edit game](media/tutorials/game-manager-edit-game.png)
-
 2. Make your edits.
 3. Save your changes and return to the My Studios and Titles page.
 

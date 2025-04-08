@@ -77,7 +77,7 @@ In this section, we'll use the [Postman Collections](/gaming/playfab/sdks/postma
 
 ### Upload Content to Blobs
 
-There are a few different ways to [upload your content to these URLs](https://cloud.netapp.com/blog/azure-cvo-blg-how-to-upload-files-to-azure-blob-storage)
+There are a few different ways to upload your content to these URLs.
 
 #### Via Postman
 

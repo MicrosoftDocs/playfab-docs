@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 ## Prerequisites
 
 - [Push Notifications quickstart](quickstart.md)
-- [Unity3D quickstart](../../../sdks/unity3d/quickstart.md)
-- [Optional] [Unity Editor Extensions](https://blog.playfab.com/blog/new-unity-editor-extensions-beta)
-- [Optional] [Postman Quickstart](../../../../sdks/postman/postman-quickstart.md)
+- [Unity3D quickstart](/playfab-docs/sdks/unity3d/quickstart.md)
+- **Optional** [Unity Editor Extensions](https://blog.playfab.com/blog/new-unity-editor-extensions-beta)
+- **Optional** [Postman Quickstart](../../../../sdks/postman/postman-quickstart.md)
 
 ## Configuring the Android notification channel
 
@@ -69,7 +69,7 @@ There are three Google websites that you must use and synchronize. In Google/Fir
 To set up your Unity project:
 
 - Create a new Unity project.
-- [OPTIONAL] Import the [PlayFab Unity Editor Extensions](https://aka.ms/playfabunityextension) package.
+- **OPTIONAL** Import the [PlayFab Unity Editor Extensions](https://aka.ms/playfabunityextension) package.
 - Import the [Unity PlayFab SDK](https://aka.ms/playfabunitysdkdownload) package.
 - Follow the [FCM Unity](https://firebase.google.com/docs/cloud-messaging/unity/client) guide to install FCM messaging, and set up a project for push notifications.
   - Once finished, you can continue with this guide to receive messages from PlayFab.

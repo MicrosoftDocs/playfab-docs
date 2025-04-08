@@ -128,7 +128,7 @@ Republishing an item will update the Published Item to match the current Draft I
 
 ## Do a simple search
 
-Once the publish call succeeds, the item can be accessed by all players via the Public Catalog. The  [`SearchItems` API](/gaming/playfab/features/economy/ugc/search) executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. The `Filter`, `OrderBy`, and `Select` fields use OData as the query standard.
+Once the publish call succeeds, the item can be accessed by all players via the Public Catalog. The  [`SearchItems` API](/rest/api/playfab/economy/catalog/search-items?view=playfab-rest) executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. The `Filter`, `OrderBy`, and `Select` fields use OData as the query standard.
 
 ```json
 {

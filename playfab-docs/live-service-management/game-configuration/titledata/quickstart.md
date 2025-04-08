@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Title Data quickstart
 
-Title data is the set of plain text key-value pairs, used for storing and managing the game’s configuration data remotely on the server. It keeps the title wide configuration variables accessible and organized which can be retrieved on the client-side.
+Title data is the set of plain text key-value pairs, used for storing and managing the game's configuration data remotely on the server. It keeps the title wide configuration variables accessible and organized which can be retrieved on the client-side.
 
 This QuickStart describes how to programmatically create and use title data.
 
@@ -66,17 +66,18 @@ You can set title data by using the Game Manager, or by a server API function.
 ### Setting title data using Game Manager
 
 To add Primary Title Data using Game Manager to a title, perform the following steps.
-1.	Open the title in **Game Manager**.
-2.	Select **Content**, then **Title Data**.
-3.	Select **New Title Data**
-4.	In the new title data page, enter a value for the **Key** and a value for the **Value**. Both the **Key** and the **Value** are stored as strings.
-5.	Use the **Save** button to save the new data item.
+
+1. Open the title in **Game Manager**.
+2. Select **Content**, then **Title Data**.
+3. Select **New Title Data**
+4. In the new title data page, enter a value for the **Key** and a value for the **Value**. Both the **Key** and the **Value** are stored as strings.
+5. Use the **Save** button to save the new data item.
 
 ![Screenshot shows new title data.](media/tutorials/title-data-new-title-data.PNG "New Title Data")
 
 ![Screenshot of Title data](media/tutorials/title-data-add-primary-title-data.PNG "Set Title Data")
 
-### Setting title data by calling the server API in C#
+### Setting title data by calling the server API in C #
 
 The [SetTitleData](xref:titleid.playfabapi.com.server.title-widedatamanagement.settitledata) API is a server API that you must call from a dedicated server. You can only set one title data KVP in each call to `SetTitleData`.
 
@@ -95,19 +96,21 @@ public void SetTitleData() {
     );
 }
 ```
+
 ### Setting title data overrides using Game Manager
 
-An override is also a set of JSON key-value pairs and ideally should be purposed to possess the delta change required in the key-values pairs of the Primary Title Data. The delta change could comprise of the key-value pairs when compared to Primary Title data as new key-value, change in an existing key’s value or deletion of a key (with NULL as an input of the value). 
+An override is also a set of JSON key-value pairs and ideally should be purposed to possess the delta change required in the key-values pairs of the Primary Title Data. The delta change could comprise of the key-value pairs when compared to Primary Title data as new key-value, change in an existing key's value or deletion of a key (with NULL as an input of the value). 
 
 To add overrides to the primary title data, perform the following steps.
-1.	Open the title in **Game Manager**.
-2.	Select **Content**, then **Title Data**.
-3.	Select **New Override**.
-4.	Enter the Override Label, plus, enter a value for the **Key** and a value for the **Value**. Both the Key and the Value are stored as strings.
-5.	Use the **Save** button to save the new Title Data Override.
+
+1. Open the title in **Game Manager**.
+2. Select **Content**, then **Title Data**.
+3. Select **New Override**.
+4. Enter the Override Label, plus, enter a value for the **Key** and a value for the **Value**. Both the Key and the Value are stored as strings.
+5. Use the **Save** button to save the new Title Data Override.
 
 > [!NOTE]
-> This override set of key/value pairs comes in-effect only using [Experiments](../../data-analytics/learn-data/experiments/index.md) for now. 
+> This override set of key/value pairs comes in-effect only using [Experiments](../experiments/index.md) for now. 
 If the player belongs to an experiment variant which contain title data overrides, the overrides are applied automatically on server side and returned with the title data on client side.
 > Title Data Override values may take up to one minute to refresh and persist. 
 
@@ -121,7 +124,7 @@ If the player belongs to an experiment variant which contain title data override
 
 Similarly to User Data, title data has internal storage that is hidden from the client. This data can also be set in the Game Manager, or via a server API.
 
-### Getting internal title data by calling the server API in C#
+### Getting internal title data by calling the server API in C \#
 
 ```csharp
 public void GetTitleInternalData()
@@ -139,7 +142,7 @@ public void GetTitleInternalData()
 }
 ```
 
-### Setting internal title data by calling the server API in C#
+### Setting internal title data by calling the server API in C \#
 
 ```csharp
 public void SetTitleInternalData() {
@@ -160,5 +163,5 @@ public void SetTitleInternalData() {
 ## See also
 
 - [Using Publisher Data](using-publisher-data.md)
-- [Player Data Quickstart](../../features/playerdata/quickstart.md)
-- [CloudScript Quickstart](../automation/cloudscript/quickstart.md)
+- [Player Data Quickstart](/playfab-docs/player-progression/player-data/quickstart.md)
+- [CloudScript Quickstart](/playfab-docs/live-service-management/service-gateway/automation/cloudscript/quickstart.md)

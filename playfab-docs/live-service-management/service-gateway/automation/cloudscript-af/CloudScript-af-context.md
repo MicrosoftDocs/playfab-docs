@@ -11,11 +11,13 @@ ms.localizationpriority: medium
 ---
 
 # Tutorial: Using CloudScript context models
+
 PlayFab executes scripts through several mechanisms including execution through APIs, through scheduled tasks, through PlayStream events, and when a player enters and exits segments. In many cases, the context in which the script executes is important to how it runs. An example of this is knowing the Player ID of the player on whose behalf the script is being run. The context in which your script is run determines the available data model and provides context specific data that is used in your script.
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * Use the shared context model
 > * Use the context model when executing via the ExecuteFunction API.
 > * Use the context model when executing via Scheduled Task.
@@ -60,7 +62,9 @@ public class FunctionExecutionContext : FunctionExecutionContext<object>
 ```
 
 ## Use the context model when executing via Scheduled Task
-When you [Scheduled Tasks](../scheduled-tasks/index.md) to execute a script, the context that is provided includes the following information:
+
+When you [Scheduled Tasks](/playfab-docs/data-analytics/acting-data/scheduled-tasks/index.md) to execute a script, the context that is provided includes the following information:
+
 * The Scheduled Task Name Id
 * The event history which includes a stack of PlayStream Events
 * The title Authentication Context
@@ -91,10 +95,12 @@ public class ScheduledTaskFunctionExecutionContext : ScheduledTaskFunctionExecut
 ```
 
 ## Use the context model when executing in the context of a Player 
+
 When executing a script through Player PlayStream Events, entering or leaving an segment or as part of a segment based scheduled task the context that is provided includes the following information:
+
 * The Player Profile
 * Boolean indicating if the player profile is trunctated.  
-   * The Player Profile will be truncated if it is over 2048 bytes.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
+  * The Player Profile will be truncated if it is over 2048 bytes.  If this occurs you will need to use the profile APIs (either server, client or entity APIs) to retrieve the full profile.
 * The PlayStream event which triggered the script.
 * A boolean that indicates whether a PlayStream event is sent as part of the function being executed
 * The functions arguments used when calling the script
@@ -117,8 +123,10 @@ public class PlayerPlayStreamFunctionExecutionContext : PlayerPlayStreamFunction
 }
 ```
 
-## Use the context model when executing via an Entity PlayStream Events, entering or leaving an entity segment or as part of an entity segment based scheduled task.
+## Use the context model when executing via an Entity PlayStream Events, entering or leaving an entity segment or as part of an entity segment based scheduled task
+
 When executing script through Entity PlayStream Events, entering or leaving an entity segment or as part of a entity segment based scheduled task the context that is provided includes the following information:
+
 * The Entity Profile
 * The PlayStream event which triggered the script.
 * A boolean that indicates whether a PlayStream event is sent as part of the function being executed

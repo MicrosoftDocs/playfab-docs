@@ -24,8 +24,8 @@ Vanguard Outrider is different from Winter Starfall in that it requires an empty
 
 The features that run on legacy versions in Vanguard Outrider are:
 
-- [Legacy Economy](../features/economy/quickstart.md)
-- [Legacy CloudScript](../features/automation/cloudscript/index.md)
+- [Legacy Economy](../economy-monetization/economy/quickstart.md)
+- [CloudScript](../live-service-management/service-gateway/automation/cloudscript/index.md)
 
 ## See also
 

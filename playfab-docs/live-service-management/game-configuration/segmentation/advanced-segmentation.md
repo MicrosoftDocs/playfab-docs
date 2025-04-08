@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 > [!NOTE]
 > The Advanced Segmentation with Custom Properties feature is in private preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
 
-Advanced Segmentation changes the approach to designing segments by leveraging [Custom Properties](player-custom-properties.md), which enables you to store and manage player’s custom information and then use it to create segments based on those specific properties. These properties can be set on players via APIs, Game Manager, or PlayStream rules, and can be used to define segments that group players based on shared characteristics. Once these segments have been created, they can be used to generate actions on players. Additionally, these segments can be used to define scheduled or manual tasks. 
+Advanced Segmentation changes the approach to designing segments by leveraging [Custom Properties](player-custom-properties.md), which enables you to store and manage player's custom information and then use it to create segments based on those specific properties. These properties can be set on players via APIs, Game Manager, or PlayStream rules, and can be used to define segments that group players based on shared characteristics. Once these segments have been created, they can be used to generate actions on players. Additionally, these segments can be used to define scheduled or manual tasks. 
 
 ## Creating segments with Player Custom Properties
 
@@ -23,8 +23,8 @@ You can create segments with Player Custom properties either via API or Game man
 
 ### Via API
 
-- 	Use the [Create Segment API](/rest/api/playfab/admin/segments/create-segment) to create a segment. 
-- 	Add custom property predicates using the [Update Segment](/rest/api/playfab/admin/segments/update-segment) API.
+-     Use the [Create Segment API](/rest/api/playfab/admin/segments/create-segment) to create a segment. 
+-     Add custom property predicates using the [Update Segment](/rest/api/playfab/admin/segments/update-segment) API.
 
 ### Via Game Manager 
 
@@ -39,11 +39,9 @@ You can create segments with Player Custom properties either via API or Game man
 
 ## Exporting players from a segment with custom properties 
  
-1.	[Create a segment](segmentation-quickstart.md) that references custom property predicates.
-2.	Use the [ExportPlayersInSegment API](segmentation-export-players-in-a-segment.md) to export player profiles 
+1. [Create a segment](segmentation-quickstart.md) that references custom property predicates.
+2. Use the [ExportPlayersInSegment API](segmentation-export-players-in-a-segment.md) to export player profiles 
 
 ## Scheduled Tasks 
  
-1.	[Run scheduled task](../acting-data/scheduled-tasks/index.md) on a segment using custom property predicates. 
-
-
+1. [Run scheduled task](/playfab-docs/data-analytics/acting-data/scheduled-tasks/index.md) on a segment using custom property predicates. 

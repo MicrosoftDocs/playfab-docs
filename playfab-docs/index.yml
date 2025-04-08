@@ -40,7 +40,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/index/build.svg
       summary: Learn PlayFab’s fundamental concepts with tutorials and a demo game.
-      url: what-is-playfab.md
+      url: get-started/what-is-playfab.md
 
     - title: Identity
       imageSrc: ./media/index/build.svg
@@ -182,8 +182,8 @@ additionalContent:
           summary: Community based product support. Use the Discord forums to post questions, share answers, and discuss the PlayFab product experience.
           url: https://discord.com/invite/msftgamedev
         - title: Support
-          summary: PlayFab support options.
-          url: live-service-managment/production/pricing/paidtechnicalsupport.md
+          summary: PlayFab support options
+          url: pricing/PaidTechnicalSupport.md
         - title: Blog
-          summary: Latest news and updates from the PlayFab developers.
+          summary: Latest news and updates from the PlayFab developers
           url: https://blog.playfab.com/blog

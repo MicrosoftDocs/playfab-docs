@@ -12,13 +12,16 @@ ms.localizationpriority: medium
 
 
 # Quickstart: Set up an Ad placement
+
 Rewarded ads are a way of incentivizing your players to watch video ads in exchange for an reward. Each ad with its associated rewards is considered an ad placement. In this quickstart you will set up an ad placement and configure rewards for it. 
 
 ## Prerequisites
+
 * A [PlayFab developer account](https://developer.playfab.com/en-US/my-games).
 * An Application ID and Advertising Unit type from your ad provider. 
 
 ## Set up an Ad placement 
+
 In the **Rewarded Ads** tab, the first thing you'll see is the main dashboard for your ads. Here you'll find basic KPIs for your ads, along with a graph showing your recent ad events (they also show up in the [PlayStream ](../../data-analytics/ingest-data/playstream-overview.md))  At the top, select **Placements**.
 
 Ad placements are the most fundamental part of the system. Think of a single placement as an "ad position": the type of ad that will be displayed (banner, video, etc.) and at what point in the game the player will see it (level interstitial, as a result of clicking on a "show me an ad", etc).
@@ -26,9 +29,10 @@ Ad placements are the most fundamental part of the system. Think of a single pla
 In the upper right corner, select **New Ad Placement**. Name your placement whatever you like, and enter the Application ID and Advertising Unit type from your ad provider. If you're uncertain as to where to locate the Application ID and Advertising Unit type for your specific provider, let us know and we can work with you to identify them.
 
 ## Add rewards
-Now you'll need to add your specific rewards. For each possible reward for this placement, select **New Reward**. Give your reward a name and enter any description text and asset package URL you want returned to the client when the specific reward is given. Then, under **Actions**, select **Add Action**. Just as you can with regular [PlayStream ](../../data-analytics/ingest-data/playstream-overview.md) actions, you can take a number different actions right now - running a Cloud Script handler, granting items, etc. Usually, you'll be granting virtual currency or items here, but if you want to make use of the other action types it'll all be processed the same way it is for a normal PlayStream action trigger.
 
-After you have a couple of rewards defined, give each one a weight to set up the random distribution. If you've defined [Segments](../../analytics/segmentation/index.md) for your title, you can also set overrides in the **Segment Assignment** tool below **Rewards**. For example, if you have a certain group of players that you want to always get a specific reward, set that segment to that reward in the assignment list. The segment assignments are in priority order, so the first segment that matches one for the current player is the one that is used. The following example defines an ad placement that provides free gems 0% of the time, bonus experience points 30% of the time and a "key" item 70% of the time.
+Now you'll need to add your specific rewards. For each possible reward for this placement, select **New Reward**. Give your reward a name and enter any description text and asset package URL you want returned to the client when the specific reward is given. Then, under **Actions**, select **Add Action**. Just as you can with regular [PlayStream](../../data-analytics/ingest-data/playstream-overview.md) actions, you can take a number different actions right now - running a Cloud Script handler, granting items, etc. Usually, you'll be granting virtual currency or items here, but if you want to make use of the other action types it'll all be processed the same way it is for a normal PlayStream action trigger.
+
+After you have a couple of rewards defined, give each one a weight to set up the random distribution. If you've defined [Segments](../../live-service-management/game-configuration/segmentation/segmentation-overview.md) for your title, you can also set overrides in the **Segment Assignment** tool below **Rewards**. For example, if you have a certain group of players that you want to always get a specific reward, set that segment to that reward in the assignment list. The segment assignments are in priority order, so the first segment that matches one for the current player is the one that is used. The following example defines an ad placement that provides free gems 0% of the time, bonus experience points 30% of the time and a "key" item 70% of the time.
 
  ![Game Manager - Stores - Segment Overrides](Media/ads-edit-placement.png)
 

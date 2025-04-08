@@ -32,7 +32,7 @@ Example response body:
 } 
 ```
 
-The **"Retry-After** and **"retryAfterSeconds"** property indicates the wait time in seconds before attempting another request to avoid throttling. If utilizing the latest [cross-platform C/C++ SDK](../../sdks/c/index.md), the SDK attempts to handle the retry on the caller's behalf. Otherwise, use the below strategies with the retry values to develop custom handling.
+The **"Retry-After** and **"retryAfterSeconds"** property indicates the wait time in seconds before attempting another request to avoid throttling. If utilizing the latest [cross-platform C/C++ SDK](/playfab-docs/sdks/c/index.md), the SDK attempts to handle the retry on the caller's behalf. Otherwise, use the below strategies with the retry values to develop custom handling.
 
 ## Mitigating throttling issues
 

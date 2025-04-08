@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Available built-in entity types
 
-This topic describes the available entity types that you can use to construct an [EntityKey](../../api-references/events/data-types/entitykey.md).
+This topic describes the available entity types that you can use to construct an [EntityKey](../../../api-references/events/data-types/entitykey.md).
 
 Entity keys identify entities in most of the newer API methods.
 

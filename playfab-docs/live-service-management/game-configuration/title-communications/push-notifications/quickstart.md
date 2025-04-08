@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 Push notifications from PlayFab are enabled by a linkage of three major systems:
 
-1. The player’s device OS (Android, iOS, etc.)
+1. The player's device OS (Android, iOS, etc.)
 2. The vendor-specific channel (Google, Apple, etc.)
-3. Cross-platform message routing (PlayFab via Amazon Simple Notification Service [SNS]).
+3. Cross-platform message routing (PlayFab via Amazon Simple Notification Service (SNS)).
 
 > [!NOTE]
 > If any of these systems are unlinked, clients will stop getting notifications. It is fairly simple to accidentally change one of the three systems, and wind up breaking the link. Furthermore, it is difficult to know at any individual point in the flow if all of the systems are configured properly.
@@ -49,7 +49,7 @@ After configuring your title and client, you can test your configuration using t
 
 You can use the PlayFab CloudScript service as a quick and secure server API environment. From there, push notifications can be sent as needed.
 
-To use this method to test your configuration, upload or append the code in the following example to your title’s CloudScript.
+To use this method to test your configuration, upload or append the code in the following example to your title's CloudScript.
 
 ### Example
 
@@ -59,7 +59,7 @@ Consider the following scenario:
 
 - Each player may pay 1 CH currency, and challenge another player who is up to 5 positions away from the current player.
 
-First, consider a virtual currency as shown in the example screenshot below (see the [Currencies](../../economy/tutorials/currencies.md) tutorial for information on how to define a virtual currency).
+First, consider a virtual currency as shown in the example screenshot below (see the [Currencies](../../../../economy-monetization/economy-v2/tutorials/currencies.md) tutorial for information on how to define a virtual currency).
 
 ![PlayFab Economy - Currencies - New Currency](../media/tutorials/playfab-new-currency.png)
 
@@ -158,7 +158,7 @@ For iOS platforms, apps are given a one-time dialog prompt from the OS, allowing
 
 - The App is updated or reinstalled.
 
-- The user makes changes to the settings from their phone’s settings menu.
+- The user makes changes to the settings from their phone's settings menu.
 
 For Android apps, notifications are enabled by default, and can be turned on and off at will from the client.
 
