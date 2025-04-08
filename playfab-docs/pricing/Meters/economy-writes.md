@@ -2,7 +2,7 @@
 title: Inventory Writes Meter API Description
 author: cybtachyon
 description: This article details the APIs that cause economy writes meter to increment.
-ms.author: derekreese
+ms.author: fprotti
 ms.date: 09/07/2020
 ms.topic: article
 ms.service: azure-playfab

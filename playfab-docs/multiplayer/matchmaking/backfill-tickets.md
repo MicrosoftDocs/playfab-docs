@@ -43,7 +43,7 @@ Server backfill tickets differ from regular matchmaking tickets in multiple ways
 
 The backfill process begins similarly to creating a regular matchmaking ticket,
 but with the
-[CreateServerBackfillTicket](https://api.playfab.com/documentation/Multiplayer/method/CreateServerBackfillTicket)
+[CreateServerBackfillTicket](/rest/api/playfab/multiplayer/matchmaking/create-server-backfill-ticket)
 call as opposed to a
 [CreateServerMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.createservermatchmakingticket)
 call. The game server must supply all member information for the game it's
@@ -123,8 +123,8 @@ specified for a user, it may be placed on any team.
 Once created, a backfill ticket begins searching for regular matchmaking tickets
 which meet the rule criteria. The flow for backfill tickets is identical to how
 regular matchmaking tickets operate, except with analogous APIs. The game
-server may check the status of its ticket by calling [GetServerBackfillTicket](https://api.playfab.com/documentation/Multiplayer/method/GetServerBackfillTicket).
-It may also cancel the ticket by calling [CancelServerBackfillTicket](https://api.playfab.com/documentation/Multiplayer/method/CancelServerBackfillTicket).
+server may check the status of its ticket by calling [GetServerBackfillTicket](/rest/api/playfab/multiplayer/matchmaking/create-server-backfill-ticket).
+It may also cancel the ticket by calling [CancelServerBackfillTicket](/rest/api/playfab/multiplayer/matchmaking/cancel-server-backfill-ticket?view=playfab-rest).
 
 > [!NOTE] 
 > Clients are not allowed to cancel a backfill ticket they are in.
@@ -162,9 +162,9 @@ list of users indicating which have outstanding backfill tickets in an
 ```
 
 The game server can recover a user from this situation by calling
-[CancelAllServerBackfillTicketsForPlayer](https://api.playfab.com/documentation/Multiplayer/method/CancelAllServerBackfillTicketsForPlayer),
+[CancelAllServerBackfillTicketsForPlayer](/rest/api/playfab/multiplayer/matchmaking/cancel-all-server-backfill-tickets-for-playe),
 which removes all backfill tickets the user is in.
-[ListServerBackfillTicketsForPlayer](https://api.playfab.com/documentation/Multiplayer/method/ListServerBackfillTicketsForPlayer)
+[ListServerBackfillTicketsForPlayer](/rest/api/playfab/multiplayer/matchmaking/list-server-backfill-tickets-for-player)
 is also provided as a method to discover which backfill tickets a player may be
 in.
 

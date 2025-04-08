@@ -21,7 +21,7 @@ This guide helps you get started using Python with Insights. It uses the Azure K
 
 ### PlayFab account authenticated with Azure AD
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (Azure AD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md) for instructions on creating an Azure AD-authenticated account or user.
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (Azure AD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../identity/dev-identity/authentication/aad-authentication.md) for instructions on creating an Azure AD-authenticated account or user.
 
 To verify that the account, or user, is set to use the Microsoft authentication provider:
 

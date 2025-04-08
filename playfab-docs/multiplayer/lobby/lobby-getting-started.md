@@ -17,6 +17,7 @@ This article describes how to set up the development environment for Azure PlayF
 
 > [!NOTE]
 > The PlayFab Multiplayer SDK also provides APIs for PlayFab Matchmaking.
+>
 > * For more information on C++ APIs, see the [Matchmaking SDK quickstart](../matchmaking/quickstart-client-sdk.md).
 > * For more information on Unity APIs, see the [Quickstart for Unity](lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
 > * For more information on Unreal APIs, see the [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
@@ -31,6 +32,7 @@ Download the [C/C++ SDK](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md) for y
 
 > [!NOTE]
 > This quick start focuses on using the C/C++ SDK. For Unity and Unreal interfaces, see the following articles:
+>
 > * [Quickstart for Unity](lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
 > * [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
 
@@ -39,7 +41,7 @@ Download the [C/C++ SDK](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md) for y
 To use the PlayFab Lobby SDK, you need to authenticate your client using PlayFab entity keys and entity tokens. Acquire a PlayFab entity key and token pair by logging in with [LoginWithCustomId](/rest/api/playfab/client/authentication/login-with-custom-id) REST API. This API is also available as a C/C++ projection via the [PlayFab REST SDK](/gaming/playfab/sdks/playfab-sdk-intro).
 
 > [!NOTE]
-> LoginWithCustomId is a quick way to get started with PlayFab features but is not intended to be the login mechanism you ship with. For login guidance, see [Login basics and best practices](/features/authentication/login/login-basics-best-practices).
+> LoginWithCustomId is a quick way to get started with PlayFab features but is not intended to be the login mechanism you ship with. For login guidance, see [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md).
 
 ## Initialize the PlayFab Multiplayer SDK
 

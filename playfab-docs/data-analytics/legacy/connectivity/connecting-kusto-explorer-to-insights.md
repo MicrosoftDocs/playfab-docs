@@ -21,7 +21,7 @@ This guide helps you get started using Kusto Explorer along with Insights. After
 
 ### PlayFab account authenticated with AAD
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. For instructions on creating an AAD-authenticated account or user, see [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md).
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. For instructions on creating an AAD-authenticated account or user, see [Azure Active Directory Authentication for Game Manager](../../../identity/dev-identity/authentication/aad-authentication.md).
 
 Verify that the account or user is set to use the Microsoft authentication provider.
 

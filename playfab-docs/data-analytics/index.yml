@@ -65,7 +65,7 @@ landingContent:
           - text: Player Churn Prediction
             url: learn-data/churn-prediction/overview.md     
           - text: Experiments
-            url: ../../live-service-management/game-configuration/experiments/index.md
+            url: ../live-service-management/game-configuration/experiments/index.md
           - text: Data Explorer
             url: learn-data/data-explorer/index.md  
       - linkListType: quickstart

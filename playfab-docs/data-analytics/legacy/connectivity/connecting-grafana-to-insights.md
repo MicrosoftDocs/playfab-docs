@@ -29,7 +29,7 @@ In this tutorial you learn how to:
 
 ### PlayFab account authenticated with Microsoft Entra ID
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Microsoft Entra ID (previously Azure Active Directory (AAD)) for authentication that is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md) for instructions on creating an Microsoft Entra ID authenticated account or user.
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Microsoft Entra ID (previously Azure Active Directory (AAD)) for authentication that is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../identity/dev-identity/authentication/aad-authentication.md) for instructions on creating an Microsoft Entra ID authenticated account or user.
 
 To verify that the account, or user, is set to use the Microsoft authentication provider:
 

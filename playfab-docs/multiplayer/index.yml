@@ -47,7 +47,7 @@ landingContent:
           - text: Getting started with Lobby 
             url: lobby/lobby-getting-started.md
           - text: Getting started with Matchmaking 
-            url: matchmaking/quickstart.md          
+            url: matchmaking/quickstart-client-sdk.md
           - text: Getting started with the Party SDK
             url: networking/quickstart.md
       - linkListType: tutorial
@@ -58,7 +58,7 @@ landingContent:
             url: networking/enable-party.md
           - text: Matchmaking scenario and configuration examples
             url: matchmaking/config-examples.md
-          - text: Matchmaking scenario and configuration examples
+          - text: Use Lobby and Matchmaking together
             url: lobby/lobby-and-matchmaking.md
           - text: Locally debugging game servers and integration with PlayFab
             url: servers/locally-debugging-game-servers-and-integration-with-playfab.md 
@@ -77,7 +77,7 @@ landingContent:
           - text: Billing for PlayFab Multiplayer Servers 2.0
             url: servers/billing-for-thunderhead.md
           - text: Multiplayer servers - detailed price sheet
-            url: servers/multiplayer-servers-detailed-price-sheet.md
+            url: https://playfab.com/mps-detailed-pricing/
           - text: PlayFab incident response procedures
             url: servers/comm-sla.md
 
@@ -90,3 +90,7 @@ landingContent:
             url: networking/reference/party_members.md
           - text: Server API/PowerShell
             url: servers/quickstart-for-multiplayer-servers-api-powershell.md   
+          - text: Lobby Members
+            url: lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md
+          - text: Matchmaking Members
+            url: lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md

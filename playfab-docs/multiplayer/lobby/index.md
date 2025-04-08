@@ -3,7 +3,7 @@ title: Azure PlayFab Lobby overview
 author: joannaleecy
 description: Learn about Azure PlayFab Lobby.
 ms.author: joanlee
-ms.date: 10/25/2021
+ms.date: 04/08/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking
@@ -12,8 +12,7 @@ ms.localizationpriority: medium
 
 # Azure PlayFab Lobby overview
  
-
-Azure PlayFab Lobby is a service to create a temporary grouping mechanism for players to play games together. It's frequently used with matchmaking, to group players going into matchmaking or for connecting players after a match is found. 
+Azure PlayFab Lobby is a service to create a temporary grouping mechanism for players to play games together. It's frequently used together with matchmaking, allowing for pre-formed groups to join the same matchmaking ticket, or allowing matched players to convene and receive further notifications about the group such as join/leave events or server connection details. 
 
 ## Benefits
 
@@ -24,10 +23,10 @@ Azure PlayFab Lobby is a service to create a temporary grouping mechanism for pl
 
 ### SDKs 
 
-+ [Lobby REST API Reference](xref:titleid.playfabapi.com.multiplayer.lobby)
-+ [Client SDK Reference](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
-    + [Quickstart for Unity](lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
-    + [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
+* [Lobby REST API Reference](xref:titleid.playfabapi.com.multiplayer.lobby)
+* [Client SDK Reference](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
+  * [Quickstart for Unity](lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
+  * [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
 
 ## See also
 
@@ -38,4 +37,3 @@ Azure PlayFab Lobby is a service to create a temporary grouping mechanism for pl
 * [Lobby ownership changes](ownership-changes.md)
 * [Find lobbies](find-lobbies.md)
 * [Create searchable lobbies](define-search-keywords.md)
-

@@ -38,7 +38,7 @@ The key takeaway from this example is that the extra Party network enabled real-
 
 Multiple networks wouldn't have been appropriate if players were only partitioned into teams within the game session. In that scenario, it would be better to use [chat permissions](../../community/voice-communications/concepts-chat.md#chat-permissions-and-muting) in a single Party network to define each team's chat boundaries.
 
-Additionally, using multiple networks would've been inappropriate if the long-lived group didn't represent players actively communicating with each other&mdash;for example, Guilds or chat-less lobbies. For these non-real-time scenarios, other features such as [PlayFab Lobbies](../lobby/index.md) or [PlayFab Entity Groups](../../community/social/groups/quickstart.md) may be more appropriate.
+Additionally, using multiple networks would've been inappropriate if the long-lived group didn't represent players actively communicating with each other&mdash;for example, Guilds or chat-less lobbies. For these non-real-time scenarios, other features such as [PlayFab Lobbies](../lobby/index.md) or [PlayFab Entity Groups](../../community/associations/groups/index.md) may be more appropriate.
 
 ## Endpoints vs Chat Controls across multiple networks
 

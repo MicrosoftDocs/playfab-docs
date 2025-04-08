@@ -31,7 +31,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Friend Leaderboards
-            url: leaderboards/friends-leaderboards.md
+            url: tournaments-leaderboards/friends-leaderboards.md
   
   # Card
   - title: Leaderboards

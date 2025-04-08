@@ -12,18 +12,18 @@ ms.localizationpriority: medium
 
 # Azure PlayFab Leaderboards overview
 
-
 Azure Playfab Leaderboards is a cross-platform service that creates a sorted list of players with the purpose
 of ranking them by scores. Leaderboards can be used as a standalone service or be linked with Statistics (so that updates to statistics feed into the entries on the leaderboard).
-
 
 ![PlayFab Leaderboards Architecture](media/leaderboards-relationship.png)
 
 ## Benefits
+
 One of the main benefits of the new leaderboard service is the cross-platform capabilities and capacity of scaling up
 to any needs. We're excited to introduce the following set of new features:
 
-### Multicolumn (enhance) tie-breaking: 
+### Multicolumn (enhance) tie-breaking 
+
 This feature enables multiple scores per row that could be sorted with a given priority. With this sorting,
 whenever there's a tie, we're able to determine which values take precedence and rank the corresponding player
 higher on the leaderboard.
@@ -33,7 +33,8 @@ For ranking, we then use the next column as a tie-breaker, in this case, by Assi
 
 ![PlayFab Leaderboards Tie-breaking](media/tie-breaker-table.png)
 
-### Versioning:
+### Versioning
+
 A leaderboard can have multiple versions of itself based on a reset strategy. Using this feature maintains 
 the definition of the leaderboard but resets the content and creates a new version of the leaderboard. 
 Older versions are still available for queries (updates are disallowed). 
@@ -43,7 +44,8 @@ changes between each version.
 
 ![PlayFab Leaderboards Versioning](media/versioning-leaderboards.png)
 
-### Metadata:
+### Metadata
+
 This feature allows the options of setting custom information per row (check if this feature corresponds to your tier).
 
 In this example, you can see how each row has its own metadata associated to it.
