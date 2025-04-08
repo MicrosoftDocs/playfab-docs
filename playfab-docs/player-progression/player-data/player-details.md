@@ -29,7 +29,7 @@ The **Player Overview** (or *details* page), is a starting point for controlling
 3. The **Run CloudScript** button - Gives you access to cloud scripting on behalf of the player.
 
 > [!NOTE]
-> You can read more about this in our [CloudScript quickstart](/playfab-docs/live-service-management/service-gateway/automation/cloudscript/quickstart.md).
+> You can read more about this in our [CloudScript quickstart](../../live-service-management/service-gateway/automation/cloudscript/quickstart.md).
 
 4. Information panels contain general information about the player account.
 5. The **PlayFab Account Panel** offers pages for managing a player's PlayFab account (described later in this tutorial).
@@ -44,12 +44,12 @@ PlayFab offers a wide set of pages for fine tuning and analyzing your player. Th
 - [Logins](player-logins.md) for inspecting a player's login attempts.
 - [Segments](player-segments.md) for inspecting the segments that a player belongs to.
 - [Statistics](using-player-statistics.md) for inspecting and manipulating a player's statistical values.
-- [Player Data (Title)](/playfab-docs/live-service-management/game-configuration/titledata/quickstart.md) for managing account data within the current scope.
+- [Player Data (Title)](../../live-service-management/game-configuration/titledata/quickstart.md) for managing account data within the current scope.
 - [Player Data (Publisher)](using-player-publisher-data.md) for managing account data across several titles.
 - Virtual currency
 - [Inventory](player-inventory.md) for managing the items that a player owns.
 - Purchases
-- [Friends](/playfab-docs/community/associations/friends/quickstart.md) for managing a player's friends list.
+- [Friends](../../community/associations/friends/quickstart.md) for managing a player's friends list.
 - Characters
 - Multiplayers
 - [Bans](player-bans.md)
@@ -71,7 +71,7 @@ A PlayFab account contains critical, identifying, player data. As an administrat
 
 ![Game Manager - Player - PlayFab account](media/tutorials/game-manager-player-playfab-account.png)  
 
-Additionally, you can manage linking. Read more about linking in our quickstart on [Account linking](/playfab-docs/identity/player-identity/login/quickstart.md).
+Additionally, you can manage linking. Read more about linking in our quickstart on [Account linking](../../identity/player-identity/login/quickstart.md).
 
 ![Game Manager - Player - Accounts - Link New Account](media/tutorials/game-manager-player-link-new-account.png)  
 

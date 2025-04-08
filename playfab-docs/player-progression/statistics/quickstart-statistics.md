@@ -18,7 +18,7 @@ to learn how to create a quick leaderboard from our website [Game Manager](https
 ## Prerequisites
 
 We're going to need a PlayFab account to use the PlayFab Statistics service. For instructions to create an account, 
-see [Authentication](/playfab-docs/identity/dev-identity/authentication/aad-authentication.md).
+see [Authentication](../../identity/dev-identity/authentication/aad-authentication.md).
 
 ## Creating a Statistic
 

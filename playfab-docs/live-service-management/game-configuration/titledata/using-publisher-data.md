@@ -211,4 +211,4 @@ public void ServerGetUserPublisherInternalData() {
 ## See also
 
 - [Title Data quickstart](quickstart.md)
-- [CloudScript quickstart](/playfab-docs/live-service-management/service-gateway/automation/cloudscript/quickstart.md))
+- [CloudScript quickstart](../../../live-service-management/service-gateway/automation/cloudscript/quickstart.md))

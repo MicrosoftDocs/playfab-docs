@@ -16,7 +16,7 @@ Player data is information about a player that is stored to the PlayFab service 
 
 PlayFab provides two ways to store player data:
 
-- [Entities](/playfab-docs/live-service-management/game-configuration/entities/index.md): Allows you to store data in objects and files across Players, Characters, and Groups.
+- [Entities](../../live-service-management/game-configuration/entities/index.md): Allows you to store data in objects and files across Players, Characters, and Groups.
 - [Player Data/UserData](quickstart.md): Allows you to store Key/Value pair data for players.
 
 To provide the most flexibility and best performance, we recommended that *all* new titles use [Entity objects](../../live-service-management/game-configuration/entities/entity-objects.md).

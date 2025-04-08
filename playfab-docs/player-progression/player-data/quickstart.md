@@ -118,6 +118,6 @@ In the Unity Editor, select the play button. On success, the results of the of c
 - [How to set read-only player data](how-to-set-read-only-player-data.md)
 - [How to get read-only player data](how-to-get-read-only-player-data.md)
 - [How to modify read-only or internal player data from CloudScript](how-to-modify-read-only-internal-player-data.md)
-- [Title Data quickstart](/playfab-docs/live-service-management/game-configuration/titledata/quickstart.md)  
+- [Title Data quickstart](../../live-service-management/game-configuration/titledata/quickstart.md)  
 - [Using Publisher Data](../../live-service-management/game-configuration/titledata/using-publisher-data.md)  
-- [CloudScript quickstart](/playfab-docs/live-service-management/service-gateway/automation/cloudscript/quickstart.md)
+- [CloudScript quickstart](../../live-service-management/service-gateway/automation/cloudscript/quickstart.md)

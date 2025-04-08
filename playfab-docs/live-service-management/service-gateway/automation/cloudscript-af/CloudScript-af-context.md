@@ -63,7 +63,7 @@ public class FunctionExecutionContext : FunctionExecutionContext<object>
 
 ## Use the context model when executing via Scheduled Task
 
-When you [Scheduled Tasks](/playfab-docs/data-analytics/acting-data/scheduled-tasks/index.md) to execute a script, the context that is provided includes the following information:
+When you [Scheduled Tasks](../../../../data-analytics/acting-data/scheduled-tasks/index.md) to execute a script, the context that is provided includes the following information:
 
 * The Scheduled Task Name Id
 * The event history which includes a stack of PlayStream Events
