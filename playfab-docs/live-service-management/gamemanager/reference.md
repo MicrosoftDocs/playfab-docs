@@ -113,7 +113,7 @@ Multiplayer allows you to configure server hosting and matchmaking.
 
 Additional information:
 
-- [CloudScript Quickstart](/playfab-docs/live-service-management/service-gateway/automation/cloudscript/quickstart.md)
+- [CloudScript Quickstart](/live-service-management/service-gateway/automation/cloudscript/quickstart.md)
 
 [Back to About the Game Manager](#about-game-manager)
 
@@ -197,8 +197,8 @@ The User Generated Content tab displays all published content for your title. Wh
 
 Additional Information:
 
-- [UGC Overview](/playfab-docs/economy-monetization/economy-v2/ugc/index.yml)
-- [UGC Quickstart](/playfab-docs/economy-monetization/economy-v2/ugc/quickstart.md)
+- [UGC Overview](/economy-monetization/economy-v2/ugc/index.yml)
+- [UGC Quickstart](/economy-monetization/economy-v2/ugc/quickstart.md)
 
 [Back to About the Game Manager](#about-game-manager)
 

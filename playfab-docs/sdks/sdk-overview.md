@@ -36,7 +36,7 @@ PlayFab Lobby and Matchmaking SDKs enable you to use lobby and matchmaking featu
 ## See also
 
 * [PlayFab Party SDKs](../multiplayer/networking/party-sdks.md)
-* [PlayFab Party quickstart](/playfab-docs/multiplayer/networking/quickstart.md) 
+* [PlayFab Party quickstart](/multiplayer/networking/quickstart.md) 
 * [PlayFab Multiplayer Game Server SDKs](../multiplayer/servers/server-sdks.md)
 * [PlayFab Lobby and Matchmaking SDKs](../multiplayer/lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
 * [PlayFab Multiplayer Server quickstart (API/PowerShell)](../multiplayer/servers/quickstart-for-multiplayer-servers-api-powershell.md)

@@ -28,7 +28,7 @@ ms.localizationpriority: medium
 
 6. **[Economy V2 Catalog Pricing](Meters/catalog-meters.md):** Learn about Economy V2 Catalog pricing.
 
-7. **[Experiments Pricing](/playfab-docs/live-service-management/game-configuration/experiments/pricing.md):** Learn about Experiments pricing when used.
+7. **[Experiments Pricing](/live-service-management/game-configuration/experiments/pricing.md):** Learn about Experiments pricing when used.
 
 8. **[Technical Support](PaidTechnicalSupport.md):** Access support included in paid account plans.
 

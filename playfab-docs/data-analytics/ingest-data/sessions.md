@@ -27,7 +27,7 @@ You'll need to have the **180829** version or newer. This SDK first introduces t
 
 To begin collecting these two events, you'll first need to integrate the Unity SDK in your client.
 
-Instructions on how to do this can be found in the [Unity3D quickstart](/playfab-docs/sdks/unity3d/quickstart.md).
+Instructions on how to do this can be found in the [Unity3D quickstart](/sdks/unity3d/quickstart.md).
 
 Presently, these events are disabled by default, though we plan to change this in the future. You can manage the collection of focus time from Game Manager:
 
@@ -38,7 +38,7 @@ Presently, these events are disabled by default, though we plan to change this i
 > [!NOTE]
 > Disabling this option will prevent these events from being emitted by the client.
 
-![Game Manager - Settings - Data Collection](/playfab-docs/data-analytics/legacy/media/tutorials/game-manager-settings-data-collection.png)  
+![Game Manager - Settings - Data Collection](/data-analytics/legacy/media/tutorials/game-manager-settings-data-collection.png)  
 
 You can also disable these from the code, by setting the option shown below to `true` in your title setup, as shown below.
 
@@ -52,7 +52,7 @@ If your game uses an SDK between the **180716** and **180809**, it's possible fo
 
 Because these events leverage the [WriteEvents](xref:titleid.playfabapi.com.events.playstreamevents.writeevents) API, you'll first need to ensure the **Enable Entity API** flag is enabled (checked) in the SDK settings at the time you update the SDK.
 
-![PlayFab - Settings - Enable Entity API](/playfab-docs/data-analytics/legacy/media/tutorials/playfab-settings-enable-entity-api.png)  
+![PlayFab - Settings - Enable Entity API](/data-analytics/legacy/media/tutorials/playfab-settings-enable-entity-api.png)  
 
 Next, you'll need to log into the entity system, by adding the line shown below to each of your login requests.
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## Prerequisites
 
 - [Push Notifications quickstart](quickstart.md)
-- [Unity3D quickstart](/playfab-docs/sdks/unity3d/quickstart.md)
+- [Unity3D quickstart](/sdks/unity3d/quickstart.md)
 - **Optional** [Unity Editor Extensions](https://blog.playfab.com/blog/new-unity-editor-extensions-beta)
 - **Optional** [Postman Quickstart](../../../../sdks/postman/postman-quickstart.md)
 

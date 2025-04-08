@@ -55,7 +55,7 @@ you can check the following page:  [Quickstart Statistics](quickstart-statistics
 - `Name`: This parameter helps you identify the statistics definition. It's important to keep something relevant here since it going to be 
 used to make other requests to retrieve information
 - `EntityType`: This parameter specifies the type of entity you want to create your statistic for. 
-You can learn more here: [Entity Programming Model](/playfab-docs/live-service-management/game-configuration/entities/index.md).
+You can learn more here: [Entity Programming Model](/live-service-management/game-configuration/entities/index.md).
 - `VersionConfiguration`: This parameter allows you to set a versioning strategy for statistics that reset themselves 
 after a certain period. This concept is covered in depth here:  [Seasonal Statistics](seasonal-statistics.md).
 - `Columns`: Here, we define the number of columns for our statistic. In this example, we only set one column for the long shots.

@@ -163,5 +163,5 @@ public void SetTitleInternalData() {
 ## See also
 
 - [Using Publisher Data](using-publisher-data.md)
-- [Player Data Quickstart](/playfab-docs/player-progression/player-data/quickstart.md)
-- [CloudScript Quickstart](/playfab-docs/live-service-management/service-gateway/automation/cloudscript/quickstart.md)
+- [Player Data Quickstart](/player-progression/player-data/quickstart.md)
+- [CloudScript Quickstart](/live-service-management/service-gateway/automation/cloudscript/quickstart.md)

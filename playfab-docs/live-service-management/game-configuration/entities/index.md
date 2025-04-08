@@ -56,7 +56,7 @@ The entity programming model is the foundation for PlayFab's next generation of 
 - [Groups](xref:titleid.playfabapi.com.groups.groups)
 - [Data - File](xref:titleid.playfabapi.com.data.file)
 - [Data - Object](xref:titleid.playfabapi.com.data.object)
-- [Events](/playfab-docs/api-references/events/index.md)
+- [Events](/api-references/events/index.md)
 - [CloudScript](xref:titleid.playfabapi.com.cloudscript.server-sidecloudscript)
 - [Multiplayer](xref:titleid.playfabapi.com.multiplayer.multiplayerserver)
 

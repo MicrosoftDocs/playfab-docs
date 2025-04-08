@@ -27,7 +27,7 @@ Our player data features can enable you to store data assiciated with a player, 
 
 - [Learn more about Player Data](./player-data/index.md)
 - [Quickstart](player-data/quickstart.md)
-- [Learn more about Player Entity Files](/playfab-docs/live-service-management/game-configuration/entities/entity-files.md)
+- [Learn more about Player Entity Files](/live-service-management/game-configuration/entities/entity-files.md)
 
 ### Stats
 

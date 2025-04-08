@@ -39,7 +39,7 @@ The Trends tab consists of three sections:
 2. Spark Cards
 3. Graphs
 
-![Trends Tab](/playfab-docs/data-analytics/legacy/media/tutorials/trends-tab.png)
+![Trends Tab](/data-analytics/legacy/media/tutorials/trends-tab.png)
 
 ## Filters
 
@@ -54,7 +54,7 @@ At the top, there are three page-level filters that can be applied. Choosing any
 > [!NOTE]
 > Platform and Region filters are not currently supported for Revenue. This will be resolved in a future release.
 
-![Screenshot of the dashboard when filters are used](/playfab-docs/data-analytics/legacy/media/tutorials/filters.png)
+![Screenshot of the dashboard when filters are used](/data-analytics/legacy/media/tutorials/filters.png)
 
 ## Spark Cards
 
@@ -66,7 +66,7 @@ The Spark Cards are designed to offer an at-a-glance view of what happened that 
 
 Definitions for each are obtained by hovering over the metric or by tapping, if using a mobile phone.
 
-![Example summary view using Spark Card](/playfab-docs/data-analytics/legacy/media/tutorials/spark-card.png)  
+![Example summary view using Spark Card](/data-analytics/legacy/media/tutorials/spark-card.png)  
 
 ## Graphs
 
@@ -76,7 +76,7 @@ In the upper right-hand corner of each graph, individual lines can be toggled on
 
 Hover over any data point to display the actual value for the selected day. To the right of each graph, supporting metrics offer additional insights such as the average and/or total for the period.
 
-![Screenshot of the trends interface for Graphs](/playfab-docs/data-analytics/legacy/media/tutorials/graph.png)
+![Screenshot of the trends interface for Graphs](/data-analytics/legacy/media/tutorials/graph.png)
 
 ## Data Collection
 
