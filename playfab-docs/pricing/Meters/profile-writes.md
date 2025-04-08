@@ -172,7 +172,7 @@ The following APIs cause the Profile writes meter to increment.
     Adds or updates a contact email to the player's profile.
 
 - [AddSharedGroupMembers](/rest/api/playfab/server/shared-group-data/addsharedgroupmembers?)
-    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
+    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [AddUsernamePassword](/rest/api/playfab/client/account-management/addusernamepassword?)
     Adds playfab username/password auth to an existing account created via an anonymous auth method, e.g. automatic device ID login.
@@ -187,7 +187,7 @@ The following APIs cause the Profile writes meter to increment.
     Grants the player's current entitlements from Xbox Live, consuming all availble items in Xbox and granting them to the player's PlayFab inventory. This call is idempotent and will not grant previously granted items to the player.
 
 - [CreateSharedGroup](/rest/api/playfab/client/shared-group-data/createsharedgroup?)
-    Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. Upon creation, the current user will be the only member of the group. Shared Groups are designed for sharing data between a very small number of players. For more info, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
+    Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. Upon creation, the current user will be the only member of the group. Shared Groups are designed for sharing data between a very small number of players. For more info, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [GrantCharacterToUser](/rest/api/playfab/client/characters/grantcharactertouser?)
     Grants the specified character type to the user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
@@ -231,9 +231,6 @@ The following APIs cause the Profile writes meter to increment.
 - [LinkTwitch](/rest/api/playfab/client/account-management/linktwitch?)
     Links the Twitch account associated with the token to the user's PlayFab account.
 
-- [LinkWindowsHello](/rest/api/playfab/client/account-management/linkwindowshello?)
-    Link Windows Hello authentication to the current PlayFab Account.
-
 - [LinkXboxAccount](/rest/api/playfab/client/account-management/linkxboxaccount?)
     Links the Xbox Live account associated with the provided access code to the user's PlayFab account.
 
@@ -252,9 +249,6 @@ The following APIs cause the Profile writes meter to increment.
 - [RegisterPlayFabUser](/rest/api/playfab/client/authentication/registerplayfabuser?)
     Registers a new Playfab user account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. You must supply either a username or an email address.
 
-- [RegisterWithWindowsHello](/rest/api/playfab/client/authentication/registerwithwindowshello?)
-    Registers a new PlayFab user account using Windows Hello authentication, returning a session ticket that can subsequently be used for API calls which require an authenticated user
-
 - [RemoveContactEmail](/rest/api/playfab/client/account-management/removecontactemail?)
     Removes a contact email from the player's profile.
 
@@ -265,7 +259,7 @@ The following APIs cause the Profile writes meter to increment.
     Removes the specified generic service identifier from the player's PlayFab account.
 
 - [RemoveSharedGroupMembers](/rest/api/playfab/client/shared-group-data/removesharedgroupmembers?)
-    Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
+    Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [ReportAdActivity](/rest/api/playfab/client/advertising/reportadactivity?)
     Report player's ad activity
@@ -324,9 +318,6 @@ The following APIs cause the Profile writes meter to increment.
 - [UnlinkTwitch](/rest/api/playfab/client/account-management/unlinktwitch?)
     Unlinks the related Twitch account from the user's PlayFab account.
 
-- [UnlinkWindowsHello](/rest/api/playfab/client/account-management/unlinkwindowshello?)
-    Unlink Windows Hello authentication from the current PlayFab Account.
-
 - [UnlinkXboxAccount](/rest/api/playfab/client/account-management/unlinkxboxaccount?)
     Unlinks the related Xbox Live account from the user's PlayFab account.
 
@@ -349,7 +340,7 @@ The following APIs cause the Profile writes meter to increment.
     Updates the values of the specified title-specific statistics for the user. By default, clients are not permitted to update statistics. Developers may override this setting in the Game Manager > Settings > API Features.
 
 - [UpdateSharedGroupData](/rest/api/playfab/client/shared-group-data/updatesharedgroupdata?)
-    Adds, updates, and removes data keys for a shared group object. If the permission is set to Public, all fields updated or added in this call will be readable by users not in the group. By default, data permissions are set to Private. Regardless of the permission setting, only members of the group can update the data. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
+    Adds, updates, and removes data keys for a shared group object. If the permission is set to Public, all fields updated or added in this call will be readable by users not in the group. By default, data permissions are set to Private. Regardless of the permission setting, only members of the group can update the data. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [UpdateUserData](/rest/api/playfab/client/player-data-management/updateuserdata?)
 Creates and updates the title-specific custom data for the user which is readable and writable by the client.
@@ -448,7 +439,7 @@ Creates and updates the title-specific custom data for the user which is readabl
     Adds a given tag to a player profile. The tag's namespace is automatically generated based on the source of the tag.
 
 - [AddSharedGroupMembers](/rest/api/playfab/server/shared-group-data/addsharedgroupmembers?)
-    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
+    Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [AddUserVirtualCurrency](/rest/api/playfab/server/player-item-management/adduservirtualcurrency?)
     Increments the user's balance of the specified virtual currency by the stated amount.
@@ -463,13 +454,13 @@ Creates and updates the title-specific custom data for the user which is readabl
     Consume uses of a consumable item. When all uses are consumed, it will be removed from the player's inventory.
 
 - [CreateSharedGroup](/rest/api/playfab/server/shared-group-data/createsharedgroup?)
-    Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. When created by a server, the group will initially have no members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
+    Requests the creation of a shared group object, containing key/value pairs which may be updated by all members of the group. When created by a server, the group will initially have no members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [DeleteCharacterFromUser](/rest/api/playfab/server/characters/deletecharacterfromuser?)
     Deletes the specific character ID from the specified user.
 
 - [DeleteSharedGroup](/rest/api/playfab/server/shared-group-data/deletesharedgroup?)
-    Deletes a shared group, freeing up the shared group ID to be reused for a new group. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
+    Deletes a shared group, freeing up the shared group ID to be reused for a new group. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [GrantCharacterToUser](/rest/api/playfab/server/characters/grantcharactertouser?)
     Grants the specified character type to the user. CharacterIds are not globally unique; characterId must be evaluated with the parent PlayFabId to guarantee uniqueness.
@@ -514,7 +505,7 @@ Creates and updates the title-specific custom data for the user which is readabl
     Remove a given tag from a player profile. The tag's namespace is automatically generated based on the source of the tag.
 
 - [RemoveSharedGroupMembers](/rest/api/playfab/server/shared-group-data/removesharedgroupmembers?)
-    Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](/gaming/playfab/features/social/groups/using-shared-group-data).
+    Removes users from the set of those able to update the shared data and the set of users in the group. Only users in the group can remove members. If as a result of the call, zero users remain with access, the group and its associated data will be deleted. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [RevokeAllBansForUser](/rest/api/playfab/server/account-management/revokeallbansforuser?)
     Revoke all active bans for a user.

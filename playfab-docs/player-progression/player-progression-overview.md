@@ -12,23 +12,22 @@ ms.localizationpriority: medium
 
 # What is Player Progression in PlayFab?
 
-In essence, cross-progression in gaming focuses on providing a seamless and unified gaming experience that respects and
+Our player progression products focus on providing a seamless and unified gaming experience that respects and
 maintains a player's investment in their gaming achievements across different platforms. This behavior ensures that their progress 
-and standing in the gaming community aren't bounded by the limitations of any device or platform.
-
+isn't constrained to any device or platform.
 
 |Service|Description|
 |--|--|
-|[Leaderboards](./leaderboards/index.md)| Rank players based on in-game performance.|
-|[Statistics](./statistics/index.md)| Capture and represent player progression. |
+|[Player Data](player-data/index.md)| Store arbitrary files or key:value pairs  |
+|[Statistics](./statistics/index.md)| Store numerical values about a player with aggregation mechanisms |
 
-## Leaderboards 
+## Player Data
 
-Learn more about the new features of Leaderboards, how to configure it and all the different tutorials available.
+Our player data features can enable you to store data assiciated with a player, from arbirary blobs or files, to JSON key:value pairs. This data can be shared with others, or synced to multiple devices so your players always have the right data. 
 
-- [Learn more about Leaderboards](./leaderboards/index.md)
-- [Quickstart](../community/associations/leaderboards/quickstart-leaderboards.md)
-- [Create Leaderboard](../community/associations/leaderboards/create-basic-leaderboard.md)
+- [Learn more about Player Data](./player-data/index.md)
+- [Quickstart](player-data/quickstart.md)
+- [Learn more about Player Entity Files](/playfab-docs/live-service-management/game-configuration/entities/entity-files.md)
 
 ### Stats
 
@@ -37,7 +36,3 @@ Learn more about the new features of Statistics, how to configure it and all the
 - [Learn more about Statistics](./statistics/index.md)
 - [Quickstart](statistics/quickstart-statistics.md)
 - [Create statistics](statistics/create-basic-statistics.md)
-
-to do:
-    1. Write an overview that connects Stats with Player data into the idea of a product for Player Progression
-    1. Determine if any content is missing from this section

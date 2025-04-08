@@ -55,7 +55,7 @@ you can check the following page:  [Quickstart Statistics](quickstart-statistics
 - `Name`: This parameter helps you identify the statistics definition. It's important to keep something relevant here since it going to be 
 used to make other requests to retrieve information
 - `EntityType`: This parameter specifies the type of entity you want to create your statistic for. 
-You can learn more here: [Entity Programming Model](../../entities/index.md).
+You can learn more here: [Entity Programming Model](/playfab-docs/live-service-management/game-configuration/entities/index.md).
 - `VersionConfiguration`: This parameter allows you to set a versioning strategy for statistics that reset themselves 
 after a certain period. This concept is covered in depth here:  [Seasonal Statistics](seasonal-statistics.md).
 - `Columns`: Here, we define the number of columns for our statistic. In this example, we only set one column for the long shots.
@@ -103,6 +103,7 @@ public static async Task GetStatisticDefinitions(PlayFabAuthenticationContext co
 ### Updating a statistic definition
 
 If you want to update your statistic definition, you can do so as follows:
+
 ``` C#
 public static async Task UpdateStatisticDefinitionAsync(PlayFabAuthenticationContext context, string statisticName, VersionConfiguration version)
 {
@@ -119,6 +120,7 @@ public static async Task UpdateStatisticDefinitionAsync(PlayFabAuthenticationCon
 }
 
  ```
+
 Note that, Columns, EntityType and ResetInterval cannot be modifed as part of the update.
 
 ``` C#
@@ -182,10 +184,11 @@ public static async Task UpdateStatisticForPlayer(PlayFabAuthenticationContext c
 ```
 
 Now, let's explain some key elements of this example:
+
 - `Entity`: This parameter corresponds to the entity from which we want to make the update of the stat.
 - `Statistics`: This parameter corresponds to the actual set of statistics of an entity. 
 - `StatisticUpdate`: This parameter corresponds to the statistics values that are going to be added.
-    -  `Scores`: This parameter corresponds to the list of scores you can add to one entity. Remember, statistics can have more than one column. 
+    - `Scores`: This parameter corresponds to the list of scores you can add to one entity. Remember, statistics can have more than one column. 
      You can check these concepts in depth here: [Doing More With Statistics](doing-more-statistics.md)
     - `Name`: This parameter corresponds to the statistic name set when you created the statistic definition.
 
@@ -251,19 +254,20 @@ In the next example, you can see how to data from your statistic.
  ```
 
 Now, let's explain some key elements of this example:
+
 - `Entity`: This parameter is the entity from which you to delete.
 - `List<StatisticDelete>`: This parameter is a list of the names of the stats you want to delete.
 
 ## Conclusions
 
 In this tutorial, we learned how to do the following operations: 
-* Create a statistic
-* Check the configuration of a statistic
-* Update the configuration of a statistic
-* Delete the statistic configuration
-* Populate the statistic
-* Delete entries in the statistic.
 
+- Create a statistic
+- Check the configuration of a statistic
+- Update the configuration of a statistic
+- Delete the statistic configuration
+- Populate the statistic
+- Delete entries in the statistic.
 
 ## See also
 
@@ -272,4 +276,3 @@ In this tutorial, we learned how to do the following operations:
 - [Add contextual data to statistics](metadata-statistics.md).
 - [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).
-

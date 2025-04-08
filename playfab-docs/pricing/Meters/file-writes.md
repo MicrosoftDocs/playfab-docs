@@ -18,39 +18,39 @@ The following APIs cause the Content & Configuration writes meter to increment.
 
 ## Admin APIs
 
-- [/rest/api/playfab/admin/title-wide-data-management/add-localized-news?view=playfab-rest&preserve-view=true](/rest/api/playfab/admin/title-wide-data-management/add-localized-news?view=playfab-rest&preserve-view=true)
+- [AddLocalizedNews](/rest/api/playfab/admin/title-wide-data-management/add-localized-news?view=playfab-rest&preserve-view=true)
   Update news item to include localized version
 
-- [/rest/api/playfab/admin/title-wide-data-management/add-news?view=playfab-rest&preserve-view=true](/rest/api/playfab/admin/title-wide-data-management/add-news?view=playfab-rest&preserve-view=true)
+- [AddNews](/rest/api/playfab/admin/title-wide-data-management/add-news?view=playfab-rest&preserve-view=true)
    Adds a new news item to the title's news feed
 
-- [/rest/api/playfab/admin/content/delete-content?view=playfab-rest&preserve-view=true](/rest/api/playfab/admin/content/delete-content?view=playfab-rest&preserve-view=true)
+- [DeleteContent](/rest/api/playfab/admin/content/delete-content?view=playfab-rest&preserve-view=true)
   Delete a content file from the title. When deleting a file that does not exist, it returns success.
 
--[/rest/api/playfab/admin/account-management/reset-password?view=playfab-rest&preserve-view=true](/rest/api/playfab/admin/account-management/reset-password?view=playfab-rest&preserve-view=true)
+-[ResetPassword](/rest/api/playfab/admin/account-management/reset-password?view=playfab-rest&preserve-view=true)
     Reset a player's password for a given title.
 
-- [/rest/api/playfab/admin/title-wide-data-management/setup-push-notification?view=playfab-rest&preserve-view=true](/rest/api/playfab/admin/title-wide-data-management/setup-push-notification?view=playfab-rest&preserve-view=true)
+- [SetupPushNotification](/rest/api/playfab/admin/title-wide-data-management/setup-push-notification?view=playfab-rest&preserve-view=true)
   Sets the Amazon Resource Name (ARN) for iOS and Android push notifications. Documentation on the exact restrictions can be found at: http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html. Currently, Amazon device Messaging is not supported.
 
-- [/rest/api/playfab/admin/authentication/update-policy?view=playfab-rest&preserve-view=true](/rest/api/playfab/admin/authentication/update-policy?view=playfab-rest&preserve-view=true)
+- [UpdatePolicy](/rest/api/playfab/admin/authentication/update-policy?view=playfab-rest&preserve-view=true)
     Changes a policy for a title
 
 ## Data APIs
 
-- [/rest/api/playfab/data/file/finalize-file-uploads?view=playfab-rest&preserve-view=true](/rest/api/playfab/data/file/finalize-file-uploads?view=playfab-rest&preserve-view=true)
+- [FinalizeFileUploads](/rest/api/playfab/data/file/finalize-file-uploads?view=playfab-rest&preserve-view=true)
   Finalize file uploads to an entity's profile.
 
-- [/rest/api/playfab/data/file/delete-files?view=playfab-rest&preserve-view=true](/rest/api/playfab/data/file/delete-files?view=playfab-rest&preserve-view=true)
+- [DeleteFiles](/rest/api/playfab/data/file/delete-files?view=playfab-rest&preserve-view=true)
   Delete files on an entity's profile.
 
-- [/rest/api/playfab/data/file/initiate-file-uploads?view=playfab-rest&preserve-view=true](/rest/api/playfab/data/file/initiate-file-uploads?view=playfab-rest&preserve-view=true)
+- [InitiateFileUploads](/rest/api/playfab/data/file/initiate-file-uploads?view=playfab-rest&preserve-view=true)
   Initiates file uploads to an entity's profile.
 
 ## Server APIs
 
-- [/rest/api/playfab/server/account-management/delete-push-notification-template?view=playfab-rest&preserve-view=true](/rest/api/playfab/server/account-management/delete-push-notification-template?view=playfab-rest&preserve-view=true)
+- [DeletePushNotificationTemplate](/rest/api/playfab/server/account-management/delete-push-notification-template?view=playfab-rest&preserve-view=true)
    Deletes push notification template for title
 
-- [/rest/api/playfab/server/account-management/save-push-notification-template?view=playfab-res&preserve-view=true](/rest/api/playfab/server/account-management/save-push-notification-template?view=playfab-res&preserve-view=true)
+- [SavePushNotificationTemplate](/rest/api/playfab/server/account-management/save-push-notification-template?view=playfab-res&preserve-view=true)
    Saves push notification template for title

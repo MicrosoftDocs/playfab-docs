@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Player ban system
 
-The player ban feature allows you to restrict access to the game for certain players who break the rules. When a player ban is applied to a player, any existing player authentication tokens are invalidated and future authentication attempts made by the player will be rejected. Player bans may be permanent or temporary for a specified time range, and may be applied to a player ID or an IP address. A ban is scoped to a title and doesn't apply to any other titles in your [namespace](../entities/index.md). 
+The player ban feature allows you to restrict access to the game for certain players who break the rules. When a player ban is applied to a player, any existing player authentication tokens are invalidated and future authentication attempts made by the player will be rejected. Player bans may be permanent or temporary for a specified time range, and may be applied to a player ID or an IP address. A ban is scoped to a title and doesn't apply to any other titles in your [namespace](/playfab-docs/live-service-management/game-configuration/entities/index.md). 
 
 The following tutorial shows you how to utilize the ban system, using the PlayFab API and Game Manager.
 
@@ -104,4 +104,5 @@ Each ban you apply gets an assigned ID. Consider the following Server SDK API me
 > You can use CloudScript functions as part of an automated system that may ban a player. To find out more about CloudScript, see our tutorial [Writing Custom CloudScript](../../live-service-management/service-gateway/automation/cloudscript/writing-custom-cloudscript.md).
 
 ## See Also
+
 [BanUsers](xref:titleid.playfabapi.com.server.accountmanagement.banusers)

@@ -24,11 +24,11 @@ ms.localizationpriority: medium
 
 4. **[Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
 
-5. **[Party Pricing](../multiplayer/networking/pricing.md):** Learn about Party pricing when Party is enabled.
+5. **[Party Pricing](meters/meters.md#party):** Learn about Party pricing when Party is enabled.
 
 6. **[Economy V2 Catalog Pricing](Meters/catalog-meters.md):** Learn about Economy V2 Catalog pricing.
 
-7. **[Experiments Pricing](../analytics/experiments/pricing.md):** Learn about Experiments pricing when used.
+7. **[Experiments Pricing](/playfab-docs/live-service-management/game-configuration/experiments/pricing.md):** Learn about Experiments pricing when used.
 
 8. **[Technical Support](PaidTechnicalSupport.md):** Access support included in paid account plans.
 

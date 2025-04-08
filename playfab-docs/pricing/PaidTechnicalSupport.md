@@ -22,9 +22,10 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 
 **Minimum Required Account Plan:** No account needed, open to the public.
 
-**How to access:** To view PlayFab documentation, see [PlayFab Documentation](../../index.yml).
+**How to access:** To view PlayFab documentation, see [PlayFab Documentation](/playfab-docs/index.yml).
 
 ### PLAYFAB DISCORD FORUMS
+
 **Purpose:** The PlayFab Discord Forums provide community based product support. Use the PlayFab category and channels to check on service status, post questions, share answers, and discuss the PlayFab product experience.
 
 **Minimum Required Account Plan:** No PlayFab account is needed to post, view, or engage with the community.
@@ -34,17 +35,20 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 **Move to Discord:** PlayFab moved its community forums from PlayFab.com to Discord on June 26, 2024. Read more about it here: [PlayFab Dev Forums Move to Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/) 
 
 ### SUPPORT TICKET SUBMISSION
+
 **Purpose:** Use support tickets to report a bug, to understand how to use a particular PlayFab feature, or to request help with a technical problem. Customers with paid accounts may submit support tickets directly to the PlayFab team through the "Contact Us" Page in Game Manager. Customers will receive a response within 1 business day.
 
 **Minimum Required Account Plan:** Standard Account Plan
 
 **How to access:** Qualified accounts can access the **Contact Us** page in Game Manager:
+
 1. Log in to [PlayFab.com](https://playfab.com).
 2. Navigate to the **Title Overview** page of the title needing support.
 3. To access the help menu, select the **?** in the top right navigation bar.
 4. Select **Contact Us**.
 
 ### EMERGENCY ESCALATIONS
+
 **Purpose:** To provide PlayFab's fastest incident response time to customers during emergencies by notifying on-call PlayFab engineers.
 
 > [!NOTE]
@@ -53,6 +57,7 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 **Minimum Required Account Plan:** Premium Account Plan
 
 **How to access:** Qualified accounts can use the emergency escalation option via the **Contact Us** page in Game Manager:
+
 1. Log in to [PlayFab.com](https://playfab.com).
 2. Navigate to the **Title Overview** page of the title needing support.
 3. Select the **?** in the top right navigation bar to access the drop-down menu.

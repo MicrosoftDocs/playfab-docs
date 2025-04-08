@@ -99,7 +99,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
 ### Getting a Title Entity Token
 
-One way to interact with PlayFab's [Entity Programming Model](../../features/data/entities/index.md) is to get a Title Entity Token. This can be useful if you want to make changes to title config data, or if you want to make adjustments to a large number of players:
+One way to interact with PlayFab's [Entity Programming Model](/playfab-docs/live-service-management/game-configuration/entities/index.md) is to get a Title Entity Token. This can be useful if you want to make changes to title config data, or if you want to make adjustments to a large number of players:
 
 - Under the **PlayFab Collections** folder, expand the **Authentication** namespace and select `GetEntityToken`
 - Under **Headers**, uncheck `X-Authorization`
@@ -120,7 +120,7 @@ One way to interact with PlayFab's [Entity Programming Model](../../features/dat
 
 ### Getting a Title_Player_Account Entity Token
 
-Another way to interact with PlayFab's [Entity Programming Model](../../features/data/entities/index.md) is to get a Title_Player_Account Entity Token. This is useful if you want to make changes to a single player:
+Another way to interact with PlayFab's [Entity Programming Model](/playfab-docs/live-service-management/game-configuration/entities/index.md) is to get a Title_Player_Account Entity Token. This is useful if you want to make changes to a single player:
 
 - Under the **PlayFab Collections** folder, expand the **Client** namespace and select `LoginWithCustomID`
 - Under **Body**, change the `CreateAccount` value from `false` to `true`
@@ -149,6 +149,6 @@ Another way to interact with PlayFab's [Entity Programming Model](../../features
 You now have an entity token to pass into other API calls to start setting up your PlayFab title.
 
 > [!div class="nextstepaction"]
-> [PlayFab Quickstarts >](/gaming/playfab/gamemanager/quickstart)
+> [PlayFab Quickstarts >](/playfab-docs/live-service-management/gamemanager/quickstart.md)
 > [!div class="nextstepaction"]
 > [API References >](../../api-references/index.md)

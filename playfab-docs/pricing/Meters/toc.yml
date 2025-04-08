@@ -19,4 +19,6 @@ items:
     href: economy-writes.md
   - name: Economy v2 Catalog Meters
     href: catalog-meters.md 
+  - name: Churn Prediction Meters
+    href: /playfab-docs/data-analytics/learn-data/churn-prediction/pricing.md
 

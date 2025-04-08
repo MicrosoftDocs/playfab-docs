@@ -1,6 +1,6 @@
 items:
 - name: What's New in March 2025
-  href: whats-new/whats-new.md
+  href: whats-new.md
 - name: Previous Release Notes
   items:
   - name: 2025 SDK Release Notes

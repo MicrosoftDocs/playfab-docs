@@ -140,4 +140,4 @@ For a list of all available client API calls, see [PlayFab API References](../..
 
 This quickstart shows a simplified procedure for authenticating a user. For more information on user authentication, see [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md).
 
-Learn how to bind an account to multiple devices and login mechanisms: [Account linking quickstart](../../features/authentication/login/quickstart.md).
+Learn how to bind an account to multiple devices and login mechanisms: [Account linking quickstart](../../identity/player-identity/login/quickstart.md).

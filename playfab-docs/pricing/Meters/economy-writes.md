@@ -20,7 +20,7 @@ The following APIs cause the Economy v2 writes meter to increment.
 * [DeleteInventoryItems](/rest/api/playfab/economy/inventory/delete-inventory-items)
 * [ExecuteInventoryOperations](/rest/api/playfab/economy/inventory/execute-inventory-operations)
 * [PurchaseInventoryItems](/rest/api/playfab/economy/inventory/purchase-inventory-items)
-* [SubtractInventoryItems](/inventory/subtract-inventory-items)
+* [SubtractInventoryItems](/rest/api/playfab/economy/inventory/subtract-inventory-items)
 * [TransferInventoryItems](/rest/api/playfab/economy/inventory/transfer-inventory-items)
 * [UpdateInventoryItems](/rest/api/playfab/economy/inventory/update-inventory-items)
 

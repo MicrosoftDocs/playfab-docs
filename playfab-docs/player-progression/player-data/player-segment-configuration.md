@@ -53,6 +53,7 @@ In this example we're going to:
 - Run a CloudScript function **helloWorld** for each player that enters the segment.
 
 A *defining characteristic* of a player might be a:
+[Set up your first virtual currency](../../economy-monetization/economy-v2/tutorials/currencies.md)
 
 - Login time
 - Linked device type
@@ -69,7 +70,7 @@ When a segment is defined, you have a variety of action options to run when a pl
 
  CloudScript is by far the most flexible action, granting you full control of the player and segment information at the time of segment-transition.
 
-Use the second parameter - *context* - in your [CloudScript handler](../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](player-inventory.md), [virtual currency](../economy/tutorials/currencies.md), [player data](quickstart.md), or [statistics](using-player-statistics.md).
+Use the second parameter - *context* - in your [CloudScript handler](../../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md) to identify the player and segment transition. Afterwards, you can perform any action you wish for the player, such as granting [inventory items](player-inventory.md), [virtual currency](../../economy-monetization/economy-v2/tutorials/currencies.md), [player data](quickstart.md), or [statistics](using-player-statistics.md).
 
 In our example shown here, the segment configuration requires four simple steps.
 

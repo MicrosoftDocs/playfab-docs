@@ -79,4 +79,4 @@ The base rate charge includes:
 
 > [Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md)
 >
-> [Party Pricing](../multiplayer/networking/pricing.md)
+> [Party Pricing](meters/meters.md#party)
