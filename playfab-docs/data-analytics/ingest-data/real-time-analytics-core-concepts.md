@@ -1,9 +1,9 @@
 ---
 title: Real-time Analytics Core Concepts
-author: joannaleecy
+author: among
 description: Describes the core concepts of the PlayFab analytics system.
-ms.author: joanlee
-ms.date: 10/26/2018
+ms.author: among
+ms.date: 04/08/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, analytics, metrics, events
@@ -35,7 +35,7 @@ An event - as a data structure - represents a change in state for your game. Eve
 3. **Timestamp** - (*When did it happen?*)
 4. **Associated Data** (also known as **Body**) - (*What are the relevant details?*)
 
-It's important to distinguish between *Automatic* and *Custom* events. Our [Generating PlayStream Events Tutorial](../../../../data-analytics/ingest-data/playstream-events.md) explains the difference.
+It's important to distinguish between *Automatic* and *Custom* events. Our [PlayStream events](playstream-events.md) tutorial explains the difference.
 
 ## Event flow
 
@@ -45,7 +45,7 @@ Your players are going to produce a large number of different events. But these 
 
 A solid analytics system allows you to group, sort, filter, count, transform, and perform calculations on a given set of events, turning the event flow into valuable, up-to-date information that you can use to run efficient LiveOps.
 
-## Guides
+## See Also
 
-- [Webhooks](../../data/webhooks/index.md): **Game Manager** page for automatically triggering non-PlayFab servers on specific game events.
-- [S3 Event Archiving](../../../../data-analytics/legacy/s3-event-archiving.md): **Game Manager** page for accessing recent PlayStream events.
+- [Actions and rules](../acting-data/action-rules-overview.md): Take real-time actions on PlayStream Events. 
+- [Webhooks](../acting-data/webhooks-overview.md): Automatically trigger non-PlayFab servers on specific game events.

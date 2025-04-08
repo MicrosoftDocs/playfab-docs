@@ -6,6 +6,11 @@ items:
     href: reports/overview.md
   - name: Quickstart
     href: reports/quickstart.md
+  - name: Concepts
+    expanded: true
+    items:
+    - name: Metrics and Terminology
+      href: reports/metrics-and-terminology.md
   - name: Tutorials
     expanded: true
     items:
@@ -48,6 +53,8 @@ items:
   - name: QuickStart
     expanded: true
     items:
+    - name: Trends QuickStart
+      href: trends/trends-quickstart.md
     - name: Segments as a Dimension (Preview)
       href: trends/segments-dimension-qs.md
 - name: Player Churn Prediction

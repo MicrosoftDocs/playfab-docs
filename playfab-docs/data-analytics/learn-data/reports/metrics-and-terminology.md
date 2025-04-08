@@ -1,9 +1,9 @@
 ---
 title: Metrics and Terminology
-author: joannaleecy
+author: among
 description: Contains tables with definitions for analytics terminology, engagement metrics, and revenue metrics.
-ms.author: joanlee
-ms.date: 10/29/2018
+ms.author: among
+ms.date: 04/08/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, analytics, metrics
@@ -11,6 +11,21 @@ ms.localizationpriority: medium
 ---
 
 # Metrics and terminology
+
+## What are metrics?
+
+When raw data is combined to produce a meaningful measure, we refer to the result as a *metric*. Certain metrics have become standard across the game industry, because they've proven valuable at informing the team and guiding the decision-making process.
+
+Some examples include:
+  
+- New Players  
+- Monthly Active Users  
+- Session Length  
+- Retention  
+
+### How PlayFab supports metrics
+
+PlayFab's automatically calculates industry-standard metrics for you on a daily basis, making them available to explore from the Reports and Trends tabs in the Analytics section. PlayFab offers views that are easy to digest, filter, and analyze.  
 
 ## Engagement metrics
 
@@ -44,7 +59,7 @@ ms.localizationpriority: medium
 | Metric               | Definition                                                                                             |
 | :--------------------| :------------------------------------------------------------------------------------------------------|
 | **Cohort**               | A group of players who joined or played the game on a given day, marked as Day 0.
-| **Event**                | Events mark the transition between important states in your game, such as a player logging in, making a purchase, leveling up, or dying. A *data event* is a data structure that captures information about the event. PlayFab uses JSON to represent data events. Standard events are generated automatically during use of PlayFab services; games can generate custom events to track other important game-specific events. All data events can be saved, aggregated, reacted to, and analyzed via PlayFab’s real-time data pipeline, known as PlayStream.
+| **Event**                | Events mark the transition between important states in your game, such as a player logging in, making a purchase, leveling up, or dying. A *data event* is a data structure that captures information about the event. PlayFab uses JSON to represent data events. Standard events are generated automatically during use of PlayFab services; games can generate custom events to track other important game-specific events. All data events can be saved, aggregated, reacted to, and analyzed via PlayFab's real-time data pipeline, known as PlayStream.
 | **Platform**             | PlayFab tracks four different types of platforms: OS (iOS, Android), Device Type (iPhone, iPad, Samsung Android, PC, Xbox, etc.), Account Type (Steam, Facebook, Kongregate, Custom, etc.), and Payment Type (iTunes, Google Play, Steam, Facebook, Xsolla, etc.).
 | **Segment**              | A group of players who share similar properties, e.g., geography, demographics, platform, purchase patterns, etc. In addition to standard segments, users can define custom segments. Note that segment definitions are limited to properties in the entity profile.
 | **Timestamp** (**TS**)       | All PlayFab real-time analytics and reports are based on **Coordinated Universal Time** (**UTC**).
