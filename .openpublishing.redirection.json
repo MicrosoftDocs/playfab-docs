@@ -191,77 +191,77 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "playfab-docs/features/multiplayer/servers/tracking-consumption.md",  
+            "source_path": "playfab-docs/features/multiplayer/servers/tracking-consumption.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/servers/billing-for-thunderhead",
             "redirect_document_id": true
         },
         {
-            "source_path": "playfab-docs/features/pricing/Meters/economy-storage.md",  
+            "source_path": "playfab-docs/features/pricing/Meters/economy-storage.md",
             "redirect_url": "/gaming/playfab/features/pricing/Meters/catalog-meters#storage",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/features/pricing/Meters/ugc-meters.md",  
+            "source_path": "playfab-docs/features/pricing/Meters/ugc-meters.md",
             "redirect_url": "/gaming/playfab/features/pricing/Meters/catalog-meters",
             "redirect_document_id": true
         },
         {
-            "source_path": "playfab-docs/features/economy-v2/catalog/limits.md",  
+            "source_path": "playfab-docs/features/economy-v2/catalog/limits.md",
             "redirect_url": "/gaming/playfab/features/economy-v2/limits",
             "redirect_document_id": true
         },
         {
-            "source_path": "playfab-docs/api-references/events/gamelobby-ended.md",  
+            "source_path": "playfab-docs/api-references/events/gamelobby-ended.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/gamelobby-started.md",  
+            "source_path": "playfab-docs/api-references/events/gamelobby-started.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/gameserverhost-started.md",  
+            "source_path": "playfab-docs/api-references/events/gameserverhost-started.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/gameserverhost-stopped.md",  
+            "source_path": "playfab-docs/api-references/events/gameserverhost-stopped.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/player-joined-lobby.md",  
+            "source_path": "playfab-docs/api-references/events/player-joined-lobby.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/player-left-lobby.md",  
+            "source_path": "playfab-docs/api-references/events/player-left-lobby.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/player-matched-with-lobby.md",  
+            "source_path": "playfab-docs/api-references/events/player-matched-with-lobby.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/session-ended.md",  
+            "source_path": "playfab-docs/api-references/events/session-ended.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/session-started.md",  
+            "source_path": "playfab-docs/api-references/events/session-started.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/title-game-build-added.md",  
+            "source_path": "playfab-docs/api-references/events/title-game-build-added.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
         {
-            "source_path": "playfab-docs/api-references/events/title-game-build-modified.md",  
+            "source_path": "playfab-docs/api-references/events/title-game-build-modified.md",
             "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
             "redirect_document_id": false
         },
@@ -1025,7 +1025,7 @@
             "source_path": "playfab-docs/features/analytics/metrics/s3-event-archiving.md",
             "redirect_url": "/gaming/playfab/data-analytics/legacy/s3-event-archiving",
             "redirect_document_id": false
-        }        
+        }
         ,
         {
             "source_path": "playfab-docs/features/personas/bi.md",
@@ -1041,6 +1041,11 @@
         {
             "source_path": "playfab-docs/features/multiplayer/servers/multiplayer-servers-detailed-price-sheet.md",
             "redirect_url": "/gaming/features/multiplayer/servers/server-comparison",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/c-sharp/xamarin-quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/c-sharp",
             "redirect_document_id": false
         }
     ]
