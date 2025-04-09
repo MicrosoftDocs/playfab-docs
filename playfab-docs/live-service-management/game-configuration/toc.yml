@@ -4,7 +4,6 @@ items:
   - name: Title Data
     href: titledata/toc.yml
   - name: Title communications
-    expanded: true
     href: title-commmunications/toc.yml
   - name: Segments
     href: segmentation/toc.yml

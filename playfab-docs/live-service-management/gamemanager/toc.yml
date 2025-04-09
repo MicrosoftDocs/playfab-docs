@@ -1,5 +1,5 @@
 items:
-- name: What is Game Manager?  
+- name: Overview
   href: index.md
 - name: Quickstart
   href: quickstart.md
