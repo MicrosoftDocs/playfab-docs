@@ -28,7 +28,7 @@ Then **61.85%** of them logged in the *next* day, and **55.85%** of them logged 
 
 Finally, **18.6%** came back *30 days* later, which corresponds to the report generate date, **1/24/2018**.
 
-This report, in addition to the [New User Retention Report](thirty-day-new-user-retention-report.md), is especially useful when you are running a LiveOps event, and want to check its effect on boosting engagement of existing players. For additional details, see [Metrics and Terminology](../../../miscellaneous/hold-topics/analytics/metrics/metrics-and-terminology.md).
+This report, in addition to the [New User Retention Report](thirty-day-new-user-retention-report.md), is especially useful when you are running a LiveOps event, and want to check its effect on boosting engagement of existing players. For additional details, see [Metrics and Terminology](metrics-and-terminology.md).
 
 ## Populating the report
 

@@ -162,7 +162,7 @@ list of users indicating which have outstanding backfill tickets in an
 ```
 
 The game server can recover a user from this situation by calling
-[CancelAllServerBackfillTicketsForPlayer](/rest/api/playfab/multiplayer/matchmaking/cancel-all-server-backfill-tickets-for-playe),
+[CancelAllServerBackfillTicketsForPlayer](/rest/api/playfab/multiplayer/matchmaking/cancel-all-server-backfill-tickets-for-player),
 which removes all backfill tickets the user is in.
 [ListServerBackfillTicketsForPlayer](/rest/api/playfab/multiplayer/matchmaking/list-server-backfill-tickets-for-player)
 is also provided as a method to discover which backfill tickets a player may be

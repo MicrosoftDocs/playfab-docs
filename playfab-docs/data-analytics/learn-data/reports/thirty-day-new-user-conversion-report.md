@@ -27,7 +27,7 @@ Under the **Day 0** column of that date, **0.50%** of these players made at leas
 
 Since conversion reflects a *cumulative* total of players, these percentage values increase along the time span, and reach **1.07%** on the **30th Day** - which corresponds to the report generation date, **2/13/2018**.
 
-For additional details, see [Metrics and Terminology](../../../miscellaneous/hold-topics/analytics/metrics/metrics-and-terminology.md).
+For additional details, see [Metrics and Terminology](metrics-and-terminology.md).
 
 ## Populating the report
 

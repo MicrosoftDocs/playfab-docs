@@ -33,7 +33,7 @@ An Overview report contains trend charts of each metric during the past 24 hours
 
 A Totals report contains the summary of each metric shown in the overview report. Daily and Rolling Thirty Day reports are generated on a daily basis, whereas Monthly reports are generated on the first day of each month.
 
-Report times are based on Coordinated Universal Time (UTC). For additional details on metrics, see [Metrics and Terminology](../../../miscellaneous/hold-topics/analytics/metrics/metrics-and-terminology.md).
+Report times are based on Coordinated Universal Time (UTC). For additional details on metrics, see [Metrics and Terminology](metrics-and-terminology.md).
 
 ## Totals reports
 

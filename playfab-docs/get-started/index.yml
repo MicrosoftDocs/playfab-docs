@@ -1,0 +1,60 @@
+### YamlMime:Landing
+
+title: Azure PlayFab fundamentals and getting started documentation
+summary: summary # < 160 chars
+
+metadata:
+  title: Azure PlayFab fundamentals and getting started documentation
+  description: Build your next game with PlayFab, start today! # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: m-kdearnley
+  ms.author: kdearnley
+  ms.date: 04/09/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: TODO
+            url: TODO
+      - linkListType: concept
+        links:
+          - text: TODO
+            url: TODO
+      - linkListType: tutorial
+        links:
+          - text: Create a developer account
+            url: ../identity/dev-identity/pfab-account.md
+          - text: Game Manager quickstart
+            url: ../live-service-management/gamemanager/quickstart.md
+
+  - title: Entity programming model
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Entity programming model overview
+            url: game-configuration/entities/index.md
+      - linkListType: quickstart
+        links:
+          - text: Entities quickstart
+            url: game-configuration/entities/quickstart.md
+
+  - title: Billing and metering
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Billing meters explained
+            url: ../pricing/Meters/meters.md
+      - linkListType: learn
+        links:
+          - text: Checking monthly estimated charges
+            url: ../pricing/billingDetails.md
+          - text: Best practices for lowering consumption
+            url: ../pricing/consumption-best-practices.md

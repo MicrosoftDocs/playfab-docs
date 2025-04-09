@@ -23,8 +23,8 @@ You can create segments with Player Custom properties either via API or Game man
 
 ### Via API
 
--     Use the [Create Segment API](/rest/api/playfab/admin/segments/create-segment) to create a segment. 
--     Add custom property predicates using the [Update Segment](/rest/api/playfab/admin/segments/update-segment) API.
+- Use the [Create Segment API](/rest/api/playfab/admin/segments/create-segment) to create a segment. 
+- Add custom property predicates using the [Update Segment](/rest/api/playfab/admin/segments/update-segment) API.
 
 ### Via Game Manager 
 

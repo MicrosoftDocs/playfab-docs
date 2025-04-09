@@ -1,6 +1,6 @@
 ---
 title: Metrics and Terminology
-author: among
+author: m-kdearnley
 description: Contains tables with definitions for analytics terminology, engagement metrics, and revenue metrics.
 ms.author: among
 ms.date: 04/08/2025

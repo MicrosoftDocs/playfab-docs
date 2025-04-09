@@ -1,6 +1,6 @@
 ---
 title: Real-time Analytics Core Concepts
-author: among
+author: m-kdearnley
 description: Describes the core concepts of the PlayFab analytics system.
 ms.author: among
 ms.date: 04/08/2025

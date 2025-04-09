@@ -21,8 +21,7 @@ Adhering to platform policies, we need to ensure that you're a registered develo
 
 If you're not yet a registered developer for the previously mentioned platforms and want to become one, go to their developer page to learn more.
 
-“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
-
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## Switch, PS4&#8482;, and PS5&#8482;
 
@@ -47,4 +46,4 @@ If you have more questions, post them on [PlayFab forums](https://community.play
 
 * [Party SDKs](../multiplayer/networking/party-sdks.md)
 * [Party samples](../multiplayer/networking/party-samples.md)
-* [Party Quickstart](quickstart.md)
+* [Party Quickstart](../multiplayer/networking/quickstart.md)
