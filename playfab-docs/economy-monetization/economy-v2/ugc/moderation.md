@@ -44,7 +44,7 @@ If not specified, `ConcernCategory` will default to `None`. The valid `ConcernCa
 - `SpamAdvertising`
 - `Profanity`
 
-Calling the `ReportItem` API will **only** fire a PlayStream event under the Event Name, `item_reported`. This can be queried using the [Data Explorer](/gaming/playfab/features/insights/data-explorer/) in the Game Manager. Example queries can be seen below:
+Calling the `ReportItem` API will **only** fire a PlayStream event under the Event Name, `item_reported`. This can be queried using the [Data Explorer](../../../data-analytics/learn-data/data-explorer/getting-started-with-data-explorer-basic.md) in the Game Manager. Example queries can be seen below:
 
 The following query returns **The total number of reports by ConcernCategory per ItemId in the last 3 days**
 

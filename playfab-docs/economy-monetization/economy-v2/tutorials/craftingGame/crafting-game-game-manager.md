@@ -175,7 +175,7 @@ For more information, see [CreateDraftItem](/rest/api/playfab/economy/catalog/cr
 ***
 
 > [!NOTE]
-> For more information on Items, Inventories, and other Economy functions and terms, see our [Economy V2 Documentation](/gaming/playfab/features/economy-v2/).
+> For more information on Items, Inventories, and other Economy functions and terms, see our [Economy V2 Documentation](../../overview.md).
 
 ## Step 5 - Use Catalog to view and edit your items
 

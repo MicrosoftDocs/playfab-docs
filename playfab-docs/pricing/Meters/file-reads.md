@@ -33,7 +33,7 @@ The following APIs cause the Content & Configuration reads meter to increment.
     This API retrieves a pre-signed URL for accessing a content file for the title. A subsequent HTTP GET to the returned URL will attempt to download the content. A HEAD query to the returned URL will attempt to retrieve the metadata of the content. Note that a successful result does not guarantee the existence of this content - if it has not been uploaded, the query to retrieve the data will fail. Also, please be aware that the Content service is specifically PlayFab's CDN offering, for which standard CDN rates apply.
 
 - [GetPhotonAuthenticationToken](/rest/api/playfab/client/authentication/get-photon-authentication-token?view=playfab-rest&preserve-view=true)
-    Gets a Photon custom authentication token that can be used to securely join the player into a Photon room. See [Photon Quickstart](/gaming/playfab/features/multiplayer/photon/quickstart) for more details.
+    Gets a Photon custom authentication token that can be used to securely join the player into a Photon room. See [Photon Quickstart](../../sdks/photon/quickstart.md) for more details.
 
 - [GetTitlePublicKey](/rest/api/playfab/client/authentication/get-title-public-key?view=playfab-rest&preserve-view=true)
     Returns the title's base 64 encoded RSA CSP blob.

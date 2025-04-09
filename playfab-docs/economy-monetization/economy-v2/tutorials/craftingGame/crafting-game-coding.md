@@ -37,7 +37,7 @@ PlayFabSettings.staticSettings.DeveloperSecretKey = "{Your Developer Secret Key}
 Once you have the environment set up, the PlayFab NuGet package installed and configured in your project, and both your Studio and Title created, we may start with coding our authentication.
 
 > [!NOTE]
-> There are several ways in which a user can get authenticated. In this example, we are going to use the **LoginWithCustomId** method. There are other ways to get authenticated, including platform-specific ones. For more information visit the [Login Basics](/gaming/playfab/features/authentication/login/login-basics-best-practices).
+> There are several ways in which a user can get authenticated. In this example, we are going to use the **LoginWithCustomId** method. There are other ways to get authenticated, including platform-specific ones. For more information visit the [Login Basics](../../../../identity/player-identity/login/login-basics-best-practices.md).
 
 Next is a sample code made in C# in which we authenticate a user using the **LoginWithCustomID**, which is classified as an anonymous sign-in. Before calling the API to authenticate, we must first declare a global variable in which we store the **EntityKey** that is generated as part of the sign in process.
 
@@ -281,7 +281,7 @@ The next JSON is an example of a successful return message after making the call
 
 ## Step 4 - Create a bundle
 
-Bundles allow you to group multiple items into a single item. For more information on Bundles, see our **Bundles Documentation** following [this link](/gaming/playfab/features/economy-v2/bundles).
+Bundles allow you to group multiple items into a single item. For more information on Bundles, see our **Bundles Documentation** following [this link](../../catalog/bundles.md).
 
 For our example, we'll use a **Bundle** to group the items returned by the **Kitchen**, this helps us maintain the **Icebox** item. The idea behind the ice box is to be a nonconsumable item when purchasing an ice cream, even though the ice box is one of the required materials.
 
@@ -400,8 +400,8 @@ var result = await PlayFabEconomyAPI.PurchaseInventoryItemsAsync(purchaseRequest
 
 ## See also
 
-- [Economy v2 overview](/gaming/playfab/features/economy-v2/)
+- [Economy v2 overview](../../overview.md)
 
-- [Settings](/gaming/playfab/features/economy-v2/settings)
+- [Settings](../../settings)
 
-- [Stores](/gaming/playfab/features/economy-v2/stores?tabs=creating-store-game-manager)
+- [Economy v2 Stores](../../catalog/stores.md#creating-a-store)

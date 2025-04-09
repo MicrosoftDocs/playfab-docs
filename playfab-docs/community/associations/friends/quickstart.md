@@ -33,6 +33,7 @@ If **Albert** adds **Bob** as a friend, there is *no* approval process for **Bob
 In the event that a player has linked their Steam, Facebook, or Xbox Live account, their platform-specific friends can also be displayed, if those friends also play your title.
 
 ## Making friends
+
 The example code uses the functions `DisplayFriends()`, and `DisplayError(string error)` as a proxy of your app's UI. You paste these into your editor to get it to work without any extra effort - or replace the calls with your own code.
 
 ```csharp

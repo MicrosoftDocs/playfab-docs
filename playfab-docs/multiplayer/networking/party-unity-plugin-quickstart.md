@@ -24,7 +24,7 @@ This quickstart helps you install the Party SDK for Unity and make your first AP
 - An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). Check on Unity support in documentation of your specific platform if needed. The minimum supported Unity version is Unity 2017 LTS.
 - A Unity Project, which can be any of the following options:
 
-  - A brand new project: For more information, see [Starting Unity for the first time](/gaming/playfab/sdks/unity3d/quickstart).
+  - A brand new project: For more information, see [Starting Unity for the first time](../../sdks/unity3d/quickstart).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 
@@ -41,6 +41,7 @@ Following the steps to download and install the PlayFab Party Unity plugin.
 1. To import the PlayFab Party Unity Plugin into your project, select  **Import**.
 
 ## Set up your scene
+
 This part of the guide shows you how to add the `PlayFabMultiplayerManager` to your scene to enable you to call PlayFab Party APIs from Unity.
 
 Before you can create a network, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../sdks/unity3d/quickstart.md#making-your-first-api-call).
@@ -84,11 +85,11 @@ Before you can create a network, you **must have a PlayFab player logged in**. F
 > [!NOTE]
 > You might receive the following errors:
 >
->  ```
->  Error    CS0227    Unsafe code may only appear if compiling with /unsafe
->  The plugin requires unsafe code because it interops with a native DLL.
->  
->  Mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "XGamingRuntime", "AMD64".
+> ```
+> Error    CS0227    Unsafe code may only appear if compiling with /unsafe
+> The plugin requires unsafe code because it interops with a native DLL.
+> 
+> Mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "XGamingRuntime", "AMD64".
 >  ```
 
 The Microsoft GDK and Windows only support x64.
@@ -260,6 +261,7 @@ Save HelloPartyLogic.cs and press Play in the Unity Editor.
         player.IsMuted = true;
     }
     ```
+
 ## Connecting to a network with custom peer connectivity configuration options
 
 This part of the guide shows you how to Create and Join a network with custom peer connectivity configuration options. The default
@@ -276,14 +278,17 @@ option is P2P, however, using any combination of the flags presented here: [Dire
     ```
 
 ## Handling title suspension
+
 Some platforms support temporarily suspending execution of your title: iOS, Switch, and GDK.
 When your title is suspended, the network stack becomes invalidated and PlayFab Party is unable to maintain a connection to the PlayFab Party network.
 Special consideration is required to handle suspending and resuming execution of your title when using PlayFab Party.
 
 ### iOS
+
 On iOS, you must leave and reconnect to the PlayFab Party network, which can be achieved by calling [ResetParty()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresetparty.md)
 
 ### Switch and GDK
+
 On Nintendo Switch and Microsoft GDK, you must clean up PlayFab Party and all resources associated with PlayFabMultiplayerManager then wait until the title execution resumes before reinitializing PlayFab Party and reconnecting to your network.
 
 "To clean up PlayFab Party during a title suspension call [Suspend()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunitysuspend.md). Once the title has resumed execution call [Resume()](unity-party-api-reference/classes/playfabmultiplayermanager/methods/playfabunityresume.md) to reinitialize PlayFab Party.

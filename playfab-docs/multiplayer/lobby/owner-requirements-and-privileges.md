@@ -12,14 +12,13 @@ ms.localizationpriority: medium
 
 # Lobby ownership
  
-
 This article explains Lobby ownership and the privileges it enables.
 
 ## Lobby owners vs members
 
 PlayFab entities interact with lobbies as either owners or members.
 
-The PlayFab entities that PlayFab Lobby currently supports are `title_player_account` for players and `game_server` for game servers. For more information on these entity types, see [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+The PlayFab entities that PlayFab Lobby currently supports are `title_player_account` for players and `game_server` for game servers. For more information on these entity types, see [Available built-in entity types](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md).
 
 Lobby members are players who have joined a lobby. Each member has an isolated property bag of member data.
 

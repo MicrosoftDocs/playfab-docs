@@ -22,7 +22,7 @@ Get started with the PlayFab REST API collection for Postman. Follow steps to in
 
 ## Prerequisites
 
-- A [PlayFab developer account](https://developer.playfab.com/sign-up)
+- A [PlayFab developer account](https://developer.playfab.com)
 - The [Postman native app](https://www.getpostman.com/)
 - An OS running [TLS](/windows/win32/secauthn/transport-layer-security-protocol) 1.2 or higher ([Windows support for TLS 1.2](/dotnet/framework/network-programming/tls#support-for-tls-12))
 

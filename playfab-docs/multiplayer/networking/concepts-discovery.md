@@ -10,19 +10,22 @@ keywords: playfab, multiplayer, networking
 ---
 
 # Integrating discovery with PlayFab Party
+
 Discovery is the process by which users find each other to play together. PlayFab Party does not provide a discovery mechanism, but can be used with any existing mechanism which provides communication between users.
 
 ## Basic creation and join flow
+
 A PlayFab Party network is [created](#creating-a-network) by a user on a single client, [advertised](#advertising-a-network), and then [joined](#joining-a-network) by other users on different clients.
 
 ### Creating a network
+
 The first consideration when using a PlayFab Party network with a game session is choosing which client and user will create the network (`PartyManager::CreateNewNetwork()`). From the perspective of PlayFab Party, it doesn't matter which user does this; any user can create a network. The creator is given no special privileges within the network. However, the client which creates the network is responsible for:
 
 - setting immutable network configuration (`PartyNetworkConfiguration`)
 - determining the initial invitation (`PartyInvitationConfiguration`)
 - advertising the network to other users
 
-The initial invitation contains an identifier and a list of users that are allowed to join the network. The users are specified as a list of `title_player_account` [Entity IDs](/gaming/playfab/features/data/entities/). Alternatively, the list can be empty, allowing any user with network descriptor and invitation identifier to join.
+The initial invitation contains an identifier and a list of users that are allowed to join the network. The users are specified as a list of `title_player_account` [Entity IDs](../../live-service-management/game-configuration/entities/index.md). Alternatively, the list can be empty, allowing any user with network descriptor and invitation identifier to join.
 
 ### Advertising a Network
 
@@ -52,7 +55,7 @@ The simplest scenario is one in which a single user creates a game session and w
 - Each invited user uses the network descriptor and invitation identifier to connect to the network.
 
 > [!NOTE]
-> When specifying users in an invitation, the users' `title_player_account` [Entity IDs](/gaming/playfab/features/data/entities/) are used. These Entity IDs will need to be obtained out-of-band of PlayFab Party.
+> When specifying users in an invitation, the users' `title_player_account` [Entity IDs](../../live-service-management/game-configuration/entities/index.md) are used. These Entity IDs will need to be obtained out-of-band of PlayFab Party.
 
 ### Lobby
 
@@ -60,16 +63,16 @@ If your game provides a lobby which allows data to be sent between clients, it c
 
 - A set of users is selected to play a game together.
 - One of those users is selected as the creator.
-- Each user in the set sends their `title_player_account` [Entity ID](/gaming/playfab/features/data/entities/) to the creator.
+- Each user in the set sends their `title_player_account` [Entity ID](../../live-service-management/game-configuration/entities/index.md) to the creator.
 - The creator creates the network, specifying the users' Entity IDs in the initial invitation configuration.
 - Once network creation completes, the creator sends the network descriptor and the initial invitation identifier to the set of users that should join.
 - Each user uses the network descriptor and the invitation identifier to connect to the network.
 
 ### Matchmaking
 
-A matchmaking service, such as [PlayFab Matchmaking](/gaming/playfab/features/multiplayer/matchmaking/), can be used to find a list of users to play with. The flow might look something like this:
+A matchmaking service, such as [PlayFab Matchmaking](../../live-service-management/game-configuration/entities/index.md), can be used to find a list of users to play with. The flow might look something like this:
 
-- Users initiate a match request with the service. The `title_player_account` [Entity ID](/gaming/playfab/features/data/entities/) must be part of the request, because the match result must contain each user's Entity ID.
+- Users initiate a match request with the service. The `title_player_account` [Entity ID](../../live-service-management/game-configuration/entities/index.md) must be part of the request, because the match result must contain each user's Entity ID.
 - Users receive a match result containing the set of users that should be part of the network.
 - A predetermined algorithm is used to select which user will be the creator.
 - The creator creates the network, specifying the other matched users' Entity IDs in the initial invitation configuration.

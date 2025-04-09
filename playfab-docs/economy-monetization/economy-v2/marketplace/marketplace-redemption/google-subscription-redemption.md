@@ -107,7 +107,7 @@ From the **Google Play Console**, go into your subscription inside your app, and
 To redeem an item, use [RedeemGooglePlayInventoryItems](/rest/api/playfab/economy/inventory/redeem-google-play-inventory-items). But before that, we must ensure that the player looking to redeem the item(s) gets properly authenticated in your app, for which you'll likely use the [LoginWithGoogleAccount](/rest/api/playfab/client/authentication/login-with-google-account).
 
 >[!NOTE]
-> For a more detailes example, see [Setting up PlayFab authentication using Google Play games sign-in in Unity](/gaming/playfab/features/authentication/platform-specific-authentication/google-sign-in-unity).
+> For a more detailes example, see [Setting up PlayFab authentication using Google Play games sign-in in Unity](../../../../identity/player-identity/platform-specific-authentication/google-sign-in-unity.md).
 
 After a successful **LoginWithGoogleAccount** call, PlayFab's API returns an **EntityToken** that you have to use as part of your **RedeemGooglePlayInventoryItems** headers with a `X-EntityToken` key.
 
@@ -138,5 +138,5 @@ Alongside the record in the player's transaction history, a PlayStream event is 
 
 ## See also
 
-- [Getting Started with Economy v2, Unity, and Android](/gaming/playfab/features/economy-v2/tutorials/getting-started-with-unity-and-android)
-- [Fraud prevention quickstart](/gaming/playfab/features/economy-v2/fraud-prevention/quickstart)
+- [Getting Started with Economy v2, Unity, and Android](../../../economy-v2/tutorials/getting-started-with-unity-and-android)
+- [Fraud prevention quickstart](../../../economy-v2/fraud-prevention/quickstart)

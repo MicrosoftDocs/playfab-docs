@@ -56,7 +56,7 @@ The `ContinuationToken` field that is returned from a search response can be pas
 
 ## Display Properties
 
-Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [Display Properties Mappings setting](/gaming/playfab/features/economy-v2/settings#display-properties) in Game Manager.
+Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [Display Properties Mappings setting](../../economy-v2/settings#display-property-mappings) in Game Manager.
 
 ![Display Properties screenshot in Game Manager](../media/displayproperties.png)
 
@@ -77,15 +77,15 @@ The Filter parameter allows you to filter the collection of items returned by th
 
 Filter supports OData logical operators and precedence using parenthesis:
 
-* Equal: ‘eq’
-* Not Equal: ‘ne’
-* Greater Than: ‘gt’
-* Greater than or Equal: ‘ge’
-* Less than: ‘lt’
-* Less than or Equal: ‘le’
-* Logical And: ‘and’
-* Logical Or: ‘or’
-* Logical Negation ‘not’
+* Equal: 'eq'
+* Not Equal: 'ne'
+* Greater Than: 'gt'
+* Greater than or Equal: 'ge'
+* Less than: 'lt'
+* Less than or Equal: 'le'
+* Logical And: 'and'
+* Logical Or: 'or'
+* Logical Negation 'not'
 
 Filter doesn't support arithmetic operators or string functions.  
 
@@ -123,7 +123,7 @@ To filter by a specific creator, you should use the syntax `title_player_account
 
 ### Filtering by Array fields
 
-Filter also supports `any()` for filtering against arrays. For example: `alternateIds/any(a: a/value eq ‘StoreOfferId’)`
+Filter also supports `any()` for filtering against arrays. For example: `alternateIds/any(a: a/value eq 'StoreOfferId')`
 
 ```json
   "Filter": "tags/any(t: t eq 'featured')"
@@ -138,7 +138,7 @@ The filter below will check for any items that have a contents field with non-nu
 ```
 
 > [!NOTE]
-> By default, Search will **NOT** return contents for items unless specified with a [Select](/gaming/playfab/features/economy-v2/catalog/search#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
+> By default, Search will **NOT** return contents for items unless specified with a [Select](../../economy-v2/catalog/search#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
 
 ### Filtering by Display Properties
 
@@ -156,13 +156,13 @@ Filtering can only be done with **queryable** Display Properties
   "OrderBy": "rating/average asc"
 ```
 
-You can pass a secondary property to break sorting ‘ties’:
+You can pass a secondary property to break sorting 'ties':
 
 ```json
   "OrderBy": "rating/average asc, rating/totalCount desc"
 ```
 
-Catalog items without a secondary value have an internal ‘score’ attribute that used for breaking ties. That scoring is based on the storage order in the underlying database and is constantly changing as items are added and removed.
+Catalog items without a secondary value have an internal 'score' attribute that used for breaking ties. That scoring is based on the storage order in the underlying database and is constantly changing as items are added and removed.
 
 `OrderBy` supports a handful of OData properties for ordering:
 

@@ -10,6 +10,7 @@ keywords: playfab, multiplayer, networking
 ---
 
 # PlayFab Party invitations and the security model
+
 PlayFab Party is designed to provide a secure communication environment by default. This helps protect games and players, but security restrictions can raise API usage questions for developers. This page introduces the security features of PlayFab Party, primarily focusing on invitations and effective patterns for using them.
 
 PlayFab Party uses industry-standard encryption and authentication for all communication (management data, game data, and real-time communication). This includes all peer-to-peer transmissions and all transactions to Azure services, whether they're web services (which use HTTPS) or the transparent cloud relay service (which uses DTLS).
@@ -17,9 +18,9 @@ PlayFab Party uses industry-standard encryption and authentication for all commu
 Limiting access to a network is a core part of protecting the integrity of the network. Four things are required to join a network:
 
 - Knowledge of the [network descriptor](concepts-objects.md#network)
-- Possession of a valid PlayFab `title_player_account` [entity token](/gaming/playfab/features/data/entities/)
+- Possession of a valid PlayFab `title_player_account` [entity token](../../live-service-management/game-configuration/entities/index.md)
 - Knowledge of an invitation [identifier](#identifiers)
-- Presence of the PlayFab [entity ID](/gaming/playfab/features/data/entities/) for the token in the specified invitation, or the specified invitation being an [open invitation](#users-and-open-invitations)
+- Presence of the PlayFab [entity ID](../../live-service-management/game-configuration/entities/index.md) for the token in the specified invitation, or the specified invitation being an [open invitation](#users-and-open-invitations)
 
 A given PlayFab Party network can have a maximum of 32 players. 
 
@@ -82,7 +83,7 @@ Invitations (other than the initial invitation) are hidden from other devices fo
 
 ### Users and open invitations
 
-An invitation contains 0 or more users specified as `title_player_account` [entity IDs](/gaming/playfab/features/data/entities/). If an invitation contains users, that invitation only grants access to join the network to those users. However, if an invitation contains no users, it's an open invitation. Any user may join the network with the identifier of an open invitation.
+An invitation contains 0 or more users specified as `title_player_account` [entity IDs](../../live-service-management/game-configuration/entities/index.md). If an invitation contains users, that invitation only grants access to join the network to those users. However, if an invitation contains no users, it's an open invitation. Any user may join the network with the identifier of an open invitation.
 
 > [!NOTE]
 > On a multi-user device, such as a game console, be sure to use the correct invitation with the correct user. Depending on which users are specified in each invitation, it's possible that different users on the device might need to use different invitations when authenticating a user into the network via PartyNetwork::AuthenticateLocalUser().

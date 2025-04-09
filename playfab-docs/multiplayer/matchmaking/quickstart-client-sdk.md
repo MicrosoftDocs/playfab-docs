@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 
 # Matchmaking SDK quickstart
  
-
 This quickstart guide walks you through the entire process for adding matchmaking to your game using the PlayFab Multiplayer SDK.
 
 This tutorial illustrates how to submit a ticket to a specific queue in order to find a game. A queue likely maps to a game mode or multiple game modes (ex.: a capture the flag mode and a king of the hill mode in the same queue).
@@ -21,10 +20,10 @@ The matchmaking service handles finding a match among tickets in a queue. When a
 
 > [!NOTE]
 > The PlayFab Multiplayer SDK also provides APIs for PlayFab Lobbies.
+>
 > * For more information on C++ APIs, see the [Lobby SDK quickstart](../lobby/lobby-getting-started.md)
 > * For more information on Unity APIs, see the [Quickstart for Unity](../lobby/lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
 > * For more information on Unreal APIs, see the [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
-
 
 ## Prerequisites
 
@@ -40,12 +39,13 @@ Download the [C/C++ SDK](../lobby/lobby-matchmaking-sdks/lobby-matchmaking-sdks.
 
 > [!NOTE]
 > This quick start focuses on using the C/C++ SDK. For Unity and Unreal interfaces, see the following articles:
+>
 > * [Quickstart for Unity](../lobby/lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
 > * [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)
 
 ## Log in a PlayFab entity
 
-To use the PlayFab Lobby SDK, you need to authenticate your client using PlayFab entity keys and entity tokens. Acquire a PlayFab entity key and token pair by logging in with [LoginWithCustomId](/rest/api/playfab/client/authentication/login-with-custom-id) REST API. This API is also available as a C/C++ projection via the [PlayFab REST SDK](/gaming/playfab/sdks/playfab-sdk-intro).
+To use the PlayFab Lobby SDK, you need to authenticate your client using PlayFab entity keys and entity tokens. Acquire a PlayFab entity key and token pair by logging in with [LoginWithCustomId](/rest/api/playfab/client/authentication/login-with-custom-id) REST API. This API is also available as a C/C++ projection via the [PlayFab REST SDK](../../sdks/playfab-sdk-intro).
 
 > [!NOTE]
 > LoginWithCustomId is a quick way to get started with PlayFab features but isn't intended to be the login mechanism you ship with. For login guidance, see [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md).
@@ -281,6 +281,7 @@ If for some reason your client wants to cancel the matchmaking process prior to 
 Calling this API doesn't guarantee the ticket will be cancelled. The ticket could still complete before the cancellation can be processed, or the cancellation request may fail due to networking or service errors. You can still process matchmaking state changes to get the result of the ticket if you'd like to confirm the ticket cancellation has completed prior to moving on. Otherwise, you can immediately call [PFMultiplayerDestroyMatchmakingTicket](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerdestroymatchmakingticket.md).
 
 ### Example using the Matchmaking client SDK
+
 ```cpp
 HRESULT hr = PFMatchmakingTicketCancel(ticket);
 

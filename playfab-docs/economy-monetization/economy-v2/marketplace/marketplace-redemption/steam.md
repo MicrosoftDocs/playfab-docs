@@ -129,7 +129,6 @@ Alongside the record in the player's transaction history, a PlaySteam event is a
 
 >[!NOTE]
 > You may see more than one `items_redeemed` PlayStream event logged, this is because even though you may have redeemed just one bundle, the number of events corresponds to the number of items within each bundle.
-
 >[!NOTE]
 > If you look at other redemption tutorials such as [Set up a PlayFab bundle that can be purchased from Google Play Store](../marketplace-redemption/google.md) or [Set up an In-App Purchase using PlayFab and the Apple App Store](../marketplace-redemption/apple.md) you may notice there's an additional step after redemption, called **Consumption** or **Finalize Transaction** respectively.
 >
@@ -145,7 +144,6 @@ This means that **before** making a redemption call using `RedeemSteamInventoryI
 
 >[!NOTE]
 > We don't currently support subscriptions.
-
 >[!NOTE]
 > To learn more about item definitions, see [ItemDef Schema Overview](https://aka.ms/SteamItemDefinition).
 
@@ -153,4 +151,4 @@ This means that **before** making a redemption call using `RedeemSteamInventoryI
 
 - [Get started: Crafting game](../../tutorials/craftingGame/game-context.md)
 
-- [Fraud prevention quickstart](/gaming/playfab/features/economy-v2/fraud-prevention/quickstart)
+- [Fraud prevention quickstart](../../../economy-v2/fraud-prevention/quickstart)

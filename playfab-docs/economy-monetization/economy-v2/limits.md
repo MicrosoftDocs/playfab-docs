@@ -60,6 +60,7 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 ## Inventory Throttling
 
 > [!NOTE]
+>
 > - Inventory throttling will be calculated based on the target entity, individually for each API.
 > - For example, if a Player or a Title (game service, coudscript, etc.) calls an Inventory API to update the Player entity's inventory, the Limit (Player) throttling will be applied.
 > - [Group entity](../../live-service-management/game-configuration/entities/index.md#group) inventories are also supported, and Group Entities share the same throttling rate as Player entities. See also [Groups](../../community/associations/groups/index.md).
@@ -110,6 +111,7 @@ The maximum file size allowed is **500MB**.
 ### Binary Content Quantity
 
 Up to **100 images** and **100 files** can be added to an item.   
+
 - Files have no restrictions.
 - Images can only be uploaded using **.png**, **.jpg**, **.gif**, or **.bmp** file types.
 
@@ -119,26 +121,26 @@ Content blobs/URLs will be garbage collected after **24 hours** if **not** attac
 
 ### Catalog Maximum Page Size
 
-The following are the maximum number of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return more than the limit.
+The following are the maximum number of items returned for the various APIs. You can use [continuation tokens](catalog/search#continuation-tokens) to paginate through results that return more than the limit.
 
-* `SearchItems` - 50 Items per page
-* `GetItems` - 50 Items per page
-* `GetItemReviews` - 50 Items per page
-* `GetItemContainers` - 50 Items per page
-* `GetEntityDraftItems` - 50 Items per page
+- `SearchItems` - 50 Items per page
+- `GetItems` - 50 Items per page
+- `GetItemReviews` - 50 Items per page
+- `GetItemContainers` - 50 Items per page
+- `GetEntityDraftItems` - 50 Items per page
 
 ### Catalog Default Page Size
 
-* `SearchItems` - 10 Items per page
-* `GetItems` - 10 Items per page
-* `GetItemReviews` - 10 Items per page
-* `GetItemContainers` - 10 Items per page
-* `GetDraftItems` - 10 Items per page
-* `GetEntityDraftItems` - 10 Items per page
+- `SearchItems` - 10 Items per page
+- `GetItems` - 10 Items per page
+- `GetItemReviews` - 10 Items per page
+- `GetItemContainers` - 10 Items per page
+- `GetDraftItems` - 10 Items per page
+- `GetEntityDraftItems` - 10 Items per page
 
 ### Inventory Maximum Page Size
 
-The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](/gaming/playfab/features/economy-v2/catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
+The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
 
 | **API** | **Limit with response compression** | **Limit without response compression** |
 |---------|--------------------|-------------------|
@@ -148,13 +150,13 @@ The following are the maximum count of items returned for the various APIs. You 
 
 ### Inventory Default Page Size
 
-* `GetInventoryItems` - 10 Items per page
-* `GetInventoryCollectionIds` - 10 Items per page
-* `GetTransactionHistory` - 10 Items per page
+- `GetInventoryItems` - 10 Items per page
+- `GetInventoryCollectionIds` - 10 Items per page
+- `GetTransactionHistory` - 10 Items per page
 
 ### Search Filter Complexity
 
-There are checks enforced to prevent the use of overly complicated `Filter` queries used in `SearchItems` calls. More information can be found [here](/gaming/playfab/features/economy-v2/catalog/search#limits).
+There are checks enforced to prevent the use of overly complicated `Filter` queries used in `SearchItems` calls. More information can be found [here](catalog/search#limits).
 
 ## Catalog Item
 

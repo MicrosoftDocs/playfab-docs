@@ -31,13 +31,13 @@ Unique ID of the entity.
 **`type`** &nbsp; const char*  
 *_Null_terminated_*  
   
-Entity type. See [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+Entity type. See [Available built-in entity types](../../../../live-service-management/game-configuration/entities/available-built-in-entity-types.md).
   
-Player entities are typically the `title_player_account` type. For more information, see [Available built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+Player entities are typically the `title_player_account` type. For more information, see [Available built-in entity types](../../../../live-service-management/game-configuration/entities/available-built-in-entity-types.md).
 
 ## Remarks
 
-For more information about entities, see [Entity Programming Model](/gaming/playfab/features/data/entities/).
+For more information about entities, see [Entity Programming Model](../../../../live-service-management/game-configuration/entities/index.md).
   
 ## Requirements  
 

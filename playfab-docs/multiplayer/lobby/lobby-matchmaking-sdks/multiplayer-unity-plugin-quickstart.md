@@ -11,7 +11,6 @@ keywords: playfab, multiplayer, lobby, matchmaking, unity, middleware
 
 # Quickstart: PlayFab Multiplayer Unity plugin
  
-
 Get started with the PlayFab Multiplayer Unity plugin. Follow steps below to install the package and try out example code for a basic task.
 
 This quickstart helps you make your first API calls using the PlayFab Multiplayer SDK for Unity. Before continuing, make sure you complete [Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md), which ensures you have a PlayFab account and are familiar with logging into PlayFab from your game and the PlayFab Game Manager.
@@ -27,7 +26,7 @@ This quickstart helps you make your first API calls using the PlayFab Multiplaye
 - An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). Check on Unity support in documentation of your specific platform if needed. The minimum supported Unity version is Unity 2017 LTS.
 - A Unity Project – this can be any of the following:
 
-  - A brand new project: For more information, see [Starting Unity for the first time](/gaming/playfab/sdks/unity3d/quickstart).
+  - A brand new project: For more information, see [Starting Unity for the first time](../../../sdks/unity3d/quickstart.md).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 
@@ -46,6 +45,7 @@ Following the steps to download and install the PlayFab Multiplayer Unity plugin
 Note: you might need to install a newer version of PlayFab "core" Unity SDK if necessary.
 
 ## Set up your scene
+
 This part of the guide shows you how to add the `PlayfabMultiplayerEventProcessor` to your scene to enable you to call PlayFab Multiplayer APIs from Unity.
 
 Before you can use Multiplayer API, you **must have a PlayFab player logged in**. For information about logging in a player, see [Making your first API call in Quickstart: PlayFab Client library for C# in Unity](../../../sdks/unity3d/quickstart.md#making-your-first-api-call).
@@ -89,11 +89,11 @@ Before you can use Multiplayer API, you **must have a PlayFab player logged in**
 > [!NOTE]
 > You might receive the following errors:
 >
->  ```
->  Error    CS0227    Unsafe code may only appear if compiling with /unsafe
->  The plugin requires unsafe code because it interops with a native DLL.
->  
->  Mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "XGamingRuntime", "AMD64".
+> ``` C \#
+> Error    CS0227    Unsafe code may only appear if compiling with /unsafe
+> The plugin requires unsafe code because it interops with a native DLL.
+> 
+> Mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "XGamingRuntime", "AMD64".
 >  ```
 
 The Microsoft GDK and Windows only support x64.
@@ -355,7 +355,7 @@ This part of the guide shows you how to join an existing matchmaking ticket that
 
 One OnMatchmakingTicketStatusChanged will be triggered with the Status being WaitingForMatch.
 
-##  Complete a matchmaking ticket
+## Complete a matchmaking ticket
 
 This part of the guide shows you how matchmaking is completed. Run it with the scenario "Create a matchmaking ticket" on another client above. Optionally, you can run it with the scenario "Join a matchmaking ticket".
 
@@ -363,6 +363,7 @@ This part of the guide shows you how matchmaking is completed. Run it with the s
 OnMatchmakingTicketCompleted event handler is triggered.
 
 2. Subscribe to OnMatchmakignTicketCompleted handler
+
     ```csharp
     PlayFabMultiplayer.OnMatchmakingTicketCompleted += PlayFabMultiplayer_OnMatchmakingTicketCompleted;
     ```
