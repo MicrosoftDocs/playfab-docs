@@ -12,6 +12,16 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.11
+
+April 9, 2025
+
+### Bug fixes
+
+- Fixed a crash on Sony (PlayStation&#174;4 and PlayStation&#174;5) SDK versions that occurred when a network reconnection happened after an unexpected disconnection, following the creation and joining of a multi-user lobby.
+
+'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 ## 1.7.10
 
 March 6, 2025
