@@ -29,7 +29,7 @@ For broad API categories in these SDKs, see [API REST operation groups](/rest/ap
 |-----------------------------------|-------------------------------------------|
 | C/C++                             | [Windows (Win32), iOS, MacOS, Android, Linux](c/index.md), [GDK (Xbox and Windows)](c/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5) |
 | Legacy C++                        | [Windows (Win32), iOS, Android, Linux](playfab-cpp/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5) |
-| C#                                | [Xamarin](c-sharp/index.md) and other C#/.NET environments besides Unity |
+| C#                                | [C#/.NET environments](c-sharp/index.md) besides Unity |
 | Java                              | [Android apps](java/index.md) |
 | JavaScript                        | [Web Development](javascript/index.md) |
 | Lua (community supported)         | [Corona (now Solar2D), Defold](lua/index.md) |
@@ -40,8 +40,8 @@ For broad API categories in these SDKs, see [API REST operation groups](/rest/ap
 
 | Platform/operating system | SDK/library                       |
 |---------------------------|-----------------------------------|
-| Android                   | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [C# (using Xamarin)](c-sharp/index.md), [Java/Android Studio](java/index.md), [Lua](lua/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
-| iOS                       | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [C# (using Xamarin)](c-sharp/index.md), [Lua](lua/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| Android                   | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [Java/Android Studio](java/index.md), [Lua](lua/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
+| iOS                       | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [Lua](lua/index.md) (community supported), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 | Linux                     | [C/C++](c/index.md), [Legacy C++](playfab-cpp/index.md), [Lua](lua/index.md) (community supported)|
 | GDK (Xbox and Windows)    | [C/C++](c/index.md), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
 | PlayStation 4             | [C/C++](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4), [Legacy C++](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [Unity](unity3d/index.md), [Unreal Engine](unreal/index.md) |
