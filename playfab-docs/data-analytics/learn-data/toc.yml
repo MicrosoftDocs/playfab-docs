@@ -36,10 +36,10 @@ items:
       href: reports/thirty-day-retention-report.md
     - name: Daily Email Report
       href: reports/daily-email-report.md
-  - name: PlayFab and Microsoft Fabric real-time analytics (RTA) for game creators
-    href: reports/real-time-analytics-tutorial.md
-  - name: Title Overview
-    href: reports/title-overview-report.md
+    - name: PlayFab and Microsoft Fabric real-time analytics (RTA) for game creators
+      href: reports/real-time-analytics-tutorial.md
+    - name: Title Overview
+      href: reports/title-overview-report.md
 - name: Trends
   expanded: true
   items:
@@ -103,7 +103,7 @@ items:
 #       href: experiments/analyze-experiments.md
 #     - name: Prevent interaction effects with exclusion groups
 #       href: experiments/exclusion-groups.md
-- name: Quick insights
+- name: Data Explorer
   expanded: false
   items:
   - name: Data Explorer overview
