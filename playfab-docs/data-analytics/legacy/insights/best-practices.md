@@ -91,7 +91,7 @@ Here we examine some best practices for using PlayFab Insights and address the m
 
 ### How do I increase the timeout time on my queries?
 
-- The time-out limits on queries is relative to your compute power that is defined in your performance level. Refer to the compute power table in [Performance and Retention](../insights/performance-retention.md) under compute power.
+- The time-out limits on queries is relative to your compute power that is defined in your performance level. Refer to the compute power table in [Performance and Retention](performance-retention.md) under compute power.
 
 ### Is there a limit to how much telemetry I can send?
 
@@ -153,7 +153,7 @@ Summarize
 
 ### How do I decide by performance level?
 
-- The right performance level for you is best determined by your title's usage. By raising performance level, you'll gain access to more data in cache and other query resources resulting in faster running queries. For more information, see [Performance levels and retention](../insights/performance-retention) to learn more about performance levels.
+- The right performance level for you is best determined by your title's usage. By raising performance level, you'll gain access to more data in cache and other query resources resulting in faster running queries. For more information, see [Performance levels and retention](performance-retention.md) to learn more about performance levels.
 
 ## How do I grant a user permissions to the Data > Explorer page for a particular title?
 

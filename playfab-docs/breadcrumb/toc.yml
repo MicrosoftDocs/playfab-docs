@@ -1,25 +1,25 @@
 items:
 - name: Azure
   tocHref: /gaming/playfab/
-  topicHref: /azure/index
+  topicHref: /azure/index.yml
   items:
   - name: PlayFab
     tocHref: /gaming/playfab/
-    topicHref: /gaming/playfab/index
+    topicHref: /gaming/playfab/index.yml
     items:
     - name: Fundamentals
-      topicHref: ../get-started/index
+      topicHref: /gaming/playfab/get-started/index.yml
     - name: Live service management
-      topicHref: ../live-service-management/index
+      topicHref: /gaming/playfab/live-service-management/index.yml
     - name: Identity
-      topicHref: ../identity/index
+      topicHref: /gaming/playfab/identity/index
     - name: Economy, Monetization, & UGC.
-      topicHref: ../economy-monetization/index
+      topicHref: /gaming/playfab/economy-monetization/index.yml
     - name: Multiplayer
-      topicHref: ../multiplayer/index
+      topicHref: /gaming/playfab/multiplayer/index.yml
     - name: Community
-      topicHref: ../community/index
+      topicHref: /gaming/playfab/community/index.yml
     - name: Player progression
-      topicHref: ../player-progression/index
+      topicHref: /gaming/playfab/player-progression/index.yml
     - name: Game Data
-      topicHref: ../data-analytics/index
+      topicHref: /gaming/playfab/data-analytics/index.yml

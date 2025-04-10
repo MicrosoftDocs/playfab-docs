@@ -22,15 +22,17 @@ items:
   - name: Lobby and Matchmaking SDKs
     href: multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
   - name: Multiplayer Server SDKs
-    href: multiplayer/servers/server-sdks.md
+    items:
+    - name: Overview
+      href: multiplayer/server-sdks.md
+    - name: Unreal Server SDK
+      href: multiplayer/servers/server-sdks.toc
   - name: Party SDKs
     href: multiplayer/networking/party-sdks/toc.yml
   - name: PlayFab Services SDKs
     href: sdks/toc.yml
 - name: Recipes and samples
   href: resources/toc.yml
-- name: Videos
-  href: video/toc.yml
 - name: Tools and utilities
   href: sdks/tools/index.yml
   items:

@@ -29,6 +29,12 @@ Economy v2 is designed with the same flexibility and extensibility that you woul
 Interested to find out why we made Economy V2 and how you can use the improvements in your title?
 >[!VIDEO https://www.youtube.com/embed/NcvFFgTZ6ek]
 
+#### PlayFab Economy v2
+
+Provides an introduction to the Azure PlayFab Economy v2 and discusses key improvements in V2.
+
+>[!VIDEO https://www.youtube.com/embed/NcvFFgTZ6ek]
+
 ## Which version of Economy should I use?
 
 You should use version 2. If you're on version 1, you should look at upgrading. Although we're _not_ deprecating v1 and will maintain and support it for all titles, it's in bugfix-only mode. The new Economy features are being developed only for version 2. For more information on the differences between the two versions, see [FAQ](faq.md).

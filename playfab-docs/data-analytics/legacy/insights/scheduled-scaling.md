@@ -31,4 +31,4 @@ The scheduled scale appears in the scheduled tasks section and in the Insights M
 
 ## **Recommendation**
 
-Changing your performance level allocates hardware resources to your data system immediately. However, transferring data into your new resources can take several minutes. It isn't recommended that you schedule large changes in performance level quickly after previous changes. See [Best Practices](best-practices) for recommendations. 
+Changing your performance level allocates hardware resources to your data system immediately. However, transferring data into your new resources can take several minutes. It isn't recommended that you schedule large changes in performance level quickly after previous changes. See [Best Practices](best-practices.md) for recommendations. 

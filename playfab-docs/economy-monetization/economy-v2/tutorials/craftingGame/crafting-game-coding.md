@@ -402,6 +402,6 @@ var result = await PlayFabEconomyAPI.PurchaseInventoryItemsAsync(purchaseRequest
 
 - [Economy v2 overview](../../overview.md)
 
-- [Settings](../../settings)
+- [Settings](../../settings.md)
 
 - [Economy v2 Stores](../../catalog/stores.md#creating-a-store)

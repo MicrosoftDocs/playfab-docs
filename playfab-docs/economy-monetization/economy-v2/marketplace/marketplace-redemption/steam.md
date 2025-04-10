@@ -151,4 +151,4 @@ This means that **before** making a redemption call using `RedeemSteamInventoryI
 
 - [Get started: Crafting game](../../tutorials/craftingGame/game-context.md)
 
-- [Fraud prevention quickstart](../../../economy-v2/fraud-prevention/quickstart)
+- [Fraud prevention quickstart](../../../economy-v2/fraud-prevention/quickstart.md)

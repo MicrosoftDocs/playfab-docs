@@ -38,4 +38,4 @@ Expired Items are Published Items that have the `IsHidden` flag set to true. The
 
 ## Non-Approved Moderated Items
 
-Via the [Moderation APIs](../../economy-v2/ugc/moderation), Published Items can be set with a moderation status. Published Items that have any status that isn't `Approved` (that is, `AwaitingModeration`, `Rejected`, or `Unknown`) are only accessible by the Item Creator, Catalog Admins, and Title Entities. These items will **not** show up in the Published Catalog and can't be accessed using `GetItem` API for regular players.
+Via the [Moderation APIs](../../economy-v2/ugc/moderation.md), Published Items can be set with a moderation status. Published Items that have any status that isn't `Approved` (that is, `AwaitingModeration`, `Rejected`, or `Unknown`) are only accessible by the Item Creator, Catalog Admins, and Title Entities. These items will **not** show up in the Published Catalog and can't be accessed using `GetItem` API for regular players.

@@ -138,5 +138,5 @@ Alongside the record in the player's transaction history, a PlayStream event is 
 
 ## See also
 
-- [Getting Started with Economy v2, Unity, and Android](../../../economy-v2/tutorials/getting-started-with-unity-and-android)
-- [Fraud prevention quickstart](../../../economy-v2/fraud-prevention/quickstart)
+- [Getting Started with Economy v2, Unity, and Android](../../../economy-v2/tutorials/getting-started-with-unity-and-android.md)
+- [Fraud prevention quickstart](../../../economy-v2/fraud-prevention/quickstart.md)

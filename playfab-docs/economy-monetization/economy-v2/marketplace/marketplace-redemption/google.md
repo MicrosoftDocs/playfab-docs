@@ -191,6 +191,6 @@ Nonetheless, before making the consumption call (or in the Unity or Unreal plugi
 
 ## See also
 
-- [Getting Started with Economy v2, Unity, and Android](../../../economy-v2/tutorials/getting-started-with-unity-and-android)
+- [Getting Started with Economy v2, Unity, and Android](../../../economy-v2/tutorials/getting-started-with-unity-and-android.md)
 
-- [Fraud prevention quickstart](../../../economy-v2/fraud-prevention/quickstart)
+- [Fraud prevention quickstart](../../../economy-v2/fraud-prevention/quickstart.md)

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 [!INCLUDE [notice](../../../includes/_economy-release.md)]
 
-Get started with PlayFab Economy by using the [PlayFab Services SDK](../../../sdks/playfab-sdk-intro) to set up your first virtual currency. After getting an entity token to interact with your title via the APIs, you create and configure a virtual currency.
+Get started with PlayFab Economy by using the [PlayFab Services SDK](../../../sdks/playfab-sdk-intro.md) to set up your first virtual currency. After getting an entity token to interact with your title via the APIs, you create and configure a virtual currency.
 
 ## Prerequisites
 

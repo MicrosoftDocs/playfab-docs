@@ -22,6 +22,8 @@ VmStartupScript allows you to run a custom script on virtual machines (VMs) that
 > [!Note]
 > This is an advanced feature that should be used with extreme caution. The running script executes in the Virtual Machine (VM) level with admin (root) privileges. If not used properly, it can potentially disrupt the regular flow of the running game servers, or even prevent them from running at all. The end user is responsible for the content of the script.
 
+>[!VIDEO https://www.youtube.com/embed/oc-X7rHCwUU]
+
 ## How to use VmStartupScript
 
 To use the VmStartupScript feature, you have to provide a custom script, and all the relevant software (optional) you plan to install. The script starts executing when the Virtual Machine is initialized. This operation occurs before the game servers start on every VM. After the script has successfully finished executing, the MPS service proceeds to complete initializing the game servers and delivers them to the **StandingBy** state. To learn more about the different game server's state, see [Lifecycle of a multiplayer server](multiplayer-game-server-lifecycle.md).
