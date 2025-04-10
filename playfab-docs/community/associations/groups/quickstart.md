@@ -12,21 +12,13 @@ ms.localizationpriority: medium
 
 # Entity groups
 
-## PlayFab guild solution
+Let's say that you need guilds, clans, corporations, companies, tribes - or whatever your game calls them - PlayFab can support your need for durable player grouping using the [Entity Programming Model](../../../live-service-management/game-configuration/entities/index.md). 
 
-Let's say that you need guilds, clans, corporations, companies, tribes - or whatever your game calls them - PlayFab has them.
+The group entity can be used to store collections of other entities, including players or characters, which can be used to serve many purposes within your game. 
 
-PlayFab builds guilds using the new  [Entity Programming Model](../../../live-service-management/game-configuration/entities/index.md), or more specifically - the entity type of groups. Entity groups are a broader concept than guilds, but fundamentally, entity groups have been created as a solution for guilds.
+## Examples
 
-## Entity groups
-
-Entity groups are the root concept that was inspired by the need for clans/guilds.
-
-At its core, entity groups are any logical group of entities, which can serve any purpose. Entity groups can simultaneously serve many purposes within your game.
-
-### Examples
-
-- **Clans/Guilds** - This was the starting point, and the main driving need. Entity groups can be used to describe a set of players who are playing together regularly, for whatever social glue that holds them together on a long-term basis.
+- **Clans/Guilds** - Entity groups can be used to describe a set of players who are playing together regularly, for whatever social glue that holds them together on a long-term basis.
 
 - **Parties** - Entity groups can be used for short-term groups created to allow individual players to accomplish an immediate goal, and then easily disbanded afterward.
 
@@ -36,24 +28,18 @@ At its core, entity groups are any logical group of entities, which can serve an
 
 In short, entity groups can be *any* collection of entities (whether NPC or player-controlled, real or abstract), which need a persistent-state bound to that group.
 
-A friends list is a group. A three person private chat is a group. Go nuts!
-
-> [!NOTE]
-> We'd appreciate some warning in the forums if you are trying something we might not be expecting...
-
 In addition, since entity groups are also entities themselves, they'll contain all the initial features of entities:
 
 - **Object data**
 - **File data**
 - **Profiles**
 
-They'll be eligible for new entity features going forward, if those features are relevant to groups.
 >[!Note] 
->Groups have a default limit of 1000 members per group
+>Groups have a default limit of 1000 members per group and only support players and characters as members
 
 ## Using entity groups
 
-Today, entity groups can contain players and/or characters. When creating a group, the first entity added to the group is placed in an Admin role (this guide refers to that entity as the owner, for simplicity). The owner will then be able to invite new members, create new roles with a wide variety of customizable permissions, modify member roles, kick members, etc.
+When creating a group, the first entity added to the group is placed in an Admin role (this guide refers to that entity as the owner, for simplicity). The owner will then be able to invite new members, create new roles with a wide variety of customizable permissions, modify member roles, kick members, etc.
 
 Additionally, the same entity functions that exist for entities *also function for groups*, so you'll be able to save JSON objects and files directly to the group to save arbitrary game-specific data.
 
@@ -224,3 +210,10 @@ Like all new entity API methods, there's no distinction between the server API a
 The action is performed by the caller, according to how the process was authenticated. A client will be identified as such, and will call these methods as a title player entity, and their roles and permissions within the group will be evaluated with every call, ensuring they have permission to perform this action.
 
 A server is authenticated with the same `developerSecretKey`, which identifies that process as a title entity. A title bypasses the role checks, and API calls executed by a title will only fail if the action is impossible to perform, in an instance such as if an entity can't be removed if they aren't a member.
+
+## See Also
+
+To store data for your groups, guilds or clans:
+
+- [Objects](../../../live-service-management/game-configuration/entities/entity-objects.md)
+- [Files](../../../live-service-management/game-configuration/entities/entity-files.md)

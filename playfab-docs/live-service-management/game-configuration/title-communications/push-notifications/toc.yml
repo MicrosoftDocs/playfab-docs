@@ -4,7 +4,6 @@ items:
 - name: Quickstart
   href: quickstart.md
 - name: Tutorials
-  href: tutorials.md
   items:
   - name: Getting Started with Android Push Notifications
     href: getting-started-android-studio-push-notifications.md

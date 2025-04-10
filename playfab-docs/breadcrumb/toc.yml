@@ -7,7 +7,7 @@ items:
     tocHref: /gaming/playfab/
     topicHref: /gaming/playfab/index
     items:
-    - name: Get started
+    - name: Fundamentals
       topicHref: ../get-started/index
     - name: Live service management
       topicHref: ../live-service-management/index

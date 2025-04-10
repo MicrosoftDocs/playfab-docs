@@ -10,7 +10,16 @@ keywords: playfab, multiplayer, photon
 ms.localizationpriority: medium
 ---
 
-# Photon quickstart
+# Photon
+
+This section provides info about using PlayFab together with Photon multiplayer services such as Photon RealTime and Photon Unity Networking (PUN). 
+
+Currently, we offer the following Photon integrations:
+
+- Authenticate Photon players with PlayFab.
+- Listen for room events using PlayFab CloudScript callbacks.
+
+## Photon quickstart
 
 This quickstart shows how to set up Photon Multiplayer to work with PlayFab. Currently, PlayFab offers the following Photon integrations:
 

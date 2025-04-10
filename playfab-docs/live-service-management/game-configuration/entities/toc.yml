@@ -15,7 +15,6 @@ items:
   - name: Use entity objects to store player data  
     href: entity-objects.md
 - name: Tutorials
-  href: tutorials.md
   items:
   - name: Entity Groups
     href: ../../../community/associations/groups/quickstart.md
