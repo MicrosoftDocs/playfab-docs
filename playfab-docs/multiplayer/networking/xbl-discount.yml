@@ -20,7 +20,7 @@ sections:
         answer: |
           This offer includes free usage of PlayFab Party networking and voice capabilities, PlayFab Lobby with real-time notifications, and PlayFab Matchmaking with real-time notifications. 
 
-          Party connectivity, egress, and voice [meters](../../pricing/meters/meters#party) is priced at $0 for all Xbox players.
+          Party connectivity, egress, and voice [meters](../../pricing/meters/meters.md#party) is priced at $0 for all Xbox players.
 
           [Party Lobby requests and notifications, as well as Matchmaking requests and notifications](../../pricing/meters/meters.md#matchmaking-and-lobby) is priced at $0 for all Xbox players.
 

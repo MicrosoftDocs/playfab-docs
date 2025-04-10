@@ -52,7 +52,7 @@ This section shows you how to configure an application to test IAP using PlayFab
 Prerequisites:
 
 * A Unity project.
-* The [PlayFab Unity SDK](../../../sdks/unity3d/) imported and configured to work with your title.
+* The [PlayFab Unity SDK](../../../sdks/unity3d/index.md) imported and configured to work with your title.
 * An editor like [Visual Studio](/visualstudio/gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity) installed and configured to work with your Unity project.
 
 Our first step is setting up UnityIAP:

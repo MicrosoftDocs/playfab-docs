@@ -24,7 +24,7 @@ This quickstart helps you install the Party SDK for Unity and make your first AP
 - An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). Check on Unity support in documentation of your specific platform if needed. The minimum supported Unity version is Unity 2017 LTS.
 - A Unity Project, which can be any of the following options:
 
-  - A brand new project: For more information, see [Starting Unity for the first time](../../sdks/unity3d/quickstart).
+  - A brand new project: For more information, see [Starting Unity for the first time](../../sdks/unity3d/quickstart.md).
   - A guided tutorial project. For more information, see [Getting Started with Unity](https://learn.unity.com/).
   - An existing project.
 

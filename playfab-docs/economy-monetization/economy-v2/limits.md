@@ -121,7 +121,7 @@ Content blobs/URLs will be garbage collected after **24 hours** if **not** attac
 
 ### Catalog Maximum Page Size
 
-The following are the maximum number of items returned for the various APIs. You can use [continuation tokens](catalog/search#continuation-tokens) to paginate through results that return more than the limit.
+The following are the maximum number of items returned for the various APIs. You can use [continuation tokens](catalog/search.md#continuation-tokens) to paginate through results that return more than the limit.
 
 - `SearchItems` - 50 Items per page
 - `GetItems` - 50 Items per page
@@ -140,7 +140,7 @@ The following are the maximum number of items returned for the various APIs. You
 
 ### Inventory Maximum Page Size
 
-The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](catalog/search#continuation-tokens) to paginate through results that return greater than the limit.
+The following are the maximum count of items returned for the various APIs. You can use [continuation tokens](catalog/search.md#continuation-tokens) to paginate through results that return greater than the limit.
 
 | **API** | **Limit with response compression** | **Limit without response compression** |
 |---------|--------------------|-------------------|
@@ -156,7 +156,7 @@ The following are the maximum count of items returned for the various APIs. You 
 
 ### Search Filter Complexity
 
-There are checks enforced to prevent the use of overly complicated `Filter` queries used in `SearchItems` calls. More information can be found [here](catalog/search#limits).
+There are checks enforced to prevent the use of overly complicated `Filter` queries used in `SearchItems` calls. More information can be found [here](catalog/search.md#limits).
 
 ## Catalog Item
 

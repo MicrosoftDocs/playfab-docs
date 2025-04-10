@@ -18,7 +18,7 @@ The `SearchItems` API executes a search against the public Catalog using the pro
 
 At its most basic, the `Search` parameter is a plain-text fuzzy search against the **Title**, **Description**, **Keywords**, and **Searchable String Display Properties** fields. However `Filter`, `OrderBy`, and `Select` are OData Query additions that can be used to alter the search parameters. Search results can be filtered and ordered by any field in the search document (barring Title and Description).
 
-More information on the OData Query Syntax can be found [here](https://www.odata.org/getting-started/basic-tutorial/#queryData )
+More information on the OData Query Syntax can be found [here](https://www.odata.org/getting-started/basic-tutorial/#queryData)
 
 An example `SearchItems` request:
 
@@ -56,7 +56,7 @@ The `ContinuationToken` field that is returned from a search response can be pas
 
 ## Display Properties
 
-Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [Display Properties Mappings setting](../../economy-v2/settings#display-property-mappings) in Game Manager.
+Searches, filters, and orderings can be also done on specific `DisplayProperties` fields that are configured for custom search.  Titles can configure their custom search and filter properties in the [Display Properties Mappings setting](../../economy-v2/settings.md#display-property-mappings) in Game Manager.
 
 ![Display Properties screenshot in Game Manager](../media/displayproperties.png)
 
@@ -138,7 +138,7 @@ The filter below will check for any items that have a contents field with non-nu
 ```
 
 > [!NOTE]
-> By default, Search will **NOT** return contents for items unless specified with a [Select](../../economy-v2/catalog/search#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
+> By default, Search will **NOT** return contents for items unless specified with a [Select](../../economy-v2/catalog/search.md#select) statement. If the above query is run without a `"Select": "contents"`` statement, it will correctly apply the filter but all returned Search results will have empty content fields
 
 ### Filtering by Display Properties
 

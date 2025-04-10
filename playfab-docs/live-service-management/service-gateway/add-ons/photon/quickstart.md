@@ -29,11 +29,11 @@ This quickstart shows how to set up Photon Multiplayer to work with PlayFab. Cur
 In this quickstart, we illustrate how both features work using the latest [Photon Unity example project](https://assetstore.unity.com/packages/tools/network/photon-unity-networking-classic-free-1786).
 
 > [!NOTE]
-> For a fully supported PlayFab Multiplayer and Chat Experience on Unity, see the [PlayFab Party Unity Plugin](../../multiplayer/networking/party-unity-overview.md) for more information.
+> For a fully supported PlayFab Multiplayer and Chat Experience on Unity, see the [PlayFab Party Unity Plugin](../../../../multiplayer/networking/party-unity-overview.md) for more information.
 
 ## Prerequisites
 
-1. A [Unity](../unity3d/quickstart.md) project with the PlayFab SDK imported, and a configured title.
+1. A [Unity](../../../../sdks/unity3d/quickstart.md) project with the PlayFab SDK imported, and a configured title.
 2. The PlayFab title registered.
 
 > [!NOTE]  

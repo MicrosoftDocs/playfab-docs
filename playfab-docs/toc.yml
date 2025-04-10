@@ -7,16 +7,14 @@ items:
   href: whats-new/toc.yml
 - name: Demo game
   href: demo-game/toc.yml
+- name: Recipes and samples
+  href: resources/toc.yml
 - name: Pricing
   href: pricing/toc.yml
-- name: Reference
-  href: api-references/toc.yml
 - name: SDKs
   items:
   - name: Overview
     href: sdks/sdk-overview.md
-  - name: Unified SDK - Public Preview
-    href: sdks/playfab-unified-sdk.md    
   - name: Request access
     href: sdks/request-access-for-sdks-samples.md
   - name: Lobby and Matchmaking SDKs
@@ -24,18 +22,16 @@ items:
   - name: Multiplayer Server SDKs
     items:
     - name: Overview
-      href: multiplayer/server-sdks.md
+      href: multiplayer/servers/server-sdks.md
     - name: Unreal Server SDK
-      href: multiplayer/servers/server-sdks.toc
+      href: multiplayer/servers/server-sdks/toc.yml
   - name: Party SDKs
     href: multiplayer/networking/party-sdks/toc.yml
   - name: PlayFab Services SDKs
     href: sdks/toc.yml
-- name: Recipes and samples
-  href: resources/toc.yml
-- name: Tools and utilities
-  href: sdks/tools/index.yml
-  items:
+  - name: Tools and utilities
+    href: sdks/tools/index.yml
+    items:
     - name: SDK Generator
       href: sdks/sdkgenerator/index.md
       items:
@@ -46,3 +42,6 @@ items:
       items:
       - name: Quickstart
         href: sdks/postman/postman-quickstart.md
+- name: API Reference
+  href: api-references/toc.yml
+

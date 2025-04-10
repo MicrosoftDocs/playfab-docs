@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab fundamentals and getting started documentation
-summary: summary # < 160 chars
+summary: PlayFab fundamentals for all phases of game development # < 160 chars
 
 metadata:
   title: Azure PlayFab fundamentals and getting started documentation
-  description: Build your next game with PlayFab, start today! # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn how PlayFab can help you build your game! # Required; article description that is displayed in search results. < 160 chars.
   ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
   author: m-kdearnley
@@ -22,31 +22,31 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: TODO
-            url: TODO
+          - text: What is Playfab?
+            url: what-is-playfab.md
       - linkListType: concept
         links:
-          - text: TODO
-            url: TODO
-      - linkListType: tutorial
-        links:
-          - text: Create a developer account
-            url: ../identity/dev-identity/pfab-account.md
-          - text: Game Manager quickstart
-            url: ../live-service-management/gamemanager/quickstart.md
+          - text: PlayFab Concepts
+            url: concepts.md
 
-  - title: Entity programming model
+  - title: What's New in PlayFab?
     linkLists:
-      - linkListType: overview
+      - linkListType: whats-new
         links:
-          - text: Entity programming model overview
-            url: game-configuration/entities/index.md
-      - linkListType: quickstart
-        links:
-          - text: Entities quickstart
-            url: game-configuration/entities/quickstart.md
+          - text: New this month
+            url: ../whats-new/whats-new.md
+          - text: 2025 SDK Release Notes
+            url: /playfab-docs/release-notes/index.md
+          - text: Lobby and Matchmaking SDK Release Notes
+            url: ../multiplayer/lobby/lobby-matchmaking-sdks/lobby-and-matchmaking-release-notes.md
+          - text: PlayFab Party SDK Release Notes
+            url: /playfab-docs/multiplayer/party/party-release-notes.md
+          - text: Party Unity Release Notes
+            url: /playfab-docs/multiplayer/party/party-unity-release-notes.md
+          - text: PlayFab Multiplayer Unreal Engine OnlineSubsystem Release Notes
+            url: /playfab-docs/multiplayer/networking/unreal-release-notes.md
 
-  - title: Billing and metering
+  - title: Pricing
     linkLists:
       - linkListType: concept
         links:
