@@ -86,11 +86,11 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Party Members
+          - text: Party C/C++ API
             url: networking/reference/party_members.md
           - text: Server API/PowerShell
             url: servers/quickstart-for-multiplayer-servers-api-powershell.md   
-          - text: Lobby Members
+          - text: Lobby C/C++ API
             url: lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md
-          - text: Matchmaking Members
+          - text: Matchmaking C/C++ API
             url: lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md
