@@ -1,5 +1,5 @@
 ---
-title: Android getting started
+title: Multiplayer Android getting started
 author: yuehanlin
 description: Android supplement for PlayFab Multiplayer quickstart
 ms.author: yuehanlin
@@ -10,11 +10,9 @@ keywords: playfab, multiplayer, party, networking, communication, prerequisites,
 ms.localizationpriority: medium
 ---
 
-# Quickstart: Android
+This document lists the basic prerequisites and steps to integrate PlayFab Multiplayer into your Android applications.
 
-Get started with the PlayFab Multiplayer for Android
-
-## Requirements
+## Prerequisites
 
 - A [PlayFab developer account](https://developer.playfab.com).  
 - [Android Studio](https://developer.android.com/studio) installed.

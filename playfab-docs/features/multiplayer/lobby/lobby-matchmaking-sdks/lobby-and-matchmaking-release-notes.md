@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
-## 1.7.11
+## 1.7.12
 
 April 9, 2025
 
 ### Bug fixes
 
 - Fixed a crash and exposing `libc++_shared.so` when loading library on Android
-- Included `libHttpClient` as an optional component in the release package on Android. For usage details, see [PlayFab Multiplayer Android getting started](android-specific-requirements.md).
+- Included `libHttpClient` in the release package on Android. For usage details, see [PlayFab Multiplayer Android getting started](android-specific-requirements.md).
 - Fixed an issue with symbol exposure on the Apple platform.
 
 ## 1.7.11
