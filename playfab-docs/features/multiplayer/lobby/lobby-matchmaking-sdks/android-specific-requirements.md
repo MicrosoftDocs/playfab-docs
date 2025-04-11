@@ -10,6 +10,7 @@ keywords: playfab, multiplayer, party, networking, communication, prerequisites,
 ms.localizationpriority: medium
 ---
 
+## Getting started for PlayFab Multiplayer Android C++ SDK
 This document lists the basic prerequisites and steps to integrate PlayFab Multiplayer into your Android applications.
 
 ## Prerequisites
