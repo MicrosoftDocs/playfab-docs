@@ -76,13 +76,17 @@ landingContent:
           - text: Leaderboards reference
             url: associations/leaderboards/api-reference.md
 
-  - title: Meters
+  - title: Pricing
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Meters Overview
+            url: ../pricing/meters/meters.md
       - linkListType: reference
         links:
-          - text: Meters in general
-            url: ../pricing/meters/meters.md
-          - text: Development mode limits
-            url: ../pricing/development-mode.md
           - text: Leaderboards meters
             url: ../pricing/meters/leaderboard-meters.md
+          - text: PlayFab Pricing
+            url: https://playfab.com/pricing/
+          - text: Consumption Best Practices
+            url: ../pricing/consumption-best-practices.md

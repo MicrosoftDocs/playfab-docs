@@ -1,6 +1,8 @@
 items:
 - name: PlayFab
   href: index.yml
+- name: PlayFab Fundamentals
+  href: get-started/index.yml 
 - name: Get started
   href: get-started/toc.yml
 - name: What's New

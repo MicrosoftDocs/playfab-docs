@@ -81,6 +81,20 @@ landingContent:
           - text: PlayFab incident response procedures
             url: servers/comm-sla.md
 
+    # Card
+  - title: Pricing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Meters Overview
+            url: ../pricing/meters/meters.md
+      - linkListType: reference
+        links:
+          - text: PlayFab Pricing
+            url: https://playfab.com/pricing/
+          - text: Consumption Best Practices
+            url: ../pricing/consumption-best-practices.md
+
   # Card (optional)
   - title: Refer to APIs 
     linkLists:

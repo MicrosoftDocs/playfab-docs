@@ -109,3 +109,26 @@ landingContent:
         links:
           - text: Publish your first user generated content
             url: economy-v2/tutorials/publish-ugc.md
+
+
+    # Card
+  - title: Pricing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Meters Overview
+            url: ../pricing/meters/meters.md
+          - text: Churn Prediction Pricing
+            url: ../data-analytics/learn-data/churn-prediction/pricing.md
+          - text: Economy v2 Inventory Reads
+            url: ../pricing/Meters/economy-reads.md
+          - text: Economy v2 Inventory Writes
+            url: ../pricing/Meters/economy-writes.md
+          - text: Economy v2 Catalog Meters
+            url: ../pricing/Meters/catalog-meters.md 
+      - linkListType: reference
+        links:
+          - text: PlayFab Pricing
+            url: https://playfab.com/pricing/
+          - text: Consumption Best Practices
+            url: ../pricing/consumption-best-practices.md

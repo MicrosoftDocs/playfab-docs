@@ -5,21 +5,21 @@ items:
   items:
   - name: PlayFab
     tocHref: /gaming/playfab/
-    topicHref: /gaming/playfab/index.yml
+    topicHref: /gaming/playfab/
     items:
     - name: Fundamentals
-      topicHref: /gaming/playfab/get-started/index.yml
+      topicHref: /gaming/playfab/get-started/
     - name: Live service management
-      topicHref: /gaming/playfab/live-service-management/index.yml
+      topicHref: /gaming/playfab/live-service-management/
     - name: Identity
-      topicHref: /gaming/playfab/identity/index
+      topicHref: /gaming/playfab/identity/
     - name: Economy, Monetization, & UGC.
-      topicHref: /gaming/playfab/economy-monetization/index.yml
+      topicHref: /gaming/playfab/economy-monetization/
     - name: Multiplayer
-      topicHref: /gaming/playfab/multiplayer/index.yml
+      topicHref: /gaming/playfab/multiplayer/
     - name: Community
-      topicHref: /gaming/playfab/community/index.yml
+      topicHref: /gaming/playfab/community/
     - name: Player progression
-      topicHref: /gaming/playfab/player-progression/index.yml
+      topicHref: /gaming/playfab/player-progression/
     - name: Game Data
-      topicHref: /gaming/playfab/data-analytics/index.yml
+      topicHref: /gaming/playfab/data-analytics/

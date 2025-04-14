@@ -40,7 +40,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./media/index/build.svg
       summary: Learn PlayFab’s fundamental concepts with tutorials and a demo game.
-      url: get-started/what-is-playfab.md
+      url: get-started/index.yml
 
     - title: Identity
       imageSrc: ./media/index/build.svg

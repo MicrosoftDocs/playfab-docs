@@ -7,8 +7,6 @@ items:
     href: meters/toc.yml
   - name: Technical Support
     href: paidtechnicalsupport.md
-  - name: Updating Account Pricing
-    href: transition.md
   - name: Account Upgrades
     href: account-upgrades.md
   - name: Title Launches

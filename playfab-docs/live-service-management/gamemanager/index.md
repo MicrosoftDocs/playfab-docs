@@ -12,16 +12,13 @@ ms.localizationpriority: medium
 
 # Game Manager overview
 
-> [!IMPORTANT]
-> As of 8/31/2022, Game Manager is retiring support for browsers using TLS 1.0 or 1.1 and will require any connection to be TLS 1.2 or higher.  If you’re suddenly unable to access Game Manager, check that you’re using a browser that supports TLS 1.2. Make sure your browser is up to date and has 1.2 protocols enabled. This should allow you to regain access, but if you continue to experience issues, let us know through the [Bugs](https://community.playfab.com/spaces/23/index.html) section of our forums.
-
 This article introduces Game Manager, the PlayFab developer portal, identifies portal page elements, and helps you get familiar with the portal experience.
 
 ## What is the Game Manager?
 
 The Game Manager is a web-based, dashboard that provides access to your studios and tools to manage your Titles. It is your go-to destination for managing your studio and title configuration. Most of the tutorials across PlayFab will reference how to accomplish tasks *both* in Game Manager and through API calls.
 
-PlayFab’s Game Manager provides a fully integrated backend suite that puts you in the driver seat and gives you the option to pick and choose the services that work best for your game.
+PlayFab's Game Manager provides a fully integrated backend suite that puts you in the driver seat and gives you the option to pick and choose the services that work best for your game.
 
 Use Game Manager to invite teammates to collaborate with you, grant them full or partial access to make changes, configure and manage secret keys, make encryption related settings, and set how much you want to trust your client app.
 

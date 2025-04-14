@@ -71,16 +71,21 @@ landingContent:
   #         - text: Statistics reference
   #           url: statistics/api-reference.md
 
-  # - title: Meters
-  #   linkLists:
-  #     - linkListType: reference
-  #       links:
-  #         - text: Meters in general
-  #           url: ../pricing/meters/meters.md
-  #         - text: Development mode limits
-  #           url: ../pricing/development-mode.md
-  #         - text: Statistics meters
-  #           url: ../pricing/meters/statistics-meters.md
+    # Card
+  - title: Pricing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Meters Overview
+            url: ../pricing/meters/meters.md
+          - text: Statistics Meters
+            url: ../pricing/meters/statistics-meters.md
+      - linkListType: reference
+        links:
+          - text: PlayFab Pricing
+            url: https://playfab.com/pricing/
+          - text: Consumption Best Practices
+            url: ../pricing/consumption-best-practices.md
 
   - title: Deleting and Exporting Data
     linkLists:

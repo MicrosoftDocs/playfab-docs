@@ -112,15 +112,17 @@ landingContent:
             url: ../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md
 
 
-  - title: Billing and metering
+  - title: Pricing
     linkLists:
       - linkListType: concept
         links:
-          - text: Billing meters explained
+          - text: Meters Overview
             url: ../pricing/Meters/meters.md
+          - text: Experiments Meters
+            url: game-configuration/experiments/pricing.md
       - linkListType: learn
         links:
-          - text: Checking monthly estimated charges
-            url: ../pricing/billingDetails.md
+          - text: PlayFab Pricing
+            url: https://playfab.com/pricing/
           - text: Best practices for lowering consumption
             url: ../pricing/consumption-best-practices.md
