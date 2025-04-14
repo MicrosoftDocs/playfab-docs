@@ -9,8 +9,20 @@ items:
     items:
     - name: Fundamentals
       topicHref: /gaming/playfab/get-started/
+    - name: Fundamentals
+      topicHref: /gaming/playfab/whats-new/
+    - name: Fundamentals
+      topicHref: /gaming/playfab/demo-game/
+    - name: Fundamentals
+      topicHref: /gaming/playfab/resources/
+    - name: Fundamentals
+      topicHref: /gaming/playfab/pricing/
+    - name: Fundamentals
+      topicHref: /gaming/playfab/sdks/
     - name: Live service management
       topicHref: /gaming/playfab/live-service-management/
+    - name: Fundamentals
+      topicHref: /gaming/playfab/api-references/
     - name: Identity
       topicHref: /gaming/playfab/identity/
     - name: Economy, Monetization, & UGC.
