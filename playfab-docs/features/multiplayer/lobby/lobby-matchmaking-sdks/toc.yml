@@ -2,6 +2,8 @@
   href: lobby-matchmaking-sdks.md
 - name: C++ SDK Release notes
   href: lobby-and-matchmaking-release-notes.md
+- name: Android Getting Started
+  href: android-specific-requirements.md
 - name: Unreal Engine 4 and 5
   items:
   - name: Unreal Engine PlayFab OnlineSubsystem (OSS)
