@@ -36,14 +36,14 @@ These files are integrated into your project using CMake.
 
 1. Unzip the PlayFab Multiplayer Android zip file for Android release and place its contents in your desired directory.
 
-2. Using __target_include_directories__ or another equivalent function, add the headers under "Include" from the PlayFab Multiplayer release:
+2. Using `TARGET_INCLUDE_DIRECTORIES` or another equivalent function, add the headers under "Include" from the PlayFab Multiplayer release:
 ```cmake
 TARGET_INCLUDE_DIRECTORIES(
     ${PROJECT_NAME}
     "Include"
 )
 ```
-3. Using __target_link_libraries__ or another equivalent function, link the locations of the .so files to your project.
+3. Using `TARGET_LINK_LIBRARIES` or another equivalent function, link the locations of the .so files to your project.
 
     For example:
 
