@@ -17,7 +17,8 @@ ms.localizationpriority: medium
 April 9, 2025
 
 ### Bug fixes
-
+- Fixed a crash that occurred when a network reconnection happened after an unexpected disconnection, following the creation and joining of a multi-user lobby.
+- Fixed an issue where calling [PFLobbyPostUpdate](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbypostupdate.md). on a non-existent lobby did not automatically generate a disconnected state change.
 - Fixed a crash and exposing `libc++_shared.so` when loading library on Android
 - Included `libHttpClient` in the release package on Android. For usage details, see [PlayFab Multiplayer Android getting started](android-specific-requirements.md).
 - Fixed an issue with symbol exposure on the Apple platform.
