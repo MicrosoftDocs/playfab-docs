@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## 1.7.12
 
-April 9, 2025
+April 15, 2025
 
 ### Bug fixes
 - Fixed a crash that occurred when a network reconnection happened after an unexpected disconnection, following the creation and joining of a multi-user lobby.
