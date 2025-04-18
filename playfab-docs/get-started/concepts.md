@@ -1,7 +1,7 @@
 ---
-title: Building Blocks
+title: PlayFab Concepts
 author: m-kdearnley
-description: Describes the fundamental concepts on which PlayFab is based.
+description: Describes the fundamental concepts and building blocks of PlayFab.
 ms.author: kdearnley
 ms.date: 04/08/2025
 ms.topic: article
@@ -12,153 +12,71 @@ ms.localizationpriority: medium
 
 # PlayFab Concepts
 
-Below is a list of fundamental concepts on which PlayFab is based. We have termed these *Building Blocks*, because all PlayFab-based solutions will be built around these foundational concepts.
+PlayFab offers a variety of fundamental components that serve as the building blocks for your game's backend. 
 
-## Accounts
+## Namespaces and Titles
 
-The PlayFab Account system is responsible for verifying client details, and issuing authorization tickets. We support most common 3rd party providers, such as Facebook, Steam, iOS devices, Android devices, Xbox, and PlayStation&#8482;Network.
+PlayFab uses a hierarchical structure to manage resources and configurations across different scopes. 
 
-PlayFab clients must authenticate before accessing our APIs. Additionally, our data models revolve around the player account, making it easy to save and retrieve data specific to the current player.
+A PlayFab namespace is the highest level entity that stores all of your global information. In the [PlayFab developer portal](../live-service-management/gamemanager/index.md) the namespace is referred to as the "Studio." 
 
-"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+A PlayFab title is an entity that represents the data and configurations scoped to a specific game including game settings, player account, player data, and other game-related data.
 
-## Actions (PlayStream)
+A namespace may contain many titles, but a title may only belong to one namespace and a title cannot me moved between namespaces. 
 
-These are the activities triggered when an event or player data passes a corresponding rule set. Separate actions can be taken when entering or exiting a segment.
+All titles under the same namespace can share certain resources and configurations. This is particularly useful for managing [player identities](../identity/identity-overview.md) and data across multiple titles within the same namespace. 
 
-## Catalog/Virtual Goods
+Titles can also be used to store data and configuration specific to a game environment, a specific version of your game, or game-specific scoped. For example, you may wish to have a title for your development environment, your testing environment, your certification environment, and your live environment to keep all your data and configurations cleanly separated. You may also want a separate title for special releases of your game such as playtests, open betas, or demos. 
+The purpose of a title is to manage game-specific data and configurations. 
 
-Catalogs contain **CatalogItems**. These offer an easy way to manage your game items. **CatalogItems** can be configured in multiple ways, offering a corollary to just about *every* type of virtual goods that your game might use.
+Namespaces and titles are two specific types of entities with hierarchical relationships, and there are more [built-in entity types](../live-service-management/game-configuration/entities/available-built-in-entity-types.md) to represent other useful scopes such as players, groups, and servers. 
 
-Examples of the five most common uses for **CatalogItems** include:
+## Developer Identity and Game Manager
 
-1. **Durable Items** - Items that can be bought or granted and remain in the player's inventory.
-2. **Consumable Items** - Items that have a set number of uses. After these uses are consumed, the item is destroyed.
-3. **Bundles** - A collection of virtual currencies and virtual items that when obtained are automatically unpacked into the player's inventory.
-4. **Locked and Unlocked Containers** - A collection of virtual currencies and virtual items that must me manually unpacked by the user. Containers can be unlocked or locked with a key (another item that the player must also have before unpacking).
-5. **Temporal Items** - Items that exist for only a limited time. Items will be automatically removed after their expiration.
+To keep your game data secure, the developer identity is used to authenticate users and manage access to namespaces and titles. It's easy to [create a PlayFab account](../identity/dev-identity/pfab-account.md) and sign in with your Microsoft account. Assign [PlayFab user roles](../identity/dev-identity/permissions/playfab-user-roles.md) to grant access to other members of your development team. 
 
-## CatalogItems/Custom data
+PlayFab's web portal is called [Game Manager](../live-service-management/gamemanager/index.md) and is the primary interface for managing your studio and title configuration. Most functonality in Game Manager also has a REST API equivalent, so you can script and automate configuration changes in the later stages of production. 
 
-**CatalogItems** accepts **CustomData**, a collection of **Key**->**Value** pairs of **Type** <**string,string**>. This collection can be used in numerous ways - such as storing relevant item attributes, modifiers, and durability.
+## Title Configuration 
 
-## CDN (Content Delivery Network)
+Once you have a title, you can start storing data to [Title Data](../live-service-management/game-configuration/titledata/index.md). This data has the broadest access policy, allowing all of your game clients and servers to view TitleData.
 
-We offer Amazon CloudFront as a built in CDN offering. This is a premium service and separate charges will apply.
+General game configuration settings are often stored in TitleData, and it's typical for game clients to read this data during initialization. The [Title News](../live-service-management/game-configuration/title-communications/news/quickstart.md) features provide specic tools for title-wide communication with your players. 
 
-## Character inventory
+Similarly, at the namespace level, [Publishing Data](../live-service-management/game-configuration/titledata/using-publisher-data.md) is accessible from any title tied to the namespace and can be useful for cross-game promotional events, or news that might be interesting to your entire player community.
 
-Similar to player inventory, except that it is stored at a per-character level.
+Sometimes you want to set configuration data that targets a subset of your title's players. For targeted configuration, use [Segmentation](../live-service-management/game-configuration/segmentation/segmentation-overview.md) to define players in a target segment. [Experimentation](../live-service-management/game-configuration/experiments/index.md) is another option for testing different configurations on parts of your playerbase. 
 
-## Character data
+## Player Identity 
 
-Similar to player data, except that it is stored at a per-character level.
+The PlayFab [player identity]()../identity/player-identity/login/index.md) system is responsible for verifying client details and issuing authorization tokens. We support [most common 3rd party providers](../api-references/c/pfaccountmanagement/pfaccountmanagement_members.md), such as Xbox, Steam, iOS, Android, Nintendo, and PlayStation&#8482;Network.
 
-## Characters
+PlayFab clients must authenticate before accessing most PlayFab APIs. 
 
-PlayFab offers 10 character slots per player account.
+Beyond authentication, accounts also serve as the central pillar around which your game systems are built. Using a recoverable account makes it easy to easy to save and retrieve player-specific data regardless of which platform or device the player is currently logged in with. Data such as permissions, [player progression](../player-progression/player-progression-overview.md), [player friend lists](../community/associations/friends/index.md), or [player bans](../player-progression/player-data/player-bans.md) are just some of the types of player-specific data that you may want to store for retrieval or sharing. 
 
-## Character statistics
+## PlayStream and Actions
 
-Similar to player statistics, except stored at a per-character level.
+The [PlayStream](../data-analytics/ingest-data/playstream-overview.md) is a powerful toolset that lets you ingest events at scale and react in real-time to those events. 
 
-## CloudScript
+A [PlayStream Event](../data-analytics/ingest-data/playstream-events.md) can be emitted from usage of other PlayFab services, or you can generate your own custom PlayStream Events to drive game-specific logic. 
 
-Your JavaScript code, hosted on PlayFab, and running in a protected environment with access to the Server API set. This is very useful when you need to run secure API calls without needing to host a server.
+Based on how you configure the [PlayStream Rules](../data-analytics/acting-data/action-rules-overview.md), different actions will be triggered when a PlayStream Event passes a corresponding rule set. These actions can include updating player data, banning a player, executing custom PlayFab-hosted code with [CloudScript](../live-service-management/service-gateway/automation/cloudscript/index.md), or calling an external web service with a [webhooks](../data-analytics/acting-data/webhooks-overview.md).
 
-## Drop tables
+The endlessly configurable set of actions allows you to quickly build fully customized logic that reacts to player driven events in your game. You can use it to build a challenge system, or run service-authenticated actions on behalf of a player, or forward data from PlayFab into your own cloud services. The possibilities are endless. 
 
-Drop tables work in conjunction with item bundles and item containers. They represent a convenient, server-side mechanism for calculating the random item distribution when opening containers and bundles.
+## Telemetry and Reports
 
-## Events (PlayStream)
+If you don't need real-time processing and actions, but you still want a record of events taking place in your game, check out [PlayFab Telemetry](../data-analytics/ingest-data/telemetry-overview.md). This lightweight version of event ingestion gives you highly scalable data ingestion and lands events in a data laka allowing anyone on your team to [explore the data](../data-analytics/learn-data/data-explorer/index.md) or view any of PlayFab's [built-in reports](../data-analytics/learn-data/reports/overview.md). The PlayFab telemetry data lake can be [easily connected](../data-analytics/export-data/data-connection-overview.md) to a storage account of your choice.
 
-The signals that are generated through interacting with PlayFab (automatic) or by calling the WriteEvent API (manual).
+## Economy, Monetization, and UGC
 
-## Events_Archive (PlayStream)
+There's a lot to manage in a post-launch monetization strategy from virtual goods and currencies, to stores and personalization, to receipt validation and fraud prevention, and the relationships between all these things. With [PlayFab Economy](../economy-monetization/economy-what-is.md) you can easily manage and operate your game's monetization, no matter how deep or wide your designs are. 
 
-The recommended solution for long-term storage of PlayStream events. This keeps an external AWS S3 bucket in-sync with your event stream.
+PlayFab Economy also includes [UGC](../economy-monetization/economy-v2/ugc/overview.md) features to empower a safe, community-driven content ecosystem that works seamlessly with other PlayFab capabilities.  =
 
-## Leaderboards
+## Multiplayer
 
-Leaderboards are derived from the aggregation of player statistics. Players will be ranked from high to low for each of the statistics for which they have data. Leaderboards can also be reset on a re-occurring cadence, making in-game contests easy.
+PlayFab also offers a complete suite of cross-platform [multiplayer services](../multiplayer/mpintro.md) to cover all your [matchmaking](../multiplayer/matchmaking/index.md), [lobby](../multiplayer/lobby/index.md), [networking](../multiplayer/networking/index.md), [player communications](../community/voice-communications/concepts-chat.md), and [server hosting](../multiplayer/servers/index.md) needs. 
 
-## Photon
-
-Photon and PlayFab are two synergistic services, bringing high-quality multilayer features to game developers. For more information see our Photon Example Project.
-
-## Player accounts
-
-Player accounts, at their simplest, offer authentication pathways with the most common providers (x,y,z). Beyond authentication, accounts also serve as the central pillar around which your game systems are built.
-
-## Player data
-
-These are Key/Value Pairs (KVPs) of data that are attached to the player account. This data can be *public* or *private*, and can also be restricted to Readable/Writable, Only Readable or Only Writable.
-
-## Player inventory/Item instance
-
-All player Accounts have an inventory. The inventory contains all of the owned ItemInstances as well as the item history to-date.
-
-## Player statistics
-
-Statistics are a special form of player data that is a set restricted to <string, int>. These statistics are saved to the player account and can be used to automatically generate leaderboards.
-
-## Publisher data
-
-Similar to TitleData, PublisherData represents any data stored at the publisher level. This is a special set of data that ise accessible from any title tied to the corresponding publisher ID.
-
-This is useful for cross-game promotionals, as well as general developer and studio news that might be interesting to the community.
-
-## Push notifications
-
-PlayFab provides both server and client support for push notifications. For clients, PlayFab offers the ability to bind player accounts to your Developer GCM & APNS messaging channels.
-
-For servers, we provide an API to send push messages directly to a player account. Developers can send an unlimited number of push messages at no additional charge.
-
-## Rules (PlayStream)
-
-These are the conditions by which PlayStream events are evaluated.
-
-1. **Filters** (**Logical AND**) - Provides the ability to add logical conditions, where all conditions must be passed before triggering actions.
-2. **Groups** (**Logical OR**) - Provides the ability to add optional *logical* conditions, where at least *one* *group must be evaluated as *True** before triggering actions.
-
-## Segments / Segmentation (PlayStream)
-
-Provides subsets of players, grouped by their event history. For example, the Frequent Players segment is comprised of players that have logged in more than 100 times.
-
-## Servers
-
-PlayFab offers dedicated server hosting. You can upload a game server build via the Game Manager, configure build parameters, and let the PlayFab GameWrangler handle scaling your servers to meet player demand in real time.
-
-## Shared group data
-
-Provides permission-based arbitrary key/value storage. Groups are collections of players that must be added manually. All players have the ability to view and edit keys and values.
-
-## Stores/store items
-
-Stores serve a subset of **CatalogItems**. These items can be offered at alternative prices when compared to those set on the corresponding **CatalogItem**.
-
-## Title Data
-
-**TitleData** represents any data stored at the title level. This is the broadest data set; all clients and servers may view **TitleData**.
-
-General game configuration settings are often stored in **TitleData**, and are typically one of the first **APIs** called when clients connect.
-
-## Title ID
-
-The unique identifier for a title. This ID can be obtained from the **Game Manager** under **Settings** > **Credentials**. This value must be *manually* set in the SDK prior to calling in to the service.
-
-## Trading
-
-Using our trade API flow, players and characters can trade items to other players and characters.
-
-## Virtual currency
-
-PlayFab offers up to 10 virtual currencies per title. By default, these arbitrary currencies can be used to purchase virtual goods from the catalog or store, as a soft currency converted from IAPs or as a generic mechanic to derive game play. Additionally, currencies can be configured to *recharge* over time to a predetermined limit.
-
-## Title news
-
-This is a simple catalog of news items. This feature makes sending the **Message Of The Day** (**M.O.T.D.**) accessible with a single API call.
-
-## Webhooks (PlayStream)
-
-Enables the calling of external web services with customized HTTP parameters.
+All of our multiplayer services are designed to be used independently or together, so you can pick just the capabilities you need or use our entire multiplayer backend. 
