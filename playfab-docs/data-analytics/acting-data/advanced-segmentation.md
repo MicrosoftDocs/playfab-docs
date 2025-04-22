@@ -116,6 +116,10 @@ You can create segments with Player Custom properties either via API or Game man
    - Custom property (numeric) `ItemAmountSpent >= 10`  
 
    ![Inventory Granted Segment Configuration](media/advanced_segmentation_docs_9_chocolate_segment.png)  
+5. **How it Works:** The rule will **update** the player’s custom property with the value from each individual event—**it will not accumulate or sum values over time**. For example, if a player spends 1 chocolate bar ten separate times, the `ItemAmountSpent` property will be set to `1` each time, not `10`. As a result, the player would **not** be included in the segment that filters for `ItemAmountSpent >= 10`. If you need to track cumulative or aggregated values (e.g. total items spent across multiple events), we recommend implementing custom logic using an **Azure Function** or **CloudScript** to calculate and update the total.
+
+6. **Note:** Gold Bars in Scenario 1 and Choclate Bars in Scenario 2 both write to the same property `ItemName`. If you want to track multiple values, you'll need multiple property names to prevent thrashing a player between 2 segments. 
+
 
 ---
 
