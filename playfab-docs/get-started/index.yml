@@ -28,6 +28,24 @@ landingContent:
         links:
           - text: Concepts
             url: concepts.md
+  # Card 
+  - title: What's new in PlayFab?
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: New this month
+            url: ../whats-new/whats-new.md
+          - text: 2025 SDK Release Notes
+            url: /playfab-docs/release-notes/index.md
+          - text: Lobby and Matchmaking SDK Release Notes
+            url: ../multiplayer/lobby/lobby-matchmaking-sdks/lobby-and-matchmaking-release-notes.md
+          - text: PlayFab Party SDK Release Notes
+            url: /playfab-docs/multiplayer/party/party-release-notes.md
+          - text: Party Unity Release Notes
+            url: /playfab-docs/multiplayer/party/party-unity-release-notes.md
+          - text: PlayFab Multiplayer Unreal Engine OnlineSubsystem Release Notes
+            url: /playfab-docs/multiplayer/networking/unreal-release-notes.md
+  # Card 
   - title: PlayFab services
     linkLists:
       - linkListType: overview
@@ -46,23 +64,6 @@ landingContent:
             url: ../player-progression/index.yml
           - text: Game data
             url: ../data-analytics/index.yml
-  - title: What's new in PlayFab?
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: New this month
-            url: ../whats-new/whats-new.md
-          - text: 2025 SDK Release Notes
-            url: /playfab-docs/release-notes/index.md
-          - text: Lobby and Matchmaking SDK Release Notes
-            url: ../multiplayer/lobby/lobby-matchmaking-sdks/lobby-and-matchmaking-release-notes.md
-          - text: PlayFab Party SDK Release Notes
-            url: /playfab-docs/multiplayer/party/party-release-notes.md
-          - text: Party Unity Release Notes
-            url: /playfab-docs/multiplayer/party/party-unity-release-notes.md
-          - text: PlayFab Multiplayer Unreal Engine OnlineSubsystem Release Notes
-            url: /playfab-docs/multiplayer/networking/unreal-release-notes.md
-
 
   - title: Demo and Samples
     linkLists:

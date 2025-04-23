@@ -5,6 +5,22 @@ items:
   href: get-started/index.yml 
 - name: Get started
   href: get-started/toc.yml
+- name: PlayFab services
+  items:
+  - name: Identity
+    href: ../identity/index.yml
+  - name: Live service management
+    href: ../live-service-management/index.yml
+  - name: Economy, Monetization, & UGC
+    href: ../economy-monetization/index.yml
+  - name: Multiplayer
+    href: ../multiplayer/index.yml
+  - name: Community
+    href: ../community/index.yml
+  - name: Player progression
+    href: ../player-progression/index.yml
+  - name: Game data
+    href: ../data-analytics/index.yml
 - name: What's New
   href: whats-new/toc.yml
 - name: Demo game
