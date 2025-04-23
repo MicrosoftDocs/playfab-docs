@@ -12,6 +12,16 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.13
+
+April 22, 2025
+
+### Bug fixes
+
+- Fixed an issue on Sony (PlayStation&#174;4 and PlayStation&#174;5) SDK versions where the second local user failed to join the lobby created by the first user after a network reconnection.
+
+'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
 ## 1.7.12
 
 April 15, 2025
