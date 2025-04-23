@@ -12,6 +12,22 @@ ms.localizationpriority: medium
 
 # What is PlayFab Live Service Management?
 
-Title data manages the remote configurations of the game as key-value pairs. To get started, see the [Title data Quickstart](./game-configuration/titledata/quickstart.md).  
+PlayFab's live service management features make it easier to operate you your live game with tools to manage game configuration, segment and target subsets of your audience, run AB testing, and effectively communicate with your entire playerbase. 
 
-Entities are the most basic addressable "things" that PlayFab APIs operate on. Each entity has a Type and an Id which together uniquely identify it. The parent/child relationships between entities exists which governs the permissions on how an entity's resources may be accessed by other entities. To get started, see the [Entities Quickstart](./game-configuration/entities/quickstart.md).
+## Game Manager
+
+The Game Manager web portal is a centralized hub where studio members can build, configure, and operate their games. It provides developer authentication with roles and access permissions to ensure secure and efficient management of game operations.
+
+## Game Configuration and Title Data
+
+PlayFab allows developers to manage game configurations and title data remotely. This feature enables seamless updates to game settings without requiring patches, ensuring a smooth player experience.
+
+## Player Segmentation and Experimentation
+
+PlayFab offers robust tools for segmenting the playerbase, allowing developers to target specific groups for configuration changes and AB testing. Experimentation tools enable split tests on player segments to determine the best outcomes, helping to optimize game features and player engagement.
+
+## Title Communications
+
+PlayFab provides various tools for communicating with the game's playerbase, including push notifications, emails, and message-of-the-day pop-ups. These tools help maintain player engagement and retention by delivering timely and relevant messages.
+
+These features collectively empower game creators to manage and optimize their games effectively, enhancing player engagement, improving game performance, and streamlining operations.

@@ -26,9 +26,26 @@ landingContent:
             url: what-is-playfab.md
       - linkListType: concept
         links:
-          - text: PlayFab Concepts
+          - text: Concepts
             url: concepts.md
-
+  - title: PlayFab services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Identity
+            url: ../identity/index.yml
+          - text: Live service management
+            url: ../live-service-management/index.yml
+          - text: Economy, Monetization, & UGC
+            url: ../economy-monetization/index.yml
+          - text: Multiplayer
+            url: ../multiplayer/index.yml
+          - text: Community
+            url: ../community/index.yml
+          - text: Player progression
+            url: ../player-progression/index.yml
+          - text: Game data
+            url: ../data-analytics/index.yml
   - title: What's new in PlayFab?
     linkLists:
       - linkListType: whats-new

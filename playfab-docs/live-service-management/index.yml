@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab Live service management documentation
-summary: summary # < 160 chars
+summary: Manage and optimize your game effectively with game configuration and title data, player segmentation for targeted configuration and AB testing, and title-wide communication tools. # < 160 chars
 
 metadata:
   title: PlayFab Live service management documentation
-  description: Guide on Live service management features # Required; article description that is displayed in search results. < 160 chars.
+  description: Manage and optimize your game effectively with game configuration and title data, player segmentation for targeted configuration and AB testing, and title-wide communication tools. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
   author: shikha-tarware
