@@ -94,7 +94,7 @@ You can create segments with Player Custom properties either via API or Game man
 
 ---
 
-### 2. Create a Segment for Users Who Were Granted Chocolate Bars and Used All of Them (10) After March 1, 2025 (Inventory Granted)  
+### 2. Create a Segment for Users Who Were Granted Chocolate Bars and Used All of Them (10) After April 1, 2025 (Inventory Granted)  
 
 1. Navigate to the **PlayStream Rules** page under **Automation -> Rules**.  
 2. Create a rule for the `playfab.inventory.items_granted` event with the following configuration:  
@@ -104,7 +104,7 @@ You can create segments with Player Custom properties either via API or Game man
 
    **Actions:**  
    - Update player custom properties  
-     - `ItemAmountSpent = Payload.Amount`  
+     - `AmountSpent = Payload.Amount`  
      - `ItemUpdateDate = Timestamp`  
 
    ![Inventory Granted Rule Configuration](media/advanced_segmentation_docs_8_chocolate_sub_rule.png)  
@@ -112,11 +112,11 @@ You can create segments with Player Custom properties either via API or Game man
 3. Navigate to the **Segments** page under **Players -> Segments**.  
 4. Create a segment with the following configuration:  
    - Custom property (string) `ItemName = <Chocolate Bars id>`  
-   - Custom property (datetime) `ItemUpdateDate > 3/1/2025`  
+   - Custom property (datetime) `ItemUpdateDate > 4/1/2025`  
    - Custom property (numeric) `ItemAmountSpent >= 10`  
 
    ![Inventory Granted Segment Configuration](media/advanced_segmentation_docs_9_chocolate_segment.png)  
-5. **How it Works:** The rule will **update** the player’s custom property with the value from each individual event—**it will not accumulate or sum values over time**. For example, if a player spends 1 chocolate bar ten separate times, the `ItemAmountSpent` property will be set to `1` each time, not `10`. As a result, the player would **not** be included in the segment that filters for `ItemAmountSpent >= 10`. If you need to track cumulative or aggregated values (e.g. total items spent across multiple events), we recommend implementing custom logic using an **Azure Function** or **CloudScript** to calculate and update the total.
+5. **How it Works:** The rule will **update** the player custom property with the value from each individual event—**it will not accumulate or sum values over time**. For example, if a player spends 1 chocolate bar ten separate times, the `ItemAmountSpent` property will be set to `1` each time, not `10`. As a result, the player would **not** be included in the segment that filters for `ItemAmountSpent >= 10`. If you need to track cumulative or aggregated values (e.g. total items spent across multiple events), we recommend implementing custom logic using an **Azure Function** or **CloudScript** to calculate and update the total.
 
 6. **Note:** Gold Bars in Scenario 1 and Choclate Bars in Scenario 2 both write to the same property `ItemName`. If you want to track multiple values, you'll need multiple property names to prevent thrashing a player between 2 segments. 
 
