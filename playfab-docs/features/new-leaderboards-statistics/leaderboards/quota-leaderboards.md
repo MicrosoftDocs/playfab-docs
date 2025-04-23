@@ -40,6 +40,8 @@ you can reach out to the PlayFab team for further assistance.
 | Row limit | 1 million rows | 1 million rows|
 | Number of versions | No limit | No limit|
 
+There is also the Pay as you go plan, which has no limits and charges based on usage.
+
 ## See also
 
 - [Create basic leaderboard](create-basic-leaderboard.md).

@@ -21,8 +21,6 @@ The following table outlines the limits for each of these modes:
 
 | Limit | Quantity |
 | --- | --- |
-| Reads | 5 million reads |
-| Writes | 1 million writes |
 | Statistics Definitions | 100 definitions |
 | Number of versions | 1 version |
 
@@ -30,12 +28,15 @@ The following table outlines the limits for each of these modes:
 There are two paid plans, each offering different capabilities. If your title needs to exceed these limits, 
 you can reach out to the PlayFab team for further assistance.
 
-| Limit | Standard Plan |Premium Plan|
-| --- | --- |--- |
+| Limit | Standard Plan |Premium Plan
+| --- | --- |---  
 | Reads |30 million reads | 500 million reads|
 | Writes | 15 million writes | 250 million writes|
 | Statistics Definitions | 1000 definitions | 1000 definitions
 | Number of versions | No limit | No limit| 
+
+There is also the Pay as you go plan, which has no limits and charges based on usage.
+
 
 ## See also
 
