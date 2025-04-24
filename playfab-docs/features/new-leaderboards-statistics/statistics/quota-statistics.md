@@ -9,7 +9,7 @@ ms.service: azure-playfab
 keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
-# Quota limits
+# Quota limits statistics
 
 The Statistic service is designed to align with PlayFab's pricing models, offering two distinct modes: 
 development and live. The development mode allows titles to test each feature and begin development. 
