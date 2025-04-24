@@ -12,6 +12,27 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.13
+
+April 22, 2025
+
+### Bug fixes
+
+- Fixed an issue on Sony (PlayStation&#174;4 and PlayStation&#174;5) SDK versions where the second local user failed to join the lobby created by the first user after a network reconnection.
+
+'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+
+## 1.7.12
+
+April 15, 2025
+
+### Bug fixes
+- Fixed a crash that occurred when a network reconnection happened after an unexpected disconnection, following the creation and joining of a multi-user lobby.
+- Fixed an issue where calling [PFLobbyPostUpdate](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbypostupdate.md). on a non-existent lobby did not automatically generate a disconnected state change.
+- Fixed a crash and exposing `libc++_shared.so` when loading library on Android
+- Included `libHttpClient` in the release package on Android. For usage details, see [PlayFab Multiplayer Android getting started](android-specific-requirements.md).
+- Fixed an issue with symbol exposure on the Apple platform.
+
 ## 1.7.11
 
 April 9, 2025
