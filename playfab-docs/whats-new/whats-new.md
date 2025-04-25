@@ -1,5 +1,5 @@
 ---
-title: What's New in March 2025
+title: What's New in PlayFab
 author:  m-kdearnley
 description: PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps.
 ms.author: kdearnley
@@ -10,5 +10,5 @@ keywords: playfab
 ms.localizationpriority: medium
 ---
 
-# What's new in PlayFab for March 2025?
+# What's new in PlayFab?
 
