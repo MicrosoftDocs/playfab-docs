@@ -58,12 +58,6 @@ The tables in the Overview tab allow you to monitor PlayStream events in real ti
 
 [Back to About the Game Manager](#about-game-manager)
 
-**PlayStream Monitor** - PlayStream is our latest and greatest addition to the PlayFab platform. It displays title events as they are generated in real time, and you can visualize them at whatever granularity you prefer on the world map. Use the sampling controls to gather more or less events per second.
-
-![Game Manager - PlayStream](media/tutorials/game-manager-playstream.png)
-
-[Back to About the Game Manager](#about-game-manager)
-
 ## Build
 
 Provides the foundational elements and tools to configure your game.
@@ -155,8 +149,6 @@ As an example, the following image shows the primary catalogs for **Unicorn Batt
 
 **Items** - An item within the catalog. Items can be of several different types.
 
-**Drop Tables** - Control the item distribution when players open containers and bundles.
-
 **Stores**- A subset of catalog items that can be set to prices that are different than those specified by the catalog.
 
 ![Game Manager - Economy - Catalogs - Edit Container](media/tutorials/game-manager-economy-catalogs-edit-container.png)
@@ -202,21 +194,10 @@ Additional Information:
 
 [Back to About the Game Manager](#about-game-manager)
 
-### Leaderboards  
+### Progression
 
-The Leaderboards tab displays all the active leaderboards for your title. PlayFab leaderboards are driven by the statistics you choose to use for your players. You can also configure the reset frequency and aggregation method.
+The Progression tab displays all the active stats and leaderboards for your title. [Playfab Statistics](../../player-progression/statistics/index.md) and [PlayFab Leaderboards](../../community/associations/leaderboards/quickstart-leaderboards.md) can be defined and configured here. You can even link a leaderboard to a stat to have one call drive updates for both. 
 
-![Game Manager - Players - Leaderboards](media/tutorials/game-manager-player-leaderboards.png)
-
-Within a leaderboard, select a **Player Name** to see the player overview.
-
-Select the orange **EDIT LEADERBOARD** button to edit your leaderboard name as well as the reset frequency.
-
-**Prize Tables** - Allows you to create and manage prize tables associated with specific leaderboards. Various items can be configured to be sent to players in the leaderboards, depending on how it is set up.
-
-**Additional information**:
-
-- [Using resettable statistics and leaderboards](../../community/associations/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
 - [Back to About the Game Manager](#about-game-manager)
 
 ### Content
