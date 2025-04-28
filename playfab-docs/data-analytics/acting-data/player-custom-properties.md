@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Player Custom Properties (Public Preview) 
 
 > [!NOTE]
-> The Player Custom Properties feature is in public preview. We anticipate ongoing changes to it as we continue gathering feedback and optimizing for customer use.
+> The Player Custom Properties feature is in public preview. While the core functionality is in place, we’re refining the experience based on feedback and usage patterns.
 
 Custom Properties are key-value data pairs that store additional information about players. These data pairs type can be string, numeric, boolean, or datetime.
 
@@ -37,7 +37,7 @@ Some limitations on the Custom Properties are:
 - String values have a maximum length of 36 characters
 - The supported numeric values are double floating point (IEEE 754 standard)
 - Datetime string values must use the ISO 8601 format and all comparisons are done with respect to UTC
-- There can be only 10 unique custom properties per player (It isn't required that each player has the exact same 10 property names)
+- There can be only 5 unique custom properties per player (It isn't required that each player has the exact same 5 property names)
 
 ## Benefits
 
