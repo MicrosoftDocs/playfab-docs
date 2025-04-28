@@ -47,7 +47,7 @@ Each paid plan has specific limits regarding reads, writes, and storage. For mor
 - [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Group leaderboards](group-leaderboards.md).
 - [Manual tiers](manual-tiers.md).
-- [Limits Leaderboards](limits-leaderboards.md).
+- [Limits](limits-leaderboards.md).
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
