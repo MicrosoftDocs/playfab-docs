@@ -222,7 +222,7 @@ Ways to help you troubleshoot issues.
 
 Users may face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
 
-**If you are using UE5.4:**
+**If you are using UE5.5 or UE5.4:**
  * You may encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and \Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`
  * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\
  * Open OnlineSubsystemGDK.uplugin and set `PlayFabParty` to disabled:

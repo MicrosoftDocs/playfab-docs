@@ -42,7 +42,7 @@ landingContent:
             url: tournaments-leaderboards/index.md
       - linkListType: quickstart
         links:
-          - text: Entity groups
+          - text: Leaderboard Quickstart
             url: tournaments-leaderboards/quickstart.md
       - linkListType: tutorial
         links:
@@ -54,7 +54,12 @@ landingContent:
             url: tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md
           - text: Using the profile for advanced leaderboards
             url: tournaments-leaderboards/using-the-profile-for-advanced-leaderboards.md
-
+      - linkListType: reference
+        links:
+          - text: Limits on Leaderboards
+            url: leaderboards/limits-leaderboards.md
+          - text: Quota on Leaderboards
+            url: leaderboards/quota-leaderboards.md
   # Card
   - title: Groups
     linkLists:

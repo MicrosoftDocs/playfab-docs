@@ -8,19 +8,19 @@ items:
 - name: PlayFab services
   items:
   - name: Identity
-    href: ../identity/index.yml
+    href: identity/index.yml
   - name: Live service management
-    href: ../live-service-management/index.yml
+    href: live-service-management/index.yml
   - name: Economy, Monetization, & UGC
-    href: ../economy-monetization/index.yml
+    href: economy-monetization/index.yml
   - name: Multiplayer
-    href: ../multiplayer/index.yml
+    href: multiplayer/index.yml
   - name: Community
-    href: ../community/index.yml
+    href: community/index.yml
   - name: Player progression
-    href: ../player-progression/index.yml
+    href: player-progression/index.yml
   - name: Game data
-    href: ../data-analytics/index.yml
+    href: data-analytics/index.yml
 - name: What's New
   href: whats-new/toc.yml
 - name: Demo game

@@ -145,6 +145,8 @@ private static async Task UpdateEntityDisplayName(PlayFabAuthenticationContext c
 
 - [Create basic leaderboard](create-basic-leaderboard.md).
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
+- [Limits ](limits-leaderboards.md).
+- [Quota ](quota-leaderboards.md).
 - [Seasonal leaderboards](seasonal-leaderboards.md).
 - [Group leaderboards](group-leaderboards.md).
 - [Manual tiers](manual-tiers.md).

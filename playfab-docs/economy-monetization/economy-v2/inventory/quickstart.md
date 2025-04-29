@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 [!INCLUDE [notice](../../../includes/_economy-release.md)]
 
-Get familiarized with Player Inventories by using the PlayFab Beta SDK to purchase an item and check that it has been added to your player's inventory. After getting an entity token to interact with your title via the APIs, you search for an item in your catalog, purchase the item, and then get the player's inventory to find the purchased item.
+Get familiarized with Player Inventories by using the PlayFab Beta SDK to purchase an item and check that it was added to your player's inventory. After getting an entity token to interact with your title via the APIs, you search for an item in your catalog, purchase the item, and then get the player's inventory to find the purchased item.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ You first need to sign in the player to receive the security token required for 
 
 ## Search for the item
 
-To find the item in the catalog, you'll need to call `Search`. In the call body:
+To find the item in the catalog, call `Search`. In the call body:
 
 ```json
 {
@@ -38,11 +38,11 @@ To find the item in the catalog, you'll need to call `Search`. In the call body:
 }
 ```
 
-* The `Search` is the search string that will be fuzzy searched against the Title, Description, and Keywords of every item in your catalog
-* `Top` is an integer that determines how many results to return - in this case we only need one
+* The `Search` is the search string that is fuzzy searched against the Title, Description, and Keywords of every item in your catalog
+* `Top` is an integer that determines how many results to return - in this case, we only need one
 
 > [!NOTE]
-> There are additional fields you can learn about in the [Search quickstart](../catalog/search.md).
+> There are more fields you can learn about in the [Search quickstart](../catalog/search.md).
 
 In the response, grab the following fields:
 
@@ -51,11 +51,11 @@ In the response, grab the following fields:
 * `Items` > `PriceOptions` > `Prices` > `Amounts` > `Amount` - Amount of the virtual currency needed to purchase the item
 
 > [!NOTE]
-> Only Title Entities are able to set prices for Items
+> Only Title Entities are able to set prices for Items.
 
 ## Purchase the item
 
-To purchase the item call `PurchaseInventoryItems`. In the call body:
+To purchase the item, call `PurchaseInventoryItems`. In the call body:
 
 ```json
 {
@@ -81,21 +81,21 @@ To purchase the item call `PurchaseInventoryItems`. In the call body:
 
 See the player's newly purchased item via `GetInventoryItems`. In the call, ensure the body is empty - you can specify the entity in the body, but isn't necessary, as the information is already being passed in through the entity token in the header.
 
-The response contains IDs of each item the player owns and the amount of each item. The newly purchased item will be in the player's inventory.
+The response contains IDs of each item the player owns and the amount of each item. The newly purchased item is in the player's inventory.
 
 > [!NOTE]
-> If the player already has that item in their inventory with the same `StackId`, you won't see another item instance after the purchase - instead, you'll simply see the `Amount` field increase.
+> If the player already has that item in their inventory with the same `StackId`, you won't see another item instance after the purchase - instead, you'll see the `Amount` field increase.
 
 ## Troubleshooting
 
 * Insufficient funds
-  * If you call `PurchaseInventoryItems` and receive a `422: InsufficientFunds` error, the player doesn't have enough virtual currency to purchase the item. You can grant virtual currency to the player by calling `AddInventoryItems` (requires title entity token) or navigating to **\[Title\]** > **Players** > **\[Player\]** > **`Inventory (V2)`** in Game Manager
-* The item can't be purchased at the specified price
+  * If you call `PurchaseInventoryItems` and receive a `422: InsufficientFunds` error, the player doesn't have enough virtual currency to purchase the item. You can grant virtual currency to the player by calling `AddInventoryItems` (requires title entity token) or navigating to **\[Title\]** > **Players** > **\[Player\]** > **`Inventory (V2)`** in Game Manager.
+* The item can't be purchased at the specified price.
   * If you call `PurchaseInventoryItems` and receive a `1071` error code, the `PriceAmounts` field doesn't match the prices specified in the catalog.
 
 ## Next steps
 
-Now that you purchased the player's first item, you can consume the item, you can add the item to a store to put it on sale, and you can create and purchase a bundle containing the item.
+Now that you've purchased the player's first item, you can consume the item, you can add the item to a store to put it on sale, and you can create and purchase a bundle containing the item.
 
 > [!div class="nextstepaction"]
 > [Player inventory tutorial](../tutorials/getting-started-with-unity-and-android.md)

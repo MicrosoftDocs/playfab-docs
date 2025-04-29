@@ -49,7 +49,7 @@ landingContent:
             url: statistics/index.md
       - linkListType: quickstart
         links:
-          - text: Quickstart with Statistics
+          - text: Statistics Quickstart
             url: statistics/quickstart-statistics.md
       - linkListType: tutorial
         links:
@@ -63,6 +63,12 @@ landingContent:
             url: statistics/seasonal-statistics.md
           - text: Transactional writes
             url: statistics/transactional-writes.md
+      - linkListType:  reference
+        links:
+          - text: Statistics Limits
+            url: statistics/limits-statistics.md
+          - text: Statistics Quota
+            url: statistics/quota-statistics.md
 
   # - title: Refer to APIs
   #   linkLists:

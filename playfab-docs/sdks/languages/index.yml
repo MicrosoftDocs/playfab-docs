@@ -65,10 +65,8 @@ landingContent:
             url: ../c-sharp/index.md
       - linkListType: quickstart
         links:
-          - text: Quickstart C# 
+          - text: Quickstart C#
             url: ../c-sharp/quickstart.md
-          - text: Quickstart C# with Xamarin
-            url: ../c-sharp/xamarin-quickstart.md
 
   # Card
   - title: Java

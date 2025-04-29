@@ -3,6 +3,10 @@ items:
   href: index.md
 - name: Quickstart
   href: quickstart-leaderboards.md
+- name: Limits
+  href: limits-leaderboards.md
+- name: Quota
+  href: quota-leaderboards.md
 - name: Tutorials
   items:
   - name: Create a basic leaderboard

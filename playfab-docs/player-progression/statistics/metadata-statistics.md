@@ -119,3 +119,5 @@ In this tutorial, we learned how to do the following operations:
 - [Seasonal statistics](seasonal-statistics.md).
 - [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).
+- [Limits](limits-statistics.md).
+- [Quota](quota-statistics.md)

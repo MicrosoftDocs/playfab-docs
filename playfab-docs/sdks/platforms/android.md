@@ -20,5 +20,4 @@ The following SDKs are available for game client development on Android. The rig
 | Unreal          | An Unreal Engine marketplace plugin designed for use with either C++ or blueprint. | [Unreal SDK Overview](../unreal/index.md) |
 | Unity           | Both an editor extension and stand-alone SDK for Unity3d | [Unity SDK Overview](../unity3d/index.md) |
 | Java            | A simple REST-like interface to access PlayFab from the Java runtime | [Java Overview](../java/index.md) |
-| C# with Xamarin | Our C# SDK is often used for service-to-service calls and can be used with Xamarin for mobile games. | [C# (using Xamarin)](../c-sharp/index.md) |
 | Legacy C++      | Our older cross-platform C++ SDK supports a simple REST-like interface with PlayFab across multiple platforms. | [XplatCpp Linux Quickstart](../playfab-cpp/quickstart-linux.md) |
