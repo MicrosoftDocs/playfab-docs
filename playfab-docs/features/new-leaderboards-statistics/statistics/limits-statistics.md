@@ -40,3 +40,4 @@ The following table defines the limits for the various APIs available in the Sta
 - [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).
 - [Statistics meters](../../pricing/meters/statistics-meters.md).
+- [Quota](quota-statistics.md)

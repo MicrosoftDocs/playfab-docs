@@ -272,4 +272,6 @@ In this tutorial, we learned how to do the following operations:
 - [Add contextual data to statistics](metadata-statistics.md).
 - [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md).
+- [Limits](limits-statistics.md).
+- [Quota](quota-statistics.md)
 

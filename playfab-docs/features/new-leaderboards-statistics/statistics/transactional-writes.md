@@ -125,3 +125,5 @@ With these concepts clear, you're now ready to add data to your statistic and av
 - [Add contextual data to statistics](metadata-statistics.md).
 - [API reference](api-reference.md).
 - [Statistics meters](../../pricing/meters/statistics-meters.md).
+- [Limits](limits-statistics.md).
+- [Quota](quota-statistics.md)
