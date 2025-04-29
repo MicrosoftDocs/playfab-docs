@@ -5907,6 +5907,1196 @@
             "source_path": "playfab-docs/features/multiplayer/networking/xbox-requirements.md",
             "redirect_url": "/gaming/playfab/multiplayer/networking/xbox-requirements",
             "redirect_document_id": false
-          }
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/AccessPolicy.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/AccessPolicy",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/AccessPolicy.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/AccessPolicy",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/AccessPolicy.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/AccessPolicy",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/AccessPolicy.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/AccessPolicy",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/networking/android-specific-requirements.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/android-specific-requirements",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/lobby-matchmaking-sdks/android-specific-requirements.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/lobby-matchmaking-sdks/android-specific-requirements",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/new-leaderboards-statistics/statistics/api-reference.md",
+            "redirect_url": "/gaming/playfab/player-progression/statistics/api-reference",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/api-reference.md",
+            "redirect_url": "/gaming/playfab/player-progression/leaderboards/api-reference",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/economy-v2/tutorials/marketplace-redemption/apple.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/marketplace/marketplace-redemption/apple",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/economy-v2/tutorials/marketplace-integrations/apple.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/marketplace/marketplace-integrations/apple",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/throttling/best-practices.md",
+            "redirect_url": "/gaming/playfab/live-service-management/service-gateway/throttling/best-practices",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/servers/best-practices.md",
+            "redirect_url": "/gaming/playfab/multiplayer/servers/best-practices",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/data-analytics/legacy/insights/best-practices.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights//best-practices",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "miscellaneous/hold-topics/building-blocks.md",
+            "redirect_url": "file-not-found",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/ConnectionString.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/ConnectionString",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/ConnectionString.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/ConnectionString",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/Context.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/Context",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchmakingTicket/Context.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchmakingTicket/Context",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/economy/tutorials/currencies.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/tutorials/currencies",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/economy-v2/tutorials/currencies.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/tutorials/currencies",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/economy-v2/tutorials/marketplace-integrations/google.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/marketplace/marketplace-integrations/google",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/economy-v2/tutorials/marketplace-redemption/google.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/marketplace/marketplace-redemption/google",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/Id.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/Id",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PFEntityKey/Id.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PFEntityKey/Id",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "features/analytics/in-this-section.md",
+            "redirect_url": "file-not-found",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/economy-v2/ugc/index.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/ugc/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/sdkgenerator/index.md",
+            "redirect_url": "/gaming/playfab/sdks/sdkgenerator/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/python/index.md",
+            "redirect_url": "/gaming/playfab/sdks/python/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/postman/index.md",
+            "redirect_url": "/gaming/playfab/sdks/postman/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/playfab-cpp/index.md",
+            "redirect_url": "/gaming/playfab/sdks/playfab-cpp/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/unity3d/index.md",
+            "redirect_url": "/gaming/playfab/sdks/unity3d/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/analytics/metrics/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/metrics/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/authentication/login/index.md",
+            "redirect_url": "/gaming/playfab/identity/player-identity/login/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/authentication/authentication/index.md",
+            "redirect_url": "/gaming/playfab/identity/player-identity/authentication/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/titledata/index.md",
+            "redirect_url": "/gaming/playfab/live-service-management/game-configuration/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/networking/unity-party-api-reference/classes/playfabmultiplayermanager/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/unity-party-api-reference/classes/playfabmultiplayermanager/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/authentication/platform-specific-authentication/index.md",
+            "redirect_url": "/gaming/playfab/identity/platform-auth/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/c/index.md",
+            "redirect_url": "/gaming/playfab/sdks/c/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/unreal/index.md",
+            "redirect_url": "/gaming/playfab/sdks/unreal/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/roadmap/index.md",
+            "redirect_url": "/gaming/playfab/whats-new/whats-new",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/automation/cloudscript/index.md",
+            "redirect_url": "/gaming/playfab/automation/cloudscript/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/release-notes/playfab-c/index.md",
+            "redirect_url": "/gaming/playfab/release-notes/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/authentication/aad-authentication/index.md",
+            "redirect_url": "/gaming/playfab/identity/dev-identity/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/data-analytics/legacy/content-delivery-network/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/content-delivery-network/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/nodejs/index.md",
+            "redirect_url": "/gaming/playfab/sdks/nodejs/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/new-leaderboards-statistics/statistics/index.md",
+            "redirect_url": "/gaming/playfab/player-progression/statistics/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/networking/unity-party-api-reference/classes/playfablocalplayer/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/unity-party-api-reference/classes/playfablocalplayer/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/networking/unity-party-api-reference/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/unity-party-api-reference/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/java/index.md",
+            "redirect_url": "/gaming/playfab/sdks/java/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/data-analytics/acting-data/scheduled-tasks/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/javascript/index.md",
+            "redirect_url": "/gaming/playfab/sdks/javascript/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/lua/index.md",
+            "redirect_url": "/gaming/playfab/sdks/lua/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/cocos2d-x/index.md",
+            "redirect_url": "/gaming/playfab/sdks/cocos2d-x/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/c-sharp/index.md",
+            "redirect_url": "/gaming/playfab/sdks/c-sharp/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/data-analytics/legacy/connectivity/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/data-analytics/learn-data/data-explorer/index.md",
+            "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/servers/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/servers/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/servers/server-sdks/unreal-gsdk/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/servers/server-sdks/unreal-gsdk/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/index.md",
+            "redirect_url": "/gaming/playfab/community/associations/leaderboards/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/data-analytics/learn-data/experiments/index.md",
+            "redirect_url": "/gaming/playfab/live-service-management/game-configuration/experiments/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/matchmaking/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/matchmaking/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/playerdata/index.md",
+            "redirect_url": "/gaming/playfab/player-progression/player-data/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/sdks/photon/index.md",
+            "redirect_url": "/gaming/playfab/sdks/photon/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/networking/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/automation/cloudscript-af/index.md",
+            "redirect_url": "/gaming/playfab/live-service-management/service-gateway/automation/cloudscript-af/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/multiplayer/networking/unity-party-api-reference/classes/playfabplayer/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/unity-party-api-reference/classes/playfabplayer/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/release-notes/index.md",
+            "redirect_url": "/gaming/playfab/release-notes/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/gamemanager/index.md",
+            "redirect_url": "/gaming/playfab/live-service-management/gamemanager/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/engagement/push-notifications/index.md",
+            "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/push-notifications/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/api-references/index.md",
+            "redirect_url": "/gaming/playfab/api-references/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/engagement/news/index.md",
+            "redirect_url": "/gaming/playfab/playfab-docs/live-service-management/game-configuration/title-communications/news/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/economy-v2/inventory/index.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/inventory/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/features/social/trading/index.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy/trading/index",
+              "redirect_document_id": false
+            },
+            {
+            "source_path": "playfab-docs/features/economy-v2/fraud-prevention/index.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/fraud-prevention/index",
+              "redirect_document_id": false
+            },
+            {
+            "source_path": "playfab-docs/features/economy/stores/index.md",
+            "redirect_url": "/gaming/playfab/economy-monetization/economy/stores/index",
+              "redirect_document_id": false
+            },
+            {
+            "source_path": "playfab-docs/features/social/friends/index.md",
+            "redirect_url": "/gaming/playfab/community/associations/friends/index",
+              "redirect_document_id": false
+            },
+            {
+            "source_path": "playfab-docs/features/multiplayer/lobby/index.md",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy/items/index.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy/items/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/groups/index.md",
+              "redirect_url": "/gaming/playfab/community/associations/groups/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/entities/index.md",
+              "redirect_url": "/gaming/playfab/playfab-docs/live-service-management/game-configuration/entities/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/automation/rewarded-ads/index.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/rewarded-ads/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/api-references/events/index.md",
+              "redirect_url": "/gaming/playfab/api-references/events/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/social/index.md",
+              "redirect_url": "/gaming/playfab/community/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/engagement/emails/index.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/emails/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/tournaments-leaderboards/index.md",
+              "redirect_url": "/gaming/playfab/community/associations/leaderboards/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "features/automation/intro.md",
+              "redirect_url": "file-not-found",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/cocos2d-x/license.md",
+              "redirect_url": "/gaming/playfab/sdks/cocos2d-x/license",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/javascript/license.md",
+              "redirect_url": "/gaming/playfab/sdks/javascript/license",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/unity3d/license.md",
+              "redirect_url": "/gaming/playfab/sdks/unity3d/license",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/java/license.md",
+              "redirect_url": "/gaming/playfab/sdks/java/license",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/lua/license.md",
+              "redirect_url": "/gaming/playfab/sdks/lua/license",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/LobbyArrangedJoinConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyClientRequestedSearchResultCountUpperLimit.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyClientRequestedSearchResultCountUpperLimit",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyClientRequestedSearchResultCountUpperLimit.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyClientRequestedSearchResultCountUpperLimit",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyConstants.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/LobbyCreateConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/LobbyDataUpdate.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyError.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyError",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyError/LobbyError.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyError",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyJoinConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyJoinConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyJoinConfiguration/LobbyJoinConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyJoinConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxLobbyPropertyCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxLobbyPropertyCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxLobbyPropertyCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxLobbyPropertyCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberCountLowerLimit.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberCountLowerLimit",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxMemberCountLowerLimit.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxMemberCountLowerLimit",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberCountUpperLimit.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberCountUpperLimit",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxMemberCountUpperLimit.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxMemberCountUpperLimit",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxMemberPropertyCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxMemberPropertyCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberPropertyCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxMemberPropertyCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxSearchPropertyCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyConstants/LobbyMaxSearchPropertyCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxSearchPropertyCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/LobbyMaxSearchPropertyCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/LobbyProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/LobbyProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/LobbyProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/LobbyProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchConfiguration/LobbySearchConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/LobbyServerDataUpdate.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerJoinConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerJoinConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerJoinConfiguration/LobbyServerJoinConfiguration.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerJoinConfiguration",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/MatchUser.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/MaxMemberCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/MaxMemberCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/MaxMemberCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/MaxMemberCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/MaxMemberCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/MaxMemberCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/MaxMemberCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/MaxMemberCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/MaxMemberCount.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/MaxMemberCount",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyJoinConfiguration/MemberProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyJoinConfiguration/MemberProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/MemberProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/MemberProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/MembershipLock.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/MembershipLock",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/MembershipLock.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/MembershipLock",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/MembershipLock.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/MembershipLock",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MultiplayerPort.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MultiplayerPort",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MultiplayerPort/MultiplayerPort.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MultiplayerPort",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MultiplayerServerDetails/MultiplayerServerDetails.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MultiplayerServerDetails",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MultiplayerServerDetails.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MultiplayerServerDetails",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/OwnerMigrationPolicy.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyArrangedJoinConfiguration/OwnerMigrationPolicy",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/OwnerMigrationPolicy.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/OwnerMigrationPolicy",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/OwnerMigrationPolicy.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/Lobby/OwnerMigrationPolicy",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PFEntityKey.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PFEntityKey",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PFEntityKey/PFEntityKey.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PFEntityKey",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer/PlayFabMultiplayer.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayFabMultiplayer",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayfabMultiplayerEventProcessor/PlayfabMultiplayerEventProcessor.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayfabMultiplayerEventProcessor",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayfabMultiplayerEventProcessor.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/PlayfabMultiplayerEventProcessor",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/SearchProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/SearchProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/SearchProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/SearchProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/SearchProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/SearchProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/SearchProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/SearchProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/TeamId.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/TeamId",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchmakingTicketMatchMember/TeamId.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchmakingTicketMatchMember/TeamId",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/analytics/metrics/playstream-events.md",
+              "redirect_url": "/gaming/playfab/data-analytics/ingest-data/playstream-events",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/ingest-data/playstream-events.md",
+              "redirect_url": "/gaming/playfab/data-analytics/ingest-data/playstream-events",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/churn-prediction/pricing.md",
+              "redirect_url": "/gaming/playfab/data-analytics/learn-data/churn-prediction/pricing",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/experiments/pricing.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/experiments/pricing",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/legacy/insights/pricing.md",
+              "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/pricing",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/experiments/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/experiments/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/matchmaking/quickstart.md",
+              "redirect_url": "/gaming/playfab/multiplayer/matchmaking/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/reports/quickstart.md",
+              "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy/items/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy/items/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy/stores/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy/stores/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/authentication/login/quickstart.md",
+              "redirect_url": "/gaming/playfab/identity/player-identity/login/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/c/quickstart-linux.md",
+              "redirect_url": "/gaming/playfab/sdks/c/quickstart-linux",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-linux.md",
+              "redirect_url": "/gaming/playfab/sdks/playfab-cpp/quickstart-linux",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/automation/cloudscript-af/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/service-gateway/automation/cloudscript-af/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/automation/rewarded-ads/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/rewarded-ads/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/c-sharp/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/c-sharp/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/data-explorer/quickstart.md",
+              "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/automation/cloudscript/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/service-gateway/automation/cloudscript/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/experiments/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/experiments/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/matchmaking/quickstart.md",
+              "redirect_url": "/gaming/playfab/multiplayer/matchmaking/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/legacy/content-delivery-network/quickstart.md",
+              "redirect_url": "/gaming/playfab/data-analytics/legacy/content-delivery-network/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/reports/quickstart.md",
+              "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy/items/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy/items/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy/stores/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy/stores/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/authentication/login/quickstart.md",
+              "redirect_url": "/gaming/playfab/identity/player-identity/login/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/analytics/metrics/quickstart.md",
+              "redirect_url": "/gaming/playfab/data-analytics/learn-data/metrics/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/networking/quickstart.md",
+              "redirect_url": "/gaming/playfab/multiplayer/networking/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/playerdata/quickstart.md",
+              "redirect_url": "/gaming/playfab/player-progression/player-data/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/friends/quickstart.md", 
+              "redirect_url": "/gaming/playfab/community/associations/friends/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/unity3d/quickstart.md", 
+              "redirect_url": "/gaming/playfab/sdks/unity3d/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/gamemanager/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/gamemanager/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/javascript/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/javascript/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/java/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/java/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/ugc/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/ugc/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/sdkgenerator/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/sdkgenerator/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/engagement/news/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/news/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/unreal/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/unreal/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/groups/quickstart.md",
+              "redirect_url": "/gaming/playfab/community/associations/groups/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/inventory/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/inventory/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/entities/quickstart.md",
+              "redirect_url": "/gaming/playfab/identity/player-identity/entities/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/nodejs/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/nodejs/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/engagement/push-notifications/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/push-notifications/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/python/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/python/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/tournaments-leaderboards/quickstart.md",
+              "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/trading/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy/trading/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/cocos2d-x/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/cocos2d-x/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/acting-data/scheduled-tasks/quickstart.md",
+              "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/titledata/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-data/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/fraud-prevention/quickstart.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/fraud-prevention/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/photon/quickstart.md",
+              "redirect_url": "/gaming/playfab/sdks/photon/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/engagement/emails/quickstart.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/emails/quickstart",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "video/script/script-playfab-data-and-microsoft-fabric.md",
+              "redirect_url": "file-not-found",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/SearchProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/SearchProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/SearchProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/SearchProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/SearchProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/SearchProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/SearchProperties.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/SearchProperties",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/tutorials/marketplace-redemption/steam.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/marketplace/marketplace-redemption/steam",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/tutorials/marketplace-integrations/steam.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/marketplace/marketplace-integrations/steam",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/api-references/events/data-types/subscriptions.md",
+              "redirect_url": "/gaming/playfab/api-references/events/data-types/subscriptions",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/subscriptions.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/subscriptions",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/TeamId.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/TeamId",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchmakingTicketMatchMember/TeamId.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchmakingTicketMatchMember/TeamId",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "features/pricing/transition.md",
+              "redirect_url": "file-not-found",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/multiplayer/matchmaking/tutorials.md",
+              "redirect_url": "/gaming/playfab/multiplayer/matchmaking/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/trading/tutorials.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy/trading/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/friends/tutorials.md",
+              "redirect_url": "/gaming/playfab/community/associations/friends/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/groups/tutorials.md",
+              "redirect_url": "/gaming/playfab/community/associations/groups/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/photon/tutorials.md",
+              "redirect_url": "/gaming/playfab/sdks/photon/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/tournaments-leaderboards/tutorials.md",
+              "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/acting-data/scheduled-tasks/tutorials.md",
+              "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/titledata/tutorials.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-data/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/entities/tutorials.md",
+              "redirect_url": "/gaming/playfab/identity/player-identity/entities/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/engagement/push-notifications/tutorials.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/push-notifications/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/engagement/news/tutorials.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/news/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/engagement/emails/tutorials.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/emails/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/analytics/metrics/tutorials.md",
+              "redirect_url": "/gaming/playfab/data-analytics/learn-data/metrics/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/authentication/platform-specific-authentication/tutorials.md",
+              "redirect_url": "/gaming/playfab/identity/player-identity/platform-specific-authentication/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/automation/cloudscript/tutorials.md",
+              "redirect_url": "/gaming/playfab/data-analytics/acting-data/cloudscript/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/playerdata/tutorials.md",
+              "redirect_url": "/gaming/playfab/player-progression/player-data/tutorials",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "video/video-overview.md",
+              "redirect_url": "file-not-found",
+              "redirect_document_id": false
+            }
         ]
 }
