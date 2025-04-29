@@ -12,6 +12,17 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.14
+
+April 28, 2025
+
+### Bug fixes
+
+- Fixed an issue where the second local user failed to join the lobby created by the first user after a network reconnection.
+
+### Threading Changes
+- The SDK is replacing its custom networking threads with a thread pool implementation, which will enable more efficient CPU utilization.
+
 ## 1.7.13
 
 April 22, 2025
