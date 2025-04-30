@@ -23,8 +23,8 @@ You can create segments with Player Custom properties either via API or Game man
 
 ### Via API
 
--     Use the [Create Segment API](/rest/api/playfab/admin/segments/create-segment) to create a segment. 
--     Add custom property predicates using the [Update Segment](/rest/api/playfab/admin/segments/update-segment) API.
+- Use the [Create Segment API](/rest/api/playfab/admin/segments/create-segment) to create a segment.
+- Add custom property predicates using the [Update Segment](/rest/api/playfab/admin/segments/update-segment) API.
 
 ### Via Game Manager 
 
@@ -46,7 +46,8 @@ You can create segments with Player Custom properties either via API or Game man
 
 ## Quick Start Scenarios  
 
-### Set up Economy V2 Catalog and Inventory  
+### Set up Economy V2 Catalog and Inventory
+
 1. Create a **Gold Bar** currency as an item.
 2. Create a **Chocolate Bar** currency as an item.    
    - **Required parameters:** Friendly ID, Title, and Start Date (March 1)  
@@ -63,7 +64,8 @@ You can create segments with Player Custom properties either via API or Game man
 
    3d. Select **Chocolate Bar** under **ContentType**, set a **Start date**, **Time**, and **Title**, then select **Save and Publish**.  
 
-   ![Save and Publish](../../../data-analytics/acting-data/media/advanced_segmentation_docs_5_create_chocolate_bar.png)  
+   ![Save and Publish](../../../data-analytics/acting-data/media/advanced_segmentation_docs_5_create_chocolate_bar.png)
+
 ---
 
 ### 1. Create a Segment for Users Who Spend Between 25-50 Gold Bars (Virtual Currency Spent)  
