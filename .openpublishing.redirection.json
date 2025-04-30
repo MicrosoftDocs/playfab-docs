@@ -6265,7 +6265,7 @@
           },
           {
             "source_path": "playfab-docs/features/engagement/news/index.md",
-            "redirect_url": "/gaming/playfab/playfab-docs/live-service-management/game-configuration/title-communications/news/index",
+            "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/news/index",
             "redirect_document_id": false
           },
           {
@@ -6310,7 +6310,7 @@
             },
             {
               "source_path": "playfab-docs/features/entities/index.md",
-              "redirect_url": "/gaming/playfab/playfab-docs/live-service-management/game-configuration/entities/index",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/entities/index",
               "redirect_document_id": false
             },
             {
@@ -7096,6 +7096,71 @@
             {
               "source_path": "video/video-overview.md",
               "redirect_url": "/gaming/playfab/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "features/multiplayer/lobby/notifications-overview.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/overview.md",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/engagement/overview.md",
+              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/demo-game/overview.md",
+              "redirect_url": "/gaming/playfab/demo-game/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/legacy/insights/overview.md",
+              "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/overview.md",
+              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/reports/overview.md",
+              "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/learn-data/churn-prediction/overview.md",
+              "redirect_url": "/gaming/playfab/data-analytics/learn-data/churn-prediction/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/analytics/overview.md",
+              "redirect_url": "/gaming/playfab/features/analytics/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/real-time-notifications/overview.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/data/overview.md",
+              "redirect_url": "/gaming/playfab/data-analytics/acting-data/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "features/new-leaderboards-statistics/psintro.md",
+              "redirect_url": "/gaming/playfab/community/associations/leaderboards/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-gdk.md",
+              "redirect_url": "/gaming/playfab/sdks/playfab-cpp/quickstart-gdk",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/sdks/c/quickstart-gdk.md",
+              "redirect_url": "/gaming/playfab/sdks/c/quickstart-gdk",
               "redirect_document_id": false
             }
         ]
