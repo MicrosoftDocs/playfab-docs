@@ -5975,7 +5975,7 @@
           },
           {
             "source_path": "miscellaneous/hold-topics/building-blocks.md",
-            "redirect_url": "file-not-found",
+            "redirect_url": "/gaming/playfab/index",
             "redirect_document_id": false
           },
           {
@@ -6030,7 +6030,7 @@
           },
           {
             "source_path": "features/analytics/in-this-section.md",
-            "redirect_url": "file-not-found",
+            "redirect_url": "/gaming/playfab/data-analytics/index",
             "redirect_document_id": false
           },
           {
@@ -6340,7 +6340,7 @@
             },
             {
               "source_path": "features/automation/intro.md",
-              "redirect_url": "file-not-found",
+              "redirect_url": "/gaming/playfab/data-analytics/acting-data/index",
               "redirect_document_id": false
             },
             {
@@ -6955,7 +6955,7 @@
             },
             {
               "source_path": "video/script/script-playfab-data-and-microsoft-fabric.md",
-              "redirect_url": "file-not-found",
+              "redirect_url": "/gaming/playfab/index",
               "redirect_document_id": false
             },
             {
@@ -7010,7 +7010,7 @@
             },
             {
               "source_path": "features/pricing/transition.md",
-              "redirect_url": "file-not-found",
+              "redirect_url": "/gaming/playfab/index",
               "redirect_document_id": false
             },
             {
@@ -7095,7 +7095,7 @@
             },
             {
               "source_path": "video/video-overview.md",
-              "redirect_url": "file-not-found",
+              "redirect_url": "/gaming/playfab/index",
               "redirect_document_id": false
             }
         ]
