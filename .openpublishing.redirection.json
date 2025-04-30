@@ -727,7 +727,7 @@
         },
         {
             "source_path": "playfab-docs/features/insights/connectivity/index.md",
-            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/index",
+            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/index", 
             "redirect_document_id": false
         },
         {
@@ -6039,31 +6039,6 @@
             "redirect_document_id": false
           },
           {
-            "source_path": "playfab-docs/sdks/sdkgenerator/index.md",
-            "redirect_url": "/gaming/playfab/sdks/sdkgenerator/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/python/index.md",
-            "redirect_url": "/gaming/playfab/sdks/python/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/postman/index.md",
-            "redirect_url": "/gaming/playfab/sdks/postman/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/playfab-cpp/index.md",
-            "redirect_url": "/gaming/playfab/sdks/playfab-cpp/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/unity3d/index.md",
-            "redirect_url": "/gaming/playfab/sdks/unity3d/index",
-            "redirect_document_id": false
-          },
-          {
             "source_path": "playfab-docs/features/analytics/metrics/index.md",
             "redirect_url": "/gaming/playfab/data-analytics/learn-data/metrics/index",
             "redirect_document_id": false
@@ -6094,16 +6069,6 @@
             "redirect_document_id": false
           },
           {
-            "source_path": "playfab-docs/sdks/c/index.md",
-            "redirect_url": "/gaming/playfab/sdks/c/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/unreal/index.md",
-            "redirect_url": "/gaming/playfab/sdks/unreal/index",
-            "redirect_document_id": false
-          },
-          {
             "source_path": "playfab-docs/roadmap/index.md",
             "redirect_url": "/gaming/playfab/whats-new/whats-new",
             "redirect_document_id": false
@@ -6124,16 +6089,6 @@
             "redirect_document_id": false
           },
           {
-            "source_path": "playfab-docs/data-analytics/legacy/content-delivery-network/index.md",
-            "redirect_url": "/gaming/playfab/data-analytics/legacy/content-delivery-network/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/nodejs/index.md",
-            "redirect_url": "/gaming/playfab/sdks/nodejs/index",
-            "redirect_document_id": false
-          },
-          {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/statistics/index.md",
             "redirect_url": "/gaming/playfab/player-progression/statistics/index",
             "redirect_document_id": false
@@ -6146,46 +6101,6 @@
           {
             "source_path": "playfab-docs/features/multiplayer/networking/unity-party-api-reference/index.md",
             "redirect_url": "/gaming/playfab/multiplayer/networking/unity-party-api-reference/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/java/index.md",
-            "redirect_url": "/gaming/playfab/sdks/java/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/data-analytics/acting-data/scheduled-tasks/index.md",
-            "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/javascript/index.md",
-            "redirect_url": "/gaming/playfab/sdks/javascript/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/lua/index.md",
-            "redirect_url": "/gaming/playfab/sdks/lua/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/cocos2d-x/index.md",
-            "redirect_url": "/gaming/playfab/sdks/cocos2d-x/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/sdks/c-sharp/index.md",
-            "redirect_url": "/gaming/playfab/sdks/c-sharp/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/data-analytics/legacy/connectivity/index.md",
-            "redirect_url": "/gaming/playfab/data-analytics/legacy/connectivity/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/data-analytics/learn-data/data-explorer/index.md",
-            "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/index",
             "redirect_document_id": false
           },
           {
@@ -6224,11 +6139,6 @@
             "redirect_document_id": false
           },
           {
-            "source_path": "playfab-docs/sdks/photon/index.md",
-            "redirect_url": "/gaming/playfab/sdks/photon/index",
-            "redirect_document_id": false
-          },
-          {
             "source_path": "playfab-docs/features/multiplayer/networking/index.md",
             "redirect_url": "/gaming/playfab/multiplayer/networking/index",
             "redirect_document_id": false
@@ -6244,11 +6154,6 @@
             "redirect_document_id": false
           },
           {
-            "source_path": "playfab-docs/release-notes/index.md",
-            "redirect_url": "/gaming/playfab/release-notes/index",
-            "redirect_document_id": false
-          },
-          {
             "source_path": "playfab-docs/gamemanager/index.md",
             "redirect_url": "/gaming/playfab/live-service-management/gamemanager/index",
             "redirect_document_id": false
@@ -6256,11 +6161,6 @@
           {
             "source_path": "playfab-docs/features/engagement/push-notifications/index.md",
             "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/push-notifications/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/api-references/index.md",
-            "redirect_url": "/gaming/playfab/api-references/index",
             "redirect_document_id": false
           },
           {
@@ -6319,11 +6219,6 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/api-references/events/index.md",
-              "redirect_url": "/gaming/playfab/api-references/events/index",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/social/social/index.md",
               "redirect_url": "/gaming/playfab/community/index",
               "redirect_document_id": false
@@ -6341,31 +6236,6 @@
             {
               "source_path": "features/automation/intro.md",
               "redirect_url": "/gaming/playfab/data-analytics/acting-data/index",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/cocos2d-x/license.md",
-              "redirect_url": "/gaming/playfab/sdks/cocos2d-x/license",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/javascript/license.md",
-              "redirect_url": "/gaming/playfab/sdks/javascript/license",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/unity3d/license.md",
-              "redirect_url": "/gaming/playfab/sdks/unity3d/license",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/java/license.md",
-              "redirect_url": "/gaming/playfab/sdks/java/license",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/lua/license.md",
-              "redirect_url": "/gaming/playfab/sdks/lua/license",
               "redirect_document_id": false
             },
             {
@@ -6679,23 +6549,8 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/data-analytics/ingest-data/playstream-events.md",
-              "redirect_url": "/gaming/playfab/data-analytics/ingest-data/playstream-events",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/data-analytics/learn-data/churn-prediction/pricing.md",
-              "redirect_url": "/gaming/playfab/data-analytics/learn-data/churn-prediction/pricing",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/data-analytics/learn-data/experiments/pricing.md",
               "redirect_url": "/gaming/playfab/live-service-management/game-configuration/experiments/pricing",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/data-analytics/legacy/insights/pricing.md",
-              "redirect_url": "/gaming/playfab/data-analytics/legacy/insights/pricing",
               "redirect_document_id": false
             },
             {
@@ -6714,21 +6569,6 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/features/economy/stores/quickstart.md",
-              "redirect_url": "/gaming/playfab/economy-monetization/economy/stores/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/c/quickstart-linux.md",
-              "redirect_url": "/gaming/playfab/sdks/c/quickstart-linux",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-linux.md",
-              "redirect_url": "/gaming/playfab/sdks/playfab-cpp/quickstart-linux",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/automation/cloudscript-af/quickstart.md",
               "redirect_url": "/gaming/playfab/live-service-management/service-gateway/automation/cloudscript-af/quickstart",
               "redirect_document_id": false
@@ -6744,16 +6584,6 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/sdks/c-sharp/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/c-sharp/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/data-analytics/learn-data/data-explorer/quickstart.md",
-              "redirect_url": "/gaming/playfab/data-analytics/learn-data/data-explorer/quickstart",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/automation/cloudscript/quickstart.md",
               "redirect_url": "/gaming/playfab/live-service-management/service-gateway/automation/cloudscript/quickstart",
               "redirect_document_id": false
@@ -6761,16 +6591,6 @@
             {
               "source_path": "playfab-docs/features/multiplayer/matchmaking/quickstart.md",
               "redirect_url": "/gaming/playfab/multiplayer/matchmaking/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/data-analytics/legacy/content-delivery-network/quickstart.md",
-              "redirect_url": "/gaming/playfab/data-analytics/legacy/content-delivery-network/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/features/economy-v2/quickstart.md",
-              "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/quickstart",
               "redirect_document_id": false
             },
             {
@@ -6804,23 +6624,8 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/sdks/unity3d/quickstart.md", 
-              "redirect_url": "/gaming/playfab/sdks/unity3d/quickstart",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/gamemanager/quickstart.md",
               "redirect_url": "/gaming/playfab/live-service-management/gamemanager/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/javascript/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/javascript/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/java/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/java/quickstart",
               "redirect_document_id": false
             },
             {
@@ -6829,18 +6634,8 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/sdks/sdkgenerator/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/sdkgenerator/quickstart",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/engagement/news/quickstart.md",
               "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/news/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/unreal/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/unreal/quickstart",
               "redirect_document_id": false
             },
             {
@@ -6859,18 +6654,8 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/sdks/nodejs/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/nodejs/quickstart",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/engagement/push-notifications/quickstart.md",
               "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-communications/push-notifications/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/python/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/python/quickstart",
               "redirect_document_id": false
             },
             {
@@ -6884,16 +6669,6 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/sdks/cocos2d-x/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/cocos2d-x/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/data-analytics/acting-data/scheduled-tasks/quickstart.md",
-              "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/quickstart",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/titledata/quickstart.md",
               "redirect_url": "/gaming/playfab/live-service-management/game-configuration/title-data/quickstart",
               "redirect_document_id": false
@@ -6901,11 +6676,6 @@
             {
               "source_path": "playfab-docs/features/economy-v2/fraud-prevention/quickstart.md",
               "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/fraud-prevention/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/sdks/photon/quickstart.md",
-              "redirect_url": "/gaming/playfab/sdks/photon/quickstart",
               "redirect_document_id": false
             },
             {
@@ -6931,11 +6701,6 @@
             {
               "source_path": "playfab-docs/features/economy-v2/tutorials/marketplace-integrations/steam.md",
               "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/marketplace/marketplace-integrations/steam",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/api-references/events/data-types/subscriptions.md",
-              "redirect_url": "/gaming/playfab/api-references/events/data-types/subscriptions",
               "redirect_document_id": false
             },
             {
@@ -6974,18 +6739,8 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/sdks/photon/tutorials.md",
-              "redirect_url": "/gaming/playfab/sdks/photon/tutorials",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/social/tournaments-leaderboards/tutorials.md",
               "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/tutorials",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/data-analytics/acting-data/scheduled-tasks/tutorials.md",
-              "redirect_url": "/gaming/playfab/data-analytics/acting-data/scheduled-tasks/tutorials",
               "redirect_document_id": false
             },
             {
