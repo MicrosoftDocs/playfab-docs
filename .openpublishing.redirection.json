@@ -6654,11 +6654,6 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/SearchProperties.md",
-              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyCreateConfiguration/SearchProperties",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/SearchProperties.md",
               "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/SearchProperties",
               "redirect_document_id": false
@@ -6671,11 +6666,6 @@
             {
               "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/SearchProperties.md",
               "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/SearchProperties",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/TeamId.md",
-              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/TeamId",
               "redirect_document_id": false
             },
             {
@@ -6714,16 +6704,6 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/features/multiplayer/matchmaking/quickstart.md",
-              "redirect_url": "/gaming/playfab/multiplayer/matchmaking/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/data-analytics/learn-data/reports/quickstart.md",
-              "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/quickstart",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/economy-v2/quickstart.md",
               "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/quickstart",
               "redirect_document_id": false
@@ -6736,11 +6716,6 @@
             {
               "source_path": "playfab-docs/features/economy/stores/quickstart.md",
               "redirect_url": "/gaming/playfab/economy-monetization/economy/stores/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/features/authentication/login/quickstart.md",
-              "redirect_url": "/gaming/playfab/identity/player-identity/login/quickstart",
               "redirect_document_id": false
             },
             {
@@ -6784,11 +6759,6 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/data-analytics/learn-data/experiments/quickstart.md",
-              "redirect_url": "/gaming/playfab/live-service-management/game-configuration/experiments/quickstart",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/multiplayer/matchmaking/quickstart.md",
               "redirect_url": "/gaming/playfab/multiplayer/matchmaking/quickstart",
               "redirect_document_id": false
@@ -6799,18 +6769,8 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/data-analytics/learn-data/reports/quickstart.md",
-              "redirect_url": "/gaming/playfab/data-analytics/learn-data/reports/quickstart",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/economy-v2/quickstart.md",
               "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/quickstart",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/features/economy/items/quickstart.md",
-              "redirect_url": "/gaming/playfab/economy-monetization/economy/items/quickstart",
               "redirect_document_id": false
             },
             {
@@ -6964,21 +6924,6 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/SearchProperties.md",
-              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyDataUpdate/SearchProperties",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/SearchProperties.md",
-              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbySearchResult/SearchProperties",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/SearchProperties.md",
-              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/LobbyServerDataUpdate/SearchProperties",
-              "redirect_document_id": false
-            },
-            {
               "source_path": "playfab-docs/features/economy-v2/tutorials/marketplace-redemption/steam.md",
               "redirect_url": "/gaming/playfab/economy-monetization/economy-v2/marketplace/marketplace-redemption/steam",
               "redirect_document_id": false
@@ -7001,11 +6946,6 @@
             {
               "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/TeamId.md",
               "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchUser/TeamId",
-              "redirect_document_id": false
-            },
-            {
-              "source_path": "playfab-docs/features/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchmakingTicketMatchMember/TeamId.md",
-              "redirect_url": "/gaming/playfab/multiplayer/lobby/unity-multiplayer-api-reference/PlayFab.Multiplayer/MatchmakingTicketMatchMember/TeamId",
               "redirect_document_id": false
             },
             {
