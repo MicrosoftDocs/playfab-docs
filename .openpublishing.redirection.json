@@ -5969,11 +5969,6 @@
             "redirect_document_id": false
           },
           {
-            "source_path": "playfab-docs/data-analytics/legacy/insights/best-practices.md",
-            "redirect_url": "/gaming/playfab/data-analytics/legacy/insights//best-practices",
-            "redirect_document_id": false
-          },
-          {
             "source_path": "miscellaneous/hold-topics/building-blocks.md",
             "redirect_url": "/gaming/playfab/index",
             "redirect_document_id": false
@@ -6076,11 +6071,6 @@
           {
             "source_path": "playfab-docs/features/automation/cloudscript/index.md",
             "redirect_url": "/gaming/playfab/automation/cloudscript/index",
-            "redirect_document_id": false
-          },
-          {
-            "source_path": "playfab-docs/release-notes/playfab-c/index.md",
-            "redirect_url": "/gaming/playfab/release-notes/index",
             "redirect_document_id": false
           },
           {
