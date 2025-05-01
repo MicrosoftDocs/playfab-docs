@@ -16,7 +16,7 @@ Identifying churn is a key metric to reduce player attrition and increase engage
 
 PlayFab will consume different datapoints from Player Profile and PlayStream events and determine from the list of **Eligible Players** who are likely to **Churn** within the next **Churn Window**.
 
-Let’s define some key terms used above:
+Let's define some key terms used above:
 
 - **Eligible Players** – Players who have logged in within the past 21 days. To ensure accurate predictions, only Eligible Players are considered and scored for predictions.
 - **Churn** – Indicator of whether a player would stop playing within the next churn Window.
@@ -53,7 +53,7 @@ Prior to opting out, please ensure to **Modify** or **Delete** any Segments that
 2. Select **Players** from the menu on the left
 3. Move to the **Segments** Tab above
 4. Delete or modify any existing segments with the Churn Filter prior to deactivation
- ![Modify/Delete Segments prior to Deactivation](Media/Modify-DeleteSegments.png)
+ ![Modify/Delete Segments prior to Deactivation](media/Modify-DeleteSegments.png)
 5. Opt out of Churn Prediction by selecting **Deactivate Player Churn**
 ![Deactivate Player Churn Button](media/UpdatedDeactivateButton.png)
 6. Confirm your action by selecting **Confirm Player Churn Deactivation**
@@ -69,7 +69,7 @@ These actions apply to all players real-time. A few of the actions that are offe
 - Send Emails: Custom Email Templates can be created to invite players to exclusive sales or sneak peek access to new levels/content.
 - Grant Items/Coins: Personalized rewards such as granting Virtual Currency or Catalog Items.
 
-If above actions aren't applicable or don't suffice, Titles can always create customized solutions via [CloudScript using Azure Functions](../../../features/automation/cloudscript-af/index.md).
+If above actions aren't applicable or don't suffice, Titles can always create customized solutions via [CloudScript using Azure Functions](../../../live-service-management/service-gateway/automation/cloudscript-af/index.md).
 
 ## See also
 

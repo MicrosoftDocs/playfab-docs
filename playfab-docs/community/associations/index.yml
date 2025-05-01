@@ -1,0 +1,77 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Player Associations documentation
+summary: Player associations include all the ways that two or more players might be related or compared to one another, including Friends, Groups, and Leaderboard rankings. # < 160 chars
+
+metadata:
+  title: PlayFab Player Associations documentation
+  description: Central page for PlayFab Player Associations features. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab
+  ms.topic: landing-page
+  author: thomasgu
+  ms.author: thomg
+  ms.date: 06/10/2020 
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Friends
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Friends Overview
+            url: friends/index.md
+      - linkListType: quickstart
+        links:
+          - text: Friends Quickstart
+            url: friends/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Friend Leaderboards
+            url: tournaments-leaderboards/friends-leaderboards.md
+  
+  # Card
+  - title: Leaderboards
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Leaderboards Overview
+            url: tournaments-leaderboards/index.md
+      - linkListType: quickstart
+        links:
+          - text: Leaderboard Quickstart
+            url: tournaments-leaderboards/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Accessing archived tournament results
+            url: tournaments-leaderboards/accessing-archived-tournament-results.md
+          - text: Using prize tables
+            url: tournaments-leaderboards/using-prize-tables.md
+          - text: Using resettable statistics and leaderboards
+            url: tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md
+          - text: Using the profile for advanced leaderboards
+            url: tournaments-leaderboards/using-the-profile-for-advanced-leaderboards.md
+      - linkListType: reference
+        links:
+          - text: Limits on Leaderboards
+            url: leaderboards/limits-leaderboards.md
+          - text: Quota on Leaderboards
+            url: leaderboards/quota-leaderboards.md
+  # Card
+  - title: Groups
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Groups Overview
+            url: groups/index.md
+      - linkListType: quickstart
+        links:
+          - text: Entity groups
+            url: groups/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: Using Shared Group Data
+            url: groups/using-shared-group-data.md

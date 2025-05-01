@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Postman (REST)
 
-![Postman (Rest)](./media/postman1.png)
+![Postman (Rest)](media/postman1.png)
 
 Our Postman collection provides JSON mapping to our API that is directly importable into Postman. This is the one of the fastest ways to get started testing PlayFab. When imported into Postman, you will get a full integration that supports multiple environment configurations.
 

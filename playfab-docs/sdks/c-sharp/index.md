@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # C#
 
-![C# Image](./media/csharp1.png)
+![C# Image](media/csharp1.png)
 
 This C# SDK is used in the .NET environment. It's built primarily for game services, tools, and applications designed to run on Cloud, Windows, and any other platform supported by .NET.
 

@@ -1,0 +1,29 @@
+items:
+  - name: Player communications overview
+    href: concepts-chat.md
+  - name: Troubleshooting voice chat
+    href: concepts-audio-troubleshooting.md
+  - name: Accessibility Best Practices
+    items:
+    - name: Text-to-speech and text input UX guidelines
+      href: party-text-to-speech-ux-guidelines.md
+    - name: Speech-to-text and text display UX guidelines
+      href: party-speech-to-text-ux-guidelines.md
+  - name: Tutorials
+    items:
+    - name: Chat permissions and muting
+      href: concepts-chat-permissions-and-muting.md
+    - name: Custom voice effects via real-time audio manipulation
+      href: concepts-realtime-audio-manipulation.md
+    - name: Using text moderation
+      href: concepts-text-moderation.md
+    - name: Voice audio noise suppression
+      href: concepts-noise-suppression.md
+  - name: Reference
+    items:
+    - name: C++ SDK Reference
+      href: ../../multiplayer/networking/reference/party_members.md
+    - name: C++ SDK Error Codes
+      href: ../../multiplayer/networking/reference/partyerrors.md
+    - name: Samples
+      href: ../../multiplayer/networking/party-samples.md

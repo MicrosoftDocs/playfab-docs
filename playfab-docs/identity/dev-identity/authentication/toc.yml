@@ -1,0 +1,5 @@
+items:
+- name: Azure Active Directory Authentication for Game Manager
+  href: aad-authentication.md
+- name: Two factor authentication
+  href: two-factor-authentication.md

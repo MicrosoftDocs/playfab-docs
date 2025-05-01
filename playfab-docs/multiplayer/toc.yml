@@ -1,0 +1,15 @@
+items:
+  - name: PlayFab
+    href: ../index.yml
+  - name: PlayFab Multiplayer
+    href: index.yml
+  - name: Overview
+    href: mpintro.md
+  - name: Servers
+    href: servers/toc.yml
+  - name: Matchmaking
+    href: matchmaking/toc.yml
+  - name: Lobby
+    href: lobby/toc.yml
+  - name: Party Networking
+    href: networking/toc.yml

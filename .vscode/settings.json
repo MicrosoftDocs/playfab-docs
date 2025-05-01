@@ -1,7 +1,6 @@
 {
     "cSpell.words": [
         "ARPDAU",
-        "derekreese",
         "joanlee",
         "joannaleecy",
         "localizationpriority",
@@ -9,5 +8,6 @@
         "quickstart",
         "Roadmap",
         "Webhooks"
-    ]
+    ],
+    "markdown.validate.enabled": true
 }

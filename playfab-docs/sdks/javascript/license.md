@@ -14,5 +14,5 @@ ms.localizationpriority: medium
 
 Licenses are available at the following links:
 
-- [jquery](licenses/jquery-license.md)
-- [qunit](licenses/qunit-license.md)
+- [jquery](Licenses/jquery-license.md)
+- [qunit](Licenses/qunit-license.md)

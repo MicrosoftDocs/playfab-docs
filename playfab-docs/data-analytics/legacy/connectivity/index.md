@@ -2,7 +2,7 @@
 title: Connecting external tools with Insights
 author: natashaorie
 description: Guide to connecting external tools with Insights. 
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 03/20/2020    
 ms.topic: article
 ms.service: azure-playfab

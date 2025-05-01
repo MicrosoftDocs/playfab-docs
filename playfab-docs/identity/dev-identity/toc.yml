@@ -1,0 +1,7 @@
+items:
+  - name: Create a PlayFab Account
+    href: pfab-account.md
+  - name: Authentication
+    href: authentication/toc.yml
+  - name: Permissions
+    href: permissions/toc.yml

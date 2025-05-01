@@ -1,0 +1,29 @@
+items:
+  - name: Overview
+    href: index.md
+  - name: Pricing
+    href: pricing.md
+  - name: Concepts
+    expanded: true
+    items:
+    - name: Scorecard metrics
+      href: scorecard-metrics.md
+    - name: Experimentation APIs
+      href: experimentation-apis.md
+    - name: Integrating Experiments with other PlayFab services
+      href: experiments-other-services.md
+    - name: Benefits and recommendations
+      href: experimentation-keys.md
+    - name: Key terms
+      href: experimentation-key-terms.md
+  - name: Quickstart
+    href: quickstart.md
+  - name: How-to
+    expanded: true
+    items:
+    - name: Manage Experiments
+      href: manage-experiments.md
+    - name: Analyze Experiments
+      href: analyze-experiments.md
+    - name: Prevent interaction effects with exclusion groups
+      href: exclusion-groups.md

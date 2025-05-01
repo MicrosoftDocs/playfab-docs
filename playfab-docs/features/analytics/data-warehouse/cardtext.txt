@@ -1,4 +1,0 @@
-Icon: Temporary: Reuse Metrics Icon
-
-Temporary Card Descriptions Text:
-PlayFab Insights feature offers a robust way to centralize all of your analytic data in one place. All PlayStream events are made available to you within the Insights service as well as the ability to send high throughput telemetry events. You can also import your data from other sources as well.

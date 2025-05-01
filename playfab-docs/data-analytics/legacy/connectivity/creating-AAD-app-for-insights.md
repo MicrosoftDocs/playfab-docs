@@ -2,7 +2,7 @@
 title: Creating a Microsoft Entra ID app and connecting it to title database
 author: natashaorie
 description: Creating a Microsoft Entra ID app and connecting it to title database
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 03/20/2020    
 ms.topic: article
 ms.service: azure-playfab
@@ -62,7 +62,7 @@ Now we'll connect the Azure app to your title database.
 
    You can verify that this command was successful by going to the **Users** page in [GameManager](https://developer.playfab.com). There should be an entry that matches the Client/Tenant ID.
 
-   Note that this will make the Azure app an Admin on your game in PlayFab. If you would like the Azure app to have lesser permissions, assign the Azure app a [custom role](../../../gamemanager/playfab-user-roles.md) in PlayFab that only has permissions for the Kusto database. The necessary permissions are:
+   Note that this will make the Azure app an Admin on your game in PlayFab. If you would like the Azure app to have lesser permissions, assign the Azure app a [custom role](../../../identity/dev-identity/permissions/playfab-user-roles.md) in PlayFab that only has permissions for the Kusto database. The necessary permissions are:
    * **Explorer data & tab**.
    * **Analytics data read access**, to run queries and simple management commands.
    * **Analytics data write access**, to create/drop tables, alter retention policy, ingest data, purge.

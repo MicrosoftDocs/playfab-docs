@@ -1,8 +1,8 @@
 ---
 title: PlayStream with entity events
-author: norie
+author: sofiamarinv
 description: Page for PlayStream V2.
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 02/06/2020
 ms.topic: article
 ms.service: azure-playfab

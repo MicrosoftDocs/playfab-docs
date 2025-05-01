@@ -2,7 +2,7 @@
 title: Connecting Kusto Explorer to Insights
 author: natashaorie
 description: Guide to connecting Kusto Explorer to Insights. 
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 03/20/2020    
 ms.topic: article
 ms.service: azure-playfab
@@ -21,7 +21,7 @@ This guide helps you get started using Kusto Explorer along with Insights. After
 
 ### PlayFab account authenticated with AAD
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. For instructions on creating an AAD-authenticated account or user, see [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md).
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. For instructions on creating an AAD-authenticated account or user, see [Azure Active Directory Authentication for Game Manager](../../../identity/dev-identity/authentication/aad-authentication.md).
 
 Verify that the account or user is set to use the Microsoft authentication provider.
 
@@ -32,7 +32,7 @@ If you can sign in, then the account is set to use the Microsoft authentication 
 
 ### Game Manager permissions for Insights
 
-You need to assign your account a [user role](/gaming/playfab/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled.
+You need to assign your account a [user role](../../../identity/dev-identity/permissions/playfab-user-roles.md) with the following Game Manager permissions enabled.
 
 * Admin status.
 * Access to the Explorer tab and associated data.
@@ -56,6 +56,7 @@ On your local machine, open Kusto.Explorer.
    * Set **KQL Parser version** to **V1** from the dropdown options.
 
    ![Kusto.Explorer use V1 query schema](media/kusto-explorer-settings-v1.png)
+
 ## Connect with Kusto Explorer
 
 On your local machine, open Kusto.Explorer.
