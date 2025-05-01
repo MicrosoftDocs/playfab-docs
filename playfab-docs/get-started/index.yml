@@ -1,0 +1,124 @@
+### YamlMime:Landing
+
+title: Azure PlayFab fundamentals
+summary: From pre-production to post-launch, learn how PlayFab can help you build and operate your game.  # < 160 chars
+
+metadata:
+  title: Azure PlayFab fundamentals and getting started documentation
+  description: From pre-production to post-launch, learn how PlayFab can help you build and operate your game. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: m-kdearnley
+  ms.author: kdearnley
+  ms.date: 04/09/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Playfab?
+            url: what-is-playfab.md
+      - linkListType: concept
+        links:
+          - text: Concepts
+            url: concepts.md
+  # Card 
+  - title: What's new in PlayFab?
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: New this month
+            url: ../whats-new/whats-new.md
+          - text: 2025 SDK Release Notes
+            url: /playfab-docs/release-notes/index.md
+          - text: Lobby and Matchmaking SDK Release Notes
+            url: ../multiplayer/lobby/lobby-matchmaking-sdks/lobby-and-matchmaking-release-notes.md
+          - text: PlayFab Party SDK Release Notes
+            url: /playfab-docs/multiplayer/party/party-release-notes.md
+          - text: Party Unity Release Notes
+            url: /playfab-docs/multiplayer/party/party-unity-release-notes.md
+          - text: PlayFab Multiplayer Unreal Engine OnlineSubsystem Release Notes
+            url: /playfab-docs/multiplayer/networking/unreal-release-notes.md
+  # Card 
+  - title: PlayFab services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Identity
+            url: ../identity/index.yml
+          - text: Live service management
+            url: ../live-service-management/index.yml
+          - text: Economy, Monetization, & UGC
+            url: ../economy-monetization/index.yml
+          - text: Multiplayer
+            url: ../multiplayer/index.yml
+          - text: Community
+            url: ../community/index.yml
+          - text: Player progression
+            url: ../player-progression/index.yml
+          - text: Game data
+            url: ../data-analytics/index.yml
+
+  - title: Demo and Samples
+    linkLists:
+      - linkListType: concept
+        links:
+            - text: Winter Starfall Demo Game
+              url: ../demo-game/overview.md
+      - linkListType: sample
+        links:
+            - text: PlayFab samples
+              url: ../resources/playfab-samples.md
+            - text: Multiplayer Servers samples
+              url: ../multiplayer/servers/server-samples-resources.md
+            - text: Party samples
+              url: ../multiplayer/networking/party-samples.md
+            - text: Economy and Live Ops Recipes
+              url: ../resources/playfab-recipes.md
+
+  - title: SDKs
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: PlayFab Standalone SDKs Overview
+            url: ../sdks/sdk-overview.md
+      - linkListType: learn
+        links:
+          - text: Request access for NDA platforms
+            url: ../sdks/request-access-for-sdks-samples.md
+
+  - title: Pricing
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: Billing meters explained
+          url: ../pricing/Meters/meters.md
+      - linkListType: learn
+        links:
+          - text: Checking monthly estimated charges
+            url: ../pricing/billingDetails.md
+
+  - title: API Reference
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: REST API Overview
+            url: ../api-references/index.md
+          - text: API Access Policy
+            url: ../api-references/api-access-policy.md
+      - linkListType: reference
+        links:
+          - text: Party C/C++ API Reference
+            url: ../multiplayer/networking/reference/party_members.md
+          - text: Party Unity API Reference
+            url: ../multiplayer/networking/unity-party-api-reference/index.md
+          - text: Lobby and Matchmaking C/C++ API Reference
+            url: ../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmultiplayer/pfmultiplayer_members.md
+          - text: Lobby and Matchmaking Unity API Reference
+            url: ../multiplayer/lobby/unity-multiplayer-api-reference/index.md

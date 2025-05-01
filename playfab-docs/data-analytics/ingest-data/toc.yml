@@ -1,6 +1,9 @@
+items:
 - name: PlayStream
+  expanded: true
   items:
   - name: Overviews
+    expanded: true
     items:
     - name: PlayStream
       href: playstream-overview.md
@@ -9,20 +12,30 @@
     - name: PlayStream with Entity events
       href: playstream-with-entity-events.md
   - name: Concepts
+    expanded: true
     items:
+    - name: Real-time analytics
+      href: real-time-analytics-core-concepts.md
     - name: PlayStream Event Capabilities
       href: playstream-event-capabilities.md
     - name: Custom tags with PlayStream events
       href: playstream-custom-tags.md
 - name: Telemetry
+  expanded: true
   items: 
   - name: Overview
     href: telemetry-overview.md
-  - name: Telemetry Keys
-    href: telemetry-keys-overview.md
   - name: QuickStart
     href: telemetry-keys-qs.md
-  - name: How-to
+  - name: Concepts
+    expanded: true
+    items:
+      - name: Telemetry Keys
+        href: telemetry-keys-overview.md
+      - name: Manage Session Events
+        href: sessions.md
+  - name: Tutorials
+    expanded: true
     items:
     - name: Delete Telemetry Keys
       href: ht-telemetry-keys-delete.md

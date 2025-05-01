@@ -2,7 +2,7 @@
 title: Connecting Azure Data Factory (ADF) to Insights
 author: natashaorie
 description: Guide to connecting Azure Data Factory (ADF) to Insights.
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 03/20/2020    
 ms.topic: article
 ms.service: azure-playfab
@@ -27,7 +27,7 @@ In this tutorial you learn how to:
 
 ### PlayFab account authenticated with AAD
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md) for instructions on creating an AAD-authenticated account or user.
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (AAD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../identity/dev-identity/authentication/aad-authentication.md) for instructions on creating an AAD-authenticated account or user.
 
 To verify that the account, or user, is set to use the Microsoft authentication provider:
 
@@ -38,7 +38,7 @@ If you can sign in, then the account is set to use the Microsoft authentication 
 
 ### Game Manager permissions for Insights
 
-You need to assign your account a [user role](../../../gamemanager/playfab-user-roles.md) with the following Game Manager permissions enabled:
+You need to assign your account a [user role](../../../identity/dev-identity/permissions/playfab-user-roles.md) with the following Game Manager permissions enabled:
 
 * Admin status.
 * Access to the Explorer tab and associated data.

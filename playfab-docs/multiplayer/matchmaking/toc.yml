@@ -1,0 +1,41 @@
+items:
+- name: Overview
+  href: index.md
+- name: Quickstart - Client SDK
+  href: quickstart-client-sdk.md
+- name: Quickstart - REST API
+  href: quickstart.md
+- name: Tutorials
+  items:
+  - name: Configuring matchmaking queues
+    href: config-queues.md
+  - name: Displaying queue statistics in your title
+    href: display-statistics.md    
+  - name: Handling common error cases
+    href: error-cases.md    
+  - name: Integrating with PlayFab Multiplayer Servers
+    href: multiplayer-servers.md    
+  - name: Matchmaking scenario and configuration examples
+    href: config-examples.md
+  - name: Specifying attributes with your tickets
+    href: ticket-attributes.md
+  - name: Using server backfill tickets - Multiplayer SDK
+    href: backfill-tickets-multiplayer-sdk.md
+  - name: Using server backfill tickets - REST API
+    href: backfill-tickets.md
+  - name: Analyzing Your Matchmaking Queue Usage
+    href: usage.md
+  - name: Workaround for peer-to-peer connection
+    href: peer-to-peer.md
+  - name: Client SDK async model
+    href: ../lobby/lobby-and-matchmaking-client-sdk-async.md
+  - name: Handling Client SDK errors
+    href: ../lobby/lobby-and-matchmaking-client-sdk-errors.md
+- name: Lobby and Matchmaking real-time notifications
+  href: ../lobby/lobby-and-matchmaking-real-time-notifications.md
+- name: Reference
+  items:
+  - name: Client SDK reference
+    href: ../lobby/playfabmultiplayerreference-cpp\pfmatchmaking\pfmatchmaking_members.md
+  - name: Client SDK Error Codes
+    href: ../lobby/playfabmultiplayerreference-cpp\pfmultiplayererrors.md

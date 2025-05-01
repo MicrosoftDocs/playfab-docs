@@ -1,0 +1,16 @@
+items:
+  - name: PlayFab
+    href: ../index.yml
+  - name: PlayFab Live service management
+    href: index.yml
+  - name: Overview
+    href: overview.md
+  - name: Game manager
+    expanded: true
+    href: gamemanager/toc.yml
+  - name: Game configuration
+    expanded: true
+    href: game-configuration/toc.yml
+  - name: Service gateway
+    expanded: true
+    href: service-gateway/toc.yml

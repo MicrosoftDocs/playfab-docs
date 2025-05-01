@@ -41,13 +41,13 @@ Never delete your data or clear your data out every 30 days, whatever is needed 
 Connect Power BI or Grafana for visualization, automate data jobs with Python or Azure Data Factory, explore your data with Azure Data Explorer. See [Connectivity](../connectivity/index.md) for details.
 
 ### Export Original or Cleaned Data
-Use the automated export service to export all your data to Azure Blob or AWS S3. See [Exporting Data](../insights/export.md) for details.
+Use the automated export service to export all your data to Azure Blob or AWS S3. See [Exporting Data](export.md) for details.
 
 ### Bring Your Own Datasets
-Ingest your own custom datasets with [Management Commands](../insights/management-commands.md). Merge your custom Playstream events, standard Playstream events, and custom uploaded data to create more robust datasets.
+Ingest your own custom datasets with [Management Commands](management-commands.md). Merge your custom Playstream events, standard Playstream events, and custom uploaded data to create more robust datasets.
 
 ### GDPR Compliant
-Standard reporting is tracked and GDPR compliant. Call the playfab GDPR delete request and we'll do the rest. Have custom data you need to delete? No problem, use the [Management Commands](../insights/management-commands.md) to maintain your custom data.
+Standard reporting is tracked and GDPR compliant. Call the playfab GDPR delete request and we'll do the rest. Have custom data you need to delete? No problem, use the [Management Commands](management-commands.md) to maintain your custom data.
 
 ## Getting Started with PlayFab Insights
 PlayFab Insights is available to all studios right out of the box. The only thing needed to get started is some data. Implement any PlayFab service and you get playstream events automatically sent to your *Insights* or you [can send telemetry directly using PlayFab API calls](xref:titleid.playfabapi.com.events.playstreamevents). Once you have some data check out [Data Explorer](../../export-data/data-connection-quickstart.md).

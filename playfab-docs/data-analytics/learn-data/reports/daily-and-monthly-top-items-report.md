@@ -34,4 +34,4 @@ You can utilize the data contained within this report to identify trending items
 
 ## Populating the reports
 
-Please refer to our tutorials for [Catalogs](../../../features/economy/items/catalogs.md), [Stores and Sales](../../../features/economy/tutorials/stores-and-sales.md), and [Non-receipt Payment Processing](../../../features/economy/tutorials/non-receipt-payment-processing.md) to learn about setting up in-game stores and conducting payments.
+Please refer to our tutorials for [Catalogs](../../../economy-monetization/economy/items/catalogs.md), [Stores and Sales](../../../economy-monetization/economy/tutorials/stores-and-sales.md), and [Non-receipt Payment Processing](../../../economy-monetization/economy/tutorials/non-receipt-payment-processing.md) to learn about setting up in-game stores and conducting payments.

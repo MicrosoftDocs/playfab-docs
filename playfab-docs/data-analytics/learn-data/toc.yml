@@ -1,3 +1,4 @@
+items:
 - name: Reporting
   expanded: true
   items:
@@ -5,7 +6,12 @@
     href: reports/overview.md
   - name: Quickstart
     href: reports/quickstart.md
-  - name: How-to
+  - name: Concepts
+    expanded: true
+    items:
+    - name: Metrics and Terminology
+      href: reports/metrics-and-terminology.md
+  - name: Tutorials
     expanded: true
     items:
     - name: Daily A/B Test KPI Report
@@ -30,10 +36,10 @@
       href: reports/thirty-day-retention-report.md
     - name: Daily Email Report
       href: reports/daily-email-report.md
-  - name: PlayFab and Microsoft Fabric real-time analytics (RTA) for game creators
-    href: reports/real-time-analytics-tutorial.md
-  - name: Title Overview
-    href: reports/title-overview-report.md
+    - name: PlayFab and Microsoft Fabric real-time analytics (RTA) for game creators
+      href: reports/real-time-analytics-tutorial.md
+    - name: Title Overview
+      href: reports/title-overview-report.md
 - name: Trends
   expanded: true
   items:
@@ -47,6 +53,8 @@
   - name: QuickStart
     expanded: true
     items:
+    - name: Trends QuickStart
+      href: trends/trends-quickstart.md
     - name: Segments as a Dimension (Preview)
       href: trends/segments-dimension-qs.md
 - name: Player Churn Prediction
@@ -61,41 +69,41 @@
       href: churn-prediction/pricing.md
   - name: Quickstart
     href: churn-prediction/churn-prediction-quickstart.md
-- name: Experimentation
-  expanded: false
-  items:
-  - name: Overview
-    expanded: true
-    items:
-    - name: Experiments
-      href: experiments/index.md
-    - name: Pricing
-      href: experiments/pricing.md
-  - name: Concepts
-    expanded: true
-    items:
-    - name: Scorecard metrics
-      href: experiments/scorecard-metrics.md
-    - name: Experimentation APIs
-      href: experiments/experimentation-apis.md
-    - name: Integrating Experiments with other PlayFab services
-      href: experiments/experiments-other-services.md
-    - name: Benefits and recommendations
-      href: experiments/experimentation-keys.md
-    - name: Key terms
-      href: experiments/experimentation-key-terms.md
-  - name: Quickstart
-    href: experiments/quickstart.md
-  - name: How-to
-    expanded: true
-    items:
-    - name: Manage Experiments
-      href: experiments/manage-experiments.md
-    - name: Analyze Experiments
-      href: experiments/analyze-experiments.md
-    - name: Prevent interaction effects with exclusion groups
-      href: experiments/exclusion-groups.md
-- name: Quick insights
+# - name: Experimentation
+#   expanded: false
+#   items:
+#   - name: Overview
+#     expanded: true
+#     items:
+#     - name: Experiments
+#       href: experiments/index.md
+#     - name: Pricing
+#       href: experiments/pricing.md
+#   - name: Concepts
+#     expanded: true
+#     items:
+#     - name: Scorecard metrics
+#       href: experiments/scorecard-metrics.md
+#     - name: Experimentation APIs
+#       href: experiments/experimentation-apis.md
+#     - name: Integrating Experiments with other PlayFab services
+#       href: experiments/experiments-other-services.md
+#     - name: Benefits and recommendations
+#       href: experiments/experimentation-keys.md
+#     - name: Key terms
+#       href: experiments/experimentation-key-terms.md
+#   - name: Quickstart
+#     href: experiments/quickstart.md
+#   - name: How-to
+#     expanded: true
+#     items:
+#     - name: Manage Experiments
+#       href: experiments/manage-experiments.md
+#     - name: Analyze Experiments
+#       href: experiments/analyze-experiments.md
+#     - name: Prevent interaction effects with exclusion groups
+#       href: experiments/exclusion-groups.md
+- name: Data Explorer
   expanded: false
   items:
   - name: Data Explorer overview

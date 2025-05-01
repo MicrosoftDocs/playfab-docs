@@ -54,7 +54,7 @@ This auth type is the normal and most common PlayFab Authentication method. It's
 - **character**: The character entity is a subentity of title_player_account.
 - **group**: The group entity is a container for other entities. It's currently limited to players and characters.
 
- For more information about the different entity types, see [Built-in entity types](/gaming/playfab/features/data/entities/available-built-in-entity-types).
+ For more information about the different entity types, see [Built-in entity types](../../../live-service-management/game-configuration/entities/available-built-in-entity-types.md).
 
 Also, the pipeline entity can be updated after pipeline creation by providing a valid **PFEntityHandle**. So, the game developer is able to add an Entity to start linking their events to it (_see [Switching to Entity auth or Updating Entity](#switching-to-entity-auth-or-updating-entity) section_) or even remove it they want to log things that aren't related to an entity (_see [Switching to Telemetry Key auth](#switching-to-telemetry-key-auth) section_).
 

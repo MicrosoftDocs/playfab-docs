@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Unreal Engine (C++, Blueprints)
 
-![Unreal Engine 4](./media/unreal_banner1.png)
+![Unreal Engine 4](media/unreal_banner1.png)
 
 Our Unreal Marketplace plugin provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization. There is a C++ interface and a Blueprint interface, giving you the best of both worlds.
 

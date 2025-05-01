@@ -1,0 +1,19 @@
+items:
+- name: Overview
+  href: index.md
+- name: Quickstart
+  href: quickstart.md
+- name: Reference
+  href: reference.md  
+- name: Tutorials
+  items:
+  - name: API Feature Settings in the PlayFab Game Manager
+    href: api-feature-settings-in-the-playfab-game-manager.md
+  - name: Audit Logs
+    href: audit-logs.md
+  - name: Secret Key Management
+    href: secret-key-management.md
+  - name: Two-Factor Authentication
+    href: ../../identity/dev-identity/authentication/two-factor-authentication.md
+  - name: Game Manager Sign In
+    href: game-manager-login.md

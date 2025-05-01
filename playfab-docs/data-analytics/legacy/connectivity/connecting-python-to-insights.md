@@ -2,7 +2,7 @@
 title: Connecting Python to Insights
 author: natashaorie
 description: Guide to connecting Python to Insights.
-ms.author: norie
+ms.author: sofiamarin
 ms.date: 02/27/2020    
 ms.topic: article
 ms.service: azure-playfab
@@ -21,7 +21,7 @@ This guide helps you get started using Python with Insights. It uses the Azure K
 
 ### PlayFab account authenticated with Azure AD
 
-You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (Azure AD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../features/authentication/aad-authentication/index.md) for instructions on creating an Azure AD-authenticated account or user.
+You need a PlayFab account or user for which the authentication provider is set to Microsoft. The Microsoft authentication provider uses Azure Active Directory (Azure AD) for authentication which is required to use the Azure services. See [Azure Active Directory Authentication for Game Manager](../../../identity/dev-identity/authentication/aad-authentication.md) for instructions on creating an Azure AD-authenticated account or user.
 
 To verify that the account, or user, is set to use the Microsoft authentication provider:
 
@@ -32,7 +32,7 @@ If you can sign in, then the account is set to use the Microsoft authentication 
 
 ### Game Manager permissions for Insights
 
-You need to assign your account a [user role](/gaming/playfab/gamemanager/playfab-user-roles) with the following Game Manager permissions enabled:
+You need to assign your account a [user role](../../../identity/dev-identity/permissions/playfab-user-roles.md) with the following Game Manager permissions enabled:
 
 * Admin status.
 * Access to the Explorer tab and associated data.

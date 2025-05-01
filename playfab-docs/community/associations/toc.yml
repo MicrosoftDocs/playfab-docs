@@ -1,0 +1,9 @@
+items:
+- name: Friends
+  href: friends/toc.yml
+- name: Groups
+  href: groups/toc.yml
+- name: Leaderboards
+  href: leaderboards/toc.yml
+- name: Tournaments & Leaderboards (Deprecated)
+  href: tournaments-leaderboards/toc.yml

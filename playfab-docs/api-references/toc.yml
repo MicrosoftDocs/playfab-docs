@@ -5,19 +5,19 @@
   - name: Reference
     href: /rest/api/playfab/admin/
   - name: Real-time notifications for Lobby and Matchmaking
-    href: ../features/real-time-notifications/toc.yml
+    href: ../multiplayer/real-time-notifications/toc.yml
 - name: Services C API
   href: c/toc.yml
 - name: Party C/C++ API
-  href: ../features/multiplayer/networking/reference/toc.yml
+  href: ../multiplayer/networking/reference/toc.yml
 - name: Party Unity API
-  href: ../features/multiplayer/networking/unity-party-api-reference/toc.yml
+  href: ../multiplayer/networking/unity-party-api-reference/toc.yml
 - name: Party Xbox Live Helper
-  href: ../features/multiplayer/networking/xblreference/toc.yml
+  href: ../multiplayer/networking/xblreference/toc.yml
 - name: Lobby and Matchmaking C/C++ API
-  href: ../features/multiplayer/lobby/playfabmultiplayerreference-cpp/toc.yml
+  href: ../multiplayer/lobby/playfabmultiplayerreference-cpp/toc.yml
 - name: Lobby and Matchmaking Unity API
-  href: ../features/multiplayer/lobby/unity-multiplayer-api-reference/toc.yml
+  href: ../multiplayer/lobby/unity-multiplayer-api-reference/toc.yml
 - name: PlayStream Events
   items:
   - name: Model reference
