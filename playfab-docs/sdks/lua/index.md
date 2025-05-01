@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Lua
 
-![Lua](./media/lua1.png)
+![Lua](media/lua1.png)
 
 Our SDK provides everything you need to access the PlayFab API. This includes models, methods, an HTTP wrapper for sending and receiving web requests, and JSON serialization. With the Lua SDK, you gain support for [Defold](https://www.defold.com/) and [Corona](https://coronalabs.com) game engines.
 

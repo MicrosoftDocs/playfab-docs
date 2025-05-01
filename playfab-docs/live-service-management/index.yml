@@ -1,0 +1,128 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Live service management documentation
+summary: Manage and optimize your game effectively with game configuration and title data, player segmentation for targeted configuration and AB testing, and title-wide communication tools. # < 160 chars
+
+metadata:
+  title: PlayFab Live service management documentation
+  description: Manage and optimize your game effectively with game configuration and title data, player segmentation for targeted configuration and AB testing, and title-wide communication tools. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: shikha-tarware
+  ms.author: shtarwar
+  ms.date: 04/07/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Navigating the developer portal
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Game Manager
+            url: gamemanager/index.md
+      - linkListType: quickstart
+        links:
+          - text: Game Manager quickstart
+            url: gamemanager/quickstart.md
+      - linkListType: tutorial
+        links:
+          - text: API feature settings in Game Manager
+            url: gamemanager/api-feature-settings-in-the-playfab-game-manager.md
+          - text: Audit logs
+            url: gamemanager/audit-logs.md
+          - text: Secret key management
+            url: gamemanager/secret-key-management.md 
+
+  - title: Entity programming model
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Entity programming model overview
+            url: game-configuration/entities/index.md
+      - linkListType: quickstart
+        links:
+          - text: Entities quickstart
+            url: game-configuration/entities/quickstart.md
+
+  - title: Production services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Title data
+            url: game-configuration/titledata/index.md
+          - text: Serverless compute with CloudScript using Azure functions
+            url: service-gateway/automation/cloudscript-af/index.md
+            
+  - title: Segmentation and Experimentation
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Work with player segments
+            url: game-configuration/segmentation/segmentation-overview.md
+          - text: Run live experiments
+            url: game-configuration/experiments/index.md
+          - text: Boost player engagement through title communications
+            url: game-configuration/title-communications/overview.md
+          - text: Throttle API calls
+            url: service-gateway/throttling/what-is-throttling.md
+      - linkListType: quickstart
+        links:
+          - text: Segmentation quickstart
+            url: game-configuration/segmentation/segmentation-quickstart.md
+          - text: Experimentation quickstart
+            url: game-configuration/experiments/quickstart.md
+          - text: Set up push notifications
+            url: game-configuration/title-communications/push-notifications/quickstart.md
+          - text: Bulk Actions for an entire player segment
+            url: ../data-analytics/acting-data/action-rules-bulk-actions-for-an-entire-player-segment.md
+              
+
+  - title: Automate with CloudScript and Azure Functions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is CloudScript?
+            url: service-gateway/automation/cloudscript/index.md
+          - text: What is CloudScript using Azure Functions?
+            url: service-gateway/automation/cloudscript-af/index.md      
+          - text: What are actions and rules?
+            url: ../data-analytics/acting-data/action-rules-overview.md
+          - text: What is a PlayStream event?
+            url: ../data-analytics/ingest-data/playstream-overview.md
+      - linkListType: quickstart
+        links:
+          - text: CloudScript
+            url: service-gateway/automation/cloudscript/quickstart.md
+
+      - linkListType: tutorial
+        links:
+          - text: Writing custom CloudScript
+            url: service-gateway/automation/cloudscript/writing-custom-cloudscript.md 
+          - text: ES6 features in CloudScript
+            url: service-gateway/automation/cloudscript/es6-features-in-cloudscript.md
+          - text: Handling errors in CloudScript
+            url: service-gateway/automation/cloudscript/handling-errors-in-cloudscript.md
+          - text: Using CloudScript context models
+            url: service-gateway/automation/cloudscript-af/cloudscript-af-context.md
+          - text: Using CloudScript actions with PlayStream
+            url: ../data-analytics/acting-data/action-rules-using-cloudscript-actions-with-playstream.md
+
+
+  - title: Pricing
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Meters Overview
+            url: ../pricing/Meters/meters.md
+          - text: Experiments Meters
+            url: game-configuration/experiments/pricing.md
+      - linkListType: learn
+        links:
+          - text: PlayFab Pricing
+            url: https://playfab.com/pricing/
+          - text: Best practices for lowering consumption
+            url: ../pricing/consumption-best-practices.md

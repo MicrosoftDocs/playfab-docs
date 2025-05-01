@@ -1,0 +1,24 @@
+items:
+  - name: Meters Overview
+    href: meters.md
+  - name: Profile Reads
+    href: profile-reads.md
+  - name: Profile Writes
+    href: profile-writes.md
+  - name: Leaderboard Meters
+    href: leaderboard-meters.md  
+  - name: Statistics Meters
+    href: statistics-meters.md  
+  - name: Content & Configuration Reads
+    href: file-reads.md
+  - name: Content & Configuration Writes
+    href: file-writes.md
+  - name: Economy v2 Inventory Reads
+    href: economy-reads.md
+  - name: Economy v2 Inventory Writes
+    href: economy-writes.md
+  - name: Economy v2 Catalog Meters
+    href: catalog-meters.md 
+  - name: Churn Prediction Meters
+    href: /playfab-docs/data-analytics/learn-data/churn-prediction/pricing.md
+

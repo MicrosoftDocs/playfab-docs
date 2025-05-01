@@ -1,0 +1,92 @@
+### YamlMime:Landing
+
+title: Azure PlayFab Community documentation
+summary: PlayFab Community is a set of cross-platform tools and services that enable game creators to build engaging social experiences and foster long term player connections and communities.
+
+metadata:
+  title: PlayFab Community documentation
+  description: Guide on community features # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page
+  author: m-kdearnley
+  ms.author: kdearnley
+  ms.date: 02/20/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Community
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Community?
+            url: what-is-community.md
+
+  # Card (optional)
+  - title: Player Associations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Friends?
+            url: associations/friends/index.md
+          - text: What is Groups?
+            url: associations/groups/index.md
+          - text: What is Leaderboards?
+            url: associations/leaderboards/index.md
+      - linkListType: quickstart
+        links:
+          - text: Friends Quickstart
+            url: associations/friends/quickstart.md
+          - text: Groups Quickstart
+            url: associations/groups/quickstart.md
+          - text: Leaderboards Quickstart
+            url: associations/leaderboards/quickstart-leaderboards.md
+
+  # Card (optional)
+  - title: Synchronous Player Communications
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Synchronous Player Communications?
+            url: voice-communications/concepts-chat.md
+      - linkListType: concept
+        links:
+          - text: PlayFab Party chat permissions and muting
+            url: voice-communications/concepts-chat-permissions-and-muting.md
+      - linkListType: quickstart
+        links:
+          - text: Synchronous Player Communications Quickstart
+            url: ../multiplayer/networking/quickstart.md
+      - linkListType: reference
+        links:
+          - text: C++ SDK Reference
+            url: ../multiplayer/networking/reference/party_members.md
+          - text: C++ SDK Error Codes
+            url: ../multiplayer/networking/reference/partyerrors.md
+          - text: Samples
+            url: ../multiplayer/networking/party-samples.md
+
+  - title: Refer to APIs
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Leaderboards reference
+            url: associations/leaderboards/api-reference.md
+
+  - title: Pricing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Meters Overview
+            url: ../pricing/meters/meters.md
+      - linkListType: reference
+        links:
+          - text: Leaderboards meters
+            url: ../pricing/meters/leaderboard-meters.md
+          - text: PlayFab Pricing
+            url: https://playfab.com/pricing/
+          - text: Consumption Best Practices
+            url: ../pricing/consumption-best-practices.md

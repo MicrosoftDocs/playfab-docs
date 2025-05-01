@@ -39,4 +39,4 @@ The first step in setting up A/B testing is to create an A/B test using the Play
 
 ![Game-Manager - Automation - AB Testing - New AB Test](media/tutorials/game-manager-automation-ab-testing-new-ab-test.png)
 
-Please refer to the [Customer Stores for Player Segments](../../../features/economy/tutorials/custom-stores-for-player-segments.md) tutorial for further information on A/B testing with stores that are available only to players from defined player segments.
+Please refer to the [Customer Stores for Player Segments](../../../economy-monetization/economy/tutorials/custom-stores-for-player-segments.md) tutorial for further information on A/B testing with stores that are available only to players from defined player segments.

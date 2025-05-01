@@ -1,0 +1,12 @@
+items:
+  - name: PlayFab
+    href: ../index.yml
+  - name: PlayFab Community
+    href: index.yml
+  - name: Overview
+    href: what-is-community.md
+  - name: Player Associations
+    href: associations/toc.yml
+  - name: Synchronous Player Communications
+    href: voice-communications/toc.yml
+### YamlMime:Landing

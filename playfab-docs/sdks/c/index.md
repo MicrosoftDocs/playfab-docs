@@ -26,13 +26,13 @@ To learn more about the GDK, see the public documentation: [GDK documentation ho
 
 ## Nintendo Switch
 
-Before you can access the PlayFab Services SDK for Nintendo Switch, you need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. See more information here: [Request access](../../features/multiplayer/networking/request-access-for-sdks-samples.md).
+Before you can access the PlayFab Services SDK for Nintendo Switch, you need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. See more information here: [Request access](../request-access-for-sdks-samples.md).
 
 Once you've been granted access to the Switch SDK, you can download it from the git repo here: [PlayFabCSdk.Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch).
 
 ## Sony PlayStation
 
-Before you can access the PlayFab Services SDK for PlayStation, you need to confirm your registered developer status via the PlayFab page in Sony's middleware directory. See more information here: [Request access](../../features/multiplayer/networking/request-access-for-sdks-samples.md).
+Before you can access the PlayFab Services SDK for PlayStation, you need to confirm your registered developer status via the PlayFab page in Sony's middleware directory. See more information here: [Request access](../request-access-for-sdks-samples.md).
 
 Once you've been granted access to the PlayStation SDK, you can download it from the git repo here: [PlayFabCSdk.PS4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4) and [PlayFabCSdk.PS5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5).
 
@@ -48,8 +48,8 @@ Here are some notable differences when compared to other, more general purpose, 
 
 ## Benefits of this SDK
 
-- Allows titles to control the memory allocations when calling Playfab Services. See [Managing Memory Allocations](./memory.md) to learn more.
-- Allows titles to gain full control of thread handling when calling Playfab Services. See [Making async calls in the PlayFab Services SDK](./async.md) to learn more.
+- Allows titles to control the memory allocations when calling Playfab Services. See [Managing Memory Allocations](memory.md) to learn more.
+- Allows titles to gain full control of thread handling when calling Playfab Services. See [Making async calls in the PlayFab Services SDK](async.md) to learn more.
 - Portable C interface that allows maximum compatibility across platforms, compilers, and languages.
 - High-performance telemetry pipeline with support for low-cost queuing and batch transmission of events.
 
@@ -66,15 +66,15 @@ There are scenarios where this SDK is not appropriate:
 ## Add this SDK to your project
 
 - Win32
-    - The Win32 version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Win32](./quickstart-win32.md).
+    - The Win32 version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Win32](quickstart-win32.md).
 - GDK
     - The GDK version of this SDK is a component of the GDK. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for GDK](./quickstart-gdk.md).
 - Android
-    - The Android version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Android](./quickstart-android.md).
+    - The Android version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Android](quickstart-android.md).
 - iOS
-    - The iOS version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for iOS](./quickstart-ios.md).
+    - The iOS version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for iOS](quickstart-ios.md).
 - macOS
-    - The macOS version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for macOS](./quickstart-macos.md).
+    - The macOS version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for macOS](quickstart-macos.md).
 - Linux
     - The Linux version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Linux](./quickstart-linux.md).
 - Sony Playstation

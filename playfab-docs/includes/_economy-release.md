@@ -1,6 +1,6 @@
 ---
 author: cybtachyon
-ms.author: derekreese
+ms.author: fprotti
 ms.date: 09/07/2022
 ms.topic: include
 ms.service: azure-playfab

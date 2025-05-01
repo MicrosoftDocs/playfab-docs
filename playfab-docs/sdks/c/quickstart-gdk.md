@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Services SDK for the Microsoft Game Development Kit (GDK). Follow these steps to include the libraries in your project and try out the sample code for basic PlayFab functionality.
 
-This quickstart helps you make your first PlayFab API call using the GDK. Before continuing, make sure you've completed the steps in [Quickstart: Game Manager](../../gamemanager/quickstart.md), which ensure you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call using the GDK. Before continuing, make sure you've completed the steps in [Quickstart: Game Manager](../../live-service-management/gamemanager/quickstart.md), which ensure you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Requirements
 
@@ -26,7 +26,7 @@ This quickstart helps you make your first PlayFab API call using the GDK. Before
 
 Similar to other GDK extension libraries, add the PlayFab Services SDK through project properties. In your project's Configuration Properties, under __Gaming Desktop__ > __General__, select __Gaming Extension Libraries__. From the prompt, check __PlayFab.Services.C__.
 
-![Select PlayFab.Services.C Extension Library](./media/gdk1.png)
+![Select PlayFab.Services.C Extension Library](media/gdk1.png)
 
 ## Init and Logging in
 
@@ -174,7 +174,7 @@ To see detailed error messages returned by the service see the next section on d
 
 ## Debugging
 
-The easiest way to see the results and debug any calls in the PlayFab Services SDK is to enable [Debug Tracing](./tracing.md). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
+The easiest way to see the results and debug any calls in the PlayFab Services SDK is to enable [Debug Tracing](tracing.md). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
 
 ## Reference
 

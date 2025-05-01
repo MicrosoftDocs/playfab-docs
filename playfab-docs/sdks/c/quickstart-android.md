@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Services SDK for Android. Follow these steps to include the libraries in your project and try out the sample code for basic PlayFab functionality.
 
-This quickstart helps you make your first PlayFab API call using the Android SDK. Before continuing, make sure you have completed the steps in [Quickstart: Game Manager](../../gamemanager/quickstart.md), which ensure you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call using the Android SDK. Before continuing, make sure you have completed the steps in [Quickstart: Game Manager](../../live-service-management/gamemanager/quickstart.md), which ensure you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Requirements
 
@@ -71,7 +71,7 @@ These files are integrated into your project using Gradle.
 
 1. Create a libs folder within app level Android project directory. Here's an example of what your project directory should look like now:
 
-![Project directory](./media/android_1.png)
+![Project directory](media/android_1.png)
 
 2. Copy the .aar files into the libs folder.
 
@@ -269,7 +269,7 @@ To see detailed error messages returned by the service see the next section on d
 
 ## Debugging
 
-The easiest way to see the results and debug any calls in the PlayFab Services SDK is to enable [Debug Tracing](./tracing.md). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
+The easiest way to see the results and debug any calls in the PlayFab Services SDK is to enable [Debug Tracing](tracing.md). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
 
 ## Reference
 

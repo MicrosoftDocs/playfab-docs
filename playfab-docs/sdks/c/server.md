@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Similar to how you can log in as a player and make PlayFab calls, you can authenticate as a title entity and make PlayFab calls through it as well. Title entities can use certain functions not available to player entities. Many of these functions are prefixed by the word "server", one such example is ServerAddPlayerTag.
 
-Getting a title entity handle has the same initialization steps as logging in as a player. See the "Initialization" section of [Quickstart for Win32](./quickstart-win32.md) article for details.
+Getting a title entity handle has the same initialization steps as logging in as a player. See the "Initialization" section of [Quickstart for Win32](quickstart-win32.md) article for details.
 
 Note: At the moment, server functions are only available on the Win32 version of the SDK.
 

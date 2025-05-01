@@ -39,7 +39,7 @@ The image shown below provides an overview of the **Webhooks** panel.
 1. The **Failing Since** area shows when a Webhook endpoint stopped returning **OK** responses.
 1. When one or more Webhooks are selected, you can use the **Delete** button to permanently remove them.
 
-![Game Manager - Data - Webhooks panel](media/webhook-landing.png)  
+![Game Manager - Data - Webhooks panel](media/Webhook-Landing.PNG)  
 
 ## Configuring a Webhook
 
@@ -59,4 +59,4 @@ The image shown below describes the options for configuring a Webhook.
 
 1. You may define several **Filter Groups** to include different filters. **Events** must fall into at least *one* group to be passed to the Webhook.
 
-![Game Manager - Data - Webhooks - Webhook Configuration](media/webhook-config.png)
+![Game Manager - Data - Webhooks - Webhook Configuration](media/Webhook-config.png)
