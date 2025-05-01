@@ -6822,6 +6822,41 @@
               "source_path": "playfab-docs/features/automation/index.yml",
               "redirect_url": "/gaming/playfab/live-service-management/service-gateway/automation/cloudscript/",
               "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/data-analytics/acting-data/scheduled-tasks/tutorials.md",
+              "redirect_url": "/gaming/playfab/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/analytics/in-this-section.md",
+              "redirect_url": "/gaming/playfab/data-analytics/",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/analytics/index.yml",
+              "redirect_url": "/gaming/playfab/data-analytics/",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/analytics/overview.md",
+              "redirect_url": "/gaming/playfab/data-analytics/",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/authentication/index.yml",
+              "redirect_url": "/gaming/playfab/identity/",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy-v2/index.yml",
+              "redirect_url": "/gaming/playfab/economy-monetization/",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/economy/index.yml",
+              "redirect_url": "/gaming/playfab/economy-monetization/",
+              "redirect_document_id": false
             }
         ]
 }
