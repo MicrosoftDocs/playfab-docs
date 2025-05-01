@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Get started with the PlayFab Services SDK for Win32. Follow these steps to include the libraries in your project and try out the sample code for basic PlayFab functionality.
 
-This quickstart helps you make your first PlayFab API call using the Win32 SDK. Before continuing, make sure you've completed the steps in [Quickstart: Game Manager](../../gamemanager/quickstart.md), which ensure you have a PlayFab account and are familiar with the PlayFab Game Manager.
+This quickstart helps you make your first PlayFab API call using the Win32 SDK. Before continuing, make sure you've completed the steps in [Quickstart: Game Manager](../../live-service-management/gamemanager/quickstart.md), which ensure you have a PlayFab account and are familiar with the PlayFab Game Manager.
 
 ## Requirements
 
@@ -31,7 +31,7 @@ Import PlayFabServicesSDK.Win32.props to your project. You can do this manually 
 
 If you have issues linking the SDK in your project, you may need to install 17.5 build tools and libs via the Visual Studio Installer. Click __Modify__ for VS2022, and install these two components.
 
-![Install 17.5 Build Tools](./media/win32_1.png)
+![Install 17.5 Build Tools](media/win32_1.png)
 
 ## Init and Logging in
 
@@ -179,7 +179,7 @@ To see detailed error messages returned by the service see the next section on d
 
 ## Debugging
 
-The easiest way to see the results and debug any calls in the PlayFab Services SDK is to enable [Debug Tracing](./tracing.md). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
+The easiest way to see the results and debug any calls in the PlayFab Services SDK is to enable [Debug Tracing](tracing.md). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
 
 ## Reference
 

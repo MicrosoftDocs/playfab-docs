@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Legacy PlayFab Services SDK for C++
 
-![PlayFab CPP SDK](./media/cpp1.png)
+![PlayFab CPP SDK](media/cpp1.png)
 
 > [!NOTE]  
 > This SDK is being replaced by the new [PlayFab C/C++ SDK](../c/index.md). We are expanding the set of supported platforms for the new SDK over time.

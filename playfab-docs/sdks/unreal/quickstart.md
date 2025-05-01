@@ -91,7 +91,7 @@ To create a new Actor:
 
 ### Add PlayFab API calls to your C++ LoginActor
 
-In this quickstart, you use [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) to perform the log in. While `LoginWithCustomId` is easy to use to get started, we recommend moving to a more secure player auth method for the release of your game. See the [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
+In this quickstart, you use [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid) to perform the log in. While `LoginWithCustomId` is easy to use to get started, we recommend moving to a more secure player auth method for the release of your game. See the [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
 
 The `LoginWithCustomID` call is made in your **LoginActor**. To add the PlayFab specific code to your **LoginActor**:
 
@@ -189,7 +189,7 @@ In Unreal Engine:
 
 ## Calling PlayFab from Unreal Blueprints
 
-This section guides you through creating a Blueprint structure, which uses the PlayFab API to call [LoginWithCustomID](/rest/api/playfab/client/authentication/login-with-custom-id?view=playfab-rest&preserve-view=true). While `LoginWithCustomId` is easy to use to get started, we recommend moving to a more secure player auth method for the release of your game. See the [Login basics and best practices](../../features/authentication/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
+This section guides you through creating a Blueprint structure, which uses the PlayFab API to call [LoginWithCustomID](/rest/api/playfab/client/authentication/login-with-custom-id?view=playfab-rest&preserve-view=true). While `LoginWithCustomId` is easy to use to get started, we recommend moving to a more secure player auth method for the release of your game. See the [Login basics and best practices](../../identity/player-identity/login/login-basics-best-practices.md) for information about implementing robust log in functionality.
 
 > [!TIP]
 > If you start from a Blueprint project, you must convert it to a C++ project for the PlayFab Blueprint Actions to function.

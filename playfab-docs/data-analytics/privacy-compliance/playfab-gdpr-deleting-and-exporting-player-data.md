@@ -32,7 +32,7 @@ Another way a player may have multiple Master Player accounts is if you have con
 
 You can check your title's Publisher IDs in the PlayFab Game Manager, on each Title settings menu's **API Features** tab.
 
-![PlayFab - Settings - API Tab](../../features/playerdata/media/tutorials/playfab-settings-api-tab.png)  
+![PlayFab - Settings - API Tab](../../player-progression/player-data/media/tutorials/playfab-settings-api-tab.png)  
 
 You know your titles and how they authenticate your players. Before calling `DeleteMasterPlayerAccount` or `ExportMasterPlayerData`, make sure you collect the right set of device IDs and/or credentials from your players.
 
@@ -127,7 +127,7 @@ It's easy to do harm with these APIs. Exporting data for or deleting the wrong p
 
 It is your responsibility as the game developer to verify that the credentials match the player requesting an export or deletion of their player data. PlayFab doesn't provide any type of verification when using these APIs.
 
-However PlayFab does offer an [email verification feature](../../features/engagement/emails/using-a-rule-to-verify-a-contact-email-address.md). But our solution isn't the only option for verification. You can create your own process too.
+However PlayFab does offer an [email verification feature](../../live-service-management/game-configuration/title-communications/emails/using-a-rule-to-verify-a-contact-email-address.md). But our solution isn't the only option for verification. You can create your own process too.
 
 Regardless of which technology you use, we suggest that you do some sort of verification before performing any of these actions.
 

@@ -1,0 +1,39 @@
+items:
+- name: Overview
+  href: index.md
+- name: Quickstart
+  href: lobby-getting-started.md
+- name: Tutorials
+  items:
+  - name: Create a lobby
+    href: create-a-lobby.md
+  - name: Invites
+    href: lobby-invites.md
+  - name: Join lobbies
+    href: join-lobbies.md
+  - name: Lobby properties
+    href: lobby-properties.md
+  - name: Create searchable lobbies
+    href: define-search-keywords.md
+  - name: Find lobbies
+    href: find-lobbies.md
+  - name: Lobby ownership
+    href: owner-requirements-and-privileges.md
+  - name: Lobby ownership changes
+    href: ownership-changes.md
+  - name: Use lobby and matchmaking together
+    href: lobby-and-matchmaking.md
+  - name: Game servers and Lobbies
+    href: lobby-server-overview.md
+  - name: C++ SDK async model
+    href: lobby-and-matchmaking-client-sdk-async.md
+  - name: Handling C++ SDK errors
+    href: lobby-and-matchmaking-client-sdk-errors.md
+- name: Lobby and Matchmaking real-time notifications
+  href: lobby-and-matchmaking-real-time-notifications.md
+- name: Reference
+  items:
+  - name: C++ SDK reference
+    href: playfabmultiplayerreference-cpp\pflobby\pflobby_members.md
+  - name: C++ SDK Error Codes
+    href: playfabmultiplayerreference-cpp\pfmultiplayererrors.md

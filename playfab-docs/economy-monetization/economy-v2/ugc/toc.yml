@@ -1,0 +1,9 @@
+items:
+- name: PlayFab UGC
+  href: index.yml
+- name: Overview
+  href: overview.md
+- name: Quickstart
+  href: quickstart.md
+- name: Moderation
+  href: moderation.md

@@ -12,8 +12,9 @@ ms.localizationpriority: medium
 
 # PlayFab and Microsoft Fabric Real-Time Analytics (RTA) for game creators
 
-
 This tutorial explains end-to-end steps on how to integrate **PlayFab** and **Fabric Real-Time Analytics** to enable real-time analytics and insights for your game. By following the step-by-step instructions, you will learn how to use PlayFab's Data Connections service to distribute game events to Fabric Real-Time Analytics Database and how to access the Fabric Power BI dashboard to explore key game KPIs. The tutorial includes a sample Power BI dashboard and all the necessary resources to complete the integration.
+
+>[!VIDEO https://www.youtube.com/embed/lbHjRRz7i1I]
 
 ### Prerequisites
 
@@ -38,10 +39,10 @@ For details, see [Create a workspace - Microsoft Fabric | Microsoft Learn](/fabr
 
 Once you set up your workspace, the next step is to create a KQL Database, where all your PlayFab events flow into.
 
-1.	Go to [Microsoft Fabric](https://msit.powerbi.com/home).
-2.	On the left side navigation bar, select **Workspaces** > **Your Workspace**.
-3.	Select **New** > **More Options** > **KQL Database**.
-4.	Enter a name for the **KQL Database name** field and select **New database** as the **Type**.
+1.    Go to [Microsoft Fabric](https://msit.powerbi.com/home).
+2.    On the left side navigation bar, select **Workspaces** > **Your Workspace**.
+3.    Select **New** > **More Options** > **KQL Database**.
+4.    Enter a name for the **KQL Database name** field and select **New database** as the **Type**.
 
 ![Create a KQL Database](media/tutorials/new-kql-database.png)
 
@@ -93,7 +94,7 @@ There's a set of queries at the bottom of the page. In the next section, let's c
 
 For the best results, follow these steps after completing all the instructions above.
 
-Now, for demo purposes, let’s create some new Players in PlayFab’s Game Manager, then you should be able to see their data in the Power BI Report. 
+Now, for demo purposes, let's create some new Players in PlayFab's Game Manager, then you should be able to see their data in the Power BI Report. 
 
 ### Create Players in Game Manager
 
@@ -104,7 +105,7 @@ Now, for demo purposes, let’s create some new Players in PlayFab’s Game Mana
 5. Select **Create and login player**.
 6. Repeat these steps to create as many players as you want!
 
-### Upload PlayFab’s Power BI template to Microsoft Fabric
+### Upload PlayFab's Power BI template to Microsoft Fabric
 
 There are two steps in this process. First, download PlayFab's Power BI template and then upload it to Microsoft Fabric.
 
@@ -133,7 +134,7 @@ There are two steps in this process. First, download PlayFab's Power BI template
 6. Select **Load**. 
 7. Select **Publish** at the top of the page. 
 8. Select **Save**.
-9. Fill out the **Save** this file form. (Only if you haven’t saved the file before).
+9. Fill out the **Save** this file form. (Only if you haven't saved the file before).
     * Give the Report a significant **Name** for you. Example: **OverviewReport**
     * Select a **Location** to save it to. 
     * Select **Save**. 
@@ -143,7 +144,7 @@ There are two steps in this process. First, download PlayFab's Power BI template
 Once you complete these steps, select your workspace on Fabric to find the list of database and reports. 
 
 > [!IMPORTANT]
-> The amount of data you see is dependent on when the Data Connection was created. PlayFab doesn’t backfill data.
+> The amount of data you see is dependent on when the Data Connection was created. PlayFab doesn't backfill data.
 
 ## See also
 

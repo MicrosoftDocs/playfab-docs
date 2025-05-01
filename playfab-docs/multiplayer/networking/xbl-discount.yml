@@ -1,0 +1,59 @@
+### YamlMime:FAQ
+metadata:
+  title: Xbox Developer Free Program for PlayFab Multiplayer Services FAQ
+  author: joannaleecy
+  description: Xbox Developer Free Program for PlayFab Multiplayer Services FAQ
+  ms.author: joanlee
+  ms.date: 02/27/2019
+  ms.topic: faq
+  ms.service: azure-playfab
+  keywords: playfab, multiplayer, xbox network, party
+  ms.localizationpriority: medium
+title: Xbox Developer Free Program for PlayFab Multiplayer Services FAQ
+summary: |
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          What is included?
+        answer: |
+          This offer includes free usage of PlayFab Party networking and voice capabilities, PlayFab Lobby with real-time notifications, and PlayFab Matchmaking with real-time notifications. 
+
+          Party connectivity, egress, and voice [meters](../../pricing/meters/meters.md#party) is priced at $0 for all Xbox players.
+
+          [Party Lobby requests and notifications, as well as Matchmaking requests and notifications](../../pricing/meters/meters.md#matchmaking-and-lobby) is priced at $0 for all Xbox players.
+
+      - question: |
+          How do I apply?
+        answer: |
+          No application necessary for PlayFab Party. All Xbox players authenticated using the `LoginWithXbox` API automatically enjoy zero-rated usage. 
+
+          To apply for the free offer on PlayFab Lobby or PlayFab Matchmaking, reach out to your Microsoft representative to ensure that your title is onboarded to the free offer. 
+
+      - question: |
+          Does this program apply only to Xbox consoles?
+        answer: |
+          No. This free program applies to any platform where players sign into the Xbox network, including PC, iOS, and Android.
+
+      - question: |
+          What if my title has a mix of Xbox and non-Xbox players? What do I pay for?
+        answer: |
+          The consumption meters are player-oriented: player connectivity minutes, player voice minutes, etc. Xbox players increment these meters at a $0 price point. PlayFab tracks this using the `LoginWithXbox` API, please use this API to enjoy this program.
+          
+          Usage from other identity providers or custom IDs is billed according to your pricing plan; check out [PlayFab pricing](https://playfab.com/pricing) and [PlayFab Party pricing](../../pricing/meters/meters.md#party) to see how standard Party activity is metered.
+
+      - question: |
+          How do I ensure my usage of PlayFab Party is compliant with Xbox integration policies?
+        answer: |
+          There is a helper library for Party that simplifies Xbox sign-in and automatically applies chat muting to comply with Xbox certification requirements. [Check out the Xbox Live Party plug-in topic for more information.](./party-xbox-live-guide.md)
+          
+      - question: |
+          Can I get any free trials of other PlayFab services?
+        answer: |
+          Yes! [PlayFab Development Mode](../../pricing/development-mode.md) provides ample monthly allotments for many of our PlayFab services including PlayStream Events, Telemetry Events, Profile and Entity storage, CloudScript, and Insights. Development Mode allows you to evaluate the breadth of PlayFab while developing your game without incurring any monthly costs.
+
+      - question: |
+          How long is this offer available? 
+        answer: |
+          There are no existing plans to discontinue the free usage of Multiplayer Services, as described in this article. However, fees and payment policies may be subject to change in accordance with the [PlayFab Terms of Service](https://playfab.com/terms/). 

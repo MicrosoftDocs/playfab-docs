@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Cocos2D-x (C++)
 
-![Cocos2D-x (C++)](./media/cocos2dx1.png)
+![Cocos2D-x (C++)](media/cocos2dx1.png)
 
 >[!Important]
 >This is a community supported SDK. Information on this page is no longer maintained and updated. This SDK only supports an old version of Cocos and has not been ported to support the latest version.

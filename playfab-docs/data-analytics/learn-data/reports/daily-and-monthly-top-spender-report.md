@@ -29,4 +29,4 @@ You can select the PlayFab ID label to quickly navigate to the **Player's Detail
 
 ## Populating the Reports
 
-Please refer to [Non-receipt Payment Processing](../../../features/economy/tutorials/non-receipt-payment-processing.md) tutorial to learn how to conduct payments.
+Please refer to [Non-receipt Payment Processing](../../../economy-monetization/economy/tutorials/non-receipt-payment-processing.md) tutorial to learn how to conduct payments.

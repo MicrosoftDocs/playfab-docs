@@ -2,7 +2,7 @@
 title: Vanguard Outrider (legacy)
 author: natashaorie
 description: Overview for Vanguard Outrider, a legacy PlayFab demo game.
-ms.author: norie
+ms.author: joroher
 ms.date: 09/26/2024
 ms.topic: article
 ms.service: azure-playfab
@@ -24,8 +24,8 @@ Vanguard Outrider is different from Winter Starfall in that it requires an empty
 
 The features that run on legacy versions in Vanguard Outrider are:
 
-- [Legacy Economy](../features/economy/quickstart.md)
-- [Legacy CloudScript](../features/automation/cloudscript/index.md)
+- [Legacy Economy](../economy-monetization/economy/quickstart.md)
+- [CloudScript](../live-service-management/service-gateway/automation/cloudscript/index.md)
 
 ## See also
 
