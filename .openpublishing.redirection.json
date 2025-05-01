@@ -6809,8 +6809,18 @@
               "redirect_document_id": false
             },
             {
-              "source_path": "features/new-leaderboards-statistics/psintro.md",
+              "source_path": "playfab-docs/features/new-leaderboards-statistics/psintro.md",
               "redirect_url": "/gaming/playfab/community/associations/leaderboards/index",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/social/index.yml",
+              "redirect_url": "/gaming/playfab/community/",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/features/automation/index.yml",
+              "redirect_url": "/gaming/playfab/live-service-management/service-gateway/automation/cloudscript/",
               "redirect_document_id": false
             }
         ]
