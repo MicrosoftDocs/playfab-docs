@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.15
+
+May 2, 2025
+
+### Bug fixes
+
+- Fixed an issue where the Info.plist file for iOS and macOS was missing required fields, ensuring compliance with Apple's requirements.
+
 ## 1.7.14
 
 April 28, 2025
