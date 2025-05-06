@@ -1,12 +1,12 @@
 ---
-title: Paid Technical Support
-author: joannaleecy
+title: PlayFab Support
+author: shtarwar
 description: Describes the different PlayFab support offerings and how to access each.
-ms.author: joanlee
-ms.date: 02/6/2020
+ms.author: shtarwar
+ms.date: 05/05/2025
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, pricing, upgrade, upgrades, support, help, assistance, directions, support ticket, forum, slack
+keywords: playfab, pricing, upgrade, upgrades, support, help, assistance, directions, support ticket, forum, account help, discord, get help, playfab support
 ms.localizationpriority: medium
 ---
 
@@ -31,6 +31,20 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 **Minimum Required Account Plan:** No PlayFab account is needed to post, view, or engage with the community.
 
 **How to access:** The PlayFab Discord Forums is accessible via a free Discord account. Start by following this invite to the Microsoft Game Dev Server and opting-in to the PlayFab channel during the onboarding flow: [PlayFab Discord Forums](https://discord.com/invite/msftgamedev). 
+
+**Move to Discord:** PlayFab moved its community forums from PlayFab.com to Discord on June 26, 2024. Read more about it here: [PlayFab Dev Forums Move to Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/) 
+
+### PLAYFAB ACCOUNT HELP
+
+**Purpose:** Use PlayFab Account Help to submit non-technical inquiries related to account access, billing, plan management, sales, or other administrative support.
+
+**Minimum Required Account Plan:** PlayFab account is needed. Available to all PlayFab developers, including free-tier accounts.
+
+**How to access:** PlayFab Developers can access the **Account Help** page in Game Manager. 
+1. Log in to [PlayFab.com](https://playfab.com).
+2. Navigate to the **Studio-level** "..." section (ellipsis menu).
+3.Select Account Help.
+4. Complete the request form. Expect a response within 3 business days.
 
 **Move to Discord:** PlayFab moved its community forums from PlayFab.com to Discord on June 26, 2024. Read more about it here: [PlayFab Dev Forums Move to Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/) 
 
