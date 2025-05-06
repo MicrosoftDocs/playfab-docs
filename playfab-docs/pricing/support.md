@@ -6,13 +6,24 @@ ms.author: shtarwar
 ms.date: 05/05/2025
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, pricing, upgrade, upgrades, support, help, assistance, directions, support ticket, forum, account help, discord, get help, playfab support
+keywords: playfab, pricing, upgrade, upgrades, support, help, assistance, directions, support ticket, forum, account help, discord, get help, playfab support, customer support
 ms.localizationpriority: medium
 ---
 
 # Accessing PlayFab Technical Support
 
-To make integration with PlayFab as seamless and efficient as possible, PlayFab offers a variety of support options ranging from online documentation to live conversations with PlayFab engineers. Different support options are included in each account plan as determined by the tier of the account. Customers can upgrade their accounts to access higher levels of support.
+PlayFab offers a range of support options designed to meet the needs of developers across various stages of development and account tiers. Whether you're just getting started or actively managing a live title, you can access support through public documentation, community forums, or direct technical assistance. 
+Support availability is based on your account plan, with higher tiers offering expanded access and faster response times. Customers may upgrade their plans to unlock additional support features.
+
+## Support Offerings Overview
+
+| **Support Channel**                    | **Description**                              | **Available To**                           |
+|:---------------------------------- |:-----------------------------------|:-----------------------------------| 
+| **Documentation**        | Public API reference, tutorials, samples, and feature guides. | Open to all |
+| **Discord Community**         | Community-based support and discussion forums via Discord. | Open to all |
+| **Account Help**            | Direct support for non-technical administrative issues | Open to all PlayFab Developers Accounts |
+| **Support Tickets**          | Direct support for technical issues and service implemetation questions. |Standard Plans and above|
+| **Emergency Escalations**          | Fastest incident response for service-impacting emergencies. |Premium Plans only |
 
 ## Support Offerings
 
@@ -26,7 +37,7 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 
 ### PLAYFAB DISCORD FORUMS
 
-**Purpose:** The PlayFab Discord Forums provide community based product support. Use the PlayFab category and channels to check on service status, post questions, share answers, and discuss the PlayFab product experience.
+**Purpose:** The PlayFab Discord Forums provide community based product support. Use the PlayFab category and channels to check on service status, post questions, share answers, and discuss the PlayFab product experience. Connect with the PlayFab developer community and stay informed about platform updates.
 
 **Minimum Required Account Plan:** No PlayFab account is needed to post, view, or engage with the community.
 
@@ -34,7 +45,7 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 
 **Move to Discord:** PlayFab moved its community forums from PlayFab.com to Discord on June 26, 2024. Read more about it here: [PlayFab Dev Forums Move to Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/) 
 
-### PLAYFAB ACCOUNT HELP
+### ACCOUNT HELP
 
 **Purpose:** Use PlayFab Account Help to submit non-technical inquiries related to account access, billing, plan management, sales, or other administrative support.
 
@@ -43,14 +54,19 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 **How to access:** PlayFab Developers can access the **Account Help** page in Game Manager. 
 1. Log in to [PlayFab.com](https://playfab.com).
 2. Navigate to the **Studio-level** "..." section (ellipsis menu).
-3.Select Account Help.
-4. Complete the request form. Expect a response within 3 business days.
+3. Select Account Help.
+4. Complete the request form by selecting appropriate Problem Type and Sub-Type fields with description of the problem.
+5. Submit the ticket. Expect a response within 3 business days.
+
+> [!NOTE]
+> To streamline support access for effective issue resolution, PlayFab has updated its support experience across both PlayFab.com and Game Manager. This includes the deprecation of the “Contact Us” form on PlayFab.com, introduction of the Account Help support for all PlayFab developers.
+> For login-related issues, please use the self-service account recovery flow provided through Microsoft Entra ID. 
 
 **Move to Discord:** PlayFab moved its community forums from PlayFab.com to Discord on June 26, 2024. Read more about it here: [PlayFab Dev Forums Move to Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/) 
 
 ### SUPPORT TICKET SUBMISSION
 
-**Purpose:** Use support tickets to report a bug, to understand how to use a particular PlayFab feature, or to request help with a technical problem. Customers with paid accounts may submit support tickets directly to the PlayFab team through the "Contact Us" Page in Game Manager. Customers will receive a response within 1 business day.
+**Purpose:** Use support tickets to understand how to use a particular PlayFab feature, or to request help with a technical problem, or to report a bug. Customers with paid accounts may submit support tickets directly to the PlayFab team through the "Contact Us" Page in Game Manager. Customers will receive a response within 1 business day.
 
 **Minimum Required Account Plan:** Standard Account Plan
 
@@ -59,11 +75,11 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 1. Log in to [PlayFab.com](https://playfab.com).
 2. Navigate to the **Title Overview** page of the title needing support.
 3. To access the help menu, select the **?** in the top right navigation bar.
-4. Select **Contact Us**.
+4. Select **Contact Us** and fill out the support form.
 
 ### EMERGENCY ESCALATIONS
 
-**Purpose:** To provide PlayFab's fastest incident response time to customers during emergencies by notifying on-call PlayFab engineers.
+**Purpose:** Provides 24/7 access to PlayFab's on-call engineering team in the event of critical service-impacting issues. This provides fastest incident response time to customers during emergencies. 
 
 > [!NOTE]
 > Emergency escalations should be used sparingly and only in the case of high-impact service errors or outtages.
@@ -75,7 +91,8 @@ To make integration with PlayFab as seamless and efficient as possible, PlayFab 
 1. Log in to [PlayFab.com](https://playfab.com).
 2. Navigate to the **Title Overview** page of the title needing support.
 3. Select the **?** in the top right navigation bar to access the drop-down menu.
-4. Select **Contact Us** to access the form. The **Emergency On-Call Alert** option displays after completing the **Problem Type** and **Sub-Type** fields.
+4. Select **Contact Us** to access the form.
+5. The **Emergency On-Call Alert** option will display automatically if eligible after completing the **Problem Type** and **Sub-Type** fields.
 6. To submit the ticket, select **Yes**.
 
 To learn more about upgrading to a paid account plan, see [Account Upgrades and Title Launches](account-upgrades.md).
