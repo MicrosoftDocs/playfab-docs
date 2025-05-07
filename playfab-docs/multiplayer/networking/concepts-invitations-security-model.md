@@ -22,7 +22,7 @@ Limiting access to a network is a core part of protecting the integrity of the n
 - Knowledge of an invitation [identifier](#identifiers)
 - Presence of the PlayFab [entity ID](../../live-service-management/game-configuration/entities/index.md) for the token in the specified invitation, or the specified invitation being an [open invitation](#users-and-open-invitations)
 
-A given PlayFab Party network can have a maximum of 32 players. 
+A given PlayFab Party network can have a maximum of [128 players](/rest/api/playfab/multiplayer/multiplayer-server/request-party-service?view=playfab-rest#partynetworkconfiguration). 
 
 ## Invitations
 

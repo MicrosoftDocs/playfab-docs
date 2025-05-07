@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab Player progression documentation
-summary: Product landing page for cross-platform progression services. # < 160 chars
+summary: PlayFab Player Progression services enable reliable storage and sharing of player progression data across all gaming devices. # < 160 chars
 
 metadata:
   title: PlayFab Player Progression documentation
