@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.7.16
+
+May 7, 2025
+
+### Bug fixes
+
+- Fixed an issue where exposed symbols caused symbol clashes on the Android platform. This is an Android-only release.
+
 ## 1.7.15
 
 May 2, 2025
