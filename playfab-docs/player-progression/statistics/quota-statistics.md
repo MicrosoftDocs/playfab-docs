@@ -32,7 +32,10 @@ The following tables outline the limits for each of these modes:
 | Statistics Definitions | 1,000 definitions 
 | Number of versions | No limit 
 
-For more detailed pricing information, see the [PlayFab pricing page](https://playfab.com/pricing/).
+
+In both Development and Live modes, the maximum number of columns allowed for each statistic definition is 5.
+
+For more detailed pricing information, visit the [PlayFab pricing page](https://playfab.com/pricing/).
 
 
 ## See also
