@@ -66,7 +66,7 @@ You can learn more here: [Entity Programming Model](../../../live-service-manage
 - `VersionConfiguration`: This parameter allows you to set a versioning strategy for leaderboards that reset themselves 
 after a certain period. This concept is covered in depth here:  [Seasonal Leaderboards](seasonal-leaderboards.md).
 - `Columns`: Here, we define the number of columns our leaderboard is going to have. In this example, we only set one column for the score.
-We also define the `SortDirection` as descending, meaning the player with the highest score is going to be at the top.
+We also define the `SortDirection` as descending, meaning the player with the highest score is going to be at the top. The maximum number of columns allowed per definition is 5.
 
 With all of this information, you're now ready to run the example and create your first leaderboard.
 
