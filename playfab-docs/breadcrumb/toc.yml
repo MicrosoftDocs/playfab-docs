@@ -1,7 +1,7 @@
 items:
 - name: Azure
   tocHref: /gaming/playfab/
-  topicHref: /azure/index.yml
+  topicHref: /azure/
   items:
   - name: PlayFab
     tocHref: /gaming/playfab/
