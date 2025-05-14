@@ -27,6 +27,7 @@ Event raised when items have been redeemed to an inventory.
 |Marketplace|String|The name of the marketplace that the items were redeemed from.|
 |MarketplaceTransactionId|String|The transaction id in the marketplace that the items were redeemed from.|
 |ItemType|String|The type of the catalog item that was modified in the transaction.|
+|Balance|int?|The balance of the items changed as a result of the transaction.|
 
 ## Common Properties
 

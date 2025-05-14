@@ -25,6 +25,7 @@ Event raised when items have been added to an inventory.
 |Amount|int?|The amount of items that were added.|
 |DurationInSeconds|long?|The duration of the item that was added.|
 |ItemType|String|The type of the catalog item that was modified in the transaction.|
+|Balance|int?|The balance of the items changed as a result of the transaction.|
 
 ## Common Properties
 

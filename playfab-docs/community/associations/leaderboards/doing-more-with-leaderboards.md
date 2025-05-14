@@ -71,7 +71,7 @@ Now, let's explain some key elements of this example:
 - `SizeLimit`: This parameter is used for limiting the number of rows that the leaderboard could have. The value here's just an example.
 - `VersionConfiguration`: This parameter allows us to have versioning on our leaderboards. See this page for 
 more information: [Seasonal Leaderboards](seasonal-leaderboards.md)
-- `Columns`: This parameter allows us to define multiple columns. As you can see we set up Eliminations, Assists and Deaths.
+- `Columns`: This parameter allows us to define multiple columns, with a maximum of 5 per definition. As you can see we set up Eliminations, Assists and Deaths.
 An important element here's the `SortDirection` parameter, which allows us to determine the sorting of the leaderboard. 
 In this example, a player is ranked higher if they have more eliminations and assists (SortDirection = Descending) and 
 fewer deaths (SortDirection = Ascending).

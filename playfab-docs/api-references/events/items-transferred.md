@@ -29,6 +29,7 @@ Event raised when items have been transferred to or from an inventory.
 |GivingCollectionId|String|The collection if the items were transferred from or null if it was the current collection.|
 |ReceivingCollectionId|String|The collection id the items were transferred to or null if it was the current collection.|
 |ItemType|String|The type of the catalog item that was modified in the transaction.|
+|Balance|int?|The balance of the items changed as a result of the transaction.|
 
 ## Common Properties
 
