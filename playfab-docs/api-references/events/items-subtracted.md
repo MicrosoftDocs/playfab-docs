@@ -25,6 +25,7 @@ Event raised when items have been subtracted from an inventory.
 |Amount|int?|The amount of items that were subtracted.|
 |DurationInSeconds|long?|The duration of the item that was subtracted.|
 |ItemType|String|The type of the catalog item that was modified in the transaction.|
+|Balance|int?|The balance of the items changed as a result of the transaction.|
 
 ## Common Properties
 

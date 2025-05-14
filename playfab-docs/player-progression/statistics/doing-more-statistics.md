@@ -65,7 +65,7 @@ public static async Task CreateStatisticDefinitionAsync(PlayFabAuthenticationCon
 ```
 
 The most important component here's the `Columns` parameter, which allows multiple definitions of `StatisticColumn` so 
-that statistic could have multiple values. The only exception is when we use the aggregation of `Sum`.
+that statistic could have multiple values. The only exception is when we use the aggregation of `Sum`. Also, the maximum number of columns allowed is 5.
 
 ## Adding data to a statistic
 

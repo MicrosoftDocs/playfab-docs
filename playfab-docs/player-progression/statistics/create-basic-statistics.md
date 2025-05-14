@@ -58,7 +58,7 @@ used to make other requests to retrieve information
 You can learn more here: [Entity Programming Model](../../live-service-management/game-configuration/entities/index.md).
 - `VersionConfiguration`: This parameter allows you to set a versioning strategy for statistics that reset themselves 
 after a certain period. This concept is covered in depth here:  [Seasonal Statistics](seasonal-statistics.md).
-- `Columns`: Here, we define the number of columns for our statistic. In this example, we only set one column for the long shots.
+- `Columns`: Here, we define the number of columns for our statistic, with a maximum of 5 per definition. In this example, we only set one column for the long shots.
 We also define the `AggregationMethod` as Max, meaning that the statistic is only going to be updated whenever the new value is greater than 
 the previous one.
     - The `AggregationMethod` has four possible values:

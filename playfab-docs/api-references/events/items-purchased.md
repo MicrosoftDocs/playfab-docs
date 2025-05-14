@@ -27,6 +27,7 @@ Event raised when items have been purchased from an inventory.
 |SalePriceAmounts|List<[PurchasePriceAmount](data-types/purchasepriceamount.md)>|The per-item price amounts the item was purchased at.|
 |StoreId|String|The id of the Store the item was purchased from or null.|
 |ItemType|String|The type of the catalog item that was modified in the transaction.|
+|Balance|int?|The balance of the items changed as a result of the transaction.|
 
 ## Common Properties
 
