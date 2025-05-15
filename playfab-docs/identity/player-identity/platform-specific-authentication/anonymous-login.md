@@ -1,8 +1,8 @@
 ---
 title: Server Anonymous Login Authentication
-author: joannaleecy
+author: 
 description: Learn how to set up and configure PlayFab authentication using anonymous login APIs with server-side protection.
-ms.author: joanlee
+ms.author: 
 ms.date: 05/15/2025
 ms.topic: article
 ms.service: azure-playfab
@@ -125,6 +125,8 @@ Create an HTML file with the following content:
 3. Select the **API Features** tab
 4. Check the box to prevent new player accounts from being created via anonymous login APIs
 
+![Configure existing titles](media/tutorials/anonymous-html5/existing_title.png)  
+
 ### For New Titles
 
 > [!WARNING]
@@ -134,6 +136,8 @@ Create an HTML file with the following content:
 2. Go to **Settings**
 3. Select the **API Features** tab
 4. Uncheck the box to allow new player accounts from being created via anonymous login APIs
+
+![Configure new titles](media/tutorials/anonymous-html5/new_title.png)   
 
 ## Further Reading
 
