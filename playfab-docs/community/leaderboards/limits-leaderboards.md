@@ -41,4 +41,4 @@ The following table outlines the limits for the various APIs available in the Le
 - [Ranking players by statistics](leaderboards-linked-to-stats.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
-- [Leaderboard meters](../../../pricing/meters/leaderboard-meters.md).
+- [Leaderboard meters](../../pricing/meters/leaderboard-meters.md).

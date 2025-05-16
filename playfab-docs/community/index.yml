@@ -34,16 +34,34 @@ landingContent:
             url: associations/friends/index.md
           - text: What is Groups?
             url: associations/groups/index.md
-          - text: What is Leaderboards?
-            url: associations/leaderboards/index.md
       - linkListType: quickstart
         links:
           - text: Friends Quickstart
             url: associations/friends/quickstart.md
           - text: Groups Quickstart
             url: associations/groups/quickstart.md
+
+
+  # Card (optional)
+  - title: Leaderboards
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are Leaderboards?
+            url: leaderboards/index.md
+      - linkListType: quickstart
+        links:
           - text: Leaderboards Quickstart
-            url: associations/leaderboards/quickstart-leaderboards.md
+            url: leaderboards/quickstart-leaderboards.md
+      - linkListType: reference
+        links:
+          - text: Leaderboards reference
+            url: leaderboards/api-reference.md
+          - text: Limits on Leaderboards
+            url: leaderboards/limits-leaderboards.md
+          - text: Quota on Leaderboards
+            url: leaderboards/quota-leaderboards.md
+
 
   # Card (optional)
   - title: Synchronous Player Communications
@@ -69,12 +87,6 @@ landingContent:
           - text: Samples
             url: ../multiplayer/networking/party-samples.md
 
-  - title: Refer to APIs
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Leaderboards reference
-            url: associations/leaderboards/api-reference.md
 
   - title: Pricing
     linkLists:

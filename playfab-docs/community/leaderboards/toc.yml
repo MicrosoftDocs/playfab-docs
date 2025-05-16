@@ -25,6 +25,7 @@ items:
     href: manual-tiers.md
   - name: API reference 
     href: api-reference.md
-
+- name: Tournaments & Leaderboards (Deprecated)
+  href: tournaments-leaderboards/toc.yml
 
 

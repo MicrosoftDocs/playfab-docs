@@ -56,7 +56,7 @@ Now, let's explain some key elements of this example:
 you can check the following page:  [Quickstart Leaderboard](quickstart-leaderboards.md).
 - `Name`: This parameter helps you identify the leaderboard definition. It's important to choose something relevant here since it's used to make other requests to retrieve information. Additionally, this name must be unique, so a new one should be used to each time a leaderboard is created.
 - `EntityType`: This parameter specifies the type of entity you want to create your leaderboard for. 
-You can learn more here: [Entity Programming Model](../../../live-service-management/game-configuration/entities/index.md).
+You can learn more here: [Entity Programming Model](../../live-service-management/game-configuration/entities/index.md).
     - `title_player_acount`: This type of entity refers to players within PlayFab. In order to create a player, you can use the method of `LoginAsPlayer` that is described here: [Quickstart](quickstart-leaderboards.md).
     - `group`: This type of entity refers to a group of players, usually this concept applies in games like "clans," "guilds,", etc. See more information here: [Group Leaderboards](group-leaderboards.md).
     - `external`: This type of entity serves for adding custom data to our leaderboards. Each row doesn't need to be tied to anything on PlayFab, it is your own data. You can use your own identifiers in the `EntityId` field as long as they are strings.
@@ -153,7 +153,7 @@ Keep in mind that these are entity-based leaderboards, which means the entries a
 
 In our specific example, we're using the entity type title_player_account, so our leaderboard is filled with players. 
 However, remember that there are other entity types you can use as well. 
-You can check them out here: [Available built-in entity types](../../../live-service-management/game-configuration/entities/available-built-in-entity-types.md).
+You can check them out here: [Available built-in entity types](../../live-service-management/game-configuration/entities/available-built-in-entity-types.md).
 
 Now let's dive into how we can add data to our leaderboard.
 
