@@ -16,17 +16,19 @@ This guide shows you how to implement PlayFab authentication using anonymous log
 
 ## Overview
 
-To enhance security for anonymous login methods, PlayFab provides features to control player account creation. This applies to all anonymous login endpoints including:
-- LoginWithCustomID
-- LoginWithAndroidDeviceID
-- LoginWithIOSDeviceID
+To enhance the security of anonymous login, PlayFab has implemented a crucial security feature that separates player creation capabilities between client-side and server-side APIs.
 
-> [!NOTE]
-> This setting is enabled by default for newly created titles. Existing titles must manually enable it through the steps outlined in the configuration section at the end.
+1. **Disabled Client-Side Player Creation**:
+   - All anonymous login APIs on the client side (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`) can no longer automatically create new player accounts
+   - This prevents unauthorized account creation directly from potentially unsafe client environments
+   - Client-side APIs can only log in existing players
+
+2. **Enabled Server-Side Player Creation**:
+   - Player account creation is now exclusively handled through server-side APIs
+   - Server APIs like (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`) (server version) maintain the ability to create new players
+   - This ensures all account creation happens in a secure, controlled environment
 
 ## Prerequisites
-
-Before you begin, make sure you have:
 
 - A unique identifier for the player (CustomID)
 - A registered [PlayFab](https://playfab.com/) title
@@ -48,32 +50,82 @@ Before you begin, make sure you have:
    - Use `LoginWithCustomID` with the client API to log in existing players
    - Cannot create new accounts when properly configured
    - Reference: [Client API - Login With Custom ID](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-custom-id)
+
 ## Implementation Steps
 
 ### 1. Set Up Your Development Environment
 
 1. Download the JavaScript SDK from the [JavaScript SDK documentation](https://learn.microsoft.com/gaming/playfab/sdks/javascript/)
+2. Install the required Node.js packages:
 
-2. Update the `PlayFabServerApi.js` file in the `PlayFabSdk/src/PlayFab` folder with your credentials:
-
-```javascript
-PlayFab.settings = {
-    titleId: "<insert your titleId>",
-    developerSecretKey: "<developerSecretKey>",
-    GlobalHeaderInjection: null,
-    productionServerUrl: ".playfabapi.com"
-}
+```bash
+npm install playfab-sdk
 ```
 
-### 2. Implement the Authentication Flow
+### 2. Server-Side Implementation (Node.js)
 
-Create an HTML file with the following content:
+> [!IMPORTANT]
+> Keep your developer secret key secure and never expose it in client-side code. The secret key should only be used in secure server environments.
+
+```javascript
+const { create } = require('domain');
+const http = require('http');
+const PlayFab = require('playfab-sdk');
+const PlayFabServer = require('playfab-sdk/Scripts/PlayFab/PlayFabServer');
+
+// Initialize PlayFab settings
+PlayFab.settings.titleId = "YOUR_TITLE_ID"; // Replace with your actual PlayFab Title ID
+PlayFab.settings.developerSecretKey = "YOUR_SECRET_KEY"; // Replace with your actual secret key
+
+// Callback function for PlayFab API responses
+function onPlayFabResponse(error, result) {
+    if (error) {
+        console.error("PlayFab Error:", error);
+        return;
+    }
+    console.log("PlayFab Success:", result);
+}
+
+// Function to create user with custom ID
+function createUserWithCustomId(customId, callback) {
+    PlayFab.PlayFabServer.LoginWithCustomID({
+        CreateAccount: true,
+        CustomId: customId,
+    }, (error, result) => {
+        if (error) {
+            console.error("PlayFab Error:", error);
+            callback(error);
+            return;
+        }
+        console.log("PlayFab Success:", result);
+        callback(null, result.data);
+    });
+}
+
+const customId = "YOUR_CUSTOM_ID"; // Replace with your actual custom ID
+const server = http.createServer((req, res) => {
+    res.writeHead(200, {'Content-Type': 'application/json'});
+    createUserWithCustomId(customId, (error, result) => {
+        if (error) {
+            res.end(JSON.stringify({ error: error }));
+            return;
+        }
+        res.end(JSON.stringify({ success: result }));
+    });
+});
+
+const port = 3000;
+server.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
+});
+```
+
+### 3. Client-Side Implementation (HTML)
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="PlayFabSdk/src/PlayFab/PlayFabServerApi.js"></script>
     <script src="PlayFabSdk/src/PlayFab/PlayFabClientApi.js"></script>
 </head>
 <body>
@@ -81,22 +133,13 @@ Create an HTML file with the following content:
     <button onclick="loginWithCustomID()">Log In with CustomId</button>
     <script>
         function loginWithCustomID() {
-            var customId = "someId12321";
-            createUserWithCustomId(customId);
+            var customId = "YOUR_CUSTOM_ID";
             PlayFabClientSDK.LoginWithCustomID({
                 CustomId: customId,
-                TitleId: PlayFab.settings.titleId,
+                TitleId: YOUR_TITLE_ID,
             }, onPlayFabResponse);
         }
-
-        // Server-side account creation
-        function createUserWithCustomId(customId) {
-            PlayFabServerSDK.LoginWithCustomID({
-                CreateAccount: true,
-                CustomId: customId,
-                TitleId: PlayFab.settings.titleId,
-            }, onPlayFabResponse);
-        }
+       
 
         function onPlayFabResponse(response, error) {
             if (response)
@@ -139,9 +182,52 @@ Create an HTML file with the following content:
 
 ![Configure new titles](media/tutorials/anonymous-html5/new_title.png)   
 
+
+## Testing and Response Examples
+
+### Server Response Example
+
+When successfully creating a user through the server API, you'll receive a response similar to:
+
+```json
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "PlayFabId": "PLAYFAB_ID",
+        "SessionTicket": "SESSION_TICKET",
+        "NewlyCreated": true
+    }
+}
+```
+
+### Client Response Example
+
+When attempting to create a new account from the client API (which is now disabled), you'll receive an error:
+
+```json
+{
+    "code": 400,
+    "status": "BadRequest",
+    "error": "PlayerCreationDisabled"
+}
+```
+
+When successfully logging in an existing user through the client API:
+
+```json
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "PlayFabId": "PLAYFAB_ID",
+        "SessionTicket": "SESSION_TICKET",
+        "NewlyCreated": false
+    }
+}
+```
 ## Further Reading
 
 - [PlayFab Authentication Overview](../authentication/index.md)
 - [Login Basics and Best Practices](../login/login-basics-best-practices.md)
 - [Running an HTTP Server for Testing](running-an-http-server-for-testing.md)
-
