@@ -125,7 +125,7 @@ public static async Task<List<EntityLeaderboardEntry>> GetLeaderboard(PlayFabAut
 
 Now we're set to handle any challenges with versioning on leaderboards. An important aspect here is that the number of leaderboards definitions
 that we decide to keep as versions are going to be metered since use storage within the service. See more about this here:
-- [Leaderboards Writes](../../../pricing/Meters/leaderboard-meters.md).
+- [Leaderboards Writes](../../pricing/Meters/leaderboard-meters.md).
 
 ## Conclusions 
 In this tutorial, we learned how to do the following operations: 

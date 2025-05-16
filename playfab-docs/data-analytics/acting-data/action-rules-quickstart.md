@@ -17,7 +17,7 @@ A PlayStream rule allows you to react to a subset of one type of PlayStream even
 ## Requirements
 
 - [Game Manager quickstart](../../live-service-management/gamemanager/quickstart.md)
-- [Using player statistics](../../player-progression/player-data/using-player-statistics.md) (contains information that can help you with the example in this tutorial).
+- [Using player statistics](../../community/leaderboards/tournaments-leaderboards/using-player-statistics.md) (contains information that can help you with the example in this tutorial).
 
 A quick glossary of relevant terms:
 
@@ -37,7 +37,7 @@ A quick glossary of relevant terms:
 
 A rule consists of exactly one Trigger, an optional list of Conditions, and typically at least one Action (not required, but quite useless without it).
 
-Triggers, Conditions, and Actions are also part of other systems: [bulk actions](action-rules-bulk-actions-for-an-entire-player-segment.md) and [tournament leaderboards](../../community/associations/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
+Triggers, Conditions, and Actions are also part of other systems: [bulk actions](action-rules-bulk-actions-for-an-entire-player-segment.md) and [tournament leaderboards (deprecated)](../../community/leaderboards/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md).
 
 ## Example Case: Count custom events from the client
 

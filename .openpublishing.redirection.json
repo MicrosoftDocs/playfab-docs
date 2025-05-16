@@ -957,7 +957,7 @@
         ,
         {
             "source_path": "playfab-docs/features/data/playerdata/using-player-statistics.md",
-            "redirect_url": "/gaming/playfab/features/playerdata/using-player-statistics",
+            "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/using-player-statistics.md",
             "redirect_document_id": false
         }
         ,
@@ -1050,7 +1050,7 @@
         },
         {
             "source_path": "playfab-docs/features/social/tournaments-leaderboards/accessing-archived-tournament-results.md",
-            "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/accessing-archived-tournament-results",
+            "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/accessing-archived-tournament-results",
             "redirect_document_id": false
           },
           {
@@ -1405,7 +1405,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/create-basic-leaderboard.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/create-basic-leaderboard",
+            "redirect_url": "/gaming/playfab/community/leaderboards/create-basic-leaderboard",
             "redirect_document_id": false
           },
           {
@@ -1525,7 +1525,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/doing-more-with-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/doing-more-with-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/doing-more-with-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -1705,7 +1705,7 @@
           },
           {
             "source_path": "playfab-docs/features/social/friends/friends-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/friends-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/friends-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -1830,7 +1830,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/group-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/group-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/group-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -1965,7 +1965,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/leaderboards-linked-to-stats.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/leaderboards-linked-to-stats",
+            "redirect_url": "/gaming/playfab/community/leaderboards/leaderboards-linked-to-stats",
             "redirect_document_id": false
           },
           {
@@ -1985,7 +1985,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/limits-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/limits-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/limits-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -2225,7 +2225,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/manual-tiers.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/manual-tiers",
+            "redirect_url": "/gaming/playfab/community/leaderboards/manual-tiers",
             "redirect_document_id": false
           },
           {
@@ -2280,7 +2280,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/metadata-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/metadata-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/metadata-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -5330,7 +5330,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/quickstart-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/quickstart-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/quickstart-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -5450,7 +5450,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/seasonal-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/seasonal-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/seasonal-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -5810,7 +5810,7 @@
           },
           {
             "source_path": "playfab-docs/features/playerdata/using-player-statistics.md",
-            "redirect_url": "/gaming/playfab/player-progression/player-data/using-player-statistics",
+            "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/using-player-statistics",
             "redirect_document_id": false
           },
           {
@@ -5820,7 +5820,7 @@
           },
           {
             "source_path": "playfab-docs/features/social/tournaments-leaderboards/using-prize-tables.md",
-            "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/using-prize-tables",
+            "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/using-prize-tables",
             "redirect_document_id": false
           },
           {
@@ -5835,7 +5835,7 @@
           },
           {
             "source_path": "playfab-docs/features/social/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/using-resettable-statistics-and-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/using-resettable-statistics-and-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -5850,7 +5850,7 @@
           },
           {
             "source_path": "playfab-docs/features/social/tournaments-leaderboards/using-the-profile-for-advanced-leaderboards.md",
-            "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/using-the-profile-for-advanced-leaderboards",
+            "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/using-the-profile-for-advanced-leaderboards",
             "redirect_document_id": false
           },
           {
@@ -6105,7 +6105,7 @@
           },
           {
             "source_path": "playfab-docs/features/new-leaderboards-statistics/leaderboards/index.md",
-            "redirect_url": "/gaming/playfab/community/associations/leaderboards/index",
+            "redirect_url": "/gaming/playfab/community/leaderboards/index",
             "redirect_document_id": false
           },
           {
@@ -6220,7 +6220,7 @@
             },
             {
               "source_path": "playfab-docs/features/social/tournaments-leaderboards/index.md",
-              "redirect_url": "/gaming/playfab/community/associations/leaderboards/index",
+              "redirect_url": "/gaming/playfab/community/leaderboards/index",
               "redirect_document_id": false
             },
             {
@@ -6650,7 +6650,7 @@
             },
             {
               "source_path": "playfab-docs/features/social/tournaments-leaderboards/quickstart.md",
-              "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/quickstart",
+              "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/quickstart",
               "redirect_document_id": false
             },
             {
@@ -6730,7 +6730,7 @@
             },
             {
               "source_path": "playfab-docs/features/social/tournaments-leaderboards/tutorials.md",
-              "redirect_url": "/gaming/playfab/community/associations/tournaments-leaderboards/tutorials",
+              "redirect_url": "/gaming/playfab/community/leaderboards/tournaments-leaderboards/tutorials",
               "redirect_document_id": false
             },
             {
@@ -6810,7 +6810,7 @@
             },
             {
               "source_path": "playfab-docs/features/new-leaderboards-statistics/psintro.md",
-              "redirect_url": "/gaming/playfab/community/associations/leaderboards/index",
+              "redirect_url": "/gaming/playfab/community/leaderboards/index",
               "redirect_document_id": false
             },
             {
