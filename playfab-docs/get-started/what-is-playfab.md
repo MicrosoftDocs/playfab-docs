@@ -1,7 +1,7 @@
 ---
 title: What is PlayFab?
 author:  m-kdearnley
-description: PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps.
+description: PlayFab is a complete backend platform for live games with managed game services, real-time analytics, and LiveOps
 ms.author: kdearnley
 ms.date: 04/15/2025
 ms.topic: article
