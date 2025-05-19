@@ -39,6 +39,9 @@ Enter in the email and password for your PlayFab account and select "Sign in" to
 > [!NOTE]
 > Using "Sign in with Microsoft" with a Microsoft account that isn't associated with a PlayFab account generates a new developer account, with a new studio and title. 
 
+## Still can't sign in? 
+If you still can't sign in, [contact us](https://playfab.com/contact/) and provide the email and sign in type that you're having issues with. 
+
 ## FAQ
 
 ### What is a PlayFab authenticated account and why migrate to a Microsoft account? 
