@@ -1,5 +1,5 @@
 ---
-title: Limits on Statistics
+title: Limits on statistics
 author: braulioal
 description: Learn more about the limits on the Statistics service
 ms.author: braulioal
@@ -9,10 +9,10 @@ ms.service: azure-playfab
 keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
-
-# Limits on Statistics
+# Limits on statistics
 
 The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your statistics on the Statistic service.
+
 - Caller: This type of limit is enforced on the caller of the API. This constraint could be either a player or a title.
 - Target: This type of limit is enforced on the target of the API, in our specific case an entity.
 
@@ -30,14 +30,13 @@ The following table defines the limits for the various APIs available in the Sta
 | DeleteStatisticsDefinition | 30 requests per 120 seconds  | Title  |  N/A |
 | IncrementStatisticVersion | 30 requests per 120 seconds  | Title  |  N/A |
 
-
 ## See also
 
-- [Create basic statistics](create-basic-statistics.md).
-- [Doing more with statistics](doing-more-statistics.md).
-- [Seasonal statistics](seasonal-statistics.md).
-- [Add contextual data to statistics](metadata-statistics.md).
+- [Create basic statistics](create-basic-statistics.md)
+- [Doing more with statistics](doing-more-statistics.md)
+- [Seasonal statistics](seasonal-statistics.md)
+- [Add contextual data to statistics](metadata-statistics.md)
 - [Transactional writes](transactional-writes.md)
-- [API reference](api-reference.md).
-- [Statistics meters](../../pricing/meters/statistics-meters.md).
+- [API reference](api-reference.md)
+- [Statistics meters](../../pricing/meters/statistics-meters.md)
 - [Quota](quota-statistics.md)
