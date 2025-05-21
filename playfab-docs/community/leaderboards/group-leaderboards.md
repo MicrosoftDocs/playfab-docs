@@ -21,8 +21,8 @@ With this context in mind we want to create a leaderboard for alliances, so we'r
 in the whole universe.
 
 Some key aspects to have in mind before going deeper into how group leaderboards works:
-* Learn more about the Entity Programming Model here: [Entity Programming Model](../../../live-service-management/game-configuration/entities/index.md).
-* Check out how groups work here: [Groups](../groups/quickstart.md).
+* Learn more about the Entity Programming Model here: [Entity Programming Model](../../live-service-management/game-configuration/entities/index.md).
+* Check out how groups work here: [Groups](../associations/groups/quickstart.md).
 
 ## Creating a leaderboard
 

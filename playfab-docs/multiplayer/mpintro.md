@@ -83,6 +83,6 @@ PlayFab Multiplayer Servers provides simple and efficient scaling of multiplayer
 
 ## See Also 
 
-- Track and share to player rankings with [Leaderboards](../community/associations/tournaments-leaderboards/using-resettable-statistics-and-leaderboards.md)
+- Track and share to player rankings with [Leaderboards](../community/leaderboards/index.md)
 - Use [Groups](../community/associations/groups/index.md) to keep track of player groups over long durations. 
 - Use [CloudScript](../live-service-management/service-gateway/automation/cloudscript/index.md) to react to player activity in real time with flexible cloud-based code

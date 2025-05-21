@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 # Limits on Leaderboards
 
 The purpose of this guide is to detail the limits that are enforced when creating, updating, and reading from your leaderboards on the Leaderboards service.
+
 - Caller: This type of limit is enforced on the caller of the API. This constraint could be either a player or a title.
 - Target: This type of limit is enforced on the target of the API, in our specific case an entity.
 
-The following table outlines the limits for the various APIs available in the Leaderboards service. If an API isn't explicitly listed here, the default behavior is going to be applied.
+The following table outlines the limits for the various APIs available in the Leaderboards service. If an API isn't explicitly listed here, the default behavior is applied.
 
 | API | Limit | Caller | Target entity |
 | --- | --- | --- | --- |
@@ -32,13 +33,13 @@ The following table outlines the limits for the various APIs available in the Le
 
 ## See also
 
-- [Create basic leaderboard](create-basic-leaderboard.md).
-- [Doing more with leaderboards](doing-more-with-leaderboards.md).
-- [Seasonal leaderboards](seasonal-leaderboards.md).
-- [Quota ](quota-leaderboards.md).
-- [Group leaderboards](group-leaderboards.md).
-- [Manual tiers](manual-tiers.md).
-- [Ranking players by statistics](leaderboards-linked-to-stats.md).
-- [Add contextual data to leaderboards](metadata-leaderboards.md).
-- [API reference](api-reference.md).
-- [Leaderboard meters](../../../pricing/meters/leaderboard-meters.md).
+- [Create basic leaderboard](create-basic-leaderboard.md)
+- [Doing more with leaderboards](doing-more-with-leaderboards.md)
+- [Seasonal leaderboards](seasonal-leaderboards.md)
+- [Quota ](quota-leaderboards.md)
+- [Group leaderboards](group-leaderboards.md)
+- [Manual tiers](manual-tiers.md)
+- [Ranking players by statistics](leaderboards-linked-to-stats.md)
+- [Add contextual data to leaderboards](metadata-leaderboards.md)
+- [API reference](api-reference.md)
+- [Leaderboard meters](../../pricing/meters/leaderboard-meters.md)
