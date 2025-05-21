@@ -196,7 +196,7 @@ Additional Information:
 
 ### Progression
 
-The Progression tab displays all the active stats and leaderboards for your title. [Playfab Statistics](../../player-progression/statistics/index.md) and [PlayFab Leaderboards](../../community/associations/leaderboards/quickstart-leaderboards.md) can be defined and configured here. You can even link a leaderboard to a stat to have one call drive updates for both. 
+The Progression tab displays all the active stats and leaderboards for your title. [Playfab Statistics](../../player-progression/statistics/index.md) and [PlayFab Leaderboards](../../community/leaderboards/quickstart-leaderboards.md) can be defined and configured here. You can even link a leaderboard to a stat to have one call drive updates for both. 
 
 - [Back to About the Game Manager](#about-game-manager)
 

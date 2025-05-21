@@ -67,5 +67,5 @@ However, also this service can work in a standalone fashion if needed.
 - [Quota](quota-statistics.md)
 - [Add contextual data to statistics](metadata-statistics.md).
 - [API reference](api-reference.md).
-- [Ranking players by statistics](../../community/associations/leaderboards/leaderboards-linked-to-stats.md).
+- [Ranking players by statistics](../../community/leaderboards/leaderboards-linked-to-stats.md).
 - [Statistics meters](../../pricing/Meters/statistics-meters.md).
