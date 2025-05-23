@@ -16,19 +16,19 @@ This guide shows you how to implement PlayFab authentication using anonymous log
 
 ## Overview
 
-> [!NOTE]
+> [!IMPORTANT]
 > On June 30, 2025, all newly created titles will have player creation via anonymous APIs disabled. 
 
 To enhance the security of anonymous login, PlayFab implemented a crucial security feature that separates player creation capabilities between client-side and server-side APIs.
 
 1. **Disabled Client-Side Player Creation**:
-   - On new titles, all anonymous login APIs on the client side (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`) no longer automatically create new player accounts. Existing titles can disable anonymous login through [Game Manager configuration](anonymous-login.md#configuring-player-creation-settings)
-   - Disabling client-side player creation prevents unauthorized account creation directly from unsafe client environments
-   - Only existing players can log in through client-side APIs
+   - For newly created titles, all anonymous login APIs on the client side (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`) no longer automatically create new player accounts. Titles created before June 30, 2025 can disable anonymous login through [Game Manager configuration](anonymous-login.md#configuring-player-creation-settings).
+   - Disabling client-side player creation prevents unauthorized account creation directly from unauthorized clients.
+   - Only existing players can log in through client-side APIs.
 
 2. **Enabled Server-Side Player Creation**:
-   - Player account creation is now handled through server-side APIs (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`)
-   - This ensures all account creation happens in a secure, controlled environment
+   - Player account creation is now handled through server-side APIs (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`).
+   - This ensures all account creation happens in a secure, controlled environment.
 
 ## Prerequisites
 
@@ -39,13 +39,13 @@ To enhance the security of anonymous login, PlayFab implemented a crucial securi
 - A server with a valid domain name to serve static HTML files
 
 > [!NOTE]
-> If you need help with setting up a server, see the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial. Throughout this guide, we'll assume your domain is `['http://playfab.example'](http://playfab.example)`. 
+> If you need help with setting up a server, see the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial. Throughout this guide, we'll assume your domain is `http://playfab.example`. 
 
 ## Authentication Flow
 
 1. **Server-side Account Creation**:
    - Use `Server/LoginWithCustomID` with the server API to create new players
-   - Protected by the title secret key
+   - Requires a title secret key
    - Reference: [Server API - Login With Custom ID](https://learn.microsoft.com/rest/api/playfab/server/authentication/login-with-custom-id)
 
 2. **Client-side Login**:
@@ -66,7 +66,7 @@ npm install playfab-sdk
 ### 2. Server-Side Implementation (Node.js)
 
 > [!IMPORTANT]
-> Keep your developer secret key secure and never expose it in client-side code. The secret key should only be used in secure server environments.
+> Keep your title secret key secure and never expose it in client-side code. The secret key should only be used in secure server environments.
 
 ```javascript
 const { create } = require('domain');
