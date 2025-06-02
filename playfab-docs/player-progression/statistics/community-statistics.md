@@ -1,6 +1,6 @@
 ---
 title: Community Statistics
-author: ravarna
+author: ravarnamsft
 description: Learn how to create community statistics
 ms.author: ravarna
 ms.date: 06/02/2025
