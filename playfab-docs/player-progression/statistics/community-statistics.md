@@ -103,7 +103,7 @@ PlayFabResult<GetStatisticsResponse> result = await statsAPI.GetStatisticsAsync(
 * Currently, only one aggregation source can be specified for the community statistic.
 * Version configuration can't be specified for the community statistic. The version configuration specified for the source statistic applies to the community statistic as well.
 * The `EntityType` for the community statistic *must* be `title`.
-* `Last` aggregation can't be used for the first column.
+* `Last` aggregation can't be used for any of the columns.
 
 ## See also
 
