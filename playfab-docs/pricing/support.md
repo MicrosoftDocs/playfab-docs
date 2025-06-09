@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Accessing PlayFab Technical Support
 
-PlayFab offers a range of support options designed to meet the needs of developers across various stages of development and account tiers. Whether you're just getting started or actively managing a live title, you can access support through public documentation, community forums, or direct technical assistance. 
+PlayFab offers a range of support options designed to meet the needs of developers across various stages of development and account tiers. Whether you're just getting started or actively managing a live title, you can access support through public documentation, community discord, or direct technical assistance. 
 Support availability is based on your account plan, with higher tiers offering expanded access and faster response times. Customers may upgrade their plans to unlock additional support features.
 
 ## Support Offerings Overview
@@ -43,8 +43,6 @@ Support availability is based on your account plan, with higher tiers offering e
 
 **How to access:** The PlayFab Discord Forums is accessible via a free Discord account. Start by following this invite to the Microsoft Game Dev Server and opting-in to the PlayFab channel during the onboarding flow: [PlayFab Discord Forums](https://discord.com/invite/msftgamedev). 
 
-**Move to Discord:** PlayFab moved its community forums from PlayFab.com to Discord on June 26, 2024. Read more about it here: [PlayFab Dev Forums Move to Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/) 
-
 ### ACCOUNT HELP
 
 **Purpose:** Use PlayFab Account Help to submit non-technical inquiries related to account access, billing, plan management, sales, or other administrative support.
@@ -61,8 +59,6 @@ Support availability is based on your account plan, with higher tiers offering e
 > [!NOTE]
 > To streamline support access for effective issue resolution, PlayFab has updated its support experience across both PlayFab.com and Game Manager. This includes the deprecation of the “Contact Us” form on PlayFab.com, introduction of the Account Help support for all PlayFab developers.
 > For login-related issues, please use the self-service account recovery flow provided through Microsoft Entra ID. 
-
-**Move to Discord:** PlayFab moved its community forums from PlayFab.com to Discord on June 26, 2024. Read more about it here: [PlayFab Dev Forums Move to Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/) 
 
 ### SUPPORT TICKET SUBMISSION
 
