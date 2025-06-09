@@ -17,7 +17,7 @@
         },
         { 
             "source_path": "playfab-docs/pricing/paidtechnicalsupport.md", 
-            "redirect_url": "/playfab/pricing/support.md",
+            "redirect_url": "/gaming/playfab/features/pricing/support.md",
             "redirect_document_id": true
         },
         {
