@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Azure PlayFab Multiplayer documentation
-summary: summary # < 160 chars
+summary: PlayFab Multiplayer services support real-time multiplayer capabilities for matchmaking, grouping, networking, and server hosting. # < 160 chars
 
 metadata:
   title: PlayFab Multiplayer documentation
-  description: Guide on Multiplayer servers, matchmaking and Party # Required; article description that is displayed in search results. < 160 chars.
+  description: Guide on Multiplayer servers, matchmaking, and Party # Required; article description that is displayed in search results. < 160 chars.
   ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
   author: joannaleecy

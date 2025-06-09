@@ -20,19 +20,21 @@ Game Manager allows users to use their Microsoft or legacy PlayFab authenticated
 > [!NOTE]
 > It's possible to have both a PlayFab authenticated account and a Microsoft account using the same email. If you don't see the appropriate studios and titles in one account, try the other sign in method to see if an account exists. 
 
-## Legacy PlayFab Authenticated Account
-When you're using the email and password fields, you're using a legacy PlayFab authenticated account. Enter your email and password and select "sign in" to sign into Game Manager.
-
-![Game Manager sign in - PlayFab authentication](media/tutorials/game-manager-login-playfab-authentication.png)
-
-For users who recently migrated from their legacy PlayFab authenticated account to a Microsoft account, use the "Sign in with Microsoft" button to sign into Game Manager.
-
 ## Microsoft Account
 For Microsoft account users, select the "Sign in with Microsoft" button and complete the sign in process. 
 
 ![Game Manager sign in - Microsoft authentication](media/tutorials/game-manager-login-microsoft-authentication.png)
 
 Once logged in, you're redirected to the My Studios and Titles page. 
+
+## Legacy PlayFab Authenticated Account
+If you're using a legacy PlayFab authenticated account, select "Have a non-Microsoft account and need to migrate?" to sign in.
+
+![Game Manager sign in - PlayFab authentication](media/tutorials/game-manager-login-playfab-authentication.png)
+
+Enter in the email and password for your PlayFab account and select "Sign in" to begin the migration process.
+
+![Game Manager sign in - Legacy PlayFab](media/tutorials/game-manager-login-legacy-playfab.png)
 
 > [!NOTE]
 > Using "Sign in with Microsoft" with a Microsoft account that isn't associated with a PlayFab account generates a new developer account, with a new studio and title. 

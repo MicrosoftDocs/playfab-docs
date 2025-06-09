@@ -72,4 +72,4 @@ has a Statistics engine doing the aggregation.
 - [API reference](api-reference.md).
 - [Quota ](quota-leaderboards.md).
 - [Manual tiers](manual-tiers.md).
-- [Leaderboard meters](../../../pricing/Meters/leaderboard-meters.md).
+- [Leaderboard meters](../../pricing/Meters/leaderboard-meters.md).

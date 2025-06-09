@@ -19,7 +19,7 @@ Event and tournament leaderboards are great tools for increasing engagement with
 Statistics and leaderboards have been critical components of many games across every genre throughout the history of the industry. Their integration into a title drives player engagement by acting as a reflection of their experience both in isolation and as it relates to a broader community. We at PlayFab have seen how you've utilized these services in unique and exciting ways. We want to better enable these experiences by providing a new set of Stats & Leaderboard APIs built with the [Entity Programming Model](../../../live-service-management/game-configuration/entities/index.md) in mind. 
 
 > [!IMPORTANT]
-> The new version of leaderboards is here: [Leaderboards v2](../leaderboards/index.md).
+> The new version of leaderboards is here: [Leaderboards v2](../index.md).
 
 ## What are Leaderboards? 
 

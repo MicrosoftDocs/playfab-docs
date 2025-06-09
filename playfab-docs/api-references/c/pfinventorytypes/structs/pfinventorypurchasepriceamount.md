@@ -18,7 +18,8 @@ PFInventoryPurchasePriceAmount data model.
 typedef struct PFInventoryPurchasePriceAmount {  
     int32_t amount;  
     const char* itemId;  
-    const char* stackId;  
+    const char* stackId;
+    int32_t balance;  
 } PFInventoryPurchasePriceAmount;  
 ```
   
@@ -37,6 +38,10 @@ The amount of the inventory item to use in the purchase .
 *is null-terminated*  
   
 (Optional) The inventory stack id the to use in the purchase. Set to "default" by default.
+
+**`balance`** &nbsp; int32_t
+
+(Optional) The balance of the items changed as a result of the transaction.
   
   
 ## Requirements  

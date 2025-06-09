@@ -22,7 +22,7 @@ The following tables outline the limits for each of these modes:
 
 | Limit | Quantity |
 | --- | --- |
-| Leaderboard Definitions | 50 definitions |
+| Leaderboard Definitions | 50 definitions 
 | Row limit | 10,000 rows |
 | Number of versions | One version |
 
@@ -34,7 +34,9 @@ The following tables outline the limits for each of these modes:
 | Row limit | 1 million rows
 | Number of versions | No limit
 
-For more detailed pricing information, see the [PlayFab pricing page](https://playfab.com/pricing/).
+In both Development and Live modes, the maximum number of columns allowed for each leaderboard definition is 5.
+
+For more detailed pricing information, visit the [PlayFab pricing page](https://playfab.com/pricing/).
 
 ## See also
 
@@ -47,4 +49,4 @@ For more detailed pricing information, see the [PlayFab pricing page](https://pl
 - [Ranking players by statistics](leaderboards-linked-to-stats.md)
 - [Add contextual data to leaderboards](metadata-leaderboards.md)
 - [API reference](api-reference.md)
-- [Leaderboard meters](../../../pricing/meters/leaderboard-meters.md)
+- [Leaderboard meters](../../pricing/Meters/leaderboard-meters.md) 
