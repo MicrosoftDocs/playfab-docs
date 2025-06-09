@@ -27,9 +27,9 @@ ms.localizationpriority: medium
 
 7. **[Experiments Pricing](../live-service-management/game-configuration/experiments/pricing.md):** Learn about Experiments pricing when used.
 
-8. **[Technical Support](Support.md):** Access support included in paid account plans.
+8. **[Technical Support](Support.md):** Access technical support included in paid account plans.
 
-9. **[Account Support](Support.md):** Access support included in for all account plans.
+9. **[Account Support](Support.md):** Access account support included for all account plans.
 
 10. **[Upgrading Accounts](account-upgrades.md):** Upgrade your account plan using the self-serve plans experience in Game Manager.
 
