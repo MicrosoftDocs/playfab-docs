@@ -15,9 +15,10 @@
             "redirect_url": "/gaming/playfab/sdks/playfab-cpp/quickstart-gdk",
             "redirect_document_id": false
         },
-        { "source_path": "playfab-docs/pricing/paidtechnicalsupport.md", 
-          "redirect_url": "/gaming/playfab/pricing/support.md",
-          "redirect_document_id": true
+        { 
+            "source_path": "playfab-docs/pricing/paidtechnicalsupport.md", 
+            "redirect_url": "/gaming/playfab/pricing/support.md",
+            "redirect_document_id": true
         },
         {
             "source_path": "playfab-docs/resources/recipes-and-samples.md",
