@@ -80,7 +80,7 @@ There are some studio and title limits associated with development mode:
 | Content and configuration reads | 20,000 reads |
 | Content and configuration writes | 15,000 writes |
 | Content and configuration storage | 2 GB |
-| CloudScript execution time | 200,000 GB-s |
+| CloudScript execution time | 20,000 GB-s |
 | CloudScript total executions | 200,000 executions |
 | Insights credits | Insights Performance Level 1 |
 
