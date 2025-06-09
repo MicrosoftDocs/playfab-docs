@@ -67,7 +67,7 @@ The base rate charge includes:
     > [!NOTE]
     > Titles in [Development Mode](development-mode.md) are not counted against included base rate usage.
 
-2. **[Technical support](PaidTechnicalSupport.md)** that is determined by the [account level](account-upgrades.md).
+2. **[Technical support](Support.md)** that is determined by the [account level](account-upgrades.md).
 
 ## Additional Section Definitions
 
