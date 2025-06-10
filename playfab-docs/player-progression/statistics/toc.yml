@@ -18,6 +18,8 @@
     href: metadata-statistics.md
   - name: Transactional writes
     href: transactional-writes.md
+  - name: Community statistics
+    href: community-statistics.md
   - name: API reference
     href: api-reference.md
 

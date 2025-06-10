@@ -63,6 +63,8 @@ landingContent:
             url: statistics/seasonal-statistics.md
           - text: Transactional writes
             url: statistics/transactional-writes.md
+          - text: Community statistics
+            url: statistics/community-statistics.md
       - linkListType:  reference
         links:
           - text: Statistics Limits
