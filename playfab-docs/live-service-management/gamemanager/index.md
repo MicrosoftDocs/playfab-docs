@@ -16,7 +16,7 @@ This article introduces Game Manager, the PlayFab developer portal. This article
 
 ## What is the Game Manager?
 
-The Game Manager is a web-based dashboard that provides access to your studios and tools to manage your games. It is your go-to destination for managing your studio and game configuration. Most PlayFab tutorials show you how to complete tasks in Game Manager and through API calls.
+The Game Manager is a web-based dashboard that provides access to your studios and tools to manage your games. It is your go-to destination for managing your studio and game configurations. Most PlayFab tutorials show you how to complete tasks in Game Manager, and through API calls.
 
 PlayFab's Game Manager offers a comprehensive backend suite, allowing you to select the services that best suit your game.
 
