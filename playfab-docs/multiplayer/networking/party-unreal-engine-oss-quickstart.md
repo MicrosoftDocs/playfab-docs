@@ -9,19 +9,19 @@ ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, ue4, ue5, middleware
 ---
 
-# QuickStart: PlayFab Online Subsystem (OSS)
+# QuickStart: PlayFab Online Subsystem
 
-This article helps you set up and use Azure PlayFab Multiplayer features like Lobby, Matchmaking, and Party for games built with Unreal Engine 4 (UE4) or Unreal Engine 5 (UE5). For the full list of supported platforms and versions in UE4 or UE5, see [Supported platforms] (party-unreal-engine-oss-overview.md).
+This article helps you set up and use Azure PlayFab Multiplayer features like Lobby, Matchmaking, and Party for games built with Unreal Engine 4 (UE4) or Unreal Engine 5 (UE5). For the full list of supported platforms and versions in UE4 or UE5, see [Supported platforms](party-unreal-engine-oss-overview.md).
 
-After following the relevant steps that are outlined in this page for your target platforms, you'll be ready to start using the OSS. Authentication, networking, VOIP, grouping into lobbies, and matchmaking is handled on your behalf with no other changes required.
+After following the relevant steps that are outlined in this page for your target platforms, you'll be ready to start using the PlayFab Online Subsystem (PF OSS). Authentication, networking, VOIP, grouping into lobbies, and matchmaking is handled on your behalf with no other changes required.
 
 ## Download and install PlayFab Online Subsystem
 
-Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to download or clone PlayFab Online Subsystem source (PF OSS). The downloaded or cloned repository name is PlayFabMultiplayerUnreal. The repository has to be renamed to OnlineSubsystemPlayFab. 
+Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUnreal) to download or clone the PF OSS source. The downloaded or cloned repository name is PlayFabMultiplayerUnreal. The repository has to be renamed to OnlineSubsystemPlayFab. 
 
 ## What you need
 
-* **PlayFab Title ID:** If you don't have a Title ID configured for PlayFab Party and Multiplayer Software Development Kits (SDKs), see [Enabling PlayFab Party](enable-party.md).
+* **PlayFab TitleID:** If you don't have a TitleID configured for PlayFab Party and Multiplayer Software Development Kits (SDKs), see [Enabling PlayFab Party](enable-party.md).
 
 ### Microsoft Game Development Kit (GDK), PC, Switch, PlayStation®5, and PlayStation®4
 
@@ -32,8 +32,8 @@ Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 ### Unreal Engine code base
 
 * Copy the OnlineSubsystemPlayFab folder and its contents to your Unreal Engine (UE) directory under **Engine\Plugins\Online**.
-* Run **GenerateProjectFiles.bat** to create project files for the engine.
-* Load the project into Visual Studio by selecting the new **UE5.sln** file.
+* Run ```GenerateProjectFiles.bat``` to create project files for the engine.
+* Load the project into Visual Studio by selecting the new ```UE5.sln``` file.
 * Set your solution configuration to **Development Editor** and your solution platform to **Win64**. Select the **UE5** target, and then select **Build**.
 
 ### Game code base
@@ -114,7 +114,7 @@ With all that done, we're nearly finished. There are only a few key platform-spe
 
 ### GDK
 
-If you're developing games using GDK, define the platform services:
+When developing games with the GDK, set up the platform services.
 
 ```ini
 [OnlineSubsystem]
@@ -124,7 +124,7 @@ NativePlatformService=GDK
 
 ### Steam
 
-If you're developing games for Win64 with Steam, define your platform services:
+If you're developing games for Win64 with Steam, define your platform services.
 
 ```ini
 [OnlineSubsystem]
@@ -142,7 +142,7 @@ For more information about PS5™ and PS4™, see the [ReadMe.md](https://dev.az
 
 ### Cross-platform
 
-Finally, if your game makes use PlayFab's cross-platform networking support, define which platforms you permit to connect:
+If your game uses PlayFab's cross-platform networking support, define which platforms you permit to connect.
 
 ```ini
 [/Script/OnlineSubsystemUtils.OnlineEngineInterfaceImpl]
@@ -166,7 +166,7 @@ All platforms allow VoIP by default. To disable VoIP for a specific platform, ad
 +Platforms=PS5
 ```
 
-These steps complete the setup of OSS required to be used in your game. Good luck!
+These steps complete the setup of OSS required to be used in your game.
 
 ## Use in Game Code
 
@@ -175,7 +175,7 @@ These steps complete the setup of OSS required to be used in your game. Good luc
 
 Similar to using other Online Subsystem plugins:
 
-Add `PublicDependencyModuleNames.AddRange(new string[] { "OnlineSubsystem", "OnlineSubsystemUtils" });` in **Game.Build.cs**, then use it the same way as other game plugins.
+Add `PublicDependencyModuleNames.AddRange(new string[] { "OnlineSubsystem", "OnlineSubsystemUtils" });` in Game.Build.cs, then use it the same way as other game plugins.
 
 Example code in GameSession.cpp:
 
@@ -292,6 +292,7 @@ Example Modules config in PlayFabParty.uplugin for UE4.27+:
 ```
 
 ### HandShake failure on Steam
+
 If you're seeing handshake failure (such as `LogHandshake: IncomingConnectionless: Error reading handshake packet`), refer to this [UE Forum post](https://forums.unrealengine.com/t/ue-5-1-steam-sockets-problem/696726) to check the settings.
 
 ## Workflow for OnlineSubsystemPlayFab
