@@ -35,7 +35,7 @@ For information about setting up the PlayFab Unity3D SDK, see [Quickstart: PlayF
 
 ## About the code examples
 
-The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle nonsynchronous tasks. To run the sample code using the C# SDK, you must modify the code to use an async Task model. Methods that must be modified have Async append to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
+The C# Samples in this article are written for the Unity SDK. The Unity SDK uses an event driven model to handle non-synchronous tasks. To run the sample code using the C# SDK, you must modify the code to use an async Task model. Methods that must be modified have Async appended to the method name in the signature. For example, SetObject in the Unity SDK becomes SetObjectAsync in the C# SDK. For more information, see [Asynchronous programming with async and await](/dotnet/csharp/programming-guide/concepts/async/).
 
 Although you can use an existing Unity project, this quickstart assumes you're using the sample created when you complete the [Quickstart: PlayFab Client library for C# in Unity](../../sdks/unity3d/quickstart.md).
 
