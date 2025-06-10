@@ -267,6 +267,7 @@ Users might face issues when trying to create an Unreal Engine Installed Build w
             }
         ],
     ```
+
 * Repeat this process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
 
 **If you are using UE4.27+,**
