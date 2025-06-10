@@ -93,9 +93,9 @@ You can always get and set player data through Game Manager by performing the fo
     }
     ```
 
-6.Call `SetUserData` and `GetUserData` in the `OnLoginSuccess` method.
+6. Call `SetUserData` and `GetUserData` in the `OnLoginSuccess` method.
 
-```csharp
+    ```csharp
     private void OnLoginSuccess(LoginResult result) {
         Debug.Log("Congratulations, you made your first successful API call!");
         SetUserData();
