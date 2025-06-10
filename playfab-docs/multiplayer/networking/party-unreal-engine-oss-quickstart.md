@@ -253,7 +253,6 @@ Users might face issues when trying to create an Unreal Engine Installed Build w
 	```
 
 **If you are using UE5.0 - 5.3:**
-
  * Locate the directory where Unreal Engine is installed on the machine.
  * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
  * Open PlayFabParty.uplugin, and update Modules config with **PlatformDenyList**:
