@@ -21,6 +21,9 @@ June 11, 2025
 - Added new [PFMultiplayerConnectToLobby](../playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerconnecttolobby.md)
 - Added a `lobbyId` field to the [PFLobbyInviteReceivedStateChange](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbyinvitereceivedstatechange.md) struct to support joining using just the lobby id.
 
+### Bug fixes
+- Added double unsubscribe mitigation for scenarios that generate multiple unsubscribe notifications from the PubSub layer.
+
 ## 1.7.16
 
 May 7, 2025
