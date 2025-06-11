@@ -5,7 +5,7 @@ description: "PFMultiplayer C/C++ API overview - PFLobby.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/14/2024
+ms.date: 06/10/2025
 ---
 
 # PFMultiplayer C/C++ API overview - PFLobby.h
@@ -46,6 +46,7 @@ ms.date: 02/14/2024
 | [PFLobbyServerPostUpdateAsServer](functions/pflobbyserverpostupdateasserver.md) | Post an update to a client-owned lobby as a joined server. |  
 | [PFLobbySetCustomContext](functions/pflobbysetcustomcontext.md) | Configures an optional, custom pointer-sized context value with this lobby object. |  
 | [PFMultiplayerClaimServerLobby](functions/pfmultiplayerclaimserverlobby.md) | Claim ownership of a pre-existing server lobby. |  
+| [PFMultiplayerConnectToLobby](functions/pfmultiplayerconnecttolobby.md) | Connect to a lobby in which the local PlayFab entity was already added as a member. |  
 | [PFMultiplayerCreateAndClaimServerLobby](functions/pfmultiplayercreateandclaimserverlobby.md) | Create a new lobby as a game_server entity. |  
 | [PFMultiplayerCreateAndJoinLobby](functions/pfmultiplayercreateandjoinlobby.md) | Create a new lobby and add the creating PlayFab entity to it. |  
 | [PFMultiplayerFindLobbies](functions/pfmultiplayerfindlobbies.md) | Search for lobbies on behalf of the local user. |  
@@ -80,6 +81,7 @@ ms.date: 02/14/2024
 | --- | --- |  
 | [PFLobbyAddMemberCompletedStateChange](structs/pflobbyaddmembercompletedstatechange.md) | Information specific to the *AddMemberCompleted* type of state change. |  
 | [PFLobbyClaimServerLobbyCompletedStateChange](structs/pflobbyclaimserverlobbycompletedstatechange.md) | Information specific to the *ClaimServerLobbyCompleted* type of state change. |  
+| [PFLobbyConnectToLobbyCompletedStateChange](structs/pflobbyconnecttolobbycompletedstatechange.md) | Information specific to the *ConnectToLobbyCompleted* type of state change. |  
 | [PFLobbyCreateAndClaimServerLobbyCompletedStateChange](structs/pflobbycreateandclaimserverlobbycompletedstatechange.md) | Information specific to the *CreateAndClaimServerLobbyCompleted* type of state change. |  
 | [PFLobbyCreateAndJoinLobbyCompletedStateChange](structs/pflobbycreateandjoinlobbycompletedstatechange.md) | Information specific to the *CreateAndJoinLobbyCompleted* type of state change. |  
 | [PFLobbyDisconnectedStateChange](structs/pflobbydisconnectedstatechange.md) | Information specific to the *Disconnected* type of state change. |  

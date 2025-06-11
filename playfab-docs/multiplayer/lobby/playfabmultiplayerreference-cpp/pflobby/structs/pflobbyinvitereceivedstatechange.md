@@ -5,7 +5,7 @@ description: "Information specific to the *InviteReceived* type of state change.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 03/15/2022
+ms.date: 06/10/2025
 ---
 
 # PFLobbyInviteReceivedStateChange  
@@ -19,6 +19,7 @@ struct PFLobbyInviteReceivedStateChange : PFLobbyStateChange {
     PFEntityKey listeningEntity;  
     PFEntityKey invitingEntity;  
     const char* connectionString;  
+    const char* lobbyId;  
 }  
 ```
   
@@ -36,6 +37,11 @@ The entity which has invited the ```listeningEntity``` to a lobby.
 *is null-terminated*  
   
 The connection string of the lobby to which the ```listeningEntity``` has been invited.
+  
+**`lobbyId`** &nbsp; const char*  
+*is null-terminated*  
+  
+The ID of the lobby to which the ```listeningEntity``` has been invited.
   
   
 ## Requirements  
