@@ -22,7 +22,7 @@ June 11, 2025
 - Added a `lobbyId` field to the [PFLobbyInviteReceivedStateChange](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbyinvitereceivedstatechange.md) struct to support joining using just the lobby id.
 
 ### Bug fixes
-- Fixed bug where PubSub connection failures could cause library to crash
+- Fixed bug where PubSub connection failures could cause library to crash.
 
 ## 1.7.16
 
