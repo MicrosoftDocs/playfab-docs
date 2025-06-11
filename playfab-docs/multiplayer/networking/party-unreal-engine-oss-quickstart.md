@@ -31,7 +31,7 @@ Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 
 ### Unreal Engine code base
 
-* Copy the OnlineSubsystemPlayFab folder and its contents to your Unreal Engine (UE) directory under **Engine\Plugins\Online**.
+* Copy the OnlineSubsystemPlayFab folder and its contents to your Unreal Engine directory under **Engine\Plugins\Online**.
 * Run ```GenerateProjectFiles.bat``` to create project files for the engine.
 * Load the project into Visual Studio by selecting the new ```UE5.sln``` file.
 * Set your solution configuration to **Development Editor** and your solution platform to **Win64**. Select the **UE5** target, and then select **Build**.
@@ -67,7 +67,7 @@ Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 }
 ```
 
-* Generate the game solution file by selecting the `{ProjectName}.uproject` file and then select **Switch Unreal Engine Version** to the UE code path.
+* Generate the game solution file by selecting the `{ProjectName}.uproject` file and then select **Switch Unreal Engine Version** to the Unreal Engine code path.
 
 ## Game Configuration
 
@@ -154,7 +154,7 @@ If your game uses PlayFab's cross-platform networking support, define which plat
 +CompatibleUniqueNetIdTypes=PS5
 ```
 
-All platforms allow VoIP by default. To disable VoIP for a specific platform, add the platform model name to your UE configuration file as shown in the following example.
+All platforms allow VoIP by default. To disable VoIP for a specific platform, add the platform model name to your Unreal Engine configuration file as shown in the following example.
 
 ```ini
 [OnlineSubsystemPlayFabVoiceChatDisabledPlatforms]
@@ -233,62 +233,66 @@ Users might face issues when trying to create an Unreal Engine Installed Build w
 
 **If you are using UE5.5 or UE5.4:**
 
- * You might encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`
- * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\
- * Open OnlineSubsystemGDK.uplugin and set `PlayFabParty` to disabled:
+* You might encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`
+* Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\
+* Open OnlineSubsystemGDK.uplugin and set `PlayFabParty` to disabled:
+
     ```json
     {
         "Name": "PlayFabParty",
         "Enabled": false
     }
-	```
+    ```
 
- * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\Source\
- * Open OnlineSubsystemGDK.Build.cs and comment out the inclusion of `PlayFabParty`:
+* Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\Source\
+* Open OnlineSubsystemGDK.Build.cs and comment out the inclusion of `PlayFabParty`:
+
     ```csharp
     if (Target.bCompileAgainstEngine)
     {
         //PublicDependencyModuleNames.Add("PlayFabParty");
     }
-	```
+    ```
 
 **If you are using UE5.0 - 5.3:**
- * Locate the directory where Unreal Engine is installed on the machine.
- * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
- * Open PlayFabParty.uplugin, and update Modules config with **PlatformDenyList**:
-    ```ini
-    "Modules": [
-            {
-                "Name": "PlayFabParty",
-                "Type": "Runtime",
-                "LoadingPhase": "Default",
-                "HasExplicitPlatforms": true,
-                "PlatformDenyList": [ "WinGDK", "Win64" ]
-            }
-        ],
-    ```
+
+* Locate the directory where Unreal Engine is installed on the machine.
+* Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
+* Open PlayFabParty.uplugin, and update Modules config with **PlatformDenyList**:
+
+```ini
+"Modules": [
+        {
+        "Name": "PlayFabParty",
+        "Type": "Runtime",
+        "LoadingPhase": "Default",
+        "HasExplicitPlatforms": true,
+        "PlatformDenyList": [ "WinGDK", "Win64" ]
+        }
+    ],
+ ```
 
 * Repeat this process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
 
 **If you are using UE4.27+,**
 
- * Locate the directory where Unreal Engine is installed on the machine.
- * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
- * Open PlayFabParty.uplugin
- * Replace the key **WhitelistPlatforms** with **BlacklistPlatforms**
- * Repeat the process for XboxOneGDK (PlayFabParty_XboxOneGDK.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **BlacklistPlatforms**.
-    
+* Locate the directory where Unreal Engine is installed on the machine.
+* Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
+* Open PlayFabParty.uplugin
+* Replace the key **WhitelistPlatforms** with **BlacklistPlatforms**
+* Repeat the process for XboxOneGDK (PlayFabParty_XboxOneGDK.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **BlacklistPlatforms**.
+
 Example Modules config in PlayFabParty.uplugin for UE4.27+:
 
 ```ini
-	"Modules": [
-		{
-			"Name": "PlayFabParty",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"BlacklistPlatforms": ["WinGDK", "Win64"]
-		}
-	],
+"Modules": [
+       {
+            "Name": "PlayFabParty",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "BlacklistPlatforms": ["WinGDK", "Win64"]
+        }
+    ],
 ```
 
 ### HandShake failure on Steam
@@ -298,10 +302,12 @@ If you're seeing handshake failure (such as `LogHandshake: IncomingConnectionles
 ## Workflow for OnlineSubsystemPlayFab
 
 The steps outlined in the [Platform Specific Considerations](#platform-specific-considerations) section ask you to include:
+
 ```ini
 [OnlineSubsystem]
 DefaultPlatformService=PlayFab
 ```
+
 UE OnlineSubsystemModule creates an online subsystem instance for PlayFab and starts creating ⁠the PlayFabSingleton. At this point, the SDK is initialized in⁠ `FOnlineSubsystemPlayFab::Init()`,
 where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside the [Game Configuration](#game-configuration) file. During initialization, we'll `⁠CreatePlayFabSocketSubsystem()` as the main online subsystem. 
 
