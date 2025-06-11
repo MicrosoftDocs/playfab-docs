@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.8.0
+
+June 11, 2025
+
+### New Features
+
+- Added new [PFMultiplayerConnectToLobby](../playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerconnecttolobby.md)
+
 ## 1.7.16
 
 May 7, 2025
