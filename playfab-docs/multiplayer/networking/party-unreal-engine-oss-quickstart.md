@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 # QuickStart: PlayFab Online Subsystem
 
-This article helps you set up and use Azure PlayFab Multiplayer features like Lobby, Matchmaking, and Party for games built with Unreal Engine 4 (UE4) or Unreal Engine 5 (UE5). For the full list of supported platforms and versions in UE4 or UE5, see [Supported platforms](party-unreal-engine-oss-overview.md).
+This article helps you set up and use Azure PlayFab Multiplayer features like Lobby, Matchmaking, and Party for games built with Unreal Engine 4 or Unreal Engine 5. For the full list of supported platforms and versions in Unreal Engine 4 or Unreal Engine 5, see [Supported platforms](party-unreal-engine-oss-overview.md).
 
 After following the relevant steps that are outlined in this page for your target platforms, you'll be ready to start using the PlayFab Online Subsystem (PF OSS). Authentication, networking, VOIP, grouping into lobbies, and matchmaking is handled on your behalf with no other changes required.
 
@@ -34,13 +34,13 @@ Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 * Copy the OnlineSubsystemPlayFab folder and its contents to your Unreal Engine directory under **Engine\Plugins\Online**.
 * Run ```GenerateProjectFiles.bat``` to create project files for the engine.
 * Load the project into Visual Studio by selecting the new ```UE5.sln``` file.
-* Set your solution configuration to **Development Editor** and your solution platform to **Win64**. Select the **UE5** target, and then select **Build**.
+* Set your solution configuration to **Development Editor** and your solution platform to **Win64**. Select the **Unreal Engine 5** target, and then select **Build**.
 
 ### Game code base
 
 * To add OnlineSubsystemPlayFab to your plugin list, apply the following changes to the Plugins section of the project file.
   * Remove any platforms that you're not shipping on
-  * Use XboxOneGDK instead of XB1 if you're using UE4. UE5 deprecates XboxOneGDK
+  * Use XboxOneGDK instead of XB1 if you're using Unreal Engine 4. Unreal Engine 5 deprecates XboxOneGDK
 
 ```json
 {
@@ -74,7 +74,7 @@ Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 * No matter which platform you're targeting, your game needs to configure certain PlayFab specific values in your intended platform target's INI file (located at [yourGameDirectory]/Platforms/[yourPlatform]/Config).
   * **Xbox Series X GDK:** XSXEngine.ini
   * **PC GDK:** WinGDKEngine.ini
-  * **Xbox One GDK:** XB1Engine.ini (or XboxOneGDKEngine.ini if you're using UE4)
+  * **Xbox One GDK:** XB1Engine.ini (or XboxOneGDKEngine.ini if you're using Unreal Engine 4)
   * **PC Steam:** WindowsEngine.ini (or find it in [yourGameDirectory]/Config/Windows)
   * **Nintendo Switch** SwitchEngine.ini
   * **PS4™** PS4Engine.ini
@@ -231,7 +231,7 @@ Ways to help you troubleshoot issues.
 
 Users might face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
 
-**If you're using UE5.5 or UE5.4:**
+**If you're using Unreal Engine 5.5 or Unreal Engine 5.4:**
 
 * You might encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`
 * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\
@@ -254,7 +254,7 @@ if (Target.bCompileAgainstEngine)
 }
 ```
 
-**If you're using UE5.0 - 5.3:**
+**If you're using Unreal Engine 5.0 - 5.3:**
 
 * Locate the directory where Unreal Engine is installed on the machine.
 * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
@@ -274,7 +274,7 @@ if (Target.bCompileAgainstEngine)
 
 * Repeat this process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
 
-**If you're using UE4.27+:**
+**If you're using Unreal Engine 4.27+:**
 
 * Locate the directory where Unreal Engine is installed on the machine.
 * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
@@ -282,7 +282,7 @@ if (Target.bCompileAgainstEngine)
 * Replace the key **WhitelistPlatforms** with **BlacklistPlatforms**
 * Repeat the process for XboxOneGDK (PlayFabParty_XboxOneGDK.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **BlacklistPlatforms**.
 
-Modules config example in PlayFabParty.uplugin for UE4.27+:
+Modules config example in PlayFabParty.uplugin for Unreal Engine 4.27+:
 
 ```ini
 "Modules": [
@@ -297,7 +297,7 @@ Modules config example in PlayFabParty.uplugin for UE4.27+:
 
 ### HandShake failure on Steam
 
-If you're seeing handshake failure (such as `LogHandshake: IncomingConnectionless: Error reading handshake packet`), refer to this [UE Forum post](https://forums.unrealengine.com/t/ue-5-1-steam-sockets-problem/696726) to check the settings.
+If you're seeing handshake failure (such as `LogHandshake: IncomingConnectionless: Error reading handshake packet`), refer to this [Unreal Engine Forum post](https://forums.unrealengine.com/t/ue-5-1-steam-sockets-problem/696726) to check the settings.
 
 ## Workflow for OnlineSubsystemPlayFab
 
@@ -308,7 +308,7 @@ The steps outlined in the [Platform Specific Considerations](#platform-specific-
 DefaultPlatformService=PlayFab
 ```
 
-UE OnlineSubsystemModule creates an online subsystem instance for PlayFab and starts creating ⁠the PlayFabSingleton. At this point, the SDK is initialized in⁠ `FOnlineSubsystemPlayFab::Init()`,
+Unreal Engine OnlineSubsystemModule creates an online subsystem instance for PlayFab and starts creating ⁠the PlayFabSingleton. At this point, the SDK is initialized in⁠ `FOnlineSubsystemPlayFab::Init()`,
 where it initializes both Party and Multiplayer SDKs with PlayFab TitleID (this titleID is defined inside the [Game Configuration](#game-configuration) file. During initialization, we'll `⁠CreatePlayFabSocketSubsystem()` as the main online subsystem. 
 
 Workflow of Multiplayer SDK: `FOnlineSubsystemPlayFab::Init()` initializes the `InitializeMultiplayer()` multiplayer SDK singleton for your title. In the `PlayFabLobby.cpp`, `FPlayFabLobby::DoWork()` processes the
