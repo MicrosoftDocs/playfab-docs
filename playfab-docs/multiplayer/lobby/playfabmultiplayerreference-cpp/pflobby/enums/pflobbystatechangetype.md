@@ -5,7 +5,7 @@ description: "The types of state changes that can occur in the Lobby library."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/14/2024
+ms.date: 06/10/2025
 ---
 
 # PFLobbyStateChangeType  
@@ -40,6 +40,7 @@ enum class PFLobbyStateChangeType  : uint32_t
     JoinLobbyAsServerCompleted = 20,  
     ServerPostUpdateAsServerCompleted = 21,  
     ServerLeaveLobbyAsServerCompleted = 22,  
+    ConnectToLobbyCompleted = 23,  
 }  
 ```  
   
@@ -70,6 +71,7 @@ enum class PFLobbyStateChangeType  : uint32_t
 | JoinLobbyAsServerCompleted | The operation started by a previous call to [PFMultiplayerJoinLobbyAsServer()](../functions/pfmultiplayerjoinlobbyasserver.md) completed.<br/><br/> To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> The PFLobbyStateChange object should be cast to a [PFLobbyJoinLobbyAsServerCompletedStateChange](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) object for more information. |  
 | ServerPostUpdateAsServerCompleted | The operation started by a previous call to [PFLobbyServerPostUpdateAsServer()](../functions/pflobbyserverpostupdateasserver.md) completed.<br/><br/> To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> The PFLobbyStateChange object should be cast to a [PFLobbyServerPostUpdateAsServerCompletedStateChange](../structs/pflobbyserverpostupdateasservercompletedstatechange.md) object for more information. |  
 | ServerLeaveLobbyAsServerCompleted | The operation started by a previous call to [PFLobbyServerLeaveAsServer()](../functions/pflobbyserverleaveasserver.md) completed.<br/><br/> To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> The PFLobbyStateChange object should be cast to a [PFLobbyServerLeaveLobbyAsServerCompletedStateChange](../structs/pflobbyserverleavelobbyasservercompletedstatechange.md) object for more information. |  
+| ConnectToLobbyCompleted | The operation started by a previous call to [PFMultiplayerConnectToLobby()](../functions/pfmultiplayerconnecttolobby.md) completed.<br/><br/> The PFLobbyStateChange object should be cast to a [PFLobbyConnectToLobbyCompletedStateChange](../structs/pflobbyconnecttolobbycompletedstatechange.md) object for more information. |  
   
   
 ## Requirements  
