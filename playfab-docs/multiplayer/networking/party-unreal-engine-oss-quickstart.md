@@ -263,11 +263,11 @@ if (Target.bCompileAgainstEngine)
 ```ini
 "Modules": [
         {
-        "Name": "PlayFabParty",
-        "Type": "Runtime",
-        "LoadingPhase": "Default",
-        "HasExplicitPlatforms": true,
-        "PlatformDenyList": [ "WinGDK", "Win64" ]
+            "Name": "PlayFabParty",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "HasExplicitPlatforms": true,
+            "PlatformDenyList": [ "WinGDK", "Win64" ]
         }
     ],
  ```
