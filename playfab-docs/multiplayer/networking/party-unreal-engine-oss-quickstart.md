@@ -282,7 +282,7 @@ if (Target.bCompileAgainstEngine)
 * Replace the key **WhitelistPlatforms** with **BlacklistPlatforms**
 * Repeat the process for XboxOneGDK (PlayFabParty_XboxOneGDK.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **BlacklistPlatforms**.
 
-Example Modules config in PlayFabParty.uplugin for UE4.27+:
+Modules config example in PlayFabParty.uplugin for UE4.27+:
 
 ```ini
 "Modules": [
