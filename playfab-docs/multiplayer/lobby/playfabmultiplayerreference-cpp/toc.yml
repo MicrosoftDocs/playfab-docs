@@ -82,6 +82,8 @@
     href: pflobby/functions/pflobbysetcustomcontext.md
   - name: PFMultiplayerClaimServerLobby
     href: pflobby/functions/pfmultiplayerclaimserverlobby.md
+  - name: PFMultiplayerConnectToLobby
+    href: pflobby/functions/pfmultiplayerconnecttolobby.md
   - name: PFMultiplayerCreateAndClaimServerLobby
     href: pflobby/functions/pfmultiplayercreateandclaimserverlobby.md
   - name: PFMultiplayerCreateAndJoinLobby
@@ -198,6 +200,8 @@
     href: pflobby/structs/pflobbyaddmembercompletedstatechange.md
   - name: PFLobbyClaimServerLobbyCompletedStateChange
     href: pflobby/structs/pflobbyclaimserverlobbycompletedstatechange.md
+  - name: PFLobbyConnectToLobbyCompletedStateChange
+    href: pflobby/structs/pflobbyconnecttolobbycompletedstatechange.md
   - name: PFLobbyCreateAndClaimServerLobbyCompletedStateChange
     href: pflobby/structs/pflobbycreateandclaimserverlobbycompletedstatechange.md
   - name: PFLobbyCreateAndJoinLobbyCompletedStateChange
