@@ -188,21 +188,21 @@ Example code in GameSession.cpp:
 bool Game::JoinSession(const FUniqueNetIdPtr UserId, FName SessionName, const FOnlineSessionSearchResult& SearchResult)
 {
 
-	IOnlineSubsystem* OnlineSub = Online::GetSubsystem(GetWorld()); // Using OnlineSubsystemPlayFab plugin
-	if (OnlineSub)
-	{
-		IOnlineSessionPtr Sessions = OnlineSub->GetSessionInterface(); // Using OnlineSessionInterfacePlayFab.h
-		if (Sessions.IsValid() && UserId.IsValid())
-		{
-			// ...
-		}
-	}
-	// ...
+    IOnlineSubsystem* OnlineSub = Online::GetSubsystem(GetWorld()); // Using OnlineSubsystemPlayFab plugin
+    if (OnlineSub)
+    {
+        IOnlineSessionPtr Sessions = OnlineSub->GetSessionInterface(); // Using OnlineSessionInterfacePlayFab.h
+        if (Sessions.IsValid() && UserId.IsValid())
+        {
+            // ...
+        }
+    }
+    // ...
 }
-
 ```
 
 Example code in GameFriends.cpp:
+
 ```cpp
 #include "OnlineSubsystem.h"
 #include "OnlineSubsystemUtils.h"
@@ -211,15 +211,15 @@ Example code in GameFriends.cpp:
 
 void Game::ViewFriendProfile()
 {
-	IOnlineSubsystem* OnlineSub = Online::GetSubsystem(GetWorld()); // Using OnlineSubsystemPlayFab plugin
-	if (OnlineSub)
-	{
-		IOnlineIdentityPtr Identity = OnlineSub->GetIdentityInterface(); // Using OnlineIdentityInterfacePlayFab.h
-		if (Identity.IsValid() && Friends.IsValidIndex(FriendIndex))
-		{
-			// ....
-		}
-	}
+    IOnlineSubsystem* OnlineSub = Online::GetSubsystem(GetWorld()); // Using OnlineSubsystemPlayFab plugin
+    if (OnlineSub)
+    {
+        IOnlineIdentityPtr Identity = OnlineSub->GetIdentityInterface(); // Using OnlineIdentityInterfacePlayFab.h
+        if (Identity.IsValid() && Friends.IsValidIndex(FriendIndex))
+        {
+            // ....
+        }
+    }
 }
 ```
 
@@ -237,22 +237,22 @@ Users might face issues when trying to create an Unreal Engine Installed Build w
 * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\
 * Open OnlineSubsystemGDK.uplugin and set `PlayFabParty` to disabled:
 
-    ```json
-    {
-        "Name": "PlayFabParty",
-        "Enabled": false
-    }
-    ```
+```json
+{
+    "Name": "PlayFabParty",
+    "Enabled": false
+}
+```
 
 * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\Source\
 * Open OnlineSubsystemGDK.Build.cs and comment out the inclusion of `PlayFabParty`:
 
-    ```csharp
-    if (Target.bCompileAgainstEngine)
-    {
-        //PublicDependencyModuleNames.Add("PlayFabParty");
-    }
-    ```
+```csharp
+if (Target.bCompileAgainstEngine)
+{
+    //PublicDependencyModuleNames.Add("PlayFabParty");
+}
+```
 
 **If you are using UE5.0 - 5.3:**
 
