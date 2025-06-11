@@ -231,7 +231,7 @@ Ways to help you troubleshoot issues.
 
 Users might face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
 
-#### If you are using UE5.5 or UE5.4
+**If you're using UE5.5 or UE5.4:**
 
 * You might encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`
 * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\
@@ -254,7 +254,7 @@ if (Target.bCompileAgainstEngine)
 }
 ```
 
-**If you are using UE5.0 - 5.3:**
+**If you're using UE5.0 - 5.3:**
 
 * Locate the directory where Unreal Engine is installed on the machine.
 * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
@@ -274,7 +274,7 @@ if (Target.bCompileAgainstEngine)
 
 * Repeat this process for XB1 (PlayFabParty_XB1.uplugin) and XSX (PlayFabParty_XSX.uplugin) if these platforms are required for the Installed Build. If Win64 is also a required platform for the installed build, add Win64 in the array of **PlatformDenyList**.
 
-**If you are using UE4.27+,**
+**If you're using UE4.27+:**
 
 * Locate the directory where Unreal Engine is installed on the machine.
 * Navigate to Engine\Platforms\GDK\Plugins\Online\PlayFabParty
