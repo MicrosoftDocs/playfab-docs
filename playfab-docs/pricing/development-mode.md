@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 # Titles in Development mode
 
 > [!IMPORTANT]
-> When you're ready to scale up, it's important to make sure you switch your title from "Development mode" to "Live." To make this change, use the **Launch** button on the Game Overview page or the PlayFab main dashboard. This change ensures that the title isn't limited to 100,000 player accounts.
+> When you're ready to scale up, it's important to make sure you switch your title from "Development mode" to "Live." To make this change, use the **Launch** button on the Game Overview page or the PlayFab main dashboard. This change ensures that the title isn't limited to 100,000 unique users.
 
 All PlayFab titles are in one of two possible states - development mode and live. Development mode is, as the name suggests, meant for titles currently in development. This mode provides developers with the flexibility to connect a title to PlayFab without running up the bill.
 
-A game in development mode can have up to 100,000 players. These titles can be [launched](title-launches.md) through Game Manager and is then considered live. Launching a title removes all development mode limitations and allows the title to expand outside of test markets.
+A game in development mode can have up to 100,000 unique users. These titles can be [launched](title-launches.md) through Game Manager and is then considered live. Launching a title removes all development mode limitations and allows the title to expand outside of test markets.
 
 By default, every title created starts in development mode. The **My Studios and Titles** main page indicate which state a title is in through a mark on the bottom, left corner of the title block. This indicator can also be viewed at the top of the left nav within a title. Titles in development mode are labeled **Development**. Live titles are blank.
 
@@ -65,7 +65,7 @@ There are some studio and title limits associated with development mode:
 
 | Limit | Amount |
 | --- | --- |
-| Unique users | 100,000 users |
+| Unique users | 100,000 users created |
 | PlayStream events | 1 million events |
 | Telemetry events | 1 million events |
 | Profile reads | 5 million reads |
@@ -85,7 +85,7 @@ There are some studio and title limits associated with development mode:
 | Insights credits | Insights Performance Level 1 |
 
 **Definition of unique users:**
-Unique users are the total number of players created in your title which is distinct from monthly active users or daily active users.
+Unique users are the total number of players ever created in your development mode title, which is distinct from monthly active users or daily active users.
 
 > [!NOTE]
 > You can learn more about title limits at [PlayFab Pricing](https://www.playfab.com/pricing).
