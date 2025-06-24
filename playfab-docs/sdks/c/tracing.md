@@ -43,3 +43,7 @@ void CALLBACK TraceCallback(
 
 HCTraceSetClientCallback(TraceCallback);
 ```
+
+## Reference
+
+[API reference documentation](../../api-references/c/pftrace/pftrace_members.md)
