@@ -34,3 +34,8 @@ Game Saves allows you to provide players with a cross-progression experience tha
 ## Gaming languages and engines currently supported
 - C++
 - Unreal Engine
+
+## Requirements
+- A [PlayFab developer account](https://developer.playfab.com)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/) installed (to build from source)
+- For public preview, we are delivering Game Saves only through the [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/). A preview of the GDK is required. Once you are onboarded, we will provide access to the preivew with further instructions.
