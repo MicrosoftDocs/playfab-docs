@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # User-Generated Content (UGC) quickstart
 
-The purpose of this guide is to explain how to quickly get started with UGC, using direct service-to-service calls. We will show you step by step how to connect to the draft UGC content items, publish those items, and then search and find them.
+The purpose of this guide is to explain how to quickly get started with UGC, using direct service-to-service calls. We show you step by step how to connect to the draft UGC content items, publish those items, and then search and find them.
 
 ## Get an Entity Token
 
-UGC is designed to work with PlayFab entities, so the first step is to get an entity token using `LoginWithCustomID`. As a service call, that looks something like this:
+UGC is designed to work with PlayFab entities, so the first step is to get an entity token using [LoginWithCustomID](/rest/api/playfab/client/authentication/login-with-custom-id). This example shows a service call.
 
 ```json
 {
@@ -26,9 +26,51 @@ UGC is designed to work with PlayFab entities, so the first step is to get an en
 }
 ```
 
+## Create Blob URLs
+
+The UGC system uses [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction) to store all content (files and images) associated with your title's UGC. To upload the content, we first need to call the [CreateUploadUrls](/rest/api/playfab/economy/catalog/create-upload-urls) API, passing in the file names and sizes (in bytes) to create the new blobs. For example, if you wanted to upload a text file and PNG image, you would pass in the following to the request body:
+
+```json
+{
+  "Files": [
+    {
+      "FileName": "HelloWorld.txt",
+      "FileSize": 12
+    },
+    {
+      "FileName": "PlayFabLogo.png",
+      "FileSize": 20725
+    }
+  ]
+}
+```
+
+The response includes an `Id` and `Url` for each piece of content:
+
+```json
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "UploadUrls": [
+            {
+                "Id": "[Content ID]",
+                "Url": "[Content Url + '?' + Token]",
+                "FileName": "HelloWorld.txt"
+            },
+            {
+                "Id": "[Image ID]",
+                "Url": "[Image Url + '?' + Token]",
+                "FileName": "PlayFabLogo.png"
+            }
+        ]
+    }
+}
+```
+
 ## Create a draft UGC item
 
-You create "draft" UGC items by calling the `CreateDraftItem` API with the ``"Type":"ugc"`` parameter. Draft items are designed to be reviewed and accessed by their creators before being moved to a published state. To create a draft item you need:
+You create "draft" UGC items by calling the [CreateDraftItem](/rest/api/playfab/economy/catalog/create-draft-item) API with the ``"Type":"ugc"`` parameter. Creators can review and access draft items before publishing them. To create a draft item, you need:
 
 - The `EntityToken` from the previous call in the X-EntityToken header.
 - The `Entity.Id` from the previous call in the item's `CreatorEntityKey.Id`.
@@ -55,7 +97,7 @@ This call looks something like the following.
 }
 ```
 
-This will return the created Draft Item with an `Id`. We'll want to keep track of this `Id` for later.
+This returns the created Draft Item with an `Id`. Save the `Id` so you can use it later.
 
 ```json
        "Item": {
@@ -82,7 +124,7 @@ This will return the created Draft Item with an `Id`. We'll want to keep track o
 
 ## Get draft item IDs for a player
 
-To get draft item IDs for a particular player, the `GetEntityDraftItems` API can be used. Title entities can call this API with player ID in the `Entity` parameter, and the API will return a list of Draft Items for that particular player. Only Title Entities can pass in an `Entity` parameter. Player entities can call the API without an `Entity` parameter and the API will return a list of draft items created by the calling player.
+To get draft item IDs for a particular player, the [GetEntityDraftItems](/rest/api/playfab/economy/catalog/get-entity-draft-items) API can be used. Title entities can call this API with player ID in the `Entity` parameter, and the API returns a list of Draft Items for that particular player. Only Title Entities can pass in an `Entity` parameter. Player entities can call the API without an `Entity` parameter and the API returns a list of draft items created by the calling player.
 
 ```json
 {
@@ -98,7 +140,7 @@ To get draft item IDs for a particular player, the `GetEntityDraftItems` API can
 
 ## Publish a UGC item
 
-Once an item is in draft, you can then push it to a published state using `PublishDraftItem`. Once a UGC item is published, it's generally searchable and available publicly. You need to use the item `Id` returned from the `CreateDraftItem` response.
+Once an item is in draft, you can then push it to a published state using [PublishDraftItem](/rest/api/playfab/economy/catalog/publish-draft-item). Once a UGC item is published, it's searchable and available publicly. You need to use the item `Id` returned from the `CreateDraftItem` response.
 
 ```json
 {
@@ -108,7 +150,7 @@ Once an item is in draft, you can then push it to a published state using `Publi
 
 ## Get the published status of a UGC item
 
-Using the item `Id`, you can get the status of a publish for an item in your UGC catalog using the `GetItemPublishStatus` API.
+Using the item `Id`, you can get the status of a publish for an item in your UGC catalog using the [GetItemPublishStatus](/rest/api/playfab/economy/catalog/get-item-publish-status) API.
 
 ```json
 {
@@ -124,11 +166,11 @@ The possible publish `Result` values are as follows:
 - `Failed`
 - `Canceled`
 
-Republishing an item will update the Published Item to match the current Draft Item.
+Republishing an item updates the Published Item to match the current Draft Item.
 
-## Do a simple search
+## Do a search
 
-Once the publish call succeeds, the item can be accessed by all players via the Public Catalog. The  [`SearchItems` API](/rest/api/playfab/economy/catalog/search-items?view=playfab-rest) executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. The `Filter`, `OrderBy`, and `Select` fields use OData as the query standard.
+After the publish call succeeds, all players can access the item in the Public Catalog. The  [`SearchItems` API](/rest/api/playfab/economy/catalog/search-items) executes a search against published catalog (including UGC items) using the provided parameters and returns a set of paginated results. The `Filter`, `OrderBy`, and `Select` fields use OData as the query standard.
 
 ```json
 {
@@ -136,3 +178,6 @@ Once the publish call succeeds, the item can be accessed by all players via the 
   "Count": 2
 }
 ```
+## See also
+
+[Publish your first user generated content](/gaming/playfab/economy-monetization/economy-v2/tutorials/publish-ugc)
