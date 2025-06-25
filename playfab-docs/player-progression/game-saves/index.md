@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ++ PUBLIC PREVIEW NOTICE ++
 Game Saves is currently in a limited public preview. To get started, 
 
-Game Saves allows you to provide players with a cross-progression experience that transcends traditional device, store, and platform boundaries so your players can stay in your game regardless of where they are and what device they happen to be playing on.
+Allow players to continue their game, with their progress intact, as they switch across platforms, devices, and stores. Game saves handles file synchronization and conflict resolution, helps players maintain a single-point-of-progression, and fully supports offline play.
 
 ## Benefits
 - Deliver a player experience that connects their progress to your game instead of a single device or platform.
@@ -34,8 +34,3 @@ Game Saves allows you to provide players with a cross-progression experience tha
 ## Gaming languages and engines currently supported
 - C++
 - Unreal Engine
-
-## Requirements
-- A [PlayFab developer account](https://developer.playfab.com)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) installed (to build from source)
-- For public preview, we are delivering Game Saves only through the [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/). A preview of the GDK is required. Once you are onboarded, we will provide access to the preivew with further instructions.
