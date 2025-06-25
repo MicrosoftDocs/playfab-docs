@@ -183,7 +183,7 @@ additionalContent:
           url: https://discord.com/invite/msftgamedev
         - title: Support
           summary: PlayFab support options
-          url: pricing/PaidTechnicalSupport.md
+          url: pricing/Support.md
         - title: Blog
           summary: Latest news and updates from the PlayFab developers
           url: https://blog.playfab.com/blog
