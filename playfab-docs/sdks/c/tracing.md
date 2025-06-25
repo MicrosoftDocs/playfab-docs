@@ -46,4 +46,5 @@ HCTraceSetClientCallback(TraceCallback);
 
 ## Reference
 
-[API reference documentation](../../api-references/c/pftrace/pftrace_members.md)
+[PlayFab API reference documentation](../../api-references/c/pftrace/pftrace_members.md)
+[Trace API reference documentation](/gaming/gdk/docs/reference/live/httpclient/trace/trace_members)
