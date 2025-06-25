@@ -1,4 +1,7 @@
-# PlayFab Game Saves API Overview
+# Quickstart: Game Saves
+Before using this qiuckstart guide, you must be onboarded to the Game Saves preview. Once you have been onboarded, this guide will take you through an example flow for a typical game, showing options for using both in-process (with Xbox) and out-of-process (with Steam) upload as well as options for using title callable UI (provided by Xbox) and custom game UI.
+
+**++Quickstart needs to be updated ++**
 
 ## High level flow
 
