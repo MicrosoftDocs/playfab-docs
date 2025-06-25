@@ -31,3 +31,6 @@ Game Saves allows you to provide players with a cross-progression experience tha
 - Steam (PC and Steam Deck)
 - Windows (any store / launcher)
 
+## Gaming languages and engines currently supported
+- C++
+- Unreal Engine
