@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 **++Quickstart needs to be updated ++**
 
 # Quickstart for Game Saves
-Before using this quickstart guide, you must be [onboarded](./onboarding.md) to the Game Saves preview. This guide will then take you through an example flow for a typical game, showing options for using platform-based upload with Xbox and in-game upload for other platforms. It also shows options for using title-callable UI provided by Xbox and custom in-game UI on other platforms.
+Before using this quickstart guide, you must be [onboarded](./onboarding.md) to the Game Saves preview. This guide will then take you through an example flow for a typical game, showing options for using Xbox with out-of-game upload and Steam with in-game upload. It also shows options for using title-callable UI provided by Xbox and game-provided UI on Steam.
 
-**Note:** Out of game upload and title callable UI may be available on other platforms based on a title's rights, player identity, and platform capabilities. For example, a game published to any store on Windows may have access to shared components the publisher provides that run outside of the game runtime and some of these capabilities may be avaialble to Game Saves.
+Out of game upload and title callable UI may be available on other platforms based on a title's rights, player identity, platform capabilities, and store restrictions. For example, a game published to any store on Windows may have access to shared components the publisher provides that run outside of the game runtime and some of these capabilities may be avaialable to Game Saves.
 
 ## Requirements
 - A [PlayFab developer account](https://developer.playfab.com)
