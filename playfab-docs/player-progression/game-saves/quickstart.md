@@ -20,7 +20,7 @@ Out of game upload and title callable UI may be available on other platforms bas
 ## Requirements
 - A [PlayFab developer account](https://developer.playfab.com)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) installed (to build from source)
-- For public preview, we are delivering Game Saves only through a preview of the [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/). Once you are [onboarded](./onboarding.md), we will provide access to the preivew GDK with further instructions.
+- For public preview, we are delivering Game Saves for all supported platforms through a preview of the [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/). Once you are [onboarded](./onboarding.md), we will provide access to the preivew GDK with further instructions.
 
 ## Project setup
 ???
