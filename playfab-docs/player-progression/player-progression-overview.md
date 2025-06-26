@@ -41,4 +41,4 @@ Learn more about the new features of Statistics, how to configure it and all the
 
 - [Learn more about Game Saves](game-saves/overview.md)
 - [Quickstart](game-saves/quickstart.md)
-- [Client API reference](playfab-docs/api-references/c/pfgamesavefiles/pfgamesavefiles_members.md)
+- [Client API reference](../api-references/c/pfgamesavefiles/pfgamesavefiles_members.md)
