@@ -1,6 +1,11 @@
 # Quickstart: Game Saves
 Before using this qiuckstart guide, you must be onboarded to the Game Saves preview. Once you have been onboarded, this guide will take you through an example flow for a typical game, showing options for using both in-process (with Xbox) and out-of-process (with Steam) upload as well as options for using title callable UI (provided by Xbox) and custom game UI.
 
+## Requirements
+- A [PlayFab developer account](https://developer.playfab.com)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/) installed (to build from source)
+- For public preview, we are delivering Game Saves only through the [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/). A preview of the GDK is required. Once you are [onboarded for preview](./onboarding.md), we will provide access to the preivew with further instructions.
+
 **++Quickstart needs to be updated ++**
 
 ## High level flow
