@@ -28,9 +28,9 @@ Allow players to continue their game, with their progress intact, as they switch
 - Platform supported background uploader and title-callable UI (curenlty limited to Xbox ecosystem)
 
 ## Gaming platforms currently supported
-- Xbox (Console, PC, cloud)
-- Steam (PC and Steam Deck)
-- Windows (any store / launcher)
+- Xbox (One, Series S/X, PC, cloud)
+- Steam (PC, Steam Deck)
+- Windows (store and launcher agnostic)
 
 ## Gaming languages and engines currently supported
 - C++
