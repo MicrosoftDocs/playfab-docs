@@ -4,5 +4,7 @@
   href: onboarding.md
 - name: Quickstart
   href: quickstart.md
+- name: API reference
+  href: ../api-references/c/pfgamesavefiles/pfgamesavefiles_members.md
 - name: Limits
   href: limits.md
