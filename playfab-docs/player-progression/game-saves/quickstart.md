@@ -10,15 +10,24 @@ keywords: playfab, game saves
 ms.localizationpriority: medium
 ---
 
+**++Quickstart needs to be updated ++**
+
 # Quickstart for Game Saves
-Before using this qiuckstart guide, you must be onboarded to the Game Saves preview. Once you have been onboarded, this guide will take you through an example flow for a typical game, showing options for using both in-process (with Xbox) and out-of-process (with Steam) upload as well as options for using title callable UI (provided by Xbox) and custom game UI.
+Before using this quickstart guide, you must be [onboarded](./onboarding.md) to the Game Saves preview. This guide will then take you through an example flow for a typical game, showing options for using platform-based upload with Xbox and in-game upload for other platforms. It also shows options for using title-callable UI provided by Xbox and custom in-game UI on other platforms.
+
+**Note:** Out of game upload and title callable UI may be available on other platforms based on a title's rights, player identity, and platform capabilities. For example, a game published to any store on Windows may have access to shared components the publisher provides that run outside of the game runtime and some of these capabilities may be avaialble to Game Saves.
 
 ## Requirements
 - A [PlayFab developer account](https://developer.playfab.com)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) installed (to build from source)
-- For public preview, we are delivering Game Saves only through the [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/). A preview of the GDK is required. Once you are [onboarded for preview](./onboarding.md), we will provide access to the preivew with further instructions.
+- For public preview, we are delivering Game Saves only through a preview of the [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/). Once you are [onboarded](./onboarding.md), we will provide access to the preivew GDK with further instructions.
 
-**++Quickstart needs to be updated ++**
+## Project setup
+???
+
+## Debugging
+
+The easiest way to see the results and debug any calls in the SDK is to enable [Debug Tracing](https://learn.microsoft.com/gaming/playfab/sdks/c/tracing). Enabling debug tracing allows you to both see the results in the debugger output window and hook the results into your game's own logs.
 
 ## High level flow
 
