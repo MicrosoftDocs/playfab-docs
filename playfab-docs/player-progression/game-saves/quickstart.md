@@ -1,8 +1,8 @@
 ---
 title: Game Saves quickstart
-author: ajskew
+author: jasonsandlin
 description: Quickstart for Game Saves
-ms.author: askew
+ms.author: jasonsa
 ms.date: 06/24/2025
 ms.topic: article
 ms.service: azure-playfab
