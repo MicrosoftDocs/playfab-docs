@@ -9,5 +9,6 @@
         "Roadmap",
         "Webhooks"
     ],
-    "markdown.validate.enabled": true
+    "markdown.validate.enabled": true,
+    "acrolinx.serverAddress": "https://microsoft-ce-csi.acrolinx.cloud"
 }
