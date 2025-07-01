@@ -21,22 +21,26 @@ Game Saves allows players to continue their game, with their progress intact, as
 
 ### Benefits
 
-- Delivers a player experience that connects their progress to your game instead of locking it to a single device or platform.
-- Abstraction layer to generalize platform-specific operations into a consistent, cross-platform game integration pattern and codebase.
-- Offload the complexity of implementing cross-platform synchronization.
-- Full support for online and offline play with control of transitions between those states.
-- Minimize the chance of version conflicts while providing contextual cues that can assist players in making informed resolution decisions, when needed.
+- Connects player progress to your game, not individual devices or platforms.
+- Eliminates the complexity of implementing cross-platform synchronization.
+- Supports online and offline play with control of transitions between those states.
+- Minimizes the chance of version conflicts.
+- Provides contextual cues that can assist players in making informed resolution decisions, when needed.
 - Helps players seamlessly transition between devices and platforms to maintain a consistent point-of-progression.
 - Recovers players from bad state with support for version rollback.
-- On Xbox ecosystem provides a platform supported background uploader and title-callable UI.
+- Provides a platform supported background uploader and title-callable UI on Xbox and Windows platforms.
 
 ### Gaming platforms currently supported
 
 - Xbox (One, Series S/X, PC, cloud)
-- Steam (PC, Steam Deck)
-- Windows (store and launcher agnostic)
+- Windows (store and launcher agnostic including PC Game Pass and Steam on PC)
+- Steam Deck 
 
 ### Languages and game engines currently supported
 
 - C++
 - Unreal Engine
+
+## Current limitations
+
+- **Background uploader authentication**: The background uploader feature is currently limited to Xbox Live authenticated users (XUser). For titles shipping on Steam PC, Xbox sign-in is required to access the Game Saves functionality.
