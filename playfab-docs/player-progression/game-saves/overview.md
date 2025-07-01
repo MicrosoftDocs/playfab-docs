@@ -17,18 +17,18 @@ ms.localizationpriority: medium
 >
 > To get started, your title must be [onboarded](onboarding.md) for preview.
 
-Allow players to continue their game, with their progress intact, as they switch across platforms, devices, and stores. Game saves handles file synchronization and conflict resolution, helps players maintain a single-point-of-progression, and fully supports offline play.
+Game Saves allows players to continue their game, with their progress intact, as they switch across platforms, devices, and stores. Game Saves handles file synchronization and conflict resolution, helps players maintain a single-point-of-progression, and fully supports offline play.
 
 ### Benefits
 
-- Deliver a player experience that connects their progress to your game instead of locking it to a single device or platform.
+- Delivers a player experience that connects their progress to your game instead of locking it to a single device or platform.
 - Abstraction layer to generalize platform-specific operations into a consistent, cross-platform game integration pattern and codebase.
 - Offload the complexity of implementing cross-platform synchronization.
 - Full support for online and offline play with control of transitions between those states.
-- Minimize the chance of version conflicts while providing contextual cues that can assist players in making informed resoluition decisions, when needed.
-- Help players more seamlesly transition between devices and platforms to maintain a consitent point-of-progression.
-- Recover players from bad state with support for version rollback.
-- Platform supported background uploader and title-callable UI (curenlty limited to Xbox ecosystem)
+- Minimize the chance of version conflicts while providing contextual cues that can assist players in making informed resolution decisions, when needed.
+- Helps players seamlessly transition between devices and platforms to maintain a consistent point-of-progression.
+- Recovers players from bad state with support for version rollback.
+- On Xbox ecosystem provides a platform supported background uploader and title-callable UI.
 
 ### Gaming platforms currently supported
 
