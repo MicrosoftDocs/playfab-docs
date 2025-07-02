@@ -51,7 +51,7 @@ Game Saves allows players to continue their game, with their progress intact, as
 
 ### Authentication requirements
 
-- **Background uploader authentication**: The background uploader feature is currently limited to Xbox Live authenticated users (XUser). For titles shipping on Steam PC, Xbox sign-in is required to access the Game Saves functionality.
+- **Background uploader authentication**: The background uploader feature is currently limited to Xbox authenticated users (XUser). For titles shipping on Steam PC, Xbox sign-in is required to access the Game Saves functionality.
 
 - **Identity linking**: Titles must use a shared or linked user identity for game saves to seamlessly transition between platforms. PlayFab supports account linking between two authenticated providers, but note that on Xbox and Windows only Xbox sign-in is currently supported.
 
