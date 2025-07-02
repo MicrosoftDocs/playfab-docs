@@ -336,161 +336,19 @@ Each callback has a corresponding response API:
 
 ## Understanding Save Conflicts
 
-Save conflicts occur when the same game data has been modified on multiple devices, and the system needs to determine which version to keep.
+Save conflicts occur when the same game data has been modified on multiple devices. Game Saves treats each root-level subfolder as an atomic unit for conflict resolution, and players can choose to keep either local or cloud data when conflicts arise.
 
-### When Conflicts Happen
-Conflicts only occur during the sync operation (`PFGameSaveFilesAddUserWithUiAsync`) when **both** conditions are true:
-1. **Local changes exist**: Files have been modified locally since the last sync
-2. **Cloud changes exist**: Another device has uploaded newer data since the last sync
+You should also implement the active device changed callback to handle scenarios where a player switches devices mid-session.
 
-### Conflict Resolution Approach
-Some file sync systems such as OneDrive treat conflicts on a file-by-file basis – if the same file needs to be uploaded and also needs to be downloaded, then there's a conflict. In this product, each root level subfolder is considered an atomic unit when it comes to conflict dectection. If any files or subfolders inside a single root level subfolder need to both download and upload, then there's a conflict. This approach better matches how games organize save data, where files within a root level subfolder are often interdependent.
+For detailed conflict handling scenarios and best practices, see [Game Save conflicts](./conflicts.md).
 
-### User Choice Options
-When conflicts occur, players choose between:
-- **Use Local Data**: Keep the device's current save data (overwrites cloud data on next upload)
-- **Use Cloud Data**: Download and use the cloud save data (overwrites local data)
+## Understanding Game Save Offline Mode
 
-### Best Practices
-- **Design folder structure carefully**: Group related save files into logical folders
-- **Minimize conflicts**: Upload frequently to reduce the chance of conflicts
-- **Clear conflict UI**: Help players understand what data they might lose with each choice
+Game Saves works both online and offline. When connected to the cloud, all APIs function normally. When offline or disconnected, local saves continue to work but cloud operations return `E_PF_GAMESAVE_DISCONNECTED_FROM_CLOUD`.
 
-## Handling Active Device Changes
+Use `PFGameSaveFilesIsConnectedToCloud()` to check connection status and implement sync failure callbacks to handle network issues gracefully.
 
-When a player switches devices mid-session, it's important to prevent them from accidentally losing progress by playing on multiple devices simultaneously.
-
-### The Problem Scenario
-1. **Player starts on Device A**: Begins playing and becomes the "active" device
-2. **Player switches to Device B**: Logs in and chooses "Sync Last Saved Data"
-3. **Device B becomes active**: Device A is no longer the active device, but may not know this
-4. **Risk of lost progress**: Player could continue playing on Device A, creating conflicting save states
-
-### The Solution: Active Device Callbacks
-Listen for active device changes and gracefully handle the transition:
-
-```cpp
-// Set up the active device changed callback during initialization
-hr = PFGameSaveFilesSetActiveDeviceChangedCallback(
-    optionalTaskQueue,                    // Use nullptr for immediate callback
-    MyActiveDeviceChangedCallback,        // Your callback function
-    contextPtr);                          // Optional context for your callback
-```
-
-### Callback Implementation Example
-
-```cpp
-void MyActiveDeviceChangedCallback(void* context)
-{
-    // The current device is no longer active for Game Saves
-    
-    // 1. Pause the game immediately
-    
-    // 2. Inform the player what happened
-    // with a message such as:
-    // "Your game progress is being continued on another device."
-    // "Returning to main menu to prevent data loss."
-    
-    // 3. Return to a safe state (main menu)
-    
-    // 4. Re-initialize Game Saves system when ready to play again
-    // (The player will need to sync again from the main menu)
-}
-```
-
-### Xbox-Specific Exception
-If your game only runs on Xbox consoles and uses Xbox's **Single Point of Presence (SPOP)** feature, this scenario is automatically prevented. SPOP ensures a user can only be signed in on one Xbox device at a time.
-
-### Best Practices
-- **Always implement this callback** for multi-platform games
-- **Pause gameplay immediately** when the callback triggers
-- **Clearly explain to players** why they're being returned to the menu
-- **Make re-entry easy** by returning to main menu rather than closing the game
-
-## Understanding Game Save offline mode
-
-Game Saves is designed to work both online and offline, allowing players to continue playing even when network connectivity is unavailable. The system operates in two distinct modes based on network availability and user choices.
-
-### Connection Modes
-
-#### Connected to Cloud Mode
-When network is available and `PFGameSaveFilesAddUserWithUiAsync()` completes successfully, the system operates in "ConnectedToCloud" mode. In this mode:
-- All APIs function normally with full cloud synchronization
-- Save data uploads work as expected
-- Storage quota information is available
-- Active device monitoring works properly
-
-#### Offline Mode (Not Connected to Cloud)
-When network is unavailable or the user chooses to work offline, the system enters "not ConnectedToCloud" mode with limited functionality. You can check the current connection status using `PFGameSaveFilesIsConnectedToCloud()` to determine which mode the system is operating in.
-
-### Handling Network Failures During Initial Sync
-
-When `PFGameSaveFilesAddUserWithUiAsync()` is called without network connectivity, it triggers a `PFGameSaveFilesUiSyncFailedCallback`. Users can respond with three options:
-
-```cpp
-// Handle sync failure callback
-void MyPFGameSaveFilesUiSyncFailedCallback(PFLocalUserHandle localUserHandle, PFGameSaveFilesSyncState syncState, HRESULT error, void* context)
-{
-    // Tell the user something like this:
-    std::cout << "We couldn't sync your data with the cloud just now" << std::endl;
-    std::cout << "Try syncing again or use this game offline" << std::endl;
-    std::cout << "[Try Again]" << std::endl;
-    std::cout << "[Use Offline]" << std::endl;
-
-    // if user chooses [Try Again], call PFGameSaveFilesSetUiSyncFailedResponse(localUserHandle, PFGameSaveFilesUiSyncFailedUserAction::Retry);
-    // if user chooses [Use Offline], call PFGameSaveFilesSetUiSyncFailedResponse(localUserHandle, PFGameSaveFilesUiSyncFailedUserAction::UseOffline);
-
-    // These API calls can happen inside or outside of this callback
-}
-```
-
-**User Response Options:**
-- **Try Again**: Attempts the network call again (loops back to failure callback if still offline)
-- **Use Offline**: PFGameSaveFilesAddUserWithUiAsync async callback reports `S_OK` but puts system into offline mode (can be detected with `PFGameSaveFilesIsConnectedToCloud()`)
-
-### API Behavior in Offline Mode
-
-When in "not ConnectedToCloud" mode, APIs behave differently:
-
-#### APIs That Work Normally
-- `PFGameSaveFilesGetFolder()` - Returns local save folder path
-
-#### APIs With Limited Functionality  
-- `PFGameSaveFilesUploadWithUiAsync()` - Returns `S_OK` immediately, but async completion returns `E_PF_GAMESAVE_DISCONNECTED_FROM_CLOUD`
-- `PFGameSaveFilesGetRemainingQuota()` - Returns `E_PF_GAMESAVE_DISCONNECTED_FROM_CLOUD`
-- `PFGameSaveFilesSetActiveDeviceChangedCallback()` - Can be set but will never trigger
-
-#### Returning to Online Mode
-- Call `PFGameSaveFilesAddUserWithUiAsync()` again to attempt reconnection
-- No need to fully re-initialize the Game Saves system
-- Will show failure UI again if network is still unavailable
-- Use `PFGameSaveFilesIsConnectedToCloud()` to verify connection status after retry attempts
-
-### Additional Connection Status Scenarios
-
-The `PFGameSaveFilesIsConnectedToCloud()` API is particularly useful because disconnection can happen in multiple ways:
-
-- **Network unavailable during sync**: User explicitly chooses to work offline
-- **Active device changed**: Another device takes over as the active device, automatically putting this device in "not ConnectedToCloud" mode.
-
-Use this API before attempting cloud operations to provide appropriate user feedback.
-
-### Best Practices for Offline Support
-
-1. **Always implement sync failure callbacks** to handle network issues gracefully
-2. **Check connection status regularly** using `PFGameSaveFilesIsConnectedToCloud()` before attempting cloud operations  
-3. **Inform players** when operating in offline mode so they understand saves won't sync
-4. **Provide retry options** when network connectivity is restored
-5. **Local saves always work** - players can continue playing regardless of network status
-6. **Monitor for disconnection** - remember that devices can be disconnected when another device becomes active
-
-### Upload Behavior in Connected Mode
-
-Even in connected mode, uploads can fail due to network issues. When this happens:
-- Failure UI callback is triggered 
-- User can choose to retry or cancel
-- If cancelled, async completion returns `E_PF_GAMESAVE_USER_CANCELLED`
-- The game can call upload again later when network is restored
+For detailed offline behavior and best practices, see [Game Save offline mode](./offline.md).
 
 ## Debugging 
 

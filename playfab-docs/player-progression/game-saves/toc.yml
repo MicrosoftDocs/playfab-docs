@@ -6,7 +6,9 @@ items:
   href: onboarding.md
 - name: Quickstart
   href: quickstart.md
-# - name: API reference
-#  href: ../api-references/c/pfgamesavefiles/pfgamesavefiles_members.md
+- name: Conflicts
+  href: conflicts.md
+- name: Offline Mode
+  href: offline.md
 - name: Limits
   href: limits.md
