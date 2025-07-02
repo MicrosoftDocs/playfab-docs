@@ -71,6 +71,33 @@ You can upgrade or downgrade your account plan at any time on the Studio Setting
 
 Any account is eligible to upgrade to an Enterprise account plan. The PlayFab team must be contacted to upgrade to an Enterprise account plan. [https://playfab.com/contact/](https://playfab.com/contact/)
 
+### Cancel All Charges and Delete Your Studio 
+
+To cancel all charges, you must request deletion of your studio at least 10 calendar days before the end of the month. Studio deletion is a permanent action that deletes all titles and removes all developers’ access to the studio. This feature is available only to studio admins. 
+
+1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
+
+2. On the My Studios and Titles page, locate the header of the Studio you plan to delete. Click the three dots on the right and select Studio Settings. 
+
+3. Click Delete Studio button on the top right of the screen.  
+
+4. Confirm your cancellation. 
+
+PlayFab will delete your studio within 10 calendar days following your cancellation. You will be charged for the usage incurred up to the point of your cancellation request and receive a final invoice on your regular due date. Please note that deleting a studio does not result in a prorated refund for plan charges. 
+
+Deleting a studio does not delete your PlayFab developer identity. Instead of deleting a studio, you can also delete all titles and change the account plan to free tier to prevent charges.   
+
+Before proceeding with cancellation or deletion, consider the following recommended actions to ensure a smooth transition and avoid any unintended loss: 
+
+* Back up any critical data, as deleting your studio is a permanent action and data is not recoverable. 
+
+* Download reports from the Billing summary page for your records and future reference. 
+
+* Communicate the decision with your development team to prevent any surprise loss of access. 
+
+Once you’ve completed these steps, you can continue with the studio deletion process outlined above. 
+
+
 ## FAQ
 
 **How do I know which subscription plan my account and its associated studios are currently on?**
