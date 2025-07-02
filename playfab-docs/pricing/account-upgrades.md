@@ -38,11 +38,11 @@ You can change your account's plan via Game Manager using the **Plan Recommendat
 ### Upgrading from Free to Start
 You can upgrade your account plan at any time on the **My Studios and Titles** page. Use the following steps to upgrade your account from Free to Start. Upgrading an account will upgrade all studios owned by the account.
 
-1. Log in to [https://playfab.com/](https://playfab.com/).
+1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
 
 2. On the **My Studios and Titles** page, locate the header of a Studio whose linked account should be upgraded. Select **Upgrade Account**.
 
-3. 	3. Through the **Plan Recommendation** page, you can see your account's meter usage for the past 30 days, your current plan, and a recommended plan based upon your usage. On each plan, you can see the estimated monthly cost given your historic usage. To change your plan, select **Proceed with plan**.
+3. Through the **Plan Recommendation** page, you can see your account's meter usage for the past 30 days, your current plan, and a recommended plan based upon your usage. On each plan, you can see the estimated monthly cost given your historic usage. To change your plan, select **Proceed with plan**.
 
 4. On the **Plan Selection** page, the recommended plan will be automatically selected, though you can select any plan your account is eligible for. Titles can be launched in conjunction with the plan change. Select any titles to launch. The Next button will open the next tab.
 
@@ -55,11 +55,11 @@ After an account is upgraded, the provided payment instrument is charged a month
 ### Upgrading and Downgrading
 You can upgrade or downgrade your account plan at any time on the Studio Settings page of any studio owned by the account. Use the following steps to change your account's plan. Changing the account plan will change all studios owned by the account.
 
-1. Log in to [https://playfab.com/](https://playfab.com/).
+1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
 
 2. On the **My Studios and Titles** page, locate the header of a Studio whose linked account should be upgraded. Select the options button indicated by the 3 dots and select **Studio Settings**. On the **Studio Settings** page, locate the header of a Studio whose linked account should be upgraded. Select **Change Plan**.
 
-3. 	3. Through the **Plan Recommendation** page, you can see your account's meter usage for the past 30 days, your current plan, and a recommended plan based upon your usage. On each plan, you can see the estimated monthly cost given your historic usage. To change your plan, select **Proceed with plan**.
+3. Through the **Plan Recommendation** page, you can see your account's meter usage for the past 30 days, your current plan, and a recommended plan based upon your usage. On each plan, you can see the estimated monthly cost given your historic usage. To change your plan, select **Proceed with plan**.
 
 4. On the **Plan Selection** page, the recommended plan will be automatically selected, though you can select any plan your account is eligible for. Titles can be launched in conjunction with the plan change. Select any titles to launch. The Next button will open the next tab.
 
@@ -73,7 +73,7 @@ Any account is eligible to upgrade to an Enterprise account plan. The PlayFab te
 
 ### Cancel All Charges and Delete Your Studio 
 
-To cancel all charges, you must request deletion of your studio at least 10 calendar days before the end of the month. Studio deletion is a permanent action that deletes all titles and removes all developers’ access to the studio. This feature is available only to studio admins. 
+To cancel all charges, you must request deletion of your studio **at least 10 calendar days before the end of the month**. Studio deletion is a permanent action that deletes all titles and removes all developers’ access to the studio. This feature is available only to studio admins. 
 
 1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
 
