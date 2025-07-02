@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Quickstart for Game Saves
 
-PlayFab Game Saves allows players to seamlessly continue their progress across devices by automatically syncing save data to the cloud. This quickstart guide walks you through implementing a complete game save solution for Xbox and Windows platforms.
+PlayFab Game Saves allows players to seamlessly continue their progress across devices by syncing save data to the cloud. This quickstart guide walks you through implementing a complete game save solution for Xbox and Windows platforms.
 
 ## Prerequisites
 
@@ -53,11 +53,11 @@ The Game Saves system follows a simple pattern that works seamlessly across devi
 ### Initial Setup (One-time per game session)
 1. **Initialize Services**: Set up PlayFab Core and Game Saves modules
 2. **Authenticate User**: Sign in the player using Xbox authentication
-3. **Download Existing Saves**: Sync any save data from other devices to the local device
-4. **Get Save Location**: Obtain the local folder where your game should write save files
+3. **Download Existing Saves**: Sync save data from other devices to the local device
+4. **Get Save Location**: Obtain the local save root folder where your game should write save files
 
 ### During Gameplay
-5. **Write Save Files**: Your game writes save data to the local save folder as usual
+5. **Write Save Files**: Your game writes save data to the local save root folder as usual
 6. **Upload Changes**: Periodically upload modified save files to the cloud
 7. **Continue Playing**: Repeat steps 5-6 as needed during the game session
 
@@ -98,7 +98,6 @@ HRESULT hr = PFInitialize(nullptr);
 if (FAILED(hr))
 {
     // Handle initialization failure - log error and exit gracefully
-    OutputDebugStringA("Failed to initialize PlayFab Core\n");
     return hr;
 }
 
@@ -111,7 +110,6 @@ hr = PFServiceConfigCreateHandle(
 if (FAILED(hr))
 {
     // Handle service config creation failure
-    OutputDebugStringA("Failed to create service config handle\n");
     return hr;
 }
 
@@ -121,18 +119,16 @@ hr = PFGameSaveFilesInitialize(&args);
 if (FAILED(hr))
 {
     // Handle Game Saves initialization failure
-    OutputDebugStringA("Failed to initialize Game Saves\n");
     return hr;
 }
 
-// Step 4: Create a persistent local user handle
+// Step 4: Create a local user handle
 // NOTE: Assumes you have already obtained 'xuserHandle' from XUserAddAsync
 PFLocalUserHandle localUserHandle;
 hr = PFLocalUserCreateHandleWithXboxUser(serviceConfigHandle, xuserHandle, nullptr, &localUserHandle);
 if (FAILED(hr))
 {
     // Handle local user creation failure
-    OutputDebugStringA("Failed to create local user handle\n");
     return hr;
 }
 
@@ -147,7 +143,7 @@ For platforms without Xbox authentication and without offline suport, use other 
 
 ## Step 2: Sync Save Data from Cloud
 
-After initialization, add the user to the Game Saves system to sync any existing save data from other devices. This step also sets up the local save folder where your game will read and write save files.
+After initialization, add the user to the Game Saves system to sync any existing save data from other devices. This step also sets up the local save root folder where your game will read and write save files.
 
 ### When to Call This
 - Once per game session, after user authentication
@@ -176,7 +172,6 @@ hr = PFGameSaveFilesAddUserWithUiAsync(localUserHandle, PFGameSaveFilesAddUserOp
 if (FAILED(hr))
 {
     // Handle API call failure
-    OutputDebugStringA("Failed to start user add operation\n");
     return hr;
 }
 
@@ -186,7 +181,6 @@ hr = XAsyncGetStatus(&async, true);
 if (FAILED(hr))
 {
     // Handle async operation failure (network issues, user cancellation, etc.)
-    OutputDebugStringA("User add operation failed\n");
     return hr;
 }
 
@@ -194,17 +188,15 @@ hr = PFGameSaveFilesAddUserWithUiResult(&async);
 if (FAILED(hr))
 {
     // Handle specific operation failures (conflicts, storage issues, etc.)
-    OutputDebugStringA("Failed to add user to Game Saves\n");
     return hr;
 }
 
-// Get the local save folder path for your game
+// Get the local save root folder path for your game
 char saveFolder[1024] = { 0 };
 hr = PFGameSaveFilesGetFolder(localUserHandle, 1024, saveFolder, nullptr);
 if (FAILED(hr))
 {
     // Handle folder retrieval failure
-    OutputDebugStringA("Failed to get save folder path\n");
     return hr;
 }
 
@@ -214,7 +206,6 @@ hr = PFGameSaveFilesGetRemainingQuota(localUserHandle, &remainingQuota);
 if (FAILED(hr))
 {
     // Handle quota retrieval failure
-    OutputDebugStringA("Failed to get remaining quota\n");
     return hr;
 }
 
@@ -232,7 +223,7 @@ After this call completes successfully:
 
 ## Step 3: Upload Save Data to Cloud
 
-Once your game has written save files to the local save folder, use this step to upload changes to the cloud. The system automatically detects and uploads only files that have changed since the last upload.
+Once your game has written save files and subfolders to the local save root folder, use this step to upload changes to the cloud. The system automatically detects and uploads only files and subfolders that have changed since the last upload.
 
 ### Suggested points when to upload
 - **After significant progress**: When the player reaches a checkpoint or completes a level
@@ -260,7 +251,6 @@ HRESULT hr = PFGameSaveFilesUploadWithUiAsync(
 if (FAILED(hr))
 {
     // Handle API call failure
-    OutputDebugStringA("Failed to start upload operation\n");
     return hr;
 }
 
@@ -270,7 +260,6 @@ hr = XAsyncGetStatus(&async, true);
 if (FAILED(hr))
 {
     // Handle async operation failure (network issues, storage full, etc.)
-    OutputDebugStringA("Upload operation failed\n");
     return hr;
 }
 
@@ -278,7 +267,6 @@ hr = PFGameSaveFilesUploadWithUiResult(&async);
 if (FAILED(hr))
 {
     // Handle upload failure
-    OutputDebugStringA("Failed to upload save data\n");
     return hr;
 }
 
@@ -310,7 +298,7 @@ Game Saves provides built-in UI for Xbox and Windows platforms, but you can cust
 - **Conflicts**: Handle situations where local and cloud saves differ
 - **Active Device Contention**: Warn when user tries to sync on multiple devices
 - **Sync Failures**: Handle network or other sync errors
-- **Out of Storage**: Notify users when cloud storage quota is exceeded
+- **Out of Storage**: Notify users when local storage is too full to sync
 
 ### When Callbacks Trigger
 UI callbacks only occur during two operations:
@@ -336,7 +324,7 @@ hr = PFGameSaveFilesSetUiCallbacks(
 ```
 
 ### Response APIs
-Each callback (except progress) has a corresponding response API:
+Each callback has a corresponding response API:
 - `PFGameSaveFilesSetUiProgressResponse()` - Respond to porgres callback, letting users cancel
 - `PFGameSaveFilesSetUiConflictResponse()` - Respond to conflict callbacks
 - `PFGameSaveFilesSetUiActiveDeviceContentionResponse()` - Respond to device contention
@@ -344,7 +332,7 @@ Each callback (except progress) has a corresponding response API:
 - `PFGameSaveFilesSetUiOutOfStorageResponse()` - Respond to local storage full issues
 
 > [!IMPORTANT]
-> The Game Saves system waits for your response before continuing. Always call the appropriate response API when handling callbacks (except progress callbacks which don't need a responce).
+> The Game Saves system waits for your response before continuing. Always call the appropriate response API when handling callbacks (except progress callbacks which don't need a response).
 
 ## Understanding Save Conflicts
 
@@ -356,7 +344,7 @@ Conflicts only occur during the sync operation (`PFGameSaveFilesAddUserWithUiAsy
 2. **Cloud changes exist**: Another device has uploaded newer data since the last sync
 
 ### Conflict Resolution Approach
-Some file sync systems such as OneDrive treat conflicts on a file-by-file basis – if the same file needs to be uploaded and also needs to be downloaded, then there's a conflict. In this product, each root level subfolder is considered an atomic unit. If any files or subfolders inside a single root level subfolder need to both download and upload, then there's a conflict. This approach better matches how games organize save data, where files within a root level subfolder are often interdependent.
+Some file sync systems such as OneDrive treat conflicts on a file-by-file basis – if the same file needs to be uploaded and also needs to be downloaded, then there's a conflict. In this product, each root level subfolder is considered an atomic unit when it comes to conflict dectection. If any files or subfolders inside a single root level subfolder need to both download and upload, then there's a conflict. This approach better matches how games organize save data, where files within a root level subfolder are often interdependent.
 
 ### User Choice Options
 When conflicts occur, players choose between:
@@ -418,6 +406,10 @@ If your game only runs on Xbox consoles and uses Xbox's **Single Point of Presen
 - **Pause gameplay immediately** when the callback triggers
 - **Clearly explain to players** why they're being returned to the menu
 - **Make re-entry easy** by returning to main menu rather than closing the game
+
+## Understanding Game Save offline mode
+
+TBD
 
 ## Debugging 
 
