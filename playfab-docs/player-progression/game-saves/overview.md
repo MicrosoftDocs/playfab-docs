@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Game Saves overview
 
 > [!WARNING]
-> Game Saves is currently in public preview. Features and functionality may change before general availability. Title release before the Game Saves service reaches general availability is not supported.  
+> Game Saves is currently in public preview. Features and functionality might change before general availability. Title release before the Game Saves service reaches general availability isn't supported.  
 >
 > To get started, your title must be [onboarded](onboarding.md) for preview.
 
@@ -25,22 +25,20 @@ Game Saves allows players to continue their game, with their progress intact, as
 
 ### Benefits
 
-- Connects player progress to your game, not individual devices or platforms.
+- Connects player progress to your game instead of individual devices or platforms.
 - Eliminates the complexity of implementing cross-platform synchronization.
 - Supports online and offline play with control of transitions between those states.
 - Minimizes the chance of version conflicts.
-- Provides contextual cues that can assist players in making informed resolution decisions, when needed.
 - Helps players seamlessly transition between devices and platforms to maintain a consistent point-of-progression.
+- Provides contextual cues to assist players in making informed conflict resolution and single point of progression decisions, when needed.
 - Recovers players from bad state with support for version rollback.
-- Provides a platform supported background uploader and title-callable UI on Xbox and Windows platforms.
-
-## Platform support
+- Works with Xbox-provided background uploader and title-callable UI, where available.
 
 ### Gaming platforms currently supported
 
 - Xbox (One, Series S/X, PC, cloud)
-- Windows (store and launcher agnostic including PC Game Pass and Steam on PC)
-- Steam Deck 
+- Steam (PC, Steam Deck)
+- Windows (other stores / launchers)
 
 ### Languages and game engines currently supported
 
@@ -61,7 +59,7 @@ Game Saves allows players to continue their game, with their progress intact, as
 
 - **Upload handling on non-Xbox/Windows platforms**: On platforms other than Windows and Xbox (such as Steam Deck), Game Saves upload will happen in the same process as the game. This means the game must warn the user not to exit before upload finishes, or the game save will not reach the cloud.
 
-## Multi-platform deployment
+### Multi-platform deployment
 
 - **Cross-storefront compatibility**: Games that plan to ship on multiple storefronts should consider how title updates out of lockstep will affect shared cloud game save data.
 
