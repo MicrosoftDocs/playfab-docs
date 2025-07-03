@@ -24,7 +24,7 @@ When network is available and `PFGameSaveFilesAddUserWithUiAsync()` completes su
 - Active device monitoring works properly
 
 #### Offline Mode (Not Connected to Cloud)
-When network is unavailable or the user chooses to work offline, the system enters offline mode with limited functionality. You can check the current connection status using `PFGameSaveFilesIsConnectedToCloud()` to determine which mode the system is operating in.
+When network is unavailable or the user chooses to play offline, the system enters offline mode with limited functionality. You can check the current connection status using `PFGameSaveFilesIsConnectedToCloud()` to determine which mode the system is operating in.
 
 ### Handling Network Failures During Initial Sync
 
@@ -73,7 +73,7 @@ When in offline mode, APIs behave differently:
 
 The `PFGameSaveFilesIsConnectedToCloud()` API is particularly useful because disconnection can happen in multiple ways:
 
-- **Network unavailable during sync**: User explicitly chooses to work offline
+- **Network unavailable during sync**: User explicitly chooses to play offline
 - **Active device changed**: Another device takes over as the active device, automatically putting this device in offline mode
 
 Use this API before attempting cloud operations to provide appropriate user feedback.

@@ -34,14 +34,8 @@ In this guide, you'll learn how to:
 
 ### Software Requirements
 - A [PlayFab developer account](https://developer.playfab.com)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) or later
+- Visual Studio 2019 or Visual Studio 2022 is recommended for Gaming Runtime development.  See https://learn.microsoft.com/en-us/gaming/gdk/docs/gdk-dev/get-started/overviews/sdk-and-tools#install-visual-studio for details.
 - Access to the preview [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/) (provided after [onboarding](./onboarding.md))
-
-### Supported Platforms
-Game Saves is currently available for:
-- Xbox consoles (Xbox One, Xbox Series X|S)
-- Windows 10/11 devices
-- Steam Deck (with additional implementation requirements)
 
 > [!NOTE]
 > For the public preview, Game Saves functionality is delivered through a preview version of the GDK. Access to this preview GDK will be provided with detailed setup instructions after you complete the onboarding process.
@@ -139,7 +133,18 @@ if (FAILED(hr))
 > Replace `<titleId>` with your actual PlayFab Title ID from Game Manager. The `xuserHandle` must be obtained from a successful call to `XUserAddAsync`.
 
 ### Alternative Platforms
-For platforms without Xbox authentication and without offline suport, use other versions of `PFLocalUserCreateHandle` or `PFLocalUserCreateHandleWithPersistedLocalId` instead. Refer to platform-specific documentation for implementation details.
+For platforms without Xbox authentication and without offline support, use other versions of `PFLocalUserCreateHandle` or `PFLocalUserCreateHandleWithPersistedLocalId` instead. Refer to platform-specific documentation for implementation details.
+
+For example:
+```cpp
+PFLocalUserHandle localUserHandle;
+hr = PFLocalUserCreateHandleWithSteamUser(serviceConfigHandle, nullptr, &localUserHandle);
+if (FAILED(hr))
+{
+    // Handle local user creation failure
+    return hr;
+}
+```
 
 ## Step 2: Sync Save Data from Cloud
 
@@ -311,21 +316,16 @@ UI callbacks only occur during two operations:
 // Set up custom UI callbacks (call this before AddUser or Upload operations)
 // See sample for detailed examples of these callbacks.
 hr = PFGameSaveFilesSetUiCallbacks( 
-    MyProgressCallback,                    // Show progress during uploads/downloads
-    contextPtr,                           // Optional context object for your callbacks
-    MySyncFailedCallback,                 // Handle sync failures
-    contextPtr,
-    MyActiveDeviceContentionCallback,     // Handle device conflicts  
-    contextPtr,
-    MyConflictCallback,                   // Handle save data conflicts
-    contextPtr,
-    MyOutOfStorageCallback,               // Handle storage quota exceeded
-    contextPtr);
+    MyPFGameSaveFilesUiProgressCallback, nullptr,
+    MyPFGameSaveFilesUiSyncFailedCallback, nullptr,
+    MyPFGameSaveFilesUiActiveDeviceContentionCallback, nullptr,
+    MyPFGameSaveFilesUiConflictCallback, nullptr,
+    MyPFGameSaveFilesUiOutOfStorageCallback, nullptr);
 ```
 
 ### Response APIs
 Each callback has a corresponding response API:
-- `PFGameSaveFilesSetUiProgressResponse()` - Respond to porgres callback, letting users cancel
+- `PFGameSaveFilesSetUiProgressResponse()` - Respond to progress callback, letting users cancel
 - `PFGameSaveFilesSetUiConflictResponse()` - Respond to conflict callbacks
 - `PFGameSaveFilesSetUiActiveDeviceContentionResponse()` - Respond to device contention
 - `PFGameSaveFilesSetUiSyncFailedResponse()` - Respond to sync failures  
@@ -338,8 +338,6 @@ Each callback has a corresponding response API:
 
 Save conflicts occur when the same game data has been modified on multiple devices. Game Saves treats each root-level subfolder as an atomic unit for conflict resolution, and players can choose to keep either local or cloud data when conflicts arise.
 
-You should also implement the active device changed callback to handle scenarios where a player switches devices mid-session.
-
 For detailed conflict handling scenarios and best practices, see [Game Save conflicts](./conflicts.md).
 
 ## Understanding Game Save Offline Mode
@@ -349,6 +347,14 @@ Game Saves works both online and offline. When connected to the cloud, all APIs 
 Use `PFGameSaveFilesIsConnectedToCloud()` to check connection status and implement sync failure callbacks to handle network issues gracefully.
 
 For detailed offline behavior and best practices, see [Game Save offline mode](./offline.md).
+
+## Understanding Game Save Active Device Changes
+
+When a player switches devices mid-session, it's important to prevent them from accidentally losing progress by playing on multiple devices simultaneously.
+
+If your game only signs in using Xbox's **Single Point of Presence (SPOP)** feature, this scenario is automatically prevented. SPOP ensures a user can only be signed in on one Xbox device at a time.  Otherwise you should also implement the active device changed callback to handle scenarios where a player switches devices mid-session 
+
+For detailed behavior and best practices, see [Game Save active device changes](./activedevicechanges.md).
 
 ## Debugging 
 
