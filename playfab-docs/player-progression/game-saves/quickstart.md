@@ -109,6 +109,8 @@ if (FAILED(hr))
 
 // Step 3: Initialize the Game Saves module
 PFGameSaveInitArgs args = {};
+// Set args.saveFolder here if you are targetting platforms such as Steam
+// where you need to provide root of where the game saves are
 hr = PFGameSaveFilesInitialize(&args);
 if (FAILED(hr))
 {

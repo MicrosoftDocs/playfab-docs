@@ -53,7 +53,7 @@ void MyActiveDeviceChangedCallback(void* context)
 ```
 
 ### Xbox-Specific Exception
-If your game only runs on Xbox and uses Xbox's **Single Point of Presence (SPOP)** feature, this scenario is automatically prevented. SPOP ensures a user can only be signed in on one Xbox device at a time.
+If your game only signs in using Xbox's **Single Point of Presence (SPOP)** feature, this scenario is automatically prevented. SPOP ensures a user can only be signed in on one Xbox device at a time.
 
 ### Best Practices
 - **Always implement this callback** for multi-platform games
