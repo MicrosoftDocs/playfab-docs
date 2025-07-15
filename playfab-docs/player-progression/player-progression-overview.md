@@ -19,11 +19,11 @@ maintains a player's investment in their gaming achievements across different pl
 |--|--|
 |[Player Data](player-data/index.md)| Store arbitrary files or key:value pairs  |
 |[Statistics](./statistics/index.md)| Store numerical values about a player with aggregation mechanisms |
-|[Game Saves (Preview)](game-saves/overview.md)| Synchronize local files that represent player game state across devices and platforms | 
+|[Game Saves (Preview)](game-saves/overview.md)| Synchronize local files that represent player game state across devices and platforms |
 
 ## Player Data
 
-Our player data features can enable you to store data assiciated with a player, from arbirary blobs or files, to JSON key:value pairs. This data can be shared with others, or synced to multiple devices so your players always have the right data. 
+Our player data features can enable you to store data assiciated with a player, from arbirary blobs or files, to JSON key:value pairs. This data can be shared with others, or synced to multiple devices so your players always have the right data.
 
 - [Learn more about Player Data](./player-data/index.md)
 - [Quickstart](player-data/quickstart.md)

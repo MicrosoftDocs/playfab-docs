@@ -1,7 +1,7 @@
 ---
-title: Game Save conflicts
+title: Game Saves conflicts
 author: jasonsandlin
-description: Game Save conflicts
+description: Game Saves conflicts
 ms.author: jasonsa
 ms.date: 07/01/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, game saves
 ms.localizationpriority: medium
 ---
 
-## Game Save conflicts
+## Game Saves conflicts
 
 Save conflicts occur when the same game data has been modified on multiple devices, and the system needs to determine which version to keep.
 

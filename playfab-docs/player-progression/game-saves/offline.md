@@ -1,7 +1,7 @@
 ---
-title: Game Save offline mode
+title: Game Saves offline mode
 author: jasonsandlin
-description: Game Save offline mode
+description: Game Saves offline mode
 ms.author: jasonsa
 ms.date: 07/01/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, game saves
 ms.localizationpriority: medium
 ---
 
-# Game Save offline mode
+# Game Saves offline mode
 
 Game Saves is designed to work both online and offline, allowing players to continue playing even when network connectivity is unavailable. The system operates in two distinct modes based on network availability and user choices.
 

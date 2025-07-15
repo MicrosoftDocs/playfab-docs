@@ -10,9 +10,9 @@ keywords: playfab, game saves
 ms.localizationpriority: medium
 ---
 
-## Limits for Game Saves
+# Limits for Game Saves
 
 There are two limits to be aware of when using Game Saves:
 
-- Each player is limited to 256MB of storage per title.
-- Title players are limited to 100 service endpoint requests in any 2-minute period.  This roughly maps to uploading via the client API 10 times per minute so you should not hit this limit.
+- Title players are limited to 256MB of storage per title.
+- Title players are limited to 100 service endpoint requests in any 2-minute period. This roughly maps to uploading via the client API 10 times per minute so you should not hit this limit.

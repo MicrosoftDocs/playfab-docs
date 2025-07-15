@@ -1,7 +1,7 @@
 ---
-title: Game Save Active Device Changes
+title: Game Saves Active Device Changes
 author: jasonsandlin
-description: Game Save Active Device Changes
+description: Game Saves Active Device Changes
 ms.author: jasonsa
 ms.date: 07/01/2025
 ms.topic: article

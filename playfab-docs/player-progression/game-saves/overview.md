@@ -17,8 +17,6 @@ ms.localizationpriority: medium
 >
 > To get started, your title must be [onboarded](onboarding.md) for preview.
 
-Game Saves is a cloud-based save synchronization service with client APIs that enables seamless cross-platform gaming experiences. In today's multi-platform gaming landscape, players expect to start a game on one device and continue their progress on another without losing unlocks, or story progression. Game Saves eliminates the technical complexity of implementing this functionality, allowing developers to focus on creating great games while ensuring players never lose their progress.
-
 ## What is Game Saves
 
 Game Saves allows players to continue their game, with their progress intact, as they switch across platforms, devices, and stores. Game Saves handles file synchronization and conflict resolution, helps players maintain a single-point-of-progression, and fully supports offline play.

@@ -40,7 +40,7 @@ In this guide, you'll learn how to:
 > [!NOTE]
 > For the public preview, Game Saves functionality is delivered through a preview version of the GDK. Access to this preview GDK will be provided with detailed setup instructions after you complete the onboarding process.
 
-## Game Save Flow Overview
+## Game Saves Flow Overview
 
 The Game Saves system follows a simple pattern that works seamlessly across devices:
 
@@ -340,23 +340,23 @@ Each callback has a corresponding response API:
 
 Save conflicts occur when the same game data has been modified on multiple devices. Game Saves treats each root-level subfolder as an atomic unit for conflict resolution, and players can choose to keep either local or cloud data when conflicts arise.
 
-For detailed conflict handling scenarios and best practices, see [Game Save conflicts](./conflicts.md).
+For detailed conflict handling scenarios and best practices, see [Game Saves conflicts](./conflicts.md).
 
-## Understanding Game Save Offline Mode
+## Understanding Game Saves Offline Mode
 
 Game Saves works both online and offline. When connected to the cloud, all APIs function normally. When offline or disconnected, local saves continue to work but cloud operations return `E_PF_GAMESAVE_DISCONNECTED_FROM_CLOUD`.
 
 Use `PFGameSaveFilesIsConnectedToCloud()` to check connection status and implement sync failure callbacks to handle network issues gracefully.
 
-For detailed offline behavior and best practices, see [Game Save offline mode](./offline.md).
+For detailed offline behavior and best practices, see [Game Saves offline mode](./offline.md).
 
-## Understanding Game Save Active Device Changes
+## Understanding Game Saves Active Device Changes
 
 When a player switches devices mid-session, it's important to prevent them from accidentally losing progress by playing on multiple devices simultaneously.
 
 If your game only signs in using Xbox's **Single Point of Presence (SPOP)** feature, this scenario is automatically prevented. SPOP ensures a user can only be signed in on one Xbox device at a time.  Otherwise you should also implement the active device changed callback to handle scenarios where a player switches devices mid-session 
 
-For detailed behavior and best practices, see [Game Save active device changes](./activedevicechanges.md).
+For detailed behavior and best practices, see [Game Saves active device changes](./activedevicechanges.md).
 
 ## Debugging 
 
