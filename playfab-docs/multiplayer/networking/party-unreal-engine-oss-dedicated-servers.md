@@ -49,7 +49,7 @@ PS  C:\WindowsServer\ >
 PS  C:\WindowsServer\ > .\<Game>Server.exe <map> -log –NOSTEAM
 ```
 - The `-NOSTEAM` arg disables the default OSS for the game (OSS PlayFab in this case) and replaces it with `OnlineSubsystemNull`.
-- The `-log` arg opens a separate window to display the contents of the logs in real time.
+- The `-log` arg opens a separate window to display the contents of the logs in real time. Disabling the default online subsystem ensures that the dedicated server consistently uses the correct subsystem.
 - For more info on UE's CLI arguments, visit [Unreal Engine's Command Line Arguments](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/CommandLineArguments/) documentation.
 
 A separate window will appear with UE logs confirming that a server spawned. Ensure that the logs contain these lines:
