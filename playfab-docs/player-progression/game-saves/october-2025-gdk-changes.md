@@ -361,7 +361,8 @@ hr = XAsyncGetStatus(&async, true);  // Wait for completion
 hr = PFUninitializeAsync(&async);
 hr = XAsyncGetStatus(&async, true);  // Wait for completion
 
-// XGameRuntime cleanup is automatic
+// Clean up XGameRuntime
+XGameRuntimeUninitialize();
 ```
 
 > [!IMPORTANT]
