@@ -104,6 +104,7 @@ PlayFab Party is a low-latency chat and data communication solution for cross-pl
 * **Party Connectivity**: Metered by number of player minutes connected to a network. Metering starts when a player creates a network or joins a network, and it stops when they have disconnected.
 * **Party Voice**: Metered by number of player minutes speaking. When a player is connected to a network and is actively speaking, that player voice activity is measured and metered.
 * **Party Cognitive Services**: Metered by number of player minutes using Speech to Text, Text to Speech, or Translation features.
+* **Party Text Moderation:** Metered by the number of text chat messages passing through the moderation service. Since moderation is configured by the recipient, each text message received by a player with moderation enabled will count towards this Text Moderation meter. 
 * **Party Network Egress** This is data sent from PlayFab's relay and voice servers. This is congruent to the aggregate amount of data that players receive from the network. Data sent via peer-to-peer connections doesn't pass through PlayFab's relay networks and doesn't accrue to the Party Network Egress meter. 
 
 You can also use this [Party pricing calculator](https://playfab.com/party-calculator/) to estimate your monthly bill based on your projections.
