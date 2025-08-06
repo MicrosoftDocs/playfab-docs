@@ -57,9 +57,9 @@ Configure your build system to use the correct platform-specific paths:
 if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     set(GDK_INCLUDE_DIR "${GDK_PATH}/windows/include")
     set(GDK_LIB_DIR "${GDK_PATH}/windows/lib/x64")
-elseif(STEAMOS)
-    set(GDK_INCLUDE_DIR "${GDK_PATH}/steamos/include")
-    set(GDK_LIB_DIR "${GDK_PATH}/steamos/lib/aarch64")
+elseif(XBOX)
+    set(GDK_INCLUDE_DIR "${GDK_PATH}/xbox_gen9/include")
+    set(GDK_LIB_DIR "${GDK_PATH}/xbox_gen9/lib/x64")
 endif()
 ```
 
