@@ -44,10 +44,10 @@ The **key** will be the namespace id.
      - If the target entity is NOT one of the above entity types, the **key** becomes the target entity's id.
 
 Here are some concrete examples of the above logic:
-1. Client with IP address 123 calls Client/LoginWith[Platform] API. The key for this API is 123.
-2. Client calls Client/SampleAPI and provides an `X-Authorization` token that corresponds to master player account ID 456. There is nothing in the request body for this API that mentions another entity id. The key for this API is 456.
-3. Client calls Client/SampleAPI2 and provides an `X-Authorization` token that corresponds to master player account ID 456. In the request body, the client supplies a value of master player account 789. The key for this API is 456.
-4. Client calls Client/SampleAPI3 and provides an `X-Authorization` token that corresponds to title ID 0. In the request body, the client supplies a value of master player account 789. The key for this API is 789. 
+1. Client with IP address 23.192.228.80 calls Client/LoginWith[Platform] API. The key for this API is 23.192.228.80.
+2. Client calls `Client/LinkCustomID` and provides an `X-Authorization` token that corresponds to master player account ID 408C36ADC841C0CD. There is nothing in the request body for this API that mentions another entity id. The key for this API is 408C36ADC841C0CD.
+3. Client calls `Client/GetUserPublisherData` and provides an `X-Authorization` token that corresponds to master player account ID D5491A06D715E817. In the request body, the client supplies a value of master player account 25254A5AC4AEBA55 (e.g. sets PlayFabId:25254A5AC4AEBA55 in the request body). The key for this API is D5491A06D715E817 (because the calling entity here is a master player account).
+4. Client calls `Client/GetUserPublisherData` and provides an `X-Authorization` token that corresponds to title ID 123. In the request body, the client supplies a value of master player account 25254A5AC4AEBA55 (e.g. sets PlayFabId:25254A5AC4AEBA55 in the request body). The key for this API is 25254A5AC4AEBA55 (because the calling entity here is a title).
 
 ### Advantages of target entity throttling
 
