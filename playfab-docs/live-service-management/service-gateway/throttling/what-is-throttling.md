@@ -41,7 +41,7 @@ The **key** will be the namespace id.
   - If there is no target entity specified in the body of this API, the **key** will be the entity ID of that caller.
   - If there is a target entity specified in the body of this API:
      - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated with an `X-Authorization` token associated to one of those entity types), the **key** will be the calling entity's id.
-     - If the target entity is NOT one of the above entity types, the **key** becomes the target entity's id.
+     - If the calling entity is NOT one of the above entity types, the **key** becomes the target entity's id.
 
 Here are some concrete examples of the above logic:
 1. Client with IP address 23.192.228.80 calls Client/LoginWith[Platform] API. The key for this API is 23.192.228.80.
