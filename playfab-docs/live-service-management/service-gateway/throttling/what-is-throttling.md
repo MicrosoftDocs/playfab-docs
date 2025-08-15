@@ -40,7 +40,7 @@ The **key** will be the namespace id.
    - The target entity of an API is the entity specified in the request body - this might vary per API, and you can check this by looking at the request body for a specific API (if the API does not support targetting a different entity, then the target and the caller would be the same). One example of an API that supports a different entity in its request body is GetUserData (which has PlayFabId in its request body). 
   - If there is no target entity specified in the body of this API, the **key** will be the entity ID of that caller.
   - If there is a target entity specified in the body of this API:
-     - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated , the **key** wll be the caller entity's id.
+     - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated with an `X-Authorization` token associated to one of those entity types), the **key** will be the caller entity's id.
      - If the target entity is NOT one of the above entity types, the **key** becomes the target entity's id.
 
 Here are some concrete examples of the above logic:
