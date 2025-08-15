@@ -35,15 +35,20 @@ The **key** will be the namespace id.
 ### Per-Entity API Rate Limits
 
 - For non-authenticated/anonymous APIs (e.g. LoginWith[Platform] APIs), the **key** will be the client's IP address.
-- For authenticated APIs: The key will be dependent on the the request header and request body (which is what is used to determine the calling entity and target entity).
-   - The caller of an API is the entity tied to the `X-Authorization` token. 
-   - The target of an API is the entity specified in the request body - this might vary per API, and you can check this by looking at the request body for a specific API (if the API does not support targetting a different entity, then the target and the caller would be the same).
+- For authenticated APIs: The key will be dependent on the the request header and request body (which is what is used to determine the calling entity and target entity of an API).
+   - The calling entity of an API is the entity tied to the `X-Authorization` token. 
+   - The target entity of an API is the entity specified in the request body - this might vary per API, and you can check this by looking at the request body for a specific API (if the API does not support targetting a different entity, then the target and the caller would be the same).
   - If there is no target entity specified in the body of this API, the **key** will be the entity ID of that caller.
   - If there is a target entity specified in the body of this API:
-     - If the caller is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated , the **key** wll be the caller entity's id.
-     - If the caller is NOT one of the above entity types, the **key** becomes the target entity's id.
+     - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated , the **key** wll be the caller entity's id.
+     - If the target entity is NOT one of the above entity types, the **key** becomes the target entity's id.
 
+Here are some more concrete examples:
 
+1. Client with IP address 123 calls Client/LoginWith[Platform] API. The key for this API is 123.
+2. Client calls Client/SampleAPI and provides an `X-Authorization` token that corresponds to master player account ID 456. There is nothing in the request body for this API that mentions another entity id. The key for this API is 456.
+3. Client calls Client/SampleAPI2 and provides an `X-Authorization` token that corresponds to master player account ID 456. In the request body, the client supplies a value of master player account 789. The key for this API is 456.
+4. Client calls Client/SampleAPI3 and provides an `X-Authorization` token that corresponds to title ID 0. In the request body, the client supplies a value of master player account 789. The key for this API is 0. 
 
 ### Advantages of target entity throttling
 
