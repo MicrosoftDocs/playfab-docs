@@ -24,21 +24,25 @@ Each API request made to PlayFab gets translated into a "key" (the value of this
 If the number of request for a specific key exceeds the number of allowed request for a specified time bucket (alternatively known as the rate limit) for that API, all subsequent requests for that specific key will be throttled.
 
 
-### How throttling keys are determined for a specific API request
+## How PlayFab determines the key for a specific API request
 
-## Title-Wide Limits
-The key will be the title id.
+### Title-Wide API Rate Limits
+The **key** will be the title id.
 
-## Namespace-Wide Limits
-The key will be the namespace id.
+### Namespace-Wide API Rate Limits
+The **key** will be the namespace id.
 
-## Per-Entity Limits
-The key will be dependent on the contents of the request header and request body (which is what is used to determine the calling entity and target entity).
-- If the caller is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type, the key wll be the caller entity's id.
-- If the caller is NOT one of the above entity type, the key becomes the target entity's id.
+### Per-Entity API Rate Limits
 
+- For non-authenticated/anonymous APIs (e.g. LoginWith[Platform] APIs), the **key** will be the client's IP address.
+- For authenticated APIs: The key will be dependent on the the request header and request body (which is what is used to determine the calling entity and target entity).
+   - The caller of an API is the entity tied to the `X-Authorization` token. 
+   - The target of an API is the entity specified in the request body - this might vary per API, and you can check this by looking at the request body for a specific API (if the API does not support targetting a different entity, then the target and the caller would be the same).
+  - If there is no target entity specified in the body of this API, the **key** will be the entity ID of that caller.
+  - If there is a target entity specified in the body of this API:
+     - If the caller is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated , the **key** wll be the caller entity's id.
+     - If the caller is NOT one of the above entity types, the **key** becomes the target entity's id.
 
-A more concrete example:
 
 
 ### Advantages of target entity throttling
