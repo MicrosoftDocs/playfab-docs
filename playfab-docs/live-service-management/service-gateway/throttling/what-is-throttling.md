@@ -47,7 +47,7 @@ Here are some concrete examples of the above logic:
 1. Client with IP address 123 calls Client/LoginWith[Platform] API. The key for this API is 123.
 2. Client calls Client/SampleAPI and provides an `X-Authorization` token that corresponds to master player account ID 456. There is nothing in the request body for this API that mentions another entity id. The key for this API is 456.
 3. Client calls Client/SampleAPI2 and provides an `X-Authorization` token that corresponds to master player account ID 456. In the request body, the client supplies a value of master player account 789. The key for this API is 456.
-4. Client calls Client/SampleAPI3 and provides an `X-Authorization` token that corresponds to title ID 0. In the request body, the client supplies a value of master player account 789. The key for this API is 0. 
+4. Client calls Client/SampleAPI3 and provides an `X-Authorization` token that corresponds to title ID 0. In the request body, the client supplies a value of master player account 789. The key for this API is 789. 
 
 ### Advantages of target entity throttling
 
