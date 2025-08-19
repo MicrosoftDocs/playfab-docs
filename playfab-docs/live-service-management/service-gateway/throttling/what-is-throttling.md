@@ -19,28 +19,28 @@ PlayFab enforces throttling limits to enforce fair access to resources across al
 
 PlayFab uses a fixed window rate limiting algorithm. 
 
-Each API request made to PlayFab gets translated into a "key" (the value of this key is dependent on the contents of the API request header and API request body). Each individual API call increments the count for its corresponding key.
+Each API request made to PlayFab gets translated into a "key". The value of this key is dependent on the contents of the API request header and API request body. Each individual API call increments the count for its corresponding key.
 
-If the number of API requests for a specific key exceeds the number of allowed requests for a specified time bucket (alternatively known as the rate limit) for that API for your title, all subsequent API requests for that specific key will be throttled.
+If a specific key makes more API requests than allowed within a set time period (which is defined as the rate limit), any further requests using that key (for that specific API) will be throttled during that time period.
 
 
 ## How PlayFab determines the key for a specific API request
 
 ### Title-Wide API Rate Limits
-The **key** will be the title id.
+The **key** is the title id.
 
 ### Namespace-Wide API Rate Limits
-The **key** will be the namespace id.
+The **key** is the namespace id.
 
 ### Per-Entity API Rate Limits
 
-- For non-authenticated/anonymous APIs (e.g. LoginWith[Platform] APIs), the **key** will be the client's IP address.
+- For non-authenticated/anonymous APIs (e.g. LoginWith[Platform] APIs), the **key** is the client's IP address.
 - For authenticated APIs: The key will be dependent on the the request header and request body (which is what is used to determine the calling entity and target entity of an API).
    - The calling entity of an API is the entity tied to the `X-Authorization` token. 
-   - The target entity of an API is the entity specified in the request body - this might vary per API, and you can check this by looking at the request body for a specific API (if the API does not support targetting a different entity, then the target and the caller would be the same). One example of an API that supports a different entity in its request body is GetUserData (which has PlayFabId in its request body). 
-  - If there is no target entity specified in the body of this API, the **key** will be the entity ID of that calling entity.
+   - The target entity of an API is defined in the request body and varies by API. To determine which entity is being targeted, review the request body for that specific API. For example, the GetUserData API supports specifying a different entity using PlayFabId in its request body.
+  - If there is no target entity specified in the body of this API, the **key** is the entity ID of that calling entity.
   - If there is a target entity specified in the body of this API:
-     - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated with an `X-Authorization` token associated to one of those entity types), the **key** will be the calling entity's id.
+     - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated with an `X-Authorization` token associated to one of those entity types), the **key** is the calling entity's id.
      - If the calling entity is NOT one of the above entity types, the **key** becomes the target entity's id.
 
 Here are some concrete examples of the above logic:
