@@ -34,27 +34,27 @@ The **key** is the namespace id.
 
 ### Per-Entity API Rate Limits
 
-- For non-authenticated/anonymous APIs (e.g. LoginWith[Platform] APIs), the **key** is the client's IP address.
+- For non-authenticated/anonymous APIs (for example LoginWith[Platform] APIs), the **key** is the client's IP address.
 - For authenticated APIs: The key will be dependent on the the request header and request body (which is what is used to determine the calling entity and target entity of an API).
    - The calling entity of an API is the entity tied to the `X-Authorization` token. 
    - The target entity of an API is defined in the request body and varies by API. To determine which entity is being targeted, review the request body for that specific API. For example, the GetUserData API supports specifying a different entity using PlayFabId in its request body.
-  - If there is no target entity specified in the body of this API, the **key** is the entity ID of that calling entity.
-  - If there is a target entity specified in the body of this API:
-     - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (e.g. the API was authenticated with an `X-Authorization` token associated to one of those entity types), the **key** is the calling entity's id.
-     - If the calling entity is NOT one of the above entity types, the **key** becomes the target entity's id.
+  - If there's no target entity specified in the body of the API, the **key** is the entity ID of that calling entity.
+  - If there's a target entity specified in the body of the API:
+     - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (for example the API was authenticated with an `X-Authorization` token associated to one of those entity types), the **key** is the calling entity's ID.
+     - If the calling entity is NOT one of the previous entity types, the **key** becomes the target entity's ID.
 
-Here are some concrete examples of the above logic:
-1. Client with IP address 23.192.228.80 calls `Client/LoginWith[Platform]` API. The key for this API request is 23.192.228.80.
-2. Client calls `Client/LinkCustomID` and provides an `X-Authorization` token that corresponds to master player account ID 408C36ADC841C0CD. There is nothing in the request body for this API that mentions another entity id. The key for this API request is 408C36ADC841C0CD.
-3. Client calls `Client/GetUserPublisherData` and provides an `X-Authorization` token that corresponds to master player account ID D5491A06D715E817. In the request body, the client supplies a value of master player account 25254A5AC4AEBA55 (e.g. sets PlayFabId:25254A5AC4AEBA55 in the request body). The key for this API request is D5491A06D715E817 (because the calling entity here is a master player account).
-4. Client calls `Client/GetUserPublisherData` and provides an `X-Authorization` token that corresponds to title ID 123. In the request body, the client supplies a value of master player account 25254A5AC4AEBA55 (e.g. sets PlayFabId:25254A5AC4AEBA55 in the request body). The key for this API request is 25254A5AC4AEBA55 (because the calling entity here is a title).
+Here are some examples of the per-entity API rate limit logic:
+1. Client with IP address 23.192.228.80 calls `Client/LoginWith[Platform]` API. The key for the API request is 23.192.228.80.
+2. Client calls `Client/LinkCustomID` and provides an `X-Authorization` token that corresponds to master player account ID 408C36ADC841C0CD. There's nothing in the request body for the API that mentions another entity id. The key for the API request is 408C36ADC841C0CD.
+3. Client calls `Client/GetUserPublisherData` and provides an `X-Authorization` token that corresponds to master player account ID D5491A06D715E817. In the request body, the client supplies a value of master player account 25254A5AC4AEBA55 (for example, the the request body has PlayFabId:25254A5AC4AEBA55). The key for the API request is D5491A06D715E817 because the calling entity here is a master player account.
+4. Client calls `Client/GetUserPublisherData` and provides an `X-Authorization` token that corresponds to title ID 123. In the request body, the client supplies a value of master player account 25254A5AC4AEBA55 (for example, the request body has PlayFabId:25254A5AC4AEBA55). The key for the API request is 25254A5AC4AEBA55 because the calling entity here is a title.
 
 ### Advantages of target entity throttling
 
 Target entity throttling is a mechanism that enforces limits on certain operations based on the type of entity being targeted. These limits help maintain system stability and prevent abuse, giving users:
 
-* Consistent per player limits: Scaling up the title doesn't affect limits for individual players, enabling titles to scale out their playerbase without concerns on capacity limits based off the number of players.  
-* Uniform Player Throttling: Regardless of the number of concurrent users on an individual title, players experience the same throttling limits. This allows developers to identify throttling issues early in development with a small user base.  
+* Consistent per player limits: Scaling up the title doesn't affect limits for individual players, enabling titles to scale out their player base without concerns on capacity limits based off the number of players.  
+* Uniform Player Throttling: Players experience the same throttling limits regardless of how many users are active on a title, enabling developers to detect throttling issues early - even with a small user base. 
 * Service Stability: Throttling prevents a single player's traffic from overwhelming or adversely affecting PlayFab services or a specific data plane partition shared across multiple titles. 
 
 ## See also
