@@ -21,7 +21,7 @@ PlayFab uses a fixed window rate limiting algorithm.
 
 Each API request made to PlayFab gets translated into a "key." The value of this key is dependent on the contents of the API request header and API request body. Each individual API call increments the count for its corresponding key.
 
-If a specific key makes more API requests than allowed within a set time period (the rate limit), any further requests using that key is throttled.
+If a specific key makes more API requests than allowed within a set time period (the rate limit), any further requests using that key are throttled.
 
 
 ## How PlayFab determines the key for a specific API request
