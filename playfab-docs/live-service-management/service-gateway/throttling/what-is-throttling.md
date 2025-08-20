@@ -12,25 +12,49 @@ ms.localizationpriority: medium
 
 # Throttling in PlayFab
 
-Throttling occurs when a client attempts to exceed the API call rate limit set for a specific API or APIs. These limits are in place to prevent any single game from disrupting PlayFab services for others. 
+Throttling occurs when a client attempts to exceed the API request rate limit set for a specific API.
+PlayFab enforces throttling limits to enforce fair access to resources across all titles.
 
-## Understand PlayFab throttling
+## Understanding PlayFab throttling
 
-PlayFab applies the throttling limit based on the target of the request or what the request affects, in most cases. When you use an API that targets or changes one player with a token that is specific to that player, PlayFab chooses rates that are suitable for one player. When requests use a Title specific token and don't target a player, a different set of limits are chosen that is appropriate for a title. These limits are higher than a single player specific token because calling with a title token can affect more players, entities, or take more PlayFab actions faster compared to a single player would. PlayFab also limits the number of requests you can make in a certain timeframes using buckets of allowed requests. Most limits have two buckets: one that lets you make more requests in a short time for burst scenarios and another that lets you make fewer requests in a longer time for normal scenarios.
+PlayFab uses a fixed window rate limiting algorithm. 
 
-### Throttling algorithm summary
+Each API request made to PlayFab gets translated into a "key." The value of this key is dependent on the contents of the API request header and API request body. Each individual API call increments the count for its corresponding key.
 
-1. Identify the entity targeted by the API call by first looking in the body (for example title player, title entity, master player, or character).
-2. If the body lacks a clear target entity, use the token type (title player, master player, or title) to determine the limit. 
-3. If any limit buckets are expired remove them and create new empty buckets. Increment the limit buckets (both burst and sustained) count and check if the call surpasses any of the limits buckets. 
-4. If over the limit, return a 429 error with the remaining seconds until a new empty bucket is available. 
+If a specific key makes more API requests than allowed within a set time period (the rate limit), any further requests using that key are throttled.
+
+
+## How PlayFab determines the key for a specific API request
+
+### Title-Wide API Rate Limits
+The **key** is the title ID.
+
+### Namespace-Wide API Rate Limits
+The **key** is the namespace ID.
+
+### Per-Entity API Rate Limits
+
+- For non-authenticated/anonymous APIs (for example `LoginWith[Platform]` APIs), the **key** is the client's IP address.
+- For authenticated APIs: The key is dependent on the request header and request body (which is what is used to determine the calling entity and target entity of an API).
+   - The calling entity of an API is the entity tied to the `X-Authorization` token. 
+   - The target entity of an API is defined in the request body and varies by API. To determine which entity is being targeted, review the request body for that specific API. For example, the GetUserData API supports specifying a different entity using PlayFabId in its request body.
+  - If there's no target entity specified in the body of the API, the **key** is the entity ID of that calling entity.
+  - If there's a target entity specified in the body of the API:
+     - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (for example the API was authenticated with an `X-Authorization` token associated to one of those entity types), the **key** is the calling entity's ID.
+     - If the calling entity is NOT one of the previous entity types, the **key** becomes the target entity's ID.
+
+Here are some examples of the per-entity API rate limit logic:
+1. Client with IP address 23.192.228.80 calls `Client/LoginWith[Platform]` API. The key for the API request is 23.192.228.80.
+2. Client calls `Client/LinkCustomID` and provides an `X-Authorization` token that corresponds to master player account ID 408C36ADC841C0CD. There's nothing in the request body for the API that mentions another entity ID. The key for the API request is 408C36ADC841C0CD.
+3. Client calls `Client/GetUserPublisherData` and provides an `X-Authorization` token that corresponds to master player account ID D5491A06D715E817. In the request body, the client supplies a value of master player account 25254A5AC4AEBA55 (for example, the request body has PlayFabId:25254A5AC4AEBA55). The key for the API request is D5491A06D715E817 because the calling entity here's a master player account.
+4. Client calls `Client/GetUserPublisherData` and provides an `X-Authorization` token that corresponds to title ID 123. In the request body, the client supplies a value of master player account 25254A5AC4AEBA55 (for example, the request body has PlayFabId:25254A5AC4AEBA55). The key for the API request is 25254A5AC4AEBA55 because the calling entity here's a title.
 
 ### Advantages of target entity throttling
 
 Target entity throttling is a mechanism that enforces limits on certain operations based on the type of entity being targeted. These limits help maintain system stability and prevent abuse, giving users:
 
-* Consistent per player limits: Scaling up the title doesn't affect limits for individual players, enabling titles to expand their user base without concerns about arbitrary capacity limits.  
-* Uniform Player Throttling: Regardless of concurrent users, players experience the same throttling. This allows developers to identify throttling issues early in development with a small user base.  
+* Consistent per player limits: Scaling up the title doesn't affect limits for individual players, enabling titles to scale out their player base without concerns on capacity limits based off the number of players.  
+* Uniform Player Throttling: Players experience the same throttling limits regardless of how many users are active on a title, enabling developers to detect throttling issues early - even with a small user base. 
 * Service Stability: Throttling prevents a single player's traffic from overwhelming or adversely affecting PlayFab services or a specific data plane partition shared across multiple titles. 
 
 ## See also
