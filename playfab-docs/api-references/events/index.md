@@ -451,3 +451,8 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [title_updated_task](title-updated-task.md)  
   This event is triggered when a task is updated.
+
+## Statistics
+
+- [statistic_updated](statistic-updated.md)  
+  This event is triggered when a task is updated.
