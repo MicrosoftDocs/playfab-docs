@@ -61,6 +61,8 @@ landingContent:
             url: leaderboards/limits-leaderboards.md
           - text: Quota on Leaderboards
             url: leaderboards/quota-leaderboards.md
+          - text: Leaderboards with PlayStream and Telemetry
+            url: leaderboards/leaderboards-with-playstream-and-telemetry.md
 
 
   # Card (optional)

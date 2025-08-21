@@ -455,4 +455,12 @@ Each event type has a set of properties that are included as part of event's dat
 ## Statistics
 
 - [statistic_updated](statistic-updated.md)  
-  This event is triggered when a task is updated.
+  This event is triggered when a statistic is updated.
+
+## Leaderboards
+
+- [leaderboard_version_ended](leaderboard-version-ended.md)  
+  This event is triggered when a leaderboard version is reset
+
+- [entity_rank_on_leaderboard_version_ended](entity-rank-on-leaderboard-version-ended.md)  
+  This event is triggered when a leaderboard version is reset
