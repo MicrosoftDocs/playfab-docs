@@ -254,17 +254,15 @@ if (FAILED(hr)) {
 ```
 
 ### C. Platform Storage Event Handlers
-Handles local XUser data persistence. IMPORTANT: The sample ship with a convenience helper (`XUserFileStorage::Init`) but that helper is sample code only and not intended as a production drop-in. You should implement your own platform storage handlers and register them with the runtime. Use the sample implementation as a reference, not as the recommended production integration.
+Handles local XUser data persistence. 
 
-Required steps for production integration:
+Required steps for integration:
 - Implement `OnWrite`, `OnRead`, and `OnClear` to persist XUser data to whatever store your title requires (secure file, encrypted store, cloud cache, etc.).
 - Each handler MUST call the corresponding completion API when the work finishes:
     - `XUserPlatformStorageWriteComplete(operation, XUserPlatformOperationResult::Success|Failure)`
     - `XUserPlatformStorageReadComplete(operation, XUserPlatformOperationResult::Success|Failure, size, dataPtr)`
     - `XUserPlatformStorageClearComplete(operation, XUserPlatformOperationResult::Success|Failure)`
 - Register your handlers with `XUserPlatformStorageSetEventHandlers(queue, &handlers)` during initialization.
-
-Example (manual registration pattern - recommended):
 
 ```cpp
 XUserPlatformStorageEventHandlers handlers = {};
@@ -278,7 +276,7 @@ if (FAILED(hr)) {
 }
 ```
 
-Note: the sample's `XUserFileStorage` provides a ready-made, file-backed implementation you can use as a starting point during development or testing, but we strongly recommend copying and adapting its logic into your game's own handlers rather than calling `XUserFileStorage::Init` directly in production.
+Note: the sample's `XUserFileStorage` provides a ready-made, file-backed implementation you can use as a starting point during development or testing.
 
 ## 5. UI Callback Implementation
 
@@ -333,43 +331,6 @@ The difference between approaches is in the **additional Xbox authentication UI*
 > **Custom Identity Implementation**: If you're using the custom identity approach (Approach 2), you can skip this section. XUser file storage is only required for Xbox ecosystem integration.
 
 For Xbox ecosystem integration (Approach 1), Steam Deck requires a custom file storage implementation for XUser data persistence:
-
-```cpp
-// Initialize XUser file storage
-// NOTE: `XUserFileStorage::Init` registers the platform storage event handlers
-// (write/read/clear) that the runtime will call to persist XUser data locally.
-// Parameters:
-//  - queue: an `XTaskQueueHandle` to receive platform events (the sample uses `nullptr`),
-//  - pathPrefix: optional path prefix where per-key files will be written (e.g. "%TEMP%/xuser/").
-// The function returns an HRESULT; always check for failure and handle it appropriately.
-// The handlers registered by Init must call the corresponding completion APIs
-// (XUserPlatformStorageWriteComplete / XUserPlatformStorageReadComplete / XUserPlatformStorageClearComplete)
-// when their work finishes. See the sample implementation for a complete example.
-
-{
-    // Example (mirrors the sample): build a temp/xuser path and initialize storage
-    char tempPath[MAX_PATH];
-    DWORD tempPathLength = GetTempPathA(MAX_PATH, tempPath);
-    std::string xuserPath;
-    if (tempPathLength != 0 && tempPathLength <= MAX_PATH)
-    {
-        xuserPath = std::string(tempPath) + "xuser\\";
-    }
-    else
-    {
-        // Fallback if GetTempPathA fails
-        xuserPath = "C:\\temp\\xuser";
-    }
-
-    HRESULT hr = XUserFileStorage::Init(nullptr, xuserPath.c_str());
-    if (FAILED(hr)) {
-        // Log and decide how your game should proceed when XUser storage cannot be initialized.
-    }
-}
-
-// See: `samples/PlayFabGameSaveSample-Windows/XUserFileStorage.cpp` for a full file-backed
-// implementation and the required completion calls.
-```
 
 ### Storage Implementation Requirements
 The storage implementation must handle:
