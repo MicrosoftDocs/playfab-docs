@@ -243,10 +243,10 @@ if (FAILED(hr)) {
 ```
 
 ### B. SPOP (Sign-in Prompt) Event Handlers
-Handles gamertag selection and verification:
+Handles the SPOP sign-in prompt used when a user's account is already signed in on another device. The handler should present UI that lets the player choose an action (Sign In Here, Switch Account, or Cancel) and must call `XUserPlatformSpopPromptComplete(operation, result)` with the chosen result.
 
 ```cpp
-// Handle gamertag selection and verification
+// Handle SPOP sign-in prompt. See sample: ShowSpopPromptDialogForXUserOnSteamDeck
 HRESULT hr = XUserPlatformSpopPromptSetEventHandlers(nullptr, &OnSpopPrompt, nullptr);
 if (FAILED(hr)) {
     // Handle SPOP setup failure
@@ -254,20 +254,31 @@ if (FAILED(hr)) {
 ```
 
 ### C. Platform Storage Event Handlers
-Handles local XUser data persistence:
+Handles local XUser data persistence. IMPORTANT: The sample ship with a convenience helper (`XUserFileStorage::Init`) but that helper is sample code only and not intended as a production drop-in. You should implement your own platform storage handlers and register them with the runtime. Use the sample implementation as a reference, not as the recommended production integration.
+
+Required steps for production integration:
+- Implement `OnWrite`, `OnRead`, and `OnClear` to persist XUser data to whatever store your title requires (secure file, encrypted store, cloud cache, etc.).
+- Each handler MUST call the corresponding completion API when the work finishes:
+    - `XUserPlatformStorageWriteComplete(operation, XUserPlatformOperationResult::Success|Failure)`
+    - `XUserPlatformStorageReadComplete(operation, XUserPlatformOperationResult::Success|Failure, size, dataPtr)`
+    - `XUserPlatformStorageClearComplete(operation, XUserPlatformOperationResult::Success|Failure)`
+- Register your handlers with `XUserPlatformStorageSetEventHandlers(queue, &handlers)` during initialization.
+
+Example (manual registration pattern - recommended):
 
 ```cpp
-// Handle local XUser data persistence
 XUserPlatformStorageEventHandlers handlers = {};
-handlers.write = &OnWrite;    // Save XUser data locally
-handlers.read = &OnRead;      // Load XUser data locally
-handlers.clear = &OnClear;    // Clear XUser data locally
+handlers.write = &OnWrite;    // Your handler; must call XUserPlatformStorageWriteComplete
+handlers.read = &OnRead;      // Your handler; must call XUserPlatformStorageReadComplete
+handlers.clear = &OnClear;    // Your handler; must call XUserPlatformStorageClearComplete
 handlers.context = nullptr;
 HRESULT hr = XUserPlatformStorageSetEventHandlers(queue, &handlers);
 if (FAILED(hr)) {
-    // Handle storage setup failure
+        // Handle storage setup failure
 }
 ```
+
+Note: the sample's `XUserFileStorage` provides a ready-made, file-backed implementation you can use as a starting point during development or testing, but we strongly recommend copying and adapting its logic into your game's own handlers rather than calling `XUserFileStorage::Init` directly in production.
 
 ## 5. UI Callback Implementation
 
@@ -324,11 +335,40 @@ The difference between approaches is in the **additional Xbox authentication UI*
 For Xbox ecosystem integration (Approach 1), Steam Deck requires a custom file storage implementation for XUser data persistence:
 
 ```cpp
-// Initialize XUser file storage (typically in %TEMP%\xuser\ directory)
-HRESULT hr = XUserFileStorage::Init(queue, "xuser");
-if (FAILED(hr)) {
-    // Handle storage initialization failure
+// Initialize XUser file storage
+// NOTE: `XUserFileStorage::Init` registers the platform storage event handlers
+// (write/read/clear) that the runtime will call to persist XUser data locally.
+// Parameters:
+//  - queue: an `XTaskQueueHandle` to receive platform events (the sample uses `nullptr`),
+//  - pathPrefix: optional path prefix where per-key files will be written (e.g. "%TEMP%/xuser/").
+// The function returns an HRESULT; always check for failure and handle it appropriately.
+// The handlers registered by Init must call the corresponding completion APIs
+// (XUserPlatformStorageWriteComplete / XUserPlatformStorageReadComplete / XUserPlatformStorageClearComplete)
+// when their work finishes. See the sample implementation for a complete example.
+
+{
+    // Example (mirrors the sample): build a temp/xuser path and initialize storage
+    char tempPath[MAX_PATH];
+    DWORD tempPathLength = GetTempPathA(MAX_PATH, tempPath);
+    std::string xuserPath;
+    if (tempPathLength != 0 && tempPathLength <= MAX_PATH)
+    {
+        xuserPath = std::string(tempPath) + "xuser\\";
+    }
+    else
+    {
+        // Fallback if GetTempPathA fails
+        xuserPath = "C:\\temp\\xuser";
+    }
+
+    HRESULT hr = XUserFileStorage::Init(nullptr, xuserPath.c_str());
+    if (FAILED(hr)) {
+        // Log and decide how your game should proceed when XUser storage cannot be initialized.
+    }
 }
+
+// See: `samples/PlayFabGameSaveSample-Windows/XUserFileStorage.cpp` for a full file-backed
+// implementation and the required completion calls.
 ```
 
 ### Storage Implementation Requirements
@@ -341,38 +381,55 @@ The storage implementation must handle:
 ### Storage Handler Implementation Templates
 ```cpp
 // Write handler for storing XUser data
-HRESULT OnWrite(
-    _In_opt_ void* context,
-    _In_ XUserLocalId userLocalId,
-    _In_reads_bytes_(dataSize) const void* data,
-    _In_ size_t dataSize) {
-    
-    // Store data to local file system
-    // Implementation details in sample code
-    return S_OK;
+// IMPORTANT: Call XUserPlatformStorageWriteComplete to notify the runtime when the operation finishes.
+void OnWrite(
+    _In_opt_ void* /*context*/,
+    _In_ uint32_t /*userIdentifier*/,
+    _In_ XUserPlatformOperation operation,
+    _In_z_ char const* key,
+    _In_ size_t dataSize,
+    _In_reads_bytes_(dataSize) void const* data
+)
+{
+    // Store data to local file system (example: write to %TEMP%/xuser/<key>.json)
+
+    // When complete, notify the platform of success or failure:
+    // XUserPlatformStorageWriteComplete(operation, XUserPlatformOperationResult::Success);
+    // or on failure:
+    // XUserPlatformStorageWriteComplete(operation, XUserPlatformOperationResult::Failure);
 }
 
 // Read handler for retrieving XUser data
-HRESULT OnRead(
-    _In_opt_ void* context,
-    _In_ XUserLocalId userLocalId,
-    _Out_writes_bytes_to_opt_(dataSize, *dataSizeUsed) void* data,
-    _In_ size_t dataSize,
-    _Out_ size_t* dataSizeUsed) {
-    
-    // Read data from local file system
-    // Implementation details in sample code
-    return S_OK;
+// IMPORTANT: Call XUserPlatformStorageReadComplete with the result and data buffer (or nullptr if not found).
+void OnRead(
+    _In_opt_ void* /*context*/,
+    _In_ uint32_t /*userIdentifier*/,
+    _In_ XUserPlatformOperation operation,
+    _In_z_ char const* key
+)
+{
+    // Read data from local file system (example: read %TEMP%/xuser/<key>.json)
+    // If the file is not found, the sample below signals success with size 0 and nullptr data.
+    // On success:
+    //     XUserPlatformStorageReadComplete(operation, XUserPlatformOperationResult::Success, dataSize, dataPtr);
+    // On failure:
+    //     XUserPlatformStorageReadComplete(operation, XUserPlatformOperationResult::Failure, 0, nullptr);
 }
 
 // Clear handler for removing XUser data
-HRESULT OnClear(
-    _In_opt_ void* context,
-    _In_ XUserLocalId userLocalId) {
-    
+// IMPORTANT: Call XUserPlatformStorageClearComplete to notify the runtime when clear completes.
+void OnClear(
+    _In_opt_ void* /*context*/,
+    _In_ uint32_t /*userIdentifier*/,
+    _In_ XUserPlatformOperation operation,
+    _In_z_ char const* key
+)
+{
     // Remove stored data from local file system
-    // Implementation details in sample code
-    return S_OK;
+    // On success:
+    //     XUserPlatformStorageClearComplete(operation, XUserPlatformOperationResult::Success);
+    // On failure:
+    //     XUserPlatformStorageClearComplete(operation, XUserPlatformOperationResult::Failure);
 }
 ```
 
