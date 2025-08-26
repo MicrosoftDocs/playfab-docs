@@ -22,6 +22,10 @@ Select authentication providers based on what is most meaningful for the players
 
 - [Set up Apple sign-in for PlayFab](apple-open-id.md)
 
+### Battle.net
+
+- [Setting up PlayFab authentication using Battle.net and HTML5](battlenet-login.md)
+
 ### Facebook
 
 - [Setting up PlayFab authentication using Facebook and HTML5](facebook-html5.md)
