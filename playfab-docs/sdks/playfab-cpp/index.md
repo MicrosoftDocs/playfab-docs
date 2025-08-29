@@ -2,7 +2,7 @@
 title: Legacy C++ PlayFab SDK
 author: joannaleecy
 description: Cross-platform (CPP) PlayFab SDK
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/22/2021
 ms.topic: article
 ms.service: azure-playfab

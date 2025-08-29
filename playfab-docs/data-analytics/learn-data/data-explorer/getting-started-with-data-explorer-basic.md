@@ -2,7 +2,7 @@
 title: Getting started with Data Explorer basic mode
 author: joannaleecy
 description: Illustrates how to use Data Explorer basic mode to create queries.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 09/22/2020
 ms.topic: article
 ms.service: azure-playfab

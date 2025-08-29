@@ -2,7 +2,7 @@
 title: Playfab Multiplayer Server terms
 author: joannaleecy
 description: Playfab Multiplayer Server terms.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/10/2021
 ms.topic: article
 ms.service: azure-playfab

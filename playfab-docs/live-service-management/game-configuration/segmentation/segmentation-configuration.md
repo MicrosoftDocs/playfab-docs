@@ -2,7 +2,7 @@
 title: Segment Configuration
 author: joannaleecy
 description: Describes how to configure a new or existing segment.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/30/2018
 ms.topic: article
 ms.service: azure-playfab

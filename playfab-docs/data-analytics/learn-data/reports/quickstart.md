@@ -2,7 +2,7 @@
 title: Reports quickstart
 author: joannaleecy
 description: Describes how to access the Game Manager reports composed from events, and broken down by dates.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/30/2018
 ms.topic: article
 ms.service: azure-playfab

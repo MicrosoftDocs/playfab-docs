@@ -2,7 +2,7 @@
 title: Development mode
 author: joannaleecy
 description: Describes the features and limits of Development mode titles.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 09/09/2020
 ms.topic: article
 ms.service: azure-playfab

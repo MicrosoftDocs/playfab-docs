@@ -2,7 +2,7 @@
 title: Using the Profile for Advanced Leaderboards
 author: joannaleecy
 description: Describes how to configure Player Profile Constraints to retrieve additional leaderboard information.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/29/2018
 ms.topic: article
 ms.service: azure-playfab

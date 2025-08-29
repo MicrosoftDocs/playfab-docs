@@ -2,7 +2,7 @@
 title: Photon Quickstart
 author: joannaleecy
 description: Describes how to set up Photon Multiplayer to work with PlayFab.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/29/2018
 ms.topic: article
 ms.service: azure-playfab

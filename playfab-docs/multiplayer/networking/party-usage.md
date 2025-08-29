@@ -2,7 +2,7 @@
 title: PlayFab Party API Usage Guides
 description: How to use the PlayFab Party real-time chat and data communication API in common scenarios.
 author: joannaleecy
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 08/16/2019
 ms.topic: article
 ROBOTS: NOINDEX,NOFOLLOW

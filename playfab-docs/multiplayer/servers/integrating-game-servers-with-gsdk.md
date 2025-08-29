@@ -2,7 +2,7 @@
 title: Integrating game servers with the PlayFab Game Server SDK (GSDK)
 author: joannaleecy
 description: Describes how to integrate PlayFab multiplayer game servers with the PlayFab Game Server SDK (GSDK).  
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/15/2019
 ms.topic: article
 ms.service: azure-playfab

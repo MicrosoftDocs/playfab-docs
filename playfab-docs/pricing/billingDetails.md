@@ -2,7 +2,7 @@
 title: Billing Summary + Base Rate
 author: joannaleecy
 description: Describes the billing summary page.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 07/15/2019
 ms.topic: article
 ms.service: azure-playfab

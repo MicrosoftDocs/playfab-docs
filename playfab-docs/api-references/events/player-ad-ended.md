@@ -2,7 +2,7 @@
 title: player_ad_ended
 author: joannaleecy
 description: player_ad_ended event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

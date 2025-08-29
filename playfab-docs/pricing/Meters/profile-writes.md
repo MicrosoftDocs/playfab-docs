@@ -2,7 +2,7 @@
 title: Profile Writes Meter API Description
 author: joannaleecy
 description: This file details the APIs that cause profile writes meter to increment.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/04/2019
 ms.topic: article
 ms.service: azure-playfab

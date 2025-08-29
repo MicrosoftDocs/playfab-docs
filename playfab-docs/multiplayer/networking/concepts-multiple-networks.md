@@ -2,7 +2,7 @@
 title: Using multiple PlayFab Party networks
 description: Guidance regarding when to use more than one simultaneous PlayFab Party network.
 author: joannaleecy
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 08/15/2019
 ms.topic: article
 ms.service: azure-playfab

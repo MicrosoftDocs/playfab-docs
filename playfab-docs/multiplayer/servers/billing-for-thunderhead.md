@@ -2,7 +2,7 @@
 title: Billing for PlayFab Multiplayer Servers 2.0
 author: joannaleecy
 description: Describes how billing is done for PlayFab's multiplayer server hosting service (Thunderhead), which allows you to operate a dynamically scaling pool of custom game servers in Azure.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/15/2019
 ms.topic: article
 ms.service: azure-playfab

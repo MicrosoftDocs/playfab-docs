@@ -2,7 +2,7 @@
 title: Multiplayer experiences in Xbox Live games
 author: joannaleecy
 description: Learn how to leverage PlayFab multiplayer in Xbox Live games.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/27/2019
 ms.topic: article
 ms.service: azure-playfab

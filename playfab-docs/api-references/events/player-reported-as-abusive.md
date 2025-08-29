@@ -2,7 +2,7 @@
 title: player_reported_as_abusive
 author: joannaleecy
 description: player_reported_as_abusive event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Using Player details
 author: joannaleecy
 description: Describes how to view and access the features of the Player details page in the PlayFab Game Manager.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/11/2018
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Luasec license read me
 author: joannaleecy
 description: The luasec license readme file.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/20/2019
 ms.topic: article
 ms.service: azure-playfab

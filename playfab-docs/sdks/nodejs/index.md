@@ -2,7 +2,7 @@
 title: NodeJS SDK
 author: joannaleecy
 description: Landing page for the PlayFab NodeJS SDK. 
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/22/2021
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Create a lobby
 author: joannaleecy
 description: Learn how to create a lobby.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/25/2021
 ms.topic: article
 ms.service: azure-playfab

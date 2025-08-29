@@ -2,7 +2,7 @@
 title: API Access Policy
 author: joannaleecy
 description: Describes how to use the API access policies in PlayFab.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/25/2020
 ms.topic: article
 ms.service: azure-playfab

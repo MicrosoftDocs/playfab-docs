@@ -2,7 +2,7 @@
 title: Available Built-In Entity Types
 author: joannaleecy
 description: Lists all of the available built-in Entity types.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/08/2018
 ms.topic: article
 ms.service: azure-playfab

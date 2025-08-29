@@ -2,7 +2,7 @@
 title: PlayerLocation
 author: joannaleecy
 description: PlayerLocation data type.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
