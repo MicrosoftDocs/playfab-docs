@@ -21,18 +21,18 @@ The following code example enables debug tracing and sets the debug error level 
 The resulting debug output is sent to the Output pane when running your project in Visual Studio.
 
 ```cpp
-PFHCSettingsSetTraceLevel(PFHCTraceLevel::Verbose);
-PFHCTraceSetTraceToDebugger(true);
+HCSettingsSetTraceLevel(HCTraceLevel::Verbose);
+HCTraceSetTraceToDebugger(true);
 ```
 
 ## Connect to Game logs
 
-To connect PlayFab's trace debugging to your game's own debug logs, use **PFHCTraceSetClientCallback**. Provide a callback that can take PlayFab trace output and direct to game logs.
+To connect PlayFab's trace debugging to your game's own debug logs, use **HCTraceSetClientCallback**. Provide a callback that can take PlayFab trace output and direct to game logs.
 
 ```cpp
 void CALLBACK TraceCallback(
     _In_z_ char const* areaName,
-    enum PFHCTraceLevel level,
+    enum HCTraceLevel level,
     uint64_t threadId,
     uint64_t timestamp,
     _In_z_ char const* message
@@ -41,9 +41,10 @@ void CALLBACK TraceCallback(
     // Log info
 }
 
-PFHCTraceSetClientCallback(TraceCallback);
+HCTraceSetClientCallback(TraceCallback);
 ```
 
 ## Reference
 
-[API reference documentation](../../api-references/c/pftrace/pftrace_members.md)
+[PlayFab API reference documentation](../../api-references/c/pftrace/pftrace_members.md)
+[Trace API reference documentation](/gaming/gdk/docs/reference/live/httpclient/trace/trace_members)

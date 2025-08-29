@@ -23,6 +23,8 @@ items:
     href: group-leaderboards.md
   - name: Manual Tiers 
     href: manual-tiers.md
+  - name: Leaderboards with PlayStream and Telemetry
+    href: leaderboards-with-playstream-and-telemetry.md
   - name: API reference 
     href: api-reference.md
 - name: Tournaments & Leaderboards (Deprecated)

@@ -30,6 +30,10 @@ The following table defines the limits for the various APIs available in the Sta
 | DeleteStatisticsDefinition | 30 requests per 120 seconds  | Title  |  N/A |
 | IncrementStatisticVersion | 30 requests per 120 seconds  | Title  |  N/A |
 
+## Limit on statistics events
+
+- `playfab.statistic.statistic_updated`, will not work with statistics that use the entity type `master_player_account` or `external`
+
 ## See also
 
 - [Create basic statistics](create-basic-statistics.md)
