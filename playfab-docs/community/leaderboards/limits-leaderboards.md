@@ -31,6 +31,12 @@ The following table outlines the limits for the various APIs available in the Le
 | UnlinkLeaderboardFromStatistic | 30 requests per 120 seconds  | Title  | N/A |
 | IncrementLeaderboardVersion | 30 requests under 2 minutes  | Title  | N/A |
 
+## Limits on Leaderboard Events
+
+- `playfab.leaderboard.entity_rank_on_leaderboard_version_ended`
+  - Only return up to the top 1000 ranks.
+  - Will not work with leaderboards with a entity type of `master_player_account` or `external`.
+
 ## See also
 
 - [Create basic leaderboard](create-basic-leaderboard.md)

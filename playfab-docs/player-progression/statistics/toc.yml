@@ -20,6 +20,8 @@
     href: transactional-writes.md
   - name: Community statistics
     href: community-statistics.md
+  - name: Statistics with PlayStream and Telemetry
+    href: statistics-with-playstream-and-telemetry.md
   - name: API reference
     href: api-reference.md
 

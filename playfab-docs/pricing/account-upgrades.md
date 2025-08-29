@@ -39,6 +39,7 @@ You can change your account's plan via Game Manager using the **Plan Recommendat
 You can upgrade your account plan at any time on the **My Studios and Titles** page. Use the following steps to upgrade your account from Free to Start. Upgrading an account will upgrade all studios owned by the account.
 
 1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
+1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
 
 2. On the **My Studios and Titles** page, locate the header of a Studio whose linked account should be upgraded. Select **Upgrade Account**.
 
@@ -96,6 +97,7 @@ To cancel all charges, you must request deletion of your studio **at least 10 ca
 PlayFab will delete your studio within 10 calendar days following your cancellation. You will be charged for the usage incurred up to the point of your cancellation request and receive a final invoice on your regular due date. Please note that deleting a studio does not result in a prorated refund for plan charges. 
 
 Deleting a studio does not delete your PlayFab developer identity. Instead of deleting a studio, you can also delete all titles and change the account plan to Pay as You Go to prevent charges.   
+
 
 ## FAQ
 

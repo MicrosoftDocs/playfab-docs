@@ -16,6 +16,17 @@ These release notes are for __PlayFabCSdk__. For release notes for other PlayFab
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
+## 2504.0.0
+
+Date: April 22, 2025
+
+- Migrated JSON parsing from rapidjson to nlohmann::json for improved security and maintainability.
+- Addressed an issue where initializing PFCore overwrites the trace callback set by the title.
+- Changes to the memory hook functions, adding a new API to retrieve default memory hooks and modifying existing memory allocation functions to include a memory type ID.
+- Fixed a bug related to tracing cleanup when multiple clients are involved.
+- Enabled the PFAccountManagementSetDisplayNameAsync API in PlayFab.C.
+- Introduced custom memory allocation for the nlohmann JSON library and global overrides for new/delete operators.
+
 ## 2410.0.0
 
 Date: October 4, 2024
