@@ -98,7 +98,6 @@ PlayFab will delete your studio within 10 calendar days following your cancellat
 
 Deleting a studio does not delete your PlayFab developer identity. Instead of deleting a studio, you can also delete all titles and change the account plan to Pay as You Go to prevent charges.   
 
-
 ## FAQ
 
 **How do I know which subscription plan my account and its associated studios are currently on?**
