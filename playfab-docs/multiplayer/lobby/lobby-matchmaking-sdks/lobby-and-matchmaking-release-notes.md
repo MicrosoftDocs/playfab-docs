@@ -19,7 +19,7 @@ Sep 5, 2025
 ### Bug fixes
 
 - Fixed an issue where exposed `libHttpClient` symbols caused symbol clashes on Android. Added an option that allows games that require a specific version of
-  `libHttpClient` to supply their own dynamic `libHttpClient` and use the `.hideLHC` package to avoid symbol conflicts.
+  `libHttpClient` to supply their own dynamic `libHttpClient` and use the `.hideLHC` package to avoid symbol conflicts. This is an Android-only release.
 
 ### New Support
 
