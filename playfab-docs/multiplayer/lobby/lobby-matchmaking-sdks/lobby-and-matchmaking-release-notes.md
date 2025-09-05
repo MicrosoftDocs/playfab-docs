@@ -12,6 +12,19 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.8.2
+
+Sep 5, 2025
+
+### Bug fixes
+
+- Fixed an issue where exposed libHttpClient symbols caused symbol clashes on Android. Added an option that allows games requiring a specific version of libHttpClient to provide their own dynamic libHttpClient
+  in code and use the `.hideLHC` zip package, which avoids symbol clashes.
+
+### New Support
+
+- Added support for 16 KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
+
 ## 1.8.1
 
 Aug 20, 2025
