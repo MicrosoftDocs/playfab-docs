@@ -2,7 +2,7 @@
 title: Tournaments & Leaderboards quickstart
 author: joannaleecy
 description: Quickstart for Tournaments and& Leaderboards.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 07/12/2018
 ms.topic: article
 ms.service: azure-playfab

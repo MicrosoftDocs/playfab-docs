@@ -2,7 +2,7 @@
 title: Emails
 author: joannaleecy
 description: Landing page for Emails.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/12/2018
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: UUnit license
 author: joannaleecy
 description: The UUnit license.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/20/2019
 ms.topic: article
 ms.service: azure-playfab

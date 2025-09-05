@@ -2,7 +2,7 @@
 title: Cocos2D-x (C++) licenses
 author: joannaleecy
 description: License pages for Cocos2D-x (C++).
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/22/2019
 ms.topic: article
 ms.service: azure-playfab

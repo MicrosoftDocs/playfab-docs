@@ -2,7 +2,7 @@
 title: Getting Started with PlayFab Explorer
 author: joannaleecy
 description: Illustrates how to use the Explorer feature.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 07/24/2019
 ms.topic: article
 ms.service: azure-playfab

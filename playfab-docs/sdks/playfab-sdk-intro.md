@@ -2,7 +2,7 @@
 title: Azure PlayFab SDKs
 author: joannaleecy
 description: Azure PlayFab SDKs
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/04/2024
 ms.topic: article
 ms.service: azure-playfab

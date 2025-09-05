@@ -2,7 +2,7 @@
 title: Azure Enterprise Agreement (EA) billing for PlayFab services
 author: joannaleecy
 description: Describes the Azure Enterprise Agreement (EA) billing for PlayFab services and how to sign up for it.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 05/08/2019
 ms.topic: article
 ms.service: azure-playfab

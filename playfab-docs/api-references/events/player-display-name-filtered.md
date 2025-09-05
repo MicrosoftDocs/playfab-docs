@@ -2,7 +2,7 @@
 title: player_display_name_filtered
 author: joannaleecy
 description: player_display_name_filtered event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

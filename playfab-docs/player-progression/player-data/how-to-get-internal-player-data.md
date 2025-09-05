@@ -2,7 +2,7 @@
 title: How to get internal player data
 author: DanBehrendt
 description: "How to get internal player data."
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/16/2020
 ms.topic: article
 ms.service: azure-playfab

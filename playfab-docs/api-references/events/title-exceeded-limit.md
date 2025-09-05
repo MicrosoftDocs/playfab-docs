@@ -2,7 +2,7 @@
 title: title_exceeded_limit
 author: joannaleecy
 description: title_exceeded_limit event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

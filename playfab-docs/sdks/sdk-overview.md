@@ -2,7 +2,7 @@
 title: Standalone SDKs overview
 author: joannaleecy
 description: SDKs overview
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/17/2025
 ms.topic: article
 ms.service: azure-playfab

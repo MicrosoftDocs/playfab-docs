@@ -2,7 +2,7 @@
 title: player_ranked_on_leaderboard_version
 author: joannaleecy
 description: player_ranked_on_leaderboard_version event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

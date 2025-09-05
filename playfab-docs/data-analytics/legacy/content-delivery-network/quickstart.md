@@ -2,7 +2,7 @@
 title: Content Delivery Network quickstart
 author: joannaleecy
 description: Describes the PlayFab Content Delivery Network in detail.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/11/2018
 ms.topic: article
 ms.service: azure-playfab

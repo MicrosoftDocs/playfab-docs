@@ -2,7 +2,7 @@
 title: News
 author: joannaleecy
 description: Landing page for News.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/01/2018
 ms.topic: article
 ms.service: azure-playfab

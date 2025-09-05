@@ -2,7 +2,7 @@
 title: Daily and Monthly Top Items Report
 author: joannaleecy
 description: Describes the report that tracks the top 100 items in your game.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/30/2018
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Using Email Templates to Send an Account Recovery Email
 author: joannaleecy
 description: Tutorial that describes how to use the email template feature of PlayFab to send an account recovery player's contact email address to let a player reset their password.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/26/2018
 ms.topic: article
 ms.service: azure-playfab

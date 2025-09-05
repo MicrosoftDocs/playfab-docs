@@ -2,7 +2,7 @@
 title: Join lobbies
 author: joannaleecy
 description: Learn about joining lobbies.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/25/2021
 ms.topic: article
 ms.service: azure-playfab

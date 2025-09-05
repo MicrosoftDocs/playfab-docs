@@ -2,7 +2,7 @@
 title: Schemas
 author: joannaleecy
 description: Overview of schemas.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 07/23/2019    
 ms.topic: article
 ms.service: azure-playfab

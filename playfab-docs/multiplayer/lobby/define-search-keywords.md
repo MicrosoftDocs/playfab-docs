@@ -2,7 +2,7 @@
 title: Create searchable lobbies
 author: joannaleecy
 description: Learn how to create searchable lobbies.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/25/2021
 ms.topic: article
 ms.service: azure-playfab

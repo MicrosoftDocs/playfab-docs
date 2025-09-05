@@ -2,7 +2,7 @@
 title: title_profile_view_constraints_changed
 author: joannaleecy
 description: title_profile_view_constraints_changed event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

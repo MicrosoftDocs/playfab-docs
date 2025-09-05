@@ -2,7 +2,7 @@
 title: Hamcrest license
 author: joannaleecy
 description: Hamcrest license.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/20/2019
 ms.topic: article
 ms.service: azure-playfab

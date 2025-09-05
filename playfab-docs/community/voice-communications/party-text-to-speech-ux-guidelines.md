@@ -2,7 +2,7 @@
 title: PlayFab Party text-to-speech and text input UX Guidelines
 author: joannaleecy
 description: Describes the PlayFab Party APIs, and focuses on text input and text-to-speech implementation, requirements, and console and PC UI solutions.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/11/2019
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Set up an Amazon S3 bucket
 author: mafonten
 description: Shows step-by-step how to configure an Amazon S3 bucket for PlayFab event archiving.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/18/2019
 ms.topic: article
 ms.service: azure-playfab

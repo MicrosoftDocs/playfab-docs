@@ -2,7 +2,7 @@
 title: Managing quota changes
 author: joannaleecy
 description: Managing quota changes
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/15/2020
 ms.topic: article
 ms.service: azure-playfab

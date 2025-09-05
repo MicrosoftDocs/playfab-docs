@@ -2,7 +2,7 @@
 title: matchmaking_match_found
 author: joannaleecy
 description: matchmaking_match_found event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

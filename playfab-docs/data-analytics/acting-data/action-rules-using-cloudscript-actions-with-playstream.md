@@ -2,7 +2,7 @@
 title: Using CloudScript actions with PlayStream
 author: joannaleecy
 description: Shows what is available in the context of a CloudScript handler launched from a PlayStream action, and how to make use of it.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/11/2018
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Connecting clients to game servers 
 author: joannaleecy
 description: Describes how to connect clients to game servers.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/09/2018
 ms.topic: article
 ms.service: azure-playfab

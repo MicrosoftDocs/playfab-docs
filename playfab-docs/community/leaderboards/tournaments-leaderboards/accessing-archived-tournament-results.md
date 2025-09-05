@@ -2,7 +2,7 @@
 title: Accessing Archived Tournament results
 author: joannaleecy
 description: Describes how to access archived leaderboard states.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/29/2018
 ms.topic: article
 ms.service: azure-playfab

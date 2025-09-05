@@ -2,7 +2,7 @@
 title: Actions & Rules
 author: joannaleecy
 description: Landing page for Actions & Rules.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/12/2018
 ms.topic: article
 ms.service: azure-playfab

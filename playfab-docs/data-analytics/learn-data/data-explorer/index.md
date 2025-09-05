@@ -2,7 +2,7 @@
 title: Data Explorer
 author: joannaleecy
 description: Overview for Data Explorer
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 09/22/2020    
 ms.topic: article
 ms.service: azure-playfab

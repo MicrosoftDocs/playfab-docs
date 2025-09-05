@@ -2,7 +2,7 @@
 title: Quality-of-service (QoS) beacons to measure player latency to Azure
 author: joannaleecy
 description: Describes how to use QoS data to inform the ranking of Azure regions used while requesting a multiplayer server.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/17/2019
 ms.topic: article
 ms.service: azure-playfab
