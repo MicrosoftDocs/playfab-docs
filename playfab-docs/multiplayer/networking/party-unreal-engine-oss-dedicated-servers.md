@@ -74,3 +74,4 @@ PS C:\WindowsClient\ > .\<Game>Client.exe <ipaddress_of_server_machine>:7777 -lo
 - The default port of a dedicated server is usually 7777. If you run into connection errors, ensure that the server is deploying on the correct port, or change your connection command to match that port.
 
 A game client will appear and connect to the game started on the server. You should see logs in the dedicated server's log window indicating that a client joined.
+
