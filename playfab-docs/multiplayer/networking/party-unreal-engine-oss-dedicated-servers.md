@@ -48,8 +48,8 @@ PS  C:\WindowsServer\ >
 ```ps
 PS  C:\WindowsServer\ > .\<Game>Server.exe <map> -log –NOSTEAM
 ```
-- The `-NOSTEAM` arg disables the default OSS for the game (OSS PlayFab in this case) and replaces it with `OnlineSubsystemNull`.
-- The `-log` arg opens a separate window to display the contents of the logs in real time.
+- The `-NOSTEAM` arg disables the default OSS for the game (OSS PlayFab in this case) and replaces it with `OnlineSubsystemNull`. Disabling the default online subsystem ensures that the dedicated server consistently uses the correct subsystem.
+- The `-log` arg opens a separate window to display the contents of the logs in real time. 
 - For more info on UE's CLI arguments, visit [Unreal Engine's Command Line Arguments](https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/CommandLineArguments/) documentation.
 
 A separate window will appear with UE logs confirming that a server spawned. Ensure that the logs contain these lines:
@@ -74,6 +74,4 @@ PS C:\WindowsClient\ > .\<Game>Client.exe <ipaddress_of_server_machine>:7777 -lo
 - The default port of a dedicated server is usually 7777. If you run into connection errors, ensure that the server is deploying on the correct port, or change your connection command to match that port.
 
 A game client will appear and connect to the game started on the server. You should see logs in the dedicated server's log window indicating that a client joined.
-
-
 
