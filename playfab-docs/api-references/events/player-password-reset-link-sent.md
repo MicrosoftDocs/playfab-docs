@@ -2,7 +2,7 @@
 title: player_password_reset_link_sent
 author: joannaleecy
 description: player_password_reset_link_sent event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

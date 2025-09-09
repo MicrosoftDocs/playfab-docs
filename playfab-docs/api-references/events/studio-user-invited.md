@@ -2,7 +2,7 @@
 title: studio_user_invited
 author: joannaleecy
 description: studio_user_invited event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

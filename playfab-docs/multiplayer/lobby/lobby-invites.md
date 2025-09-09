@@ -2,7 +2,7 @@
 title: Lobby invites
 author: joannaleecy
 description: Learn about inviting players to lobbies
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/25/2021
 ms.topic: article
 ms.service: azure-playfab

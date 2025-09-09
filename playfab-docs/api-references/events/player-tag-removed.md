@@ -2,7 +2,7 @@
 title: player_tag_removed
 author: joannaleecy
 description: player_tag_removed event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

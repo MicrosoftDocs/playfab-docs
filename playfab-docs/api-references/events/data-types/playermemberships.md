@@ -2,7 +2,7 @@
 title: PlayerMemberships
 author: joannaleecy
 description: Player Memberships data type.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/27/2019
 ms.topic: article
 ms.service: azure-playfab

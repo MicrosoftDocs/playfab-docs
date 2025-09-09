@@ -2,7 +2,7 @@
 title: Create your first server
 author: joannaleecy
 description: Create your first server.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

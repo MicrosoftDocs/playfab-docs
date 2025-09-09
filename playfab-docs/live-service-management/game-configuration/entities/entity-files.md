@@ -2,7 +2,7 @@
 title: Entity files
 author: joannaleecy
 description: Describes the terminology, concepts, and design of Entities in the PlayFab APIs.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/26/2018
 ms.topic: article
 ms.service: azure-playfab

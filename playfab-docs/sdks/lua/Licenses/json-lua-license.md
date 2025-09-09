@@ -2,7 +2,7 @@
 title: JSON Lua
 author: joannaleecy
 description: The JSON Lua license.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/20/2019
 ms.topic: article
 ms.service: azure-playfab

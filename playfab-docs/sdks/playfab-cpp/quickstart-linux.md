@@ -2,7 +2,7 @@
 title: Quickstart C++ for Linux
 author: DanBehrendt
 description: This guide helps you make your first PlayFab API call in Linux C++.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/16/2020
 ms.topic: article
 ms.service: azure-playfab

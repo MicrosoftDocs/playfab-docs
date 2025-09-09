@@ -2,7 +2,7 @@
 title: Reports
 author: joannaleecy
 description: Landing page for Reports.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/12/2019
 ms.topic: article
 ms.service: azure-playfab

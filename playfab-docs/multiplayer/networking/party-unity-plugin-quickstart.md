@@ -2,7 +2,7 @@
 title: Party Unity plugin quickstart
 description: Guidance on how to use PlayFab party in your Unity Project.
 author: xmcai2016
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/17/2020
 ms.topic: article
 ms.service: azure-playfab

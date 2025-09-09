@@ -2,7 +2,7 @@
 title: group_role_created
 author: joannaleecy
 description: group_role_created event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

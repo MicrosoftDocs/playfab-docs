@@ -2,7 +2,7 @@
 title: Lobby ownership changes
 author: joannaleecy
 description: Learn about lobby owner migration and proactive owner promotion.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/28/2023
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Azure PlayFab Party SDKs
 author: joannaleecy
 description: Learn about the SDKs for Azure PlayFab Party.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/22/2021
 ms.topic: article
 ms.service: azure-playfab

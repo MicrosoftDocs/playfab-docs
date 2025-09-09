@@ -2,7 +2,7 @@
 title: Insights
 author: joannaleecy
 description: Overview for PlayFab Insights
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/28/2020
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Scheduled Standby
 author: joannaleecy
 description: Scheduled Standby is an auto scaling enhancement that adjusts standby server levels at a single or recurring scheduled date & time.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/22/2021
 ms.topic: article
 ms.service: azure-playfab

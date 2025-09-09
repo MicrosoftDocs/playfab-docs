@@ -2,7 +2,7 @@
 title: Daily API Usage Details Report
 author: joannaleecy
 description: Describes the report that tracks the PlayFab API calls used by your title.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/30/2018
 ms.topic: article
 ms.service: azure-playfab

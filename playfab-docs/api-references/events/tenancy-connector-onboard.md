@@ -2,7 +2,7 @@
 title: tenancy_connector_onboard
 author: joannaleecy
 description: tenancy_connector_onboard event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

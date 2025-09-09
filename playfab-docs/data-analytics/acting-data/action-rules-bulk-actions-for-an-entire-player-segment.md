@@ -2,7 +2,7 @@
 title: Bulk Actions for an entire Player Segment
 author: joannaleecy
 description: Describes the steps needed to create a task to perform one or more actions on every player in a segment.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/11/2018
 ms.topic: article
 ms.service: azure-playfab

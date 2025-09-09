@@ -65,6 +65,8 @@ landingContent:
             url: statistics/transactional-writes.md
           - text: Community statistics
             url: statistics/community-statistics.md
+          - text: Statistics with PlayStream and Telemetry
+            url: statistics/statistics-with-playstream-and-telemetry.md
       - linkListType:  reference
         links:
           - text: Statistics Limits

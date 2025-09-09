@@ -71,4 +71,5 @@ has a Statistics engine doing the aggregation.
 - [Add contextual data to leaderboards](metadata-leaderboards.md)  
 - [API reference](api-reference.md)  
 - [Quota](quota-leaderboards.md)  
-- [Leaderboard meters](../../pricing/Meters/leaderboard-meters.md)  
+- [Leaderboard meters](../../pricing/Meters/leaderboard-meters.md)
+- [Leaderboards With PlayStream and Telemetry](./leaderboards-with-playstream-and-telemetry.md)

@@ -2,7 +2,7 @@
 title: title_deleted_master_player
 author: joannaleecy
 description: title_deleted_master_player event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: General PlayFab samples
 author: joannaleecy
 description: Code samples for PlayFab features and technologies.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/21/2024
 ms.topic: article
 ms.service: azure-playfab

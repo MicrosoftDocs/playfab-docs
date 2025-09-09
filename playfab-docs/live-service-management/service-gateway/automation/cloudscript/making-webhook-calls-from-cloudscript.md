@@ -2,7 +2,7 @@
 title: Making Webhook calls from CloudScript
 author: joannaleecy
 description: Describes how to make Webhook calls from CloudScript, for both nonsecure and secure scenarios.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/11/2018
 ms.topic: article
 ms.service: azure-playfab

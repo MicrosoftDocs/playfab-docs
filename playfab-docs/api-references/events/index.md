@@ -2,7 +2,7 @@
 title: PlayStream Event Model reference
 author: joannaleecy
 description: Overview page for PlayStream event model reference documentation.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
@@ -451,3 +451,16 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [title_updated_task](title-updated-task.md)  
   This event is triggered when a task is updated.
+
+## Statistics
+
+- [statistic_updated](statistic-updated.md)  
+  This event is triggered when a statistic is updated.
+
+## Leaderboards
+
+- [leaderboard_version_ended](leaderboard-version-ended.md)  
+  This event is triggered when a leaderboard version is reset
+
+- [entity_rank_on_leaderboard_version_ended](entity-rank-on-leaderboard-version-ended.md)  
+  This event is triggered when a leaderboard version is reset

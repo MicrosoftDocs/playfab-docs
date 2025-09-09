@@ -2,7 +2,7 @@
 title: Using the Players Page
 author: joannaleecy
 description: Describes how to use the Players Page in the PlayFab Game Manager for simple and complex queries of player data.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/11/2018
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Insights Best Practices
 author: joannaleecy
 description: PlayFab Insights best practices and FAQs
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/28/2020
 ms.topic: article
 ms.service: azure-playfab

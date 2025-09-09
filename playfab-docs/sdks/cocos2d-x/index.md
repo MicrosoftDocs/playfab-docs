@@ -2,7 +2,7 @@
 title: Cocos2D-x (C++) SDK
 author: joannaleecy
 description: Landing page for the PlayFab Cocos2D-x (C++) SDK.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 07/12/2018
 ms.topic: article
 ms.service: azure-playfab
