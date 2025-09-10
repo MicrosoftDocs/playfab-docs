@@ -25,7 +25,8 @@ Some file sync systems treat conflicts on a file-by-file basis – if the same f
 When conflicts occur, players choose between:
 - **Use Local Data**: Keep the device's current save data (overwrites cloud data on next upload)
 - **Use Cloud Data**: Download and use the cloud save data (overwrites local data)
-A conflict resolution decision applies to all atomic units that are in conflict at the time of sync. If the player chooses cloud all the conflicting atomic units will be downloaded, and conversely, choosing local leads to all being uploaded.
+
+A conflict resolution decision applies to all atomic units that are in conflict at the time of sync. If the player chooses cloud, all the conflicting atomic units will be downloaded, and conversely, choosing local leads to all being uploaded.
 
 ### Best Practices
 - **Design folder structure carefully**: Group related save files into logical folders
