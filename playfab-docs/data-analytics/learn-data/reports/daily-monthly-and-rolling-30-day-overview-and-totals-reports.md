@@ -2,7 +2,7 @@
 title: Daily, Monthly, and Rolling 30-Day Overview and Totals Reports
 author: joannaleecy
 description: Describes the report that tracks hourly, daily, and monthly logins, revenue, and API usage.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/30/2018
 ms.topic: article
 ms.service: azure-playfab

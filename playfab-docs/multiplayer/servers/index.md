@@ -2,7 +2,7 @@
 title: Servers
 author: joannaleecy
 description: Overview of PlayFab's multiplayer server hosting service.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

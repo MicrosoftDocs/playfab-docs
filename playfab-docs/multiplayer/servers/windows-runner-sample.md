@@ -2,7 +2,7 @@
 title: Windows Runner sample
 author: joannaleecy
 description: Windows Runner sample.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/15/2021
 ms.topic: article
 ms.service: azure-playfab

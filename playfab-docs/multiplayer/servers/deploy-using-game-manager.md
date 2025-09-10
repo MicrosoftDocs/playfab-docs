@@ -2,7 +2,7 @@
 title: "Deploy builds using Game Manager"
 author: joannaleecy
 description: "Deploy builds using Game Manager"
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Multiplayer with PlayFab
 author: joannaleecy
 description: Learn how PlayFab services can be used for multiplayer.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/04/2019
 ms.topic: article
 ms.service: azure-playfab

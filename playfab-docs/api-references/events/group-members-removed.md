@@ -2,7 +2,7 @@
 title: group_members_removed
 author: joannaleecy
 description: group_members_removed event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

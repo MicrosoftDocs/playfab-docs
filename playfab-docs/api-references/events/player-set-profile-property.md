@@ -2,7 +2,7 @@
 title: player_set_profile_property
 author: joannaleecy
 description: player_set_profile_property event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

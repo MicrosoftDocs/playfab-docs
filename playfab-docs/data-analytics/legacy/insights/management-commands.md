@@ -2,7 +2,7 @@
 title: Insights Management Commands
 author: joannaleecy
 description: management commands for title adx
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 1/9/2020    
 ms.topic: article
 ms.service: azure-playfab

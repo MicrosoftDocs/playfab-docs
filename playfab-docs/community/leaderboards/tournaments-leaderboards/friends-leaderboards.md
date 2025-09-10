@@ -2,7 +2,7 @@
 title: Friends Leaderboards
 author: joannaleecy
 description: Tutorial that describes how to create and use friends leaderboards.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/26/2018
 ms.topic: article
 ms.service: azure-playfab

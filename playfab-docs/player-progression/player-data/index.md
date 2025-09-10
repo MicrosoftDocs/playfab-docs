@@ -2,7 +2,7 @@
 title: Player Data
 author: DanBehrendt
 description: Landing page for Player Data.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/12/2018
 ms.topic: article
 ms.service: azure-playfab

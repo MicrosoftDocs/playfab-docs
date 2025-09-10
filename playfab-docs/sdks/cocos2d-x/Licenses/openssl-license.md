@@ -2,7 +2,7 @@
 title: OpenSSL License
 author: joannaleecy
 description: License for OpenSSL
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2018
 ms.topic: article
 ms.service: azure-playfab

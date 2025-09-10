@@ -2,7 +2,7 @@
 title: player_registered_push_notifications
 author: joannaleecy
 description: player_registered_push_notifications event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Create and deploy Linux container images
 author: joannaleecy
 description: Create and deploy Linux container images.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

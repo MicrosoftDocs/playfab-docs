@@ -2,7 +2,7 @@
 title: entity_virtual_currency_balances_changed
 author: joannaleecy
 description: entity_virtual_currency_balances_changed event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Friends 
 author: joannaleecy
 description: Landing page for Friends 
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

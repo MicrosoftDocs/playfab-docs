@@ -2,7 +2,7 @@
 title: Multiplayer servers comparison
 author: joannaleecy
 description: Compare servers for PlayFab Multiplayer Server 2.0.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/17/2021
 ms.topic: article
 ms.service: azure-playfab

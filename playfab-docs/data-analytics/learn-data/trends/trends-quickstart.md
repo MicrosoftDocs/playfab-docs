@@ -2,7 +2,7 @@
 title: Metrics quickstart
 author: joannaleecy
 description: Quickstart for Metrics.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/12/2019
 ms.topic: article
 ms.service: azure-playfab

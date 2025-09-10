@@ -2,7 +2,7 @@
 title: REST API Reference
 author: joannaleecy
 description: Overview page for PlayFab REST API reference documentation.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/19/2018
 ms.topic: article
 ms.service: azure-playfab

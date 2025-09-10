@@ -2,7 +2,7 @@
 title: Azure PlayFab Lobby overview
 author: joannaleecy
 description: Learn about Azure PlayFab Lobby.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/08/2025
 ms.topic: article
 ms.service: azure-playfab

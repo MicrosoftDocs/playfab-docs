@@ -2,7 +2,7 @@
 title: Insights Export
 author: joannaleecy
 description: Overview for PlayFab Insights Export
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/28/2020
 ms.topic: article
 ms.service: azure-playfab

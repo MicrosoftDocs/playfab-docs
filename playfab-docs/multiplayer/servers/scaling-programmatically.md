@@ -2,7 +2,7 @@
 title: Scaling Programmatically
 author: joannaleecy
 description: Scaling Programmatically with the Multiplayer Servers API
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/22/2021
 ms.topic: article
 ms.service: azure-playfab

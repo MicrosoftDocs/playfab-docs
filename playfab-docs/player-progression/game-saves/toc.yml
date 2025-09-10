@@ -1,0 +1,20 @@
+### YamlMime:TOC
+items:
+- name: Overview
+  href: overview.md
+- name: Onboarding
+  href: onboarding.md
+- name: Quickstart
+  href: quickstart.md
+- name: October 2025 GDK Implementation
+  href: october-2025-gdk-changes.md
+- name: Steam Deck Implementation
+  href: steam-deck-implementation.md
+- name: Conflicts
+  href: conflicts.md
+- name: Offline Mode
+  href: offline.md
+- name: Active Device Changes
+  href: activedevicechanges.md
+- name: Limits
+  href: limits.md

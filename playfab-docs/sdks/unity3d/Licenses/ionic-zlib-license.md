@@ -2,7 +2,7 @@
 title: Ionic Zlib license
 author: joannaleecy
 description: The Ionic ZLib license.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/20/2019
 ms.topic: article
 ms.service: azure-playfab
