@@ -2,7 +2,7 @@
 title: Troubleshooting PlayFab Party
 description: Tips for troubleshooting PlayFab Party real-time chat and data communication.
 author: joannaleecy
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 08/15/2019
 ms.topic: article
 ms.service: azure-playfab

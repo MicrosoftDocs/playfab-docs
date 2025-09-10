@@ -2,7 +2,7 @@
 title: Player Segment configuration
 author: joannaleecy
 description: Describes the basics of Player Segment configuration.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/12/2018
 ms.topic: article
 ms.service: azure-playfab

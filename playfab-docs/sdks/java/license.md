@@ -2,7 +2,7 @@
 title: Java licenses
 author: joannaleecy
 description: Java licenses page
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/22/2019
 ms.topic: article
 ms.service: azure-playfab

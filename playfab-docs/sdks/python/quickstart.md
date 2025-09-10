@@ -2,7 +2,7 @@
 title: Python quickstart
 author: DanBehrendt
 description: This guide will help you make your first PlayFab API call in Python 3.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 12/04/2019
 ms.topic: article
 ms.service: azure-playfab

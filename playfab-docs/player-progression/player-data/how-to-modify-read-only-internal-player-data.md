@@ -2,7 +2,7 @@
 title: How to modify read-only or internal player data from CloudScript
 author: DanBehrendt
 description: "How to modify read-only or internal player data from CloudScript"
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/16/2020
 ms.topic: article
 ms.service: azure-playfab

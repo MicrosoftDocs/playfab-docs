@@ -2,7 +2,7 @@
 title: Insights pricing
 author: joannaleecy
 description: Overview for PlayFab Insights Pricing
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/28/2020
 ms.topic: article
 ms.service: azure-playfab

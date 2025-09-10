@@ -2,7 +2,7 @@
 title: Multiplayer Servers samples and resources
 author: joannaleecy
 description: Samples and resources for Azure PlayFab Multiplayer Game Servers.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

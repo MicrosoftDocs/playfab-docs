@@ -2,7 +2,7 @@
 title: OS Patch level updates for Windows 
 author: joannaleecy
 description: Describes OS patch level cycle
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/30/2021
 ms.topic: article
 ms.service: azure-playfab

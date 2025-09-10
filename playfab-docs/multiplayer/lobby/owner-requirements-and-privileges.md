@@ -2,7 +2,7 @@
 title: Lobby ownership
 author: joannaleecy
 description: Learn about lobby ownership and related privileges
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/28/2023
 ms.topic: article
 ms.service: azure-playfab

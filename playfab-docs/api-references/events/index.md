@@ -2,7 +2,7 @@
 title: PlayStream Event Model reference
 author: joannaleecy
 description: Overview page for PlayStream event model reference documentation.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

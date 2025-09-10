@@ -2,7 +2,7 @@
 title: multiplayer_server_certificate_uploaded
 author: joannaleecy
 description: multiplayer_server_certificate_uploaded event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

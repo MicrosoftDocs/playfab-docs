@@ -2,7 +2,7 @@
 title: Schemas quickstart
 author: joannaleecy
 description: Gets you started with schemas.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 07/23/2019    
 ms.topic: article
 ms.service: azure-playfab

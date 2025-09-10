@@ -2,7 +2,7 @@
 title: Basics of a PlayFab game server
 author: joannaleecy
 description: Describes how game servers are packaged and integrated with PlayFab systems.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/19/2021
 ms.topic: article
 ms.service: azure-playfab

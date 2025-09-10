@@ -2,7 +2,7 @@
 title: GSDK Project Setup
 author: joannaleecy
 description: Adding the GSDK to an Unreal Project
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 12/08/2021
 ms.topic: article
 ms.service: azure-playfab

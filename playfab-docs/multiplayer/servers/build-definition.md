@@ -2,7 +2,7 @@
 title: Build definition and configuration
 author: joannaleecy
 description: VM build definition and configuration.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

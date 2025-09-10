@@ -2,7 +2,7 @@
 title: Videos
 author: joannaleecy
 description: Videos for PlayFab features and technologies.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/25/2019
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: SDK Generator quickstart
 author: joannaleecy
 description: This guide shows you how to quickly get started with the PlayFab SDK Generator.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/22/2019
 ms.topic: article
 ms.service: azure-playfab

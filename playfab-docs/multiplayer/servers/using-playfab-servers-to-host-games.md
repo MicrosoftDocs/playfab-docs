@@ -2,7 +2,7 @@
 title: Using PlayFab Multiplayer Servers to host multiplayer games
 author: joannaleecy
 description: Using PlayFab Multiplayer Servers to host multiplayer games.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

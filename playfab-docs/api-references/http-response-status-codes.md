@@ -2,7 +2,7 @@
 title: HTTP response status codes
 author: joannaleecy
 description: HTTP response status codes.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/08/2021
 ms.topic: article
 ms.service: azure-playfab

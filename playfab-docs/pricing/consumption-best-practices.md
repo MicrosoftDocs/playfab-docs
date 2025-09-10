@@ -2,7 +2,7 @@
 title: PlayFab Consumption Best Practices
 author: joannaleecy
 description: Describes best practices for managing your costs in PlayFab.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 5/29/2020
 ms.topic: article
 ms.service: azure-playfab

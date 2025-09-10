@@ -2,7 +2,7 @@
 title: player_photon_session_authenticated
 author: joannaleecy
 description: player_photon_session_authenticated event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

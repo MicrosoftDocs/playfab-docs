@@ -2,7 +2,7 @@
 title: JavaScript SDK
 author: joannaleecy
 description: Landing page for the PlayFab JavaScript SDK.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/22/2021
 ms.topic: article
 ms.service: azure-playfab

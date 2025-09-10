@@ -2,7 +2,7 @@
 title: Cocos2D-x Quickstart
 author: joannaleecy
 description: This guide will help you make your first PlayFab API call in the Cocos2d-x engine.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/11/2018
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Enabling PlayFab Party
 author: debhaldarMS
 description: This tutorial explains how to enable PlayFab Party and use it with the PlayFab Party demo app.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 08/15/2019
 ms.topic: article
 ms.service: azure-playfab

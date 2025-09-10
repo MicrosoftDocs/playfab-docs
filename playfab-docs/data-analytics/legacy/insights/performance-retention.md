@@ -2,7 +2,7 @@
 title: Performance and retention
 author: joannaleecy
 description: Performance and retention for playfab insights
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/28/2020
 ms.topic: article
 ms.service: azure-playfab

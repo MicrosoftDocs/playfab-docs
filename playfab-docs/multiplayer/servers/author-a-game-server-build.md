@@ -2,7 +2,7 @@
 title: Author a game server build
 author: joannaleecy
 description: Author a game server build
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

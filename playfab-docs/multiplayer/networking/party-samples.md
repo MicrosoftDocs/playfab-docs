@@ -2,7 +2,7 @@
 title: Party samples
 author: joannaleecy
 description: Learn about the samples for Azure PlayFab Party.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/13/2020
 ms.topic: article
 ms.service: azure-playfab

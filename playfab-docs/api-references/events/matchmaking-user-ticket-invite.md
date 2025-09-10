@@ -2,7 +2,7 @@
 title: matchmaking_user_ticket_invite  
 author: joannaleecy
 description: matchmaking_user_ticket_invite event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Setting default languages
 author: joannaleecy
 description: Describes how to set the default language for a title and for players.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/28/2019
 ms.topic: article
 keywords: playfab, title, players, language, localization

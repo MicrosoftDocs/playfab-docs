@@ -2,7 +2,7 @@
 title: PlayFab Party speech-to-text and text display UX guidelines
 author: joannaleecy
 description: Describes the PlayFab Party APIs, and focuses on speech-to-text and text display implementation, requirements, and custom console and PC UI solutions.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/11/2019
 ms.topic: article
 ms.service: azure-playfab
