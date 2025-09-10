@@ -2,7 +2,7 @@
 title: character_inventory_item_added
 author: joannaleecy
 description: character_inventory_item_added event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

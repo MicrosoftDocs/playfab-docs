@@ -2,7 +2,7 @@
 title: Setting up an SMTP server with Add-ons
 author: joannaleecy
 description: Describes how to set up an SMTP add-on to support sending custom emails through PlayFab.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/08/2018
 ms.topic: article
 ms.service: azure-playfab

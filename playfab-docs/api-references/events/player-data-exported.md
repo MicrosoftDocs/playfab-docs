@@ -2,7 +2,7 @@
 title: player_data_exported
 author: joannaleecy
 description: player_data_exported event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

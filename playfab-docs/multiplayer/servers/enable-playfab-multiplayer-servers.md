@@ -2,7 +2,7 @@
 title: Enable PlayFab Multiplayer Server feature
 author: joannaleecy
 description: Enable PlayFab Multiplayer Server feature.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/01/2021
 ms.topic: article
 ms.service: azure-playfab

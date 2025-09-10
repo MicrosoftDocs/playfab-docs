@@ -2,7 +2,7 @@
 title: Installing the PlayFab SDK Without Editor Extensions for Unity
 author: DanBehrendt
 description: This guide will help you install the PlayFab Unity 3D SDK and configure your project.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 1/25/2020
 ms.topic: article
 ms.service: azure-playfab

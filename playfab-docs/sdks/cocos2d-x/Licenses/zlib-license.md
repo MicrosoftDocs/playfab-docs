@@ -2,7 +2,7 @@
 title: zlib license
 author: joannaleecy
 description: License for zlib
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2018
 ms.topic: article
 ms.service: azure-playfab

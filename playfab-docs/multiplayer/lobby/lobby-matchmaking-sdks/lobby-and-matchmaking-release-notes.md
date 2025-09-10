@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.8.1
+
+Aug 20, 2025
+
+### Bug fixes
+
+- Switch: Fixed a crash that occurred during thread initialization.
+
 ## 1.8.0
 
 June 11, 2025

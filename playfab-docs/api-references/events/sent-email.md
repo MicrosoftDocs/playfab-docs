@@ -2,7 +2,7 @@
 title: sent_email
 author: joannaleecy
 description: sent_email event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Use lobby and matchmaking together
 author: joannaleecy
 description: Learn how to use Lobby and Matchmaking to implement a multiplayer game scenario.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/25/2021
 ms.topic: article
 ms.service: azure-playfab

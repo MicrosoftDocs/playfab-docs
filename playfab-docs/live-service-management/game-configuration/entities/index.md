@@ -2,7 +2,7 @@
 title: Entity Programming Model
 author: DanBehrendt
 description: Landing page for Entities.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 03/12/2020
 ms.topic: article
 ms.service: azure-playfab

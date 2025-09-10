@@ -2,7 +2,7 @@
 title: character_statistic_changed
 author: joannaleecy
 description: character_statistic_changed event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

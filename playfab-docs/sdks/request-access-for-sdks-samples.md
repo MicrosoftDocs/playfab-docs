@@ -2,7 +2,7 @@
 title: Request access for secured SDKs and samples
 author: joannaleecy
 description: Learn how to request access for secured SDKs and samples.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/28/2020
 ms.topic: article
 ms.service: azure-playfab

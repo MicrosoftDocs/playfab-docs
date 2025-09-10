@@ -2,7 +2,7 @@
 title: Linux getting started
 author: kdearnley
 description: Linux supplement for PlayFab Party quickstart
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 08/01/2022
 ms.topic: article
 ms.service: azure-playfab

@@ -2,7 +2,7 @@
 title: Using Prize Tables
 author: joannaleecy
 description: Tutorial about how to create and use a Prize Table.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/25/2018
 ms.topic: article
 ms.service: azure-playfab

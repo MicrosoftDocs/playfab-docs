@@ -2,7 +2,7 @@
 title: character_vc_item_purchased
 author: joannaleecy
 description: character_vc_item_purchased event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

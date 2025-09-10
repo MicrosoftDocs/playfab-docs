@@ -2,7 +2,7 @@
 title: Azure PlayFab Lobby custom properties
 author: joannaleecy
 description: Learn about custom properties in Lobby.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/25/2021
 ms.topic: article
 ms.service: azure-playfab

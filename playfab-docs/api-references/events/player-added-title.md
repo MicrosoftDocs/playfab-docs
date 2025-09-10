@@ -2,7 +2,7 @@
 title: player_added_title
 author: joannaleecy
 description: player_added_title event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

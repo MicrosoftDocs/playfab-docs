@@ -4,6 +4,8 @@
   items:
   - name: Running an HTTP server for testing
     href: running-an-http-server-for-testing.md
+  - name: Setting up PlayFab authentication using Battle.net and HTML5
+    href: battlenet-login.md
   - name: Setting up PlayFab authentication using Facebook and HTML5
     href: facebook-html5.md
   - name: Setting up PlayFab authentication using Facebook and Unity

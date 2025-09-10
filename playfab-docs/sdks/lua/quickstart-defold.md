@@ -2,7 +2,7 @@
 title: Lua quickstart for Defold
 author: joannaleecy
 description: This guide will help you make your first PlayFab API call using Defold.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/11/2018
 ms.topic: article
 ms.service: azure-playfab

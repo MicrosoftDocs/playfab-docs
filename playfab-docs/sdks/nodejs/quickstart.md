@@ -2,7 +2,7 @@
 title: NodeJS quickstart
 author: joannaleecy
 description: This guide will help you make your first API call in NodeJS.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/11/2018
 ms.topic: article
 ms.service: azure-playfab

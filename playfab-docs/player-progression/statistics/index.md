@@ -69,3 +69,4 @@ However, also this service can work in a standalone fashion if needed.
 - [API reference](api-reference.md).
 - [Ranking players by statistics](../../community/leaderboards/leaderboards-linked-to-stats.md).
 - [Statistics meters](../../pricing/Meters/statistics-meters.md).
+- [Statistics with PlayStream and Telemetry](./statistics-with-playstream-and-telemetry.md).

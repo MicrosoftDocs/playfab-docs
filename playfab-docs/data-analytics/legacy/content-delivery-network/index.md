@@ -2,7 +2,7 @@
 title: Content Delivery Network
 author: joannaleecy
 description: Landing page for Content Delivery Network.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/05/2019
 ms.topic: article
 ms.service: azure-playfab

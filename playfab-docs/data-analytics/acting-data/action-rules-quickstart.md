@@ -2,7 +2,7 @@
 title: Actions & Rules quickstart
 author: joannaleecy
 description:  Quickstart for Actions & Rules.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/30/2019
 ms.topic: article
 ms.service: azure-playfab

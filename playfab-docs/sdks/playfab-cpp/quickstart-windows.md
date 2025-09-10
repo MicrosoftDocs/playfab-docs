@@ -2,7 +2,7 @@
 title: Quickstart C++ for Windows
 author: DanBehrendt
 description: This guide helps you make your first PlayFab API call in native C++.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 04/16/2020
 ms.topic: article
 ms.service: azure-playfab

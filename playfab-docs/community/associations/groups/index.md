@@ -2,7 +2,7 @@
 title: Groups, Guilds and Clans
 author: joannaleecy
 description: Landing page for Friends and Groups.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 07/12/2018
 ms.topic: article
 ms.service: azure-playfab

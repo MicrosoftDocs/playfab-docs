@@ -2,7 +2,7 @@
 title: Unreal Engine (C++, Blueprints) SDK
 author: joannaleecy
 description: Landing page for the PlayFab Unreal SDK, and the PlayFab Marketplace Plugin.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 01/22/2021
 ms.topic: article
 ms.service: azure-playfab

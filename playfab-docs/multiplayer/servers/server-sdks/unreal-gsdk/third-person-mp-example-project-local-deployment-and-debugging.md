@@ -2,7 +2,7 @@
 title: GSDK Project Testing and Debugging
 author: joannaleecy
 description: Deploying an Unreal GSDK Project to the local machine for testing
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 12/08/2021
 ms.topic: article
 ms.service: azure-playfab

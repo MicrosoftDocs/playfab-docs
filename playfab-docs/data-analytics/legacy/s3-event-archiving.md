@@ -2,7 +2,7 @@
 title: S3 Event Archiving
 author: joannaleecy
 description: Shows step-by-step how to configure PlayFab event archiving from scratch using Amazon S3 Bucket.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/31/2018
 ms.topic: article
 ms.service: azure-playfab

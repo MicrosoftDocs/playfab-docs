@@ -2,7 +2,7 @@
 title: Daily and Monthly CDN Usage Report
 author: joannaleecy
 description: Describes the report that tracks Content Delivery Network (CDN) usage by your players.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/30/2018
 ms.topic: article
 ms.service: azure-playfab

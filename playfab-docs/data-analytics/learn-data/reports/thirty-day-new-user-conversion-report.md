@@ -2,7 +2,7 @@
 title: Thirty-day New User Conversion Report
 author: joannaleecy
 description: Describes the report that tracks the percentages of new players who spend money within the first 30 days.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/30/2018
 ms.topic: article
 ms.service: azure-playfab

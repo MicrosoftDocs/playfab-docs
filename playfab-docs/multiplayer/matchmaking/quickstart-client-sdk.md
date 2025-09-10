@@ -2,7 +2,7 @@
 title: Matchmaking SDK quickstart
 author: sardavi
 description: Quickstart which demonstrates a matchmaking flow using the SDK
-ms.author: kevinasg
+ms.author: jenelleb
 ms.date: 12/06/2021
 ms.topic: article
 ms.service: azure-playfab

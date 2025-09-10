@@ -2,7 +2,7 @@
 title: Google Gson
 author: joannaleecy
 description: Google Gson license.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/20/2019
 ms.topic: article
 ms.service: azure-playfab

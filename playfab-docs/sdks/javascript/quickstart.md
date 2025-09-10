@@ -2,7 +2,7 @@
 title: JavaScript quickstart for Native and Phaser
 author: joannaleecy
 description: This guide will help you make your first PlayFab API call in JavaScript.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/11/2018
 ms.topic: article
 ms.service: azure-playfab

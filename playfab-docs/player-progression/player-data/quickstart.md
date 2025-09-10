@@ -2,7 +2,7 @@
 title: Quickstart Player Data
 author: DanBehrendt
 description: Tutorial that describes how to create and use player data.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 06/16/2020
 ms.topic: article
 ms.service: azure-playfab

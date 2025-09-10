@@ -2,7 +2,7 @@
 title: GSDK Example Project Creation
 author: joannaleecy
 description: Creating an Unreal GSDK Project suitable for use by Multiplayer Servers
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 12/08/2021
 ms.topic: article
 ms.service: azure-playfab

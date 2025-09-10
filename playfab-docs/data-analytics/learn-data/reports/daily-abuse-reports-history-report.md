@@ -2,7 +2,7 @@
 title: Daily Abuse Reports History Report
 author: joannaleecy
 description: Describes the report that allows you to read player bug reporting, and/or to let players report each other for cheating.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 10/30/2018
 ms.topic: article
 ms.service: azure-playfab

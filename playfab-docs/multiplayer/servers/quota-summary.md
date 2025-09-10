@@ -2,7 +2,7 @@
 title: Managing Summary
 author: joannaleecy
 description: Managing Summary
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 11/30/2020
 ms.topic: article
 ms.service: azure-playfab

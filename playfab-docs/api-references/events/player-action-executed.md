@@ -2,7 +2,7 @@
 title: player_action_executed
 author: joannaleecy
 description: player_action_executed event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab

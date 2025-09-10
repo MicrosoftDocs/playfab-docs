@@ -2,7 +2,7 @@
 title: title_high_error_rate_alert
 author: joannaleecy
 description: title_high_error_rate_alert event.
-ms.author: joanlee
+ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
