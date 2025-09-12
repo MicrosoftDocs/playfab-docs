@@ -22,7 +22,7 @@ To follow this tutorial you need to have:
 - An Azure PlayFab account, if you don't have one you can create it [here](https://playfab.com/).
 - An Azure subscription, if you don't have one you can create it [here](https://azure.microsoft.com/free/).
 
-For more details on how to create an Azure Function check this guide. [Create your first function in Azure using Visual Studio](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio)
+For more details on how to create an Azure Function check this guide. [Create your first function in Azure using Visual Studio](https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)
 
 ## Create a Leaderboard using Azure Functions
 
