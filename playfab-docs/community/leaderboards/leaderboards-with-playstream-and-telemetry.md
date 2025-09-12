@@ -62,3 +62,4 @@ For learning more about how to leverage these events to preform different action
 - [Quickstart: Writing a PlayFab CloudScript using Azure Functions](../../live-service-management/service-gateway/automation/cloudscript-af/quickstart.md)
 - [CloudScript quickstart](../../live-service-management/service-gateway/automation/cloudscript/quickstart.md)
 - [Limits on Leaderboards](./limits-leaderboards.md)
+- [Leaderboards and Cloudscript](leaderboards-cloudscript.md).

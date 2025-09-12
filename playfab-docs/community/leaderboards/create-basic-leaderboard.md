@@ -290,6 +290,8 @@ In this tutorial, we learned how to do the following operations:
 - [Group leaderboards](group-leaderboards.md).
 - [Manual tiers](manual-tiers.md).
 - [API reference](api-reference.md).
+- [Leaderboards and Cloudscript](leaderboards-cloudscript.md).
+- [Leaderboards with Playstream](leaderboards-with-playstream-and-telemetry.md)
 
 
 

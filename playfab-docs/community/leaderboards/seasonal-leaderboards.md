@@ -144,6 +144,8 @@ In this tutorial, we learned how to do the following operations:
 - [Quota](quota-leaderboards.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
+- [Leaderboards and Cloudscript](leaderboards-cloudscript.md).
+- [Leaderboards with Playstream](leaderboards-with-playstream-and-telemetry.md)
 
 
 

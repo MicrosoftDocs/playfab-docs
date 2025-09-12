@@ -49,3 +49,5 @@ The following table outlines the limits for the various APIs available in the Le
 - [Add contextual data to leaderboards](metadata-leaderboards.md)
 - [API reference](api-reference.md)
 - [Leaderboard meters](../../pricing/meters/leaderboard-meters.md)
+- [Leaderboards and Cloudscript](leaderboards-cloudscript.md).
+- [Leaderboards with Playstream](leaderboards-with-playstream-and-telemetry.md)
