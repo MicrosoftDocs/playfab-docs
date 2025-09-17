@@ -35,14 +35,15 @@ These logins include:
 - [LoginWithIOSDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithiosdeviceid)
 - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
 - [LoginWithCustomID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
+- [LoginWithNintendoSwitchDeviceId](xref:titleid.playfabapi.com.client.authentication.loginwithnintendoswitchdeviceid)
 
-Since they're anonymous, these methods can uniquely identify a device, *but contain no recoverable information about the player*. If the player loses or breaks their device, the account is lost, and may be difficult to recover. In most cases the account is simply orphaned and not retrievable.
+Since they're anonymous, these methods can uniquely identify a device, *but contain no recoverable information about the player*. If the player loses or breaks their device, the account is lost, and may be difficult to recover. In most cases the account is orphaned and not retrievable.
 
 So why use it? Because it's the lowest possible barrier to entry for the player, requiring no interaction. It gets the player trying your game with minimal effort, while creating an account they can get back to for continuity (as long as they have that device).
 
 ### Best practice
 
-Your game should use an *anonymous* login for creating a new account and linking new devices to an existing account. We recommend this because some players may abandon a game that asks for an e-mail or identifiable information.
+Your game should use an *anonymous* login for creating a new account and linking new devices to an existing account. We recommend this because some players might abandon a game that asks for an e-mail or identifiable information.
 
 However, once the anonymous login is complete, you should provide the option to add *recoverable* login credentials, and provide some explanation regarding the benefits.
 
@@ -52,11 +53,11 @@ A paid account lost forever affects revenue.
 
 ### iOS devices
 
-For iOS devices, the player ID changes if they uninstall your game, and then *re*-install it. One way to make sure you have a consistent ID on iOS is to save the device ID for the player to the iTunes KeyChain, so that you can read it from there on game start, and use it to sign in.
+For iOS devices, the player ID changes if they uninstall your game, and then reinstall it. One way to make sure you have a consistent ID on iOS is to save the device ID for the player to the iTunes KeyChain, so that you can read it from there on game start, and use it to sign in.
 
 You must determine how to generate unique custom IDs for any other device or platform. Custom IDs are an effective alternative for other platforms or devices, but you must generate your custom IDs with care. If they're too simple, you risk hackers stealing the accounts of others.
 
-### android devices
+### Android devices
 
 For latest best practices, see [Google's guidelines on user data IDs](https://developer.android.com/training/articles/user-data-ids).
 
@@ -80,23 +81,23 @@ If used, the e-mail or username-plus-password are authenticated directly by Play
 
 ### Third party API options
 
-These require separate API calls to another service, but do not require additional SDK installations:
+These require separate API calls to another service, but don't require extra SDK installations:
 
 - [LoginWithKongregate](xref:titleid.playfabapi.com.client.authentication.loginwithkongregate)
 - [LoginWithSteam](xref:titleid.playfabapi.com.client.authentication.loginwithsteam)
 - [LoginWithTwitch](xref:titleid.playfabapi.com.client.authentication.loginwithtwitch)
 - [LoginWithGameCenter](xref:titleid.playfabapi.com.client.authentication.loginwithgamecenter) (iOS only, and provided you require secure authentication.)
 
-Secure authentication happens between your user, and the 3rd party service API call.
+Secure authentication happens between your user, and the third party service API call.
 
 ### Third party SDK options
 
-These require a separate SDK installed into your game. Secure authentication happens within the 3rd party SDK.
+These require a separate SDK installed into your game. Secure authentication happens within the third party SDK.
 
 - [LoginWithFacebook](xref:titleid.playfabapi.com.client.authentication.loginwithfacebook)
 - [LoginWithGoogleAccount](xref:titleid.playfabapi.com.client.authentication.loginwithgoogleaccount)
 
-In all 3rd party options, those services process the login credentials, and you pass a secure token to the appropriate PlayFab login method. PlayFab remains unaware of the login credentials for those services.
+In all third party options, those services process the login credentials, and you pass a secure token to the appropriate PlayFab login method. PlayFab remains unaware of the login credentials for those services.
 
 ### More best practices
 
@@ -119,4 +120,4 @@ The following flow chart describes anonymous login followed by adding a recovera
 
 ### Best practice
 
-Use the appropriate anonymous login for your device, paired with one or more options for account recovery.
+Use the appropriate anonymous login for your device, paired with one, or more options for account recovery.
