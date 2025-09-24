@@ -22,12 +22,12 @@ This guide shows you how to implement PlayFab authentication using anonymous log
 To enhance the security of anonymous login, PlayFab implemented a crucial security feature that separates player creation capabilities between client-side and server-side APIs.
 
 1. **Disabled Client-Side Player Creation**:
-   - For newly created titles, all anonymous login APIs on the client side (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`) no longer automatically create new player accounts. Titles created before June 30, 2025 can disable anonymous login through [Game Manager configuration](anonymous-login.md#configuring-player-creation-settings).
+   - For newly created titles, all anonymous login APIs on the client side (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`, `LoginWithNintendoSwitchDeviceId`) no longer automatically create new player accounts. Titles created before June 30, 2025 can disable anonymous login through [Game Manager configuration](anonymous-login.md#configuring-player-creation-settings).
    - Disabling client-side player creation prevents unauthorized account creation directly from unauthorized clients.
    - Only existing players can log in through client-side APIs.
 
 2. **Enabled Server-Side Player Creation**:
-   - Player account creation is now handled through server-side APIs (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`).
+   - Player account creation is now handled through server-side APIs (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`, `LoginWithNintendoDeviceId`).
    - This ensures all account creation happens in a secure, controlled environment.
 
 ## Prerequisites
@@ -46,11 +46,11 @@ To enhance the security of anonymous login, PlayFab implemented a crucial securi
 1. **Server-side Account Creation**:
    - Use `Server/LoginWithCustomID` with the server API to create new players
    - Requires a title secret key
-   - Reference: [Server API - Login With Custom ID](https://learn.microsoft.com/rest/api/playfab/server/authentication/login-with-custom-id)
+   - Reference: [Server API - Login With Custom ID](xref:titleid.playfabapi.com.server.authentication.loginwithcustomid)
 
 2. **Client-side Login**:
    - Use `Client/LoginWithCustomID` with the client API to log in existing players
-   - Reference: [Client API - Login With Custom ID](https://learn.microsoft.com/rest/api/playfab/client/authentication/login-with-custom-id)
+   - Reference: [Client API - Login With Custom ID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
 
 ## Implementation Steps
 
