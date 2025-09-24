@@ -42,7 +42,7 @@ Here's the list of APIs that tick this meter:
 
 ## Leaderboard Storage
 
-This meter keeps track on how much statistics data is stored in the service.
+This meter keeps track on how much leaderboards data is stored in the service.
 
 For each leaderboard entry, the storage consumed is computed as the sum of the following elements:
 - Scores: Length of the list of scores multiplied by `sizeof(long)`.
