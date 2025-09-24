@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Leaderboards Using Azure Functions 
 
 In this tutorial, you'll learn how to implement leaderboards using Cloudscript, specifically through [Azure Functions](../../live-service-management/service-gateway/automation/cloudscript-af/index.md). 
-This approach is particularly powerful because it enables developers to integrate dynamic server-side logic without requiring client updates.
+This approach is particularly powerful because it enables you to create custom server-side logic without requiring client updates.
 
 By defining leaderboard-related logic within an Azure Function, your client can invoke that function to execute the code. If changes are needed later, you can update the Azure Function independently—often without modifying the client—depending on the complexity of the update.
 
