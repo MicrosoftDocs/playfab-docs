@@ -37,8 +37,8 @@ The October 2025 GDK uses a flat, platform-centric directory structure. Understa
 **October 2025 GDK Layout**:
 ```
 \Microsoft GDK\251000\windows\include
-\Microsoft GDK\251000\xbox_gen9\lib\x64
-\Microsoft GDK\251000\xbox_gen8\bin\x64
+\Microsoft GDK\251000\xbox\lib\x64
+\Microsoft GDK\251000\xbox\bin\x64
 ```
 
 > [!NOTE]
@@ -58,8 +58,8 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     set(GDK_INCLUDE_DIR "${GDK_PATH}/windows/include")
     set(GDK_LIB_DIR "${GDK_PATH}/windows/lib/x64")
 elseif(XBOX)
-    set(GDK_INCLUDE_DIR "${GDK_PATH}/xbox_gen9/include")
-    set(GDK_LIB_DIR "${GDK_PATH}/xbox_gen9/lib/x64")
+    set(GDK_INCLUDE_DIR "${GDK_PATH}/xbox/include")
+    set(GDK_LIB_DIR "${GDK_PATH}/xbox/lib/x64")
 endif()
 ```
 
@@ -74,8 +74,8 @@ endif()
 > **Migrating from earlier GDK?** Replace old paths like `$(GDK)\GRDK\...\include` with the new structure shown above.
 
 #### Platform Support Details
-- **Xbox**: Uses `xbox_gen8` and `xbox_gen9` folders for different console generations
-- **Windows**: All Windows platforms (PC, Steam PC, Steam Deck) use the `windows` folder
+- **Xbox**: Uses `xbox` folders for all recent Xbox console generations
+- **Windows**: All Windows platforms (PC, Steam PC, Steam Deck-Proton) use the `windows` folder
 - **Steam Deck**: Despite running SteamOS, uses the `windows` folder for compatibility with Proton emulation
 
 ### Implementation Steps
@@ -490,7 +490,7 @@ For comprehensive Steam Deck implementation details, including:
 - [Steam Deck Implementation Guide](steam-deck-implementation.md)
 
 ### Sample Code References
-- **Windows Game Saves Sample**: [https://github.com/PlayFab/PlayFabGameSaves/tree/main/samples](https://github.com/PlayFab/PlayFabGameSaves/tree/main/samples)
+- **Windows Game Saves Sample**: [PlayFabGameSaveSample-Windows](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/PlayFabGameSaveSample-Windows)
   - `GameSaveIntegration.cpp/.h` - Core Game Saves integration
   - `SteamIntegration.cpp/.h` - Steam Deck specific implementation (see Steam Deck guide)
   - `XUserFileStorage.cpp/.h` - Local storage for Steam Deck (see Steam Deck guide)

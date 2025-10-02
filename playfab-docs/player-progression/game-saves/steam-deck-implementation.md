@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 > This guide specifically covers Steam Deck implementation requirements for PlayFab Game Saves with the October 2025 GDK. Before implementing Steam Deck support, ensure you have completed the basic [October 2025 GDK implementation](october-2025-gdk-changes.md) requirements.
 
 > [!TIP]
-> **Complete Sample Implementation**: For working code examples of all Steam Deck integration patterns described in this guide, see the **[PlayFab Game Save Sample](https://github.com/PlayFab/PlayFabGameSaves/tree/main/samples)**. Key files include:
+> **Complete Sample Implementation**: For working code examples of all Steam Deck integration patterns described in this guide, see the **[PlayFab Game Save Sample](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/PlayFabGameSaveSample-Windows)**. Key files include:
 > - **SteamIntegration.cpp/.h** - Steam Deck detection, registry setup, authentication handlers
 > - **XUserFileStorage.cpp/.h** - Local XUser data persistence implementation  
 > - **GameSaveIntegration.cpp** - UI callback setup and Game Saves integration
@@ -568,7 +568,7 @@ Your testing requirements depend on which implementation approach you choose:
 ## 10. Sample Code Reference
 
 For complete implementation examples, refer to the sample project:
-- **Location**: [https://github.com/PlayFab/PlayFabGameSaves/tree/main/samples](https://github.com/PlayFab/PlayFabGameSaves/tree/main/samples)
+- **Location**: [PlayFabGameSaveSample-Windows](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/PlayFabGameSaveSample-Windows)
 - **Key Files**: 
   - `SteamIntegration.cpp/.h` - Steam Deck specific functions
   - `XUserFileStorage.cpp/.h` - Local storage implementation
