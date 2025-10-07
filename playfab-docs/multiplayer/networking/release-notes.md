@@ -24,12 +24,12 @@ ms.localizationpriority: medium
 
 October 6, 2025
 
-- Fixed an issue where the library can crash when [PartyManager::Cleanup](reference/classes/PartyManager/methods/partymanager_cleanup.md) is called.
 - Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has actually expired.
 - Android: Added support for 16 KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
 - Apple: Added support for Arm64 simulator builds on iOS.
 
 ### Bug fixes
+- Fixed an issue where the library can crash when [PartyManager::Cleanup](reference/classes/PartyManager/methods/partymanager_cleanup.md) is called.
 - Apple: Added retry logic for microphone focus recovery after interruptions on iOS.
 - Apple: Fixed a memory leak that could occur during Party voice chat and transcription.
 - Apple: Fixed a potential freeze in PartyLocalChatControl when multiple remote players are connected across different platforms.
