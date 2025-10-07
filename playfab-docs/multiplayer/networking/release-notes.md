@@ -20,6 +20,20 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.10.12
+
+October 6, 2025
+
+- Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has actually expired.
+- Android: Added support for 16 KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
+- Apple: Added support for Arm64 simulator builds on iOS.
+
+### Bug fixes
+- Apple: Added retry logic for microphone focus recovery after interruptions on iOS.
+- Apple: Fixed a memory leak that could occur during Party voice chat and transcription.
+- Apple: Fixed a potential freeze in PartyLocalChatControl when multiple remote players are connected across different platforms.
+- Apple: Added support for Arm64 simulator builds on iOS.
+
 ## 1.10.9
 
 March 11, 2025
