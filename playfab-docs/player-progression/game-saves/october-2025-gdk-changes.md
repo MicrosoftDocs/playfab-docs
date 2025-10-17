@@ -26,8 +26,7 @@ When implementing PlayFab Game Saves with the October 2025 GDK, you need to unde
 
 The first three components are **required** for all Game Saves implementations with October 2025 GDK and later, including Steam Deck support. The fourth component only applies if your game uses PlayFab Party or Multiplayer features.
 
-> [!NOTE]
-> **New to Game Saves?** Start with the [Game Saves Overview](overview.md) and [Quickstart Guide](quickstart.md) to understand the basics, then return here for October 2025 GDK-specific implementation details.
+**New to Game Saves?** Start with the [Game Saves Overview](overview.md) and [Quickstart Guide](quickstart.md) to understand the basics, then return here for October 2025 GDK-specific implementation details.
 
 ## 1. GDK Folder Layout and Path Configuration
 
@@ -41,8 +40,7 @@ The October 2025 GDK uses a flat, platform-centric directory structure. Understa
 \Microsoft GDK\251000\xbox\bin\x64
 ```
 
-> [!NOTE]
-> **Migrating from earlier GDK?** The previous folder structure (`$(GDK)\GRDK\ and $(GDK)\GXDK\`) has been replaced. Update your build scripts accordingly.
+**Migrating from earlier GDK?** The previous folder structure (`$(GDK)\GRDK\ and $(GDK)\GXDK\`) has been replaced. Update your build scripts accordingly.
 
 ### Setting Up Your Build System
 
@@ -182,8 +180,7 @@ The PlayFab Unified SDK is a modern, cohesive SDK that brings together all PlayF
 - Integrated tracing and diagnostics
 - Modular component loading (include only what you need)
 
-> [!NOTE]
-> **New to PlayFab?** The Unified SDK simplifies integration by providing a single, consistent API pattern across all PlayFab services. If you're implementing Game Saves or any other PlayFab services for the first time, you'll want to start with this modern architecture.
+**New to PlayFab?** The Unified SDK simplifies integration by providing a single, consistent API pattern across all PlayFab services. If you're implementing Game Saves or any other PlayFab services for the first time, you'll want to start with this modern architecture.
 
 ### Required SDK Components
 
@@ -244,7 +241,14 @@ Configure your Visual Studio project to link the Unified SDK:
     <UnifiedSDKDlls Include="$(GDK)\windows\bin\PlayFabGameSave.dll" />
     <UnifiedSDKDlls Include="$(GDK)\windows\bin\xgameruntime.dll" />
   </ItemGroup>
+  </ItemGroup>
   <Copy SourceFiles="@(UnifiedSDKDlls)" DestinationFolder="$(OutDir)" />
+</Target>
+```
+
+**Migrating from earlier GDK?** Replace old paths like `$(GDK)\GRDK\...\include` with the new structure shown above.
+
+#### Platform Support Details
 </Target>
 ```
 
@@ -390,10 +394,7 @@ While not directly required for Game Saves functionality, the October 2025 GDK a
 - Unified memory management and async operation patterns
 
 > [!NOTE]
-> **Not using Party or Multiplayer?** These changes don't affect Game Saves implementations. You can safely ignore this section if your game only uses Game Saves functionality.
-
-> [!TIP]
-> **Using Party or Multiplayer?** Consider migrating to the new unified APIs for improved integration, but this is not required for Game Saves functionality.
+> **Party and Multiplayer Components**: If your game uses PlayFab Party or Multiplayer, consider migrating to the new unified APIs that accept `PFEntityHandle` directly for improved integration. However, this is not required for Game Saves functionality - you can safely skip section 4 if you only use Game Saves.
 
 ## 5. Steam Deck Implementation
 
