@@ -202,20 +202,20 @@ Game Saves implementations need these Unified SDK components:
 #### Required Libraries for Linking
 ```
 Link these .lib files in your project:
-- libHttpClient.GDK.lib
-- PlayFabCore.GDK.lib 
-- PlayFabServices.GDK.lib (optional, but recommended for additional PlayFab features)
-- PlayFabGameSave.GDK.lib
+- libHttpClient.lib
+- PlayFabCore.lib 
+- PlayFabServices.lib (optional, but recommended for additional PlayFab features)
+- PlayFabGameSave.lib
 - xgameruntime.lib
 ```
 
 #### Required DLLs for Deployment
 ```
 Deploy these .dll files with Steam builds:
-- libHttpClient.GDK.dll
-- PlayFabCore.GDK.dll
-- PlayFabServices.GDK.dll (optional, but recommended)
-- PlayFabGameSave.GDK.dll
+- libHttpClient.dll
+- PlayFabCore.dll
+- PlayFabServices.dll (optional, but recommended)
+- PlayFabGameSave.dll
 - xgameruntime.dll
 ```
 
@@ -227,10 +227,10 @@ Configure your Visual Studio project to link the Unified SDK:
 ```xml
 <!-- Link all required Unified SDK libraries -->
 <AdditionalDependencies>
-  libHttpClient.GDK.lib;
-  PlayFabCore.GDK.lib;
-  PlayFabServices.GDK.lib;
-  PlayFabGameSave.GDK.lib;
+  libHttpClient.lib;
+  PlayFabCore.lib;
+  PlayFabServices.lib;
+  PlayFabGameSave.lib;
   xgameruntime.lib;
   %(AdditionalDependencies)
 </AdditionalDependencies>
@@ -238,10 +238,10 @@ Configure your Visual Studio project to link the Unified SDK:
 <!-- Automatically deploy DLLs for Steam builds -->
 <Target Name="CopyUnifiedSDKDlls" AfterTargets="Build" Condition="'$(SteamBuild)'=='true'">
   <ItemGroup>
-    <UnifiedSDKDlls Include="$(GDK)\windows\bin\libHttpClient.GDK.dll" />
-    <UnifiedSDKDlls Include="$(GDK)\windows\bin\PlayFabCore.GDK.dll" />
-    <UnifiedSDKDlls Include="$(GDK)\windows\bin\PlayFabServices.GDK.dll" />
-    <UnifiedSDKDlls Include="$(GDK)\windows\bin\PlayFabGameSave.GDK.dll" />
+    <UnifiedSDKDlls Include="$(GDK)\windows\bin\libHttpClient.dll" />
+    <UnifiedSDKDlls Include="$(GDK)\windows\bin\PlayFabCore.dll" />
+    <UnifiedSDKDlls Include="$(GDK)\windows\bin\PlayFabServices.dll" />
+    <UnifiedSDKDlls Include="$(GDK)\windows\bin\PlayFabGameSave.dll" />
     <UnifiedSDKDlls Include="$(GDK)\windows\bin\xgameruntime.dll" />
   </ItemGroup>
   <Copy SourceFiles="@(UnifiedSDKDlls)" DestinationFolder="$(OutDir)" />
@@ -254,20 +254,20 @@ For CMake-based projects, configure dependencies and deployment:
 ```cmake
 # Link all required Unified SDK libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE
-    libHttpClient.GDK
-    PlayFabCore.GDK
-    PlayFabServices.GDK
-    PlayFabGameSave.GDK
+    libHttpClient
+    PlayFabCore
+    PlayFabServices
+    PlayFabGameSave
     xgameruntime
 )
 
 # Automatically deploy DLLs for Steam builds
 if(STEAM_BUILD)
     set(UNIFIED_SDK_DLLS
-        "${GDK_PATH}/windows/bin/libHttpClient.GDK.dll"
-        "${GDK_PATH}/windows/bin/PlayFabCore.GDK.dll"
-        "${GDK_PATH}/windows/bin/PlayFabServices.GDK.dll"
-        "${GDK_PATH}/windows/bin/PlayFabGameSave.GDK.dll"
+        "${GDK_PATH}/windows/bin/libHttpClient.dll"
+        "${GDK_PATH}/windows/bin/PlayFabCore.dll"
+        "${GDK_PATH}/windows/bin/PlayFabServices.dll"
+        "${GDK_PATH}/windows/bin/PlayFabGameSave.dll"
         "${GDK_PATH}/windows/bin/xgameruntime.dll"
     )
     
@@ -412,7 +412,6 @@ Steam Deck support for PlayFab Game Saves requires significant additional implem
 - All Unified SDK DLLs must be deployed with your Steam build
 - Custom XUser authentication flow with UI callbacks
 - Registry configuration for non-retail sandbox testing
-- Local storage implementation for credential persistence
 - Frequent sync patterns to prevent data loss
 
 **Universal Sync Recommendations** (beneficial for all platforms):
@@ -427,7 +426,6 @@ While these patterns are required for Steam Deck, they're highly recommended for
 For comprehensive Steam Deck implementation details, including:
 - Detailed authentication flow setup
 - Complete UI callback implementation
-- XUser file storage requirements
 - Step-by-step initialization sequence
 - Troubleshooting guide
 - Sample code references
@@ -493,7 +491,6 @@ For comprehensive Steam Deck implementation details, including:
 - **Windows Game Saves Sample**: [PlayFabGameSaveSample-Windows](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/PlayFabGameSaveSample-Windows)
   - `GameSaveIntegration.cpp/.h` - Core Game Saves integration
   - `SteamIntegration.cpp/.h` - Steam Deck specific implementation (see Steam Deck guide)
-  - `XUserFileStorage.cpp/.h` - Local storage for Steam Deck (see Steam Deck guide)
   - `GameSaveIntegrationUI.cpp/.h` - UI callback implementations (see Steam Deck guide)
 
 ### Important Timeline
