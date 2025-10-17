@@ -26,7 +26,8 @@ When implementing PlayFab Game Saves with the October 2025 GDK, you need to unde
 
 The first three components are **required** for all Game Saves implementations with October 2025 GDK and later, including Steam Deck support. The fourth component only applies if your game uses PlayFab Party or Multiplayer features.
 
-**New to Game Saves?** Start with the [Game Saves Overview](overview.md) and [Quickstart Guide](quickstart.md) to understand the basics, then return here for October 2025 GDK-specific implementation details.
+> [!NOTE]
+> **New to Game Saves?** Start with the [Game Saves Overview](overview.md) and [Quickstart Guide](quickstart.md) to understand the basics, then return here for October 2025 GDK-specific implementation details.
 
 ## 1. GDK Folder Layout and Path Configuration
 
