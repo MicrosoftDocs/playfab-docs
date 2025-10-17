@@ -184,11 +184,6 @@ This approach provides full cross-platform sync between Steam Deck, Xbox console
 - Development sandbox access for testing
 - Administrator privileges for registry configuration (dev/test only)
 
-**Additional Requirements**:
-- Xbox authentication UI implementation (QR code, gamertag selection)
-- XUser event handlers for Remote Connect and SPOP
-- Registry configuration for sandbox testing
-
 ### 1. Registry Configuration
 
 Steam Deck requires Xbox Live sandbox configuration for non-retail sandbox testing:
@@ -303,43 +298,34 @@ if (FAILED(hr)) {
 Steam Deck requires special sign-out handling to clear stored Xbox credentials:
 
 ```cpp
-// 1. Check Steam availability and platform
-bool steamAvailable = SteamIntegration::CheckSteamAvailability();
-bool isSteamDeck = SteamIntegration::CheckIfSteamDeck();
-
-// 2. Initialize Xbox runtime (still required for Game Saves infrastructure)
-HRESULT hr = XGameRuntimeInitialize();
-if (FAILED(hr)) {
-    return hr;
-}
-
-// 3. Initialize PlayFab Core and Services
-hr = PFInitialize(nullptr);
-if (FAILED(hr)) {
-    return hr;
-}
-hr = PFServicesInitialize(nullptr); // Optional
-
-// 4. Initialize your custom player identity system
-hr = InitializeCustomPlayerIdentity();
-if (FAILED(hr)) {
-    return hr;
-}
-
-// 5. Initialize Game Saves with custom identity system
-// Option A: OpenID Connect (if your identity system supports it)
-// hr = PFAuthenticationLoginWithOpenIdConnectAsync(serviceConfigHandle, &openIdRequest, ...);
-// Option B: Custom authentication integration
-hr = InitializeGameSavesWithCustomIdentity();
-if (FAILED(hr)) {
-    return hr;
+void SignOutFromSteamDeck() {
+    // Enumerate and delete Windows credentials with target names starting with "Xbl"
+    DWORD count = 0;
+    PCREDENTIALW* credentials = nullptr;
+    
+    if (CredEnumerateW(L"Xbl*", 0, &count, &credentials)) {
+        for (DWORD i = 0; i < count; i++) {
+            CredDeleteW(credentials[i]->TargetName, credentials[i]->Type, 0);
+        }
+        CredFree(credentials);
+    }
+    
+    // Close Xbox user handles
+    if (xboxUser) {
+        XUserCloseHandle(xboxUser);
+        xboxUser = nullptr;
+    }
+    
+    // Close PlayFab user handles
+    if (pfUser) {
+        PFLocalUserCloseHandle(pfUser);
+        pfUser = nullptr;
+    }
+    
+    // Reset authentication state for clean re-authentication
+    authenticationState = AuthState::NotAuthenticated;
 }
 ```
-
-This implementation:
-- Enumerates and deletes Windows credentials with target names starting with "Xbl"
-- Closes Xbox user handles properly
-- Resets authentication state for clean re-authentication
 
 ### 6. Testing Checklist
 
@@ -406,13 +392,6 @@ if (isSteamDeck) {
     // (Implementation details depend on your specific identity integration)
 }
 ```
-
-**Requirements**:
-- **No registry configuration needed**
-- **No administrator privileges required**
-- **No XUser platform event handlers**
-- **Simplified UI** - no Xbox authentication dialogs
-- **Essential**: Custom player identity system for production use
 
 ### 2. Initialization Sequence
 
