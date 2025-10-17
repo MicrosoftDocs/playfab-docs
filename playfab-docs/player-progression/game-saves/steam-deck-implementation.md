@@ -95,23 +95,23 @@ The following setup steps are required regardless of which implementation approa
 Steam Deck requires all Unified SDK DLLs to be deployed with your game:
 
 **Required DLLs**: 
-- `libHttpClient.GDK.dll` - HTTP operations
-- `PlayFabCore.GDK.dll` - Authentication and core services
-- `PlayFabGameSave.GDK.dll` - Game Saves functionality
+- `libHttpClient.dll` - HTTP operations
+- `PlayFabCore.dll` - Authentication and core services
+- `PlayFabGameSave.dll` - Game Saves functionality
 - `xgameruntime.dll` - Core SDK capabilities and Xbox sign-in
 
 **Optional DLL**: 
-- `PlayFabServices.GDK.dll` - Additional PlayFab services (recommended)
+- `PlayFabServices.dll` - Additional PlayFab services (recommended)
 
 **Steam Deck Deployment Structure**:
 ```
 YourGame/
 ├── YourGame.exe
-├── libHttpClient.GDK.dll     // Required for HTTP operations
-├── PlayFabCore.GDK.dll       // Required for authentication
-├── PlayFabServices.GDK.dll   // Optional: For additional PlayFab services
-├── PlayFabGameSave.GDK.dll   // Required for Game Saves
-├── xgameruntime.dll          // Required for Xbox Live services
+├── libHttpClient.dll     // Required for HTTP operations
+├── PlayFabCore.dll       // Required for authentication
+├── PlayFabServices.dll   // Optional: For additional PlayFab services
+├── PlayFabGameSave.dll   // Required for Game Saves
+├── xgameruntime.dll      // Required for Xbox Live services
 ├── Steam_api64.dll
 └── Other game files...
 ```
