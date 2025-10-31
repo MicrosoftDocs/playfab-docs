@@ -12,6 +12,16 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.8.3
+
+Oct 10, 2025
+
+### Bug fixes
+
+- Fixed an issue where exposed `libHttpClient` symbols caused symbol clashes on Android. Added option that allows games that require a specific version of
+  `libHttpClient` to supply their own dynamic `libHttpClient` and use the `.dynLHC` package to avoid symbol conflicts. The `.hideLHC` from
+  v1.8.2 is replaced by `.dynLHC` drop. This is an Android-only release.
+
 ## 1.8.2
 
 Sep 5, 2025
