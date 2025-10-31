@@ -43,6 +43,17 @@ Game Saves allows players to continue their game, with their progress intact, as
 - C++
 - Unreal Engine
 
+## Sample implementation
+
+An end-to-end reference implementation for Windows demonstrating initialization, cloud sync (download/upload), conflict handling, active device management, and UI callbacks is available on GitHub:
+
+[Game Saves sample – PlayFabGameSaveSample-Windows](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/PlayFabGameSaveSample-Windows)
+
+Use this sample to:
+- See the ordering of initialization, add user, and upload operations in context.
+- Review minimal error handling patterns and UI callback wiring.
+- Experiment quickly before integrating the APIs into your production project.
+
 ## Implementation requirements
 
 ### Authentication requirements

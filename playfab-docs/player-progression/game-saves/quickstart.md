@@ -20,6 +20,7 @@ Before you begin, ensure you have:
 - Been [onboarded](./onboarding.md) to the Game Saves preview
 - Reviewed the implementation requirements in the [overview](./overview.md) section
 - Completed the requirements listed below
+- (Optional) Cloned or reviewed the end-to-end **Game Saves sample** for Windows on GitHub: [PlayFabGameSaveSample-Windows](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/PlayFabGameSaveSample-Windows). The sample demonstrates initialization, sync, conflict handling, and upload flows referenced in this quickstart.
 
 ## What you'll learn
 

@@ -49,4 +49,6 @@ For more detailed pricing information, visit the [PlayFab pricing page](https://
 - [Ranking players by statistics](leaderboards-linked-to-stats.md)
 - [Add contextual data to leaderboards](metadata-leaderboards.md)
 - [API reference](api-reference.md)
-- [Leaderboard meters](../../pricing/Meters/leaderboard-meters.md) 
+- [Leaderboard meters](../../pricing/Meters/leaderboard-meters.md)
+- [Leaderboards and Cloudscript](leaderboards-cloudscript.md).
+- [Leaderboards with Playstream](leaderboards-with-playstream-and-telemetry.md)

@@ -198,5 +198,7 @@ In this tutorial, we learned how to do the following operations:
 - [Ranking players by statistics](leaderboards-linked-to-stats.md)
 - [Add contextual data to leaderboards](metadata-leaderboards.md)
 - [API reference](api-reference.md)
+- [Leaderboards and Cloudscript](leaderboards-cloudscript.md).
+- [Leaderboards with Playstream](leaderboards-with-playstream-and-telemetry.md)
 
 
