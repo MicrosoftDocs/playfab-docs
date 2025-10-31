@@ -119,4 +119,6 @@ For more information about other features, see following pages:
 - [Doing more with leaderboards](doing-more-with-leaderboards.md).
 - [Add contextual data to leaderboards](metadata-leaderboards.md).
 - [API reference](api-reference.md).
+- [Leaderboards and Cloudscript](leaderboards-cloudscript.md).
+- [Leaderboards with Playstream](leaderboards-with-playstream-and-telemetry.md)
 

@@ -15,13 +15,6 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This guide specifically covers Steam Deck implementation requirements for PlayFab Game Saves with the October 2025 GDK. Before implementing Steam Deck support, ensure you have completed the basic [October 2025 GDK implementation](october-2025-gdk-changes.md) requirements.
 
-> [!TIP]
-> **Complete Sample Implementation**: For working code examples of all Steam Deck integration patterns described in this guide, see the **[PlayFab Game Save Sample](https://github.com/PlayFab/PlayFabGameSaves/tree/main/samples)**. Key files include:
-> - **SteamIntegration.cpp/.h** - Steam Deck detection, registry setup, authentication handlers
-> - **XUserFileStorage.cpp/.h** - Local XUser data persistence implementation  
-> - **GameSaveIntegration.cpp** - UI callback setup and Game Saves integration
-> - **GameSaveIntegrationUI.cpp** - Authentication and Game Saves UI dialogs
-
 ## Overview
 
 Steam Deck Game Saves integration can be implemented with varying levels of complexity depending on your cross-platform requirements. You can choose between a simplified Steam-only approach or full Xbox ecosystem integration with more complex authentication flows.
@@ -56,10 +49,7 @@ Before implementing Steam Deck support, ensure you have:
 
 ## Implementation Approaches
 
-Steam Deck offers two implementation approaches with different complexity levels and cross-platform capabilities:
-
-> [!IMPORTANT]
-> **Why Use PlayFab Game Saves?** Steam Cloud already handles save synchronization between Steam devices (Steam Deck ↔ Steam PC). PlayFab Game Saves is primarily valuable for cross-platform save sync beyond Steam's ecosystem. For production use, you need either Xbox Live integration (Approach 1) or your own custom player identity system (Approach 2).
+Steam Deck offers two implementation approaches with different complexity levels and cross-platform capabilities. PlayFab Game Saves is valuable for cross-platform save sync beyond Steam's ecosystem - you'll need either Xbox Live integration (Approach 1) or your own custom player identity system (Approach 2).
 
 ### Approach 1: Xbox Ecosystem Integration (Recommended)
 
@@ -83,7 +73,7 @@ Steam Deck offers two implementation approaches with different complexity levels
 **Benefits**:
 - **Potentially reduced sign-in complexity**: No Xbox user authentication required
 - **No registry configuration**: No sandbox setup needed
-- **No XUser APIs**: Eliminates complex event handlers and storage implementation
+- **No XUser APIs**: Eliminates complex event handlers
 - **Custom identity flexibility**: Implement your own cross-platform player identity system
 
 **Complexity**:
@@ -94,41 +84,34 @@ Steam Deck offers two implementation approaches with different complexity levels
 
 **When to choose**: Steam-focused games, games with existing custom identity systems, or development scenarios where Xbox Live integration isn't needed or desired.
 
-> [!NOTE]
-> **OpenID Connect Integration**: For Approach 2, PlayFab supports OpenID Connect authentication through the `LoginWithOpenIdConnect` API call. This enables integration with custom identity providers that support the OpenID Connect standard, making it easier to implement cross-platform player identity without building everything from scratch.
+**OpenID Connect**: For Approach 2, PlayFab supports OpenID Connect authentication through the `LoginWithOpenIdConnect` API call, enabling integration with custom identity providers that support the OpenID Connect standard.
 
-## Approach 1: Xbox Ecosystem Integration Implementation
+## Common Setup (Both Approaches)
 
-This approach provides the most comprehensive cross-platform experience, enabling save synchronization between Steam Deck, Xbox consoles, Microsoft Store PC, and other Xbox-enabled platforms.
-
-### Prerequisites for Approach 1
-- **Development sandbox setup**: Required for non-retail testing environments
-- **Additional UI implementation**: QR code authentication and gamertag selection dialogs
-
-**When to choose**: Games that target multiple platforms including Xbox consoles or require full Xbox Live ecosystem integration.
+The following setup steps are required regardless of which implementation approach you choose.
 
 ## 1. DLL Deployment Requirements
 
 Steam Deck requires all Unified SDK DLLs to be deployed with your game:
 
 **Required DLLs**: 
-- `libHttpClient.GDK.dll` - HTTP operations
-- `PlayFabCore.GDK.dll` - Authentication and core services
-- `PlayFabGameSave.GDK.dll` - Game Saves functionality
+- `libHttpClient.dll` - HTTP operations
+- `PlayFabCore.dll` - Authentication and core services
+- `PlayFabGameSave.dll` - Game Saves functionality
 - `xgameruntime.dll` - Core SDK capabilities and Xbox sign-in
 
 **Optional DLL**: 
-- `PlayFabServices.GDK.dll` - Additional PlayFab services (recommended)
+- `PlayFabServices.dll` - Additional PlayFab services (recommended)
 
 **Steam Deck Deployment Structure**:
 ```
 YourGame/
 ├── YourGame.exe
-├── libHttpClient.GDK.dll     // Required for HTTP operations
-├── PlayFabCore.GDK.dll       // Required for authentication
-├── PlayFabServices.GDK.dll   // Optional: For additional PlayFab services
-├── PlayFabGameSave.GDK.dll   // Required for Game Saves
-├── xgameruntime.dll          // Required for Xbox Live services
+├── libHttpClient.dll     // Required for HTTP operations
+├── PlayFabCore.dll       // Required for authentication
+├── PlayFabServices.dll   // Optional: For additional PlayFab services
+├── PlayFabGameSave.dll   // Required for Game Saves
+├── xgameruntime.dll      // Required for Xbox Live services
 ├── Steam_api64.dll
 └── Other game files...
 ```
@@ -154,131 +137,7 @@ bool DetectSteamDeck() {
 }
 ```
 
-## 3. Authentication Configuration
-
-Your authentication setup depends on which implementation approach you choose:
-
-### Xbox Ecosystem Authentication (Approach 1)
-
-For full Xbox ecosystem integration, you need registry configuration and XUser setup:
-
-#### Registry Configuration
-Steam Deck requires Xbox Live sandbox configuration for non-retail sandbox testing:
-
-```cpp
-// Set sandbox before Xbox Live services initialization
-// Only required when testing with non-retail sandboxes AND using Xbox ecosystem integration
-if (isSteamDeck && useXboxEcosystem) {
-    HRESULT hr = SteamIntegration::SetSandboxForSteamDeck("XDKS.1");
-    if (FAILED(hr)) {
-        // Handle sandbox setup failure - requires admin privileges
-        return hr;
-    }
-}
-```
-
-**Registry Configuration Details**:
-- **Key**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XboxLive\Sandbox`
-- **Value**: Development sandbox ID (e.g., "XDKS.1")
-- **Timing**: Must be set before Xbox Live services initialize
-- **Privileges**: Requires administrator access
-- **Usage**: Only required for testing in non-retail sandboxes (development/testing environments)
-- **When needed**: Only for Xbox ecosystem integration approach
-
-### Custom Identity Authentication (Approach 2)
-
-For custom identity implementation, you can bypass Xbox user authentication and implement your own identity system:
-
-```cpp
-// Custom identity authentication
-if (isSteamDeck) {
-    // Development/Testing: Use Steam user identity temporarily
-    // Production: Implement your own cross-platform player identity system
-    // Required for production since Steam Cloud handles Steam-only sync
-    
-    // Option 1: OpenID Connect Integration (Recommended)
-    // If your identity system supports OpenID Connect, use LoginWithOpenIdConnect:
-    // PFAuthenticationLoginWithOpenIdConnectRequest request = {};
-    // request.connectionId = "YourOpenIdConnectConnectionId";
-    // request.idToken = "YourOpenIdConnectToken";
-    // PFAuthenticationLoginWithOpenIdConnectAsync(serviceConfigHandle, &request, ...);
-    
-    // Option 2: Custom Integration
-    // Initialize your custom authentication system
-    // Connect to your user accounts/login system
-    // Integrate with PlayFab Game Saves using your player identity
-    
-    // Initialize Game Saves with your custom identity system
-    // (Implementation details depend on your specific identity integration)
-}
-```
-
-**Requirements for Custom Identity**:
-- **No registry configuration needed**
-- **No administrator privileges required**
-- **No XUser platform event handlers**
-- **Simplified UI - no Xbox authentication dialogs**
-- **Essential**: Custom player identity system for production use
-
-## 4. XUser Platform Event Handlers (Xbox Ecosystem Only)
-
-> [!NOTE]
-> **Custom Identity Implementation**: If you're using the custom identity approach (Approach 2), you can skip this entire section. XUser event handlers are only required for Xbox ecosystem integration.
-
-For Xbox ecosystem integration (Approach 1), Steam Deck requires three critical event handler sets for authentication:
-
-### A. Remote Connect Event Handlers
-Handles the remote authentication flow (QR code/URL display):
-
-```cpp
-// Handle remote authentication flow (QR code/URL)
-XUserPlatformRemoteConnectEventHandlers remoteConnect{};
-remoteConnect.context = nullptr;
-remoteConnect.show = &OnRemoteConnectShow;     // Display QR code/URL dialog
-remoteConnect.close = &OnRemoteConnectClose;   // Close authentication dialog
-HRESULT hr = XUserPlatformRemoteConnectSetEventHandlers(nullptr, &remoteConnect);
-if (FAILED(hr)) {
-    // Handle event handler setup failure
-}
-```
-
-### B. SPOP (Sign-in Prompt) Event Handlers
-Handles the SPOP sign-in prompt used when a user's account is already signed in on another device. The handler should present UI that lets the player choose an action (Sign In Here, Switch Account, or Cancel) and must call `XUserPlatformSpopPromptComplete(operation, result)` with the chosen result.
-
-```cpp
-// Handle SPOP sign-in prompt. See sample: ShowSpopPromptDialogForXUserOnSteamDeck
-HRESULT hr = XUserPlatformSpopPromptSetEventHandlers(nullptr, &OnSpopPrompt, nullptr);
-if (FAILED(hr)) {
-    // Handle SPOP setup failure
-}
-```
-
-### C. Platform Storage Event Handlers
-Handles local XUser data persistence. 
-
-Required steps for integration:
-- Implement `OnWrite`, `OnRead`, and `OnClear` to persist XUser data to whatever store your title requires (secure file, encrypted store, cloud cache, etc.).
-- Each handler MUST call the corresponding completion API when the work finishes:
-    - `XUserPlatformStorageWriteComplete(operation, XUserPlatformOperationResult::Success|Failure)`
-    - `XUserPlatformStorageReadComplete(operation, XUserPlatformOperationResult::Success|Failure, size, dataPtr)`
-    - `XUserPlatformStorageClearComplete(operation, XUserPlatformOperationResult::Success|Failure)`
-- Register your handlers with `XUserPlatformStorageSetEventHandlers(queue, &handlers)` during initialization.
-
-```cpp
-XUserPlatformStorageEventHandlers handlers = {};
-handlers.write = &OnWrite;    // Your handler; must call XUserPlatformStorageWriteComplete
-handlers.read = &OnRead;      // Your handler; must call XUserPlatformStorageReadComplete
-handlers.clear = &OnClear;    // Your handler; must call XUserPlatformStorageClearComplete
-handlers.context = nullptr;
-HRESULT hr = XUserPlatformStorageSetEventHandlers(queue, &handlers);
-if (FAILED(hr)) {
-        // Handle storage setup failure
-}
-```
-
-Note: the sample's `XUserFileStorage` provides a ready-made, file-backed implementation you can use as a starting point during development or testing.
-
-## 5. UI Callback Implementation
+## 3. UI Callback Implementation
 
 > [!IMPORTANT]
 > **Steam Deck UI Requirement**: All PlayFab Game Saves UI callbacks are **required** on Steam Deck regardless of which implementation approach you choose. This is because Steam Deck has no built-in UI available for Game Saves operations, so your application must provide all UI dialogs.
@@ -312,95 +171,84 @@ hr = PFGameSaveFilesSetActiveDeviceChangedCallback(&OnActiveDeviceChanged, nullp
 - **Device Contention**: Handle multiple device access scenarios
 - **Storage Management**: Notify users of storage quota issues
 
-### Additional Authentication UI (Xbox Ecosystem Only)
+---
 
-The difference between approaches is in the **additional Xbox authentication UI** required:
+## Approach 1: Xbox Ecosystem Integration - Complete Implementation
 
-#### Xbox Ecosystem Implementation (Approach 1)
-- **All Game Saves dialogs** (above) **plus Xbox authentication dialogs**:
-- **Remote Connect Dialog**: Display QR code and URL for users to authenticate on another device
-- **SPOP Prompt Dialog**: Allow users to select/confirm their Xbox gamertag
+This approach provides full cross-platform sync between Steam Deck, Xbox consoles, Microsoft Store PC, and other Xbox-enabled platforms. Choose this approach if your game targets Xbox platforms or requires Xbox Live integration.
 
-#### Custom Identity Implementation (Approach 2)  
-- **No Xbox authentication dialogs needed**: No QR code or gamertag selection
-- **Custom identity display**: Use your own player identity system for user-facing displays
+### Overview
 
-## 6. XUser File Storage Implementation (Xbox Ecosystem Only)
+**Prerequisites**:
+- Completed common setup (Sections 1-3 above)
+- Development sandbox access for testing
+- Administrator privileges for registry configuration (dev/test only)
 
-> [!NOTE]
-> **Custom Identity Implementation**: If you're using the custom identity approach (Approach 2), you can skip this section. XUser file storage is only required for Xbox ecosystem integration.
+### 1. Registry Configuration
 
-For Xbox ecosystem integration (Approach 1), Steam Deck requires a custom file storage implementation for XUser data persistence:
+Steam Deck requires Xbox Live sandbox configuration for non-retail sandbox testing:
 
-### Storage Implementation Requirements
-The storage implementation must handle:
-
-- **Write Operations**: Save XUser authentication data locally
-- **Read Operations**: Retrieve stored XUser data on subsequent launches
-- **Clear Operations**: Remove XUser data during sign-out
-
-### Storage Handler Implementation Templates
 ```cpp
-// Write handler for storing XUser data
-// IMPORTANT: Call XUserPlatformStorageWriteComplete to notify the runtime when the operation finishes.
-void OnWrite(
-    _In_opt_ void* /*context*/,
-    _In_ uint32_t /*userIdentifier*/,
-    _In_ XUserPlatformOperation operation,
-    _In_z_ char const* key,
-    _In_ size_t dataSize,
-    _In_reads_bytes_(dataSize) void const* data
-)
-{
-    // Store data to local file system (example: write to %TEMP%/xuser/<key>.json)
-
-    // When complete, notify the platform of success or failure:
-    // XUserPlatformStorageWriteComplete(operation, XUserPlatformOperationResult::Success);
-    // or on failure:
-    // XUserPlatformStorageWriteComplete(operation, XUserPlatformOperationResult::Failure);
-}
-
-// Read handler for retrieving XUser data
-// IMPORTANT: Call XUserPlatformStorageReadComplete with the result and data buffer (or nullptr if not found).
-void OnRead(
-    _In_opt_ void* /*context*/,
-    _In_ uint32_t /*userIdentifier*/,
-    _In_ XUserPlatformOperation operation,
-    _In_z_ char const* key
-)
-{
-    // Read data from local file system (example: read %TEMP%/xuser/<key>.json)
-    // If the file is not found, the sample below signals success with size 0 and nullptr data.
-    // On success:
-    //     XUserPlatformStorageReadComplete(operation, XUserPlatformOperationResult::Success, dataSize, dataPtr);
-    // On failure:
-    //     XUserPlatformStorageReadComplete(operation, XUserPlatformOperationResult::Failure, 0, nullptr);
-}
-
-// Clear handler for removing XUser data
-// IMPORTANT: Call XUserPlatformStorageClearComplete to notify the runtime when clear completes.
-void OnClear(
-    _In_opt_ void* /*context*/,
-    _In_ uint32_t /*userIdentifier*/,
-    _In_ XUserPlatformOperation operation,
-    _In_z_ char const* key
-)
-{
-    // Remove stored data from local file system
-    // On success:
-    //     XUserPlatformStorageClearComplete(operation, XUserPlatformOperationResult::Success);
-    // On failure:
-    //     XUserPlatformStorageClearComplete(operation, XUserPlatformOperationResult::Failure);
+// Set sandbox before Xbox Live services initialization
+// Only required when testing with non-retail sandboxes
+if (isSteamDeck) {
+    HRESULT hr = SteamIntegration::SetSandboxForSteamDeck("XDKS.1");
+    if (FAILED(hr)) {
+        // Handle sandbox setup failure - requires admin privileges
+        return hr;
+    }
 }
 ```
 
-## 7. Steam Deck Initialization Sequence
+**Configuration Details**:
+- **Key**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XboxLive\Sandbox`
+- **Value**: Development sandbox ID (e.g., "XDKS.1")
+- **Timing**: Must be set before Xbox Live services initialize
+- **Privileges**: Requires administrator access
+- **Usage**: Only required for testing in non-retail sandboxes (development/testing environments)
 
-Your initialization sequence depends on which implementation approach you choose:
+### 2. XUser Platform Event Handlers
 
-### Xbox Ecosystem Initialization (Approach 1)
+Steam Deck requires two critical event handler sets for Xbox authentication:
 
-Follow this enhanced initialization sequence for full Xbox ecosystem support:
+#### A. Remote Connect Event Handlers
+Handles the remote authentication flow (QR code/URL display):
+
+```cpp
+// Handle remote authentication flow (QR code/URL)
+XUserPlatformRemoteConnectEventHandlers remoteConnect{};
+remoteConnect.context = nullptr;
+remoteConnect.show = &OnRemoteConnectShow;     // Display QR code/URL dialog
+remoteConnect.close = &OnRemoteConnectClose;   // Close authentication dialog
+HRESULT hr = XUserPlatformRemoteConnectSetEventHandlers(nullptr, &remoteConnect);
+if (FAILED(hr)) {
+    // Handle event handler setup failure
+}
+```
+
+#### B. SPOP (Sign-in Prompt) Event Handlers
+Handles the SPOP sign-in prompt used when a user's account is already signed in on another device:
+
+```cpp
+// Handle SPOP sign-in prompt. See sample: ShowSpopPromptDialogForXUserOnSteamDeck
+HRESULT hr = XUserPlatformSpopPromptSetEventHandlers(nullptr, &OnSpopPrompt, nullptr);
+if (FAILED(hr)) {
+    // Handle SPOP setup failure
+}
+```
+
+The handler must present UI that lets the player choose an action (Sign In Here, Switch Account, or Cancel) and call `XUserPlatformSpopPromptComplete(operation, result)` with the chosen result.
+
+### 3. Authentication UI Implementation
+
+In addition to the Game Saves UI callbacks (Section 3), Xbox ecosystem integration requires:
+
+- **Remote Connect Dialog**: Display QR code and URL for users to authenticate on another device
+- **SPOP Prompt Dialog**: Allow users to select/confirm their Xbox gamertag
+
+### 4. Initialization Sequence
+
+Follow this initialization sequence for Xbox ecosystem integration:
 
 ```cpp
 // 1. Check Steam availability and platform
@@ -408,7 +256,7 @@ bool steamAvailable = SteamIntegration::CheckSteamAvailability();
 bool isSteamDeck = SteamIntegration::CheckIfSteamDeck();
 
 // 2. Set Xbox Live sandbox (Steam Deck only, required for non-retail sandbox testing)
-if (isSteamDeck && useXboxEcosystem) {
+if (isSteamDeck) {
     HRESULT hr = SteamIntegration::SetSandboxForSteamDeck("XDKS.1");
     if (FAILED(hr)) {
         // Handle sandbox setup failure
@@ -429,8 +277,8 @@ if (FAILED(hr)) {
 }
 hr = PFServicesInitialize(nullptr); // Optional
 
-// 5. Initialize XUser for Steam Deck (Xbox ecosystem only)
-if (isSteamDeck && useXboxEcosystem) {
+// 5. Initialize XUser for Steam Deck
+if (isSteamDeck) {
     hr = SteamIntegration::InitializeXUserForSteamDeck();
     if (FAILED(hr)) {
         return hr;
@@ -445,7 +293,107 @@ if (FAILED(hr)) {
 }
 ```
 
-### Custom Identity Initialization (Approach 2)
+### 5. Sign-Out Implementation
+
+Steam Deck requires special sign-out handling to clear stored Xbox credentials:
+
+```cpp
+void SignOutFromSteamDeck() {
+    // Enumerate and delete Windows credentials with target names starting with "Xbl"
+    DWORD count = 0;
+    PCREDENTIALW* credentials = nullptr;
+    
+    if (CredEnumerateW(L"Xbl*", 0, &count, &credentials)) {
+        for (DWORD i = 0; i < count; i++) {
+            CredDeleteW(credentials[i]->TargetName, credentials[i]->Type, 0);
+        }
+        CredFree(credentials);
+    }
+    
+    // Close Xbox user handles
+    if (xboxUser) {
+        XUserCloseHandle(xboxUser);
+        xboxUser = nullptr;
+    }
+    
+    // Close PlayFab user handles
+    if (pfUser) {
+        PFLocalUserCloseHandle(pfUser);
+        pfUser = nullptr;
+    }
+    
+    // Reset authentication state for clean re-authentication
+    authenticationState = AuthState::NotAuthenticated;
+}
+```
+
+### 6. Testing Checklist
+
+Use this checklist to validate your Xbox ecosystem implementation:
+
+- [ ] **Authentication Flow**: Test remote connect (QR code/URL) authentication
+- [ ] **UI Callbacks**: Verify all Game Saves UI dialogs display correctly
+- [ ] **SPOP Prompts**: Test gamertag selection and confirmation
+- [ ] **Credential Persistence**: Test sign-in persistence across app restarts
+- [ ] **Sign-Out**: Verify proper credential cleanup on sign-out
+- [ ] **Sync Behavior**: Test frequent sync patterns and pre-shutdown sync
+- [ ] **Data Loss Prevention**: Verify minimal progress lost during force-close scenarios
+- [ ] **Cross-Platform Sync**: Test save sync between Steam Deck, Xbox consoles, and Microsoft Store PC
+- [ ] **Registry Configuration**: Verify sandbox configuration works in dev environments
+- [ ] **XUser Event Handlers**: Confirm Remote Connect and SPOP handlers work correctly
+
+---
+
+## Approach 2: Custom Identity Implementation - Complete Implementation
+
+This approach allows you to use your own player identity system without Xbox Live integration. Choose this approach if your game is Steam-focused or you have an existing custom identity system.
+
+### Overview
+
+**Prerequisites**:
+- Completed common setup (Sections 1-3 above)
+- Custom player identity system for production use
+
+**Benefits**:
+- No Xbox authentication required
+- No registry configuration needed
+- No administrator privileges required
+- Simpler UI (no QR code or gamertag selection)
+
+**Limitations**:
+- Must implement your own cross-platform player identity
+- No Xbox Live social features
+- Requires custom platform bridging solutions
+
+### 1. Custom Identity Authentication
+
+Implement your own identity system for cross-platform player authentication:
+
+```cpp
+// Custom identity authentication
+if (isSteamDeck) {
+    // Development/Testing: Use Steam user identity temporarily
+    // Production: Implement your own cross-platform player identity system
+    // Required for production since Steam Cloud handles Steam-only sync
+    
+    // Option 1: OpenID Connect Integration (Recommended)
+    // If your identity system supports OpenID Connect, use LoginWithOpenIdConnect:
+    // PFAuthenticationLoginWithOpenIdConnectRequest request = {};
+    // request.connectionId = "YourOpenIdConnectConnectionId";
+    // request.idToken = "YourOpenIdConnectToken";
+    // PFAuthenticationLoginWithOpenIdConnectAsync(serviceConfigHandle, &request, ...);
+    
+    // Option 2: Custom Integration
+    // Initialize your custom authentication system
+    // Connect to your user accounts/login system
+    // Integrate with PlayFab Game Saves using your player identity
+    
+    // Initialize Game Saves with your custom identity system
+    // (Implementation details depend on your specific identity integration)
+}
+```
+
+### 2. Initialization Sequence
 
 ```cpp
 // 1. Check Steam availability and platform
@@ -481,39 +429,7 @@ if (FAILED(hr)) {
 }
 ```
 
-## 8. Sign-Out Implementation
-
-Your sign-out implementation depends on which approach you're using:
-
-### Xbox Ecosystem Sign-Out (Approach 1)
-
-For Xbox ecosystem integration, Steam Deck requires special sign-out handling to clear stored Xbox credentials:
-
-```cpp
-void SignOutFromSteamDeckXboxEcosystem() {
-    // Clean up Windows Credential Manager entries
-    SteamIntegration::SignOutViaXboxOnSteamDeck();
-    
-    // Close Xbox user handles
-    if (xboxUser) {
-        XUserCloseHandle(xboxUser);
-        xboxUser = nullptr;
-    }
-    
-    // Close PlayFab user handles
-    if (pfUser) {
-        PFLocalUserCloseHandle(pfUser);
-        pfUser = nullptr;
-    }
-}
-```
-
-This Xbox ecosystem implementation:
-- Enumerates and deletes Windows credentials with target names starting with "Xbl"
-- Closes Xbox user handles properly
-- Resets authentication state for clean re-authentication
-
-### Custom Identity Sign-Out (Approach 2)
+### 3. Sign-Out Implementation
 
 ```cpp
 void SignOutFromSteamDeck() {
@@ -534,21 +450,10 @@ void SignOutFromSteamDeck() {
 }
 ```
 
-## 9. Testing Requirements
+### 4. Testing Checklist
 
-Your testing requirements depend on which implementation approach you choose:
+Use this checklist to validate your custom identity implementation:
 
-### Xbox Ecosystem Testing (Approach 1)
-- [ ] **Authentication Flow**: Test remote connect (QR code/URL) authentication
-- [ ] **UI Callbacks**: Verify all Game Saves UI dialogs display correctly
-- [ ] **SPOP Prompts**: Test gamertag selection and confirmation
-- [ ] **Credential Persistence**: Test sign-in persistence across app restarts
-- [ ] **Sign-Out**: Verify proper credential cleanup on sign-out
-- [ ] **Sync Behavior**: Test frequent sync patterns and pre-shutdown sync
-- [ ] **Data Loss Prevention**: Verify minimal progress lost during force-close scenarios
-- [ ] **Cross-Platform Sync**: Test save sync between Steam Deck, Xbox consoles, and Microsoft Store PC
-
-### Custom Identity Testing (Approach 2)
 - [ ] **Custom Identity System**: Test your custom player authentication and identity system
 - [ ] **PlayFab Authentication**: Test PlayFab login using LoginWithOpenIdConnect (if using OpenID Connect) or custom authentication method
 - [ ] **Cross-Platform Game Saves Sync**: Test save synchronization across all target platforms
@@ -558,67 +463,22 @@ Your testing requirements depend on which implementation approach you choose:
 - [ ] **Data Loss Prevention**: Verify minimal progress lost during force-close scenarios
 - [ ] **Custom Authentication**: Test login/logout flows for your identity system
 - [ ] **Platform Coverage**: Test on all platforms your game targets (not just Steam devices)
-
-### Cross-Platform Testing
-- [ ] **Save Sync**: Test save synchronization between Steam Deck and other platforms
-- [ ] **Conflict Resolution**: Test save conflicts when playing on multiple devices
 - [ ] **Network Scenarios**: Test offline/online transitions
 - [ ] **Performance**: Verify sync operations don't impact gameplay performance
 
-## 10. Sample Code Reference
+---
 
-For complete implementation examples, refer to the sample project:
-- **Location**: [https://github.com/PlayFab/PlayFabGameSaves/tree/main/samples](https://github.com/PlayFab/PlayFabGameSaves/tree/main/samples)
+## Sample Code Reference
+
+For complete implementation examples for both approaches, refer to the sample project:
+- **Location**: [PlayFabGameSaveSample-Windows](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/PlayFabGameSaveSample-Windows)
 - **Key Files**: 
-  - `SteamIntegration.cpp/.h` - Steam Deck specific functions
-  - `XUserFileStorage.cpp/.h` - Local storage implementation
-  - `GameSaveIntegrationUI.cpp/.h` - UI callback implementations
-
-## 11. Development Checklist
-
-Use this checklist to track your Steam Deck implementation progress:
-
-### Prerequisites & Setup
-- [ ] **Complete October 2025 GDK Setup**: Verify basic Game Saves implementation works on Windows
-- [ ] **Choose Implementation Approach**: Decide between Xbox ecosystem (Approach 1) or custom identity (Approach 2)
-- [ ] **Deploy Required DLLs**: Ensure all Unified SDK DLLs are included in Steam build
-- [ ] **Steam API Integration**: Implement Steam API initialization and Steam Deck detection
-
-### Xbox Ecosystem Implementation (Approach 1)
-- [ ] **Registry Configuration**: Implement SetSandboxForSteamDeck for development environments
-- [ ] **XUser Event Handlers**: Set up Remote Connect, SPOP, and Platform Storage handlers
-- [ ] **XUser File Storage**: Implement local storage for XUser data persistence
-- [ ] **Authentication UI**: Implement QR code and gamertag selection dialogs
-- [ ] **Game Saves UI Callbacks**: Implement all required UI dialogs (progress, sync failed, conflict, etc.)
-- [ ] **Initialization Sequence**: Update app startup for full Xbox ecosystem integration
-- [ ] **Sign-Out Implementation**: Implement credential cleanup via SignOutViaXboxOnSteamDeck
-- [ ] **Sync Strategy**: Implement frequent sync patterns for Steam Deck reliability
-
-### Custom Identity Implementation (Approach 2)
-- [ ] **Custom Identity System**: Design and implement cross-platform player identity
-- [ ] **PlayFab Authentication**: Set up LoginWithOpenIdConnect (if using OpenID Connect) or custom auth
-- [ ] **Game Saves UI Callbacks**: Implement all required UI dialogs (same as Approach 1)
-- [ ] **Initialization Sequence**: Update app startup to handle Steam Deck-specific initialization
-- [ ] **Sign-Out Implementation**: Implement custom identity cleanup on sign-out
-- [ ] **Sync Strategy**: Implement frequent sync patterns for Steam Deck reliability
-
-### Testing & Validation
-- [ ] **Steam Deck Detection**: Verify platform detection works correctly
-- [ ] **Authentication Flow**: Test sign-in process on Steam Deck
-- [ ] **UI Dialogs**: Verify all UI callbacks display correctly
-- [ ] **Save Sync**: Test game save synchronization across platforms
-- [ ] **Conflict Resolution**: Test save conflicts between devices
-- [ ] **Sign-Out/Sign-In**: Test credential persistence and cleanup
-- [ ] **Frequent Sync**: Verify sync occurs at checkpoints and before shutdown
-- [ ] **Error Handling**: Test network failures and recovery scenarios
-- [ ] **Performance**: Ensure sync operations don't impact gameplay
-
-## 12. Related Documentation
-- [October 2025 GDK Implementation Guide](october-2025-gdk-changes.md)
-- [Game Saves Overview](overview.md)
-- [Game Saves Quickstart](quickstart.md)
+  - `SteamIntegration.cpp/.h` - Steam Deck detection, registry setup, authentication handlers
+  - `GameSaveIntegrationUI.cpp/.h` - UI callback implementations for both approaches
 
 ---
 
-> [!NOTE]
-> This guide provides comprehensive Steam Deck implementation details for PlayFab Game Saves with October 2025 GDK. For basic Game Saves implementation, start with the [October 2025 GDK guide](october-2025-gdk-changes.md).
+## Related Documentation
+- [October 2025 GDK Implementation Guide](october-2025-gdk-changes.md)
+- [Game Saves Overview](overview.md)
+- [Game Saves Quickstart](quickstart.md)
