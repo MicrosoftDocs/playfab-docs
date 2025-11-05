@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.8.4
+
+Nov 5, 2025
+
+### Bug fixes
+
+- Fixed an issue where exposed U symbols crashes at runtime on Android. All symbols except from the ones provided by us were hidden. This is an Android-only release.
+
 ## 1.8.3
 
 Oct 10, 2025
