@@ -69,9 +69,6 @@ endif()
 <LibraryPath>$(GDK)\windows\lib\x64;$(LibraryPath)</LibraryPath>
 ```
 
-> [!TIP]
-> **Migrating from earlier GDK?** Replace old paths like `$(GDK)\GRDK\...\include` with the new structure shown above.
-
 #### Platform Support Details
 - **Xbox**: Uses `xbox` folders for all recent Xbox console generations
 - **Windows**: All Windows platforms (PC, Steam PC, Steam Deck-Proton) use the `windows` folder
@@ -249,10 +246,6 @@ Configure your Visual Studio project to link the Unified SDK:
 
 **Migrating from earlier GDK?** Replace old paths like `$(GDK)\GRDK\...\include` with the new structure shown above.
 
-#### Platform Support Details
-</Target>
-```
-
 #### CMake Setup
 For CMake-based projects, configure dependencies and deployment:
 
@@ -402,7 +395,7 @@ While not directly required for Game Saves functionality, the October 2025 GDK a
 Steam Deck support for PlayFab Game Saves requires significant additional implementation beyond standard PC builds, including custom authentication flows, comprehensive UI callbacks, and careful sync strategies.
 
 > [!IMPORTANT]
-> **Steam Deck Implementation Complexity**: Steam Deck integration involves custom authentication flows, extensive UI callback implementation, local storage management, and critical sync behavior differences. Due to the complexity and length of implementation requirements, Steam Deck implementation has been moved to a dedicated guide.
+> **Steam Deck Implementation Complexity**: Steam Deck integration involves custom authentication flows, UI callback implementation, and critical sync behavior differences. Due to the complexity and length of implementation requirements, Steam Deck implementation is in its own [dedicated guide](steam-deck-implementation.md).
 
 ### Key Steam Deck Considerations
 
@@ -494,17 +487,3 @@ For comprehensive Steam Deck implementation details, including:
   - `GameSaveIntegration.cpp/.h` - Core Game Saves integration
   - `SteamIntegration.cpp/.h` - Steam Deck specific implementation (see Steam Deck guide)
   - `GameSaveIntegrationUI.cpp/.h` - UI callback implementations (see Steam Deck guide)
-
-### Important Timeline
-- **October 2025**: New layout and Unified SDK become default
-- **2610 GDK**: Legacy layout will be removed
-- **Recommendation**: Migrate immediately to avoid disruption
-
-### Key Migration Notes
-- **Unified SDK Preview**: Currently in public preview, contact Microsoft representative for access
-- **Breaking Changes**: Code changes required for initialization and cleanup sequences of Party and Multiplayer
-
----
-
-> [!NOTE]
-> This guide covers implementing PlayFab Game Saves with the October 2025 GDK architecture. Whether you're starting fresh or migrating an existing implementation, these requirements apply to all projects using Game Saves with October 2025 GDK and later. For complete GDK information, consult the official Microsoft GDK documentation.

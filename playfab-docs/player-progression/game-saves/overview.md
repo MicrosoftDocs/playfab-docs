@@ -12,11 +12,6 @@ ms.localizationpriority: medium
 
 # Game Saves overview
 
-> [!WARNING]
-> Game Saves is currently in public preview. Features and functionality might change before general availability. Title release before the Game Saves service reaches general availability isn't supported.  
->
-> To get started, your title must be [onboarded](onboarding.md) for preview.
-
 ## What is Game Saves
 
 Game Saves allows players to continue their game, with their progress intact, as they switch across platforms, devices, and stores. Game Saves handles file synchronization and conflict resolution, helps players maintain a single-point-of-progression, and fully supports offline play.
@@ -30,7 +25,7 @@ Game Saves allows players to continue their game, with their progress intact, as
 - Helps players seamlessly transition between devices and platforms to maintain a consistent point-of-progression.
 - Provides contextual cues to assist players in making informed conflict resolution and single point of progression decisions, when needed.
 - Recovers players from bad state with support for version rollback.
-- Works with Xbox-provided background uploader and title-callable UI, where available.
+- Works with background uploader and title-callable UI, where available.
 
 ### Gaming platforms currently supported
 
@@ -58,9 +53,7 @@ Use this sample to:
 
 ### Authentication requirements
 
-- **Background uploader authentication**: The background uploader feature is currently limited to Xbox authenticated users (XUser). For titles shipping on Steam PC, Xbox sign-in is required to access the Game Saves functionality.
-
-- **Identity linking**: Titles must use a shared or linked user identity for game saves to seamlessly transition between platforms. PlayFab supports account linking between two authenticated providers, but note that on Xbox and Windows only Xbox sign-in is currently supported.
+- **Identity linking**: Titles must use a shared or linked user identity for game saves to seamlessly transition between platforms. PlayFab supports account linking between two authenticated providers.
 
 ### Platform-specific considerations
 
