@@ -17,7 +17,7 @@ PlayFab Game Saves allows players to seamlessly continue their progress across d
 ## Prerequisites
 
 Before you begin, ensure you have:
-- Been [onboarded](./onboarding.md) to the Game Saves preview
+- Been [onboarded](./onboarding.md) to Game Saves
 - Reviewed the implementation requirements in the [overview](./overview.md) section
 - Completed the requirements listed below
 - (Optional) Cloned or reviewed the end-to-end **Game Saves sample** for Windows on GitHub: [PlayFabGameSaveSample-Windows](https://github.com/PlayFab/PlayFab-Samples/tree/master/Samples/All/PlayFabGameSaveSample-Windows). The sample demonstrates initialization, sync, conflict handling, and upload flows referenced in this quickstart.
@@ -36,10 +36,7 @@ In this guide, you'll learn how to:
 ### Software Requirements
 - A [PlayFab developer account](https://developer.playfab.com)
 - Visual Studio 2019 or Visual Studio 2022 is recommended for Gaming Runtime development.  See https://learn.microsoft.com/en-us/gaming/gdk/docs/gdk-dev/get-started/overviews/sdk-and-tools#install-visual-studio for details.
-- Access to the preview [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/) (provided after [onboarding](./onboarding.md))
-
-> [!NOTE]
-> For the public preview, Game Saves functionality is delivered through a preview version of the GDK. Access to this preview GDK will be provided with detailed setup instructions after you complete the onboarding process.
+- Access to the latest [Microsoft Game Development Kit (GDK)](https://learn.microsoft.com/gaming/gdk/)
 
 ## Game Saves Flow Overview
 

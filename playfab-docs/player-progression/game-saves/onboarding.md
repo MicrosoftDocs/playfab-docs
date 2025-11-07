@@ -10,9 +10,9 @@ keywords: playfab, game saves
 ms.localizationpriority: medium
 ---
 
-# Onboarding to Game Saves preview
+# Onboarding to Game Saves
 
-Game Saves is in a limited public preview so we can make sure the preview is a good fit for your upcoming title and so we can provide access to a preview SDK. To request access, select your title in [PlayFab Game Manager](https://developer.playfab.com/), navigate to Progression | Game Saves (Preview) and join the waitlist.
+Game Saves onboarding is available for titles launching in the Xbox ecosystem with cross-platform support included. If your title does not extend to the Xbox ecosystem, onboarding will be available at a later stage. To request access and confirm eligibility, select your title in [PlayFab Game Manager](https://developer.playfab.com/), navigate to Progression | Game Saves and join the waitlist.
 
 ![Screenshot of the PlayFab Game Manager interface showing the option to join the Game Saves preview waitlist.][onboarding-image]
 
