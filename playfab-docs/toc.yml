@@ -30,36 +30,6 @@ items:
 - name: Pricing
   href: pricing/toc.yml
 - name: SDKs
-  items:
-  - name: Overview
-    href: sdks/sdk-overview.md
-  - name: Request access
-    href: sdks/request-access-for-sdks-samples.md
-  - name: PlayFab Services SDKs
-    href: sdks/toc.yml
-  - name: Lobby and Matchmaking SDKs
-    href: multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
-  - name: Party SDKs
-    href: multiplayer/networking/party-sdks/toc.yml
-  - name: Multiplayer Server SDKs
-    items:
-    - name: Overview
-      href: multiplayer/servers/server-sdks.md
-    - name: Unreal Server SDK
-      href: multiplayer/servers/server-sdks/toc.yml
-
-  - name: Tools and utilities
-    href: sdks/tools/index.yml
-    items:
-    - name: SDK Generator
-      href: sdks/sdkgenerator/index.md
-      items:
-      - name: Quickstart
-        href: sdks/sdkgenerator/quickstart.md
-    - name:  Postman
-      href: sdks/postman/index.md
-      items:
-      - name: Quickstart
-        href: sdks/postman/postman-quickstart.md
+  href: sdks/toc.yml
 - name: API Reference
   href: api-references/toc.yml

@@ -1,129 +1,160 @@
 items:
 - name: Overview
-  href: playfab-sdk-intro.md
-- name: Release notes
+  href: sdk-overview.md
+- name: Request access
+  href: request-access-for-sdks-samples.md
+- name: PlayFab Unified SDK
+  href: unified-sdk/toc.yml
+- name: Services SDKs
   items:
-  - name: C/C++ SDK release notes
-    href: ../release-notes/playfab-c/toc.yml
-  - name: Other SDK release notes
-    href: ../release-notes/toc.yml
-- name: Languages
-  href: languages/index.yml
-  items:
-  - name:  C/C++
-    href: c/index.md
+  - name: Overview
+    href: playfab-sdk-intro.md
+  - name: Release notes
     items:
-      - name: Quickstart - Win32
-        href: c/quickstart-win32.md
+    - name: C/C++ SDK release notes
+      href: ../release-notes/playfab-c/toc.yml
+    - name: Other SDK release notes
+      href: ../release-notes/toc.yml
+  - name: Languages
+    href: languages/index.yml
+    items:
+    - name:  C/C++
+      href: c/index.md
+      items:
+        - name: Quickstart - Win32
+          href: c/quickstart-win32.md
+        - name: Quickstart - GDK
+          href: c/quickstart-gdk.md
+        - name: Quickstart - Android
+          href: c/quickstart-android.md
+        - name: Quickstart - iOS
+          href: c/quickstart-ios.md
+        - name: Quickstart - macOS
+          href: c/quickstart-macos.md
+        - name: Quickstart - Linux
+          href: c/quickstart-Linux.md
+        - name: Making Async Calls
+          href: c/async.md
+        - name: Managing Memory
+          href: c/memory.md
+        - name: Handling Token Expiration
+          href: c/relogin.md
+        - name: Debug Tracing
+          href: c/tracing.md
+        - name: Event Pipeline
+          href: c/event-pipeline/eventpipeline.md
+          items:
+          - name: Event Pipeline Tutorial
+            href: c/event-pipeline/eventpipeline-tutorial.md
+        - name: Initializing Servers
+          href: c/server.md
+    - name: Legacy C++
+      href: playfab-cpp/index.md
+      items:
       - name: Quickstart - GDK
-        href: c/quickstart-gdk.md
-      - name: Quickstart - Android
-        href: c/quickstart-android.md
-      - name: Quickstart - iOS
-        href: c/quickstart-ios.md
-      - name: Quickstart - macOS
-        href: c/quickstart-macos.md
+        href: playfab-cpp/quickstart-gdk.md
       - name: Quickstart - Linux
-        href: c/quickstart-Linux.md
-      - name: Making Async Calls
-        href: c/async.md
-      - name: Managing Memory
-        href: c/memory.md
-      - name: Handling Token Expiration
-        href: c/relogin.md
-      - name: Debug Tracing
-        href: c/tracing.md
-      - name: Event Pipeline
-        href: c/event-pipeline/eventpipeline.md
+        href: playfab-cpp/quickstart-linux.md
+      - name: Quickstart - Windows
+        href: playfab-cpp/quickstart-windows.md
+    - name:  C#
+      href: c-sharp/index.md
+      items:
+      - name: Quickstart
+        href: c-sharp/quickstart.md
+    - name:  Java
+      href: java/index.md
+      items:
+      - name: Quickstart
+        href: java/quickstart.md
+    - name: JavaScript
+      href: javascript/index.md
+      items:
+      - name: Quickstart
+        href: javascript/quickstart.md
+    - name:  Lua
+      href: lua/index.md
+      items:
+      - name: Quickstart - Corona
+        href: lua/quickstart-corona.md
+      - name: Quickstart - Defold
+        href: lua/quickstart-defold.md
+    - name: NodeJS
+      href: nodejs/index.md
+      items:
+      - name: Quickstart
+        href: nodejs/quickstart.md
+    - name:  Objective-C
+      href: objective-c/index.md
+      items:
+      - name: Quickstart
+        href: objective-c/quickstart.md
+    - name: Python
+      href: python/index.md
+      items:
+      - name: Quickstart
+        href: python/quickstart.md
+  - name: Platforms
+    href: platforms/index.yml
+    items:
+    - name: Android
+      href: platforms/android.md
+    - name: iOS
+      href: platforms/ios.md
+    - name: macOS
+      href: platforms/macos.md
+    - name: Linux
+      href: platforms/linux.md
+    - name: Microsoft GDK
+      href: platforms/gdk.md
+    - name: Nintendo Switch
+      href: platforms/switch.md
+    - name: PlayStation
+      href: platforms/playstation.md
+    - name: Windows
+      href: platforms/windows.md
+    - name: Services and Tools
+      href: platforms/services.md
+  - name: Game engines
+    href: game-engines/index.yml
+    items:
+      - name: Cocos2d-x
+        href: cocos2d-x/index.md
         items:
-        - name: Event Pipeline Tutorial
-          href: c/event-pipeline/eventpipeline-tutorial.md
-      - name: Initializing Servers
-        href: c/server.md
-  - name: Legacy C++
-    href: playfab-cpp/index.md
-    items:
-    - name: Quickstart - GDK
-      href: playfab-cpp/quickstart-gdk.md
-    - name: Quickstart - Linux
-      href: playfab-cpp/quickstart-linux.md
-    - name: Quickstart - Windows
-      href: playfab-cpp/quickstart-windows.md
-  - name:  C#
-    href: c-sharp/index.md
-    items:
-    - name: Quickstart
-      href: c-sharp/quickstart.md
-  - name:  Java
-    href: java/index.md
-    items:
-    - name: Quickstart
-      href: java/quickstart.md
-  - name: JavaScript
-    href: javascript/index.md
-    items:
-    - name: Quickstart
-      href: javascript/quickstart.md
-  - name:  Lua
-    href: lua/index.md
-    items:
-    - name: Quickstart - Corona
-      href: lua/quickstart-corona.md
-    - name: Quickstart - Defold
-      href: lua/quickstart-defold.md
-  - name: NodeJS
-    href: nodejs/index.md
-    items:
-    - name: Quickstart
-      href: nodejs/quickstart.md
-  - name:  Objective-C
-    href: objective-c/index.md
-    items:
-    - name: Quickstart
-      href: objective-c/quickstart.md
-  - name: Python
-    href: python/index.md
-    items:
-    - name: Quickstart
-      href: python/quickstart.md
-- name: Platforms
-  href: platforms/index.yml
+        - name: Quickstart
+          href: cocos2d-x/quickstart.md
+      - name:  Unity3D
+        href: unity3d/index.md
+        items:
+        - name: Quickstart
+          href: unity3d/quickstart.md
+        - name: Installing the PlayFab SDK for Unity
+          href: unity3d/installing-unity3d-sdk.md
+      - name: Unreal Engine
+        href: unreal/index.md
+        items:
+        - name: Quickstart
+          href: unreal/quickstart.md
+- name: Lobby and Matchmaking SDKs
+  href: ../multiplayer/lobby/lobby-matchmaking-sdks/toc.yml
+- name: Party SDKs
+  href: ../multiplayer/networking/party-sdks/toc.yml
+- name: Multiplayer Server SDKs
   items:
-  - name: Android
-    href: platforms/android.md
-  - name: iOS
-    href: platforms/ios.md
-  - name: macOS
-    href: platforms/macos.md
-  - name: Linux
-    href: platforms/linux.md
-  - name: Microsoft GDK
-    href: platforms/gdk.md
-  - name: Nintendo Switch
-    href: platforms/switch.md
-  - name: PlayStation
-    href: platforms/playstation.md
-  - name: Windows
-    href: platforms/windows.md
-  - name: Services and Tools
-    href: platforms/services.md
-- name: Game engines
-  href: game-engines/index.yml
+  - name: Overview
+    href: ../multiplayer/servers/server-sdks.md
+  - name: Unreal Server SDK
+    href: ../multiplayer/servers/server-sdks/toc.yml
+- name: Tools and utilities
+  href: tools/index.yml
   items:
-    - name: Cocos2d-x
-      href: cocos2d-x/index.md
-      items:
-      - name: Quickstart
-        href: cocos2d-x/quickstart.md
-    - name:  Unity3D
-      href: unity3d/index.md
-      items:
-      - name: Quickstart
-        href: unity3d/quickstart.md
-      - name: Installing the PlayFab SDK for Unity
-        href: unity3d/installing-unity3d-sdk.md
-    - name: Unreal Engine
-      href: unreal/index.md
-      items:
-      - name: Quickstart
-        href: unreal/quickstart.md
+  - name: SDK Generator
+    href: sdkgenerator/index.md
+    items:
+    - name: Quickstart
+      href: sdkgenerator/quickstart.md
+  - name:  Postman
+    href: postman/index.md
+    items:
+    - name: Quickstart
+      href: postman/postman-quickstart.md
