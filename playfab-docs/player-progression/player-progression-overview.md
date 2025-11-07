@@ -19,7 +19,7 @@ maintains a player's investment in their gaming achievements across different pl
 |--|--|
 |[Player Data](player-data/index.md)| Store arbitrary files or key:value pairs  |
 |[Statistics](./statistics/index.md)| Store numerical values about a player with aggregation mechanisms |
-|[Game Saves (Preview)](game-saves/overview.md)| Synchronize local files that represent player game state across devices and platforms |
+|[Game Saves](game-saves/overview.md)| Synchronize local files that represent player game state across devices and platforms |
 
 ## Player Data
 
@@ -37,7 +37,7 @@ Learn more about the new features of Statistics, how to configure it and all the
 - [Quickstart](statistics/quickstart-statistics.md)
 - [Create statistics](statistics/create-basic-statistics.md)
 
-### Game Saves (Preview)
+### Game Saves
 
 - [Learn more about Game Saves](game-saves/overview.md)
 - [Quickstart](game-saves/quickstart.md)
