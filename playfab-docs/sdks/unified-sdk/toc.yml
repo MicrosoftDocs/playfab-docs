@@ -1,0 +1,23 @@
+- name: Overview
+  href: overview.md
+  homepage: overview.md
+- name: Quick Start
+  items:
+    - name: Quick Start (Windows) - Prerequisites
+      href: quickstart-setup.md
+    - name: Quick Start (Windows) - PlayFab Core
+      href: quickstart-core.md
+    - name: Quick Start (Windows) - PlayFab Services
+      href: quickstart-services.md
+    - name: Quick Start (Windows) - PlayFab Party
+      href: quickstart-windows-party.md
+- name: Core Concepts
+  items:
+    - name: Async Model for Core and Services
+      href: async-model.md
+    - name: Memory Management
+      href: memory-management.md
+    - name: Debug Tracing for Core and Services
+      href: debug-trace.md
+- name: Migrating from PlayFab standalone SDKs (v1)
+  href: migrating-from-v1.md
