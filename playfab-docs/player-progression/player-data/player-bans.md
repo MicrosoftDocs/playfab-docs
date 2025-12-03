@@ -91,7 +91,7 @@ public void AddBan(string playerId, uint hours) {
 Bans applied via code are also displayed in the table of bans for the target player in Game Manager.
 
 > [!NOTE]
-> The PlayFab server SDK methods provide more options, such as **IP** and **MAC** address bans.
+> The PlayFab server SDK methods provide more options, such as **IP** address bans.
 
 Each ban you apply gets an assigned ID. Consider the following Server SDK API methods for precise ban management:
 
