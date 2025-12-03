@@ -56,8 +56,8 @@ The following table shows platform and game engine support for the PlayFab Unifi
 
 The Unified SDK components ship together, but certain features may have limited or provisional availability on specific platforms in the current release. The table below summarizes feature readiness for this preview.
 
-| Platform                        | Core         | Services | GameSave | Multiplayer (Lobby / Matchmaking) | Party Data | Party Voice |
-|---------------------------------|--------------|----------|----------|-----------------------------------|------------|-------------|
+| Platform                        | Core         | Services      | GameSave     | Multiplayer (Lobby / Matchmaking) | Party Data | Party Voice |
+|---------------------------------|--------------|---------------|--------------|-----------------------------------|------------|-------------|
 | Windows  (PC and Handheld)      | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported |
 | Xbox (One, Series S/X, Cloud)   | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported |
 | Steam Deck                      | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported | ✅ Supported |
