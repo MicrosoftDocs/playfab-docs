@@ -56,16 +56,11 @@ The following table shows platform and game engine support for the PlayFab Unifi
 
 The Unified SDK components ship together, but certain features may have limited or provisional availability on specific platforms in the current release. The table below summarizes feature readiness for this preview.
 
-| Platform | Core / Services | Multiplayer (Lobby / Matchmaking) | Party Data | Party Voice | GameSave |
-|----------|-----------------|------------------------------------|------------|-------------|----------|
-| Windows  (PC and Handheld)      | ✅ Fully supported | ✅ Fully supported | ✅ Fully supported | ✅ Fully supported | ✅ Fully supported |
-| Xbox (One, Series S/X, Cloud)   | ✅ Fully supported | ✅ Fully supported | ✅ Fully supported | ✅ Fully supported | ✅ Fully supported |
-| Steam Deck | ✅ Fully supported | ✅ Fully supported | ✅ Fully supported | ⚠️ Not yet available in this release | ✅ Fully supported |
-
-Legend: ✅ Available / supported, ⚠️ Planned but not yet available in this release.
-
-> [!NOTE]
-> Party Voice on Steam Deck is targeted for a future update. Other Party features (text/chat data channels) function normally.
+| Platform                        | Core      | Services  | GameSave  | Multiplayer (Lobby / Matchmaking) | Party Data | Party Voice |
+|---------------------------------|-----------|-----------|-----------|-----------------------------------|------------|-------------|
+| Windows  (PC and Handheld)      | Supported | Supported | Supported | Supported | Supported | Supported |
+| Xbox (One, Series S/X, Cloud)   | Supported | Supported | Supported | Supported | Supported | Supported |
+| Steam Deck                      | Supported | Supported | Supported | Supported | Supported | Supported |
 
 If you encounter a discrepancy between this table and observed behavior, file an issue through your PlayFab support channel so we can update documentation and address the gap.
 
