@@ -1,7 +1,7 @@
 ---
 author: jasonsandlin
 title: "PFAccountManagementBanUsersRequest"
-description: "PFAccountManagementBanUsersRequest data model. The existence of each user will not be verified. When banning by IP or MAC address, multiple players may be affected, so use this feature with caution. Returns information about the new bans."
+description: "PFAccountManagementBanUsersRequest data model. The existence of each user will not be verified. When banning by IP, multiple players may be affected, so use this feature with caution. Returns information about the new bans."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
@@ -10,7 +10,7 @@ ms.date: 11/19/2024
 
 # PFAccountManagementBanUsersRequest  
 
-PFAccountManagementBanUsersRequest data model. The existence of each user will not be verified. When banning by IP or MAC address, multiple players may be affected, so use this feature with caution. Returns information about the new bans.  
+PFAccountManagementBanUsersRequest data model. The existence of each user will not be verified. When banning by IP, multiple players may be affected, so use this feature with caution. Returns information about the new bans.  
 
 ## Syntax  
   
