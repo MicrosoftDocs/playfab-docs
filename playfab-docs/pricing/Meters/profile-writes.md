@@ -29,7 +29,7 @@ The following APIs cause the Profile writes meter to increment.
     Adds one or more virtual currencies to the set defined for the title. Virtual Currencies have a maximum value of 2,147,483,647 when granted to a player. Any value over that will be discarded.
 
 - [BanUsers](/rest/api/playfab/admin/account-management/banusers?)
-    Bans users by PlayFab ID with optional IP address, or MAC address for the provided game.
+    Bans users by PlayFab ID with optional IP address, for the provided game.
 
 - [CreateActionsOnPlayersInSegmentTask](/rest/api/playfab/admin/scheduledtask/createactionsonplayersinsegmenttask?)
     Create an ActionsOnPlayersInSegment task, which iterates through all players in a segment to execute action.
@@ -448,7 +448,7 @@ Creates and updates the title-specific custom data for the user which is readabl
     Awards the specified users the specified Steam achievements.
 
 - [BanUsers](/rest/api/playfab/server/account-management/banusers?)
-    Bans users by PlayFab ID with optional IP address, or MAC address for the provided game.
+    Bans users by PlayFab ID with optional IP address, for the provided game.
 
 - [ConsumeItem](/rest/api/playfab/server/player-item-management/consumeitem?)
     Consume uses of a consumable item. When all uses are consumed, it will be removed from the player's inventory.
