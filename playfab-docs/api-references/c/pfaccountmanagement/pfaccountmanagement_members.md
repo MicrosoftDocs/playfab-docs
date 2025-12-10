@@ -109,7 +109,7 @@ ms.date: 11/19/2024
 | [PFAccountManagementGetTitlePlayersFromXboxLiveIDsAsync](functions/pfaccountmanagementgettitleplayersfromxboxliveidsasync.md) | Retrieves the title player accounts associated with the given XUIDs. |  
 | [PFAccountManagementGetTitlePlayersFromXboxLiveIDsGetResult](functions/pfaccountmanagementgettitleplayersfromxboxliveidsgetresult.md) | Gets the result of a successful PFAccountManagementGetTitlePlayersFromXboxLiveIDsAsync call. |  
 | [PFAccountManagementGetTitlePlayersFromXboxLiveIDsGetResultSize](functions/pfaccountmanagementgettitleplayersfromxboxliveidsgetresultsize.md) | Get the size in bytes needed to store the result of a GetTitlePlayersFromXboxLiveIDs call. |  
-| [PFAccountManagementServerBanUsersAsync](functions/pfaccountmanagementserverbanusersasync.md) | Bans users by PlayFab ID with optional IP address, or MAC address for the provided game. |  
+| [PFAccountManagementServerBanUsersAsync](functions/pfaccountmanagementserverbanusersasync.md) | Bans users by PlayFab ID with optional IP address, for the provided game. |  
 | [PFAccountManagementServerBanUsersGetResult](functions/pfaccountmanagementserverbanusersgetresult.md) | Gets the result of a successful PFAccountManagementServerBanUsersAsync call. |  
 | [PFAccountManagementServerBanUsersGetResultSize](functions/pfaccountmanagementserverbanusersgetresultsize.md) | Get the size in bytes needed to store the result of a ServerBanUsers call. |  
 | [PFAccountManagementServerDeletePlayerAsync](functions/pfaccountmanagementserverdeleteplayerasync.md) | Removes a user's player account from a title and deletes all associated data |  

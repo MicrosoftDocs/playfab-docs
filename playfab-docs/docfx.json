@@ -33,12 +33,13 @@
         "overwrite": [],
         "externalReference": [],
         "globalMetadata": {
+            "uhfHeaderId": "MSDocsHeader-PlayFab",
             "breadcrumb_path": "/gaming/playfab/breadcrumb/toc.json",
             "feedback_system": "Standard",
             "feedback_product_url": "https://community.playfab.com/index.html",
-            "searchScope": ["PlayFab"],
-            "uhfHeaderId": "MSDocsHeader-PlayFab",
-            "titleSuffix": "PlayFab"
+            "searchScope": ["Microsoft Game Development Kit", "PlayFab", "Game Publishing Guide", "Gaming"],
+            "titleSuffix": "PlayFab",
+            "ms.localizationpriority": "medium"
         },
         "fileMetadata": {},
         "template": [],
