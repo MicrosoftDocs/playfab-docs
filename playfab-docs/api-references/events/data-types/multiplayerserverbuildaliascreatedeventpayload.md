@@ -1,7 +1,7 @@
 ---
-title: MultiplayerServerBuildAliasCreatedEventPaylod
+title: MultiplayerServerBuildAliasCreatedEventPayload
 author: vorelien
-description: MultiplayerServerBuildAliasCreatedEventPaylod data type.
+description: MultiplayerServerBuildAliasCreatedEventPayload data type.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerBuildAliasCreatedEventPaylod
+# MultiplayerServerBuildAliasCreatedEventPayload
 
 ## Properties
 

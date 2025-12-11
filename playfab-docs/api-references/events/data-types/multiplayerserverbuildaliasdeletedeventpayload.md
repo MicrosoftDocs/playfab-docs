@@ -1,7 +1,7 @@
 ---
-title: MultiplayerServerBuildAliasDeletedEventPaylod
+title: MultiplayerServerBuildAliasDeletedEventPayload
 author: vorelien
-description: MultiplayerServerBuildAliasDeletedEventPaylod data type.
+description: MultiplayerServerBuildAliasDeletedEventPayload data type.
 ms.author: vorelien
 ms.date: 12/04/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerBuildAliasDeletedEventPaylod
+# MultiplayerServerBuildAliasDeletedEventPayload
 
 ## Properties
 

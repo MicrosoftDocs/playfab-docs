@@ -1,7 +1,7 @@
 ---
-title: MultiplayerServerMonitoringOutputSavedEventPaylod
+title: MultiplayerServerMonitoringOutputSavedEventPayload
 author: vorelien
-description: MultiplayerServerMonitoringOutputSavedEventPaylod data type.
+description: MultiplayerServerMonitoringOutputSavedEventPayload data type.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerMonitoringOutputSavedEventPaylod
+# MultiplayerServerMonitoringOutputSavedEventPayload
 
 ## Properties
 

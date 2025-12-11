@@ -1,7 +1,7 @@
 ---
-title: MultiplayerServerSecretAddedEventPaylod
+title: MultiplayerServerSecretAddedEventPayload
 author: vorelien
-description: MultiplayerServerSecretAddedEventPaylod data type.
+description: MultiplayerServerSecretAddedEventPayload data type.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerSecretAddedEventPaylod
+# MultiplayerServerSecretAddedEventPayload
 
 ## Properties
 
