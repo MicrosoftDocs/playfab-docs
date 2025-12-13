@@ -17,4 +17,4 @@ ms.localizationpriority: medium
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
 |AliasName|String|The name of the build alias that was updated.|
-|AliasId|String|The Guid ID of the  buil dalias that was updated.|
+|AliasId|String|The Guid ID of the  build alias that was updated.|
