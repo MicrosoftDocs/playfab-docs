@@ -3,7 +3,7 @@ title: build_alias_deleted
 author: vorelien
 description: build_alias_deleted event.
 ms.author: vorelien
-ms.date: 02/19/2019
+ms.date: 12/09/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events
