@@ -111,32 +111,52 @@
       href: events/matchmaking-user-ticket-completed.md
     - name: matchmaking_user_ticket_invite 
       href: events/matchmaking-user-ticket-invite.md
-    - name: multiplayer_server_build_deleted
-      href: events/multiplayer-server-build-deleted.md
-    - name: multiplayer_server_build_region_status_changed
-      href: events/multiplayer-server-build-region-status-changed.md
-    - name: multiplayer_server_build_region_updated
-      href: events/multiplayer-server-build-region-updated.md
-    - name: multiplayer_server_certificate_deleted
-      href: events/multiplayer-server-certificate-deleted.md
-    - name: multiplayer_server_certificate_uploaded
-      href: events/multiplayer-server-certificate-uploaded.md
-    - name: multiplayer_server_create_build_initiated
-      href: events/multiplayer-server-create-build-initiated.md
-    - name: multiplayer_server_game_asset_deleted 
-      href: events/multiplayer-server-game-asset-deleted.md
-    - name: multiplayer_server_requested 
-      href: events/multiplayer-server-requested.md
-    - name: multiplayer_server_state_changed  
-      href: events/multiplayer-server-state-changed.md
-    - name: multiplayer_server_vm_assigned 
-      href: events/multiplayer-server-vm-assigned.md
-    - name: multiplayer_server_vm_remote_user_created 
-      href: events/multiplayer-server-vm-remote-user-created.md
-    - name: multiplayer_server_vm_remote_user_deleted 
-      href: events/multiplayer-server-vm-remote-user-deleted.md
-    - name: multiplayer_server_vm_unassignment_started 
-      href: events/multiplayer-server-vm-unassignment-started.md
+    - name: build_alias_created
+      href: events/build-alias-created.md
+    - name: build_alias_deleted
+      href: events/build-alias-deleted.md
+    - name: build_alias_updated
+      href: events/build-alias-updated.md
+    - name: build_deleted
+      href: events/build-deleted.md
+    - name: build_region_status_changed
+      href: events/build-region-status-changed.md
+    - name: build_region_updated
+      href: events/build-region-updated.md
+    - name: build_region_utilization
+      href: events/build-region-utilization.md
+    - name: certificate_deleted
+      href: events/certificate-deleted.md
+    - name: certificate_uploaded
+      href: events/certificate-uploaded.md
+    - name: crash_detected
+      href: events/crash-detected.md
+    - name: create_build_initiated
+      href: events/create-build-initiated.md
+    - name: enabled_for_title
+      href: events/enabled-for-title.md
+    - name: game_asset_deleted 
+      href: events/game-asset-deleted.md
+    - name: monitoring_output_saved 
+      href: events/monitoring-output-saved.md
+    - name: server_requested 
+      href: events/server-requested.md
+    - name: secret_added
+      href: events/secret-added.md
+    - name: secret_deleted
+      href: events/secret-deleted.md
+    - name: server_state_changed  
+      href: events/server-state-changed.md
+    - name: vm_assigned 
+      href: events/vm-assigned.md
+    - name: vm_remote_user_created 
+      href: events/vm-remote-user-created.md
+    - name: vm_remote_user_deleted 
+      href: events/vm-remote-user-deleted.md
+    - name: vm_unassignment_started 
+      href: events/vm-unassignment-started.md
+    - name: vm_unhealthy
+      href: events/vm-unhealthy.md
     - name: player_action_executed 
       href: events/player-action-executed.md
     - name: player_ad_activity_valued  

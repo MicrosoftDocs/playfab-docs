@@ -81,48 +81,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [matchmaking_user_ticket_invite](matchmaking-user-ticket-invite.md)  
   This event is triggered when a ticket with an invited user is created. The event will be sent to the invited user.  
 
-- [multiplayer_server_build_deleted](multiplayer-server-build-deleted.md)  
-  This event is triggered when a multiplayer server build is deleted.  
-
-- [multiplayer_server_build_region_status_changed](multiplayer-server-build-region-status-changed.md)  
-  This event is triggered when a multiplayer server's build region status is changed.  
-
-- [multiplayer_server_build_region_updated](multiplayer-server-build-region-updated.md)  
-  This event is triggered when a multiplayer server build region is updated.
-
-- [multiplayer_server_certificate_deleted](multiplayer-server-certificate-deleted.md)  
-  This event is triggered when a multiplayer server certificate is deleted.
-
-- [multiplayer_server_certificate_uploaded](multiplayer-server-certificate-uploaded.md)  
-  This event is triggered when a multiplayer server certificate is uploaded.  
-
-- [multiplayer_server_create_build_initiated](multiplayer-server-create-build-initiated.md)  
-  This event is triggered when a multiplayer server build is initiated.
-
-- [multiplayer_server_game_asset_deleted](multiplayer-server-game-asset-deleted.md)  
-  This event is triggered when a multiplayer server game asset is deleted.  
-
-- [multiplayer_server_requested](multiplayer-server-requested.md)  
-  This event is triggered when a multiplayer server shutdown is requested.  
-
-- [multiplayer_server_state_changed](multiplayer-server-state-changed.md)  
-  This event is triggered when a multiplayer server's state is changed.
-
-- [multiplayer_server_vm_assigned](multiplayer-server-vm-assigned.md)  
-  This event is triggered when a virtual machine is assigned to a multiplayer server build.  
-
-- [multiplayer_server_vm_remote_user_created](multiplayer-server-vm-remote-user-created.md)  
-  This event is triggered when a multiplayer server virtual machine remote user is created.
-
-- [multiplayer_server_vm_remote_user_deleted](multiplayer-server-vm-remote-user-deleted.md)  
-  This event is triggered when a multiplayer server virtual machine remote user is deleted.  
-
-- [multiplayer_server_vm_unassignment_started](multiplayer-server-vm-unassignment-started.md)  
-  This event is triggered when a virtual machine is unassigned from a multiplayer server build.  
-
-- [multiplayer_server_vm_unhealthy](multiplayer-server-vm-unhealthy.md)  
-  This event is triggered when a virtual machine is found to be unhealthy.
-
 - [studio_created](studio-created.md)  
   This event is triggered when a studio is created.
 
@@ -140,6 +98,77 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [studio_tier_updated](studio-tier-updated.md)  
   This event is triggered when a studio tier is updated.
+
+## Multiplayer Servers
+
+- [build_alias_created](build-alias-created.md)  
+  This event is triggered when a multiplayer server build alias is created.
+
+- [build_alias_deleted](build-alias-deleted.md)  
+  This event is triggered when a multiplayer server build alias is deleted.
+
+- [build_alias_updated](build-alias-updated.md)  
+  This event is triggered when a multiplayer server build alias is updated.
+
+- [build_deleted](build-deleted.md)  
+  This event is triggered when a multiplayer server build is deleted.  
+
+- [build_region_status_changed](build-region-status-changed.md)  
+  This event is triggered when a multiplayer server's build region status is changed.  
+
+- [build_region_updated](build-region-updated.md)  
+  This event is triggered when a multiplayer server build region is updated.
+
+- [build_region_utilization](build-region-utilization.md)  
+  This event is triggered to display the utilization of servers for a build in each region.
+
+- [certificate_deleted](certificate-deleted.md)  
+  This event is triggered when a multiplayer server certificate is deleted.
+
+- [certificate_uploaded](certificate-uploaded.md)  
+  This event is triggered when a multiplayer server certificate is uploaded.  
+
+- [crash_detected](crash-detected.md)  
+  This event triggered when a crash dump is found on a terminating server.
+
+- [create_build_initiated](create-build-initiated.md)  
+  This event is triggered when a multiplayer server build is initiated.
+
+- [enabled_for_title](enabled-for-title.md)  
+  This event is triggered when a title enables PlayFab servers
+
+- [game_asset_deleted](game-asset-deleted.md)  
+  This event is triggered when a multiplayer server game asset is deleted.  
+
+- [monitoring_output_saved](monitoring-output-saved.md)  
+  This event is triggered when the output of a monitoring application has been saved and can be downloaded.
+
+- [server_requested](server-requested.md)  
+  This event is triggered when a multiplayer server shutdown is requested.  
+
+- [secret_added](secret-added.md)  
+  This event is triggered when a multiplayer server secret is added.
+
+- [secret_deleted](secret-deleted.md)  
+  This event is triggered when a multiplayer server secret is deleted.
+
+- [server_state_changed](server-state-changed.md)  
+  This event is triggered when a multiplayer server's state is changed.
+
+- [vm_assigned](vm-assigned.md)  
+  This event is triggered when a virtual machine is assigned to a multiplayer server build.  
+
+- [vm_remote_user_created](vm-remote-user-created.md)  
+  This event is triggered when a multiplayer server virtual machine remote user is created.
+
+- [vm_remote_user_deleted](vm-remote-user-deleted.md)  
+  This event is triggered when a multiplayer server virtual machine remote user is deleted.  
+
+- [vm_unassignment_started](vm-unassignment-started.md)  
+  This event is triggered when a virtual machine is unassigned from a multiplayer server build.  
+
+- [vm_unhealthy](vm-unhealthy.md)  
+  This event is triggered when a virtual machine is found to be unhealthy.
 
 ## Catalog
 
