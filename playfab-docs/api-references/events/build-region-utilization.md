@@ -1,7 +1,7 @@
 ---
-title: multiplayer_server_build_region_utilization
+title: build_region_utilization
 author: vorelien
-description: multiplayer_server_build_region_utilization event.
+description: build_region_utilization event.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer_server_build_region_utilization
+# build_region_utilization
 
 This event is triggered to display the utilization of servers for a build in each region.
 
@@ -21,7 +21,7 @@ This event is triggered to display the utilization of servers for a build in eac
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |OriginalEventId|String|The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.|
 |OriginalTimestamp|DateTime|The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.|
-|Payload|[MultiplayerServerBuildRegionUtilizationEventPayload](data-types/multiplayerserverbuildregionutilizationeventpayload.md)|The multiplayer server build region utilization event payload.|
+|Payload|[BuildRegionUtilizationEventPayload](data-types/buildregionutilizationeventpayload.md)|The multiplayer server build region utilization event payload.|
 |WriterEntity|[EntityKey](data-types/entitykey.md)|Entity that wrote this event, included only if different than the event's entity.|
 
 ## Common Properties

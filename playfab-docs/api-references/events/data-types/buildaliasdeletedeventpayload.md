@@ -1,7 +1,7 @@
 ---
-title: MultiplayerServerSecretDeletedEventPayload
+title: BuildAliasDeletedEventPayload
 author: vorelien
-description: MultiplayerServerSecretDeletedEventPayload data type.
+description: BuildAliasDeletedEventPayload data type.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,10 +10,10 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerSecretDeletedEventPayload
+# BuildAliasDeletedEventPayload
 
 ## Properties
 
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
-|SecretName|String|The name of the secret that was deleted.|
+|AliasId|String|The Guid ID of the  build alias that was deleted.|

@@ -1,7 +1,7 @@
 ---
-title: multiplayer_server_enabled_for_title
+title: enabled_for_title
 author: vorelien
-description: multiplayer_server_enabled_for_title event.
+description: enabled_for_title event.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer_server_enabled_for_title
+# enabled_for_title
 
-This event is triggered when a title enables PlayFab servers
+This event is triggered when a title enables PlayFab multiplayer servers.
 
 ## Properties
 

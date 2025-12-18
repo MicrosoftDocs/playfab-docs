@@ -1,7 +1,7 @@
 ---
-title: multiplayer_server_vm_assigned
+title: vm_assigned
 author: joannaleecy
-description: multiplayer_server_vm_assigned event.
+description: vm_assigned event.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer_server_vm_assigned
+# vm_assigned
 
 This event is triggered when a virtual machine is assigned to a multiplayer server build.
 
@@ -21,7 +21,7 @@ This event is triggered when a virtual machine is assigned to a multiplayer serv
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |OriginalEventId|String|The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.|
 |OriginalTimestamp|DateTime|The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.|
-|Payload|[MultiplayerServerVmAssignedEventPayload](data-types/multiplayerservervmassignedeventpayload.md)|The multiplayer server virtual machine assigned event payload.|
+|Payload|[VmAssignedEventPayload](data-types/vmassignedeventpayload.md)|The multiplayer server virtual machine assigned event payload.|
 |WriterEntity|[EntityKey](data-types/entitykey.md)|Entity that wrote this event, included only if different than the event's entity.|
 
 ## Common Properties

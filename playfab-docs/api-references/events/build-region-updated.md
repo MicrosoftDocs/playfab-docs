@@ -1,7 +1,7 @@
 ---
-title: multiplayer_server_build_region_updated 
+title: build_region_updated
 author: joannaleecy
-description: multiplayer_server_build_region_updated event.
+description: build_region_updated event.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer_server_build_region_updated
+# build_region_updated
 
 This event is triggered when a multiplayer server build region is updated.
 
@@ -21,7 +21,7 @@ This event is triggered when a multiplayer server build region is updated.
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |OriginalEventId|String|The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.|
 |OriginalTimestamp|DateTime|The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.|
-|Payload|[MultiplayerServerBuildRegionUpdatedEventPayload](data-types/multiplayerserverbuildregionupdatedeventpayload.md)|The multiplayer server build region updated event payload.|
+|Payload|[BuildRegionUpdatedEventPayload](data-types/buildregionupdatedeventpayload.md)|The multiplayer server build region updated event payload.|
 |WriterEntity|[EntityKey](data-types/entitykey.md)|Entity that wrote this event, included only if different than the event's entity.|
 
 ## Common Properties

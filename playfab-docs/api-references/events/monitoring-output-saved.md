@@ -1,7 +1,7 @@
 ---
-title: multiplayer-server-monitoring-output-saved
+title: monitoring_output_saved
 author: vorelien
-description: multiplayer-server-monitoring-output-saved event.
+description: monitoring_output_saved event.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer-server-monitoring-output-saved
+# monitoring_output_saved
 
 This event is triggered when the output of a monitoring application has been saved and can be downloaded.
 
@@ -21,7 +21,7 @@ This event is triggered when the output of a monitoring application has been sav
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |OriginalEventId|String|The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.|
 |OriginalTimestamp|DateTime|The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.|
-|Payload|[MultiplayerServerMonitoringOutputSavedEventPayload](data-types/multiplayerservermonitoringoutputsavedeventpayload.md)|The multiplayer server monitoring output saved event payload.|
+|Payload|[MonitoringOutputSavedEventPayload](data-types/monitoringoutputsavedeventpayload.md)|The multiplayer server monitoring output saved event payload.|
 |WriterEntity|[EntityKey](data-types/entitykey.md)|Entity that wrote this event, included only if different than the event's entity.|
 
 ## Common Properties

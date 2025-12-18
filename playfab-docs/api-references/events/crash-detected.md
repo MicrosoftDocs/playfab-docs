@@ -1,7 +1,7 @@
 ---
-title: multiplayer_server_crash_detected
+title: crash_detected
 author: vorelien
-description: multiplayer_server_crash_detected event.
+description: crash_detected event.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer_server_crash_detected
+# crash_detected
 
 This event triggered when a crash dump is found on a terminating server.
 
@@ -21,7 +21,7 @@ This event triggered when a crash dump is found on a terminating server.
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |OriginalEventId|String|The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.|
 |OriginalTimestamp|DateTime|The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.|
-|Payload|[MultiplayerServerCrashDetectedEventPayload](data-types/multiplayerservercrashdetectedeventpayload.md)|The multiplayer server crash detected event payload.|
+|Payload|[CrashDetectedEventPayload](data-types/crashdetectedeventpayload.md)|The multiplayer server crash detected event payload.|
 |WriterEntity|[EntityKey](data-types/entitykey.md)|Entity that wrote this event, included only if different than the event's entity.|
 
 ## Common Properties

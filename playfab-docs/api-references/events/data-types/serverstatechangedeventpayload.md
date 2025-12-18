@@ -1,16 +1,16 @@
 ---
-title: MultiplayerServerStateChangedEventPayload
+title: ServerStateChangedEventPayload
 author: joannaleecy
-description: MultiplayerServerStateChangedEventPayload data type.
+description: ServerStateChangedEventPayload data type.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, playstream events
+keywords: playfab, api, events, playstream
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerStateChangedEventPayload
+# ServerStateChangedEventPayload
 
 ## Properties
 

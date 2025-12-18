@@ -1,16 +1,16 @@
 ---
-title: MultiplayerServerBuildRegionStatusChangedEventPayload
+title: BuildRegionStatusChangedEventPayload
 author: joannaleecy
-description: MultiplayerServerBuildRegionStatusChangedEventPayload data type.
+description: BuildRegionStatusChangedEventPayload data type.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, playstream events
+keywords: playfab, api, events, playstream
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerBuildRegionStatusChangedEventPayload
+# BuildRegionStatusChangedEventPayload
 
 ## Properties
 

@@ -1,16 +1,16 @@
 ---
-title: MultiplayerServerBuildDeletedEventPayload
+title: BuildDeletedEventPayload
 author: joannaleecy
-description: MultiplayerServerBuildDeletedEventPayload data type.
+description: BuildDeletedEventPayload data type.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, playstream events
+keywords: playfab, api, events, playstream
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerBuildDeletedEventPayload
+# BuildDeletedEventPayload
 
 ## Properties
 

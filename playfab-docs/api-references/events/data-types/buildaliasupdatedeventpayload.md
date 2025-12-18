@@ -1,16 +1,16 @@
 ---
-title: MultiplayerServerBuildAliasUpdatedEventPayload
+title: BuildAliasUpdatedEventPayload
 author: vorelien
-description: MultiplayerServerBuildAliasUpdatedEventPayload data type.
+description: BuildAliasUpdatedEventPayload data type.
 ms.author: vorelien
-ms.date: 12/04/2025
+ms.date: 12/09/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerBuildAliasUpdatedEventPayload
+# BuildAliasUpdatedEventPayload
 
 ## Properties
 

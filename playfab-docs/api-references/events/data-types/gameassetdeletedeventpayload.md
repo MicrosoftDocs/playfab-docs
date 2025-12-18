@@ -1,16 +1,16 @@
 ---
-title: MultiplayerServerGameAssetDeletedEventPayload
+title: GameAssetDeletedEventPayload
 author: joannaleecy
-description: MMultiplayerServerGameAssetDeletedEventPayload data type.
+description: GameAssetDeletedEventPayload data type.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, playstream events
+keywords: playfab, api, events, playstream
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerGameAssetDeletedEventPayload
+# GameAssetDeletedEventPayload
 
 ## Properties
 

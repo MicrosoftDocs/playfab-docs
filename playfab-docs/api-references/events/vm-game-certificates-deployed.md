@@ -1,7 +1,7 @@
 ---
-title: multiplayer_server_vm_game_certificates_deployed
+title: vm_game_certificates_deployed
 author: vorelien
-description: multiplayer_server_vm_game_certificates_deployed event.
+description: vm_game_certificates_deployed event.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer_server_vm_game_certificates_deployed
+# vm_game_certificates_deployed
 
 This event is triggered when game certificates are deployed in a game virtual machine.
 
@@ -21,7 +21,7 @@ This event is triggered when game certificates are deployed in a game virtual ma
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |OriginalEventId|String|The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.|
 |OriginalTimestamp|DateTime|The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.|
-|Payload|[MultiplayerServerVmGameCertificatesDeployedEventPayload](data-types/multiplayerservervmgamecertificatesdeployedeventpayload.md)|The multiplayer server vm game certificates deployed event payload.|
+|Payload|[VmGameCertificatesDeployedEventPayload](data-types/vmgamecertificatesdeployedeventpayload.md)|The multiplayer server vm game certificates deployed event payload.|
 |WriterEntity|[EntityKey](data-types/entitykey.md)|Entity that wrote this event, included only if different than the event's entity.|
 
 ## Common Properties

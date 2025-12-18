@@ -1,16 +1,16 @@
 ---
-title: MMultiplayerServerCertificateUploadedEventPayload
+title: CertificateUploadedEventPayload
 author: joannaleecy
-description: MultiplayerServerCertificateUploadedEventPayload data type.
+description: CertificateUploadedEventPayload data type.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, playstream events
+keywords: playfab, api, events, playstream
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerCertificateUploadedEventPayload
+# CertificateUploadedEventPayload
 
 ## Properties
 

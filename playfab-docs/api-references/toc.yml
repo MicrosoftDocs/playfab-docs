@@ -139,16 +139,18 @@
       href: events/game-asset-deleted.md
     - name: monitoring_output_saved 
       href: events/monitoring-output-saved.md
-    - name: server_requested 
-      href: events/server-requested.md
     - name: secret_added
       href: events/secret-added.md
     - name: secret_deleted
       href: events/secret-deleted.md
+    - name: server_requested 
+      href: events/server-requested.md
     - name: server_state_changed  
       href: events/server-state-changed.md
     - name: vm_assigned 
       href: events/vm-assigned.md
+    - name: vm_game_certificates_deployed
+      href: events/vm-game-certificates-deployed.md
     - name: vm_remote_user_created 
       href: events/vm-remote-user-created.md
     - name: vm_remote_user_deleted 

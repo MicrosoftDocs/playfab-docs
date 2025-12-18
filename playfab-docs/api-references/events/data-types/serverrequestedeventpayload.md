@@ -1,16 +1,16 @@
 ---
-title: MultiplayerServerRequestedEventPayload
+title: ServerRequestedEventPayload
 author: joannaleecy
-description: MultiplayerServerRequestedEventPayload data type.
+description: ServerRequestedEventPayload data type.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, playstream events
+keywords: playfab, api, events, playstream
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerRequestedEventPayload
+# ServerRequestedEventPayload
 
 ## Properties
 

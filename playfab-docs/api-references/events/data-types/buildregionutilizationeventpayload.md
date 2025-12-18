@@ -1,16 +1,16 @@
 ---
-title: MultiplayerServerVmStateChangeEventPayload
+title: BuildRegionUtilizationEventPayload
 author: vorelien
-description: MultiplayerServerVmStateChangeEventPayload data type.
+description: BuildRegionUtilizationEventPayload data type.
 ms.author: vorelien
-ms.date: 12/10/2025
+ms.date: 12/09/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerVmStateChangeEventPayload
+# BuildRegionUtilizationEventPayload
 
 ## Properties
 
@@ -18,6 +18,8 @@ ms.localizationpriority: medium
 | :--------------------|:-------------------|:----------------------|
 |BuildId|String|The guid string ID of the multiplayer server build that regions were updated on.|
 |Region|[AzureRegion](azureregion.md)|The build region.|
-|VmId|String|The virtual machine ID of the multiplayer vm.|
-|State|String|The multiplayer virtual machine's state to report on.|
-|DurationSeconds|ulong|The amount of time spent getting to this state.|
+|Active|Int|The number of active servers.|
+|StandingBy|Int|The number of standingby servers.|
+|Propping|Int|The number of servers still downloading game resources.|
+|Total|Int|The total number of servers.|
+|VmCount|Int|The total number of running virtual machines.|

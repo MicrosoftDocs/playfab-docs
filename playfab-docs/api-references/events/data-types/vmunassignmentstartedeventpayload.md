@@ -1,16 +1,16 @@
 ---
-title: MultiplayerServerVmUnassignmentStartedEventPayload
+title: VmUnassignmentStartedEventPayload
 author: joannaleecy
-description: MultiplayerServerVmUnassignmentStartedEventPayload data type.
+description: VmUnassignmentStartedEventPayload data type.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, playstream events
+keywords: playfab, api, events, playstream
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerVmUnassignmentStartedEventPayload
+# VmUnassignmentStartedEventPayload
 
 ## Properties
 

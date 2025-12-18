@@ -1,7 +1,7 @@
 ---
-title: MultiplayerServerCrashDetectedEventPayload
+title: CrashDetectedEventPayload
 author: vorelien
-description: MultiplayerServerCrashDetectedEventPayload data type.
+description: CrashDetectedEventPayload data type.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# MultiplayerServerCrashDetectedEventPayload
+# CrashDetectedEventPayload
 
 ## Properties
 

@@ -1,7 +1,7 @@
 ---
-title: multiplayer_server_game_asset_deleted
+title: game_asset_deleted
 author: joannaleecy
-description: multiplayer_server_game_asset_deleted event.
+description: game_asset_deleted event.
 ms.author: jenelleb
 ms.date: 02/19/2019
 ms.topic: article
@@ -10,8 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer_server_game_asset_deleted
-
+# game_asset_deleted
 This event is triggered when a multiplayer server game asset is deleted.
 
 ## Properties
@@ -21,7 +20,7 @@ This event is triggered when a multiplayer server game asset is deleted.
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |OriginalEventId|String|The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.|
 |OriginalTimestamp|DateTime|The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.|
-|Payload|[MultiplayerServerGameAssetDeletedEventPayload](data-types/multiplayerservergameassetdeletedeventpayload.md)|The multiplayer server game asset deleted event payload.|
+|Payload|[GameAssetDeletedEventPayload](data-types/gameassetdeletedeventpayload.md)|The multiplayer server game asset deleted event payload.|
 |WriterEntity|[EntityKey](data-types/entitykey.md)|Entity that wrote this event, included only if different than the event's entity.|
 
 ## Common Properties

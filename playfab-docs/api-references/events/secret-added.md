@@ -1,7 +1,7 @@
 ---
-title: multiplayer-server-secret-added
+title: secret_added
 author: vorelien
-description: multiplayer-server-secret-added event.
+description: secret_added event.
 ms.author: vorelien
 ms.date: 12/09/2025
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: playfab, playstream events
 ms.localizationpriority: medium
 ---
 
-# multiplayer-server-secret-added
+# secret_added
 
 This event is triggered when a multiplayer server secret is added.
 
@@ -21,7 +21,7 @@ This event is triggered when a multiplayer server secret is added.
 |EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
 |OriginalEventId|String|The original unique identifier associated with this event before it was posted to PlayFab. The value might differ from the EventId value, which is assigned when the event is received by the server.|
 |OriginalTimestamp|DateTime|The original time (in UTC) associated with this event before it was posted to PlayFab. The value might differ from the Timestamp value, which is set at the time the event is received by the server.|
-|Payload|[MultiplayerServerSecretAddedEventPayload](data-types/multiplayerserversecretaddedeventpayload.md)|The multiplayer server secret added event payload.|
+|Payload|[SecretAddedEventPayload](data-types/secretaddedeventpayload.md)|The multiplayer server secret added event payload.|
 |WriterEntity|[EntityKey](data-types/entitykey.md)|Entity that wrote this event, included only if different than the event's entity.|
 
 ## Common Properties
