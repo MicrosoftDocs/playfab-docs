@@ -19,4 +19,4 @@ ms.localizationpriority: medium
 |BuildId|String|The GUID string ID of the build.|
 |Region|[AzureRegion](azureregion.md)|The build region.|
 |VmId|String|The ID of the virtual machine that was assigned.|
-|GameCertificates|[List<GameCertificateDeployed>](gamecertificatedeployed.md)|The list of game certificates deployed.|
+|GameCertificates|[List\<GameCertificateDeployed>](gamecertificatedeployed.md)|The list of game certificates deployed.|

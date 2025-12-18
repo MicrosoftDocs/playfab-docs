@@ -158,7 +158,7 @@ Each event type has a set of properties that are included as part of event's dat
 - [vm_assigned](vm-assigned.md)  
   This event is triggered when a virtual machine is assigned to a multiplayer server build.  
 
-- [vm_game_certificates_deployed](vm-game-certificates-deployed.md)
+- [vm_game_certificates_deployed](vm-game-certificates-deployed.md)   
   This event is triggered when game certificates are deployed in a game virtual machine.
 
 - [vm_remote_user_created](vm-remote-user-created.md)  
@@ -167,7 +167,7 @@ Each event type has a set of properties that are included as part of event's dat
 - [vm_remote_user_deleted](vm-remote-user-deleted.md)  
   This event is triggered when a multiplayer server virtual machine remote user is deleted.  
 
-- [vm_state_change](vm-state-change.md)
+- [vm_state_change](vm-state-change.md)  
   This event is triggered when a multiplayer virtual machine's state is changed.
 
 - [vm_unassignment_started](vm-unassignment-started.md)  

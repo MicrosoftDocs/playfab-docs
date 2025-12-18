@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # GameCertificateDeployed
 
-Information about the game certificate deployed in VM.
+Information about the game certificate deployed in the VM.
 
 ## Properties
 
