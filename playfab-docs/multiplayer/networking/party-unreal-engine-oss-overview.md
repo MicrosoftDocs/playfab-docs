@@ -51,11 +51,11 @@ PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides o
 | 5.2          | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  |
 | 5.3          | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  |
 | 5.4          | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  |
-| 5.5          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
-
+| 5.5          | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  | Supported*  |
+| 5.6          | Supported   | Supported   | Supported   | Supported   | Supported   | Supported   |
 
 *For users on previous versions of Unreal Engine (UE4.27, 5.0, 5.1, 5.2, 5.3, and 5.4) who wish to use PlayFab Online Subsystem, here are two options:
-- Upgrade your local Unreal Engine version to 5.5.
+- Upgrade your local Unreal Engine version to 5.6.
 - Pull the latest release and backport it to your game.
 For UE4, 4.27 is the recommended version since crossplay between different platforms doesn't work on 4.26, but it does on 4.27. If you're on an earlier version of Unreal Engine 4, the OSS can be backported with minimal work. See [Using older versions of Unreal Engine 4](party-unreal-engine-using-older-versions.md) for more details.
 
@@ -81,7 +81,7 @@ The supported Nintendo Switch SDK versions can be found at [Switch SDK Updates P
 - UE5.0: \Engine\Platforms\Switch\Source\Programs\UnrealBuildTool\SwitchPlatformSDK.cs
 - UE5.1, UE5.2 and UE5.3: \Engine\Platforms\Switch\Source\Programs\UnrealBuildTool\SwitchPlatformSDK.Versions.cs
 - UE5.4: \Engine\Platforms\Switch\Config\Switch_SDK.json
-- UE5.5: \Engine\Platforms\Nintendo\Config\Nintendo_SDK.json
+- UE5.5 and UE5.6: \Engine\Platforms\Nintendo\Config\Nintendo_SDK.json
 
 ## Which version of the PS5™ and PS4™ SDKs are supported?
 
@@ -89,7 +89,7 @@ The supported Sony PlayStation SDK versions can be found at [PS4 SDK Compatibili
 - UE4: \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\UEBuild[PS4|PS5].cs
 - UE5.0: \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\[PS4|PS5]PlatformSDK.cs
 - UE5.1, UE5.2 and UE5.3: \Engine\Platforms\[PS4|PS5]\Source\Programs\UnrealBuildTool\[PS4|PS5]PlatformSDK.Versions.cs
-- UE5.4 and UE5.5: \Engine\Platforms\[PS4|PS5]\Config\[PS4|PS5]_SDK.json
+- UE5.4, UE5.5 and UE5.6: \Engine\Platforms\[PS4|PS5]\Config\[PS4|PS5]_SDK.json
 
 >[!NOTE]
 > In order to access Unreal’s documentation and UDN forum links above, you must be a registered Unreal Developer and tented for the specific platform.
