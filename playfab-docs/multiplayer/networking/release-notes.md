@@ -20,6 +20,27 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.10.15
+
+December 17, 2025
+
+- Nintendo Switch 2: Added 10 second timeout for webrequests.
+
+## 1.10.14
+
+December 9, 2025
+
+- Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has actually expired.
+- Android: Added support for 16 KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
+
+
+## 1.10.13
+
+October 14, 2025
+
+- Fixed an issue that caused the microphone to not function properly on iOS 26.
+- Apple: Added support for Arm64 .xcframework on iOS.
+
 ## 1.10.12
 
 October 6, 2025
