@@ -52,6 +52,8 @@ landingContent:
             url: player-identity/platform-specific-authentication/google-sign-in-unity.md            
           - text: Setup Sign In with Apple for PlayFab
             url: player-identity/platform-specific-authentication/apple-open-id.md
+          - text: Setting up Xbox Live title association in PlayFab
+            url: player-identity/platform-specific-authentication/xbox-live-add-on.md
           - text: Running an HTTP server for testing
             url: player-identity/platform-specific-authentication/running-an-http-server-for-testing.md
 
