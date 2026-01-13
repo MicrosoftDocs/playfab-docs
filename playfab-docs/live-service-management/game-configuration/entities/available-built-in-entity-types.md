@@ -53,7 +53,7 @@ Set the `ID` field to your game's **Title ID**. To retrieve the **Title ID**:
 
 ## master_player_account
 
-The `master_player_account` is a player entity that is shared by all titles within your studio.
+The `master_player_account` is a player entity that is shared by all titles associated to a given namespace.
 
 Set the `ID` field to the `LoginResult.PlayFabId` from the classic API. To retrieve the `LoginResult`, call one of the login methods in [Client Authentication](xref:titleid.playfabapi.com.client.authentication).
 
