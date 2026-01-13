@@ -11,7 +11,7 @@
              }
      :scores {
               ;;:terminology 100
-              :qualityscore 70
+              :qualityscore 80
               ;;:spelling 40
              }
    }
