@@ -46,7 +46,7 @@ Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUn
 {
     "Name": "OnlineSubsystemPlayFab",
     "Enabled": true,
-    "WhitelistPlatforms": [
+    "PlatformAllowList": [
     "XB1",
     "WinGDK",
     "XSX",
@@ -81,6 +81,7 @@ Go to [PlayFab Online Subsystem](https://github.com/PlayFab/PlayFabMultiplayerUn
   * **PS5™** PS5Engine.ini
 * Replace the INI sections in the config if they already exist (for example, Engine.GameEngine) with the ones presented in the following sections.
 * Ensure you replace all the *\<REPLACE ME>* fields with your data:
+* On UE 5.6 and later the `DriverClassName` parameter requires the "/Script/" prefix. For example, use `"/Script/OnlineSubsystemPlayFab.PlayFabNetDriver"` instead of `"OnlineSubsystemPlayFab.PlayFabNetDriver"`.
 
 ```ini
 [OnlineSubsystemPlayFab]
@@ -105,7 +106,7 @@ InitialConnectTimeout=30.0
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemPlayFab.PlayFabNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemPlayFab.PlayFabNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
 ```
 
 ## Platform Specific Considerations
@@ -231,7 +232,7 @@ Ways to help you troubleshoot issues.
 
 Users might face issues when trying to create an Unreal Engine Installed Build with the OnlineSubsystemPlayFab on GDK build flavors. We provide the following guidance to successfully overcome this issue until there's a more complete solution.
 
-**If you're using Unreal Engine 5.5 or Unreal Engine 5.4:**
+**If you're using Unreal Engine 5.4, 5.5 or 5.6:**
 
 * You might encounter the following runtime error: `Runtime dependency Party.dll is configured to be staged from C:\Program Files (x86)\Microsoft GDK\<version>\Party.dll and Engine\Plugins\Online\OnlineSubsystemPlayFab\Platforms\GDK\Redist\Party.dll`
 * Navigate to Engine\Platforms\GDK\Plugins\Online\OnlineSubsystemGDK\
