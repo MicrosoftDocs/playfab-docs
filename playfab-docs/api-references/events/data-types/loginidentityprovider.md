@@ -1,9 +1,9 @@
 ---
 title: LoginIdentityProvider
-author: joannaleecy
+author: yuto chikazawa
 description: LoginIdentityProvider data type.
-ms.author: jenelleb
-ms.date: 02/19/2019
+ms.author: ychikazawa
+ms.date: 08/19/2025
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events
@@ -35,3 +35,9 @@ ms.localizationpriority: medium
 |NintendoSwitch|
 |FacebookInstantGames|
 |OpenIdConnect|
+|Apple|
+|NintendoSwitchAccount|
+|GooglePlayGames|
+|XboxMobileStore|
+|King|
+|BattleNet|
