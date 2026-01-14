@@ -1,7 +1,7 @@
 ---
-title: PlayFab Services for Sony PlayStation
+title: PlayFab Services for PlayStation
 author: amccalib
-description: PlayFab Services SDK options for Sony PlayStation
+description: PlayFab Services SDK options for PlayStation
 ms.author: andmcc
 ms.date: 06/23/2023
 ms.topic: article
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayFab Services SDKs for PlayStation&#174;4 and PlayStation&#174;5 
 
-The following SDKs are available for game client development on PS4™ and PS5®. The right SDK depends mostly on your choice of game engine.
+The following SDKs are available for game client development on PS4&trade; and PS5&trade;. The right SDK depends mostly on your choice of game engine.
 
 | PlayFab SDK    | Description | Learn More |
 |----------------|-------------|------------|
@@ -21,11 +21,11 @@ The following SDKs are available for game client development on PS4™ and PS5®
 | Unity          | Both an editor extension and stand-alone SDK for Unity3d. | [Unity SDK Overview](../unity3d/index.md) |
 | Legacy C++     | Our older cross-platform C++ SDK supports a simple REST-like interface with PlayFab across multiple platforms. | [Request Access](../request-access-for-sdks-samples.md) |
 
-## Getting Access to SDKs for PS4™ and PS5®
+## Getting Access to SDKs for PS4 and PS5
 
 Our PlayFab Services SDKs for Unreal and Unity are platform-agnostic. As such, they require no special access or permissions from PlayFab to utilize on any platform.
 
-To utilize our C/C++ or Legacy C++ SDKs on PS4™ and PS5®, you must confirm your developer status via DevNet. Once you have approval, we can grant access to the SDK. Learn more about this process here: [Request Access](../request-access-for-sdks-samples.md).
+To utilize our C/C++ or Legacy C++ SDKs on PS4 and PS5, you must confirm your developer status via DevNet. Once you have approval, we can grant access to the SDK. Learn more about this process here: [Request Access](../request-access-for-sdks-samples.md).
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 

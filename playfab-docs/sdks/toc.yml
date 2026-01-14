@@ -109,7 +109,7 @@ items:
       href: platforms/gdk.md
     - name: Nintendo Switch
       href: platforms/switch.md
-    - name: PlayStation
+    - name: PS5 | PS4
       href: platforms/playstation.md
     - name: Windows
       href: platforms/windows.md
