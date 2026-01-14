@@ -32,7 +32,7 @@ All PlayStream events are formatted as JSON objects and share the following comm
 |EntityId|String|The identifier for the entity (title, player, etc) to which this event applies.|
 |EntityType|String|The type of entity (player, title, etc.) to which this event applies. If PlayFab is meant to take action on this entity, then the EntityType must be either 'player', 'character', or 'title'. It is required that any entity type that PlayFab does not currently parse should be prepended with a namespace (like 'com.mygame.guild') as PlayFab may begin to parse root entities at any time.|
 |EventId|String|PlayFab-assigned unique identifier for this event.|
-|EventName|String|"tem_moderation_state_changed"|
+|EventName|String|"item_moderation_state_changed"|
 |EventNamespace|String|"playfab.catalog"|
 |History|[PlayStreamEventHistory](data-types/playstreameventhistory.md)|The history of events associated with this event. This is set in cases where an event has generated children events via a trigger action.|
 |Reserved|object|Reserved exclusively for PlayFab internal use.|

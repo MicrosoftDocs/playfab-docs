@@ -39,6 +39,7 @@ You can change your account's plan via Game Manager using the **Plan Recommendat
 You can upgrade your account plan at any time on the **My Studios and Titles** page. Use the following steps to upgrade your account from Free to Start. Upgrading an account will upgrade all studios owned by the account.
 
 1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
+1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
 
 2. On the **My Studios and Titles** page, locate the header of a Studio whose linked account should be upgraded. Select **Upgrade Account**.
 

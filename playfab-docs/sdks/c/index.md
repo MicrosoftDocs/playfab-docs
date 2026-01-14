@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayFab Services SDK for C/C++
 
-The new PlayFab Services SDK for C/C++ is currently available for the following platforms: Win32 (x64 only), Nintendo Switch, Sony PlayStation&#174;, iOS, macOS, Android, Linux, and the Microsoft GDK. Depending on the platform you're targeting, the way you acquire the SDK differs.
+The new PlayFab Services SDK for C/C++ is currently available for the following platforms: Win32 (x64 only), Nintendo Switch, PlayStation&#174;5, PlayStation&#174;4, iOS, macOS, Android, Linux, and the Microsoft GDK. Depending on the platform you're targeting, the way you acquire the SDK differs.
 
 ## Win32, iOS, macOS, Android, Linux
 
@@ -26,24 +26,24 @@ To learn more about the GDK, see the public documentation: [GDK documentation ho
 
 ## Nintendo Switch
 
-Before you can access the PlayFab Services SDK for Nintendo Switch, you need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. See more information here: [Request access](../request-access-for-sdks-samples.md).
+Before you can access the PlayFab Services SDK for Nintendo Switch, you need to confirm your registered developer status via the PlayFab page in Nintendo's middleware directory. For more information, see [Request access](../request-access-for-sdks-samples.md).
 
 Once you've been granted access to the Switch SDK, you can download it from the git repo here: [PlayFabCSdk.Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch).
 
-## Sony PlayStation
+## PlayStation&#174;
 
-Before you can access the PlayFab Services SDK for PlayStation, you need to confirm your registered developer status via the PlayFab page in Sony's middleware directory. See more information here: [Request access](../request-access-for-sdks-samples.md).
+Confirm your developer status on the PlayFab page in the middleware directory of the developer portal before accessing the PlayFab Services SDK for PlayStation. For more information, see [Request access](../request-access-for-sdks-samples.md).
 
 Once you've been granted access to the PlayStation SDK, you can download it from the git repo here: [PlayFabCSdk.PS4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4) and [PlayFabCSdk.PS5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5).
 
 ## What this SDK includes
 
-The PlayFab Services SDK for C/C++ is for use by a game's runtime components (clients and servers) on Win32 (x64 only), Nintendo Switch, Sony PlayStation&#174;, iOS, macOS, Android, Linux, and the Microsoft GDK. It includes only the subset of feature areas and service calls appropriate for games running on those platforms.
+The PlayFab Services SDK for C/C++ is for use by a game's runtime components (clients and servers) on Win32 (x64 only), Nintendo Switch, PlayStation&#174;5, PlayStation&#174;4, iOS, macOS, Android, Linux, and the Microsoft GDK. It includes only the subset of feature areas and service calls appropriate for games running on those platforms.
 
 Here are some notable differences when compared to other, more general purpose, PlayFab SDKs:
-- The PlayFab Admin API is not included. This SDK is intended to be part of the game runtime (or dedicated server), not for tools or generic services.
+- The PlayFab Admin API isn't included. This SDK is intended to be part of the game runtime (or dedicated server), not for tools or generic services.
 - The PlayFab Server API is only available for select platforms that are used for hosting game servers, specifically Windows, Linux, and macOS.
-- The available login methods depend on the platform. For instance, LoginWithApple is only available on Apple devices.
+- The available sign in methods depends on the platform. For instance, LoginWithApple is only available on Apple devices.
 - This SDK removes some older or underutilized feature areas to reduce overall complexity. These areas include economy v1, player stats and leaderboards, and characters.
 
 ## Benefits of this SDK
@@ -55,11 +55,11 @@ Here are some notable differences when compared to other, more general purpose, 
 
 ## Platforms supported by this SDK
 
-This SDK is appropriate for x64 Win32 games and game servers, Nintendo Switch games, Sony PlayStation games, iOS games, Android games, macOS games, Linux games, and games utilizing the GDK on Windows and Xbox.
+This SDK is appropriate for x64 Win32 games and game servers, Nintendo Switch games, PlayStation games, iOS games, Android games, macOS games, Linux games, and games utilizing the GDK on Windows and Xbox.
 
 ## When not to use this SDK
 
-There are scenarios where this SDK is not appropriate:
+There are scenarios where this SDK isn't appropriate:
 
 - If your game utilizes a game engine for which there's already an engine-specific PlayFab SDK, that SDK is a better fit: [Unreal Engine](../unreal/index.md), [Unity3D](../unity3d/index.md).
 
@@ -77,8 +77,8 @@ There are scenarios where this SDK is not appropriate:
     - The macOS version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for macOS](quickstart-macos.md).
 - Linux
     - The Linux version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Linux](./quickstart-linux.md).
-- Sony Playstation
-    - See [Sony Playstation](#sony-playstation)
+- Playstation
+    - See [Playstation](#playstation)
 - Nintendo Switch
     - See [Nintendo Switch](#nintendo-switch)
 
@@ -87,7 +87,8 @@ There are scenarios where this SDK is not appropriate:
 [API reference documentation](../../api-references/c/pfauthentication/pfauthentication_members.md)
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
-
+<!--- 
 "PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 "PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+--->

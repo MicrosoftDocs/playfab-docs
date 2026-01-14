@@ -16,7 +16,7 @@ PlayFab supports a wide variety of authentication providers. This allows your ti
 
 What this means is that your players can choose how they prefer to verify their identity and sign in using a method that's most natural to them.
 
-Select authentication providers based on what is most meaningful for the players on your target platforms and distribution methods. For example, if your title is released on Xbox, it will make sense to offer Xbox Live sign-in as a way to authenticate their identity.
+Select authentication providers based on what is most meaningful for the players on your target platforms and distribution methods. For example, if your title is released on Xbox, it makes sense to offer Xbox Live sign-in as a way to authenticate their identity.
 
 ### Apple
 
@@ -41,11 +41,11 @@ Select authentication providers based on what is most meaningful for the players
 - [Setting up PlayFab authentication using Kongregate and HTML5](kongregate-html5.md)
 - [Setting up PlayFab authentication using Kongregate and Unity](kongregate-unity.md)
 
-### PlayStation&#174;
+### PlayStation&#174;5 / PlayStation&#174;4
 
 - [Setting up PlayFab authentication using PlayStation (secure link)](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5?path=%2FGuideToLoginWithPSN.md&_a=preview)
 
-If you're unable to access the above secure link, see [Request access](https://aka.ms/pf-partner-request-access).
+If you're unable to access the secure link, see [Request access](https://aka.ms/pf-partner-request-access).
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
