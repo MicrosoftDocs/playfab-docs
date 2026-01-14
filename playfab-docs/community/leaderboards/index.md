@@ -72,4 +72,5 @@ has a Statistics engine doing the aggregation.
 - [API reference](api-reference.md)  
 - [Quota](quota-leaderboards.md)  
 - [Leaderboard meters](../../pricing/Meters/leaderboard-meters.md)
+- [Leaderboards and Cloudscript](leaderboards-cloudscript.md).
 - [Leaderboards With PlayStream and Telemetry](./leaderboards-with-playstream-and-telemetry.md)
