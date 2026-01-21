@@ -22,6 +22,9 @@ This allows titles to make calls to basic informational services, but it *also* 
 
 This tutorial discusses making Webhook calls from CloudScript, for both *nonsecure* and *secure* scenarios.
 
+> [!NOTE]
+> You can refer to the 'PlayFab static IP prefixes and addresses' section of the API Features page in the Developer Portal if you need to allowlist IP addresses used for outbound CloudScript calls.
+
 As a REST call, the structure of a Webhook call from CloudScript is simple. The elements to be specified are:
 
 - The URL endpoint.
