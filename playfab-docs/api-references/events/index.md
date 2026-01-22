@@ -248,6 +248,14 @@ Each event type has a set of properties that are included as part of event's dat
 - [items_updated](items-updated.md)  
   Event raised when items have been updated in an inventory.
 
+## GameSave
+
+- [gamesave_version_finalized](gamesave-version-finalized.md)  
+  This event is triggered when a game save version is finalized with all the files fully uploaded.
+
+- [gamesave_version_marked_known_good](gamesave-version-marked-known-good.md)  
+  This event is triggered when a game save version is marked as known good.
+
 ## Partner
 
 - [display_name_filtered](display-name-filtered.md)  
