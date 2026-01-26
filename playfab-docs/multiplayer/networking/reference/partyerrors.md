@@ -5,7 +5,7 @@ description: Error codes used by PlayFab Party APIs
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/11/2022
+ms.date: 01/25/2026
 ---
 
 # PlayFab Party Error Codes
@@ -153,8 +153,6 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x1058 | 4184 | The provided target chat control list contained at least one duplicate chat control. |
 | 0x1059 | 4185 | The provided target endpoint list contained at least one duplicate endpoint. |
 | 0x105A | 4186 | A platform error resulted in failure to determine the preferred UI language. |
-| 0x105B | 4187 | XAudio 2.7 debug version not installed on system (install the DirectX SDK Developer Runtime). |
-| 0x105C | 4188 | XAudio 2.7 not installed on system (install the DirectX End-user Runtimes (June 2010)). |
 | 0x105E | 4190 | Authentication was attempted for a user that is already authenticated. |
 | 0x1062 | 4194 | The text-to-speech synthesis request was rejected by the service for being too large. |
 | 0x1063 | 4195 | The text-to-speech synthesis request was throttled. |
@@ -264,6 +262,7 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x112C | 4396 | The region quality measurement minimum required successful responses value is invalid. |
 | 0x112D | 4397 | The region quality measurement ideal number of successful responses value is invalid. |
 | 0x1136 | 4406 | The network is being destroyed because it is idle. |
+| 0x113C | 4412 | The user default platform audio device monitor is uninitialized; it may have failed or be unsupported on this platform. |
 
 ## Platform-specific errors
 | Hex | Dec | Description |
@@ -293,7 +292,6 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x301C | 12316 | A user matching the ID wasn't found in the Microsoft gaming runtime. |
 | 0x301D | 12317 | There isn't a default user for the Microsoft gaming runtime. |
 | 0x301E | 12318 | The Microsoft gaming runtime failed to resolve a required user privilege. |
-| 0x301F | 12319 | The Microsoft gaming XNetworking feature is unavailable. |
 | 0x3020 | 12320 | The network stack must be initialized before calling PartyManager::Initialize(); use the Microsoft Game Core XNetworkingGetConnectivityHint API to determine when the network stack is initialized. |
 | 0x3021 | 12321 | Callers must pass a port value of 0 when the PartyLocalUdpSocketBindAddressOptions::ExcludeGameCorePreferredUdpMultiplayerPort option is set. |
 | 0x3022 | 12322 | It's invalid to pass PartyLocalUdpSocketBindAddressOptions::ExcludeGameCorePreferredUdpMultiplayerPort in all versions of PlayFab Party except for the Microsoft Game Core version. |
