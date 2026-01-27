@@ -27,8 +27,4 @@ Our PlayFab Services SDKs for Unreal and Unity are platform-agnostic. As such, t
 
 To utilize our C/C++ or Legacy C++ SDKs on PS4 and PS5, you must confirm your developer status via DevNet. Once you have approval, we can grant access to the SDK. Learn more about this process here: [Request Access](../request-access-for-sdks-samples.md).
 
-"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
-
-"PS4" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
-
-"PS5" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
+"PlayStation", "PS5", and "PS4" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.

@@ -30,7 +30,7 @@ Before you can access the PlayFab Services SDK for Nintendo Switch, you need to 
 
 Once you've been granted access to the Switch SDK, you can download it from the git repo here: [PlayFabCSdk.Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch).
 
-## PlayStation&#174;
+## PlayStation 5 / PlayStation 4
 
 Confirm your developer status on the PlayFab page in the middleware directory of the developer portal before accessing the PlayFab Services SDK for PlayStation. For more information, see [Request access](../request-access-for-sdks-samples.md).
 
@@ -78,7 +78,7 @@ There are scenarios where this SDK isn't appropriate:
 - Linux
     - The Linux version of this SDK is available via GitHub. Follow the instructions here to start making basic calls to PlayFab: [Quickstart for Linux](./quickstart-linux.md).
 - Playstation
-    - See [Playstation](#playstation)
+    - See [PlayStation 5 / PlayStation 4](#playstation-5--playstation-4)
 - Nintendo Switch
     - See [Nintendo Switch](#nintendo-switch)
 
