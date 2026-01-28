@@ -28,6 +28,7 @@ Each lobby has a set of pre-defined properties commonly needed for most game sce
 | ownerMigrationPolicy | Policy determines how a new owner will be chosen. To learn more, see [Ownership changes](ownership-changes.md). |
 | accessPolicy | Policy indicates who can discover the lobby's connection string. This property can only be changed by the owner. |
 | membershipLock  | This value indicates whether new members may join the lobby or not. When __Locked__, new members may not join. When __Unlocked__ new members may join. This property can only be changed by the owner. |
+| RestrictInvitesToLobbyOwner  | A setting that controls whether only the lobby owner can send invites to join the lobby. When true, only the lobby owner can send invites. When false or not specified, any member can send invites. Defaults to false if not specified. Restricted to client owned lobbies.|
 
 ## Custom Properties
 

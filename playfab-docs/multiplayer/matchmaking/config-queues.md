@@ -65,7 +65,7 @@ The elements below are often used by all rules.
 + **Attribute Source** - Rules often act upon information that is provided to them. This field describes two options for the source of this information:
 
   1. **User** - Attributes are submitted alongside players in the create or join ticket request.
-  2. **Player Entity** - Attributes are retrieved from the player's associated Player Entity. These can be set via the [SetObjects API](xref:titleid.playfabapi.com.data.object.setobjects)
+  2. **Player Entity** - Attributes are retrieved from the player's associated Player Entity. These can be set via the [SetObjects API](xref:titleid.playfabapi.com.data.object.setobjects). DO NOT use this source when using external entity types. 
 + **Attribute Path** - The path to reach the attribute. When using a User Attribute Source, it is simply the name of the attribute. When using a Player
   Entity Attribute Source, it is a [JSONPath](https://github.com/json-path/JsonPath) that retrieves a particular item from the entity, such as `$.playerSkill.Mean`.
 + **Behavior when attribute is not specified** - If a rule requires an attribute, but none is specified, the rule may be configured with one of two behaviors:
