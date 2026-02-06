@@ -10,7 +10,8 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Required to push changes to the Live branch
+      contents: write  # Required to create branch and PR
+      pull-requests: write  # Required to create pull request
     
     steps:
       - name: Checkout repository
@@ -52,36 +53,67 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
       
-      - name: Merge Main into Live
+      - name: Create merge branch and PR
         if: steps.check_date.outputs.should_merge == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Fetching branches..."
           git fetch origin Main:Main || git fetch origin main:Main
           git fetch origin Live:Live || git fetch origin live:Live
           
-          echo "Checking out Live branch..."
-          git checkout Live
+          # Create a unique branch name for this merge
+          BRANCH_NAME="merge-main-to-live-$(date +'%Y-%m-%d')-${{ github.run_id }}"
           
-          echo "Merging Main into Live..."
-          if git merge Main -m "Automated merge: Main into Live ($(date +'%Y-%m-%d'))"; then
+          echo "Creating merge branch from Live: $BRANCH_NAME"
+          git checkout -b $BRANCH_NAME Live
+          
+          echo "Merging Main into merge branch..."
+          if git merge Main -m "Automated merge: Main into Live ($(date +'%Y-%m-%d'))" --no-edit; then
             echo "Merge successful!"
             
-            echo "Pushing changes to Live branch..."
-            git push origin Live
-            echo "Push successful!"
+            echo "Pushing merge branch to origin..."
+            git push origin $BRANCH_NAME
+            
+            echo "Creating Pull Request..."
+            PR_BODY="This is an automated pull request to merge Main branch into Live branch.
+
+          **Schedule:** This PR is created on the 2nd and 4th Tuesday of each month.
+          
+          **Instructions:**
+          - Review the changes
+          - Ensure all checks pass
+          - Code owners should approve this PR
+          - Merge when ready
+          
+          If there are conflicts, they will need to be resolved manually."
+            
+            gh pr create \
+              --base Live \
+              --head $BRANCH_NAME \
+              --title "Automated merge: Main to Live ($(date +'%Y-%m-%d'))" \
+              --body "$PR_BODY"
+            
+            echo "Pull request created successfully!"
           else
-            echo "Merge conflict detected!"
-            echo "Please resolve conflicts manually."
+            echo "❌ Merge conflict detected!"
+            echo "Cannot create PR automatically due to conflicts."
+            echo "Please resolve conflicts manually by:"
+            echo "1. Creating a branch from Live"
+            echo "2. Merging Main into that branch"
+            echo "3. Resolving conflicts"
+            echo "4. Creating a PR to Live"
             git merge --abort
             exit 1
           fi
       
-      - name: Report merge status
+      - name: Report PR creation status
         if: always() && steps.check_date.outputs.should_merge == 'true'
         run: |
           if [ '${{ job.status }}' = 'success' ]; then
-            echo "✅ Successfully merged Main into Live branch"
+            echo "✅ Successfully created Pull Request from Main to Live branch"
+            echo "Code owners can now review and approve the PR"
           else
-            echo "❌ Failed to merge Main into Live branch"
-            echo "Please check for merge conflicts and resolve them manually"
+            echo "❌ Failed to create Pull Request"
+            echo "Please check for merge conflicts and create the PR manually"
           fi
