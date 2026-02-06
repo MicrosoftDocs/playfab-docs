@@ -14,11 +14,20 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > Support for the XDK and Windows 7 platforms ended on August 1, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the PlayFab Party library.
-> 
->For more information, please see our [forum post](https://community.playfab.com/articles/141546/playfab-party-ending-support-for-the-xdk-and-windo.html).
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.16
+
+February 2, 2026
+
+- GDK: Added support for environments that use in-proc GRTS.
+- GDK: Added support for [`PartyAudioDeviceSelectionType::SystemDefault`](reference/enums/partyaudiodeviceselectiontype.md).
+
+### Bug fixes
+
+- Fixed possible crash in multinetwork transition scenarios. 
 
 ## 1.10.15
 
