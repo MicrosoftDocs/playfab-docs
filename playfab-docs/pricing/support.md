@@ -73,6 +73,8 @@ Support availability is based on your account plan, with higher tiers offering e
 3. To access the help menu, select the **?** in the top right navigation bar.
 4. Select **Contact Us** and fill out the support form.
 
+If you recently requested an upgrade, support ticket submission becomes available when the plan change takes effect. Plan changes are scheduled for the beginning of the next billing period. To confirm your current plan and effective date, see [Account upgrades](account-upgrades.md).
+
 ### EMERGENCY ESCALATIONS
 
 **Purpose:** Provides 24/7 access to PlayFab's on-call engineering team in the event of critical service-impacting issues. This provides fastest incident response time to customers during emergencies. 
