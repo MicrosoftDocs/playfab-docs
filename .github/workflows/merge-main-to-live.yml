@@ -1,0 +1,87 @@
+name: Merge Main to Live
+
+on:
+  schedule:
+    # Run at 9:00 AM UTC every Tuesday
+    - cron: '0 9 * * 2'
+  workflow_dispatch: # Allow manual trigger for testing
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to push changes to the Live branch
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Check if it's 2nd or 4th Tuesday
+        id: check_date
+        run: |
+          # Get the current day of the month
+          day=$(date +%d)
+          # Remove leading zero if present
+          day=$((10#$day))
+          
+          # Calculate which week of the month we're in (1-5)
+          week=$(( (day - 1) / 7 + 1 ))
+          
+          # Get the current day of week (1=Monday, 2=Tuesday, ..., 7=Sunday)
+          dow=$(date +%u)
+          
+          echo "Day of month: $day"
+          echo "Week of month: $week"
+          echo "Day of week: $dow"
+          
+          # Check if today is Tuesday (dow=2) and it's the 2nd or 4th week
+          if [ "$dow" = "2" ] && ([ "$week" = "2" ] || [ "$week" = "4" ]); then
+            echo "should_merge=true" >> $GITHUB_OUTPUT
+            echo "This is the 2nd or 4th Tuesday of the month. Proceeding with merge."
+          else
+            echo "should_merge=false" >> $GITHUB_OUTPUT
+            echo "Not the 2nd or 4th Tuesday. Skipping merge."
+          fi
+      
+      - name: Configure Git
+        if: steps.check_date.outputs.should_merge == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Merge Main into Live
+        if: steps.check_date.outputs.should_merge == 'true'
+        run: |
+          echo "Fetching branches..."
+          git fetch origin Main:Main || git fetch origin main:Main
+          git fetch origin Live:Live || git fetch origin live:Live
+          
+          echo "Checking out Live branch..."
+          git checkout Live
+          
+          echo "Merging Main into Live..."
+          if git merge Main -m "Automated merge: Main into Live ($(date +'%Y-%m-%d'))"; then
+            echo "Merge successful!"
+            
+            echo "Pushing changes to Live branch..."
+            git push origin Live
+            echo "Push successful!"
+          else
+            echo "Merge conflict detected!"
+            echo "Please resolve conflicts manually."
+            git merge --abort
+            exit 1
+          fi
+      
+      - name: Report merge status
+        if: always() && steps.check_date.outputs.should_merge == 'true'
+        run: |
+          if [ '${{ job.status }}' = 'success' ]; then
+            echo "✅ Successfully merged Main into Live branch"
+          else
+            echo "❌ Failed to merge Main into Live branch"
+            echo "Please check for merge conflicts and resolve them manually"
+          fi
