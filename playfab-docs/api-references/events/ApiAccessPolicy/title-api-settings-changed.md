@@ -19,10 +19,10 @@ This event is triggered when an API Features setting is changed for the title.
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
 |DeveloperId|String||
-|PreviousSettingsValues|[APISettings](data-types/apisettings.md)|Settings values before the change.|
-|SettingsValues|[APISettings](data-types/apisettings.md)|Settings values after the change.|
+|PreviousSettingsValues|[APISettings](../data-types/apisettings.md)|Settings values before the change.|
+|SettingsValues|[APISettings](../data-types/apisettings.md)|Settings values after the change.|
 |UserId|String||
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]

@@ -25,4 +25,4 @@ This event is triggered when an update occurs to a a title's permission policies
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]

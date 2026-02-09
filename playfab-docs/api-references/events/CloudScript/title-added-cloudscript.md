@@ -27,4 +27,4 @@ This event is triggered when new CloudScript is uploaded to PlayFab.
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]

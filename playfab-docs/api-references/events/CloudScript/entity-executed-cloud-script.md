@@ -18,11 +18,11 @@ This event is optionally triggered when a CloudScript function is executed by ca
 
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
-|CloudScriptExecutionResult|[ExecuteCloudScriptResult](data-types/executecloudscriptresult.md)|Result of the CloudScript function, including diagnostic information that is useful for debugging.|
+|CloudScriptExecutionResult|[ExecuteCloudScriptResult](../data-types/executecloudscriptresult.md)|Result of the CloudScript function, including diagnostic information that is useful for debugging.|
 |EntityChain|String|The chain of ownership for this entity.|
-|EntityLineage|[EntityLineage](data-types/entitylineage.md)|Entities that this entity is a child of.|
+|EntityLineage|[EntityLineage](../data-types/entitylineage.md)|Entities that this entity is a child of.|
 |FunctionName|String|Name of the CloudScript function that was called.|
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]

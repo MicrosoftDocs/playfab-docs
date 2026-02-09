@@ -24,4 +24,4 @@ An inactive revision of CloudScript has been made into the active 'live' version
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]

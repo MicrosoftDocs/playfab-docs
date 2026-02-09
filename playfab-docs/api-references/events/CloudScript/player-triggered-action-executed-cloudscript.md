@@ -18,13 +18,13 @@ This event is triggered when a CloudScript function is run as the result of a Pl
 
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
-|CloudScriptExecutionResult|[ExecuteCloudScriptResult](data-types/executecloudscriptresult.md)|Result of the CloudScript function, including an error information. Useful for debugging.|
+|CloudScriptExecutionResult|[ExecuteCloudScriptResult](../data-types/executecloudscriptresult.md)|Result of the CloudScript function, including an error information. Useful for debugging.|
 |FunctionName|String|Name of the CloudScript function that was called.|
 |TitleId|String|The ID of the title to which this player event applies.|
 |TriggeringEventData|object|The full JSON data of the event that triggered this CloudScript function to run. Useful for debugging.|
 |TriggeringEventName|String|Name of the event that triggered this CloudScript function to run.|
-|TriggeringPlayer|[PlayerProfile](data-types/playerprofile.md)|JSON data profile of the player that triggered this CloudScript function to run.|
+|TriggeringPlayer|[PlayerProfile](../data-types/playerprofile.md)|JSON data profile of the player that triggered this CloudScript function to run.|
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]
