@@ -69,6 +69,127 @@ Each event type has a set of properties that are included as part of event's dat
 - [cloudscript_executed](CloudScript/cloudscript-executed.md)  
   This event is triggered when a CloudScript function is executed.
 
+## Extension
+
+- [title_aborted_task](Extension/title-aborted-task.md)  
+  This event is triggered when a task instance is aborted.
+
+- [title_completed_task](Extension/title-completed-task.md)  
+  This event is triggered when a scheduled task has completed
+
+- [title_created_task](Extension/title-created-task.md)  
+  This event is triggered when a task is created.
+
+- [title_deleted_task](Extension/title-deleted-task.md)  
+  This event is triggered when a task is deleted.
+
+- [title_exceeded_limit](Extension/title-exceeded-limit.md)  
+  This event is triggererd when a title exceeds a service limit and receives an error.
+
+- [title_limit_changed](Extension/title-limit-changed.md)  
+  This event is triggered when a title changes a service limit.
+
+- [title_started_task](Extension/title-started-task.md)  
+  This event is triggered when a task is scheduled to run.
+
+- [title_updated_task](Extension/title-updated-task.md)  
+  This event is triggered when a task is updated.
+
+- [export_completed](Extension/export-completed.md)  
+  This event is triggered when an export operation is completed.
+
+## Functions
+
+- [function_executed](Functions/function-executed.md)  
+  This event is triggered when a function is executed.
+
+- [function_registered](Functions/function-registered.md)  
+  This event is triggered when a function is registered.
+
+- [function_unregistered](Functions/function-unregistered.md)  
+  This event is triggered when a function is unregistered.
+
+- [player_triggered_action_executed_function](Functions/player-triggered-action-executed-function.md)  
+  This event is triggered when a function is run as the result of a PlayStream action.
+
+- [title_scheduled_function_executed](Functions/title-scheduled-function-executed.md)  
+  This event is triggered when a function is run by a scheduled task.
+
+## Groups
+
+- [group_created](Groups/group-created.md)
+  This event is triggered when an entity group is created.
+
+- [group_members_added](Groups/group-members-added.md)  
+  This event is triggered when a member is added to an entity group.
+
+- [group_members_removed](Groups/group-members-removed.md)  
+  This event is triggered when a member is removed from an entity group.
+
+- [group_role_created](Groups/group-role-created.md)  
+  This event is triggered when a role is created for a group.
+
+- [group_role_deleted](Groups/group-role-deleted.md)  
+  This event is triggered when a role is deleted from a group.
+
+- [group_role_members_added](Groups/group-role-members-added.md)  
+  This event is triggered when a list of entities are added to a role within a group.
+
+- [group_role_members_removed](Groups/group-role-members-removed.md)  
+  This event is triggered when a list of entities are removed from a role within a group.
+
+- [group_role_updated](Groups/group-role-updated.md)  
+  This event is triggered when a role is updated within a group.
+
+- [group_updated](Groups/group-updated.md)  
+  This event is triggered when an entity group is updated.
+
+- [members_added](Groups/members-added.md)  
+  This event is triggered when members are added to a group.
+
+- [members_removed](Groups/members-removed.md)  
+  This event is triggered when members are removed from a group.
+
+- [members_role_updated](Groups/members-role-updated.md)  
+  This event is triggered when members' roles are updated in a group.
+
+- [player_updated_membership](Groups/player-updated-membership.md)  
+  This event is triggered when a player's membership is updated.
+
+- [role_updated](Groups/role-updated.md)  
+  This event is triggered when a role is updated.
+
+## Telemetry
+
+- [apikey_activated](Telemetry/apikey-activated.md)  
+  This event is triggered when an API key is activated.
+
+- [apikey_created](Telemetry/apikey-created.md)  
+  This event is triggered when an API key is created.
+
+- [apikey_deactivated](Telemetry/apikey-deactivated.md)  
+  This event is triggered when an API key is deactivated.
+
+- [apikey_deleted](Telemetry/apikey-deleted.md)  
+  This event is triggered when an API key is deleted.
+
+## TitleCommunications
+
+- [player_registered_push_notifications](TitleCommunications/player-registered-push-notifications.md)  
+  This event is triggered when a player registers for push notifications.
+
+- [sent_email](TitleCommunications/sent-email.md)  
+  This event is triggered when an email is sent or fails to send to a player.
+
+- [sent_push_notification](TitleCommunications/sent-push-notification.md)  
+  This event is triggered when a push notification is sent or fails to be sent to a player.
+
+- [email_sent](TitleCommunications/email-sent.md)  
+  This event is triggered when an email is sent.
+
+- [push_notification_sent](TitleCommunications/push-notification-sent.md)  
+  This event is triggered when a push notification is sent.
+
 ## General
 
 - [entity_created](entity-created.md)  
@@ -89,35 +210,8 @@ Each event type has a set of properties that are included as part of event's dat
 - [entity_virtual_currency_balances_changed](entity-virtual-currency-balances-changed.md)  
   This event is triggered when an entity's virtual currency balance changes.
 
-- [group_created](group-created.md)
-  This event is triggered when an entity group is created.
-
 - [group_deleted](group-deleted.md)  
   This event is triggered when an entity group is deleted.
-
-- [group_members_added](group-members-added.md)  
-  This event is triggered when a member is added to an entity group.
-
-- [group_members_removed](group-members-removed.md)  
-  This event is triggered when a member is removed from an entity group.
-
-- [group_role_created](group-role-created.md)  
-  This event is triggered when a role is created for a group.
-
-- [group_role_deleted](group-role-deleted.md)  
-  This event is triggered when a role is deleted from a group.
-
-- [group_role_members_added](group-role-members-added.md)  
-  This event is triggered when a list of entities are added to a role within a group.
-
-- [group_role_members_removed](group-role-members-removed.md)  
-  This event is triggered when a list of entities are removed from a role within a group.
-
-- [group_role_updated](group-role-updated.md)  
-  This event is triggered when a role is updated within a group.
-
-- [group_updated](group-updated.md)  
-  This event is triggered when an entity group is updated.
 
 - [matchmaking_match_found](matchmaking-match-found.md)  
   This event is triggered when a group of tickets are matched together.  
@@ -387,9 +481,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [player_redeemed_coupon](player-redeemed-coupon.md)  
   This event is triggered when a player redeems a coupon.
 
-- [player_registered_push_notifications](player-registered-push-notifications.md)  
-  This event is triggered when a player registers for push notifications.
-
 - [player_removed_title](player-removed-title.md)  
   This event is triggered when a player account for a title is removed. Note: this event is triggered once per title rather than once per publisher.
 
@@ -429,12 +520,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [player_virtual_currency_balance_changed](player-virtual-currency-balance-changed.md)  
   This event is triggered when a player's virtual currency balance changes.
 
-- [sent_push_notification](sent-push-notification.md)  
-  This event is triggered when a push notification is sent or fails to be sent to a player.
-
-- [sent_email](sent-email.md)  
-  This event is triggered when an email is sent or fails to send to a player.
-
 ## Session
 
 - [client_focus_change](client-focus-change.md)  
@@ -445,38 +530,20 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## Title
 
-- [title_aborted_task](title-aborted-task.md)  
-  This event is triggered when a task instance is aborted.
-
 - [title_catalog_updated](title-catalog-updated.md)  
   This event is triggered when a catalog is changed.
 
 - [title_client_rate_limited_alert](title-client-rate-limited-alert.md)  
   This event is triggered when a single IP address generates too many API calls to PlayFab and is throttled.
 
-- [title_completed_task](title-completed-task.md)  
-  This event is triggered when a scheduled task has completed
-
-- [title_created_task](title-created-task.md)  
-  This event is triggered when a task is created.
-
 - [title_deleted](title-deleted.md)  
   This event is triggered when a game title is deleted.
-
-- [title_deleted_task](title-deleted-task.md)  
-  This event is triggered when a task is deleted.
-
-- [title_exceeded_limit](title-exceeded-limit.md)  
-  This event is triggererd when a title exceeds a service limit and receives an error.
 
 - [title_high_error_rate_alert](title-high-error-rate-alert.md)  
   This event is triggered when a game title experiences a high rate of errors.
 
 - [title_initiated_player_password_reset](title-initiated-player-password-reset.md)  
   This event is triggered when a title initiates the account recovery process for a player.
-
-- [title_limit_changed](title-limit-changed.md)  
-  This event is triggered when a title changes a service limit.
 
 - [title_news_updated](title-news-updated.md)  
   This event is triggered when a title news is created or updated.
@@ -496,17 +563,11 @@ Each event type has a set of properties that are included as part of event's dat
 - [title_secret_key_changed](title-secret-key-changed.md)  
   This event is triggered when a title adds or updates a Secret Key
 
-- [title_started_task](title-started-task.md)  
-  This event is triggered when a task is scheduled to run.
-
 - [title_statistic_version_changed](title-statistic-version-changed.md)  
   This event is triggered when the version of a statistic changes, causing its leaderboard to reset.
 
 - [title_store_updated](title-store-updated.md)  
   This event is triggered when a store is changed.
-
-- [title_updated_task](title-updated-task.md)  
-  This event is triggered when a task is updated.
 
 ## Statistics
 
