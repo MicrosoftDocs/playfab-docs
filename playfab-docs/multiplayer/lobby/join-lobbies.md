@@ -22,7 +22,8 @@ Players can discover connection strings and join lobbies in the following ways.
 1. By searching for available lobbies with [FindLobbies](find-lobbies.md) and joining an available lobby
 1. By sharing the lobby's connection string via any out-of-band, custom discovery mechanism
 
-> NOTE: Only players (i.e. title_player_account PlayFab entities) can join lobbies as members. Game servers (i.e. game_server PlayFab entities) cannot join lobbies as members. For more information on the how game servers interact with lobbies, see [Game Servers and Lobbies](lobby-server-overview.md).
+> [!NOTE]
+> Only players (i.e. title_player_account PlayFab entities) can join lobbies as members. Game servers (i.e. game_server PlayFab entities) cannot join lobbies as members. For more information on the how game servers interact with lobbies, see [Game Servers and Lobbies](lobby-server-overview.md).
 
 ## Connection strings and Lobby IDs
 

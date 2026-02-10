@@ -5,13 +5,13 @@ description: List of error codes used by the PlayFab Party's Xbox Live Helper Li
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/11/2022
+ms.date: 01/25/2026
 ---
 
 # PlayFab Party Xbox Live Helper Library Error Codes
 The following error codes are used by the PlayFab Party Xbox Live Helper Library:
 
-## Xbox Live Helper Library Errors
+## Xbox Live Helper Library errors
 | Hex | Dec | Description |
 | --- | --- | ----------- |
 | 0x5000 | 20480 | Only one instance of PartyXblManager can exist at a time. |

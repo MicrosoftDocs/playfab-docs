@@ -141,6 +141,8 @@ void FailureCallback(PlayFabError error)
 }
 ```
 
+After 'AddOrUpdateContactEmail' succeeds, the com.playfab.player_updated_contact_email event triggers the rule and PlayFab sends the verification email automatically. There is no separate step to send the email.
+
 ## Step 4 - Confirm that the contact email was added to the player's profile
 
 Next, confirm that the contact email was added to the player's profile. Log into the **Game Manager**, and visit the **Players Profile** page.
@@ -219,5 +221,4 @@ When the player selects that URL, three things happen:
 
 So that's it for this tutorial. You've seen how to set up your SMTP server, create an email template, and create a rule that sends an email to a player verifying their email address.
 
-If you have any questions or feedback on this tutorial, please let us know in our [community forums](https://community.playfab.com/).
- 
+If you have any questions or feedback on this tutorial, please let us know in our [community Discord](https://developer.microsoft.com/en-us/games/articles/2024/05/playfab-dev-forums-move-to-discord/).

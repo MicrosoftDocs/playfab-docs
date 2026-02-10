@@ -15,7 +15,8 @@ ms.localizationpriority: medium
 
 This article provides an overview of Lobby invites and how to use them in the Lobby and Matchmaking SDK.
 
-> NOTE: Only players (i.e. title_player_account PlayFab entities) can send or receive invites. Game servers (i.e. game_server PlayFab entities) cannot. For more information on the how game servers interact with lobbies, see [Game Servers and Lobbies](lobby-server-overview.md).
+> [!NOTE]
+> Only players (i.e. title_player_account PlayFab entities) can send or receive invites. Game servers (i.e. game_server PlayFab entities) cannot. For more information on the how game servers interact with lobbies, see [Game Servers and Lobbies](lobby-server-overview.md).
 
 ## Invite types
 
@@ -27,6 +28,7 @@ There are two types of invites your game is likely to make use of.
 ### Joining a lobby by in-game invites
 
 * A member of a lobby may invite another player to that lobby directly via the lobby service.
+* The lobby owner can choose to restrict sending invites to only the owner via the lobby property  __RestrictInvitesToLobbyOwner__
 * This invite shares the lobby's connection string with the invited player.
 * The invited player receives the invitation via __PFLobbyInviteReceivedStateChange__ and can use the attached connection string to join the lobby.
 * These invites work cross-platform but only work in-game.

@@ -1,0 +1,166 @@
+name: Merge Main to Live
+
+on:
+  schedule:
+    # Run at 9:00 AM UTC every Tuesday
+    - cron: '0 9 * * 2'
+  workflow_dispatch: # Allow manual trigger for testing
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read       # Required for checking out code
+      pull-requests: write # Required for creating pull requests
+      issues: write        # Required for creating issues on failure
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Check if today is 2nd or 4th Tuesday
+        id: check_date
+        run: |
+          # Get current day of month
+          DAY=$(date +%d)
+          # Get day of week (1=Monday, 2=Tuesday, ..., 7=Sunday)
+          DOW=$(date +%u)
+          
+          # Check if today is Tuesday (2)
+          if [ "$DOW" -eq 2 ]; then
+            # Calculate which week of the month we're in (1-5)
+            # Remove leading zero if present
+            DAY=$((10#$DAY))
+            WEEK=$(( (DAY - 1) / 7 + 1 ))
+            
+            # Check if it's the 2nd or 4th Tuesday
+            if [ "$WEEK" -eq 2 ] || [ "$WEEK" -eq 4 ]; then
+              echo "is_target_tuesday=true" >> $GITHUB_OUTPUT
+              echo "This is the 2nd or 4th Tuesday of the month"
+            else
+              echo "is_target_tuesday=false" >> $GITHUB_OUTPUT
+              echo "This is not the 2nd or 4th Tuesday"
+            fi
+          else
+            echo "is_target_tuesday=false" >> $GITHUB_OUTPUT
+            echo "Today is not Tuesday"
+          fi
+      
+      - name: Check for existing PR
+        if: steps.check_date.outputs.is_target_tuesday == 'true'
+        id: check_pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: pulls } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              head: `${context.repo.owner}:Main`,
+              base: 'Live'
+            });
+            
+            if (pulls.length > 0) {
+              core.setOutput('pr_exists', 'true');
+              core.setOutput('pr_number', pulls[0].number);
+              core.setOutput('pr_url', pulls[0].html_url);
+            } else {
+              core.setOutput('pr_exists', 'false');
+            }
+
+      - name: Create Pull Request
+        if: steps.check_date.outputs.is_target_tuesday == 'true' && steps.check_pr.outputs.pr_exists == 'false'
+        id: create_pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date().toISOString().split('T')[0];
+            const title = `Scheduled Merge: Main to Live on ${date}`;
+            const body = [
+              'This is an automated pull request to merge Main into Live branch.',
+              '',
+              `**Scheduled merge date:** ${date}`,
+              `**Schedule:** This PR is created on the 2nd and 4th Tuesday of each month.`,
+              `**Workflow run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}`,
+              '',
+              '**Instructions:**',
+              '- Review the changes',
+              '- Ensure all checks pass',
+              '- Code owners should approve this PR',
+              '- Merge when ready',
+              '',
+              'If there are conflicts, they will need to be resolved manually.',
+              '',
+              '---',
+              '*This PR was automatically created by the scheduled merge workflow.*'
+            ].join('\n');
+            
+            try {
+              const { data: pr } = await github.rest.pulls.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                head: 'Main',
+                base: 'Live'
+              });
+              
+              core.setOutput('pr_number', pr.number);
+              core.setOutput('pr_url', pr.html_url);
+              console.log(`Pull request created: ${pr.html_url}`);
+            } catch (error) {
+              core.setFailed(`Failed to create pull request: ${error.message}`);
+              throw error;
+            }
+
+      - name: Comment on existing PR
+        if: steps.check_date.outputs.is_target_tuesday == 'true' && steps.check_pr.outputs.pr_exists == 'true'
+        uses: actions/github-script@v7
+        env:
+          PR_NUMBER: ${{ steps.check_pr.outputs.pr_number }}
+        with:
+          script: |
+            const date = new Date().toISOString().split('T')[0];
+            const prNumber = parseInt(process.env.PR_NUMBER);
+            const comment = [
+              `♻️ Scheduled merge workflow ran again on ${date}.`,
+              '',
+              'This PR is still open and ready for review.',
+              '',
+              `**Workflow run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}`
+            ].join('\n');
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: comment
+            });
+            
+            console.log(`Comment added to existing PR #${prNumber}`);
+
+      - name: Create Issue on Failure
+        if: failure() && steps.check_date.outputs.is_target_tuesday == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date().toISOString().split('T')[0];
+            const title = `Scheduled Merge PR Creation Failed: Main to Live on ${date}`;
+            const body = [
+              'The scheduled merge workflow failed to create a pull request from Main to Live branch.',
+              '',
+              `**Workflow Run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}`,
+              '',
+              'Please review the workflow logs and create the pull request manually if needed.'
+            ].join('\n');
+            
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['workflow-failure', 'automated']
+            });

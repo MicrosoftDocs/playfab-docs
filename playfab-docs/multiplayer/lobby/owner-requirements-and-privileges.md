@@ -44,6 +44,19 @@ The owner of a lobby has privileges that non-owning members of the lobby don't h
     * In server-owned lobbies, the owner can only assign another server as the new owner.
     * In client-owned lobbies, the owner can only assign another member as the new owner.
 
+## Client-owned lobby access from a game_server
+
+When using a client-owned lobby, you might have the need to securely put data into the lobby from a server. APIs have been added or modified to allow this scenario, so that you can use a 'game_server' entity to join and update the lobby for this purpose. 'ServerData' is similar to 'LobbyData' but it can only be added by a 'game_server' entity. This allows you store important information for other clients to read, such as server connection data, where you can trust the source of the data and even the client lobby owner can't modify it. 
+
+| REST API                                                                                      |  C++ SDK                                                                                                             | Description                         |
+|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| [JoinLobbyAsServer](../../../../rest/api/playfab/multiplayer/lobby/join-lobby-as-server)      | [PFMultiplayerJoinLobbyAsServer](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerjoinlobbyasserver)   | Join a client-owned lobby from a 'game_server'. A lobby owner cannot remove a connected 'game_server', and only one 'game_server' can be joined at a time |
+| [UpdateLobbyAsServer](../../../../rest/api/playfab/multiplayer/lobby/update-lobby-as-server)  | [PFLobbyServerPostUpdateAsServer](playfabmultiplayerreference-cpp/pflobby/functions/pflobbyserverpostupdateasserver) | Update a lobby's ServerData object from a connected 'game_server' |
+| [LeaveLobbyAsServer](../../../../rest/api/playfab/multiplayer/lobby/leave-lobby-as-server)    | [PFLobbyServerLeaveServer](playfabmultiplayerreference-cpp/pflobby/functions/pflobbyserverleaveasserver)             | Leave a client owned lobby from a 'game_server' gracefully, ServerData contents remain |
+| [GetLobby](../../../../rest/api/playfab/multiplayer/lobby/get-lobby)                          | Not necessary, happens on Join                                                                                       | Get a lobby when a 'game_server' is joined to it |
+| [FindLobbies](../../../../rest/api/playfab/multiplayer/lobby/find-lobbies)                    | [PFMultiplayerFindLobbies](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerfindlobbies)               | Find lobbies that the 'game_server' is associated with |
+ 
+
 ## See also
 
 * [Lobby properties](lobby-properties.md)

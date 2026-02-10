@@ -144,7 +144,7 @@ items:
   - name: Overview
     href: ../multiplayer/servers/server-sdks.md
   - name: Unreal Server SDK
-    href: ../multiplayer/servers/server-sdks/toc.yml
+    href: ../multiplayer/servers/server-sdks/unreal-gsdk/toc.yml
 - name: Tools and utilities
   href: tools/index.yml
   items:

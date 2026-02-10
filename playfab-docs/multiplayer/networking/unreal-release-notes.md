@@ -14,20 +14,31 @@ ms.localizationpriority: medium
 
 Refer to [QuickStart: PlayFab Online Subsystem (OSS)](party-unreal-engine-oss-quickstart.md) for download and install instructions.
 
+## 2.3.8
+**Release 2.3.8 is ready to use with Unreal Engine 5.7.**
+
+UE5.7 Upgrade Fixes:
+
+* Removed the unused `SEARCH_PRESENCE` key from the lobby search key mapping and related query filter logic, simplifying lobby search parameter handling.
+* Removed dead code related to session search on Win64, as the new join logic no longer relies on this path.
+
+Bug fixes:
+
+* Added a new `CleanupFailedJoinSession` method to `FOnlineSessionPlayFab` to ensure proper cleanup of PlayFab and Party sessions, removal of local session references, and delegate notification when a native session join fails. This method is now called in all relevant failure paths.
+
+* Changed logic to cache the desired session (`CachedDesiredSession`) instead of searching for it on every join, simplifying and improving the reliability of native session joins.
+
 ## 2.3.7
 **Release 2.3.7 is ready to use with Unreal Engine 5.6.**
 
-**Library Updates:**
+Library Updates:
 
-Multiplayer SDK C++ library (Windows/GDK) : From 1.7.9 to 1.8.0.
+- Multiplayer SDK C++ library (Windows/GDK) : From 1.7.9 to 1.8.0.
+- Party SDK C++ library (Windows/GDK) : From 1.10.5 to 1.10.12.
 
-Party SDK C++ library (Windows/GDK) : From 1.10.5 to 1.10.12.
+UE5.6 Upgrade Fixes:
 
-**UE5.6 Upgrade Fixes:**
-
-### Plugin Configuration Updates
-
-* Updated `OnlineSubsystemPlayFab.uplugin` to use `PlatformAllowList` instead of `WhitelistPlatforms`, and renamed `OnlineSubsystemSwitch` to `OnlineSubsystemNintendo` for consistency. Also incremented the plugin version. [[1]](diffhunk://#diff-5e89106b2fe67da11c76d335b2c0f6c597035a66aa80dc7021dfc24cb8ef24cfL4-R5) [[2]](diffhunk://#diff-5e89106b2fe67da11c76d335b2c0f6c597035a66aa80dc7021dfc24cb8ef24cfL27-R27) [[3]](diffhunk://#diff-5e89106b2fe67da11c76d335b2c0f6c597035a66aa80dc7021dfc24cb8ef24cfL57-R87)
+* Updated `OnlineSubsystemPlayFab.uplugin` to use `PlatformAllowList` instead of `WhitelistPlatforms`, and renamed `OnlineSubsystemSwitch` to `OnlineSubsystemNintendo` for consistency. Also incremented the plugin version.
 * On UE 5.6 and later the `DriverClassName` parameter requires the "/Script/" prefix. For example, use `"/Script/OnlineSubsystemPlayFab.PlayFabNetDriver"` instead of `"OnlineSubsystemPlayFab.PlayFabNetDriver"`.
 Example usage:
   ```

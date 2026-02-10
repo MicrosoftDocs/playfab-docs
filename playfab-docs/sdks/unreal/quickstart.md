@@ -46,6 +46,8 @@ To enable the PlayFab Plugin:
 1. From the **Settings** menu, under **Game Specific Settings** select **Plugins**.
 2. Enable the **PlayFab** plugin and restart Unreal Engine as required.
 
+If "PlayFab" doesn't appear in **Plugins**, verify that the plugin is installed from the Unreal Marketplace. Restart Unreal Editor. Then open **Plugins** again and search for "PlayFab."
+
 ### Add PlayFab as a Module dependency in C++
 
 In Visual Studio, add PlayFab as a module dependency in your C++ project:

@@ -69,8 +69,8 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **GetInventoryItems** | 1.67 rps (100 in 60 seconds) | - |
-| **GetInventoryCollectionIds** | 1.67 rps (100 in 60 seconds) | - |
+| **GetInventoryItems** | 0.67 rps (40 in 60 seconds) | - |
+| **GetInventoryCollectionIds** | 0.08 rps (5 in 60 seconds) | - |
 
 ### Read Transaction History
 
@@ -82,25 +82,25 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **AddInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **SubtractInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **UpdateInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **PurchaseInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **TransferInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **DeleteInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **ExecuteInventoryOperations** | 0.66 rps (60 in 90 seconds) | - |
-| **DeleteInventoryCollection** | 0.16 rps (15 in 90 seconds) | - |
+| **AddInventoryItems** | 0.33 rps (20 in 60 seconds) | - |
+| **SubtractInventoryItems** | 0.33 rps (20 in 60 seconds) | - |
+| **UpdateInventoryItems** | 0.33 rps (20 in 60 seconds) | - |
+| **PurchaseInventoryItems** | 0.33 rps (20 in 60 seconds) | - |
+| **TransferInventoryItems** | 0.33 rps (20 in 60 seconds) | - |
+| **DeleteInventoryItems** | 0.33 rps (20 in 60 seconds) | - |
+| **ExecuteInventoryOperations** | 0.33 rps (20 in 60 seconds) | - |
+| **DeleteInventoryCollection** | 0.08 rps (5 in 60 seconds) | - |
 
 ### Redeem
 
 | **API** | **Limit (Player)** | **Limit (Title)** |
 |---------|--------------------|-------------------|
-| **RedeemAppleAppStoreInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **RedeemGooglePlayInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **RedeemMicrosoftStoreInventorItems** | 0.66 rps (60 in 90 seconds) | - |
-| **RedeemNintendoEShopInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **RedeemPlayStationStoreInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
-| **RedeemSteamInventoryItems** | 0.66 rps (60 in 90 seconds) | - |
+| **RedeemAppleAppStoreInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
+| **RedeemGooglePlayInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
+| **RedeemMicrosoftStoreInventorItems** | 0.16 rps (10 in 60 seconds) | - |
+| **RedeemNintendoEShopInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
+| **RedeemPlayStationStoreInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
+| **RedeemSteamInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
 
 ## API Limits
 
