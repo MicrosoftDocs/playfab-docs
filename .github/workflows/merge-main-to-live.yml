@@ -5,12 +5,21 @@ on:
     # Run at 9:00 AM UTC every Tuesday
     - cron: '0 9 * * 2'
   workflow_dispatch: # Allow manual trigger for testing
+    inputs:
+      skip_date_check:
+        description: 'Skip the Tuesday date check for testing (select true to test immediately)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 jobs:
   merge:
     runs-on: ubuntu-latest
     permissions:
-      contents: read       # Required for checking out code
+      contents: write      # Required for creating pull requests via REST API
       pull-requests: write # Required for creating pull requests
       issues: write        # Required for creating issues on failure
     
@@ -21,66 +30,75 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Check if today is 2nd or 4th Tuesday
+      - name: Check if it's 2nd or 4th Tuesday
         id: check_date
         run: |
-          # Get current day of month
-          DAY=$(date +%d)
-          # Get day of week (1=Monday, 2=Tuesday, ..., 7=Sunday)
-          DOW=$(date +%u)
+          # Check if we should skip the date check (for testing)
+          if [ "${{ github.event.inputs.skip_date_check }}" = "true" ]; then
+            echo "should_merge=true" >> $GITHUB_OUTPUT
+            echo "⚠️ TESTING MODE: Skipping date check as requested via workflow input"
+            exit 0
+          fi
           
-          # Check if today is Tuesday (2)
-          if [ "$DOW" -eq 2 ]; then
-            # Calculate which week of the month we're in (1-5)
-            # Remove leading zero if present
-            DAY=$((10#$DAY))
-            WEEK=$(( (DAY - 1) / 7 + 1 ))
-            
-            # Check if it's the 2nd or 4th Tuesday
-            if [ "$WEEK" -eq 2 ] || [ "$WEEK" -eq 4 ]; then
-              echo "is_target_tuesday=true" >> $GITHUB_OUTPUT
-              echo "This is the 2nd or 4th Tuesday of the month"
-            else
-              echo "is_target_tuesday=false" >> $GITHUB_OUTPUT
-              echo "This is not the 2nd or 4th Tuesday"
-            fi
+          # Get the current day of the month
+          day=$(date +%d)
+          # Remove leading zero if present
+          day=$((10#$day))
+          
+          # Calculate which week of the month we're in (1-5)
+          week=$(( (day - 1) / 7 + 1 ))
+          
+          # Get the current day of week (1=Monday, 2=Tuesday, ..., 7=Sunday)
+          dow=$(date +%u)
+          
+          echo "Day of month: $day"
+          echo "Week of month: $week"
+          echo "Day of week: $dow"
+          
+          # Check if today is Tuesday (dow=2) and it's the 2nd or 4th week
+          if [ "$dow" = "2" ] && ([ "$week" = "2" ] || [ "$week" = "4" ]); then
+            echo "should_merge=true" >> $GITHUB_OUTPUT
+            echo "This is the 2nd or 4th Tuesday of the month. Proceeding with merge."
           else
-            echo "is_target_tuesday=false" >> $GITHUB_OUTPUT
-            echo "Today is not Tuesday"
+            echo "should_merge=false" >> $GITHUB_OUTPUT
+            echo "Not the 2nd or 4th Tuesday. Skipping merge."
           fi
       
       - name: Check for existing PR
-        if: steps.check_date.outputs.is_target_tuesday == 'true'
+        if: steps.check_date.outputs.should_merge == 'true'
         id: check_pr
         uses: actions/github-script@v7
         with:
           script: |
+            // Check for open PR from main to live (lowercase for testing)
             const { data: pulls } = await github.rest.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
-              head: `${context.repo.owner}:Main`,
-              base: 'Live'
+              head: `${context.repo.owner}:main`,
+              base: 'live'
             });
             
             if (pulls.length > 0) {
               core.setOutput('pr_exists', 'true');
               core.setOutput('pr_number', pulls[0].number);
               core.setOutput('pr_url', pulls[0].html_url);
+              console.log(`Existing PR found: ${pulls[0].html_url}`);
             } else {
               core.setOutput('pr_exists', 'false');
+              console.log('No existing PR found. Will create a new one.');
             }
 
       - name: Create Pull Request
-        if: steps.check_date.outputs.is_target_tuesday == 'true' && steps.check_pr.outputs.pr_exists == 'false'
+        if: steps.check_date.outputs.should_merge == 'true' && steps.check_pr.outputs.pr_exists == 'false'
         id: create_pr
         uses: actions/github-script@v7
         with:
           script: |
             const date = new Date().toISOString().split('T')[0];
-            const title = `Scheduled Merge: Main to Live on ${date}`;
+            const title = `Scheduled Merge: main to live on ${date}`;
             const body = [
-              'This is an automated pull request to merge Main into Live branch.',
+              'This is an automated pull request to merge main branch into live branch.',
               '',
               `**Scheduled merge date:** ${date}`,
               `**Schedule:** This PR is created on the 2nd and 4th Tuesday of each month.`,
@@ -92,7 +110,7 @@ jobs:
               '- Code owners should approve this PR',
               '- Merge when ready',
               '',
-              'If there are conflicts, they will need to be resolved manually.',
+              'If there are conflicts, they can be resolved in the GitHub UI or locally.',
               '',
               '---',
               '*This PR was automatically created by the scheduled merge workflow.*'
@@ -104,8 +122,8 @@ jobs:
                 repo: context.repo.repo,
                 title: title,
                 body: body,
-                head: 'Main',
-                base: 'Live'
+                head: 'main',
+                base: 'live'
               });
               
               core.setOutput('pr_number', pr.number);
@@ -117,7 +135,7 @@ jobs:
             }
 
       - name: Comment on existing PR
-        if: steps.check_date.outputs.is_target_tuesday == 'true' && steps.check_pr.outputs.pr_exists == 'true'
+        if: steps.check_date.outputs.should_merge == 'true' && steps.check_pr.outputs.pr_exists == 'true'
         uses: actions/github-script@v7
         env:
           PR_NUMBER: ${{ steps.check_pr.outputs.pr_number }}
@@ -143,7 +161,7 @@ jobs:
             console.log(`Comment added to existing PR #${prNumber}`);
 
       - name: Create Issue on Failure
-        if: failure() && steps.check_date.outputs.is_target_tuesday == 'true'
+        if: failure() && steps.check_date.outputs.should_merge == 'true'
         uses: actions/github-script@v7
         with:
           script: |
@@ -162,5 +180,5 @@ jobs:
               repo: context.repo.repo,
               title: title,
               body: body,
-              labels: ['workflow-failure', 'automated']
+              labels: ['merge-conflict', 'automated']
             });
