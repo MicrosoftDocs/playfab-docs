@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.8.5
+
+Jan 21, 2026
+
+### Bug fixes
+
+- Hide symbols in iOS platform to prevent symbol clashing. This is an iOS only release.
+
 ## 1.8.4
 
 Nov 5, 2025
