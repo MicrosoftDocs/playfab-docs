@@ -18,13 +18,13 @@ This event is triggered for the top-ranked players on a leaderboard when the lea
 
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
-|LeaderboardSource|[LeaderboardSource](data-types/leaderboardsource.md)|Source of the values for the leaderboard.|
+|LeaderboardSource|[LeaderboardSource](../data-types/leaderboardsource.md)|Source of the values for the leaderboard.|
 |Rank|uint32|Player's rank on the leaderboard.|
 |TitleId|String|The ID of the title to which this player event applies.|
 |Value|int32|Player's leaderboard value.|
 |Version|uint32|Version of the leaderboard on which the player is ranked. For player statistic leaderboards, this matches the version of the statistic.|
-|VersionChangeBehavior|[LeaderboardVersionChangeBehavior](data-types/leaderboardversionchangebehavior.md)|Behavior with respect to the leaderboard values when the version changed.|
+|VersionChangeBehavior|[LeaderboardVersionChangeBehavior](../data-types/leaderboardversionchangebehavior.md)|Behavior with respect to the leaderboard values when the version changed.|
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]

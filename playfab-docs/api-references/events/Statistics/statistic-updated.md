@@ -28,4 +28,4 @@ This event is triggered when a statistic is updated for a given entity.
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv2.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv2.md)]

@@ -26,4 +26,4 @@ This event is triggered when a leaderboard version is reset to a new version for
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv2.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv2.md)]

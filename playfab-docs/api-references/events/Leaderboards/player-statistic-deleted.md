@@ -26,4 +26,4 @@ This event is triggered when a player statistic is deleted.
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]

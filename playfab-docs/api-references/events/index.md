@@ -158,6 +158,17 @@ Each event type has a set of properties that are included as part of event's dat
 - [group_updated](Groups/group-updated.md)  
   This event is triggered when an entity group is updated.
 
+- [studio_created](studio-created.md)  
+  This event is triggered when a studio is created.
+
+- [studio_user_added](studio-user-added.md)
+  This event is triggered when a user accepts a studio invitation.  
+
+- [studio_user_invited](studio-user-invited.md)  
+  This event is triggered when a user is invited to a studio.
+
+- [studio_user_removed](studio-user-removed.md)  
+  This event is triggered when a user is removed from a studio.
 - [members_added](Groups/members-added.md)  
   This event is triggered when members are added to a group.
 
@@ -212,23 +223,24 @@ Each event type has a set of properties that are included as part of event's dat
 - [group_deleted](group-deleted.md)  
   This event is triggered when an entity group is deleted.
 
-- [matchmaking_match_found](matchmaking-match-found.md)  
-  This event is triggered when a group of tickets are matched together.  
-  
-- [matchmaking_ticket_completed](matchmaking-ticket-completed.md)  
-  This event is triggered when a matchmaking ticket reaches a completion state.  
-  
-- [matchmaking_user_ticket_completed](matchmaking-user-ticket-completed.md)  
-  This event is sent to each of the users in the completed ticket.
-
-- [matchmaking_user_ticket_invite](matchmaking-user-ticket-invite.md)  
-  This event is triggered when a ticket with an invited user is created. The event will be sent to the invited user.  
-
 - [tenancy_connector_onboard](tenancy-connector-onboard.md)  
   This event is triggered when a tenancy connector is onboarded.
 
 - [studio_tier_updated](studio-tier-updated.md)  
   This event is triggered when a studio tier is updated.
+
+## Matchmaking
+- [title_queue_config_updated](Matchmaking/title-queue-config-updated.md)  
+  This event is triggered when a queue config is changed.
+
+- [match_found](Matchmaking/match-found.md)  
+  This event is triggered when a match is found.
+
+- [ticket_completed](Matchmaking/ticket-completed.md)  
+  This event is triggered when a ticket is completed.
+
+- [user_ticket_invited](Matchmaking/user-ticket-invited.md)  
+  This event is triggered when a user is invited to a ticket.
 
 ## Multiplayer Servers
 
@@ -342,12 +354,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [character_inventory_item_added](character-inventory-item-added.md)  
   This event is triggered when an item is granted to a character.
 
-- [character_statistic_changed](character-statistic-changed.md)  
-  This event is triggered when a character statistic is changed.  
-
-- [character_statistic_deleted](character-statistic-deleted.md)  
-  This event is triggered when a character statistic is deleted.  
-
 - [character_vc_item_purchased](character-vc-item-purchased.md)  
   This event is triggered when the character makes a purchase using virtual currency.
 
@@ -379,10 +385,10 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## GameSave
 
-- [gamesave_version_finalized](gamesave-version-finalized.md)  
+- [gamesave_version_finalized](GameSave/gamesave-version-finalized.md)  
   This event is triggered when a game save version is finalized with all the files fully uploaded.
 
-- [gamesave_version_marked_known_good](gamesave-version-marked-known-good.md)  
+- [gamesave_version_marked_known_good](GameSave/gamesave-version-marked-known-good.md)  
   This event is triggered when a game save version is marked as known good.
 
 ## Partner
@@ -492,6 +498,8 @@ Each event type has a set of properties that are included as part of event's dat
 - [player_removed_title](PlayerIdentity/player-removed-title.md)  
   This event is triggered when a player account for a title is removed. Note: this event is triggered once per title rather than once per publisher.
 
+- [player_realmoney_purchase](player-realmoney-purchase.md)  
+  This event is triggered when a player makes a real money purchase, and generates revenue for the game.
 - [player_reported_as_abusive](PlayerIdentity/player-reported-as-abusive.md)  
   This event is triggered when a player is reported by another player as abusive.
 
@@ -519,6 +527,8 @@ Each event type has a set of properties that are included as part of event's dat
 - [title_profile_view_constraints_changed](PlayerIdentity/title-profile-view-constraints-changed.md)  
   This event is triggered when a profile view constraint is changed for the title.
 
+- [player_tag_added](player-tag-added.md)  
+  This event is triggered when a tag is added to a player profile.
 - [entity_deleted](PlayerIdentity/entity-deleted.md)  
   This event is triggered when an entity is deleted.
 
@@ -588,7 +598,25 @@ Each event type has a set of properties that are included as part of event's dat
 - [title_high_error_rate_alert](title-high-error-rate-alert.md)  
   This event is triggered when a game title experiences a high rate of errors.
 
-- [title_queue_config_updated](title-queue-config-updated.md)  
+- [title_initiated_player_password_reset](title-initiated-player-password-reset.md)  
+  This event is triggered when a title initiates the account recovery process for a player.
+
+- [title_limit_changed](title-limit-changed.md)  
+  This event is triggered when a title changes a service limit.
+
+- [title_news_updated](title-news-updated.md)  
+  This event is triggered when a title news is created or updated.
+
+- [title_permission_policy_changed](title-permission-policy-changed.md)  
+  This event is triggered when an update occurs to a a title's permission policies.
+
+- [title_profile_view_constraints_changed](title-profile-view-constraints-changed.md)  
+  This event is triggered when a profile view constraint is changed for the title.
+
+- [title_published_cloudscript](title-published-cloudscript.md)  
+  An inactive revision of CloudScript has been made into the active 'live' version.
+
+- [title_queue_config_updated](Matchmaking/title-queue-config-updated.md)  
   This event is triggered when a queue config is changed.
 
 - [title_requested_limit_change](title-requested-limit-change.md)  
@@ -596,6 +624,15 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [title_saved_survey](title-saved-survey.md)  
   This event is triggered when a game's survey is saved.
+
+- [title_scheduled_cloudscript_executed](title-scheduled-cloudscript-executed.md)  
+  This event is triggered when a CloudScript function is run by a scheduled task.  
+
+- [title_secret_key_changed](title-secret-key-changed.md)  
+  This event is triggered when a title adds or updates a Secret Key
+
+- [title_started_task](title-started-task.md)  
+  This event is triggered when a task is scheduled to run.
 
 - [title_statistic_version_changed](title-statistic-version-changed.md)  
   This event is triggered when the version of a statistic changes, causing its leaderboard to reset.
@@ -625,13 +662,34 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## Statistics
 
-- [statistic_updated](statistic-updated.md)  
+- [statistic_updated](Statistics/statistic-updated.md)  
   This event is triggered when a statistic is updated.
 
 ## Leaderboards
 
-- [leaderboard_version_ended](leaderboard-version-ended.md)  
+- [character_statistic_changed](Leaderboards/character-statistic-changed.md)  
+  This event is triggered when a character statistic is changed.  
+
+- [character_statistic_deleted](Leaderboards/character-statistic-deleted.md)  
+  This event is triggered when a character statistic is deleted.  
+
+- [entity_rank_on_leaderboard_version_ended](Leaderboards/entity-rank-on-leaderboard-version-ended.md)  
   This event is triggered when a leaderboard version is reset
 
-- [entity_rank_on_leaderboard_version_ended](entity-rank-on-leaderboard-version-ended.md)  
+- [leaderboard_version_ended](Leaderboards/leaderboard-version-ended.md)  
   This event is triggered when a leaderboard version is reset
+
+- [player_ranked_on_leaderboard_version](Leaderboards/player-ranked-on-leaderboard-version.md)  
+  This event is triggered for the top-ranked players on a leaderboard when the leaderboard version changes (e.g. when a leaderboard statistic version is incremented). The maximum number of leaderboard entries for which the event is generated is controlled by the "Leaderboard version change top rank events sent" title limit.
+
+- [player_statistic_changed](Leaderboards/player-statistic-changed.md)  
+  This event is triggered when a player statistic is changed.
+
+- [player_statistic_deleted](Leaderboards/player-statistic-deleted.md)  
+  This event is triggered when a player statistic is deleted.
+
+- [title_statistic_version_changed](Leaderboards/title-statistic-version-changed.md)  
+  This event is triggered when the version of a statistic changes, causing its leaderboard to reset.
+
+- [title_statistic_deleted](Leaderboards/title-statistic-deleted.md)  
+  This event is triggered when a title statistic is deleted.

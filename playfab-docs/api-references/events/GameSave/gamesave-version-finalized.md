@@ -27,8 +27,8 @@ This event is triggered when a game save version is finalized with all the files
 |TotalFileCount|Int32|The total number of files that were included in the finalized game save version.|
 |TotalSizeBytes|Int64|The total size in bytes of the finalized game save version, including all files.|
 |IsGeneratedByRollback|Boolean|Whether the version was generated and finalized by a rollback operation.|
-|Conflict|[GameSaveConflict](data-types/gamesaveconflict.md)|Data about any conflict that occurred during the finalization of the game save version. This will usually be null if the version was not finalized during a conflict resolution operation.|
+|Conflict|[GameSaveConflict](../data-types/gamesaveconflict.md)|Data about any conflict that occurred during the finalization of the game save version. This will usually be null if the version was not finalized during a conflict resolution operation.|
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv2.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv2.md)]

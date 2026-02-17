@@ -1,12 +1,12 @@
 ---
 title: title_queue_config_updated
-author: joannaleecy
+author: anaislawson
 description: title_queue_config_updated event.
-ms.author: jenelleb
-ms.date: 02/19/2019
+ms.author: anaislawson
+ms.date: 02/10/2026
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, playstream events
+keywords: playfab, playstream events, matchmaking
 ms.localizationpriority: medium
 ---
 
@@ -25,4 +25,4 @@ This event is triggered when a queue config is changed.
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv2.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv2.md)]

@@ -23,4 +23,4 @@ This event is triggered when a game save version is marked as known good.
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv2.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv2.md)]

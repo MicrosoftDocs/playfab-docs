@@ -32,9 +32,9 @@
     - name: character_inventory_item_added
       href: events/character-inventory-item-added.md
     - name: character_statistic_changed
-      href: events/character-statistic-changed.md
+      href: events/Leaderboards/character-statistic-changed.md
     - name: character_statistic_deleted
-      href: events/character-statistic-deleted.md
+      href: events/Leaderboards/character-statistic-deleted.md
     - name: character_vc_item_purchased
       href: events/character-vc-item-purchased.md
     - name: character_virtual_currency_balance_changed
@@ -216,7 +216,7 @@
     - name: player_photon_session_authenticated 
       href: events/player-photon-session-authenticated.md
     - name: player_ranked_on_leaderboard_version 
-      href: events/player-ranked-on-leaderboard-version.md
+      href: events/Leaderboards/player-ranked-on-leaderboard-version.md
     - name: player_realmoney_purchase  
       href: events/player-realmoney-purchase.md
     - name: player_receipt_validation  
@@ -234,9 +234,9 @@
     - name: player_started_purchase  
       href: events/player-started-purchase.md
     - name: player_statistic_changed   
-      href: events/player-statistic-changed.md
+      href: events/Leaderboards/player-statistic-changed.md
     - name: player_statistic_deleted  
-      href: events/player-statistic-deleted.md
+      href: events/Leaderboards/player-statistic-deleted.md
     - name: player_tag_added   
       href: events/player-tag-added.md
     - name: player_tag_removed  
@@ -322,7 +322,7 @@
     - name: title_started_task 
       href: events/title-started-task.md
     - name: title_statistic_version_changed
-      href: events/title-statistic-version-changed.md
+      href: events/Leaderboards/title-statistic-version-changed.md
     - name: title_store_updated  
       href: events/title-store-updated.md
     - name: title_updated_task  

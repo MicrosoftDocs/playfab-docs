@@ -18,11 +18,11 @@ This event is triggered when the version of a statistic changes, causing its lea
 
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
-|ScheduledResetInterval|[StatisticResetIntervalOption](data-types/statisticresetintervaloption.md)|The interval on which the statistic leaderboard was configured to reset, if any.|
+|ScheduledResetInterval|[StatisticResetIntervalOption](../data-types/statisticresetintervaloption.md)|The interval on which the statistic leaderboard was configured to reset, if any.|
 |ScheduledResetTime|DateTime|The time at which the statistic leaderboard was configured to reset, if any.|
 |StatisticName|String|Unique name of the statistic.|
 |StatisticVersion|uint32|Version of the statistic, following the update.|
 
 ## Common Properties
 
-[!INCLUDE [common-properties](../../includes/_common-properties-eventsv1.md)]
+[!INCLUDE [common-properties](../../../includes/_common-properties-eventsv1.md)]
