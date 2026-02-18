@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 
 ## 1.8.6
 
-Feb 13, 2026
+February 13, 2026
 
 ### Bug fixes
 
-- Fixed an issue where 24 hours after the first lobby or matchmaking attempt, if the library has not been cleaned up, it may fail to create subsequent lobbies, join subsequent lobbies, subscribe to lobby invitations, or create subsequent matchmaking tickets.
+- Fixed an issue where 24 hours after the first lobby or matchmaking attempt, if the library has not been cleaned up, it might fail to create subsequent lobbies, join subsequent lobbies, subscribe to lobby invitations, or create subsequent matchmaking tickets.
 - Fixed an issue where PlayFab Lobby service failures could cause the PlayFabMultiplayer library to be unable to create new lobbies until it after [PFMultiplayerUninitialize()](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) was called and the library was reinitialized with PFMultiplayerInitialize
 - Fixed an issue on non-GDK platforms where the library would keep internal process task queue memory allocated after the library had been cleaned up with [PFMultiplayerUninitialize()](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md).
 - Fixed an issue where several PubSub service errors were being collapsed into one generic HTTP 4XX error message, [0x89236409](../playfabmultiplayerreference-cpp/pfmultiplayererrors.md). Now, the library provides different error codes for different service errors which makes it easier to diagnose and troubleshoot.
 
 ## 1.8.5
 
-Jan 21, 2026
+January 21, 2026
 
 ### Bug fixes
 
@@ -33,7 +33,7 @@ Jan 21, 2026
 
 ## 1.8.4
 
-Nov 5, 2025
+November 5, 2025
 
 ### Bug fixes
 
@@ -41,7 +41,7 @@ Nov 5, 2025
 
 ## 1.8.3
 
-Oct 10, 2025
+October 10, 2025
 
 ### Bug fixes
 
@@ -51,7 +51,7 @@ Oct 10, 2025
 
 ## 1.8.2
 
-Sep 5, 2025
+September 5, 2025
 
 ### Bug fixes
 
@@ -64,7 +64,7 @@ Sep 5, 2025
 
 ## 1.8.1
 
-Aug 20, 2025
+August 20, 2025
 
 ### Bug fixes
 
@@ -270,7 +270,7 @@ August 14, 2023
 
 ### Bug fixes
 
-- Fixed an issue where the library may crash while handling a change notification.
+- Fixed an issue where the library might crash while handling a change notification.
 - Added new [PFLobbyMemberCountRemainingSearchKey](../playfabmultiplayerreference-cpp/pflobby/constants/pflobbysearchkeys.md) constant to make it easier to search for and sort lobbies based on their remaining member counts.
 
 ## 1.6.2
