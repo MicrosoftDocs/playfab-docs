@@ -158,17 +158,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [group_updated](Groups/group-updated.md)  
   This event is triggered when an entity group is updated.
 
-- [studio_created](studio-created.md)  
-  This event is triggered when a studio is created.
-
-- [studio_user_added](studio-user-added.md)
-  This event is triggered when a user accepts a studio invitation.  
-
-- [studio_user_invited](studio-user-invited.md)  
-  This event is triggered when a user is invited to a studio.
-
-- [studio_user_removed](studio-user-removed.md)  
-  This event is triggered when a user is removed from a studio.
 - [members_added](Groups/members-added.md)  
   This event is triggered when members are added to a group.
 
@@ -418,9 +407,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [player_paid_for_purchase](player-paid-for-purchase.md)  
   This event is triggered when the second step of the payment process completes, paying for the purchase.
 
-- [player_ranked_on_leaderboard_version](player-ranked-on-leaderboard-version.md)  
-  This event is triggered for the top-ranked players on a leaderboard when the leaderboard version changes (e.g. when a leaderboard statistic version is incremented). The maximum number of leaderboard entries for which the event is generated is controlled by the "Leaderboard version change top rank events sent" title limit.
-
 - [player_realmoney_purchase](player-realmoney-purchase.md)  
   This event is triggered when a player makes a real money purchase, and generates revenue for the game.
 
@@ -435,12 +421,6 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [player_started_purchase](player-started-purchase.md)  
   This event is triggered when a player starts a purchase.
-
-- [player_statistic_changed](player-statistic-changed.md)  
-  This event is triggered when a player statistic is changed.
-
-- [player_statistic_deleted](player-statistic-deleted.md)  
-  This event is triggered when a player statistic is deleted.
 
 - [player_vc_item_purchased](player-vc-item-purchased.md)  
   This event is triggered when the player makes a purchase using virtual currency.
@@ -498,8 +478,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [player_removed_title](PlayerIdentity/player-removed-title.md)  
   This event is triggered when a player account for a title is removed. Note: this event is triggered once per title rather than once per publisher.
 
-- [player_realmoney_purchase](player-realmoney-purchase.md)  
-  This event is triggered when a player makes a real money purchase, and generates revenue for the game.
 - [player_reported_as_abusive](PlayerIdentity/player-reported-as-abusive.md)  
   This event is triggered when a player is reported by another player as abusive.
 
@@ -527,8 +505,6 @@ Each event type has a set of properties that are included as part of event's dat
 - [title_profile_view_constraints_changed](PlayerIdentity/title-profile-view-constraints-changed.md)  
   This event is triggered when a profile view constraint is changed for the title.
 
-- [player_tag_added](player-tag-added.md)  
-  This event is triggered when a tag is added to a player profile.
 - [entity_deleted](PlayerIdentity/entity-deleted.md)  
   This event is triggered when an entity is deleted.
 
@@ -598,44 +574,11 @@ Each event type has a set of properties that are included as part of event's dat
 - [title_high_error_rate_alert](title-high-error-rate-alert.md)  
   This event is triggered when a game title experiences a high rate of errors.
 
-- [title_initiated_player_password_reset](title-initiated-player-password-reset.md)  
-  This event is triggered when a title initiates the account recovery process for a player.
-
-- [title_limit_changed](title-limit-changed.md)  
-  This event is triggered when a title changes a service limit.
-
-- [title_news_updated](title-news-updated.md)  
-  This event is triggered when a title news is created or updated.
-
-- [title_permission_policy_changed](title-permission-policy-changed.md)  
-  This event is triggered when an update occurs to a a title's permission policies.
-
-- [title_profile_view_constraints_changed](title-profile-view-constraints-changed.md)  
-  This event is triggered when a profile view constraint is changed for the title.
-
-- [title_published_cloudscript](title-published-cloudscript.md)  
-  An inactive revision of CloudScript has been made into the active 'live' version.
-
-- [title_queue_config_updated](Matchmaking/title-queue-config-updated.md)  
-  This event is triggered when a queue config is changed.
-
 - [title_requested_limit_change](title-requested-limit-change.md)  
   This event is triggered when a title requests a service limit change.
 
 - [title_saved_survey](title-saved-survey.md)  
   This event is triggered when a game's survey is saved.
-
-- [title_scheduled_cloudscript_executed](title-scheduled-cloudscript-executed.md)  
-  This event is triggered when a CloudScript function is run by a scheduled task.  
-
-- [title_secret_key_changed](title-secret-key-changed.md)  
-  This event is triggered when a title adds or updates a Secret Key
-
-- [title_started_task](title-started-task.md)  
-  This event is triggered when a task is scheduled to run.
-
-- [title_statistic_version_changed](title-statistic-version-changed.md)  
-  This event is triggered when the version of a statistic changes, causing its leaderboard to reset.
 
 - [title_store_updated](title-store-updated.md)  
   This event is triggered when a store is changed.
@@ -680,7 +623,7 @@ Each event type has a set of properties that are included as part of event's dat
   This event is triggered when a leaderboard version is reset
 
 - [player_ranked_on_leaderboard_version](Leaderboards/player-ranked-on-leaderboard-version.md)  
-  This event is triggered for the top-ranked players on a leaderboard when the leaderboard version changes (e.g. when a leaderboard statistic version is incremented). The maximum number of leaderboard entries for which the event is generated is controlled by the "Leaderboard version change top rank events sent" title limit.
+  This event is triggered when a leaderboard version changes, generating events for top‑ranked players up to the limit defined by the "Leaderboard version change top rank events sent" setting.
 
 - [player_statistic_changed](Leaderboards/player-statistic-changed.md)  
   This event is triggered when a player statistic is changed.

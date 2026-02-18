@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # player_ranked_on_leaderboard_version
 
-This event is triggered for the top-ranked players on a leaderboard when the leaderboard version changes (e.g. when a leaderboard statistic version is incremented). The maximum number of leaderboard entries for which the event is generated is controlled by the "Leaderboard version change top rank events sent" title limit.
+This event is triggered when a leaderboard version changes, generating events for top‑ranked players up to the limit defined by the "Leaderboard version change top rank events sent" setting.
 
 ## Properties
 
