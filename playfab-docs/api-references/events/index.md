@@ -308,30 +308,41 @@ Each event type has a set of properties that are included as part of event's dat
 - [vm_unhealthy](vm-unhealthy.md)  
   This event is triggered when a virtual machine is found to be unhealthy.
 
-## Catalog
+## CatalogV1
 
-- [item_created](item-created.md)  
+- [title_catalog_updated](catalogv1/title-catalog-updated.md)  
+  This event is triggered when a catalog is changed.
+
+- [title_store_updated](catalogv1/title-store-updated.md)  
+  This event is triggered when a store is changed.
+
+## CatalogV2
+
+- [item_created](catalogv2/item-created.md)  
   This event is triggered when an item is created.
 
-- [item_deleted](item-deleted.md)  
+- [item_deleted](catalogv2/item-deleted.md)  
   This event is triggered when an item is deleted.
 
-- [item_moderation_state_changed](item-moderation-state-changed.md)  
+- [item_moderation_state_changed](catalogv2/item-moderation-state-changed.md)  
   This event is triggered when an item moderation state is changed.
 
-- [item_publish_requested](item-publish-requested.md)  
+- [item_publish_requested](catalogv2/item-publish-requested.md)  
   This event is triggered when an publishing is started.
 
-- [item_reported](item-reported.md)  
+- [item_purchased](catalogv2/item-purchased.md)  
+  This event is triggered when an item is purchased.
+
+- [item_reported](catalogv2/item-reported.md)  
   This event is triggered when an item is reported.
 
-- [item_updated](item-updated.md)  
+- [item_updated](catalogv2/item-updated.md)  
   This event is triggered when an item is updated.
 
-- [review_reported](review-reported.md)  
+- [review_reported](catalogv2/review-reported.md)  
   This event is triggered when a review is reported.
 
-- [reviews_takedown_requested](reviews-takedown-requested.md)  
+- [reviews_takedown_requested](catalogv2/reviews-takedown-requested.md)  
   Event trigged when a takedown of reviews is requested.
 
 ## Character
@@ -349,28 +360,81 @@ Each event type has a set of properties that are included as part of event's dat
 - [character_virtual_currency_balance_changed](character-virtual-currency-balance-changed.md)  
   This event is triggered when a character's virtual currency balance changes.  
 
-## Inventory
+## InventoryV1
 
-- [items_added](items-added.md)  
+- [character_consumed_item](inventoryv1/character-consumed-item.md)  
+  This event is triggered when a character consumes an item from their inventory.  
+
+- [character_inventory_item_added](inventoryv1/character-inventory-item-added.md)  
+  This event is triggered when an item is granted to a character.
+
+- [character_vc_item_purchased](inventoryv1/character-vc-item-purchased.md)  
+  This event is triggered when the character makes a purchase using virtual currency.
+
+- [character_virtual_currency_balance_changed](inventoryv1/character-virtual-currency-balance-changed.md)  
+  This event is triggered when a character's virtual currency balance changes.  
+
+- [player_consumed_item](inventoryv1/player-consumed-item.md)  
+  This event is triggered when a player consumes an item from their inventory.
+
+- [player_inventory_item_added](inventoryv1/player-inventory-item-added.md)  
+  This event is triggered when an item is granted to a player.
+
+- [player_paid_for_purchase](inventoryv1/player-paid-for-purchase.md)  
+  This event is triggered when the second step of the payment process completes, paying for the purchase.
+
+- [player_realmoney_purchase](inventoryv1/player-realmoney-purchase.md)  
+  This event is triggered when a player makes a real money purchase, and generates revenue for the game.
+
+- [player_receipt_validation](inventoryv1/player-receipt-validation.md)  
+  This event is triggered when a player attempts to make a real money purchase and the purchase receipt is being validated.
+
+- [player_redeemed_coupon](inventoryv1/player-redeemed-coupon.md)  
+  This event is triggered when a player redeems a coupon.
+
+- [player_started_purchase](inventoryv1/player-started-purchase.md)  
+  This event is triggered when a player starts a purchase.
+
+- [player_vc_item_purchased](inventoryv1/player-vc-item-purchased.md)  
+  This event is triggered when the player makes a purchase using virtual currency.
+
+- [player_virtual_currency_balance_changed](inventoryv1/player-virtual-currency-balance-changed.md)  
+  This event is triggered when a player's virtual currency balance changes.
+
+## InventoryV2
+
+- [items_added](inventoryv2/items-added.md)  
   Event raised when items have been added to an inventory.
 
-- [items_deleted](items-deleted.md)  
+- [items_clawback_completed](inventoryv2/items-clawback-completed.md)  
+  This event is triggered when an items clawback operation is completed.
+
+- [items_clawback_reversal_completed](inventoryv2/items-clawback-reversal-completed.md)  
+  This event is triggered when an items clawback reversal operation is completed.
+
+- [items_deleted](inventoryv2/items-deleted.md)  
   Event raised when items have been deleted from an inventory.
 
-- [items_purchased](items-purchased.md)  
+- [items_expired](inventoryv2/items-expired.md)  
+  This event is triggered when items have expired in an inventory.
+
+- [items_purchased](inventoryv2/items-purchased.md)  
   Event raised when items have been purchased from an inventory.
 
-- [items_redeemed](items-redeemed.md)  
+- [items_redeemed](inventoryv2/items-redeemed.md)  
   Event raised when items have been redeemed to an inventory.
 
-- [items_subtracted](items-subtracted.md)  
+- [items_subtracted](inventoryv2/items-subtracted.md)  
   Event raised when items have been subtracted from an inventory.
 
-- [items_transferred](items-transferred.md)  
+- [items_transferred](inventoryv2/items-transferred.md)  
   Event raised when items have been transferred to or from an inventory.
 
-- [items_updated](items-updated.md)  
+- [items_updated](inventoryv2/items-updated.md)  
   Event raised when items have been updated in an inventory.
+
+- [marketplace_transaction_redeemed](inventoryv2/marketplace-transaction-redeemed.md)  
+  This event is triggered when a marketplace transaction is redeemed.
 
 ## GameSave
 
