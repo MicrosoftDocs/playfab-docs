@@ -158,6 +158,9 @@ An example `PurchaseInventoryItems` request:
 }
 ```
 
+> [!NOTE]
+> The `PurchaseInventoryItems` API is used for purchases with virtual currencies. For real-money purchases through external marketplaces (Apple App Store, Google Play, Steam, Microsoft Store), use the corresponding Redeem APIs (such as `RedeemAppleAppStoreInventoryItems`, `RedeemGooglePlayInventoryItems`, `RedeemSteamInventoryItems`, or `RedeemMicrosoftStoreInventoryItems`). These APIs validate the purchase receipt with the marketplace and grant the items to the player's inventory. For more information, see [Marketplace Redemption](../marketplace/marketplace-redemption/overview.md).
+
 ### Transfer Inventory Items
 
 The `TransferInventoryItems` API can be used in three different ways.
@@ -333,6 +336,41 @@ For example, the following `PurchaseItem` API request can be called multiple tim
 
 > [!NOTE]
 > Using the same `IdempotencyId` for different request types will cause a conflict and throw an error.
+
+### ETags and Conditional Operations
+
+Inventory operations support ETags for optimistic concurrency control. When you retrieve a player's inventory using `GetInventoryItems`, the response includes an `ETag` value that represents the current state of the inventory collection.
+
+You can use this `ETag` value in subsequent write operations (such as `AddInventoryItems`, `SubtractInventoryItems`, `UpdateInventoryItems`, `DeleteInventoryItems`, `PurchaseInventoryItems`, `TransferInventoryItems`, and `ExecuteInventoryOperations`) to ensure the inventory hasn't been modified since you last read it. If the inventory has changed since the `ETag` was retrieved, the operation fails with a conflict error, preventing concurrent modifications from silently overwriting each other.
+
+ETags are passed via HTTP headers on the request:
+
+- **`X-PlayFab-Economy-If-Match`** - The operation only succeeds if the current inventory ETag matches the provided value. Use this to ensure you're modifying the expected state.
+- **`X-PlayFab-Economy-If-None-Match`** - The operation only succeeds if the current inventory ETag does **not** match the provided value. Use this to prevent overwriting a known state.
+
+This is useful in scenarios where multiple systems or game clients may be modifying the same player's inventory simultaneously, and you need to ensure that operations are applied to the expected state.
+
+An example `SubtractInventoryItems` request with an ETag header:
+
+```http
+POST /Inventory/SubtractInventoryItems
+Content-Type: application/json
+X-PlayFab-Economy-If-Match: "1a2b3c4d-5e6f-7890-abcd-ef1234567890"
+
+{
+    "Entity": {
+        "Type": "title_player_account",
+        "Id": "ABCD12345678"
+    },
+    "Item": {
+        "Id": "0b440353-bdbc-48d8-8873-f0988c1f9d8b",
+    },
+    "Amount": 5
+}
+```
+
+> [!NOTE]
+> If the ETag provided in `X-PlayFab-Economy-If-Match` does not match the current state of the inventory, the API returns a conflict error. You should retrieve the latest inventory state and retry the operation with the updated ETag.
 
 ### Display Properties
 

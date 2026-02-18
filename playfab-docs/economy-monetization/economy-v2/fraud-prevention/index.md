@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 [!INCLUDE [notice](../../../includes/_economy-release.md)]
 
-The heart of any game economy is allowing players to purchase game items, currencies, and more with virtual currencies or Real Word (RW) money.
+The heart of any game economy is allowing players to purchase game items, currencies, and more with virtual currencies or real-world (RW) money.
 
 ## Fraud Vectors
 

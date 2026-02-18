@@ -74,7 +74,7 @@ For example, the following `AddInventoryItems` request uses the collectionId `ma
 }
 ```
 
-The above request would either create a brand new inventory collection of and add 5 of the item to it or add 5 to the existing `main_character` inventory collection if it already existed.
+The above request would either create a brand new `main_character` inventory collection and add 10 of the item to it, or add 10 to the existing `main_character` inventory collection if it already existed.
 
 ### DeleteInventoryCollection
 

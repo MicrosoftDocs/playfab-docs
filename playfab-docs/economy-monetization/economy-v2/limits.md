@@ -62,7 +62,7 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 > [!NOTE]
 >
 > - Inventory throttling will be calculated based on the target entity, individually for each API.
-> - For example, if a Player or a Title (game service, coudscript, etc.) calls an Inventory API to update the Player entity's inventory, the Limit (Player) throttling will be applied.
+> - For example, if a Player or a Title (game service, CloudScript, etc.) calls an Inventory API to update the Player entity's inventory, the Limit (Player) throttling will be applied.
 > - [Group entity](../../live-service-management/game-configuration/entities/index.md#group) inventories are also supported, and Group Entities share the same throttling rate as Player entities. See also [Groups](../../community/associations/groups/index.md).
 
 ### Read
@@ -97,7 +97,7 @@ The purpose of this guide is to detail the limits that are enforced when creatin
 |---------|--------------------|-------------------|
 | **RedeemAppleAppStoreInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
 | **RedeemGooglePlayInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
-| **RedeemMicrosoftStoreInventorItems** | 0.16 rps (10 in 60 seconds) | - |
+| **RedeemMicrosoftStoreInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
 | **RedeemNintendoEShopInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
 | **RedeemPlayStationStoreInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
 | **RedeemSteamInventoryItems** | 0.16 rps (10 in 60 seconds) | - |
@@ -166,7 +166,7 @@ Up to 20GB of catalog data are allowed per Catalog creator entity. This limit is
 
 ### Titles
 
-Tiles have a **512 character limit** per country code.
+Titles have a **512 character limit** per country code.
 
 ### Descriptions
 

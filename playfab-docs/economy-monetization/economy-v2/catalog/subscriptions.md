@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 Subscriptions allow you to grant time based access to durable goods. Items within a subscription are unpacked in a player's inventory after calling [GetInventoryItems](/rest/api/playfab/economy/inventory/get-inventory-items). 
 
 > [!NOTE]
->This article focuses on virtual subscriptions, or the subscriptions that live inside of your game. We have a new feature in **Private Preview** where you can link virtual subscriptions to real-world marketplaces using PlayFab's Inventory Redeem APIs. Here is where you can find more information about how to do this:
->- [IOS Subscription Redemption](../marketplace/marketplace-redemption/ios-subscription-redemption.md)
->- [Google Play Store Subscription Redemption](../marketplace/marketplace-redemption/google-subscription-redemption.md)
+> This article focuses on virtual subscriptions, or the subscriptions that live inside of your game. We have a feature in **Private Preview** where you can link virtual subscriptions to real-world marketplaces using PlayFab's Inventory Redeem APIs. Here is where you can find more information about how to do this:
+> - [iOS Subscription Redemption](../marketplace/marketplace-redemption/ios-subscription-redemption.md)
+> - [Google Play Store Subscription Redemption](../marketplace/marketplace-redemption/google-subscription-redemption.md)
 >
->To access this feature, send an email to **PFEconomyPreviews@microsoft.com** with the subject **PlayFab Mobile Subscriptions** along with your PlayFab Title ID and we will enable the feature in your environment.
+> To access this feature, send an email to **PFEconomyPreviews@microsoft.com** with the subject **PlayFab Mobile Subscriptions** along with your PlayFab Title ID and we will enable the feature in your environment.
 
 ## Creating a Subscription
 
