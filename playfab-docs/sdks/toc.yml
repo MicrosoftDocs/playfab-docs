@@ -41,8 +41,16 @@ items:
             href: c/quickstart-Linux.md
           - name: Making Async Calls
             href: c/async.md
+          - name: SDK Lifecycle
+            href: c/lifecycle.md
+          - name: Entity Handles
+            href: c/entity-handles.md
           - name: Managing Memory
             href: c/memory.md
+          - name: HTTP Configuration
+            href: c/http-config.md
+          - name: Handling Errors
+            href: c/errors.md
           - name: Handling Token Expiration
             href: c/relogin.md
           - name: Debug Tracing

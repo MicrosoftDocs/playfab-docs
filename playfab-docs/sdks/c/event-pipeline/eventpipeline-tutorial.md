@@ -16,7 +16,7 @@ This document is a quick step-by-step tutorial on how to use the Event Pipeline 
 
 ## Step 1 - Initialize PlayFab Services SDK
 
-The first step is to initialize PF Service SDK using **PFServicesInitialize** and **PFServiceConfigCreateHandle** APIs.
+The first step is to initialize PF Service SDK using [**PFServicesInitialize**](../../../api-references/c/pfservices/functions/pfservicesinitialize.md) and [**PFServiceConfigCreateHandle**](../../../api-references/c/pfserviceconfig/functions/pfserviceconfigcreatehandle.md) APIs.
 
 The **PFServiceConfigCreateHandle** API receives a connection string and a title ID that can be obtained from your title on PlayFab Game Manager.
 
@@ -36,7 +36,7 @@ PFServiceConfigCreateHandle(
 
 ## Step 2 - Create Telemetry Event Pipeline
 
-Next, let's create a Telemetry Event Pipeline with a Telemetry Key using the **PFEventPipelineCreateTelemetryPipelineHandleWithKey** API. Telemetry Keys are created and managed through PlayFab Game Manager.
+Next, let's create a Telemetry Event Pipeline with a Telemetry Key using the [**PFEventPipelineCreateTelemetryPipelineHandleWithKey**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelinecreatetelemetrypipelinehandlewithkey.md) API. Telemetry Keys are created and managed through PlayFab Game Manager.
 
 When creating the PFEventPipelineTelemetryKeyConfig struct, we're passing the actual telemetry key and the service config handle we got during SDK initialization.
 
@@ -76,7 +76,7 @@ Also, since we're sending maxWaitTimeInSeconds and pollDelayInMs as null pointer
 
 We're also specifying a "Medium" compression level, setting this property compresses the body payloads and helps to optimize network resources utilization. 
 
-Then we proceed to call **PFEventPipelineUpdateConfiguration** passing the **PFEventPipelineHandle** that we got from previous step and the **PFEventPipelineConfig** struct.
+Then we proceed to call [**PFEventPipelineUpdateConfiguration**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineupdateconfiguration.md) passing the **PFEventPipelineHandle** that we got from previous step and the **PFEventPipelineConfig** struct.
 
 ```cpp
 uint32_t maxEvents = 10;
@@ -104,7 +104,7 @@ if (FAILED(hr))
 
 ## Step 4 - Emit event
 
-On this step, we proceed to emit just 1 event with name "TelemetryKeyEvent" through **PFEventPipelineEmitEvent** API.
+On this step, we proceed to emit just 1 event with name "TelemetryKeyEvent" through [**PFEventPipelineEmitEvent**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineemitevent.md) API.
 
 This event isn't linked to any entities since we haven't provided entity authentication so far.
 
@@ -134,7 +134,7 @@ if (FAILED(hr))
 
 Here, we want to get an Entity that we can use to start linking with our events.
 
-For this tutorial, we're calling **PFAuthenticationReLoginWithXUserAsync** API to get a valid **PFEntityHandle**.
+For this tutorial, we're calling [**PFAuthenticationReLoginWithXUserAsync**](../../../api-references/c/pfauthentication/functions/pfauthenticationreloginwithxuserasync.md) API to get a valid **PFEntityHandle**.
 
 > [!NOTE]
 > The userHandle object passed as part of the **PFAuthenticationLoginWithXUserRequest** is of XUserHandle type. The steps on how to get a valid XUserHandle are out of scope for this tutorial. For more information on this topic, see [XUserAddAsync](/gaming/gdk/_content/gc/reference/system/xuser/functions/xuseraddasync) documentation.
@@ -167,7 +167,7 @@ if (FAILED(hr))
 
 ## Step 6 - Add Entity to Pipeline
 
-Since we already got a valid Entity, we can call **PFEventPipelineAddUploadingEntity** and pass the Event Pipeline handle and the entity handle from the previous step. This action allows the pipeline to switch to use entity authentication.
+Since we already got a valid Entity, we can call [**PFEventPipelineAddUploadingEntity**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineadduploadingentity.md) and pass the Event Pipeline handle and the entity handle from the previous step. This action allows the pipeline to switch to use entity authentication.
 
 ```cpp
 HRESULT hr = PFEventPipelineAddUploadingEntity(
@@ -215,7 +215,7 @@ if (FAILED(hr))
 
 ## Step 8 - Close Event Pipeline handle
 
-Lastly, when we're done uploading events, the only thing we need to do is to call **PFEventPipelineCloseHandle** passing our pipeline handle.
+Lastly, when we're done uploading events, the only thing we need to do is to call [**PFEventPipelineCloseHandle**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineclosehandle.md) passing our pipeline handle.
 
 ```cpp
 PFEventPipelineCloseHandle(handle);

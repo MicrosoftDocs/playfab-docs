@@ -18,7 +18,7 @@ The PlayFab Services SDK includes a background token refresh mechanism that help
 
 The SDK runs a background worker that periodically checks the player's entity token. If the token is **still valid but approaching expiration** (within one hour of expiry), the SDK automatically reauthenticates using the credentials from the original sign-in call. If this refresh succeeds, the token is updated transparently and the **PFEntityHandle** continues to be valid. No action is required from your game.
 
-You can observe these silent token refreshes by registering a **PFEntityRegisterTokenRefreshedEventHandler** callback (see [Transparent refresh](#transparent-refresh)).
+You can observe these silent token refreshes by registering a [**PFEntityRegisterTokenRefreshedEventHandler**](../../api-references/c/pfentity/functions/pfentityregistertokenrefreshedeventhandler.md) callback (see [Transparent refresh](#transparent-refresh)).
 
 ## When your game must handle token expiration
 
@@ -28,11 +28,11 @@ There are scenarios where the SDK **can't** automatically refresh the token:
 - **The original sign-in credentials are no longer valid.** If the handle or token originally provided to the sign-in request is no longer valid, automatic refresh fails and the **TokenExpiredHandler** is invoked.
 
 > [!IMPORTANT]
-> Registering a **PFEntityTokenExpiredEventHandler** is recommended for all titles and is **essential** for GDK titles that support suspend and resume. Without this handler, your game has no way to recover from an expired token.
+> Registering a [**PFEntityTokenExpiredEventHandler**](../../api-references/c/pfentity/functions/pfentitytokenexpiredeventhandler.md) is recommended for all titles and is **essential** for GDK titles that support suspend and resume. Without this handler, your game has no way to recover from an expired token.
 
 ### Registering the TokenExpiredHandler
 
-Use **PFEntityRegisterTokenExpiredEventHandler** to register for a callback and **PFAuthenticationReLoginWith\*Async** to reauthenticate when the token expires.
+Use [**PFEntityRegisterTokenExpiredEventHandler**](../../api-references/c/pfentity/functions/pfentityregistertokenexpiredeventhandler.md) to register for a callback and **PFAuthenticationReLoginWith\*Async** to reauthenticate when the token expires.
 
 ```cpp
     PFRegistrationToken registrationTokenExpired{};

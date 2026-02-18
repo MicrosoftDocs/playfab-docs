@@ -68,7 +68,7 @@ If Telemetry Key auth is used, a **PFEventPipelineTelemetryKeyConfig** struct is
 
 1. A Telemetry Key that consists of a string that is created and managed via PlayFab Game Manager.
 
-2. A **PFServiceConfigHandle** that lets the SDK know which is the right service configuration that should be used for uploading the events. The service config handle is created during SDK Initialization by calling **PFServiceConfigCreateHandle**.
+2. A **PFServiceConfigHandle** that lets the SDK know which is the right service configuration that should be used for uploading the events. The service config handle is created during SDK Initialization by calling [**PFServiceConfigCreateHandle**](../../../api-references/c/pfserviceconfig/functions/pfserviceconfigcreatehandle.md).
 
 If the developer wants to use a Telemetry Key it's important to provide it at pipeline creation, since there's no way to add a Telemetry Key after the pipeline has been instantiated.
 
@@ -87,7 +87,18 @@ The configurable properties are:
 - **retryOnDisconnect**: The event pipeline will retry sending events that failed due to lost connection. Only available for Telemetry Event Pipeline.
 - **bufferSize**: The limit of the amount of events in the pipeline's buffer.
 
-In the case where **PFEventPipelineConfig** has only some properties specified, the ones being empty are overwritten and use the default values.
+### Default values
+
+| Property | Telemetry Pipeline | PlayStream Pipeline |
+|---|---|---|
+| **maxEventsPerBatch** | 5 | 5 |
+| **maxWaitTimeInSeconds** | 3 | 3 |
+| **pollDelayInMs** | 3000 | 10 |
+| **compressionLevel** | None (disabled) | None (disabled) |
+| **retryOnDisconnect** | true | N/A |
+| **bufferSize** | 1024 | 1024 |
+
+In the case where [**PFEventPipelineConfig**](../../../api-references/c/pfeventpipeline/structs/pfeventpipelineconfig.md) has only some properties specified, the ones being empty are overwritten and use the default values.
 
 For an example of how any of these properties can be updated for the event pipeline see _[Update Pipeline Configuration](#update-pipeline-configuration)_.
 
@@ -95,7 +106,7 @@ For an example of how any of these properties can be updated for the event pipel
 
 The Event Pipeline provides an option of compressing body payloads using GZIP Compression standard.
 
-The desired compression level can be specified inside the **PFEventPipelineConfig** struct that is part of the **PFEventPipelineUpdateConfiguration** API parameters.
+The desired compression level can be specified inside the **PFEventPipelineConfig** struct that is part of the [**PFEventPipelineUpdateConfiguration**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineupdateconfiguration.md) API parameters.
 
 A lower compression level achieves less compression but has the highest speed and a higher compression level achieves better compression rates but has the slowest compression speed. The difference in compression rates is all dependent on the type of data being sent. Depending on the size and randomness of the data, compression rates can be the same even on different levels.
 
@@ -113,9 +124,9 @@ However, if the game developer wants a "fire and forget" experience, can omit pr
 
 The event handlers that can be provided are as follows:
 
-- **PFEventPipelineBatchUploadSucceededEventHandler**: As the name suggests, it receives all the events that are successfully uploaded to PlayFab.
+- [**PFEventPipelineBatchUploadSucceededEventHandler**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelinebatchuploadsucceededeventhandler.md): As the name suggests, it receives all the events that are successfully uploaded to PlayFab.
 
-- **PFEventPipelineBatchUploadFailedEventHandler**: It will receive all the failed events after going through the pipeline retry logic.
+- [**PFEventPipelineBatchUploadFailedEventHandler**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelinebatchuploadfailedeventhandler.md): It will receive all the failed events after going through the pipeline retry logic.
 
 ### Pipeline creation examples
 
@@ -123,7 +134,7 @@ Below you can find different examples on how to instantiate an event pipeline ba
 
 1. **Telemetry Event Pipeline creation with Entity auth**
 
-    If the developer wants to send Telemetry Events and doesn't have the need of using Telemetry Key auth, the **PFEventPipelineCreateTelemetryPipelineHandleWithEntity** API serves for this purpose as seen in the next example:
+    If the developer wants to send Telemetry Events and doesn't have the need of using Telemetry Key auth, the [**PFEventPipelineCreateTelemetryPipelineHandleWithEntity**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelinecreatetelemetrypipelinehandlewithentity.md) API serves for this purpose as seen in the next example:
 
     ```cpp
     void EventPipelineCreation(PFEntityHandle entityHandle, XTaskQueueHandle taskQueueHandle)
@@ -253,7 +264,7 @@ As seen in the example, ***OnBatchUploadedHandler*** and ***OnBatchUploadFailedH
 
 ### Emitting events
 
-Emitting events is a straightforward operation once the event pipeline is already created. The game developer should call **PFEventPipelineEmitEvent** API that receives the existing event pipeline handle and the event they want to send.
+Emitting events is a straightforward operation once the event pipeline is already created. The game developer should call [**PFEventPipelineEmitEvent**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineemitevent.md) API that receives the existing event pipeline handle and the event they want to send.
 
 ```cpp
 void EmitEvent(PFEventPipelineHandle handle)
@@ -321,7 +332,7 @@ Make sure to set an adequate size of a buffer for your needs.
 
 If a pipeline was created using only a Telemetry Key configuration, there's a way to switch to Entity authentication or if you want to update your pipeline to use a different Entity.
 
-By using the **PFEventPipelineAddUploadingEntity**, it's possible to attach an entity to a running pipeline without the need of reinitialize it. It also replaces the existing entity, if any.
+By using the [**PFEventPipelineAddUploadingEntity**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineadduploadingentity.md), it's possible to attach an entity to a running pipeline without the need of reinitialize it. It also replaces the existing entity, if any.
 
 Example:
 
@@ -377,7 +388,7 @@ After this call, the pipeline will start logging any subsequent events linked to
 
 ### Switching to Telemetry Key auth
 
-Expanding on the previous scenario, if the developer wants to go back to Telemetry Auth and detach the event logging from the entity they can call **PFEventPipelineRemoveUploadingEntity** and pass the event pipeline handle like this:
+Expanding on the previous scenario, if the developer wants to go back to Telemetry Auth and detach the event logging from the entity they can call [**PFEventPipelineRemoveUploadingEntity**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineremoveuploadingentity.md) and pass the event pipeline handle like this:
 
 ```cpp
 void EventPipelineRemoveEntity(PFEventPipelineHandle handle)
@@ -398,7 +409,7 @@ This call removes the entity and effectively switches back to Telemetry Key auth
 
 ### **Update Pipeline configuration**
 
-Pipelines can be easily updated using the **PFEventPipelineUpdateConfiguration** API, which receives the existing event pipeline handle and a new configuration struct as follows:
+Pipelines can be easily updated using the [**PFEventPipelineUpdateConfiguration**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineupdateconfiguration.md) API, which receives the existing event pipeline handle and a new configuration struct as follows:
 
 ```cpp
 void EventPipelineUpdateConfiguration(PFEventPipelineHandle handle)
@@ -440,6 +451,23 @@ _**Reminder**: Any empty or null properties overwrite existing configuration val
 In case a Telemetry key is deactivated or if an invalid key is provided at pipeline creation, any Event Pipelines running using that Telemetry Key will start failing as soon as they find out the key is invalid or deactivated.
 
 In the eventual case where the customer reactivates the key, the pipeline won't realize about that and will keep sending failures back through the failed event handler. It's worth mentioning that this behavior is session-based, which means that if the title is restarted, a new pipeline is created and will be able to upload events again.
+
+## Pipeline handle lifecycle
+
+Like other PlayFab handles, event pipeline handles use a duplicate/close pattern:
+
+- [**PFEventPipelineCloseHandle**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineclosehandle.md): Closes a pipeline handle. When the last handle to a pipeline is closed, the pipeline is destroyed and any remaining buffered events are flushed.
+- [**PFEventPipelineDuplicateHandle**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineduplicatehandle.md): Duplicates a pipeline handle. Both the original and duplicated handle must be closed independently with [**PFEventPipelineCloseHandle**](../../../api-references/c/pfeventpipeline/functions/pfeventpipelineclosehandle.md).
+
+```cpp
+// Duplicate a handle for use in another component
+PFEventPipelineHandle duplicatedHandle;
+HRESULT hr = PFEventPipelineDuplicateHandle(originalHandle, &duplicatedHandle);
+
+// When done, close both handles independently
+PFEventPipelineCloseHandle(duplicatedHandle);
+PFEventPipelineCloseHandle(originalHandle);
+```
 
 ## See also
 
