@@ -26,7 +26,7 @@ Using the `GetInventoryCollectionIds` API, you can get a list of `CollectionId`s
 
 An example `GetInventoryCollectionIds` request:
 
-```csharp
+```json
 {
   "Entity": {
     "Type": "title_player_account",
@@ -39,11 +39,11 @@ An example `GetInventoryCollectionIds` request:
 
 This request would return the following response:
 
-```csharp
+```json
 {
   "data": {
   "CollectionIds": [
-    "default".
+    "default",
     "main_character"
     ]
   }
@@ -74,7 +74,7 @@ For example, the following `AddInventoryItems` request uses the collectionId `ma
 }
 ```
 
-The above request would either create a brand new `main_character` inventory collection and add 10 of the item to it, or add 10 to the existing `main_character` inventory collection if it already existed.
+The above request would either create a brand new inventory collection and add 10 of the item to it or add 10 to the existing `main_character` inventory collection if it already existed.
 
 ### DeleteInventoryCollection
 

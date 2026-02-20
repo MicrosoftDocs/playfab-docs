@@ -3,6 +3,8 @@ items:
   href: catalog-overview.md
 - name: Bundles
   href: bundles.md
+- name: Real money prices
+  href: real-money-prices.md
 - name: Stores
   href: stores.md
 - name: Subscriptions

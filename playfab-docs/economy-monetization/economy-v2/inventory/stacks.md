@@ -120,7 +120,7 @@ When you make purchases with stacks, there are a few parameters that are relevan
 - For the `Item` object, you can define an optional `StackId` that represents the stack the receiving items will be placed in
 - There's a`DeleteEmptyStacks` boolean that can be set which deletes the stack if the subtracted amount results in the stack having an amount of 0.
 
-For more information about the `PurchaseInventoryItems` API, see the [Inventory APIs documentation](index.md#purchase-inventory-items).
+> For more details on purchasing items, see [PurchaseInventoryItems](/rest/api/playfab/economy/inventory/purchase-inventory-items).
 
 An example `PurchaseInventoryItems` request with stacks:
 

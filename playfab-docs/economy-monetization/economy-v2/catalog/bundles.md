@@ -90,3 +90,16 @@ Response:
     ...
 }
 ```
+
+## Purchasing and Unpacking Bundles
+
+When a player purchases a bundle, the bundle is **automatically unpacked** — the individual items referenced in the bundle are granted directly to the player's inventory. The bundle itself does not appear as an inventory item. For more details on how bundles interact with inventory, see [Bundles in Inventory](../inventory/index.md#bundles).
+
+Bundles are also the primary mechanism for linking real-money marketplace products to in-game items. Each bundle can be linked to one or more marketplace products using `AlternateIds`. For more information, see [Fraud Prevention Quickstart](../fraud-prevention/quickstart.md).
+
+## See also
+
+* [Inventory Overview](../inventory/index.md)
+* [Stores](stores.md)
+* [Marketplace Integrations](../marketplace/marketplace-integrations/overview.md)
+* [Fraud Prevention](../fraud-prevention/index.md)
