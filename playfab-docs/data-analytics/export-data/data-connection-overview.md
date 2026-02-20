@@ -38,3 +38,7 @@ For more optimized cost and data control, you can make use of data connections w
 ### Microsoft Fabric KQL database Data Connection
 
 You can utilize PlayFab's Data Connections service to distribute game events to Real-Time Analytics (RTA) databases, allowing you to generate near-real-time analytics and insights in Power BI or through KQL queries on your Microsoft Fabric workspace.
+
+### Amazon AWS S3 Data Connection (PREVIEW)
+
+The AWS S3 Data Connection provides a secure, scalable way to stream your PlayFab telemetry and event data directly into your own Amazon S3 bucket. Designed for reliability and high throughput workloads, it uses a robust pipeline to validate, transport, and land game data in an open, analytics ready format. By bringing your own AWS storage and IAM roles, you retain full control of data governance, encryption, access policies, lifecycle management, and cost visibility while enabling downstream workflows such as BI reporting, machine learning, and largescale data processing in your AWS environment.
