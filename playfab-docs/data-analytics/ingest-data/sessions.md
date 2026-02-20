@@ -20,8 +20,8 @@ Session support is currently *only* available in Unity SDK. Support for our othe
 
 You'll need to have the **180829** version or newer. This SDK first introduces two new events that can be configured to be emitted from the client automatically:
 
-1. [client_session_start](../../api-references/events/client-session-start.md)
-2. [client_focus_change](../../api-references/events/client-focus-change.md)
+1. [client_session_start](../../api-references/events/Session/client-session-start.md)
+2. [client_focus_change](../../api-references/events/Session/client-focus-change.md)
 
 ## Logging and managing events
 

@@ -22,311 +22,440 @@
   items:
   - name: Model reference
     href: events/index.md
+  - name: AdPlacement
+    items:
+    - name: player_ad_closed
+      href: events/AdPlacement/player-ad-closed.md
+    - name: player_ad_ended
+      href: events/AdPlacement/player-ad-ended.md
+    - name: player_ad_opened
+      href: events/AdPlacement/player-ad-opened.md
+    - name: player_ad_rewarded
+      href: events/AdPlacement/player-ad-rewarded.md
+    - name: player_ad_started
+      href: events/AdPlacement/player-ad-started.md
+  - name: Addons
+    items:
+    - name: title_addon_changed
+      href: events/Addons/title-addon-changed.md
+  - name: ApiAccessPolicy
+    items:
+    - name: title_api_settings_changed
+      href: events/ApiAccessPolicy/title-api-settings-changed.md
+    - name: title_permission_policy_changed
+      href: events/ApiAccessPolicy/title-permission-policy-changed.md
+  - name: CloudScript
+    items:
+    - name: entity_executed_cloud_script
+      href: events/CloudScript/entity-executed-cloud-script.md
+    - name: player_executed_cloudscript
+      href: events/CloudScript/player-executed-cloudscript.md
+    - name: player_triggered_action_executed_cloudscript
+      href: events/CloudScript/player-triggered-action-executed-cloudscript.md
+    - name: title_added_cloudscript
+      href: events/CloudScript/title-added-cloudscript.md
+    - name: title_published_cloudscript
+      href: events/CloudScript/title-published-cloudscript.md
+    - name: title_scheduled_cloudscript_executed
+      href: events/CloudScript/title-scheduled-cloudscript-executed.md
+    - name: cloudscript_executed
+      href: events/CloudScript/cloudscript-executed.md
+  - name: DeveloperIdentity
+    items:
+    - name: studio_created
+      href: events/DeveloperIdentity/studio-created.md
+    - name: studio_user_added
+      href: events/DeveloperIdentity/studio-user-added.md
+    - name: studio_user_invited
+      href: events/DeveloperIdentity/studio-user-invited.md
+    - name: studio_user_removed
+      href: events/DeveloperIdentity/studio-user-removed.md
+  - name: Extension
+    items:
+    - name: title_aborted_task
+      href: events/Extension/title-aborted-task.md
+    - name: title_completed_task
+      href: events/Extension/title-completed-task.md
+    - name: title_created_task
+      href: events/Extension/title-created-task.md
+    - name: title_deleted_task
+      href: events/Extension/title-deleted-task.md
+    - name: title_exceeded_limit
+      href: events/Extension/title-exceeded-limit.md
+    - name: title_limit_changed
+      href: events/Extension/title-limit-changed.md
+    - name: title_started_task
+      href: events/Extension/title-started-task.md
+    - name: title_updated_task
+      href: events/Extension/title-updated-task.md
+    - name: export_completed
+      href: events/Extension/export-completed.md
+  - name: Functions
+    items:
+    - name: function_executed
+      href: events/Functions/function-executed.md
+    - name: function_registered
+      href: events/Functions/function-registered.md
+    - name: function_unregistered
+      href: events/Functions/function-unregistered.md
+    - name: player_triggered_action_executed_function
+      href: events/Functions/player-triggered-action-executed-function.md
+    - name: title_scheduled_function_executed
+      href: events/Functions/title-scheduled-function-executed.md
+  - name: Groups
+    items:
+    - name: group_created
+      href: events/Groups/group-created.md
+    - name: group_members_added
+      href: events/Groups/group-members-added.md
+    - name: group_members_removed
+      href: events/Groups/group-members-removed.md
+    - name: group_role_created
+      href: events/Groups/group-role-created.md
+    - name: group_role_deleted
+      href: events/Groups/group-role-deleted.md
+    - name: group_role_members_added
+      href: events/Groups/group-role-members-added.md
+    - name: group_role_members_removed
+      href: events/Groups/group-role-members-removed.md
+    - name: group_role_updated
+      href: events/Groups/group-role-updated.md
+    - name: group_updated
+      href: events/Groups/group-updated.md
+    - name: members_added
+      href: events/Groups/members-added.md
+    - name: members_removed
+      href: events/Groups/members-removed.md
+    - name: members_role_updated
+      href: events/Groups/members-role-updated.md
+    - name: player_updated_membership
+      href: events/Groups/player-updated-membership.md
+    - name: role_updated
+      href: events/Groups/role-updated.md
+  - name: Telemetry
+    items:
+    - name: apikey_activated
+      href: events/Telemetry/apikey-activated.md
+    - name: apikey_created
+      href: events/Telemetry/apikey-created.md
+    - name: apikey_deactivated
+      href: events/Telemetry/apikey-deactivated.md
+    - name: apikey_deleted
+      href: events/Telemetry/apikey-deleted.md
+  - name: TitleCommunications
+    items:
+    - name: player_registered_push_notifications
+      href: events/TitleCommunications/player-registered-push-notifications.md
+    - name: sent_email
+      href: events/TitleCommunications/sent-email.md
+    - name: sent_push_notification
+      href: events/TitleCommunications/sent-push-notification.md
+    - name: email_sent
+      href: events/TitleCommunications/email-sent.md
+    - name: push_notification_sent
+      href: events/TitleCommunications/push-notification-sent.md
+  - name: General
+    items:
+    - name: entity_virtual_currency_balances_changed
+      href: events/General/entity-virtual-currency-balances-changed.md
+    - name: tenancy_connector_onboard
+      href: events/General/tenancy-connector-onboard.md
+    - name: studio_tier_updated
+      href: events/General/studio-tier-updated.md
+  - name: Matchmaking
+    items:
+    - name: title_queue_config_updated
+      href: events/Matchmaking/title-queue-config-updated.md
+    - name: match_found
+      href: events/Matchmaking/match-found.md
+    - name: ticket_completed
+      href: events/Matchmaking/ticket-completed.md
+    - name: user_ticket_invited
+      href: events/Matchmaking/user-ticket-invited.md
+  - name: Multiplayer Servers
+    items:
+    - name: build_alias_created
+      href: events/MultiplayerServers/build-alias-created.md
+    - name: build_alias_deleted
+      href: events/MultiplayerServers/build-alias-deleted.md
+    - name: build_alias_updated
+      href: events/MultiplayerServers/build-alias-updated.md
+    - name: build_deleted
+      href: events/MultiplayerServers/build-deleted.md
+    - name: build_region_status_changed
+      href: events/MultiplayerServers/build-region-status-changed.md
+    - name: build_region_updated
+      href: events/MultiplayerServers/build-region-updated.md
+    - name: build_region_utilization
+      href: events/MultiplayerServers/build-region-utilization.md
+    - name: certificate_deleted
+      href: events/MultiplayerServers/certificate-deleted.md
+    - name: certificate_uploaded
+      href: events/MultiplayerServers/certificate-uploaded.md
+    - name: crash_detected
+      href: events/MultiplayerServers/crash-detected.md
+    - name: create_build_initiated
+      href: events/MultiplayerServers/create-build-initiated.md
+    - name: enabled_for_title
+      href: events/MultiplayerServers/enabled-for-title.md
+    - name: game_asset_deleted
+      href: events/MultiplayerServers/game-asset-deleted.md
+    - name: monitoring_output_saved
+      href: events/MultiplayerServers/monitoring-output-saved.md
+    - name: secret_added
+      href: events/MultiplayerServers/secret-added.md
+    - name: secret_deleted
+      href: events/MultiplayerServers/secret-deleted.md
+    - name: server_requested
+      href: events/MultiplayerServers/server-requested.md
+    - name: server_state_changed
+      href: events/MultiplayerServers/server-state-changed.md
+    - name: vm_assigned
+      href: events/MultiplayerServers/vm-assigned.md
+    - name: vm_game_certificates_deployed
+      href: events/MultiplayerServers/vm-game-certificates-deployed.md
+    - name: vm_remote_user_created
+      href: events/MultiplayerServers/vm-remote-user-created.md
+    - name: vm_remote_user_deleted
+      href: events/MultiplayerServers/vm-remote-user-deleted.md
+    - name: vm_state_change
+      href: events/MultiplayerServers/vm-state-change.md
+    - name: vm_unassignment_started
+      href: events/MultiplayerServers/vm-unassignment-started.md
+    - name: vm_unhealthy
+      href: events/MultiplayerServers/vm-unhealthy.md
+  - name: CatalogV1
+    items:
+    - name: title_catalog_updated
+      href: events/CatalogV1/title-catalog-updated.md
+    - name: title_store_updated
+      href: events/CatalogV1/title-store-updated.md
+  - name: CatalogV2
+    items:
+    - name: item_created
+      href: events/CatalogV2/item-created.md
+    - name: item_deleted
+      href: events/CatalogV2/item-deleted.md
+    - name: item_moderation_state_changed
+      href: events/CatalogV2/item-moderation-state-changed.md
+    - name: item_publish_requested
+      href: events/CatalogV2/item-publish-requested.md
+    - name: item_reported
+      href: events/CatalogV2/item-reported.md
+    - name: item_updated
+      href: events/CatalogV2/item-updated.md
+    - name: review_reported
+      href: events/CatalogV2/review-reported.md
+    - name: reviews_takedown_requested
+      href: events/CatalogV2/reviews-takedown-requested.md
+  - name: Character
+    items:
+    - name: character_consumed_item
+      href: events/Character/character-consumed-item.md
+    - name: character_inventory_item_added
+      href: events/Character/character-inventory-item-added.md
+    - name: character_vc_item_purchased
+      href: events/Character/character-vc-item-purchased.md
+    - name: character_virtual_currency_balance_changed
+      href: events/Character/character-virtual-currency-balance-changed.md
+  - name: Inventory
+    items:
+    - name: items_added
+      href: events/Inventory/items-added.md
+    - name: items_clawback_completed
+      href: events/Inventory/items-clawback-completed.md
+    - name: items_clawback_reversal_completed
+      href: events/Inventory/items-clawback-reversal-completed.md
+    - name: items_deleted
+      href: events/Inventory/items-deleted.md
+    - name: items_expired
+      href: events/Inventory/items-expired.md
+    - name: items_purchased
+      href: events/Inventory/items-purchased.md
+    - name: items_redeemed
+      href: events/Inventory/items-redeemed.md
+    - name: items_subtracted
+      href: events/Inventory/items-subtracted.md
+    - name: items_transferred
+      href: events/Inventory/items-transferred.md
+    - name: items_updated
+      href: events/Inventory/items-updated.md
+    - name: marketplace_transaction_redeemed
+      href: events/Inventory/marketplace-transaction-redeemed.md
+  - name: GameSave
+    items:
+    - name: gamesave_version_finalized
+      href: events/GameSave/gamesave-version-finalized.md
+    - name: gamesave_version_marked_known_good
+      href: events/GameSave/gamesave-version-marked-known-good.md
+  - name: Partner
+    items:
+    - name: display_name_filtered
+      href: events/Partner/display-name-filtered.md
+    - name: player_display_name_filtered
+      href: events/Partner/player-display-name-filtered.md
+    - name: player_photon_session_authenticated
+      href: events/Partner/player-photon-session-authenticated.md
+  - name: Player
+    items:
+    - name: player_action_executed
+      href: events/Player/player-action-executed.md
+    - name: player_ad_campaign_attribution
+      href: events/Player/player-ad-campaign-attribution.md
+    - name: player_consumed_item
+      href: events/Player/player-consumed-item.md
+    - name: player_inventory_item_added
+      href: events/Player/player-inventory-item-added.md
+    - name: player_paid_for_purchase
+      href: events/Player/player-paid-for-purchase.md
+    - name: player_set_profile_property
+      href: events/Player/player-set-profile-property.md
+    - name: player_started_purchase
+      href: events/Player/player-started-purchase.md
+    - name: player_vc_item_purchased
+      href: events/Player/player-vc-item-purchased.md
+    - name: player_virtual_currency_balance_changed
+      href: events/Player/player-virtual-currency-balance-changed.md
+  - name: PlayerIdentity
     items:
     - name: auth_token_validated
-      href: events/auth-token-validated.md
-    - name: character_consumed_item    
-      href: events/character-consumed-item.md
+      href: events/PlayerIdentity/auth-token-validated.md
     - name: character_created
-      href: events/character-created.md
-    - name: character_inventory_item_added
-      href: events/character-inventory-item-added.md
+      href: events/PlayerIdentity/character-created.md
+    - name: entity_created
+      href: events/PlayerIdentity/entity-created.md
+    - name: entity_logged_in
+      href: events/PlayerIdentity/entity-logged-in.md
+    - name: player_added_title
+      href: events/PlayerIdentity/player-added-title.md
+    - name: player_banned
+      href: events/PlayerIdentity/player-banned.md
+    - name: player_changed_avatar
+      href: events/PlayerIdentity/player-changed-avatar.md
+    - name: player_completed_password_reset
+      href: events/PlayerIdentity/player-completed-password-reset.md
+    - name: player_created
+      href: events/PlayerIdentity/player-created.md
+    - name: player_data_exported
+      href: events/PlayerIdentity/player-data-exported.md
+    - name: player_device_info
+      href: events/PlayerIdentity/player-device-info.md
+    - name: player_displayname_changed
+      href: events/PlayerIdentity/player-displayname-changed.md
+    - name: player_linked_account
+      href: events/PlayerIdentity/player-linked-account.md
+    - name: player_logged_in
+      href: events/PlayerIdentity/player-logged-in.md
+    - name: player_password_reset_link_sent
+      href: events/PlayerIdentity/player-password-reset-link-sent.md
+    - name: player_removed_title
+      href: events/PlayerIdentity/player-removed-title.md
+    - name: player_reported_as_abusive
+      href: events/PlayerIdentity/player-reported-as-abusive.md
+    - name: player_tag_added
+      href: events/PlayerIdentity/player-tag-added.md
+    - name: player_tag_removed
+      href: events/PlayerIdentity/player-tag-removed.md
+    - name: player_unlinked_account
+      href: events/PlayerIdentity/player-unlinked-account.md
+    - name: player_updated_contact_email
+      href: events/PlayerIdentity/player-updated-contact-email.md
+    - name: player_verified_contact_email
+      href: events/PlayerIdentity/player-verified-contact-email.md
+    - name: title_deleted_master_player
+      href: events/PlayerIdentity/title-deleted-master-player.md
+    - name: title_initiated_player_password_reset
+      href: events/PlayerIdentity/title-initiated-player-password-reset.md
+    - name: title_profile_view_constraints_changed
+      href: events/PlayerIdentity/title-profile-view-constraints-changed.md
+    - name: entity_deleted
+      href: events/PlayerIdentity/entity-deleted.md
+    - name: logged_in_to_title
+      href: events/PlayerIdentity/logged-in-to-title.md
+    - name: player_authenticated
+      href: events/PlayerIdentity/player-authenticated.md
+    - name: player_custom_properties_changed
+      href: events/PlayerIdentity/player-custom-properties-changed.md
+    - name: player_identity_link_added
+      href: events/PlayerIdentity/player-identity-link-added.md
+    - name: player_identity_link_removed
+      href: events/PlayerIdentity/player-identity-link-removed.md
+    - name: player_updated_login_email
+      href: events/PlayerIdentity/player-updated-login-email.md
+  - name: PlayerProfile
+    items:
+    - name: entity_files_set
+      href: events/PlayerProfile/entity-files-set.md
+    - name: entity_language_updated
+      href: events/PlayerProfile/entity-language-updated.md
+    - name: entity_objects_set
+      href: events/PlayerProfile/entity-objects-set.md
+    - name: access_policy_updated
+      href: events/PlayerProfile/access-policy-updated.md
+    - name: avatar_url_updated
+      href: events/PlayerProfile/avatar-url-updated.md
+    - name: contact_email_updated
+      href: events/PlayerProfile/contact-email-updated.md
+    - name: files_changed
+      href: events/PlayerProfile/files-changed.md
+    - name: language_updated
+      href: events/PlayerProfile/language-updated.md
+    - name: objects_updated
+      href: events/PlayerProfile/objects-updated.md
+  - name: Session
+    items:
+    - name: client_focus_change
+      href: events/Session/client-focus-change.md
+    - name: client_session_start
+      href: events/Session/client-session-start.md
+  - name: Title
+    items:
+    - name: title_client_rate_limited_alert
+      href: events/Title/title-client-rate-limited-alert.md
+    - name: title_high_error_rate_alert
+      href: events/Title/title-high-error-rate-alert.md
+    - name: title_requested_limit_change
+      href: events/Title/title-requested-limit-change.md
+    - name: title_saved_survey
+      href: events/Title/title-saved-survey.md
+  - name: TitleData
+    items:
+    - name: title_news_updated
+      href: events/TitleData/title-news-updated.md
+    - name: title_secret_key_changed
+      href: events/TitleData/title-secret-key-changed.md
+    - name: title_activated
+      href: events/TitleData/title-activated.md
+    - name: title_data_override_deleted
+      href: events/TitleData/title-data-override-deleted.md
+    - name: title_data_updated
+      href: events/TitleData/title-data-updated.md
+    - name: title_deactivated
+      href: events/TitleData/title-deactivated.md
+  - name: Statistics
+    items:
+    - name: statistic_updated
+      href: events/Statistics/statistic-updated.md
+  - name: Leaderboards
+    items:
     - name: character_statistic_changed
       href: events/Leaderboards/character-statistic-changed.md
     - name: character_statistic_deleted
       href: events/Leaderboards/character-statistic-deleted.md
-    - name: character_vc_item_purchased
-      href: events/character-vc-item-purchased.md
-    - name: character_virtual_currency_balance_changed
-      href: events/character-virtual-currency-balance-changed.md
-    - name: client_focus_change
-      href: events/client-focus-change.md
-    - name: client_session_start
-      href: events/client-session-start.md
-    - name: entity_created
-      href: events/entity-created.md
-    - name: entity_executed_cloud_script
-      href: events/entity-executed-cloud-script.md
-    - name: entity_files_set
-      href: events/entity-files-set.md
-    - name: entity_language_updated
-      href: events/entity-language-updated.md
-    - name: entity_logged_in
-      href: events/entity-logged-in.md
-    - name: entity_objects_set
-      href: events/entity-objects-set.md
-    - name: entity_virtual_currency_balances_changed
-      href: events/entity-virtual-currency-balances-changed.md
-    - name: group_created
-      href: events/group-created.md
-    - name: group_deleted
-      href: events/group-deleted.md
-    - name: group_members_added
-      href: events/group-members-added.md
-    - name: group_members_removed
-      href: events/group-members-removed.md
-    - name: group_role_created
-      href: events/group-role-created.md
-    - name: group_role_deleted
-      href: events/group-role-deleted.md
-    - name: group_role_members_added
-      href: events/group-role-members-added.md
-    - name: group_role_members_removed
-      href: events/group-role-members-removed.md
-    - name: group_role_updated
-      href: events/group-role-updated.md
-    - name: group_updated
-      href: events/group-updated.md
-    - name: item_created
-      href: events/item-created.md
-    - name: item_deleted
-      href: events/item-deleted.md
-    - name: item_moderation_state_changed
-      href: events/item-moderation-state-changed.md
-    - name: item_publish_requested
-      href: events/item-publish-requested.md
-    - name: item_reported
-      href: events/item-reported.md
-    - name: item_updated
-      href: events/item-updated.md
-    - name: items_added
-      href: events/items-added.md
-    - name: items_deleted
-      href: events/items-deleted.md
-    - name: items_purchased
-      href: events/items-purchased.md
-    - name: items_redeemed
-      href: events/items-redeemed.md
-    - name: items_subtracted
-      href: events/items-subtracted.md
-    - name: items_transferred
-      href: events/items-transferred.md
-    - name: items_updated
-      href: events/items-updated.md
-    - name: matchmaking_match_found
-      href: events/matchmaking-match-found.md
-    - name: matchmaking_ticket_completed
-      href: events/matchmaking-ticket-completed.md
-    - name: matchmaking_user_ticket_completed
-      href: events/matchmaking-user-ticket-completed.md
-    - name: matchmaking_user_ticket_invite 
-      href: events/matchmaking-user-ticket-invite.md
-    - name: build_alias_created
-      href: events/build-alias-created.md
-    - name: build_alias_deleted
-      href: events/build-alias-deleted.md
-    - name: build_alias_updated
-      href: events/build-alias-updated.md
-    - name: build_deleted
-      href: events/build-deleted.md
-    - name: build_region_status_changed
-      href: events/build-region-status-changed.md
-    - name: build_region_updated
-      href: events/build-region-updated.md
-    - name: build_region_utilization
-      href: events/build-region-utilization.md
-    - name: certificate_deleted
-      href: events/certificate-deleted.md
-    - name: certificate_uploaded
-      href: events/certificate-uploaded.md
-    - name: crash_detected
-      href: events/crash-detected.md
-    - name: create_build_initiated
-      href: events/create-build-initiated.md
-    - name: enabled_for_title
-      href: events/enabled-for-title.md
-    - name: game_asset_deleted 
-      href: events/game-asset-deleted.md
-    - name: monitoring_output_saved 
-      href: events/monitoring-output-saved.md
-    - name: secret_added
-      href: events/secret-added.md
-    - name: secret_deleted
-      href: events/secret-deleted.md
-    - name: server_requested 
-      href: events/server-requested.md
-    - name: server_state_changed  
-      href: events/server-state-changed.md
-    - name: vm_assigned 
-      href: events/vm-assigned.md
-    - name: vm_game_certificates_deployed
-      href: events/vm-game-certificates-deployed.md
-    - name: vm_remote_user_created 
-      href: events/vm-remote-user-created.md
-    - name: vm_remote_user_deleted 
-      href: events/vm-remote-user-deleted.md
-    - name: vm_unassignment_started 
-      href: events/vm-unassignment-started.md
-    - name: vm_unhealthy
-      href: events/vm-unhealthy.md
-    - name: player_action_executed 
-      href: events/player-action-executed.md
-    - name: player_ad_activity_valued  
-      href: events/player-ad-activity-valued.md
-    - name: player_ad_campaign_attribution 
-      href: events/player-ad-campaign-attribution.md
-    - name: player_ad_closed  
-      href: events/player-ad-closed.md
-    - name: player_ad_ended  
-      href: events/player-ad-ended.md
-    - name: player_ad_opened 
-      href: events/player-ad-opened.md
-    - name: display_name_filtered  
-      href: events/display-name-filtered.md
-    - name: player_ad_rewarded 
-      href: events/player-ad-rewarded.md
-    - name: player_ad_started 
-      href: events/player-ad-started.md
-    - name: player_added_title  
-      href: events/player-added-title.md
-    - name: player_banned  
-      href: events/player-banned.md
-    - name: player_changed_avatar  
-      href: events/player-changed-avatar.md
-    - name: player_completed_password_reset 
-      href: events/player-completed-password-reset.md
-    - name: player_consumed_item  
-      href: events/player-consumed-item.md
-    - name: player_created  
-      href: events/player-created.md
-    - name: player_data_exported 
-      href: events/player-data-exported.md
-    - name: player_device_info 
-      href: events/player-device-info.md
-    - name: player_display_name_filtered 
-      href: events/player-display-name-filtered.md
-    - name: player_displayname_changed  
-      href: events/player-displayname-changed.md
-    - name: player_executed_cloudscript  
-      href: events/player-executed-cloudscript.md
-    - name: player_inventory_item_added   
-      href: events/player-inventory-item-added.md
-    - name: player_linked_account 
-      href: events/player-linked-account.md
-    - name: player_logged_in 
-      href: events/player-logged-in.md
-    - name: player_profile_memberships
-      href: events/data-types/playermemberships.md
-    - name: player_profile_subscriptions
-      href: events/data-types/subscriptions.md
-    - name: player_paid_for_purchase  
-      href: events/player-paid-for-purchase.md
-    - name: player_password_reset_link_sent 
-      href: events/player-password-reset-link-sent.md
-    - name: player_photon_session_authenticated 
-      href: events/player-photon-session-authenticated.md
-    - name: player_ranked_on_leaderboard_version 
+    - name: entity_rank_on_leaderboard_version_ended
+      href: events/Leaderboards/entity-rank-on-leaderboard-version-ended.md
+    - name: leaderboard_version_ended
+      href: events/Leaderboards/leaderboard-version-ended.md
+    - name: player_ranked_on_leaderboard_version
       href: events/Leaderboards/player-ranked-on-leaderboard-version.md
-    - name: player_realmoney_purchase  
-      href: events/player-realmoney-purchase.md
-    - name: player_receipt_validation  
-      href: events/player-receipt-validation.md
-    - name: player_redeemed_coupon 
-      href: events/player-redeemed-coupon.md
-    - name: player_registered_push_notifications
-      href: events/player-registered-push-notifications.md
-    - name: player_removed_title 
-      href: events/player-removed-title.md
-    - name: player_reported_as_abusive 
-      href: events/player-reported-as-abusive.md
-    - name: player_set_profile_property  
-      href: events/player-set-profile-property.md
-    - name: player_started_purchase  
-      href: events/player-started-purchase.md
-    - name: player_statistic_changed   
+    - name: player_statistic_changed
       href: events/Leaderboards/player-statistic-changed.md
-    - name: player_statistic_deleted  
+    - name: player_statistic_deleted
       href: events/Leaderboards/player-statistic-deleted.md
-    - name: player_tag_added   
-      href: events/player-tag-added.md
-    - name: player_tag_removed  
-      href: events/player-tag-removed.md
-    - name: player_triggered_action_executed_cloudscript 
-      href: events/player-triggered-action-executed-cloudscript.md
-    - name: player_unlinked_account 
-      href: events/player-unlinked-account.md
-    - name: player_updated_contact_email  
-      href: events/player-updated-contact-email.md
-    - name: player_vc_item_purchased 
-      href: events/player-vc-item-purchased.md
-    - name: player_verified_contact_email  
-      href: events/player-verified-contact-email.md
-    - name: player_virtual_currency_balance_changed  
-      href: events/player-virtual-currency-balance-changed.md
-    - name: review_reported
-      href: events/review-reported.md
-    - name: reviews_takedown_requested
-      href: events/reviews-takedown-requested.md
-    - name: sent_email  
-      href: events/sent-email.md
-    - name: sent_push_notification  
-      href: events/sent-push-notification.md
-    - name: studio_created  
-      href: events/studio-created.md
-    - name: studio_tier_updated  
-      href: events/studio-tier-updated.md
-    - name: studio_user_added 
-      href: events/studio-user-added.md
-    - name: studio_user_invited  
-      href: events/studio-user-invited.md
-    - name: studio_user_removed  
-      href: events/studio-user-removed.md
-    - name: tenancy_connector_onboard 
-      href: events/tenancy-connector-onboard.md
-    - name: title_aborted_task  
-      href: events/title-aborted-task.md
-    - name: title_added_cloudscript  
-      href: events/title-added-cloudscript.md
-    - name: title_api_settings_changed  
-      href: events/title-api-settings-changed.md
-    - name: title_catalog_updated  
-      href: events/title-catalog-updated.md
-    - name: title_client_rate_limited_alert  
-      href: events/title-client-rate-limited-alert.md
-    - name: title_completed_task 
-      href: events/title-completed-task.md
-    - name: title_created_task 
-      href: events/title-created-task.md
-    - name: title_deleted 
-      href: events/title-deleted.md
-    - name: title_deleted_master_player  
-      href: events/title-deleted-master-player.md
-    - name: title_deleted_task  
-      href: events/title-deleted-task.md
-    - name: title_exceeded_limit  
-      href: events/title-exceeded-limit.md
-    - name: title_high_error_rate_alert 
-      href: events/title-high-error-rate-alert.md
-    - name: title_initiated_player_password_reset  
-      href: events/title-initiated-player-password-reset.md
-    - name: title_limit_changed 
-      href: events/title-limit-changed.md
-    - name: title_news_updated 
-      href: events/title-news-updated.md
-    - name: title_permission_policy_changed 
-      href: events/title-permission-policy-changed.md
-    - name: title_profile_view_constraints_changed   
-      href: events/title-profile-view-constraints-changed.md
-    - name: title_published_cloudscript   
-      href: events/title-published-cloudscript.md
-    - name: title_queue_config_updated  
-      href: events/title-queue-config-updated.md
-    - name: title_requested_limit_change 
-      href: events/title-requested-limit-change.md
-    - name: title_saved_survey 
-      href: events/title-saved-survey.md
-    - name: title_scheduled_cloudscript_executed 
-      href: events/title-scheduled-cloudscript-executed.md
-    - name: title_secret_key_changed 
-      href: events/title-secret-key-changed.md
-    - name: title_started_task 
-      href: events/title-started-task.md
     - name: title_statistic_version_changed
       href: events/Leaderboards/title-statistic-version-changed.md
-    - name: title_store_updated  
-      href: events/title-store-updated.md
-    - name: title_updated_task  
-      href: events/title-updated-task.md
+    - name: title_statistic_deleted
+      href: events/Leaderboards/title-statistic-deleted.md
 - name: API access policy
   href: api-access-policy.md
 - name: Global API method error codes

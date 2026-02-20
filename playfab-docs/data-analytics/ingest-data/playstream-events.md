@@ -45,5 +45,5 @@ In the following table, you can find examples of these two types of events.
 
 |             | PlayFabGenerated Events | UserGenerated Events      |
 | ----------- | ----------- | ----------- |
-| Standard Schema | [player_logged_in](../../api-references/events/player-logged-in.md) <br> [entity_created](../../api-references/events/entity-created.md) | [client_focus_change](../../api-references/events/client-focus-change.md) <br> [client_session_start](../../api-references/events/client-session-start.md) |
+| Standard Schema | [player_logged_in](../../api-references/events/PlayerIdentity/player-logged-in.md) <br> [entity_created](../../api-references/events/PlayerIdentity/entity-created.md) | [client_focus_change](../../api-references/events/Session/client-focus-change.md) <br> [client_session_start](../../api-references/events/Session/client-session-start.md) |
 | Custom Schema | N/A | Free-style |

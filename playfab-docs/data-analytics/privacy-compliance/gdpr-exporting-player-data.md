@@ -41,7 +41,7 @@ This API immediately returns a `JobReceiptId`, which you should store in your re
 
 Upon completion of the export, an email containing the export download link will be sent to the notification email address configured for the title.
 
-The completion of the task will also trigger a [`player_data_exported` PlayStream event](../../api-references/events/player-data-exported.md). The event contains the `JobReceiptId` as a property, as well as the `ExportDownloadUrl` property, which provides access to the exported data. Using either [Automation Rules with Azure Functions](../../live-service-management/service-gateway/automation/cloudscript-af/quickstart.md#azure-functions-in-automation-rules) or [Webhooks](../acting-data/webhooks-overview.md), you can register to receive these events on an endpoint of your choosing and process as needed. 
+The completion of the task will also trigger a [`player_data_exported` PlayStream event](../../api-references/events/PlayerIdentity/player-data-exported.md). The event contains the `JobReceiptId` as a property, as well as the `ExportDownloadUrl` property, which provides access to the exported data. Using either [Automation Rules with Azure Functions](../../live-service-management/service-gateway/automation/cloudscript-af/quickstart.md#azure-functions-in-automation-rules) or [Webhooks](../acting-data/webhooks-overview.md), you can register to receive these events on an endpoint of your choosing and process as needed. 
 
 The following example is how to use the Admin API with the [C# SDK](../../sdks/c-sharp/index.md). If you would like to use a different SDK, select one from the list of [PlayFab SDKs](../../sdks/playfab-sdk-intro.md).
 

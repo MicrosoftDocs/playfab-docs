@@ -18,19 +18,19 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## AdPlacement
 
-- [player_ad_closed](player-ad-closed.md)  
+- [player_ad_closed](AdPlacement/player-ad-closed.md)  
   This event is triggered when a player closes an ad.
 
-- [player_ad_ended](player-ad-ended.md)  
+- [player_ad_ended](AdPlacement/player-ad-ended.md)  
   This event is triggered when a player finishes an ad.
 
-- [player_ad_opened](player-ad-opened.md)  
+- [player_ad_opened](AdPlacement/player-ad-opened.md)  
   This event is triggered when a player opens an ad.
 
-- [player_ad_rewarded](player-ad-rewarded.md)  
+- [player_ad_rewarded](AdPlacement/player-ad-rewarded.md)  
   This event is triggered when a player recieves an ad reward.
 
-- [player_ad_started](player-ad-started.md)  
+- [player_ad_started](AdPlacement/player-ad-started.md)  
   This event is triggered when a player starts an ad.
 
 ## Addons
@@ -206,16 +206,13 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## General
 
-- [entity_virtual_currency_balances_changed](entity-virtual-currency-balances-changed.md)  
+- [entity_virtual_currency_balances_changed](General/entity-virtual-currency-balances-changed.md)  
   This event is triggered when an entity's virtual currency balance changes.
 
-- [group_deleted](group-deleted.md)  
-  This event is triggered when an entity group is deleted.
-
-- [tenancy_connector_onboard](tenancy-connector-onboard.md)  
+- [tenancy_connector_onboard](General/tenancy-connector-onboard.md)  
   This event is triggered when a tenancy connector is onboarded.
 
-- [studio_tier_updated](studio-tier-updated.md)  
+- [studio_tier_updated](General/studio-tier-updated.md)  
   This event is triggered when a studio tier is updated.
 
 ## Matchmaking
@@ -233,87 +230,87 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## Multiplayer Servers
 
-- [build_alias_created](build-alias-created.md)  
+- [build_alias_created](MultiplayerServers/build-alias-created.md)  
   This event is triggered when a multiplayer server build alias is created.
 
-- [build_alias_deleted](build-alias-deleted.md)  
+- [build_alias_deleted](MultiplayerServers/build-alias-deleted.md)  
   This event is triggered when a multiplayer server build alias is deleted.
 
-- [build_alias_updated](build-alias-updated.md)  
+- [build_alias_updated](MultiplayerServers/build-alias-updated.md)  
   This event is triggered when a multiplayer server build alias is updated.
 
-- [build_deleted](build-deleted.md)  
+- [build_deleted](MultiplayerServers/build-deleted.md)  
   This event is triggered when a multiplayer server build is deleted.  
 
-- [build_region_status_changed](build-region-status-changed.md)  
+- [build_region_status_changed](MultiplayerServers/build-region-status-changed.md)  
   This event is triggered when a multiplayer server's build region status is changed.  
 
-- [build_region_updated](build-region-updated.md)  
+- [build_region_updated](MultiplayerServers/build-region-updated.md)  
   This event is triggered when a multiplayer server build region is updated.
 
-- [build_region_utilization](build-region-utilization.md)  
+- [build_region_utilization](MultiplayerServers/build-region-utilization.md)  
   This event is triggered to display the utilization of servers for a build in each region.
 
-- [certificate_deleted](certificate-deleted.md)  
+- [certificate_deleted](MultiplayerServers/certificate-deleted.md)  
   This event is triggered when a multiplayer server certificate is deleted.
 
-- [certificate_uploaded](certificate-uploaded.md)  
+- [certificate_uploaded](MultiplayerServers/certificate-uploaded.md)  
   This event is triggered when a multiplayer server certificate is uploaded.  
 
-- [crash_detected](crash-detected.md)  
+- [crash_detected](MultiplayerServers/crash-detected.md)  
   This event triggered when a crash dump is found on a terminating server.
 
-- [create_build_initiated](create-build-initiated.md)  
+- [create_build_initiated](MultiplayerServers/create-build-initiated.md)  
   This event is triggered when a multiplayer server build is initiated.
 
-- [enabled_for_title](enabled-for-title.md)  
+- [enabled_for_title](MultiplayerServers/enabled-for-title.md)  
   This event is triggered when a title enables PlayFab servers
 
-- [game_asset_deleted](game-asset-deleted.md)  
+- [game_asset_deleted](MultiplayerServers/game-asset-deleted.md)  
   This event is triggered when a multiplayer server game asset is deleted.  
 
-- [monitoring_output_saved](monitoring-output-saved.md)  
+- [monitoring_output_saved](MultiplayerServers/monitoring-output-saved.md)  
   This event is triggered when the output of a monitoring application has been saved and can be downloaded.
 
-- [secret_added](secret-added.md)  
+- [secret_added](MultiplayerServers/secret-added.md)  
   This event is triggered when a multiplayer server secret is added.
 
-- [secret_deleted](secret-deleted.md)  
+- [secret_deleted](MultiplayerServers/secret-deleted.md)  
   This event is triggered when a multiplayer server secret is deleted.
 
-- [server_requested](server-requested.md)  
+- [server_requested](MultiplayerServers/server-requested.md)  
   This event is triggered when a multiplayer server is requested.    
 
-- [server_state_changed](server-state-changed.md)  
+- [server_state_changed](MultiplayerServers/server-state-changed.md)  
   This event is triggered when a multiplayer server's state is changed.
 
-- [vm_assigned](vm-assigned.md)  
+- [vm_assigned](MultiplayerServers/vm-assigned.md)  
   This event is triggered when a virtual machine is assigned to a multiplayer server build.  
 
-- [vm_game_certificates_deployed](vm-game-certificates-deployed.md)   
+- [vm_game_certificates_deployed](MultiplayerServers/vm-game-certificates-deployed.md)   
   This event is triggered when game certificates are deployed in a game virtual machine.
 
-- [vm_remote_user_created](vm-remote-user-created.md)  
+- [vm_remote_user_created](MultiplayerServers/vm-remote-user-created.md)  
   This event is triggered when a multiplayer server virtual machine remote user is created.
 
-- [vm_remote_user_deleted](vm-remote-user-deleted.md)  
+- [vm_remote_user_deleted](MultiplayerServers/vm-remote-user-deleted.md)  
   This event is triggered when a multiplayer server virtual machine remote user is deleted.  
 
-- [vm_state_change](vm-state-change.md)  
+- [vm_state_change](MultiplayerServers/vm-state-change.md)  
   This event is triggered when a multiplayer virtual machine's state is changed.
 
-- [vm_unassignment_started](vm-unassignment-started.md)  
+- [vm_unassignment_started](MultiplayerServers/vm-unassignment-started.md)  
   This event is triggered when a virtual machine is unassigned from a multiplayer server build.  
 
-- [vm_unhealthy](vm-unhealthy.md)  
+- [vm_unhealthy](MultiplayerServers/vm-unhealthy.md)  
   This event is triggered when a virtual machine is found to be unhealthy.
 
 ## CatalogV1
 
-- [title_catalog_updated](catalogv1/title-catalog-updated.md)  
+- [title_catalog_updated](CatalogV1/title-catalog-updated.md)  
   This event is triggered when a catalog is changed.
 
-- [title_store_updated](catalogv1/title-store-updated.md)  
+- [title_store_updated](CatalogV1/title-store-updated.md)  
   This event is triggered when a store is changed.
 
 ## CatalogV2
@@ -347,93 +344,51 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## Character
 
-- [character_consumed_item](character-consumed-item.md)  
+- [character_consumed_item](Character/character-consumed-item.md)  
   This event is triggered when a character consumes an item from their inventory.  
 
-
-- [character_inventory_item_added](character-inventory-item-added.md)  
+- [character_inventory_item_added](Character/character-inventory-item-added.md)  
   This event is triggered when an item is granted to a character.
 
-- [character_vc_item_purchased](character-vc-item-purchased.md)  
+- [character_vc_item_purchased](Character/character-vc-item-purchased.md)  
   This event is triggered when the character makes a purchase using virtual currency.
 
-- [character_virtual_currency_balance_changed](character-virtual-currency-balance-changed.md)  
+- [character_virtual_currency_balance_changed](Character/character-virtual-currency-balance-changed.md)  
   This event is triggered when a character's virtual currency balance changes.  
 
-## InventoryV1
+## Inventory
 
-- [character_consumed_item](inventoryv1/character-consumed-item.md)  
-  This event is triggered when a character consumes an item from their inventory.  
-
-- [character_inventory_item_added](inventoryv1/character-inventory-item-added.md)  
-  This event is triggered when an item is granted to a character.
-
-- [character_vc_item_purchased](inventoryv1/character-vc-item-purchased.md)  
-  This event is triggered when the character makes a purchase using virtual currency.
-
-- [character_virtual_currency_balance_changed](inventoryv1/character-virtual-currency-balance-changed.md)  
-  This event is triggered when a character's virtual currency balance changes.  
-
-- [player_consumed_item](inventoryv1/player-consumed-item.md)  
-  This event is triggered when a player consumes an item from their inventory.
-
-- [player_inventory_item_added](inventoryv1/player-inventory-item-added.md)  
-  This event is triggered when an item is granted to a player.
-
-- [player_paid_for_purchase](inventoryv1/player-paid-for-purchase.md)  
-  This event is triggered when the second step of the payment process completes, paying for the purchase.
-
-- [player_realmoney_purchase](inventoryv1/player-realmoney-purchase.md)  
-  This event is triggered when a player makes a real money purchase, and generates revenue for the game.
-
-- [player_receipt_validation](inventoryv1/player-receipt-validation.md)  
-  This event is triggered when a player attempts to make a real money purchase and the purchase receipt is being validated.
-
-- [player_redeemed_coupon](inventoryv1/player-redeemed-coupon.md)  
-  This event is triggered when a player redeems a coupon.
-
-- [player_started_purchase](inventoryv1/player-started-purchase.md)  
-  This event is triggered when a player starts a purchase.
-
-- [player_vc_item_purchased](inventoryv1/player-vc-item-purchased.md)  
-  This event is triggered when the player makes a purchase using virtual currency.
-
-- [player_virtual_currency_balance_changed](inventoryv1/player-virtual-currency-balance-changed.md)  
-  This event is triggered when a player's virtual currency balance changes.
-
-## InventoryV2
-
-- [items_added](inventoryv2/items-added.md)  
+- [items_added](Inventory/items-added.md)  
   Event raised when items have been added to an inventory.
 
-- [items_clawback_completed](inventoryv2/items-clawback-completed.md)  
+- [items_clawback_completed](Inventory/items-clawback-completed.md)  
   This event is triggered when an items clawback operation is completed.
 
-- [items_clawback_reversal_completed](inventoryv2/items-clawback-reversal-completed.md)  
+- [items_clawback_reversal_completed](Inventory/items-clawback-reversal-completed.md)  
   This event is triggered when an items clawback reversal operation is completed.
 
-- [items_deleted](inventoryv2/items-deleted.md)  
+- [items_deleted](Inventory/items-deleted.md)  
   Event raised when items have been deleted from an inventory.
 
-- [items_expired](inventoryv2/items-expired.md)  
+- [items_expired](Inventory/items-expired.md)  
   This event is triggered when items have expired in an inventory.
 
-- [items_purchased](inventoryv2/items-purchased.md)  
+- [items_purchased](Inventory/items-purchased.md)  
   Event raised when items have been purchased from an inventory.
 
-- [items_redeemed](inventoryv2/items-redeemed.md)  
+- [items_redeemed](Inventory/items-redeemed.md)  
   Event raised when items have been redeemed to an inventory.
 
-- [items_subtracted](inventoryv2/items-subtracted.md)  
+- [items_subtracted](Inventory/items-subtracted.md)  
   Event raised when items have been subtracted from an inventory.
 
-- [items_transferred](inventoryv2/items-transferred.md)  
+- [items_transferred](Inventory/items-transferred.md)  
   Event raised when items have been transferred to or from an inventory.
 
-- [items_updated](inventoryv2/items-updated.md)  
+- [items_updated](Inventory/items-updated.md)  
   Event raised when items have been updated in an inventory.
 
-- [marketplace_transaction_redeemed](inventoryv2/marketplace-transaction-redeemed.md)  
+- [marketplace_transaction_redeemed](Inventory/marketplace-transaction-redeemed.md)  
   This event is triggered when a marketplace transaction is redeemed.
 
 ## GameSave
@@ -446,50 +401,50 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## Partner
 
-- [display_name_filtered](display-name-filtered.md)  
+- [display_name_filtered](Partner/display-name-filtered.md)  
   This event is triggered when a display name is filtered by community sift.  
 
-- [player_display_name_filtered](player-display-name-filtered.md)  
+- [player_display_name_filtered](Partner/player-display-name-filtered.md)  
   This event is triggered when a display name is filtered by community sift only if there is an associated player EntityId for the event.
 
-- [player_photon_session_authenticated](player-photon-session-authenticated.md)  
+- [player_photon_session_authenticated](Partner/player-photon-session-authenticated.md)  
   This event is triggered when a player connects to a Photon Cloud application and authenticates with PlayFab using Photon custom authentication.
 
 ## Player
-- [player_action_executed](player-action-executed.md)  
+- [player_action_executed](Player/player-action-executed.md)  
   This event is triggered when an action linked to a segmentation change or event rule executes on a player.
 
-- [player_ad_campaign_attribution](player-ad-campaign-attribution.md)  
+- [player_ad_campaign_attribution](Player/player-ad-campaign-attribution.md)  
   This event is triggered by an attribution tracking Add-on when a player is matched to a paid acquisition campaign.
 
-- [player_consumed_item](player-consumed-item.md)  
+- [player_consumed_item](Player/player-consumed-item.md)  
   This event is triggered when a player consumes an item from their inventory.
 
-- [player_inventory_item_added](player-inventory-item-added.md)  
+- [player_inventory_item_added](Player/player-inventory-item-added.md)  
   This event is triggered when an item is granted to a player.
 
-- [player_paid_for_purchase](player-paid-for-purchase.md)  
+- [player_paid_for_purchase](Player/player-paid-for-purchase.md)  
   This event is triggered when the second step of the payment process completes, paying for the purchase.
 
-- [player_realmoney_purchase](player-realmoney-purchase.md)  
+- [player_realmoney_purchase](Player/player-realmoney-purchase.md)  
   This event is triggered when a player makes a real money purchase, and generates revenue for the game.
 
-- [player_receipt_validation](player-receipt-validation.md)  
+- [player_receipt_validation](Player/player-receipt-validation.md)  
   This event is triggered when a player attempts to make a real money purchase and the purchase receipt is being validated.
 
-- [player_redeemed_coupon](player-redeemed-coupon.md)  
+- [player_redeemed_coupon](Player/player-redeemed-coupon.md)  
   This event is triggered when a player redeems a coupon.
 
-- [player_set_profile_property](player-set-profile-property.md)  
+- [player_set_profile_property](Player/player-set-profile-property.md)  
   This event is triggered when PlayFab makes an internal adjustment to a player profile.
 
-- [player_started_purchase](player-started-purchase.md)  
+- [player_started_purchase](Player/player-started-purchase.md)  
   This event is triggered when a player starts a purchase.
 
-- [player_vc_item_purchased](player-vc-item-purchased.md)  
+- [player_vc_item_purchased](Player/player-vc-item-purchased.md)  
   This event is triggered when the player makes a purchase using virtual currency.
 
-- [player_virtual_currency_balance_changed](player-virtual-currency-balance-changed.md)  
+- [player_virtual_currency_balance_changed](Player/player-virtual-currency-balance-changed.md)  
   This event is triggered when a player's virtual currency balance changes.
 
 ## PlayerIdentity
@@ -621,31 +576,25 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## Session
 
-- [client_focus_change](client-focus-change.md)  
+- [client_focus_change](Session/client-focus-change.md)  
   This event is triggered every time the application enters or exits focus on the player's device.
 
-- [client_session_start](client-session-start.md)  
+- [client_session_start](Session/client-session-start.md)  
   This event is triggered when a new client session starts.
 
 ## Title
 
-- [title_catalog_updated](title-catalog-updated.md)  
-  This event is triggered when a catalog is changed.
-
-- [title_client_rate_limited_alert](title-client-rate-limited-alert.md)  
+- [title_client_rate_limited_alert](Title/title-client-rate-limited-alert.md)  
   This event is triggered when a single IP address generates too many API calls to PlayFab and is throttled.
 
-- [title_high_error_rate_alert](title-high-error-rate-alert.md)  
+- [title_high_error_rate_alert](Title/title-high-error-rate-alert.md)  
   This event is triggered when a game title experiences a high rate of errors.
 
-- [title_requested_limit_change](title-requested-limit-change.md)  
+- [title_requested_limit_change](Title/title-requested-limit-change.md)  
   This event is triggered when a title requests a service limit change.
 
-- [title_saved_survey](title-saved-survey.md)  
+- [title_saved_survey](Title/title-saved-survey.md)  
   This event is triggered when a game's survey is saved.
-
-- [title_store_updated](title-store-updated.md)  
-  This event is triggered when a store is changed.
 
 ## TitleData
 
