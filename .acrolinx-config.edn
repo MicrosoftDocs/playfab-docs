@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["main"]
- :allowed-filename-matches ["playfab-docs/features" "playfab-docs/data-analytics" "playfab-docs/playstream" "playfab-docs/gamemanager" "playfab-docs/miscellaneous" "playfab-docs/release-notes" "playfab-docs/resources" "playfab-docs/sdks"]
+ :allowed-filename-matches ["playfab-docs/data-analytics" "playfab-docs/demo-game" "playfab-docs/economy-monetization" "playfab-docs/get-started" "playfab-docs/identity" "playfab-docs/includes" "playfab-docs/live-service-management"  "playfab-docs/media"  "playfab-docs/miscellaneous"  "playfab-docs/multiplayer" "playfab-docs/player-progression"  "playfab-docs/pricing"  "playfab-docs/release-notes"  "playfab-docs/resources"  "playfab-docs/sdks"  "playfab-docs/test-documents"  "playfab-docs/whats-new"]
  
    :targets 
    {
