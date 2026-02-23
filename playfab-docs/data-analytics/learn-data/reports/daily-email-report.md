@@ -25,7 +25,7 @@ Titles are subscribed to the email by default but you'll only receive the email 
 
 To unsubscribe from this list follow these steps:
 
-- Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
+- Sign in to [Game Manager](https://developer.playfab.com).
 - Go to **My Studios and Titles** page and select your game title to display the dashboard.
 - Select the **Settings** icon next to the Title name on the upper left side.
 - Select **Title Settings** tab.

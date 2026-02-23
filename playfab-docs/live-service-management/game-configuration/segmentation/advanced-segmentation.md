@@ -28,7 +28,7 @@ You can create segments with Player Custom properties either via API or Game man
 
 ### Via Game Manager 
 
-- Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
+- Sign in to [Game Manager](https://developer.playfab.com).
 - Go to the **Players** page.
 - Go to the **Segments** tab.
 - [Create or update a segment](segmentation-quickstart.md).

@@ -19,7 +19,7 @@ Get started with PlayFab by using Game Manager to create your PlayFab account, c
 
 ## Create a PlayFab account
 
-On the [PlayFab sign up](https://developer.playfab.com/en-us/sign-up) screen, you can create a PlayFab specific account or use your Microsoft account to sign in.
+On the [PlayFab sign up](https://developer.playfab.com) screen, you can create a PlayFab specific account or use your Microsoft account to sign in.
 
 When you've signed in, PlayFab prompts you enter your contact information and studio information. If you haven't finalized the game studio name, you can change it later.
 

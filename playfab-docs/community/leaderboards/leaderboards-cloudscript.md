@@ -1,5 +1,5 @@
 ---
-title: Leaderboards Using Azure Functions
+title: Leaderboards using Azure Functions
 author: braulioal
 description: Learn how to create and manage leaderboards using Azure Functions in PlayFab.
 ms.author: braulioal
@@ -10,7 +10,7 @@ keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
 
-# Leaderboards Using Azure Functions 
+# Leaderboards using Azure Functions 
 
 In this tutorial, you'll learn how to implement leaderboards using Cloudscript, specifically through [Azure Functions](../../live-service-management/service-gateway/automation/cloudscript-af/index.md). 
 This approach is particularly powerful because it enables you to create custom server-side logic without requiring client updates.
@@ -19,7 +19,7 @@ By defining leaderboard-related logic within an Azure Function, your client can 
 
 ## Prerequisites
 To follow this tutorial you need to have:
-- An Azure PlayFab account, if you don't have one you can create it [here](https://playfab.com/).
+- A PlayFab account, if you don't have one you can create it [here](https://developer.playfab.com/).
 - An Azure subscription, if you don't have one you can create it [here](https://azure.microsoft.com/free/).
 
 For more details on how to create an Azure Function check this guide. [Create your first function in Azure using Visual Studio](https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)

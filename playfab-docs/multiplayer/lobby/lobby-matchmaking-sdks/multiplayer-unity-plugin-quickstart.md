@@ -22,7 +22,7 @@ This quickstart helps you make your first API calls using the PlayFab Multiplaye
 
 ## Requirements
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+- A [PlayFab developer account](https://developer.playfab.com).
 - An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download). Check on Unity support in documentation of your specific platform if needed. The minimum supported Unity version is Unity 2017 LTS.
 - A Unity Project – this can be any of the following:
 

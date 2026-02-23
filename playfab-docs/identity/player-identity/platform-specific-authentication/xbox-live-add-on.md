@@ -20,7 +20,7 @@ In this tutorial, you'll learn how to configure token validation by specifying w
 
 ## Requirements
 
-- A registered [PlayFab](https://playfab.com/) title.
+- A registered [PlayFab](https://developer.playfab.com/) title.
 - [Partner Center](https://partner.microsoft.com/) account with an Xbox Live enabled title.
 
 ## Partner Center Product ID and Xbox Live Title ID

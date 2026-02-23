@@ -17,7 +17,7 @@ This tutorial is designed to guide you through PlayFab authentication using Face
 ## Requirements
 
 - A [Facebook account](https://www.facebook.com/) for testing.
-- A registered [PlayFab](https://playfab.com/) title.
+- A registered [PlayFab](https://developer.playfab.com/) title.
 - A familiarity with [sign-in basics and best practices](../login/login-basics-best-practices.md).
 - A minimal server, with a valid domain name to serve static HTML file.
 

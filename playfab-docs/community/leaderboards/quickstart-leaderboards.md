@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Quickstart leaderboards
 
 In this guide, we're going to see how to set up the development environment for the Leaderboard service. We're also going
-to learn how to create a quick leaderboard from our website [Game Manager](https://developer.playfab.com/en-US/login).
+to learn how to create a quick leaderboard from our website [Game Manager](https://developer.playfab.com).
 
 ## Prerequisites
 
@@ -59,7 +59,7 @@ PlayFabSettings.staticSettings.DeveloperSecretKey = ""; // Change this to your t
 
 ## Creating a title and getting the secret key
 
-- Log in to https://playfab.com/
+- Log in to https://developer.playfab.com/
 - Create a title
     - Find the Title ID in the API Features section under settings.   
 - Generate secret key:

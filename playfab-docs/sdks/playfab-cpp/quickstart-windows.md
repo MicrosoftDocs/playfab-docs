@@ -23,7 +23,7 @@ This quickstart helps you make your first PlayFab API call in the using the Clie
 
 ## Requirements
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).  
+- A [PlayFab developer account](https://developer.playfab.com).  
 - An installation of [Visual Studio](https://visualstudio.microsoft.com/).
 
 ## Windows C++ project setup

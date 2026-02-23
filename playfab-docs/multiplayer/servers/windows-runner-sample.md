@@ -20,14 +20,14 @@ This tutorial lists the steps to get the sample set up ready for use with the Pl
 1. [Configure API feature option](#configure-api-feature-option)
 2. Create a PlayFab Multiplayer Game Server Build: [Server set up](#server-set-up)
 3. [Create servers by deploying a build](#create-servers-by-deploying-a-build)
-4. Request multiplayer servers: [Client set up](#client-set-up). This is needed so you can start a client that connects to the servers
+4. Request multiplayer servers: [Client set up](#client-set-up). This request is needed so you can start a client that connects to the servers
 
 ## Configure API feature option
 
  > [!Note]
 > This step is needed only for running this sample. You do not need to allow clients to start games unless your title requires this set up. 
 
-* Log into your developer account on [PlayFab.com](https://playfab.com) to use the Game Manager portal
+* Log into your developer account on [PlayFab.com](https://developer.playfab.com) to use the Game Manager portal
 * Select your game title
 * Select the settings icon > __API features__ as shown in the image below.
 
@@ -44,16 +44,16 @@ Describes how to get the PlayFab Multiplayer Game Server Build.
 * [PlayFab Game Server SDK](https://github.com/PlayFab/gsdk) of the PlayFab Multiplayer Server Build for the Windows Runner sample. 
 * If you prefer to build this on your own:
     * Get the [Windows Runner C# sample](https://github.com/PlayFab/MpsSamples/tree/master/WindowsRunnerCSharp) using standard Git methods or downloading this as a zip file.
-    * Open the project using Visual Studio 2017 or later. This should automatically trigger dependencies like the latest [PlayFab Game Server SDK (GSDK) nuget package](https://www.nuget.org/packages/com.playfab.csharpgsdk) to be downloaded.
-    * Compile and build the WindowsRunnerCSharp.csproj in release x64 configuration. You would get a game server build that is integrated with the GSDK, making this a valid PlayFab Multiplayer Game Server Build.
-    * Go to the bin folder and zip up all the x64 release binaries. There should be no internal folder structure, the zip file should be a simple flat collection of files, as shown in the image below.
+    * Open the project using Visual Studio 2017 or later. This should automatically trigger dependencies like the latest [PlayFab Game Server SDK (GSDK) NuGet package](https://www.nuget.org/packages/com.playfab.csharpgsdk) to be downloaded.
+    * Compile and build the WindowsRunnerCSharp.csproj in release x64 configuration. You would get a game server build that is integrated with the GSDK, making it a valid PlayFab Multiplayer Game Server Build.
+    * Go to the bin folder and zip up all the x64 release binaries. There should be no internal folder structure. The zip file should be a flat collection of files, as shown in the image below.
 
     ![GSDK Sample Output](media/tutorials/gsdk-sample-output.png)
 
 > [!Tip]
-> To cross-check, you can compare your build output with the compiled version provided in the link above.
+> To cross-check, you can compare your build output with the compiled version provided in the link.
 
-When you have the zip file, you are ready to start [deploying a build](#create-servers-by-deploying-a-build).
+When you have the zip file, you're ready to start [deploying a build](#create-servers-by-deploying-a-build).
 
 ## Create servers by deploying a build
 
@@ -62,7 +62,7 @@ You can deploy a build using one of the following methods.
 * [Use Game Manager to deploy and configure servers](quickstart-for-multiplayer-servers-game-manager.md)
 * [Use PowerShell to deploy and configure servers](quickstart-for-multiplayer-servers-api-powershell.md)
 
-For some settings, it may be easier to configure using the web interface&mdash;Game Manager.
+For some settings, it might be easier to configure using the web interface&mdash;Game Manager.
 
 Next, [set up and run the client](#client-set-up) to connect to the deployed servers.
 
@@ -85,7 +85,7 @@ Describes how to get the Windows Runner client application to connect to the gam
         * Copy the __titleId__ and __buildId__ and paste it somewhere convenient
 
 * Get the [Windows Runner C# sample](https://github.com/PlayFab/MpsSamples/tree/master/WindowsRunnerCSharp) using standard Git methods or downloading this as a zip file. Skip if you have done this earlier.
-* Open the project using Visual Studio 2017 or later. This should automatically trigger dependencies like the latest [Game Server SDK nuget package](https://www.nuget.org/packages/com.playfab.csharpgsdk) to be downloaded.
+* Open the project using Visual Studio 2017 or later. This should automatically trigger dependencies like the latest [Game Server SDK NuGet package](https://www.nuget.org/packages/com.playfab.csharpgsdk) to be downloaded.
 * Compile and build the __WindowsRunnerCSharpClient.csproj__ in release x64 configuration
 * Open Command Prompt and navigate to the output folder of this project
 * Run the WindowsRunnerCSharpClient using this command line, replacing \<TitleId> and \<BuildID> with the values above: __dotnet WindowsRunnerCSharpClient.dll --titleId \<TitleId> --buildId \<BuildId>__

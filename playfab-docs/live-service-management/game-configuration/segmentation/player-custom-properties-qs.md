@@ -19,7 +19,7 @@ To get started using Player Custom Properties, follow the guides here.
 
 ## Creating, modifying, deleting Player Custom Properties in Game Manager 
 
- Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
+ Sign in to [Game Manager](https://developer.playfab.com).
 - Go to the **Players** page and select a player.
 - Select the **Player Data** tab. 
 - Select the **Custom** subtab.
@@ -60,7 +60,7 @@ To modify a custom property:
 > [!NOTE] 
 > V1 and V2 PlayStream events can be used to set or update custom properties.
 
-- Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
+- Sign in to [Game Manager](https://developer.playfab.com).
 - Go to the **Automation** page and select the **Rules** tab.
 - Select the **New rule** button on the top right of the page.
 - Populate the **Name** and **Event** type text boxes. V1 events are prefixed with **com.playfab.** or **title.** whereas v2 events are prefixed with **playfab.** or **custom.**

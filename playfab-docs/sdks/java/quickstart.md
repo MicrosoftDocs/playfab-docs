@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart lets you get up and running with the PlayFab JavaSDK and simple Java program.
 
-Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com). 
 
 The goals for this tutorial are:  
 
@@ -56,7 +56,7 @@ If asked for the **Module**, select the first one in the list. Ensure that all t
 
 ## Project Setup with any IDE
 
-The main requirement is to have JAR files added to the classpath. Please consult the guide for your IDE on how to add JAR files to classpath.
+The main requirement is to have JAR files added to the classpath. Consult the guide for your IDE on how to add JAR files to classpath.
 
 ## Set up your first API call
 
@@ -163,7 +163,7 @@ This optional last section describes every line in `GettingStarted.java` in deta
   - `PlayFabClientModels.LoginWithCustomIDRequest request = new PlayFabClientModels.LoginWithCustomIDRequest();`
     - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
-      - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
+      - For `LoginWithCustomIDRequest`, there's a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
 
     - For login, most developers will want to use a more appropriate login method.
       - See the PlayFab Login documentation for a list of all login methods, and input parameters. Common choices are:
@@ -189,10 +189,10 @@ This optional last section describes every line in `GettingStarted.java` in deta
   - If (`result.Error != null`), the API call has failed.
     - API calls can fail for many reasons, and you should always attempt to handle failure.
     - Why API calls fail (In order of likelihood)
-      - `PlayFabSettings.TitleId` is not set. If you forget to set `TitleId` to your title, then nothing will work.
-      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
+      - `PlayFabSettings.TitleId` isn't set. If you forget to set `TitleId` to your title, then nothing will work.
+      - Request parameters. If you haven't provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
       - Device connectivity issue. Cell phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-      - The internet is not 100% reliable. Sometimes the message is corrupted, or fails to reach the PlayFab server.
+      - The internet isn't 100% reliable. Sometimes the message is corrupted, or fails to reach the PlayFab server.
 
-  - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html).
+  - If you're having difficulty debugging an issue, and the information within the error information isn't sufficient, visit us on our [forums](https://community.playfab.com/index.html).

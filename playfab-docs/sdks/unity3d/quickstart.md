@@ -18,7 +18,7 @@ This quickstart helps you make your first PlayFab API call in the Unity engine.
 
 ## Requirements
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+- A [PlayFab developer account](https://developer.playfab.com).
 - An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity.com/download).
   > [!NOTE]
   > The PlayFab Unity SDK supports Unity Editor version 5.3 (released December 2015) and higher.

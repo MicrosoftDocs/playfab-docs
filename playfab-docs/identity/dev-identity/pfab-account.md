@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Creating a PlayFab account
 
-Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). If you already have a PlayFab account, you can skip this step.
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com). If you already have a PlayFab account, you can skip this step.
 
 ![PlayFab - Create your account](media/playfab-create-new-account.png)
 
-Once you have a PlayFab account, navigate to the PlayFab home page, [https://playfab.com](https://playfab.com), and sign in.
+Once you have a PlayFab account, navigate to the PlayFab home page, [https://developer.playfab.com](https://developer.playfab.com), and sign in.
 
 Since PlayFab doesn't know the name of your game studio or the title of your game, when you create a studio, a placeholder title called **My Game** is created for you. You can edit your title's information in the **Create Title** screen at any time.
 

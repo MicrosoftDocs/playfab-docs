@@ -80,7 +80,7 @@ Catalog Views is a regularly updated storage blob of query results, accessible t
 ### Prerequisites
 
 1. Catalog Views is currently in Private Preview. Send an email to **PFEconomyPreviews@microsoft.com** with the subject **Access to Catalog Views Private Preview** along with your PlayFab Title ID to be able to start using the feature in your environment.
-2. Sign in to [PlayFab portal](https://playfab.com).
+2. Sign in to [PlayFab portal](https://developer.playfab.com).
 3. Navigate to your title.
 
 ### Create a New View

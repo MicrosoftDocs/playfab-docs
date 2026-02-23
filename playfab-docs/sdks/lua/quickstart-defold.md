@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This quickstart assists you in making your first PlayFab API call using Defold.
 
-Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com). 
 
 ## Defold project setup
 
@@ -22,7 +22,7 @@ OS: This guide is written for Windows 10.  It should also work well with a Mac.
 
 1. Create an account and download defold, or log in at [https://www.defold.com/](https://www.defold.com/) (Uses Google O-Auth): [https://d.defold.com/stable/](https://d.defold.com/stable/).
 
-2. If you have not completed the Defold "Getting Started Tutorial", you should do that now.
+2. If you haven't completed the Defold "Getting Started Tutorial", you should do that now.
 
 3. Create a new project on the Defold Dashboard, as shown below.
 
@@ -46,19 +46,19 @@ OS: This guide is written for Windows 10.  It should also work well with a Mac.
 
     - **main/PfGettingStarted.gui**
 
-    - Right-click the  "main" folder -> **new** -> **Gui File** -> **PfGettingStarted.gui**.
+    - Select the  "main" folder -> **new** -> **Gui File** -> **PfGettingStarted.gui**.
 
     - **main/PfGettingStarted.gui_script**
 
-    - Right-click "main" folder -> **new** -> **Gui Script File** -> **PfGettingStarted.gui_script**.
+    - Select "main" folder -> **new** -> **Gui Script File** -> **PfGettingStarted.gui_script**.
 
 8. Hook up our new GUI in the main.collection.
 
-   - Double-click main.collection to open it.  
+   - Select main.collection to open it.  
 
    - In the Outline panel:
-      - Right-click **Add Game Object** (Optionally rename to **PfGui**).
-        - Right-Click the new object, **Add Component From File...**
+      - Select **Add Game Object** (Optionally rename to **PfGui**).
+        - Select the new object, **Add Component From File...**
           - PfGettingStarted.gui (Created above).
 
    - The Outline panel viewing main.collection should look like the example shown below.
@@ -205,7 +205,7 @@ max_nodes: 512
 
 ## Finish and execute
 
-First, make sure everything is saved and select another tab.  Then look for " * " markers - sometimes Defold doesn't refresh.
+First, make sure everything is saved and select another tab. Then look for " * " markers - sometimes Defold doesn't refresh.
 
 Then, build your game (Ctrl+b or dropdowns: **Project** -> **Build and Launch**). You should see the following text on your screen:
 
@@ -219,14 +219,14 @@ Happy coding!
 
 - `PfGettingStarted.gui`
   - Our instructions for `PfGettingStarted.gui` are for expediency, not instruction. This file is a GUI definition, which adds a text box to the screen, binds it to our other script: `PfGettingStarted.gui_script`. You would NOT typically edit these files in text-form.
-  - For proper instructions on how to build Defold GUI widgets, please read this guide:
+  - For proper instructions on how to build Defold GUI widgets, read this guide:
   - [GUI scenes in Defold](https://www.defold.com/manuals/gui/)
 
 - `PfGettingStarted.gui_script`
   - Require statements and setup.
     - `PlayFabClientApi` allows you to make Client API calls - This is why you're here.
     - IPlayFabHttps and PlayFabHttps_Defold:
-      - The PlayFab Defold plugins are built on the PlayFab LuaSdk. The Lua language does not have a proper HTTPS module. Each game-engine that uses Lua implements their own. These two variables tell PlayFabSdk how to access HTTPS. You only need to do this once in your project, in the first scene. Otherwise it's just required boilerplate
+      - The PlayFab Defold plugins are built on the PlayFab LuaSdk. The Lua language doesn't have a proper HTTPS module. Each game-engine that uses Lua implements their own. These two variables tell PlayFabSdk how to access HTTPS. You only need to do this once in your project, in the first scene. Otherwise it's required boilerplate
 
   - `PlayFabClientApi.settings.titleId = "144"`
     - Every project using PlayFab should create a unique title in the PlayFab website, which we call Game Manager. Find your `titleId` in Game Manager, and replace `144` with your `titleId`.
@@ -237,7 +237,7 @@ Happy coding!
   - `local loginRequest = { TitleId = PlayFabClientApi.settings.titleId, CustomId = "GettingStartedGuide", CreateAccount = true }`
     - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters
-      - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
+      - For `LoginWithCustomIDRequest`, there's a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
     - For login, most developers will want to use a more appropriate login method
       - See the [PlayFab Login documentation](xref:titleid.playfabapi.com.client.authentication) for a list of all login methods, and input parameters. Common choices are:
         - [LoginWithAndroidDeviceID](xref:titleid.playfabapi.com.client.authentication.loginwithandroiddeviceid)
@@ -254,14 +254,14 @@ Happy coding!
   - `function OnLoginFailed(error)`
     - API calls can fail for many reasons, and you should always attempt to handle failure.
     - Why API calls fail (In order of likelihood)
-      - PlayFabSettings.TitleId is not set. If you forget to set titleId to your title, then nothing will work.
+      - PlayFabSettings.TitleId isn't set. If you forget to set titleId to your title, then nothing will work.
 
-      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
+      - Request parameters. If you haven't provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-      - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+      - The internet isn't 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
-    - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html)
+    - If you're having difficulty debugging an issue, and the information within the error information isn't sufficient, visit us on our [forums](https://community.playfab.com/index.html)
 
   - `local pfTestOutput = gui.get_node("pfOutput")`
     - This is another Defold GUI function. It fetches the `pfOutput` GUI object defined in our PfGettingStarted.gui file, and assigns it text to display to the user.

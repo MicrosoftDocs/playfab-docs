@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 
 This quickstart assists you in making your first PlayFab API call in the Corona engine.
 
-Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). 
+Before you can call any PlayFab API, you must have a [PlayFab developer account](https://developer.playfab.com). 
 
 ## Corona Project Setup
 
-OS: This quickstart is written for Windows 10.  However, it should also work well with a Mac.
+OS: This quickstart is written for Windows. However, it should also work well with a Mac.
 
 1. Download and install Corona:  [https://coronalabs.com/](https://coronalabs.com/).
 
@@ -100,7 +100,7 @@ This optional last section describes each part of our example above, line-by-lin
   - `local loginRequest = { CustomId = "GettingStartedGuide", CreateAccount = true }`
     - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters
-      - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
+      - For `LoginWithCustomIDRequest`, there's a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call.
   - `PlayFabClientApi.LoginWithCustomID(loginRequest, {OnLoginSuccess-function}, {OnLoginError-function})`
     - This begins the async request to `LoginWithCustomID`, which will call the first (`OnLoginSuccess`) callback if successful, or the second (`OnLoginError`) function for failures.
   - For login, most developers will want to use a more appropriate login method.
@@ -114,9 +114,9 @@ This optional last section describes each part of our example above, line-by-lin
     - `OnLoginError` is any function which accepts a single parameter (error).
       - API calls can fail for many reasons, and you should always attempt to handle failure.
       - Why API calls fail (In order of likelihood):
-        - `PlayFabSettings.TitleId` is not set. If you forget to set `titleId` to your title, then nothing will work.
-        - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
+        - `PlayFabSettings.TitleId` isn't set. If you forget to set `titleId` to your title, then nothing will work.
+        - Request parameters. If you haven't provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
         - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
         - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-        - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
-      - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html).
+        - The internet isn't 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+      - If you're having difficulty debugging an issue, and the information within the error information isn't sufficient, visit us on our [forums](https://community.playfab.com/index.html).

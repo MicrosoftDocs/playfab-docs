@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # How to activate or deactivate Telemetry Keys in Game Manager
 
-- Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
+- Sign in to [Game Manager](https://developer.playfab.com).
 - Go to **My Studios and Titles** page and select your game title to display the dashboard.
 - Select **Data** from the menu on the left.
 - Select the **Telemetry Keys** tab.
@@ -25,11 +25,11 @@ To **deactivate** a Telemetry Key:
 - Expand the **three-dot menu** at the top right corner of the Telemetry Key. 
 - Select the **Deactivate** action.
 - Select the **Deactivate** button to confirm.
-- Once the Telemetry Key has been deactivated you will notice the status will change to Deactivated.
+- Once the Telemetry Key has been deactivated you'll notice the status changes to Deactivated.
 
 To **activate** a Telemetry Key:
 
 - Expand the **three-dot** menu at the top right corner of the Telemetry Key. 
 - Select the **Activate** action.
 - Select the **Activate** button to confirm. 
-The status will change to **Active**.
+The status changes to **Active**.

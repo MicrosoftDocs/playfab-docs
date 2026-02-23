@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 To query the data in basic mode:
 
-1. Log in to the [PlayFab Game Manager](https://developer.playfab.com/en-us/login).
+1. Log in to the [PlayFab Game Manager](https://developer.playfab.com).
 2. Select your Title.
 3. In the left navigation column, select **Data**.
 4. Select the **Data Explorer (basic)** tab at the top of the page. 
@@ -30,7 +30,7 @@ To learn how to author custom Basic queries, see the [Getting Started with Data 
 
 To query the data in advanced mode
 
-1. Log in to the [PlayFab Game Manager](https://developer.playfab.com/en-us/login).
+1. Log in to the [PlayFab Game Manager](https://developer.playfab.com).
 2. Select your Title.
 3. In the left navigation column, select **Data**.
 4. Select the **Data Explorer (advanced)** tab at the top of the page. 

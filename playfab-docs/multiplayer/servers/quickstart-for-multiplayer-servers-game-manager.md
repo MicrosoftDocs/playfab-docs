@@ -28,7 +28,7 @@ Make sure you've completed the following steps.
 
 ## Steps
 
-1. Log into your developer account on [PlayFab.com](https://playfab.com)
+1. Log into your developer account on [PlayFab.com](https://developer.playfab.com)
 2. Go to **My Studios and Titles** page and select your game title to display the dashboard
 3. Go to **Multiplayer** > **Servers** page, select **New Build** at the top right to create a new build
 4. Use "My build" as the Build Name

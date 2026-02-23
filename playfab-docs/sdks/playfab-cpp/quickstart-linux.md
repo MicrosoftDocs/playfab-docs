@@ -22,7 +22,7 @@ This quickstart was written using Ubuntu 18.04 LTS.
 
 ## Requirements
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).  
+- A [PlayFab developer account](https://developer.playfab.com).  
 
 ## Linux C++ Project Setup
 

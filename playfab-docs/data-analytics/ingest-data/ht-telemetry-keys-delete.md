@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 # How to delete Telemetry Keys in Game Manager
 
 > [!WARNING]
-> Deleting a Telemetry Key is not reversible. Please be aware that even if you create another key with the same name, the new key will be different from the original one that was deleted.
+> Deleting a Telemetry Key isn't reversible. Even if you create another key with the same name, the new key will be different from the original one that was deleted.
 
-- Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
+- Sign in to [Game Manager](https://developer.playfab.com).
 - Go to **My Studios and Titles** page and select your game title to display the dashboard.
 - Select **Data** from the menu on the left.
 - Select the **Telemetry Keys** tab.

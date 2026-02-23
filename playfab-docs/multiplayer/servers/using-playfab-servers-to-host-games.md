@@ -20,7 +20,7 @@ As part of configuration process, you would upload a game server build that woul
 
 ## What you need
 
-* Developer account on [PlayFab.com](https://playfab.com)
+* Developer account on [PlayFab.com](https://developer.playfab.com)
 * [Enable PlayFab Multiplayer Servers feature](enable-playfab-multiplayer-servers.md)
 * Your server-client game source code
 

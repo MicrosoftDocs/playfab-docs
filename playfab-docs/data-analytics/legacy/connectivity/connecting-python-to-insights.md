@@ -25,7 +25,7 @@ You need a PlayFab account or user for which the authentication provider is set 
 
 To verify that the account, or user, is set to use the Microsoft authentication provider:
 
-* Visit the PlayFab [log in page](https://developer.playfab.com/en-us/login).
+* Visit the PlayFab [log in page](https://developer.playfab.com).
 * Select **Sign in with Microsoft** to access your PlayFab account.
 
 If you can sign in, then the account is set to use the Microsoft authentication provider.
