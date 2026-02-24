@@ -18,7 +18,7 @@ ETags provide optimistic concurrency control for the PlayFab Inventory APIs. The
 
 ## How Inventory ETags work
 
-Inventory read APIs such as `GetInventoryItems` return an `ETag` in the response body. This value represents the current version of the player's inventory collection. You can pass this value in subsequent write requests to ensure your changes don't conflict with other updates that may have occurred since you last read the inventory.
+Inventory read APIs such as `GetInventoryItems` return an `ETag` in the response body. This value represents the current version of the player's inventory collection. You can pass this value in subsequent write requests to ensure your changes don't conflict with other updates that might have occurred since you last read the inventory.
 
 ### Example `GetInventoryItems` response with ETag
 
@@ -44,8 +44,8 @@ Inventory read APIs such as `GetInventoryItems` return an `ETag` in the response
 
 Inventory write APIs support ETags through the following HTTP headers:
 
-- **`X-PlayFab-Economy-If-Match`** — Pass a previously received `ETag` value. The request succeeds only if the inventory's current ETag matches. Use this when you need to guarantee that no other write has occurred since you last read the inventory.
-- **`X-PlayFab-Economy-If-None-Match`** — Pass `*` as the value. The request succeeds only if the item does not already exist in the inventory. Useful for "create-only" scenarios.
+- **`X-PlayFab-Economy-If-Match`**—Pass a previously received `ETag` value. The request succeeds only if the inventory's current ETag matches. Use this check when you need to guarantee that no other write has occurred since you last read the inventory.
+- **`X-PlayFab-Economy-If-None-Match`**—Pass `*` as the value. The request succeeds only if the item doesn't already exist in the inventory. Useful for "create-only" scenarios.
 
 ## Supported APIs
 

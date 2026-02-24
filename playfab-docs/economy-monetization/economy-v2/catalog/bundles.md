@@ -18,7 +18,7 @@ Bundles allow you to group multiple items together into a single item. You can c
 
 ## Creating a Bundle
 
-To create a bundle, you must first make sure you have published Catalog Items, Currency, or UGC that you want to be accessible/purchaseable in your game. You can follow the steps in the [Economy V2 Quickstart](../quickstart.md#step-3---publish-an-item-to-the-catalog)
+To create a bundle, you must first make sure you have published Catalog Items, Currency, or user-generated content (UGC) that you want to be accessible/purchaseable in your game. You can follow the steps in the [Economy V2 Quickstart](../quickstart.md#step-3---publish-an-item-to-the-catalog)
 
 ### [GameManager](#tab/creating-bundle-game-manager)
 
@@ -93,7 +93,7 @@ Response:
 
 ## Purchasing and Unpacking Bundles
 
-When a player purchases a bundle, the bundle is **automatically unpacked** — the individual items referenced in the bundle are granted directly to the player's inventory. The bundle itself does not appear as an inventory item. For more details on how bundles interact with inventory, see [Bundles in Inventory](../inventory/index.md#bundles).
+When a player purchases a bundle, the bundle is **automatically unpacked—the individual items referenced in the bundle are granted directly to the player's inventory. The bundle itself doesn't appear as an inventory item. For more details on how bundles interact with inventory, see [Bundles in Inventory](../inventory/index.md#bundles).
 
 Bundles are also the primary mechanism for linking real-money marketplace products to in-game items. Each bundle can be linked to one or more marketplace products using `AlternateIds`. For more information, see [Fraud Prevention Quickstart](../fraud-prevention/quickstart.md).
 
