@@ -3,7 +3,7 @@ title: title_data_override_deleted
 author: ronnyparedes
 description: title_data_override_deleted event.
 ms.author: ronnyparedes
-ms.date: 12/02/2026
+ms.date: 02/12/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events

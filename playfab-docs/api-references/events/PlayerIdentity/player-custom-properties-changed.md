@@ -3,7 +3,7 @@ title: player_custom_properties_changed
 author: ronnyparedes
 description: player_custom_properties_changed event.
 ms.author: ronnyparedes
-ms.date: 12/02/2026
+ms.date: 02/12/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events

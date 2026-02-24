@@ -3,7 +3,7 @@ title: cloudscript_executed
 author: ronnyparedes
 description: cloudscript_executed event.
 ms.author: ronnyparedes
-ms.date: 06/02/2026
+ms.date: 02/06/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events
