@@ -18,7 +18,7 @@ This event is optionally triggered when a CloudScript function is executed, eith
 
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
-|CloudScriptExecutionResult|[ExecuteCloudScriptResult](../data-types/executecloudscriptresult.md)|Result of the CloudScript function, including diagnostic information that is useful for debugging.|
+|CloudScriptExecutionResult|[ExecuteCloudScriptResult](../data-types/executecloudscriptresult.md)|Result of the CloudScript function, including diagnostic information that's useful for debugging.|
 |FunctionName|String|Name of the CloudScript function that was called.|
 |TitleId|String|The ID of the title to which this player event applies.|
 

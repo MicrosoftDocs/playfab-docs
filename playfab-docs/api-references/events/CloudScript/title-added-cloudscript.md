@@ -21,7 +21,7 @@ This event is triggered when new CloudScript is uploaded to PlayFab.
 |DeveloperId|String||
 |Published|Boolean|Whether the CloudScript that was uploaded is live.|
 |Revision|int32|Revision number of the CloudScript file that was added.|
-|ScriptNames|[]|Names of the individual script files modified. Currently this is just 'CloudScript.js' but later we will support multiple files.|
+|ScriptNames|[]|Names of the individual script files modified. Currently this is just 'CloudScript.js' but later we'll support multiple files.|
 |UserId|String||
 |Version|int32|Version number of the CloudScript file that was added.|
 

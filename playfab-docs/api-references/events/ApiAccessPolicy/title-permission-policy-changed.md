@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # title_permission_policy_changed
 
-This event is triggered when an update occurs to a a title's permission policies.
+This event is triggered when an update occurs to a title's permission policies.
 
 ## Properties
 
