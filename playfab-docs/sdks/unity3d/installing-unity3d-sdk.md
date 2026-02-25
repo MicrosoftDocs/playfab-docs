@@ -22,7 +22,7 @@ You have two options when installing the PlayFab Unity 3D SDK:
 
 - Install the PlayFab Unity 3D SDK directly without using PlayFab Unity Editor Extensions. When you use this installation method, you configure your Unity Project directly by setting the property values in your code.
 
-This content assumes you that you have a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up) and an existing Unity Project.
+This content assumes you that you have a [PlayFab developer account](https://developer.playfab.com) and an existing Unity Project.
 
 ## Download and install the SDK only
 

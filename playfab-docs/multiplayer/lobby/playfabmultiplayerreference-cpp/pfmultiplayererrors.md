@@ -5,7 +5,7 @@ description: "Error codes used by the PlayFab Multiplayer, Lobby, and Matchmakin
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 01/23/2026
+ms.date: 02/13/2026
 ---
 
 # PlayFab Multiplayer C++ SDK Error Codes
@@ -170,6 +170,11 @@ For additional guidance on handling these errors, check out [Handling Lobby and 
 | 0x89236620 | -1994168800 | The PubSub service failed to deliver a subscription confirmation within a reasonable timeout. |
 | 0x89236621 | -1994168799 | The PubSub service failed due to lack of authentication credentials to a specific resource. |
 | 0x89236622 | -1994168798 | Failed to access PubSub services; check credentials. |
+| 0x89236623 | -1994168797 | The provided PlayFab title does not have PubSub services enabled. |
+| 0x89236624 | -1994168796 | The PubSub service is throttling the client due to exceeding the rate limit. |
+| 0x89236625 | -1994168795 | The PubSub service could not complete the request because a connection for the specified entity was not found. |
+| 0x89236626 | -1994168794 | PlayFab services rejected our PubSub connection handle as invalid. |
+| 0x89236627 | -1994168793 | The entity has exceeded their limit of concurrent PubSub subscriptions. |
 
 ## Global HRESULT error codes
 

@@ -22,7 +22,7 @@ A native Python project can be used a few ways:
 
 ## Prerequisites
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+- A [PlayFab developer account](https://developer.playfab.com).
 - [Python 3](https://www.python.org/downloads/) installed on your system.
   - You must also have the requests module installed.
 
@@ -31,7 +31,7 @@ A native Python project can be used a few ways:
 >
 
   
-If you are having difficulty debugging an issue, and the information provided the error information is not sufficient, please visit us on our [PlayFab forums](https://community.playfab.com/index.html).
+If you're having difficulty debugging an issue, and the information provided the error information isn't sufficient, visit us on our [PlayFab forums](https://community.playfab.com/index.html).
 
 ## Python project setup
 
@@ -41,7 +41,7 @@ If you are having difficulty debugging an issue, and the information provided th
 pip install playfab
 ```
 
-If `pip` is not in your path, use the following command instead.
+If `pip` isn't in your path, use the following command instead.
 
 ```cmd
 python -m pip install playfab
@@ -118,11 +118,11 @@ This optional last section describes each part of playfab_test.py in detail.
     - If the API call wasn't successful, failure will contain some error information and success will be `None`.
     - API calls can fail for many reasons, and you should always attempt to handle the failure.
     - Why API calls fail (In order of likelihood)
-      - `PlayFabSettings.TitleId` is not set. If you forget to set `titleId` to your title, then nothing will work.
-      - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail.
+      - `PlayFabSettings.TitleId` isn't set. If you forget to set `titleId` to your title, then nothing will work.
+      - Request parameters. If you haven't provided the correct or required information for a particular API call, then it will fail.
       - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
       - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-      - The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+      - The internet isn't 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
 
 - `PlayFabClientAPI.LoginWithCustomID`
   - Triggers the API call synchronously. When complete, the callback will be invoked.

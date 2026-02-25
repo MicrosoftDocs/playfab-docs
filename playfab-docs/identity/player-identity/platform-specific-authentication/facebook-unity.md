@@ -19,7 +19,7 @@ This tutorial guides you through an example of PlayFab authentication using Face
 - [Unity 5+](https://unity3d.com/) and a created project.
 - [Facebook account](https://www.facebook.com/) for testing.
 - [Facebook SDK](https://developers.facebook.com/docs/unity/) imported into the project.
-- Registered [PlayFab](https://playfab.com/) title.
+- Registered [PlayFab](https://developer.playfab.com/) title.
 - [PlayFab SDK](https://aka.ms/playfabunitysdkdownload) imported into the project with a configured title reference.
 - Familiarity with [Login basics and Best Practices](../login/login-basics-best-practices.md).
 
@@ -45,10 +45,10 @@ A new **Application** pop-up will open.
 ![Facebook new app ID](media/tutorials/facebook-new-app-id.png)  
 
 1. Navigate to the **Settings** tab.
-2. Then move to the **Basic** sub-tab.
+2. Then move to the **Basic** subtab.
 3. Locate your **Application ID**.
     - Copy it somewhere to a safe place that is easily accessed.
-We will use it later to set up the Facebook SDK.
+We'll use it later to set up the Facebook SDK.
 
 ![Facebook save app ID](media/tutorials/facebook-save-app-id.png)  
 
@@ -58,7 +58,7 @@ We will use it later to set up the Facebook SDK.
 2. Verify that it has an assigned **User Token**.
 
 > [!NOTE]
-> If you *do not* have an assigned user token, request one using the button to the right of your screen. Refer to this page whenever you need a fresh user token. If authorization fails during testing on a PC, token expiration may be the most likely reason. Refresh the page to get a new user token and test again.
+> If you *don't* have an assigned user token, request one using the button to the right of your screen. Refer to this page whenever you need a fresh user token. If authorization fails during testing on a PC, token expiration might be the most likely reason. Refresh the page to get a new user token and test again.
 
 ![Facebook Access Token Tool](media/tutorials/facebook-unity/access-token-tool.png)  
 
@@ -203,17 +203,17 @@ public class PlayfabFacebookAuthExample : MonoBehaviour
 
 ### Running the application on Android
 
-Before launching the application on Android, you are required to perform additional configuration steps:
+Before launching the application on Android, you're required to perform additional configuration steps:
 
 - First, you need to ensure you have the Android platform selected, and the unique **Package ID** set (as indicated in the example below.
 
 > [!NOTE]
-> Please make sure to create your own *unique* **Package ID**.
+> Make sure to create your own *unique* **Package ID**.
 
 ![Set Android package ID](media/tutorials/facebook-unity/set-android-package-id.png)  
 
 > [!TIP]
-> **Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the **PATH** environment variable. If it is missing, Unity will produce a harmless error during the build. This error does *not* stop the build, or effect the execution.
+> **Optional step**:  Install [Open SSL](https://wiki.openssl.org/index.php/Binaries) and add it to the **PATH** environment variable. If it's missing, Unity will produce a harmless error during the build. This error doesn't* stop the build, or effect the execution.
 
 Next, in your **Facebook Application** console:
 
@@ -247,7 +247,7 @@ Before launching the Application on iOS, you have to perform additional configur
 
 - First, ensure that you have the **iOS** platform selected.
 - Then, set a unique **Bundle ID** as indicated in the example provided below.
-- Please make sure to create your own *unique* **Package ID**.
+- Make sure to create your own *unique* **Package ID**.
 
 ![Set iOS bundle ID](media/tutorials/facebook-unity/set-ios-bundle-id.png)
 
@@ -303,4 +303,4 @@ Open your PlayFab title in Game Manager.
 
 ![PlayStream Debugger Facebook authentication event](media/tutorials/facebook-unity/playfab-facebook-auth-event.png)
 
-At this point you have successfully integrated Facebook Authentication for PlayFab.
+At this point, you have successfully integrated Facebook Authentication for PlayFab.

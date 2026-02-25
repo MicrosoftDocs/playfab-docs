@@ -44,6 +44,16 @@ void CALLBACK TraceCallback(
 HCTraceSetClientCallback(TraceCallback);
 ```
 
+## Write traces to a file
+
+To write PlayFab trace output to a log file on disk, call [**PFTraceEnableTraceToFile**](../../api-references/c/pftrace/functions/pftraceenabletracetofile.md) with the directory where the trace file should be created. Call this function after initialization.
+
+```cpp
+PFTraceEnableTraceToFile("C:\\GameLogs\\PlayFabTraces");
+```
+
+This function is independent of the HCTrace functions above. You can use file tracing alongside debugger output and client callbacks.
+
 ## Reference
 
 [PlayFab API reference documentation](../../api-references/c/pftrace/pftrace_members.md)

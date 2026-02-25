@@ -41,3 +41,5 @@ items:
       href: ht-telemetry-keys-delete.md
     - name: Activate or Deactivate Telemetry Keys
       href: ht-activate-deactivate-telemetry-keys.md
+    - name: Enable or Disable Service Generated Events
+      href: opt-in-events.md

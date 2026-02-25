@@ -108,7 +108,7 @@ Open Game Manager, and confirm that the purchase was made at the store price of 
 3. Check the following information for the player:
    * Open the **Inventory** tab. The inventory should now contain a **pear**.
    * Open the **Virtual Currency** tab. Check the virtual currency **Amount** to verify that the player only spent 2 GD.
-   * Open the **PlayStream** tab. You'll see events showing the purchase flow from the store. Events include a [Player virtual currency item purchased](../../../api-references/events/player-vc-item-purchased.md) event, and a [Player virtual currency balance changed](../../../api-references/events/player-virtual-currency-balance-changed.md) event showing that the virtual currency balance changed by two GD.
+   * Open the **PlayStream** tab. You'll see events showing the purchase flow from the store. Events include a [Player virtual currency item purchased](../../../api-references/events/Player/player-vc-item-purchased.md) event, and a [Player virtual currency balance changed](../../../api-references/events/Player/player-virtual-currency-balance-changed.md) event showing that the virtual currency balance changed by two GD.
 
 > [!TIP]
 > You can use the Game Manager to change the order of items in your store and adjust prices at any time.

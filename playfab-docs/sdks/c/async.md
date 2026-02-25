@@ -16,7 +16,7 @@ An asynchronous API is an API that returns quickly but starts an asynchronous ta
 
 Traditionally, games have had little control over which thread executes the asynchronous task and which thread returns the results when using a completion callback. Some games are designed so that a section of the heap is only touched by a single thread to avoid any need for thread synchronization. If the completion callback isn't called from a thread the game controls, updating shared state with the result of an asynchronous task requires thread synchronization.
 
-The PlayFab Services SDK exposes an asynchronous C API that gives developers direct thread control when making an asynchronous API call, such as **PFAuthenticationLoginWithCustomIDAsync**, **PFDataGetFilesAsync**, or **PFProfilesGetProfileAsync**.
+The PlayFab Services SDK exposes an asynchronous C API that gives developers direct thread control when making an asynchronous API call, such as [**PFAuthenticationLoginWithCustomIDAsync**](../../api-references/c/pfauthentication/functions/pfauthenticationloginwithcustomidasync.md), [**PFDataGetFilesAsync**](../../api-references/c/pfdata/functions/pfdatagetfilesasync.md), or [**PFProfilesGetProfileAsync**](../../api-references/c/pfprofiles/functions/pfprofilesgetprofileasync.md).
 
 Here's a basic example calling **PFProfilesGetProfileAsync**:
 
@@ -104,7 +104,7 @@ Once the asynchronous task is complete, you can get the results.
 
 To get the result, most asynchronous API functions have a corresponding Result function to receive the result of the asynchronous call.
 
-In our example code, **PFProfilesGetProfileAsync** has a corresponding **PFProfilesGetProfileGetResult** function. You can use this function to retrieve the result of the function and act accordingly.
+In our example code, **PFProfilesGetProfileAsync** has a corresponding [**PFProfilesGetProfileGetResult**](../../api-references/c/pfprofiles/functions/pfprofilesgetprofilegetresult.md) function. You can use this function to retrieve the result of the function and act accordingly.
 
 For full details on retrieving results, see the documentation of each asynchronous API function.
 

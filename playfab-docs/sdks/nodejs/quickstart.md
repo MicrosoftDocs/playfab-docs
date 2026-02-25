@@ -18,7 +18,7 @@ Get started with the PlayFab client library for NodeJS to make your first PlayFa
 
 ## Prerequisites
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up). For information about creating a Title and finding TitleId, see [Game Manager QuickStart](../../live-service-management/gamemanager/quickstart.md).
+- A [PlayFab developer account](https://developer.playfab.com). For information about creating a Title and finding TitleId, see [Game Manager QuickStart](../../live-service-management/gamemanager/quickstart.md).
 - [Node.js](https://nodejs.org/en/download/)
 - Node must be in your PATH environment variable. If you used the installer, it's probably set for you to the default location: C:/Program Files (x86)/nodejs/
 
@@ -26,7 +26,7 @@ Get started with the PlayFab client library for NodeJS to make your first PlayFa
 
 ## Setting up
 
-The following commands work on Windows, MacOS, and Linux.
+The following commands work on Windows, macOS, and Linux.
 
 1. Create a new folder for your project {NodeProjLocation}:
 
@@ -38,7 +38,7 @@ The following commands work on Windows, MacOS, and Linux.
 
    `npm install playfab-sdk --save`
 
-   (Keep this window open (we'll use it again later.)
+   (Keep this window open (you'll use it again later.)
 
 PlayFab installation complete!
 
@@ -128,7 +128,7 @@ For the Node SDK, the functions in `PlayFabClientSDK` are named after the HTTP r
   - `var loginRequest = { TitleId: PlayFab.settings.titleId, CustomId: "GettingStartedGuide", CreateAccount: true };`
     - Most PlayFab API methods require input parameters, and those input parameters are packed into a request object.
     - Every API method requires a unique request object, with a mix of optional and mandatory parameters.
-      - For `LoginWithCustomIDRequest`, there is a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call. `TitleId` is another mandatory parameter in JavaScript, and it must match `PlayFab.settings.titleId`.
+      - For `LoginWithCustomIDRequest`, there's a mandatory parameter of `CustomId`, which uniquely identifies a player and `CreateAccount`, which allows the creation of a new account with this call. `TitleId` is another mandatory parameter in JavaScript, and it must match `PlayFab.settings.titleId`.
       - For information about where to find `TitleId`, see [Game Manager QuickStart](../../live-service-management/gamemanager/quickstart.md).
 - In this case, `TitleId`,  `customId`, and `CreateAccount` are from the Request Body of `LoginWithCustomID`.
   - `PlayFabClientSDK.LoginWithCustomID(loginRequest, LoginCallback);`
@@ -142,7 +142,7 @@ For the Node SDK, the functions in `PlayFabClientSDK` are named after the HTTP r
 - `LoginCallback` contains two parameters: `error` and `result`.
   - When successful, `error` will be `null`, and the `result` object will contain the requested information, according to the API called.
     - This `result` contains some basic information about the player, but for most users, login is simply a mandatory step before calling other APIs.
-- If error is not `null`, your API has failed.
+- If error isn't `null`, your API has failed.
 
 
 
@@ -151,13 +151,13 @@ For the Node SDK, the functions in `PlayFabClientSDK` are named after the HTTP r
 - API calls can fail for many reasons, and you should always attempt to handle failure.
 - The error object includes the error name, error code, and error message. Together, this information should be sufficient to diagnose your error.
 - Why API calls fail (In order of likelihood):
-  - `PlayFabSettings.TitleId` is not set. If you forget to set `TitleId` to your title, then nothing will work.
-  - Request parameters. If you have not provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
+  - `PlayFabSettings.TitleId` isn't set. If you forget to set `TitleId` to your title, then nothing will work.
+  - Request parameters. If you haven't provided the correct or required information for a particular API call, then it will fail. See `error.errorMessage`, `error.errorDetails`, or `error.GenerateErrorReport()` for more info.
   - Device connectivity issue. Cell-phones lose/regain connectivity constantly, and so any API call at any time can fail randomly, and then work immediately after. Going into a tunnel can disconnect you completely.
   - PlayFab server issue. As with all software, there can be issues. See our [release notes](../../release-notes/index.md) for updates.
-- The internet is not 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
+- The internet isn't 100% reliable. Sometimes the message is corrupted or fails to reach the PlayFab server.
   - Global API Method Error Codes can be found in [Global API Method Error Codes](../../api-references/global-api-method-error-codes.md).
-  - If you are having difficulty debugging an issue, and the information within the error information is not sufficient, please visit us on our [forums](https://community.playfab.com/index.html).
+  - If you're having difficulty debugging an issue, and the information within the error information isn't sufficient, visit us on our [forums](https://community.playfab.com/index.html).
 
 
 

@@ -26,7 +26,7 @@ For a deeper understanding, consult the linked reference and conceptual document
 
 You need a PlayFab account, and you *must enable* the Party feature to start using Party. 
 
-1. Create or sign in to your [PlayFab account](https://playfab.com). For instructions, see [Quickstart: Game Manager](../../live-service-management/gamemanager/quickstart.md).
+1. Create or sign in to your [PlayFab account](https://developer.playfab.com). For instructions, see [Quickstart: Game Manager](../../live-service-management/gamemanager/quickstart.md).
 1. [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
 
 ## Platform Prerequisites

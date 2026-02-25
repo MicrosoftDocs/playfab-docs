@@ -20,7 +20,7 @@ Note: At the moment, server functions are only available on the Win32 version of
 
 ## Authenticating a title entity
 
-After you create a __PFServiceConfigHandle__ in the initial steps, you can then get a title entity handle by calling __PFAuthenticationGetEntityWithSecretKeyAsync__. After the get entity call completes successfully, it will return __S_OK__ along with a __PFEntityHandle__. This process is similar to logging in as a player. The return type of __PFEntityHandle__ is the same, except in this case the entity handle represents a title entity rather than a player entity. We can call this entity a game server.
+After you create a __PFServiceConfigHandle__ in the initial steps, you can then get a title entity handle by calling [__PFAuthenticationGetEntityWithSecretKeyAsync__](../../api-references/c/pfauthentication/functions/pfauthenticationgetentitywithsecretkeyasync.md). After the get entity call completes successfully, it will return __S_OK__ along with a __PFEntityHandle__. This process is similar to logging in as a player. The return type of __PFEntityHandle__ is the same, except in this case the entity handle represents a title entity rather than a player entity. We can call this entity a game server.
 
 ```cpp
     PFAuthenticationGetEntityRequest request{};

@@ -24,7 +24,7 @@ If this is your first time deploying a build, we recommend deploying a build usi
 ## Get your title ID and developer secret key
 
 * Get your PlayFab title ID
-    * Log into your developer account on [PlayFab.com](https://playfab.com)
+    * Log into your developer account on [PlayFab.com](https://developer.playfab.com)
     * In Game Manager, go to **My Studios and Titles** page. Look for your game title and get the PlayFab game title ID
 
 * Get the developer secret key for the title

@@ -16,7 +16,7 @@ Rewards usually involve *other* systems outside of player data, so this example 
 
 ## Requirements
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+- A [PlayFab developer account](https://developer.playfab.com).
 - A player must sign into *both* titles using the same credentials. One approach is to use **Recoverable Credentials**, as described in our [Login Basics and Best Practices](../../identity/player-identity/login/login-basics-best-practices.md) tutorial. To add a **Recoverable** login to an anonymous account, see our [Account Linking](../../identity/player-identity/login/quickstart.md) tutorial.
 - This example requires a working knowledge of [CloudScript](../../live-service-management/service-gateway/automation/cloudscript/writing-custom-cloudscript.md):
   - Our example demonstrates basic data security to avoid player cheating. One could likewise use the server API on a custom game server, if the title makes use of them.

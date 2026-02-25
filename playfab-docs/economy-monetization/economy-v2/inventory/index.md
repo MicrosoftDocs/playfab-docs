@@ -158,6 +158,17 @@ An example `PurchaseInventoryItems` request:
 }
 ```
 
+> [!NOTE]
+> The `PurchaseInventoryItems` API is used for purchases with virtual currencies. For real-money purchases through external marketplaces (Apple App Store, Google Play, Steam, Microsoft Store), use the corresponding Redeem APIs (such as `RedeemAppleAppStoreInventoryItems`, `RedeemGooglePlayInventoryItems`, `RedeemSteamInventoryItems`, or `RedeemMicrosoftStoreInventoryItems`). These APIs validate the purchase receipt with the marketplace and grant the items to the player's inventory. For more information, see [Marketplace Redemption](../marketplace/marketplace-redemption/overview.md).
+
+#### Bundles
+
+When a bundle is purchased (via `PurchaseInventoryItems` or a marketplace Redeem API), the bundle is **automatically unpacked** into the player's inventory. The individual items referenced in the bundle's `ItemReferences` are granted directly — the bundle itself does not appear as an item in the player's inventory.
+
+For example, purchasing a bundle containing 2x Laser Sword and 2x Laser Gun grants those items individually. The virtual currency cost defined in the bundle's `PriceOptions` is deducted from the player's inventory as part of the transaction.
+
+Bundles that are linked to marketplace products via `AlternateIds` follow the same unpacking behavior when redeemed. For more information on creating bundles, see [Bundles](../catalog/bundles.md).
+
 ### Transfer Inventory Items
 
 The `TransferInventoryItems` API can be used in three different ways.
@@ -262,7 +273,7 @@ More information about stacks can be found [here](stacks.md).
 
 You can use the `ExecuteInventoryOperations` API to batch multiple inventory operations in a single request. Operations will happen in request order specified and if an operation is unable to be performed, the whole set of operations is canceled.
 
-The `ExecuteInventoryOperations` takes in an `Operation` parameter that is a list of operations. There can be at most ten operations in the `Operation` list but operation types can repeat (for example, 10 Add operations are valid). There is also a limit to 250 items that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. The valid operation types are:
+The `ExecuteInventoryOperations` takes in an `Operation` parameter that is a list of operations. There can be at most **50 operations** in the `Operation` list but operation types can repeat (for example, 10 Add operations are valid). There is also a limit to **300 items** that can be modified/added in a single request. For example, adding a bundle with 50 items counts as 50 items modified. The valid operation types are:
 
 * Add
 * Subtract
@@ -333,6 +344,10 @@ For example, the following `PurchaseItem` API request can be called multiple tim
 
 > [!NOTE]
 > Using the same `IdempotencyId` for different request types will cause a conflict and throw an error.
+
+### ETags and Concurrency Control
+
+Inventory write APIs support optimistic concurrency control through ETags and HTTP headers. For full details, see [Inventory ETags](etags.md).
 
 ### Display Properties
 

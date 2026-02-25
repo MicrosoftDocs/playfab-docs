@@ -16,18 +16,18 @@ This tutorial guides you through the process of PlayFab authentication using Goo
 
 ## Requirements
 
-You will need:
+You'll need:
 
 - A [Google account](https://google.com/) for testing.
-- A Registered `[PlayFab](https://playfab.com/)` title.
+- A Registered `[PlayFab](https://developer.playfab.com/)` title.
 - Familiarity with [Login basics and Best Practices](../login/login-basics-best-practices.md).
 - At the minimum, a server with a valid domain name to act as a static HTML file. Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 
 ## Server and domain
 
-This guide requires a server with a valid domain to follow. If you do not have a registered domain and remote web server yet, please follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name.
+This guide requires a server with a valid domain to follow. If you don't have a registered domain and remote web server yet, follow our [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one to run a local web server with a valid domain name.
 
-Throughout this guide, we will assume your domain is `[http://playfab.example](http://playfab.example)`.
+Throughout this guide, we'll assume your domain is `[http://playfab.example](http://playfab.example)`.
 
 ## Registering a Google API project
 
@@ -44,7 +44,7 @@ Start by navigating to the [Google API Console](https://console.developers.googl
 ![Google API Manager new project](media/tutorials/google-html5/create-new-project.png)  
 
 > [!NOTE]
-> It is normal for **API Manager** to take 10-20 seconds to generate the project.
+> It's normal for **API Manager** to take 10-20 seconds to generate the project.
 
 
 
@@ -57,7 +57,7 @@ Once the Project is created:
 ![Google API Manager OAuth consent screen](media/tutorials/google-html5/oauth-consent-screen.png)  
 
 1. Fill out an App Name
-2. Make sure there are emails for **user suport email** and **Developer Contact Email**
+2. Make sure there are emails for **user support email** and **Developer Contact Email**
 3. Then select **SAVE AND CONTINUE**
 
 ![Google API Manager OAuth Consent Screen configuration](media/tutorials/google-html5/create-oauth-consent-screen-1.png)
@@ -82,7 +82,7 @@ On the **OAuth client** screen shown below, the Google API Manager reveals two i
 2. The **client secret**.
 
 > [!NOTE]
-> Be sure to copy and save these values in a safe place that is easily accessible, as they will be used in the authorization process shown later in this tutorial.
+> Be sure to copy and save these values in a safe place that is easily accessible, as they'll be used in the authorization process shown later in this tutorial.
 
 ![Google API Manager OAuth client ID and secret](media/tutorials/google-html5/oauth-client-credentials.png)  
 
@@ -102,14 +102,14 @@ Go to the PlayFab **Game Manager** page for your title.
 > [!NOTE]
 > As of July 2017, **Google API Manager** has a bad habit of *not* hooking the **Allowed JS** origin domain properly. If you receive the following error:  
 > **"idpiframe_initialization_failed", details: "Not a valid origin for the client: somedomain.com..."**  
-> Please remove the credentials and recreate them. *There is no need to delete the entire project - just the credentials.*
+> Remove the credentials and recreate them. *There's no need to delete the entire project - just the credentials.*
 
 ## Testing using an access token
 
 In this example, we show how to test the LoginWithGoogleAccount API using the classic access token approach. Use the HTML code provided below for your testing.
 
 > [!NOTE]
-> Please *make sure* to replace `YOUR_CLIENT_ID` and `YOUR_PLAYFAB_TITLE` with your own values.
+> Make sure* to replace `YOUR_CLIENT_ID` and `YOUR_PLAYFAB_TITLE` with your own values.
 
 > [!Note]
 > the **AccessToken** param is missing in the **LoginWithGoogleAccountRequest** object in the TypeScript typings files. If you are using TypeScript with the Node SDK, you can create a custom type
@@ -183,7 +183,7 @@ In this example, we show how to test the LoginWithGoogleAccount API using the cl
 
 <b>Testing using the (deprecated) Google Sign-in Platform library</b>
 > [!NOTE]
->  The sample below uses the Google Sign-In platform library. **According to the [Google Identity public documentation site](https://developers.google.com/identity/gsi/web/guides/migration), the Google Sign-In JavaScript platform library for Web will be deprecated March 31, 2023**. This sample will not work for newly created Google clients moving forward - please refer to the prior code sample, which uses the newer Google Identity Services library!
+>  The sample below uses the Google Sign-In platform library. **According to the [Google Identity public documentation site](https://developers.google.com/identity/gsi/web/guides/migration), the Google Sign-In JavaScript platform library for Web will be deprecated March 31, 2023**. This sample won't work for newly created Google clients moving forward - refer to the prior code sample, which uses the newer Google Identity Services library!
     
 ```html
 <!DOCTYPE html>
@@ -233,7 +233,7 @@ In this example, we show how to test the LoginWithGoogleAccount API using the cl
 </html>
 ```
 
-Remember to open this page using your web server, and make sure to access this page using the URL you specified, while configuring Google Project, (`[PlayFab](http://playfab.example)` in our case).
+Remember to open this page using your web server, and make sure to access this page using the URL you specified, while configuring Google Project, ([PlayFab](http://playfab.example) in our case).
 
 1. Once the page opens, select **G Signed In**, and follow the general Google authentication flow.
 2. When this is finished, the script will try to authenticate on the PlayFab side and output the result.
@@ -241,4 +241,4 @@ Remember to open this page using your web server, and make sure to access this p
 ![Google Auth Example](media/tutorials/google-html5/google-auth-example.png)  
 
 > [!NOTE]
-> If you *already have* a Google authentication session running, you will not have to select **G Signed In**. Everything will happen automatically.
+> If you *already have* a Google authentication session running, you won't have to select **G Signed In**. Everything will happen automatically.

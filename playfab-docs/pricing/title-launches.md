@@ -43,7 +43,7 @@ Titles may only be changed to Live in Studios owned by paid accounts. Follow the
 
 To launch a title within a paid account plan:
 
-1. Sign in to [https://playfab.com/](https://playfab.com/)
+1. Sign in to [https://developer.playfab.com/](https://developer.playfab.com/)
 
 2. Navigate to the **My Studios** page and identify the **Development mode** title to be launched.
 

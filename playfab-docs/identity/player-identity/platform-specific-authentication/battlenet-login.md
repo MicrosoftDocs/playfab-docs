@@ -19,7 +19,7 @@ This tutorial guides you through the process of setting up PlayFab authenticatio
 You need:
 
 - A [Battle.net account](https://developer.battle.net) for testing.
-- A Registered [PlayFab](https://playfab.com/) title.
+- A Registered [PlayFab](https://developer.playfab.com/) title.
 - A familiarity with [Login basics and Best Practices](../login/login-basics-best-practices.md).
 - A server with a valid domain name to act as a static HTML file. Consult the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial for information on how to set one up.
 

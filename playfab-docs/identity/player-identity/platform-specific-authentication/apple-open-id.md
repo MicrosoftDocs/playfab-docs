@@ -37,7 +37,7 @@ Save the identifier where you can access it easily. You'll use in the next set o
 
 To set up the Apple Add-on in PlayFab:
 
-1. Sign in to [Game Manager](https://developer.playfab.com/en-US/login).
+1. Sign in to [Game Manager](https://developer.playfab.com).
 2. Select your title from the My Studios and Titles page.
 3. In the **Add-ons** pane, select the **Apple** platform.
 4. To install the Apple add-on, select **Install Apple**.

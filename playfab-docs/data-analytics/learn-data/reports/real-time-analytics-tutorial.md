@@ -19,7 +19,7 @@ This tutorial explains end-to-end steps on how to integrate **PlayFab** and **Fa
 ### Prerequisites
 
 * To successfully complete this tutorial, you need a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity). For a limited time, you can [sign up for the Microsoft Fabric (Preview) trial](/fabric/get-started/fabric-trial).
-* A PlayFab developer account. Sign up at [playfab.com](https://developer.playfab.com/en-US/sign-up)
+* A PlayFab developer account. Sign up at [playfab.com](https://developer.playfab.com)
 * Microsoft PowerBI Desktop installed. See [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started#install-and-run-power-bi-desktop)
 
 ## Create a Fabric workspace

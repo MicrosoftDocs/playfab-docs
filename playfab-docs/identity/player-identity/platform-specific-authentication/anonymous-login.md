@@ -33,7 +33,7 @@ To enhance the security of anonymous login, PlayFab implemented a crucial securi
 ## Prerequisites
 
 - A unique identifier for the player (CustomID)
-- A registered [PlayFab](https://playfab.com/) title
+- A registered [PlayFab](https://developer.playfab.com/) title
 - Your PlayFab title's secret key
 - Familiarity with [sign-in basics and best practices](../login/login-basics-best-practices.md)
 - A server with a valid domain name to serve static HTML files

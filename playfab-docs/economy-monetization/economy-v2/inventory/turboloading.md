@@ -44,14 +44,14 @@ You can enable compression for all API responses using the Cross-Platform PlayFa
 // Initialize PFHttpSettings struct
 PFHttpSettings* httpSettings = new PFHttpSettings;
 
-// Enable Repsonse Compression (and automatic decompression)
+// Enable Response Compression (and automatic decompression)
 httpSettings->requestResponseCompression = true;
 
 // Set PFHttpSettings
 HRESULT hr = PFSetHttpSettings(httpSettings); // Add your own error handling FAILED(hr) == true
 ```
 
-Additionally you can disable compression for all API reponses:
+Additionally you can disable compression for all API responses:
 ```C++
 // Disable Response Compression
 httpSettings->requestResponseCompression = false;

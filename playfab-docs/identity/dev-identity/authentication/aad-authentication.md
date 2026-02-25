@@ -20,7 +20,7 @@ PlayFab supports two methods for user authentication. The first is the original 
 
 You can create a new PlayFab account using an existing or new Microsoft Account. The PlayFab authentication system is no longer available for new accounts.
 
-1. Navigate to [PlayFab's Signup page](https://developer.playfab.com/en-US/sign-up).
+1. Navigate to [PlayFab's Signup page](https://developer.playfab.com).
 2. Select **Sign up with Microsoft** and follow the signup flow.
 
     ![Sign up with Microsoft](media/aad-sign-up.png)

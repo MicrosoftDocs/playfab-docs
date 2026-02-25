@@ -3,20 +3,36 @@ title: Handling Token Expiration
 author: amccalib
 description: Handling Token Expiration and Relogin in the PlayFab Services SDK
 ms.author: andmcc
-ms.date: 03/03/2023
+ms.date: 02/13/2026
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, c++, windows, xbox, gdk, login
+keywords: playfab, c++, windows, xbox, gdk, login, suspend, resume, quick resume, token refresh
 ms.localizationpriority: medium
 ---
 
 # Handling Token Expiration
 
-The PlayFab Services SDK automatically attempts to handle relogin and token refresh in this SDK. When a PlayFab entity token expires, the SDK detects the failure and attempts to acquire a new entity token using the handle or token you originally provided to the login request. If this relogin succeeds, the SDK retries the original failed call automatically. Additionally, the **PFEntityHandle** returned by the original login call continues to be valid.
+The PlayFab Services SDK includes a background token refresh mechanism that helps keep your player's session active. Understanding how this mechanism works—and when your game needs to take action—is important, especially for Game Development Kit (GDK) titles that support suspend and resume.
 
-## Automatic refresh failure
+## How automatic token refresh works
 
-It's possible for automatic token refresh to fail. This failure could be because the handle or token you originally provided to the login request is no longer valid. To handle this scenario, your game can register for a callback to provide a new handle or token and retry the login. Use **PFEntityRegisterTokenExpiredEventHandler** to register for a callback and **PFAuthenticationReLoginWith\*Async** to provide the new handle or token and reattempt the login.
+The SDK runs a background worker that periodically checks the player's entity token. If the token is **still valid but approaching expiration** (within one hour of expiry), the SDK automatically reauthenticates using the credentials from the original sign-in call. If this refresh succeeds, the token is updated transparently and the **PFEntityHandle** continues to be valid. No action is required from your game.
+
+You can observe these silent token refreshes by registering a [**PFEntityRegisterTokenRefreshedEventHandler**](../../api-references/c/pfentity/functions/pfentityregistertokenrefreshedeventhandler.md) callback (see [Transparent refresh](#transparent-refresh)).
+
+## When your game must handle token expiration
+
+There are scenarios where the SDK **can't** automatically refresh the token:
+
+- **The token has already expired.** The automatic refresh only works when the token is still valid. If the token is fully expired—for example, after a long suspend/resume cycle—the SDK doesn't attempt an automatic relogin. Instead, it notifies your game via the **TokenExpiredHandler**.
+- **The original sign-in credentials are no longer valid.** If the handle or token originally provided to the sign-in request is no longer valid, automatic refresh fails and the **TokenExpiredHandler** is invoked.
+
+> [!IMPORTANT]
+> Registering a [**PFEntityTokenExpiredEventHandler**](../../api-references/c/pfentity/functions/pfentitytokenexpiredeventhandler.md) is recommended for all titles and is **essential** for GDK titles that support suspend and resume. Without this handler, your game has no way to recover from an expired token.
+
+### Registering the TokenExpiredHandler
+
+Use [**PFEntityRegisterTokenExpiredEventHandler**](../../api-references/c/pfentity/functions/pfentityregistertokenexpiredeventhandler.md) to register for a callback and **PFAuthenticationReLoginWith\*Async** to reauthenticate when the token expires.
 
 ```cpp
     PFRegistrationToken registrationTokenExpired{};
@@ -41,9 +57,24 @@ It's possible for automatic token refresh to fail. This failure could be because
     }, &registrationTokenExpired);
 ```
 
+## GDK: Suspend, resume, and Quick Resume
+
+On GDK platforms (Xbox consoles and Windows with the GDK), a game can be suspended for an extended period, such as when the player switches to another game and later returns via Quick Resume. During suspension, the entity token may expire. Because no code runs during suspension, the SDK's periodic background refresh can't keep the token alive.
+
+### What happens on resume
+
+When your game resumes, the SDK **immediately** detects the resumed state and checks the entity token. It doesn't wait for the next periodic refresh cycle. If the token expired during the suspend:
+
+1. The SDK detects the expired token.
+2. The **TokenExpiredHandler** callback is invoked.
+3. Your game must call **PFAuthenticationReLoginWith\*Async** from the handler to acquire a new token.
+
+> [!NOTE]
+> The token check on resume is triggered as soon as network connectivity is restored. If the network takes a moment to reinitialize after resume, the SDK waits for connectivity before checking the token. No token check is lost.
+
 ## Transparent refresh
 
-If you would like your game to know when the SDK automatically refreshes the player's entity token, you can register for a callback.
+If you would like your game to know when the SDK automatically refreshes the player's entity token, you can register for a callback. This handler is invoked when the SDK successfully refreshes a token that was approaching expiration—no action is required from your game.
 
 ```cpp
     PFRegistrationToken registrationTokenRefreshed{};

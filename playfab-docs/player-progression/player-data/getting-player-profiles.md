@@ -24,7 +24,7 @@ In this tutorial you learn how to:
 
 ## Requirements
 
-* A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+* A [PlayFab developer account](https://developer.playfab.com).
 * An installed copy of the Unity Editor. To install Unity for personal use via Unity Hub, or Unity+ for professional use, see [Download Unity](https://unity3d.com/get-unity/download).
   > [!NOTE]
   > The PlayFab Unity3D SDK supports Unity Editor version 5.3 (released December 2015) and higher.
@@ -130,7 +130,7 @@ By default, the **ALLOW CLIENT ACCESS TO PROFILE PROPERTIES:** had only **Displa
 
 To configure additional constraints for the title:
 
-* In [Game Manager](https://developer.playfab.com/en-US/login), select your title.
+* In [Game Manager](https://developer.playfab.com), select your title.
 * Select the gear icon in the upper left-hand corner, then select **Title settings**.
 * Select the **Client Profile Options** tab.
 * To enable both **Created** and **LastLogin** in the [ProfileConstraints](xref:titleid.playfabapi.com.server.accountmanagement.getplayerprofile#playerprofileviewconstraints), check **Creation date** and **Last login time**, then select **SAVE CLIENT PROFILE OPTIONS**.

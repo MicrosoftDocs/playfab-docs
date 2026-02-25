@@ -80,6 +80,12 @@ Along with an __S_OK__ result, you get back a __PFEntityHandle__. You use this h
     hr = PFAuthenticationLoginWithXUserGetResult(&async, &entityHandle, loginResultBuffer.size(), loginResultBuffer.data(), &loginResult, nullptr);
 ```
 
+## Handling suspend and resume
+
+GDK games can be suspended for extended periods (for example, via Quick Resume). If the entity token expires during suspension, the SDK detects this on resume and notifies your game. You should register for the **TokenExpiredHandler** early in your game's lifecycle so you can re-authenticate and reconnect services when needed.
+
+For full details, see [Handling Token Expiration](relogin.md).
+
 ## Service Calls
 
 After logging the player in, you can now make calls to the PlayFab backend. Here's an example of a call to get files stored in PlayFab for the current player.

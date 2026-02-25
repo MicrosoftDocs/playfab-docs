@@ -37,7 +37,7 @@ Tab | Description | Reference
 **Stores** | Stores allow you to override base catalog prices for items. | [PlayFab Economy V2 Stores](stores.md)
 **Subscriptions** |   Virtual subscriptions allow you to grant time based access to durable goods. | [PlayFab Economy V2 Subscriptions](subscriptions.md).
 
-Each of these is an Item Type that can be used within your Catalog. Bundles 
+Each of these is an Item Type that can be used within your Catalog.
 
 ### Catalog V2 item fields
 

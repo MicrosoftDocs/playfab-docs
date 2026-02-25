@@ -18,7 +18,7 @@ This document lists the basic prerequisites and requirements necessary to integr
 
 Before you start this tutorial, please ensure that the following prerequisites have been met:
 
-1. You created a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+1. You created a [PlayFab developer account](https://developer.playfab.com).
 
 1. You created a PlayFab Title and your title has been allow-listed for PlayFab Party.
 

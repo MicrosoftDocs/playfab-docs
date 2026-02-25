@@ -278,6 +278,12 @@ if (FAILED(hr))
 // Success! Save data is now safely stored in the cloud
 ```
 
+### When can I write to the save folder again?
+
+During upload, the system reads and compresses your local save files before uploading them. Once the sync state transitions to `Uploading` (reported via `PFGameSaveFilesUiProgressCallback`), the system has finished reading your files and it's safe to write to the save folder again. You don't need to wait for the full upload to complete before resuming saves.
+
+If you aren't using the progress callback, wait for the `XAsyncBlock` to complete before writing new save data.
+
 ### Best Practices
 1. **Handle failures gracefully**: Network issues shouldn't crash your game
 2. **Use appropriate options**: 

@@ -34,7 +34,7 @@ Once you have enabled the event, you are now free to connect your events to what
 
 ## See Also
 
-- [`playfab.statistic.statistic_updated`](../../api-references/events/statistic-updated.md)
+- [`playfab.statistic.statistic_updated`](../../api-references/events/Statistics/statistic-updated.md)
 - [PlayStream Overview](../../data-analytics/ingest-data/playstream-overview.md)
 - [Leaderboards With PlayStream and Telemetry](../../community/leaderboards/leaderboards-with-playstream-and-telemetry.md)
 - [Telemetry Overview](../../data-analytics/ingest-data/telemetry-overview.md)

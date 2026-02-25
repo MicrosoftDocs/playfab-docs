@@ -22,7 +22,7 @@ This tutorial describes the steps to request parties from your own services rath
 
 You need a PlayFab account and have enabled the Party feature. 
 
-1. Create or sign in to your [PlayFab account](https://playfab.com). 
+1. Create or sign in to your [PlayFab account](https://developer.playfab.com). 
 2. [Enable Party feature via Game Manager](enable-party.md) from your PlayFab account.
 3. Download and set up Party SDK. For download links, see [Party SDKs](party-sdks.md).
 

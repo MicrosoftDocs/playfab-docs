@@ -61,6 +61,57 @@ From PlayFab Game Manager:
 > [!Note]
 > To optimize your use of a Fabric KQL Data Connection and gain valuable insights into your game data, follow the tutorial on PlayFab and Microsoft Fabric Real-Time Analytics (RTA) for game creators: [PlayFab and Microsoft Fabric Real-Time Analytics (RTA) for game creators](../learn-data/reports/real-time-analytics-tutorial.md)
 
+### Amazon Web Services S3 (PREVIEW)
+From PlayFab Game Manager:
+-	Navigate to your Title
+-	Select Data from the menu on the left
+-	Select Data Connections from the Data tabs
+-	Select New Connection, new data connections configuration page is opened
+-	On the Destination type dropdown, select the AWS S3 option
+-	Give your Data Connection a name on the Name field
+-	Make sure the Enabled box is checked
+-	In the AWS console:
+    *	Navigate to IAM
+    *	Navigate to Identity Providers
+    *	Select Add Provider
+    *	Select OpenID Connect
+    *	In the forum:
+        *	For the provider URL, input https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47/v2.0
+        *	For the Audience, input e12f8069-1801-4f61-9b5f-446d8bd57e8b
+    *	Press Add Provider
+    *	Navigate back to IAM
+    *	Navigate to policies
+    *	Select Create policy
+    *	In the forum:
+        *	Select JSON to switch to the JSON view
+        *	Input the following policy: { "Version": "2012-10-17", "Statement": [ { "Effect": "Allow", "Action": [ "s3:*" ], "Resource": [ "arn:aws:s3:::test/*", "arn:aws:s3:::test" ] } ] }
+        *	Select Next
+        *	Enter a name for your policy – take note of it for later
+        *	Select Create policy
+    *	Navigate back to IAM
+    *	Navigate to Roles
+    *	In the forum:
+        *	Select Web Identity 
+        *	From the Identity provider dropdown, select the previously registered https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47/v2.0 provider
+        *	From the Audience dropdown, select the previously registered e12f8069-1801-4f61-9b5f-446d8bd57e8b audience
+        *	Select Next
+        *	In the search field, enter the name of the previously registered policy
+        *	Check the box to the left of the policy
+        *	Select Next
+        *	Enter a name for the role – noting the name
+        *	Select Create role
+    *	Navigate to the general purpose S3 Bucket you want to use for your Connection
+    *	Select Properties
+    *	Scroll to the Tags section
+    *	Select Add new Tag
+    *	In the forum:
+        *	For the key field, input playfab:titleids
+        *	For the value field, input your playfab TitleID
+        *	Select Save changes
+    *	Ensure you have your S3 Bucket name, Role ARN, and S3 Bucket Region used in the prior steps.
+    *	Enter those into the appropriate fields in the Game Manager.
+
+
 ## Manage connections
 
 The Data Connections overview (landing) page displays the available connections categorized as **enabled** or **disabled** as a **status**. You can have up to 3 enabled connections to the blob storage account at any time. 

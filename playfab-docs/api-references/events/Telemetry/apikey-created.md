@@ -3,7 +3,7 @@ title: apikey_created
 author: ronnyparedes
 description: apikey_created event.
 ms.author: ronnyparedes
-ms.date: 09/02/2026
+ms.date: 02/09/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events

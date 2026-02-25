@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 ## Prerequisites
 
-1. Sign in to [PlayFab portal](https://playfab.com).
+1. Sign in to [PlayFab portal](https://developer.playfab.com).
 2. Navigate to your title.
 
 ## Create a Churn Prediction segment and apply mitigation strategy

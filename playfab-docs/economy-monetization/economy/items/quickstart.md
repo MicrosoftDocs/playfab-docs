@@ -105,6 +105,6 @@ To confirm the purchase in Game Manager:
 
 To confirm:
 
-* Open the **PlayStream** tab. You should see a [Player virtual currency item purchased](../../../api-references/events/player-vc-item-purchased.md) event.
+* Open the **PlayStream** tab. You should see a [Player virtual currency item purchased](../../../api-references/events/Player/player-vc-item-purchased.md) event.
 * Open the **Inventory** tab. The inventory should now contain an apple. You can also use features on the **Inventory** tab to revoke the item, or grant the player _more_ apples.
 * Open the **Virtual Currency** tab. The player should only have 95 gold left.

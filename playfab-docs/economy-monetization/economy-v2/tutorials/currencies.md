@@ -18,7 +18,7 @@ Get started with PlayFab Economy by using the [PlayFab Services SDK](../../../sd
 
 ## Prerequisites
 
-* A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up)
+* A [PlayFab developer account](https://developer.playfab.com)
 * The PlayFab Beta SDK (You can find more information on the [Postman Quickstart](../../../sdks/postman/postman-quickstart.md#adding-playfab-collections))
 
 ## Get a title entity token

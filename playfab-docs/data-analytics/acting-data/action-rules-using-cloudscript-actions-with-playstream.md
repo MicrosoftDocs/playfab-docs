@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Using CloudScript actions with PlayStream
 
-When a CloudScript handler is launched from a PlayStream action, that handler has access to additional data on why it is being run - the *context* - which you can use to drive your server-side logic.
+When a CloudScript handler is launched from a PlayStream action, that handler has access to more data on why It's being run - the *context* - which you can use to drive your server-side logic.
 
 This tutorial walks you through what all is available in the context, and how to make use of it in your CloudScript handlers.
 
@@ -85,9 +85,9 @@ handlers.handlePlayStreamEventAndProfile = function (args, context) {
 
 In the case of a PlayStream-triggered CloudScript call, the context contains 3 elements that can be used to drive your server-authoritative handler's logic.
 
-1. There’s the `playStreamEvent`, which you can see in the example code above. The `playStreamEvent` contains the complete event which triggered the handler as a JSON object, with all the parameters you see in the [PlayStream event documentation](../../api-references/events/index.md). So for example, if you set up a rule in your title that called `handlePlayStreamEventAndProfile` on any `player_logged_in event`, `playStreamEvent.EventName` would be `player_logged_in`, etc. ([here’s the complete set of parameters for that event](../../api-references/events/player-logged-in.md)).
+1. There’s the `playStreamEvent`, which you can see in the example code above. The `playStreamEvent` contains the complete event which triggered the handler as a JSON object, with all the parameters you see in the [PlayStream event documentation](../../api-references/events/index.md). So for example, if you set up a rule in your title that called `handlePlayStreamEventAndProfile` on any `player_logged_in event`, `playStreamEvent.EventName` would be `player_logged_in`, etc. ([here’s the complete set of parameters for that event](../../api-references/events/PlayerIdentity/player-logged-in.md)).
 
-1. Next, there’s the `playerProfile`, also shown in the previous example. This contains information about the player that triggered the event. You can find all the details of the profile parameters here, but among other things, it contains the complete set of statistics for the player in your title, as well as any custom tags you have assigned to the player, so that you can use that data for very rich decision-making.
+1. Next, there’s the `playerProfile`, also shown in the previous example. This contains information about the player that triggered the event. You can find all the details of the profile parameters here, but among other things, it contains the complete set of statistics for the player in your title, and any custom tags you have assigned to the player, so that you can use that data for rich decision-making.
 
 1. The last element of context is `triggeredByTask`. Unlike the first two, which are set when using Rules and Segment Enter/Exit triggers, `triggeredByTask` is only applicable when the handler is running as a result of a task, whether manual or on a timer. It contains only two parameters:
 
@@ -105,6 +105,6 @@ So *name* is the element you’ll want to use to use in your handler’s code fl
 
 In many ways, CloudScript handlers triggered by PlayStream actions have even more potential functionality than those triggered directly through calls to `ExecuteCloudScript`, since there’s a rich set of data made available via the context.
 
-This gives you the ability to update your handlers post-launch with *additional* logic that makes use of elements of the event or player profile that you hadn’t originally anticipated, *without* needing to update your client code in any way.
+This gives you the ability to update your handlers post-launch with *more* logic that makes use of elements of the event or player profile that you hadn’t originally anticipated, *without* needing to update your client code in any way.
 
 In addition, we’ll continue to make additions to the player profile in future updates of the PlayFab service, which will provide even *more* options for server-side logic.

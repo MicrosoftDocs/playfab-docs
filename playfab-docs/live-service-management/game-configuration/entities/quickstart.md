@@ -18,7 +18,7 @@ For information on migrating from the legacy account and data systems to PlayFab
 
 ## Requirements
 
-- A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+- A [PlayFab developer account](https://developer.playfab.com).
 - An installed copy of the Unity Editor. For information on installing the Unity Editor, see [Installing Unity](https://docs.unity3d.com/Manual/GettingStartedInstallingUnity.html) in the Unity documentation. You can also install a version of the Unity using the Visual Studio feature installer.
   > [!NOTE]
   > The PlayFab Unity3D SDK supports Unity Editor version 5.3 and higher.

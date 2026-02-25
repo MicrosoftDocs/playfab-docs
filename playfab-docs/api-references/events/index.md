@@ -18,19 +18,19 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## AdPlacement
 
-- [player_ad_closed](player-ad-closed.md)  
+- [player_ad_closed](AdPlacement/player-ad-closed.md)  
   This event is triggered when a player closes an ad.
 
-- [player_ad_ended](player-ad-ended.md)  
+- [player_ad_ended](AdPlacement/player-ad-ended.md)  
   This event is triggered when a player finishes an ad.
 
-- [player_ad_opened](player-ad-opened.md)  
+- [player_ad_opened](AdPlacement/player-ad-opened.md)  
   This event is triggered when a player opens an ad.
 
-- [player_ad_rewarded](player-ad-rewarded.md)  
+- [player_ad_rewarded](AdPlacement/player-ad-rewarded.md)  
   This event is triggered when a player recieves an ad reward.
 
-- [player_ad_started](player-ad-started.md)  
+- [player_ad_started](AdPlacement/player-ad-started.md)  
   This event is triggered when a player starts an ad.
 
 ## Addons
@@ -68,6 +68,20 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [cloudscript_executed](CloudScript/cloudscript-executed.md)  
   This event is triggered when a CloudScript function is executed.
+
+## DeveloperIdentity
+
+- [studio_created](DeveloperIdentity/studio-created.md)  
+  This event is triggered when a studio is created.
+
+- [studio_user_added](DeveloperIdentity/studio-user-added.md)
+  This event is triggered when a user accepts a studio invitation.  
+
+- [studio_user_invited](DeveloperIdentity/studio-user-invited.md)  
+  This event is triggered when a user is invited to a studio.
+
+- [studio_user_removed](DeveloperIdentity/studio-user-removed.md)  
+  This event is triggered when a user is removed from a studio.
 
 ## Extension
 
@@ -192,392 +206,446 @@ Each event type has a set of properties that are included as part of event's dat
 
 ## General
 
-- [entity_created](entity-created.md)  
-  This event is triggered when an entity is created.  
-
-- [entity_files_set](entity-files-set.md)  
-  This event is triggered when files are attached to an entity.
-
-- [entity_language_updated](entity-language-updated.md)  
-  This event is triggered when the language associated with an entity is changed.
-
-- [entity_logged_in](entity-logged-in.md)  
-  This event is triggered when an entity has logged in.
-
-- [entity_objects_set](entity-objects-set.md)  
-  This event is triggered when objects are attached to an entity.
-
-- [entity_virtual_currency_balances_changed](entity-virtual-currency-balances-changed.md)  
+- [entity_virtual_currency_balances_changed](General/entity-virtual-currency-balances-changed.md)  
   This event is triggered when an entity's virtual currency balance changes.
 
-- [group_deleted](group-deleted.md)  
-  This event is triggered when an entity group is deleted.
-
-- [matchmaking_match_found](matchmaking-match-found.md)  
-  This event is triggered when a group of tickets are matched together.  
-  
-- [matchmaking_ticket_completed](matchmaking-ticket-completed.md)  
-  This event is triggered when a matchmaking ticket reaches a completion state.  
-  
-- [matchmaking_user_ticket_completed](matchmaking-user-ticket-completed.md)  
-  This event is sent to each of the users in the completed ticket.
-
-- [matchmaking_user_ticket_invite](matchmaking-user-ticket-invite.md)  
-  This event is triggered when a ticket with an invited user is created. The event will be sent to the invited user.  
-
-- [studio_created](studio-created.md)  
-  This event is triggered when a studio is created.
-
-- [studio_user_added](studio-user-added.md)
-  This event is triggered when a user accepts a studio invitation.  
-
-- [studio_user_invited](studio-user-invited.md)  
-  This event is triggered when a user is invited to a studio.
-
-- [studio_user_removed](studio-user-removed.md)  
-  This event is triggered when a user is removed from a studio.
-
-- [tenancy_connector_onboard](tenancy-connector-onboard.md)  
+- [tenancy_connector_onboard](General/tenancy-connector-onboard.md)  
   This event is triggered when a tenancy connector is onboarded.
 
-- [studio_tier_updated](studio-tier-updated.md)  
+- [studio_tier_updated](General/studio-tier-updated.md)  
   This event is triggered when a studio tier is updated.
+
+## Matchmaking
+- [title_queue_config_updated](Matchmaking/title-queue-config-updated.md)  
+  This event is triggered when a queue config is changed.
+
+- [match_found](Matchmaking/match-found.md)  
+  This event is triggered when a match is found.
+
+- [ticket_completed](Matchmaking/ticket-completed.md)  
+  This event is triggered when a ticket is completed.
+
+- [user_ticket_invited](Matchmaking/user-ticket-invited.md)  
+  This event is triggered when a user is invited to a ticket.
 
 ## Multiplayer Servers
 
-- [build_alias_created](build-alias-created.md)  
+- [build_alias_created](MultiplayerServers/build-alias-created.md)  
   This event is triggered when a multiplayer server build alias is created.
 
-- [build_alias_deleted](build-alias-deleted.md)  
+- [build_alias_deleted](MultiplayerServers/build-alias-deleted.md)  
   This event is triggered when a multiplayer server build alias is deleted.
 
-- [build_alias_updated](build-alias-updated.md)  
+- [build_alias_updated](MultiplayerServers/build-alias-updated.md)  
   This event is triggered when a multiplayer server build alias is updated.
 
-- [build_deleted](build-deleted.md)  
+- [build_deleted](MultiplayerServers/build-deleted.md)  
   This event is triggered when a multiplayer server build is deleted.  
 
-- [build_region_status_changed](build-region-status-changed.md)  
+- [build_region_status_changed](MultiplayerServers/build-region-status-changed.md)  
   This event is triggered when a multiplayer server's build region status is changed.  
 
-- [build_region_updated](build-region-updated.md)  
+- [build_region_updated](MultiplayerServers/build-region-updated.md)  
   This event is triggered when a multiplayer server build region is updated.
 
-- [build_region_utilization](build-region-utilization.md)  
+- [build_region_utilization](MultiplayerServers/build-region-utilization.md)  
   This event is triggered to display the utilization of servers for a build in each region.
 
-- [certificate_deleted](certificate-deleted.md)  
+- [certificate_deleted](MultiplayerServers/certificate-deleted.md)  
   This event is triggered when a multiplayer server certificate is deleted.
 
-- [certificate_uploaded](certificate-uploaded.md)  
+- [certificate_uploaded](MultiplayerServers/certificate-uploaded.md)  
   This event is triggered when a multiplayer server certificate is uploaded.  
 
-- [crash_detected](crash-detected.md)  
+- [crash_detected](MultiplayerServers/crash-detected.md)  
   This event triggered when a crash dump is found on a terminating server.
 
-- [create_build_initiated](create-build-initiated.md)  
+- [create_build_initiated](MultiplayerServers/create-build-initiated.md)  
   This event is triggered when a multiplayer server build is initiated.
 
-- [enabled_for_title](enabled-for-title.md)  
+- [enabled_for_title](MultiplayerServers/enabled-for-title.md)  
   This event is triggered when a title enables PlayFab servers
 
-- [game_asset_deleted](game-asset-deleted.md)  
+- [game_asset_deleted](MultiplayerServers/game-asset-deleted.md)  
   This event is triggered when a multiplayer server game asset is deleted.  
 
-- [monitoring_output_saved](monitoring-output-saved.md)  
+- [monitoring_output_saved](MultiplayerServers/monitoring-output-saved.md)  
   This event is triggered when the output of a monitoring application has been saved and can be downloaded.
 
-- [secret_added](secret-added.md)  
+- [secret_added](MultiplayerServers/secret-added.md)  
   This event is triggered when a multiplayer server secret is added.
 
-- [secret_deleted](secret-deleted.md)  
+- [secret_deleted](MultiplayerServers/secret-deleted.md)  
   This event is triggered when a multiplayer server secret is deleted.
 
-- [server_requested](server-requested.md)  
+- [server_requested](MultiplayerServers/server-requested.md)  
   This event is triggered when a multiplayer server is requested.    
 
-- [server_state_changed](server-state-changed.md)  
+- [server_state_changed](MultiplayerServers/server-state-changed.md)  
   This event is triggered when a multiplayer server's state is changed.
 
-- [vm_assigned](vm-assigned.md)  
+- [vm_assigned](MultiplayerServers/vm-assigned.md)  
   This event is triggered when a virtual machine is assigned to a multiplayer server build.  
 
-- [vm_game_certificates_deployed](vm-game-certificates-deployed.md)   
+- [vm_game_certificates_deployed](MultiplayerServers/vm-game-certificates-deployed.md)   
   This event is triggered when game certificates are deployed in a game virtual machine.
 
-- [vm_remote_user_created](vm-remote-user-created.md)  
+- [vm_remote_user_created](MultiplayerServers/vm-remote-user-created.md)  
   This event is triggered when a multiplayer server virtual machine remote user is created.
 
-- [vm_remote_user_deleted](vm-remote-user-deleted.md)  
+- [vm_remote_user_deleted](MultiplayerServers/vm-remote-user-deleted.md)  
   This event is triggered when a multiplayer server virtual machine remote user is deleted.  
 
-- [vm_state_change](vm-state-change.md)  
+- [vm_state_change](MultiplayerServers/vm-state-change.md)  
   This event is triggered when a multiplayer virtual machine's state is changed.
 
-- [vm_unassignment_started](vm-unassignment-started.md)  
+- [vm_unassignment_started](MultiplayerServers/vm-unassignment-started.md)  
   This event is triggered when a virtual machine is unassigned from a multiplayer server build.  
 
-- [vm_unhealthy](vm-unhealthy.md)  
+- [vm_unhealthy](MultiplayerServers/vm-unhealthy.md)  
   This event is triggered when a virtual machine is found to be unhealthy.
 
-## Catalog
+## CatalogV1
 
-- [item_created](item-created.md)  
+- [title_catalog_updated](CatalogV1/title-catalog-updated.md)  
+  This event is triggered when a catalog is changed.
+
+- [title_store_updated](CatalogV1/title-store-updated.md)  
+  This event is triggered when a store is changed.
+
+## CatalogV2
+
+- [item_created](catalogv2/item-created.md)  
   This event is triggered when an item is created.
 
-- [item_deleted](item-deleted.md)  
+- [item_deleted](catalogv2/item-deleted.md)  
   This event is triggered when an item is deleted.
 
-- [item_moderation_state_changed](item-moderation-state-changed.md)  
+- [item_moderation_state_changed](catalogv2/item-moderation-state-changed.md)  
   This event is triggered when an item moderation state is changed.
 
-- [item_publish_requested](item-publish-requested.md)  
+- [item_publish_requested](catalogv2/item-publish-requested.md)  
   This event is triggered when an publishing is started.
 
-- [item_reported](item-reported.md)  
+- [item_purchased](catalogv2/item-purchased.md)  
+  This event is triggered when an item is purchased.
+
+- [item_reported](catalogv2/item-reported.md)  
   This event is triggered when an item is reported.
 
-- [item_updated](item-updated.md)  
+- [item_updated](catalogv2/item-updated.md)  
   This event is triggered when an item is updated.
 
-- [review_reported](review-reported.md)  
+- [review_reported](catalogv2/review-reported.md)  
   This event is triggered when a review is reported.
 
-- [reviews_takedown_requested](reviews-takedown-requested.md)  
+- [reviews_takedown_requested](catalogv2/reviews-takedown-requested.md)  
   Event trigged when a takedown of reviews is requested.
 
 ## Character
 
-- [character_consumed_item](character-consumed-item.md)  
+- [character_consumed_item](Character/character-consumed-item.md)  
   This event is triggered when a character consumes an item from their inventory.  
 
-- [character_created](character-created.md)  
-  This event is triggered when a character is created for the first time.  
-
-- [character_inventory_item_added](character-inventory-item-added.md)  
+- [character_inventory_item_added](Character/character-inventory-item-added.md)  
   This event is triggered when an item is granted to a character.
 
-- [character_statistic_changed](character-statistic-changed.md)  
-  This event is triggered when a character statistic is changed.  
-
-- [character_statistic_deleted](character-statistic-deleted.md)  
-  This event is triggered when a character statistic is deleted.  
-
-- [character_vc_item_purchased](character-vc-item-purchased.md)  
+- [character_vc_item_purchased](Character/character-vc-item-purchased.md)  
   This event is triggered when the character makes a purchase using virtual currency.
 
-- [character_virtual_currency_balance_changed](character-virtual-currency-balance-changed.md)  
+- [character_virtual_currency_balance_changed](Character/character-virtual-currency-balance-changed.md)  
   This event is triggered when a character's virtual currency balance changes.  
 
 ## Inventory
 
-- [items_added](items-added.md)  
+- [items_added](Inventory/items-added.md)  
   Event raised when items have been added to an inventory.
 
-- [items_deleted](items-deleted.md)  
+- [items_clawback_completed](Inventory/items-clawback-completed.md)  
+  This event is triggered when an items clawback operation is completed.
+
+- [items_clawback_reversal_completed](Inventory/items-clawback-reversal-completed.md)  
+  This event is triggered when an items clawback reversal operation is completed.
+
+- [items_deleted](Inventory/items-deleted.md)  
   Event raised when items have been deleted from an inventory.
 
-- [items_purchased](items-purchased.md)  
+- [items_expired](Inventory/items-expired.md)  
+  This event is triggered when items have expired in an inventory.
+
+- [items_purchased](Inventory/items-purchased.md)  
   Event raised when items have been purchased from an inventory.
 
-- [items_redeemed](items-redeemed.md)  
+- [items_redeemed](Inventory/items-redeemed.md)  
   Event raised when items have been redeemed to an inventory.
 
-- [items_subtracted](items-subtracted.md)  
+- [items_subtracted](Inventory/items-subtracted.md)  
   Event raised when items have been subtracted from an inventory.
 
-- [items_transferred](items-transferred.md)  
+- [items_transferred](Inventory/items-transferred.md)  
   Event raised when items have been transferred to or from an inventory.
 
-- [items_updated](items-updated.md)  
+- [items_updated](Inventory/items-updated.md)  
   Event raised when items have been updated in an inventory.
+
+- [marketplace_transaction_redeemed](Inventory/marketplace-transaction-redeemed.md)  
+  This event is triggered when a marketplace transaction is redeemed.
 
 ## GameSave
 
-- [gamesave_version_finalized](gamesave-version-finalized.md)  
+- [gamesave_version_finalized](GameSave/gamesave-version-finalized.md)  
   This event is triggered when a game save version is finalized with all the files fully uploaded.
 
-- [gamesave_version_marked_known_good](gamesave-version-marked-known-good.md)  
+- [gamesave_version_marked_known_good](GameSave/gamesave-version-marked-known-good.md)  
   This event is triggered when a game save version is marked as known good.
 
 ## Partner
 
-- [display_name_filtered](display-name-filtered.md)  
+- [display_name_filtered](Partner/display-name-filtered.md)  
   This event is triggered when a display name is filtered by community sift.  
 
-- [player_display_name_filtered](player-display-name-filtered.md)  
+- [player_display_name_filtered](Partner/player-display-name-filtered.md)  
   This event is triggered when a display name is filtered by community sift only if there is an associated player EntityId for the event.
 
-- [player_photon_session_authenticated](player-photon-session-authenticated.md)  
+- [player_photon_session_authenticated](Partner/player-photon-session-authenticated.md)  
   This event is triggered when a player connects to a Photon Cloud application and authenticates with PlayFab using Photon custom authentication.
 
 ## Player
-
-- [auth_token_validated](auth-token-validated.md)  
-  This event is triggered when an email confirmation link is clicked.
-
-- [title_deleted_master_player](title-deleted-master-player.md)  
-  This event is triggered when a GDPR delete is finished.
-
-- [player_action_executed](player-action-executed.md)  
+- [player_action_executed](Player/player-action-executed.md)  
   This event is triggered when an action linked to a segmentation change or event rule executes on a player.
 
-- [player_ad_campaign_attribution](player-ad-campaign-attribution.md)  
+- [player_ad_campaign_attribution](Player/player-ad-campaign-attribution.md)  
   This event is triggered by an attribution tracking Add-on when a player is matched to a paid acquisition campaign.
 
-- [player_added_title](player-added-title.md)  
-  This event is triggered when a player creates a new account for a title. Note: this event is triggered once per title rather than once per publisher.
-
-
-
-- [player_banned](player-banned.md)  
-  This event is triggered when a player is banned.
-
-- [player_changed_avatar](player-changed-avatar.md)  
-  This event is triggered when a player's avatar URL is changed.
-
-- [player_completed_password_reset](player-completed-password-reset.md)  
-  This event is triggered when a player completes the password reset process by visiting the link URL that was sent to them and choosing a new password.
-
-- [player_consumed_item](player-consumed-item.md)  
+- [player_consumed_item](Player/player-consumed-item.md)  
   This event is triggered when a player consumes an item from their inventory.
 
-- [player_created](player-created.md)  
-  This event is triggered when a player account is created for the first time. Note: this event is only triggered once per publisher, not once per title.
-
-- [player_data_exported](player-data-exported.md)  
-  This event is triggered when a player's data is exported.
-
-- [player_device_info](player-device-info.md)  
-  This event is triggered once after the player logs in based on the settings for your title.
-
-- [player_displayname_changed](player-displayname-changed.md)  
-  This event is triggered when a player's display name is changed.
-
-- [player_inventory_item_added](player-inventory-item-added.md)  
+- [player_inventory_item_added](Player/player-inventory-item-added.md)  
   This event is triggered when an item is granted to a player.
 
-- [player_linked_account](player-linked-account.md)  
-  This event is triggered when a new authentication method is linked to a player's account.
-
-- [player_logged_in](player-logged-in.md)  
-  This event is triggered when a player logs in.
-
-- [player_password_reset_link_sent](player-password-reset-link-sent.md)  
-  This event is triggered when a player is sent a link to reset their password.
-
-- [player_paid_for_purchase](player-paid-for-purchase.md)  
+- [player_paid_for_purchase](Player/player-paid-for-purchase.md)  
   This event is triggered when the second step of the payment process completes, paying for the purchase.
 
-- [player_ranked_on_leaderboard_version](player-ranked-on-leaderboard-version.md)  
-  This event is triggered for the top-ranked players on a leaderboard when the leaderboard version changes (e.g. when a leaderboard statistic version is incremented). The maximum number of leaderboard entries for which the event is generated is controlled by the "Leaderboard version change top rank events sent" title limit.
-
-- [player_realmoney_purchase](player-realmoney-purchase.md)  
+- [player_realmoney_purchase](Player/player-realmoney-purchase.md)  
   This event is triggered when a player makes a real money purchase, and generates revenue for the game.
 
-- [player_receipt_validation](player-receipt-validation.md)  
+- [player_receipt_validation](Player/player-receipt-validation.md)  
   This event is triggered when a player attempts to make a real money purchase and the purchase receipt is being validated.
 
-- [player_redeemed_coupon](player-redeemed-coupon.md)  
+- [player_redeemed_coupon](Player/player-redeemed-coupon.md)  
   This event is triggered when a player redeems a coupon.
 
-- [player_removed_title](player-removed-title.md)  
-  This event is triggered when a player account for a title is removed. Note: this event is triggered once per title rather than once per publisher.
-
-- [player_reported_as_abusive](player-reported-as-abusive.md)  
-  This event is triggered when a player is reported by another player as abusive.
-
-- [player_set_profile_property](player-set-profile-property.md)  
+- [player_set_profile_property](Player/player-set-profile-property.md)  
   This event is triggered when PlayFab makes an internal adjustment to a player profile.
 
-- [player_started_purchase](player-started-purchase.md)  
+- [player_started_purchase](Player/player-started-purchase.md)  
   This event is triggered when a player starts a purchase.
 
-- [player_statistic_changed](player-statistic-changed.md)  
-  This event is triggered when a player statistic is changed.
-
-- [player_statistic_deleted](player-statistic-deleted.md)  
-  This event is triggered when a player statistic is deleted.
-
-- [player_tag_added](player-tag-added.md)  
-  This event is triggered when a tag is added to a player profile.
-
-- [player_tag_removed](player-tag-removed.md)  
-  This event is triggered when a tag is removed from a player profile.
-
-- [player_unlinked_account](player-unlinked-account.md)  
-  This event is triggered when an authentication method is unlinked from a player's account.
-
-- [player_updated_contact_email](player-updated-contact-email.md)  
-  This event is triggered when a player updates a contact email on their profile.
-
-- [player_vc_item_purchased](player-vc-item-purchased.md)  
+- [player_vc_item_purchased](Player/player-vc-item-purchased.md)  
   This event is triggered when the player makes a purchase using virtual currency.
 
-- [player_verified_contact_email](player-verified-contact-email.md)  
+- [player_virtual_currency_balance_changed](Player/player-virtual-currency-balance-changed.md)  
+  This event is triggered when a player's virtual currency balance changes.
+
+## PlayerIdentity
+
+- [auth_token_validated](PlayerIdentity/auth-token-validated.md)  
+  This event is triggered when an email confirmation link is clicked.
+
+- [character_created](PlayerIdentity/character-created.md)  
+  This event is triggered when a character is created for the first time.  
+
+- [entity_created](PlayerIdentity/entity-created.md)  
+  This event is triggered when an entity is created.  
+
+- [entity_logged_in](PlayerIdentity/entity-logged-in.md)  
+  This event is triggered when an entity has logged in.
+
+- [player_added_title](PlayerIdentity/player-added-title.md)  
+  This event is triggered when a player creates a new account for a title. Note: this event is triggered once per title rather than once per publisher.
+
+- [player_banned](PlayerIdentity/player-banned.md)  
+  This event is triggered when a player is banned.
+
+- [player_changed_avatar](PlayerIdentity/player-changed-avatar.md)  
+  This event is triggered when a player's avatar URL is changed.
+
+- [player_completed_password_reset](PlayerIdentity/player-completed-password-reset.md)  
+  This event is triggered when a player completes the password reset process by visiting the link URL that was sent to them and choosing a new password.
+
+- [player_created](PlayerIdentity/player-created.md)  
+  This event is triggered when a player account is created for the first time. Note: this event is only triggered once per publisher, not once per title.
+
+- [player_data_exported](PlayerIdentity/player-data-exported.md)  
+  This event is triggered when a player's data is exported.
+
+- [player_device_info](PlayerIdentity/player-device-info.md)  
+  This event is triggered once after the player logs in based on the settings for your title.
+
+- [player_displayname_changed](PlayerIdentity/player-displayname-changed.md)  
+  This event is triggered when a player's display name is changed.
+
+- [player_linked_account](PlayerIdentity/player-linked-account.md)  
+  This event is triggered when a new authentication method is linked to a player's account.
+
+- [player_logged_in](PlayerIdentity/player-logged-in.md)  
+  This event is triggered when a player logs in.
+
+- [player_password_reset_link_sent](PlayerIdentity/player-password-reset-link-sent.md)  
+  This event is triggered when a player is sent a link to reset their password.
+
+- [player_removed_title](PlayerIdentity/player-removed-title.md)  
+  This event is triggered when a player account for a title is removed. Note: this event is triggered once per title rather than once per publisher.
+
+- [player_reported_as_abusive](PlayerIdentity/player-reported-as-abusive.md)  
+  This event is triggered when a player is reported by another player as abusive.
+
+- [player_tag_added](PlayerIdentity/player-tag-added.md)  
+  This event is triggered when a tag is added to a player profile.
+
+- [player_tag_removed](PlayerIdentity/player-tag-removed.md)  
+  This event is triggered when a tag is removed from a player profile.
+
+- [player_unlinked_account](PlayerIdentity/player-unlinked-account.md)  
+  This event is triggered when an authentication method is unlinked from a player's account.
+
+- [player_updated_contact_email](PlayerIdentity/player-updated-contact-email.md)  
+  This event is triggered when a player updates a contact email on their profile.
+
+- [player_verified_contact_email](PlayerIdentity/player-verified-contact-email.md)  
   This event is triggered when a contact email is verified for a player.
 
-- [player_virtual_currency_balance_changed](player-virtual-currency-balance-changed.md)  
-  This event is triggered when a player's virtual currency balance changes.
+- [title_deleted_master_player](PlayerIdentity/title-deleted-master-player.md)  
+  This event is triggered when a GDPR delete is finished.
+
+- [title_initiated_player_password_reset](PlayerIdentity/title-initiated-player-password-reset.md)  
+  This event is triggered when a title initiates the account recovery process for a player.
+
+- [title_profile_view_constraints_changed](PlayerIdentity/title-profile-view-constraints-changed.md)  
+  This event is triggered when a profile view constraint is changed for the title.
+
+- [entity_deleted](PlayerIdentity/entity-deleted.md)  
+  This event is triggered when an entity is deleted.
+
+- [logged_in_to_title](PlayerIdentity/logged-in-to-title.md)  
+  This event is triggered when a user logs in to a title.
+
+- [player_authenticated](PlayerIdentity/player-authenticated.md)  
+  This event is triggered when a player is authenticated.
+
+- [player_custom_properties_changed](PlayerIdentity/player-custom-properties-changed.md)  
+  This event is triggered when a player's custom properties are changed.
+
+- [player_identity_link_added](PlayerIdentity/player-identity-link-added.md)  
+  This event is triggered when a player identity link is added.
+
+- [player_identity_link_removed](PlayerIdentity/player-identity-link-removed.md)  
+  This event is triggered when a player identity link is removed.
+
+- [player_updated_login_email](PlayerIdentity/player-updated-login-email.md)  
+  This event is triggered when a player updates their login email.
+
+## PlayerProfile
+
+- [entity_files_set](PlayerProfile/entity-files-set.md)  
+  This event is triggered when files are attached to an entity.
+
+- [entity_language_updated](PlayerProfile/entity-language-updated.md)  
+  This event is triggered when the language associated with an entity is changed.
+
+- [entity_objects_set](PlayerProfile/entity-objects-set.md)  
+  This event is triggered when objects are attached to an entity.
+
+- [access_policy_updated](PlayerProfile/access-policy-updated.md)  
+  This event is triggered when an access policy is updated.
+
+- [avatar_url_updated](PlayerProfile/avatar-url-updated.md)  
+  This event is triggered when an avatar URL is updated.
+
+- [contact_email_updated](PlayerProfile/contact-email-updated.md)  
+  This event is triggered when a contact email is updated.
+
+- [files_changed](PlayerProfile/files-changed.md)  
+  This event is triggered when files are changed.
+
+- [language_updated](PlayerProfile/language-updated.md)  
+  This event is triggered when a language setting is updated.
+
+- [objects_updated](PlayerProfile/objects-updated.md)  
+  This event is triggered when objects are updated.
 
 ## Session
 
-- [client_focus_change](client-focus-change.md)  
+- [client_focus_change](Session/client-focus-change.md)  
   This event is triggered every time the application enters or exits focus on the player's device.
 
-- [client_session_start](client-session-start.md)  
+- [client_session_start](Session/client-session-start.md)  
   This event is triggered when a new client session starts.
 
 ## Title
 
-- [title_catalog_updated](title-catalog-updated.md)  
-  This event is triggered when a catalog is changed.
-
-- [title_client_rate_limited_alert](title-client-rate-limited-alert.md)  
+- [title_client_rate_limited_alert](Title/title-client-rate-limited-alert.md)  
   This event is triggered when a single IP address generates too many API calls to PlayFab and is throttled.
 
-- [title_deleted](title-deleted.md)  
-  This event is triggered when a game title is deleted.
-
-- [title_high_error_rate_alert](title-high-error-rate-alert.md)  
+- [title_high_error_rate_alert](Title/title-high-error-rate-alert.md)  
   This event is triggered when a game title experiences a high rate of errors.
 
-- [title_initiated_player_password_reset](title-initiated-player-password-reset.md)  
-  This event is triggered when a title initiates the account recovery process for a player.
-
-- [title_news_updated](title-news-updated.md)  
-  This event is triggered when a title news is created or updated.
-
-- [title_profile_view_constraints_changed](title-profile-view-constraints-changed.md)  
-  This event is triggered when a profile view constraint is changed for the title.
-
-- [title_queue_config_updated](title-queue-config-updated.md)  
-  This event is triggered when a queue config is changed.
-
-- [title_requested_limit_change](title-requested-limit-change.md)  
+- [title_requested_limit_change](Title/title-requested-limit-change.md)  
   This event is triggered when a title requests a service limit change.
 
-- [title_saved_survey](title-saved-survey.md)  
+- [title_saved_survey](Title/title-saved-survey.md)  
   This event is triggered when a game's survey is saved.
 
-- [title_secret_key_changed](title-secret-key-changed.md)  
+## TitleData
+
+- [title_news_updated](TitleData/title-news-updated.md)  
+  This event is triggered when a title news is created or updated.
+
+- [title_secret_key_changed](TitleData/title-secret-key-changed.md)  
   This event is triggered when a title adds or updates a Secret Key
 
-- [title_statistic_version_changed](title-statistic-version-changed.md)  
-  This event is triggered when the version of a statistic changes, causing its leaderboard to reset.
+- [title_activated](TitleData/title-activated.md)  
+  This event is triggered when a title is activated.
 
-- [title_store_updated](title-store-updated.md)  
-  This event is triggered when a store is changed.
+- [title_data_override_deleted](TitleData/title-data-override-deleted.md)  
+  This event is triggered when a title data override is deleted.
+
+- [title_data_updated](TitleData/title-data-updated.md)  
+  This event is triggered when title data is updated.
+
+- [title_deactivated](TitleData/title-deactivated.md)  
+  This event is triggered when a title is deactivated.
 
 ## Statistics
 
-- [statistic_updated](statistic-updated.md)  
+- [statistic_updated](Statistics/statistic-updated.md)  
   This event is triggered when a statistic is updated.
 
 ## Leaderboards
 
-- [leaderboard_version_ended](leaderboard-version-ended.md)  
+- [character_statistic_changed](Leaderboards/character-statistic-changed.md)  
+  This event is triggered when a character statistic is changed.  
+
+- [character_statistic_deleted](Leaderboards/character-statistic-deleted.md)  
+  This event is triggered when a character statistic is deleted.  
+
+- [entity_rank_on_leaderboard_version_ended](Leaderboards/entity-rank-on-leaderboard-version-ended.md)  
   This event is triggered when a leaderboard version is reset
 
-- [entity_rank_on_leaderboard_version_ended](entity-rank-on-leaderboard-version-ended.md)  
+- [leaderboard_version_ended](Leaderboards/leaderboard-version-ended.md)  
   This event is triggered when a leaderboard version is reset
+
+- [player_ranked_on_leaderboard_version](Leaderboards/player-ranked-on-leaderboard-version.md)  
+  This event is triggered when a leaderboard version changes, generating events for top‑ranked players up to the limit defined by the "Leaderboard version change top rank events sent" setting.
+
+- [player_statistic_changed](Leaderboards/player-statistic-changed.md)  
+  This event is triggered when a player statistic is changed.
+
+- [player_statistic_deleted](Leaderboards/player-statistic-deleted.md)  
+  This event is triggered when a player statistic is deleted.
+
+- [title_statistic_version_changed](Leaderboards/title-statistic-version-changed.md)  
+  This event is triggered when the version of a statistic changes, causing its leaderboard to reset.
+
+- [title_statistic_deleted](Leaderboards/title-statistic-deleted.md)  
+  This event is triggered when a title statistic is deleted.

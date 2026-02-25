@@ -90,6 +90,6 @@ For more information on specific flows from either your game client or service, 
 + [Matchmaking API Reference](xref:titleid.playfabapi.com.multiplayer.matchmaking)
 <!-- + [Matchmaking Admin API Reference](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin) -->
 + [PlayStream Events](../../api-references/events/index.md)
-    + [matchmaking_match_found](../../api-references/events/matchmaking-match-found.md)
-    + [matchmaking_ticket_completed](../../api-references/events/matchmaking-ticket-completed.md)
+    + [matchmaking_match_found](../../api-references/events/Matchmaking/match-found.md)
+    + [matchmaking_ticket_completed](../../api-references/events/Matchmaking/ticket-completed.md)
 

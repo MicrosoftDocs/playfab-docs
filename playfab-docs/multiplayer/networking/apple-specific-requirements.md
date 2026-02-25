@@ -17,7 +17,7 @@ This document lists the basic prerequisites and requirements necessary to integr
 ## Prerequisites
 Before you start this tutorial, ensure that the following prerequisites have been met:
 
-1. You've created a [PlayFab developer account](https://developer.playfab.com/en-us/sign-up)
+1. You've created a [PlayFab developer account](https://developer.playfab.com)
 2. You've created a PlayFab Title and your title has been allow-listed for PlayFab Party
 3. You have Xcode version 10.2.1 or higher installed
 4. You have access to the [PlayFab Party platforms repository](https://github.com/PlayFab/PlayFabParty)

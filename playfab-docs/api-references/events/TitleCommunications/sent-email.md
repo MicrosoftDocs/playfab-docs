@@ -3,7 +3,7 @@ title: sent_email
 author: ronnyparedes
 description: sent_email event.
 ms.author: ronnyparedes
-ms.date: 09/02/2026
+ms.date: 02/09/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events

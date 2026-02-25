@@ -18,8 +18,8 @@ And if you want just the data analytics and warehousing without the real-time ev
 
 Leaderboards provides two optional events:
 
-- [`playfab.leaderboard.leaderboard_version_ended`](../../api-references/events/leaderboard-version-ended.md)
-- [`playfab.leaderboard.entity_rank_on_leaderboard_version_ended`](../../api-references/events/entity-rank-on-leaderboard-version-ended.md)
+- [`playfab.leaderboard.leaderboard_version_ended`](../../api-references/events/Leaderboards/leaderboard-version-ended.md)
+- [`playfab.leaderboard.entity_rank_on_leaderboard_version_ended`](../../api-references/events/Leaderboards/entity-rank-on-leaderboard-version-ended.md)
 
 These two events allow you to quickly know when a leaderboard version has ended and allow you to query previous data as soon as you want. With entity rank on leaderboard version ended, you can get the rank and score of the top entity for a leaderboard when that leaderboard version ended.
 
@@ -51,8 +51,8 @@ For learning more about how to leverage these events to preform different action
 
 ## See Also 
 
-- [`playfab.leaderboard.leaderboard_version_ended`](../../api-references/events/leaderboard-version-ended.md)
-- [`playfab.leaderboard.entity_rank_on_leaderboard_version_ended`](../../api-references/events/entity-rank-on-leaderboard-version-ended.md)
+- [`playfab.leaderboard.leaderboard_version_ended`](../../api-references/events/Leaderboards/leaderboard-version-ended.md)
+- [`playfab.leaderboard.entity_rank_on_leaderboard_version_ended`](../../api-references/events/Leaderboards/entity-rank-on-leaderboard-version-ended.md)
 - [PlayStream Overview](../../data-analytics/ingest-data/playstream-overview.md)
 - [Statistics with PlayStream and Telemetry](../../player-progression/statistics/statistics-with-playstream-and-telemetry.md).
 - [Telemetry Overview](../../data-analytics/ingest-data/telemetry-overview.md)

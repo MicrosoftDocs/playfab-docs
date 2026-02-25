@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Accessing PlayFab Technical Support
 
 PlayFab offers a range of support options designed to meet the needs of developers across various stages of development and account tiers. Whether you're just getting started or actively managing a live title, you can access support through public documentation, community discord, or direct technical assistance. 
-Support availability is based on your account plan, with higher tiers offering expanded access and faster response times. Customers may upgrade their plans to unlock additional support features.
+Support availability is based on your account plan, with higher tiers offering expanded access and faster response times. Customers can upgrade their plans to unlock additional support features.
 
 ## Support Offerings Overview
 
@@ -21,8 +21,8 @@ Support availability is based on your account plan, with higher tiers offering e
 |:---------------------------------- |:-----------------------------------|:-----------------------------------| 
 | **Documentation**        | Public API reference, tutorials, samples, and feature guides. | Open to all |
 | **Discord Community**         | Community-based support and discussion forums via Discord. | Open to all |
-| **Account Help**            | Direct support for non-technical administrative issues | Open to all PlayFab Developers Accounts |
-| **Support Tickets**          | Direct support for technical issues and service implemetation questions. |Standard Plans and above|
+| **Account Help**            | Direct support for nontechnical administrative issues | Open to all PlayFab Developers Accounts |
+| **Support Tickets**          | Direct support for technical issues and service implementation questions. |Standard Plans and above|
 | **Emergency Escalations**          | Fastest incident response for service-impacting emergencies. |Premium Plans only |
 
 ## Support Offerings
@@ -45,30 +45,30 @@ Support availability is based on your account plan, with higher tiers offering e
 
 ### ACCOUNT HELP
 
-**Purpose:** Use PlayFab Account Help to submit non-technical inquiries related to account access, billing, plan management, sales, or other administrative support.
+**Purpose:** Use PlayFab Account Help to submit nontechnical inquiries related to account access, billing, plan management, sales, or other administrative support.
 
 **Minimum Required Account Plan:** PlayFab account is needed. Available to all PlayFab developers, including free-tier accounts.
 
 **How to access:** PlayFab Developers can access the **Account Help** page in Game Manager. 
-1. Log in to [PlayFab.com](https://playfab.com).
+1. Log in to [PlayFab.com](https://developer.playfab.com).
 2. Navigate to the **Studio-level** "..." section (ellipsis menu).
 3. Select Account Help.
 4. Complete the request form by selecting appropriate Problem Type and Sub-Type fields with description of the problem.
-5. Submit the ticket. Expect a response within 3 business days.
+5. Submit the ticket. Expect a response within three business days.
 
 > [!NOTE]
 > To streamline support access for effective issue resolution, PlayFab has updated its support experience across both PlayFab.com and Game Manager. This includes the deprecation of the “Contact Us” form on PlayFab.com, introduction of the Account Help support for all PlayFab developers.
-> For login-related issues, please use the self-service account recovery flow provided through Microsoft Entra ID. 
+> For login-related issues, use the self-service account recovery flow provided through Microsoft Entra ID. 
 
 ### SUPPORT TICKET SUBMISSION
 
-**Purpose:** Use support tickets to understand how to use a particular PlayFab feature, or to request help with a technical problem, or to report a bug. Customers with paid accounts may submit support tickets directly to the PlayFab team through the "Contact Us" Page in Game Manager. Customers will receive a response within 1 business day.
+**Purpose:** Use support tickets to understand how to use a particular PlayFab feature, or to request help with a technical problem, or to report a bug. Customers with paid accounts can submit support tickets directly to the PlayFab team through the "Contact Us" Page in Game Manager. Customers will receive a response within one business day.
 
 **Minimum Required Account Plan:** Standard Account Plan
 
 **How to access:** Qualified accounts can access the **Contact Us** page in Game Manager:
 
-1. Log in to [PlayFab.com](https://playfab.com).
+1. Log in to [PlayFab.com](https://developer.playfab.com).
 2. Navigate to the **Title Overview** page of the title needing support.
 3. To access the help menu, select the **?** in the top right navigation bar.
 4. Select **Contact Us** and fill out the support form.
@@ -80,13 +80,13 @@ If you recently requested an upgrade, support ticket submission becomes availabl
 **Purpose:** Provides 24/7 access to PlayFab's on-call engineering team in the event of critical service-impacting issues. This provides fastest incident response time to customers during emergencies. 
 
 > [!NOTE]
-> Emergency escalations should be used sparingly and only in the case of high-impact service errors or outtages.
+> Emergency escalations should be used sparingly and only in the case of high-impact service errors or outages.
 
 **Minimum Required Account Plan:** Premium Account Plan
 
 **How to access:** Qualified accounts can use the emergency escalation option via the **Contact Us** page in Game Manager:
 
-1. Log in to [PlayFab.com](https://playfab.com).
+1. Log in to [PlayFab.com](https://developer.playfab.com).
 2. Navigate to the **Title Overview** page of the title needing support.
 3. Select the **?** in the top right navigation bar to access the drop-down menu.
 4. Select **Contact Us** to access the form.

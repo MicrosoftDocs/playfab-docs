@@ -24,7 +24,7 @@ You can use the PlayFab plugin for the Unreal Engine to manage LiveOps for your 
 
 ## Prerequisites
 
-* A [PlayFab developer account](https://developer.playfab.com/en-us/sign-up).
+* A [PlayFab developer account](https://developer.playfab.com).
 * An installation of [Visual Studio](https://visualstudio.microsoft.com/downloads/) that is configured for Unreal Engine. For information about configuring Visual Studio, see [Setting Up Visual Studio for Unreal Engine](https://docs.unrealengine.com/en-US/Programming/Development/VisualStudioSetup/index.html).
 * An installation of the [Unreal Engine](https://www.unrealengine.com/download). For information about installing the Unreal Engine, see the [Unreal Engine installation guide](https://docs.unrealengine.com/4.27/en-US/Basics/Projects/Browser/).
 * An installation of the PlayFab Unreal plugin. You can install the Unreal plugin from the [Unreal Engine marketplace](https://www.unrealengine.com/marketplace/playfab-sdk).
