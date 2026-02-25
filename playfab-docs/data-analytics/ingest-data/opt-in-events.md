@@ -78,9 +78,9 @@ To preview event data, select the graph icon next to any event. A data explorer 
 To disable multiple events at once:
 
 1. Select **Bulk Edit Events** in the header.
-1. Choose **Set all PlayStream events to none** or **Set all telemetry events to none** (or both).
-1. Select **Apply** to make the changes.
-1. Review the toast notification and the unsaved changes indicator, then **Save** or **Discard Changes** as needed.
+1. Choose **Turn off emission for all PlayStream events** or **Turn off emission for all telemetry events** (or both).
+1. Select **Bulk edit** to make the changes.
+1. **Save** or **Discard Changes** as needed.
 
 ## Save configuration changes
 
