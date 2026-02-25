@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Azure PlayFab fundamentals
-summary: From pre-production to post-launch, learn how PlayFab can help you build and operate your game.  # < 160 chars
+title: PlayFab fundamentals
+summary: From preproduction to post-launch, learn how PlayFab can help you build and operate your game.  # < 160 chars
 
 metadata:
-  title: Azure PlayFab fundamentals and getting started documentation
-  description: From pre-production to post-launch, learn how PlayFab can help you build and operate your game. # Required; article description that is displayed in search results. < 160 chars.
+  title: PlayFab fundamentals and getting started documentation
+  description: From preproduction to post-launch, learn how PlayFab can help you build and operate your game. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: azure-playfab #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page
   author: m-kdearnley
@@ -22,7 +22,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Playfab?
+          - text: What is PlayFab?
             url: what-is-playfab.md
       - linkListType: concept
         links:

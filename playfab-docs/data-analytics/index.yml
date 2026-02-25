@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Azure PlayFab data and analytics documentation
+title: PlayFab data and analytics documentation
 summary: PlayFab data and analytics helps you manage game data. It provides reporting functions for generating weekly reports and trends, tools for segmenting data and running experiments, and data management tools for ingesting, exporting, and managing data. # < 160 chars
 
 metadata:

@@ -108,7 +108,7 @@ It's time to move on to the [Google Play Console](https://play.google.com/consol
 
     ![Add app permissions](../../media/marketplace-integrations/google/add-app-permissions.png)
 
-6. From the list of apps, choose the one you want your account to be linked to. In this case, it's **Economy V2 Playfab Test App**. Once selected, press **Apply**.
+6. From the list of apps, choose the one you want your account to be linked to. In this case, it's **Economy V2 PlayFab Test App**. Once selected, press **Apply**.
 
     ![App selection](../../media/marketplace-integrations/google/app-selection.png)
 

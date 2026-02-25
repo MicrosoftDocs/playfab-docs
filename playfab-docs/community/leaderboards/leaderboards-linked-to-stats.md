@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Ranking players by statistics
 
 In this tutorial, we're going to learn how to use both Leaderboards and Statistics services together. The end result is that, when a statistic is updated on an entity, is automatically reflected on the corresponding leaderboard.
-For more information about Azure PlayFab Statistics, see [Statistics Overview]([Azure PlayFab Statistics overview](../../player-progression/statistics/index.md)).
+For more information about PlayFab Statistics, see [Statistics Overview]([PlayFab Statistics overview](../../player-progression/statistics/index.md)).
 
 
 Let's start with an example of a shooter game that uses both services. Here we're going to take advantage of the 

@@ -58,7 +58,7 @@ The table shows the Event Name, Timestamp (UTC), Player ID, and Event Data (via 
 #### What's the sum of order totals this week?
 ![Order totals sum this week](media/ExplorerBasic_Query_3.png)
 
-#### Are Playfab limits being exceeded?
+#### Are PlayFab limits being exceeded?
 ![Title limits exceeded this week](media/ExplorerBasic_Query_4.png)
 
 ### Multi Condition Queries

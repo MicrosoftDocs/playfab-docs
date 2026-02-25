@@ -1,7 +1,7 @@
 ---
 title: Party samples
 author: joannaleecy
-description: Learn about the samples for Azure PlayFab Party.
+description: Learn about the samples for PlayFab Party.
 ms.author: jenelleb
 ms.date: 10/13/2020
 ms.topic: article
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Party samples
 
-This topic lists all the Azure PlayFab Party samples that are currently available. 
+This topic lists all the PlayFab Party samples that are currently available. 
 
 If there's a specific sample that you'd like to have, let us know by writing a post on our [forums](https://community.playfab.com/index.html).
 

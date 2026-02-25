@@ -52,7 +52,7 @@ This information is listed on __docker ps__:
 For more information, see [Docker networking](https://docs.docker.com/network/).
 
 > [!NOTE]
-> In both Windows and Linux, Docker containers are part of the "playfab" Docker network. You can do docker inspect network playfab to see information about the network.
+> In both Windows and Linux, Docker containers are part of the "playfab" Docker network. Use `docker inspect network playfab` to view information about the PlayFab network.
 
 #### How can I see runtime details for a container?
 

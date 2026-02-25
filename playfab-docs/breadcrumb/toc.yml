@@ -1,37 +1,33 @@
 items:
-- name: Azure
+- name: PlayFab
   tocHref: /gaming/playfab/
-  topicHref: /azure/
+  topicHref: /gaming/playfab/
   items:
-  - name: PlayFab
-    tocHref: /gaming/playfab/
-    topicHref: /gaming/playfab/
-    items:
-    - name: Fundamentals
-      topicHref: /gaming/playfab/get-started/
-    - name: Fundamentals
-      topicHref: /gaming/playfab/whats-new/
-    - name: Fundamentals
-      topicHref: /gaming/playfab/demo-game/
-    - name: Fundamentals
-      topicHref: /gaming/playfab/resources/
-    - name: Fundamentals
-      topicHref: /gaming/playfab/pricing/
-    - name: Fundamentals
-      topicHref: /gaming/playfab/sdks/
-    - name: Live service management
-      topicHref: /gaming/playfab/live-service-management/
-    - name: Fundamentals
-      topicHref: /gaming/playfab/api-references/
-    - name: Identity
-      topicHref: /gaming/playfab/identity/
-    - name: Economy, Monetization, & UGC.
-      topicHref: /gaming/playfab/economy-monetization/
-    - name: Multiplayer
-      topicHref: /gaming/playfab/multiplayer/
-    - name: Community
-      topicHref: /gaming/playfab/community/
-    - name: Player progression
-      topicHref: /gaming/playfab/player-progression/
-    - name: Game Data
-      topicHref: /gaming/playfab/data-analytics/
+  - name: Fundamentals
+    topicHref: /gaming/playfab/get-started/
+  - name: Fundamentals
+    topicHref: /gaming/playfab/whats-new/
+  - name: Fundamentals
+    topicHref: /gaming/playfab/demo-game/
+  - name: Fundamentals
+    topicHref: /gaming/playfab/resources/
+  - name: Fundamentals
+    topicHref: /gaming/playfab/pricing/
+  - name: Fundamentals
+    topicHref: /gaming/playfab/sdks/
+  - name: Live service management
+    topicHref: /gaming/playfab/live-service-management/
+  - name: Fundamentals
+    topicHref: /gaming/playfab/api-references/
+  - name: Identity
+    topicHref: /gaming/playfab/identity/
+  - name: Economy, Monetization, & UGC.
+    topicHref: /gaming/playfab/economy-monetization/
+  - name: Multiplayer
+    topicHref: /gaming/playfab/multiplayer/
+  - name: Community
+    topicHref: /gaming/playfab/community/
+  - name: Player progression
+    topicHref: /gaming/playfab/player-progression/
+  - name: Game Data
+    topicHref: /gaming/playfab/data-analytics/

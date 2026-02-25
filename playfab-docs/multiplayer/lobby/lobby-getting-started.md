@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Lobby SDK Quickstart
  
 
-This article describes how to set up the development environment for Azure PlayFab Lobby and create your first lobby using the PlayFab Multiplayer C/C++ SDK.
+This article describes how to set up the development environment for PlayFab Lobby and create your first lobby using the PlayFab Multiplayer C/C++ SDK.
 
 > [!NOTE]
 > The PlayFab Multiplayer SDK also provides APIs for PlayFab Matchmaking.

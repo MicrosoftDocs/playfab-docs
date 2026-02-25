@@ -10,7 +10,7 @@ ms.date: 08/18/2022
 
 # Class MultiplayerPort
 
-A port used by a Playfab Multiplayer Server.
+A port used by a PlayFab Multiplayer Server.
 
 ```csharp
 public class MultiplayerPort
@@ -20,7 +20,7 @@ public class MultiplayerPort
 
 | name | description |
 | --- | --- |
-| [MultiplayerPort](MultiplayerPort/MultiplayerPort.md)(…) | A port used by a Playfab Multiplayer Server. |
+| [MultiplayerPort](MultiplayerPort/MultiplayerPort.md)(…) | A port used by a PlayFab Multiplayer Server. |
 | [Name](MultiplayerPort/Name.md) { get; set; } | The name of the port as specified in the PlayFab Game Manager server settings. |
 | [Num](MultiplayerPort/Num.md) { get; set; } | The number for the port. |
 | [Protocol](MultiplayerPort/Protocol.md) { get; set; } | The protocol for the port. |

@@ -1,7 +1,7 @@
 ---
 title: Performance and retention
 author: joannaleecy
-description: Performance and retention for playfab insights
+description: Performance and retention for PlayFab insights
 ms.author: jenelleb
 ms.date: 02/28/2020
 ms.topic: article

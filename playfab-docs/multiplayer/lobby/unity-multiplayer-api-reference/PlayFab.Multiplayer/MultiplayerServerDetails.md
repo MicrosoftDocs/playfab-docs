@@ -10,7 +10,7 @@ ms.date: 08/18/2022
 
 # Class MultiplayerServerDetails
 
-Details about a Playfab Multiplayer Server.
+Details about a PlayFab Multiplayer Server.
 
 ```csharp
 public class MultiplayerServerDetails
@@ -20,9 +20,9 @@ public class MultiplayerServerDetails
 
 | name | description |
 | --- | --- |
-| [MultiplayerServerDetails](MultiplayerServerDetails/MultiplayerServerDetails.md)(…) | Details about a Playfab Multiplayer Server. |
-| [Fqdn](MultiplayerServerDetails/Fqdn.md) { get; set; } | The fully qualified domain name of the virtual machine that is hosting this multiplayer server. |
-| [Ipv4Address](MultiplayerServerDetails/Ipv4Address.md) { get; set; } | The IPv4 address of the virtual machine that is hosting this multiplayer server. |
+| [MultiplayerServerDetails](MultiplayerServerDetails/MultiplayerServerDetails.md)(…) | Details about a PlayFab Multiplayer Server. |
+| [FQDN](MultiplayerServerDetails/Fqdn.md) { get; set; } | The fully qualified domain name of the virtual machine that's hosting this multiplayer server. |
+| [Ipv4Address](MultiplayerServerDetails/Ipv4Address.md) { get; set; } | The IPv4 address of the virtual machine that's hosting this multiplayer server. |
 | [Ports](MultiplayerServerDetails/Ports.md) { get; set; } | The ports the multiplayer server uses. |
 | [Region](MultiplayerServerDetails/Region.md) { get; set; } | The server's region. |
 

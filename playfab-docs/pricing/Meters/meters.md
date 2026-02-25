@@ -122,7 +122,7 @@ PlayFab Matchmaking and Lobby are highly-customizable, proven solutions for buil
 
 ### Leaderboard
 
-Azure Playfab Leaderboards is a cross-platform service that allows to create a sorted list of players with the purpose
+PlayFab Leaderboards is a cross-platform service that allows to create a sorted list of players with the purpose
 of ranking them by scores.
 
 * **[Leaderboard Reads](leaderboard-meters.md)**: Metered by API calls that read from Leaderboards.
@@ -131,7 +131,7 @@ of ranking them by scores.
 
 ### Statistics
 
-Azure Playfab Statistics is a cross-platform service that allows to track the activity of players within the game.
+PlayFab Statistics is a cross-platform service that allows to track the activity of players within the game.
 
 * **[Statistics Reads](statistics-meters.md)**: Metered by API calls that read from Statistics. 
 * **[Statistics Writes](statistics-meters.md)**: Metered by API calls that write to Statistics. 

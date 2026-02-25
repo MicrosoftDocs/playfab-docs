@@ -103,7 +103,7 @@ Here we examine some best practices for using PlayFab Insights and address the m
      | Events per entity | 8,000 per second | Exceeding this limit results in a `PerEntityEventRateLimitExceeded` error. An entity most often represents an individual player, but can also be a player group or title. | 
      | Max payload size  | 10,240 bytes (10 KB) | |
 
-     If you run into any of these limits, contact the Playfab Support team for assistance. In the upper right-hand corner of Game Manager select the question mark icon, then select **Contact Us**.
+     If you run into any of these limits, contact the PlayFab Support team for assistance. In the upper right-hand corner of Game Manager select the question mark icon, then select **Contact Us**.
 
 ### I get an error "Query execution has exceeded the allowed limits" when I try to run a query
 

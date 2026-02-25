@@ -10,11 +10,11 @@ keywords: playfab, analytics, multiplayer, authentication, leaderboards, liveops
 ms.localizationpriority: medium
 ---
 
-# What is Azure PlayFab?
+# What is PlayFab?
 
-Azure PlayFab is a complete backend platform for games, featuring managed game services, real-time analytics, and live operations management capabilities. These features help you engage and retain players, monetize your experiences, collect and analyze game data, and build player experiences across gaming platforms and devices.
+PlayFab is a complete backend platform for games, featuring managed game services, real-time analytics, and live operations management capabilities. These features help you engage and retain players, monetize your experiences, collect and analyze game data, and build player experiences across gaming platforms and devices.
 
-PlayFab's cost-effective and highly-scalable solutions are backed by the world-class infrastructure and a global reach of Azure, allowing all game creators to build and launch their games with confidence. Whether you are a team of one or one thousand, PlayFab has solutions that scale for all sizes of game. PlayFab is the perfect complement to your game: choose which PlayFab features you want to use, extend PlayFab capabilities with cloud-based logic, or connect PlayFab with your own bespoke game services. 
+PlayFab's cost-effective and highly-scalable solutions are backed by the world-class infrastructure and a global reach of Azure, allowing all game creators to build and launch their games with confidence. Whether you're a team of one or one thousand, PlayFab has solutions that scale for all sizes of game. PlayFab is the perfect complement to your game: choose which PlayFab features you want to use, extend PlayFab capabilities with cloud-based logic, or connect PlayFab with your own bespoke game services. 
 
 By managing the essential backend components, PlayFab can help you and your team devote more time to innovating and perfecting the elements of your game that matter most. 
 
@@ -38,11 +38,11 @@ PlayFab provides the following services:
 
 ## Cross-network identity
 
-**Player authentication**: Start with frictionless authentication and let players link accounts to roam across Windows, Xbox, Steam, PlayStation&#8482;Network, Nintendo, Facebook, iOS, Android, and more.
+**Player authentication**: Start with frictionless authentication and let players link accounts to roam across Windows, Xbox, Steam, PlayStation™ Network, Nintendo, Facebook, iOS, Android, and more.
 
 ## Live service management
 
-**Game Manager web portal**: A shared space (with roles and access permissions) where studio members can build, configure and operate your game.
+**Game Manager web portal**: A shared space (with roles and access permissions) where studio members can build, configure, and operate your game.
 
 **Title data**: Manage your game configuration remotely.
 
@@ -90,7 +90,7 @@ PlayFab provides the following services:
 
 ## Community
 
-**Leaderboards**: Facilitate permanent or time-limited competitions amongst friends or strangers.
+**Leaderboards**: Facilitate permanent or time-limited competitions among friends or strangers.
 
 ### Chat
 

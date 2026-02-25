@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PFMultiplayerPort"
-description: "A port used by a Playfab Multiplayer Server."
+description: "A port used by a PlayFab Multiplayer Server."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
@@ -10,7 +10,7 @@ ms.date: 08/16/2022
 
 # PFMultiplayerPort  
 
-A port used by a Playfab Multiplayer Server.  
+A port used by a PlayFab Multiplayer Server.  
 
 ## Syntax  
   

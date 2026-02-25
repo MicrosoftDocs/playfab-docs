@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab Lobby overview
+title: PlayFab Lobby overview
 author: joannaleecy
-description: Learn about Azure PlayFab Lobby.
+description: Learn about PlayFab Lobby.
 ms.author: jenelleb
 ms.date: 04/08/2025
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, multiplayer, lobby, matchmaking
 ms.localizationpriority: medium
 ---
 
-# Azure PlayFab Lobby overview
+# PlayFab Lobby overview
  
-Azure PlayFab Lobby is a service to create a temporary grouping mechanism for players to play games together. It's frequently used together with matchmaking, allowing for pre-formed groups to join the same matchmaking ticket, or allowing matched players to convene and receive further notifications about the group such as join/leave events or server connection details. 
+PlayFab Lobby is a service to create a temporary grouping mechanism for players to play games together. It's frequently used together with matchmaking, allowing for pre-formed groups to join the same matchmaking ticket, or allowing matched players to convene and receive further notifications about the group such as join/leave events or server connection details. 
 
 ## Benefits
 

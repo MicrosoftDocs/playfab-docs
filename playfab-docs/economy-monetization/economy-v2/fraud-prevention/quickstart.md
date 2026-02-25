@@ -32,11 +32,11 @@ To give those entries meaning, we need to mirror them in the PlayFab Catalog. Mi
 Each Bundle can be linked to one or more Partner Marketplace Products by adding an AlternateId to it. The AlternateId is the link between PlayFab and any external IAP Market. When your title calls Redeem for a given player entity, we pass this ID up to the IAP Market to check. The general flow is:
 
 1. Create 1 (or more) real world offers in the Microsoft Store
-1. Populate the Add-ons in PlayFab with IAP Market calling permissions and create corresponding Bundles in Playfab that link to the offers you created
+1. Populate the Add-ons in PlayFab with IAP Market calling permissions and create corresponding Bundles in PlayFab that link to the offers you created
 1. Call `RedeemMicrosoftStoreInventoryItems`
 
 > [!NOTE]
-> Unlike previous incarnations of Playfab, in the new system you just create one bundle offer, and then you add each market SKU that needs to reference into the AlternateId list. You don’t need to create a new Item for each IAP market.
+> Unlike previous incarnations of PlayFab, in the new system you just create one bundle offer, and then you add each market SKU that needs to reference into the AlternateId list. You don’t need to create a new Item for each IAP market.
 
 ### Step 1 - Setting up your marketplace integration
 

@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab Multiplayer Game Server SDKs
+title: PlayFab Multiplayer Game Server SDKs
 author: joannaleecy
-description: Learn about the SDKs for Azure PlayFab Multiplayer Game Servers.
+description: Learn about the SDKs for PlayFab Multiplayer Game Servers.
 ms.author: jenelleb
 ms.date: 01/21/2021
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, multiplayer, networking, party, sdk, sample
 ms.localizationpriority: medium
 ---
 
-# Azure Playfab Multiplayer Game Server SDKs
+# PlayFab Multiplayer Game Server SDKs
 
-This topic lists the different flavors of Azure PlayFab Multiplayer Game Server SDKs (GSDKs) we have today.
+This topic lists the different flavors of PlayFab Multiplayer Game Server SDKs (GSDKs) we have today.
 
 ## Download links
 

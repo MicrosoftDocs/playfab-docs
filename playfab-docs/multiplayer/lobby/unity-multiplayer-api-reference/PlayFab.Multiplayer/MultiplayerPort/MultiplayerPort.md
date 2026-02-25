@@ -10,7 +10,7 @@ ms.date: 08/18/2022
 
 # MultiplayerPort constructor
 
-A port used by a Playfab Multiplayer Server.
+A port used by a PlayFab Multiplayer Server.
 
 ```csharp
 public MultiplayerPort(string name, uint num, MultiplayerProtocolType protocolType)

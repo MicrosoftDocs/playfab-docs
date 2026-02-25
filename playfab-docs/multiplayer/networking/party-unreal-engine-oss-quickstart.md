@@ -11,7 +11,7 @@ keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine
 
 # QuickStart: PlayFab Online Subsystem
 
-This article helps you set up and use Azure PlayFab Multiplayer features like Lobby, Matchmaking, and Party for games built with Unreal Engine 4 or Unreal Engine 5. For the full list of supported platforms and versions in Unreal Engine 4 or Unreal Engine 5, see [Supported platforms](party-unreal-engine-oss-overview.md).
+This article helps you set up and use PlayFab Multiplayer features like Lobby, Matchmaking, and Party for games built with Unreal Engine 4 or Unreal Engine 5. For the full list of supported platforms and versions in Unreal Engine 4 or Unreal Engine 5, see [Supported platforms](party-unreal-engine-oss-overview.md).
 
 After following the relevant steps that are outlined in this page for your target platforms, you'll be ready to start using the PlayFab Online Subsystem (PF OSS). Authentication, networking, VOIP, grouping into lobbies, and matchmaking is handled on your behalf with no other changes required.
 

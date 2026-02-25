@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
 # root section (required)
-title: Azure PlayFab documentation
-summary: Learn how to build and manage engaging games using Microsoft Azure PlayFab services.
-# brand: playfab
+title: PlayFab documentation
+summary: Learn how to build and manage engaging games using Microsoft PlayFab services.
+# brand: PlayFab
 
 metadata:
-  title: Azure PlayFab documentation
+  title: PlayFab documentation
   description: PlayFab is a complete backend platform for live games. 
   services: service
   ms.service: azure-playfab

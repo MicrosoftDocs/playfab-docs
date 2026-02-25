@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab Leaderboards overview
+title: PlayFab Leaderboards overview
 author: braulioal
-description: Learn about Azure PlayFab Leaderboard.
+description: Learn about PlayFab Leaderboard.
 ms.author: braulioal
 ms.date: 09/01/2024
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
 
-# Azure PlayFab Leaderboards overview
+# PlayFab Leaderboards overview
 
-Azure Playfab Leaderboards is a cross-platform service that creates a sorted list of players with the purpose
+PlayFab Leaderboards is a cross-platform service that creates a sorted list of players with the purpose
 of ranking them by scores. Leaderboards can be used as a standalone service or be linked with Statistics (so that updates to statistics feed into the entries on the leaderboard).
 
 ![PlayFab Leaderboards Architecture](media/leaderboards-relationship.png)

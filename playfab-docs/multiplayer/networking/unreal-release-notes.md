@@ -130,8 +130,8 @@ Known issue:
 - To invite a Steam or PlayStation player, the host must be on the same platform.
 
 ## 2.0.0
-- UE4 engine OSS PlayFab is updated to use Multiplayer features offered by Azure PlayFab such as Lobby, Matchmaking along with PlayFab Party.
-This update replaces the Xbox provided MPSD with Azure PlayFab Lobby and XBL Smart match with Azure Matchmaking service.
+- UE4 engine OSS PlayFab is updated to use Multiplayer features offered by PlayFab such as Lobby, Matchmaking along with PlayFab Party.
+This update replaces the Xbox provided MPSD with PlayFab Lobby and XBL Smart match with Azure Matchmaking service.
 - XDK is no longer supported for this version of the OSS.
 
 ## 1.0.7

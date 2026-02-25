@@ -39,7 +39,7 @@ The C# PlayFab SDK shouldn't be used if there's a more specific SDK that is suit
 Specific PlayFab SDK is available for:
 * [Unity PlayFab SDK GitHub repo](https://github.com/PlayFab/UnitySDK)
 
-For a full list of the different PlayFab SDKs, see [Azure PlayFab SDK](../playfab-sdk-intro.md).
+For a full list of the different PlayFab SDKs, see [PlayFab SDK](../playfab-sdk-intro.md).
 
 ## Using the SDK
 

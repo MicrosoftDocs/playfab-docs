@@ -51,6 +51,6 @@ If you followed the steps so far, the package manager should now be open in VS. 
 
 Once you have the appropriate source added to the package manager, you should now be able to search for the PlayFab SDK, called **PlayFabAllSDK**. This search should return some available packages, the one you're looking for shares the exact name mentioned previously, and looks like this:
 
-![Playfab SDK](../../media/crafting-game-images/pf-sdk.png)
+![PlayFab SDK](../../media/crafting-game-images/pf-sdk.png)
 
 Once installed you can start using all of the PlayFab API functions! We can now move on to the next step.
