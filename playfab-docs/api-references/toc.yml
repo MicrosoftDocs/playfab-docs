@@ -442,6 +442,32 @@
       href: events/Leaderboards/character-statistic-changed.md
     - name: character_statistic_deleted
       href: events/Leaderboards/character-statistic-deleted.md
+    - name: client_authentication_completed
+      href: events/Networking/client-authentication-completed.md
+    - name: client_connected_to_network
+      href: events/Networking/client-connected-to-network.md
+    - name: client_initialization_completed
+      href: events/Networking/client-initialization-completed.md
+    - name: client_network_created
+      href: events/Networking/client-network-created.md
+    - name: client_network_destroyed
+      href: events/Networking/client-network-destroyed.md
+    - name: client_network_information_received
+      href: events/Networking/client-network-information-received.md
+    - name: client_request_failed
+      href: events/Networking/client-request-failed.md
+    - name: data_received_by_clients
+      href: events/Networking/data-received-by-clients.md
+    - name: data_sent_by_clients
+      href: events/Networking/data-sent-by-clients.md
+    - name: moderation_service_request_count
+      href: events/Networking/moderation-service-request-count.md
+    - name: player_disconnected_from_network
+      href: events/Networking/player-disconnected-from-network.md
+    - name: unity_client_initialization_completed
+      href: events/Networking/unity-client-initialization-completed.md
+    - name: unreal_client_initialization_completed
+      href: events/Networking/unreal-client-initialization-completed.md
     - name: entity_rank_on_leaderboard_version_ended
       href: events/Leaderboards/entity-rank-on-leaderboard-version-ended.md
     - name: leaderboard_version_ended
@@ -461,4 +487,4 @@
 - name: Global API method error codes
   href: global-api-method-error-codes.md
 - name: HTTP response status codes
-  href: http-response-status-codes.md  
+  href: http-response-status-codes.md

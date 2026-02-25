@@ -399,6 +399,47 @@ Each event type has a set of properties that are included as part of event's dat
 - [gamesave_version_marked_known_good](GameSave/gamesave-version-marked-known-good.md)  
   This event is triggered when a game save version is marked as known good.
 
+## Networking
+
+- [client_authentication_completed](Networking/client-authentication-completed.md)  
+  This event is triggered when client authentication is completed.
+
+- [client_connected_to_network](Networking/client-connected-to-network.md)  
+  This event is triggered when a client connects to a network.
+
+- [client_initialization_completed](Networking/client-initialization-completed.md)  
+  This event is triggered when client initialization is completed.
+
+- [client_network_created](Networking/client-network-created.md)  
+  This event is triggered when a client network is created.
+
+- [client_network_destroyed](Networking/client-network-destroyed.md)  
+  This event is triggered when a client network is destroyed.
+
+- [client_network_information_received](Networking/client-network-information-received.md)  
+  This event is triggered when client network information is received.
+
+- [client_request_failed](Networking/client-request-failed.md)  
+  This event is triggered when a client request fails.
+
+- [data_received_by_clients](Networking/data-received-by-clients.md)  
+  This event is triggered when data is received by clients.
+
+- [data_sent_by_clients](Networking/data-sent-by-clients.md)  
+  This event is triggered when data is sent by clients.
+
+- [moderation_service_request_count](Networking/moderation-service-request-count.md)  
+  This event is triggered when moderation service request count is reported.
+
+- [player_disconnected_from_network](Networking/player-disconnected-from-network.md)  
+  This event is triggered when a player disconnects from a network.
+
+- [unity_client_initialization_completed](Networking/unity-client-initialization-completed.md)  
+  This event is triggered when Unity client initialization is completed.
+
+- [unreal_client_initialization_completed](Networking/unreal-client-initialization-completed.md)  
+  This event is triggered when Unreal client initialization is completed.
+
 ## Partner
 
 - [display_name_filtered](Partner/display-name-filtered.md)  
