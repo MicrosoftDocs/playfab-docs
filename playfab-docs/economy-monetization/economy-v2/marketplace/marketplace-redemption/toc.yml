@@ -3,6 +3,8 @@ items:
     href: overview.md
   - name: Google redemption
     href: google.md
+  - name: Microsoft Store redemption
+    href: microsoft.md
   - name: Steam redemption
     href: steam.md
   - name: Google subscription redemption

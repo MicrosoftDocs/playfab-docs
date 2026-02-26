@@ -5,5 +5,7 @@ items:
     href: google.md
   - name: Apple App Store
     href: apple.md
+  - name: Microsoft Store
+    href: microsoft.md
   - name: Steam
     href: steam.md
