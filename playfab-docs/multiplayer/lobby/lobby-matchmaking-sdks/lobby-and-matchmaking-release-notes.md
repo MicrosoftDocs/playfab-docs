@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Multiplayer C++ SDK release notes
 
+## 1.8.7
+
+February 26, 2026
+
+### Bug fixes
+
+- Fixed an issue where the library may crash after losing a WebSocket connection while paused in a debugger.
+
 ## 1.8.6
 
 February 13, 2026
