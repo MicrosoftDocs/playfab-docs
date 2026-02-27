@@ -13,10 +13,19 @@ ms.localizationpriority: medium
 # PlayFab Party Release Notes
 
 > [!NOTE]
-> Support for the Xbox Development Kit (XDK) and Windows 7 platforms ended on August 1, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the PlayFab Party library.
+> Support for the XDK and Windows 7 platforms ended on August 1, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the PlayFab Party library.
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.17
+
+February 23, 2026
+
+- Android: Fix Bluetooth microphones not working.
+- Linux: Remove SafeStack.
+- Apple: Hide OpenSSL symbols from Party.
+- Nintendo Switch 2: Resolved TCP connection error when IP changes.
 
 ## 1.10.16
 
@@ -33,14 +42,14 @@ February 2, 2026
 
 December 17, 2025
 
-- Nintendo Switch 2: Added 10 second timeout for web requests.
+- Nintendo Switch 2: Added 10-second timeout for web requests.
 
 ## 1.10.14
 
 December 9, 2025
 
 - Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has expired.
-- Android: Added support for 16 KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
+- Android: Added support for 16-KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
 
 
 ## 1.10.13
@@ -48,14 +57,14 @@ December 9, 2025
 October 14, 2025
 
 - Fixed an issue that caused the microphone to not function properly on iOS 26.
-- Apple: Added support for Arm64 .xcframework on iOS.
+- Apple: Added support for Arm64.xcframework on iOS.
 
 ## 1.10.12
 
 October 6, 2025
 
 - Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has expired.
-- Android: Added support for 16 KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
+- Android: Added support for 16-KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
 - Apple: Added support for Arm64 simulator builds on iOS.
 
 ### Bug fixes
@@ -102,7 +111,7 @@ November 12, 2024
 
 October 14, 2024
 
-- Added support for up to 128 devices per network. For more details, see [Scalable networks](party-features.md#scalable-networks-up-to-128-devices-per-network).
+- Added support for up to 128 devices per network. For more information, see [Scalable networks](party-features.md#scalable-networks-up-to-128-devices-per-network).
 - Increased `c_maxNetworkConfigurationMaxDeviceCount` from 32 to 128.
 - Updated internal diagnostics.
 - Updated build settings for security hardening.
@@ -226,7 +235,7 @@ June 28, 2023
 
 ### Bug fixes
 
-- Fixed a bug where [`PartyLocalChatControl::SetAudioRenderVolume`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudiorendervolume.md) didn't work properly for Nintendo Switch, PlayStation&#174;4, and PlayStation&#174;5.
+- Fixed a bug where [`PartyLocalChatControl::SetAudioRenderVolume`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudiorendervolume.md) wouldn't properly work for Nintendo Switch, PlayStation&#174;4 and, PlayStation&#174;5.
 
 “PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
@@ -265,7 +274,7 @@ March 30, 2023
 
 ### Bug fixes
 - Fixed a bug where Party could crash if it wasn't cleaned up before the host process started exiting.
-- Changed behavior for peer-to-peer connection to fallback to a relayed connection if the link is disconnected unexpectedly. The previous behavior disconnected both devices from the network.
+- Changed behavior for peer-to-peer connection to fall back to a relayed connection if the link is disconnected unexpectedly. The previous behavior would disconnect both the devices from the network.
 
 ## 1.7.20
 
@@ -273,7 +282,7 @@ February 8, 2023
 
 ### Bug fixes
 
-- Fixed a bug where audio from 44.1-kHz microphones might sound distorted. 
+- Fixed a bug where audio from 44.1-kHz microphones may sound distorted. 
 - Improved diagnostic error messages for network errors reported by [PartyManager::GetErrorMessage()](reference/classes/PartyManager/methods/partymanager_geterrormessage.md).
 
 ## 1.7.19
