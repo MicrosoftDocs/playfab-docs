@@ -298,47 +298,24 @@ If you aren't using the progress callback, wait for the `XAsyncBlock` to complet
 
 ## Step 4: Handle UI Callbacks (Optional)
 
-Game Saves provides built-in UI for Xbox and Windows platforms, but you can customize the user experience by implementing your own UI callbacks.
+Game Saves provides built-in UI for Xbox and Windows platforms. On other platforms (such as Steam Deck), your game must provide its own UI by handling callbacks.
 
-### Platform Requirements
-- **Xbox/Windows**: Built-in UI is provided; custom callbacks are optional
-- **Other platforms** (Steam Deck, etc.): Custom UI callbacks are **required**
-
-### Types of UI Callbacks
-- **Progress**: Show upload/download progress to users
-- **Conflicts**: Handle situations where local and cloud saves differ
-- **Active Device Contention**: Warn when user tries to sync on multiple devices
-- **Sync Failures**: Handle network or other sync errors
-- **Out of Storage**: Notify users when local storage is too full to sync
-
-### When Callbacks Trigger
-UI callbacks only occur during two operations:
-- `PFGameSaveFilesAddUserWithUiAsync` (download from cloud)
-- `PFGameSaveFilesUploadWithUiAsync` (upload to cloud)
-
-### Implementation
+UI callbacks fire during `PFGameSaveFilesAddUserWithUiAsync` and `PFGameSaveFilesUploadWithUiAsync`. Each callback pauses the async operation until your game responds—the `XAsyncBlock` callback doesn't fire until all UI callbacks are resolved.
 
 ```cpp
 // Set up custom UI callbacks (call this before AddUser or Upload operations)
 // See sample for detailed examples of these callbacks.
-hr = PFGameSaveFilesSetUiCallbacks( 
-    MyPFGameSaveFilesUiProgressCallback, nullptr,
-    MyPFGameSaveFilesUiSyncFailedCallback, nullptr,
-    MyPFGameSaveFilesUiActiveDeviceContentionCallback, nullptr,
-    MyPFGameSaveFilesUiConflictCallback, nullptr,
-    MyPFGameSaveFilesUiOutOfStorageCallback, nullptr);
+PFGameSaveUICallbacks callbacks{};
+callbacks.progressCallback = MyProgressCallback;
+callbacks.syncFailedCallback = MySyncFailedCallback;
+callbacks.activeDeviceContentionCallback = MyActiveDeviceContentionCallback;
+callbacks.conflictCallback = MyConflictCallback;
+callbacks.outOfStorageCallback = MyOutOfStorageCallback;
+
+HRESULT hr = PFGameSaveFilesSetUiCallbacks(&callbacks);
 ```
 
-### Response APIs
-Each callback has a corresponding response API:
-- `PFGameSaveFilesSetUiProgressResponse()` - Respond to progress callback, letting users cancel
-- `PFGameSaveFilesSetUiConflictResponse()` - Respond to conflict callbacks
-- `PFGameSaveFilesSetUiActiveDeviceContentionResponse()` - Respond to device contention
-- `PFGameSaveFilesSetUiSyncFailedResponse()` - Respond to sync failures  
-- `PFGameSaveFilesSetUiOutOfStorageResponse()` - Respond to local storage full issues
-
-> [!IMPORTANT]
-> The Game Saves system waits for your response before continuing. Always call the appropriate response API when handling callbacks (except progress callbacks which don't need a response).
+For the full list of callback types, response APIs, user actions, and details on how the state machine works, see [Game Saves UI callbacks](./ui-callbacks.md).
 
 ## Understanding Save Conflicts
 
