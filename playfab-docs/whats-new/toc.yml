@@ -3,8 +3,10 @@ items:
 ##  href: whats-new.md
 - name: Previous Release Notes
   items:
-  - name: 2025 SDK Release Notes
+  - name: 2026 SDK Release Notes
     href: /playfab-docs/release-notes/index.md
+  - name: 2025 SDK Release Notes
+    href: /playfab-docs/release-notes/2025.md
   - name: Lobby and Matchmaking SDK Release Notes
     href: ../multiplayer/lobby/lobby-matchmaking-sdks/lobby-and-matchmaking-release-notes.md
   - name: PlayFab Party SDK Release Notes
