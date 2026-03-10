@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab Party features
+title: PlayFab Party features
 author: joannaleecy
-description: Learn about the features of Azure PlayFab Party.
+description: Learn about the features of PlayFab Party.
 ms.author: jenelleb
 ms.date: 10/13/2020
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, multiplayer, networking, party
 ms.localizationpriority: medium
 ---
 
-# Azure PlayFab Party features
+# PlayFab Party features
 
-This topic provides details about Azure PlayFab Party features and how you can use them in your game.
+This topic provides details about PlayFab Party features and how you can use them in your game.
 
 For a high-level summary of Party features, see the [Party overview](index.md). If you're ready to start developing, see the [Party Quickstart](quickstart.md).
 

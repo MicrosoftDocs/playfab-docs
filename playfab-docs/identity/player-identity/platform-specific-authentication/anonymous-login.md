@@ -10,7 +10,7 @@ keywords: playfab, authentication, server, anonymous login, customid
 ms.localizationpriority: medium
 ---
 
-# Setting up Playfab Authentication using Anonymous Login
+# Setting up PlayFab Authentication using Anonymous Login
 
 This guide shows you how to implement PlayFab authentication using anonymous login APIs with server-side protection, focusing only on CustomID authentication using HTML5/JavaScript.
 
@@ -26,7 +26,7 @@ To enhance the security of anonymous login, PlayFab implemented a crucial securi
    - Disabling client-side player creation prevents unauthorized account creation directly from unauthorized clients.
    - Only existing players can log in through client-side APIs.
 
-2. **Enabled Server-Side Player Creation**:
+1. **Enabled server-side player creation**:
    - Player account creation is now handled through server-side APIs (`LoginWithCustomID`, `LoginWithAndroidDeviceID`, `LoginWithIOSDeviceID`, `LoginWithNintendoDeviceId`).
    - This ensures all account creation happens in a secure, controlled environment.
 
@@ -41,9 +41,9 @@ To enhance the security of anonymous login, PlayFab implemented a crucial securi
 > [!NOTE]
 > If you need help with setting up a server, see the [Running an HTTP server for testing](running-an-http-server-for-testing.md) tutorial. Throughout this guide, we'll assume your domain is `http://playfab.example`. 
 
-## Authentication Flow
+## Authentication flow
 
-1. **Server-side Account Creation**:
+1. **Server-side account creation**:
    - Use `Server/LoginWithCustomID` with the server API to create new players
    - Requires a title secret key
    - Reference: [Server API - Login With Custom ID](xref:titleid.playfabapi.com.server.authentication.loginwithcustomid)
@@ -52,9 +52,9 @@ To enhance the security of anonymous login, PlayFab implemented a crucial securi
    - Use `Client/LoginWithCustomID` with the client API to log in existing players
    - Reference: [Client API - Login With Custom ID](xref:titleid.playfabapi.com.client.authentication.loginwithcustomid)
 
-## Implementation Steps
+## Implementation steps
 
-### 1. Set Up Your Development Environment
+### 1. Set up your development environment
 
 1. Download the JavaScript SDK from the [JavaScript SDK documentation](https://learn.microsoft.com/gaming/playfab/sdks/javascript/)
 2. Install the required Node.js packages:
@@ -63,7 +63,7 @@ To enhance the security of anonymous login, PlayFab implemented a crucial securi
 npm install playfab-sdk
 ```
 
-### 2. Server-Side Implementation (Node.js)
+### 2. Server-side implementation (Node.js)
 
 > [!IMPORTANT]
 > Keep your title secret key secure and never expose it in client-side code. The secret key should only be used in secure server environments.
@@ -121,7 +121,7 @@ server.listen(port, () => {
 });
 ```
 
-### 3. Client-Side Implementation (HTML)
+### 3. Client-side implementation (HTML)
 
 ```html
 <!DOCTYPE html>
@@ -160,18 +160,18 @@ server.listen(port, () => {
 </html>
 ```
 
-## Configuring Player Creation Settings
+## Configuring player creation settings
 
-### For Existing Titles
+### For existing titles
 
 1. Navigate to the PlayFab developer portal and select your title
-2. Go to **Settings**
-3. Select the **API Features** tab
+1. Go to **Settings**.
+1. Select the **API Features** tab.
 4. Check the box to prevent new player accounts from being created via anonymous login APIs
 
 ![Disabling player creation using Client/LoginWithCustomId](media/tutorials/anonymous-html5/existing_title.png)  
 
-### For New Titles
+### For new titles
 
 > [!WARNING]
 > Enabling automatic player creation for anonymous login APIs can compromise security. Only enable this feature temporarily during development or testing. Always disable it before moving to production.
@@ -179,16 +179,16 @@ server.listen(port, () => {
 New titles have player creation via anonymous APIs disabled by default. To enable for testing, perform the following:
 
 1. Navigate to the PlayFab developer portal and select your title
-2. Go to **Settings**
-3. Select the **API Features** tab
+1. Go to **Settings**.
+1. Select the **API Features** tab.
 4. Uncheck the box to allow new player accounts from being created via anonymous login APIs
 
 ![Enabling player creation using Client/LoginWithCustomId](media/tutorials/anonymous-html5/new_title.png)   
 
 
-## Testing and Response Examples
+## Testing and response examples
 
-### Server Response Example
+### Server response example
 
 When successfully creating a user through the server API, you receive a response similar to:
 
@@ -204,7 +204,7 @@ When successfully creating a user through the server API, you receive a response
 }
 ```
 
-### Client Response Example
+### Client response example
 
 When attempting to create a new account from the client API (which is now disabled), you receive an error:
 
@@ -229,7 +229,7 @@ When successfully logging in an existing user through the client API:
     }
 }
 ```
-## Further Reading
+## Further reading
 
 - [PlayFab Authentication Overview](../authentication/index.md)
 - [Login Basics and Best Practices](../login/login-basics-best-practices.md)

@@ -36,8 +36,8 @@ ms.date: 11/15/2023
 | [PFMatchmakingMatchMember](structs/pfmatchmakingmatchmember.md) | A member of a match result. |  
 | [PFMatchmakingServerBackfillTicketConfiguration](structs/pfmatchmakingserverbackfillticketconfiguration.md) | Defines the configuration for a server backfill ticket. |  
 | [PFMatchmakingTicketConfiguration](structs/pfmatchmakingticketconfiguration.md) | Defines the configuration for a matchmaking ticket. |  
-| [PFMultiplayerPort](structs/pfmultiplayerport.md) | A port used by a Playfab Multiplayer Server. |  
-| [PFMultiplayerServerDetails](structs/pfmultiplayerserverdetails.md) | Details about a Playfab Multiplayer Server. |  
+| [PFMultiplayerPort](structs/pfmultiplayerport.md) | A port used by a PlayFab Multiplayer Server. |  
+| [PFMultiplayerServerDetails](structs/pfmultiplayerserverdetails.md) | Details about a PlayFab Multiplayer Server. |  
   
 ## State changes  
   

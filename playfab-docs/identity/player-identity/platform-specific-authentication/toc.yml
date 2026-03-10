@@ -37,5 +37,5 @@
     href: xbox-live-add-on.md
   - name: Integrating the Universal Windows Platform with PlayFab
     href: uwp-integration.md
-  - name: Setting up Playfab Authentication using Anonymous Login
+  - name: Setting up PlayFab Authentication using Anonymous Login
     href: anonymous-login.md

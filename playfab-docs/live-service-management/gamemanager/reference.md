@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Game Manager reference
 
-This reference familiarizes you with the high-level aspects of the Game Manager. For more detailed information, you may select your specific topic of interest in the PlayFab documentation that follows.
+This reference familiarizes you with the high-level aspects of the Game Manager. For more detailed information, select your specific article of interest in the PlayFab documentation that follows.
 
-To get the most value from this topic, you should have created your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now.
+To get the most value from this article, you should create your PlayFab account, logged in, and viewed the Game Manager for your title, even if it's an empty title for now.
 
 The sections provided below offer greater insight on each Game Manager area. Each time you perform an API call or task, view the results in the Game Manager in the appropriate area for that task.
 
@@ -29,24 +29,24 @@ Game Manager is split into four major sections:
 - Engage – Facilitate connections with players.
 - Analyze – Monitor and act on player behaviors.
 
-## Title Overview
+## Title overview
 
 An overview of the recent and less-recent performance of your title.
 
-**Overview** - shows your game's basic statistics and what you may have assigned as Key Performance Indicators (KPIs). In the upper-right, you will find time period toggle buttons, and there are also filters for the tables.
+**Overview** - shows your game's basic statistics and what you assigned as Key Performance Indicators (KPIs). In the upper-right, you'll find time period toggle buttons. There are also filters for the tables.
 
-- **4h**: This will load data generated within the last 4 hours.
-- **24h**: This will load data generated within the last 24 hours.
-- **3d**: This will load data generated within the last 3 days.
-- **7d**: This will load data generated within the last 7 days.
-- **mtd**: This will load data generated within the current month.
+- **4h**: This loads data generated within the last 4 hours.
+- **24h**: This loads data generated within the last 24 hours.
+- **3d**: This loads data generated within the last three days.
+- **7d**: This loads data generated within the last seven days.
+- **mtd**: This loads data generated within the current month.
 
 > [!NOTE]
 > In Game Manager, all times are displayed in local time.
 
 ![Game Manager - Dashboards](media/tutorials/game-manager-dashboard.png)
 
-The tables in the Overview tab allow you to monitor PlayStream events in real time. They include the following:
+The tables in the Overview tab allow you to monitor PlayStream events in real time. They include the following metrics:
 
 - **Unique Users**: The average number of unique players logging in per day.
 - **API Calls**: Indicates how many API calls were executed within the given time period.
@@ -70,7 +70,7 @@ In this section of the Game Manager, a sorted list is presented, and organized b
 
 ![Game Manager - Players Tab](media/tutorials/game-manager-players-tab.png)
 
-**Overview** - this detailed screen provides a wealth of insight into the players' activities. The sub-menu contains many links to other player-centric information, as shown below.
+**Overview** - this detailed screen provides a wealth of insight into the players' activities. The submenu contains many links to other player-centric information, as shown below.
 
 ![Game Manager - Player - Overview](media/tutorials/game-manager-player-overview.png)
 
@@ -92,9 +92,9 @@ Some specific tools your team can use to remedy defrauded players and identify p
 
 Multiplayer allows you to configure server hosting and matchmaking.  
 
-**Servers** - Whether you are looking to hosting multi-player matches or just need a secure environment that can reduce many common forms of hacking and abuse, the PlayFab Thunderhead servers work with many architectures and game types. These servers provide an excellent alternative when compared with the overhead of dedicated game servers.
+**Servers** - Whether you're looking to hosting multi-player matches or just need a secure environment that can reduce many common forms of hacking and abuse, the PlayFab Thunderhead servers work with many architectures and game types. These servers provide an excellent alternative when compared with the overhead of dedicated game servers.
 
-**Matchmaking** - Set up your matchmaking queues by configuring match sizes, servers and statistics.
+**Matchmaking** - Set up your matchmaking queues by configuring match sizes, servers, and statistics.
 
 ![Matchmaking](media/tutorials/game-manager-multiplayer-matchmaking.png)
 
@@ -129,7 +129,7 @@ To configure marketplace integrations for your title: Explore the **Add-ons** se
 
   ![Game Manager - Add-ons - Partner Add-ons](media/tutorials/game-manager-add-ons-partner-add-ons.png)
 
-Setup instructions for each add-on may vary. Additional billing information may also be required.
+Setup instructions for each add-on vary. More billing information might also be required.
 
 [Back to About the Game Manager](#about-game-manager)
 
@@ -149,7 +149,7 @@ As an example, the following image shows the primary catalogs for **Unicorn Batt
 
 **Items** - An item within the catalog. Items can be of several different types.
 
-**Stores**- A subset of catalog items that can be set to prices that are different than those specified by the catalog.
+**Stores**- A subset of catalog items that can be set to prices that are different than prices specified by the catalog.
 
 ![Game Manager - Economy - Catalogs - Edit Container](media/tutorials/game-manager-economy-catalogs-edit-container.png)
 
@@ -171,7 +171,7 @@ Additional Information:
 
 ### User Generated Content
 
-The User Generated Content tab displays all published content for your title. When enabled, all users can create, discover, and consume content.
+The **User Generated Content** (UGC) tab displays all published content for your title. When enabled, all users can create, discover, and consume content.
 
 ![UGC Landing Page](media/tutorials/game-manager-ugc.png)
 
@@ -196,15 +196,15 @@ Additional Information:
 
 ### Progression
 
-The Progression tab displays all the active stats and leaderboards for your title. [Playfab Statistics](../../player-progression/statistics/index.md) and [PlayFab Leaderboards](../../community/leaderboards/quickstart-leaderboards.md) can be defined and configured here. You can even link a leaderboard to a stat to have one call drive updates for both. 
+The Progression tab displays all the active stats and leaderboards for your title. [PlayFab Statistics](../../player-progression/statistics/index.md) and [PlayFab Leaderboards](../../community/leaderboards/quickstart-leaderboards.md) can be defined and configured here. You can even link a leaderboard to a stat to have one call drive updates for both. 
 
 - [Back to About the Game Manager](#about-game-manager)
 
 ### Content
 
-The Content section offers tools for engaging with your players.  The content can include news, remote configuration, and files.  
+The Content section offers tools for engaging with your players. The content can include news, remote configuration, and files.  
 
-**Title Data** - Here you can configure and store key properties which you can change after your game launches. Title data is accessible from all API sets by all users. Because of this, title data is an ideal place to store your custom title settings. Internal data is hidden from game clients and only available on your game servers.
+**Title Data** - Here you can configure and store key properties that you can change after your game launches. Title data is accessible from all API sets by all users. Because of this, title data is an ideal place to store your custom title settings. Internal data is hidden from game clients and only available on your game servers.
 
 ### Add or edit title data keys
 
@@ -222,11 +222,11 @@ The Content section offers tools for engaging with your players.  The content ca
 
 **Title News** - Create title news for your game title. As needed, add additional languages.
 
-**File Management** - Create, organize and upload files for your game client via the Content Delivery Network (CDN).
+**File Management** - Create, organize, and upload files for your game client via the Content Delivery Network (CDN).
 > [!NOTE]
 > There are varying time delays, depending on the type of file handling that is required. For detailed information, view the online Help for the File Management tab.
 
-**Email Templates** - Create, configure and manage email templates for game clients.
+**Email Templates** - Create, configure, and manage email templates for game clients.
 
 The following example shows the **Email Templates** tab for *Great Game*.
 
@@ -242,11 +242,11 @@ Analyze allows you to monitor and act on player behaviors.
 
 ### Dashboards
 
-Dashboards allow you to see Trends, run Reports and perform Diagnostics.
+Dashboards allow you to see Trends, run Reports, and perform Diagnostics.
 
 ### Data
 
-In the **Data** area you can do a number of things to track and analyze data from your players' activities. There are a number of graphing and reports capabilities that provide the ability to consolidate and visualize the data.
+In the **Data** area, you can do many things to track and analyze data from your players' activities. There are a number of graphing and reports capabilities that provide the ability to consolidate and visualize the data.
 
 **Trends** - Configure and view trends for a number of statistics for time periods ranging from 7 days to 26 months. The Trends graph shows classic retention - only new players that have returned - for the chosen time period. The 30-day retention report includes both new and returning players.
 **Event History** - Search and display a number of different Event History types, depending on the query you create. Use event name, date range, or event values.
@@ -254,7 +254,7 @@ In the **Data** area you can do a number of things to track and analyze data fro
 
 ![Game Manager - Reports](media/tutorials/game-manager-analytics-reports.png)
 
-For additional or custom reports, please open a feature request in our [community forums](https://community.playfab.com/spaces/24/index.html).
+For additional or custom reports, open a feature request in our [community forums](https://community.playfab.com/spaces/24/index.html).
 
 **Webhooks** - Webhooks allow you to have some or all of your PlayStream events forwarded to any web URL you want. The event data is sent via POST in the request body as JSON.
 
@@ -281,7 +281,7 @@ On the Audit History page, select any entry in the log to view the complete deta
 
 Access the title settings from the Settings menu.
 
-**General** - Provides basic information that you will use to configure your title such as player display names and the default language for your title.
+**General** - Provides basic information that you'll use to configure your title such as player display names and the default language for your title.
 
   ![Game Manager - Settings - General Tab](media/tutorials/game-manager-settings-general.png)
 
@@ -294,12 +294,12 @@ Choose your preferred options, and select the **Save** button.
 **Secret Keys** - Allows you to create and manage your PlayFab secret keys, the unique identifier for your game when making Admin and server API calls.
 
 > [!IMPORTANT]
-> This key should only be shared with trusted members of your development team, since it enables API calls that can affect game data and player accounts. Never share your PlayFab API secret key with anyone; doing so may jeopardize your title's security.
+> This key should only be shared with trusted members of your development team, since it enables API calls that can affect game data and player accounts. Never share your PlayFab API secret key with anyone; doing so might jeopardize your title's security.
 
 **Email Preferences** - Allows you to configure e-mail settings such as Subscription and Reply-To addresses.
 **Push Notifications** - Configure notifications to be sent to android or iOS devices.
 **Limits** - Set limits on certain PlayFab features, economic or otherwise in your game.
-**Client Profile Options** - Allows you to configure what a Client can or cannot access and configure on their own for the title.
+**Client Profile Options** - Allows you to configure what a Client can or can't access and configure on their own for the title.
 
 ## Other basic actions
 
@@ -316,7 +316,7 @@ Choose your preferred options, and select the **Save** button.
 
 ### View PlayFab news
 
-New notifications will be indicated in the little bell icon in the upper-right corner of your window.
+New notifications are indicated in the little bell icon in the upper-right corner of your window.
 
 1. Select icon to display **News**.
 2. View the news from the PlayFab team, ordered by the most recent, first. The news feeds include information on new features, API updates, and service outages.
@@ -325,18 +325,18 @@ New notifications will be indicated in the little bell icon in the upper-right c
 
 ### Create and edit studios and titles
 
-In this section you learn how to create and manage studios and game titles.
+In this section, you learn how to create and manage studios and game titles.
 
 **To add a new studio:**
 
-1. Click the PlayFab icon to display the **My Studios** and **Titles** pages.
-2. Click **NEW STUDIO** to create a new studio in the dialog that appears.
+1. Select the PlayFab icon to display the **My Studios** and **Titles** pages.
+2. Select **NEW STUDIO** to create a new studio in the dialog that appears.
 3. Enter a **Studio Name** and **Authentication provider**.
 4. Save your changes and return to the My Studios and Titles page.
 
 **To edit an existing studio:**
 
-1. Select the elipsis drop-down menu to the right side of your **Studio name**, then select **Studio settings**.
+1. Select the ellipsis drop-down menu to the right side of your **Studio name**, then select **Studio settings**.
 
   ![Game manager - Edit Studio](media/tutorials/game-manager-mystudiosandtitles-settings.png)
 2. Make your edits.
@@ -345,7 +345,7 @@ In this section you learn how to create and manage studios and game titles.
 **To add a new title:**
 
 1. Select the drop-down menu to the right side of your Studio's Name, and then select **New title** to display the Create Title page.
-2. Enter the details and click the **CREATE TITLE** button.
+2. Enter the details and select the **CREATE TITLE** button.
 
   ![Game manager - Create a new game](media/tutorials/game-manager-create-title.png)
 3. Save your changes and return to the My Studios and Titles page.
@@ -360,12 +360,12 @@ In this section you learn how to create and manage studios and game titles.
 
 ### About User Accounts
 
-You can create user accounts that are individual or Admin-level accounts. Admin accounts provide access to one or more sections on one or more titles of a given studio, and of course provide full ability to configure studio and title information.
+You can create user accounts that are individual or Admin-level accounts. Admin accounts provide access to one or more sections on one or more titles of a given studio, and provide full ability to configure studio and title information.
 
 ![Game manager - Studio Users](media/tutorials/game-manager-studio-users.png)
 
 1. Select the drop-down menu to the far right from your Studio name, and then select **Studio users**.
 2. Choose **ADD USER** to display the Add New User page. Check the box if you want to make the user an Admin.
-3. To remove accounts in the **Users** page, simply select **Remove**.
+3. To remove accounts in the **Users** page, select **Remove**.
 
-If you do not already have a PlayFab Admin account, an e-mail will be sent to the address you provided. Upon confirmation, the new account will have access to the Studio and title.
+If you don't already have a PlayFab Admin account, an e-mail is sent to the address you provided. Upon confirmation, the new account has access to the Studio and title.

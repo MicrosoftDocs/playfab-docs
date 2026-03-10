@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab Party overview
+title: PlayFab Party overview
 author: joannaleecy
-description: Learn about Azure PlayFab Party real-time chat and data communication libraries for your game.
+description: Learn about PlayFab Party real-time chat and data communication libraries for your game.
 ms.author: jenelleb
 ms.date: 10/13/2020
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, multiplayer, networking, party
 ms.localizationpriority: medium
 ---
 
-# Azure PlayFab Party overview
+# PlayFab Party overview
 
-Azure PlayFab Party is a low-latency chat and data communication solution for cross-platform and cross-device multiplayer games. The voice and text features in Party can be used as a standalone chat solution.
+PlayFab Party is a low-latency chat and data communication solution for cross-platform and cross-device multiplayer games. The voice and text features in Party can be used as a standalone chat solution.
 
 For multiplayer games that use a server-client authoritative architecture to curtail competitive cheating concerns or support devices with limited resources, consider multiplayer servers like [PlayFab multiplayer servers](../servers/index.md) to host custom, dedicated game logic in a dynamically scaling cloud environment and use Party for chat communication.
 

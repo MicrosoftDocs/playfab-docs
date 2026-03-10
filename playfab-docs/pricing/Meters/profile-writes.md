@@ -175,7 +175,7 @@ The following APIs cause the Profile writes meter to increment.
     Adds users to the set of those able to update both the shared data, as well as the set of users in the group. Only users in the group (and the server) can add new members. Shared Groups are designed for sharing data between a very small number of players, see [Using Shared Group Data](../../community/associations/groups/using-shared-group-data.md).
 
 - [AddUsernamePassword](/rest/api/playfab/client/account-management/addusernamepassword?)
-    Adds playfab username/password auth to an existing account created via an anonymous auth method, e.g. automatic device ID login.
+    Adds PlayFab username/password auth to an existing account created via an anonymous auth method, e.g. automatic device ID login.
 
 - [AndroidDevicePushNotificationRegistration](/rest/api/playfab/client/platform-specific-methods/androiddevicepushnotificationregistration?)
     Registers the Android device to receive push notifications
@@ -247,7 +247,7 @@ The following APIs cause the Profile writes meter to increment.
     Registers the iOS device to receive push notifications
 
 - [RegisterPlayFabUser](/rest/api/playfab/client/authentication/registerplayfabuser?)
-    Registers a new Playfab user account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. You must supply either a username or an email address.
+    Registers a new PlayFab user account, returning a session identifier that can subsequently be used for API calls which require an authenticated user. You must supply either a username or an email address.
 
 - [RemoveContactEmail](/rest/api/playfab/client/account-management/removecontactemail?)
     Removes a contact email from the player's profile.

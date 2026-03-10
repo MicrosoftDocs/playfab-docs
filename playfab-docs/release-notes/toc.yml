@@ -1,5 +1,7 @@
-- name: 2025 SDK Release Notes
+- name: 2026 SDK Release Notes
   href: ./index.md
+- name: 2025 SDK Release Notes
+  href: ./2025.md
 - name: 2024 SDK Release Notes
   href: ./2024.md
 - name: 2023 SDK Release Notes

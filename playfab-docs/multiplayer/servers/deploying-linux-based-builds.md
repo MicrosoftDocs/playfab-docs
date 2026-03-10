@@ -120,7 +120,7 @@ docker build -t customer5555555.azurecr.io/pvp_gameserver:v1 .
 
 4. Upload the container image
 
-Run the below commands to push the image to your Azure PlayFab Container registry. Select a meaningful and helpful name:tag combination for your uploaded container image. Then use [docker push](https://docs.docker.com/engine/reference/commandline/push/) or another container registry client, to upload your container to the Azure PlayFab operated registry.
+Run the below commands to push the image to your PlayFab Container registry. Select a meaningful and helpful name:tag combination for your uploaded container image. Then use [docker push](https://docs.docker.com/engine/reference/commandline/push/) or another container registry client, to upload your container to the PlayFab operated registry.
 
 ```docker
 docker tag hello-world customer5555555.azurecr.io/pvp_gameserver:v1

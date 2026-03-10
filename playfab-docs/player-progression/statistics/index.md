@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab Statistics overview
+title: PlayFab Statistics overview
 author: braulioal
-description: Learn about Azure PlayFab Statistics.
+description: Learn about PlayFab Statistics.
 ms.author: braulioal
 ms.date: 09/01/2024
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
 
-# Azure PlayFab Statistics overview
+# PlayFab Statistics overview
 
-Azure Playfab Statistics is a cross-platform service that enables the numerical representation of player activity within a title.
+PlayFab Statistics is a cross-platform service that enables the numerical representation of player activity within a title.
 
 ![PlayFab Stats Architecture](media/stats-relationship.png)
 

@@ -48,8 +48,8 @@ Here are some notable differences when compared to other, more general purpose, 
 
 ## Benefits of this SDK
 
-- Allows titles to control the memory allocations when calling Playfab Services. See [Managing Memory Allocations](memory.md) to learn more.
-- Allows titles to gain full control of thread handling when calling Playfab Services. See [Making async calls in the PlayFab Services SDK](async.md) to learn more.
+- Allows titles to control the memory allocations when calling PlayFab Services. See [Managing Memory Allocations](memory.md) to learn more.
+- Allows titles to gain full control of thread handling when calling PlayFab Services. See [Making async calls in the PlayFab Services SDK](async.md) to learn more.
 - Portable C interface that allows maximum compatibility across platforms, compilers, and languages.
 - High-performance telemetry pipeline with support for low-cost queuing and batch transmission of events.
 

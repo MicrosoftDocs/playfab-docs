@@ -197,7 +197,7 @@ Fill in the required metadata – there are only four required properties (_Crea
 Create a "Draft" Catalog Item by calling the [CreateDraftItem](/rest/api/playfab/economy/catalog/create-draft-item) endpoint:
 
 * The EntityToken (from GetEntityToken or other PlayFab `login` call) in the X-EntityToken header
-* The Playfab Title ID in the item's CreatorEntity.Id
+* The PlayFab Title ID in the item's CreatorEntity.Id
 
 ```bash
 curl \
@@ -355,7 +355,7 @@ Create a Draft Currency Catalog Item by calling the [CreateDraftItem](/rest/api/
 
 * An EntityToken with Catalog Permissions  
 * The Entity.Id as the item 'Creator'  
-* The Playfab Title ID
+* The PlayFab Title ID
 * The Item should be a Bundle of type 'Currency' and contain a Title and Description
 
 Call PublishItem with the ItemId returned from the CreateDraftItem.

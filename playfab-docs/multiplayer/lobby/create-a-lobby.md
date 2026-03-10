@@ -24,7 +24,7 @@ There are several ways a lobby can be created.
 
 From a technical perspective, all lobbies are fall into two main categories based on ownership&mdash;server-owned and client-owned. To learn more, see [Owner requirements and privileges](owner-requirements-and-privileges.md).
 
-The general usage of PlayFab Lobby is to temporarily hold a group of players together. For commonly used applications of Lobby, see the [Azure PlayFab Lobby overview](index.md).
+The general usage of PlayFab Lobby is to temporarily hold a group of players together. For commonly used applications of Lobby, see the [PlayFab Lobby overview](index.md).
 
 ### Supported entity types
 

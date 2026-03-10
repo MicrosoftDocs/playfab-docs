@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab Party SDKs
+title: PlayFab Party SDKs
 author: joannaleecy
-description: Learn about the SDKs for Azure PlayFab Party.
+description: Learn about the SDKs for PlayFab Party.
 ms.author: jenelleb
 ms.date: 02/22/2021
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: playfab, multiplayer, networking, party, sdk, sample
 ms.localizationpriority: medium
 ---
 
-# Azure Playfab Party SDKs
+# PlayFab Party SDKs
 
-This topic describes all the Azure PlayFab Party SDKs that are currently available.
+This topic describes all the PlayFab Party SDKs that are currently available.
 
 If you don't find what you need, let us know by writing a post on our [forums](https://community.playfab.com/index.html).
 

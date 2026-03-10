@@ -1,7 +1,7 @@
 ---
 title: Matchmaking quickstart
 author: keithrkline
-description: Quickstart which demonstrates a matchmaking flow in Unity
+description: Quickstart that demonstrates a matchmaking flow in Unity
 ms.author: kkline
 ms.date: 03/15/2019
 ms.topic: article
@@ -22,11 +22,11 @@ user](#multiple-user-ticket-matchmaking) matchmaking section.
 
 This tutorial illustrates how to submit a ticket to a specific queue in order to find a game. A queue likely maps to a game mode or multiple game modes (ex.: a capture the flag mode and a king of the hill mode in the same queue).
 
-The matchmaking service handles finding a match amongst tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay.
+The matchmaking service handles finding a match among tickets in a queue. When a match is found, your title must handle connecting the players together for gameplay.
 
 ## Configure a matchmaking queue in Game Manager
 
-The quickstart assumes that you have configured your queue(s) in Game Manager. For details on how to set one up, see [Configuring matchmaking queues](config-queues.md).
+The quickstart assumes that you have configured your queues in Game Manager. For details on how to set one up, see [Configuring matchmaking queues](config-queues.md).
 
 ## Single user ticket matchmaking
 
@@ -172,13 +172,13 @@ The rest of the process is the same as that of [single user ticket matchmaking](
 
 ### Connecting your players together
 
-Once your players have matched, you will want to have them join each other - either through a server, or by peer-to-peer connections.
+Once your players have matched, you'll want to have them join each other - either through a server, or by peer-to-peer connections.
 
-If you are using a dedicated server, you can rely on the Match ID to uniquely identify the group of players they should be in. If you are using PlayFab's multiplayer servers, `GetMatch` will provide a server and port for your players to connect to.
+If you're using a dedicated server, you can rely on the Match ID to uniquely identify the group of players they should be in. If you're using PlayFab's multiplayer servers, `GetMatch` provides a server and port for your players to connect to.
 
-Please refer to [Integrating with PlayFab Multiplayer Servers](multiplayer-servers.md) for more information.
+For more information, see [Integrating with PlayFab Multiplayer Servers](multiplayer-servers.md).
 
-As of this release, peer-to-peer connection is currently not officially supported by matchmaking. If peer-to-peer is required, consider using [Playfab Party](../networking/index.md), or an [interim workaround](peer-to-peer.md).
+As of this release, peer-to-peer connection is currently not officially supported by matchmaking. If peer-to-peer is required, consider using [PlayFab Party](../networking/index.md), or an [interim workaround](peer-to-peer.md).
 Contact us for more support on this.
 
 ## Conclusion

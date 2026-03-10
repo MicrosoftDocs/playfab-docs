@@ -28,7 +28,7 @@ When network is unavailable or the user chooses to play offline, the system ente
 
 ### Handling Network Failures During Initial Sync
 
-When `PFGameSaveFilesAddUserWithUiAsync()` is called without network connectivity, it triggers a `PFGameSaveFilesUiSyncFailedCallback`. Users can respond with two options:
+When `PFGameSaveFilesAddUserWithUiAsync()` is called without network connectivity, it triggers a `PFGameSaveFilesUiSyncFailedCallback`. The `XAsyncBlock` callback doesn't fire while the system waits for the user's response—the async operation is paused until the user selects a terminal action.
 
 ```cpp
 // Handle sync failure callback
@@ -48,8 +48,9 @@ void MyPFGameSaveFilesUiSyncFailedCallback(PFLocalUserHandle localUserHandle, PF
 ```
 
 **User Response Options:**
-- **Try Again**: Attempts the network call again (loops back to failure callback if still offline)
-- **Use Offline**: `PFGameSaveFilesAddUserWithUiAsync` async callback reports `S_OK` but puts system into offline mode (can be detected with `PFGameSaveFilesIsConnectedToCloud()`)
+- **Try Again (`Retry`)**: Retries the network call. If the retry also fails, this callback fires again and the user must respond again. The `XAsyncBlock` callback remains deferred through each retry loop.
+- **Use Offline (`UseOffline`)**: The `XAsyncBlock` callback fires with `S_OK`, but the system enters offline mode (detectable with `PFGameSaveFilesIsConnectedToCloud()`).
+- **Cancel**: The `XAsyncBlock` callback fires with `E_PF_GAMESAVE_USER_CANCELLED`.
 
 ### API Behavior in Offline Mode
 
@@ -89,8 +90,12 @@ Use this API before attempting cloud operations to provide appropriate user feed
 
 ### Upload Behavior in Connected Mode
 
-Even in connected mode, uploads can fail due to network issues. When this happens:
-- Failure UI callback is triggered
-- User can choose to retry or cancel
-- If cancelled, async completion returns `E_PF_GAMESAVE_USER_CANCELLED`
-- The game can call upload again later when network is restored
+Even in connected mode, uploads can fail due to network issues or rate limits. When this happens, the `XAsyncBlock` callback doesn't fire immediately—the async operation pauses while the system waits for the user's response through the [UI callback state machine](./ui-callbacks.md#how-the-state-machine-works):
+
+1. The `PFGameSaveFilesUiSyncFailedCallback` fires with the error details.
+2. The `XAsyncBlock` callback doesn't fire yet—the operation is paused while the system waits for a response.
+3. If the user selects `Retry`, the upload retries. If it fails again, the callback fires again and the user must respond again.
+4. If the user selects `Cancel`, the `XAsyncBlock` callback fires with `E_PF_GAMESAVE_USER_CANCELLED`.
+5. If a retry succeeds, the `XAsyncBlock` callback fires with `S_OK`.
+
+The game can call `PFGameSaveFilesUploadWithUiAsync()` again later when network is restored.

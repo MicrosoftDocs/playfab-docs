@@ -1,7 +1,7 @@
 ---
 title: Scheduled Scaling
 author: joannaleecy
-description: Scheduled Scaling for playfab insights
+description: Scheduled Scaling for PlayFab insights
 ms.author: jenelleb
 ms.date: 02/28/2020
 ms.topic: article

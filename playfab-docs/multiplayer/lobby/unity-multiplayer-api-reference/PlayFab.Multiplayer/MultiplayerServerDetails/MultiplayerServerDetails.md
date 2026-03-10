@@ -10,7 +10,7 @@ ms.date: 08/18/2022
 
 # MultiplayerServerDetails constructor
 
-Details about a Playfab Multiplayer Server.
+Details about a PlayFab Multiplayer Server.
 
 ```csharp
 public MultiplayerServerDetails(string fqdn, string ipv4Address, IList<MultiplayerPort> ports, 
@@ -19,8 +19,8 @@ public MultiplayerServerDetails(string fqdn, string ipv4Address, IList<Multiplay
 
 | parameter | description |
 | --- | --- |
-| fqdn | The fully qualified domain name of the virtual machine that is hosting this multiplayer server. |
-| ipv4Address | The IPv4 address of the virtual machine that is hosting this multiplayer server. |
+| FQDN | The fully qualified domain name of the virtual machine that's hosting this multiplayer server. |
+| ipv4Address | The IPv4 address of the virtual machine that's hosting this multiplayer server. |
 | ports | The ports the multiplayer server uses. |
 | region | The server's region. |
 

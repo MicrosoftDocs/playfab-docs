@@ -28,8 +28,8 @@ ms.date: 11/23/2021
 | [MatchmakingMatchDetails](PlayFab.Multiplayer/MatchmakingMatchDetails.md) |  |
 | [MatchmakingTicket](PlayFab.Multiplayer/MatchmakingTicket.md) |  |
 | [MatchmakingTicketMatchMember](PlayFab.Multiplayer/MatchmakingTicketMatchMember.md) |  |
-| [MultiplayerPort](./PlayFab.Multiplayer/MultiplayerPort.md) | A port used by a Playfab Multiplayer Server. |
-| [MultiplayerServerDetails](./PlayFab.Multiplayer/MultiplayerServerDetails.md) | Details about a Playfab Multiplayer Server. |
+| [MultiplayerPort](./PlayFab.Multiplayer/MultiplayerPort.md) | A port used by a PlayFab Multiplayer Server. |
+| [MultiplayerServerDetails](./PlayFab.Multiplayer/MultiplayerServerDetails.md) | Details about a PlayFab Multiplayer Server. |
 | [PFEntityKey](./PlayFab.Multiplayer/PFEntityKey.md) | PFEntityKey data model. Combined entity type and ID structure which uniquely identifies a single entity. |
 | [PlayFabMultiplayer](./PlayFab.Multiplayer/PlayFabMultiplayer.md) |  |
 | [PlayFabMultiplayerServer](PlayFab.Multiplayer/PlayFabMultiplayer.PlayFabMultiplayerServer.md) |  |

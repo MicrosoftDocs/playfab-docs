@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab Multiplayer getting started for Unity
+title: PlayFab Multiplayer getting started for Unity
 author: victorku
-description: Quickstart for Azure PlayFab Multiplayer Unity plugin.
+description: Quickstart for PlayFab Multiplayer Unity plugin.
 ms.author: victorku
 ms.date: 11/23/2021
 ms.topic: article

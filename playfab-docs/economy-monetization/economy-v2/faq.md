@@ -54,7 +54,7 @@ If your title isn’t live yet, the process is easier but there are differences 
 
 **Q: Does Economy V2 support all of the features from Economy V1 (Legacy)?**
 
-**A:** No, Economy V2 doesn’t have full parity with all of the features PlayFab supports in V1 (Legacy). Some of these features never received the adoption we hoped for in Playfab. Others were lacking the depth and surface area needed to really help developers implement them in their games. Some we plan to deliver in future updates. Specifically today Economy V2 doesn't support PlayFab style Coupons, Limited Items, Recharge Item Rates, Drop Tables, or Store Support with Segments.
+**A:** No, Economy V2 doesn’t have full parity with all of the features PlayFab supports in V1 (Legacy). Some of these features never received the adoption we hoped for in PlayFab. Others were lacking the depth and surface area needed to really help developers implement them in their games. Some we plan to deliver in future updates. Specifically today Economy V2 doesn't support PlayFab style Coupons, Limited Items, Recharge Item Rates, Drop Tables, or Store Support with Segments.
 
 ## Marketplace and platform integrations
 

@@ -14,7 +14,7 @@ ms.date: 03/14/2022
 
 The Matchmaking and Lobby features have built in support for real-time
 notifications. Notifying players of changes to Matchmaking or Lobby has never
-been easier, as the work to handle notifications is done for you in the [Azure PlayFab Lobby and Matchmaking SDK](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md). New APIs will
+been easier, as the work to handle notifications is done for you in the [PlayFab Lobby and Matchmaking SDK](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md). New APIs will
 allow connected clients to subscribe for notifications of Lobby and Matchmaking
 changes. With this addition, you'll no longer need to poll for changes to
 matches or lobbies. 

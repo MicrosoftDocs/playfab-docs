@@ -31,7 +31,7 @@ The handle of the PFMultiplayer API instance.
   
 **`searchingEntity`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
-The playfab entity performing the search.  
+The PlayFab entity performing the search.  
   
 **`searchConfiguration`** &nbsp; [PFLobbySearchConfiguration*](../structs/pflobbysearchconfiguration.md)  
   

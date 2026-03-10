@@ -1,7 +1,7 @@
 ---
-title: Azure PlayFab SDKs
+title: PlayFab SDKs
 author: joannaleecy
-description: Azure PlayFab SDKs
+description: PlayFab SDKs
 ms.author: jenelleb
 ms.date: 03/04/2024
 ms.topic: article
@@ -27,7 +27,7 @@ For broad API categories in these SDKs, see [API REST operation groups](/rest/ap
 
 | Language                          | Platform/environments                     |
 |-----------------------------------|-------------------------------------------|
-| C/C++                             | [Windows (Win32), iOS, MacOS, Android, Linux](c/index.md), [GDK (Xbox and Windows)](c/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5) |
+| C/C++                             | [Windows (Win32), iOS, macOS, Android, Linux](c/index.md), [GDK (Xbox and Windows)](c/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/PlayFabCSdk.Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/PlayFabCSdk.PS4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/PlayFabCSdk.PS5) |
 | Legacy C++                        | [Windows (Win32), iOS, Android, Linux](playfab-cpp/index.md), [Switch](https://dev.azure.com/PlayFabPrivate/Switch/_git/XPlatCppSdk-Private-Switch), [PlayStation 4](https://dev.azure.com/PlayFabPrivate/PS4/_git/XPlatCppSdk-Private-Ps4), [PlayStation 5](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5) |
 | C#                                | [C#/.NET environments](c-sharp/index.md) besides Unity |
 | Java                              | [Android apps](java/index.md) |

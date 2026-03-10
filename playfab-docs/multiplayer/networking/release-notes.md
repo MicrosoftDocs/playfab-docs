@@ -13,10 +13,19 @@ ms.localizationpriority: medium
 # PlayFab Party Release Notes
 
 > [!NOTE]
-> Support for the XDK and Windows 7 platforms ended on August 1, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the PlayFab Party library.
+> Support for the XDK and Windows 7 platforms ended on August 1, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services continue to operate with no impact to any titles currently using Windows 7 or XDK versions of the PlayFab Party library.
 
 > [!NOTE]
-> Support for 32-bit Android platforms (arm7 and x86) ended on October 19th, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+> Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.17
+
+February 23, 2026
+
+- Android: Fix Bluetooth microphones not working.
+- Linux: Remove SafeStack.
+- Apple: Hide OpenSSL symbols from Party.
+- Nintendo Switch 2: Resolved TCP connection error when IP changes.
 
 ## 1.10.16
 
@@ -33,14 +42,14 @@ February 2, 2026
 
 December 17, 2025
 
-- Nintendo Switch 2: Added 10 second timeout for webrequests.
+- Nintendo Switch 2: Added 10-second timeout for web requests.
 
 ## 1.10.14
 
 December 9, 2025
 
-- Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has actually expired.
-- Android: Added support for 16 KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
+- Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has expired.
+- Android: Added support for 16-KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
 
 
 ## 1.10.13
@@ -48,14 +57,14 @@ December 9, 2025
 October 14, 2025
 
 - Fixed an issue that caused the microphone to not function properly on iOS 26.
-- Apple: Added support for Arm64 .xcframework on iOS.
+- Apple: Added support for Arm64.xcframework on iOS.
 
 ## 1.10.12
 
 October 6, 2025
 
-- Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has actually expired.
-- Android: Added support for 16 KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
+- Changed the [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md) PartyStatusChangeResult behavior to return `PartyServiceError` for transient errors that occur before the token expires, and to return `UserNotAuthorized` only when the token has expired.
+- Android: Added support for 16-KB page sizes to satisfy the new [Android page size requirements](https://developer.android.com/guide/practices/page-sizes).
 - Apple: Added support for Arm64 simulator builds on iOS.
 
 ### Bug fixes
@@ -75,34 +84,34 @@ March 11, 2025
 
 January 24, 2025
 
-- PlayStation&#174;4 and, PlayStation&#174;5: Resolved a crash related to profanity masking on PlayStation platforms.
+- PlayStation&#174;4 and PlayStation&#174;5: Resolved a crash related to profanity masking on PlayStation platforms.
 
 ## 1.10.6
 
 December 10, 2024
 
-- PlayStation&#174;4 and, PlayStation&#174;5: Resolved build warnings and errors for integration with C++14 and above.
+- PlayStation&#174;4 and PlayStation&#174;5: Resolved build warnings and errors for integration with C++14 and later versions.
 
 ## 1.10.5
 
 November 18, 2024
 
-- Fixed an issue where voice chat would sometimes not work for users remaining in a Party network after other users rejoined and left multiple times.
+- Fixed an issue where voice chat sometimes didn't work for users who stayed in a Party network after other users rejoined and left multiple times.
 - Fixed an issue where [PartyLocalEndpoint::GetEndpointStatistics](reference/classes/PartyLocalEndpoint/methods/partylocalendpoint_getendpointstatistics.md) would report incorrect values for [PartyEndpointStatistic::CurrentlyQueuedSendMessages](reference/enums/partyendpointstatistic.md) and [PartyEndpointStatistic::CurrentlyQueuedSendMessageBytes](reference/enums/partyendpointstatistic.md) when used with direct peer connections.
-- Fixed broken symlinks for the framework on the macOS.
-- Improved handling log exceptions for non Windows platforms during collection of SDK logs.
+- Fixed broken symlinks for the framework on macOS.
+- Improved handling of log exceptions for non-Windows platforms during collection of SDK logs.
 
 ## 1.10.4
 
 November 12, 2024
 
-- PlayStation&#174;4 and, PlayStation&#174;5: Resolved crashes related to mutex operations and endpoint state changes during creation and destruction.
+- PlayStation&#174;4 and PlayStation&#174;5: Resolved crashes related to mutex operations and endpoint state changes during creation and destruction.
 
 ## 1.10.3
 
 October 14, 2024
 
-- Added support for up to 128 devices per network. For more details, see [Scalable networks](party-features.md#scalable-networks-up-to-128-devices-per-network).
+- Added support for up to 128 devices per network. For more information, see [Scalable networks](party-features.md#scalable-networks-up-to-128-devices-per-network).
 - Increased `c_maxNetworkConfigurationMaxDeviceCount` from 32 to 128.
 - Updated internal diagnostics.
 - Updated build settings for security hardening.
@@ -114,27 +123,27 @@ September 18, 2024
 
 ### Bug fixes
 
-- Fixed an issue where the library may crash when establishing direct peer connections in networks with three or more devices.
+- Fixed an issue where the library might crash when it establishes direct peer connections in networks with three or more devices.
 
 ## 1.10.0
 
 August 5, 2024
 
-- Added support for game_server entities, so servers can connect to Party networks via the SDK and be securely identified by game clients. After authenticating a `game_server` entity via AuthenticateGameServerWithCustomId, it can be added as a local user via [PartyManager::CreateLocalUserWithEntityType](reference/classes/PartyManager/methods/partymanager_createlocaluserwithentitytype.md).
+- Added support for `game_server` entities, so servers can connect to Party networks via the SDK and be securely identified by game clients. After authenticating a `game_server` entity via `AuthenticateGameServerWithCustomId`, it can be added as a local user via [PartyManager::CreateLocalUserWithEntityType](reference/classes/PartyManager/methods/partymanager_createlocaluserwithentitytype.md).
 - Added methods for determining the entity type associated with each entity in the library. For more information, see [PartyLocalUser::GetEntityType](reference/classes/PartyLocalUser/methods/partylocaluser_getentitytype.md), [PartyEndpoint::GetEntityType](reference/classes/PartyEndpoint/methods/partyendpoint_getentitytype.md), and [PartyChatControl::GetEntityType](reference/classes/PartyChatControl/methods/partychatcontrol_getentitytype.md).
 - Added a direct peer connectivity option that enables direct peer connections between `title_player` and `game_server` entities while disallowing direct peer connections between `title_player` entities and other `title_player` entities. For more information, see [PartyDirectPeerConnectivityOptions::OnlyServers](reference/enums/partydirectpeerconnectivityoptions.md).
 - Added methods to retrieve a convenient list of endpoints based on filters. For more information, see [PartyNetwork::GetEndpointsByUserType](reference/classes/PartyNetwork/methods/partynetwork_getendpointsbyusertype.md).
-- Memory allocations by third party libraries used in PlayFab Party on PlayStation&#174;4 and, PlayStation&#174;5 that were using default allocators have been updated to use Party's memory callbacks. Titles using [PartyManager::SetMemoryCallbacks](reference/classes/PartyManager/methods/partymanager_setmemorycallbacks.md) to configure title-specific memory allocation functions allocations will now see and have control over these allocations.
+- Updated memory allocations by third party libraries used in PlayFab Party on PlayStation&#174;4 and, PlayStation&#174;5 that were using default allocators have been updated to use Party's memory callbacks. Titles using [PartyManager::SetMemoryCallbacks](reference/classes/PartyManager/methods/partymanager_setmemorycallbacks.md) to configure title-specific memory allocation functions allocations will now see and have control over these allocations.
 
 ### Bug fixes
 
-- Fixed an issue where the library may crash on Windows or Xbox while the process is terminating.
+- Fixed an issue where the library might crash on Windows or Xbox while the process is terminating.
 - Addressed spurious direct peer connection failures after a previous connection attempt failed in certain cases for non Windows platforms.
-- Fixed an issue where the DestroyNetwork event was not fired during repeated Party network creation and destroying.
+- Fixed an issue where the DestroyNetwork event wasn't fired during repeated Party network creation and destroying.
 
 ### Known issues
 
-- The library may occasionally crash when establishing direct peer connections in networks with three or more devices.
+- The library might occasionally crash when establishing direct peer connections in networks with three or more devices.
 
 ## 1.9.5
 
@@ -177,13 +186,13 @@ February 5, 2024
 
 November 13, 2023
 
-- Fixed a bug where a crash may occur when a client tries to leave a network on Nintendo Switch.
+- Fixed a bug where a crash might occur when a client tries to leave a network on Nintendo Switch.
 
 ## 1.8.10
 
 October 19, 2023
 
-This release updates the minimum SDK versioning and target SDK versioning for PlayFab Party Apple and Android platforms.
+This release updates the minimum SDK version and target SDK version for PlayFab Party Apple and Android platforms.
 
 For Apple platforms, we follow [Apple's Xcode guidelines](https://developer.apple.com/support/xcode/) with the release of Xcode 15.
 - iOS
@@ -210,7 +219,7 @@ October 20, 2023
 - Implemented shared properties for endpoints. Shared properties may be set when creating an endpoint via
 [`PartyNetwork::CreateEndpoint`](reference/classes/PartyNetwork/methods/partynetwork_createendpoint.md). A shared
 property may be retrieved using [`PartyEndpoint::GetSharedProperty`](reference/classes/PartyEndpoint/methods/partyendpoint_getsharedproperty.md).
-- Improved audio packet queueing to reduce perceived chat audio latency in some scenarios.
+- Improved audio packet queuing to reduce perceived chat audio latency in some scenarios.
 - Upgraded internal version of the Opus codec.
 - Fixed a low frequency crash.
 - Improved internal diagnostics.
@@ -226,7 +235,7 @@ June 28, 2023
 
 ### Bug fixes
 
-- Fixed a bug where [`PartyLocalChatControl::SetAudioRenderVolume`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudiorendervolume.md) would not properly work for Nintendo Switch, PlayStation&#174;4 and, PlayStation&#174;5.
+- Fixed a bug where [`PartyLocalChatControl::SetAudioRenderVolume`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudiorendervolume.md) wouldn't properly work for Nintendo Switch, PlayStation&#174;4 and, PlayStation&#174;5.
 
 “PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
@@ -251,7 +260,7 @@ May 8, 2023
 - iOS, Android: Added support for enabling noise suppression on audio captured from a local chat control. For more information, see [`PartyLocalChatControl::SetVoiceAudioOptions`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setvoiceaudiooptions.md).
 
 ### Bug fixes
-- Fixed a bug where the library may leak memory due to internal diagnostic tracking when the user's entity token expires.
+- Fixed a bug where the library could leak memory due to internal diagnostic tracking when the user's entity token expires.
 
 ## 1.7.23
 
@@ -264,8 +273,8 @@ April 1, 2023
 March 30, 2023
 
 ### Bug fixes
-- Fixed a bug where Party could crash if it was not cleaned up before the host process started exiting.
-- Changed behavior for peer-to-peer connection to fallback to a relayed connection if the link is disconnected unexpectedly. The previous behavior would disconnect both the devices from the network.
+- Fixed a bug where Party could crash if it wasn't cleaned up before the host process started exiting.
+- Changed behavior for peer-to-peer connection to fall back to a relayed connection if the link is disconnected unexpectedly. The previous behavior would disconnect both the devices from the network.
 
 ## 1.7.20
 
@@ -273,7 +282,7 @@ February 8, 2023
 
 ### Bug fixes
 
-- Fixed a bug where audio from 44.1 kHz microphones may sound distorted. 
+- Fixed a bug where audio from 44.1-kHz microphones may sound distorted. 
 - Improved diagnostic error messages for network errors reported by [PartyManager::GetErrorMessage()](reference/classes/PartyManager/methods/partymanager_geterrormessage.md).
 
 ## 1.7.19
@@ -290,8 +299,8 @@ October 7, 2022
 
 ### Bug fixes
 
-- Fixed a bug where a crash may occur when a chat control is connect to a network on iOS. 
-- Fixed a bug where a crash may occur when enabling iOS log.
+- Fixed a bug where a crash might occur when a chat control is connected to a network on iOS. 
+- Fixed a bug where a crash might occur when enabling iOS log.
 
 ## 1.7.16
 
@@ -302,7 +311,7 @@ September 27, 2022
 - Added .bundle for Unity plug-in loading and native macOS development.
 
 ### Bug fixes
-- Fixed a bug where a crash may occur when enabling macOS log.
+- Fixed a bug where a crash might occur when enabling macOS log.
 
 ## 1.7.14
 
@@ -310,7 +319,7 @@ August 12, 2022
 
 ### New SDKs for Linux and macOS
 
-- Added native support for PlayFab Party on Linux and macOS, enabling game developers to create cross-platform or multiplatform real-time multiplayer experiences on even more platforms. For links to these and other SDK releases,see [Azure Playfab Party SDKs](party-sdks.md).
+- Added native support for PlayFab Party on Linux and macOS, enabling game developers to create cross-platform or multiplatform real-time multiplayer experiences on even more platforms. For links to these and other SDK releases, see [PlayFab Party SDKs](party-sdks.md).
 
 August 11, 2022
 
@@ -353,8 +362,8 @@ February 8, 2022
 September 30, 2021
 ### Bug fixes
 
-- Fixed an issue where some 16kHz microphones weren't working.
-- Fixed an issue where microphone permission changes were not handled on Windows.
+- Fixed an issue where some 16 kHz microphones weren't working.
+- Fixed an issue where microphone permission changes weren't handled on Windows.
 - Fixed a memory leak in some `PartyManager::CreateNewNetwork()` failure conditions.
 - Fixed an occasional crash in `PartyLocalEndpoint::GetEndpointStatistics()`.
 
@@ -374,13 +383,13 @@ June 29, 2021
 
 ### Bug fixes
 
-- Fixed a bug where a crash may occur when a chat control is connected to a network while that same chat control is disconnecting from another network.
+- Fixed a bug where a crash might occur when a chat control connects to a network while that same chat control is disconnecting from another network.
 
 ## 1.6.0
 April 12, 2021
 ### New thread control and text moderation features
 
-- The library's work can now be run manually on game-controlled threads. For more information, see [`PartyManager::SetWorkMode`](reference/classes/PartyManager/methods/partymanager_setworkmode.md).
+- The library's work can now run manually on game-controlled threads. For more information, see [`PartyManager::SetWorkMode`](reference/classes/PartyManager/methods/partymanager_setworkmode.md).
 - Offensive text chat can now optionally be filtered. For more information, see [Using text moderation](../../community/voice-communications/concepts-text-moderation.md).
 
 ### Explicit enum numbering in the header
@@ -391,26 +400,27 @@ April 12, 2021
 March 26, 2021
 ### Bug fixes
 
-- Fixed a bug where audio is cutting out on iOS devices using Bluetooth headsets.
+- Fixed a bug where audio cuts out on iOS devices using Bluetooth headsets.
 - Fixed a bug where an incorrect error code is generated when the app doesn't have permission to activate a microphone on Windows platforms.
-- Fixed a bug where an unhealthy device is never refreshed unless something else forces a refresh.
-- Fixed a bug where a crash may occur when dereferencing a send channel's user data after the source endpoint associated with that channel has become invalid.
+- Fixed a bug where an unhealthy device isn't refreshed unless something else forces a refresh.
+- Fixed a bug where a crash might occur when dereferencing a send channel's user data after the source endpoint associated with that channel becomes invalid.
 - Fixed a bug where clients experience silent failures if a remote chat control doesn't have a language code.
 
 ## 1.5.10
 
 ### Bug fixes
 
-- Fixed a bug where the library may fail to initialize on some Windows devices due to a mismatch between the processor affinity of the process and the library's default thread affinity.
-- Fixed a bug where the library may not provide errors when an operation fails due to an internal web request failure.
-- Fixed a bug where a crash may occur when direct peer connectivity is enabled and the library attempts to establish direct peer connectivity to another device.
-- Fixed a bug that may result in crackling or distorted audio.
+- Fixed a bug where the library might fail to initialize on some Windows devices due to a mismatch between the processor affinity of the process and the library's default thread affinity.
+- Fixed a bug where the library might not provide errors when an operation fails due to an internal web request failure.
+- Fixed a bug where a crash might occur when direct peer connectivity is enabled and the library attempts to establish direct peer connectivity to another device.
+- Fixed a bug that might result in crackling or distorted audio.
 
 ## 1.5.1
 September 05, 2020
+
 ### Bug fix
 
-- Fixed a bug where the library may fail to activate the microphone on iOS.
+- Fixed a bug where the library fails to activate the microphone on iOS.
 
 ## 1.5.0
 
@@ -438,7 +448,7 @@ April 30, 2020
 - The transcription stack has been updated to use TLS1.2 on Windows 7, Android, and iOS. Upgrade if you make use of any of these platforms as TLS1.1 support will be deprecated by [Azure Speech Services](https://azure.microsoft.com/updates/azuretls12/) beginning in September 2020. All other platforms already support TLS1.2 and no upgrade is necessary.
 
 ### Bug fixes
-- Fixed a bug where the `languageCode` field in the `PartyCreateChatControlCompletedStateChange` struct was not being populated.
+- Fixed a bug where the `languageCode` field in the `PartyCreateChatControlCompletedStateChange` struct wasn't being populated.
 - Fixed a bug that was artificially inflating the latency measurements reported by `PartyManager::GetRegions()`.
 - Fixed a bug that allowed `PartyManager::SetMemoryCallbacks()` to be called at unsafe times.
 - Fixed a bug where calling `PartyManager::DestroyLocalUser()` with a `PartyLocalUser` in a `PartyNetwork` would generate a `PartyLocalUserRemovedStateChange` with an incorrect value in the removedReason field, `PartyLocalUserRemovedReason::RemoveLocalUser`, instead of the correct value, `PartyLocalUserRemovedReason::DestroyLocalUser`.
@@ -451,12 +461,12 @@ April 30, 2020
 - Typos in the header documentation have been fixed.
 - A more descriptive error code and error message are now provided when an invalid region is passed to `PartyManager::CreateNewNetwork()`.
 - The documentation for the lifetimes of `PartyString` values has been clarified for the structures and interfaces in Party.h.
-- The documentation for `PartyManager::Cleanup()` was clarified to explain it is not a thread-safe call.
+- The documentation for `PartyManager::Cleanup()` was clarified to explain it isn't a thread-safe call.
 - A more descriptive error code and error message are provided when `PartyManager::ConnectToNetwork()` asynchronously fails with internet connectivity errors.
 
 ## 1.3.0
 
-### Chat API Changes
+### Chat API changes
 
 * The real-time audio manipulation functions, which can be used to modify outgoing or incoming voice chat audio, are implemented for Windows and Xbox. For more information, see [Using real-time audio manipulation to apply custom voice effects](../../community/voice-communications/concepts-realtime-audio-manipulation.md).
 * The chat permission options have more options for optionally configuring text-to-speech and microphone audio permissions independently. For more information, see [`PartyChatPermissionOptions`](reference/enums/partychatpermissionoptions.md).
@@ -466,24 +476,24 @@ April 30, 2020
 
 ## 1.2.2
 
-### iOS Changes
+### iOS changes
 
 - Adds support for the volume control API.
 
 ## 1.2.0
 
-### Android Changes
+### Android changes
 
 - Adds support for the volume control API.
-- Removes audio focus handling from the library.  Host applications are now expected to implement their own focus handling logic.
+- Removes audio focus handling from the library. Host applications are now expected to implement their own focus handling logic.
 
 ## 1.0.2
 
-- Fixed crash in background telemetry
+- Fixed crash in background telemetry.
 
 ## 1.0.1
 
-### Party API Changes
+### Party API changes
 
 #### PartyManager::SetMemoryCallbacks Changes
 
@@ -495,27 +505,27 @@ The `PartyStateChangeResult` value `TitleCreateNetworkThrottled` has been remove
 
 ## 0.7.0-prerelease
 
-### Windows Packaging Changes
+### Windows packaging changes
 
 This release of Party introduces a new NuGet package, [Microsoft.PlayFab.PlayFabParty.Cpp.Windows](https://www.nuget.org/packages/Microsoft.PlayFab.PlayFabParty.Cpp.Windows), which replaces and deprecates the NuGet packages specific to Windows 10 and Windows 7 (Microsoft.PlayFab.PlayFabParty.Cpp.Win10 and Microsoft.PlayFab.PlayFabParty.Cpp.Win7, respectively). The new unified Windows NuGet package contains two new DLLs, PartyWin.dll (supports Windows 8.1 and up) and PartyWin7.dll (only for use on Windows 7). With the new Windows unified NuGet package, the correct Party DLL is loaded based on runtime detection of the OS version, so both PartyWin.dll and PartyWin7.dll should be included in the game distribution package.
 
-### Android Changes
+### Android changes
 
 The Android flavor now uses a shared object for Party (libparty.so) instead of a static library (libparty.a).
 
 This release also contains Android-specific bug fixes for audio device selection.
 
-### iOS Changes
+### iOS changes
 
 The iOS flavor of Party now has the framework package included for dynamically loading libparty instead of the statically built libparty.a.
 
-### API Changes
+### API changes
 
 #### UpdateEntityToken API
 
 This release of Party makes a change related to the handling of PlayFab entity tokens. In the previous version, the game provided Party with a user's entity token in the `PartyManager::CreateLocalUser()` API. Thereafter, Party internally refreshed the entity token and kept it up to date.
 
-In this version, the internal token refreshing behavior has been removed and replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time, a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `PartyLocalUser::UpdateEntityToken()`. It is recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that may enter a low power state or pause application execution for a long time, the token may be prevented from being refreshed before it expires. The token should be checked for expiration once execution resumes.
+In this version, the internal token refreshing behavior has been removed and replaced by a new API, `PartyLocalUser::UpdateEntityToken()`. The caller is now responsible for monitoring the expiration of the entity token provided to `PartyManager::CreateLocalUser()` and `PartyLocalUser::UpdateEntityToken()`. When the token is nearing or past the expiration time, a new token should be obtained by performing a PlayFab login operation and provided to the Party library by calling `PartyLocalUser::UpdateEntityToken()`. It's recommended to acquire a new token when the previously supplied token is halfway through its validity period. On platforms that enter a low power state or pause application execution for a long time, the token might be prevented from being refreshed before it expires. The token should be checked for expiration once execution resumes.
 
 The rough flow is as follows:
 
@@ -527,14 +537,14 @@ The rough flow is as follows:
 1. [New] Call `PartyLocalUser::UpdateEntityToken()` to pass in the new token to Party
 
 Additional notes:
-- The act of acquiring an entity token does not invalidate any previously obtained entity tokens. They remain valid until they expire.
+- The act of acquiring an entity token doesn't invalidate any previously obtained entity tokens. They remain valid until they expire.
 - The internal refreshing functionality was removed because most games are expected to make their own PlayFab calls. Having both the game and the Party library fetch entity tokens causes unnecessary service load to manage two sets of tokens.
 
 #### Chat API Changes
 
 The `PartyVoiceChatTranscriptionReceivedStateChange` now includes a `languageCode` field, which indicates the language of the transcription.
 
-The `PartyChatTextReceivedStateChange` now includes a `languageCode` field, which may indicate the language of the chat text. The `languageCode` field will be populated when chat text translation has been enabled via `PartyLocalChatControl::SetTextChatOptions()`.
+The `PartyChatTextReceivedStateChange` now includes a `languageCode` field, which indicates the language of the chat text. The `languageCode` field will be populated when chat text translation has been enabled via `PartyLocalChatControl::SetTextChatOptions()`.
 
 ## 0.6.0-prerelease
 
@@ -549,12 +559,12 @@ For more information, see the following links:
 
 ## 0.5.0-prerelease
 
-### API Changes
+### API changes
 
 #### Accessible Chat
 * Added support for text-to-speech narration. (see `PartyLocalChatControl::SetTextToSpeechProfile()`)
 * Added more options for controlling when speech-to-text occurs. (see `PartyLocalChatControl::SetTranscriptionOptions()`)
-* Added text-to-text translation to the API, although it is not yet supported. (see `PartyLocalChatControl::SetTextChatOptions()`)
+* Added text-to-text translation to the API, although it isn't yet supported. (see `PartyLocalChatControl::SetTextChatOptions()`)
 * Reduced text-to-speech bandwidth and memory usage.
 
 #### Network access control
@@ -563,13 +573,13 @@ For more information, see the following links:
 
 ## 0.4.6-prerelease
 
-### API Changes
+### API changes
 
 Added new public API `PartyLocalUser::UpdateEntityToken()`.
 
 
 ## 0.2.0-prerelease
 
-### API Changes
+### API changes
 
 * `PartyManager::Initialize` now requires a valid PlayFab Title ID to be passed in.

@@ -1,7 +1,7 @@
 ---
 author: ScottMunroMS
 title: "PFMultiplayerServerDetails"
-description: "Details about a Playfab Multiplayer Server."
+description: "Details about a PlayFab Multiplayer Server."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
@@ -10,7 +10,7 @@ ms.date: 08/16/2022
 
 # PFMultiplayerServerDetails  
 
-Details about a Playfab Multiplayer Server.  
+Details about a PlayFab Multiplayer Server.  
 
 ## Syntax  
   
@@ -29,12 +29,12 @@ struct PFMultiplayerServerDetails {
 **`fqdn`** &nbsp; const char*  
 *is null-terminated*  
   
-The fully qualified domain name of the virtual machine that is hosting this multiplayer server.
+The fully qualified domain name of the virtual machine that's hosting this multiplayer server.
   
 **`ipv4Address`** &nbsp; const char*  
 *is null-terminated*  
   
-The IPv4 address of the virtual machine that is hosting this multiplayer server.
+The IPv4 address of the virtual machine that's hosting this multiplayer server.
   
 **`ports`** &nbsp; const [PFMultiplayerPort](pfmultiplayerport.md)*  
   
