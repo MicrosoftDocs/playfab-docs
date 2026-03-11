@@ -1,5 +1,5 @@
 ---
-title: PlayFab Consumption Best Practices
+title: PlayFab consumption best practices
 author: joannaleecy
 description: Describes best practices for managing your costs in PlayFab.
 ms.author: jenelleb
@@ -10,11 +10,11 @@ keywords: playfab, pricing
 ms.localizationpriority: medium
 ---
 
-# PlayFab Consumption: Best Practices
+# PlayFab consumption: best practices
 
 With PlayFab's consumption-based pricing model, you only pay for the actual service usage of your titles. But this raises an obvious question: how do you best optimize those titles to save money, while still implementing all the features you need? In this document, we dive into those details, and talk about best practices that will help you to plan ahead.
 
-Before you move your titles from Development Mode to Live, you can review the meter information in the Billing Summary tab of the Game Manager. A good starting practice is to periodically confirm the meters by using a separate title to check meter usage for real-world-player activity. You can have multiple titles in Development Mode, so that you can create titles on the fly as you reach development stages where you want to checkpoint that usage, and then delete those titles after you're done.
+Before you move your titles from Development Mode to Live, you can review the meter information in the Billing Summary tab of the Game Manager.
 
 There are six consumption meters: Events, Profile, Content and Configuration, CloudScript, Insights, and Multiplayer Services. The best way to begin optimizing a title is to look at each of the meters that it uses and see how it accumulates over time. This allows you to quickly derive some obvious improvements. For more information about meters, see [Pricing Meters](Meters/meters.md).
 
@@ -42,7 +42,7 @@ For more information about the specific API calls that result in "spin" on these
 
 We'll start with User Data and Statistics, since their usage patterns are similar, and then we'll talk about player inventory management.
 
-### Data and Statistics
+### Data and statistics
 
 When evaluating your usage of User Data, the same approximation logic as for events applies–each 1 KB increases the meter count by 1–though keep in mind that each "element" of a call should be thought of as distinct for purposes of this calculation. Each key value pair in a call to update User Data is counted separately. For reads, this 1 KB calculation applies to the total data returned, regardless of the number of key value pairs. This means that writing 10 keys of 100 bytes each is 10 "ticks" of the profile write meter, since each key value pair write is a minimum of 1 KB, while a read of those 10 keys is 1 "tick", since it's a total of 1 KB. For more specific details on the usages, see [Pricing meters](Meters/meters.md).
 
@@ -54,7 +54,7 @@ If you're coming from PC or console development–especially single player games
 
 How do you determine the optimal frequency of reads and writes? Two of the most common concerns of developers who want to update data and statistics more frequently are protecting against cheating, and having timely information stored server-side either for player-to-player interactions or to prevent data loss if the game exits unexpectedly.
 
-### Cheat Protection
+### Cheat protection
 
 While it might seem like you need to constantly update your backend data to ensure essential security, frequent updates are rarely necessary if your game doesn't require fully server-authoritative control of the session. To start, the fundamental question is how much security that you actually need.
 
@@ -72,7 +72,7 @@ For games with more real-time requirements, such as needing to update the server
 
 This is the model used by real-time multiplayer games. It's also a valid technique for single-player titles that require server-authoritative checks, though if that frequency is only a few times a minute per player, Azure Functions CloudScript could be the better option. The total CloudScript cost is easy to compute. It's the total gigabyte-seconds that you consume, with a minimum of 128 MB and 100 ms per execution, plus the normal calculations for any other service API calls the script uses. For example, if you have a total memory footprint, between your script code and variable usage in the script, of 250 MB, you would need to run that script for 4 seconds (across multiple users, most likely) to get to 1 GB/s. And within that script code, if you read or write Entity Objects, Title Data, User Data, etc., you'll need to calculate the spin that each of those calls has on the profile meters. Since hosted game server costs are dependent on how many servers you're running, and that in turns depends upon how many players can be hosted on a server at a time, it's not necessarily trivial to determine where the break-even point is between the two. But if you find that you need to call your scripts at a high frequency, and need to read and write data from the service each time, it's very likely that a game server solution is the better way to go.
 
-### Data Timeliness
+### Data timeliness
 
 One common theme we've heard among developers with high profile write rates is that they're concerned about the player losing progress. If the player exits the game before it can save and the local state can't be used the next time the game is played, or that state needs to travel between devices, you want to have the PlayFab-stored state information for the player be as up-to-date as possible.
 
@@ -93,7 +93,7 @@ For competition, [Leaderboards](../community/leaderboards/index.md) are an ideal
 
 For games that use cross-player data directly in the session, the most common optimization is to read only the information about the few specific players with whom the local player is interacting. For real-time action games, this is usually done on the server hosting the session. For others–such as games where players can attack each others' bases–the most common approaches are to either read all that data onto the local device or to send the local player only the subset of the other player's data that the local player should know. Games that do the former use server-side logic to evaluate the final results the client sends. Games that do the latter update the data iteratively over the course of the session with more data, when the local player should have access to it. But even then, they also use server-side logic to evaluate the final results. Again, the tipping point in deciding whether this should be done through script or on a hosted server is down to frequency. If it's more than a few times a minute, you're better off using a hosted server for the portion of the session that requires that data.
 
-## Economy and Inventory
+## Economy and inventory
 
 Inventory, and economy in general, requires a different approach. There's no avoiding the fact that if a player is giving up something of real (money) or perceived (virtual currency or consumable containers) value, they have an implicit expectation that the transaction will be honored. For any game with in-app purchases, an increment to the profile meter for a purchase made by the player with real-world currency is a trivial cost. In many types of games, inventory updates are infrequent enough to pose little concern for greatly increasing your overall usage. But for those with more frequent inventory updates–even if you don't have in-game monetization–there are optimization tricks to help reduce your costs.
 
@@ -103,7 +103,7 @@ When it comes to games that have higher rates of update to inventory, we're back
 
 By their nature, certain game genres, such as collectible card games, do need to update the player inventory at a somewhat higher rate. But even here, there are still opportunities to aggregate inventory changes and reduce the total usage on the profile meters. For example, in games that use [drop tables](../economy-monetization/economy/tutorials/drop-tables.md), the design frequently employs a container that has one or more "pulls" from each of several different drop tables. Typically, if these pulls are only an occasional action the incremental cost is small enough to not cause concern. But if players can collect many of those containers, and open multiples in a short period of time, you could provide an "open N" or even "open all" option. In that case, you use [PlayFab CloudScript using Azure Functions](../live-service-management/service-gateway/automation/cloudscript-af/index.md) or your custom game server to either query [Player Item Management - Get Random Result Tables](xref:titleid.playfabapi.com.server.playeritemmanagement.getrandomresulttables) for the set of drop tables or call [Player Item Management - Evaluate Random Result Table](xref:titleid.playfabapi.com.server.playeritemmanagement.evaluaterandomresulttable) without generating the inventory items. You could then update the player inventory far more efficiently by only adding instances where needed, and then updating the count of item stacks for the rest.
 
-## Content and Configuration
+## Content and configuration
 
 Where the Profile is primarily about the player, Content and Configuration is primarily about the title. A number of title-level components, such as Push Notifications, email services, and Title News are all included in this meter. In addition though, this is the meter used to track on Entity File usage. Similarly, requests for the URLs for uploading and downloading CDN files are tracked on this meter, though it's important to clarify that CDN costs are separate, and are billed based on the total gigabytes downloaded as described in [Content Delivery Network (CDN)](../data-analytics/legacy/content-delivery-network/index.md). The calculation of the Content and Configuration read and storage meters are similar to the Profile meters in that they're based on the size of the data, though obviously the units are significantly larger than 1 KB. For the Content and Configuration write meter, it's solely based on the total number of write operations, with each incrementing the meter by 1.
 
@@ -129,7 +129,7 @@ For information about Insights and how to use it, see [What is PlayFab Insights]
 
 For information about Insight best practices, see [Best Practices & FAQ](../data-analytics/legacy/insights/best-practices.md).
 
-## Multiplayer Services
+## Multiplayer services
 
 This one is the simplest of all, since the pricing is completely unchanged. In short, hosted [Multiplayer Servers](../multiplayer/servers/index.md) and the [Party service](../multiplayer/networking/index.md) have always been charged on a usage basis.
 
@@ -137,9 +137,7 @@ For hosted game servers specifically, you can minimize your costs by optimizing 
 
 If low ping times are important on those servers, you can choose which regions to run the servers. For most games, the largest concentrations of players are limited to certain key regions, but if you have a widely dispersed player population—particularly when you're in the long tail of your game—you'll need to weigh the cost of running servers in every region near your players versus the impact of longer ping times on the subset of players in areas with few players. One thing that can help with that is to make sure you're using our [QOS service](../multiplayer/servers/using-qos-beacons-to-measure-player-latency-to-azure.md) to choose which regions to put players in, and then determine what your cut-off is for the minimum number of players you need playing in a region for it to be viable.
 
-To help get you through development without running up costs, we provide a significant number of free server hours in our hosting service, and our Party service is free for all Development Mode titles. It's also worth calling out that our Party service is also free for all use with Xbox Live signed-in players, and for titles in our Standard, Premium, and Enterprise tiers, we provide a generous allowance of connectivity, voice, and Cognitive Services (voice transcription and translation) at no additional cost, to help with 21st Century Communications and Video Accessibility Act (CVAA) compliance.
-
-## Managing your Live Game
+## Managing your live game
 
 That covers the fundamentals of the meters, but what should you be thinking about once your title is live? Managing your community of players primarily involves analytics ([Insights](#insights), in the section above) and updates to Content and Configuration. In addition, most games need to engage with players outside their normal interactions
 with the game itself. From re-engagement campaigns (to entice players to come back), to community rewards for meta-game activity, and even to thanking players for their own community work outside the game, a common practice these days is to use [LiveOps](https://playfab.com/liveops/) techniques to keep players highly engaged.

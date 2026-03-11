@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Quota limits statistics
 
 The Statistic service is designed to align with PlayFab's pricing models, offering two distinct modes: 
-development and live. The development mode allows titles to test each feature and begin development. 
+development and live. The Development Mode allows titles to test each feature and begin development. 
 The live mode, on the other hand, is optimized for handling larger traffic loads typical of a live game.
 
 The following tables outline the limits for each of these modes:

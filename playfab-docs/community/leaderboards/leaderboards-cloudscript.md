@@ -19,7 +19,7 @@ By defining leaderboard-related logic within an Azure Function, your client can 
 
 ## Prerequisites
 To follow this tutorial, you need:
-- A PlayFab account. If you don't have one, you can create it [here](https://playfab.com/).
+- A PlayFab account. If you don't have one, you can create it [here](https://developer.playfab.com/).
 - An Azure subscription. If you don't have one, you can create it [here](https://azure.microsoft.com/free/).
 
 For more details on how to create an Azure Function check this guide. [Create your first function in Azure using Visual Studio](https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)

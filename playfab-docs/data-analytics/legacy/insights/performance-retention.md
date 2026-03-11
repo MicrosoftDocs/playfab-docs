@@ -31,7 +31,7 @@ The **Performance Level** slider is used to select a new performance level. The 
 ### Is performance level access limited?
 Yes. Every title begins at Performance Level 1, a free tier of service that is included in all PlayFab offerings. Live titles can change their performance level at will, however, titles in Development Mode must either enable paid insights features or launch to access performance levels greater than 1.
 
-To enable paid Insights features while a title is in development mode:
+To enable paid Insights features while a title is in Development Mode:
 
 1. Sign in to [developer.playfab.com](https://developer.playfab.com)
 2. Select a title in Development Mode to enter the Title Overview page

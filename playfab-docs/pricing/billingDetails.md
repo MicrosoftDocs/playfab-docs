@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 
 Admin or billing permissions are required to view the **Billing Summary** page.
 
-The billing details page provides a daily snapshot of your month-to-date estimate charges. Use the information on this page to estimate what your bill will look like at the end of the month and view past months to understand trends and comparisons. The billing details page helps you determine what the biggest consumers of your metered resources are and gives you information that you can use to reduce your charges in subsequent months.
+The billing details page provides a daily snapshot of your month-to-date estimate charges. Use the information on this page to estimate what your bill looks like at the end of the month and view past months to understand trends and comparisons. The billing details page helps you determine what the biggest consumers of your metered resources are and gives you information that you can use to reduce your charges in subsequent months.
 
 > [!NOTE]
 > The values reported on the billing summary page are an **estimate** of usage and associated costs for an account. The amount shown might not depict the final invoice amount charged to an account.
 
-To view the billing details page for your studio navigate to the My Studios and Titles page. Click the ellipsis on the right side of your studio, and then selecting the Billing summary option in the drop-down.
+To view the billing details page for your studio, navigate to the My Studios and Titles page. Click the ellipsis on the right side of your studio, and then selecting the Billing summary option in the drop-down.
 
 ## Billing Summary Overview
 
@@ -30,9 +30,9 @@ To view the billing details page for your studio navigate to the My Studios and 
 2. **Selected Month**
    * This is the month that the listed consumption and charges cover. Use the Month Filter (8) to change the selected month.
 3. **Month-To-Date (MTD) Estimated Charge**
-   * This is the daily snapshot of estimated total charges that your studio has accrued during the selected calendar month.
+   * This is the daily snapshot of estimated total charges that your studio accrues during the selected calendar month.
 4. **The Fine Print**
-    * Only use the **Billing Summary** page as an estimate for your month-to-date charges. Some meters have a 48+ hour delay and the **Billing Summary** page does not include all chargeable items (For example, Add-ons). On the first of the current month, you can view the final estimate for the previous month's charges (excluding taxes and delayed meter charges), and on the second of the current month, you can view the first estimate for the current month's usage and costs.
+    * Only use the **Billing Summary** page as an estimate for your month-to-date charges. Some meters have a 48+ hour delay and the **Billing Summary** page doesn't include all chargeable items (For example, Add-ons). On the first of the current month, you can view the final estimate for the previous month's charges (excluding taxes and delayed meter charges), and on the second of the current month, you can view the first estimate for the current month's usage and costs.
 5. **.csv Download**
    * You can download the **Billing Summary** view to .csv for further analysis. The "Download Summary" provides the same granularity as the **Billing Summary** page. The "Download daily" provides the daily breakdown of usage.
    > [!NOTE]
@@ -40,19 +40,19 @@ To view the billing details page for your studio navigate to the My Studios and 
 6. **Contact Information**
    * This is the contact information we use to send you an invoice. This can be changed by navigating to the **Billing Information** page.
 7. **Title Filter**
-   * Use the **Title** filter to understand consumption and apportioned cost by title. Namespace events are counted in the "All" calculation, but aren't currently available to drill down (as they aren't tied to a title). Development mode titles are not charged to the account and do not display cost data.
+   * Use the **Title** filter to understand consumption and apportioned cost by title. Namespace events are counted in the "All" calculation, but aren't currently available to drill down (as they aren't tied to a title). Development Mode titles aren't charged to the account and don't display cost data.
 8. **Month Filter**
    * Use this filter to choose the month to display. All billing summary data from the time the account was updated to usage-based pricing is visible through the billing summary page.
 9. **Meter Category**
    * The **Pay as you Go** section buckets the full set of meters into logical categories. You can find the full set of meters in [meter documentation](Meters/meters.md).
 10. **Meter**
-    * This is a billable meter that at least one of your titles is consuming. You only see meters that you are using. For a full list of meters, see [meter documentation](Meters/meters.md).
+    * This is a billable meter that at least one of your titles is consuming. You only see meters that you're using. For a full list of meters, see [meter documentation](Meters/meters.md).
 11. **Usage**
-    * This column provides estimated, rounded usage (for readability purposes) for each tier/SKU, as well as the aggregated amount. To see the exact usage, download the .csv (5).
+    * This column provides estimated, rounded usage (for readability purposes) for each tier/SKU, and the aggregated amount. To see the exact usage, download the .csv (5).
 12. **Rate**
-    * This column provides the rounded rates (for readability purposes) for each tier/SKU. To see the exact rates, please download the .csv (5).
+    * This column provides the rounded rates (for readability purposes) for each tier/SKU. To see the exact rates, download the .csv (5).
 13. **Cost**
-    * This column provides the estimated cost for each tier/SKU, as well as the aggregated amount.
+    * This column provides the estimated cost for each tier/SKU, and the aggregated amount.
 14. **Description**
     * Each meter provides a brief description in the billing summary page. You can find a  more detailed explanation of the meters in [meter documentation](Meters/meters.md).
 
@@ -62,18 +62,18 @@ To view the billing details page for your studio navigate to the My Studios and 
 
 The base rate charge includes:
 
-1. **Meter usage** amounts that are specified at [PlayFab pricing](https://www.playfab.com/pricing). Once meter usage across live titles associated to an account has surpassed the included amounts (above), an account's live title usage will be charged based on the meter rates found at [PlayFab pricing](https://www.playfab.com/pricing) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
+1. **Meter usage** amounts that are specified at [PlayFab pricing](https://www.playfab.com/pricing). Once meter usage across live titles associated to an account surpasses the included amounts (above), an account's live title usage is charged based on the meter rates found at [PlayFab pricing](https://www.playfab.com/pricing) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
 
     > [!NOTE]
-    > Titles in [Development Mode](development-mode.md) are not counted against included base rate usage.
+    > Titles in [Development Mode](development-mode.md) aren't counted against included base rate usage.
 
 2. **[Technical support](Support.md)** that is determined by the [account level](account-upgrades.md).
 
 ## Additional Section Definitions
 
-**Pay-As-You-Go Charges:** Pay-As-You-Go charges are the cost of individual meter usage per title in an account that exceed usage amounts that are part of the plan. The per-meter prices can be found at [PlayFab pricing](https://www.playfab.com/pricing) or under the "Rate" column on the billing summary page.
+**Pay-As-You-Go Charges:** Pay-As-You-Go charges are the cost of individual meter usage per title in an account that exceeds usage amounts that are part of the plan. The per-meter prices can be found at [PlayFab pricing](https://www.playfab.com/pricing) or under the "Rate" column on the billing summary page.
 
-**Additional Charges:** Additional charges include any charges not directly tied to the meter-usage pricing plan. For example, charges for MPS and Add-Ons may appear in the additional charges section.
+**Additional Charges:** Additional charges include any charges not directly tied to the meter-usage pricing plan. For example, charges for Multiplayer Servers (MPS) and Add-ons may appear in the additional charges section.
 
 ## Learn More
 

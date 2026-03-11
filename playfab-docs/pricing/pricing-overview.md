@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 1. **[Billing Summary](billingDetails.md):** View past and present estimated costs.
 
-2. **[Development Mode](development-mode.md):** Understand technical limits applied to titles in development mode.
+2. **[Development Mode](development-mode.md):** Understand technical limits applied to titles in Development Mode.
 
 3. **[Pricing Meters](Meters/meters.md):** Learn about meter pricing and related APIs.
 

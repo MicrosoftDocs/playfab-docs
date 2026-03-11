@@ -1,5 +1,5 @@
 ---
-title: Account Upgrades
+title: Account upgrades
 author: nathankong-microsoft
 description: Describes how to upgrade an account in the new Game Manager experience.
 ms.author: jenelleb
@@ -10,16 +10,16 @@ keywords: playfab, pricing, upgrade, upgrades, launch, live
 ms.localizationpriority: medium
 ---
 
-# Account Upgrades
+# Account yupgrades
 Customers can upgrade their account plan using the self-serve plans experience found in Game Manager.
 
-## Account Plans 
+## Account plans 
 A PlayFab account has five plan options:
-1. **FREE TO START :** This plan has no cost to the customer. Studios that belong to free accounts may only contain titles that are in [development-mode.md](development-mode.md). Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.Once a title reaches its development mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.
-2. **PAY-AS-YOU-GO :** This paid plan has no monthly base rate. Accounts are only charged for their monthly consumption for live titles. 
-3. **STANDARD :** This paid plan has a monthly base rate and private support options ([PaidTechnicalSupport.md](Support.md)). This plan comes with included meter usage amounts that live titles associated with the account may access. Once the included meter amounts have been used, the account will be charged for additional consumption.
-4. **PREMIUM :** This paid plan has a monthly base rate and private support options ([PaidTechnicalSupport.md](Support.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
-5. **ENTERPRISE :** An Enterprise account has a monthly base rate and private support channels that offer 24/7 assistance. This plan comes with more included meter usage than the Premium plan. Once the included meter amounts have been used, the account will be charged for additional consumption. An account can upgrade to an Enterprise plan through contacting the [https://playfab.com/contact/](https://playfab.com/contact/) .
+1. **FREE TO START:** This plan has no cost to the customer. Once a title reaches its Development Mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.
+2. **PAY-AS-YOU-GO:** This paid plan has no monthly base rate. Accounts are only charged for their monthly consumption for live titles. 
+3. **STANDARD:** This paid plan has a monthly base rate and private support options ([PaidTechnicalSupport.md](Support.md)). This plan comes with included meter usage amounts that live titles may access. Once the included meter amounts have been used, the account will be charged for additional consumption.
+4. **PREMIUM:** This paid plan has a monthly base rate and private support options ([PaidTechnicalSupport.md](Support.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
+5. **ENTERPRISE:** An Enterprise account has a monthly base rate and private support channels that offer 24/7 assistance. This plan comes with more included meter usage than the Premium plan. Once the included meter amounts have been used, the account will be charged for additional consumption. 
 
 The base rate's included consumption is cumulative across titles linked to an account.
 
@@ -27,18 +27,17 @@ The base rate's included consumption is cumulative across titles linked to an ac
 > All PlayFab account plans adhere to the [https://playfab.com/terms/](https://playfab.com/terms/).
 
 
-## Understanding the Account-Studio-Title Relationship
+## Understanding the account-studio-title relationship
 An account is linked to one Studio and a Studio may be linked to many titles. Upgrades are executed at the account level and launches are executed at the Title level.
 ![Image: Account-Studio-Title Relationship](pricingV2-media/AccountStudioTitleRelationship.png)
 
 
-## Changing Plans
+## Changing plans
 You can change your account's plan via Game Manager using the **Plan Recommendation** and **Plan Selection** pages. Plan changes are scheduled for the beginning of the next billing period.
 
-### Upgrading from Free to Start
+### Upgrading from free-to-start
 You can upgrade your account plan at any time on the **My Studios and Titles** page. Use the following steps to upgrade your account from Free to Start. Upgrading an account will upgrade all studios owned by the account.
 
-1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
 1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
 
 2. On the **My Studios and Titles** page, locate the header of a Studio whose linked account should be upgraded. Select **Upgrade Account**.
@@ -53,7 +52,7 @@ You can upgrade your account plan at any time on the **My Studios and Titles** p
 
 After an account is upgraded, the provided payment instrument is charged a monthly base rate per account in addition to usage charges for launched titles.
 
-### Upgrading and Downgrading
+### Upgrading and downgrading
 You can upgrade or downgrade your account plan at any time on the Studio Settings page of any studio owned by the account. Use the following steps to change your account's plan. Changing the account plan will change all studios owned by the account.
 
 1. Log in to [http://developer.playfab.com/](http://developer.playfab.com/).
@@ -68,11 +67,11 @@ You can upgrade or downgrade your account plan at any time on the Studio Setting
 
 6. Once you upgrade your account, on the **Studio Settings** page under the Studio Plan section, you will see your current plan as well as the scheduled plan.
 
-### Upgrading to Enterprise
+### Upgrading to enterprise
 
 Any account is eligible to upgrade to an Enterprise account plan. The PlayFab team must be contacted to upgrade to an Enterprise account plan. [https://playfab.com/contact/](https://playfab.com/contact/)
 
-### Cancel All Charges and Delete Your Studio 
+### Cancel all charges and delete Your sFtudio 
 
 Before proceeding with deletion, consider the following recommended (but optional) actions to ensure a smooth transition and avoid any unintended loss: 
 

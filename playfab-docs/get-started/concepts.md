@@ -18,7 +18,7 @@ PlayFab offers various fundamental components that serve as the building blocks 
 
 PlayFab uses a hierarchical structure to manage resources and configurations across different scopes. 
 
-A PlayFab namespace is the highest level entity that stores all of your global information. In the [PlayFab developer portal](../live-service-management/gamemanager/index.md), the namespace is referred to as the "Studio." 
+A PlayFab namespace is the highest-level entity that stores all global information which spans multiple titles.
 
 A PlayFab title is an entity that represents the data and configurations scoped to a specific game including game settings, player account, player data, and other game-related data.
 
@@ -26,7 +26,7 @@ A namespace might contain many titles, but a title can only belong to one namesp
 
 All titles under the same namespace can share certain resources and configurations. This feature is useful for managing [player identities](../identity/identity-overview.md) and data across multiple titles within the same namespace. 
 
-Titles can also be used to store data and configuration specific to a game environment, a specific version of your game, or game-specific scoped. For example, you might want to have a title for your development environment, your testing environment, your certification environment, and your live environment to keep all your data and configurations cleanly separated. You might also want a separate title for special releases of your game such as play tests, open betas, or demos. 
+Titles can also be used to store data and configuration specific to a game environment or a version of your game.  
 The purpose of a title is to manage game-specific data and configurations. 
 
 Namespaces and titles are two specific types of entities with hierarchical relationships, and there are more [built-in entity types](../live-service-management/game-configuration/entities/available-built-in-entity-types.md) to represent other useful scopes such as players, groups, and servers. 
