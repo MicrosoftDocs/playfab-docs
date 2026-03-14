@@ -1,25 +1,23 @@
 ---
 author: WarrenAlpert
-title: Real-time notifications SignalR Hub
-description: Real-time notifications SignalR Hub
+title: Real-time messages SignalR Hub
+description: Real-time messages SignalR Hub
 ms.author: waralp
 ms.topic: reference
 ms.service: azure-playfab
 ms.date: 03/10/2022
 ---
 
-# Real-time notifications SignalR Hub
+# Real-time messages SignalR Hub
 
 > [!NOTE]
-> Using Lobby, Matchmaking, and real-time notifications directly with REST and
-> SignalR APIs is significantly more complex than using client SDKs such as the
-> [Lobby C++
-> SDK](../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
-> and [Matchmaking C++
-> SDK](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
-> and should only be done if the SDKs don't meet your needs.
+> The REST and SignalR APIs documented here are more complex than the client
+> SDKs. Consider using the
+> [Lobby C++ SDK](../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> or [Matchmaking C++ SDK](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md)
+> instead, unless those SDKs don't meet your needs.
 
-The real-time notifications feature for [Lobby and Matchmaking
+The real-time messages feature for [Lobby and Matchmaking
 services](../lobby/lobby-and-matchmaking.md) works through a
 [SignalR service](/aspnet/core/signalr), which exposes
 a [SignalR Hub](/aspnet/core/signalr/introduction#hubs). This
@@ -28,7 +26,7 @@ they subscribed to](subscribing-to-resources.md).
 
 ## Connecting to the SignalR Hub
 
-The first step in receiving real-time notifications is to create a [SignalR
+The first step in receiving real-time messages is to create a [SignalR
 client](/aspnet/core/signalr/client-features). The
 client can create a connection to the SignalR Hub by [instantiating a
 HubConnection](/aspnet/core/signalr/dotnet-client#connect-to-a-hub)
@@ -43,9 +41,25 @@ documentation](https://github.com/dotnet/aspnetcore/blob/main/src/SignalR/docs/s
 > when connecting to the SignalR Hub is strongly recommended, and will be
 > enforced as the only supported encoding in the future.
 
+> [!IMPORTANT]
+> The client **must** set `KeepAliveInterval` to **5 seconds** when building the
+> `HubConnection`. The backend service will time out and close connections that
+> do not receive a keep-alive ping within **10 seconds**. The default SignalR
+> `KeepAliveInterval` of 15 seconds is too slow and will cause disconnections.
+>
+> ```csharp
+> var connection = new HubConnectionBuilder()
+>     .WithUrl(hubUrl, options => { /* auth headers */ })
+>     .WithKeepAliveInterval(TimeSpan.FromSeconds(5))
+>     .Build();
+> ```
+>
+> For more details on SignalR client configuration, see the
+> [SignalR configuration documentation](/aspnet/core/signalr/configuration#configure-client-options).
+
 > [!NOTE]
 > 1. SignalR client implementations expect the URL to omit the `/negotiate`
->    portion of this path (ex: HubConnection should created to a URL that ends
+>    portion of this path (for example, HubConnection should be created to a URL that ends
 >    in `...playfabapi.com/pubsub`).
 > 1. The auth headers required to call this API can be passed to the SignalR
 >    client via `HttpConnectionOptions` as [seen on this
@@ -81,7 +95,7 @@ resources](subscribing-to-resources.md) and receiving messages.
 
 | Name |  Description  |
 | --- | --- |
-| [ReceiveMessage](client-methods/receive-message.md) | Receive a notification message. |
+| [ReceiveMessage](client-methods/receive-message.md) | Receive a message. |
 | [ReceiveSubscriptionChangeMessage](client-methods/receive-subscription-change-message.md) | Receive a SubscriptionChangeMessage to track current subscriptions. |
 
 ### Server methods
@@ -102,4 +116,4 @@ resources](subscribing-to-resources.md) and receiving messages.
 ## See also
 
 - [Subscribing to resources](subscribing-to-resources.md)
-- [Real-time notifications for Lobby and Matchmaking APIs](overview.md)
+- [Real-time messages for Lobby and Matchmaking APIs](overview.md)

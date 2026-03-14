@@ -293,7 +293,7 @@ At this point, you have a party network descriptor and are ready to share it wit
 ### Use PlayFab Lobby to share the Party network descriptor
 
 PlayFab Lobby can be used to temporarily group players as they move into and out of matches and can be used to synchronize the network descriptor so that players can join the same network. 
-PlayFab Lobby is highly customizable to support a wide variety of gameplay needs on all supported platforms and across platforms. Refer to the [Multiplayer SDK Quickstart](../lobby/lobby-getting-started.md) for more detail about using PlayFab Lobby with real-time notifications.
+PlayFab Lobby is highly customizable to support a wide variety of gameplay needs on all supported platforms and across platforms. Refer to the [Multiplayer SDK Quickstart](../lobby/lobby-getting-started.md) for more detail about using PlayFab Lobby with real-time messages.
 
 For details about using PlayFab Lobby together with PlayFab Party, refer to [Create a lobby with PlayFab Multiplayer SDK](party-lobby-integration.md).
 

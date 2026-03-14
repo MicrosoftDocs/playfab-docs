@@ -11,13 +11,11 @@ ms.date: 03/10/2022
 # Response Status
 
 > [!NOTE]
-> Using Lobby, Matchmaking, and real-time notifications directly with REST and
-> SignalR APIs is significantly more complex than using client SDKs such as the
-> [Lobby C++
-> SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
-> and [Matchmaking C++
-> SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
-> and should only be done if the SDKs don't meet your needs.
+> The REST and SignalR APIs documented here are more complex than the client
+> SDKs. Consider using the
+> [Lobby C++ SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> or [Matchmaking C++ SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md)
+> instead, unless those SDKs don't meet your needs.
 
 Possible values for the **status** member of [SignalR server
 method](../signalr-hub.md#server-methods) responses.
@@ -39,5 +37,5 @@ method](../signalr-hub.md#server-methods) responses.
 - Type [EndSessionResponse](end-session-response.md)
 - Type [SharedSessionResponse](shared-session-response.md)
 - Type [StartOrRecoverSessionResponse](start-or-recover-session-response.md)
-- [Real-time notifications SignalR Hub](../signalr-hub.md)
-- [Real-time notifications for Lobby and Matchmaking APIs](../overview.md)
+- [Real-time messages SignalR Hub](../signalr-hub.md)
+- [Real-time messages for Lobby and Matchmaking APIs](../overview.md)

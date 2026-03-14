@@ -217,57 +217,57 @@
         },
         {
             "source_path": "playfab-docs/api-references/events/gamelobby-ended.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/gamelobby-started.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/gameserverhost-started.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/gameserverhost-stopped.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/player-joined-lobby.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/player-left-lobby.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/player-matched-with-lobby.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/session-ended.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/session-started.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/title-game-build-added.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
             "source_path": "playfab-docs/api-references/events/title-game-build-modified.md",
-            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/features/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
         },
         {
@@ -1065,7 +1065,7 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/server-methods/add-entity-to-session.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/server-methods/add-entity-to-session",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/server-methods/add-entity-to-session",
             "redirect_document_id": false
           },
           {
@@ -1580,17 +1580,17 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/end-session-request.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/end-session-request",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/end-session-request",
             "redirect_document_id": false
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/end-session-response.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/end-session-response",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/end-session-response",
             "redirect_document_id": false
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/server-methods/end-session.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/server-methods/end-session",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/server-methods/end-session",
             "redirect_document_id": false
           },
           {
@@ -2025,7 +2025,7 @@
           },
           {
             "source_path": "playfab-docs/features/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications.md",
-            "redirect_url": "/gaming/playfab/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications",
+            "redirect_url": "/gaming/playfab/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
             "redirect_document_id": false
           },
           {
@@ -2275,7 +2275,7 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/message.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/message",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/message",
             "redirect_document_id": false
           },
           {
@@ -5365,12 +5365,12 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/client-methods/receive-message.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/client-methods/receive-message",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/client-methods/receive-message",
             "redirect_document_id": false
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/client-methods/receive-subscription-change-message.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/client-methods/receive-subscription-change-message",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/client-methods/receive-subscription-change-message",
             "redirect_document_id": false
           },
           {
@@ -5395,7 +5395,7 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/server-methods/remove-entity-from-session.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/server-methods/remove-entity-from-session",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/server-methods/remove-entity-from-session",
             "redirect_document_id": false
           },
           {
@@ -5405,7 +5405,7 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/response-status.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/response-status",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/response-status",
             "redirect_document_id": false
           },
           {
@@ -5575,17 +5575,17 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/shared-session-request.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/shared-session-request",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/shared-session-request",
             "redirect_document_id": false
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/shared-session-response.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/shared-session-response",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/shared-session-response",
             "redirect_document_id": false
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/signalr-hub.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/signalr-hub",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/signalr-hub",
             "redirect_document_id": false
           },
           {
@@ -5600,17 +5600,17 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/start-or-recover-session-request.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/start-or-recover-session-request",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/start-or-recover-session-request",
             "redirect_document_id": false
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/start-or-recover-session-response.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/start-or-recover-session-response",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/start-or-recover-session-response",
             "redirect_document_id": false
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/server-methods/start-or-recover-session.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/server-methods/start-or-recover-session",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/server-methods/start-or-recover-session",
             "redirect_document_id": false
           },
           {
@@ -5650,12 +5650,12 @@
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/subscribing-to-resources.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/subscribing-to-resources",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/subscribing-to-resources",
             "redirect_document_id": false
           },
           {
             "source_path": "playfab-docs/features/real-time-notifications/types/subscription-change-message.md",
-            "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/types/subscription-change-message",
+            "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/subscription-change-message",
             "redirect_document_id": false
           },
           {
@@ -6790,7 +6790,7 @@
             },
             {
               "source_path": "features/multiplayer/lobby/notifications-overview.md",
-              "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/overview.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/overview",
               "redirect_document_id": false
             },
             {
@@ -6805,7 +6805,7 @@
             },
             {
               "source_path": "playfab-docs/features/real-time-notifications/overview.md",
-              "redirect_url": "/gaming/playfab/multiplayer/real-time-notifications/overview",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/overview",
               "redirect_document_id": false
             },
             {
@@ -6861,6 +6861,101 @@
             {
               "source_path": "playfab-docs/features/economy/index.yml",
               "redirect_url": "/gaming/playfab/economy-monetization/",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/overview.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/overview",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/signalr-hub.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/signalr-hub",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/subscribing-to-resources.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/subscribing-to-resources",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/client-methods/receive-message.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/client-methods/receive-message",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/client-methods/receive-subscription-change-message.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/client-methods/receive-subscription-change-message",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/server-methods/start-or-recover-session.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/server-methods/start-or-recover-session",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/server-methods/end-session.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/server-methods/end-session",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/server-methods/add-entity-to-session.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/server-methods/add-entity-to-session",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/server-methods/remove-entity-from-session.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/server-methods/remove-entity-from-session",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/message.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/message",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/subscription-change-message.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/subscription-change-message",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/response-status.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/response-status",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/start-or-recover-session-request.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/start-or-recover-session-request",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/start-or-recover-session-response.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/start-or-recover-session-response",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/end-session-request.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/end-session-request",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/end-session-response.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/end-session-response",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/shared-session-request.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/shared-session-request",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/real-time-notifications/types/shared-session-response.md",
+              "redirect_url": "/gaming/playfab/multiplayer/real-time-messages/types/shared-session-response",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications.md",
+              "redirect_url": "/gaming/playfab/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
               "redirect_document_id": false
             }
         ]

@@ -11,15 +11,13 @@ ms.date: 03/10/2022
 # ReceiveMessage
 
 > [!NOTE]
-> Using Lobby, Matchmaking, and real-time notifications directly with REST and
-> SignalR APIs is significantly more complex than using client SDKs such as the
-> [Lobby C++
-> SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
-> and [Matchmaking C++
-> SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
-> and should only be done if the SDKs don't meet your needs.
+> The REST and SignalR APIs documented here are more complex than the client
+> SDKs. Consider using the
+> [Lobby C++ SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> or [Matchmaking C++ SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md)
+> instead, unless those SDKs don't meet your needs.
 
-Receives messages from [real-time notifications
+Receives messages from [real-time messages
 subscriptions](../subscribing-to-resources.md).
 
 ```text
@@ -40,5 +38,5 @@ ReceiveMessage(Message message)
 - Type [Message](../types/message.md)
 - Client method
   [ReceiveSubscriptionChangeMessage](receive-subscription-change-message.md)
-- [Real-time notifications SignalR Hub](../signalr-hub.md)
-- [Real-time notifications for Lobby and Matchmaking APIs](../overview.md)
+- [Real-time messages SignalR Hub](../signalr-hub.md)
+- [Real-time messages for Lobby and Matchmaking APIs](../overview.md)

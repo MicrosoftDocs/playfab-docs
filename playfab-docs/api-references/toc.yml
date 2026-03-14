@@ -4,8 +4,8 @@
     href: index.md
   - name: Reference
     href: /rest/api/playfab/admin/
-  - name: Real-time notifications for Lobby and Matchmaking
-    href: ../multiplayer/real-time-notifications/toc.yml
+  - name: Real-time messages for Lobby and Matchmaking
+    href: ../multiplayer/real-time-messages/toc.yml
 - name: Services C API
   href: c/toc.yml
 - name: Party C/C++ API

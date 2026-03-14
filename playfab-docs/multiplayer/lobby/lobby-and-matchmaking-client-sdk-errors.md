@@ -6,7 +6,7 @@ ms.author: scmunro
 ms.date: 11/12/2022
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, multiplayer, networking, lobby, matchmaking, async, state change, notification
+keywords: playfab, multiplayer, networking, lobby, matchmaking, async, state change, message
 ---
 
 # Handling Lobby and Matchmaking SDK errors
@@ -55,7 +55,7 @@ than synchronous errors. A non-exhaustive list of some of the types of errors re
 
 - service throttling errors
 - invalid parameter errors that can't be validated synchronously on the client
-- errors interacting with the real-time notification service
+- errors interacting with the real-time message service
 - connectivity errors
 
 See the [Error codes and error messages](#error-codes-and-error-messages) section for guidance on getting human-readable 

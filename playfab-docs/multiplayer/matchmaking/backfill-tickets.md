@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Using server backfill tickets - REST API
 
 > [!NOTE]
-> We highly recommend you consider using the Multiplayer SDKs as it includes real-time notification support that reduces the need for polling, improving the matchmaking experience and reducing delays. [Using Server Backfill Tickets - Multiplayer SDK](backfill-tickets-multiplayer-sdk.md)
+> We highly recommend you consider using the Multiplayer SDKs as it includes real-time message support that reduces the need for polling, improving the matchmaking experience and reducing delays. [Using Server Backfill Tickets - Multiplayer SDK](backfill-tickets-multiplayer-sdk.md)
 
 Games hosted on a server sometimes find they need to search for extra
 players. Most often this occurs when one or more players disconnect while the

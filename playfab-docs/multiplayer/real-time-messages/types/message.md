@@ -1,7 +1,7 @@
 ---
 author: WarrenAlpert
-title: Message real-time notifications type
-description: Message real-time notifications type
+title: Message real-time messages type
+description: Message real-time messages type
 ms.author: waralp
 ms.topic: reference
 ms.service: azure-playfab
@@ -11,13 +11,11 @@ ms.date: 03/10/2022
 # Message
 
 > [!NOTE]
-> Using Lobby, Matchmaking, and real-time notifications directly with REST and
-> SignalR APIs is significantly more complex than using client SDKs such as the
-> [Lobby C++
-> SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
-> and [Matchmaking C++
-> SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
-> and should only be done if the SDKs don't meet your needs.
+> The REST and SignalR APIs documented here are more complex than the client
+> SDKs. Consider using the
+> [Lobby C++ SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> or [Matchmaking C++ SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md)
+> instead, unless those SDKs don't meet your needs.
 
 ```json
 {
@@ -56,5 +54,5 @@ Example: `4bf92f3577b34da6a3ce929d0e0e4736`
 ## See also
 
 - Client method [ReceiveMessage](../client-methods/receive-message.md)
-- [Real-time notifications SignalR Hub](../signalr-hub.md)
-- [Real-time notifications for Lobby and Matchmaking APIs](../overview.md)
+- [Real-time messages SignalR Hub](../signalr-hub.md)
+- [Real-time messages for Lobby and Matchmaking APIs](../overview.md)

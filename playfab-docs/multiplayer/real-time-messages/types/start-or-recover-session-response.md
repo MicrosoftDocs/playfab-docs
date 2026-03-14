@@ -1,7 +1,7 @@
 ---
 author: WarrenAlpert
-title: StartOrRecoverSessionResponse real-time notifications type
-description: StartOrRecoverSessionResponse real-time notifications type
+title: StartOrRecoverSessionResponse real-time messages type
+description: StartOrRecoverSessionResponse real-time messages type
 ms.author: waralp
 ms.topic: reference
 ms.service: azure-playfab
@@ -11,13 +11,11 @@ ms.date: 03/10/2022
 # StartOrRecoverSessionResponse
 
 > [!NOTE]
-> Using Lobby, Matchmaking, and real-time notifications directly with REST and
-> SignalR APIs is significantly more complex than using client SDKs such as the
-> [Lobby C++
-> SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
-> and [Matchmaking C++
-> SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
-> and should only be done if the SDKs don't meet your needs.
+> The REST and SignalR APIs documented here are more complex than the client
+> SDKs. Consider using the
+> [Lobby C++ SDK](../../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> or [Matchmaking C++ SDK](../../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md)
+> instead, unless those SDKs don't meet your needs.
 
 ```json
 {
@@ -51,7 +49,7 @@ A list of topic strings, matching the topic strings returned when [subscribing
 to resources](../subscribing-to-resources.md). This list only contains values if
 a session was recovered from an old `Connection Handle` and subscriptions were
 found to recover. It's possible that some subscriptions that are expected here
-will not be recovered. If there are any missing subscriptions  the client should
+will not be recovered. If there are any missing subscriptions, the client should
 resubscribe to those resources.
 
 Example: `["Opaque~Topic~String~6183258", "Another~Opaque~Topic~String~843156"]`
@@ -75,5 +73,5 @@ Example: `4bf92f3577b34da6a3ce929d0e0e4736`
 - Type [StartOrRecoverSessionRequest](start-or-recover-session-request.md)
 - Server method
   [StartOrRecoverSession](../server-methods/start-or-recover-session.md)
-- [Real-time notifications SignalR Hub](../signalr-hub.md)
-- [Real-time notifications for Lobby and Matchmaking APIs](../overview.md)
+- [Real-time messages SignalR Hub](../signalr-hub.md)
+- [Real-time messages for Lobby and Matchmaking APIs](../overview.md)

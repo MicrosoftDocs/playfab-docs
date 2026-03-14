@@ -1,7 +1,7 @@
 ---
 author: WarrenAlpert
-title: Subscribing to resources for real-time notifications
-description: Subscribing to resources for real-time notifications
+title: Subscribing to resources for real-time messages
+description: Subscribing to resources for real-time messages
 ms.author: waralp
 ms.topic: reference
 ms.service: azure-playfab
@@ -11,13 +11,11 @@ ms.date: 03/10/2022
 # Subscribing to resources
 
 > [!NOTE]
-> Using Lobby, Matchmaking, and real-time notifications directly with REST and
-> SignalR APIs is significantly more complex than using client SDKs such as the
-> [Lobby C++
-> SDK](../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
-> and [Matchmaking C++
-> SDK](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md),
-> and should only be done if the SDKs don't meet your needs.
+> The REST and SignalR APIs documented here are more complex than the client
+> SDKs. Consider using the
+> [Lobby C++ SDK](../lobby/playfabmultiplayerreference-cpp/pflobby/pflobby_members.md)
+> or [Matchmaking C++ SDK](../lobby/playfabmultiplayerreference-cpp/pfmatchmaking/pfmatchmaking_members.md)
+> instead, unless those SDKs don't meet your needs.
 
 After the client [connects to the SignalR
 Hub](signalr-hub.md#connecting-to-the-signalr-hub), and calls
@@ -28,7 +26,7 @@ provide the `Connection Handle` that they received when starting the session.
 For more information about starting and managing a session, see the [SignalR
 Hub](signalr-hub.md) overview.
 
-To manage resource subscriptions with the services that publish notifications,
+To manage resource subscriptions with the services that publish messages,
 see:
 
 | Service | Subscription API | Unsubscription API |
@@ -38,5 +36,5 @@ see:
 
 ## See also
 
-- [Real-time notifications SignalR Hub](signalr-hub.md)
-- [Real-time notifications for Lobby and Matchmaking APIs](overview.md)
+- [Real-time messages SignalR Hub](signalr-hub.md)
+- [Real-time messages for Lobby and Matchmaking APIs](overview.md)
