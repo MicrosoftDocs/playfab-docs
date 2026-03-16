@@ -1,0 +1,44 @@
+flowchart TD
+    A["Create Steam local user
+    PFLocalUserCreateHandleWithSteamUser"] --> B["Try Steam sign-in
+    createAccount=false"]
+
+    B -->|"&nbsp;&nbsp;Success&nbsp;&nbsp;"| C["Check linked identities
+    GetAccountInfo"]
+    B -->|"&nbsp;&nbsp;E_PF_ACCOUNT_NOT_FOUND&nbsp;&nbsp;"| D{Player choice}
+
+    C -->|"&nbsp;&nbsp;Xbox/MSA linked&nbsp;&nbsp;"| PLAY[Play online]
+    C -->|"&nbsp;&nbsp;Not linked&nbsp;&nbsp;"| E["Prompt to link Xbox/MSA
+    non-blocking"]
+    E -->|"&nbsp;&nbsp;Player agrees&nbsp;&nbsp;"| LATE[BeginLateLink]
+    E -->|"&nbsp;&nbsp;Player defers&nbsp;&nbsp;"| PLAY
+
+    D -->|"&nbsp;&nbsp;Xbox bootstrap&nbsp;&nbsp;"| F["Try Xbox sign-in
+    createAccount=false"]
+    D -->|"&nbsp;&nbsp;Steam-only&nbsp;&nbsp;"| G["Steam sign-in
+    createAccount=true"] --> PLAY
+
+    F -->|"&nbsp;&nbsp;E_PF_ACCOUNT_NOT_FOUND&nbsp;&nbsp;"| H["Create Xbox account
+    createAccount=true"]
+    F -->|"&nbsp;&nbsp;Existing account&nbsp;&nbsp;"| LATE
+
+    H --> I[Link Steam to Xbox account] --> J[Rebind Steam local user] --> PLAY
+
+    LATE --> K[Try link Xbox to Steam account]
+    K -->|"&nbsp;&nbsp;Success&nbsp;&nbsp;"| PLAY
+    K -->|"&nbsp;&nbsp;Conflict&nbsp;&nbsp;"| L[Xbox sign-in to get entity]
+    L --> M["RunReconciliation
+    fetch account info + show UI"]
+
+    M -->|"&nbsp;&nbsp;Keep Xbox progress&nbsp;&nbsp;"| N0{Xbox entity has
+    different Steam?}
+    N0 -->|"&nbsp;&nbsp;Yes&nbsp;&nbsp;"| N1["Unlink old Steam
+    UnlinkSteamAccount"]
+    N1 --> N2["Link current Steam
+    to Xbox account"]
+    N0 -->|"&nbsp;&nbsp;No&nbsp;&nbsp;"| N2
+    N2 -->|"&nbsp;&nbsp;LinkedAccountAlreadyClaimed&nbsp;&nbsp;"| N3["Retry with
+    forceLink=true"]
+    N3 --> O
+    N2 -->|"&nbsp;&nbsp;Success&nbsp;&nbsp;"| O[Rebind Steam local user] --> PLAY
+    M -->|"&nbsp;&nbsp;Keep Steam progress&nbsp;&nbsp;"| P[Defer Xbox link] --> PLAY
