@@ -90,6 +90,26 @@
       href: events/Extension/title-updated-task.md
     - name: export_completed
       href: events/Extension/export-completed.md
+  - name: Experimentation
+    items:
+    - name: exclusion_group_created
+      href: events/Experimentation/exclusion-group-created.md
+    - name: exclusion_group_deleted
+      href: events/Experimentation/exclusion-group-deleted.md
+    - name: exclusion_group_updated
+      href: events/Experimentation/exclusion-group-updated.md
+    - name: experiment_created
+      href: events/Experimentation/experiment-created.md
+    - name: experiment_deleted
+      href: events/Experimentation/experiment-deleted.md
+    - name: experiment_start_requested
+      href: events/Experimentation/experiment-start-requested.md
+    - name: experiment_stop_requested
+      href: events/Experimentation/experiment-stop-requested.md
+    - name: experiment_updated
+      href: events/Experimentation/experiment-updated.md
+    - name: player_experiment_variants_changed
+      href: events/Experimentation/player-experiment-variants-changed.md
   - name: Functions
     items:
     - name: function_executed
@@ -402,6 +422,20 @@
       href: events/PlayerProfile/language-updated.md
     - name: objects_updated
       href: events/PlayerProfile/objects-updated.md
+  - name: PlayStream
+    items:
+    - name: action_executed
+      href: events/PlayStream/action-executed.md
+    - name: action_failed
+      href: events/PlayStream/action-failed.md
+  - name: Segmentation
+    items:
+    - name: api_operation
+      href: events/Segmentation/api-operation.md
+    - name: segment_entered
+      href: events/Segmentation/segment-entered.md
+    - name: segment_exited
+      href: events/Segmentation/segment-exited.md
   - name: Session
     items:
     - name: client_focus_change
@@ -432,6 +466,10 @@
       href: events/TitleData/title-data-updated.md
     - name: title_deactivated
       href: events/TitleData/title-deactivated.md
+  - name: TargetedConfiguration
+    items:
+    - name: player_churn_prediction_changed
+      href: events/TargetedConfiguration/player-churn-prediction-changed.md
   - name: Statistics
     items:
     - name: statistic_updated

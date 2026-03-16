@@ -1,6 +1,11 @@
 {
     "redirections": [
          {
+            "source_path": "playfab-docs/api-references/events/player-action-executed.md",
+            "redirect_url": "/gaming/playfab/api-references/events/playstream/player-action-executed",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "playfab-docs/sdks/objective-c/quickstart.md",
             "redirect_url": "/gaming/playfab/sdks/c/quickstart-ios",
             "redirect_document_id": false

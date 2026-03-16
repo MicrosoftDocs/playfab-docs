@@ -83,6 +83,36 @@ Each event type has a set of properties that are included as part of event's dat
 - [studio_user_removed](DeveloperIdentity/studio-user-removed.md)  
   This event is triggered when a user is removed from a studio.
 
+## Experimentation
+
+- [exclusion_group_created](Experimentation/exclusion-group-created.md)
+  This event is triggered when an exclusion group is created.
+
+- [exclusion_group_deleted](Experimentation/exclusion-group-deleted.md)
+  This event is triggered when an exclusion group is deleted.
+
+- [exclusion_group_updated](Experimentation/exclusion-group-updated.md)
+  This event is triggered when an exclusion group is updated.
+
+- [experiment_created](Experimentation/experiment-created.md)
+  This event is triggered when an experiment is created.
+
+- [experiment_deleted](Experimentation/experiment-deleted.md)
+  This event is triggered when an experiment is deleted.
+
+- [experiment_start_requested](Experimentation/experiment-start-requested.md)
+  This event is triggered when an experiment start is requested.
+
+- [experiment_stop_requested](Experimentation/experiment-stop-requested.md)
+  This event is triggered when an experiment stop is requested.
+
+- [experiment_updated](Experimentation/experiment-updated.md)
+  This event is triggered when an experiment is updated.
+
+- [player_experiment_variants_changed](Experimentation/player-experiment-variants-changed.md)
+  This event is triggered when a player's experiment variants are changed.
+
+
 ## Extension
 
 - [title_aborted_task](Extension/title-aborted-task.md)  
@@ -243,7 +273,7 @@ Each event type has a set of properties that are included as part of event's dat
   This event is triggered when a multiplayer server build is deleted.  
 
 - [build_region_status_changed](MultiplayerServers/build-region-status-changed.md)  
-  This event is triggered when a multiplayer server's build region status is changed.  
+  This event is triggered when a multiplayer server build region status is changed.  
 
 - [build_region_updated](MultiplayerServers/build-region-updated.md)  
   This event is triggered when a multiplayer server build region is updated.
@@ -615,6 +645,25 @@ Each event type has a set of properties that are included as part of event's dat
 - [objects_updated](PlayerProfile/objects-updated.md)  
   This event is triggered when objects are updated.
 
+## PlayStream
+
+- [action_executed](PlayStream/action-executed.md)  
+  This event is emitted when an action is executed.
+
+- [action_failed](PlayStream/action-failed.md)  
+  This event is emitted when an action failed to execute.
+
+## Segmentation
+
+- [segment_entered](Segmentation/segment-entered.md)  
+  This event is triggered when a profile enters a segment.
+
+- [segment_exited](Segmentation/segment-exited.md)  
+  This event is triggered when a profile exits a segment.
+
+- [api_operation](Segmentation/api-operation.md)  
+  This event is triggered to summarize the actions taken during an invocation of the segmentation CRUD API.
+
 ## Session
 
 - [client_focus_change](Session/client-focus-change.md)  
@@ -656,6 +705,11 @@ Each event type has a set of properties that are included as part of event's dat
 
 - [title_deactivated](TitleData/title-deactivated.md)  
   This event is triggered when a title is deactivated.
+
+## TargetedConfiguration
+
+- [player_churn_prediction_changed](TargetedConfiguration/player-churn-prediction-changed.md)  
+  This event is triggered when a player's churn prediction is changed.
 
 ## Statistics
 
