@@ -21,6 +21,8 @@ items:
     href: owner-requirements-and-privileges.md
   - name: Lobby ownership changes
     href: ownership-changes.md
+  - name: Lobby lifetime and expiration
+    href: lobby-ttl.md
   - name: Use lobby and matchmaking together
     href: lobby-and-matchmaking.md
   - name: Game servers and Lobbies

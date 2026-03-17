@@ -22,7 +22,7 @@ There are several ways a lobby can be created.
 * **By your game servers**: Your title's game servers can create lobbies and wait for players to join. These are server-owned lobbies.
 * **By matchmaking**: After a group of players form after matchmaking, a lobby is created as a holding place before the game starts. These are client-owned lobbies.
 
-From a technical perspective, all lobbies are fall into two main categories based on ownership&mdash;server-owned and client-owned. To learn more, see [Owner requirements and privileges](owner-requirements-and-privileges.md).
+From a technical perspective, all lobbies fall into two main categories based on ownership&mdash;server-owned and client-owned. To learn more, see [Owner requirements and privileges](owner-requirements-and-privileges.md).
 
 The general usage of PlayFab Lobby is to temporarily hold a group of players together. For commonly used applications of Lobby, see the [PlayFab Lobby overview](index.md).
 
