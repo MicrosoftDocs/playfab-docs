@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Matchmaking REST API quickstart 
 
 > [!NOTE]
-> We highly recommend you consider using the Multiplayer SDKs as it includes real-time notification support that reduces the need for polling. This will improve the matchmaking experience and reduce delays. [Quickstart - Client SDK](quickstart-client-sdk.md)
+> We highly recommend you consider using the Multiplayer SDKs as it includes real-time message support that reduces the need for polling. This will improve the matchmaking experience and reduce delays. [Quickstart - Client SDK](quickstart-client-sdk.md)
 
 This quickstart guide walks you through the entire process for integrating the matchmaking feature. All code examples within this quickstart are for Unity - however, the concepts and flow apply (in general) to other platforms as well.
 
@@ -79,7 +79,7 @@ PlayFabMultiplayerAPI.CreateMatchmakingTicket(
 
 ### Check the status of the matchmaking ticket
 
-You must poll the service by `TicketId` to access the `Status` of the ticket in matchmaking. In order to do so, have your title call [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket). You can poll up to 10 times per minute. For instance, poll for the ticket status every 6 seconds. Polling can increase delays when retrieving the status of your ticket. It is for this reason we highly recommend you consider using the Multiplayer SDK method described here [Quickstart - Client SDK](quickstart-client-sdk.md). This avoids the need to poll by using the real-time notification functionality. 
+You must poll the service by `TicketId` to access the `Status` of the ticket in matchmaking. In order to do so, have your title call [GetMatchmakingTicket](xref:titleid.playfabapi.com.multiplayer.matchmaking.getmatchmakingticket). You can poll up to 10 times per minute. For instance, poll for the ticket status every 6 seconds. Polling can increase delays when retrieving the status of your ticket. It is for this reason we highly recommend you consider using the Multiplayer SDK method described here [Quickstart - Client SDK](quickstart-client-sdk.md). This avoids the need to poll by using the real-time message functionality. 
 
 When the status of
 the ticket changes to `Matched`, your client can stop polling the ticket. From that point on, the ticket will include the `MatchId`.

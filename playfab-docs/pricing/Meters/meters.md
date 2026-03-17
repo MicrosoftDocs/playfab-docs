@@ -114,11 +114,11 @@ You can also use this [Party pricing calculator](https://playfab.com/party-calcu
 
 ### Matchmaking and Lobby
 
-PlayFab Matchmaking and Lobby are highly-customizable, proven solutions for building and orchestrating player groupings during a game session. Players can receive real-time notifications so they can quickly react when there are relevant updates in the Matchmaking or Lobby service. 
+PlayFab Matchmaking and Lobby are highly-customizable, proven solutions for building and orchestrating player groupings during a game session. Players can receive real-time messages so they can quickly react when there are relevant updates in the Matchmaking or Lobby service. 
 
 * **MatchmakingRequests**: One Matchmaking Request is metered for each call to a [Matchmaking API](/rest/api/playfab/multiplayer/matchmaking) endpoint. 
 * **LobbyRequests**: One Lobby Request is metered for each call to a [Lobby API](/rest/api/playfab/multiplayer/lobby) endpoint.
-* **Messages**: Metered by the number of message recipients. [Lobby and Matchmaking real-time notifications](../../multiplayer/lobby/lobby-and-matchmaking-real-time-notifications.md) are dispatched to subscribed clients upon important events such as receiving invites, joining and updating lobbies, or finding matches. 
+* **Messages**: Metered by the number of message recipients. [Lobby and Matchmaking real-time messages](../../multiplayer/lobby/lobby-and-matchmaking-real-time-messages.md) are dispatched to subscribed clients upon important events such as receiving invites, joining and updating lobbies, or finding matches. 
 
 ### Leaderboard
 

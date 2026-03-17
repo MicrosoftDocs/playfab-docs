@@ -233,7 +233,7 @@ In this example, we show how to test the LoginWithGoogleAccount API using the cl
 </html>
 ```
 
-Remember to open this page using your web server, and make sure to access this page using the URL you specified, while configuring Google Project, ([PlayFab](http://playfab.example) in our case).
+Remember to open this page using your web server, and make sure to access this page using the URL you specified, while configuring Google Project, (`http://playfab.example` in our case).
 
 1. Once the page opens, select **G Signed In**, and follow the general Google authentication flow.
 2. When this is finished, the script will try to authenticate on the PlayFab side and output the result.

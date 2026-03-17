@@ -3,7 +3,7 @@ title: player_action_executed
 author: joannaleecy
 description: player_action_executed event.
 ms.author: jenelleb
-ms.date: 02/19/2019
+ms.date: 02/19/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This event is triggered when an action linked to a segmentation change or event rule executes on a player.
 
-Properties
+## Properties
 
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|

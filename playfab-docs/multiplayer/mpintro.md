@@ -23,7 +23,7 @@ Multiplayer is a great addition to many titles, and PlayFab provides several ser
 
 While titles can use all of these services in combination, they can be used independently as well, and this is quite common. For example titles might use PlayFab matchmaking but allocate servers from an alternative multiplayer server hosting solution. Or games might use PlayFab multiplayer servers for hosting, but use their own matchmaking system to bring players together.
 
-Increasingly games are building *cross-network* experiences with players engaging each other from different identity domains (e.g. Xbox Live players interacting with Steam players interacting with custom identity systems). PlayFab's services were designed to support cross-progression and cross-network play.
+Increasingly games are building *cross-network* experiences with players engaging each other from different identity domains (for example, Xbox Live players interacting with Steam players interacting with custom identity systems). PlayFab's services were designed to support cross-progression and cross-network play.
 
 ## Example multiplayer scenarios
 
@@ -45,7 +45,7 @@ Players often want to control who they play with, preferentially selecting frien
 
 Players can also be members of multiple Lobbies at the same time. This allows you to create flexible player groupings such as allowing three friends to remain grouped as they matchmake with others over several matches. 
 
-With built-in [real-time notifications](lobby/lobby-and-matchmaking-real-time-notifications.md), members of a Lobby can receive real-time messages when changes occur such as members joining or leaving, or data being written to the Lobby. The same real-time notification mechanism can be used for cross-platform invites, allowing players to listen for an invite whether or not they are a member of a Lobby. Platforms may provide built-in invitation and presence systems that launch toasts and have other beneficial experiences (join in progress from the player profile card) that you should consider integrating if applicable.
+With built-in [real-time messages](lobby/lobby-and-matchmaking-real-time-messages.md), members of a Lobby can receive real-time messages when changes occur such as members joining or leaving, or data being written to the Lobby. The same real-time message mechanism can be used for cross-platform invites, allowing players to listen for an invite whether or not they are a member of a Lobby. Platforms may provide built-in invitation and presence systems that launch toasts and have other beneficial experiences (join in progress from the player profile card) that you should consider integrating if applicable.
 
 While you can use Lobby for signaling and other limited data-sharing, PlayFab Party is best suited for real-time data transfer and chat. PlayFab Lobby can be used to share PlayFab Party network descriptors or PlayFab multiplayer server session details to the group's data storage. This sharing of session information can allow players to join a friend's session unsolicited. If you are using non-PlayFab services for real-time networking or game hosting, those systems typically have identifying information that you can similarly signal between players using Lobby.
 
@@ -72,11 +72,11 @@ Party utilizes Azure Cognitive Services to transcribe player voice chat and synt
 
 ### Game hosting
 
-Real-time multiplayer games typically select a specific player device to host game state (aka "peer to peer") or use a dedicated multiplayer server. If hosting a game on a player device, PlayFab Party is an ideal low-latency device-to-device networking system to synchronize this game state across the session's participants.
+Real-time multiplayer games typically select a specific player device to host game state (also known as "peer to peer") or use a dedicated multiplayer server. If hosting a game on a player device, PlayFab Party is an ideal low-latency device-to-device networking system to synchronize this game state across the session's participants.
 
 It is difficult to scale peer to peer games when the device count grows. While PlayFab Party provides network encryption and uses relays to protect player IP addresses, having a device operate as host still opens avenues for cheating.
 
-PlayFab Multiplayer Servers provides simple and efficient scaling of multiplayer across Azure's global cloud. Using a small server, for example loading 10 sessions of 10 players each on a F2v2 Linux virtual machine, can efficiently and dramatically simplify your multiplayer design and improve it's reliability compared to a P2P implementation. Sophisticated multiplayer computation can be achieved by setting a server's build configuration to allocate more Azure resources to a session, perhaps using 8 or more cores for a 200 player experience.
+PlayFab Multiplayer Servers provides simple and efficient scaling of multiplayer across Azure's global cloud. Using a small server, for example loading 10 sessions of 10 players each on a F2v2 Linux virtual machine, can efficiently and dramatically simplify your multiplayer design and improve its reliability compared to a P2P implementation. Sophisticated multiplayer computation can be achieved by setting a server's build configuration to allocate more Azure resources to a session, perhaps using 8 or more cores for a 200 player experience.
 
 - [Learn more about Party](./networking/index.md)
 - [Learn more about Multiplayer Servers](./servers/index.md)
