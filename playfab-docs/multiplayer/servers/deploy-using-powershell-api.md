@@ -84,7 +84,7 @@ If you receive an error that says `Title must have a valid payment instrument as
 
 Uploading an asset is mandatory when you're deploying a build for Windows servers. This is because your assets customize the managed Windows container image.
 
-However, it's optional when deploying a build for Linux servers since you're able to customize the Linux container image. To learn more, see [Create Linux container images](deploying-linux-based-builds.md).
+However, it's optional when deploying a build for Linux servers since you're able to customize the Linux container image. To learn more, see [Create and deploy Linux Builds](deploying-linux-based-builds.md).
 
 Run this command to upload an asset.
 
@@ -101,7 +101,7 @@ For more details, see [New-PfAsset reference documentation](https://github.com/P
 ## Create a build
 
 * When creating a build for Windows servers, you need to have uploaded an asset. If not, see [Upload an asset](#upload-an-asset).
-* When creating a build for Linux servers, you need to have uploaded your custom Linux container image to your PlayFab container registry. To learn more, see [Deploying Linux servers](deploying-linux-based-builds.md).
+* When creating a build for Linux servers, you need to have uploaded your custom Linux container image to your PlayFab container registry. To learn more, see [Create and deploy Linux Builds](deploying-linux-based-builds.md).
 
 > [!IMPORTANT] 
 > Make sure you use the correct values for __$vmSize__ and __$regions__ if you plan to take advantage of resources offered for [free evaluation](billing-for-thunderhead.md).

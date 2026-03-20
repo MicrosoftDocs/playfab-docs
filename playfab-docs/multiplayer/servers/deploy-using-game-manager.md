@@ -36,7 +36,7 @@ For details about the values you can use for each parameter, see [Build definiti
 1. Next we have the server details portion where you'll need to select an OS type either **Windows** or **Linux**. Then you'll select your server type, either process or container based on the OS you choose.
 
 > [!Note]
-> For Linux platform, you need to create your own container image. For more instructions, see [Create and deploy Linux container images](deploying-linux-based-builds.md). If you've already uploaded a container image, it will appear in the __Image__ dropdown. To use it, select the image.
+> For Linux platform, you need to create your own container image. For more instructions, see [Create and deploy Linux Builds](deploying-linux-based-builds.md). If you've already uploaded a container image, it will appear in the __Image__ dropdown. To use it, select the image.
 
 Once you've selected your OS type, you can then choose the server type. Based on the OS/Server type you'll have the following features you can enable.
 
