@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Entity files
 
-Entity files allow you to read and write files attached to an entity, in any format. The example shown below demonstrates a full entity-file loop, from logging in, to loading a file, and uploading a new file.
+Entity files enable you to read and write files attached to an entity, in any format. The following example demonstrates a full entity-file loop, from signing in, to loading a file, and uploading a new file.
 
 ```csharp
 #if !DISABLE_PLAYFABENTITY_API && !DISABLE_PLAYFABCLIENT_API
@@ -82,8 +82,7 @@ public class EntityFileExample : MonoBehaviour
         var request = new PlayFab.ClientModels.LoginWithCustomIDRequest
         {
             CustomId = SystemInfo.deviceUniqueIdentifier,
-            CreateAccount = true,
-            LoginTitlePlayerAccountEntity = true
+            CreateAccount = true
         };
         PlayFabClientAPI.LoginWithCustomID(request, OnLogin, OnSharedFailure);
     }
@@ -142,7 +141,7 @@ public class EntityFileExample : MonoBehaviour
     {
         if (error.Error == PlayFabErrorCode.EntityFileOperationPending)
         {
-            // This is an error you should handle when calling InitiateFileUploads, but your resolution path may vary
+            // This is an error you should handle when calling InitiateFileUploads, but your resolution path might vary
             GlobalFileLock += 1; // Start AbortFileUploads
             var request = new PlayFab.DataModels.AbortFileUploadsRequest
             {
@@ -170,7 +169,7 @@ public class EntityFileExample : MonoBehaviour
         );
         GlobalFileLock -= 1; // Finish InitiateFileUploads
     }
-    void FinalizeUpload()
+    void FinalizeUpload(byte[] body) // body is unused in this example
     {
         GlobalFileLock += 1; // Start FinalizeFileUploads
         var request = new PlayFab.DataModels.FinalizeFileUploadsRequest
@@ -195,22 +194,22 @@ public class EntityFileExample : MonoBehaviour
 - `GlobalFileLock` is a simplistic way to avoid file collisions, specifically designed for this example.
   - Independent file actions won't cause any issues.
   - Each file action requires many steps and multiple API calls, so don't try to access the same file in multiple ways at the same time.
-  - If you're very careful, you won't need any locking mechanism.
-  - If you want to do something complicated, your locking mechanism may be much more complex.
-- `OnGUI` is a very old (but very dense) way to build a Unity GUI entirely within script.
+  - If you're careful, you don't need any locking mechanism.
+  - If you want to do something complicated, your locking mechanism might be much more complex.
+- `OnGUI` is an old, but very dense way, to build a Unity GUI entirely within script.
   - Your GUI will be much better, and game-specific.
 - All PlayFab features *first* require a login or authentication.
-- `LoadAllFiles()` will do exactly as it says. For the current logged-in entity, load all file saved to PlayFab.
-  - This requires multiple steps:
+- `LoadAllFiles()` does exactly as it says. For the current signed-in entity, it loads all files saved to PlayFab.
+  - This function requires multiple steps:
     - Asking PlayFab where the files are located,
     - And then downloading them separately.  
 - `UploadFile(string fileName)` saves the file to the service for the entity.
-  - For simplicity, this example saves one file at a time, but files can be uploaded atomically in sets as well.
-  - The steps for this are:
+  - For simplicity, this example saves one file at a time, but you can upload files atomically in sets as well.
+  - The steps for this operation are:
     - Initialize an atomic upload operation,
     - Upload all files,
     - Finalize an atomic upload operation.
-  - The entity won't consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation has been finalized successfully.
+  - The entity doesn't consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation is finalized successfully.
 
 ## Game Manager and entities
 
@@ -218,6 +217,6 @@ The Game Manager allows you to manipulate objects and files for players. The pla
 
 ![Game Manager - Entities - Player overview](media/tutorials/game-manager-entities-player-overview.png)  
 
-In addition, files and objects now have their own sections in the **Players** tab.
+Also, the **Players** tab now includes separate sections for files and objects.
 
 ![Game Manager - Entities - Player Files and Objects](media/tutorials/game-manager-entities-player-files.png)  
