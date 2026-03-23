@@ -17,8 +17,6 @@ items:
       href: concepts-realtime-audio-manipulation.md
     - name: Using text moderation
       href: concepts-text-moderation.md
-    - name: Using ToxMod voice moderation
-      href: concepts-voice-moderation-toxmod.md
     - name: Voice audio noise suppression
       href: concepts-noise-suppression.md
   - name: Reference
