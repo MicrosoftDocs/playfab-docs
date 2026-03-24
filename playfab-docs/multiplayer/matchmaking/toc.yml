@@ -19,6 +19,10 @@ items:
     href: config-examples.md
   - name: Specifying attributes with your tickets
     href: ticket-attributes.md
+  - name: Understanding rule weight in matchmaking
+    href: rule-weights.md
+  - name: How matchmaking scales under load
+    href: matchmaking-partition.md
   - name: Using server backfill tickets - Multiplayer SDK
     href: backfill-tickets-multiplayer-sdk.md
   - name: Using server backfill tickets - REST API

@@ -36,7 +36,7 @@
     href: deploy-using-game-manager.md
   - name: Deploy builds using PowerShell/API
     href: deploy-using-powershell-api.md
-  - name: Create Linux container images
+  - name: Create and deploy Linux Builds
     href: deploying-linux-based-builds.md
   - name: Server build lifecycle
     href: multiplayer-build-lifecycle.md

@@ -63,7 +63,7 @@ These OData operators can be used to compose query strings. The operators are ca
 | le         | less than or equal to    | number_key2 le 10                                     |
 | gt         | greater than             | number_key3 gt 100                                    |
 | ge         | greater than or equal to | number_key3 ge 100                                    |
-| ne         | ne                       | string_key1 ne 'CaptureTheFlag'                       |
+| ne         | not equal to             | string_key1 ne 'CaptureTheFlag'                       |
 | and        | and                      | string_key1 eq 'CaptureTheFlag' and number_key2 lt 10 |
 
 
@@ -92,7 +92,7 @@ OData style string that contains sorting for this query in either ascending ("as
 |-----------------------------|---------------------------------------------------|
 | number_key1 asc             | order by number search key ascending              |
 | lobby/memberCount desc      | order by number search key descending             |
-| distance(number_key1 = 5)   | sort on distance from the given number            |
+| distance{number_key1 = 5}   | sort on distance from the given number            |
 | *default*                   | order by creation time descending                 |
 
 
@@ -143,9 +143,9 @@ void FindGamesWithRuntimeQuery(
     filterString += " and ";
     filterString += PFLOBBY_SEARCH_KEY_COMPETITION_STYLE + std::string(" eq ") + "'" + COMPETITION_STYLE_RANKED + "'";
     filterString += " and ";
-    filterString += PFLOBBY_SEARCH_KEY_SKILL + std::string(" -ge ") + std::to_string(minimumSkill);
+    filterString += PFLOBBY_SEARCH_KEY_SKILL + std::string(" ge ") + std::to_string(minimumSkill);
     filterString += " and ";
-    filterString += PFLOBBY_SEARCH_KEY_SKILL + std::string(" -le ") + std::to_string(maximumSkill);
+    filterString += PFLOBBY_SEARCH_KEY_SKILL + std::string(" le ") + std::to_string(maximumSkill);
 
     // Create sort string based on player's sort preference.
     std::string sortString;
