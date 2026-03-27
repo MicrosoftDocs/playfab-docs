@@ -11,6 +11,14 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Multiplayer C++ SDK release notes
+## 1.8.8
+
+March 23, 2026
+
+### Bug fixes
+
+- Fixed undefined reference to DeriveWorkQueue on Linux.
+- Improved Linux linker hardening for PlayFab Multiplayer.
 
 ## 1.8.7
 
