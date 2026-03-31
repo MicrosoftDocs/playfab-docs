@@ -14,6 +14,8 @@ items:
   href: steam-deck-implementation.md
 - name: Conflicts
   href: conflicts.md
+- name: Rollback
+  href: rollback.md
 - name: UI Callbacks
   href: ui-callbacks.md
 - name: Offline Mode
