@@ -7,3 +7,13 @@ items:
     href: craftingGame/toc.yml
   - name: Virtual currencies
     href: currencies.md
+  - name: Containers with fixed contents
+    href: containers-with-fixed-contents.md
+  - name: Drop tables and randomized loot
+    href: drop-tables-and-randomized-loot.md
+  - name: Idempotent transactions and retries
+    href: idempotent-transactions-and-retries.md
+  - name: ETags and concurrency control
+    href: etags-and-concurrency-control.md
+  - name: Real money price tracking
+    href: real-money-price-tracking.md
