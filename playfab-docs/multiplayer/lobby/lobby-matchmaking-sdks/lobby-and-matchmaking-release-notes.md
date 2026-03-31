@@ -11,6 +11,27 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Multiplayer C++ SDK release notes
+## 1.8.8
+
+March 23, 2026
+
+### Bug fixes
+
+- Fixed undefined reference to DeriveWorkQueue on Linux.
+- Improved Linux linker hardening for PlayFab Multiplayer.
+
+## 1.9.0
+
+March 26, 2026
+
+### New Features
+
+- Added [PFLobbyGetRestrictInvitesToLobbyOwner](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetrestrictinvitestolobbyowner.md) to retrieve the lobby’s current policy indicating whether only the lobby owner can send invites to join the lobby.
+- Added the `restrictInvitesToLobbyOwner` field to [PFLobbyArrangedJoinConfiguration](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbyarrangedjoinconfiguration.md), [PFLobbyCreateConfiguration](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbycreateconfiguration.md), and [PFLobbyDataUpdate](../playfabmultiplayerreference-cpp/pflobby/structs/pflobbydataupdate.md) structs to control whether only the lobby owner or any member can send invites to join the lobby. If you are using default initializers for these structs no code changes are necessary. If you are not using default initializers, be sure to initialize the new fields.
+
+### Bug fixes
+
+- Fixed an issue where a disconnected state change was not automatically generated after a connection was lost and could not be reestablished.
 
 ## 1.8.7
 

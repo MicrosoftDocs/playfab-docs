@@ -18,6 +18,12 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.10.18
+
+March 26, 2026
+
+-  Improved Linux linker hardening for PlayFab Party.
+
 ## 1.10.17
 
 February 23, 2026
@@ -210,7 +216,7 @@ For Android platforms, we follow [Google's target API guidelines](https://develo
     - The Compile SDK Version has been increased from Android API 28 to Android API 34.
     - Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
-If you experience any issues with integrating these packages, [please file a PlayFab Support Ticket](../../pricing/Support.md).
+If you experience any issues with integrating these packages, [please file a PlayFab Support Ticket](../../pricing/support.md).
 
 ## 1.8.9
 

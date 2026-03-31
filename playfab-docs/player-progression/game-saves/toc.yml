@@ -18,6 +18,8 @@ items:
   href: ui-callbacks.md
 - name: Offline Mode
   href: offline.md
+- name: PlayStream Events
+  href: playstream-events.md
 - name: Active Device Changes
   href: activedevicechanges.md
 - name: Limits

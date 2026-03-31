@@ -5,7 +5,7 @@ description: "Information specific to the *Updated* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/14/2024
+ms.date: 03/24/2026
 ---
 
 # PFLobbyUpdatedStateChange  
@@ -31,6 +31,7 @@ struct PFLobbyUpdatedStateChange : PFLobbyStateChange {
     uint32_t updatedServerPropertyCount;  
     const char* const* updatedServerPropertyKeys;  
     bool serverConnectionStatusUpdated;  
+    bool restrictInvitesToLobbyOwnerUpdated;  
 }  
 ```
   
@@ -100,6 +101,10 @@ The keys of properties that updated for a client-owned lobby's joined server.
 **`serverConnectionStatusUpdated`** &nbsp; bool  
   
 A flag indicating whether the lobby server's connection status changed.
+  
+**`restrictInvitesToLobbyOwnerUpdated`** &nbsp; bool  
+  
+A flag indicating if the lobby's policy for restricting invites to the lobby owner changed.
   
 ## Remarks  
   

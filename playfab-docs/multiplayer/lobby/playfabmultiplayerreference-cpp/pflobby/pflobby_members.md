@@ -5,7 +5,7 @@ description: "PFMultiplayer C/C++ API overview - PFLobby.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 06/10/2025
+ms.date: 03/24/2026
 ---
 
 # PFMultiplayer C/C++ API overview - PFLobby.h
@@ -31,6 +31,7 @@ ms.date: 06/10/2025
 | [PFLobbyGetMembershipLock](functions/pflobbygetmembershiplock.md) | Gets the lobby's current membership lock state. |  
 | [PFLobbyGetOwner](functions/pflobbygetowner.md) | Gets the current owner of the lobby. |  
 | [PFLobbyGetOwnerMigrationPolicy](functions/pflobbygetownermigrationpolicy.md) | Gets the owner migration policy of the lobby. |  
+| [PFLobbyGetRestrictInvitesToLobbyOwner](functions/pflobbygetrestrictinvitestolobbyowner.md) | Gets the lobby's current policy for whether only the lobby owner can send invites to join the lobby. |  
 | [PFLobbyGetSearchProperty](functions/pflobbygetsearchproperty.md) | Get the search property value from its key. |  
 | [PFLobbyGetSearchPropertyKeys](functions/pflobbygetsearchpropertykeys.md) | Get the list of search property keys. |  
 | [PFLobbyGetServer](functions/pflobbygetserver.md) | Gets the server entity joined to the lobby. |  

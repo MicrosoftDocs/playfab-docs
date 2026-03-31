@@ -1,0 +1,27 @@
+name: Validate Docs
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'playfab-docs/**'
+      - 'scripts/validate-docs.ps1'
+      - '.github/workflows/validate-docs.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run validation on changed files
+        shell: pwsh
+        run: |
+          # Default mode diffs against 'main' and validates only changed files
+          ./scripts/validate-docs.ps1
