@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2026
 author: stevenLizano29
 description: PlayFab Services SDK Release Notes for 2026.
 ms.author: v-stevenroj
-ms.date: 03/09/2026
+ms.date: 03/27/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,19 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 260327
+
+Date: March 27, 2026
+
+ - Added `IncludeStatistics` parameter to `GetEntityProfile` and `GetEntityProfiles` in the Profiles API
+ - Added `StatisticsColumnDetails` field to entity profile response in the Profiles API
+ - Added `LastUpdated` field to `GetPolicy` response in the Admin API
+ - Added `Warnings` field to `UpdatePolicy` response in the Admin API
+ - Updated documentation for `GetPolicy` and `UpdatePolicy` request parameters in the Admin API
+ - Added `PreconditionFailed` error code to `GetInventoryItems` and `TransferInventoryItems` in the Economy API
+ - Added `StatisticUpdateNotAllowedWhileLinked` error code to the Progression API
+ - Added error codes for new service errors
 
 ## 260313
 
