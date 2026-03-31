@@ -5,7 +5,7 @@ description: "The initial configuration data used when joining an arranged lobby
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 03/15/2022
+ms.date: 03/24/2026
 ---
 
 # PFLobbyArrangedJoinConfiguration  
@@ -22,6 +22,7 @@ struct PFLobbyArrangedJoinConfiguration {
     uint32_t memberPropertyCount;  
     const char* const* memberPropertyKeys;  
     const char* const* memberPropertyValues;  
+    bool restrictInvitesToLobbyOwner;  
 }  
 ```
   
@@ -60,6 +61,12 @@ Per-member properties are only visible to members of the lobby.
 The values of the initial member properties for the joiner of the lobby.
   
 Per-member properties are only visible to members of the lobby.
+  
+**`restrictInvitesToLobbyOwner`** &nbsp; bool  
+  
+The policy for whether only the lobby owner can send invites to join the lobby.
+  
+When true, only the lobby owner can send invites. When false, any member can send invites. Can only be true for client-owned lobbies.
   
   
 ## Requirements  

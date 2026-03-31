@@ -52,6 +52,8 @@
     href: pflobby/functions/pflobbygetowner.md
   - name: PFLobbyGetOwnerMigrationPolicy
     href: pflobby/functions/pflobbygetownermigrationpolicy.md
+  - name: PFLobbyGetRestrictInvitesToLobbyOwner
+    href: pflobby/functions/pflobbygetrestrictinvitestolobbyowner.md
   - name: PFLobbyGetSearchProperty
     href: pflobby/functions/pflobbygetsearchproperty.md
   - name: PFLobbyGetSearchPropertyKeys

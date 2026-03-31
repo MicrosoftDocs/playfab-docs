@@ -5,7 +5,7 @@ description: "The initial configuration data used when creating a lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/25/2023
+ms.date: 03/24/2026
 ---
 
 # PFLobbyCreateConfiguration  
@@ -25,6 +25,7 @@ struct PFLobbyCreateConfiguration {
     uint32_t lobbyPropertyCount;  
     const char* const* lobbyPropertyKeys;  
     const char* const* lobbyPropertyValues;  
+    bool restrictInvitesToLobbyOwner;  
 }  
 ```
   
@@ -34,7 +35,7 @@ struct PFLobbyCreateConfiguration {
   
 The maximum number of members allowed in the new lobby.
   
-This value must be at least ```PFLobbyMaxMemberCountLowerLimit``` and no more than ```PFLobbyMaxMemberCountUpperLimit```. <br /><br /> If a client would violate this limit by calling [PFMultiplayerJoinLobby()](../functions/pfmultiplayerjoinlobby.md) or [PFLobbyAddMember](../functions/pflobbyaddmember.md), the operation will fail asynchronously.
+This value must be at least ```PFLobbyMaxMemberCountLowerLimit``` and no more than ```PFLobbyMaxMemberCountUpperLimit```. <br /><br /> If a client would violate this limit by calling [PFMultiplayerJoinLobby()](../functions/pfmultiplayerjoinlobby.md) or [PFLobbyAddMember](../functions/pflobbyaddmember.md), the operation fails asynchronously.
   
 **`ownerMigrationPolicy`** &nbsp; [PFLobbyOwnerMigrationPolicy](../enums/pflobbyownermigrationpolicy.md)  
   
@@ -55,14 +56,14 @@ The number of initial search properties for the new lobby.
   
 The keys of the initial search properties for the new lobby.
   
-Search properties are visible to non-members of the lobby as metadata which can be used to filter and sort lobby search results. <br /><br /> Search properties must be of the form string_keyN or number_keyN where "N" is a number between 1 and ```PFLobbyMaxSearchPropertyCount```. e.g. string_key1, number_key14, etc. <br /><br />
+Search properties are visible to non-members of the lobby as metadata, which can be used to filter and sort lobby search results. <br /><br /> Search properties must be of the form string_keyN or number_keyN where "N" is a number between 1 and ```PFLobbyMaxSearchPropertyCount```. e.g., string_key1, number_key14, etc. <br /><br />
   
 **`searchPropertyValues`** &nbsp; const char* const*  
 *array of size `searchPropertyCount`*  
   
 The values of the initial search properties for the new lobby.
   
-Search properties are visible to non-members of the lobby as metadata which can be used to filter and sort lobby search results.
+Search properties are visible to non-members of the lobby as metadata, which can be used to filter and sort lobby search results.
   
 **`lobbyPropertyCount`** &nbsp; uint32_t  
   
@@ -81,6 +82,12 @@ Lobby properties are only visible to members of the lobby.
 The values of the initial lobby properties for the new lobby.
   
 Lobby properties are only visible to members of the lobby.
+  
+**`restrictInvitesToLobbyOwner`** &nbsp; bool  
+  
+The policy for whether only the lobby owner can send invites to join the lobby.
+  
+When true, only the lobby owner can send invites. When false, any member can send invites. Can only be true for client-owned lobbies.
   
   
 ## Requirements  
