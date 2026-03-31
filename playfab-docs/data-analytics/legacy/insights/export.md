@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Exporting Data
 
 > [!NOTE] 
-> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Event Export**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+> PlayFab Insights Management will be retired 3/31/2026. We recommend using [Data Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Event Export**, continue to see this article for best practice details. For more information, see [Insights Retirement Blog](https://developer.microsoft.com/en-us/games/articles/2025/11/playfab-insights-management-getplayerinsegment-apis-retired-starting-march-31/). Further clarification on the impact to Event export: [Event Export Impact as part of Insights Management Retirement](https://developer.microsoft.com/en-us/games/articles/2026/02/event-export-impact-playfab-insights-management-retirement/)
 
 Event Export is the primary mechanism for exporting data from your Insights data cluster without querying. Event Export can be reached under the data section of PlayFab Game Manager. The number of distinct export commands you can run is tied to your performance level.
 
