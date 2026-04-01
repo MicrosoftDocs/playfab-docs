@@ -22,3 +22,5 @@ items:
       href: segmentation-export-players-in-a-segment.md
     - name: Advanced Segmentation with Player Custom Properties (Preview)
       href: advanced-segmentation.md
+    - name: Count Players of a Segment (Preview)
+      href: segmentation-player-count.md
