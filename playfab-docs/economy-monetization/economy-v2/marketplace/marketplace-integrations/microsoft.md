@@ -1,8 +1,8 @@
 ---
 title: Marketplace integration - Microsoft Store
-author: ernestoc
+author: mareg
 description: How to redeem Microsoft Store in-app purchases through PlayFab Economy v2
-ms.author: ernestoc
+ms.author: mareg
 ms.date: 02/23/2026
 ms.topic: tutorial
 ms.service: azure-playfab
