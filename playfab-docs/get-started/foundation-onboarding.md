@@ -1,4 +1,4 @@
----
+﻿---
 title: Foundation Mode Onboarding
 author: m-kdearnley
 description: Describes how to get started with Foundation Mode.
@@ -31,6 +31,11 @@ During the preview period, you need to request access before you can create titl
 
 1. Sign in to [Game Manager](https://developer.playfab.com/).
 1. Navigate to your studio settings and select the Preview Features tab. You must have admin privileges for this tab to be visible. Studio settings can be reached from the home screen, click on the three dots (...) menu on your studio. 
+
+   ![Screenshot of the Game Manager My Studios page showing the three-dots menu on a studio with the Studio settings option highlighted.](media/foundation-onboarding/studio-settings-menu.png)
+
+   ![Screenshot of the Studio Settings page with the Preview Features tab selected, showing Foundation Mode.](media/foundation-onboarding/preview-features-tab.png)
+
 1. Select  **Foundation Mode** and complete the request form.
 1. Wait for approval. You will receive an email when your studio is enabled for Foundation Mode.
 

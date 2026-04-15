@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # What is PlayFab Insights?
 
 > [!NOTE] 
-> PlayFab Insights Management was deprecated on December 11, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for feature details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+> PlayFab Insights Management will be retired 3/31/2026. We recommend using [Data Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for best practice details. For more information, see [Insights Retirement Blog](https://developer.microsoft.com/en-us/games/articles/2025/11/playfab-insights-management-getplayerinsegment-apis-retired-starting-march-31/).
 
 PlayFab Insights is a managed data environment, giving you instant access to your games data without the need for additional engineering. Unlike other hosted data solutions Insights requires no setup, no GDPR work, and no extra engineering. Use PlayFab services and your data is available. Automatically ingest and scale, connect external visualization tools, and query freely. 
 

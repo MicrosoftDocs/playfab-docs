@@ -1,8 +1,8 @@
 ---
 title: Redemption with the Microsoft Store Marketplace
-author: ernestoc
+author: mareg
 description: Set up PlayFab and the Microsoft Store to enable purchases and redemption on Xbox and Windows
-ms.author: fprotti
+ms.author: mareg
 ms.date: 02/22/2026
 ms.topic: tutorial
 ms.service: azure-playfab
