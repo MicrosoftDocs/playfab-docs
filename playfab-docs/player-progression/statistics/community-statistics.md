@@ -16,9 +16,16 @@ Community statistics are a powerful tool to increase engagement and foster playe
 
 For example, imagine implementing a global boss battle where the entire player base must collectively score 10 million eliminations within a week to unlock a special in-game event. As players see the community progress bar advancing with each of their contributions, they're motivated to help reach the goal. This creates a powerful feedback loop of investment and participation, especially when paired with real-time progress updates and milestone rewards along the way.
 
-With PlayFab, you can easily manage community statistics by defining two statistics: one at the player level (aggregation source) and another at the game title level (aggregation destination). Updates made to player statistics are automatically aggregated to the title-level statistic. To retrieve the current community score, you read the statistics for the title entity.
+With PlayFab, you can easily manage community statistics by defining two statistics: one at the player level (aggregation source) and another at the title or group level (aggregation destination). Updates made to player statistics are automatically aggregated to the destination statistic. To retrieve the current community score, you read the statistics for the destination entity.
 
-## Creating the source statistic definition 
+PlayFab supports two types of community statistics:
+
+- **Title-level**: Aggregates all player updates into a single title-wide statistic. Ideal for global goals shared across the entire player base.
+- **Group-level**: Aggregates player updates into a group entity statistic. Ideal for clan challenges, guild goals, or team-based objectives where subsets of players work toward a shared target.
+
+## Title-level community statistics
+
+### Creating the source statistic definition 
 
 First, create a statistic definition for players, which acts as the aggregation source:
 
@@ -48,7 +55,7 @@ CreateStatisticDefinitionRequest statDefinitionRequest = new CreateStatisticDefi
 PlayFabResult<PlayFab.LeaderboardsModels.EmptyResponse> createStatDefResult = await statsAPI.CreateStatisticDefinitionAsync(statDefinitionRequest);
 ```
 
-## Creating the destination statistic definition 
+### Creating the destination statistic definition 
 
 Next, create a statistic definition for the title, which acts as the aggregation destination. Specify the player statistic definition as the aggregation source for the title statistic definition:
 
@@ -77,9 +84,9 @@ PlayFabResult<PlayFab.LeaderboardsModels.EmptyResponse> createStatDefResult = aw
 
 Once the community statistic is created, any updates made at the player level start getting aggregated at the title level. Only *new* updates are aggregated. If the source statistic has existed for a while, those historical values aren't backfilled at the title level.
 
-## Reading Community Statistics
+### Reading title community statistics
 
-To retrieve the current scores for the statistic at the title level, read the statistics for the Title entity:
+To retrieve the current scores for the statistic at the title level, read the statistics for the title entity:
 
 ```C#
 // Use the PlayFabAuthenticationContext to call the API
@@ -98,12 +105,107 @@ GetStatisticsRequest request = new GetStatisticsRequest()
 PlayFabResult<GetStatisticsResponse> result = await statsAPI.GetStatisticsAsync(request); 
 ```
 
+## Group-level community statistics
+
+Group-level community statistics let you aggregate player actions within a specific group, such as a clan or guild. This is useful for scenarios like a clan challenge where members collectively work toward a shared goal.
+
+### Creating the destination statistic definition
+
+Create a statistic definition with `EntityType` set to `group`. Specify the player statistic definition as the aggregation source:
+
+```C#
+// Use the PlayFabAuthenticationContext to call the API
+PlayFabProgressionInstanceAPI statsAPI = new PlayFabProgressionInstanceAPI(context);
+CreateStatisticDefinitionRequest statDefinitionRequest = new CreateStatisticDefinitionRequest()
+{
+    Name = "groupCommunityStat",
+    AuthenticationContext = context,
+    EntityType = "group",
+    Columns = new List<StatisticColumn>()
+    {
+        new StatisticColumn()
+        {
+            Name = "Eliminations",
+            AggregationMethod = StatisticAggregationMethod.Sum,
+        },
+    },
+    AggregationSources = new string[] { "sourceStat" }
+};
+
+PlayFabResult<PlayFab.LeaderboardsModels.EmptyResponse> createStatDefResult = await statsAPI.CreateStatisticDefinitionAsync(statDefinitionRequest);
+```
+
+> [!NOTE]
+> The source statistic definition (player-level) is the same as the one used for title-level community statistics. You can reuse an existing source statistic definition.
+
+### Updating the source statistic
+
+When updating a player's source statistic for group-level aggregation, you must specify the target group entity in the `AggregationTargetEntityKeys` property of the `StatisticUpdate` object. This tells PlayFab which group entity to aggregate the update to.
+
+```C#
+// Use the PlayFabAuthenticationContext to call the API
+PlayFabProgressionInstanceAPI statsAPI = new PlayFabProgressionInstanceAPI(context);
+
+UpdateStatisticsRequest request = new UpdateStatisticsRequest()
+{
+    AuthenticationContext = context,
+    Entity = new PlayFab.LeaderboardsModels.EntityKey()
+    {
+        Id = "<player entity id>",
+        Type = "title_player_account"
+    },
+    Statistics = new List<StatisticUpdate>()
+    {
+        new StatisticUpdate()
+        {
+            Name = "sourceStat",
+            Scores = new List<string> { "5" },
+            AggregationTargetEntityKeys = new List<PlayFab.LeaderboardsModels.EntityKey>()
+            {
+                new PlayFab.LeaderboardsModels.EntityKey()
+                {
+                    Id = "<group entity id>",
+                    Type = "group"
+                }
+            }
+        }
+    }
+};
+
+PlayFabResult<UpdateStatisticsResponse> result = await statsAPI.UpdateStatisticsAsync(request);
+```
+
+> [!IMPORTANT]
+> For title-level community statistics, `AggregationTargetEntityKeys` isn't required because the title is the default aggregation target. For group-level community statistics, you must specify the group entity key. Currently, only one entity key can be specified in `AggregationTargetEntityKeys`.
+
+### Reading group community statistics
+
+To retrieve the current scores for the group community statistic, read the statistics for the group entity:
+
+```C#
+// Use the PlayFabAuthenticationContext to call the API
+PlayFabProgressionInstanceAPI statsAPI = new PlayFabProgressionInstanceAPI(context);
+
+GetStatisticsRequest request = new GetStatisticsRequest()
+{
+    AuthenticationContext = context,
+    Entity = new PlayFab.LeaderboardsModels.EntityKey()
+    {
+        Id = "<group entity id>",
+        Type = "group"
+    },
+};
+
+PlayFabResult<GetStatisticsResponse> result = await statsAPI.GetStatisticsAsync(request);
+```
+
 ## Restrictions
 
 * Currently, only one aggregation source can be specified for the community statistic.
 * Version configuration can't be specified for the community statistic. The version configuration specified for the source statistic applies to the community statistic as well.
-* The `EntityType` for the community statistic *must* be `title`.
+* The `EntityType` for the community statistic must be `title` or `group`.
 * `Last` aggregation can't be used for any of the columns.
+* Only one entity key can be specified in `AggregationTargetEntityKeys` when updating the source statistic.
 
 ## See also
 
