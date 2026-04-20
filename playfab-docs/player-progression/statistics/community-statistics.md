@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 # Community statistics
 
-Community statistics are a powerful tool to increase engagement and foster player investment in your game. By aggregating statistics at the game title level, developers can create shared goals and challenges that encourage collaboration among players. It transforms individual player actions into contributions toward community-wide objectives, driving sustained engagement as players work together to achieve collective milestones. Players feel their individual contributions matter to the larger community, strengthening their connection to both the game and fellow players.
+Community statistics are a powerful tool to increase engagement and foster player investment in your game. By aggregating statistics at the game title level, developers can create shared goals and challenges that encourage collaboration among players. This approach transforms individual player actions into contributions toward community-wide objectives, driving sustained engagement as players work together to achieve collective milestones. Players feel their individual contributions matter to the larger community, strengthening their connection to both the game and fellow players.
 
-For example, imagine implementing a global boss battle where the entire player base must collectively score 10 million eliminations within a week to unlock a special in-game event. As players see the community progress bar advancing with each of their contributions, they're motivated to help reach the goal. This creates a powerful feedback loop of investment and participation, especially when paired with real-time progress updates and milestone rewards along the way.
+For example, imagine implementing a global boss battle where the entire player base must collectively score 10 million eliminations within a week to unlock a special in-game event. As players see the community progress bar advancing with each of their contributions, they're motivated to help reach the goal. This behavior creates a powerful feedback loop of investment and participation, especially when paired with real-time progress updates and milestone rewards along the way.
 
-With PlayFab, you can easily manage community statistics by defining two statistics: one at the player level (aggregation source) and another at the title or group level (aggregation destination). Updates made to player statistics are automatically aggregated to the destination statistic. To retrieve the current community score, you read the statistics for the destination entity.
+With PlayFab, you can easily manage community statistics by defining two statistics: one at the player level (aggregation source) and another at the title or group level (aggregation destination). Updates made to player statistics automatically aggregate to the destination statistic. To retrieve the current community score, you read the statistics for the destination entity.
 
 PlayFab supports two types of community statistics:
 
@@ -80,13 +80,13 @@ CreateStatisticDefinitionRequest statDefinitionRequest = new CreateStatisticDefi
 
 PlayFabResult<PlayFab.LeaderboardsModels.EmptyResponse> createStatDefResult = await statsAPI.CreateStatisticDefinitionAsync(statDefinitionRequest);
 ```
-> **_NOTE:_** `EntityType` is set to `title` and `AggregationSources` is set to reference the statistic defined at the player level.
+> **_NOTE:_** Set `EntityType` to `title` and `AggregationSources` to reference the statistic defined at the player level.
 
-Once the community statistic is created, any updates made at the player level start getting aggregated at the title level. Only *new* updates are aggregated. If the source statistic has existed for a while, those historical values aren't backfilled at the title level.
+After you create the community statistic, any updates made at the player level start aggregating at the title level. The system aggregates only new updates. If the source statistic exists for a while, the system doesn't backfill those historical values at the title level.
 
 ### Reading title community statistics
 
-To retrieve the current scores for the statistic at the title level, read the statistics for the title entity:
+To get the current scores for the statistic at the title level, read the statistics for the title entity:
 
 ```C#
 // Use the PlayFabAuthenticationContext to call the API
@@ -107,7 +107,7 @@ PlayFabResult<GetStatisticsResponse> result = await statsAPI.GetStatisticsAsync(
 
 ## Group-level community statistics
 
-Group-level community statistics let you aggregate player actions within a specific group, such as a clan or guild. This is useful for scenarios like a clan challenge where members collectively work toward a shared goal.
+Group-level community statistics let you aggregate player actions within a specific group, such as a clan or guild. This aggregation is useful for scenarios like a clan challenge where members collectively work toward a shared goal.
 
 ### Creating the destination statistic definition
 
@@ -140,7 +140,7 @@ PlayFabResult<PlayFab.LeaderboardsModels.EmptyResponse> createStatDefResult = aw
 
 ### Updating the source statistic
 
-When updating a player's source statistic for group-level aggregation, you must specify the target group entity in the `AggregationTargetEntityKeys` property of the `StatisticUpdate` object. This tells PlayFab which group entity to aggregate the update to.
+When updating a player's source statistic for group-level aggregation, specify the target group entity in the `AggregationTargetEntityKeys` property of the `StatisticUpdate` object. This property tells PlayFab which group entity to aggregate the update to.
 
 ```C#
 // Use the PlayFabAuthenticationContext to call the API
@@ -176,11 +176,11 @@ PlayFabResult<UpdateStatisticsResponse> result = await statsAPI.UpdateStatistics
 ```
 
 > [!IMPORTANT]
-> For title-level community statistics, `AggregationTargetEntityKeys` isn't required because the title is the default aggregation target. For group-level community statistics, you must specify the group entity key. Currently, only one entity key can be specified in `AggregationTargetEntityKeys`.
+> For title-level community statistics, `AggregationTargetEntityKeys` isn't required because the title is the default aggregation target. For group-level community statistics, you must specify the group entity key. Currently, you can specify only one entity key in `AggregationTargetEntityKeys`.
 
 ### Reading group community statistics
 
-To retrieve the current scores for the group community statistic, read the statistics for the group entity:
+To get the current scores for the group community statistic, read the statistics for the group entity:
 
 ```C#
 // Use the PlayFabAuthenticationContext to call the API
@@ -201,11 +201,11 @@ PlayFabResult<GetStatisticsResponse> result = await statsAPI.GetStatisticsAsync(
 
 ## Restrictions
 
-* Currently, only one aggregation source can be specified for the community statistic.
-* Version configuration can't be specified for the community statistic. The version configuration specified for the source statistic applies to the community statistic as well.
+* You can specify only one aggregation source for the community statistic.
+* You can't specify version configuration for the community statistic. The version configuration you specify for the source statistic also applies to the community statistic.
 * The `EntityType` for the community statistic must be `title` or `group`.
-* `Last` aggregation can't be used for any of the columns.
-* Only one entity key can be specified in `AggregationTargetEntityKeys` when updating the source statistic.
+* You can't use `Last` aggregation for any of the columns.
+* You can specify only one entity key in `AggregationTargetEntityKeys` when updating the source statistic.
 
 ## See also
 
