@@ -31,7 +31,7 @@ Unique ID of the entity.
 **`type`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Entity type. See https://docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types.
+(Optional) Entity type. See [https://docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types.](/gaming/playfab/features/data/entities/available-built-in-entity-types.)
   
   
 ## Requirements  
