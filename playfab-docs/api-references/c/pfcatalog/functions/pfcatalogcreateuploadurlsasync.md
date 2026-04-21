@@ -10,7 +10,7 @@ ms.date: 11/19/2024
 
 # PFCatalogCreateUploadUrlsAsync  
 
-Creates one or more upload URLs which can be used by the client to upload raw file data. Content URls and uploaded content will be garbage collected after 24 hours if not attached to a draft or published item.  can be found here: https://learn.microsoft.com/gaming/playfab/features/pricing/meters/catalog-meters See [Catalog Pricing Meters](../../../../pricing/Meters/catalog-meters.md)
+Creates one or more upload URLs which can be used by the client to upload raw file data. Content URls and uploaded content will be garbage collected after 24 hours if not attached to a draft or published item.  can be found here: [https://learn.microsoft.com/gaming/playfab/features/pricing/meters/catalog-meters](/gaming/playfab/features/pricing/meters/catalog-meters) See [Catalog Pricing Meters](../../../../pricing/Meters/catalog-meters.md)
 
 ## Syntax  
   
