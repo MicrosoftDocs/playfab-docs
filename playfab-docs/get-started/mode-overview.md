@@ -95,6 +95,16 @@ Foundation Mode includes the following PlayFab features:
 | [Catalog]( ../economy-monetization/economy-v2/catalog/catalog-overview.md) | Define and manage your game's virtual items |
 | [Inventory](../economy-monetization/economy-v2/inventory/index.md) | Track player-owned items and currencies |
 
+## What's not included
+
+The following features aren't available in Foundation Mode. Calling APIs for these features returns a permissions error.
+
+- **Economy**: User-Generated Content (UGC), including `CreateDraftItem`, `PublishDraftItem`, UGC-scoped `SearchItems`, and UGC file upload flows.
+- **Multiplayer**: Multiplayer Servers for dedicated hosting, including server allocation and management APIs.
+- **Live service management**: CloudScript (classic) (use [Azure Functions](../live-service-management/service-gateway/automation/cloudscript-af/index.md) instead), Segmentation, Experimentation (Targeted Configuration), Churn Prediction, and CDN.
+- **Game data stream**: custom telemetry events and Telemetry Keys (custom event ingestion is blocked; service-generated PlayStream events are included), Event Archive, Rules/Actions/Webhooks, Player Search, and cross-region or S3 Data Connections (only same-region connections are available).
+- Legacy APIs including Economy v1, and Statistics v1/Leaderboards v1 (use the modern replacements which are included in Foundation Mode).
+
 ## Service limits
 
 Foundation Mode includes API rate limits to ensure fair resource allocation, but it doesn't include monthly caps on usage for Foundation Mode titles. Most rate limits apply on a per-API, per-player basis. This limit restricts the number of calls a single player can make to a specific API endpoint in a short time period (for example, 30 calls per 2 minutes). This limit means that any experience that works at a developer's desk should accurately reflect how the game operates at scale, regardless of how many players your live game has.
@@ -108,7 +118,7 @@ Foundation Mode simplifies access to core PlayFab services under the Xbox publis
 Foundation Mode applies at the title level. As long as your title only uses the core services included under Foundation Mode, no extra charges apply.
 
 > [!IMPORTANT]
-> The API blocks features that aren't included in Foundation Mode. If your title calls an API for a feature that isn't part of Foundation Mode, the call returns a permissions error. This restriction means there's no risk of unexpected charges—you can't accidentally use a paid feature.
+> Foundation Mode blocks APIs for features that aren't included. If your title calls an excluded API, PlayFab returns a permissions error and the call doesn't complete. No usage is recorded and no charges apply. For the full list of excluded features, see [What's not included](#whats-not-included).
 
 > [!NOTE]
 > **Azure Functions compute costs:** While Foundation Mode includes PlayFab function *invocations*, you pay separately through your Azure subscription for the underlying Azure compute resources (measured in GB-s). For more information, see [Azure Functions pricing](https://azure.microsoft.com/pricing/details/functions/).
