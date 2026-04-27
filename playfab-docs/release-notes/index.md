@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2026
 author: stevenLizano29
 description: PlayFab Services SDK Release Notes for 2026.
 ms.author: v-stevenroj
-ms.date: 04/10/2026
+ms.date: 04/24/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,16 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab).
+
+## 260424
+
+Date: April 24, 2026
+
+- Added `ProductDisabledForTitle` error code to multiple calls in the Multiplayer and Events APIs
+- Added `GetPlayersInSegmentRetired` error code to segmented-player retrieval in the Admin and Server APIs
+- Added `EventSinkResourceMisconfigured` error code in the Admin API
+- Updated Economy API `GetTransactionHistory` documentation to clarify limits (50 events by default, or 250 with response compression)
+- Updated Progression API `GetFriendLeaderboardForEntity` request example
 
 ## 260410
 
