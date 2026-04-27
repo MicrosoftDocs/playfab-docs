@@ -16,6 +16,8 @@ The API Access Policy controls access to API resources. At times it is necessary
 
 This topic discusses the use API permission policies to create the appropriate rules.
 
+ You can also manage your title's API access policy directly in Game Manager. For more information, see [API Access Policy in Game Manager](../live-service-management/gamemanager/api-access-page-doc.md).
+
 > [!IMPORTANT]
 > This guide discusses advanced techniques. If applied incorrectly, it is possible to completely disable client access to your title using this feature.
 
