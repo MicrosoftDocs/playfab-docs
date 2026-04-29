@@ -1,5 +1,5 @@
 ---
-title: Migration Guide: PlayFab Standalone SDK (v1) to PlayFab Unified SDK (v2)
+title: "Migration Guide: PlayFab Standalone SDK (v1) to PlayFab Unified SDK (v2)"
 author: Jeffrey-Shi
 description: Complete guide for migrating from PlayFab v1 SDKs to the new Unified SDK v2
 ms.author: jeffshi

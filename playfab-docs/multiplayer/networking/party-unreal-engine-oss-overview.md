@@ -15,7 +15,7 @@ The PlayFab Online Subsystem (PF OSS) enables you to make use of Multiplayer fea
 
 PlayFab OSS works alongside the PlayFab SDK marketplace plugin, which provides other PlayFab functionalities such as economy, leaderboards, and more. For more information, see [PlayFab SDK on the UE Marketplace (external site)](https://www.unrealengine.com/marketplace/product/playfab-sdk).
 
-|    | PlayFab Online Subsystem | PlayFab SDK Marketplace Plugin    |
+| Category | PlayFab Online Subsystem | PlayFab SDK Marketplace Plugin    |
 |--------------|-------------|-------------|
 | Source  | [GitHub public repository](https://github.com/PlayFab/PlayFabMultiplayerUnreal) |  [PlayFab SDK on the UE Marketplace (external site)](https://www.unrealengine.com/marketplace/product/playfab-sdk)  |
 | Top Features | Lobby, Matchmaking, and Party | Economy, Leaderboards, Data & Analytics |

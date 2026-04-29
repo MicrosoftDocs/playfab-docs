@@ -1,6 +1,8 @@
 items:
 - name: Overview
   href: index.md
+- name: How matchmaking works
+  href: how-matchmaking-works.md
 - name: Quickstart - Client SDK
   href: quickstart-client-sdk.md
 - name: Quickstart - REST API

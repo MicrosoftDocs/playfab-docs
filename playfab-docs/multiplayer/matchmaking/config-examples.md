@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 
 ## Overview
 
-The system of queues and rules provides the flexibility to handle a large number of scenarios. Below are examples of some of the more common matchmaking use cases, and their associated queues. Each of these can be submitted directly via PlayFab APIs. <!--the [Matchmaking Admin API](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin).--> These options can also be set via the Game Manager UI.
+The system of queues and rules provides the flexibility to handle a large number of scenarios. Here are examples of some of the more common matchmaking use cases, and their associated queues. You can submit each of these configurations directly by using PlayFab APIs. <!--the [Matchmaking Admin API](xref:titleid.playfabapi.com.multiplayer.matchmakingadmin).--> You can also set these options by using the Game Manager UI.
 
 ## My first queue, or "quick match"
 
-Every title should begin with this simple queue to work out their basic flows. This queue matches two players together, and contains one optional rule that requires players to pass in the same build string in order to match. If no build is specified, the player may match with other players in this queue, regardless of build.
+Every title should begin with this simple queue to work out their basic flows. This queue matches two players together, and contains one optional rule that requires players to pass in the same build string in order to match. If you don't specify a build, the player can match with other players in this queue, regardless of build.
 
 ```json
 "MatchmakingQueue": {
@@ -73,10 +73,10 @@ Titles often have different ways to play games. If these players should never ma
 
 ## Cross game mode search
 
-If players are intended to match with others across game modes, use a single queue and create a Set Intersection rule. Players can specify multiple game modes, and the rule will restrict matches to ones where all players contain at least one common game mode.
+If players are intended to match with others across game modes, use a single queue and create a Set Intersection rule. Players can specify multiple game modes, and the rule restricts matches to ones where all players contain at least one common game mode.
 
 > [!NOTE]  
-> The number of players required to play must be the same across modes for this to function correctly.
+> The number of players required to play must be the same across modes for this functionality to work correctly.
 
 ```json
 {
@@ -102,13 +102,13 @@ If players are intended to match with others across game modes, use a single que
 }
 ```
 
-## Skill based free-for-all game, with expansion
+## Skill-based free-for-all game, with expansion
 
-A very common scenario is attempting to match players together based on *skill*. In this example, the queue will require players' skill attributes to be within 0.2, with these attributes increasing over time to 0.5. For tickets waiting for more than 30 seconds, any skill difference is allowed.
+A common scenario is attempting to match players together based on *skill*. In this example, the queue requires players' skill attributes to be within 0.2, with these attributes increasing over time to 0.5. For tickets waiting for more than 30 seconds, any skill difference is allowed.
 
-The values for this example are chosen assuming the ranges of available skills are between 0 and 1. These should be adjusted to fit the range of values your title uses to track the skills of its players, as well as how much emphasis is placed on skill over the speed of a match.
+The values for this example assume the ranges of available skills are between 0 and 1. Adjust these values to fit the range of values your title uses to track the skills of its players, and how much emphasis is placed on skill over the speed of a match.
 
-In addition, the rule becoming optional at 30 seconds is intended for games where it is better to play a game with unbalanced skills than to not play at all. For games where an unbalanced game is entirely a negative experience, `SecondsUntilOptional` may be adjusted. If removed entirely, it causes the rule to remain active indefinitely.
+In addition, the rule becoming optional at 30 seconds is intended for games where it's better to play a game with unbalanced skills than to not play at all. For games where an unbalanced game is entirely a negative experience, adjust `SecondsUntilOptional`. If removed entirely, it causes the rule to remain active indefinitely.
 
 ```json
 "MatchmakingQueue": {
@@ -143,7 +143,7 @@ In addition, the rule becoming optional at 30 seconds is intended for games wher
 
 ## Customizing expansions
 
-Expansions can be customized to use arbitrary values in each time interval. For instance, you may want the allowed skill to grow slowly to start, and later grow increasingly quickly over time.
+You can customize expansions to use arbitrary values in each time interval. For instance, you might want the allowed skill to grow slowly to start, and later grow more quickly over time.
 
 ```json
 "MatchmakingQueue": {
@@ -184,12 +184,12 @@ Expansions can be customized to use arbitrary values in each time interval. For 
 
 ## Expansion of number of players over time
 
-Some titles prefer having a full match to begin with, but over time may be satisfied with fewer and fewer people. One such example is a Battle Royale style game, where it is preferred to start with as many as 50 players, but is satisfied with fewer after some time.
+Some titles prefer having a full match to begin with, but over time might be satisfied with fewer and fewer people. One such example is a Battle Royale style game that is designed to start with up to 50 players but can proceed with fewer players after a matchmaking timeout.
 
-As `MinMatchSize` and `MaxMatchSize` do not contain an expansion, a `MatchTotalRule` can be used to modify the number of players required for a match. Each player specifies a value of 1 for the associated attribute, and the rule sums these together to enforce a requirement on the number of players in a match that changes over time.
+Because `MinMatchSize` and `MaxMatchSize` don't contain an expansion, you can use a `MatchTotalRule` to modify the number of players required for a match. Each player sets the associated attribute to 1. The rule sums these values to dynamically enforce the required number of players for a match.
 
 > [!NOTE]  
-> Note that if a `MaxOverrides` or `MinOverrides` array is not specified, the rule's original `Max` or `Min` value will be used in its place.
+> If you don't specify a `MaxOverrides` or `MinOverrides` array, the rule's original `Max` or `Min` value is used in its place.
 
 ```json
 "MatchmakingQueue": {
@@ -229,9 +229,9 @@ As `MinMatchSize` and `MaxMatchSize` do not contain an expansion, a `MatchTotalR
 
 ## Standard 4v4 style skill based
 
-PlayFab Matchmaking supports team-oriented matches. By specifying teams, players which are submitted together in the same ticket will all be allocated into one team, and not be forced to play against each other.
+PlayFab Matchmaking supports team-oriented matches. When you specify teams, players that you submit together in the same ticket are all allocated into one team, and they aren't forced to play against each other.
 
-PlayFab Matchmaking also supports various team rules to help ensure teams are balanced. The example shown below is for a 4v4 match, and ensures the skills are balanced across them.
+PlayFab Matchmaking also supports various team rules to help ensure teams are balanced. This example is for a 4v4 match, and it ensures the skills are balanced across teams.
 
 ```json
 "MatchmakingQueue": {
@@ -277,7 +277,7 @@ PlayFab Matchmaking also supports various team rules to help ensure teams are ba
 
 A queue can automatically feed into PlayFab's multiplayer servers feature, allocating a server and feeding it a list of matched players. This queue provides the smallest example of such a config, which is the `ServerAllocationEnabled` flag, along with the `BuildId` representing what build of the server should be started.
 
-When the `ServerAllocationEnabled` flag is set to `true`, a `RegionSelectionRule` is also required to indicate where a server should be allocated for each match.
+When you set the `ServerAllocationEnabled` flag to `true`, you must also include a `RegionSelectionRule` to indicate where a server should be allocated for each match.
 
 ```json
 "MatchmakingQueue": {
@@ -298,11 +298,11 @@ When the `ServerAllocationEnabled` flag is set to `true`, a `RegionSelectionRule
 }
 ```
 
-## Big Team Battle (12 vs 12)
+## Large Team Battle (12 vs 12)
 
-Larger team games may have additional requirements. In this example, the queue is configured to create a multiplayer server, which is often required to manage games with this many players. This is similar to the example above.
+Larger team games might have extra requirements. In this example, the queue is configured to create a multiplayer server, which is often required to manage games with this many players. This configuration is similar to the previous example.
 
-In addition to skill, another Team Rule is added to encourage team similarity--only one large team is allowed on each side, preventing a common situation of a Premade team being matched against a large set of random players.
+In addition to skill, add another Team Rule to encourage team similarity. Only one large team is allowed on each side, preventing a common situation of a premade team being matched against a large set of random players.
 
 ```json
 "MatchmakingQueue": {
@@ -357,11 +357,11 @@ In addition to skill, another Team Rule is added to encourage team similarity--o
 }
 ```
 
-## Battle Royale
+## Battle Royale style games
 
-Battle Royale games place many people into an arena. In this example, the game is set up with teams of four. Currently there is a limit of 32 players allowed in a team scenario such as this one - This limitation will be improved in the future.
+Battle Royale style games place many people into an arena. In this example, the game is set up with teams of four. Currently, there's a limit of 32 players allowed in a team scenario such as this one. This limitation will be improved in the future.
 
-This example also contains multiplayer server setup information for dedicated servers, which is often necessary for games with large numbers of players. This is similar to the example shown above.
+This example also contains multiplayer server setup information for dedicated servers, which is often necessary for games with large numbers of players. This configuration is similar to the previous example.
 
 ```json
     "MatchmakingQueue": {
@@ -424,9 +424,18 @@ This example also contains multiplayer server setup information for dedicated se
     }
 ```
 
-## Cross-Device / Cross Platform
+## Handling asymmetric cross-play preferences
 
-To limit games of a particular device or platform to match with each other, specify the device with a String Equality Rule. With the AttributeNotSpecifiedBehavior of `MatchAny`, tickets that do not specify such a device can opt to match with any device/platform. If matchmaking times are longer than expected, consider creating a separate queue per platform, with a cross-platform queue as needed to support cross-play.
+Because players can choose different cross-play settings, matchmaking preferences are asymmetric. Players who enable cross-play are willing to match with any platform, while players who disable cross-play only want to match with players on their own platform.
+
+You can use a string equality rule or a set intersection rule to implement a matchmaking queue that can handle this type of asymmetry. This particular example uses string equality. 
+
+If a player disables cross-play, the client specifies their `DeviceType` (for example, `"xbox"`, `"playstation"`), and the rule restricts them to same-platform matches. If a player enables cross-play, the client omits the `DeviceType` attribute entirely, and the `AttributeNotSpecifiedBehavior` of `MatchAny` allows them to match with any platform.
+
+> [!NOTE]
+> When a group of players submits a ticket together, the service treats the group as a single unit—it doesn't split the group across matches or teams. Your game client should validate group composition before ticket submission. For example, if a player has cross-play disabled, prevent them from joining a cross-platform group before the ticket is created.
+
+If matchmaking times are longer than expected, consider creating a separate queue per platform, with a cross-platform queue as needed to support cross-play.
 
 ```json
 "MatchmakingQueue": {
@@ -452,12 +461,12 @@ To limit games of a particular device or platform to match with each other, spec
 
 ## Host/Searcher or Role Based Requirements
 
-PlayFab Match uses a ticket-based matching system, where a game host is not selected ahead of time. However, it can emulate a host-searcher system by using a `MatchTotalRule` to limit the number of hosts allowed in a match.
+PlayFab Match uses a ticket-based matching system, where a game host isn't selected ahead of time. However, it can emulate a host-searcher system by using a `MatchTotalRule` to limit the number of hosts allowed in a match.
 
-Tickets can then specify ahead of time if it is a host by specifying 1. Each match must contain exactly one host.
+Tickets can then specify ahead of time if it's a host by specifying 1. Each match must contain exactly one host.
 
 > [!NOTE]
-> If the number of hosts vastly outnumbers the searchers or vice-versa, this may cause slow matchmaking times for all players. Consider the implications of your matchmaking design to ensure there are enough players in any given subpopulation to satisfy your matchmaking rules and the desired average time to match.
+> If the number of hosts vastly outnumbers the searchers or vice-versa, this imbalance might cause slow matchmaking times for all players. Consider the implications of your matchmaking design to ensure there are enough players in any given subpopulation to satisfy your matchmaking rules and the desired average time to match.
 
 ```json
 "MatchmakingQueue": {
@@ -482,7 +491,7 @@ Tickets can then specify ahead of time if it is a host by specifying 1. Each mat
 }
 ```
 
-Games may have role requirements - for instance, a game may require one drummer, two guitarists, and one vocalist. Or one tank, two DPS, and one support. Games may use the `MatchTotalRule` to require these roles as shown below.
+Games might have role requirements. For example, a game might require one drummer, two guitarists, and one vocalist. Or one tank, two damage per second (DPS), and one support. Games might use the `MatchTotalRule` to require these roles.
 
 ```json
 "MatchmakingQueue": {
@@ -531,13 +540,13 @@ Games may have role requirements - for instance, a game may require one drummer,
 
 ## Rules with varying importance
 
-Rules guide matchmaking by both restricting what tickets are eligible to match with another, and choosing the order in which those tickets are picked. When multiple rules are present, all their restrictions are taken into account. However, a title may wish to give more priority to a rule's preference over the remaining eligible tickets.
+Rules guide matchmaking by both restricting what tickets are eligible to match with another, and choosing the order in which those tickets are picked. When multiple rules are present, the system takes into account all their restrictions. However, a title might prioritize a rule’s preference over the remaining eligible tickets.
 
-In the example below, a player must be within a skill and experience level. However, if there are many tickets within the designated skill and experience
-boundaries, this queue prefers the ones closer in skill as opposed to the ones closer in experience level.
+In this example, a player must be within a skill and experience level. However, if many tickets fall within the designated skill and experience
+boundaries, this queue prefers the ones closer in skill rather than the ones closer in experience level.
 
-Skill differences are counted *three times as much*
-as experience differences, when evaluating the tickets that have met the restrictions.
+Skill differences count *three times as much*
+as experience differences when evaluating the tickets that meet the restrictions.
 
 ```json
 "MatchmakingQueue": {
@@ -577,10 +586,10 @@ as experience differences, when evaluating the tickets that have met the restric
 
 ## DLC packs
 
-With various DLC packs, players may opt to only find other players that have a matching DLC, using a `SetIntersectionRule`. Each player passes in the DLC packs they own, and a match requires a group to share at least one DLC pack.
+By using various DLC packs, players can opt to only find other players that have a matching DLC by using a `SetIntersectionRule`. Each player passes in the DLC packs they own, and a match requires a group to share at least one DLC pack.
 
 > [!NOTE]
-> After 30 seconds, the rule becomes optional, allowing players to match without sharing DLC.
+> After 30 seconds, the rule becomes optional, so players can match without sharing DLC.
 
 ```json
 "MatchmakingQueue": {
@@ -606,16 +615,16 @@ With various DLC packs, players may opt to only find other players that have a m
 }
 ```
 
-## Enabling Statistics
+## Enabling statistics
 
-Enabling statistics allows your title to display information about a queue. This information can be useful for setting player expectations as they choose a game mode they would like to play.
+When you enable statistics, your title can display information about a queue. This information can be useful for setting player expectations as they choose a game mode they want to play.
 
-Conversely, titles may wish to hide this information - either for business intelligence purposes, or to avoid directing players into high-traffic queues.
+Conversely, titles might wish to hide this information - either for business intelligence purposes, or to avoid directing players into high-traffic queues.
 
-The queue below enables both the ability to see the number of players present in a queue and an estimated time a ticket takes to match.
+This queue enables both the ability to see the number of players present in a queue and an estimated time a ticket takes to match.
 
 > [!NOTE]  
-> A server may always retrieve this information - the configuration shown below only controls whether users are allowed to make this call as well.
+> A server can always retrieve this information. The following configuration only controls whether users are allowed to make this call as well.
 
 ```json
 "MatchmakingQueue": {

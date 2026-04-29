@@ -58,7 +58,7 @@ Count of customTags
 **`filter`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) An OData filter used to refine the search query (For example: "type eq 'ugc'"). More info about Filter Complexity limits can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/search#limits.
+(Optional) An OData filter used to refine the search query (For example: "type eq 'ugc'"). More info about Filter Complexity limits can be found here: [https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/search#limits.](/gaming/playfab/features/economy-v2/catalog/search#limits.)
   
 **`language`** &nbsp; const char*  
 *is null-terminated*  

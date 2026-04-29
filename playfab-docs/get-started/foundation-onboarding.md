@@ -18,7 +18,7 @@ This article shows you how to set up Foundation Mode for your game. You'll reque
 
 Before you begin, make sure you have:
 
-- A [PlayFab developer account](../identity/dev-identity/pfab-account.md)
+- A [PlayFab developer account](../identity/dev-identity/pfab-account.md) signed in with a [Microsoft Entra ID account](../identity/dev-identity/authentication/aad-authentication.md)
 - A game that you're shipping or planning to ship on Xbox
 - A [Partner Center account](https://developer.microsoft.com/en-GB/games/publish) (or create one during this process)
 
@@ -29,7 +29,7 @@ Before you begin, make sure you have:
 
 During the preview period, you need to request access before you can create titles in Foundation Mode.
 
-1. Sign in to [Game Manager](https://developer.playfab.com/).
+1. Sign in to [Game Manager](https://developer.playfab.com/) with your Microsoft Entra ID account.
 1. Navigate to your studio settings and select the Preview Features tab. You must have admin privileges for this tab to be visible. Studio settings can be reached from the home screen, click on the three dots (...) menu on your studio. 
 
    ![Screenshot of the Game Manager My Studios page showing the three-dots menu on a studio with the Studio settings option highlighted.](media/foundation-onboarding/studio-settings-menu.png)
@@ -37,7 +37,7 @@ During the preview period, you need to request access before you can create titl
    ![Screenshot of the Studio Settings page with the Preview Features tab selected, showing Foundation Mode.](media/foundation-onboarding/preview-features-tab.png)
 
 1. Select  **Foundation Mode** and complete the request form.
-1. Wait for approval. You will receive an email when your studio is enabled for Foundation Mode.
+1. Wait for approval. Once approved, the Foundation Mode card on the Preview Features tab displays an **Approved** badge.
 
 ## Create a Partner Center account
 
@@ -52,7 +52,7 @@ If you don't already have a Partner Center account, create one to use Foundation
 
 If your studio is onboarded to the Foundation Mode Preview, you can create new titles in Foundation Mode.
 
-1. Sign in to [Game Manager](https://developer.playfab.com/).
+1. Sign in to [Game Manager](https://developer.playfab.com/) with your Microsoft Entra ID account.
 1. Select your studio.
 1. Select **New Title**.
 1. Enter a name and select the correct studio for your title.

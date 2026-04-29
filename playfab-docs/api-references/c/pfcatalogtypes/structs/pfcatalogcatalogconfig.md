@@ -63,7 +63,7 @@ Count of deepLinkFormats
 **`displayPropertyIndexInfos`** &nbsp; [PFCatalogDisplayPropertyIndexInfo](pfcatalogdisplaypropertyindexinfo.md) const*  
 *may be nullptr*  
   
-(Optional) A list of display properties to index. Up to 5 mappings can be added per Display Property Type. More info on display properties can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/content-types-tags-and-properties#displayproperties.
+(Optional) A list of display properties to index. Up to 5 mappings can be added per Display Property Type. More info on display properties can be found here: [https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/content-types-tags-and-properties#displayproperties.](/gaming/playfab/features/economy-v2/catalog/content-types-tags-and-properties#displayproperties.)
   
 **`displayPropertyIndexInfosCount`** &nbsp; uint32_t  
   
