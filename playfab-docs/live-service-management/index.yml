@@ -32,10 +32,12 @@ landingContent:
         links:
           - text: API feature settings in Game Manager
             url: gamemanager/api-feature-settings-in-the-playfab-game-manager.md
+          - text: API Access Policy
+            url: gamemanager/api-access-page-doc.md
           - text: Audit logs
             url: gamemanager/audit-logs.md
           - text: Secret key management
-            url: gamemanager/secret-key-management.md 
+            url: gamemanager/secret-key-management.md
 
   - title: Entity programming model
     linkLists:
