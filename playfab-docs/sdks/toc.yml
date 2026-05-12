@@ -6,7 +6,9 @@ items:
 - name: PlayFab Unified SDK (v2)
   href: unified-sdk/toc.yml
 - name: PlayFab Unified SDK for Unreal Engine (v2)
-  href: unified-unreal/overview.md
+  href: unified-unreal/toc.yml
+- name: PlayFab Unified SDK for Unity (v2)
+  href: unified-unity/toc.yml
 - name: PlayFab Standalone SDKs (v1)
   items:
   - name: Overview
@@ -38,7 +40,7 @@ items:
           - name: Quickstart - macOS
             href: c/quickstart-macos.md
           - name: Quickstart - Linux
-            href: c/quickstart-Linux.md
+            href: c/quickstart-linux.md
           - name: Making Async Calls
             href: c/async.md
           - name: SDK Lifecycle
@@ -98,11 +100,6 @@ items:
         items:
         - name: Quickstart
           href: nodejs/quickstart.md
-      - name: Objective-C
-        href: objective-c/index.md
-        items:
-        - name: Quickstart
-          href: objective-c/quickstart.md
       - name: Python
         href: python/index.md
         items:
