@@ -4,7 +4,7 @@ author: keithrkline
 description: Explains how the Weight property on matchmaking rules affects match quality and ticket sorting
 ms.author: kkline
 ms.date: 02/24/2026
-ms.topic: conceptual
+ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, matchmaking, weight, rules, configuration
 ms.localizationpriority: medium

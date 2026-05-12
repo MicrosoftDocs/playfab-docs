@@ -4,7 +4,7 @@ author: keithrkline
 description: Learn how PlayFab Matchmaking evaluates tickets, applies rules, and forms matches.
 ms.author: kkline
 ms.date: 04/10/2026
-ms.topic: conceptual
+ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, matchmaking, algorithm, rules, expansion
 ms.localizationpriority: medium
