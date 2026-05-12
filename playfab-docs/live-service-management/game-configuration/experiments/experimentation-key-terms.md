@@ -4,7 +4,7 @@ author: shikha-tarware
 description: Experimentation Key-terms.
 ms.author: shtarwar
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, analytics, a/b testing, experimentation
 ms.localizationpriority: medium
