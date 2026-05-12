@@ -3,7 +3,7 @@ author: thboard
 title: Lobby and Matchmaking real-time messages
 description: Conceptual overview for Match and Lobby messages
 ms.author: thboard
-ms.topic: conceptual
+ms.topic: article
 ms.service: azure-playfab
 ms.date: 03/14/2022
 ---
