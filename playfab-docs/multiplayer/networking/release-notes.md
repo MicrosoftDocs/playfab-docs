@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 01/29/2024
+ms.date: 05/13/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -17,6 +17,23 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.21
+
+May 13, 2026
+
+- Upgraded the Windows platform toolset used to build the library from v142 to v143.
+
+### Bug fixes
+
+- Fixed possible voice loss when transitioning between networks while audio manipulation is active.
+- Fixed missing final speech-to-text transcription when an audio manipulation capture stream is active.
+- Fixed a possible crash on shutdown when the process task queue was deleted before Party finished shutting down.
+- Android: Fixed a possible crash when calling [`PartyManager::Initialize`](reference/classes/PartyManager/methods/partymanager_initialize.md) immediately after [`PartyManager::Cleanup`](reference/classes/PartyManager/methods/partymanager_cleanup.md).
+- Android: Fixed a memory leak on [`PartyManager::Cleanup`](reference/classes/PartyManager/methods/partymanager_cleanup.md).
+- Apple: Restored arm64 (Apple Silicon) support in the macOS universal binary, which was unintentionally dropped in a previous release.
+- Fixed a possible use-after-free where internal HTTP tracking objects could be deleted before the backing async task completed.
+- Linux: Prevented possible crashes caused by static libraries being clobbered when multiple shared objects link the same dependency.
 
 ## 1.10.18
 
