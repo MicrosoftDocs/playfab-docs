@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2026
 author: stevenLizano29
 description: PlayFab Services SDK Release Notes for 2026.
 ms.author: v-stevenroj
-ms.date: 04/24/2026
+ms.date: 05/12/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,16 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab).
+
+## 260512
+
+Date: May 12, 2026
+
+- Added `UnlinkApple` and `UnlinkGameCenterAccount` to the Server API
+- Added `EntityIsNotAMember` and `InvalidEntityTypeForAggregation` errors to `UpdateStatistics` in the Progression API
+- Added `StatisticVersionIncrementNotAllowedWhileLinked` error code across multiple APIs
+- Updated Data, Groups, and Profiles API concurrency-control descriptions for profile and group version checks
+- Added error codes for new service errors
 
 ## 260424
 
