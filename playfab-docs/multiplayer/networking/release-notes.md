@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 05/13/2026
+ms.date: 05/15/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -17,6 +17,14 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.22
+
+May 15, 2026
+
+### Bug fixes
+
+- Fixed an issue where audio device switching could fail on macOS when connected to a Party network.
 
 ## 1.10.21
 
