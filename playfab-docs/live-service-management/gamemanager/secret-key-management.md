@@ -3,10 +3,10 @@ title: Secret Key Management
 author: williacj
 description: Describes the PlayFab system for managing secret keys.
 ms.author: cjwill
-ms.date: 01/30/2020
+ms.date: 05/20/2026
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, config, game manager, secret keys
+keywords: playfab, config, game manager, secret keys, ip allowlist, cidr
 ms.localizationpriority: medium
 ---
 
@@ -54,3 +54,24 @@ When the process is complete, you don't need to delete the old key. If you delet
 Setting a key to Expire is useful when you need to give someone temporary access to your Title.
 
 For example, if you have a contractor working on your game, you can give them keys that only have access for as long as you expect them to need it. If they require access beyond the original expected expiration date, you can reset the expiration date to extend the lifetime of the secret key.
+
+## IP allowlist
+
+IP allowlists for title secret keys are a security feature that ensures that a leaked title secret key can't be used from outside the IPs you trust. Each secret key can carry its own list of IPv4 or IPv6 addresses (or CIDR ranges) that are permitted to use it.
+
+When an IP allowlist is configured for a title secret key, privileged calls (Server and Admin APIs) made with that key are accepted only from source IPs that match an entry on the list. Calls from any other IP are rejected, even if the key itself is otherwise valid. Every change to a key, including allowlist edits, is captured in the existing PlayStream secret key changed event.
+
+**Supported formats:**
+* IPv4 and IPv6 addresses are both supported (for example, `203.0.113.7` or `2001:db8::1`).
+* CIDR ranges are supported in either family (for example, `203.0.113.0/24` or `2001:db8::/32`).
+
+**How to configure an IP allowlist for your title secret key:**
+
+1. In **Game Manager**, navigate to **Title Settings** > **Secret Keys**.
+2. Edit (or create) a secret key.
+3. Toggle **Enable IP allowlist**.
+4. Add your egress IPs or CIDR ranges, one per line (for example, `203.0.113.7` or `2001:db8::/32`).
+5. Select **Save**.
+
+> [!Important]
+> Double check the list before saving. An incorrect entry blocks every IP that isn't on the list, which can lock your services out of the Server and Admin APIs.
