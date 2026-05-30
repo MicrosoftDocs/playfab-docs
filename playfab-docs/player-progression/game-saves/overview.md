@@ -33,6 +33,7 @@ By using Game Saves, players can continue their game with their progress intact 
 - Xbox (One, Series S/X, PC, cloud)
 - Steam (PC, Steam Deck)
 - Windows (other stores and launchers)
+- PlayStation 5
 
 ### Languages and game engines currently supported
 
