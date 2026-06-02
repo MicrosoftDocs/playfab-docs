@@ -1,5 +1,7 @@
 items:
-- name: Azure Active Directory Authentication for Game Manager
+- name: Microsoft Entra ID Authentication for Game Manager
   href: aad-authentication.md
+- name: Microsoft Entra ID Authentication for PlayFab APIs
+  href: entra-id-api-authentication.md
 - name: Two factor authentication
   href: two-factor-authentication.md
