@@ -57,7 +57,7 @@ For example, if you have a contractor working on your game, you can give them ke
 
 ## IP allowlist
 
-IP allowlists for title secret keys are a security feature that ensures that a leaked title secret key can't be used from outside the IPs you trust. Each secret key can carry its own list of IPv4 or IPv6 addresses (or CIDR ranges) that are permitted to use it.
+IP allowlists for title secret keys are a security feature that ensures that a title secret key can't be used from outside the IPs you trust. Each secret key can carry its own list of IPv4 or IPv6 addresses (or CIDR ranges) that are permitted to use it.
 
 When an IP allowlist is configured for a title secret key, privileged calls (Server and Admin APIs) made with that key are accepted only from source IPs that match an entry on the list. Calls from any other IP are rejected, even if the key itself is otherwise valid. Every change to a key, including allowlist edits, is captured in the existing PlayStream secret key changed event.
 
