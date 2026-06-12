@@ -57,3 +57,14 @@ The Game Manager allows you to manipulate objects and files for players. The pla
 In addition, files and objects now have their own sections in the **Players** tab.
 
 ![Game Manager - Entities - Player Files and Objects](media/tutorials/game-manager-entities-player-files.png)  
+
+## Related features
+
+Entity objects and files are used across several PlayFab features, each scoped to a different entity type:
+
+| Feature | Entity types | Use case |
+|---------|-------------|----------|
+| [Game Server Configuration](../index.md) | `game_server` | Server-side settings and server-authoritative data |
+| [Title Data](../titledata/index.md) | `namespace`, `title` | Global key/value configuration shared across all players |
+| [Player Data](../../../player-progression/player-data/index.md) | `title_player_account`, `master_player_account`, `character` | Per-player profile, progress, and preference storage |
+| [Groups](../../../community/associations/groups/index.md) | `group` | Data shared within a player group or guild |

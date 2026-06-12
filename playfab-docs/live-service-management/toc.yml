@@ -8,9 +8,34 @@ items:
   - name: Game manager
     expanded: true
     href: gamemanager/toc.yml
-  - name: Game configuration
+  - name: Game Server Configuration
     expanded: true
-    href: game-configuration/toc.yml
-  - name: Service gateway
+    items:
+    - name: Overview
+      href: game-configuration/index.md
+    - name: Entity Model
+      href: game-configuration/entities/toc.yml
+  - name: Title Data
     expanded: true
-    href: service-gateway/toc.yml
+    href: game-configuration/titledata/toc.yml
+  - name: Title communications
+    expanded: true
+    href: game-configuration/title-communications/toc.yml
+  - name: Segments
+    expanded: true
+    href: game-configuration/segmentation/toc.yml
+  - name: Experiments
+    expanded: true
+    href: game-configuration/experiments/toc.yml
+  - name: Throttling
+    expanded: true
+    href: service-gateway/throttling/toc.yml
+  - name: Extensions
+    expanded: true
+    items:
+    - name: Add-ons
+      href: service-gateway/add-ons/toc.yml
+    - name: CloudScript
+      href: service-gateway/automation/cloudscript/toc.yml
+    - name: Azure Functions
+      href: service-gateway/automation/cloudscript-af/toc.yml
