@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2026
 author: stevenLizano29
 description: PlayFab Services SDK Release Notes for 2026.
 ms.author: v-stevenroj
-ms.date: 05/12/2026
+ms.date: 05/26/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,16 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab).
+
+## 260526
+
+Date: May 26, 2026
+
+- Removed deprecated `GetPlayersInSegment` request and response models from the Admin and Server APIs.
+- Added `GetSegmentPlayerCount` request and response models to the Admin and Server APIs.
+- Added `NewsStatus` enum and `Status` field support for `AddNews` in the Admin API.
+- Updated `GetEntityToken` documentation in the Authentication API and marked the optional `Entity` request field for deprecation.
+- Removed retired error codes across multiple APIs as part of deprecation cleanup.
 
 ## 260512
 

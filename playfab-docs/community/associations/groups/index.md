@@ -3,7 +3,7 @@ title: Groups, Guilds and Clans
 author: joannaleecy
 description: Landing page for Friends and Groups.
 ms.author: jenelleb
-ms.date: 07/12/2018
+ms.date: 06/11/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, social, friends, groups
@@ -12,8 +12,17 @@ ms.localizationpriority: medium
 
 # Groups
 
-The Group entity type can be utilized by your game to create guild and clan interactions within your game. This entity type gives you the ability to create different roles for members, invite members into the group, and manage group membership.
+Groups are a community feature that lets players form guilds, clans, or other persistent associations. The `group` entity type supports membership management, roles, and its own data storage.
 
-The group that you create can utilize all of the base [Entity programming model](../../../live-service-management/game-configuration/entities/index.md) capabilities. For example, it can use [Objects](../../../live-service-management/game-configuration/entities/entity-objects.md) and [Files](../../../live-service-management/game-configuration/entities/entity-files.md) to store data that is specific to the Group.
+Groups are one of several storage features in PlayFab, each scoped to a different entity type. For a comparison, see [Entity Objects](../../../live-service-management/game-configuration/entities/entity-objects.md#related-features).
 
-To build a guild or clan system in your game, you will want to utilize the group functionality, and create a customized experience within your game.
+## What you can do with Groups
+
+The Group entity type gives you the ability to:
+
+- Create and manage player groups (guilds, clans, teams)
+- Define roles and permissions for group members
+- Invite and manage membership
+- Store group-specific data using [Entity Objects](../../../live-service-management/game-configuration/entities/entity-objects.md) and [Entity Files](../../../live-service-management/game-configuration/entities/entity-files.md)
+
+To build a guild or clan system in your game, use the group functionality and create a customized experience within your game.
