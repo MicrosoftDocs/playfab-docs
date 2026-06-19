@@ -32,16 +32,6 @@ Redemption from the Microsoft Store involves using an Xbox token to query the Mi
 
 Redemption from the Steam marketplace involves verifying the purchase receipt with Steam's servers and updating the player's inventory accordingly. For more information, see [Steam redemption documentation](steam.md).
 
-## Subscription Redemption
-
-### Apple Subscriptions
-
-Subscription redemption from the Apple marketplace involves verifying the subscription receipt with Apple's servers and updating the player's account accordingly. For more information, see [Apple subscription documentation](ios-subscription-redemption.md).
-
-### Google Subscriptions
-
-Subscription redemption from the Google marketplace involves verifying the subscription receipt with Google's servers and updating the player's account accordingly. For more information, see [Google subscription documentation](google-subscription-redemption.md).
-
 ## Conclusion
 
 Redeeming items or subscriptions into a player's inventory is a crucial step after a successful marketplace integration. By following the steps outlined for each supported marketplace, you can ensure a smooth and efficient redemption process.
