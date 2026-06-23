@@ -44,24 +44,18 @@ There's also a special, studio-wide level: **Studio Admin**. Studio Admins can c
 
 1. [Sign in to PlayFab](https://developer.playfab.com/) with your developer account.
 2. From **My Studios and Titles**, select the **triple-dot (...) menu** to the right of your studio and choose **Roles**.
-
-   (screenshot of the studio triple-dot menu with the Roles option)
-
-3. You'll see the list of roles that already exist in your studio. Select **New Role** to start a custom one.
-
-   (screenshot of the Roles list with the New Role button)
-
+   ![screenshot of the studio triple-dot menu with the Roles option](../media/user-roles-my-studios-roles.jpg)
+3. You'll see the list of roles that already exist in your studio. Select **New custom role** to start a custom one.
+   ![screenshot of the Roles list with the New Role button](../media/user-roles-list-roles.jpg)
 4. Under **Role details**, give the role a clear **Role title**. This is what you'll pick from when assigning the role later, so make it descriptive (for example, *Customer Support* or *Build Engineer*).
-
-   (screenshot of the Role details section)
-
+   ![screenshot of the Role details section](../media/user-roles-role-details.jpg)
 5. If this role should have unrestricted access to the title, check **Title admin**. This grants full permissions for the title and overrides the individual permission selections below.
 
 ### Configuring permissions
 
 The **Configure permissions** section is where you choose exactly what the role can do. Permissions are organized into groups such as **Overview**, **Identity**, **Economy**, and more, with a counter on each group (for example, *Overview (0/7)*) showing how many of its permissions are currently selected.
 
-(screenshot of the Configure permissions section showing permission groups)
+
 
 Each permission offers one or more access levels:
 
@@ -80,7 +74,7 @@ To move quickly, use the bulk controls:
 
 Each group also has its own **Select all** and **Set read only** so you can configure one area at a time.
 
-(screenshot of a permission group expanded with Read, Edit, and Delete columns)
+![screenshot of the Configure permissions section showing permission groups](../media/user-roles-category-selected.jpg)
 
 When the permissions look right, scroll to the bottom and click **Save Role**.
 
@@ -94,13 +88,13 @@ You can assign roles two ways: from a user, or from a role.
 2. Open the user you want to update, and select their roles per title. Because roles are scoped to a title, assign the role for each title where the user needs it.
 3. Save your changes.
 
-   (screenshot of assigning roles to a user per title)
+![screenshot of assigning roles to a user per title](../media/user-roles-user-manage-roles.jpg)
 
 **From a role:**
 
 Open an existing role and select its **Members** tab. There you can pick which users in your studio should hold this role, and for which titles — handy when you're onboarding several people into the same role at once.
 
-(screenshot of the Members tab on a role)
+![screenshot of the Members tab on a role](../media/user-roles-role-members.jpg)
 
 ## Summary
 
