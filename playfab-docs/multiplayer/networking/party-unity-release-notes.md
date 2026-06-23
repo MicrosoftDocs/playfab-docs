@@ -12,6 +12,14 @@ ms.localizationpriority: medium
 
 # PlayFab Party Unity plugin release notes
 
+## 1.10.17.0
+
+* Updated binaries to Party 1.10.17 or greater for all platforms.
+
+## 1.10.12.0
+
+* Updated binaries to Party 1.10.12 or greater for all platforms.
+
 ## 1.10.5.0
 
 * Updated binaries to Party 1.10.5 or greater for all platforms.
