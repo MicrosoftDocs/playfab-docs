@@ -3,7 +3,7 @@ title: PlayFab Multiplayer C++ SDK Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Multiplayer's C++ SDK
 ms.author: scmunro
-ms.date: 04/29/2022
+ms.date: 06/23/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, release notes
@@ -11,6 +11,20 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Multiplayer C++ SDK release notes
+## 1.9.3
+
+June 23, 2026
+
+### Bug fixes
+
+- Fixed an issue where a lobby member that left during a network interruption could incorrectly reappear as connected to the lobby owner after the connection recovered.
+- Fixed a crash that could occur during lobby, matchmaking, or notification operations if the title cleared the current process task queue.
+- Fixed a race condition during teardown that could cause memory corruption or a crash if an HTTP request completed while the SDK was shutting down.
+- Fixed a deadlock during cleanup that could hang a title that used a manual-dispatch process task queue.
+- Fixed a PubSub session-recovery failure that could occur when reconnecting with no active lobby or matchmaking subscriptions.
+- Fixed an issue where the SDK didn't send its User-Agent header on HTTP requests.
+- The public PFLobby, PFMatchmaking, and PFMultiplayer API functions now validate pointer parameters and return `E_POINTER` when passed a null pointer, instead of potentially crashing.
+
 ## 1.9.0
 
 March 26, 2026
