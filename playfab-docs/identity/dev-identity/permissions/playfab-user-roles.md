@@ -1,9 +1,9 @@
 ---
 title: PlayFab User Roles
-author: antnguyen89
+author: notclickable-jordan
 description: Describes how to create and configure User Roles in PlayFab.
-ms.author: antnguyen
-ms.date: 02/20/2025
+ms.author: joroher
+ms.date: 06/25/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, config, game manager, user roles
@@ -12,94 +12,91 @@ ms.localizationpriority: medium
 
 # PlayFab user roles
 
-PlayFab now supports roles as a more efficient way to manage user permissions within the Game Manager. We're very pleased to have added this feature, since it's been one of the most frequently requested features.
+Roles are how you manage user permissions and navigation in PlayFab's Game Manager. A role is a named collection of permissions that you assign to the people in your studio, on a per-title basis. Define a role once, assign it to as many users as you like, and update everyone's access at once by editing the role.
 
-With the introduction of roles, we are phasing out the ability to directly edit user permissions. This is no problem for new titles - those can immediately begin using the new roles system.
+This article covers the three things you'll do most: creating a role, configuring its permissions, and assigning it to users.
 
-However, *existing* titles that are using custom permissions must first *migrate* these custom permissions over to the new roles system.
+## How roles work
 
-First, let's first see how the new roles work, then we'll discuss how to migrate them from the old permissions system to the new roles system.
+PlayFab uses a fine-grained permissions model with hundreds of individual permissions, so you can decide *exactly* what each person is allowed to do. Areas of Game Manager can be turned off entirely, set to read-only, or opened up for editing.
 
-## Permissions and roles
+A few examples of where this comes in handy:
 
-PlayFab features a powerful, fine-grained permissions model with more than 80 individual permissions to determine *exactly* what users are allowed to do. Most features in the Game Manager can be completely turned off, set to read-only mode, or set to read-write mode.
+- A Customer Service rep can edit player profiles but never see revenue data.
+- A Product Manager can view revenue dashboards but can't upload multiplayer server builds.
+- A Data Scientist can read every event and dashboard while having no write access anywhere.
 
-For example, you may want your Customer Service rep to be able to edit a player profile, but not view revenue data. And you may want a Product Manager to be able to view revenue data, but *not* upload new multiplayer game server builds.
+Because permissions live on the role rather than on each individual user, a policy change is a single edit: update the role, and everyone who holds it picks up the change immediately.
 
-Previously, permissions had to be set *individually* for each user, and for each title. This was cumbersome, especially for large studios with many users, titles, and permissions sets.
+Roles are assigned **per title**, and a user can hold **multiple roles** on the same title. So you might give someone both a *Customer Support* role and a *Data Scientist* role, and they'll get the combined permissions of both. The same person can also be a Title Admin on one title, a Product Manager on another, and a Customer Service rep on a third — all within the same studio.
 
-And worst of all, if a permission policy changed, or a new feature was added, you needed to go through and manually edit the permissions for every user.
+### Built-in roles and admin levels
 
-Now, however, studios can define a role as a collection of permissions, and then assign those roles *directly* to users. You can edit a role at any time, and all users assigned to that role will immediately have their permissions changed.
+Every studio comes with three predefined roles:
 
-For convenience, you can even assign multiple roles to a user. For example - you could define a Customer Support role, with permission to edit player profiles, and a Data Scientist role, with permission to view all events and see all dashboards, and assign *both* to a single user.
+- **Title Admin** — full permissions for a given title
+- **Dashboard** — permission to view the title's dashboard, and nothing else
+- **Commercial admin** — permission to view the title's dashboard, edit settings, see Economy payouts, and manage product activation
 
-## Creating custom roles
+There are two special, studio-wide permissions that affect title access.
 
-The first step in using the new system is to define roles.
+- **Studio Admin** — Create titles, define and edit roles, and automatically have **title admin** rights on every title in the studio. You need to be a Studio Admin to create roles or assign them to users.
+- **Commercial admin** — Have some control of the billing process of the studio, and automatically have **commercial admin** rights on every title in the studio.
 
-By default, PlayFab comes with two predefined roles:
+## Creating a role
 
-1. **Title Admin**
-2. **Dashboard**
+1. [Sign in to PlayFab](https://developer.playfab.com/) with your developer account.
+2. From **My Studios and Titles**, select the **triple-dot (...) menu** to the right of your studio and choose **Roles**.
+   ![screenshot of the studio triple-dot menu with the Roles option](../media/user-roles-my-studios-roles.jpg)
+3. You'll see the list of roles that already exist in your studio. Select **New custom role** to start a custom one.
+   ![screenshot of the Roles list with the New Role button](../media/user-roles-list-roles.jpg)
+4. Under **Role details**, give the role a clear **Role title**. This is what you'll pick from when assigning the role later, so make it descriptive (for example, *Customer Support* or *Build Engineer*).
+   ![screenshot of the Role details section](../media/user-roles-role-details.jpg)
+5. If this role should have unrestricted access to the title, check **Title admin**. This grants full permissions for the title and overrides the individual permission selections below.
 
-Title Admin gives full permissions to a given game title, while Dashboard only gives permission to view the dashboards for the title.
+### Configuring permissions
 
-There is also a third, special role -- **Studio Admin**.
+The **Configure permissions** section is where you choose exactly what the role can do. Permissions are organized into groups such as **Overview**, **Identity**, **Economy**, and more, with a counter on each group (for example, *Overview (0/7)*) showing how many of its permissions are currently selected.
 
-Studio Admins are special users who have permission to create titles, define roles, and have automatic Title Admin rights to every title in the studio.
+Each permission offers one or more access levels:
 
-Here are the steps to create a new role:
+- **Read** — view the data or area
+- **Edit** — create and modify
+- **Delete** — remove
 
-1. [Login to PlayFab](https://developer.playfab.com/) with your developer account.
-2. Ensure you are a Studio Admin (you will know that you are if you see the following options next to your studio name). If you are *not* the Studio Admin, please contact the Studio Admin to setup the permissions according to this tutorial.
+Not every permission has all three. Some areas add their own purpose-built actions, such as **Activate**, **Submit**, or **Review**. When you're unsure what an action covers, hover the **(i)** tooltip next to it for a full description — for instance, the **Review** action on the *Payouts tab* explains that it lets you "Approve and reject payouts."
 
-   ![PlayFab - Studio Admin Options](../media/playfab-studio-admin-options.png)  
+To move quickly, use the bulk controls:
 
-3. Select **Users and Roles** from the list of options.
-4. Select the **Roles** tab at the top of the screen. You should now see a list of all the **Roles** in the system.
+- **Search** — filter the permission list to find a specific item.
+- **Toggle all permissions** — select or clear every permission at once.
+- **Set read only** — check just the **Read** boxes across the scope, leaving Edit/Delete off.
+- **Collapse all** — hide the contents of every group for a cleaner view.
 
-   ![Game Manager - Roles](../media/game-manager-roles.png)  
+Each group also has its own **Select all** and **Set read only** so you can configure one area at a time.
 
-5. Select the **New Custom Role** button to create a new role. Give your new role a name, and check off the permissions you wish to include. Generally, all permissions follow this pattern:
+![screenshot of the Configure permissions section showing permission groups](../media/user-roles-category-selected.jpg)
 
-    - You can enable or disable the entire feature using the top-most option **Permission (1)**.
-    - You can show or hide the navigation tab using the **Permission** tab **(2)**.
-    - Each **Permission** has a read-only and read-write option. The read-write option has **Edit** at the end **(3)** and **(4)**.
+When the permissions look right, scroll to the bottom and click **Save Role**.
 
-      ![Game Manager - New Role - Permissions](../media/game-manager-new-role-permissions.png)  
+## Assigning roles to users
 
-6. Select the **Save Role** button when you're done.
+You can assign roles two ways: from a user, or from a role.
 
-   ![Game Manager - Save Role](../media/game-manager-save-role.png)  
+**From a user:**
 
-## Assigning roles
+1. From **My Studios and Titles**, select the **triple-dot (...) menu** next to your studio and choose **Users**.
+2. Open the user you want to update, and select their roles per title. Because roles are scoped to a title, assign the role for each title where the user needs it.
+3. Save your changes.
 
-Once you've created a role, you can assign the role to users in a title.
+![screenshot of assigning roles to a user per title](../media/user-roles-user-manage-roles.jpg)
 
-Roles apply at the title level. If you have five titles, and you wish a given user to have the same role for each title, you must give the user that role for *each* title.
+**From a role:**
 
-This gives you the most flexibility. Under this system, a given user could be a Title Admin for one title, a Product Manager for another, and a Customer Service rep for a third, all under the same studio.
+Open an existing role and select its **Members** tab. There you can pick which users in your studio should hold this role, and for which titles — handy when you're onboarding several people into the same role at once.
 
-Here are the steps to assign a role:
+![screenshot of the Members tab on a role](../media/user-roles-role-members.jpg)
 
-1. [Login to PlayFab](https://developer.playfab.com/) with your developer account. As mentioned previously, make sure you are a Studio Admin.
-2. Select **Users and Roles** from the list of options. You will see a list of users for your studio.
-3. Select **Settings** for the user for whom you wish to assign roles.
-4. Select the **Roles** tab. You will see a list of all titles in your studio, and any roles that user already has for each title.
-5. Select **Assign Roles** for each title for which you wish to give the user a role. You will see a list of your Roles. Check any role you wish to give the user on that title.
-6. After you have assigned Roles, be sure to select **Save User**, otherwise your role assignments will be lost.
+## Summary
 
-## Migrating to the new roles system
-
-If you have an existing title, and you have already given users custom permissions, we will automatically create new roles for these users.
-
-After a user has been migrated to their new custom role, you can rename the role.
-
-Because Studio Admin is a new permission level, this will automatically be granted to users who have Title Admin on all titles in a studio.
-
-## Conclusion
-
-Roles are a powerful and flexible new way to determine who can do what in Game Manager.
-
-Going forward, you should use roles to assign permissions. Existing custom permissions will continue to function, but you *cannot change* the permissions without migrating over to the new roles system.
+Roles give you flexible, studio-wide control over who can do what in Game Manager. Define a role, dial in its permissions with the Read/Edit/Delete (and area-specific) controls, and assign it to your team per title. Update the role once, and everyone who holds it stays in sync.
