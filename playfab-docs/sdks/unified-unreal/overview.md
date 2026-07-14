@@ -28,6 +28,8 @@ PlayFab for Unreal Engine is ready to power your games on these platforms today:
 - **Windows** (PC and Handheld)
 - **Xbox** (One, Series S|X, Cloud)
 - **Steam Deck**
+- **PlayStation** (PS4, PS5)
+- **Nintendo Switch** (Switch 1, Switch 2)
 
 Support for additional platforms is in development. Check the [GitHub repository](https://github.com/PlayFab/PlayFabSDK_Unreal) for the latest platform availability updates.
 
