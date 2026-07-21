@@ -154,7 +154,6 @@ The specialized `PartyLocalEndpoint` sub-object is for _endpoints_ created in th
 This is where most _endpoint_ functionality resides.
 Its `PartyLocalEndpoint::SendMessage()` transmits game data payloads from the `PartyLocalEndpoint` to one or more other `PartyEndpoint` objects in the same network.
 It provides various options for selecting how best to handle Internet packet loss (e.g., guarantee delivery and/or ordering), to control the tradeoff between low latency versus coalescing multiple messages from the same or other local endpoints for lower bandwidth usage, and to react when the connection quality isn't sufficient to support the rate at which the game is sending.
-You can learn more about transmitting game data using _endpoints_ in a [later topic](concepts-endpoint-transmission.md).
 
 In addition to being a source or destination for data messages itself, each `PartyEndpoint` object is also assigned a 16-bit _endpoint unique identifier_ by PlayFab Party that allows you to reference the specific _endpoint_ in message payloads sent to or from separate `PartyEndpoint` objects within the network.
 This provides a convenient way to avoid the overhead of sending a full, larger user [Entity ID](../../live-service-management/game-configuration/entities/index.md) string or other identifier it might represent, for example, without having to build your own peer-to-peer identity agreement negotiation.
