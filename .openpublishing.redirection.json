@@ -6144,6 +6144,41 @@
             "redirect_document_id": false
           },
           {
+            "source_path": "playfab-docs/multiplayer/networking/concepts-endpoint-transmission.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/multiplayer/networking/concepts-faq.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/multiplayer/networking/concepts-porting-from-sockets.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/multiplayer/networking/concepts-text-to-speech-profiles.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/multiplayer/networking/party-playstream-events.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/multiplayer/networking/party-ux-guidelines.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/index",
+            "redirect_document_id": false
+          },
+          {
+            "source_path": "playfab-docs/multiplayer/networking/troubleshooting.md",
+            "redirect_url": "/gaming/playfab/multiplayer/networking/index",
+            "redirect_document_id": false
+          },
+          {
             "source_path": "playfab-docs/features/automation/cloudscript-af/index.md",
             "redirect_url": "/gaming/playfab/live-service-management/service-gateway/automation/cloudscript-af/index",
             "redirect_document_id": false

@@ -63,12 +63,12 @@ The concept of entities and entity tokens exists in both versions, but how you u
 **PlayFab Standalone SDKs (v1) Approach:**
 - Manual token retrieval using `PFAuthenticationGetEntityTokenAsync`
 - Manual token refresh when tokens expire
-- Passing entity ID and token strings to other services (e.g., `PartyCreateLocalUser(entityId, entityToken, ...)`)
+- Passing entity ID and token strings to other services (e.g., `partyManager.CreateLocalUser(entityId, titlePlayerEntityToken, &localUser)`)
 
 **PlayFab Unified SDK (v2) Approach:**
 - Automatic token management by the Core SDK
 - Background token refresh before expiry
-- Pass `PFEntityHandle` directly to other services (e.g., `PartyCreateLocalUser(partyHandle, entityHandle, ...)`)
+- Pass `PFEntityHandle` directly to other services (e.g., `partyManager.CreateLocalUser(entityHandle, &localUser)`)
 
 ### Migration Steps for Authentication
 
@@ -101,37 +101,43 @@ The concept of entities and entity tokens exists in both versions, but how you u
 
 **v1 Initialization:**
 ```cpp
-PartyInitialize("YOUR_PLAYFAB_TITLE_ID");
+PartyManager& partyManager = PartyManager::GetSingleton();
+PartyError err = partyManager.Initialize("YOUR_PLAYFAB_TITLE_ID");
 ```
 
 **v2 Initialization:**
 ```cpp
-PARTY_INITIALIZATION_CONFIGURATION config{};
-config.titleId = "YOUR_PLAYFAB_TITLE_ID";
-config.memoryCallbacks = nullptr; // Use default or provide custom allocator
-config.threadPool = nullptr;      // Use PlayFab Core queue or provide custom XTaskQueue
-PartyInitialize(&config, &g_partyHandle);
+PartyManager& partyManager = PartyManager::GetSingleton();
+
+PartyInitializationConfiguration partyInitConfig = {};
+partyInitConfig.titleId = "YOUR_PLAYFAB_TITLE_ID";
+partyInitConfig.audioTaskQueue = nullptr;
+partyInitConfig.networkingTaskQueue = nullptr;
+
+PartyError err = partyManager.Initialize(&partyInitConfig);
 ```
 
 #### Local User Creation Changes
 
 **v1 Approach:**
 ```cpp
-PartyCreateLocalUser(entityId, entityToken, &localUser);
+PartyLocalUser* localUser = nullptr;
+PartyError err = partyManager.CreateLocalUser(entityId, titlePlayerEntityToken, &localUser);
 ```
 
 **v2 Approach:**
 ```cpp
-PartyCreateLocalUser(partyHandle, entityHandle, &localUser);
+PartyLocalUser* localUser = nullptr;
+PartyError err = partyManager.CreateLocalUser(entityHandle, &localUser);
 ```
 
 #### Migration Steps for Party
 
-1. **Update initialization**: Replace simple `PartyInitialize()` call with configuration struct approach
+1. **Update initialization**: Replace simple `PartyManager::Initialize()` call with configuration struct approach
 2. **Remove token retrieval**: Delete any code that manually gets entity ID/token for Party
 3. **Pass entity handles**: Use `PFEntityHandle` directly instead of string parameters
 4. **Remove token refresh logic**: Delete code that periodically checks or refreshes Party tokens
-5. **Update dependencies**: Ensure PlayFab Core is initialized before `PartyInitialize()`
+5. **Update dependencies**: Ensure PlayFab Core is initialized before `PartyManager::Initialize()`
 6. **Remove Xbox-specific calls**: Replace `PartyXblManagerInitialize()` with generic `PartyInitialize()` on Xbox
 
 ### PlayFab Multiplayer (Lobby & Matchmaking)
@@ -144,12 +150,13 @@ Core concepts (Lobby, matchmaking Ticket) remain the same, but functions now exp
 
 **v1 Approach:**
 ```cpp
-PFLobbyJoin(lobbyHandle, playfabId, entityToken, ...);
+PFEntityKey newMember{ entityId, entityType };
+HRESULT hr = PFMultiplayerJoinLobby(pfmHandle, &newMember, connectionString, &joinConfig, nullptr, &lobby);
 ```
 
 **v2 Approach:**
 ```cpp
-PFLobbyJoin(lobbyHandle, entityHandle, ...);
+HRESULT hr = PFMultiplayerJoinLobbyWithEntityHandle(pfmHandle, entityHandle, connectionString, &joinConfig, nullptr, &lobby);
 ```
 
 #### Migration Steps for Multiplayer
@@ -165,7 +172,7 @@ PFLobbyJoin(lobbyHandle, entityHandle, ...);
 
 - [ ] **Update include paths**: Point to unified SDK include directory
 - [ ] **Update library linking**: Link unified libraries instead of separate ones
-- [ ] **Remove deprecated functions**: Delete calls to removed functions like `PartyCreateLocalUserWithEntityType`
+- [ ] **Remove deprecated functions**: Delete calls to removed functions like `PartyManager::CreateLocalUserWithEntityType`
 - [ ] **Replace manual token management**: Remove token caching and refresh logic
 - [ ] **Update initialization order**: Ensure PlayFab Core initializes before other services
 
