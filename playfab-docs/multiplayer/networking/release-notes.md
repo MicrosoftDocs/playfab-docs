@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 05/15/2026
+ms.date: 07/20/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -17,6 +17,17 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.24
+
+July 20, 2026
+
+### Bug fixes
+
+- Fixed audio-manipulation voice streams producing no buffers when the title had not yet configured an audio output.
+- Android: Fixed a crash that could occur during worker-thread creation when setting the thread's CPU affinity failed.
+- Apple: Fixed microphone and audio capture not recovering after the app loses and regains audio focus.
+- Linux: Fixed speech-to-text and other HTTP requests stalling.
 
 ## 1.10.23
 
