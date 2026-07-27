@@ -3,7 +3,7 @@ title: Insights Management Commands
 author: joannaleecy
 description: management commands for title adx
 ms.author: jenelleb
-ms.date: 1/9/2020    
+ms.date: 07/23/2026    
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights, explorer
@@ -17,7 +17,7 @@ Insights management commands allow users to express more control over or to gath
 2. Data Control - These commands allow users to create and drop custom tables, ingest local and cloud data, and purge data from their DB
 
 > [!NOTE]
-> PlayFab Insights Management will be retired 3/31/2026. We recommend using [Data Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for best practice details. For more information, see [Insights Retirement Blog](https://developer.microsoft.com/en-us/games/articles/2025/11/playfab-insights-management-getplayerinsegment-apis-retired-starting-march-31/).
+> PlayFab Insights Management was retired on 3/31/2026. We recommend using [Data Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for best practice details. For more information, see [PlayFab Digest: March feature updates](https://developer.microsoft.com/en-us/games/articles/2026/04/playfab-digest-march-feature-updates/).
 
 Some commands aren't available in evaluation mode.
 

@@ -3,7 +3,7 @@ title: Insights
 author: joannaleecy
 description: Overview for PlayFab Insights
 ms.author: jenelleb
-ms.date: 02/28/2020
+ms.date: 07/23/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # What is PlayFab Insights?
 
 > [!NOTE] 
-> PlayFab Insights Management will be retired 3/31/2026. We recommend using [Data Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for best practice details. For more information, see [Insights Retirement Blog](https://developer.microsoft.com/en-us/games/articles/2025/11/playfab-insights-management-getplayerinsegment-apis-retired-starting-march-31/).
+> PlayFab Insights Management was retired on 3/31/2026. We recommend using [Data Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for best practice details. For more information, see [PlayFab Digest: March feature updates](https://developer.microsoft.com/en-us/games/articles/2026/04/playfab-digest-march-feature-updates/).
 
 PlayFab Insights is a managed data environment, giving you instant access to your games data without the need for additional engineering. Unlike other hosted data solutions Insights requires no setup, no GDPR work, and no extra engineering. Use PlayFab services and your data is available. Automatically ingest and scale, connect external visualization tools, and query freely. 
 

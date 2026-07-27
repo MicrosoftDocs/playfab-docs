@@ -3,7 +3,7 @@ title: Connecting Python to Insights
 author: natashaorie
 description: Guide to connecting Python to Insights.
 ms.author: sofiamarin
-ms.date: 02/27/2020    
+ms.date: 07/23/2026    
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights, python
@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 This guide helps you get started using Python with Insights. It uses the Azure Kusto Python SDK. After connecting, you can query your game data with Python and use the library from Jupyter Notebooks. To learn more about other tools you can connect with Insights, see [Connecting external tools to Insights](index.md).
 
 > [!NOTE]
-> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+> PlayFab Insights Management was retired on 3/31/2026. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [PlayFab Digest: March feature updates](https://developer.microsoft.com/en-us/games/articles/2026/04/playfab-digest-march-feature-updates/).
 
 ## Prerequisites
 

@@ -3,7 +3,7 @@ title: Performance and retention
 author: joannaleecy
 description: Performance and retention for PlayFab insights
 ms.author: jenelleb
-ms.date: 02/28/2020
+ms.date: 07/23/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Insights Management: Performance Levels & Retention
 
 > [!NOTE]
-> PlayFab Insights Management will be retired 3/31/2026. We recommend using [Data Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Performance Levels & Retention**, continue to see this article for best practice details. For more information, see [Insights Retirement Blog](https://developer.microsoft.com/en-us/games/articles/2025/11/playfab-insights-management-getplayerinsegment-apis-retired-starting-march-31/).
+> PlayFab Insights Management was retired on 3/31/2026. We recommend using [Data Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Performance Levels & Retention**, continue to see this article for best practice details. For more information, see [PlayFab Digest: March feature updates](https://developer.microsoft.com/en-us/games/articles/2026/04/playfab-digest-march-feature-updates/).
 
 PlayFab Insights provides studios the ability to change the performance characteristics of their data system. Controls are located in **Management** under the data section in Game Manager.
 

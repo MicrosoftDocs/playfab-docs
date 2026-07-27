@@ -3,7 +3,7 @@ title: Creating a Microsoft Entra ID app and connecting it to title database
 author: natashaorie
 description: Creating a Microsoft Entra ID app and connecting it to title database
 ms.author: sofiamarin
-ms.date: 03/20/2020    
+ms.date: 07/23/2026    
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights
@@ -18,7 +18,7 @@ This tutorial covers creating a Microsoft Entra ID application to use with Insig
 * Python
 
 > [!NOTE]
-> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+> PlayFab Insights Management was retired on 3/31/2026. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [PlayFab Digest: March feature updates](https://developer.microsoft.com/en-us/games/articles/2026/04/playfab-digest-march-feature-updates/).
 
 ## Prerequisites
 * An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free)  

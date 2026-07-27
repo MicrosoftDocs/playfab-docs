@@ -3,7 +3,7 @@ title: Connecting Kusto Explorer to Insights
 author: natashaorie
 description: Guide to connecting Kusto Explorer to Insights. 
 ms.author: sofiamarin
-ms.date: 03/20/2020    
+ms.date: 07/23/2026    
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights
@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 This guide helps you get started using Kusto Explorer along with Insights. After connecting, you can use Kusto Explorer to query and explore your game data. To learn more about other tools you can connect Insights with, see [Connecting external tools to Insights](index.md).
 
 > [!NOTE]
-> PlayFab Insights Management was deprecated on December 11th, 2023. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [Insights Deprecation Blog](https://developer.microsoft.com/en-us/games/articles/2023/09/playfab-insights-management-to-be-deprecated-starting-december-11/).
+> PlayFab Insights Management was retired on 3/31/2026. We recommend using [Azure Data Explorer (ADX) Connections](../../export-data/data-connection-adx.md) to manage your performance and cost going forward. If your title is still using **Insights**, continue to see this article for implementation details. For more information, see [PlayFab Digest: March feature updates](https://developer.microsoft.com/en-us/games/articles/2026/04/playfab-digest-march-feature-updates/).
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ On your local machine, open Kusto.Explorer.
    * Right-click on the **Connections** folder in the left navigation panel, then select **Add connection**.
 
 2. In the **Add connection** dialog box:
-   * Under **Cluster connection** enter the PlayFab API endpoint, which is **https://insights.playfab.com**.
+   * Under **Cluster connection** enter the PlayFab API endpoint, which is `https://insights.playfab.com`.
    * Under **Security**, make sure **AAD Federated** is selected.
    * Expand the **Advanced: Connection String** box and change the value of **Initial Catalog** from **NetDefaultDB** to `<titleID>`. Note that `<titleID>` must be all uppercase here. In the example below, this change is highlighted in the string.
   
