@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: scmunro
-ms.date: 05/15/2026
+ms.date: 07/24/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -17,6 +17,26 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.25
+
+July 24, 2026
+
+### Bug fixes
+
+- GDK: Improved resilience to preferred multiplayer port query failures on PC. Recoverable failures will fall back to ephemeral port selection on PC. Titles who want stricter control on their GDK PC port selection can use the [`PartyLocalUdpSocketBindAddressConfiguration`](reference/structs/partylocaludpsocketbindaddressconfiguration.md) to define alternative port selection policies.
+- GDK: Provide clearer `PartyError` values in the event of unexpected, internal GDK runtime failures.
+
+## 1.10.24
+
+July 20, 2026
+
+### Bug fixes
+
+- Fixed audio-manipulation voice streams producing no buffers when the title had not yet configured an audio output.
+- Android: Fixed a crash that could occur during worker-thread creation when setting the thread's CPU affinity failed.
+- Apple: Fixed microphone and audio capture not recovering after the app loses and regains audio focus.
+- Linux: Fixed speech-to-text and other HTTP requests stalling.
 
 ## 1.10.23
 
@@ -77,7 +97,7 @@ February 2, 2026
 
 ### Bug fixes
 
-- Fixed possible crash in multinetwork transition scenarios. 
+- Fixed possible crash in multinetwork transition scenarios.
 
 ## 1.10.15
 
@@ -291,7 +311,7 @@ June 2, 2023
 May 30, 2023
 
 ### Bug fixes
-- Fixed a bug where the PlayFab Party library would require the macOS version to be at least 13.1. The new release sets the minimum macOS version to 12.3. 
+- Fixed a bug where the PlayFab Party library would require the macOS version to be at least 13.1. The new release sets the minimum macOS version to 12.3.
 
 ## 1.8.0
 
@@ -323,7 +343,7 @@ February 8, 2023
 
 ### Bug fixes
 
-- Fixed a bug where audio from 44.1-kHz microphones may sound distorted. 
+- Fixed a bug where audio from 44.1-kHz microphones may sound distorted.
 - Improved diagnostic error messages for network errors reported by [PartyManager::GetErrorMessage()](reference/classes/PartyManager/methods/partymanager_geterrormessage.md).
 
 ## 1.7.19
@@ -332,7 +352,7 @@ November 11, 2022
 
 ### Bug fixes
 
-- Fixed a bug that failed to open a Web request after a certain point in time on Linux. 
+- Fixed a bug that failed to open a Web request after a certain point in time on Linux.
 
 ## 1.7.17
 
@@ -340,7 +360,7 @@ October 7, 2022
 
 ### Bug fixes
 
-- Fixed a bug where a crash might occur when a chat control is connected to a network on iOS. 
+- Fixed a bug where a crash might occur when a chat control is connected to a network on iOS.
 - Fixed a bug where a crash might occur when enabling iOS log.
 
 ## 1.7.16
@@ -377,7 +397,7 @@ April 21, 2022
 ### Bug fixes
 
 - Fixed an issue where memory wasn't fully cleaned up when `PartyManager::Cleanup()` was called.
-- Fixed an issue where calling `PartyLocalChatControl::SetAudioInput()` or `PartyLocalChatControl::SetAudioOutput()` with the same audio device selection would unnecessarily result in the library reinitializing the audio device. 
+- Fixed an issue where calling `PartyLocalChatControl::SetAudioInput()` or `PartyLocalChatControl::SetAudioOutput()` with the same audio device selection would unnecessarily result in the library reinitializing the audio device.
 
 ## 1.7.7
 March 16, 2022

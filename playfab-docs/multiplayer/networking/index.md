@@ -41,7 +41,7 @@ Party is designed for use on many platforms like Android, iOS, Linux, Nintendo S
     * Integrates with custom discovery systems&mdash;players finding other players.
     * Policy enforcement for connectivity and communication.
 
-Party is a managed game service. Discounts are available when you use Party with Xbox Live. For pricing information, see [PlayFab pricing](https://playfab.com/pricing/). To learn about the meters that drive billing, see [Party pricing](../../pricing/Meters/meters.md#party).
+Party is included at no extra cost in [Foundation Mode](../../get-started/mode-overview.md) for eligible Xbox ecosystem developers. For other usage, see [PlayFab pricing](https://playfab.com/pricing/). To learn about the meters that drive billing, see [Party pricing](../../pricing/Meters/meters.md#party). For guidance on combining Party with other Xbox and PlayFab multiplayer services, see [Multiplayer design guidance](/gaming/gdk/docs/services/multiplayer/overviews/multiplayer-design-guidance-xbox-pc-gdk).
 
 If you are interested, here is a video of our presentation at Microsoft Game Dev 2021. The presentation explains the above Party features in greater detail with demos and includes a quickstart tutorial. 
 
