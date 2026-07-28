@@ -5,7 +5,7 @@ description: Error codes used by PlayFab Party APIs
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 01/25/2026
+ms.date: 07/24/2026
 ---
 
 # PlayFab Party Error Codes
@@ -297,4 +297,6 @@ The following error codes are used by the PlayFab Party APIs:
 | 0x3022 | 12322 | It's invalid to pass PartyLocalUdpSocketBindAddressOptions::ExcludeGameCorePreferredUdpMultiplayerPort in all versions of PlayFab Party except for the Microsoft Game Core version. |
 | 0x3023 | 12323 | The user and/or device aren't authorized to use the requested sandbox or aren't authorized to use the requested title in the current sandbox. |
 | 0x3024 | 12324 | When using the Microsoft Game Core version of the library, it must be cleaned up when the title is suspended and re-initialized when the title is resumed. |
+| 0x302F | 12335 | Failed to query the system's preferred UDP multiplayer port. |
 | 0x3030 | 12336 | The noise suppression model failed to initialize. |
+| 0x3032 | 12338 | Unmapped Microsoft gaming runtime error. |
