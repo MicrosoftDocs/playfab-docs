@@ -74,20 +74,22 @@ After you check this box, PlayFab will always record **0** for the last octet of
 You should see that every IP ends in **.0**. Any IPs that were recorded before IP address obfuscation was enabled will retain their full detail. So if your game is PII-sensitive, set this checkbox before you launch.
 
 > [!NOTE]
-> Enabling obfuscation will impact *other* features that use the IP address. In particular, IP-based geo-location and player bans by IP are the two most directly impacted.
+> Enabling obfuscation will impact *other* features that use the IP address. In particular, IP-based geo-location, IP bans, and player bans that specify an IP address are the three most directly impacted.
 
 PlayFab automatically performs IP-based geo-location on logins. This helps you automatically determine where on earth your players come from.
 
 However, you may experience reduced accuracy, *particularly* at the city level, when using obfuscated IPs. This is intentional, as the goal of obfuscating IPs is to avoid recording PII, including exact locations.
 
-Additionally, obfuscating IPs can affect bans. When adding a ban, you can optionally ban an IP as well. Often banning by IP is more practical than banning one account at a time, because the bad actor can just make new accounts.
+Additionally, obfuscating IPs can affect [IP bans](../../player-progression/player-data/ip-bans.md). Often issuing an IP ban is more practical than banning one account at a time, because the bad actor can just make new accounts.
 
 Banning an IP prevents the bad actor from making new accounts from the same internet connection. In many cases, this is an effective tool.
 
-However, with obfuscated IPs, banning an exact IP cannot work. Instead, you must use a ban on an IP with **.0** as the final octet.
+However, with obfuscated IPs, banning an exact IP cannot work. Instead, you must use a ban on an IP with **.0** as the final octet. Please keep in mind this will effectively ban an *entire IP range*. 
 
-![Game Manager - Players - Add Ban](media/tutorials/game-manager-players-add-ban.png)  
+![Game Manager - IP Bans - Add Ban](media/tutorials/game-manager-ipbans-obfuscated-ip-ban.png)  
 
-Please keep in mind this will effectively ban an *entire IP range*.
+To make this more explicit, consider explicitly banning the range rather than implicitly banning it with a CIDR range as shown below. These two bans are functionally equivalent.
+
+![Game Manager - IP Bans - Range Ban](media/tutorials/game-manager-ipbans-range-ban.png)  
 
 This will still ban the bad actor, but other innocent players with similar IP addresses may be affected. Furthermore, existing precise IP bans will cease to be effective.

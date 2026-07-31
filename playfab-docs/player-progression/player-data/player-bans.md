@@ -14,6 +14,9 @@ ms.localizationpriority: medium
 
 The player ban feature allows you to restrict access to the game for certain players who break the rules. When a player ban is applied to a player, any existing player authentication tokens are invalidated and future authentication attempts made by the player will be rejected. Player bans may be permanent or temporary for a specified time range, and may be applied to a player ID or an IP address. A ban is scoped to a title and doesn't apply to any other titles in your [namespace](../../live-service-management/game-configuration/entities/index.md). 
 
+> [!NOTE]
+> Going forward we recommend utilizing the dedicated [IP Bans system](./ip-bans.md) as opposed to specifying IP addresses on player bans.
+
 The following tutorial shows you how to utilize the ban system, using the PlayFab API and Game Manager.
 
 ## Identify
