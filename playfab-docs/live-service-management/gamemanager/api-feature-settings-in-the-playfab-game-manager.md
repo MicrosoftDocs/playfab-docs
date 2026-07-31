@@ -74,7 +74,7 @@ After you check this box, PlayFab will always record **0** for the last octet of
 You should see that every IP ends in **.0**. Any IPs that were recorded before IP address obfuscation was enabled will retain their full detail. So if your game is PII-sensitive, set this checkbox before you launch.
 
 > [!NOTE]
-> Enabling obfuscation will impact *other* features that use the IP address. In particular, IP-based geo-location, IP bans, and player bans that specify an IP address are the three most directly impacted.
+> Enabling obfuscation affects *other* features that use IP addresses. The three most directly affected are IP-based geolocation, IP bans, and player bans that specify an IP address.
 
 PlayFab automatically performs IP-based geo-location on logins. This helps you automatically determine where on earth your players come from.
 
@@ -88,8 +88,8 @@ However, with obfuscated IPs, banning an exact IP cannot work. Instead, you must
 
 ![Game Manager - IP Bans - Add Ban](media/tutorials/game-manager-ipbans-obfuscated-ip-ban.png)  
 
-To make this more explicit, consider explicitly banning the range rather than implicitly banning it with a CIDR range as shown below. These two bans are functionally equivalent.
+To make the scope explicit, enter the equivalent CIDR range instead of relying on an obfuscated address ending in **.0**, as shown below. The two bans are functionally equivalent.
 
 ![Game Manager - IP Bans - Range Ban](media/tutorials/game-manager-ipbans-range-ban.png)  
 
-This will still ban the bad actor, but other innocent players with similar IP addresses may be affected. Furthermore, existing precise IP bans will cease to be effective.
+This will still ban the bad actor, but other innocent players with similar IP addresses may be affected. Furthermore, existing bans for specific, unobfuscated IP addresses will no longer be effective.
