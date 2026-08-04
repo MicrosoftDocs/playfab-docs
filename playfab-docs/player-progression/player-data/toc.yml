@@ -29,6 +29,8 @@ items:
     href: player-logins.md
   - name: Player Ban System
     href: player-bans.md
+  - name: IP Ban System
+    href: ip-bans.md
   - name: Player Segments
     href: player-segments.md
   - name: Player Segment configuration
