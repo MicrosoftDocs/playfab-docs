@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Multiplayer C++ SDK release notes
-
 ## 1.9.3
 
 June 23, 2026
