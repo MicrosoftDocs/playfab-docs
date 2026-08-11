@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Multiplayer C++ SDK release notes
+
 ## 1.9.3
 
 June 23, 2026
@@ -24,6 +25,14 @@ June 23, 2026
 - Fixed a PubSub session-recovery failure that could occur when reconnecting with no active lobby or matchmaking subscriptions.
 - Fixed an issue where the SDK didn't send its User-Agent header on HTTP requests.
 - The public PFLobby, PFMatchmaking, and PFMultiplayer API functions now validate pointer parameters and return `E_POINTER` when passed a null pointer, instead of potentially crashing.
+
+## 1.9.2
+
+June 1, 2026
+
+### Bug fixes
+
+- Fixed a crash when websockets are unexpectedly disconnected by the network on Nintendo Switch and Nintendo Switch 2 versions of the library.
 
 ## 1.9.0
 
