@@ -10,15 +10,15 @@ keywords: playfab, pricing, upgrade, upgrades, launch, live
 ms.localizationpriority: medium
 ---
 
-# Account yupgrades
+# Account upgrades
 Customers can upgrade their account plan using the self-serve plans experience found in Game Manager.
 
 ## Account plans 
 A PlayFab account has five plan options:
 1. **FREE TO START:** This plan has no cost to the customer. Once a title reaches its Development Mode limits, it must be launched by upgrading to a paid plan. To learn how to launch a title, see Title Launches.
 2. **PAY-AS-YOU-GO:** This paid plan has no monthly base rate. Accounts are only charged for their monthly consumption for live titles. 
-3. **STANDARD:** This paid plan has a monthly base rate and private support options ([PaidTechnicalSupport.md](Support.md)). This plan comes with included meter usage amounts that live titles may access. Once the included meter amounts have been used, the account will be charged for additional consumption.
-4. **PREMIUM:** This paid plan has a monthly base rate and private support options ([PaidTechnicalSupport.md](Support.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
+3. **STANDARD:** This paid plan has a monthly base rate and private support options ([Accessing PlayFab Technical Support](support.md)). This plan comes with included meter usage amounts that live titles may access. Once the included meter amounts have been used, the account will be charged for additional consumption.
+4. **PREMIUM:** This paid plan has a monthly base rate and private support options ([Accessing PlayFab Technical Support](support.md)). This plan comes with more included meter usage than the Standard plan. Once the included meter amounts have been used, the account will be charged for additional consumption.
 5. **ENTERPRISE:** An Enterprise account has a monthly base rate and private support channels that offer 24/7 assistance. This plan comes with more included meter usage than the Premium plan. Once the included meter amounts have been used, the account will be charged for additional consumption. 
 
 The base rate's included consumption is cumulative across titles linked to an account.
@@ -71,7 +71,7 @@ You can upgrade or downgrade your account plan at any time on the Studio Setting
 
 Any account is eligible to upgrade to an Enterprise account plan. The PlayFab team must be contacted to upgrade to an Enterprise account plan. [https://playfab.com/contact/](https://playfab.com/contact/)
 
-### Cancel all charges and delete Your sFtudio 
+### Cancel all charges and delete your studio 
 
 Before proceeding with deletion, consider the following recommended (but optional) actions to ensure a smooth transition and avoid any unintended loss: 
 
@@ -111,4 +111,4 @@ The amount of the base rate will represent the paid subscription plan of an acco
 **How do I know which subscription plan I am upgrading my account to?**
 All accounts upgraded through Game Manager are automatically upgraded to the Standard plan, as indicated by the agreed-to base rate listed within the **Upgrade Account**(1) flow.
 
-To upgrade to a Premium plan, please [PaidTechnicalSupport.md](Support.md).
+To upgrade to a Premium plan, please [Accessing PlayFab Technical Support](support.md).
