@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2026
 author: stevenLizano29
 description: PlayFab Services SDK Release Notes for 2026.
 ms.author: v-stevenroj
-ms.date: 05/26/2026
+ms.date: 08/05/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,18 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab).
+
+## 260805
+
+Date: August 5, 2026
+
+- Added IP ban management to the Admin API with `CreateIPBan`, `UpdateIPBan`, `RevokeIPBan`, `GetIPBansForIP`, and `GetIPBansForTitle`, which support both single IP addresses and CIDR ranges.
+- Added the optional `AuthVersion` field to `LinkPSNAccount` and `LoginWithPSN` requests in the Client and Server APIs to select the PlayStation Network authentication version.
+- Added the optional `SandboxId` field to `GetPlayFabIDsFromPSNAccountIDs` and `GetPlayFabIDsFromPSNOnlineIDs` in the Client and Server APIs, and to `LinkPSNId` in the Server API.
+- Added the optional `Issuer` field to `GetPlayFabIDsFromNintendoServiceAccountIds` in the Client and Server APIs to scope lookups to a Nintendo environment.
+- Added 27 Azure regions to the `AzureRegion` enum in the Multiplayer API, including `CanadaEast`, `UkWest`, `SpainCentral`, `ItalyNorth`, `PolandCentral`, and `IsraelCentral`.
+- Added the `CatalogBadRequest` error code to `CreateActionsOnPlayersInSegmentTask` in the Admin API.
+- Added the `PSNNextGenNotConfiguredForTitle` and `InvalidNintendoIssuer` error codes across multiple APIs.
 
 ## 260526
 
