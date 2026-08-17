@@ -8,6 +8,6 @@
 /playfab-docs/ @MicrosoftDocs/xbox-learning-resources
 
 # PlayFab Party, Lobby, and Matchmaking client SDK docs are jointly managed by the x1net team and the playfab SDKs team
-/playfab-docs/multiplayer/lobby @MicrosoftDocs/xbox-learning-resources @ScottMunroMS @tomcoMSFT @BerniME @Vicodex @SebastianPD @raymondchams @yuehanlin
-/playfab-docs/multiplayer/matchmaking @MicrosoftDocs/xbox-learning-resources @ScottMunroMS @tomcoMSFT @BerniME @Vicodex @SebastianPD @raymondchams @yuehanlin
-/playfab-docs/multiplayer/networking @MicrosoftDocs/xbox-learning-resources @ScottMunroMS @tomcoMSFT @BerniME @Vicodex @SebastianPD @raymondchams @yuehanlin
+/playfab-docs/multiplayer/lobby @MicrosoftDocs/xbox-learning-resources @MicrosoftDocs/PlayFabMultiplayerAndNetworking
+/playfab-docs/multiplayer/matchmaking @MicrosoftDocs/xbox-learning-resources @MicrosoftDocs/PlayFabMultiplayerAndNetworking
+/playfab-docs/multiplayer/networking @MicrosoftDocs/xbox-learning-resources @MicrosoftDocs/PlayFabMultiplayerAndNetworking
