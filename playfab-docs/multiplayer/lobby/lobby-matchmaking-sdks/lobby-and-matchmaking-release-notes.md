@@ -3,7 +3,7 @@ title: PlayFab Multiplayer C++ SDK Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Multiplayer's C++ SDK
 ms.author: scmunro
-ms.date: 06/23/2026
+ms.date: 08/13/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, release notes
@@ -11,6 +11,15 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Multiplayer C++ SDK release notes
+## 1.9.5
+
+August 13, 2026
+
+### Bug fixes
+
+- GDK: Fixed a bug where long PubSub connection shutdown could block the background worker thread from making progress on independent connection work.
+- GDK: Fixed a bug where active HTTP requests would block the title from suspending on XBOX.
+
 ## 1.9.3
 
 June 23, 2026
