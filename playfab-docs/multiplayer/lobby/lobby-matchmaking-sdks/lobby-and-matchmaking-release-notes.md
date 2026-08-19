@@ -3,7 +3,7 @@ title: PlayFab Multiplayer C++ SDK Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Multiplayer's C++ SDK
 ms.author: scmunro
-ms.date: 08/13/2026
+ms.date: 08/19/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, release notes
@@ -19,6 +19,7 @@ August 13, 2026
 
 - GDK: Fixed a bug where long PubSub connection shutdown could block the background worker thread from making progress on independent connection work.
 - GDK: Fixed a bug where active HTTP requests would block the title from suspending on XBOX.
+- PlayStation&#174; platform: Fixed a memory leak during the lobby PubSub subscription lifecycle.
 
 ## 1.9.3
 
@@ -177,8 +178,6 @@ April 22, 2025
 
 - Fixed an issue on Sony (PlayStation&#174;4 and PlayStation&#174;5) SDK versions where the second local user failed to join the lobby created by the first user after a network reconnection.
 
-'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
-
 ## 1.7.12
 
 April 15, 2025
@@ -197,8 +196,6 @@ April 9, 2025
 ### Bug fixes
 
 - Fixed a crash on Sony (PlayStation&#174;4 and PlayStation&#174;5) SDK versions that occurred when a network reconnection happened after an unexpected disconnection, following the creation and joining of a multi-user lobby.
-
-'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## 1.7.10
 
@@ -232,8 +229,6 @@ November 5, 2024
 - Fixed an issue where the SDK treated all values in [PFMultiplayerServerDetails](../playfabmultiplayerreference-cpp/pfmatchmaking/structs/pfmultiplayerserverdetails.md) as mandatory.
 - Fixed an issue where the Sony (PlayStation®4 and PlayStation®5) versions of the SDK didn't correctly handle intermittent HTTP request failures from the Sony (PlayStation®4 and PlayStation®5) HTTP library. Additionally, improved error reporting now provides more detailed information for these cases.
 
-'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
-
 ## 1.7.7
 
 October 25, 2024
@@ -266,8 +261,6 @@ June 17, 2024
 ### Bug fixes
 
 - Fixed an issue where the SDK didn't correctly parse messages received by WebSockets on PlayStation®4 and PlayStation®5 if the messages contained the `'\0'` character. Failure to parse these messages could lead to PubSub connectivity problems. This fix applies only to PlayStation®4 and PlayStation®5.
-
-'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## 1.7.3
 
@@ -349,8 +342,6 @@ July 14, 2023
 June 14, 2023
 
 - On PlayStation&#174;4 and PlayStation&#174;5, PlayFab Multiplayer cleans up all resources associated with it and reinitializes if the title enters and remains in background mode for more than 10 minutes.
-
-'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## 1.6.0
 
@@ -542,3 +533,5 @@ PlayFab Multiplayer is now available in preview. For an overview of Matchmaking 
 * [PlayFab Multiplayer Lobby Quickstart](../lobby-getting-started.md)
 * [PlayFab Matchmaking Overview](../../matchmaking/index.md)
 * [PlayFab Multiplayer Matchmaking Quickstart](../../matchmaking/quickstart-client-sdk.md)
+
+'PlayStation' is a registered trademark or trademark of Sony Interactive Entertainment Inc.
