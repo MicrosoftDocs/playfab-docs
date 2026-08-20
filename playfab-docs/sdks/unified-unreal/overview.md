@@ -3,7 +3,7 @@ title: PlayFab for Unreal Engine Overview
 author: Jeffrey-Shi
 description: Overview of PlayFab for Unreal Engine, the next-generation integration built on the PlayFab Unified SDK
 ms.author: jeffshi
-ms.date: 02/01/2026
+ms.date: 08/14/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, unreal engine, unified sdk, plugin, oss, onlinesubsystem, multiplayer, party
@@ -49,6 +49,13 @@ The OnlineSubsystem PlayFab (OSS) provides full integration with Unreal Engine's
 - **Party Voice Chat**: Integrated voice communication with Azure Cognitive Services features like speech-to-text and translation
 
 The OSS integrates seamlessly with Unreal Engine's existing networking patterns, letting you use familiar Unreal APIs while leveraging PlayFab's scalable backend infrastructure.
+
+The OSS also supports:
+
+- **Multiple simultaneous sessions**: Create, join, and manage multiple named sessions at the same time, such as a social lobby alongside an active match. Each named session can use its own PlayFab Party network. A game instance still has a single active gameplay connection, and voice is owned by one session at a time.
+- **Dedicated server hosting**: Host sessions using the PlayFab server entity, so a dedicated server can create and own PlayFab lobbies and manage Party networking without a signed-in native-platform user.
+- **Configurable searchable session settings**: Choose which Unreal session settings are searchable through PlayFab Lobby to enable server-side filtered discovery on title-specific properties such as game mode, playlist, skill tier, or map.
+- **Play-in-Editor (PIE)**: Run the OSS in a single Play-in-Editor instance on Unreal Engine 5.8 or later with GDK as the native OSS, so you can test supported flows without a packaged or standalone build.
 
 ### PlayFabUnreal Plugin
 
