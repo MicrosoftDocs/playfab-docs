@@ -2,8 +2,8 @@
 title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
-ms.author: scmunro
-ms.date: 07/24/2026
+ms.author: raycha
+ms.date: 08/19/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -72,6 +72,18 @@ May 13, 2026
 - Apple: Restored arm64 (Apple Silicon) support in the macOS universal binary, which was unintentionally dropped in a previous release.
 - Fixed a possible use-after-free where internal HTTP tracking objects could be deleted before the backing async task completed.
 - Linux: Prevented possible crashes caused by static libraries being clobbered when multiple shared objects link the same dependency.
+
+## 1.10.20
+
+April 29, 2026
+
+- PlayStation® 5: Fixed HTTP response parsing to correctly propagate null JSON values.
+
+## 1.10.19
+
+Apr 22, 2026
+
+-  Nintendo Switch 2: Updated compatibility with Nintendo SDK 22 by removing deprecated language-code APIs and resolving a C++20 compilation issue.
 
 ## 1.10.18
 
@@ -221,8 +233,6 @@ March 20, 2024
 
 - Fixed a bug where [`PartyLocalDevice::CreateChatControl`](reference/classes/PartyLocalDevice/methods/partylocaldevice_createchatcontrol.md) would fail on PlayStation&#174;4 and, PlayStation&#174;5 when Ukrainian is set as the console's language.
 
-“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
-
 ## 1.9.3
 
 March 14, 2024
@@ -297,8 +307,6 @@ June 28, 2023
 ### Bug fixes
 
 - Fixed a bug where [`PartyLocalChatControl::SetAudioRenderVolume`](reference/classes/PartyLocalChatControl/methods/partylocalchatcontrol_setaudiorendervolume.md) wouldn't properly work for Nintendo Switch, PlayStation&#174;4 and, PlayStation&#174;5.
-
-“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## 1.8.3
 
@@ -405,8 +413,6 @@ March 16, 2022
 
 - PlayStation&#174;4, PlayStation&#174;5: Fixed a crash that occurred when there was no audio device after the audio devices were removed.
 - Switch: Fixed an issue that caused web requests to fail when multiple PlayFab transactions were triggered.
-
-“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
 ## 1.7.6
 February 8, 2022
@@ -644,3 +650,5 @@ Added new public API `PartyLocalUser::UpdateEntityToken()`.
 ### API changes
 
 * `PartyManager::Initialize` now requires a valid PlayFab Title ID to be passed in.
+
+“PlayStation” is a registered trademark or trademark of Sony Interactive Entertainment Inc.
