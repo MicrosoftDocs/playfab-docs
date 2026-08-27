@@ -41,7 +41,7 @@ Support availability is based on your account plan, with higher tiers offering e
 
 **Minimum Required Account Plan:** No PlayFab account is needed to post, view, or engage with the community.
 
-**How to access:** The PlayFab Discord Forums is accessible via a free Discord account. Start by following this invite to the Microsoft Game Dev Server and opting-in to the PlayFab channel during the onboarding flow: [PlayFab Discord Forums](https://discord.com/invite/msftgamedev). 
+**How to access:** The PlayFab Discord Forums is accessible via a free Discord account. Start by following this invite to the Microsoft Game Dev Server and opting-in to the PlayFab channel during the onboarding flow: [PlayFab Discord Forums](https://discord.gg/xboxgamedev).
 
 ### ACCOUNT HELP
 

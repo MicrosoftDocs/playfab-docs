@@ -180,7 +180,7 @@ additionalContent:
       items:
         - title: Discord forums
           summary: Community based product support. Use the Discord forums to post questions, share answers, and discuss the PlayFab product experience.
-          url: https://discord.com/invite/msftgamedev
+          url: https://discord.gg/xboxgamedev
         - title: Support
           summary: PlayFab support options
           url: pricing/Support.md
