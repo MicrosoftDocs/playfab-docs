@@ -3,7 +3,7 @@ title: Available Built-In Entity Types
 author: joannaleecy
 description: Lists all of the available built-in Entity types.
 ms.author: jenelleb
-ms.date: 11/08/2018
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, data, entities
@@ -23,7 +23,7 @@ You use the value of the `EntityKey.Type` field to determine the type of value t
 
 ## namespace
 
-The `namespace` entity refers to *all* global information for all titles within your studio.
+The `namespace` entity represents the cross-title player identity and shared-data scope. By default, it spans all titles in a studio. The Publisher ID identifies this namespace; **publisher** is the older API term for the same scope. The namespace is distinct from the studio, which is an administrative grouping. For more information, see [PlayFab concepts](../../../get-started/concepts.md#studios-namespaces-and-titles).
 
 > [!NOTE]
 > Changes to this entity are *not* reflected in real time.
@@ -34,11 +34,11 @@ Set the `ID` field to your game's **Publisher ID**. To retrieve your **Publisher
 - In the upper left-hand corner of **Game Manager**, select the gear icon.
 - Select **Title Settings**.
 - Select **API Features**.
-- The **Publisher ID** is displayed in the **API ACCESS** section.
+- The **Publisher ID**, which is also the namespace ID, is displayed in the **API ACCESS** section.
 
 ## title
 
-The `title` entity refers to all global information for that title.
+The `title` entity represents the global information scoped to one title. A title is an isolated PlayFab resource for a game or game environment.
 
 > [!NOTE]
 > Changes to this entity are *not* reflected in real time.
@@ -85,4 +85,3 @@ The `game_server` entity is a unique entity used by game servers primarily for u
 This entity gives game servers their own identity which is useful to uniquely identify them for subscribing to real-time updates for Matchmaking and Lobby, as well as supporting specific features like Lobby owner migration.
 
 To authenticate as a `game_server` entity, call the API [AuthenticateGameServerWithCustomId](xref:titleid.playfabapi.com.authentication.authentication.authenticategameserverwithcustomid) as a title entity and retrieve the `game_server` entity key and token pair. Use this entity key when using the PlayFab Multiplayer SDK with [PFMultiplayerSetEntityToken](../../../multiplayer/lobby/playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md). 
-

@@ -3,14 +3,14 @@ title: Game Manager
 author: williacj
 description: Landing page for Game Manager.
 ms.author: cjwill
-ms.date: 01/30/2020
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, config, game manager
 ms.localizationpriority: medium
 ---
 
-# Game Manager overview
+# Game Manager
 
 This article introduces Game Manager, the PlayFab developer portal. This article identifies portal page elements, and helps you get familiar with the portal experience.
 
@@ -22,11 +22,13 @@ PlayFab's Game Manager offers a comprehensive backend suite, allowing you to sel
 
 Use Game Manager to invite teammates to collaborate, grant them full or partial access, manage secret keys, configure encryption settings, and set client app trust levels.
 
+A **studio** is the administrative grouping for titles, team members, permissions, billing, and support. A **title** is an isolated PlayFab resource for a game or game environment. For more information about how studios, namespaces, and titles relate, see [PlayFab concepts](../../get-started/concepts.md#studios-namespaces-and-titles).
+
 ## About the Game Manager interface
 
 When you sign in to Game Manager, you're presented with the **My Studios and Titles** page, which lists all of the studios and titles to which you have access. To manage a title, select it.
 
-Management of a Title is divided into four major views:
+Management of a title is divided into four major views:
 
 - [Title Overview](reference.md#title-overview) - Review of the recent and overarching performance of your title.
 - [Build](reference.md#build) - Foundational elements and tools to configure your game.

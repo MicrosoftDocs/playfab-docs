@@ -3,7 +3,7 @@ title: Player Data
 author: DanBehrendt
 description: Landing page for Player Data.
 ms.author: jenelleb
-ms.date: 06/11/2026
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, player data
@@ -39,11 +39,12 @@ When you use player data, only User Data and User Read Only Data are available t
 
 [Player data](quickstart.md) is player information that's specific to a game title. It should be used for title-specific information - such as saving your player's position in a dungeon, or other game-specific data.
 
-Player Publisher data is data associated with the player account, as opposed to the player account *plus* the title. It is used to save information about a player relevant to all titles in your studio (which may also contain title-specific information, for purposes of cross-title rewards).
+Player Publisher data is associated with a player's `master_player_account` in the namespace rather than with a `title_player_account`. Use it to save player information relevant to all titles in the namespace, such as cross-title rewards.
 
-All titles within a studio in PlayFab share a Publisher ID by default, and that ID defines this relationship. Player accounts exist at the Publisher layer, and are shared across all titles with the same Publisher ID (and then additionally have distinct player data per title).
+The Publisher ID identifies the namespace; **publisher** is the older API term for this scope. By default, all titles in a studio share one Publisher ID. The player's master player account provides cross-title identity in that namespace, while the player also has distinct data in each title player account. For more information, see [PlayFab concepts](../../get-started/concepts.md#studios-namespaces-and-titles).
 
-If you need to have titles in a studio that have different Publisher IDs, or titles in different studios that share the same Publisher ID, you can open a ticket in the [PlayFab community forums](https://community.playfab.com/) and our **Developer Success** team will help you out.
+> [!NOTE]
+> Some legacy configurations have multiple Publisher IDs in one studio or share a Publisher ID across studios. These configurations are uncommon.
 
 > [!NOTE]
 > Please don't confuse *player* Publisher data with [Publisher data](../../live-service-management/game-configuration/titledata/using-publisher-data.md) which is Key/Value Pair data shared by all titles (it is *not* per-player).

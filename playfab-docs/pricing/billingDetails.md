@@ -3,14 +3,14 @@ title: Billing Summary + Base Rate
 author: joannaleecy
 description: Describes the billing summary page.
 ms.author: jenelleb
-ms.date: 07/15/2019
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, pricing, billing, bill, invoice, meter, meters
 ms.localizationpriority: medium
 ---
 
-# Billing Summary and Base Rate
+# Billing Summary + Base Rate
 
 Admin or billing permissions are required to view the **Billing Summary** page.
 
@@ -23,7 +23,7 @@ To view the billing details page for your studio, navigate to the My Studios and
 
 ## Billing Summary Overview
 
-![Screenshot of Billing Details](pricingV2-media/BillingSummary.PNG "Billing Details")
+![Screenshot of Billing Details](pricingV2-media/BillingSummary.PNG)
 
 1. **Last Refreshed Date**
    * This is the date or time that the billing summary page was last refreshed. The billing details page is refreshed on a daily basis.
@@ -40,7 +40,7 @@ To view the billing details page for your studio, navigate to the My Studios and
 6. **Contact Information**
    * This is the contact information we use to send you an invoice. This can be changed by navigating to the **Billing Information** page.
 7. **Title Filter**
-   * Use the **Title** filter to understand consumption and apportioned cost by title. Namespace events are counted in the "All" calculation, but aren't currently available to drill down (as they aren't tied to a title). Development Mode titles aren't charged to the account and don't display cost data.
+   * Use the **Title** filter to understand consumption and apportioned cost by title. Namespace events are attributed to the cross-title namespace rather than to an individual title. They're counted in the **All** calculation but aren't currently available to drill down. The Publisher ID identifies the namespace in Game Manager and older APIs. For more information, see [PlayFab concepts](../get-started/concepts.md#studios-namespaces-and-titles). Development Mode titles aren't charged to the account and don't display cost data.
 8. **Month Filter**
    * Use this filter to choose the month to display. All billing summary data from the time the account was updated to usage-based pricing is visible through the billing summary page.
 9. **Meter Category**
