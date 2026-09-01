@@ -3,7 +3,7 @@ title: PlayFab User Roles
 author: notclickable-jordan
 description: Describes how to create and configure User Roles in PlayFab.
 ms.author: joroher
-ms.date: 06/25/2026
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, config, game manager, user roles
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # PlayFab user roles
 
-Roles are how you manage user permissions and navigation in PlayFab's Game Manager. A role is a named collection of permissions that you assign to the people in your studio, on a per-title basis. Define a role once, assign it to as many users as you like, and update everyone's access at once by editing the role.
+Roles are how you manage user permissions and navigation in PlayFab's Game Manager. A studio is the administrative grouping in which roles and users are managed, while role assignments generally control access to individual titles. A role is a named collection of permissions that you assign to the people in your studio on a per-title basis. Define a role once, assign it to as many users as you like, and update everyone's access at once by editing the role. For more information about these scopes, see [PlayFab concepts](../../../get-started/concepts.md#studios-namespaces-and-titles).
 
 This article covers the three things you'll do most: creating a role, configuring its permissions, and assigning it to users.
 
@@ -28,20 +28,20 @@ A few examples of where this comes in handy:
 
 Because permissions live on the role rather than on each individual user, a policy change is a single edit: update the role, and everyone who holds it picks up the change immediately.
 
-Roles are assigned **per title**, and a user can hold **multiple roles** on the same title. So you might give someone both a *Customer Support* role and a *Data Scientist* role, and they'll get the combined permissions of both. The same person can also be a Title Admin on one title, a Product Manager on another, and a Customer Service rep on a third — all within the same studio.
+Roles are assigned **per title**, and a user can hold **multiple roles** on the same title. So you might give someone both a *Customer Support* role and a *Data Scientist* role, and they'll get the combined permissions of both. The same person can also be a Title Admin on one title, a Product Manager on another, and a Customer Service rep on a third, all within the same studio.
 
 ### Built-in roles and admin levels
 
 Every studio comes with three predefined roles:
 
-- **Title Admin** — full permissions for a given title
-- **Dashboard** — permission to view the title's dashboard, and nothing else
-- **Commercial admin** — permission to view the title's dashboard, edit settings, see Economy payouts, and manage product activation
+- **Title Admin**: Full permissions for a given title
+- **Dashboard**: Permission to view the title's dashboard, and nothing else
+- **Commercial admin**: Permission to view the title's dashboard, edit settings, see Economy payouts, and manage product activation
 
 There are two special, studio-wide permissions that affect title access.
 
-- **Studio Admin** — Create titles, define and edit roles, and automatically have **title admin** rights on every title in the studio. You need to be a Studio Admin to create roles or assign them to users.
-- **Commercial admin** — Have some control of the billing process of the studio, and automatically have **commercial admin** rights on every title in the studio.
+- **Studio Admin**: Create titles, define and edit roles, and automatically have **title admin** rights on every title in the studio. You need to be a Studio Admin to create roles or assign them to users.
+- **Commercial admin**: Have some control of the billing process of the studio, and automatically have **commercial admin** rights on every title in the studio.
 
 ## Creating a role
 
@@ -60,18 +60,18 @@ The **Configure permissions** section is where you choose exactly what the role 
 
 Each permission offers one or more access levels:
 
-- **Read** — view the data or area
-- **Edit** — create and modify
-- **Delete** — remove
+- **Read**: View the data or area
+- **Edit**: Create and modify
+- **Delete**: Remove
 
-Not every permission has all three. Some areas add their own purpose-built actions, such as **Activate**, **Submit**, or **Review**. When you're unsure what an action covers, hover the **(i)** tooltip next to it for a full description — for instance, the **Review** action on the *Payouts tab* explains that it lets you "Approve and reject payouts."
+Not every permission has all three. Some areas add their own purpose-built actions, such as **Activate**, **Submit**, or **Review**. When you're unsure what an action covers, hover the **(i)** tooltip next to it for a full description. For instance, the **Review** action on the *Payouts tab* explains that it lets you "Approve and reject payouts."
 
 To move quickly, use the bulk controls:
 
-- **Search** — filter the permission list to find a specific item.
-- **Toggle all permissions** — select or clear every permission at once.
-- **Set read only** — check just the **Read** boxes across the scope, leaving Edit/Delete off.
-- **Collapse all** — hide the contents of every group for a cleaner view.
+- **Search**: Filter the permission list to find a specific item.
+- **Toggle all permissions**: Select or clear every permission at once.
+- **Set read only**: Check just the **Read** boxes across the scope, leaving Edit/Delete off.
+- **Collapse all**: Hide the contents of every group for a cleaner view.
 
 Each group also has its own **Select all** and **Set read only** so you can configure one area at a time.
 
@@ -93,7 +93,7 @@ You can assign roles two ways: from a user, or from a role.
 
 **From a role:**
 
-Open an existing role and select its **Members** tab. There you can pick which users in your studio should hold this role, and for which titles — handy when you're onboarding several people into the same role at once.
+Open an existing role and select its **Members** tab. There you can pick which users in your studio should hold this role and for which titles. This approach is handy when you're onboarding several people into the same role at once.
 
 ![screenshot of the Members tab on a role](../media/user-roles-role-members.jpg)
 

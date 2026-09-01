@@ -1,20 +1,20 @@
 ---
 title: Using publisher data
 author: joannaleecy
-description: Describes how to create and use publisher (studio) data.
+description: Describes how to create and use namespace-scoped publisher data.
 ms.author: jenelleb
-ms.date: 06/11/2018
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, configuration, publisher data, studio data
+keywords: playfab, configuration, publisher data, namespace data
 ms.localizationpriority: medium
 ---
 
 # Using Publisher data
 
-This tutorial describes how to create and use Publisher (Studio) data.
+This tutorial describes how to create and use namespace-scoped data through the Publisher data APIs.
 
-Publisher data is data that spans *more than one title* - such as when you have multiple games that need to share common information.
+Publisher data is static data that spans more than one title in a PlayFab namespace, such as when multiple games need to share common information. **Publisher** is the older API term for the namespace scope, and the Publisher ID identifies the namespace. A namespace is distinct from a studio, which is the administrative grouping for titles, users, permissions, and billing. For more information, see [PlayFab concepts](../../../get-started/concepts.md#studios-namespaces-and-titles).
 
 > [!NOTE]
 > This category also includes data for players that spans multiple games. PlayFab stores data as Key/Value Pairs (KVPs).
@@ -34,11 +34,11 @@ You must call the server APIs from a dedicated server or through a CloudScript f
 Publisher data values are copied and distributed to potentially *hundreds* of machines in the PlayFab cluster server. As part of this process, this data is cached and changes may take up to *fifteen minutes* to refresh in those caches.
 
 > [!NOTE]
-> Publisher data is best suited for *global constant/static data*, and *is not* suitable or reliable as *global variables*.
+> Publisher data is best suited for *global constant/static data* and *isn't* suitable or reliable as *global variables*.
 
 ## Publisher data
 
-Publisher data is used to store static data for a set of titles. Each entry *is not bound* to any PlayFab entity, such as a player (as opposed to [user publisher data](#user-publisher-data)).
+Publisher data is used to store static data for the titles in a namespace. Each entry *isn't bound* to a player entity (as opposed to [user publisher data](#user-publisher-data)).
 
 ### Setting Publisher data
 

@@ -29,7 +29,7 @@ Developers are eligible for Foundation Mode if they meet the following requireme
 - Link their PlayFab account to their Partner Center studio and product.
 
 > [!IMPORTANT]
-> During the preview, Foundation Mode is available for **new PlayFab titles only**. You can create new titles in Foundation Mode, but existing titles can't be migrated at this time. A migration path for existing titles is planned for mid-2026.
+> During the preview, Foundation Mode is available for **new PlayFab titles only**. You can create new titles in Foundation Mode, but existing titles can't be migrated at this time. A migration path for existing titles is planned for late 2026.
 
 ## What's included
 

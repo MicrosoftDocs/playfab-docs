@@ -1,4 +1,5 @@
 - name: Overview
+  href: index.md
   items:
   - name: PFAccountManagement
     href: pfaccountmanagement/pfaccountmanagement_members.md
@@ -46,12 +47,24 @@
     href: pfinventory/pfinventory_members.md
   - name: PFInventoryTypes
     href: pfinventorytypes/pfinventorytypes_members.md
+  - name: PFLeaderboards
+    href: pfleaderboards/pfleaderboards_members.md
+  - name: PFLeaderboardsTypes
+    href: pfleaderboardstypes/pfleaderboardstypes_members.md
+  - name: PFLocalization
+    href: pflocalization/pflocalization_members.md
+  - name: PFLocalizationTypes
+    href: pflocalizationtypes/pflocalizationtypes_members.md
   - name: PFMultiplayerServer
     href: pfmultiplayerserver/pfmultiplayerserver_members.md
   - name: PFMultiplayerServerTypes
     href: pfmultiplayerservertypes/pfmultiplayerservertypes_members.md
   - name: PFPlatform
     href: pfplatform/pfplatform_members.md
+  - name: PFPlatformSpecific
+    href: pfplatformspecific/pfplatformspecific_members.md
+  - name: PFPlatformSpecificTypes
+    href: pfplatformspecifictypes/pfplatformspecifictypes_members.md
   - name: PFPlayerDataManagement
     href: pfplayerdatamanagement/pfplayerdatamanagement_members.md
   - name: PFPlayerDataManagementTypes
@@ -60,6 +73,10 @@
     href: pfprofiles/pfprofiles_members.md
   - name: PFProfilesTypes
     href: pfprofilestypes/pfprofilestypes_members.md
+  - name: PFPushNotifications
+    href: pfpushnotifications/pfpushnotifications_members.md
+  - name: PFPushNotificationsTypes
+    href: pfpushnotificationstypes/pfpushnotificationstypes_members.md
   - name: PFSegments
     href: pfsegments/pfsegments_members.md
   - name: PFSegmentsTypes
@@ -68,6 +85,10 @@
     href: pfserviceconfig/pfserviceconfig_members.md
   - name: PFServices
     href: pfservices/pfservices_members.md
+  - name: PFStatistics
+    href: pfstatistics/pfstatistics_members.md
+  - name: PFStatisticsTypes
+    href: pfstatisticstypes/pfstatisticstypes_members.md
   - name: PFTitleDataManagement
     href: pftitledatamanagement/pftitledatamanagement_members.md
   - name: PFTitleDataManagementTypes
@@ -1020,6 +1041,64 @@
     href: pfinventory/functions/pfinventoryupdateinventoryitemsgetresult.md
   - name: PFInventoryUpdateInventoryItemsGetResultSize
     href: pfinventory/functions/pfinventoryupdateinventoryitemsgetresultsize.md
+  - name: PFLeaderboardsCreateLeaderboardDefinitionAsync
+    href: pfleaderboards/functions/pfleaderboardscreateleaderboarddefinitionasync.md
+  - name: PFLeaderboardsDeleteLeaderboardDefinitionAsync
+    href: pfleaderboards/functions/pfleaderboardsdeleteleaderboarddefinitionasync.md
+  - name: PFLeaderboardsDeleteLeaderboardEntriesAsync
+    href: pfleaderboards/functions/pfleaderboardsdeleteleaderboardentriesasync.md
+  - name: PFLeaderboardsGetFriendLeaderboardForEntityAsync
+    href: pfleaderboards/functions/pfleaderboardsgetfriendleaderboardforentityasync.md
+  - name: PFLeaderboardsGetFriendLeaderboardForEntityGetResult
+    href: pfleaderboards/functions/pfleaderboardsgetfriendleaderboardforentitygetresult.md
+  - name: PFLeaderboardsGetFriendLeaderboardForEntityGetResultSize
+    href: pfleaderboards/functions/pfleaderboardsgetfriendleaderboardforentitygetresultsize.md
+  - name: PFLeaderboardsGetLeaderboardAroundEntityAsync
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardaroundentityasync.md
+  - name: PFLeaderboardsGetLeaderboardAroundEntityGetResult
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardaroundentitygetresult.md
+  - name: PFLeaderboardsGetLeaderboardAroundEntityGetResultSize
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardaroundentitygetresultsize.md
+  - name: PFLeaderboardsGetLeaderboardAsync
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardasync.md
+  - name: PFLeaderboardsGetLeaderboardDefinitionAsync
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboarddefinitionasync.md
+  - name: PFLeaderboardsGetLeaderboardDefinitionGetResult
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboarddefinitiongetresult.md
+  - name: PFLeaderboardsGetLeaderboardDefinitionGetResultSize
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboarddefinitiongetresultsize.md
+  - name: PFLeaderboardsGetLeaderboardForEntitiesAsync
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardforentitiesasync.md
+  - name: PFLeaderboardsGetLeaderboardForEntitiesGetResult
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardforentitiesgetresult.md
+  - name: PFLeaderboardsGetLeaderboardForEntitiesGetResultSize
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardforentitiesgetresultsize.md
+  - name: PFLeaderboardsGetLeaderboardGetResult
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardgetresult.md
+  - name: PFLeaderboardsGetLeaderboardGetResultSize
+    href: pfleaderboards/functions/pfleaderboardsgetleaderboardgetresultsize.md
+  - name: PFLeaderboardsIncrementLeaderboardVersionAsync
+    href: pfleaderboards/functions/pfleaderboardsincrementleaderboardversionasync.md
+  - name: PFLeaderboardsIncrementLeaderboardVersionGetResult
+    href: pfleaderboards/functions/pfleaderboardsincrementleaderboardversiongetresult.md
+  - name: PFLeaderboardsListLeaderboardDefinitionsAsync
+    href: pfleaderboards/functions/pfleaderboardslistleaderboarddefinitionsasync.md
+  - name: PFLeaderboardsListLeaderboardDefinitionsGetResult
+    href: pfleaderboards/functions/pfleaderboardslistleaderboarddefinitionsgetresult.md
+  - name: PFLeaderboardsListLeaderboardDefinitionsGetResultSize
+    href: pfleaderboards/functions/pfleaderboardslistleaderboarddefinitionsgetresultsize.md
+  - name: PFLeaderboardsUnlinkLeaderboardFromStatisticAsync
+    href: pfleaderboards/functions/pfleaderboardsunlinkleaderboardfromstatisticasync.md
+  - name: PFLeaderboardsUpdateLeaderboardDefinitionAsync
+    href: pfleaderboards/functions/pfleaderboardsupdateleaderboarddefinitionasync.md
+  - name: PFLeaderboardsUpdateLeaderboardEntriesAsync
+    href: pfleaderboards/functions/pfleaderboardsupdateleaderboardentriesasync.md
+  - name: PFLocalizationGetLanguageListAsync
+    href: pflocalization/functions/pflocalizationgetlanguagelistasync.md
+  - name: PFLocalizationGetLanguageListGetResult
+    href: pflocalization/functions/pflocalizationgetlanguagelistgetresult.md
+  - name: PFLocalizationGetLanguageListGetResultSize
+    href: pflocalization/functions/pflocalizationgetlanguagelistgetresultsize.md
   - name: PFMultiplayerServerListBuildAliasesAsync
     href: pfmultiplayerserver/functions/pfmultiplayerserverlistbuildaliasesasync.md
   - name: PFMultiplayerServerListBuildAliasesGetResult
@@ -1052,6 +1131,16 @@
     href: pfplatform/functions/pfmemsetfunctions.md
   - name: PFPlatformLocalStorageSetHandlers
     href: pfplatform/functions/pfplatformlocalstoragesethandlers.md
+  - name: PFPlatformSpecificClientAndroidDevicePushNotificationRegistrationAsync
+    href: pfplatformspecific/functions/pfplatformspecificclientandroiddevicepushnotificationregistrationasync.md
+  - name: PFPlatformSpecificClientRegisterForIOSPushNotificationAsync
+    href: pfplatformspecific/functions/pfplatformspecificclientregisterforiospushnotificationasync.md
+  - name: PFPlatformSpecificServerAwardSteamAchievementAsync
+    href: pfplatformspecific/functions/pfplatformspecificserverawardsteamachievementasync.md
+  - name: PFPlatformSpecificServerAwardSteamAchievementGetResult
+    href: pfplatformspecific/functions/pfplatformspecificserverawardsteamachievementgetresult.md
+  - name: PFPlatformSpecificServerAwardSteamAchievementGetResultSize
+    href: pfplatformspecific/functions/pfplatformspecificserverawardsteamachievementgetresultsize.md
   - name: PFPlayerDataManagementClientGetUserDataAsync
     href: pfplayerdatamanagement/functions/pfplayerdatamanagementclientgetuserdataasync.md
   - name: PFPlayerDataManagementClientGetUserDataGetResult
@@ -1174,6 +1263,10 @@
     href: pfprofiles/functions/pfprofilessetprofilepolicygetresult.md
   - name: PFProfilesSetProfilePolicyGetResultSize
     href: pfprofiles/functions/pfprofilessetprofilepolicygetresultsize.md
+  - name: PFPushNotificationsServerSendPushNotificationAsync
+    href: pfpushnotifications/functions/pfpushnotificationsserversendpushnotificationasync.md
+  - name: PFPushNotificationsServerSendPushNotificationFromTemplateAsync
+    href: pfpushnotifications/functions/pfpushnotificationsserversendpushnotificationfromtemplateasync.md
   - name: PFSegmentsClientGetPlayerSegmentsAsync
     href: pfsegments/functions/pfsegmentsclientgetplayersegmentsasync.md
   - name: PFSegmentsClientGetPlayerSegmentsGetResult
@@ -1234,6 +1327,52 @@
     href: pfservices/functions/pfservicesinitialize_2.md
   - name: PFServicesUninitializeAsync
     href: pfservices/functions/pfservicesuninitializeasync.md
+  - name: PFStatisticsCreateStatisticDefinitionAsync
+    href: pfstatistics/functions/pfstatisticscreatestatisticdefinitionasync.md
+  - name: PFStatisticsDeleteStatisticDefinitionAsync
+    href: pfstatistics/functions/pfstatisticsdeletestatisticdefinitionasync.md
+  - name: PFStatisticsDeleteStatisticsAsync
+    href: pfstatistics/functions/pfstatisticsdeletestatisticsasync.md
+  - name: PFStatisticsDeleteStatisticsGetResult
+    href: pfstatistics/functions/pfstatisticsdeletestatisticsgetresult.md
+  - name: PFStatisticsDeleteStatisticsGetResultSize
+    href: pfstatistics/functions/pfstatisticsdeletestatisticsgetresultsize.md
+  - name: PFStatisticsGetStatisticDefinitionAsync
+    href: pfstatistics/functions/pfstatisticsgetstatisticdefinitionasync.md
+  - name: PFStatisticsGetStatisticDefinitionGetResult
+    href: pfstatistics/functions/pfstatisticsgetstatisticdefinitiongetresult.md
+  - name: PFStatisticsGetStatisticDefinitionGetResultSize
+    href: pfstatistics/functions/pfstatisticsgetstatisticdefinitiongetresultsize.md
+  - name: PFStatisticsGetStatisticsAsync
+    href: pfstatistics/functions/pfstatisticsgetstatisticsasync.md
+  - name: PFStatisticsGetStatisticsForEntitiesAsync
+    href: pfstatistics/functions/pfstatisticsgetstatisticsforentitiesasync.md
+  - name: PFStatisticsGetStatisticsForEntitiesGetResult
+    href: pfstatistics/functions/pfstatisticsgetstatisticsforentitiesgetresult.md
+  - name: PFStatisticsGetStatisticsForEntitiesGetResultSize
+    href: pfstatistics/functions/pfstatisticsgetstatisticsforentitiesgetresultsize.md
+  - name: PFStatisticsGetStatisticsGetResult
+    href: pfstatistics/functions/pfstatisticsgetstatisticsgetresult.md
+  - name: PFStatisticsGetStatisticsGetResultSize
+    href: pfstatistics/functions/pfstatisticsgetstatisticsgetresultsize.md
+  - name: PFStatisticsIncrementStatisticVersionAsync
+    href: pfstatistics/functions/pfstatisticsincrementstatisticversionasync.md
+  - name: PFStatisticsIncrementStatisticVersionGetResult
+    href: pfstatistics/functions/pfstatisticsincrementstatisticversiongetresult.md
+  - name: PFStatisticsListStatisticDefinitionsAsync
+    href: pfstatistics/functions/pfstatisticsliststatisticdefinitionsasync.md
+  - name: PFStatisticsListStatisticDefinitionsGetResult
+    href: pfstatistics/functions/pfstatisticsliststatisticdefinitionsgetresult.md
+  - name: PFStatisticsListStatisticDefinitionsGetResultSize
+    href: pfstatistics/functions/pfstatisticsliststatisticdefinitionsgetresultsize.md
+  - name: PFStatisticsUpdateStatisticDefinitionAsync
+    href: pfstatistics/functions/pfstatisticsupdatestatisticdefinitionasync.md
+  - name: PFStatisticsUpdateStatisticsAsync
+    href: pfstatistics/functions/pfstatisticsupdatestatisticsasync.md
+  - name: PFStatisticsUpdateStatisticsGetResult
+    href: pfstatistics/functions/pfstatisticsupdatestatisticsgetresult.md
+  - name: PFStatisticsUpdateStatisticsGetResultSize
+    href: pfstatistics/functions/pfstatisticsupdatestatisticsgetresultsize.md
   - name: PFTitleDataManagementClientGetPublisherDataAsync
     href: pftitledatamanagement/functions/pftitledatamanagementclientgetpublisherdataasync.md
   - name: PFTitleDataManagementClientGetPublisherDataGetResult
@@ -1312,6 +1451,10 @@
     href: pfcloudscripttypes/enums/pfcloudscriptcloudscriptrevisionoption.md
   - name: PFFriendsExternalFriendSources
     href: pffriendstypes/enums/pffriendsexternalfriendsources.md
+  - name: PFExternalFriendSources
+    href: pfleaderboardstypes/enums/pfexternalfriendsources.md
+  - name: PFLeaderboardsLeaderboardSortDirection
+    href: pfleaderboardstypes/enums/pfleaderboardsleaderboardsortdirection.md
   - name: PFMultiplayerServerAzureVmSize
     href: pfmultiplayerservertypes/enums/pfmultiplayerserverazurevmsize.md
   - name: PFMultiplayerServerProtocolType
@@ -1320,6 +1463,8 @@
     href: pfprofilestypes/enums/pfprofileseffecttype.md
   - name: PFSegmentsChurnRiskLevel
     href: pfsegmentstypes/enums/pfsegmentschurnrisklevel.md
+  - name: PFStatisticsStatisticAggregationMethod
+    href: pfstatisticstypes/enums/pfstatisticsstatisticaggregationmethod.md
   - name: PFContinentCode
     href: pftypes/enums/pfcontinentcode.md
   - name: PFCountryCode
@@ -1328,6 +1473,8 @@
     href: pftypes/enums/pfcurrency.md
   - name: PFEmailVerificationStatus
     href: pftypes/enums/pfemailverificationstatus.md
+  - name: PFEventType
+    href: pftypes/enums/pfeventtype.md
   - name: PFLoginIdentityProvider
     href: pftypes/enums/pfloginidentityprovider.md
   - name: PFOperationTypes
@@ -2086,6 +2233,60 @@
     href: pfinventorytypes/structs/pfinventoryupdateinventoryitemsrequest.md
   - name: PFInventoryUpdateInventoryItemsResponse
     href: pfinventorytypes/structs/pfinventoryupdateinventoryitemsresponse.md
+  - name: PFLeaderboardsCreateLeaderboardDefinitionRequest
+    href: pfleaderboardstypes/structs/pfleaderboardscreateleaderboarddefinitionrequest.md
+  - name: PFLeaderboardsDeleteLeaderboardDefinitionRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsdeleteleaderboarddefinitionrequest.md
+  - name: PFLeaderboardsDeleteLeaderboardEntriesRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsdeleteleaderboardentriesrequest.md
+  - name: PFLeaderboardsEntityLeaderboardEntry
+    href: pfleaderboardstypes/structs/pfleaderboardsentityleaderboardentry.md
+  - name: PFLeaderboardsGetEntityLeaderboardRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsgetentityleaderboardrequest.md
+  - name: PFLeaderboardsGetEntityLeaderboardResponse
+    href: pfleaderboardstypes/structs/pfleaderboardsgetentityleaderboardresponse.md
+  - name: PFLeaderboardsGetFriendLeaderboardForEntityRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsgetfriendleaderboardforentityrequest.md
+  - name: PFLeaderboardsGetLeaderboardAroundEntityRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsgetleaderboardaroundentityrequest.md
+  - name: PFLeaderboardsGetLeaderboardDefinitionRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsgetleaderboarddefinitionrequest.md
+  - name: PFLeaderboardsGetLeaderboardDefinitionResponse
+    href: pfleaderboardstypes/structs/pfleaderboardsgetleaderboarddefinitionresponse.md
+  - name: PFLeaderboardsGetLeaderboardForEntitiesRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsgetleaderboardforentitiesrequest.md
+  - name: PFLeaderboardsIncrementLeaderboardVersionRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsincrementleaderboardversionrequest.md
+  - name: PFLeaderboardsIncrementLeaderboardVersionResponse
+    href: pfleaderboardstypes/structs/pfleaderboardsincrementleaderboardversionresponse.md
+  - name: PFLeaderboardsLeaderboardColumn
+    href: pfleaderboardstypes/structs/pfleaderboardsleaderboardcolumn.md
+  - name: PFLeaderboardsLeaderboardDefinition
+    href: pfleaderboardstypes/structs/pfleaderboardsleaderboarddefinition.md
+  - name: PFLeaderboardsLeaderboardEntityRankOnVersionEndConfig
+    href: pfleaderboardstypes/structs/pfleaderboardsleaderboardentityrankonversionendconfig.md
+  - name: PFLeaderboardsLeaderboardEntryUpdate
+    href: pfleaderboardstypes/structs/pfleaderboardsleaderboardentryupdate.md
+  - name: PFLeaderboardsLeaderboardEventEmissionConfig
+    href: pfleaderboardstypes/structs/pfleaderboardsleaderboardeventemissionconfig.md
+  - name: PFLeaderboardsLeaderboardVersionEndConfig
+    href: pfleaderboardstypes/structs/pfleaderboardsleaderboardversionendconfig.md
+  - name: PFLeaderboardsLinkedStatisticColumn
+    href: pfleaderboardstypes/structs/pfleaderboardslinkedstatisticcolumn.md
+  - name: PFLeaderboardsListLeaderboardDefinitionsRequest
+    href: pfleaderboardstypes/structs/pfleaderboardslistleaderboarddefinitionsrequest.md
+  - name: PFLeaderboardsListLeaderboardDefinitionsResponse
+    href: pfleaderboardstypes/structs/pfleaderboardslistleaderboarddefinitionsresponse.md
+  - name: PFLeaderboardsUnlinkLeaderboardFromStatisticRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsunlinkleaderboardfromstatisticrequest.md
+  - name: PFLeaderboardsUpdateLeaderboardDefinitionRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsupdateleaderboarddefinitionrequest.md
+  - name: PFLeaderboardsUpdateLeaderboardEntriesRequest
+    href: pfleaderboardstypes/structs/pfleaderboardsupdateleaderboardentriesrequest.md
+  - name: PFLocalizationGetLanguageListRequest
+    href: pflocalizationtypes/structs/pflocalizationgetlanguagelistrequest.md
+  - name: PFLocalizationGetLanguageListResponse
+    href: pflocalizationtypes/structs/pflocalizationgetlanguagelistresponse.md
   - name: PFMultiplayerServerBuildAliasDetailsResponse
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverbuildaliasdetailsresponse.md
   - name: PFMultiplayerServerBuildAliasParams
@@ -2142,6 +2343,16 @@
     href: pfplatform/structs/pflocalstoragehooks.md
   - name: PFMemoryHooks
     href: pfplatform/structs/pfmemoryhooks.md
+  - name: PFPlatformSpecificAndroidDevicePushNotificationRegistrationRequest
+    href: pfplatformspecifictypes/structs/pfplatformspecificandroiddevicepushnotificationregistrationrequest.md
+  - name: PFPlatformSpecificAwardSteamAchievementItem
+    href: pfplatformspecifictypes/structs/pfplatformspecificawardsteamachievementitem.md
+  - name: PFPlatformSpecificAwardSteamAchievementRequest
+    href: pfplatformspecifictypes/structs/pfplatformspecificawardsteamachievementrequest.md
+  - name: PFPlatformSpecificAwardSteamAchievementResult
+    href: pfplatformspecifictypes/structs/pfplatformspecificawardsteamachievementresult.md
+  - name: PFPlatformSpecificRegisterForIOSPushNotificationRequest
+    href: pfplatformspecifictypes/structs/pfplatformspecificregisterforiospushnotificationrequest.md
   - name: PFPlayerDataManagementClientGetUserDataResult
     href: pfplayerdatamanagementtypes/structs/pfplayerdatamanagementclientgetuserdataresult.md
   - name: PFPlayerDataManagementClientUpdateUserDataRequest
@@ -2192,6 +2403,14 @@
     href: pfprofilestypes/structs/pfprofilessetprofilelanguagerequest.md
   - name: PFProfilesSetProfileLanguageResponse
     href: pfprofilestypes/structs/pfprofilessetprofilelanguageresponse.md
+  - name: PFPushNotificationsAdvancedPushPlatformMsg
+    href: pfpushnotificationstypes/structs/pfpushnotificationsadvancedpushplatformmsg.md
+  - name: PFPushNotificationsPushNotificationPackage
+    href: pfpushnotificationstypes/structs/pfpushnotificationspushnotificationpackage.md
+  - name: PFPushNotificationsSendPushNotificationFromTemplateRequest
+    href: pfpushnotificationstypes/structs/pfpushnotificationssendpushnotificationfromtemplaterequest.md
+  - name: PFPushNotificationsSendPushNotificationRequest
+    href: pfpushnotificationstypes/structs/pfpushnotificationssendpushnotificationrequest.md
   - name: PFSegmentsAdCampaignAttribution
     href: pfsegmentstypes/structs/pfsegmentsadcampaignattribution.md
   - name: PFSegmentsAddPlayerTagRequest
@@ -2228,6 +2447,62 @@
     href: pfsegmentstypes/structs/pfsegmentspushnotificationregistration.md
   - name: PFSegmentsRemovePlayerTagRequest
     href: pfsegmentstypes/structs/pfsegmentsremoveplayertagrequest.md
+  - name: PFStatisticsCreateStatisticDefinitionRequest
+    href: pfstatisticstypes/structs/pfstatisticscreatestatisticdefinitionrequest.md
+  - name: PFStatisticsDeleteStatisticDefinitionRequest
+    href: pfstatisticstypes/structs/pfstatisticsdeletestatisticdefinitionrequest.md
+  - name: PFStatisticsDeleteStatisticsRequest
+    href: pfstatisticstypes/structs/pfstatisticsdeletestatisticsrequest.md
+  - name: PFStatisticsDeleteStatisticsResponse
+    href: pfstatisticstypes/structs/pfstatisticsdeletestatisticsresponse.md
+  - name: PFStatisticsEntityStatistics
+    href: pfstatisticstypes/structs/pfstatisticsentitystatistics.md
+  - name: PFStatisticsEntityStatisticValue
+    href: pfstatisticstypes/structs/pfstatisticsentitystatisticvalue.md
+  - name: PFStatisticsEntityStatisticValueDictionaryEntry
+    href: pfstatisticstypes/structs/pfstatisticsentitystatisticvaluedictionaryentry.md
+  - name: PFStatisticsGetStatisticDefinitionRequest
+    href: pfstatisticstypes/structs/pfstatisticsgetstatisticdefinitionrequest.md
+  - name: PFStatisticsGetStatisticDefinitionResponse
+    href: pfstatisticstypes/structs/pfstatisticsgetstatisticdefinitionresponse.md
+  - name: PFStatisticsGetStatisticsForEntitiesRequest
+    href: pfstatisticstypes/structs/pfstatisticsgetstatisticsforentitiesrequest.md
+  - name: PFStatisticsGetStatisticsForEntitiesResponse
+    href: pfstatisticstypes/structs/pfstatisticsgetstatisticsforentitiesresponse.md
+  - name: PFStatisticsGetStatisticsRequest
+    href: pfstatisticstypes/structs/pfstatisticsgetstatisticsrequest.md
+  - name: PFStatisticsGetStatisticsResponse
+    href: pfstatisticstypes/structs/pfstatisticsgetstatisticsresponse.md
+  - name: PFStatisticsIncrementStatisticVersionRequest
+    href: pfstatisticstypes/structs/pfstatisticsincrementstatisticversionrequest.md
+  - name: PFStatisticsIncrementStatisticVersionResponse
+    href: pfstatisticstypes/structs/pfstatisticsincrementstatisticversionresponse.md
+  - name: PFStatisticsListStatisticDefinitionsRequest
+    href: pfstatisticstypes/structs/pfstatisticsliststatisticdefinitionsrequest.md
+  - name: PFStatisticsListStatisticDefinitionsResponse
+    href: pfstatisticstypes/structs/pfstatisticsliststatisticdefinitionsresponse.md
+  - name: PFStatisticsStatisticColumn
+    href: pfstatisticstypes/structs/pfstatisticsstatisticcolumn.md
+  - name: PFStatisticsStatisticColumnCollection
+    href: pfstatisticstypes/structs/pfstatisticsstatisticcolumncollection.md
+  - name: PFStatisticsStatisticColumnCollectionDictionaryEntry
+    href: pfstatisticstypes/structs/pfstatisticsstatisticcolumncollectiondictionaryentry.md
+  - name: PFStatisticsStatisticDefinition
+    href: pfstatisticstypes/structs/pfstatisticsstatisticdefinition.md
+  - name: PFStatisticsStatisticDelete
+    href: pfstatisticstypes/structs/pfstatisticsstatisticdelete.md
+  - name: PFStatisticsStatisticsEventEmissionConfig
+    href: pfstatisticstypes/structs/pfstatisticsstatisticseventemissionconfig.md
+  - name: PFStatisticsStatisticsUpdateEventConfig
+    href: pfstatisticstypes/structs/pfstatisticsstatisticsupdateeventconfig.md
+  - name: PFStatisticsStatisticUpdate
+    href: pfstatisticstypes/structs/pfstatisticsstatisticupdate.md
+  - name: PFStatisticsUpdateStatisticDefinitionRequest
+    href: pfstatisticstypes/structs/pfstatisticsupdatestatisticdefinitionrequest.md
+  - name: PFStatisticsUpdateStatisticsRequest
+    href: pfstatisticstypes/structs/pfstatisticsupdatestatisticsrequest.md
+  - name: PFStatisticsUpdateStatisticsResponse
+    href: pfstatisticstypes/structs/pfstatisticsupdatestatisticsresponse.md
   - name: PFTitleDataManagementGetPublisherDataRequest
     href: pftitledatamanagementtypes/structs/pftitledatamanagementgetpublisherdatarequest.md
   - name: PFTitleDataManagementGetPublisherDataResult

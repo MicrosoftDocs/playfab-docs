@@ -136,7 +136,7 @@ SDKs are available for most popular languages, platforms, and game engines. See 
 
 **Documentation**: Get started quickly with tutorials, samples, and comprehensive reference documentation.
 
-**Discord forums** Find a developer community, check on service status, post questions, share answers, and discuss the PlayFab product experience on the [PlayFab Discord Forums](https://discord.com/invite/msftgamedev)
+**Discord forums** Find a developer community, check on service status, post questions, share answers, and discuss the PlayFab product experience on the [PlayFab Discord Forums](https://discord.gg/xboxgamedev)
 
 **Real-time service health**: Visit status.playfab.com for current and historical service health information.
 

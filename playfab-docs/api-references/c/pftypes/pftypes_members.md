@@ -84,6 +84,7 @@ ms.date: 11/19/2024
 | [PFCountryCode](enums/pfcountrycode.md) | CountryCode enum.|  
 | [PFCurrency](enums/pfcurrency.md) | Currency enum.|  
 | [PFEmailVerificationStatus](enums/pfemailverificationstatus.md) | EmailVerificationStatus enum.|  
+| [PFEventType](enums/pfeventtype.md) | EventType enum.|
 | [PFLoginIdentityProvider](enums/pfloginidentityprovider.md) | LoginIdentityProvider enum.|  
 | [PFOperationTypes](enums/pfoperationtypes.md) | OperationTypes enum.|  
 | [PFPushNotificationPlatform](enums/pfpushnotificationplatform.md) | PushNotificationPlatform enum.|  

@@ -3,7 +3,7 @@ title: PlayFab concepts
 author: m-kdearnley
 description: Describes the fundamental concepts and building blocks of PlayFab.
 ms.author: kdearnley
-ms.date: 04/08/2025
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, config
@@ -14,28 +14,39 @@ ms.localizationpriority: medium
 
 PlayFab offers various fundamental components that serve as the building blocks for your game's backend. 
 
-## Namespaces and titles
+## Studios, namespaces, and titles
 
-PlayFab uses a hierarchical structure to manage resources and configurations across different scopes. 
+PlayFab organizes resources into studios, namespaces, and titles. Each scope has a different purpose.
 
-A PlayFab namespace is the highest-level entity that stores all global information which spans multiple titles.
+### Studio
 
-A PlayFab title is an entity that represents the data and configurations scoped to a specific game including game settings, player account, player data, and other game-related data.
+A studio is the administrative grouping you use in Game Manager. A studio contains your PlayFab titles and controls team membership, roles, permissions, billing, and support access.
 
-A namespace might contain many titles, but a title can only belong to one namespace. A title can't be moved between namespaces. 
+Studio membership and permissions don't represent player identity or gameplay data.
 
-All titles under the same namespace can share certain resources and configurations. This feature is useful for managing [player identities](../identity/identity-overview.md) and data across multiple titles within the same namespace. 
+### Namespace
 
-Titles can also be used to store data and configuration specific to a game environment or a version of your game.  
-The purpose of a title is to manage game-specific data and configurations. 
+A PlayFab namespace defines the cross-title player identity and shared-data scope for a studio. It allows PlayFab to recognize the same player across multiple titles and supports data that is shared by those titles.
 
-Namespaces and titles are two specific types of entities with hierarchical relationships, and there are more [built-in entity types](../live-service-management/game-configuration/entities/available-built-in-entity-types.md) to represent other useful scopes such as players, groups, and servers. 
+By default, a studio has one namespace and all titles in the studio belong to it. A title can belong to only one namespace and can't be moved between namespaces.
+
+Some PlayFab APIs and Game Manager pages use the older term **publisher**. The **Publisher ID** identifies the namespace. In this context, publisher and namespace refer to the same cross-title scope; neither term means the studio itself.
+
+### Title
+
+A title is the PlayFab resource boundary for a game or game environment. Each title has its own Title ID, configuration, title-specific player accounts, data, secrets, and service settings.
+
+A studio can contain multiple titles. You might create separate titles for different games operated by the same business, or for different service environments that require isolated configuration and player data (dev/test/prod).
+
+Data stored at the title level isn't automatically shared with other titles. Use namespace-scoped features when player identity or data must span titles.
+
+Namespaces and titles are also [built-in entity types](../live-service-management/game-configuration/entities/available-built-in-entity-types.md). Other built-in entity types represent scopes such as players, groups, and servers.
 
 ## Developer identity and Game Manager
 
-To keep your game data secure, the developer identity is used to authenticate users and manage access to namespaces and titles. It's easy to [create a PlayFab account](../identity/dev-identity/pfab-account.md) and sign in with your Microsoft account. Assign [PlayFab user roles](../identity/dev-identity/permissions/playfab-user-roles.md) to grant access to other members of your development team. 
+To keep your game data secure, developer identity is used to authenticate users and manage administrative access to studios and titles. It's easy to [create a PlayFab account](../identity/dev-identity/pfab-account.md) and sign in with your Microsoft account. Assign [PlayFab user roles](../identity/dev-identity/permissions/playfab-user-roles.md) to grant access to other members of your development team.
 
-PlayFab's web portal is called [Game Manager](../live-service-management/gamemanager/index.md) and is the primary interface for managing your studio and title configuration. Most Functionality in Game Manager also has a REST API equivalent, so you can script and automate configuration changes in the later stages of production. 
+PlayFab's web portal is called [Game Manager](../live-service-management/gamemanager/index.md) and is the primary interface for managing your studio and title configuration. Most functionality in Game Manager also has a REST API equivalent, so you can script and automate configuration changes in the later stages of production.
 
 ## Title configuration 
 
@@ -43,7 +54,7 @@ Once you have a title, you can start storing data to [Title Data](../live-servic
 
 General game configuration settings are often stored in TitleData, and it's typical for game clients to read this data during initialization. The [Title News](../live-service-management/game-configuration/title-communications/news/quickstart.md) features provide specific tools for title-wide communication with your players. 
 
-Similarly, at the namespace level, [Publishing Data](../live-service-management/game-configuration/titledata/using-publisher-data.md) is accessible from any title tied to the namespace and can be useful for cross-game promotional events, or news that might be interesting to your entire player community.
+Similarly, at the namespace level, [Publisher data](../live-service-management/game-configuration/titledata/using-publisher-data.md) is accessible from any title tied to the namespace and can be useful for cross-game promotional events or news that might interest your entire player community. Publisher data uses the older API term for namespace-scoped data.
 
 Sometimes you want to set configuration data that targets a subset of your title's players. For targeted configuration, use [Segmentation](../live-service-management/game-configuration/segmentation/segmentation-overview.md) to define players in a target segment. [Experimentation](../live-service-management/game-configuration/experiments/index.md) is another option for testing different configurations on parts of your player base. 
 
@@ -54,6 +65,8 @@ The PlayFab [player identity](../identity/player-identity/login/index.md) system
 PlayFab clients must authenticate before accessing most PlayFab APIs. 
 
 Beyond authentication, accounts also serve as the central pillar around which your game systems are built. Using a recoverable account makes it easy to save and retrieve player-specific data regardless of which platform or device the player is currently logged in with. Data such as permissions, [player progression](../player-progression/player-progression-overview.md), [player friend lists](../community/associations/friends/index.md), or [player bans](../player-progression/player-data/player-bans.md) are just some of the types of player-specific data that you might want to store for retrieval or sharing. 
+
+A player has a `master_player_account` in the namespace. When the player signs in to a title, PlayFab creates or uses a `title_player_account` for that title. The master player account provides cross-title identity, while each title player account contains title-specific identity and data.
 
 ## PlayStream and actions
 

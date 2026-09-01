@@ -3,7 +3,7 @@ title: Throttling in PlayFab
 author: antnguyen89
 description: PlayFab throttling overview.
 ms.author: antnguyen
-ms.date: 01/26/2024
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, throttling, throttle, api, token
@@ -26,13 +26,15 @@ If a specific key makes more API requests than allowed within a set time period 
 
 ## How PlayFab determines the key for a specific API request
 
-### Title-Wide API Rate Limits
+### Title-wide API rate limits
+
 The **key** is the title ID.
 
-### Namespace-Wide API Rate Limits
-The **key** is the namespace ID.
+### Namespace-wide API rate limits
 
-### Per-Entity API Rate Limits
+The **key** is the namespace ID, which Game Manager and older APIs call the Publisher ID. A namespace is the cross-title player identity and shared-data scope, not the administrative studio. For more information, see [PlayFab concepts](../../../get-started/concepts.md#studios-namespaces-and-titles).
+
+### Per-entity API rate limits
 
 - For non-authenticated/anonymous APIs (for example `LoginWith[Platform]` APIs), the **key** is the client's IP address.
 - For authenticated APIs: The key is dependent on the request header and request body (which is what is used to determine the calling entity and target entity of an API).
@@ -41,7 +43,7 @@ The **key** is the namespace ID.
   - If there's no target entity specified in the body of the API, the **key** is the entity ID of that calling entity.
   - If there's a target entity specified in the body of the API:
      - If the calling entity is a MasterPlayerAccount, TitlePlayerAccount, or Character entity type (for example the API was authenticated with an `X-Authorization` token associated to one of those entity types), the **key** is the calling entity's ID.
-     - If the calling entity is NOT one of the previous entity types, the **key** becomes the target entity's ID.
+     - If the calling entity isn't one of the previous entity types, the **key** becomes the target entity's ID.
 
 Here are some examples of the per-entity API rate limit logic:
 1. Client with IP address 23.192.228.80 calls `Client/LoginWith[Platform]` API. The key for the API request is 23.192.228.80.

@@ -2,15 +2,15 @@
 title: PlayFab Services SDK - Event Pipeline
 author: rgomez391
 description: Overview of the Event Pipeline features in the SDK
-ms.author: raulalbertog
-ms.date: 05/08/2023
+ms.author: kdearnley
+ms.date: 08/28/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, c++, windows, xbox, gdk, telemetry, insights
 ms.localizationpriority: medium
 ---
 
-# Event Pipeline
+# PlayFab Services SDK - Event Pipeline
 
 The Event Pipeline is a feature that is part of the PlayFab Services SDK and the main purpose is to allow game developers to send events to be stored in PlayFab Insights. It allows the developer to specify batch size, send frequency and other aspects of a proper telemetry solution.
 
@@ -26,7 +26,7 @@ The pipeline type is directly related to the type of events a pipeline emits. Th
 
 - **PlayStream Event Pipeline**: Can only emit PlayStream Events and uses [Write Events](/rest/api/playfab/events/play-stream-events/write-events) REST API.
 
-You can have multiple pipelines with different types and configurations but it's worth mentioning that the pipeline type **cannot** be changed after creation, a Pipeline reinstantiation would be required.
+You can have multiple pipelines with different types and configurations, but you **can't** change the pipeline type after creation. Changing the type requires reinstantiating the pipeline.
 
 ## Auth types
 
@@ -47,9 +47,9 @@ Telemetry Key auth is used when the game developer wants to log events that don'
 
 This auth type is the normal and most common PlayFab Authentication method. It's tightly related to a specific entity and it requires you to call the corresponding PlayFab Login APIs in order to get an Entity Token to be used on any subsequent calls. The following list represents the different type of entities that can be used with Entity Authentication.
 
-- **namespace**: The namespace entity refers to all global information for all titles within your studio.
-- **title**: The title entity refers to all global information for that title.
-- **master_player_account**: The master_player_account is a player entity that is shared by all titles within your studio.
+- **namespace**: The namespace entity represents the cross-title player identity and shared-data scope. The Publisher ID identifies the namespace.
+- **title**: The title entity represents the global information scoped to that title.
+- **master_player_account**: The `master_player_account` is a player entity shared by all titles in a namespace.
 - **title_player_account**: For most developers, title_player_account represents the player in the most traditional way.
 - **character**: The character entity is a subentity of title_player_account.
 - **group**: The group entity is a container for other entities. It's currently limited to players and characters.
