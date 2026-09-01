@@ -60,7 +60,7 @@ Name of the leaderboard.
 **`xboxToken`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Xbox token if Xbox friends should be included. Requires Xbox be configured on PlayFab.
+(Optional) XBOX token if XBOX friends should be included. Requires XBOX be configured on PlayFab.
   
   
 ## Requirements  
