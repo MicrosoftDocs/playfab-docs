@@ -5,7 +5,7 @@ description: "PFMultiplayerServerRequestMultiplayerServerRequest data model. Req
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerRequest  
@@ -70,7 +70,7 @@ Count of preferredRegions
 **`sessionCookie`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Data encoded as a string that is passed to the game server when requested. This can be used to to communicate information such as game mode or map through the request flow.
+(Optional) Data encoded as a string that is passed to the game server when requested. This can be used to communicate information such as game mode or map through the request flow. Maximum size is 8KB.
   
 **`sessionId`** &nbsp; const char*  
 *is null-terminated*  

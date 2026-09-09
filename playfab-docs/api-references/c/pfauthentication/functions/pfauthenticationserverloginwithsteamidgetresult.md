@@ -5,7 +5,7 @@ description: "Get the result from a PFAuthenticationServerLoginWithSteamIdAsync 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationServerLoginWithSteamIdGetResult  
@@ -17,10 +17,10 @@ Get the result from a PFAuthenticationServerLoginWithSteamIdAsync call. The PFEn
 ```cpp
 HRESULT PFAuthenticationServerLoginWithSteamIdGetResult(  
     XAsyncBlock* async,  
-    PFAuthenticationEntityTokenResponse entityTokenResponse,  
+    const PFAuthenticationEntityTokenResponse** entityTokenResponse,  
     size_t bufferSize,  
     void* buffer,  
-    PFAuthenticationLoginResult result,  
+    const PFAuthenticationLoginResult** result,  
     size_t* bufferUsed  
 )  
 ```  
@@ -32,7 +32,7 @@ HRESULT PFAuthenticationServerLoginWithSteamIdGetResult(
   
 XAsyncBlock for the async operation.  
   
-**`entityTokenResponse`** &nbsp; [PFAuthenticationEntityTokenResponse](../../pfauthenticationtypes/structs/pfauthenticationentitytokenresponse.md)  
+**`entityTokenResponse`** &nbsp; [PFAuthenticationEntityTokenResponse**](../../pfauthenticationtypes/structs/pfauthenticationentitytokenresponse.md)  
 *library-allocated output*  
   
 TBD    
@@ -46,7 +46,7 @@ The size of the buffer for the result object.
   
 Byte buffer used for the Login result value and its fields.  
   
-**`result`** &nbsp; [PFAuthenticationLoginResult](../../pfauthenticationtypes/structs/pfauthenticationloginresult.md)  
+**`result`** &nbsp; [PFAuthenticationLoginResult**](../../pfauthenticationtypes/structs/pfauthenticationloginresult.md)  
 *optional, library-allocated output*  
   
 Pointer to the LoginResult object.  

@@ -5,7 +5,7 @@ description: "Get the size in bytes needed to store the result of a UpdateStatis
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/20/2026
+ms.date: 09/08/2026
 ---
 
 # PFStatisticsUpdateStatisticsGetResultSize  
@@ -37,7 +37,7 @@ The buffer size in bytes required for the result.
 ### Return value
 Type: HRESULT
   
-Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_API_NOT_ENABLED_FOR_GAME_CLIENT_ACCESS, E_PF_ENTITY_TYPE_MISMATCH_WITH_STAT_DEFINITION, E_PF_INVALID_ENTITY_TYPE, E_PF_INVALID_EXTERNAL_ENTITY_ID, E_PF_INVALID_STATISTIC_SCORE, E_PF_METADATA_LENGTH_EXCEEDED, E_PF_NOT_AUTHORIZED, E_PF_STATISTIC_COLUMN_LENGTH_MISMATCH, E_PF_STATISTIC_NOT_FOUND, E_PF_TRANSACTION_ALREADY_APPLIED, E_PF_UPDATING_STATISTICS_USING_TRANSACTION_ID_NOT_AVAILABLE_FOR_FREE_TIER or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_API_NOT_ENABLED_FOR_GAME_CLIENT_ACCESS, E_PF_ENTITY_IS_NOT_A_MEMBER, E_PF_ENTITY_TYPE_MISMATCH_WITH_STAT_DEFINITION, E_PF_INVALID_ENTITY_TYPE, E_PF_INVALID_ENTITY_TYPE_FOR_AGGREGATION, E_PF_INVALID_EXTERNAL_ENTITY_ID, E_PF_INVALID_STATISTIC_SCORE, E_PF_METADATA_LENGTH_EXCEEDED, E_PF_NOT_AUTHORIZED, E_PF_STATISTIC_COLUMN_LENGTH_MISMATCH, E_PF_STATISTIC_NOT_FOUND, E_PF_STATISTIC_UPDATE_NOT_ALLOWED_WHILE_LINKED, E_PF_TRANSACTION_ALREADY_APPLIED, E_PF_UPDATING_STATISTICS_USING_TRANSACTION_ID_NOT_AVAILABLE_FOR_FREE_TIER or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
   
 ## Requirements  

@@ -5,7 +5,7 @@ description: "Services C API overview - PFAccountManagement.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # Services C API overview - PFAccountManagement.h
@@ -28,6 +28,9 @@ ms.date: 11/19/2024
 | [PFAccountManagementClientGetPlayerProfileAsync](functions/pfaccountmanagementclientgetplayerprofileasync.md) | Retrieves the player's profile |  
 | [PFAccountManagementClientGetPlayerProfileGetResult](functions/pfaccountmanagementclientgetplayerprofilegetresult.md) | Gets the result of a successful PFAccountManagementClientGetPlayerProfileAsync call. |  
 | [PFAccountManagementClientGetPlayerProfileGetResultSize](functions/pfaccountmanagementclientgetplayerprofilegetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayerProfile call. |  
+| [PFAccountManagementClientGetPlayFabIDsFromBattleNetAccountIdsAsync](functions/pfaccountmanagementclientgetplayfabidsfrombattlenetaccountidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of Battle.net account identifiers. |  
+| [PFAccountManagementClientGetPlayFabIDsFromBattleNetAccountIdsGetResult](functions/pfaccountmanagementclientgetplayfabidsfrombattlenetaccountidsgetresult.md) | Gets the result of a successful PFAccountManagementClientGetPlayFabIDsFromBattleNetAccountIdsAsync call. |  
+| [PFAccountManagementClientGetPlayFabIDsFromBattleNetAccountIdsGetResultSize](functions/pfaccountmanagementclientgetplayfabidsfrombattlenetaccountidsgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromBattleNetAccountIds call. |  
 | [PFAccountManagementClientGetPlayFabIDsFromFacebookIDsAsync](functions/pfaccountmanagementclientgetplayfabidsfromfacebookidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of Facebook identifiers. |  
 | [PFAccountManagementClientGetPlayFabIDsFromFacebookIDsGetResult](functions/pfaccountmanagementclientgetplayfabidsfromfacebookidsgetresult.md) | Gets the result of a successful PFAccountManagementClientGetPlayFabIDsFromFacebookIDsAsync call. |  
 | [PFAccountManagementClientGetPlayFabIDsFromFacebookIDsGetResultSize](functions/pfaccountmanagementclientgetplayfabidsfromfacebookidsgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromFacebookIDs call. |  
@@ -55,9 +58,15 @@ ms.date: 11/19/2024
 | [PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsAsync](functions/pfaccountmanagementclientgetplayfabidsfrompsnaccountidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of PlayStation :tm: Network identifiers. |  
 | [PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsGetResult](functions/pfaccountmanagementclientgetplayfabidsfrompsnaccountidsgetresult.md) | Gets the result of a successful PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsAsync call. |  
 | [PFAccountManagementClientGetPlayFabIDsFromPSNAccountIDsGetResultSize](functions/pfaccountmanagementclientgetplayfabidsfrompsnaccountidsgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromPSNAccountIDs call. |  
+| [PFAccountManagementClientGetPlayFabIDsFromPSNOnlineIDsAsync](functions/pfaccountmanagementclientgetplayfabidsfrompsnonlineidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of PlayStation :tm: Network identifiers. |  
+| [PFAccountManagementClientGetPlayFabIDsFromPSNOnlineIDsGetResult](functions/pfaccountmanagementclientgetplayfabidsfrompsnonlineidsgetresult.md) | Gets the result of a successful PFAccountManagementClientGetPlayFabIDsFromPSNOnlineIDsAsync call. |  
+| [PFAccountManagementClientGetPlayFabIDsFromPSNOnlineIDsGetResultSize](functions/pfaccountmanagementclientgetplayfabidsfrompsnonlineidsgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromPSNOnlineIDs call. |  
 | [PFAccountManagementClientGetPlayFabIDsFromSteamIDsAsync](functions/pfaccountmanagementclientgetplayfabidsfromsteamidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of Steam identifiers. The Steam identifiers are the profile IDs for the user accounts, available as SteamId in the Steamworks Community API calls. |  
 | [PFAccountManagementClientGetPlayFabIDsFromSteamIDsGetResult](functions/pfaccountmanagementclientgetplayfabidsfromsteamidsgetresult.md) | Gets the result of a successful PFAccountManagementClientGetPlayFabIDsFromSteamIDsAsync call. |  
 | [PFAccountManagementClientGetPlayFabIDsFromSteamIDsGetResultSize](functions/pfaccountmanagementclientgetplayfabidsfromsteamidsgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromSteamIDs call. |  
+| [PFAccountManagementClientGetPlayFabIDsFromSteamNamesAsync](functions/pfaccountmanagementclientgetplayfabidsfromsteamnamesasync.md) | Retrieves the unique PlayFab identifiers for the given set of Steam identifiers. The Steam identifiers are persona names. |  
+| [PFAccountManagementClientGetPlayFabIDsFromSteamNamesGetResult](functions/pfaccountmanagementclientgetplayfabidsfromsteamnamesgetresult.md) | Gets the result of a successful PFAccountManagementClientGetPlayFabIDsFromSteamNamesAsync call. |  
+| [PFAccountManagementClientGetPlayFabIDsFromSteamNamesGetResultSize](functions/pfaccountmanagementclientgetplayfabidsfromsteamnamesgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromSteamNames call. |  
 | [PFAccountManagementClientGetPlayFabIDsFromTwitchIDsAsync](functions/pfaccountmanagementclientgetplayfabidsfromtwitchidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of Twitch identifiers. The Twitch identifiers are the IDs for the user accounts, available as '_id' from the Twitch API methods (ex: https://github.com/justintv/Twitch-API/blob/master/v3_resources/users.md#get-usersuser). |  
 | [PFAccountManagementClientGetPlayFabIDsFromTwitchIDsGetResult](functions/pfaccountmanagementclientgetplayfabidsfromtwitchidsgetresult.md) | Gets the result of a successful PFAccountManagementClientGetPlayFabIDsFromTwitchIDsAsync call. |  
 | [PFAccountManagementClientGetPlayFabIDsFromTwitchIDsGetResultSize](functions/pfaccountmanagementclientgetplayfabidsfromtwitchidsgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromTwitchIDs call. |  
@@ -66,6 +75,7 @@ ms.date: 11/19/2024
 | [PFAccountManagementClientGetPlayFabIDsFromXboxLiveIDsGetResultSize](functions/pfaccountmanagementclientgetplayfabidsfromxboxliveidsgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayFabIDsFromXboxLiveIDs call. |  
 | [PFAccountManagementClientLinkAndroidDeviceIDAsync](functions/pfaccountmanagementclientlinkandroiddeviceidasync.md) | Links the Android device identifier to the user's PlayFab account |  
 | [PFAccountManagementClientLinkAppleAsync](functions/pfaccountmanagementclientlinkappleasync.md) | Links the Apple account associated with the token to the user's PlayFab account. |  
+| [PFAccountManagementClientLinkBattleNetAccountAsync](functions/pfaccountmanagementclientlinkbattlenetaccountasync.md) | Links the Battle.net account associated with the token to the user's PlayFab account. |  
 | [PFAccountManagementClientLinkCustomIDAsync](functions/pfaccountmanagementclientlinkcustomidasync.md) | Links the custom identifier, generated by the title, to the user's PlayFab account |  
 | [PFAccountManagementClientLinkFacebookAccountAsync](functions/pfaccountmanagementclientlinkfacebookaccountasync.md) | Links the Facebook account associated with the provided Facebook access token to the user's PlayFab account |  
 | [PFAccountManagementClientLinkFacebookInstantGamesIdAsync](functions/pfaccountmanagementclientlinkfacebookinstantgamesidasync.md) | Links the Facebook Instant Games Id to the user's PlayFab account |  
@@ -87,6 +97,7 @@ ms.date: 11/19/2024
 | [PFAccountManagementClientSendAccountRecoveryEmailAsync](functions/pfaccountmanagementclientsendaccountrecoveryemailasync.md) | Forces an email to be sent to the registered email address for the user's account, with a link allowing the user to change the password.If an account recovery email template ID is provided, an email using the custom email template will be used. |  
 | [PFAccountManagementClientUnlinkAndroidDeviceIDAsync](functions/pfaccountmanagementclientunlinkandroiddeviceidasync.md) | Unlinks the related Android device identifier from the user's PlayFab account |  
 | [PFAccountManagementClientUnlinkAppleAsync](functions/pfaccountmanagementclientunlinkappleasync.md) | Unlinks the related Apple account from the user's PlayFab account. |  
+| [PFAccountManagementClientUnlinkBattleNetAccountAsync](functions/pfaccountmanagementclientunlinkbattlenetaccountasync.md) | Unlinks the related Battle.net account from the user's PlayFab account. |  
 | [PFAccountManagementClientUnlinkCustomIDAsync](functions/pfaccountmanagementclientunlinkcustomidasync.md) | Unlinks the related custom identifier from the user's PlayFab account |  
 | [PFAccountManagementClientUnlinkFacebookAccountAsync](functions/pfaccountmanagementclientunlinkfacebookaccountasync.md) | Unlinks the related Facebook account from the user's PlayFab account |  
 | [PFAccountManagementClientUnlinkFacebookInstantGamesIdAsync](functions/pfaccountmanagementclientunlinkfacebookinstantgamesidasync.md) | Unlinks the related Facebook Instant Game Ids from the user's PlayFab account |  
@@ -109,7 +120,7 @@ ms.date: 11/19/2024
 | [PFAccountManagementGetTitlePlayersFromXboxLiveIDsAsync](functions/pfaccountmanagementgettitleplayersfromxboxliveidsasync.md) | Retrieves the title player accounts associated with the given XUIDs. |  
 | [PFAccountManagementGetTitlePlayersFromXboxLiveIDsGetResult](functions/pfaccountmanagementgettitleplayersfromxboxliveidsgetresult.md) | Gets the result of a successful PFAccountManagementGetTitlePlayersFromXboxLiveIDsAsync call. |  
 | [PFAccountManagementGetTitlePlayersFromXboxLiveIDsGetResultSize](functions/pfaccountmanagementgettitleplayersfromxboxliveidsgetresultsize.md) | Get the size in bytes needed to store the result of a GetTitlePlayersFromXboxLiveIDs call. |  
-| [PFAccountManagementServerBanUsersAsync](functions/pfaccountmanagementserverbanusersasync.md) | Bans users by PlayFab ID with optional IP address, for the provided game. |  
+| [PFAccountManagementServerBanUsersAsync](functions/pfaccountmanagementserverbanusersasync.md) | Bans users by PlayFab ID with optional IP address for the provided game. |  
 | [PFAccountManagementServerBanUsersGetResult](functions/pfaccountmanagementserverbanusersgetresult.md) | Gets the result of a successful PFAccountManagementServerBanUsersAsync call. |  
 | [PFAccountManagementServerBanUsersGetResultSize](functions/pfaccountmanagementserverbanusersgetresultsize.md) | Get the size in bytes needed to store the result of a ServerBanUsers call. |  
 | [PFAccountManagementServerDeletePlayerAsync](functions/pfaccountmanagementserverdeleteplayerasync.md) | Removes a user's player account from a title and deletes all associated data |  
@@ -119,6 +130,9 @@ ms.date: 11/19/2024
 | [PFAccountManagementServerGetPlayerProfileAsync](functions/pfaccountmanagementservergetplayerprofileasync.md) | Retrieves the player's profile |  
 | [PFAccountManagementServerGetPlayerProfileGetResult](functions/pfaccountmanagementservergetplayerprofilegetresult.md) | Gets the result of a successful PFAccountManagementServerGetPlayerProfileAsync call. |  
 | [PFAccountManagementServerGetPlayerProfileGetResultSize](functions/pfaccountmanagementservergetplayerprofilegetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetPlayerProfile call. |  
+| [PFAccountManagementServerGetPlayFabIDsFromBattleNetAccountIdsAsync](functions/pfaccountmanagementservergetplayfabidsfrombattlenetaccountidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of Battle.net account identifiers. |  
+| [PFAccountManagementServerGetPlayFabIDsFromBattleNetAccountIdsGetResult](functions/pfaccountmanagementservergetplayfabidsfrombattlenetaccountidsgetresult.md) | Gets the result of a successful PFAccountManagementServerGetPlayFabIDsFromBattleNetAccountIdsAsync call. |  
+| [PFAccountManagementServerGetPlayFabIDsFromBattleNetAccountIdsGetResultSize](functions/pfaccountmanagementservergetplayfabidsfrombattlenetaccountidsgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetPlayFabIDsFromBattleNetAccountIds call. |  
 | [PFAccountManagementServerGetPlayFabIDsFromFacebookIDsAsync](functions/pfaccountmanagementservergetplayfabidsfromfacebookidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of Facebook identifiers. |  
 | [PFAccountManagementServerGetPlayFabIDsFromFacebookIDsGetResult](functions/pfaccountmanagementservergetplayfabidsfromfacebookidsgetresult.md) | Gets the result of a successful PFAccountManagementServerGetPlayFabIDsFromFacebookIDsAsync call. |  
 | [PFAccountManagementServerGetPlayFabIDsFromFacebookIDsGetResultSize](functions/pfaccountmanagementservergetplayfabidsfromfacebookidsgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetPlayFabIDsFromFacebookIDs call. |  
@@ -134,9 +148,15 @@ ms.date: 11/19/2024
 | [PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsAsync](functions/pfaccountmanagementservergetplayfabidsfrompsnaccountidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of PlayStation :tm: Network identifiers. |  
 | [PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsGetResult](functions/pfaccountmanagementservergetplayfabidsfrompsnaccountidsgetresult.md) | Gets the result of a successful PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsAsync call. |  
 | [PFAccountManagementServerGetPlayFabIDsFromPSNAccountIDsGetResultSize](functions/pfaccountmanagementservergetplayfabidsfrompsnaccountidsgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetPlayFabIDsFromPSNAccountIDs call. |  
+| [PFAccountManagementServerGetPlayFabIDsFromPSNOnlineIDsAsync](functions/pfaccountmanagementservergetplayfabidsfrompsnonlineidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of PlayStation :tm: Network identifiers. |  
+| [PFAccountManagementServerGetPlayFabIDsFromPSNOnlineIDsGetResult](functions/pfaccountmanagementservergetplayfabidsfrompsnonlineidsgetresult.md) | Gets the result of a successful PFAccountManagementServerGetPlayFabIDsFromPSNOnlineIDsAsync call. |  
+| [PFAccountManagementServerGetPlayFabIDsFromPSNOnlineIDsGetResultSize](functions/pfaccountmanagementservergetplayfabidsfrompsnonlineidsgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetPlayFabIDsFromPSNOnlineIDs call. |  
 | [PFAccountManagementServerGetPlayFabIDsFromSteamIDsAsync](functions/pfaccountmanagementservergetplayfabidsfromsteamidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of Steam identifiers. The Steam identifiers are the profile IDs for the user accounts, available as SteamId in the Steamworks Community API calls. |  
 | [PFAccountManagementServerGetPlayFabIDsFromSteamIDsGetResult](functions/pfaccountmanagementservergetplayfabidsfromsteamidsgetresult.md) | Gets the result of a successful PFAccountManagementServerGetPlayFabIDsFromSteamIDsAsync call. |  
 | [PFAccountManagementServerGetPlayFabIDsFromSteamIDsGetResultSize](functions/pfaccountmanagementservergetplayfabidsfromsteamidsgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetPlayFabIDsFromSteamIDs call. |  
+| [PFAccountManagementServerGetPlayFabIDsFromSteamNamesAsync](functions/pfaccountmanagementservergetplayfabidsfromsteamnamesasync.md) | Retrieves the unique PlayFab identifiers for the given set of Steam identifiers. The Steam identifiers are persona names. |  
+| [PFAccountManagementServerGetPlayFabIDsFromSteamNamesGetResult](functions/pfaccountmanagementservergetplayfabidsfromsteamnamesgetresult.md) | Gets the result of a successful PFAccountManagementServerGetPlayFabIDsFromSteamNamesAsync call. |  
+| [PFAccountManagementServerGetPlayFabIDsFromSteamNamesGetResultSize](functions/pfaccountmanagementservergetplayfabidsfromsteamnamesgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetPlayFabIDsFromSteamNames call. |  
 | [PFAccountManagementServerGetPlayFabIDsFromTwitchIDsAsync](functions/pfaccountmanagementservergetplayfabidsfromtwitchidsasync.md) | Retrieves the unique PlayFab identifiers for the given set of Twitch identifiers. The Twitch identifiers are the IDs for the user accounts, available as '_id' from the Twitch API methods (ex: https://github.com/justintv/Twitch-API/blob/master/v3_resources/users.md#get-usersuser). |  
 | [PFAccountManagementServerGetPlayFabIDsFromTwitchIDsGetResult](functions/pfaccountmanagementservergetplayfabidsfromtwitchidsgetresult.md) | Gets the result of a successful PFAccountManagementServerGetPlayFabIDsFromTwitchIDsAsync call. |  
 | [PFAccountManagementServerGetPlayFabIDsFromTwitchIDsGetResultSize](functions/pfaccountmanagementservergetplayfabidsfromtwitchidsgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetPlayFabIDsFromTwitchIDs call. |  
@@ -152,10 +172,12 @@ ms.date: 11/19/2024
 | [PFAccountManagementServerGetUserBansAsync](functions/pfaccountmanagementservergetuserbansasync.md) | Gets all bans for a user. |  
 | [PFAccountManagementServerGetUserBansGetResult](functions/pfaccountmanagementservergetuserbansgetresult.md) | Gets the result of a successful PFAccountManagementServerGetUserBansAsync call. |  
 | [PFAccountManagementServerGetUserBansGetResultSize](functions/pfaccountmanagementservergetuserbansgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetUserBans call. |  
+| [PFAccountManagementServerLinkBattleNetAccountAsync](functions/pfaccountmanagementserverlinkbattlenetaccountasync.md) | Links the Battle.net account associated with the token to the user's PlayFab account. |  
 | [PFAccountManagementServerLinkNintendoServiceAccountAsync](functions/pfaccountmanagementserverlinknintendoserviceaccountasync.md) | Links the Nintendo account associated with the token to the user's PlayFab account |  
 | [PFAccountManagementServerLinkNintendoServiceAccountSubjectAsync](functions/pfaccountmanagementserverlinknintendoserviceaccountsubjectasync.md) | Links the Nintendo account associated with the Nintendo Service Account subject or id to the user's PlayFab account |  
 | [PFAccountManagementServerLinkNintendoSwitchDeviceIdAsync](functions/pfaccountmanagementserverlinknintendoswitchdeviceidasync.md) | Links the NintendoSwitchDeviceId to the user's PlayFab account |  
 | [PFAccountManagementServerLinkPSNAccountAsync](functions/pfaccountmanagementserverlinkpsnaccountasync.md) | Links the PlayStation :tm: Network account associated with the provided access code to the user's PlayFab account |  
+| [PFAccountManagementServerLinkPSNIdAsync](functions/pfaccountmanagementserverlinkpsnidasync.md) | Links the PlayStation :tm: Network account associated with the provided user id to the user's PlayFab account |  
 | [PFAccountManagementServerLinkServerCustomIdAsync](functions/pfaccountmanagementserverlinkservercustomidasync.md) | Links the custom server identifier, generated by the title, to the user's PlayFab account. |  
 | [PFAccountManagementServerLinkSteamIdAsync](functions/pfaccountmanagementserverlinksteamidasync.md) | Links the Steam account associated with the provided Steam ID to the user's PlayFab account |  
 | [PFAccountManagementServerLinkXboxAccountAsync](functions/pfaccountmanagementserverlinkxboxaccountasync.md) | Links the Xbox Live account associated with the provided access code to the user's PlayFab account |  
@@ -167,6 +189,7 @@ ms.date: 11/19/2024
 | [PFAccountManagementServerRevokeBansGetResultSize](functions/pfaccountmanagementserverrevokebansgetresultsize.md) | Get the size in bytes needed to store the result of a ServerRevokeBans call. |  
 | [PFAccountManagementServerSendCustomAccountRecoveryEmailAsync](functions/pfaccountmanagementserversendcustomaccountrecoveryemailasync.md) | Forces an email to be sent to the registered contact email address for the user's account based on an account recovery email template |  
 | [PFAccountManagementServerSendEmailFromTemplateAsync](functions/pfaccountmanagementserversendemailfromtemplateasync.md) | Sends an email based on an email template to a player's contact email |  
+| [PFAccountManagementServerUnlinkBattleNetAccountAsync](functions/pfaccountmanagementserverunlinkbattlenetaccountasync.md) | Unlinks the related Battle.net account from the user's PlayFab account. |  
 | [PFAccountManagementServerUnlinkNintendoServiceAccountAsync](functions/pfaccountmanagementserverunlinknintendoserviceaccountasync.md) | Unlinks the related Nintendo account from the user's PlayFab account |  
 | [PFAccountManagementServerUnlinkNintendoSwitchDeviceIdAsync](functions/pfaccountmanagementserverunlinknintendoswitchdeviceidasync.md) | Unlinks the related NintendoSwitchDeviceId from the user's PlayFab account |  
 | [PFAccountManagementServerUnlinkPSNAccountAsync](functions/pfaccountmanagementserverunlinkpsnaccountasync.md) | Unlinks the related PlayStation :tm: Network account from the user's PlayFab account |  
@@ -177,3 +200,6 @@ ms.date: 11/19/2024
 | [PFAccountManagementServerUpdateBansAsync](functions/pfaccountmanagementserverupdatebansasync.md) | Updates information of a list of existing bans specified with Ban Ids. |  
 | [PFAccountManagementServerUpdateBansGetResult](functions/pfaccountmanagementserverupdatebansgetresult.md) | Gets the result of a successful PFAccountManagementServerUpdateBansAsync call. |  
 | [PFAccountManagementServerUpdateBansGetResultSize](functions/pfaccountmanagementserverupdatebansgetresultsize.md) | Get the size in bytes needed to store the result of a ServerUpdateBans call. |  
+| [PFAccountManagementSetDisplayNameAsync](functions/pfaccountmanagementsetdisplaynameasync.md) | Update the display name of the entity |  
+| [PFAccountManagementSetDisplayNameGetResult](functions/pfaccountmanagementsetdisplaynamegetresult.md) | Gets the result of a successful PFAccountManagementSetDisplayNameAsync call. |  
+| [PFAccountManagementSetDisplayNameGetResultSize](functions/pfaccountmanagementsetdisplaynamegetresultsize.md) | Get the size in bytes needed to store the result of a SetDisplayName call. |  

@@ -5,7 +5,7 @@ description: "Redeem items."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryRedeemAppleAppStoreInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on iOS. Redeem items from the Apple App Store. When the asynchronous task is complete, call [PFInventoryRedeemAppleAppStoreInventoryItemsGetResultSize](pfinventoryredeemappleappstoreinventoryitemsgetresultsize.md) and [PFInventoryRedeemAppleAppStoreInventoryItemsGetResult](pfinventoryredeemappleappstoreinventoryitemsgetresult.md) to get the result.
+This API is available on Windows and iOS. Redeem items from the Apple App Store. When the asynchronous task is complete, call [PFInventoryRedeemAppleAppStoreInventoryItemsGetResultSize](pfinventoryredeemappleappstoreinventoryitemsgetresultsize.md) and [PFInventoryRedeemAppleAppStoreInventoryItemsGetResult](pfinventoryredeemappleappstoreinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "Gets the result of a successful PFCloudScriptServerExecuteCloudScr
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCloudScriptServerExecuteCloudScriptGetResult  
@@ -54,7 +54,7 @@ The number of bytes in the provided buffer that were used.
 ### Return value
 Type: HRESULT
   
-Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_CLOUD_SCRIPT_API_REQUEST_COUNT_EXCEEDED, E_PF_CLOUD_SCRIPT_API_REQUEST_ERROR, E_PF_CLOUD_SCRIPT_FUNCTION_ARGUMENT_SIZE_EXCEEDED, E_PF_CLOUD_SCRIPT_HTTP_REQUEST_ERROR, E_PF_CLOUD_SCRIPT_NOT_FOUND, E_PF_JAVASCRIPT_EXCEPTION, E_PF_TITLE_DELETED or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_CLOUD_SCRIPT_API_REQUEST_COUNT_EXCEEDED, E_PF_CLOUD_SCRIPT_API_REQUEST_ERROR, E_PF_CLOUD_SCRIPT_FUNCTION_ARGUMENT_SIZE_EXCEEDED, E_PF_CLOUD_SCRIPT_HTTP_REQUEST_ERROR, E_PF_CLOUD_SCRIPT_NOT_FOUND, E_PF_JAVASCRIPT_EXCEPTION, E_PF_PRODUCT_DISABLED_FOR_TITLE, E_PF_TITLE_DELETED or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Remarks  
   

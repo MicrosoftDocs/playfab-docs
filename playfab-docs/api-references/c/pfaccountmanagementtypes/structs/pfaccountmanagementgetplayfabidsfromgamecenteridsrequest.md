@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayFabIDsFromGameCenterIDsRequest data mode
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementGetPlayFabIDsFromGameCenterIDsRequest  
@@ -25,7 +25,7 @@ typedef struct PFAccountManagementGetPlayFabIDsFromGameCenterIDsRequest {
   
 **`gameCenterIDs`** &nbsp; const char* const*  
   
-Array of unique Game Center identifiers (the Player Identifier) for which the title needs to get PlayFab identifiers. The array cannot exceed 2,000 in length.
+Array of unique Game Center identifiers (the Player Identifier) for which the title needs to get PlayFab identifiers. The array cannot exceed 25 in length.
   
 **`gameCenterIDsCount`** &nbsp; uint32_t  
   

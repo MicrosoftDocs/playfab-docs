@@ -5,7 +5,7 @@ description: "Services C API overview - PFPlatform.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # Services C API overview - PFPlatform.h
@@ -18,6 +18,8 @@ ms.date: 11/19/2024
 | [PFMemGetFunctions](functions/pfmemgetfunctions.md) | Gets the memory hook functions to allow callers to control route memory allocations to their own memory manager. This method allows the application get the default memory allocation routines. This can be used along with PFMemSetFunctions() to monitor all memory allocations. |  
 | [PFMemIsUsingCustomMemoryFunctions](functions/pfmemisusingcustommemoryfunctions.md) | Determines if custom memory functions are being used. |  
 | [PFMemSetFunctions](functions/pfmemsetfunctions.md) | Optionally sets the memory hook functions to allow callers to control route memory allocations to their own memory manager. This must be called before PFInitialize() and can not be called again once memory hooks have been set. This method allows the application to install custom memory allocation routines in order to service all requests for new memory buffers instead of using default allocation routines. |  
+| [PFPlatformGetPlatformType](functions/pfplatformgetplatformtype.md) | TBD   |  
+| [PFPlatformIsGRTSAvailable](functions/pfplatformisgrtsavailable.md) | TBD   |  
 | [PFPlatformLocalStorageSetHandlers](functions/pfplatformlocalstoragesethandlers.md) | Sets the storage event handlers. If custom storage handlers are not set, a default implementation based on cstdio and std::fstream objects will be used. |  
   
 ## Structures  
@@ -26,3 +28,14 @@ ms.date: 11/19/2024
 | --- | --- |  
 | [PFLocalStorageHooks](structs/pflocalstoragehooks.md) | Struct encapsulating the storage hooks. |  
 | [PFMemoryHooks](structs/pfmemoryhooks.md) | Struct encapsulating memory hooks. |  
+  
+## State changes  
+  
+| State change | Description |  
+| --- | --- |  
+  
+## Enumerations  
+
+| Enumeration | Description |  
+| --- | --- |  
+| [PFPlatformType](enums/pfplatformtype.md) | TBD|  

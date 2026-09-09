@@ -5,7 +5,7 @@ description: "PFAuthenticationLoginResult data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationLoginResult  
@@ -39,7 +39,7 @@ typedef struct PFAuthenticationLoginResult {
   
 **`newlyCreated`** &nbsp; bool  
   
-True if the account was newly created on this login.
+True if the master_player_account was newly created on this login.
   
 **`playFabId`** &nbsp; const char*  
 *is null-terminated*  

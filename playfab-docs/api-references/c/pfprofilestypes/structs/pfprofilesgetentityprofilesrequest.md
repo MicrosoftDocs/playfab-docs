@@ -5,7 +5,7 @@ description: "PFProfilesGetEntityProfilesRequest data model. Given a set of enti
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFProfilesGetEntityProfilesRequest  
@@ -21,6 +21,7 @@ typedef struct PFProfilesGetEntityProfilesRequest {
     bool const* dataAsObject;  
     PFEntityKey const* entities;  
     uint32_t entitiesCount;  
+    bool includeStatistics;  
 } PFProfilesGetEntityProfilesRequest;  
 ```
   
@@ -47,6 +48,10 @@ Entity keys of the profiles to load. Must be between 1 and 25.
 **`entitiesCount`** &nbsp; uint32_t  
   
 Count of entities
+  
+**`includeStatistics`** &nbsp; bool  
+  
+Determines whether the entity statistics will be returned in the entity profile. Default is false.
   
   
 ## Requirements  

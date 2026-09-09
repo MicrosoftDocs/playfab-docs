@@ -5,7 +5,7 @@ description: "Services C API overview - PFTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # Services C API overview - PFTypes.h
@@ -45,6 +45,7 @@ ms.date: 11/19/2024
 | [PFUserAccountInfo](structs/pfuseraccountinfo.md) | PFUserAccountInfo data model. |  
 | [PFUserAndroidDeviceInfo](structs/pfuserandroiddeviceinfo.md) | PFUserAndroidDeviceInfo data model. |  
 | [PFUserAppleIdInfo](structs/pfuserappleidinfo.md) | PFUserAppleIdInfo data model. |  
+| [PFUserBattleNetInfo](structs/pfuserbattlenetinfo.md) | PFUserBattleNetInfo data model. |  
 | [PFUserCustomIdInfo](structs/pfusercustomidinfo.md) | PFUserCustomIdInfo data model. |  
 | [PFUserDataRecord](structs/pfuserdatarecord.md) | PFUserDataRecord data model. |  
 | [PFUserDataRecordDictionaryEntry](structs/pfuserdatarecorddictionaryentry.md) | Dictionary entry for an associative array with PFUserDataRecord values. |  
@@ -84,7 +85,7 @@ ms.date: 11/19/2024
 | [PFCountryCode](enums/pfcountrycode.md) | CountryCode enum.|  
 | [PFCurrency](enums/pfcurrency.md) | Currency enum.|  
 | [PFEmailVerificationStatus](enums/pfemailverificationstatus.md) | EmailVerificationStatus enum.|  
-| [PFEventType](enums/pfeventtype.md) | EventType enum.|
+| [PFEventType](enums/pfeventtype.md) | EventType enum.|  
 | [PFLoginIdentityProvider](enums/pfloginidentityprovider.md) | LoginIdentityProvider enum.|  
 | [PFOperationTypes](enums/pfoperationtypes.md) | OperationTypes enum.|  
 | [PFPushNotificationPlatform](enums/pfpushnotificationplatform.md) | PushNotificationPlatform enum.|  

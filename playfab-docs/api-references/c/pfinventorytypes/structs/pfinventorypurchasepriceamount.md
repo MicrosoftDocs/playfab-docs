@@ -5,7 +5,7 @@ description: "PFInventoryPurchasePriceAmount data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryPurchasePriceAmount  
@@ -18,8 +18,7 @@ PFInventoryPurchasePriceAmount data model.
 typedef struct PFInventoryPurchasePriceAmount {  
     int32_t amount;  
     const char* itemId;  
-    const char* stackId;
-    int32_t balance;  
+    const char* stackId;  
 } PFInventoryPurchasePriceAmount;  
 ```
   
@@ -38,10 +37,6 @@ The amount of the inventory item to use in the purchase .
 *is null-terminated*  
   
 (Optional) The inventory stack id the to use in the purchase. Set to "default" by default.
-
-**`balance`** &nbsp; int32_t
-
-(Optional) The balance of the items changed as a result of the transaction.
   
   
 ## Requirements  

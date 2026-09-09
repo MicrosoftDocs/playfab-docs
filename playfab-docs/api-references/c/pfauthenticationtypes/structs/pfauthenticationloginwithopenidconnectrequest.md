@@ -5,7 +5,7 @@ description: "PFAuthenticationLoginWithOpenIdConnectRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationLoginWithOpenIdConnectRequest  
@@ -59,7 +59,7 @@ The JSON Web token (JWT) returned by the identity provider after login. Represen
 **`playerSecret`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Player secret that is used to verify API request signatures (Enterprise Only).
+(Optional) Player secret that is used to verify API request signatures.
   
   
 ## Requirements  

@@ -5,12 +5,12 @@ description: "Creates or updates a review for the specified item. More informati
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCatalogReviewItemAsync  
 
-Creates or updates a review for the specified item. More information around the caching surrounding item ratings and reviews can be found here: [https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/ratings#ratings-design-and-caching](/gaming/playfab/features/economy-v2/catalog/ratings#ratings-design-and-caching)  
+Creates or updates a review for the specified item. More information around the caching surrounding item ratings and reviews can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/ratings#ratings-design-and-caching  
 
 ## Syntax  
   

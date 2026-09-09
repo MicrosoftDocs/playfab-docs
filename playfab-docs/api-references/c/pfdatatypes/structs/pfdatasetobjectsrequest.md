@@ -5,7 +5,7 @@ description: "PFDataSetObjectsRequest data model. Sets JSON objects on the reque
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFDataSetObjectsRequest  
@@ -43,7 +43,7 @@ The entity to perform this action on.
 **`expectedProfileVersion`** &nbsp; int32_t const*  
 *may be nullptr*  
   
-(Optional) Optional field used for concurrency control. By specifying the previously returned value of ProfileVersion from GetProfile API, you can ensure that the object set will only be performed if the profile has not been updated by any other clients since the version you last loaded.
+(Optional) Optional field used for concurrency control. By specifying the previously returned ProfileVersion value from the GetObjects API or other APIs, you can ensure that the object update is performed only if the profile has not been updated since you last loaded that version. If the profile for the same entity has been updated, the operation will fail with an EntityProfileVersionMismatch error. The conflicting update can be caused by any operation that modifies the entity profile, including SetObjects, FinalizeFileUploads, and UpdateStatistics.
   
 **`objects`** &nbsp; [PFDataSetObject](pfdatasetobject.md) const*  
   

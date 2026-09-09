@@ -5,7 +5,7 @@ description: "PFUserPsnInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFUserPsnInfo  
@@ -18,6 +18,7 @@ PFUserPsnInfo data model.
 typedef struct PFUserPsnInfo {  
     const char* psnAccountId;  
     const char* psnOnlineId;  
+    const char* psnSandboxId;  
 } PFUserPsnInfo;  
 ```
   
@@ -32,6 +33,11 @@ typedef struct PFUserPsnInfo {
 *is null-terminated*  
   
 (Optional) PlayStation :tm: Network online ID.
+  
+**`psnSandboxId`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) PlayStation :tm: Network sandbox ID.
   
   
 ## Requirements  

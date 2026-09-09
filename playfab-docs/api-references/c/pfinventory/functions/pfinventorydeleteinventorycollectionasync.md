@@ -5,12 +5,12 @@ description: "Delete an Inventory Collection. More information about Inventory C
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryDeleteInventoryCollectionAsync  
 
-Delete an Inventory Collection. More information about Inventory Collections can be found here: [https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/collections](/gaming/playfab/features/economy-v2/inventory/collections)  
+Delete an Inventory Collection. More information about Inventory Collections can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/inventory/collections  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on all platforms. Delete an Inventory Collection by the specified Id for an Entity. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be one of global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+This API is available on all platforms. Delete an Inventory Collection by the specified Id for an Entity. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be E_PF_INVENTORY_COLLECTION_DELETION_DISALLOWED or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Requirements  
   

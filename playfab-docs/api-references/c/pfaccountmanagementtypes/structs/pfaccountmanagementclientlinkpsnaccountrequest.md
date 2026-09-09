@@ -5,7 +5,7 @@ description: "PFAccountManagementClientLinkPSNAccountRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementClientLinkPSNAccountRequest  
@@ -17,6 +17,7 @@ PFAccountManagementClientLinkPSNAccountRequest data model.
 ```cpp
 typedef struct PFAccountManagementClientLinkPSNAccountRequest {  
     const char* authCode;  
+    const char* authVersion;  
     PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     bool const* forceLink;  
@@ -31,6 +32,11 @@ typedef struct PFAccountManagementClientLinkPSNAccountRequest {
 *is null-terminated*  
   
 Authentication code provided by the PlayStation :tm: Network.
+  
+**`authVersion`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) Optional PlayStation :tm: Network auth version. Controls which PlayStation :tm: Network auth version is used. Accepted values are "v2" and "v3".
   
 **`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
 *may be nullptr*  

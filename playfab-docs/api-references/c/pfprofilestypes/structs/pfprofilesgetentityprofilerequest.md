@@ -5,7 +5,7 @@ description: "PFProfilesGetEntityProfileRequest data model. Given an entity type
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFProfilesGetEntityProfileRequest  
@@ -20,6 +20,7 @@ typedef struct PFProfilesGetEntityProfileRequest {
     uint32_t customTagsCount;  
     bool const* dataAsObject;  
     PFEntityKey const* entity;  
+    bool includeStatistics;  
 } PFProfilesGetEntityProfileRequest;  
 ```
   
@@ -43,6 +44,10 @@ Count of customTags
 *may be nullptr*  
   
 (Optional) The optional entity to perform this action on. Defaults to the currently logged in entity.
+  
+**`includeStatistics`** &nbsp; bool  
+  
+Determines whether the entity statistics will be returned in the entity profile. Default is false.
   
   
 ## Requirements  

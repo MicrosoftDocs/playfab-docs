@@ -5,7 +5,7 @@ description: "Services C API overview - PFEntity.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # Services C API overview - PFEntity.h
@@ -26,6 +26,8 @@ ms.date: 11/19/2024
 | [PFEntityGetEntityTokenResultSize](functions/pfentitygetentitytokenresultsize.md) | Get the size in bytes needed to store the result of a PFEntityGetEntityTokenAsync call. |  
 | [PFEntityGetSecretKey](functions/pfentitygetsecretkey.md) | Gets the PlayFab secretKey associated with a title Entity. Will fail with E_PF_NOSECRETKEY if there is no Secret Key associated with the provided Entity. |  
 | [PFEntityGetSecretKeySize](functions/pfentitygetsecretkeysize.md) | Gets the size of the buffer needed to hold the PlayFab secretKey. Will fail with E_PF_NOSECRETKEY if there is no Secret Key associated with the provided Entity. |  
+| [PFEntityGetTitleId](functions/pfentitygettitleid.md) | Gets the titleId for the PFServiceConfig associated with an entity handle. |  
+| [PFEntityGetTitleIdSize](functions/pfentitygettitleidsize.md) | Gets the size of the buffer needed to hold the titleId string from an entity handle. |  
 | [PFEntityIsTitlePlayer](functions/pfentityistitleplayer.md) | Convenience method to check if an Entity is a Title Player. This is equivalent to calling PFEntityGetEntityKey and comparing entityKey.type to PFTitlePlayerEntityType. |  
 | [PFEntityRegisterTokenExpiredEventHandler](functions/pfentityregistertokenexpiredeventhandler.md) | Register a handler for EntityToken expired events. |  
 | [PFEntityRegisterTokenRefreshedEventHandler](functions/pfentityregistertokenrefreshedeventhandler.md) | Register a handler for EntityToken refreshed events. |  

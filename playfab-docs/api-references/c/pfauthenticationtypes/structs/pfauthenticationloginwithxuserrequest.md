@@ -5,7 +5,7 @@ description: "PFAuthenticationLoginWithXUserRequest data model. If this is the f
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationLoginWithXUserRequest  
@@ -57,10 +57,10 @@ XUserHandle returned from XUserAddAsync or XUserAddByIdWithUiAsync.
   
 ## Requirements  
   
-**Header:** PFAuthenticationTypes.h
+**Header:** PFAuthenticationTypes_Xbox.h
   
 ## See also  
-[PFAuthenticationTypes members](../pfauthenticationtypes_members.md)  
+[PFAuthenticationTypes_Xbox members](../pfauthenticationtypes_members.md)  
 
   
   

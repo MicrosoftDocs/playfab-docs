@@ -5,7 +5,7 @@ description: "PFAccountManagementLinkPSNIdRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementLinkPSNIdRequest  
@@ -22,6 +22,7 @@ typedef struct PFAccountManagementLinkPSNIdRequest {
     int32_t const* issuerId;  
     const char* playFabId;  
     const char* PSNUserId;  
+    const char* sandboxId;  
 } PFAccountManagementLinkPSNIdRequest;  
 ```
   
@@ -55,6 +56,11 @@ Unique PlayFab assigned ID of the user on whom the operation will be performed.
 *is null-terminated*  
   
 Id of the PlayStation :tm: Network user. Also known as the PSN Account Id.
+  
+**`sandboxId`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) Optional sandbox id. When provided, resolves and links the player on that PlayStation :tm: Network sandbox.
   
   
 ## Requirements  

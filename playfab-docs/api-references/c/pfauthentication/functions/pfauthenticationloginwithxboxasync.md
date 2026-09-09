@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFAuthenticationLoginWithXboxAsync"
-description: "Signs the user in using a Xbox Live Token, returning a session identifier that can subsequently be used for API calls which require an authenticated user"
+description: "Signs the user in using a XBOX Live Token, returning a session identifier that can subsequently be used for API calls which require an authenticated user. If possible, PFAuthenticationLoginWithXUserAsync should be preferred, as it will more seamlessly handle automatic token refresh."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationLoginWithXboxAsync  
 
-Signs the user in using a Xbox Live Token, returning a session identifier that can subsequently be used for API calls which require an authenticated user  
+Signs the user in using a XBOX Live Token, returning a session identifier that can subsequently be used for API calls which require an authenticated user. If possible, PFAuthenticationLoginWithXUserAsync should be preferred, as it will more seamlessly handle automatic token refresh.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32, Linux, and macOS. If this is the first time a user has signed in with the Xbox Live account and CreateAccount is set to true, a new PlayFab account will be created and linked to the Xbox Live account. In this case, no email or username will be associated with the PlayFab account. Otherwise, if no PlayFab account is linked to the Xbox Live account, an error indicating this will be returned, so that the title can guide the user through creation of a PlayFab account. See also ClientLinkXboxAccountAsync, ClientUnlinkXboxAccountAsync. When the asynchronous task is complete, call [PFAuthenticationLoginWithXboxGetResult](pfauthenticationloginwithxboxgetresult.md) to get the result.
+This API is available on all platforms. When the asynchronous task is complete, call [PFAuthenticationLoginWithXboxGetResult](pfauthenticationloginwithxboxgetresult.md) to get the result.
   
 ## Requirements  
   

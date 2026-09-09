@@ -5,7 +5,7 @@ description: "PFInventoryTransaction data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryTransaction  
@@ -17,6 +17,9 @@ PFInventoryTransaction data model.
 ```cpp
 typedef struct PFInventoryTransaction {  
     const char* apiName;  
+    PFInventoryTransactionClawbackDetails const* clawbackDetails;  
+    PFStringDictionaryEntry const* customTags;  
+    uint32_t customTagsCount;  
     const char* itemType;  
     PFInventoryTransactionOperation const* operations;  
     uint32_t operationsCount;  
@@ -35,6 +38,20 @@ typedef struct PFInventoryTransaction {
 *is null-terminated*  
   
 (Optional) The API call that caused this transaction.
+  
+**`clawbackDetails`** &nbsp; [PFInventoryTransactionClawbackDetails](pfinventorytransactionclawbackdetails.md) const*  
+*may be nullptr*  
+  
+(Optional) Additional details about the transaction. Null if it was not a clawback operation.
+  
+**`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
+*may be nullptr*  
+  
+(Optional) The custom tags associated with this transactions.
+  
+**`customTagsCount`** &nbsp; uint32_t  
+  
+Count of customTags
   
 **`itemType`** &nbsp; const char*  
 *is null-terminated*  

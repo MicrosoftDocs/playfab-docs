@@ -5,7 +5,7 @@ description: "Registers the Android device to receive push notifications"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/20/2026
+ms.date: 09/08/2026
 ---
 
 # PFPlatformSpecificClientAndroidDevicePushNotificationRegistrationAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Android. More information can be found on configuring your game for the Google Cloud Messaging service in the Google developer documentation, here: http://developer.android.com/google/gcm/client.html. For the steps to configure and send push notifications, see the [push notifications quickstart](../../../../live-service-management/game-configuration/title-communications/push-notifications/quickstart.md). Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be E_PF_NO_PUSH_NOTIFICATION_ARN_FOR_TITLE, E_PF_PUSH_SERVICE_ERROR or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+This API is available on Android. More information can be found on configuring your game for the Google Cloud Messaging service in the Google developer documentation, here: http://developer.android.com/google/gcm/client.html. The steps to configure and send Push Notifications is described in the PlayFab tutorials, here: https://docs.microsoft.com/gaming/playfab/features/engagement/push-notifications/quickstart. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be E_PF_NO_PUSH_NOTIFICATION_ARN_FOR_TITLE, E_PF_PUSH_SERVICE_ERROR or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Requirements  
   

@@ -5,7 +5,7 @@ description: "PFCatalogCatalogItem data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCatalogCatalogItem  
@@ -46,6 +46,7 @@ typedef struct PFCatalogCatalogItem {
     uint32_t platformsCount;  
     PFCatalogCatalogPriceOptions const* priceOptions;  
     PFCatalogRating const* rating;  
+    PFCatalogRealMoneyPriceDetails const* realMoneyPriceDetails;  
     time_t const* startDate;  
     PFCatalogStoreDetails const* storeDetails;  
     const char* const* tags;  
@@ -198,6 +199,11 @@ Count of platforms
 *may be nullptr*  
   
 (Optional) Rating summary for this item.
+  
+**`realMoneyPriceDetails`** &nbsp; [PFCatalogRealMoneyPriceDetails](pfcatalogrealmoneypricedetails.md) const*  
+*may be nullptr*  
+  
+(Optional) The real price the item was purchased for per marketplace.
   
 **`startDate`** &nbsp; time_t const*  
 *may be nullptr*  

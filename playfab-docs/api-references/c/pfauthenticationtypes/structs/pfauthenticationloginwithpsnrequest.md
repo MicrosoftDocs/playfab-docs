@@ -5,7 +5,7 @@ description: "PFAuthenticationLoginWithPSNRequest data model. If this is the fir
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationLoginWithPSNRequest  
@@ -17,6 +17,7 @@ PFAuthenticationLoginWithPSNRequest data model. If this is the first time a user
 ```cpp
 typedef struct PFAuthenticationLoginWithPSNRequest {  
     const char* authCode;  
+    const char* authVersion;  
     bool createAccount;  
     PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
@@ -33,6 +34,11 @@ typedef struct PFAuthenticationLoginWithPSNRequest {
 *is null-terminated*  
   
 Auth code provided by the PlayStation :tm: Network OAuth provider.
+  
+**`authVersion`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) Optional PlayStation :tm: Network auth version. Controls which PlayStation :tm: Network auth version is used. Accepted values are "v2" and "v3".
   
 **`createAccount`** &nbsp; bool  
   
@@ -60,7 +66,7 @@ Count of customTags
 **`playerSecret`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Player secret that is used to verify API request signatures (Enterprise Only).
+(Optional) Player secret that is used to verify API request signatures.
   
 **`redirectUri`** &nbsp; const char*  
 *is null-terminated*  

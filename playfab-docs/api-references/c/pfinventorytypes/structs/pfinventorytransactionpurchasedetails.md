@@ -5,7 +5,7 @@ description: "PFInventoryTransactionPurchaseDetails data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryTransactionPurchaseDetails  
@@ -16,12 +16,24 @@ PFInventoryTransactionPurchaseDetails data model.
   
 ```cpp
 typedef struct PFInventoryTransactionPurchaseDetails {  
+    const char* itemFriendlyId;  
+    const char* itemId;  
     const char* storeFriendlyId;  
     const char* storeId;  
 } PFInventoryTransactionPurchaseDetails;  
 ```
   
 ### Members  
+  
+**`itemFriendlyId`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The friendly id of the item that was purchased.
+  
+**`itemId`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The id of the item that was purchased.
   
 **`storeFriendlyId`** &nbsp; const char*  
 *is null-terminated*  

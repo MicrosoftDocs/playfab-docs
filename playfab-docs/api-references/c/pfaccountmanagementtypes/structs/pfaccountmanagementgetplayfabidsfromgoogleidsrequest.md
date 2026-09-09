@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayFabIDsFromGoogleIDsRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementGetPlayFabIDsFromGoogleIDsRequest  
@@ -25,7 +25,7 @@ typedef struct PFAccountManagementGetPlayFabIDsFromGoogleIDsRequest {
   
 **`googleIDs`** &nbsp; const char* const*  
   
-Array of unique Google identifiers (Google+ user IDs) for which the title needs to get PlayFab identifiers. The array cannot exceed 2,000 in length.
+Array of unique Google identifiers (Google+ user IDs) for which the title needs to get PlayFab identifiers. The array cannot exceed 25 in length.
   
 **`googleIDsCount`** &nbsp; uint32_t  
   

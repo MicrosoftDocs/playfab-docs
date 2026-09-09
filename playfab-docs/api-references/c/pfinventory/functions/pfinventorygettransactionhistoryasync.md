@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryGetTransactionHistoryAsync"
-description: "Get transaction history for a player. Up to 250 Events can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. Getting transaction history has a lower RPS limit than getting a Player's inventory with Player Entities having a limit of 30 requests in 300 seconds."
+description: "Get transaction history for a player. Up to 50 Events can be returned at once (or 250 with response compression enabled). You can use continuation tokens to paginate through results that return greater than the limit. Getting transaction history has a lower RPS limit than getting a Player's inventory with Player Entities having a limit of 30 requests in 300 seconds."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryGetTransactionHistoryAsync  
 
-Get transaction history for a player. Up to 250 Events can be returned at once. You can use continuation tokens to paginate through results that return greater than the limit. Getting transaction history has a lower RPS limit than getting a Player's inventory with Player Entities having a limit of 30 requests in 300 seconds.  
+Get transaction history for a player. Up to 50 Events can be returned at once (or 250 with response compression enabled). You can use continuation tokens to paginate through results that return greater than the limit. Getting transaction history has a lower RPS limit than getting a Player's inventory with Player Entities having a limit of 30 requests in 300 seconds.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32, Linux, and macOS. Get transaction history for specified entity and collection. When the asynchronous task is complete, call [PFInventoryGetTransactionHistoryGetResultSize](pfinventorygettransactionhistorygetresultsize.md) and [PFInventoryGetTransactionHistoryGetResult](pfinventorygettransactionhistorygetresult.md) to get the result.
+This API is available on Windows, Linux, and macOS. Get transaction history for specified entity and collection. When the asynchronous task is complete, call [PFInventoryGetTransactionHistoryGetResultSize](pfinventorygettransactionhistorygetresultsize.md) and [PFInventoryGetTransactionHistoryGetResult](pfinventorygettransactionhistorygetresult.md) to get the result.
   
 ## Requirements  
   

@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogUpdateDraftItemAsync"
-description: "Update the metadata for an item in the working catalog."
+description: "Update the metadata for an item in the working catalog. Note: SAS tokens provided are valid for 1 hour."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCatalogUpdateDraftItemAsync  
 
-Update the metadata for an item in the working catalog.  
+Update the metadata for an item in the working catalog. Note: SAS tokens provided are valid for 1 hour.  
 
 ## Syntax  
   

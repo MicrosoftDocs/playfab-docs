@@ -5,7 +5,7 @@ description: "Services C API overview - PFProfilesTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # Services C API overview - PFProfilesTypes.h
@@ -33,6 +33,9 @@ ms.date: 11/19/2024
 | [PFProfilesSetEntityProfilePolicyResponse](structs/pfprofilessetentityprofilepolicyresponse.md) | PFProfilesSetEntityProfilePolicyResponse data model. |  
 | [PFProfilesSetProfileLanguageRequest](structs/pfprofilessetprofilelanguagerequest.md) | PFProfilesSetProfileLanguageRequest data model. Given an entity profile, will update its language to the one passed in if the profile's version is equal to the one passed in. |  
 | [PFProfilesSetProfileLanguageResponse](structs/pfprofilessetprofilelanguageresponse.md) | PFProfilesSetProfileLanguageResponse data model. |  
+| [PFStatisticColumn](structs/pfstatisticcolumn.md) | PFStatisticColumn data model. |  
+| [PFStatisticColumnCollection](structs/pfstatisticcolumncollection.md) | PFStatisticColumnCollection data model. |  
+| [PFStatisticColumnCollectionDictionaryEntry](structs/pfstatisticcolumncollectiondictionaryentry.md) | Dictionary entry for an associative array with PFProfilesStatisticColumnCollection values. |  
   
 ## State changes  
   
@@ -44,3 +47,4 @@ ms.date: 11/19/2024
 | Enumeration | Description |  
 | --- | --- |  
 | [PFProfilesEffectType](enums/pfprofileseffecttype.md) | EffectType enum.|  
+| [PFStatisticAggregationMethod](enums/pfstatisticaggregationmethod.md) | StatisticAggregationMethod enum.|  

@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayFabIDsFromSteamIDsRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementGetPlayFabIDsFromSteamIDsRequest  
@@ -26,7 +26,7 @@ typedef struct PFAccountManagementGetPlayFabIDsFromSteamIDsRequest {
 **`steamStringIDs`** &nbsp; const char* const*  
 *may be nullptr*  
   
-(Optional) Array of unique Steam identifiers (Steam profile IDs) for which the title needs to get PlayFab identifiers. The array cannot exceed 2,000 in length.
+(Optional) Array of unique Steam identifiers (Steam profile IDs) for which the title needs to get PlayFab identifiers. The array cannot exceed 25 in length.
   
 **`steamStringIDsCount`** &nbsp; uint32_t  
   

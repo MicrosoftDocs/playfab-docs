@@ -5,7 +5,7 @@ description: "PFInventoryGetTransactionHistoryRequest data model. Get transactio
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryGetTransactionHistoryRequest  
@@ -41,7 +41,7 @@ typedef struct PFInventoryGetTransactionHistoryRequest {
   
 **`count`** &nbsp; int32_t  
   
-Number of items to retrieve. This value is optional. The default value is 10.
+Number of items to retrieve. This value is optional. The default value is 10. The maximum value is 50, or 250 if response compression is enabled.
   
 **`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
 *may be nullptr*  

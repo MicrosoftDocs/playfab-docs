@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFTraceEnableTraceToFile"
-description: "TBD"
+description: "Enables PlayFab trace logging to a file."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFTraceEnableTraceToFile  
 
-TBD    
+Enables PlayFab trace logging to a file.  
 
 ## Syntax  
   

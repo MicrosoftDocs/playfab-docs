@@ -5,7 +5,7 @@ description: "PFAccountManagementLinkSteamIdRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementLinkSteamIdRequest  
@@ -43,7 +43,7 @@ Count of customTags
 **`playFabId`** &nbsp; const char*  
 *is null-terminated*  
   
-Unique PlayFab identifier for a user, or null if no PlayFab account is linked to the Xbox Live identifier.
+PlayFab unique identifier of the user to link.
   
 **`steamId`** &nbsp; const char*  
 *is null-terminated*  

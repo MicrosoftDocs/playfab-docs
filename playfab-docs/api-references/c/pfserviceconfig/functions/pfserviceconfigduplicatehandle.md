@@ -5,7 +5,7 @@ description: "Duplicates a PFServiceConfigHandle."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFServiceConfigDuplicateHandle  
@@ -28,6 +28,7 @@ HRESULT PFServiceConfigDuplicateHandle(
 ServiceConfig handle to duplicate.  
   
 **`duplicatedHandle`** &nbsp; PFServiceConfigHandle*  
+*output*  
   
 The duplicated handle.  
   
