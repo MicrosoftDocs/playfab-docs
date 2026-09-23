@@ -1,9 +1,9 @@
 ---
 title: PlayFab Services SDK Release Notes 2026
-author: stevenLizano29
+author: Vicodex
 description: PlayFab Services SDK Release Notes for 2026.
-ms.author: v-stevenroj
-ms.date: 08/05/2026
+ms.author: victorku
+ms.date: 09/22/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -13,6 +13,17 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab).
+
+## 260922
+
+Date: September 22, 2026
+
+- Added the `IssuerId` field to `UserPsnInfo` in the Admin, Client, and Server APIs, which reports the PlayStation Network issuer environment that an account is keyed under.
+- Updated `IssuerId` and `SandboxId` descriptions for `GetPlayFabIDsFromPSNAccountIDs` and `GetPlayFabIDsFromPSNOnlineIDs` in the Client and Server APIs, and for `LinkPSNId` in the Server API, to clarify that sandbox membership is per account and that a mismatched value returns a null `PlayFabId` instead of an error.
+- Added the `GameSecretReferences` field to the `GetBuild` response in the Multiplayer API.
+- Added the `AccountNotFound` and `InvalidNamespaceMismatch` error codes to account link, unlink, and server login calls in the Server API.
+- Added the `LinkedAccountAlreadyClaimed` error code to `LinkTwitchAccount` in the Server API.
+- Removed the `InsightsManagementNewActiveEventExportLimitInvalid` error code from `SetPerformance` in the Insights API, and clarified that `ActiveEventExports` is always zero.
 
 ## 260805
 
