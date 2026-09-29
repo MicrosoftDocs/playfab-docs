@@ -3,7 +3,7 @@ title: PlayFab Services C/C++ SDK Release Notes
 author: amccalib
 description: PlayFab Services C/C++ SDK Release Notes.
 ms.author: andmcc
-ms.date: 10/11/2024
+ms.date: 09/04/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -15,6 +15,56 @@ These release notes are for __PlayFabCSdk__. For release notes for other PlayFab
 
 > [!NOTE]
 > For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
+
+## 2604.0.1
+
+Date: September 4, 2026
+
+### Breaking changes
+
+- Removed `PFInventoryGetMicrosoftStoreAccessTokensAsync`, its result functions, and its request and response types after the service API was retired.
+- Removed `PFSegmentsServerGetPlayersInSegmentAsync`, its result functions, and its supporting types after the service API was retired.
+- Removed the obsolete `entity` member from `PFAuthenticationGetEntityRequest`. `PFAuthenticationGetEntityAsync` now issues a token for the calling entity.
+- Renamed two Account Management request types to distinguish the Client and Server models:
+  - `PFAccountManagementUnlinkAppleRequest` is now `PFAccountManagementClientUnlinkAppleRequest`.
+  - `PFAccountManagementUnlinkGameCenterAccountRequest` is now `PFAccountManagementClientUnlinkGameCenterAccountRequest`.
+- Removed the retired `E_PF_COPILOT_DISABLED`, `E_PF_COPILOT_INVALID_REQUEST`, `E_PF_GET_PLAYERS_IN_SEGMENT_DEPRECATED`, and `E_PF_GET_PLAYERS_IN_SEGMENT_RATE_LIMIT_EXCEEDED` error codes.
+- Changed the underlying type of `PFGameSaveInitOptions` from `uint32_t` to `uint64_t`.
+- Added values to `PFMultiplayerServerAzureVmSize`. Existing values after the insertion points have new numeric representations, so applications shouldn't persist or transmit the numeric value of this enumeration across SDK versions.
+
+### API updates
+
+- Added the optional `namespaceWide` member to `PFFriendsClientGetFriendsListRequest` and `PFFriendsServerGetFriendsListRequest`. It includes friends from the same namespace who haven't signed in to the current title.
+- Added PlayStation Network authentication-version and sandbox support through new `authVersion`, `sandboxId`, and `psnSandboxId` members on the related Authentication, Account Management, and user-information models.
+- Added `issuer` to `PFAccountManagementGetPlayFabIDsFromNintendoServiceAccountIdsRequest`.
+- Added statistics data to entity profiles through `includeStatistics` and the new `PFStatisticColumn`, `PFStatisticColumnCollection`, and `PFStatisticColumnCollectionDictionaryEntry` types.
+- Added `aggregationTargetEntityKeys` to `PFStatisticsStatisticUpdate` and added the `PFStatisticAggregationMethod` enumeration.
+- Added `expirationTimestamp` to `PFInventoryRedemptionSuccess`, `region` to `PFMultiplayerServerRequestPartyServiceResponse`, and additional Azure VM sizes.
+- Added service error codes for new PlayStation Network, Nintendo, Economy, Experiments, Statistics, Segments, entity-membership, IP-address, and Game Save conditions.
+- `PFEntityRegisterTokenRefreshedEventHandler` now accepts an optional task queue.
+- Added `E_PF_GAMESAVE_OPERATION_IN_PROGRESS` for Game Save operations rejected because another mutually exclusive operation is in progress.
+- Added `PF_GAMESAVE_MAX_SHORT_SAVE_DESCRIPTION_LENGTH`, which defines the maximum accepted short save-description length as 768 characters.
+
+### Runtime and platform updates
+
+- Fixed `PFUninitializeAsync` hanging while an internal HTTP operation or event-pipeline flush is in progress.
+- Added the SDK version to the trace log during initialization.
+- Updated `PlayFab::Wrappers::Exception::what()` to include the `HRESULT` in its message.
+- Exported `PF_API` symbols with default visibility on iOS and macOS, and fixed a macOS launch crash when using the Apple Unified SDK.
+- Fixed sized `operator delete` overrides on Clang-based toolchains so custom memory hooks are honored.
+- Updated GDK projects to use the `x64` project platform required by the GDK 2510 layout and added support for retargeting projects to the Visual Studio 2026 `v145` toolset.
+- Pinned the Android `com.google.android.gms:play-services-games-v2` dependency to version 21.0.0 to retain `minSdkVersion 21` compatibility.
+
+### Game Save updates
+
+- Fixed non-PlayFab blob-transfer failures being reported as success. HTTP failures now return a failing `HRESULT` instead of allowing a manifest to be finalized against a blob that wasn't written.
+- Fixed data-loss and synchronization issues involving stale extended-manifest URLs, incomplete remote file sets, folder deletion during download, missing `localstate.json`, and marker-file creation for new saves.
+- Fixed upload, locking, and conflict failures, including infinite relock loops, stale manifest versions, incorrect base-version chains, conflict-loser selection, mishandled nonretryable service errors, and unnecessarily slow uploads after directory deletion.
+- Fixed GDK memory corruption and races in shared Game Save context management, and added validation that prevents extended-manifest paths from escaping the save folder.
+- Restored title write access to the save folder when synchronization enters the `Uploading` state. Original files are read only during `PreparingForUpload`.
+- Clarified progress behavior: `PFGameSaveFilesUiProgressCallback` reports state transitions, while `PFGameSaveFilesUiProgressGetProgress` can be polled for byte-level progress. A total of zero now means that the total is unknown.
+- Fixed GRTS cancellation and offline behavior, accepted forward-slash paths produced by engines such as Unreal Engine, and corrected several Windows and GDK initialization, shutdown, device-identity, and save-loading failures.
+- Fixed Game Save telemetry identifying Steam Deck devices incorrectly.
 
 ## 2504.0.0
 

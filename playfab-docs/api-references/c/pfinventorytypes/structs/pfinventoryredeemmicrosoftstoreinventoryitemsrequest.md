@@ -5,7 +5,7 @@ description: "PFInventoryRedeemMicrosoftStoreInventoryItemsRequest data model. R
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryRedeemMicrosoftStoreInventoryItemsRequest  
@@ -17,7 +17,6 @@ PFInventoryRedeemMicrosoftStoreInventoryItemsRequest data model. Redeem items fr
 ```cpp
 typedef struct PFInventoryRedeemMicrosoftStoreInventoryItemsRequest {  
     const char* collectionId;  
-    const char* collectionsIdKey;  
     PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFEntityKey const* entity;  
@@ -32,11 +31,6 @@ typedef struct PFInventoryRedeemMicrosoftStoreInventoryItemsRequest {
 *is null-terminated*  
   
 (Optional) The id of the entity's collection to perform this action on. (Default="default").
-  
-**`collectionsIdKey`** &nbsp; const char*  
-*is null-terminated*  
-  
-(Optional) The OneStore Collections Id Key used for AAD authentication.
   
 **`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
 *may be nullptr*  

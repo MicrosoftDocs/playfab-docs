@@ -5,7 +5,7 @@ description: "Duplicates a PFEventPipelineHandle."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFEventPipelineDuplicateHandle  
@@ -28,6 +28,7 @@ HRESULT PFEventPipelineDuplicateHandle(
 EventPipeline handle to duplicate.  
   
 **`duplicatedEventPipelineHandle`** &nbsp; PFEventPipelineHandle*  
+*output*  
   
 TBD    
   

@@ -5,7 +5,7 @@ description: "PFFriendsClientGetFriendsListRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFFriendsClientGetFriendsListRequest  
@@ -19,6 +19,7 @@ typedef struct PFFriendsClientGetFriendsListRequest {
     PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     PFFriendsExternalFriendSources const* externalPlatformFriends;  
+    bool const* namespaceWide;  
     PFPlayerProfileViewConstraints const* profileConstraints;  
     HC_PLATFORM user;  
     const char* xboxToken;  
@@ -41,6 +42,11 @@ Count of customTags
   
 (Optional) Indicates which other platforms' friends should be included in the response. In HTTP, it is represented as a comma-separated list of platforms.
   
+**`namespaceWide`** &nbsp; bool const*  
+*may be nullptr*  
+  
+(Optional) If true, include friends from the same namespace even if they have not logged in to the current title. Defaults to false.
+  
 **`profileConstraints`** &nbsp; [PFPlayerProfileViewConstraints](../../pftypes/structs/pfplayerprofileviewconstraints.md) const*  
 *may be nullptr*  
   
@@ -53,7 +59,7 @@ TBD
 **`xboxToken`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Xbox token if Xbox friends should be included. Requires Xbox be configured on PlayFab.
+(Optional) XBOX token if XBOX friends should be included. Requires XBOX be configured on PlayFab. When provided, all XBOX Live users the caller is following are included regardless of whether they follow the caller back.
   
   
 ## Requirements  

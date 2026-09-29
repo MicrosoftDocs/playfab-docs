@@ -5,7 +5,7 @@ description: "PFInventoryExecuteInventoryOperationsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryExecuteInventoryOperationsResponse  
@@ -28,7 +28,7 @@ typedef struct PFInventoryExecuteInventoryOperationsResponse {
 **`eTag`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) ETags are used for concurrency checking when updating resources. More information about using ETags can be found here: [https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.](/gaming/playfab/features/economy-v2/catalog/etags.)
+(Optional) ETags are used for concurrency checking when updating resources. More information about using ETags can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/etags.
   
 **`idempotencyId`** &nbsp; const char*  
 *is null-terminated*  

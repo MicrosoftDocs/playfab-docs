@@ -5,7 +5,7 @@ description: "Services C API overview - PFInventoryTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # Services C API overview - PFInventoryTypes.h
@@ -25,12 +25,14 @@ ms.date: 11/19/2024
 | [PFInventoryDeleteInventoryItemsResponse](structs/pfinventorydeleteinventoryitemsresponse.md) | PFInventoryDeleteInventoryItemsResponse data model. |  
 | [PFInventoryExecuteInventoryOperationsRequest](structs/pfinventoryexecuteinventoryoperationsrequest.md) | PFInventoryExecuteInventoryOperationsRequest data model. Execute a list of Inventory Operations for an Entity. |  
 | [PFInventoryExecuteInventoryOperationsResponse](structs/pfinventoryexecuteinventoryoperationsresponse.md) | PFInventoryExecuteInventoryOperationsResponse data model. |  
+| [PFInventoryExecuteTransferOperationsRequest](structs/pfinventoryexecutetransferoperationsrequest.md) | PFInventoryExecuteTransferOperationsRequest data model. Transfer the specified list of inventory items of an entity's container Id to another entity's container Id. |  
+| [PFInventoryExecuteTransferOperationsResponse](structs/pfinventoryexecutetransferoperationsresponse.md) | PFInventoryExecuteTransferOperationsResponse data model. |  
 | [PFInventoryGetInventoryCollectionIdsRequest](structs/pfinventorygetinventorycollectionidsrequest.md) | PFInventoryGetInventoryCollectionIdsRequest data model. Get a list of Inventory Collection Ids for the specified Entity. |  
 | [PFInventoryGetInventoryCollectionIdsResponse](structs/pfinventorygetinventorycollectionidsresponse.md) | PFInventoryGetInventoryCollectionIdsResponse data model. |  
 | [PFInventoryGetInventoryItemsRequest](structs/pfinventorygetinventoryitemsrequest.md) | PFInventoryGetInventoryItemsRequest data model. Given an entity type, entity identifier and container details, will get the entity's inventory items. . |  
 | [PFInventoryGetInventoryItemsResponse](structs/pfinventorygetinventoryitemsresponse.md) | PFInventoryGetInventoryItemsResponse data model. |  
-| [PFInventoryGetMicrosoftStoreAccessTokensRequest](structs/pfinventorygetmicrosoftstoreaccesstokensrequest.md) | PFInventoryGetMicrosoftStoreAccessTokensRequest data model. Gets the access tokens for Microsoft Store authentication. |  
-| [PFInventoryGetMicrosoftStoreAccessTokensResponse](structs/pfinventorygetmicrosoftstoreaccesstokensresponse.md) | PFInventoryGetMicrosoftStoreAccessTokensResponse data model. |  
+| [PFInventoryGetInventoryOperationStatusRequest](structs/pfinventorygetinventoryoperationstatusrequest.md) | PFInventoryGetInventoryOperationStatusRequest data model. Get the status of an Inventory Operation using an OperationToken. |  
+| [PFInventoryGetInventoryOperationStatusResponse](structs/pfinventorygetinventoryoperationstatusresponse.md) | PFInventoryGetInventoryOperationStatusResponse data model. |  
 | [PFInventoryGetTransactionHistoryRequest](structs/pfinventorygettransactionhistoryrequest.md) | PFInventoryGetTransactionHistoryRequest data model. Get transaction history for specified entity and collection. |  
 | [PFInventoryGetTransactionHistoryResponse](structs/pfinventorygettransactionhistoryresponse.md) | PFInventoryGetTransactionHistoryResponse data model. |  
 | [PFInventoryGooglePlayProductPurchase](structs/pfinventorygoogleplayproductpurchase.md) | PFInventoryGooglePlayProductPurchase data model. |  
@@ -60,6 +62,7 @@ ms.date: 11/19/2024
 | [PFInventorySubtractInventoryItemsRequest](structs/pfinventorysubtractinventoryitemsrequest.md) | PFInventorySubtractInventoryItemsRequest data model. Given an entity type, entity identifier and container details, will subtract the specified inventory items. . |  
 | [PFInventorySubtractInventoryItemsResponse](structs/pfinventorysubtractinventoryitemsresponse.md) | PFInventorySubtractInventoryItemsResponse data model. |  
 | [PFInventoryTransaction](structs/pfinventorytransaction.md) | PFInventoryTransaction data model. |  
+| [PFInventoryTransactionClawbackDetails](structs/pfinventorytransactionclawbackdetails.md) | PFInventoryTransactionClawbackDetails data model. |  
 | [PFInventoryTransactionOperation](structs/pfinventorytransactionoperation.md) | PFInventoryTransactionOperation data model. |  
 | [PFInventoryTransactionPurchaseDetails](structs/pfinventorytransactionpurchasedetails.md) | PFInventoryTransactionPurchaseDetails data model. |  
 | [PFInventoryTransactionRedeemDetails](structs/pfinventorytransactionredeemdetails.md) | PFInventoryTransactionRedeemDetails data model. |  

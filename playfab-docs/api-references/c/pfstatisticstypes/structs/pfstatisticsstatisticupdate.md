@@ -5,7 +5,7 @@ description: "PFStatisticsStatisticUpdate data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/20/2026
+ms.date: 09/08/2026
 ---
 
 # PFStatisticsStatisticUpdate  
@@ -16,6 +16,8 @@ PFStatisticsStatisticUpdate data model.
   
 ```cpp
 typedef struct PFStatisticsStatisticUpdate {  
+    PFEntityKey const* aggregationTargetEntityKeys;  
+    uint32_t aggregationTargetEntityKeysCount;  
     const char* metadata;  
     const char* name;  
     const char* const* scores;  
@@ -25,6 +27,15 @@ typedef struct PFStatisticsStatisticUpdate {
 ```
   
 ### Members  
+  
+**`aggregationTargetEntityKeys`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
+*may be nullptr*  
+  
+(Optional) A list of entities to which the statistic update must be aggregated to, in addition to the entity being updated. For example, for Group stats where the stat value is aggregated based on the group members, this would refer to the Group entity. For a community stat that's aggregated at the Title, it is not required to populate this property (Title is the default).
+  
+**`aggregationTargetEntityKeysCount`** &nbsp; uint32_t  
+  
+Count of aggregationTargetEntityKeys
   
 **`metadata`** &nbsp; const char*  
 *is null-terminated*  

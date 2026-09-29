@@ -5,7 +5,7 @@ description: "AzureVmSize enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFMultiplayerServerAzureVmSize  
@@ -43,6 +43,18 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
     Standard_F4s_v2,  
     Standard_F8s_v2,  
     Standard_F16s_v2,  
+    Standard_F2as_v6,  
+    Standard_F4as_v6,  
+    Standard_F8as_v6,  
+    Standard_F16as_v6,  
+    Standard_F2as_v7,  
+    Standard_F4as_v7,  
+    Standard_F8as_v7,  
+    Standard_F16as_v7,  
+    Standard_F2ads_v7,  
+    Standard_F4ads_v7,  
+    Standard_F8ads_v7,  
+    Standard_F16ads_v7,  
     Standard_D2as_v4,  
     Standard_D4as_v4,  
     Standard_D8as_v4,  
@@ -55,6 +67,14 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
     Standard_D4ads_v5,  
     Standard_D8ads_v5,  
     Standard_D16ads_v5,  
+    Standard_D2ads_v6,  
+    Standard_D4ads_v6,  
+    Standard_D8ads_v6,  
+    Standard_D16ads_v6,  
+    Standard_D2ads_v7,  
+    Standard_D4ads_v7,  
+    Standard_D8ads_v7,  
+    Standard_D16ads_v7,  
     Standard_E2a_v4,  
     Standard_E4a_v4,  
     Standard_E8a_v4,  
@@ -63,6 +83,30 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
     Standard_E4as_v4,  
     Standard_E8as_v4,  
     Standard_E16as_v4,  
+    Standard_E2ads_v5,  
+    Standard_E4ads_v5,  
+    Standard_E8ads_v5,  
+    Standard_E16ads_v5,  
+    Standard_E2ads_v6,  
+    Standard_E4ads_v6,  
+    Standard_E8ads_v6,  
+    Standard_E16ads_v6,  
+    Standard_E2ads_v7,  
+    Standard_E4ads_v7,  
+    Standard_E8ads_v7,  
+    Standard_E16ads_v7,  
+    Standard_E2ds_v4,  
+    Standard_E4ds_v4,  
+    Standard_E8ds_v4,  
+    Standard_E16ds_v4,  
+    Standard_E2ds_v5,  
+    Standard_E4ds_v5,  
+    Standard_E8ds_v5,  
+    Standard_E16ds_v5,  
+    Standard_E2ds_v6,  
+    Standard_E4ds_v6,  
+    Standard_E8ds_v6,  
+    Standard_E16ds_v6,  
     Standard_D2s_v3,  
     Standard_D4s_v3,  
     Standard_D8s_v3,  
@@ -95,7 +139,15 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
     Standard_D4ds_v5,  
     Standard_D8ds_v5,  
     Standard_D16ds_v5,  
-    Standard_D32ds_v5  
+    Standard_D32ds_v5,  
+    Standard_D2ds_v6,  
+    Standard_D4ds_v6,  
+    Standard_D8ds_v6,  
+    Standard_D16ds_v6,  
+    Standard_D2pds_v6,  
+    Standard_D4pds_v6,  
+    Standard_D8pds_v6,  
+    Standard_D16pds_v6  
 }  
 ```  
   
@@ -129,6 +181,18 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
 | Standard_F4s_v2 | TBD   |  
 | Standard_F8s_v2 | TBD   |  
 | Standard_F16s_v2 | TBD   |  
+| Standard_F2as_v6 | TBD   |  
+| Standard_F4as_v6 | TBD   |  
+| Standard_F8as_v6 | TBD   |  
+| Standard_F16as_v6 | TBD   |  
+| Standard_F2as_v7 | TBD   |  
+| Standard_F4as_v7 | TBD   |  
+| Standard_F8as_v7 | TBD   |  
+| Standard_F16as_v7 | TBD   |  
+| Standard_F2ads_v7 | TBD   |  
+| Standard_F4ads_v7 | TBD   |  
+| Standard_F8ads_v7 | TBD   |  
+| Standard_F16ads_v7 | TBD   |  
 | Standard_D2as_v4 | TBD   |  
 | Standard_D4as_v4 | TBD   |  
 | Standard_D8as_v4 | TBD   |  
@@ -141,6 +205,14 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
 | Standard_D4ads_v5 | TBD   |  
 | Standard_D8ads_v5 | TBD   |  
 | Standard_D16ads_v5 | TBD   |  
+| Standard_D2ads_v6 | TBD   |  
+| Standard_D4ads_v6 | TBD   |  
+| Standard_D8ads_v6 | TBD   |  
+| Standard_D16ads_v6 | TBD   |  
+| Standard_D2ads_v7 | TBD   |  
+| Standard_D4ads_v7 | TBD   |  
+| Standard_D8ads_v7 | TBD   |  
+| Standard_D16ads_v7 | TBD   |  
 | Standard_E2a_v4 | TBD   |  
 | Standard_E4a_v4 | TBD   |  
 | Standard_E8a_v4 | TBD   |  
@@ -149,6 +221,30 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
 | Standard_E4as_v4 | TBD   |  
 | Standard_E8as_v4 | TBD   |  
 | Standard_E16as_v4 | TBD   |  
+| Standard_E2ads_v5 | TBD   |  
+| Standard_E4ads_v5 | TBD   |  
+| Standard_E8ads_v5 | TBD   |  
+| Standard_E16ads_v5 | TBD   |  
+| Standard_E2ads_v6 | TBD   |  
+| Standard_E4ads_v6 | TBD   |  
+| Standard_E8ads_v6 | TBD   |  
+| Standard_E16ads_v6 | TBD   |  
+| Standard_E2ads_v7 | TBD   |  
+| Standard_E4ads_v7 | TBD   |  
+| Standard_E8ads_v7 | TBD   |  
+| Standard_E16ads_v7 | TBD   |  
+| Standard_E2ds_v4 | TBD   |  
+| Standard_E4ds_v4 | TBD   |  
+| Standard_E8ds_v4 | TBD   |  
+| Standard_E16ds_v4 | TBD   |  
+| Standard_E2ds_v5 | TBD   |  
+| Standard_E4ds_v5 | TBD   |  
+| Standard_E8ds_v5 | TBD   |  
+| Standard_E16ds_v5 | TBD   |  
+| Standard_E2ds_v6 | TBD   |  
+| Standard_E4ds_v6 | TBD   |  
+| Standard_E8ds_v6 | TBD   |  
+| Standard_E16ds_v6 | TBD   |  
 | Standard_D2s_v3 | TBD   |  
 | Standard_D4s_v3 | TBD   |  
 | Standard_D8s_v3 | TBD   |  
@@ -182,6 +278,14 @@ enum class PFMultiplayerServerAzureVmSize  : uint32_t
 | Standard_D8ds_v5 | TBD   |  
 | Standard_D16ds_v5 | TBD   |  
 | Standard_D32ds_v5 | TBD   |  
+| Standard_D2ds_v6 | TBD   |  
+| Standard_D4ds_v6 | TBD   |  
+| Standard_D8ds_v6 | TBD   |  
+| Standard_D16ds_v6 | TBD   |  
+| Standard_D2pds_v6 | TBD   |  
+| Standard_D4pds_v6 | TBD   |  
+| Standard_D8pds_v6 | TBD   |  
+| Standard_D16pds_v6 | TBD   |  
   
   
 ## Requirements  

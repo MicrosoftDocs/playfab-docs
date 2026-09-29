@@ -5,12 +5,12 @@ description: "Executes a search against the public catalog using the provided se
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCatalogSearchItemsAsync  
 
-Executes a search against the public catalog using the provided search parameters and returns a set of paginated results. SearchItems uses a cache of the catalog with item updates taking up to a few minutes to propagate. You should use the GetItem API for when trying to immediately get recent item updates. More information about the Search API can be found here: [https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/search](/gaming/playfab/features/economy-v2/catalog/search)  
+Executes a search against the public catalog using the provided search parameters and returns a set of paginated results. SearchItems uses a cache of the catalog with item updates taking up to a few minutes to propagate. You should use the GetItem API for when trying to immediately get recent item updates. More information about the Search API can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/search  
 
 ## Syntax  
   

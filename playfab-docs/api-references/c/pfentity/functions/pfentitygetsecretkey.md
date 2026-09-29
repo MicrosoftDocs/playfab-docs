@@ -5,7 +5,7 @@ description: "Gets the PlayFab secretKey associated with a title Entity. Will fa
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFEntityGetSecretKey  
@@ -31,7 +31,7 @@ Entity handle.
   
 **`secretKeySize`** &nbsp; size_t  
   
-Size of the provided buffer. Required size can be obtained via PFServiceConfigGetSecretKeySize.  
+Size of the provided buffer. Required size can be obtained via PFEntityGetSecretKeySize.  
   
 **`secretKey`** &nbsp; char*  
 *_Out_writes_(secretKeySize)*  

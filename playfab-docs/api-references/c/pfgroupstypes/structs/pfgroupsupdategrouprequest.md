@@ -5,7 +5,7 @@ description: "PFGroupsUpdateGroupRequest data model. Updates data about a group,
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFGroupsUpdateGroupRequest  
@@ -45,7 +45,7 @@ Count of customTags
 **`expectedProfileVersion`** &nbsp; int32_t const*  
 *may be nullptr*  
   
-(Optional) Optional field used for concurrency control. By specifying the previously returned value of ProfileVersion from the GetGroup API, you can ensure that the group data update will only be performed if the group has not been updated by any other clients since the version you last loaded.
+(Optional) Optional field used for concurrency control. By specifying the previously returned ProfileVersion value from the GetGroup API, you can ensure that the group data update is performed only if the group has not been updated since you last loaded that version. If the same group has been updated, the requested update will not occur and the returned SetResult value will be None.
   
 **`group`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
   

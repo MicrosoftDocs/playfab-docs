@@ -1,9 +1,9 @@
 ---
-title: Throttling best practices
+title: Throttling best practices and recommendations
 author: antnguyen89
 description: introduction on how PlayFab throttles API calls.
 ms.author: antnguyen
-ms.date: 01/26/2024
+ms.date: 09/24/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, throttling, throttle, api, token
@@ -41,6 +41,7 @@ If throttling errors persist, consider adopting the following strategies:
 1. Review Request Rate
     * Analyze why you're sending a high volume of requests. 
     * Evaluate ways to lower the request rate for specific player or title entities targeted by the API. 
+    * To see which APIs and callers are approaching or reaching a limit, check the [api_rate_limit_alert](../../../api-references/events/Title/api-rate-limit-alert.md) event (preview).
 
 2. Batching API Calls
     * Reduce frequency by batching API calls. 

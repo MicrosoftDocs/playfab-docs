@@ -5,7 +5,7 @@ description: "LoginIdentityProvider enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFLoginIdentityProvider  
@@ -40,7 +40,8 @@ enum class PFLoginIdentityProvider  : uint32_t
     NintendoSwitchAccount,  
     GooglePlayGames,  
     XboxMobileStore,  
-    King  
+    King,  
+    BattleNet  
 }  
 ```  
   
@@ -72,6 +73,7 @@ enum class PFLoginIdentityProvider  : uint32_t
 | GooglePlayGames | TBD   |  
 | XboxMobileStore | TBD   |  
 | King | TBD   |  
+| BattleNet | TBD   |  
   
   
 ## Requirements  

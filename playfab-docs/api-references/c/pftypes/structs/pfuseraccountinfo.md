@@ -5,7 +5,7 @@ description: "PFUserAccountInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFUserAccountInfo  
@@ -18,6 +18,7 @@ PFUserAccountInfo data model.
 typedef struct PFUserAccountInfo {  
     PFUserAndroidDeviceInfo const* androidDeviceInfo;  
     PFUserAppleIdInfo const* appleAccountInfo;  
+    PFUserBattleNetInfo const* battleNetAccountInfo;  
     time_t created;  
     PFUserCustomIdInfo const* customIdInfo;  
     PFUserFacebookInfo const* facebookInfo;  
@@ -54,6 +55,11 @@ typedef struct PFUserAccountInfo {
 *may be nullptr*  
   
 (Optional) Sign in with Apple account information, if an Apple account has been linked.
+  
+**`battleNetAccountInfo`** &nbsp; [PFUserBattleNetInfo](pfuserbattlenetinfo.md) const*  
+*may be nullptr*  
+  
+(Optional) Battle.net account information, if a Battle.net account has been linked.
   
 **`created`** &nbsp; time_t  
   

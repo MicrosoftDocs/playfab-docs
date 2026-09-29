@@ -5,7 +5,7 @@ description: "PFEntityKey data model. Combined entity type and ID structure whic
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFEntityKey C API 
@@ -31,7 +31,7 @@ Unique ID of the entity.
 **`type`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Entity type. See [https://docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types.](/gaming/playfab/features/data/entities/available-built-in-entity-types.)
+(Optional) Entity type. See https://docs.microsoft.com/gaming/playfab/features/data/entities/available-built-in-entity-types.
   
   
 ## Requirements  

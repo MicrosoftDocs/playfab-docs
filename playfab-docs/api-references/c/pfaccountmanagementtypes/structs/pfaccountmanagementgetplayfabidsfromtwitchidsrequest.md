@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayFabIDsFromTwitchIDsRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementGetPlayFabIDsFromTwitchIDsRequest  
@@ -25,7 +25,7 @@ typedef struct PFAccountManagementGetPlayFabIDsFromTwitchIDsRequest {
   
 **`twitchIds`** &nbsp; const char* const*  
   
-Array of unique Twitch identifiers (Twitch's _id) for which the title needs to get PlayFab identifiers. The array cannot exceed 2,000 in length.
+Array of unique Twitch identifiers (Twitch's _id) for which the title needs to get PlayFab identifiers. The array cannot exceed 25 in length.
   
 **`twitchIdsCount`** &nbsp; uint32_t  
   

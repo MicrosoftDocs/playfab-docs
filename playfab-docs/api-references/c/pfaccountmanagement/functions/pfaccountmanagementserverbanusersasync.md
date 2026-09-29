@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFAccountManagementServerBanUsersAsync"
-description: "Bans users by PlayFab ID with optional IP address, for the provided game."
+description: "Bans users by PlayFab ID with optional IP address for the provided game."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementServerBanUsersAsync  
 
-Bans users by PlayFab ID with optional IP address, for the provided game.  
+Bans users by PlayFab ID with optional IP address for the provided game.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32, Linux, and macOS. The existence of each user will not be verified. When banning by IP, multiple players may be affected, so use this feature with caution. Returns information about the new bans. See also ServerGetUserBansAsync, ServerRevokeAllBansForUserAsync, ServerRevokeBansAsync, ServerUpdateBansAsync. When the asynchronous task is complete, call [PFAccountManagementServerBanUsersGetResultSize](pfaccountmanagementserverbanusersgetresultsize.md) and [PFAccountManagementServerBanUsersGetResult](pfaccountmanagementserverbanusersgetresult.md) to get the result.
+This API is available on Windows, Linux, and macOS. The existence of each user will not be verified. When banning by IP, multiple players may be affected, so use this feature with caution. Returns information about the new bans. See also ServerGetUserBansAsync, ServerRevokeAllBansForUserAsync, ServerRevokeBansAsync, ServerUpdateBansAsync. When the asynchronous task is complete, call [PFAccountManagementServerBanUsersGetResultSize](pfaccountmanagementserverbanusersgetresultsize.md) and [PFAccountManagementServerBanUsersGetResult](pfaccountmanagementserverbanusersgetresult.md) to get the result.
   
 ## Requirements  
   

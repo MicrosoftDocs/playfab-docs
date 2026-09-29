@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFInventoryRedeemMicrosoftStoreInventoryItemsAsync"
-description: "Redeem items."
+description: "Redeem items from the Microsoft Store. Supported entitlement types are Developer Manager Consumable and Durable."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryRedeemMicrosoftStoreInventoryItemsAsync  
 
-Redeem items.  
+Redeem items from the Microsoft Store. Supported entitlement types are Developer Manager Consumable and Durable.  
 
 ## Syntax  
   
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32, GDK, Linux, and macOS. Redeem items from the Microsoft Store. When the asynchronous task is complete, call [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResultSize](pfinventoryredeemmicrosoftstoreinventoryitemsgetresultsize.md) and [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResult](pfinventoryredeemmicrosoftstoreinventoryitemsgetresult.md) to get the result.
+This API is available on Windows, Linux, and macOS. Redeem items from the Microsoft Store. When the asynchronous task is complete, call [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResultSize](pfinventoryredeemmicrosoftstoreinventoryitemsgetresultsize.md) and [PFInventoryRedeemMicrosoftStoreInventoryItemsGetResult](pfinventoryredeemmicrosoftstoreinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

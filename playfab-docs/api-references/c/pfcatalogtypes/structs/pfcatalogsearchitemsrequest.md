@@ -5,7 +5,7 @@ description: "PFCatalogSearchItemsRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCatalogSearchItemsRequest  
@@ -58,7 +58,7 @@ Count of customTags
 **`filter`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) An OData filter used to refine the search query (For example: "type eq 'ugc'"). More info about Filter Complexity limits can be found here: [https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/search#limits.](/gaming/playfab/features/economy-v2/catalog/search#limits.)
+(Optional) An OData filter used to refine the search query (For example: "type eq 'ugc'"). More info about Filter Complexity limits can be found here: https://learn.microsoft.com/gaming/playfab/features/economy-v2/catalog/search#limits.
   
 **`language`** &nbsp; const char*  
 *is null-terminated*  

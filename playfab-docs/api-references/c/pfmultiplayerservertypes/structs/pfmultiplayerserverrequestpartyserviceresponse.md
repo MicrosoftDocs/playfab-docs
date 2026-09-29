@@ -5,7 +5,7 @@ description: "PFMultiplayerServerRequestPartyServiceResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFMultiplayerServerRequestPartyServiceResponse  
@@ -18,6 +18,7 @@ PFMultiplayerServerRequestPartyServiceResponse data model.
 typedef struct PFMultiplayerServerRequestPartyServiceResponse {  
     const char* invitationId;  
     const char* partyId;  
+    const char* region;  
     const char* serializedNetworkDescriptor;  
 } PFMultiplayerServerRequestPartyServiceResponse;  
 ```
@@ -33,6 +34,11 @@ typedef struct PFMultiplayerServerRequestPartyServiceResponse {
 *is null-terminated*  
   
 (Optional) The guid string party ID of the party session.
+  
+**`region`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) The region the party session is located in.
   
 **`serializedNetworkDescriptor`** &nbsp; const char*  
 *is null-terminated*  

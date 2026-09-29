@@ -5,7 +5,7 @@ description: "Services C API overview - PFTrace.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # Services C API overview - PFTrace.h
@@ -15,4 +15,4 @@ ms.date: 11/19/2024
 
 | Function | Description |  
 | --- | --- |  
-| [PFTraceEnableTraceToFile](functions/pftraceenabletracetofile.md) | TBD   |  
+| [PFTraceEnableTraceToFile](functions/pftraceenabletracetofile.md) | Enables PlayFab trace logging to a file. |  

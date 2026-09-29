@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFFriendsGetFriendsListResult"
-description: "PFFriendsGetFriendsListResult data model. If any additional services are queried for the user's friends, those friends who also have a PlayFab account registered for the title will be returned in the results. For Facebook, user has to have logged into the title's Facebook app recently, and only friends who also plays this game will be included. Note: If the user authenticated with AuthenticationToken when calling LoginWithFacebook, instead of AcessToken, an empty list will be returned. For Xbox Live, user has to have logged into the Xbox Live recently, and only friends who also play this game will be included."
+description: "PFFriendsGetFriendsListResult data model. If any additional services are queried for the user's friends, those friends who also have a PlayFab account registered for the title will be returned in the results. For Facebook, user has to have logged into the title's Facebook app recently, and only friends who also plays this game will be included. Note: If the user authenticated with AuthenticationToken when calling LoginWithFacebook, instead of AccessToken, an empty list will be returned. For XBOX Live, user has to have logged into the XBOX Live recently, and only friends who also play this game will be included. XBOX Live friends include all users the caller is following, regardless of whether those users follow the caller back. This differs from FindFriendLobbies, which only considers mutual XBOX Live friends."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFFriendsGetFriendsListResult  
 
-PFFriendsGetFriendsListResult data model. If any additional services are queried for the user's friends, those friends who also have a PlayFab account registered for the title will be returned in the results. For Facebook, user has to have logged into the title's Facebook app recently, and only friends who also plays this game will be included. Note: If the user authenticated with AuthenticationToken when calling LoginWithFacebook, instead of AcessToken, an empty list will be returned. For Xbox Live, user has to have logged into the Xbox Live recently, and only friends who also play this game will be included.  
+PFFriendsGetFriendsListResult data model. If any additional services are queried for the user's friends, those friends who also have a PlayFab account registered for the title will be returned in the results. For Facebook, user has to have logged into the title's Facebook app recently, and only friends who also plays this game will be included. Note: If the user authenticated with AuthenticationToken when calling LoginWithFacebook, instead of AccessToken, an empty list will be returned. For XBOX Live, user has to have logged into the XBOX Live recently, and only friends who also play this game will be included. XBOX Live friends include all users the caller is following, regardless of whether those users follow the caller back. This differs from FindFriendLobbies, which only considers mutual XBOX Live friends.  
 
 ## Syntax  
   

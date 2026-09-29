@@ -5,7 +5,7 @@ description: "UserOrigination enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFUserOrigination  
@@ -42,7 +42,8 @@ enum class PFUserOrigination  : uint32_t
     NintendoSwitchAccount,  
     GooglePlayGames,  
     XboxMobileStore,  
-    King  
+    King,  
+    BattleNet  
 }  
 ```  
   
@@ -76,6 +77,7 @@ enum class PFUserOrigination  : uint32_t
 | GooglePlayGames | TBD   |  
 | XboxMobileStore | TBD   |  
 | King | TBD   |  
+| BattleNet | TBD   |  
   
   
 ## Requirements  

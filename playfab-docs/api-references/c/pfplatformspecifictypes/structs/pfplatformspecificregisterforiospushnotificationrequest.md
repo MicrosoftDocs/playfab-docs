@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFPlatformSpecificRegisterForIOSPushNotificationRequest"
-description: "Request for registering an iOS device to receive push notifications."
+description: "PFPlatformSpecificRegisterForIOSPushNotificationRequest data model. The steps to configure and send Push Notifications is described in the PlayFab tutorials, here: https://docs.microsoft.com/gaming/playfab/features/engagement/push-notifications/quickstart."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/20/2026
+ms.date: 09/08/2026
 ---
 
 # PFPlatformSpecificRegisterForIOSPushNotificationRequest  
 
-PFPlatformSpecificRegisterForIOSPushNotificationRequest data model. For the steps to configure and send push notifications, see the [push notifications quickstart](../../../../live-service-management/game-configuration/title-communications/push-notifications/quickstart.md).
+PFPlatformSpecificRegisterForIOSPushNotificationRequest data model. The steps to configure and send Push Notifications is described in the PlayFab tutorials, here: https://docs.microsoft.com/gaming/playfab/features/engagement/push-notifications/quickstart.  
 
 ## Syntax  
   

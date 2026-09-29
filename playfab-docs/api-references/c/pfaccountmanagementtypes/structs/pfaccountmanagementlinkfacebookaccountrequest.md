@@ -5,7 +5,7 @@ description: "PFAccountManagementLinkFacebookAccountRequest data model. Facebook
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementLinkFacebookAccountRequest  
@@ -17,6 +17,7 @@ PFAccountManagementLinkFacebookAccountRequest data model. Facebook sign-in is ac
 ```cpp
 typedef struct PFAccountManagementLinkFacebookAccountRequest {  
     const char* accessToken;  
+    const char* authenticationToken;  
     PFStringDictionaryEntry const* customTags;  
     uint32_t customTagsCount;  
     bool const* forceLink;  
@@ -28,7 +29,12 @@ typedef struct PFAccountManagementLinkFacebookAccountRequest {
 **`accessToken`** &nbsp; const char*  
 *is null-terminated*  
   
-Unique identifier from Facebook for the user.
+(Optional) Unique identifier from Facebook for the user.
+  
+**`authenticationToken`** &nbsp; const char*  
+*is null-terminated*  
+  
+(Optional) Token used for limited login authentication.
   
 **`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
 *may be nullptr*  

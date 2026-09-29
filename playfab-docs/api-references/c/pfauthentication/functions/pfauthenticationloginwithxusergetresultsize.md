@@ -5,7 +5,7 @@ description: "Get the size in bytes needed to store the result of a PFAuthentica
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationLoginWithXUserGetResultSize  
@@ -42,10 +42,10 @@ Result code for this API operation. If the service call is unsuccessful, the res
   
 ## Requirements  
   
-**Header:** PFAuthentication.h
+**Header:** PFAuthentication_Xbox.h
   
 ## See also  
-[PFAuthentication members](../pfauthentication_members.md)  
+[PFAuthentication_Xbox members](../pfauthentication_members.md)  
 
   
   

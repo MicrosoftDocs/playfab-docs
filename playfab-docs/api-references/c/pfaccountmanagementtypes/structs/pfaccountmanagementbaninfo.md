@@ -5,7 +5,7 @@ description: "PFAccountManagementBanInfo data model. Contains information for a 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementBanInfo  
@@ -66,7 +66,7 @@ The active state of this ban. Expired bans may still have this value set to true
 **`userFamilyType`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The family type of the suer that is included in the ban.
+(Optional) The family type of the user that is included in the ban.
   
   
 ## Requirements  

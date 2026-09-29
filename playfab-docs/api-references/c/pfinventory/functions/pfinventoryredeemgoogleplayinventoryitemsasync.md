@@ -5,7 +5,7 @@ description: "Redeem items."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryRedeemGooglePlayInventoryItemsAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Android. Redeem items from the Google Play Store. When the asynchronous task is complete, call [PFInventoryRedeemGooglePlayInventoryItemsGetResultSize](pfinventoryredeemgoogleplayinventoryitemsgetresultsize.md) and [PFInventoryRedeemGooglePlayInventoryItemsGetResult](pfinventoryredeemgoogleplayinventoryitemsgetresult.md) to get the result.
+This API is available on Windows and Android. Redeem items from the Google Play Store. When the asynchronous task is complete, call [PFInventoryRedeemGooglePlayInventoryItemsGetResultSize](pfinventoryredeemgoogleplayinventoryitemsgetresultsize.md) and [PFInventoryRedeemGooglePlayInventoryItemsGetResult](pfinventoryredeemgoogleplayinventoryitemsgetresult.md) to get the result.
   
 ## Requirements  
   

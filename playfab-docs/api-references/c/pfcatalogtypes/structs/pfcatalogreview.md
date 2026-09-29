@@ -5,7 +5,7 @@ description: "PFCatalogReview data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCatalogReview  
@@ -26,7 +26,6 @@ typedef struct PFCatalogReview {
     const char* locale;  
     int32_t rating;  
     PFEntityKey const* reviewerEntity;  
-    const char* reviewerId;  
     const char* reviewId;  
     const char* reviewText;  
     time_t submitted;  
@@ -80,11 +79,6 @@ Star rating associated with this review.
 *may be nullptr*  
   
 (Optional) The ID of the author of the review.
-  
-**`reviewerId`** &nbsp; const char*  
-*is null-terminated*  
-  
-(Optional) Deprecated. Use ReviewerEntity instead. This property will be removed in a future release.
   
 **`reviewId`** &nbsp; const char*  
 *is null-terminated*  

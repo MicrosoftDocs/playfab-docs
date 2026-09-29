@@ -5,7 +5,7 @@ description: "Register a handler for EntityToken refreshed events."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFEntityRegisterTokenRefreshedEventHandler  
@@ -26,6 +26,7 @@ HRESULT PFEntityRegisterTokenRefreshedEventHandler(
 ### Parameters  
   
 **`queue`** &nbsp; XTaskQueueHandle  
+*optional*  
   
 The async queue the callback should be invoked on.  
   

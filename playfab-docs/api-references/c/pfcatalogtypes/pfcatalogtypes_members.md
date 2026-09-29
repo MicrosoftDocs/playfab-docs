@@ -5,7 +5,7 @@ description: "Services C API overview - PFCatalogTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # Services C API overview - PFCatalogTypes.h
@@ -34,10 +34,13 @@ ms.date: 11/19/2024
 | [PFCatalogCreateUploadUrlsResponse](structs/pfcatalogcreateuploadurlsresponse.md) | PFCatalogCreateUploadUrlsResponse data model. |  
 | [PFCatalogDeepLink](structs/pfcatalogdeeplink.md) | PFCatalogDeepLink data model. |  
 | [PFCatalogDeepLinkFormat](structs/pfcatalogdeeplinkformat.md) | PFCatalogDeepLinkFormat data model. |  
+| [PFCatalogDeleteEntityItemReviewsRequest](structs/pfcatalogdeleteentityitemreviewsrequest.md) | PFCatalogDeleteEntityItemReviewsRequest data model. |  
 | [PFCatalogDeleteItemRequest](structs/pfcatalogdeleteitemrequest.md) | PFCatalogDeleteItemRequest data model. |  
 | [PFCatalogDisplayPropertyIndexInfo](structs/pfcatalogdisplaypropertyindexinfo.md) | PFCatalogDisplayPropertyIndexInfo data model. |  
 | [PFCatalogFileConfig](structs/pfcatalogfileconfig.md) | PFCatalogFileConfig data model. |  
 | [PFCatalogFilterOptions](structs/pfcatalogfilteroptions.md) | PFCatalogFilterOptions data model. |  
+| [PFCatalogGetCatalogConfigRequest](structs/pfcataloggetcatalogconfigrequest.md) | PFCatalogGetCatalogConfigRequest data model. |  
+| [PFCatalogGetCatalogConfigResponse](structs/pfcataloggetcatalogconfigresponse.md) | PFCatalogGetCatalogConfigResponse data model. |  
 | [PFCatalogGetDraftItemRequest](structs/pfcataloggetdraftitemrequest.md) | PFCatalogGetDraftItemRequest data model. |  
 | [PFCatalogGetDraftItemResponse](structs/pfcataloggetdraftitemresponse.md) | PFCatalogGetDraftItemResponse data model. |  
 | [PFCatalogGetDraftItemsRequest](structs/pfcataloggetdraftitemsrequest.md) | PFCatalogGetDraftItemsRequest data model. |  
@@ -48,6 +51,8 @@ ms.date: 11/19/2024
 | [PFCatalogGetEntityItemReviewResponse](structs/pfcataloggetentityitemreviewresponse.md) | PFCatalogGetEntityItemReviewResponse data model. |  
 | [PFCatalogGetItemContainersRequest](structs/pfcataloggetitemcontainersrequest.md) | PFCatalogGetItemContainersRequest data model. Given an item, return a set of bundles and stores containing the item. |  
 | [PFCatalogGetItemContainersResponse](structs/pfcataloggetitemcontainersresponse.md) | PFCatalogGetItemContainersResponse data model. |  
+| [PFCatalogGetItemModerationStateRequest](structs/pfcataloggetitemmoderationstaterequest.md) | PFCatalogGetItemModerationStateRequest data model. |  
+| [PFCatalogGetItemModerationStateResponse](structs/pfcataloggetitemmoderationstateresponse.md) | PFCatalogGetItemModerationStateResponse data model. |  
 | [PFCatalogGetItemPublishStatusRequest](structs/pfcataloggetitempublishstatusrequest.md) | PFCatalogGetItemPublishStatusRequest data model. |  
 | [PFCatalogGetItemPublishStatusResponse](structs/pfcataloggetitempublishstatusresponse.md) | PFCatalogGetItemPublishStatusResponse data model. |  
 | [PFCatalogGetItemRequest](structs/pfcataloggetitemrequest.md) | PFCatalogGetItemRequest data model. |  
@@ -66,6 +71,7 @@ ms.date: 11/19/2024
 | [PFCatalogPermissions](structs/pfcatalogpermissions.md) | PFCatalogPermissions data model. |  
 | [PFCatalogPublishDraftItemRequest](structs/pfcatalogpublishdraftitemrequest.md) | PFCatalogPublishDraftItemRequest data model. The call kicks off a workflow to publish the item to the public catalog. The Publish Status API should be used to monitor the publish job. |  
 | [PFCatalogRating](structs/pfcatalograting.md) | PFCatalogRating data model. |  
+| [PFCatalogRealMoneyPriceDetails](structs/pfcatalogrealmoneypricedetails.md) | PFCatalogRealMoneyPriceDetails data model. The multi-currency unit price, in real money, of the item that was redeemed within an individual marketplace. Each property is a dictionary where the key is the three-letter currency code as defined in ISO 4217, and the value is the currency amount in the smallest unit (e.g. cents, pence, etc.) in accordance with ISO 4217. Example: If the product price in USD is $1.39, the dictionary entry would be: ["USD"] = 139. Currently, only United States Dollar (USD) is supported. |  
 | [PFCatalogReportItemRequest](structs/pfcatalogreportitemrequest.md) | PFCatalogReportItemRequest data model. |  
 | [PFCatalogReportItemReviewRequest](structs/pfcatalogreportitemreviewrequest.md) | PFCatalogReportItemReviewRequest data model. Submit a report for an inappropriate review, allowing the submitting user to specify their concern. |  
 | [PFCatalogReview](structs/pfcatalogreview.md) | PFCatalogReview data model. |  
@@ -74,9 +80,12 @@ ms.date: 11/19/2024
 | [PFCatalogReviewTakedown](structs/pfcatalogreviewtakedown.md) | PFCatalogReviewTakedown data model. |  
 | [PFCatalogSearchItemsRequest](structs/pfcatalogsearchitemsrequest.md) | PFCatalogSearchItemsRequest data model. |  
 | [PFCatalogSearchItemsResponse](structs/pfcatalogsearchitemsresponse.md) | PFCatalogSearchItemsResponse data model. |  
+| [PFCatalogSetItemModerationStateRequest](structs/pfcatalogsetitemmoderationstaterequest.md) | PFCatalogSetItemModerationStateRequest data model. |  
 | [PFCatalogStoreDetails](structs/pfcatalogstoredetails.md) | PFCatalogStoreDetails data model. |  
 | [PFCatalogStoreReference](structs/pfcatalogstorereference.md) | PFCatalogStoreReference data model. |  
 | [PFCatalogSubmitItemReviewVoteRequest](structs/pfcatalogsubmititemreviewvoterequest.md) | PFCatalogSubmitItemReviewVoteRequest data model. |  
+| [PFCatalogTakedownItemReviewsRequest](structs/pfcatalogtakedownitemreviewsrequest.md) | PFCatalogTakedownItemReviewsRequest data model. Submit a request to takedown one or more reviews, removing them from public view. Authors will still be able to see their reviews after being taken down. |  
+| [PFCatalogUpdateCatalogConfigRequest](structs/pfcatalogupdatecatalogconfigrequest.md) | PFCatalogUpdateCatalogConfigRequest data model. |  
 | [PFCatalogUpdateDraftItemRequest](structs/pfcatalogupdatedraftitemrequest.md) | PFCatalogUpdateDraftItemRequest data model. |  
 | [PFCatalogUpdateDraftItemResponse](structs/pfcatalogupdatedraftitemresponse.md) | PFCatalogUpdateDraftItemResponse data model. |  
 | [PFCatalogUploadInfo](structs/pfcataloguploadinfo.md) | PFCatalogUploadInfo data model. |  

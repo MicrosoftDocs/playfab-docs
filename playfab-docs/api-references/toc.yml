@@ -444,6 +444,8 @@
       href: events/Session/client-session-start.md
   - name: Title
     items:
+    - name: api_rate_limit_alert
+      href: events/Title/api-rate-limit-alert.md
     - name: title_client_rate_limited_alert
       href: events/Title/title-client-rate-limited-alert.md
     - name: title_high_error_rate_alert

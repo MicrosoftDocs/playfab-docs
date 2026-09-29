@@ -3,7 +3,7 @@ title: PlayStream Event Model reference
 author: joannaleecy
 description: Overview page for PlayStream event model reference documentation.
 ms.author: jenelleb
-ms.date: 02/19/2019
+ms.date: 09/24/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, api, events, playstream
@@ -673,6 +673,9 @@ Each event type has a set of properties that are included as part of event's dat
   This event is triggered when a new client session starts.
 
 ## Title
+
+- [api_rate_limit_alert](Title/api-rate-limit-alert.md)  
+  This event can be triggered when an API caller approaches or reaches a rate limit.
 
 - [title_client_rate_limited_alert](Title/title-client-rate-limited-alert.md)  
   This event is triggered when a single IP address generates too many API calls to PlayFab and is throttled.

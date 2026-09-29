@@ -5,7 +5,7 @@ description: "PFAuthenticationAuthenticateCustomIdResult data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationAuthenticateCustomIdResult  
@@ -16,14 +16,14 @@ PFAuthenticationAuthenticateCustomIdResult data model.
   
 ```cpp
 typedef struct PFAuthenticationAuthenticateCustomIdResult {  
-    PFAuthenticationEntityTokenResponse const* entityToken;  
+    const PFAuthenticationEntityTokenResponse* entityToken;  
     bool newlyCreated;  
 } PFAuthenticationAuthenticateCustomIdResult;  
 ```
   
 ### Members  
   
-**`entityToken`** &nbsp; [PFAuthenticationEntityTokenResponse](pfauthenticationentitytokenresponse.md) const*  
+**`entityToken`** &nbsp; const [PFAuthenticationEntityTokenResponse*](pfauthenticationentitytokenresponse.md)  
 *may be nullptr*  
   
 (Optional) The token generated used to set X-EntityToken for game_server calls.

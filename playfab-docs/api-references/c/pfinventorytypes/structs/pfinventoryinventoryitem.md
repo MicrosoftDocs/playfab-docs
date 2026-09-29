@@ -5,7 +5,7 @@ description: "PFInventoryInventoryItem data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryInventoryItem  
@@ -21,6 +21,7 @@ typedef struct PFInventoryInventoryItem {
     time_t const* expirationDate;  
     const char* id;  
     const char* stackId;  
+    time_t const* startDate;  
     const char* type;  
 } PFInventoryInventoryItem;  
 ```
@@ -50,6 +51,11 @@ typedef struct PFInventoryInventoryItem {
 *is null-terminated*  
   
 (Optional) The stack id of the item.
+  
+**`startDate`** &nbsp; time_t const*  
+*may be nullptr*  
+  
+(Optional) Only used for subscriptions. The date of when the item started in UTC.
   
 **`type`** &nbsp; const char*  
 *is null-terminated*  

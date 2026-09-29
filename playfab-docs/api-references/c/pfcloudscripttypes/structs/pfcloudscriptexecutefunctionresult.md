@@ -5,7 +5,7 @@ description: "PFCloudScriptExecuteFunctionResult data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCloudScriptExecuteFunctionResult  
@@ -20,6 +20,7 @@ typedef struct PFCloudScriptExecuteFunctionResult {
     int32_t executionTimeMilliseconds;  
     const char* functionName;  
     PFJsonObject functionResult;  
+    int32_t const* functionResultSize;  
     bool const* functionResultTooLarge;  
 } PFCloudScriptExecuteFunctionResult;  
 ```
@@ -43,6 +44,11 @@ The amount of time the function took to execute.
 **`functionResult`** &nbsp; [PFJsonObject](../../pftypes/structs/pfjsonobject.md)  
   
 (Optional) The object returned from the function, if any.
+  
+**`functionResultSize`** &nbsp; int32_t const*  
+*may be nullptr*  
+  
+(Optional) The size in bytes of the object returned from the function, if any.
   
 **`functionResultTooLarge`** &nbsp; bool const*  
 *may be nullptr*  

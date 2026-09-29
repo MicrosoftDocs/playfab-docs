@@ -2,8 +2,8 @@
 title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
-ms.author: raycha
-ms.date: 08/19/2026
+ms.author: raymondcha
+ms.date: 09/09/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -17,6 +17,16 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.26
+
+September 9, 2026
+
+### Bug fixes
+
+- Fixed a possible crash while destroying a `PartyEndpoint`.
+- Fixed handling of empty, malformed, or incomplete responses from `/MultiplayerServer/GetCognitiveServicesToken`. Party now reports the request as failed instead of possibly crashing.
+- Fixed a possible crash if direct connectivity setup completed after a remote device left a peer-to-peer network.
 
 ## 1.10.25
 

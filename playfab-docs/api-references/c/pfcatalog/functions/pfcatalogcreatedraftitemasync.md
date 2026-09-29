@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCatalogCreateDraftItemAsync"
-description: "Creates a new item in the working catalog using provided metadata."
+description: "Creates a new item in the working catalog using provided metadata. Note: SAS tokens provided are valid for 1 hour."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFCatalogCreateDraftItemAsync  
 
-Creates a new item in the working catalog using provided metadata.  
+Creates a new item in the working catalog using provided metadata. Note: SAS tokens provided are valid for 1 hour.  
 
 ## Syntax  
   

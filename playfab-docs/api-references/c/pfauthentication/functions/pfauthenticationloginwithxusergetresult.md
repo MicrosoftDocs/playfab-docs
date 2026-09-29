@@ -5,7 +5,7 @@ description: "Get the result from a PFAuthenticationLoginWithXUserAsync call. Th
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationLoginWithXUserGetResult  
@@ -20,7 +20,7 @@ HRESULT PFAuthenticationLoginWithXUserGetResult(
     PFEntityHandle* entityHandle,  
     size_t bufferSize,  
     void* buffer,  
-    PFAuthenticationLoginResult result,  
+    const PFAuthenticationLoginResult** result,  
     size_t* bufferUsed  
 )  
 ```  
@@ -46,7 +46,7 @@ The size of the buffer for the result object.
   
 Byte buffer used for the Login result value and its fields.  
   
-**`result`** &nbsp; [PFAuthenticationLoginResult](../../pfauthenticationtypes/structs/pfauthenticationloginresult.md)  
+**`result`** &nbsp; [PFAuthenticationLoginResult**](../../pfauthenticationtypes/structs/pfauthenticationloginresult.md)  
 *optional, library-allocated output*  
   
 Pointer to the LoginResult object.  
@@ -68,10 +68,10 @@ If the PFAuthenticationLoginWithXUserAsync call fails, entityHandle with be null
   
 ## Requirements  
   
-**Header:** PFAuthentication.h
+**Header:** PFAuthentication_Xbox.h
   
 ## See also  
-[PFAuthentication members](../pfauthentication_members.md)  
+[PFAuthentication_Xbox members](../pfauthentication_members.md)  
 
   
   

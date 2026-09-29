@@ -5,7 +5,7 @@ description: "PFAuthenticationLoginWithSteamRequest data model. Steam sign-in is
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationLoginWithSteamRequest  
@@ -49,7 +49,7 @@ Count of customTags
 **`playerSecret`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Player secret that is used to verify API request signatures (Enterprise Only).
+(Optional) Player secret that is used to verify API request signatures.
   
 **`steamTicket`** &nbsp; const char*  
 *is null-terminated*  

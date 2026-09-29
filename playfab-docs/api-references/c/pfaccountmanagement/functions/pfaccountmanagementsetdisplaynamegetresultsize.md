@@ -1,0 +1,51 @@
+---
+author: jasonsandlin
+title: "PFAccountManagementSetDisplayNameGetResultSize"
+description: "Get the size in bytes needed to store the result of a SetDisplayName call."
+ms.author: jasonsa
+ms.topic: reference
+ms.service: azure-playfab
+ms.date: 09/08/2026
+---
+
+# PFAccountManagementSetDisplayNameGetResultSize  
+
+Get the size in bytes needed to store the result of a SetDisplayName call.  
+
+## Syntax  
+  
+```cpp
+HRESULT PFAccountManagementSetDisplayNameGetResultSize(  
+    XAsyncBlock* async,  
+    size_t* bufferSize  
+)  
+```  
+  
+### Parameters  
+  
+**`async`** &nbsp; XAsyncBlock*  
+*_Inout_*  
+  
+XAsyncBlock for the async operation.  
+  
+**`bufferSize`** &nbsp; size_t*  
+*output*  
+  
+The buffer size in bytes required for the result.  
+  
+  
+### Return value
+Type: HRESULT
+  
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_ACCOUNT_NOT_FOUND, E_PF_CHARACTER_NOT_FOUND, E_PF_CONCURRENT_EDIT_ERROR, E_PF_ENTITY_PROFILE_CONSTRAINT_VALIDATION_FAILED, E_PF_ENTITY_PROFILE_VERSION_MISMATCH, E_PF_INVALID_PARTNER_RESPONSE, E_PF_NAME_NOT_AVAILABLE, E_PF_PROFANE_DISPLAY_NAME or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+  
+  
+## Requirements  
+  
+**Header:** PFAccountManagement.h
+  
+## See also  
+[PFAccountManagement members](../pfaccountmanagement_members.md)  
+
+  
+  

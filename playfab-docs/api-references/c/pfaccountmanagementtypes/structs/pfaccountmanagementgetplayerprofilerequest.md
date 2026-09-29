@@ -5,7 +5,7 @@ description: "PFAccountManagementGetPlayerProfileRequest data model. This API al
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAccountManagementGetPlayerProfileRequest  
@@ -37,7 +37,7 @@ Count of customTags
 **`playFabId`** &nbsp; const char*  
 *is null-terminated*  
   
-Unique PlayFab assigned ID of the user on whom the operation will be performed.
+(Optional) Unique PlayFab assigned ID of the user on whom the operation will be performed.
   
 **`profileConstraints`** &nbsp; [PFPlayerProfileViewConstraints](../../pftypes/structs/pfplayerprofileviewconstraints.md) const*  
 *may be nullptr*  

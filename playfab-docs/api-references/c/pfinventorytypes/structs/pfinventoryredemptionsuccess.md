@@ -5,7 +5,7 @@ description: "PFInventoryRedemptionSuccess data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFInventoryRedemptionSuccess  
@@ -16,6 +16,7 @@ PFInventoryRedemptionSuccess data model.
   
 ```cpp
 typedef struct PFInventoryRedemptionSuccess {  
+    time_t const* expirationTimestamp;  
     const char* marketplaceAlternateId;  
     const char* marketplaceTransactionId;  
     time_t successTimestamp;  
@@ -23,6 +24,11 @@ typedef struct PFInventoryRedemptionSuccess {
 ```
   
 ### Members  
+  
+**`expirationTimestamp`** &nbsp; time_t const*  
+*may be nullptr*  
+  
+(Optional) The timestamp for when the redeem expired.
   
 **`marketplaceAlternateId`** &nbsp; const char*  
 *is null-terminated*  

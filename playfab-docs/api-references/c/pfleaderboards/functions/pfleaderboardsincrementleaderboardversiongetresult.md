@@ -5,7 +5,7 @@ description: "Gets the result of a successful PFLeaderboardsIncrementLeaderboard
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/20/2026
+ms.date: 09/08/2026
 ---
 
 # PFLeaderboardsIncrementLeaderboardVersionGetResult  
@@ -37,7 +37,7 @@ PFLeaderboardsIncrementLeaderboardVersionResponse object that will be populated 
 ### Return value
 Type: HRESULT
   
-Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_CONCURRENT_EDIT_ERROR, E_PF_INVALID_VERSION_RESET_FOR_LINKED_LEADERBOARD, E_PF_LEADERBOARD_DEFINITION_MODIFICATION_NOT_ALLOWED_WHILE_LINKED, E_PF_LEADERBOARD_NOT_FOUND, E_PF_VERSION_INCREMENT_RATE_EXCEEDED or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+Result code for this API operation. If the service call is unsuccessful, the result will be E_PF_CONCURRENT_EDIT_ERROR, E_PF_EXTERNAL_ENTITY_NOT_ALLOWED_FOR_TIER, E_PF_INVALID_VERSION_RESET_FOR_LINKED_LEADERBOARD, E_PF_LEADERBOARD_DEFINITION_MODIFICATION_NOT_ALLOWED_WHILE_LINKED, E_PF_LEADERBOARD_NOT_FOUND, E_PF_VERSION_INCREMENT_RATE_EXCEEDED or any of the global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
   
 ## Requirements  

@@ -5,7 +5,7 @@ description: "PFDataAbortFileUploadsRequest data model. Aborts the pending uploa
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFDataAbortFileUploadsRequest  
@@ -51,7 +51,7 @@ Count of fileNames
 **`profileVersion`** &nbsp; int32_t const*  
 *may be nullptr*  
   
-(Optional) The expected version of the profile, if set and doesn't match the current version of the profile the operation will not be performed.
+(Optional) Optional field used for concurrency control. By specifying the previously returned ProfileVersion value from the InitiateFileUploads API or other APIs, you can ensure that the file upload abort operation is performed only if the profile has not been updated since you last loaded that version. If the profile for the same entity has been updated, the operation will fail with an EntityProfileVersionMismatch error. The conflicting update can be caused by any operation that modifies the entity profile, including SetObjects, FinalizeFileUploads, and UpdateStatistics.
   
   
 ## Requirements  

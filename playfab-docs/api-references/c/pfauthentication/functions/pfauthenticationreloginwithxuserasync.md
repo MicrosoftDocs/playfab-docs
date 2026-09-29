@@ -5,7 +5,7 @@ description: "Reauthenticates an existing PFEntityHandle using an XUserHandle. U
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFAuthenticationReLoginWithXUserAsync  
@@ -49,10 +49,10 @@ Call XAsyncGetStatus to get the result of the operation. If successful, the cach
   
 ## Requirements  
   
-**Header:** PFAuthentication.h
+**Header:** PFAuthentication_Xbox.h
   
 ## See also  
-[PFAuthentication members](../pfauthentication_members.md)  
+[PFAuthentication_Xbox members](../pfauthentication_members.md)  
 
   
   

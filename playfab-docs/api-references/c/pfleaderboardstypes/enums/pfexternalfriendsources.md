@@ -1,11 +1,11 @@
 ---
 author: jasonsandlin
 title: "PFExternalFriendSources"
-description: "External friend sources supported by Leaderboards friend queries."
+description: "ExternalFriendSources enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/20/2026
+ms.date: 09/08/2026
 ---
 
 # PFExternalFriendSources  
@@ -33,7 +33,7 @@ enum class PFExternalFriendSources  : uint32_t
 | None | TBD   |  
 | Steam | TBD   |  
 | Facebook | TBD   |  
-| `Xbox` | TBD   |
+| Xbox | TBD   |  
 | Psn | TBD   |  
 | All | TBD   |  
   

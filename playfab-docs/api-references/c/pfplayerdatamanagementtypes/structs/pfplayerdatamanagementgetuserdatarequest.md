@@ -5,7 +5,7 @@ description: "PFPlayerDataManagementGetUserDataRequest data model. Data is store
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFPlayerDataManagementGetUserDataRequest  
@@ -42,7 +42,7 @@ Count of keys
 **`playFabId`** &nbsp; const char*  
 *is null-terminated*  
   
-Unique PlayFab identifier of the user to load data for. Optional, defaults to yourself if not set. When specified to a PlayFab id of another player, then this will only return public keys for that account.
+(Optional) Unique PlayFab identifier of the user to load data for. Optional, defaults to yourself if not set. When specified to a PlayFab id of another player, then this will only return public keys for that account.
   
   
 ## Requirements  

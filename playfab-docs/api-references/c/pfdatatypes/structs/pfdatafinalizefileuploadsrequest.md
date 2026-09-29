@@ -5,7 +5,7 @@ description: "PFDataFinalizeFileUploadsRequest data model. Finalizes the upload 
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 09/08/2026
 ---
 
 # PFDataFinalizeFileUploadsRequest  
@@ -50,7 +50,7 @@ Count of fileNames
   
 **`profileVersion`** &nbsp; int32_t  
   
-The current version of the profile, can be used for concurrency control during updates.
+Field used for concurrency control. By specifying the previously returned ProfileVersion value from the InitiateFileUploads API, you can ensure that the file upload finalization is performed only if the profile has not been updated since you last loaded that version. If the profile for the same entity has been updated, the operation will fail with an EntityProfileVersionMismatch error. The conflicting update can be caused by any operation that modifies the entity profile, including SetObjects, FinalizeFileUploads, and UpdateStatistics.
   
   
 ## Requirements  
