@@ -34,6 +34,8 @@ Before you start this tutorial, please ensure that the following prerequisites h
 
 7. You have created an android signing cert and signed your app for deployment using the cert config.
 
+8. Apps building on the Android platform must ensure that BLUETOOTH_CONNECT is present in the app manifest so Party can monitor and connect to available Bluetooth devices.
+
 ## Including the required libraries and header files
 
 You'll need to include the following header files from the [PlayFab Party distribution repository](https://github.com/PlayFab/PlayFabParty).
@@ -46,7 +48,7 @@ LIB Files
 3. libssl.a
 
 > [!NOTE]
-> The SSL libraries are built from [Open SSL Version 1.1.1b-dev](https://github.com/openssl/openssl/tree/OpenSSL_1_1_1-stable). Please use an openSSL version that is 1.1.1b-dev or higher.
+> The SSL libraries are built from [Open SSL Version 3.5.7](https://github.com/openssl/openssl/releases#release-openssl-3.5.7). Please use an openSSL version that is 3.5.7 or higher.
 
 Header Includes
 
