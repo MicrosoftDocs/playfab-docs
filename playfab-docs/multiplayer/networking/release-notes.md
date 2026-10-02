@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: raymondcha
-ms.date: 09/09/2026
+ms.date: 10/01/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -17,6 +17,17 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
+
+## 1.10.27
+
+October 1, 2026
+
+### Bug fixes
+
+- iOS: Fixed a possible crash during cleanup when a canceled HTTP request completed without response data.
+- iOS: Fixed the arm64 simulator package to link architecture-correct OpenSSL libraries.
+- Updated OpenSSL to 3.5.7 for iOS, macOS, Android, and Linux builds.
+- GDK: Telemetry captured from the GDK version of the library running on SteamDeck via proton will now reflect correct DeviceMake, DeviceModel, and OS Version values corresponding to the SteamDeck.
 
 ## 1.10.26
 
