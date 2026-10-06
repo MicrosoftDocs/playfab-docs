@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # Game Saves UI callbacks
 
-Game Saves provides a set of UI callbacks that let your game respond to events during sync operations. On Xbox and Windows, the platform provides built-in UI for these events. On other platforms (such as Steam Deck), your game must implement its own UI by handling these callbacks.
+Game Saves provides a set of UI callbacks that let your game respond to events during sync operations. On XBOX and Windows, the platform provides built-in UI for these events. On other platforms (such as Steam Deck), your game must implement its own UI by handling these callbacks.
 
-Setting callbacks on Xbox and Windows overrides the platform-provided UI with your implementation. This is useful if your game needs a consistent player experience across all platforms—register the same callbacks everywhere and the built-in UI won't appear.
+Setting callbacks on XBOX and Windows overrides the platform-provided UI with your implementation. This is useful if your game needs a consistent player experience across all platforms—register the same callbacks everywhere and the built-in UI won't appear.
 
 ## How the state machine works
 
@@ -158,12 +158,38 @@ Fires during `PFGameSaveFilesAddUserWithUiAsync` when the local device doesn't h
 | `Cancel` | Cancels the operation. The `XAsyncBlock` callback fires with `E_PF_GAMESAVE_USER_CANCELLED`. |
 | `Retry` | Retries after the user frees local storage space. If there still isn't enough space, this callback fires again. |
 
+## In-process vs out-of-process (system UI)
+
+Where Game Saves runs depends on the platform, and this affects how UI events are handled:
+
+- **Out-of-process (XBOX and Windows)**: on XBOX and Windows, Game Saves always runs out-of-process. The platform (Connected Storage / GRTS) performs the sync and provides built-in system UI dialogs for sync failures, conflicts, active-device contention, and out-of-storage. The player interacts with those dialogs directly, and the platform translates the result back into the same async completion codes your game receives in-process. You can still register callbacks to replace the built-in UI.
+- **In-process (other platforms, such as Steam Deck)**: where the platform service isn't available, your game hosts the Game Saves sync engine and handles UI events through the callbacks described above. Your game fully drives the state machine with the response APIs.
+
+### Cancel is always a possible outcome
+
+Regardless of path, **every** UI flow can end with the user backing out without a successful sync, so your game must always handle a terminal cancel:
+
+| User intent | Async completion | `IsConnectedToCloud()` | Save folder? |
+|-------------|------------------|------------------------|--------------|
+| Continue online (success) | `S_OK` | `true` | Yes |
+| Play offline | `S_OK` | `false` | Yes |
+| Cancel / Quit (player) | `E_PF_GAMESAVE_USER_CANCELLED` (`0x800704C7`) | n/a | **No** |
+| Cancel (game called `XAsyncCancel`) | `E_ABORT` (`0x80004004`) | n/a | **No** |
+
+The only "back out" action that still lets the player continue is **Use Offline** on the sync-failed prompt (a success outcome). Every other Cancel is terminal and leaves no save folder—treat it as *don't allow play*. See [Game Saves offline mode](./offline.md#when-game-saves-enters-offline-mode-or-returns-an-error).
+
+In the built-in (out-of-process) system UI, these choices appear with platform wording. For example, the sync-failed dialog offers **"Try again"** / **"Play offline"**, and the contention dialog offers **"Stop sync & continue"** / **"Quit game"**. "Play offline" maps to offline mode (`S_OK`, not connected); "Quit game" maps to `E_PF_GAMESAVE_USER_CANCELLED`.
+
+Cancelling a **conflict** prompt is terminal on both paths—it completes with `E_PF_GAMESAVE_USER_CANCELLED` and doesn't cascade to a sync-failed prompt.
+
+For custom cross-platform UI (for example, matching your Steam Deck implementation), register callbacks everywhere and validate the out-of-process flows on your target hardware. Regardless of path, gate play on the completion result: `S_OK` + connected → play online; `S_OK` + not connected → play offline (warn the player); cancel/failure with no folder → block play.
+
 ## Platform requirements
 
 | Platform | UI callbacks |
 |----------|-------------|
-| **Xbox and Windows** | Optional. Set callbacks to override the built-in UI. |
-| **Other platforms** (Steam Deck, etc.) | **Required**. No built-in UI is available; your game must handle all callbacks. |
+| **XBOX and Windows** | Optional. Set callbacks to override the built-in UI. |
+| **Other platforms** (for example, Steam Deck) | **Required**. No built-in UI is available; your game must handle all callbacks. |
 
 For Steam Deck implementation details, see [Steam Deck implementation guide](./steam-deck-implementation.md).
 

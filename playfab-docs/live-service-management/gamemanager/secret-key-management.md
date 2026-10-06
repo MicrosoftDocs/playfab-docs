@@ -3,16 +3,16 @@ title: Secret Key Management
 author: williacj
 description: Describes the PlayFab system for managing secret keys.
 ms.author: cjwill
-ms.date: 05/20/2026
+ms.date: 10/02/2026
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, config, game manager, secret keys, ip allowlist, cidr
+keywords: playfab, config, game manager, secret keys, ip allowlist, api allowlist, cidr
 ms.localizationpriority: medium
 ---
 
 # Secret key management
 
-PlayFab developer secret keys allow your Title to make PlayFab Admin and Server API calls. A secret key also called a developer key, is strongly coupled with a PlayFab Title.
+PlayFab developer secret keys allow your Title to make PlayFab Admin and Server API calls. A secret key, also called a developer key, is associated with a PlayFab Title.
 
 Using the **Secret Keys** page in **Game Manager**, you can create, delete, disable, and set your keys to expire. This enables you to rotate the secret keys for your titles (which was difficult to do in the past.) It also allows you to grant temporary access to your titles.
 
@@ -47,7 +47,7 @@ This flow is zero-downtime, and you can safely roll back each step until you del
 
 At step two, both keys are active, so you can roll forward your code or back safely.
 
-At step three, you can re-enable the key while you fix whatever was still depending on it.
+At step three, you can reenable the key while you fix whatever was still depending on it.
 
 When the process is complete, you don't need to delete the old key. If you delete that key, it can't be recovered. The delete is permanent and irrevocable.
 
@@ -75,3 +75,33 @@ When an IP allowlist is configured for a title secret key, privileged calls (Ser
 
 > [!Important]
 > Double check the list before saving. An incorrect entry blocks every IP that isn't on the list, which can lock your services out of the Server and Admin APIs.
+
+## API allowlist
+
+API allowlists restrict a title secret key to a specific set of PlayFab APIs. Requests to APIs outside of the allowlist return HTTP 403 (`NotAuthorized`). Every change to a key, including API allowlist edits, is captured in the existing PlayStream secret key changed event.
+
+A secret key without an API allowlist remains unrestricted. Existing secret keys are unaffected until you enable and configure an API allowlist.
+
+> [!Important]
+> Selecting every API creates a snapshot of the APIs that are available at that time. It isn't a wildcard, and APIs added later aren't automatically allowed. To keep a key unrestricted for current and future APIs, don't enable an API allowlist.
+
+> [!Warning]
+> Allowing `GetEntityToken` can provide broader access than expected. The entity token returned by this API isn't restricted by the title secret key's API allowlist.
+
+To configure an API allowlist:
+
+1. In **Game Manager**, go to **Title Settings** > **Secret Keys**.
+2. Edit or create a secret key.
+3. Turn on **Enable API allowlist**.
+4. Use **Search APIs** to find and select each required API, such as `/Server/GetUserData`.
+5. Select **Save**, and then confirm the change.
+
+API allowlist changes aren't immediate. They take effect as existing secret key caches expire. To revoke all access for the key, disable the key instead of relying on an API allowlist change.
+
+To remove an API restriction:
+
+1. Edit the secret key.
+2. Turn off **Enable API allowlist**.
+3. Select **Save**, and then confirm the change.
+
+The secret key is then unrestricted for current and future APIs.

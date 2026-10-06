@@ -3,7 +3,7 @@ title: Throttling in PlayFab
 author: antnguyen89
 description: PlayFab throttling overview.
 ms.author: antnguyen
-ms.date: 08/28/2026
+ms.date: 09/30/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, throttling, throttle, api, token
@@ -58,6 +58,31 @@ Target entity throttling is a mechanism that enforces limits on certain operatio
 * Consistent per player limits: Scaling up the title doesn't affect limits for individual players, enabling titles to scale out their player base without concerns on capacity limits based off the number of players.  
 * Uniform Player Throttling: Players experience the same throttling limits regardless of how many users are active on a title, enabling developers to detect throttling issues early - even with a small user base. 
 * Service Stability: Throttling prevents a single player's traffic from overwhelming or adversely affecting PlayFab services or a specific data plane partition shared across multiple titles. 
+
+## View your title's API rate limits
+
+You can see the API rate limits that apply to your title in Game Manager:
+
+1. Sign in to [Game Manager](https://developer.playfab.com/) and select your title.
+1. Select **Settings** from the left menu, and then select **Limits**.
+1. Select the **API Rate Limits** tab.
+
+The tab shows the limits for your title, including any limits that PlayFab adjusted for your title or namespace. APIs are grouped by product, such as **Identity**, **Economy and UGC**, and **Multiplayer**. To find an API, select its product or enter its name in the search box, for example `LoginWithCustomID`.
+
+Each API's name is followed by the type of its limit:
+
+* **(title limits)**: A title-wide limit. All calls to the API from your title count toward one limit.
+* **(namespace limits)**: A namespace-wide limit. All calls to the API from the titles in your namespace count toward one limit.
+* **(per-entity limits)**: A per-entity limit. Each key counts toward its own limit.
+
+The **Entity type** column shows which entities a limit applies to:
+
+* For title-wide and namespace-wide limits, it shows **All**.
+* For per-entity limits, it shows the type of the entity that the key belongs to, for example `title` or `title_player_account`. PlayFab checks the rows from top to bottom, and **Default** applies to any entity type that doesn't have its own row.
+
+The **Limits** column shows how many calls are allowed in each time window, for example *100 calls per 10 seconds*.
+
+For example, suppose that an API has a per-entity limit with a `title` row and a **Default** row. If your game server calls the API with your title's secret key and the request doesn't target another entity, the key is your title ID, so the `title` row applies. Because all of these calls from your backend share one key, they can reach the limit much sooner than calls from individual players. If a player calls the API, the key is the player's ID, so the **Default** row applies. For more information, see [How PlayFab determines the key for a specific API request](#how-playfab-determines-the-key-for-a-specific-api-request).
 
 ## See also
 

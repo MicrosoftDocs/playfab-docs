@@ -20,6 +20,8 @@ items:
   href: ui-callbacks.md
 - name: Offline Mode
   href: offline.md
+- name: Error Handling FAQ
+  href: error-handling-faq.md
 - name: PlayStream Events
   href: playstream-events.md
 - name: Active Device Changes

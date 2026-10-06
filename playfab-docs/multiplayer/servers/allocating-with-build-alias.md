@@ -3,7 +3,7 @@ title: Managing a build alias and allocating to it
 author: joannaleecy
 description: Describes how to allocate multiplayer game servers using the build alias feature.
 ms.author: raakisad
-ms.date: 10/16/2019
+ms.date: 09/30/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, social, tournaments, leaderboards, servers, debugging
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Managing a build alias and allocating to it
 
-A build alias is a management layer on top of builds, which allows calls to `RequestMultiplayerServer` to be distributed over multiple builds in a controlled fashion. This can improve the simplicity and reliability of build to build upgrades and several other scenarios listed below. Aliases achieve this by specifying a list of build ids along with the weight of each one. The weight represents the ratio of allocation calls that should be forwarded to the corresponding build.
+A build alias is a management layer on top of builds, which allows calls to `RequestMultiplayerServer` to be distributed over multiple builds in a controlled fashion. This can improve the simplicity and reliability of build to build upgrades and several other scenarios listed below. Aliases achieve this by specifying a list of build ids along with the weight of each one. A build's weight sets how likely that build is to be tried first for each allocation request. For example, if Build 1 has a weight of 8 and Build 2 has a weight of 2, Build 1 is tried first for about 80% of requests, so it serves about 80% of them while it has StandingBy servers. If Build 1 runs out of StandingBy servers in a region, those requests go to Build 2 instead, so Build 2 can serve more than 20% of the requests in that region. The regions in each request come first, though, and the weights only decide which build serves a request within a region. For details, see [Fallback to other builds and regions](#fallback-to-other-builds-and-regions).
 
 ### Safe deployment that is backwards compatible
 This is the most common scenario for a build to build upgrade, where you are updating the game server and retail clients are compatible with both servers.
@@ -67,9 +67,21 @@ Gradually build 2 would be weighted more and absorb all traffic.
 
 ## Fallback to other builds and regions
 
-Aliases can make your multiplayer server deployments more resilient, by allowing for fallback across multiple builds. For example, assume an allocation request targeting a build alias ranks EastUS as region #1, and West US as region #2. This build alias provides similar weights to two builds, Build 1 and Build 2.
+Aliases can make your multiplayer server deployments more resilient, by allowing for fallback across multiple builds. When you request a server from an alias, list every region that gives your players an acceptable experience in `PreferredRegions`, in order of preference. PlayFab Multiplayer Servers (MPS) handles each request as follows:
 
-Assume that for a given allocation Build 1 is selected.
+1. MPS uses the build weights to put the alias's builds in an order for the request. A build with a higher weight is more likely to come first.
+1. MPS goes through your regions in the order you listed them. In each region, it tries every build in that order. It skips builds that aren't deployed in the region.
+1. MPS allocates a server from the first build that has a StandingBy server. If no build has one in the region, MPS moves on to the next region. If no region has one, the request fails with the `MultiplayerServerTooManyRequests` error.
+
+Region order always comes before build weights. Players get a server in the most preferred region that has capacity, and the weights only decide which build serves them in that region. Use the weights to express your cost and performance preferences between builds, for example between virtual machine (VM) sizes. Adding builds that cover more regions to an alias can only add capacity.
+
+A build with a weight of 0 is never used for allocations, not even as a fallback. To keep a build as a fallback, give it a small nonzero weight instead, for example 1 against 999 for your main build.
+
+If none of the alias's builds is deployed in any of the requested regions, the request fails with the `MultiplayerServerNotFound` error. For ways to avoid both errors, see [Best practices and launch checklist](best-practices.md).
+
+For example, assume an allocation request targeting a build alias ranks EastUS as region #1, and West US as region #2. This build alias provides similar weights to two builds, Build 1 and Build 2.
+
+Assume that Build 1 comes first in the order for a given allocation.
 
 1. Allocation in East US for Build 1 is tried.
 2. If #1 fails, allocation in East US for Build 2 is tried.
