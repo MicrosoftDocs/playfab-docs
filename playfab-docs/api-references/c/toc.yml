@@ -65,6 +65,8 @@
     href: pflocalizationtypes/pflocalizationtypes_members.md
   - name: PFMultiplayerServer
     href: pfmultiplayerserver/pfmultiplayerserver_members.md
+  - name: PFMultiplayerServerQoS
+    href: pfmultiplayerserverqos/pfmultiplayerserverqos_members.md
   - name: PFMultiplayerServerTypes
     href: pfmultiplayerservertypes/pfmultiplayerservertypes_members.md
   - name: PFPlatform
@@ -1317,6 +1319,12 @@
     href: pfmultiplayerserver/functions/pfmultiplayerserverrequestmultiplayerservergetresult.md
   - name: PFMultiplayerServerRequestMultiplayerServerGetResultSize
     href: pfmultiplayerserver/functions/pfmultiplayerserverrequestmultiplayerservergetresultsize.md
+  - name: PFMultiplayerServerPingQosServersAsync
+    href: pfmultiplayerserverqos/functions/pfmultiplayerserverpingqosserversasync.md
+  - name: PFMultiplayerServerPingQosServersGetResult
+    href: pfmultiplayerserverqos/functions/pfmultiplayerserverpingqosserversgetresult.md
+  - name: PFMultiplayerServerPingQosServersGetResultSize
+    href: pfmultiplayerserverqos/functions/pfmultiplayerserverpingqosserversgetresultsize.md
   - name: PFMemGetFunctions
     href: pfplatform/functions/pfmemgetfunctions.md
   - name: PFMemIsUsingCustomMemoryFunctions
@@ -2645,6 +2653,12 @@
     href: pflocalizationtypes/structs/pflocalizationgetlanguagelistrequest.md
   - name: PFLocalizationGetLanguageListResponse
     href: pflocalizationtypes/structs/pflocalizationgetlanguagelistresponse.md
+  - name: PFMultiplayerServerPingQosServersOptions
+    href: pfmultiplayerserverqos/structs/pfmultiplayerserverpingqosserversoptions.md
+  - name: PFMultiplayerServerPingQosServersResult
+    href: pfmultiplayerserverqos/structs/pfmultiplayerserverpingqosserversresult.md
+  - name: PFMultiplayerServerQosResult
+    href: pfmultiplayerserverqos/structs/pfmultiplayerserverqosresult.md
   - name: PFMultiplayerServerBuildAliasDetailsResponse
     href: pfmultiplayerservertypes/structs/pfmultiplayerserverbuildaliasdetailsresponse.md
   - name: PFMultiplayerServerBuildAliasParams
