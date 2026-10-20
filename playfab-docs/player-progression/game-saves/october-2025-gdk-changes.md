@@ -3,7 +3,7 @@ title: Game Saves Implementation with October 2025 GDK
 author: amccalib
 description: Essential guide for implementing PlayFab Game Saves with October 2025 GDK (2510), including requirements for new implementations and migration guidance
 ms.author: andmcc
-ms.date: 08/01/2025
+ms.date: 10/15/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, game saves, gdk, steam deck, xgameruntime, unified sdk
@@ -56,6 +56,8 @@ Configure your build system to use the correct platform-specific paths:
 if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     set(GDK_INCLUDE_DIR "${GDK_PATH}/windows/include")
     set(GDK_LIB_DIR "${GDK_PATH}/windows/lib/x64")
+    # Required so the SDK headers select the GDK platform
+    add_compile_definitions(_GAMING_DESKTOP)
 elseif(XBOX)
     set(GDK_INCLUDE_DIR "${GDK_PATH}/xbox/include")
     set(GDK_LIB_DIR "${GDK_PATH}/xbox/lib/x64")
@@ -68,6 +70,18 @@ endif()
 <IncludePath>$(GDK)\windows\include;$(IncludePath)</IncludePath>
 <LibraryPath>$(GDK)\windows\lib\x64;$(LibraryPath)</LibraryPath>
 ```
+
+```xml
+<!-- Required for the stock x64 platform so the SDK headers select the GDK platform -->
+<ItemDefinitionGroup Condition="'$(Platform)'=='x64'">
+  <ClCompile>
+    <PreprocessorDefinitions>_GAMING_DESKTOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+  </ClCompile>
+</ItemDefinitionGroup>
+```
+
+> [!IMPORTANT]
+> When you build for Windows with the stock **x64** platform, CMake, or another build system instead of the **Gaming.Desktop.x64** platform, define `_GAMING_DESKTOP` yourself. The **Gaming.Desktop.x64** platform defines it automatically. Without it, the SDK headers compile for a non-GDK Windows platform and functions such as [PFInitialize](../../api-references/c/pfcore/functions/pfinitialize.md) aren't declared, which causes errors such as `C3861: 'PFInitialize': identifier not found`. For more information, see [Using the x64 platform with the Microsoft Game Development Kit (GDK)](/gaming/gdk/docs/tools/tools-pc/visualstudio/gr-vs-templates#using-the-x64-platform-with-the-microsoft-game-development-kit-gdk).
 
 #### Platform Support Details
 - **Xbox**: Uses `xbox` folders for all recent Xbox console generations
