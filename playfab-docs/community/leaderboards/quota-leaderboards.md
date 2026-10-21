@@ -3,40 +3,25 @@ title: Quota Leaderboards
 author: braulioal
 description: Learn on the quota for Leaderboards
 ms.author: braulioal
-ms.date: 09/01/2024
+ms.date: 06/09/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
 
-# Quota limits leaderboards
+# Quota Leaderboards
 
-The Leaderboard service is designed to align with PlayFab's pricing models, offering two distinct modes: 
-development and live. The Development Mode allows titles to test each feature and begin development. 
-The live mode, on the other hand, is optimized for handling larger traffic loads typical of a live game.
+The Leaderboard service has quotas that vary based on your title's mode and configuration. View your title's current quota in Game Manager under **Settings** > **Limits**.
 
-The following tables outline the limits for each of these modes:
+## Design considerations
 
-## Development Mode
+The following limits apply regardless of title mode and affect how you design your leaderboards:
 
-| Limit | Quantity |
+| Limit | Value |
 | --- | --- |
-| Leaderboard Definitions | 50 definitions 
-| Row limit | 10,000 rows |
-| Number of versions | One version |
-
-## Live Mode
-
-| Limit |Quantity|
-| --- | --- 
-| Leaderboard Definitions | 1,000 definitions
-| Row limit | 1 million rows
-| Number of versions | No limit
-
-In both Development and Live modes, the maximum number of columns allowed for each leaderboard definition is 5.
-
-For more detailed pricing information, visit the [PlayFab pricing page](https://playfab.com/pricing/).
+| Maximum columns per leaderboard definition | 5 |
+| Maximum metadata length per entry | 50 UTF-8 characters |
 
 ## See also
 

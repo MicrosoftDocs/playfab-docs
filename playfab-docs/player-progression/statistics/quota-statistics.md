@@ -3,39 +3,24 @@ title: Quota Statistics
 author: braulioal
 description: Learn on the quota for Statistics
 ms.author: braulioal
-ms.date: 09/01/2024
+ms.date: 06/09/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, leaderboard, stats
 ms.localizationpriority: medium
 ---
-# Quota limits statistics
+# Quota Statistics
 
-The Statistic service is designed to align with PlayFab's pricing models, offering two distinct modes: 
-development and live. The Development Mode allows titles to test each feature and begin development. 
-The live mode, on the other hand, is optimized for handling larger traffic loads typical of a live game.
+The Statistic service has quotas that vary based on your title's mode and configuration. View your title's current quota in Game Manager under **Settings** > **Limits**.
 
-The following tables outline the limits for each of these modes:
+## Design considerations
 
-## Development Mode
+The following limits apply regardless of title mode and affect how you design your statistics:
 
-| Limit | Quantity |
+| Limit | Value |
 | --- | --- |
-| Statistics Definitions | 100 definitions |
-| Number of versions | One version |
-
-## Live Mode
-
-
-| Limit| Quantity
-| --- | ---  
-| Statistics Definitions | 1,000 definitions 
-| Number of versions | No limit 
-
-
-In both Development and Live modes, the maximum number of columns allowed for each statistic definition is 5.
-
-For more detailed pricing information, visit the [PlayFab pricing page](https://playfab.com/pricing/).
+| Maximum columns per statistic definition | 5 |
+| Maximum metadata length per entry | 50 UTF-8 characters |
 
 
 ## See also
@@ -47,4 +32,4 @@ For more detailed pricing information, visit the [PlayFab pricing page](https://
 - [Add contextual data to statistics](metadata-statistics.md)
 - [Transactional writes](transactional-writes.md)
 - [API reference](api-reference.md)
-- [Statistics meters](../../pricing/meters/statistics-meters.md)
+- [Statistics meters](../../pricing/Meters/statistics-meters.md)
