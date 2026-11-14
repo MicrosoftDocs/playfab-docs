@@ -5,7 +5,7 @@ description: "PFMembershipModel data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMembershipModel  
@@ -20,7 +20,7 @@ typedef struct PFMembershipModel {
     time_t membershipExpiration;  
     const char* membershipId;  
     time_t const* overrideExpiration;  
-    PFSubscriptionModel const* subscriptions;  
+    PFSubscriptionModel const* const* subscriptions;  
     uint32_t subscriptionsCount;  
 } PFMembershipModel;  
 ```
@@ -43,12 +43,12 @@ The time this membership expires.
 **`overrideExpiration`** &nbsp; time_t const*  
 *may be nullptr*  
   
-(Optional) Membership expirations can be explicitly overridden (via game manager or the admin api). If this membership has been overridden, this will be the new expiration time.
+(Optional) Membership expirations can be explicitly overridden (via game manager or the admin API). If this membership has been overridden, this will be the new expiration time.
   
-**`subscriptions`** &nbsp; [PFSubscriptionModel](pfsubscriptionmodel.md) const*  
+**`subscriptions`** &nbsp; [PFSubscriptionModel](pfsubscriptionmodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) The list of subscriptions that this player has for this membership.
+(Optional) The list of subscriptions that this player has for this membership. An array of `subscriptionsCount` pointers.
   
 **`subscriptionsCount`** &nbsp; uint32_t  
   

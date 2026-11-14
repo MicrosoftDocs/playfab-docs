@@ -5,7 +5,7 @@ description: "PFMultiplayerServerPartyInvitationConfiguration data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerPartyInvitationConfiguration  
@@ -16,7 +16,7 @@ PFMultiplayerServerPartyInvitationConfiguration data model.
   
 ```cpp
 typedef struct PFMultiplayerServerPartyInvitationConfiguration {  
-    PFEntityKey const* entityKeys;  
+    PFEntityKey const* const* entityKeys;  
     uint32_t entityKeysCount;  
     const char* identifier;  
     const char* revocability;  
@@ -25,7 +25,7 @@ typedef struct PFMultiplayerServerPartyInvitationConfiguration {
   
 ### Members  
   
-**`entityKeys`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const*  
+**`entityKeys`** &nbsp; [PFEntityKey](../../pftypes/structs/pfentitykey-c.md) const* const*  
 *may be nullptr*  
   
 (Optional) The list of PlayFab EntityKeys that the invitation allows to authenticate into the network. If this list is empty, all users are allowed to authenticate using the invitation's identifier. This list may contain no more than 1024 items.

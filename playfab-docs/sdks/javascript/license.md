@@ -1,9 +1,9 @@
 ---
-title: Javascript licenses
+title: "JavaScript licenses"
 author: joannaleecy
 description: Landing page for the PlayFab Javascript SDK.
 ms.author: jenelleb
-ms.date: 01/22/2019
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, javascript sdk, javascript, cpp

@@ -5,7 +5,7 @@ description: "PFMultiplayerServerRequestPartyServiceResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerRequestPartyServiceResponse  
@@ -28,12 +28,12 @@ typedef struct PFMultiplayerServerRequestPartyServiceResponse {
 **`invitationId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The invitation identifier supplied in the PartyInvitationConfiguration, or the PlayFab-generated guid if none was supplied.
+(Optional) The invitation identifier supplied in the PartyInvitationConfiguration, or the PlayFab-generated GUID if none was supplied.
   
 **`partyId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The guid string party ID of the party session.
+(Optional) The GUID string party ID of the party session.
   
 **`region`** &nbsp; const char*  
 *is null-terminated*  

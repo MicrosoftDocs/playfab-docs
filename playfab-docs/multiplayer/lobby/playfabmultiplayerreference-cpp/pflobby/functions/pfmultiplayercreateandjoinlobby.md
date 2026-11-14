@@ -5,7 +5,7 @@ description: "Create a new lobby and add the creating PlayFab entity to it."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 03/15/2022
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerCreateAndJoinLobby  
@@ -31,15 +31,15 @@ HRESULT PFMultiplayerCreateAndJoinLobby(
   
 The handle of the PFMultiplayer API instance.  
   
-**`creator`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
+**`creator`** &nbsp; [const PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The local PlayFab entity creating the lobby.  
   
-**`createConfiguration`** &nbsp; [PFLobbyCreateConfiguration*](../structs/pflobbycreateconfiguration.md)  
+**`createConfiguration`** &nbsp; [const PFLobbyCreateConfiguration*](../structs/pflobbycreateconfiguration.md)  
   
 The initial configuration data used when creating the lobby.  
   
-**`joinConfiguration`** &nbsp; [PFLobbyJoinConfiguration*](../structs/pflobbyjoinconfiguration.md)  
+**`joinConfiguration`** &nbsp; [const PFLobbyJoinConfiguration*](../structs/pflobbyjoinconfiguration.md)  
   
 The initial configuration data for the member creating and joining the lobby.  
   
@@ -51,7 +51,7 @@ An optional, app-defined, pointer-sized context value that can be used to associ
 **`lobby`** &nbsp; PFLobbyHandle*  
 *optional, library-allocated output*  
   
-The optional, output lobby object which can be used to queue operations for immediate execution of this operation completes.  
+An optional output lobby handle. If the call succeeds, the handle is available immediately, before the asynchronous operation completes, and you can use it to queue other operations on the lobby.  
   
   
 ### Return value
@@ -63,9 +63,11 @@ Type: HRESULT
   
 This is an asynchronous operation. Upon successful completion, the title will be provided a [PFLobbyMemberAddedStateChange](../structs/pflobbymemberaddedstatechange.md) followed by a [PFLobbyCreateAndJoinLobbyCompletedStateChange](../structs/pflobbycreateandjoinlobbycompletedstatechange.md) with the [PFLobbyCreateAndJoinLobbyCompletedStateChange::result](../structs/pflobbycreateandjoinlobbycompletedstatechange.md) field set to ```S_OK```. Upon a failed completion, the title will be provided a [PFLobbyCreateAndJoinLobbyCompletedStateChange](../structs/pflobbycreateandjoinlobbycompletedstatechange.md) with the [PFLobbyCreateAndJoinLobbyCompletedStateChange::result](../structs/pflobbycreateandjoinlobbycompletedstatechange.md) field set to a failure.
   
+Before you call this function, call [PFMultiplayerSetEntityToken](../../pfmultiplayer/functions/pfmultiplayersetentitytoken.md) for `creator`. If no token is set for that entity, the call fails synchronously with `0x89236402` and no state change is provided. The call also fails synchronously with `0x89236404` if the `id` or `type` field of `creator` is null or empty, and with `E_POINTER` if `creator`, `createConfiguration` or `joinConfiguration` is null. If this call fails synchronously and you supplied the optional `lobby` output, `*lobby` is null. For all error codes, see [PlayFab Multiplayer C++ SDK error codes](../../pfmultiplayererrors.md).
+  
 ## Requirements  
   
-**Header:** PFLobby.h
+**Header:** PFLobby.h  
   
 ## See also  
 [PFLobby members](../pflobby_members.md)  

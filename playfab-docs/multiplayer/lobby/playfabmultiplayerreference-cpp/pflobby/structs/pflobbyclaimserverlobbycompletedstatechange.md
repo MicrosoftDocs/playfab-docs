@@ -5,7 +5,7 @@ description: "Information specific to the *ClaimServerLobbyCompleted* type of st
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/25/2023
+ms.date: "11/13/2026"
 ---
 
 # PFLobbyClaimServerLobbyCompletedStateChange  
@@ -43,7 +43,7 @@ The lobby ID provided to the call associated with this state change.
 **`lobby`** &nbsp; PFLobbyHandle  
 *must not be null*  
   
-The lobby that was created and joined.
+The lobby associated with the claim operation.
   
 ## Remarks  
   

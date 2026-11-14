@@ -5,7 +5,7 @@ description: "PFPlayerProfileModel data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFPlayerProfileModel  
@@ -16,45 +16,45 @@ PFPlayerProfileModel data model.
   
 ```cpp
 typedef struct PFPlayerProfileModel {  
-    PFAdCampaignAttributionModel const* adCampaignAttributions;  
+    PFAdCampaignAttributionModel const* const* adCampaignAttributions;  
     uint32_t adCampaignAttributionsCount;  
     const char* avatarUrl;  
     time_t const* bannedUntil;  
-    PFContactEmailInfoModel const* contactEmailAddresses;  
+    PFContactEmailInfoModel const* const* contactEmailAddresses;  
     uint32_t contactEmailAddressesCount;  
     time_t const* created;  
     const char* displayName;  
     const char* const* experimentVariants;  
     uint32_t experimentVariantsCount;  
     time_t const* lastLogin;  
-    PFLinkedPlatformAccountModel const* linkedAccounts;  
+    PFLinkedPlatformAccountModel const* const* linkedAccounts;  
     uint32_t linkedAccountsCount;  
-    PFLocationModel const* locations;  
+    PFLocationModel const* const* locations;  
     uint32_t locationsCount;  
-    PFMembershipModel const* memberships;  
+    PFMembershipModel const* const* memberships;  
     uint32_t membershipsCount;  
     PFLoginIdentityProvider const* origination;  
     const char* playerId;  
     const char* publisherId;  
-    PFPushNotificationRegistrationModel const* pushNotificationRegistrations;  
+    PFPushNotificationRegistrationModel const* const* pushNotificationRegistrations;  
     uint32_t pushNotificationRegistrationsCount;  
-    PFStatisticModel const* statistics;  
+    PFStatisticModel const* const* statistics;  
     uint32_t statisticsCount;  
-    PFTagModel const* tags;  
+    PFTagModel const* const* tags;  
     uint32_t tagsCount;  
     const char* titleId;  
     uint32_t const* totalValueToDateInUSD;  
-    PFValueToDateModel const* valuesToDate;  
+    PFValueToDateModel const* const* valuesToDate;  
     uint32_t valuesToDateCount;  
 } PFPlayerProfileModel;  
 ```
   
 ### Members  
   
-**`adCampaignAttributions`** &nbsp; [PFAdCampaignAttributionModel](pfadcampaignattributionmodel.md) const*  
+**`adCampaignAttributions`** &nbsp; [PFAdCampaignAttributionModel](pfadcampaignattributionmodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of advertising campaigns the player has been attributed to.
+(Optional) List of advertising campaigns the player has been attributed to. An array of `adCampaignAttributionsCount` pointers.
   
 **`adCampaignAttributionsCount`** &nbsp; uint32_t  
   
@@ -70,10 +70,10 @@ Count of adCampaignAttributions
   
 (Optional) If the player is currently banned, the UTC Date when the ban expires.
   
-**`contactEmailAddresses`** &nbsp; [PFContactEmailInfoModel](pfcontactemailinfomodel.md) const*  
+**`contactEmailAddresses`** &nbsp; [PFContactEmailInfoModel](pfcontactemailinfomodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of all contact email info associated with the player account.
+(Optional) List of all contact email info associated with the player account. An array of `contactEmailAddressesCount` pointers.
   
 **`contactEmailAddressesCount`** &nbsp; uint32_t  
   
@@ -103,28 +103,28 @@ Count of experimentVariants
   
 (Optional) UTC time when the player most recently logged in to the title.
   
-**`linkedAccounts`** &nbsp; [PFLinkedPlatformAccountModel](pflinkedplatformaccountmodel.md) const*  
+**`linkedAccounts`** &nbsp; [PFLinkedPlatformAccountModel](pflinkedplatformaccountmodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of all authentication systems linked to this player account.
+(Optional) List of all authentication systems linked to this player account. An array of `linkedAccountsCount` pointers.
   
 **`linkedAccountsCount`** &nbsp; uint32_t  
   
 Count of linkedAccounts
   
-**`locations`** &nbsp; [PFLocationModel](pflocationmodel.md) const*  
+**`locations`** &nbsp; [PFLocationModel](pflocationmodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of geographic locations from which the player has logged in to the title.
+(Optional) List of geographic locations from which the player has logged in to the title. An array of `locationsCount` pointers.
   
 **`locationsCount`** &nbsp; uint32_t  
   
 Count of locations
   
-**`memberships`** &nbsp; [PFMembershipModel](pfmembershipmodel.md) const*  
+**`memberships`** &nbsp; [PFMembershipModel](pfmembershipmodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of memberships for the player, along with whether are expired.
+(Optional) List of memberships for the player, along with whether are expired. An array of `membershipsCount` pointers.
   
 **`membershipsCount`** &nbsp; uint32_t  
   
@@ -145,28 +145,28 @@ Count of memberships
   
 (Optional) Publisher this player belongs to.
   
-**`pushNotificationRegistrations`** &nbsp; [PFPushNotificationRegistrationModel](pfpushnotificationregistrationmodel.md) const*  
+**`pushNotificationRegistrations`** &nbsp; [PFPushNotificationRegistrationModel](pfpushnotificationregistrationmodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of configured end points registered for sending the player push notifications.
+(Optional) List of configured end points registered for sending the player push notifications. An array of `pushNotificationRegistrationsCount` pointers.
   
 **`pushNotificationRegistrationsCount`** &nbsp; uint32_t  
   
 Count of pushNotificationRegistrations
   
-**`statistics`** &nbsp; [PFStatisticModel](pfstatisticmodel.md) const*  
+**`statistics`** &nbsp; [PFStatisticModel](pfstatisticmodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of leaderboard statistic values for the player.
+(Optional) List of leaderboard statistic values for the player. An array of `statisticsCount` pointers.
   
 **`statisticsCount`** &nbsp; uint32_t  
   
 Count of statistics
   
-**`tags`** &nbsp; [PFTagModel](pftagmodel.md) const*  
+**`tags`** &nbsp; [PFTagModel](pftagmodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of player's tags for segmentation.
+(Optional) List of player's tags for segmentation. An array of `tagsCount` pointers.
   
 **`tagsCount`** &nbsp; uint32_t  
   
@@ -182,10 +182,10 @@ Count of tags
   
 (Optional) Sum of the player's purchases made with real-money currencies, converted to US dollars equivalent and represented as a whole number of cents (1/100 USD). For example, 999 indicates nine dollars and ninety-nine cents.
   
-**`valuesToDate`** &nbsp; [PFValueToDateModel](pfvaluetodatemodel.md) const*  
+**`valuesToDate`** &nbsp; [PFValueToDateModel](pfvaluetodatemodel.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of the player's lifetime purchase totals, summed by real-money currency.
+(Optional) List of the player's lifetime purchase totals, summed by real-money currency. An array of `valuesToDateCount` pointers.
   
 **`valuesToDateCount`** &nbsp; uint32_t  
   

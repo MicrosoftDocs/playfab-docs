@@ -5,7 +5,7 @@ description: Retrieves the memory allocation and freeing callbacks the Party lib
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 03/11/2022
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::GetMemoryCallbacks  
@@ -15,7 +15,7 @@ Retrieves the memory allocation and freeing callbacks the Party library is using
 ## Syntax  
   
 ```cpp
-PartyError GetMemoryCallbacks(  
+static PartyError GetMemoryCallbacks(  
     PartyAllocateMemoryCallback* allocateMemoryCallback,  
     PartyFreeMemoryCallback* freeMemoryCallback  
 )  

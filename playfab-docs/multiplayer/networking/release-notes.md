@@ -3,7 +3,7 @@ title: PlayFab Party Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Party
 ms.author: raymondcha
-ms.date: 10/01/2026
+ms.date: 11/13/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, party, release notes, multiplayer, networking
@@ -18,6 +18,15 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Support for 32-bit Android platforms (arm7 and x86) ended on October 19, 2023. No new PlayFab Party library updates will be released for those platforms. The PlayFab Party networking and voice services will continue to operate with no impact to any titles currently using the PlayFab Party library on 32-bit Android platforms.
 
+## 1.10.28
+
+November 5, 2026
+
+### Bug fixes
+
+- PlayStation®4 and PlayStation®5: Fixed a possible crash when using speech-to-text transcription.
+- PlayStation®4 and PlayStation®5: Fixed an issue where internal threads did not yield to other ready threads.
+
 ## 1.10.27
 
 October 1, 2026
@@ -26,8 +35,10 @@ October 1, 2026
 
 - iOS: Fixed a possible crash during cleanup when a canceled HTTP request completed without response data.
 - iOS: Fixed the arm64 simulator package to link architecture-correct OpenSSL libraries.
-- Updated OpenSSL to 3.5.7 for iOS, macOS, Android, and Linux builds.
+- Updated OpenSSL to 3.5.7 for iOS, macOS, Android, Linux, PlayStation®4, PlayStation®5, Nintendo Switch, and Nintendo Switch 2 builds.
 - GDK: Telemetry captured from the GDK version of the library running on SteamDeck via proton will now reflect correct DeviceMake, DeviceModel, and OS Version values corresponding to the SteamDeck.
+- PlayStation®4 and PlayStation®5: Fixed possible heap corruption when HTTP response buffer allocation failed, and corrected error details reported for failed requests.
+- PlayStation®5: C++17 NuGet packages now use `Debug` and `Release` library folders instead of `DebugLegacy` and `ReleaseLegacy`.
 
 ## 1.10.26
 
@@ -231,7 +242,7 @@ August 5, 2024
 
 ### Bug fixes
 
-- Fixed an issue where the library might crash on Windows or Xbox while the process is terminating.
+- Fixed an issue where the library might crash on Windows or XBOX while the process is terminating.
 - Addressed spurious direct peer connection failures after a previous connection attempt failed in certain cases for non Windows platforms.
 - Fixed an issue where the DestroyNetwork event wasn't fired during repeated Party network creation and destroying.
 
@@ -244,7 +255,7 @@ August 5, 2024
 May 3, 2024
 
 - Addressed intermittent fatal errors reported in [PartyRegionsChangedStateChange](reference/structs/partyregionschangedstatechange.md) and other operations by Windows devices using features such as connection sharing.
-- Fixed a potential crash on Windows and Xbox if process shuts down shortly after starting to use Party.
+- Fixed a potential crash on Windows and XBOX if process shuts down shortly after starting to use Party.
 - Fixed a bug where [`PartyChatControl`](reference/classes/PartyChatControl/partychatcontrol.md) resources would sometimes not be freed up after calling [PartyLocalDevice::DestroyChatControl](reference/classes/PartyLocalDevice/methods/partylocaldevice_destroychatcontrol.md) and would only be released after calling [PartyManager::Cleanup](reference/classes/PartyManager/methods/partymanager_cleanup.md).
 - Android: Resolved duplicate class error when Party and Multiplayer are used in the same app.
 
@@ -459,7 +470,7 @@ September 30, 2021
 June 29, 2021
 ### New profiling hooks and chat control indicators
 
-- Developers interested in where time is spent in internal library functions can now configure optional method entrance and exit callbacks to hook into their preferred high-performance instrumentation method. For more information, see [`PartyManager::SetProfilingCallbacksForMethodEntryExit`](reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md). In this release, the callbacks are only supported for Windows, Xbox One XDK, and Microsoft Game Core platforms.
+- Developers interested in where time is spent in internal library functions can now configure optional method entrance and exit callbacks to hook into their preferred high-performance instrumentation method. For more information, see [`PartyManager::SetProfilingCallbacksForMethodEntryExit`](reference/classes/PartyManager/methods/partymanager_setprofilingcallbacksformethodentryexit.md). In this release, the callbacks are only supported for Windows, XBOX One XDK, and Microsoft Game Core platforms.
 - New NoRemoteInput and RemoteAudioInputMuted chat control indicators provide more granularity on currently silent audio state. For more information, see [`PartyChatControlChatIndicator`](reference/enums/partychatcontrolchatindicator.md).
 
 ### Endpoint message behavior improvements
@@ -543,7 +554,7 @@ April 30, 2020
 
 ### Misc changes
 - The bandwidth used by chat data has been reduced.
-- More descriptive error codes and error messages are now provided when sandbox issues are encountered on Xbox.
+- More descriptive error codes and error messages are now provided when sandbox issues are encountered on XBOX.
 - `PartyManager::Initialize()` now fails if an empty PlayFab Title ID is provided.
 - Passing invalid PlayFab Entity Tokens to `PartyManager::CreateLocalUser()` will now result in more descriptive error messages in the state change results for operations that rely on a valid token.
 - Typos in the header documentation have been fixed.
@@ -556,9 +567,9 @@ April 30, 2020
 
 ### Chat API changes
 
-* The real-time audio manipulation functions, which can be used to modify outgoing or incoming voice chat audio, are implemented for Windows and Xbox. For more information, see [Using real-time audio manipulation to apply custom voice effects](../../community/voice-communications/concepts-realtime-audio-manipulation.md).
+* The real-time audio manipulation functions, which can be used to modify outgoing or incoming voice chat audio, are implemented for Windows and XBOX. For more information, see [Using real-time audio manipulation to apply custom voice effects](../../community/voice-communications/concepts-realtime-audio-manipulation.md).
 * The chat permission options have more options for optionally configuring text-to-speech and microphone audio permissions independently. For more information, see [`PartyChatPermissionOptions`](reference/enums/partychatpermissionoptions.md).
-* This breaks compatibility with previous releases of the Xbox Live Helper library. This release is compatible with version 1.2.0 of the Xbox Live Helper library. For more information, see the [Xbox Live Helper Library release notes](party-xboxlive-relnotes.md).
+* This breaks compatibility with previous releases of the XBOX Live Helper library. This release is compatible with version 1.2.0 of the XBOX Live Helper library. For more information, see the [XBOX Live Helper Library release notes](party-xboxlive-relnotes.md).
 * Each transcription state change now indicates whether it represents text-to-speech or microphone audio. For more information, see [`PartyVoiceChatTranscriptionReceivedStateChange`](reference/structs/partyvoicechattranscriptionreceivedstatechange.md).
 
 

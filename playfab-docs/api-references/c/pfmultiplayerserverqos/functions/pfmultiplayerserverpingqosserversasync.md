@@ -1,11 +1,11 @@
 ---
 author: jasonsandlin
 title: "PFMultiplayerServerPingQosServersAsync"
-description: "Discovers QoS beacons via PFMultiplayerServerListQosServersForTitleAsync and pings each one over UDP/3075. Aggregates the latencies and returns the sorted list. Wall-clock duration is bounded by roughly ceil(regionCount / maxConcurrentRegions) * timeoutMs * pingsPerRegion plus the cost of the ListQosServersForTitle call."
+description: "PFMultiplayerServerPingQosServersAsync discovers PlayFab QoS beacons, pings each over UDP/3075, and returns a list of regions sorted by measured latency."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 10/06/2026
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerPingQosServersAsync  

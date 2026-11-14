@@ -3,7 +3,7 @@ title: Create and deploy Linux Builds
 author: joannaleecy
 description: Create and deploy Linux Builds.
 ms.author: jenelleb
-ms.date: 03/19/2026
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, linux
@@ -67,13 +67,13 @@ If you wish to use PowerShell/API, call the [GetContainerRegistryCredentials](/r
 
 These steps help you create and push your custom Linux container image.
 
-#### Integrate your game server application with GSDK
+### Integrate your game server application with GSDK
 
 Similar to using Windows servers, you have to integrate your game server code with the PlayFab Multiplayer Server SDK (GSDK). The GSDK integration can be part of your container image.
 
 For instructions, see [Author a game server build](author-a-game-server-build.md) and [Integrating your title with PlayFab Game Server SDK (GSDK)](integrating-game-servers-with-gsdk.md).
 
-#### Create a Dockerfile
+### Create a Dockerfile
 
 A Dockerfile is a text file with no extension and contains all commands needed to build a given container image.
 
@@ -89,7 +89,7 @@ A Dockerfile is a text file with no extension and contains all commands needed t
   * Select __UTF-8__ encoding
   * Select __Save__
 
-#### Build and upload Linux container image
+### Build and upload Linux container image
 
 1. Open your Linux terminal with Docker installed.
 2. Run the following Docker commands using the sign-in credentials obtained from the earlier step. Then follow the instructions on screen to enter your username and password.

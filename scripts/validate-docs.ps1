@@ -54,7 +54,7 @@ $rxSpacedEmDash    = [regex]::new('\s\u2014|\u2014\s', 'Compiled')
 $rxFiller          = [regex]::new('(?i)\b(strongly|very|really)\b', 'Compiled')
 $rxContraction     = [regex]::new('(?i)\b(cannot|does not|do not|will not|is not|are not|has not|have not|should not|would not|could not|did not)\b', 'Compiled')
 $rxHyphenPrefix    = [regex]::new('(?i)\bre-(authenticate|authorize|configure|connect|create|deploy|enable|establish|evaluate|generate|initialize|install|register|run|send|start|try|use|validate|download|upload|build|load|check|discover|implement|write)\b', 'Compiled')
-$rxImageRef        = [regex]::new('!\[([^\]]*)\]\(([^)]+)\)', 'Compiled')
+$rxImageRef        = [regex]::new('!\[([^\]]*)\]\(([^)]+?)(?:\s+(?:"[^"]*"|''[^'']*''))?\s*\)', 'Compiled')
 $rxInlineCode      = [regex]::new('`[^`]+`', 'Compiled')
 
 # --- File-existence cache (avoids redundant Test-Path calls) ---

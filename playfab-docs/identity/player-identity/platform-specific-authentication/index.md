@@ -3,7 +3,7 @@ title: Platform-Specific Authentication
 author: antnguyen89
 description: Landing page for Platform-Specific Authentication.
 ms.author: antnguyen
-ms.date: 02/20/2025
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication
@@ -16,32 +16,32 @@ PlayFab supports a wide variety of authentication providers. This allows your ti
 
 What this means is that your players can choose how they prefer to verify their identity and sign in using a method that's most natural to them.
 
-Select authentication providers based on what is most meaningful for the players on your target platforms and distribution methods. For example, if your title is released on Xbox, it makes sense to offer Xbox Live sign-in as a way to authenticate their identity.
+Select authentication providers based on what is most meaningful for the players on your target platforms and distribution methods. For example, if your title is released on XBOX, it makes sense to offer XBOX Live sign-in as a way to authenticate their identity.
 
-### Apple
+## Apple
 
 - [Set up Apple sign-in for PlayFab](apple-open-id.md)
 
-### Battle.net
+## Battle.net
 
 - [Setting up PlayFab authentication using Battle.net and HTML5](battlenet-login.md)
 
-### Facebook
+## Facebook
 
 - [Setting up PlayFab authentication using Facebook and HTML5](facebook-html5.md)
 - [Setting up PlayFab authentication using Facebook and Unity](facebook-unity.md)
 
-### Google
+## Google
 
 - [Setting up PlayFab authentication using Google and HTML5](google-html5.md)
 - [Setting up PlayFab authentication using Google Play Games Sign-In in Unity](google-sign-in-unity.md)
 
-### Kongregate
+## Kongregate
 
 - [Setting up PlayFab authentication using Kongregate and HTML5](kongregate-html5.md)
 - [Setting up PlayFab authentication using Kongregate and Unity](kongregate-unity.md)
 
-### PlayStation&#174;5 / PlayStation&#174;4
+## PlayStation&#174;5 / PlayStation&#174;4
 
 - [Setting up PlayFab authentication using PlayStation (secure link)](https://dev.azure.com/PlayFabPrivate/PS5/_git/XPlatCppSdk-Private-PS5?path=%2FGuideToLoginWithPSN.md&_a=preview)
 
@@ -49,17 +49,17 @@ If you're unable to access the secure link, see [Request access](https://aka.ms/
 
 "PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
-### Steam
+## Steam
 
 - [Setting up PlayFab authentication using Steam and Unity](steam-unity.md)
 
-### Twitch
+## Twitch
 
 - [Setting up PlayFab authentication using Twitch and HTML5](twitch-html5.md)
 
-### Windows and Xbox
+## Windows and XBOX
 
-- [Setting up Xbox Live title association in PlayFab](xbox-live-add-on.md)
-- [Authenticate Xbox Live users using PlayFab's Xbox Live Helper Library (recommended)](../../../multiplayer/networking/party-xbox-live-guide.md#mapping-between-xbox-live-user-ids-and-playfab-entity-ids)
+- [Setting up XBOX Live title association in PlayFab](xbox-live-add-on.md)
+- [Authenticate XBOX Live users using PlayFab's XBOX Live Helper Library (recommended)](../../../multiplayer/networking/party-xbox-live-guide.md#mapping-between-xbox-live-user-ids-and-playfab-entity-ids)
 - [Setting up PlayFab authentication using Universal Windows Platform](uwp.md)
 - [Integrating the Universal Windows Platform with PlayFab](uwp-integration.md)

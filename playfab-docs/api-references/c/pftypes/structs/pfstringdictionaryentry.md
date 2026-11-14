@@ -5,7 +5,7 @@ description: "Dictionary entry for an associative array with string values."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFStringDictionaryEntry  
@@ -26,12 +26,16 @@ typedef struct PFStringDictionaryEntry {
 **`key`** &nbsp; const char*  
 *is null-terminated*  
   
-TBD  
+The key of the entry. Must not be `nullptr`.  
   
 **`value`** &nbsp; const char*  
 *is null-terminated*  
   
-TBD  
+The string value associated with `key`. Must not be `nullptr`; use an empty string for an empty value.  
+  
+## Remarks
+
+Microsoft PlayFab APIs represent a string dictionary as an array of `PFStringDictionaryEntry` structures plus a count, for example `customTags` and `customTagsCount`.
   
   
 ## Requirements  

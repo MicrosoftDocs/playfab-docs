@@ -5,7 +5,7 @@ description: "Services C API overview - PFCloudScriptTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 11/13/2026
 ---
 
 # Services C API overview - PFCloudScriptTypes.h
@@ -15,7 +15,7 @@ ms.date: 11/19/2024
 
 | Structure | Description |  
 | --- | --- |  
-| [PFCloudScriptEventHubFunctionModel](structs/pfcloudscripteventhubfunctionmodel.md) | PFCloudScriptEventHubFunctionModel data model. |  
+| [PFCloudScriptEventHubFunctionModel](structs/pfcloudscripteventhubfunctionmodel.md) | Contains details about a registered Azure Function triggered by an event hub. |  
 | [PFCloudScriptExecuteCloudScriptRequest](structs/pfcloudscriptexecutecloudscriptrequest.md) | PFCloudScriptExecuteCloudScriptRequest data model. |  
 | [PFCloudScriptExecuteCloudScriptResult](structs/pfcloudscriptexecutecloudscriptresult.md) | PFCloudScriptExecuteCloudScriptResult data model. |  
 | [PFCloudScriptExecuteCloudScriptServerRequest](structs/pfcloudscriptexecutecloudscriptserverrequest.md) | PFCloudScriptExecuteCloudScriptServerRequest data model. |  
@@ -23,7 +23,7 @@ ms.date: 11/19/2024
 | [PFCloudScriptExecuteFunctionRequest](structs/pfcloudscriptexecutefunctionrequest.md) | PFCloudScriptExecuteFunctionRequest data model. Executes an Azure Function with the profile of the entity that is defined in the request. |  
 | [PFCloudScriptExecuteFunctionResult](structs/pfcloudscriptexecutefunctionresult.md) | PFCloudScriptExecuteFunctionResult data model. |  
 | [PFCloudScriptFunctionExecutionError](structs/pfcloudscriptfunctionexecutionerror.md) | PFCloudScriptFunctionExecutionError data model. |  
-| [PFCloudScriptListFunctionsRequest](structs/pfcloudscriptlistfunctionsrequest.md) | PFCloudScriptListFunctionsRequest data model. A title can have many functions, ListHttpFunctions will return a list of all the currently registered HTTP triggered functions for a given title. |  
+| [PFCloudScriptListFunctionsRequest](structs/pfcloudscriptlistfunctionsrequest.md) | Contains request parameters for listing registered Event Hub-triggered Azure Functions. |  
 | [PFCloudScriptLogStatement](structs/pfcloudscriptlogstatement.md) | PFCloudScriptLogStatement data model. |  
 | [PFCloudScriptScriptExecutionError](structs/pfcloudscriptscriptexecutionerror.md) | PFCloudScriptScriptExecutionError data model. |  
   

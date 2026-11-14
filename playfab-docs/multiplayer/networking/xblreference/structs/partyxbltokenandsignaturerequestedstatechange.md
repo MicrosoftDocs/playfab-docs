@@ -5,7 +5,7 @@ description: "Information specific to the *TokenAndSignatureRequested* type of s
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/22/2022
+ms.date: "11/13/2026"
 ---
 
 # PartyXblTokenAndSignatureRequestedStateChange  
@@ -78,11 +78,15 @@ This field is only valid when ```allUsers``` is set to ```false```.
   
 ## Remarks  
   
-The title can use the Xbox Authentication Library (XAL) to fulfill these requests by calling the XalUserGetTokenAndSignatureSilentlyAsync() function. <br /><br /> Use [PartyXblManager::CompleteGetTokenAndSignatureRequest()](../classes/PartyXblManager/methods/partyxblmanager_completegettokenandsignaturerequest.md) to provide the token and signature and complete the operation.
+The title can use the XBOX Authentication Library (XAL) to fulfill these requests by calling the XalUserGetTokenAndSignatureSilentlyAsync() function. <br /><br /> Use [PartyXblManager::CompleteGetTokenAndSignatureRequest()](../classes/PartyXblManager/methods/partyxblmanager_completegettokenandsignaturerequest.md) to provide the token and signature and complete the operation.
   
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../party-sdks.md).
   
 ## See also  
 [PartyXboxLive members](../partyxboxlive_members.md)  

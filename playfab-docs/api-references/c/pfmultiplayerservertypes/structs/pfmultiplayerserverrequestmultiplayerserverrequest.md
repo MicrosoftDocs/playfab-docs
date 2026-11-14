@@ -5,7 +5,7 @@ description: "PFMultiplayerServerRequestMultiplayerServerRequest data model. Req
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerRequest  
@@ -39,7 +39,7 @@ typedef struct PFMultiplayerServerRequestMultiplayerServerRequest {
 **`buildId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The guid string build ID of the multiplayer server to request.
+(Optional) The GUID string build ID of the multiplayer server to request.
   
 **`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
 *may be nullptr*  
@@ -75,7 +75,7 @@ Count of preferredRegions
 **`sessionId`** &nbsp; const char*  
 *is null-terminated*  
   
-A guid string session ID created track the multiplayer server session over its life.
+A GUID string session ID created track the multiplayer server session over its life.
   
   
 ## Requirements  

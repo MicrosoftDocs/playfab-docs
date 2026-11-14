@@ -5,7 +5,7 @@ description: "PFInventoryExecuteInventoryOperationsRequest data model. Execute a
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: 11/13/2026
 ---
 
 # PFInventoryExecuteInventoryOperationsRequest  
@@ -22,7 +22,7 @@ typedef struct PFInventoryExecuteInventoryOperationsRequest {
     PFEntityKey const* entity;  
     const char* eTag;  
     const char* idempotencyId;  
-    PFInventoryInventoryOperation const* operations;  
+    PFInventoryInventoryOperation const* const* operations;  
     uint32_t operationsCount;  
 } PFInventoryExecuteInventoryOperationsRequest;  
 ```
@@ -37,7 +37,7 @@ typedef struct PFInventoryExecuteInventoryOperationsRequest {
 **`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
 *may be nullptr*  
   
-(Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+(Optional) The optional custom tags associated with the request (for example, build number, external trace identifiers, etc.).
   
 **`customTagsCount`** &nbsp; uint32_t  
   
@@ -58,10 +58,10 @@ Count of customTags
   
 (Optional) The Idempotency ID for this request. Idempotency IDs can be used to prevent operation replay in the medium term but will be garbage collected eventually.
   
-**`operations`** &nbsp; [PFInventoryInventoryOperation](pfinventoryinventoryoperation.md) const*  
+**`operations`** &nbsp; [PFInventoryInventoryOperation](pfinventoryinventoryoperation.md) const* const*  
 *may be nullptr*  
   
-(Optional) The operations to run transactionally. The operations will be executed in-order sequentially and will succeed or fail as a batch. Up to 50 operations can be added.
+(Optional) The operations to run transactionally. The operations will be executed in-order sequentially and will succeed or fail as a batch. Up to 50 operations can be added. An array of `operationsCount` pointers.
   
 **`operationsCount`** &nbsp; uint32_t  
   

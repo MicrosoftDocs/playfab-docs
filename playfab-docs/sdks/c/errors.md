@@ -3,10 +3,10 @@ title: Handling PlayFab Errors
 author: jplafonta
 description: Handling errors in the PlayFab Services SDK
 ms.author: johlafo
-ms.date: 04/14/2023
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, c++, windows, xbox, gdk, login
+keywords: playfab, c++, windows, XBOX, gdk, login
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +25,7 @@ Each of these calls can fail for different reasons. The following sections detai
 
 ## Synchronous failures
 
-A synchronous failure is when the initial **PF*Async** call returns an error. This type of failure is usually indicative of a programming error &mdash; invalid calling pattern, invalide arguments, and so on. These types of errors should be resolved during development. Most other synchronous failures are fatal and can't easily be handled (for example E_OUTOFMEMORY).
+A synchronous failure is when the initial **PF*Async** call returns an error. This type of failure is usually indicative of a programming error &mdash; invalid calling pattern, invalid arguments, and so on. These types of errors should be resolved during development. Most other synchronous failures are fatal and can't easily be handled (for example E_OUTOFMEMORY).
 
 ## Asynchronous failures
 
@@ -58,7 +58,7 @@ If the SDK successfully makes the PlayFab service request, the service may still
 - `E_PF_ACCOUNT_NOT_FOUND (0x89235422)`
 - `E_PF_API_REQUESTS_DISABLED_FOR_TITLE (0x8923553c)`
 - `E_PF_INVALID_CONTENT_TYPE (0x892354a6)`
-- `E_PF_INVALID_ENTITY_TYPE (0x8923558a)`:
+- `E_PF_INVALID_ENTITY_TYPE (0x8923558a)`
 - `E_PF_INVALID_PARAMS (0x89235421)`
 - `E_PF_INVALID_REQUEST (0x89235468)`
 - `E_PF_INVALID_TITLE_ID (0x89235425)`
@@ -71,6 +71,22 @@ If the SDK successfully makes the PlayFab service request, the service may still
 
 For more information on service failure retry guidance, see [PlayFab Service Global API method error codes](../../api-references/global-api-method-error-codes.md).
 
+#### XBOX sign-in failures
+
+In addition to the global failures, [PFAuthenticationLoginWithXUserGetResultSize](../../api-references/c/pfauthentication/functions/pfauthenticationloginwithxusergetresultsize.md) and [PFAuthenticationLoginWithXUserGetResult](../../api-references/c/pfauthentication/functions/pfauthenticationloginwithxusergetresult.md) can return the following service errors:
+
+- `E_PF_ENCRYPTION_KEY_MISSING (0x89235537)`
+- `E_PF_EVALUATION_MODE_PLAYER_COUNT_EXCEEDED (0x892355fe)`
+- `E_PF_EXPIRED_XBOX_LIVE_TOKEN (0x892354d3)`
+- `E_PF_INVALID_XBOX_LIVE_TOKEN (0x892354d2)`
+- `E_PF_REQUEST_VIEW_CONSTRAINT_PARAMS_NOT_ALLOWED (0x89235544)`
+- `E_PF_SIGNED_REQUEST_NOT_ALLOWED (0x89235543)`
+- `E_PF_XBOX_INACCESSIBLE (0x89235568)`
+- `E_PF_XBOX_REJECTED_XSTS_EXCHANGE_REQUEST (0x8923556c)`
+- `E_PF_XBOX_XASS_EXCHANGE_FAILURE (0x89235547)`
+
+If you call a PlayFab Core API, such as **PFAuthenticationLoginWithXUserAsync** or **PFServiceConfigCreateHandle**, before PlayFab Core is initialized, the call fails with `E_PF_CORE_NOT_INITIALIZED (0x89235400)`. PlayFab Services APIs, such as the **PFInventory** functions, called before **PFServicesInitialize** fail with `E_PF_SERVICES_NOT_INITIALIZED (0x89235A00)`. Initialize the SDK first: call **PFServicesInitialize**, which also initializes PlayFab Core if you haven't called **PFInitialize**, or call only **PFInitialize** if you use only PlayFab Core APIs.
+
 #### Throttling failures
 
 One category of service failures is throttling errors, indicated by an HTTP 429 status code. When the PlayFab service returns a throttling error, it means that the client is calling an endpoint too often over a specific time period. When the SDK gets a throttling error, it will automatically retry the request after a small backoff. If the request still doesn't succeed within the configured retry window, the error gets passed along to the title. The SDK retry settings can be configured by calling **PFSetHttpRetrySettings**.
@@ -81,8 +97,4 @@ If the underlying network stack returns an error, that error is passed along to 
 
 ## Additional error details and tracing
 
-In addition to the HRESULT, the PlayFab Service sometimes returns an *errorDetails* string. This string isn't exposed to end clients, but may be useful during development and debugging. To learn how to enable verbose tracing to see the returned *errorDetails* string, see [Tracing guide](tracing.md).".
-
-## Reference
-
-[Error handling in the Microsoft Game Development Kit][/gaming/gdk/_content/gc/system/overviews/error-handling]
+In addition to the HRESULT, the PlayFab Service sometimes returns an *errorDetails* string. This string isn't exposed to end clients, but may be useful during development and debugging. To learn how to enable verbose tracing to see the returned *errorDetails* string, see [Tracing guide](tracing.md).

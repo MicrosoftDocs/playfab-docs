@@ -5,7 +5,7 @@ description: "Remove a given tag from a player profile. The tag's namespace is a
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFSegmentsServerRemovePlayerTagAsync  
@@ -45,7 +45,7 @@ Result code for this API operation.
   
 ## Remarks  
   
-This API is available on Win32, Linux, and macOS. This API will trigger a player_tag_removed event and remove a tag with the given TagName and PlayFabID from the corresponding player profile. TagName can be used for segmentation and it is limited to 256 characters See also ServerAddPlayerTagAsync, ServerGetPlayerTagsAsync. Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be one of global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
+This API is available on Windows, Linux, and macOS. This API will trigger a player_tag_removed event and remove a tag with the given TagName and PlayFabID from the corresponding player profile. TagName can be used for segmentation and it is limited to 256 characters. See also [PFSegmentsServerAddPlayerTagAsync](pfsegmentsserveraddplayertagasync.md) and [PFSegmentsServerGetPlayerTagsAsync](pfsegmentsservergetplayertagsasync.md). Call XAsyncGetStatus to get the status of the operation. If the service call is unsuccessful, the async result will be one of global PlayFab Service errors. See doc page "Handling PlayFab Errors" for more details on error handling.
   
 ## Requirements  
   

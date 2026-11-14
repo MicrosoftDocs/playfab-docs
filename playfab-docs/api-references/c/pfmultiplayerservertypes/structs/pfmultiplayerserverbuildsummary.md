@@ -5,7 +5,7 @@ description: "PFMultiplayerServerBuildSummary data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerBuildSummary  
@@ -21,7 +21,7 @@ typedef struct PFMultiplayerServerBuildSummary {
     time_t const* creationTime;  
     PFStringDictionaryEntry const* metadata;  
     uint32_t metadataCount;  
-    PFMultiplayerServerBuildRegion const* regionConfigurations;  
+    PFMultiplayerServerBuildRegion const* const* regionConfigurations;  
     uint32_t regionConfigurationsCount;  
 } PFMultiplayerServerBuildSummary;  
 ```
@@ -31,7 +31,7 @@ typedef struct PFMultiplayerServerBuildSummary {
 **`buildId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The guid string build ID of the build.
+(Optional) The GUID string build ID of the build.
   
 **`buildName`** &nbsp; const char*  
 *is null-terminated*  
@@ -52,7 +52,7 @@ typedef struct PFMultiplayerServerBuildSummary {
   
 Count of metadata
   
-**`regionConfigurations`** &nbsp; [PFMultiplayerServerBuildRegion](pfmultiplayerserverbuildregion.md) const*  
+**`regionConfigurations`** &nbsp; [PFMultiplayerServerBuildRegion](pfmultiplayerserverbuildregion.md) const* const*  
 *may be nullptr*  
   
 (Optional) The configuration and status for each region in the build.

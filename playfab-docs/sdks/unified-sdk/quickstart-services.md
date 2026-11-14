@@ -3,10 +3,10 @@ title: Quickstart (Windows) - Calling PlayFab Services
 author: Jeffrey-Shi
 description: Learn how to call PlayFab service APIs using the unified SDK.
 ms.author: jeffshi
-ms.date: 09/25/2025
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, c++, windows, xbox, steam, api
+keywords: playfab, c++, windows, XBOX, steam, api
 ms.localizationpriority: medium
 ---
 
@@ -30,6 +30,23 @@ By the end of this quickstart, you'll have:
 - Retrieved the entity key for an authenticated player
 - Made your first PlayFab service API call
 - Processed the response from a PlayFab service
+
+## Initialize PlayFab Services
+
+The [core quickstart](quickstart-core.md) initializes only PlayFab Core. Before you call a PlayFab Services API, such as **PFDataGetFilesAsync**, include `playfab/services/PFServices.h` and call **PFServicesInitialize** after **PFInitialize**:
+
+```cpp
+#include <playfab/services/PFServices.h>
+
+HRESULT hr = PFServicesInitialize(nullptr);
+if (FAILED(hr))
+{
+    std::wcerr << L"Failed to initialize PlayFab Services: 0x" << std::hex << hr << std::endl;
+    return hr;
+}
+```
+
+At shutdown, call **PFServicesUninitializeAsync** and wait for it to complete before you call **PFUninitializeAsync**.
 
 ## Making your first service API call
 

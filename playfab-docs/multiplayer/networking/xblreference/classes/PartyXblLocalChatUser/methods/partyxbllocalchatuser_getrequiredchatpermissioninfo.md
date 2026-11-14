@@ -5,7 +5,7 @@ description: Gets the cached required chat permission information related to a t
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblLocalChatUser::GetRequiredChatPermissionInfo  
@@ -30,7 +30,7 @@ The chat user for which permissions relative to the local chat user should be re
 **`chatPermissionInfo`** &nbsp; [PartyXblChatPermissionInfo*](../../../structs/partyxblchatpermissioninfo.md)  
 *output*  
   
-The output chat permission info object. The chat permission info object contains the most permissive chat permission possible while still respecting Xbox Live requirements.  
+The output chat permission info object. The chat permission info object contains the most permissive chat permission possible while still respecting XBOX Live requirements.  
   
   
 ### Return value  
@@ -42,6 +42,10 @@ PartyError
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblLocalChatUser](../partyxbllocalchatuser.md)  

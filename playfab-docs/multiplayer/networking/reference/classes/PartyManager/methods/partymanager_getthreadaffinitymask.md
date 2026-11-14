@@ -5,7 +5,7 @@ description: Retrieves the current set of processors on which internal Party lib
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::GetThreadAffinityMask  
@@ -15,7 +15,7 @@ Retrieves the current set of processors on which internal Party library threads 
 ## Syntax  
   
 ```cpp
-PartyError GetThreadAffinityMask(  
+static PartyError GetThreadAffinityMask(  
     PartyThreadId threadId,  
     uint64_t* threadAffinityMask  
 )  

@@ -5,7 +5,7 @@ description: "PFGetPlayerCombinedInfoResultPayload data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFGetPlayerCombinedInfoResultPayload  
@@ -17,19 +17,19 @@ PFGetPlayerCombinedInfoResultPayload data model.
 ```cpp
 typedef struct PFGetPlayerCombinedInfoResultPayload {  
     PFUserAccountInfo const* accountInfo;  
-    PFCharacterInventory const* characterInventories;  
+    PFCharacterInventory const* const* characterInventories;  
     uint32_t characterInventoriesCount;  
-    PFCharacterResult const* characterList;  
+    PFCharacterResult const* const* characterList;  
     uint32_t characterListCount;  
     PFPlayerProfileModel const* playerProfile;  
-    PFStatisticValue const* playerStatistics;  
+    PFStatisticValue const* const* playerStatistics;  
     uint32_t playerStatisticsCount;  
     PFStringDictionaryEntry const* titleData;  
     uint32_t titleDataCount;  
     PFUserDataRecordDictionaryEntry const* userData;  
     uint32_t userDataCount;  
     uint32_t userDataVersion;  
-    PFItemInstance const* userInventory;  
+    PFItemInstance const* const* userInventory;  
     uint32_t userInventoryCount;  
     PFUserDataRecordDictionaryEntry const* userReadOnlyData;  
     uint32_t userReadOnlyDataCount;  
@@ -48,19 +48,19 @@ typedef struct PFGetPlayerCombinedInfoResultPayload {
   
 (Optional) Account information for the user. This is always retrieved.
   
-**`characterInventories`** &nbsp; [PFCharacterInventory](pfcharacterinventory.md) const*  
+**`characterInventories`** &nbsp; [PFCharacterInventory](pfcharacterinventory.md) const* const*  
 *may be nullptr*  
   
-(Optional) Inventories for each character for the user.
+(Optional) Inventories for each character for the user. An array of `characterInventoriesCount` pointers.
   
 **`characterInventoriesCount`** &nbsp; uint32_t  
   
 Count of characterInventories
   
-**`characterList`** &nbsp; [PFCharacterResult](pfcharacterresult.md) const*  
+**`characterList`** &nbsp; [PFCharacterResult](pfcharacterresult.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of characters for the user.
+(Optional) List of characters for the user. An array of `characterListCount` pointers.
   
 **`characterListCount`** &nbsp; uint32_t  
   
@@ -71,10 +71,10 @@ Count of characterList
   
 (Optional) The profile of the players. This profile is not guaranteed to be up-to-date. For a new player, this profile will not exist.
   
-**`playerStatistics`** &nbsp; [PFStatisticValue](pfstatisticvalue.md) const*  
+**`playerStatistics`** &nbsp; [PFStatisticValue](pfstatisticvalue.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of statistics for this player.
+(Optional) List of statistics for this player. An array of `playerStatisticsCount` pointers.
   
 **`playerStatisticsCount`** &nbsp; uint32_t  
   
@@ -102,10 +102,10 @@ Count of userData
   
 The version of the UserData that was returned.
   
-**`userInventory`** &nbsp; [PFItemInstance](pfiteminstance.md) const*  
+**`userInventory`** &nbsp; [PFItemInstance](pfiteminstance.md) const* const*  
 *may be nullptr*  
   
-(Optional) Array of inventory items in the user's current inventory.
+(Optional) Array of inventory items in the user's current inventory. An array of `userInventoryCount` pointers.
   
 **`userInventoryCount`** &nbsp; uint32_t  
   

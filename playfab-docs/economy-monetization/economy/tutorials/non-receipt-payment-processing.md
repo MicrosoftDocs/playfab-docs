@@ -3,7 +3,7 @@ title: Non-Receipt Payment Processing in Economy (Legacy)
 author: fprotti96
 description: Describes the PlayFab Economy (Legacy) mechanism for enabling purchases via payment providers that don’t use a receipt or entitlement based system.
 ms.author: fprotti
-ms.date: 02/20/2025
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, media, carts, payments, purchases
@@ -225,7 +225,7 @@ This is necessary in the Facebook model, as payments can take a very long time t
 https://{{TitleId}}.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate
 ```
 
-Where `{{TitleId}}` is the **Title ID** for your game in PlayFab (for example, <https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate>).
+Where `{{TitleId}}` is the **Title ID** for your game in PlayFab (for example, [https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate](https://aaa.playfabapi.com/ThirdPartyPayments/FacebookPaymentUpdate)).
 
 There’s no need to specify a token in the Facebook setup - just set the Callback URL, confirm that your PlayFab setup is correct in the **Facebook Add-ons** page of the **Game Manager**, and you’re set.
 

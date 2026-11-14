@@ -5,7 +5,7 @@ description: "PFMultiplayerServerDynamicStandbySettings data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerDynamicStandbySettings  
@@ -16,7 +16,7 @@ PFMultiplayerServerDynamicStandbySettings data model.
   
 ```cpp
 typedef struct PFMultiplayerServerDynamicStandbySettings {  
-    PFMultiplayerServerDynamicStandbyThreshold const* dynamicFloorMultiplierThresholds;  
+    PFMultiplayerServerDynamicStandbyThreshold const* const* dynamicFloorMultiplierThresholds;  
     uint32_t dynamicFloorMultiplierThresholdsCount;  
     bool isEnabled;  
     int32_t const* rampDownSeconds;  
@@ -25,7 +25,7 @@ typedef struct PFMultiplayerServerDynamicStandbySettings {
   
 ### Members  
   
-**`dynamicFloorMultiplierThresholds`** &nbsp; [PFMultiplayerServerDynamicStandbyThreshold](pfmultiplayerserverdynamicstandbythreshold.md) const*  
+**`dynamicFloorMultiplierThresholds`** &nbsp; [PFMultiplayerServerDynamicStandbyThreshold](pfmultiplayerserverdynamicstandbythreshold.md) const* const*  
 *may be nullptr*  
   
 (Optional) List of auto standing by trigger values and corresponding standing by multiplier. Defaults to 1.5X at 50%, 3X at 25%, and 4X at 5%.

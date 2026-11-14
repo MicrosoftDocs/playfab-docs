@@ -5,7 +5,7 @@ description: "Services C API overview - PFProfilesTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: 11/13/2026
 ---
 
 # Services C API overview - PFProfilesTypes.h
@@ -16,7 +16,7 @@ ms.date: 09/08/2026
 | Structure | Description |  
 | --- | --- |  
 | [PFEntityStatisticValue](structs/pfentitystatisticvalue.md) | PFEntityStatisticValue data model. |  
-| [PFEntityStatisticValueDictionaryEntry](structs/pfentitystatisticvaluedictionaryentry.md) | Dictionary entry for an associative array with PFProfilesEntityStatisticValue values. |  
+| [PFEntityStatisticValueDictionaryEntry](structs/pfentitystatisticvaluedictionaryentry.md) | Dictionary entry for an associative array with PFEntityStatisticValue values. |  
 | [PFProfilesEntityDataObject](structs/pfprofilesentitydataobject.md) | PFProfilesEntityDataObject data model. An entity object and its associated meta data. |  
 | [PFProfilesEntityDataObjectDictionaryEntry](structs/pfprofilesentitydataobjectdictionaryentry.md) | Dictionary entry for an associative array with PFProfilesEntityDataObject values. |  
 | [PFProfilesEntityPermissionStatement](structs/pfprofilesentitypermissionstatement.md) | PFProfilesEntityPermissionStatement data model. |  
@@ -35,7 +35,7 @@ ms.date: 09/08/2026
 | [PFProfilesSetProfileLanguageResponse](structs/pfprofilessetprofilelanguageresponse.md) | PFProfilesSetProfileLanguageResponse data model. |  
 | [PFStatisticColumn](structs/pfstatisticcolumn.md) | PFStatisticColumn data model. |  
 | [PFStatisticColumnCollection](structs/pfstatisticcolumncollection.md) | PFStatisticColumnCollection data model. |  
-| [PFStatisticColumnCollectionDictionaryEntry](structs/pfstatisticcolumncollectiondictionaryentry.md) | Dictionary entry for an associative array with PFProfilesStatisticColumnCollection values. |  
+| [PFStatisticColumnCollectionDictionaryEntry](structs/pfstatisticcolumncollectiondictionaryentry.md) | Dictionary entry for an associative array with PFStatisticColumnCollection values. |  
   
 ## State changes  
   
@@ -46,5 +46,5 @@ ms.date: 09/08/2026
 
 | Enumeration | Description |  
 | --- | --- |  
-| [PFProfilesEffectType](enums/pfprofileseffecttype.md) | EffectType enum.|  
-| [PFStatisticAggregationMethod](enums/pfstatisticaggregationmethod.md) | StatisticAggregationMethod enum.|  
+| [PFProfilesEffectType](enums/pfprofileseffecttype.md) | Specifies whether an entity profile permission statement allows or denies its action.|  
+| [PFStatisticAggregationMethod](enums/pfstatisticaggregationmethod.md) | Specifies how a statistic column combines a submitted value with its current value.|  

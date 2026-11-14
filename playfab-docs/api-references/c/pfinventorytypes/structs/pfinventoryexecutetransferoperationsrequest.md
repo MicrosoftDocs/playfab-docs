@@ -5,7 +5,7 @@ description: "PFInventoryExecuteTransferOperationsRequest data model. Transfer t
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: 11/13/2026
 ---
 
 # PFInventoryExecuteTransferOperationsRequest  
@@ -22,7 +22,7 @@ typedef struct PFInventoryExecuteTransferOperationsRequest {
     PFEntityKey const* givingEntity;  
     const char* givingETag;  
     const char* idempotencyId;  
-    PFInventoryTransferInventoryItemsOperation const* operations;  
+    PFInventoryTransferInventoryItemsOperation const* const* operations;  
     uint32_t operationsCount;  
     const char* receivingCollectionId;  
     PFEntityKey const* receivingEntity;  
@@ -34,7 +34,7 @@ typedef struct PFInventoryExecuteTransferOperationsRequest {
 **`customTags`** &nbsp; [PFStringDictionaryEntry](../../pftypes/structs/pfstringdictionaryentry.md) const*  
 *may be nullptr*  
   
-(Optional) The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
+(Optional) The optional custom tags associated with the request (for example, build number, external trace identifiers, etc.).
   
 **`customTagsCount`** &nbsp; uint32_t  
   
@@ -60,10 +60,10 @@ Count of customTags
   
 (Optional) The idempotency id for the request.
   
-**`operations`** &nbsp; [PFInventoryTransferInventoryItemsOperation](pfinventorytransferinventoryitemsoperation.md) const*  
+**`operations`** &nbsp; [PFInventoryTransferInventoryItemsOperation](pfinventorytransferinventoryitemsoperation.md) const* const*  
 *may be nullptr*  
   
-(Optional) The transfer operations to run transactionally. The operations will be executed in-order sequentially and will succeed or fail as a batch. Up to 50 operations can be added.
+(Optional) The transfer operations to run transactionally. The operations will be executed in-order sequentially and will succeed or fail as a batch. Up to 50 operations can be added. An array of `operationsCount` pointers.
   
 **`operationsCount`** &nbsp; uint32_t  
   

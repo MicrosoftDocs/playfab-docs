@@ -5,7 +5,7 @@ description: "PFVersionConfiguration data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFVersionConfiguration  
@@ -25,7 +25,7 @@ typedef struct PFVersionConfiguration {
   
 **`maxQueryableVersions`** &nbsp; int32_t  
   
-The maximum number of versions of this leaderboard/statistic that can be queried. .
+The maximum number of versions of this leaderboard or statistic that can be queried.
   
 **`resetInterval`** &nbsp; [PFResetInterval](../enums/pfresetinterval.md)  
   
@@ -34,7 +34,7 @@ Reset interval that statistics or leaderboards will reset on. When using Manual 
   
 ## Requirements  
   
-**Header:** PFTypes.h
+**Header:** playfab/services/PFTypes.h
   
 ## See also  
 [PFTypes members](../pftypes_members.md)  

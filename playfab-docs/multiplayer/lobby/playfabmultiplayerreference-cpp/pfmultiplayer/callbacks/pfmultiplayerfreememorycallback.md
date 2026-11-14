@@ -5,7 +5,7 @@ description: "A callback invoked every time a previously allocated memory buffer
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/23/2021
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerFreeMemoryCallback  
@@ -15,11 +15,10 @@ A callback invoked every time a previously allocated memory buffer is no longer 
 ## Syntax  
   
 ```cpp
-typedef
-void (*PFMultiplayerFreeMemoryCallback)(  
+void PFMULTIPLAYER_API PFMultiplayerFreeMemoryCallback(  
     void* pointer,  
-    uint32_t memoryTypeId  
-)  
+    PFMultiplayerMemoryType memoryTypeId  
+);  
 ```  
   
 ### Parameters  
@@ -29,15 +28,15 @@ void (*PFMultiplayerFreeMemoryCallback)(
   
 A pointer to a memory buffer previously allocated. This value will never be nullptr.  
   
-**`memoryTypeId`** &nbsp; uint32_t  
+**`memoryTypeId`** &nbsp; PFMultiplayerMemoryType  
   
-An opaque identifier representing the PlayFab Multiplayer library internal category of memory being freed. This value should be ignored.  
+An opaque identifier representing the PlayFab Multiplayer library internal category of memory being freed. Generally, you can ignore this value, but you can use it to help diagnose and debug Multiplayer memory allocations.  
   
   
 ### Return value
 Type: void
   
-The callback does not return a value.  
+The callback doesn't return a value.  
   
 ## Remarks  
   

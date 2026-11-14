@@ -5,7 +5,7 @@ description: "Information specific to the *LoginToPlayFabCompleted* type of stat
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/22/2022
+ms.date: "11/13/2026"
 ---
 
 # PartyXblLoginToPlayFabCompletedStateChange  
@@ -46,11 +46,11 @@ The async identifier provided to the call associated with this state change.
   
 **`entityId`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
-The PlayFab Entity Id associated with the local chat user's Xbox Live identity.
+The PlayFab Entity Id associated with the local chat user's XBOX Live identity.
   
 **`titlePlayerEntityToken`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
-The PlayFab Entity Token associated with the local chat user's Xbox Live identity.
+The PlayFab Entity Token associated with the local chat user's XBOX Live identity.
   
 **`expirationTime`** &nbsp; time_t  
   
@@ -62,6 +62,10 @@ When the token is nearing the expiration time or if the token has expired due to
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../party-sdks.md).
   
 ## See also  
 [PartyXboxLive members](../partyxboxlive_members.md)  

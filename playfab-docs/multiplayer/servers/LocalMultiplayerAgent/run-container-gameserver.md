@@ -3,7 +3,7 @@ title: Debug Container-based game servers using LocalMultiplayerAgent
 author: emmayspark
 description: How to run a game server using LocalMultiplayerAgent in Container mode
 ms.author: emmapark
-ms.date: 03/01/2022
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, multiplayerServer, localMultiplayerAgent, MPSAgent, GSDK, MPS Debugging tool
@@ -38,7 +38,7 @@ LMA will create a Windows Container Build for you. You just need to configure th
 
 Navigate to the folder where you extracted the LMA toolset and open the MultiplayerSettings.json file. This file is a build configuration mock file that simulates the build on MPS.
 
-You can also populate a json using [LMA MultiplayerSettings.json Generator](https://github.com/PlayFab/MpsAgent/tree/main/LocalMultiplayerAgent/SettingsJsonGenerator). The Generator is a simple web page that creates a json based on your options. You can find the Generator under LocalMultiplayerAgent/SettingsJsonGenerator.  
+You can also populate a JSON using [LMA MultiplayerSettings.json Generator](https://github.com/PlayFab/MpsAgent/tree/main/LocalMultiplayerAgent/SettingsJsonGenerator). The Generator is a simple web page that creates a JSON based on your options. You can find the Generator under LocalMultiplayerAgent/SettingsJsonGenerator.  
 
 Here's the example of MultiplayerSettings.Json to run the Wrapper sample as `Linux Container`.
 
@@ -151,7 +151,7 @@ Navigate to directory under LMA that contains LocalMultiplayerAgent.exe.
   Run `LocalMultiplayerAgent.exe -lcow` for Linux Container.  
   (lcow stands for Linux Containers On Windows)
 
-  At this point, LMA sets up the http listener and run a container. 
+  At this point, LMA sets up the HTTP listener and run a container.
   You can run `docker ps` command to see running containers on your machine.
 
 LMA will wait for heartbeats from the GSDK integrated with your game server.

@@ -1,11 +1,11 @@
 ---
 author: jasonsandlin
 title: "PFAuthenticationValidateEntityTokenRequest"
-description: "PFAuthenticationValidateEntityTokenRequest data model. Given an entity token, validates that it hasn't expired or been revoked and will return details of the owner."
+description: "Contains the request data for checking that an entity token hasn't expired or been revoked and getting details of its owner."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFAuthenticationValidateEntityTokenRequest  

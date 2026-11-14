@@ -1,11 +1,11 @@
 ---
 author: jasonsandlin
 title: "Services C API overview - PFMultiplayerServerQoS.h"
-description: "Services C API overview - PFMultiplayerServerQoS.h"
+description: "Index of the functions and structures in PFMultiplayerServerQoS.h for pinging PlayFab QoS servers and reading per-region latency results in the C API."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 10/06/2026
+ms.date: "11/13/2026"
 ---
 
 # Services C API overview - PFMultiplayerServerQoS.h

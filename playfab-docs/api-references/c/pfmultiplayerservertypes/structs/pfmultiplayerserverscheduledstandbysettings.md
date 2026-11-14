@@ -5,7 +5,7 @@ description: "PFMultiplayerServerScheduledStandbySettings data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerScheduledStandbySettings  
@@ -17,7 +17,7 @@ PFMultiplayerServerScheduledStandbySettings data model.
 ```cpp
 typedef struct PFMultiplayerServerScheduledStandbySettings {  
     bool isEnabled;  
-    PFMultiplayerServerSchedule const* scheduleList;  
+    PFMultiplayerServerSchedule const* const* scheduleList;  
     uint32_t scheduleListCount;  
 } PFMultiplayerServerScheduledStandbySettings;  
 ```
@@ -28,7 +28,7 @@ typedef struct PFMultiplayerServerScheduledStandbySettings {
   
 When true, scheduled standby will be enabled.
   
-**`scheduleList`** &nbsp; [PFMultiplayerServerSchedule](pfmultiplayerserverschedule.md) const*  
+**`scheduleList`** &nbsp; [PFMultiplayerServerSchedule](pfmultiplayerserverschedule.md) const* const*  
 *may be nullptr*  
   
 (Optional) A list of non-overlapping schedules.

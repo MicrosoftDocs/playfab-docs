@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager::LoginToPlayFab"
-description: Signs the user in to PlayFab using an Xbox Live token, asynchronously returning an Entity ID and Entity Token that can subsequently be used for PlayFab API calls which require an authenticated PlayFab user or to create a PartyLocalUser. There is no difference between calling this method or using the LoginWithXbox method provided by the PlayFab SDK.
+description: Signs in with an XBOX Live token and returns a PlayFab Entity ID and Entity Token, equivalent to the PlayFab SDK LoginWithXbox method.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/01/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblManager::LoginToPlayFab  
 
-Signs the user in to PlayFab using an Xbox Live token, asynchronously returning an Entity ID and Entity Token that can subsequently be used for PlayFab API calls which require an authenticated PlayFab user or to create a PartyLocalUser. There is no difference between calling this method or using the LoginWithXbox method provided by the PlayFab SDK.  
+Signs the user in to PlayFab using an XBOX Live token, asynchronously returning an Entity ID and Entity Token that can subsequently be used for PlayFab API calls which require an authenticated PlayFab user or to create a PartyLocalUser. There is no difference between calling this method or using the LoginWithXbox method provided by the PlayFab SDK.  
 
 ## Syntax  
   
@@ -18,7 +18,7 @@ Signs the user in to PlayFab using an Xbox Live token, asynchronously returning 
 PartyError LoginToPlayFab(  
     const PartyXblLocalChatUser* localChatUser,  
     void* asyncIdentifier  
-)  
+) const  
 ```  
   
 ### Parameters  
@@ -45,6 +45,10 @@ If this is the first time the Xbox Live identity has logged in to PlayFab, a new
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblManager](../partyxblmanager.md)  

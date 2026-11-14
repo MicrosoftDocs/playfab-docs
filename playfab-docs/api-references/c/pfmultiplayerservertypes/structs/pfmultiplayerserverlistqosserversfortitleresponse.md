@@ -5,7 +5,7 @@ description: "PFMultiplayerServerListQosServersForTitleResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerListQosServersForTitleResponse  
@@ -17,7 +17,7 @@ PFMultiplayerServerListQosServersForTitleResponse data model.
 ```cpp
 typedef struct PFMultiplayerServerListQosServersForTitleResponse {  
     int32_t pageSize;  
-    PFMultiplayerServerQosServer const* qosServers;  
+    PFMultiplayerServerQosServer const* const* qosServers;  
     uint32_t qosServersCount;  
     const char* skipToken;  
 } PFMultiplayerServerListQosServersForTitleResponse;  
@@ -29,7 +29,7 @@ typedef struct PFMultiplayerServerListQosServersForTitleResponse {
   
 The page size on the response.
   
-**`qosServers`** &nbsp; [PFMultiplayerServerQosServer](pfmultiplayerserverqosserver.md) const*  
+**`qosServers`** &nbsp; [PFMultiplayerServerQosServer](pfmultiplayerserverqosserver.md) const* const*  
 *may be nullptr*  
   
 (Optional) The list of QoS servers.

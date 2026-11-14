@@ -3,7 +3,7 @@ title: PlayFab Services SDK Release Notes 2026
 author: Vicodex
 description: PlayFab Services SDK Release Notes for 2026.
 ms.author: victorku
-ms.date: 09/22/2026
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -12,7 +12,8 @@ ms.localizationpriority: medium
 # PlayFab Services SDK Release Notes 2026
 
 > [!NOTE]
-> For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab).
+>   For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab).
+
 
 ## 260922
 
@@ -96,7 +97,7 @@ Date: March 27, 2026
 Date: March 13, 2026
 
 - Renamed the `GetPlayersInSegmentDeprecated` error code to `GetPlayersInSegmentRetired`
-- Updated the `GetFriendsList` documentation in the Client and Server APIs to clarify Xbox friend's behavior
+- Updated the `GetFriendsList` documentation in the Client and Server APIs to clarify XBOX friend's behavior
 - Updated the `FindFriendLobbies` documentation in the Multiplayer API to clarify mutual friends requirement
 - Added the `ProductDisabledForTitle` error code to multiple calls across the Client, Server, Admin, and Experimentation APIs
 - Added error codes for new service errors

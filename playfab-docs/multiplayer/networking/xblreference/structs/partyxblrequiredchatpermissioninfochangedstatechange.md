@@ -5,7 +5,7 @@ description: "Information specific to the *RequiredChatPermissionInfoChanged* ty
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/22/2022
+ms.date: "11/13/2026"
 ---
 
 # PartyXblRequiredChatPermissionInfoChangedStateChange  
@@ -38,6 +38,10 @@ Use [PartyXblLocalChatUser::GetRequiredChatPermissionInfo()](../classes/PartyXbl
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../party-sdks.md).
   
 ## See also  
 [PartyXboxLive members](../partyxboxlive_members.md)  

@@ -5,7 +5,7 @@ description: Retrieves the app's private, custom pointer-sized context value pre
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/01/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblChatUser::GetCustomContext  
@@ -17,7 +17,7 @@ Retrieves the app's private, custom pointer-sized context value previously assoc
 ```cpp
 PartyError GetCustomContext(  
     void** customContext  
-)  
+) const  
 ```  
   
 ### Parameters  
@@ -40,6 +40,10 @@ If no custom context has been set yet, the value pointed to by `customContext` i
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblChatUser](../partyxblchatuser.md)  

@@ -5,7 +5,7 @@ description: "PFUserIosDeviceInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFUserIosDeviceInfo  
@@ -25,7 +25,7 @@ typedef struct PFUserIosDeviceInfo {
 **`iosDeviceId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) IOS device ID.
+(Optional) iOS device ID.
   
   
 ## Requirements  
@@ -33,7 +33,7 @@ typedef struct PFUserIosDeviceInfo {
 **Header:** PFTypes.h
   
 ## See also  
-[PFTypes members](../pftypes_members.md)  
+[PFTypes members](https://learn.microsoft.com/en-us/gaming/playfab/api-references/c/pftypes/pftypes_members)  
 
   
   

@@ -1,21 +1,21 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager::SetProfilingCallbacksForMethodEntryExit"
-description: Optionally configures the profiling event callbacks the Party Xbox Live library will make when entering or exiting instrumented methods.
+description: Optionally configures the profiling event callbacks the Party XBOX Live library will make when entering or exiting instrumented methods.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/14/2023
+ms.date: "11/13/2026"
 ---
 
 # PartyXblManager::SetProfilingCallbacksForMethodEntryExit  
 
-Optionally configures the profiling event callbacks the Party Xbox Live library will make when entering or exiting instrumented methods.  
+Optionally configures the profiling event callbacks the Party XBOX Live library will make when entering or exiting instrumented methods.  
 
 ## Syntax  
   
 ```cpp
-PartyError SetProfilingCallbacksForMethodEntryExit(  
+static PartyError SetProfilingCallbacksForMethodEntryExit(  
     PartyProfilingMethodEntranceCallback profilingMethodEntranceCallback,  
     PartyProfilingMethodExitCallback profilingMethodExitCallback  
 )  
@@ -26,12 +26,12 @@ PartyError SetProfilingCallbacksForMethodEntryExit(
 **`profilingMethodEntranceCallback`** &nbsp; PartyProfilingMethodEntranceCallback  
 *optional*  
   
-The callback to be made when the Party Xbox Live library enters an internal method which is instrumented for profiling.  
+The callback to be made when the Party XBOX Live library enters an internal method which is instrumented for profiling.  
   
 **`profilingMethodExitCallback`** &nbsp; PartyProfilingMethodExitCallback  
 *optional*  
   
-The callback to be made when the Party Xbox Live library is about to exit an internal method which is instrumented for profiling.  
+The callback to be made when the Party XBOX Live library is about to exit an internal method which is instrumented for profiling.  
   
   
 ### Return value  
@@ -46,6 +46,10 @@ This method allows the title to install custom profiling callback functions in o
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblManager](../partyxblmanager.md)  

@@ -1,11 +1,11 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager::GetChatUsers"
-description: Gets an array containing all chat users created by [CreateLocalChatUser()](partyxblmanager_createlocalchatuser.md) and [CreateRemoteChatUser()](partyxblmanager_createremotechatuser.md).
+description: Gets an array containing all chat users created by CreateLocalChatUser() and CreateRemoteChatUser().
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblManager::GetChatUsers  
@@ -18,7 +18,7 @@ Gets an array containing all chat users created by [CreateLocalChatUser()](party
 PartyError GetChatUsers(  
     uint32_t* userCount,  
     PartyXblChatUserArray* chatUsers  
-)  
+) const  
 ```  
   
 ### Parameters  
@@ -29,7 +29,7 @@ PartyError GetChatUsers(
 An output value indicating the number of chat users provided in `chatUsers`.  
   
 **`chatUsers`** &nbsp; [PartyXblChatUserArray*](../../../xbltypedefs.md)  
-*library-allocated output array of size `*endpointCount`*  
+*library-allocated output array of size `*userCount`*  
   
 A library-allocated output array containing the local and remote chat users.  
   
@@ -46,6 +46,10 @@ The array is backed by the library's internal memory. The array is only valid un
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblManager](../partyxblmanager.md)  

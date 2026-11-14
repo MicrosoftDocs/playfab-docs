@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFCloudScriptEventHubFunctionModel"
-description: "PFCloudScriptEventHubFunctionModel data model."
+description: "Contains details about a registered Azure Function triggered by an event hub. No callable PlayFab Services C API returns it."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 11/13/2026
 ---
 
 # PFCloudScriptEventHubFunctionModel  
 
-PFCloudScriptEventHubFunctionModel data model.  
+Contains details about a registered Azure Function triggered by an event hub.  
 
 ## Syntax  
   
@@ -40,6 +40,10 @@ typedef struct PFCloudScriptEventHubFunctionModel {
 (Optional) The name the function was registered under.
   
   
+## Remarks
+
+No callable PlayFab Services C API returns this model. `PFCloudScriptListEventHubFunctionsResult` contains an array of pointers to these models, but its result-retrieval function is disabled by `#if 0` in `PFCloudScript.h`.
+
 ## Requirements  
   
 **Header:** PFCloudScriptTypes.h

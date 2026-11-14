@@ -3,7 +3,7 @@ title: Debug Process-based game servers using LocalMultiplayerAgent
 author: emmayspark
 description: How to run a game server using LocalMultiplayerAgent in Process mode
 ms.author: emmapark
-ms.date: 03/01/2022
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, multiplayerServer, localMultiplayerAgent, MPSAgent, GSDK, MPS Debugging tool
@@ -29,8 +29,8 @@ Next, follow the step "[Wrapping an existing game server using the wrapper app](
 
 Navigate to the folder where you extracted the LMA toolset and open the MultiplayerSettings.json file. This file is a build configuration mock file that simulates the build on MPS.
 
-You can populate json using [LMA MultiplayerSettings.json Generator](https://github.com/PlayFab/MpsAgent/tree/main/LocalMultiplayerAgent/SettingsJsonGenerator).
-The Generator is a simple web page that creates json based on your options. You can find the Generator under extracted folder of LMA.  
+You can populate JSON using [LMA MultiplayerSettings.json Generator](https://github.com/PlayFab/MpsAgent/tree/main/LocalMultiplayerAgent/SettingsJsonGenerator).
+The Generator is a simple web page that creates JSON based on your options. You can find the Generator under extracted folder of LMA.  
   
 Here's the example of MultiplayerSettings.json for Wrapper sample to run LMA in Process mode.
 
@@ -105,7 +105,7 @@ Now you're ready to run LocalMultiplayerAgent.
 Navigate to directory under LMA that contains LocalMultiplayerAgent.exe.
 
 - Run `LocalMultiplayerAgent.exe`. 
-At this point, LMA sets up the http listener, unzips the game asset, and starts the game server in a separate process. 
+At this point, LMA sets up the HTTP listener, unzips the game asset, and starts the game server in a separate process.
 
   > If you are running your game server as a Process, the Windows Firewall may pop-up and ask if you want to allow traffic to the NodePort you specified. If you want to avoid that, you can either run the LocalMultiplayerAgent in admin mode or enable the port in the firewall.
 

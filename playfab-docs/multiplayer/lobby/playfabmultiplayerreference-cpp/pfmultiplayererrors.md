@@ -5,7 +5,7 @@ description: "Error codes used by the PlayFab Multiplayer, Lobby, and Matchmakin
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/13/2026
+ms.date: "11/13/2026"
 ---
 
 # PlayFab Multiplayer C++ SDK Error Codes
@@ -14,7 +14,7 @@ The following error codes are used by the PlayFab Multiplayer, Lobby and Matchma
 
 For additional guidance on handling these errors, check out [Handling Lobby and Matchmaking C++ SDK errors](../lobby-and-matchmaking-client-sdk-errors.md)
 
-### Multiplayer
+## Multiplayer
 
 | Hex | Dec | Description |
 | ------ | ------ | ------ |
@@ -32,7 +32,7 @@ For additional guidance on handling these errors, check out [Handling Lobby and 
 | 0x8923640C | -1994169332 | The Entity Type is invalid or unsupported. |
 | 0x8923640D | -1994169331 | A request rate limit was exceeded. The request wasn't automatically retried again because retries are disabled or the retry-after period was too long. |
 
-### Lobby
+## Lobby
 
 | Hex | Dec | Description |
 | ------ | ------ | ------ |
@@ -93,7 +93,7 @@ For additional guidance on handling these errors, check out [Handling Lobby and 
 | 0x8923623D | -1994169795 | Operation can only be performed by the non-owning server associated with the lobby. |
 | 0x8923623E | -1994169794 | The connection status is invalid. |
 
-### Matchmaking
+## Matchmaking
 
 | Hex | Dec | Description |
 | ------ | ------ | ------ |
@@ -132,7 +132,7 @@ For additional guidance on handling these errors, check out [Handling Lobby and 
 | 0x89236321 | -1994169567 | The provided multiplayer protocol type is invalid. |
 | 0x89236322 | -1994169566 | The ticket was canceled by the service. |
 
-### PubSub
+## PubSub
 
 | Hex | Dec | Description |
 | ------ | ------ | ------ |

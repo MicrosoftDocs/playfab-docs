@@ -3,7 +3,7 @@ title: Game Saves quickstart
 author: jasonsandlin
 description: Quickstart for Game Saves
 ms.author: jasonsa
-ms.date: 07/01/2025
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, game saves
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Quickstart for Game Saves
 
-PlayFab Game Saves allows players to seamlessly continue their progress across devices by syncing save data to the cloud. This quickstart guide walks you through implementing a complete game save solution for Xbox and Windows platforms.
+PlayFab Game Saves allows players to seamlessly continue their progress across devices by syncing save data to the cloud. This quickstart guide walks you through implementing a complete game save solution for XBOX and Windows platforms.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ The Game Saves system follows a simple pattern that works seamlessly across devi
 
 ### Initial Setup (One-time per game session)
 1. **Initialize Services**: Set up PlayFab Core and Game Saves modules
-2. **Authenticate User**: Sign in the player using Xbox authentication
+2. **Authenticate User**: Sign in the player using XBOX authentication
 3. **Download Existing Saves**: Sync save data from other devices to the local device
 4. **Get Save Location**: Obtain the local save root folder where your game should write save files
 
@@ -55,7 +55,7 @@ The Game Saves system follows a simple pattern that works seamlessly across devi
 
 ### Session End
 8. **Final Upload**: Upload any final changes before the player quits
-9. **Background Sync**: On Xbox/Windows, the system automatically handles final uploads when the game closes
+9. **Background Sync**: On XBOX/Windows, the system automatically handles final uploads when the game closes
 
 ### Key Benefits
 - **Offline Support**: Players can start playing even without internet connection
@@ -78,7 +78,7 @@ Game Saves is designed to work both online and offline, making it different from
 
 ### Prerequisites
 Before initializing Game Saves, ensure you have:
-- Called `XGameRuntimeInitialize()` to initialize the Xbox runtime
+- Called `XGameRuntimeInitialize()` to initialize the XBOX runtime
 - Called `XUserAddAsync()` to sign in a user and obtain an `XUserHandle`
 - Your PlayFab Title ID from Game Manager
 
@@ -133,7 +133,7 @@ if (FAILED(hr))
 > Replace `<titleId>` with your actual PlayFab Title ID from Game Manager. The `xuserHandle` must be obtained from a successful call to `XUserAddAsync`.
 
 ### Alternative Platforms
-For platforms without Xbox authentication and without offline support, use other versions of `PFLocalUserCreateHandle` or `PFLocalUserCreateHandleWithPersistedLocalId` instead. Refer to platform-specific documentation for implementation details.
+For platforms without XBOX authentication, use `PFLocalUserCreateHandleWithPersistedLocalId` with your own `PFLocalUserLoginHandler`. For PC games on Steam, use `PFLocalUserCreateHandleWithSteamUser`, as shown in the next example. Refer to platform-specific documentation for implementation details.
 
 For example:
 ```cpp
@@ -241,7 +241,7 @@ Once your game has written save files and subfolders to the local save root fold
 - **`ReleaseDeviceAsActive`**: Releases device as active, allowing seamless sync on other devices
 
 ### Platform Behavior
-- **Xbox/Windows**: Upload continues in background after game closes
+- **XBOX/Windows**: Upload continues in background after game closes
 - **Other platforms** (Steam Deck, etc.): Upload must complete before game exit, or save data won't reach the cloud
 
 ### Implementation
@@ -289,7 +289,7 @@ If you aren't using the progress callback, wait for the `XAsyncBlock` to complet
 2. **Use appropriate options**: 
    - Use `KeepDeviceActive` during gameplay for additional uploads
    - Use `ReleaseDeviceAsActive` when the player is quitting or returning to menu
-3. **Warn users on non-Xbox platforms**: Let players know not to quit during upload
+3. **Warn users on non-XBOX platforms**: Let players know not to quit during upload
 
 ### Frequency Considerations
 - Multiple uploads per session are supported and efficient
@@ -298,7 +298,7 @@ If you aren't using the progress callback, wait for the `XAsyncBlock` to complet
 
 ## Step 4: Handle UI Callbacks (Optional)
 
-Game Saves provides built-in UI for Xbox and Windows platforms. On other platforms (such as Steam Deck), your game must provide its own UI by handling callbacks.
+Game Saves provides built-in UI for XBOX and Windows platforms. On other platforms (such as Steam Deck), your game must provide its own UI by handling callbacks.
 
 UI callbacks fire during `PFGameSaveFilesAddUserWithUiAsync` and `PFGameSaveFilesUploadWithUiAsync`. Each callback pauses the async operation until your game responds—the `XAsyncBlock` callback doesn't fire until all UI callbacks are resolved.
 
@@ -335,7 +335,7 @@ For detailed offline behavior and best practices, see [Game Saves offline mode](
 
 When a player switches devices mid-session, it's important to prevent them from accidentally losing progress by playing on multiple devices simultaneously.
 
-If your game only signs in using Xbox's **Single Point of Presence (SPOP)** feature, this scenario is automatically prevented. SPOP ensures a user can only be signed in on one Xbox device at a time.  Otherwise you should also implement the active device changed callback to handle scenarios where a player switches devices mid-session 
+If your game only signs in using XBOX's **Single Point of Presence (SPOP)** feature, this scenario is automatically prevented. SPOP ensures a user can only be signed in on one XBOX device at a time.  Otherwise you should also implement the active device changed callback to handle scenarios where a player switches devices mid-session
 
 For detailed behavior and best practices, see [Game Saves active device changes](./activedevicechanges.md).
 

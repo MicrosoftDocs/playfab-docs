@@ -5,7 +5,7 @@ description: "Dictionary entry for an associative array with PFVirtualCurrencyRe
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFVirtualCurrencyRechargeTimeDictionaryEntry  
@@ -26,11 +26,11 @@ typedef struct PFVirtualCurrencyRechargeTimeDictionaryEntry {
 **`key`** &nbsp; const char*  
 *is null-terminated*  
   
-TBD  
+The key of the entry.  
   
 **`value`** &nbsp; [PFVirtualCurrencyRechargeTime](pfvirtualcurrencyrechargetime.md) const*  
   
-TBD  
+The `PFVirtualCurrencyRechargeTime` value associated with `key`.  
   
   
 ## Requirements  

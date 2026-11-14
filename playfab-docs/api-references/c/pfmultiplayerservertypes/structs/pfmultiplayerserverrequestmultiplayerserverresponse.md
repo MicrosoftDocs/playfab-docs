@@ -5,7 +5,7 @@ description: "PFMultiplayerServerRequestMultiplayerServerResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerRequestMultiplayerServerResponse  
@@ -17,14 +17,14 @@ PFMultiplayerServerRequestMultiplayerServerResponse data model.
 ```cpp
 typedef struct PFMultiplayerServerRequestMultiplayerServerResponse {  
     const char* buildId;  
-    PFMultiplayerServerConnectedPlayer const* connectedPlayers;  
+    PFMultiplayerServerConnectedPlayer const* const* connectedPlayers;  
     uint32_t connectedPlayersCount;  
     const char* fQDN;  
     const char* iPV4Address;  
     time_t const* lastStateTransitionTime;  
-    PFMultiplayerServerPort const* ports;  
+    PFMultiplayerServerPort const* const* ports;  
     uint32_t portsCount;  
-    PFMultiplayerServerPublicIpAddress const* publicIPV4Addresses;  
+    PFMultiplayerServerPublicIpAddress const* const* publicIPV4Addresses;  
     uint32_t publicIPV4AddressesCount;  
     const char* region;  
     const char* serverId;  
@@ -41,7 +41,7 @@ typedef struct PFMultiplayerServerRequestMultiplayerServerResponse {
   
 (Optional) The identity of the build in which the server was allocated.
   
-**`connectedPlayers`** &nbsp; [PFMultiplayerServerConnectedPlayer](pfmultiplayerserverconnectedplayer.md) const*  
+**`connectedPlayers`** &nbsp; [PFMultiplayerServerConnectedPlayer](pfmultiplayerserverconnectedplayer.md) const* const*  
 *may be nullptr*  
   
 (Optional) The connected players in the multiplayer server.
@@ -65,7 +65,7 @@ Count of connectedPlayers
   
 (Optional) The time (UTC) at which a change in the multiplayer server state was observed.
   
-**`ports`** &nbsp; [PFMultiplayerServerPort](pfmultiplayerserverport.md) const*  
+**`ports`** &nbsp; [PFMultiplayerServerPort](pfmultiplayerserverport.md) const* const*  
 *may be nullptr*  
   
 (Optional) The ports the multiplayer server uses.
@@ -74,7 +74,7 @@ Count of connectedPlayers
   
 Count of ports
   
-**`publicIPV4Addresses`** &nbsp; [PFMultiplayerServerPublicIpAddress](pfmultiplayerserverpublicipaddress.md) const*  
+**`publicIPV4Addresses`** &nbsp; [PFMultiplayerServerPublicIpAddress](pfmultiplayerserverpublicipaddress.md) const* const*  
 *may be nullptr*  
   
 (Optional) The list of public Ipv4 addresses associated with the server.
@@ -96,7 +96,7 @@ Count of publicIPV4Addresses
 **`sessionId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The guid string session ID of the multiplayer server.
+(Optional) The GUID string session ID of the multiplayer server.
   
 **`state`** &nbsp; const char*  
 *is null-terminated*  

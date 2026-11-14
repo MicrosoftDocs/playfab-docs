@@ -1,11 +1,11 @@
 ---
 author: jasonsandlin
 title: "PFMultiplayerServerPingQosServersResult"
-description: "Aggregate result of PFMultiplayerServerPingQosServersAsync. Regions are sorted ascending by latencyMs; unreachable regions (latencyMs == UINT32_MAX) appear at the end."
+description: "Aggregate result of PFMultiplayerServerPingQosServersAsync, with regions sorted by ascending latencyMs and unreachable regions listed at the end."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/25/2026
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerPingQosServersResult  

@@ -5,7 +5,7 @@ description: "EventType enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/20/2026
+ms.date: "11/13/2026"
 ---
 
 # PFEventType  
@@ -34,7 +34,7 @@ enum class PFEventType  : uint32_t
   
 ## Requirements  
   
-**Header:** PFTypes.h
+**Header:** playfab/services/PFTypes.h
   
 ## See also  
 [PFTypes members](../pftypes_members.md)  

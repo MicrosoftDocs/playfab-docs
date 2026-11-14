@@ -5,7 +5,7 @@ description: "PFPushNotificationsSendPushNotificationRequest data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/20/2026
+ms.date: "11/13/2026"
 ---
 
 # PFPushNotificationsSendPushNotificationRequest  
@@ -34,7 +34,7 @@ typedef struct PFPushNotificationsSendPushNotificationRequest {
 **`advancedPlatformDelivery`** &nbsp; [PFPushNotificationsAdvancedPushPlatformMsg](pfpushnotificationsadvancedpushplatformmsg.md) const*  
 *may be nullptr*  
   
-(Optional) Allows you to provide precisely formatted json to target devices. This is an advanced feature, allowing you to deliver to custom plugin logic, fields, or functionality not natively supported by PlayFab.
+(Optional) Allows you to provide precisely formatted JSON to target devices. This is an advanced feature, allowing you to deliver to custom plugin logic, fields, or functionality not natively supported by PlayFab.
   
 **`advancedPlatformDeliveryCount`** &nbsp; uint32_t  
   

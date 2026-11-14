@@ -5,7 +5,7 @@ description: "Values representing predefined search keys."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/06/2022
+ms.date: "11/13/2026"
 ---
 
 # PFLobby Search Keys
@@ -16,11 +16,14 @@ Values representing the lobby's predefined search keys.
 
 ```cpp
 constexpr char PFLobbyMemberCountSearchKey[] = "lobby/memberCount";
-constexpr char PFLobbyMemberCountRemainingSearchKey[] = "lobby/memberCountRemaining"
+constexpr char PFLobbyMemberCountRemainingSearchKey[] = "lobby/memberCountRemaining";
 constexpr char PFLobbyAmMemberSearchKey[] = "lobby/amMember";
 constexpr char PFLobbyAmOwnerSearchKey[] = "lobby/amOwner";
 constexpr char PFLobbyMembershipLockSearchKey[] = "lobby/membershipLock";
-constexpr char PFLobbyAmServerSearchKey[] = "lobby/amServer"
+
+#ifdef PFMULTIPLAYER_INCLUDE_SERVER_APIS
+constexpr char PFLobbyAmServerSearchKey[] = "lobby/amServer";
+#endif // PFMULTIPLAYER_INCLUDE_SERVER_APIS
 ```
 
 ## Constants
@@ -32,7 +35,7 @@ constexpr char PFLobbyAmServerSearchKey[] = "lobby/amServer"
 | PFLobbyAmMemberSearchKey | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies that you are currently a member of. | "lobby/amMember eq true" |
 | PFLobbyAmOwnerSearchKey | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies that you own. | "lobby/amOwner eq true" |
 | PFLobbyMembershipLockSearchKey | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies with a specific lock state. | "lobby/membershipLock eq 'Unlocked'" |
-| PFLobbyAmServerSearchKey | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies that the server has joined but does not own. | "lobby/amServer eq true" |
+| `PFLobbyAmServerSearchKey` | A special, predefined search key that can be used in the [PFLobbySearchConfiguration](../structs/pflobbysearchconfiguration.md) filtering string to search for lobbies that the server has joined but does not own. To use this key, define `PFMULTIPLAYER_INCLUDE_SERVER_APIS` before you include `PFLobby.h`. This key isn't valid in client queries. | `lobby/amServer eq true` |
 
 ## Requirements
 

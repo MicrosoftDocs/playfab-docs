@@ -1,11 +1,11 @@
 ---
 author: jasonsandlin
 title: "Services C API overview - PFCore.h"
-description: "Services C API overview - PFCore.h"
+description: "Functions in PFCore.h that initialize and clean up Microsoft PlayFab Core global state."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 11/13/2026
 ---
 
 # Services C API overview - PFCore.h
@@ -15,6 +15,6 @@ ms.date: 11/19/2024
 
 | Function | Description |  
 | --- | --- |  
-| [PFInitialize](functions/pfinitialize.md) | Initialize PlayFabCore global state. Custom platform hooks must be configured prior to calling PFInitialize. |  
-| [PFInitialize](functions/pfinitialize_2.md) | Initializes PlayFabCore global state. Custom platform hooks must be configured prior to calling PFInitialize. |  
-| [PFUninitializeAsync](functions/pfuninitializeasync.md) | Cleanup PlayFab global state. |  
+| [PFInitialize](functions/pfinitialize.md) | Initializes PlayFab Core global state on Windows PC, XBOX consoles, Linux, iOS, and macOS. |  
+| [PFInitialize (Android)](functions/pfinitialize_2.md) | Android only. Initializes PlayFab Core global state with the Java VM and application context. |  
+| [PFUninitializeAsync](functions/pfuninitializeasync.md) | Cleans up PlayFab Core global state asynchronously. |  

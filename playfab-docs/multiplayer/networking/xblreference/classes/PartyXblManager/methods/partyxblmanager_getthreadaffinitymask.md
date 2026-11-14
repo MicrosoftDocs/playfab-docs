@@ -1,21 +1,21 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager::GetThreadAffinityMask"
-description: Retrieves the current set of processors on which internal Party Xbox Live Helper library threads will run or are running as an affinity mask.
+description: Retrieves the current set of processors on which internal Party XBOX Live Helper library threads will run or are running as an affinity mask.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblManager::GetThreadAffinityMask  
 
-Retrieves the current set of processors on which internal Party Xbox Live Helper library threads will run or are running as an affinity mask.  
+Retrieves the current set of processors on which internal Party XBOX Live Helper library threads will run or are running as an affinity mask.  
 
 ## Syntax  
   
 ```cpp
-PartyError GetThreadAffinityMask(  
+static PartyError GetThreadAffinityMask(  
     PartyXblThreadId threadId,  
     uint64_t* threadAffinityMask  
 )  
@@ -45,6 +45,10 @@ This retrieves the current processor affinity for internal Party threads Xbox Li
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblManager](../partyxblmanager.md)  

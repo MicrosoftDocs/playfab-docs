@@ -5,7 +5,7 @@ description: Queues an asynchronous operation to authenticate the specified loca
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/07/2021
+ms.date: "11/13/2026"
 ---
 
 # PartyNetwork::AuthenticateLocalUser  
@@ -55,8 +55,8 @@ While any device with the appropriate network descriptor can establish a connect
 | --- | --- |
 | InternetConnectivityError | Retry with a small delay of no less than 10 seconds. For your app, it may be more appropriate to display the error to the user immediately, rather than retrying automatically. |
 | PartyServiceError | Retry with an exponential backoff. Start with a minimum delay of no less than 10 seconds, doubling the delay with each retry. |
-| UserNotAuthorized | This result can mean that the user's entity token was invalid, expired, or that the user wasn't authorized for other reasons. It could also mean that specified invitation is no longer valid, or the invitation doesn't contain this user. Retry no more than one time, and only after getting a new entity token for the user and calling [PartyLocalUser::UpdateEntityToken()](../../PartyLocalUser/methods/partylocaluser_updateentitytoken.md).|
-| FailedToBindToLocalUdpSocket | This result means that the library couldn't bind to the local UDP socket specified in the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option. The title must clean up its instance of the library, update the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option to a valid, available bind address, and reinitialize the library.
+| UserNotAuthorized | This result can mean that the user's entity token was invalid, expired, or that the user wasn't authorized for other reasons. It could also mean that specified invitation is no longer valid, or the invitation doesn't contain this user. Retry no more than one time, and only after getting a new entity token for the user. For users created with a PlayFab Entity ID and Entity Token in the standalone Party SDK (v1), pass the new token to [PartyLocalUser::UpdateEntityToken()](../../PartyLocalUser/methods/partylocaluser_updateentitytoken.md) before retrying. For users created from a PlayFab Core entity handle in the PlayFab Unified SDK (v2), refresh or reauthenticate the entity through the PlayFab Core SDK instead and don't call UpdateEntityToken, because the Party library gets its tokens from the PlayFab Core SDK. For more information, see [PartyManager::CreateLocalUser()](../../PartyManager/methods/partymanager_createlocaluser.md).|
+| FailedToBindToLocalUdpSocket | This result means that the library couldn't bind to the local UDP socket specified in the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option. The title must clean up its instance of the library, update the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option to a valid, available bind address, and reinitialize the library. |
   
 ## Requirements  
   

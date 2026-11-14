@@ -5,7 +5,7 @@ description: "PFMultiplayerServerBuildAliasParams data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerBuildAliasParams  
@@ -25,7 +25,7 @@ typedef struct PFMultiplayerServerBuildAliasParams {
 **`aliasId`** &nbsp; const char*  
 *is null-terminated*  
   
-The guid string alias ID to use for the request.
+The GUID string alias ID to use for the request.
   
   
 ## Requirements  

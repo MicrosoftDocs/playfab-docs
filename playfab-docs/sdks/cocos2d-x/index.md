@@ -3,7 +3,7 @@ title: Cocos2D-x (C++) SDK
 author: joannaleecy
 description: Landing page for the PlayFab Cocos2D-x (C++) SDK.
 ms.author: jenelleb
-ms.date: 07/12/2018
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, cocos-2dx sdk, cpp
@@ -32,7 +32,7 @@ The Cocos SDK has not yet been fully tested across all Cocos platforms - however
 
 These platforms are tested, and should function very well:
 
-- win32
+- Win32
 - ios_mac
 - android
 
