@@ -1,11 +1,11 @@
 ---
 author: jasonsandlin
 title: "PFAccountManagementAddOrUpdateContactEmailRequest"
-description: "PFAccountManagementAddOrUpdateContactEmailRequest data model. This API adds a contact email to the player's profile. If the player's profile already contains a contact email, it will update the contact email to the email address specified."
+description: "Contains the request data that adds a contact email to the player's profile, or updates the existing contact email to the specified address."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFAccountManagementAddOrUpdateContactEmailRequest  

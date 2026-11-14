@@ -3,7 +3,7 @@ title: PlayFab Lobby overview
 author: joannaleecy
 description: Learn about PlayFab Lobby.
 ms.author: jenelleb
-ms.date: 04/08/2025
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking
@@ -23,7 +23,7 @@ PlayFab Lobby is a service to create a temporary grouping mechanism for players 
 
 ### SDKs 
 
-* [Lobby REST API Reference](xref:titleid.playfabapi.com.multiplayer.lobby)
+* [Lobby REST API Reference](https://learn.microsoft.com/en-us/rest/api/playfab/multiplayer/lobby)
 * [Client SDK Reference](lobby-matchmaking-sdks/lobby-matchmaking-sdks.md)
   * [Quickstart for Unity](lobby-matchmaking-sdks/multiplayer-unity-sdk-getting-started.md)
   * [Quickstart for Unreal](../networking/party-unreal-engine-oss-quickstart.md)

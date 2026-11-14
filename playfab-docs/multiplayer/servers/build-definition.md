@@ -3,7 +3,7 @@ title: Build definition and configuration
 author: joannaleecy
 description: VM build definition and configuration.
 ms.author: jenelleb
-ms.date: 04/01/2021
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer servers, deploy, powershell
@@ -22,7 +22,7 @@ Build configuration determines how your game scales across Azure. This **can be 
 
 You can also view the VM build definition and configuration on the __New Build__ page in Game Manager. For instructions, see [How to view the **New Build** page using Game Manager](#how-to-view-the-new-build-page-using-game-manager).
 
-### Build definition
+## Build definition
 
 Build definition is determined by the following list of parameters. 
 
@@ -41,7 +41,7 @@ For sample values you can use to deploy a simple server, see [Walk-through of de
 | Certificate (optional) | Upload certificates for the game server. This is a .pfx (Windows) or .pem (Linux) file containing the certificate to be installed within the container. Certificate names can only contain letters and numbers. No spaces or special characters such as dashes and underscores. | Typically, the certificate for service-to-service authentication is installed through this configuration. |
 | Metadata (optional)   | A set of property-values that can be retrieved using GSDK | |
 
-### Build configuration
+## Build configuration
 
 Build configuration is determined by the following list of parameters. When selecting the virtual machine size and regional configuration, keep in mind the overall usage limits configured for your PlayFab title. For more information, see [Accessing increased core limits and additional Azure regions](identifying-and-increasing-core-limits.md).
 

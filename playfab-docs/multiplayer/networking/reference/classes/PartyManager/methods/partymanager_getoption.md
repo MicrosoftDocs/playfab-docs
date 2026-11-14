@@ -5,7 +5,7 @@ description: Retrieves an option used to fine-tune Party library functionality.
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::GetOption  
@@ -15,7 +15,7 @@ Retrieves an option used to fine-tune Party library functionality.
 ## Syntax  
   
 ```cpp
-PartyError GetOption(  
+static PartyError GetOption(  
     const void* object,  
     PartyOption option,  
     void* value  

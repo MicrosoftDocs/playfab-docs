@@ -5,7 +5,7 @@ description: "Join a client-owned lobby as a server."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 02/14/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerJoinLobbyAsServer  
@@ -31,16 +31,16 @@ HRESULT PFMultiplayerJoinLobbyAsServer(
   
 The handle of the PFMultiplayer API instance.  
   
-**`server`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
+**`server`** &nbsp; [const PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
-The PlayFab Entity Key of the server joining the lobby. Its entity type must be "game_server".  
+The PlayFab Entity Key of the server joining the lobby. Its entity type must be `game_server`.  
   
-**`connectionString`** &nbsp; char*  
+**`connectionString`** &nbsp; const char*  
 *is null-terminated*  
   
 The connection string used by the server to join the lobby.  
   
-**`configuration`** &nbsp; [PFLobbyServerJoinConfiguration*](../structs/pflobbyserverjoinconfiguration.md)  
+**`configuration`** &nbsp; [const PFLobbyServerJoinConfiguration*](../structs/pflobbyserverjoinconfiguration.md)  
   
 The initial server-owned data to be stored when joining the lobby.  
   
@@ -52,7 +52,7 @@ An optional, app-defined, pointer-sized context value that can be used to associ
 **`lobby`** &nbsp; PFLobbyHandle*  
 *optional, library-allocated output*  
   
-The optional, output lobby object, which can be used to queue operations for immediate execution of this operation completes.  
+An optional output lobby handle. If the call succeeds, the handle is available immediately, before the asynchronous operation completes, and you can use it to queue other operations on the lobby.  
   
   
 ### Return value
@@ -62,11 +62,13 @@ Type: HRESULT
   
 ## Remarks  
   
-To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> This is an asynchronous operation. Completion of this method's execution isn't necessarily completion of the operation.   <br /><br /> Upon successful completion, the title is provided a [PFLobbyUpdatedStateChange](../structs/pflobbyupdatedstatechange.md) with the [PFLobbyUpdatedStateChange::serverUpdate](../structs/pflobbyupdatedstatechange.md) member appropriately populated, and a [PFLobbyJoinLobbyAsServerCompletedStateChange](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) with the [PFLobbyJoinLobbyAsServerCompletedStateChange::result](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) field set to ```S_OK```.   <br /><br /> Upon a failed completion, the title is provided a [PFLobbyJoinLobbyAsServerCompletedStateChange](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) with the [PFLobbyJoinLobbyAsServerCompletedStateChange::result](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) field set to a failure.   <br /><br /> This operation is restricted to client-owned lobbies that are using connections.
+To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFLobby.h. <br /><br /> This is an asynchronous operation. Completion of this method's execution isn't necessarily completion of the operation.   <br /><br /> Upon successful completion, the title is provided a [PFLobbyUpdatedStateChange](../structs/pflobbyupdatedstatechange.md) with the [PFLobbyUpdatedStateChange::serverUpdated](../structs/pflobbyupdatedstatechange.md) member appropriately populated, and a [PFLobbyJoinLobbyAsServerCompletedStateChange](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) with the [PFLobbyJoinLobbyAsServerCompletedStateChange::result](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) field set to ```S_OK```.   <br /><br /> Upon a failed completion, the title is provided a [PFLobbyJoinLobbyAsServerCompletedStateChange](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) with the [PFLobbyJoinLobbyAsServerCompletedStateChange::result](../structs/pflobbyjoinlobbyasservercompletedstatechange.md) field set to a failure.   <br /><br /> This operation is restricted to client-owned lobbies that are using connections.
+  
+Before you call this function, call [PFMultiplayerSetEntityToken](../../pfmultiplayer/functions/pfmultiplayersetentitytoken.md) for `server`. If no token is set for that entity, the call fails synchronously.
   
 ## Requirements  
   
-**Header:** PFLobby.h
+**Header:** PFLobby.h  
   
 ## See also  
 [PFLobby members](../pflobby_members.md)  

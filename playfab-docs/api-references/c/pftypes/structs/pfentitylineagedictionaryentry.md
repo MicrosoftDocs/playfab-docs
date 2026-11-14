@@ -5,7 +5,7 @@ description: "Dictionary entry for an associative array with PFEntityLineage val
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFEntityLineageDictionaryEntry  
@@ -26,11 +26,11 @@ typedef struct PFEntityLineageDictionaryEntry {
 **`key`** &nbsp; const char*  
 *is null-terminated*  
   
-TBD  
+The key of the entry.  
   
 **`value`** &nbsp; [PFEntityLineage](pfentitylineage.md) const*  
   
-TBD  
+The `PFEntityLineage` value associated with `key`.  
   
   
 ## Requirements  

@@ -5,7 +5,7 @@ description: "PFMultiplayer C/C++ API overview - PFMultiplayer.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/11/2023
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayer C/C++ API overview - PFMultiplayer.h
@@ -27,10 +27,16 @@ ms.date: 04/11/2023
 | Callback | Description |  
 | --- | --- |  
 | [PFMultiplayerAllocateMemoryCallback](callbacks/pfmultiplayerallocatememorycallback.md) | A callback invoked every time a new memory buffer must be dynamically allocated by the PlayFab Multiplayer library. |  
-| [PartyFreeMemoryCallback](callbacks/pfmultiplayerfreememorycallback.md) | A callback invoked every time a previously allocated memory buffer is no longer needed by the PlayFab Multiplayer library and can be freed. |  
+| [PFMultiplayerFreeMemoryCallback](callbacks/pfmultiplayerfreememorycallback.md) | A callback invoked every time a previously allocated memory buffer is no longer needed by the PlayFab Multiplayer library and can be freed. |  
   
 ## Enumerations  
 
 | Enumeration | Description |  
 | --- | --- |  
 | [PFMultiplayerThreadId](enums/pfmultiplayerthreadid.md) | Threads that Multiplayer library uses for internal purposes.|  
+
+## Structures  
+
+| Structure | Description |  
+| --- | --- |  
+| [PFEntityKey](pfentitykey_clientsdk.md) | Combined entity type and ID structure that uniquely identifies a single entity. |  

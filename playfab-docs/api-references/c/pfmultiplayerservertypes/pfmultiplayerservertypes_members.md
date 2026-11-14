@@ -5,7 +5,7 @@ description: "Services C API overview - PFMultiplayerServerTypes.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # Services C API overview - PFMultiplayerServerTypes.h
@@ -24,7 +24,7 @@ ms.date: 11/19/2024
 | [PFMultiplayerServerCurrentServerStats](structs/pfmultiplayerservercurrentserverstats.md) | PFMultiplayerServerCurrentServerStats data model. |  
 | [PFMultiplayerServerDynamicStandbySettings](structs/pfmultiplayerserverdynamicstandbysettings.md) | PFMultiplayerServerDynamicStandbySettings data model. |  
 | [PFMultiplayerServerDynamicStandbyThreshold](structs/pfmultiplayerserverdynamicstandbythreshold.md) | PFMultiplayerServerDynamicStandbyThreshold data model. |  
-| [PFMultiplayerServerListBuildAliasesRequest](structs/pfmultiplayerserverlistbuildaliasesrequest.md) | PFMultiplayerServerListBuildAliasesRequest data model. Returns a list of summarized details of all multiplayer server builds for a title. |  
+| [PFMultiplayerServerListBuildAliasesRequest](structs/pfmultiplayerserverlistbuildaliasesrequest.md) | Request object for PFMultiplayerServerListBuildAliasesAsync, which lists details of all build aliases for a title. |  
 | [PFMultiplayerServerListBuildAliasesResponse](structs/pfmultiplayerserverlistbuildaliasesresponse.md) | PFMultiplayerServerListBuildAliasesResponse data model. |  
 | [PFMultiplayerServerListBuildSummariesRequest](structs/pfmultiplayerserverlistbuildsummariesrequest.md) | PFMultiplayerServerListBuildSummariesRequest data model. Returns a list of summarized details of all multiplayer server builds for a title. |  
 | [PFMultiplayerServerListBuildSummariesResponse](structs/pfmultiplayerserverlistbuildsummariesresponse.md) | PFMultiplayerServerListBuildSummariesResponse data model. |  

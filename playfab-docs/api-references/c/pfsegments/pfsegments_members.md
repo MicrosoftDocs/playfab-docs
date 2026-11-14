@@ -5,7 +5,7 @@ description: "Services C API overview - PFSegments.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: 11/13/2026
 ---
 
 # Services C API overview - PFSegments.h
@@ -22,7 +22,7 @@ ms.date: 09/08/2026
 | [PFSegmentsClientGetPlayerTagsGetResult](functions/pfsegmentsclientgetplayertagsgetresult.md) | Gets the result of a successful PFSegmentsClientGetPlayerTagsAsync call. |  
 | [PFSegmentsClientGetPlayerTagsGetResultSize](functions/pfsegmentsclientgetplayertagsgetresultsize.md) | Get the size in bytes needed to store the result of a ClientGetPlayerTags call. |  
 | [PFSegmentsServerAddPlayerTagAsync](functions/pfsegmentsserveraddplayertagasync.md) | Adds a given tag to a player profile. The tag's namespace is automatically generated based on the source of the tag. |  
-| [PFSegmentsServerGetAllSegmentsAsync](functions/pfsegmentsservergetallsegmentsasync.md) | Retrieves an array of player segment definitions. Results from this can be used in subsequent API calls such as ExportPlayersInSegment which requires a Segment ID. While segment names can change the ID for that segment will not change. |  
+| [PFSegmentsServerGetAllSegmentsAsync](functions/pfsegmentsservergetallsegmentsasync.md) | Retrieves an array of player segment definitions. While segment names can change, the ID for a segment doesn't change. |  
 | [PFSegmentsServerGetAllSegmentsGetResult](functions/pfsegmentsservergetallsegmentsgetresult.md) | Gets the result of a successful PFSegmentsServerGetAllSegmentsAsync call. |  
 | [PFSegmentsServerGetAllSegmentsGetResultSize](functions/pfsegmentsservergetallsegmentsgetresultsize.md) | Get the size in bytes needed to store the result of a ServerGetAllSegments call. |  
 | [PFSegmentsServerGetPlayerSegmentsAsync](functions/pfsegmentsservergetplayersegmentsasync.md) | List all segments that a player currently belongs to at this moment in time. |  

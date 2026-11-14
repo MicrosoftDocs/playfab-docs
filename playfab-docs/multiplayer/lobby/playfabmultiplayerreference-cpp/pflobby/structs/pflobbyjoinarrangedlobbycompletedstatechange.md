@@ -5,7 +5,7 @@ description: "Information specific to the *JoinArrangedLobbyCompleted* type of s
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 03/15/2022
+ms.date: "11/13/2026"
 ---
 
 # PFLobbyJoinArrangedLobbyCompletedStateChange  
@@ -42,7 +42,7 @@ The async context provided to the call associated with this state change.
 **`lobby`** &nbsp; PFLobbyHandle  
 *must not be null*  
   
-The lobby that was created and joined.
+The lobby associated with the arranged-join operation.
   
   
 ## Requirements  

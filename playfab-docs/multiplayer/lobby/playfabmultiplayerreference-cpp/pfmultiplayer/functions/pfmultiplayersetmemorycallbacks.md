@@ -5,7 +5,7 @@ description: "Optionally configures the memory allocation and freeing callbacks 
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 03/11/2022
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerSetMemoryCallbacks  
@@ -27,7 +27,7 @@ HRESULT PFMultiplayerSetMemoryCallbacks(
   
 A pointer to the custom allocation callback to use.  
   
-**`freeMemoryCallback`** &nbsp; PFMultiplayerFreeMemoryCallback  
+**`freeMemoryCallback`** &nbsp; [PFMultiplayerFreeMemoryCallback](../callbacks/pfmultiplayerfreememorycallback.md)  
   
 A pointer to the custom freeing callback to use.  
   
@@ -39,7 +39,7 @@ Type: HRESULT
   
 ## Remarks  
   
-This method allows the title to install custom memory allocation functions in order to service all requests by the Multiplayer library for new memory buffers instead of using its default allocation functions. <br /><br /> The `allocateMemoryCallback` and `freeMemoryCallback` parameters must both be non-null.   <br /><br /> To use this method, it must be called before any other Multiplayer method. This method cannot be called again for the lifetime of this process.
+If you call [PFMemSetFunctions](../../../../../api-references/c/pfplatform/functions/pfmemsetfunctions.md) from the PlayFab Core SDK, it sets custom memory allocation and freeing callbacks for all PlayFab SDK components, including Multiplayer. PFMultiplayerSetMemoryCallbacks overrides those callbacks for the Multiplayer library. <br /><br /> This method allows the title to install custom memory allocation functions in order to service all requests by the Multiplayer library for new memory buffers instead of using its default allocation functions. <br /><br /> The `allocateMemoryCallback` and `freeMemoryCallback` parameters must both be non-null.   <br /><br /> To use this method, it must be called before any other Multiplayer method. This method cannot be called again for the lifetime of this process.
   
 ## Requirements  
   

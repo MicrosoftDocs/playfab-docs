@@ -3,7 +3,7 @@ title: PlayFab consumption best practices
 author: joannaleecy
 description: Describes best practices for managing your costs in PlayFab.
 ms.author: jenelleb
-ms.date: 5/29/2020
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, pricing
@@ -135,7 +135,7 @@ This one is the simplest of all, since the pricing is completely unchanged. In s
 
 For hosted game servers specifically, you can minimize your costs by optimizing the number of server cores you have to have running at any given time to support as many players as possible.
 
-If low ping times are important on those servers, you can choose which regions to run the servers. For most games, the largest concentrations of players are limited to certain key regions, but if you have a widely dispersed player population—particularly when you're in the long tail of your game—you'll need to weigh the cost of running servers in every region near your players versus the impact of longer ping times on the subset of players in areas with few players. One thing that can help with that is to make sure you're using our [QOS service](../multiplayer/servers/using-qos-beacons-to-measure-player-latency-to-azure.md) to choose which regions to put players in, and then determine what your cut-off is for the minimum number of players you need playing in a region for it to be viable.
+If low ping times are important on those servers, you can choose which regions to run the servers. For most games, the largest concentrations of players are limited to certain key regions, but if you have a widely dispersed player population—particularly when you're in the long tail of your game—you'll need to weigh the cost of running servers in every region near your players versus the impact of longer ping times on the subset of players in areas with few players. One thing that can help with that is to make sure you're using our [QoS service](../multiplayer/servers/using-qos-beacons-to-measure-player-latency-to-azure.md) to choose which regions to put players in, and then determine what your cut-off is for the minimum number of players you need playing in a region for it to be viable.
 
 ## Managing your live game
 

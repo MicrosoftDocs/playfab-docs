@@ -5,7 +5,7 @@ description: "Dictionary entry for an associative array with PFUserDataRecord va
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFUserDataRecordDictionaryEntry  
@@ -26,11 +26,11 @@ typedef struct PFUserDataRecordDictionaryEntry {
 **`key`** &nbsp; const char*  
 *is null-terminated*  
   
-TBD  
+The key of the entry.  
   
 **`value`** &nbsp; [PFUserDataRecord](pfuserdatarecord.md) const*  
   
-TBD  
+The `PFUserDataRecord` value associated with `key`.  
   
   
 ## Requirements  

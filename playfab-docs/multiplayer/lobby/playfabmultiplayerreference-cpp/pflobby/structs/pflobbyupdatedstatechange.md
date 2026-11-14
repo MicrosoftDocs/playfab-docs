@@ -5,7 +5,7 @@ description: "Information specific to the *Updated* type of state change."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 03/24/2026
+ms.date: "11/13/2026"
 ---
 
 # PFLobbyUpdatedStateChange  
@@ -60,7 +60,7 @@ A flag indicating if the lobby's membership lock updated.
   
 **`updatedSearchPropertyCount`** &nbsp; uint32_t  
   
-The number of search properties that updated.
+The number of search properties that updated. This value is in the range `0` to `PFLobbyMaxSearchPropertyCount * 2`.
   
 **`updatedSearchPropertyKeys`** &nbsp; const char* const*  
 *array of size `updatedSearchPropertyCount`*  
@@ -69,7 +69,7 @@ The keys of the search properties that updated.
   
 **`updatedLobbyPropertyCount`** &nbsp; uint32_t  
   
-The number of lobby properties that updated.
+The number of lobby properties that updated. This value is in the range `0` to `PFLobbyMaxLobbyPropertyCount * 2`.
   
 **`updatedLobbyPropertyKeys`** &nbsp; const char* const*  
 *array of size `updatedLobbyPropertyCount`*  
@@ -91,7 +91,7 @@ A flag indicating if a client-owned lobby's joined server changed.
   
 **`updatedServerPropertyCount`** &nbsp; uint32_t  
   
-The number of properties that updated for a client-owned lobby's joined server.
+The number of properties that updated for a client-owned lobby's joined server. This value is in the range `0` to `PFLobbyMaxServerPropertyCount * 2`.
   
 **`updatedServerPropertyKeys`** &nbsp; const char* const*  
 *array of size `updatedServerPropertyCount`*  

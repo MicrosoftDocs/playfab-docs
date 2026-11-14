@@ -3,7 +3,7 @@ title: Data Connections quickstart
 author: sofiamarinv
 description: Quickstart guide for Data Connections
 ms.author: sofiamarin
-ms.date: 11/27/2023
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, data connections, byos, connections, event ingestion, bring your own storage
@@ -107,7 +107,7 @@ From PlayFab Game Manager:
     *	Select Add new Tag
     *	In the form:
         *	For the key field, input playfab:titleids
-        *	For the value field, input your playfab TitleID
+        *	For the value field, input your PlayFab TitleID
         *	Select Save changes
     *	Ensure you have your S3 Bucket name, Role ARN, and S3 Bucket Region used in the prior steps
     *	Enter those into the appropriate fields in the Game Manager

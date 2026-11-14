@@ -5,7 +5,7 @@ description: "PFUserGooglePlayGamesInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFUserGooglePlayGamesInfo  
@@ -27,7 +27,7 @@ typedef struct PFUserGooglePlayGamesInfo {
 **`googlePlayGamesPlayerAvatarImageUrl`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Avatar image url of the Google Play Games player.
+(Optional) Avatar image URL of the Google Play Games player.
   
 **`googlePlayGamesPlayerDisplayName`** &nbsp; const char*  
 *is null-terminated*  

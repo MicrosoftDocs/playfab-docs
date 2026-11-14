@@ -3,7 +3,7 @@ title: REST API Reference
 author: joannaleecy
 description: Overview page for PlayFab REST API reference documentation.
 ms.author: jenelleb
-ms.date: 11/19/2018
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, api
@@ -38,7 +38,7 @@ If the response fails, a 4XX error response is received. A 400 Bad Request could
 
 ## Security
 
-Each API has some form of security that needs to be passed in the header of each request. See this section to know what needs to be defined. Sometimes this is a session ticket from a login request or it could be your title secret key if you're making server api requests.
+Each API has some form of security that needs to be passed in the header of each request. See this section to know what needs to be defined. Sometimes this is a session ticket from a login request or it could be your title secret key if you're making server API requests.
 
 ## Concurrency
 

@@ -5,7 +5,7 @@ description: Configures an optional, custom pointer-sized context value with thi
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/01/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblChatUser::SetCustomContext  
@@ -40,6 +40,10 @@ The custom context is typically used as a "shortcut" that simplifies accessing l
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblChatUser](../partyxblchatuser.md)  

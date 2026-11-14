@@ -1,11 +1,11 @@
 ---
 author: jdeweyMSFT
 title: "PartyManager::DeserializeNetworkDescriptor"
-description: Deserializes a network descriptor structure from an opaque string serialized via a prior call to [SerializeNetworkDescriptor()](partymanager_serializenetworkdescriptor.md).
+description: Deserializes a network descriptor structure from an opaque string created by SerializeNetworkDescriptor().
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::DeserializeNetworkDescriptor  
@@ -15,7 +15,7 @@ Deserializes a network descriptor structure from an opaque string serialized via
 ## Syntax  
   
 ```cpp
-PartyError DeserializeNetworkDescriptor(  
+static PartyError DeserializeNetworkDescriptor(  
     PartyString serializedNetworkDescriptorString,  
     PartyNetworkDescriptor* networkDescriptor  
 )  

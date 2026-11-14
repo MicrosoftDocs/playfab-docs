@@ -3,7 +3,7 @@ title: Use lobby and matchmaking together
 author: joannaleecy
 description: Learn how to use Lobby and Matchmaking to implement a multiplayer game scenario.
 ms.author: jenelleb
-ms.date: 10/25/2021
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking, types
@@ -106,7 +106,7 @@ Inform all players in the lobby that the game is ready to start
 Lobby owner has the ability to remove inactive or disconnected players and initiate matchmaking to fill up the remaining spots
 
 * If a player disconnects or didn't respond within the given set duration (one minute), use __PFLobbyForceRemoveMember__ to remove the player.
-* The lobby owner uses __CreateServerBackfillTicket__ to create a matchmaking ticket. Tickets created using this API are given priority during searching. This approach minimizes gameplay disruption. To learn more, see [Using server backfill tickets](../matchmaking/backfill-tickets.md).
+* If your game is hosted on a game server, the game server, not a player's client, creates a backfill ticket for the open spots with [PFMultiplayerCreateServerBackfillTicket](playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreateserverbackfillticket.md). Backfill tickets are owned by the game server, so the server first sets its game server entity token with [PFMultiplayerSetEntityToken](playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayersetentitytoken.md). To use this function, define `PFMULTIPLAYER_INCLUDE_SERVER_APIS` before you include `PFMatchmaking.h`. Don't put game server credentials in a player client. Tickets created using this API are given priority during searching. This approach minimizes gameplay disruption. To learn more, see [Using server backfill tickets](../matchmaking/backfill-tickets.md) and [Using server backfill tickets with the Multiplayer SDK](../matchmaking/backfill-tickets-multiplayer-sdk.md).
 * After joining the backfill lobby, the game's lobby owner can share the original lobby's connection string with the new backfill players and they can join the original lobby.
 * Extend the game start time when appropriate.
 

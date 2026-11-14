@@ -5,12 +5,15 @@ description: Creates a local user object that is used to represent a supported P
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/06/2024
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::CreateLocalUserWithEntityType  
 
-Creates a local user object that is used to represent a supported PlayFab Entity ID and type when performing networking and chat operations.  
+> [!NOTE]
+>   `CreateLocalUserWithEntityType` isn't available in the Party library in the PlayFab Unified SDK (v2), including the version in the XBOX Game Development Kit (GDK). In that library, call [PartyManager::CreateLocalUser](partymanager_createlocaluser.md) with a PlayFab Core entity handle. The entity handle identifies the entity type.
+
+Creates a local user object that is used to represent a supported PlayFab Entity ID and type when performing networking and chat operations.
 
 ## Syntax  
   

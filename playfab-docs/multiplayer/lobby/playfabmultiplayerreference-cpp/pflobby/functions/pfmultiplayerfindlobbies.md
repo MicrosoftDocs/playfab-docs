@@ -5,7 +5,7 @@ description: "Search for lobbies on behalf of the local user."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 07/14/2023
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerFindLobbies  
@@ -29,11 +29,11 @@ HRESULT PFMultiplayerFindLobbies(
   
 The handle of the PFMultiplayer API instance.  
   
-**`searchingEntity`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
+**`searchingEntity`** &nbsp; [const PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The PlayFab entity performing the search.  
   
-**`searchConfiguration`** &nbsp; [PFLobbySearchConfiguration*](../structs/pflobbysearchconfiguration.md)  
+**`searchConfiguration`** &nbsp; [const PFLobbySearchConfiguration*](../structs/pflobbysearchconfiguration.md)  
   
 The configuration used to filter and sort the searched lobbies.  
   
@@ -52,9 +52,11 @@ Type: HRESULT
   
 This is an asynchronous operation. Upon successful completion, the title will be provided a [PFLobbyFindLobbiesCompletedStateChange](../structs/pflobbyfindlobbiescompletedstatechange.md) with the [PFLobbyFindLobbiesCompletedStateChange::result](../structs/pflobbyfindlobbiescompletedstatechange.md) field set to ```S_OK```. Upon a failed completion, the title will be provided a [PFLobbyFindLobbiesCompletedStateChange](../structs/pflobbyfindlobbiescompletedstatechange.md) with the [PFLobbyFindLobbiesCompletedStateChange::result](../structs/pflobbyfindlobbiescompletedstatechange.md) field set to a failure.
   
+Before you call this function, call [PFMultiplayerSetEntityToken](../../pfmultiplayer/functions/pfmultiplayersetentitytoken.md) for `searchingEntity`. If no token is set for that entity, the call fails synchronously.
+  
 ## Requirements  
   
-**Header:** PFLobby.h
+**Header:** PFLobby.h  
   
 ## See also  
 [PFLobby members](../pflobby_members.md)  

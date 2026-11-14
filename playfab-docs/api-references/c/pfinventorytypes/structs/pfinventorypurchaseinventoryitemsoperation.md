@@ -5,7 +5,7 @@ description: "PFInventoryPurchaseInventoryItemsOperation data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 11/13/2026
 ---
 
 # PFInventoryPurchaseInventoryItemsOperation  
@@ -21,7 +21,7 @@ typedef struct PFInventoryPurchaseInventoryItemsOperation {
     double const* durationInSeconds;  
     PFInventoryInventoryItemReference const* item;  
     PFInventoryInitialValues const* newStackValues;  
-    PFInventoryPurchasePriceAmount const* priceAmounts;  
+    PFInventoryPurchasePriceAmount const* const* priceAmounts;  
     uint32_t priceAmountsCount;  
     const char* storeId;  
 } PFInventoryPurchaseInventoryItemsOperation;  
@@ -53,10 +53,10 @@ Indicates whether stacks reduced to an amount of 0 during the operation should b
   
 (Optional) The values to apply to a stack newly created by this operation.
   
-**`priceAmounts`** &nbsp; [PFInventoryPurchasePriceAmount](pfinventorypurchasepriceamount.md) const*  
+**`priceAmounts`** &nbsp; [PFInventoryPurchasePriceAmount](pfinventorypurchasepriceamount.md) const* const*  
 *may be nullptr*  
   
-(Optional) The per-item price the item is expected to be purchased at. This must match a value configured in the Catalog or specified Store.
+(Optional) The per-item price the item is expected to be purchased at. This must match a value configured in the Catalog or specified Store. An array of `priceAmountsCount` pointers.
   
 **`priceAmountsCount`** &nbsp; uint32_t  
   

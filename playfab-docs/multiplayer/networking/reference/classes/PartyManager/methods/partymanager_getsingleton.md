@@ -5,7 +5,7 @@ description: Retrieves a reference to the PartyManager singleton instance.
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/25/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::GetSingleton  
@@ -15,12 +15,13 @@ Retrieves a reference to the PartyManager singleton instance.
 ## Syntax  
   
 ```cpp
-PartyManager& GetSingleton(  
+static PartyManager& GetSingleton(  
 )  
 ```  
   
 ### Parameters  
   
+This method has no parameters.
   
 ### Return value  
 PartyManager&

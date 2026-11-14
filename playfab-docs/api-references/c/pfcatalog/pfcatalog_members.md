@@ -5,7 +5,7 @@ description: "Services C API overview - PFCatalog.h"
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: 11/13/2026
 ---
 
 # Services C API overview - PFCatalog.h
@@ -18,7 +18,7 @@ ms.date: 09/08/2026
 | [PFCatalogCreateDraftItemAsync](functions/pfcatalogcreatedraftitemasync.md) | Creates a new item in the working catalog using provided metadata. Note: SAS tokens provided are valid for 1 hour. |  
 | [PFCatalogCreateDraftItemGetResult](functions/pfcatalogcreatedraftitemgetresult.md) | Gets the result of a successful PFCatalogCreateDraftItemAsync call. |  
 | [PFCatalogCreateDraftItemGetResultSize](functions/pfcatalogcreatedraftitemgetresultsize.md) | Get the size in bytes needed to store the result of a CreateDraftItem call. |  
-| [PFCatalogCreateUploadUrlsAsync](functions/pfcatalogcreateuploadurlsasync.md) | Creates one or more upload URLs which can be used by the client to upload raw file data. Content URls and uploaded content will be garbage collected after 24 hours if not attached to a draft or published item. Detailed pricing info around uploading content can be found here: https://learn.microsoft.com/gaming/playfab/features/pricing/meters/catalog-meters |  
+| [PFCatalogCreateUploadUrlsAsync](functions/pfcatalogcreateuploadurlsasync.md) | Creates one or more upload URLs which can be used by the client to upload raw file data. Content URLs and uploaded content will be garbage collected after 24 hours if not attached to a draft or published item. Detailed pricing info around uploading content can be found here: https://learn.microsoft.com/gaming/playfab/features/pricing/meters/catalog-meters |  
 | [PFCatalogCreateUploadUrlsGetResult](functions/pfcatalogcreateuploadurlsgetresult.md) | Gets the result of a successful PFCatalogCreateUploadUrlsAsync call. |  
 | [PFCatalogCreateUploadUrlsGetResultSize](functions/pfcatalogcreateuploadurlsgetresultsize.md) | Get the size in bytes needed to store the result of a CreateUploadUrls call. |  
 | [PFCatalogDeleteEntityItemReviewsAsync](functions/pfcatalogdeleteentityitemreviewsasync.md) | Deletes all reviews, helpfulness votes, and ratings submitted by the entity specified. |  

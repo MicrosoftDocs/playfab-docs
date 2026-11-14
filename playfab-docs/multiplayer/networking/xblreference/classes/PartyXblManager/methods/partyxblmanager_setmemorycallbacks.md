@@ -1,21 +1,21 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager::SetMemoryCallbacks"
-description: Optionally configures the memory allocation and freeing callbacks the Party Xbox Live Helper library should use.
+description: Optionally configures the memory allocation and freeing callbacks the Party XBOX Live Helper library should use.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/01/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblManager::SetMemoryCallbacks  
 
-Optionally configures the memory allocation and freeing callbacks the Party Xbox Live Helper library should use.  
+Optionally configures the memory allocation and freeing callbacks the Party XBOX Live Helper library should use.  
 
 ## Syntax  
   
 ```cpp
-PartyError SetMemoryCallbacks(  
+static PartyError SetMemoryCallbacks(  
     PartyAllocateMemoryCallback allocateMemoryCallback,  
     PartyFreeMemoryCallback freeMemoryCallback  
 )  
@@ -44,6 +44,10 @@ This method allows the application to install custom memory allocation routines 
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblManager](../partyxblmanager.md)  

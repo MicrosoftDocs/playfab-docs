@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PartyXblChatUser"
-description: The management class for Xbox Live operations related to a chat user.
+description: The management class for XBOX Live operations related to a chat user.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/22/2022
+ms.date: "11/13/2026"
 ---
 
 # PartyXblChatUser  
 
-The management class for Xbox Live operations related to a chat user.  
+The management class for XBOX Live operations related to a chat user.  
 
 ## Syntax  
   
@@ -23,7 +23,7 @@ class PartyXblChatUser
 | Name | Description |  
 | --- | --- |  
 | [GetLocal](methods/partyxblchatuser_getlocal.md) | Gets the PartyXblLocalChatUser version of this chat user. |  
-| [GetXboxUserId](methods/partyxblchatuser_getxboxuserid.md) | Gets the Xbox Live User Id associated with this user. |  
+| [GetXboxUserId](methods/partyxblchatuser_getxboxuserid.md) | Gets the XBOX user ID associated with this user. |  
 | [GetCustomContext](methods/partyxblchatuser_getcustomcontext.md) | Retrieves the app's private, custom pointer-sized context value previously associated with this local chat user object. |  
 | [SetCustomContext](methods/partyxblchatuser_setcustomcontext.md) | Configures an optional, custom pointer-sized context value with this local chat user object. |  
 
@@ -32,6 +32,10 @@ class PartyXblChatUser
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../party-sdks.md).
   
 ## See also  
 [PartyXboxLive members](../../partyxboxlive_members.md)  

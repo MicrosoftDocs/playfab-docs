@@ -5,7 +5,7 @@ description: "PFUserAccountInfo data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: 11/13/2026
 ---
 
 # PFUserAccountInfo  
@@ -30,7 +30,7 @@ typedef struct PFUserAccountInfo {
     PFUserKongregateInfo const* kongregateInfo;  
     PFUserNintendoSwitchAccountIdInfo const* nintendoSwitchAccountInfo;  
     PFUserNintendoSwitchDeviceIdInfo const* nintendoSwitchDeviceIdInfo;  
-    PFUserOpenIdInfo const* openIdInfo;  
+    PFUserOpenIdInfo const* const* openIdInfo;  
     uint32_t openIdInfoCount;  
     const char* playFabId;  
     PFUserPrivateAccountInfo const* privateInfo;  
@@ -115,10 +115,10 @@ Timestamp indicating when the user account was created.
   
 (Optional) Nintendo Switch device information, if a Nintendo Switch device has been linked.
   
-**`openIdInfo`** &nbsp; [PFUserOpenIdInfo](pfuseropenidinfo.md) const*  
+**`openIdInfo`** &nbsp; [PFUserOpenIdInfo](pfuseropenidinfo.md) const* const*  
 *may be nullptr*  
   
-(Optional) OpenID Connect information, if any OpenID Connect accounts have been linked.
+(Optional) OpenID Connect information, if any OpenID Connect accounts have been linked. An array of `openIdInfoCount` pointers.
   
 **`openIdInfoCount`** &nbsp; uint32_t  
   
@@ -137,7 +137,7 @@ Count of openIdInfo
 **`psnInfo`** &nbsp; [PFUserPsnInfo](pfuserpsninfo.md) const*  
 *may be nullptr*  
   
-(Optional) User PlayStation :tm: Network account information, if a PlayStation :tm: Network account has been linked.
+(Optional) User PlayStation® Network account information, if a PlayStation Network account has been linked.
   
 **`serverCustomIdInfo`** &nbsp; [PFUserServerCustomIdInfo](pfuserservercustomidinfo.md) const*  
 *may be nullptr*  
@@ -167,7 +167,7 @@ Count of openIdInfo
 **`xboxInfo`** &nbsp; [PFUserXboxInfo](pfuserxboxinfo.md) const*  
 *may be nullptr*  
   
-(Optional) User XBox account information, if a XBox account has been linked.
+(Optional) User XBOX account information, if an XBOX account has been linked.
   
   
 ## Requirements  
@@ -176,6 +176,8 @@ Count of openIdInfo
   
 ## See also  
 [PFTypes members](../pftypes_members.md)  
+
+"PlayStation" is a registered trademark or trademark of Sony Interactive Entertainment Inc.
 
   
   

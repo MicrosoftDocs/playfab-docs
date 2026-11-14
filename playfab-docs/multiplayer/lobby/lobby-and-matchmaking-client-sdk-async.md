@@ -3,7 +3,7 @@ title: Asynchronous Lobby and Matchmaking C++ SDK operations and notifications
 description: How the C++ SDK performs asynchronous work and notifies callers of state changes.
 author: ScottMunroMS
 ms.author: scmunro
-ms.date: 11/12/2022
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, lobby, matchmaking, async, state change, notification
@@ -92,7 +92,7 @@ Typically, state change processing is implemented as a simple switch statement w
 handler.
 
 Once the list of state changes has been processed from **PFMultiplayerStartProcessingLobbyStateChanges** or **PFMultiplayerStartProcessingMatchmakingStateChanges**,
-it must be returned to [PFMultiplayerFinishProcessingMatchmakingStateChanges()](playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerfinishprocessingmatchmakingstatechanges.md)
+it must be returned to [PFMultiplayerFinishProcessingLobbyStateChanges()](playfabmultiplayerreference-cpp/pflobby/functions/pfmultiplayerfinishprocessinglobbystatechanges.md)
 or [PFMultiplayerFinishProcessingMatchmakingStateChanges()](playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayerfinishprocessingmatchmakingstatechanges.md),
 respectively.
 
@@ -198,14 +198,20 @@ lobby successfully created.
 Effectively, queuing allows you to bundle a collection of asynchronous operations together, kick them off all at once,
 and coalesce error handling to a single failure point.
 
+In the following example, `myPlayerEntityKey` is a `PFEntityKey` value for the local player, `newLobbyConfiguration` is a
+`PFLobbyCreateConfiguration` value, and `friends` is a collection of `PFEntityKey` values. A successful return value from
+each call means only that the operation was queued. Check each operation's completion state change to learn whether the
+lobby was created and each invite was sent.
+
 ```cpp
+PFLobbyJoinConfiguration joinConfiguration{};
 PFLobbyHandle newLobby;
-HRESULT hr = PFMultiplayerCreateAndJoinLobby(m_pfmHandle, myPlayerEntityId, newLobbyConfiguration, nullptr, nullptr, &newLobby);
+HRESULT hr = PFMultiplayerCreateAndJoinLobby(m_pfmHandle, &myPlayerEntityKey, &newLobbyConfiguration, &joinConfiguration, nullptr, &newLobby);
 if (SUCCEEDED(hr))
 {
     for (size_t i = 0; SUCCEEDED(hr) && i < friends.size(); ++i)
     {
-        hr = PFLobbySendInvite(m_pfmHandle, myPlayerEntityId, friends[i], nullptr);
+        hr = PFLobbySendInvite(newLobby, &myPlayerEntityKey, &friends[i], nullptr);
     }
 
     if (SUCCEEDED(hr))
@@ -217,7 +223,7 @@ if (SUCCEEDED(hr))
     {
         // For the purposes of demonstration, we could have a policy that we shouldn't bother with any lobbies where
         // we couldn't invite all of our friends.
-        (void) PFLobbyLeave(newLobby, myPlayerEntityId, nullptr);
+        (void) PFLobbyLeave(newLobby, &myPlayerEntityKey, nullptr);
     }
 }
 ```

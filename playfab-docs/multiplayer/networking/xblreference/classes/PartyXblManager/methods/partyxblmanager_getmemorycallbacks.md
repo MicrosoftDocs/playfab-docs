@@ -1,21 +1,21 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager::GetMemoryCallbacks"
-description: Retrieves the current memory allocation and freeing callbacks the Party Xbox Live library is using.
+description: Retrieves the current memory allocation and freeing callbacks the Party XBOX Live library is using.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblManager::GetMemoryCallbacks  
 
-Retrieves the current memory allocation and freeing callbacks the Party Xbox Live library is using.  
+Retrieves the current memory allocation and freeing callbacks the Party XBOX Live library is using.  
 
 ## Syntax  
   
 ```cpp
-PartyError GetMemoryCallbacks(  
+static PartyError GetMemoryCallbacks(  
     PartyAllocateMemoryCallback* allocateMemoryCallback,  
     PartyFreeMemoryCallback* freeMemoryCallback  
 )  
@@ -46,6 +46,10 @@ This method does not require the [Initialize()](partyxblmanager_initialize.md) m
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblManager](../partyxblmanager.md)  

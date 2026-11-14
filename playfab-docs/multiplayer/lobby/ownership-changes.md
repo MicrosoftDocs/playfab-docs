@@ -3,7 +3,7 @@ title: Lobby ownership changes
 author: joannaleecy
 description: Learn about lobby owner migration and proactive owner promotion.
 ms.author: jenelleb
-ms.date: 02/28/2023
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, lobby, matchmaking, owner migration
@@ -52,18 +52,18 @@ This table describes how proactive ownership changes are affected by the __owner
 
 ## Frequently asked questions
 
-#### When is the owner field cleared?
+### When is the owner field cleared?
 
 The owner field is cleared when the current owner **leaves** the lobby and the owner migration policy is unable to select a new owner. __Automatic__ migration policy is the only policy that tries to automatically select a new owner.
 
 **NOTE**: The owner field is **not** cleared when the owner disconnects and a new owner can't be automatically selected. This is intentional to be robust to service outages.
 
-#### What happens when the last member leaves the lobby?
+### What happens when the last member leaves the lobby?
 
 * For client-owned lobby, the lobby is always deleted when the last member leaves.
 * For server-owned lobby, no action is taken.
 
-#### What's the difference between __Manual__ and __None__ owner migration policy?
+### What's the difference between __Manual__ and __None__ owner migration policy?
 
 __Manual__ ownership migration policy allows your title to manually manage ownership but still provide ownership protection. The __None__ policy provides your title full ownership control without any assistance or protection from the service.
 

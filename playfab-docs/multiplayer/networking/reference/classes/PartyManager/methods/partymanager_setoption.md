@@ -5,7 +5,7 @@ description: Configures an option to fine-tune Party library functionality.
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::SetOption  
@@ -15,7 +15,7 @@ Configures an option to fine-tune Party library functionality.
 ## Syntax  
   
 ```cpp
-PartyError SetOption(  
+static PartyError SetOption(  
     void* object,  
     PartyOption option,  
     const void* value  

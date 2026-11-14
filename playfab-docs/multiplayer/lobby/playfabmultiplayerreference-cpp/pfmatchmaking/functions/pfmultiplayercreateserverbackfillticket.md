@@ -5,7 +5,7 @@ description: "Creates a server backfill ticket."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/12/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerCreateServerBackfillTicket  
@@ -30,11 +30,11 @@ HRESULT PFMultiplayerCreateServerBackfillTicket(
   
 The handle of the PFMultiplayer API instance.  
   
-**`server`** &nbsp; [PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
+**`server`** &nbsp; [const PFEntityKey*](../../pfmultiplayer/pfentitykey_clientsdk.md)  
   
 The server entity.  
   
-**`configuration`** &nbsp; [PFMatchmakingServerBackfillTicketConfiguration*](../structs/pfmatchmakingserverbackfillticketconfiguration.md)  
+**`configuration`** &nbsp; [const PFMatchmakingServerBackfillTicketConfiguration*](../structs/pfmatchmakingserverbackfillticketconfiguration.md)  
   
 The backfill ticket configuration.  
   
@@ -54,9 +54,11 @@ Type: HRESULT
   
 ```S_OK``` if the call succeeded or an error code otherwise. The human-readable form of the error code can be retrieved via [PFMultiplayerGetErrorMessage()](../../pfmultiplayer/functions/pfmultiplayergeterrormessage.md).
   
+Returns `E_POINTER` if `server`, `configuration` or `ticket` is `nullptr`.
+  
 ## Remarks  
   
-To use this feature, you must define PFMULTIPLAYER_INCLUDE_SERVER_APIS before including PFMatchmaking.h. <br /><br /> The library automatically, and asynchronously, submits a server backfill ticket to the matchmaking service. Each time the ticket status changes, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) is provided. The ticket status can be queried at any time via [PFMatchmakingTicketGetStatus()](pfmatchmakingticketgetstatus.md). The ticket immediately starts in the ```PFMatchmakingTicketStatus::Creating``` state.   <br /><br /> When the ticket completed, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) is provided. At that point, a match for the backfill ticket is found or the ticket stopped due to failure. On success, the match that was found can be queried via [PFMatchmakingTicketGetMatch()](pfmatchmakingticketgetmatch.md). The ```regionPreferences``` in [PFMatchmakingMatchDetails](../structs/pfmatchmakingmatchdetails.md) only contains the region that the server is located in.   <br /><br /> If ticket creation fails because there are already too many tickets for the users specified in the configuration, the library transparently cancels those outstanding tickets and then retries ticket creation.   <br /><br /> This function requires that a previous call to [PFMultiplayerSetEntityToken()](../../pfmultiplayer/functions/pfmultiplayersetentitytoken.md) was made to set the game server entity token.
+To use this feature, you must define `PFMULTIPLAYER_INCLUDE_SERVER_APIS` before including `PFMatchmaking.h`. <br /><br /> The library automatically, and asynchronously, submits a server backfill ticket to the matchmaking service. Each time the ticket status changes, a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) is provided. The ticket status can be queried at any time via [PFMatchmakingTicketGetStatus()](pfmatchmakingticketgetstatus.md). The ticket immediately starts in the ```PFMatchmakingTicketStatus::Creating``` state.   <br /><br /> When the ticket completes, the library provides a [PFMatchmakingTicketStatusChangedStateChange](../structs/pfmatchmakingticketstatuschangedstatechange.md) with the final status, followed by a [PFMatchmakingTicketCompletedStateChange](../structs/pfmatchmakingticketcompletedstatechange.md) whose `result` field reports success or the failure reason and whose `asyncContext` field contains the value you passed to this call. At that point, a match for the backfill ticket is found or the ticket stopped due to failure. If you destroy the ticket with [PFMultiplayerDestroyMatchmakingTicket](pfmultiplayerdestroymatchmakingticket.md) before it completes, the library doesn't provide the completion state change. On success, the match that was found can be queried via [PFMatchmakingTicketGetMatch()](pfmatchmakingticketgetmatch.md). The ```regionPreferences``` in [PFMatchmakingMatchDetails](../structs/pfmatchmakingmatchdetails.md) only contains the region that the server is located in.   <br /><br /> If ticket creation fails because there are already too many tickets for the users specified in the configuration, the library transparently cancels those outstanding tickets and then retries ticket creation.   <br /><br /> This function requires that a previous call to [PFMultiplayerSetEntityToken()](../../pfmultiplayer/functions/pfmultiplayersetentitytoken.md) was made to set the game server entity token.
 
 ## Requirements  
   

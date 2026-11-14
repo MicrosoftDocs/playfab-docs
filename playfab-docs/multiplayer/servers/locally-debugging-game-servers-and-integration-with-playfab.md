@@ -3,7 +3,7 @@ title: Locally debugging game servers and integration with PlayFab
 author: joannaleecy
 description: Describes how to integrate PlayFab multiplayer game servers with the PlayFab Game Server SDK (GSDK) and verify and debug the integration.  
 ms.author: jenelleb
-ms.date: 04/16/2021
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer servers, debugging, integration, thunderhead, playfab game server sdk
@@ -31,7 +31,7 @@ You can configure the agent to run the game server as a containerized applicatio
   > Avoid this common mistake - do not accidentally zip a folder *within* a folder in the zip. After zipping, browse the zip folder and double-check that your compression software did not add an extra layer of file hierarchy.
 
 - Download the [local debugging toolset](https://github.com/PlayFab/MpsAgent/releases) and extract it to a folder of your choice (such as *C:\PlayFabVmAgent*).
-- While inspecting the: [LocalMultiplayerAgent MultiplayerSettings.json Generator](https://github.com/PlayFab/MpsAgent/tree/main/LocalMultiplayerAgent/SettingsJsonGenerator) json file, read more about the following options below.
+- While inspecting the: [LocalMultiplayerAgent MultiplayerSettings.json Generator](https://github.com/PlayFab/MpsAgent/tree/main/LocalMultiplayerAgent/SettingsJsonGenerator) JSON file, read more about the following options below.
 - Navigate to the location of the extracted folder and open the *MultiplayerSettings.json* file in a text editor (such as [Visual Studio Code](https://code.visualstudio.com/download)). Update the following properties:  
   - `LocalFilePath` - Full Local Path (on your workstation) to the game server asset zip file created earlier, for example: *D:\\\\MyAmazingGame\\\\asset.zip* (note that backslashes need to be escaped for JSON formatting).
   - `StartGameCommand` - The full path to the game server executable within the container. For example, if the name of the executable is *mygame.exe*, a sample path would be *C:\\\\Assets\\\\mygame.exe*. The paths for the StartGameCommand are different for a Process and a Container. The StartGameCommand path for a container is an absolute path to a resource in the container or asset folder. The StartGameCommand path for a process is a relative path where the working directory will be the first asset specified.
@@ -51,7 +51,7 @@ You can configure the agent to run the game server as a containerized applicatio
 - In the *MultiplayerSettings.json* file, set `RunContainer` to `false`.
 - In a Powershell window (as Administrator):  
   - Change your working directory to the folder where the toolset was extracted.
-  - Run *LocalMultiplayerAgent.exe*. At this point, **LocalMultiplayerAgent** sets up the http listener, unzips the game asset, and starts the game server in a separate process. **LocalMultiplayerAgent** then waits for heartbeats from the GSDK integrated with your game server.
+  - Run *LocalMultiplayerAgent.exe*. At this point, **LocalMultiplayerAgent** sets up the HTTP listener, unzips the game asset, and starts the game server in a separate process. **LocalMultiplayerAgent** then waits for heartbeats from the GSDK integrated with your game server.
 - If the GSDK is integrated correctly, **LocalMultiplayerAgent** prints the following outputs:  
   - `CurrentGameState - Initializing` (this is optional and may not show up if your game server directly calls `GSDK::ReadyForPlayers` and does not call `GSDK::Start`)
   - `CurrentGameState - StandingBy`

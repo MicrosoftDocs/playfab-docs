@@ -3,7 +3,7 @@ title: JavaScript SDK
 author: joannaleecy
 description: Landing page for the PlayFab JavaScript SDK.
 ms.author: jenelleb
-ms.date: 01/22/2021
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, javascript, playfab javascript sdk, native, phaser
@@ -30,4 +30,4 @@ Alternatively, you can also obtain this SDK via NPM using the command `npm insta
 
 ## Licenses
 
-- [Javascript licenses](license.md)
+- [JavaScript licenses](license.md)

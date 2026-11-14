@@ -1,9 +1,9 @@
 ---
 title: Using Email Templates to Send an Account Recovery Email
 author: joannaleecy
-description: Tutorial that describes how to use the email template feature of PlayFab to send an account recovery player's contact email address to let a player reset their password.
+description: Use PlayFab email templates to send an account recovery email to a player's contact email address so they can reset their password.
 ms.author: jenelleb
-ms.date: 10/26/2018
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab
@@ -228,7 +228,7 @@ When the player selects that URL, three things happen:
 2. PlayFab will return a redirect URL, sending the player to the callback URL. In this case, it should be a website for the game with a form for the player to enter a new password.
 3. The redirect URL will contain a token in the query string, and will look something like what appears below.
 
-<https://www.example.com/?token=2346241B7C277796>.
+[https://www.example.com/?token=2346241B7C277796](https://www.example.com/?token=2346241B7C277796).
 
 ## Step 6 - Reset the player's password
 

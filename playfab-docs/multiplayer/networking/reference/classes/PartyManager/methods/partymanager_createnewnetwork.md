@@ -5,7 +5,7 @@ description: Queues an asynchronous attempt to create a new network.
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 01/30/2024
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::CreateNewNetwork  
@@ -84,9 +84,9 @@ A PartyNetwork is a set of devices that are connected via a client-server topolo
 | InternetConnectivityError | Retry with a small delay of no less than 10 seconds. For your app, it may be more appropriate to display the error to the user immediately, rather than retrying automatically. |
 | PartyServiceError | Retry with an exponential backoff. Start with a minimum delay of no less than 10 seconds, doubling the delay with each retry. |
 | NoServersAvailable | Retry with an exponential backoff. Start with a minimum delay of no less than 30 seconds, doubling the delay with each retry. For your app, it may be more appropriate to display the error to the user immediately, rather than retrying automatically. |
-| UserNotAuthorized | This result can mean that the user's entity token was invalid, expired, or that the user was not authorized for other reasons. Retry no more than one time, and only after getting a new entity token for the user and calling [PartyLocalUser::UpdateEntityToken()](../../PartyLocalUser/methods/partylocaluser_updateentitytoken.md).|
+| UserNotAuthorized | This result can mean that the user's entity token was invalid, expired, or that the user was not authorized for other reasons. Retry no more than one time, and only after getting a new entity token for the user. For users created with a PlayFab Entity ID and Entity Token in the standalone Party SDK (v1), pass the new token to [PartyLocalUser::UpdateEntityToken()](../../PartyLocalUser/methods/partylocaluser_updateentitytoken.md) before retrying. For users created from a PlayFab Core entity handle in the PlayFab Unified SDK (v2), refresh or reauthenticate the entity through the PlayFab Core SDK instead and don't call UpdateEntityToken, because the Party library gets its tokens from the PlayFab Core SDK. For more information, see [CreateLocalUser()](partymanager_createlocaluser.md).|
 | UserCreateNetworkThrottled | Don't retry automatically. Instead, display a message to the user and wait for the user to initiate another attempt. |
-| FailedToBindToLocalUdpSocket | This result means that the library couldn't bind to the local UDP socket specified in the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option. The title must clean up its instance of the library, update the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option to a valid, available bind address, and reinitialize the library.
+| FailedToBindToLocalUdpSocket | This result means that the library couldn't bind to the local UDP socket specified in the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option. The title must clean up its instance of the library, update the [PartyOption::LocalUdpSocketBindAddress](../../../enums/partyoption.md) option to a valid, available bind address, and reinitialize the library. |
   
 ## Requirements  
   

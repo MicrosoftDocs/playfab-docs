@@ -3,7 +3,7 @@ title: VmAssignedEventPayload
 author: joannaleecy
 description: VmAssignedEventPayload data type.
 ms.author: jenelleb
-ms.date: 02/19/2019
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playstream events
@@ -17,8 +17,8 @@ ms.localizationpriority: medium
 |Name|Type|Description|
 | :--------------------|:-------------------|:----------------------|
 |AssignmentEventTimestamp|DateTime|The time (UTC) the virtual machine was assigned.|
-|BillingAssignmentCorrelationId|String|The guid string ID of the billing assignment.|
-|BuildId|String|The guid string ID of the build.|
+|BillingAssignmentCorrelationId|String|The GUID string ID of the billing assignment.|
+|BuildId|String|The GUID string ID of the build.|
 |Region|[AzureRegion](azureregion.md)|The build region.|
-|SessionId|String|The guid string ID of the session.|
+|SessionId|String|The GUID string ID of the session.|
 |VmId|String|The ID of the virtual machine that was assigned.|

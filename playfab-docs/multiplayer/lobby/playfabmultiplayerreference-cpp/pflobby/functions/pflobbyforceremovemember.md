@@ -5,7 +5,7 @@ description: "Forcibly remove an entity from the lobby."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 03/14/2022
+ms.date: "11/13/2026"
 ---
 
 # PFLobbyForceRemoveMember  
@@ -50,7 +50,7 @@ Type: HRESULT
   
 ## Remarks  
   
-This is an asynchronous operation. Upon successful completion, the title will be provided a [PFLobbyMemberRemovedStateChange](../structs/pflobbymemberremovedstatechange.md) followed by a [PFLobbyForceRemoveMemberCompletedStateChange](../structs/pflobbyforceremovemembercompletedstatechange.md) with the [PFLobbyForceRemoveMemberCompletedStateChange::result](../structs/pflobbyforceremovemembercompletedstatechange.md) field set to ```S_OK```. Upon a failed completion, the title will be provided a [PFLobbyForceRemoveMemberCompletedStateChange](../structs/pflobbyforceremovemembercompletedstatechange.md) with the [PFLobbyForceRemoveMemberCompletedStateChange::result](../structs/pflobbyforceremovemembercompletedstatechange.md) field set to a failure hresult. <br /><br /> One of the local PlayFab entities present in this lobby must be the owner for this operation to succeed. If the local owning entity who initiated this operation loses their ownership status while the operation is in progress, the operation will fail asynchronously.   <br /><br /> This is an asynchronous operation. The member removed via this method will not be removed from the lists returned by [PFLobbyGetMembers](pflobbygetmembers.md) until the asynchronous operation successfully completes and a ```PFLobbyMemberRemovedStateChange``` struct is provided by [PFMultiplayerStartProcessingLobbyStateChanges](pfmultiplayerstartprocessinglobbystatechanges.md).
+This is an asynchronous operation. Upon successful completion, the title will be provided a [PFLobbyMemberRemovedStateChange](../structs/pflobbymemberremovedstatechange.md) followed by a [PFLobbyForceRemoveMemberCompletedStateChange](../structs/pflobbyforceremovemembercompletedstatechange.md) with the [PFLobbyForceRemoveMemberCompletedStateChange::result](../structs/pflobbyforceremovemembercompletedstatechange.md) field set to ```S_OK```. Upon a failed completion, the title will be provided a [PFLobbyForceRemoveMemberCompletedStateChange](../structs/pflobbyforceremovemembercompletedstatechange.md) with the [PFLobbyForceRemoveMemberCompletedStateChange::result](../structs/pflobbyforceremovemembercompletedstatechange.md) field set to a failure HRESULT. <br /><br /> One of the local PlayFab entities present in this lobby must be the owner for this operation to succeed. If the local owning entity who initiated this operation loses their ownership status while the operation is in progress, the operation will fail asynchronously.   <br /><br /> This is an asynchronous operation. The member removed via this method will not be removed from the lists returned by [PFLobbyGetMembers](pflobbygetmembers.md) until the asynchronous operation successfully completes and a ```PFLobbyMemberRemovedStateChange``` struct is provided by [PFMultiplayerStartProcessingLobbyStateChanges](pfmultiplayerstartprocessinglobbystatechanges.md).
   
 ## Requirements  
   

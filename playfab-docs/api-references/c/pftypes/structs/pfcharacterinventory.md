@@ -5,7 +5,7 @@ description: "PFCharacterInventory data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFCharacterInventory  
@@ -17,7 +17,7 @@ PFCharacterInventory data model.
 ```cpp
 typedef struct PFCharacterInventory {  
     const char* characterId;  
-    PFItemInstance const* inventory;  
+    PFItemInstance const* const* inventory;  
     uint32_t inventoryCount;  
 } PFCharacterInventory;  
 ```
@@ -29,10 +29,10 @@ typedef struct PFCharacterInventory {
   
 (Optional) The id of this character.
   
-**`inventory`** &nbsp; [PFItemInstance](pfiteminstance.md) const*  
+**`inventory`** &nbsp; [PFItemInstance](pfiteminstance.md) const* const*  
 *may be nullptr*  
   
-(Optional) The inventory of this character.
+(Optional) The inventory of this character. An array of `inventoryCount` pointers.
   
 **`inventoryCount`** &nbsp; uint32_t  
   

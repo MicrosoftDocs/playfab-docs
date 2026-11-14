@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PartyXblManager::StartProcessingStateChanges"
-description: Retrieves an array of all Party Xbox Live state changes to process since the last such call.
+description: Retrieves an array of all Party XBOX Live state changes to process since the last such call.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/08/2019
+ms.date: "11/13/2026"
 ---
 
 # PartyXblManager::StartProcessingStateChanges  
 
-Retrieves an array of all Party Xbox Live state changes to process since the last such call.  
+Retrieves an array of all Party XBOX Live state changes to process since the last such call.  
 
 ## Syntax  
   
@@ -46,6 +46,10 @@ This method provides the Party Xbox Live Helper library an opportunity to retrie
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblManager](../partyxblmanager.md)  

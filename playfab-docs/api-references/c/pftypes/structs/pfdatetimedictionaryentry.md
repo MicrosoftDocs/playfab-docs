@@ -5,7 +5,7 @@ description: "Dictionary entry for an associative array with time_t values."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFDateTimeDictionaryEntry  
@@ -26,11 +26,11 @@ typedef struct PFDateTimeDictionaryEntry {
 **`key`** &nbsp; const char*  
 *is null-terminated*  
   
-TBD  
+The key of the entry.  
   
 **`value`** &nbsp; time_t  
   
-TBD  
+The `time_t` value associated with `key`.  
   
   
 ## Requirements  

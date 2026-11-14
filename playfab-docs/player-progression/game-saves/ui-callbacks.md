@@ -3,7 +3,7 @@ title: Game Saves UI callbacks
 author: amccalib
 description: How Game Saves UI callbacks work, including the state machine model, callback types, and response APIs.
 ms.author: andmcc
-ms.date: 03/06/2026
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, game saves, ui callbacks, sync failed, conflict, progress
@@ -114,7 +114,12 @@ For more details on offline mode behavior, see [Game Saves offline mode](./offli
 
 ### Active device contention
 
-Fires during `PFGameSaveFilesAddUserWithUiAsync` when another device is already the active device for this user. The callback receives `PFGameSaveDescriptor` structs for both the local and remote save data, which include device names, timestamps, and save sizes that you can display to help the user decide.
+Fires during `PFGameSaveFilesAddUserWithUiAsync` when another device is already the active device for this user. The callback receives two `PFGameSaveDescriptor` structs. Unlike the conflict callback's descriptors, they aren't a local-versus-cloud choice:
+
+- **`currentLockHolderGameSave`** (first) describes the device that currently holds the active-device lock and hasn't finished uploading. It's usually another device. Its `time` is the last activity on its pending save. Its `totalBytes` and `uploadedBytes` are the progress of its pending upload (0 if none has started), not the size of a save. Its `thumbnailUri` is normally empty.
+- **`previousLockHolderGameSave`** (second) describes the device that finalized the save this activation will sync. This is the data that `SyncLastSavedData` syncs. It's normally the latest finalized save, or the rollback target when you pass a rollback option (`RollbackToLastKnownGood` or `RollbackToLastConflict`) to `PFGameSaveFilesAddUserWithUiAsync`. Its `time` is when that save was finalized, and its `uploadedBytes` is 0. Its `totalBytes` is the finalized save's size where the platform can report it, otherwise 0.
+
+In both descriptors, `deviceType`, `deviceId`, and `deviceFriendlyName` identify the device, and `shortSaveDescription` is set when that device supplied one. Don't compare the byte counts of the two descriptors. In your UI, present them with labels such as **Device holding the lock** and **Save selected for sync**, not as local and cloud copies.
 
 **Callback**: `PFGameSaveFilesUiActiveDeviceContentionCallback`
 

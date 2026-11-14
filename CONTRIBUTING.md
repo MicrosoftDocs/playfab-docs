@@ -102,6 +102,15 @@ Run the validation script before submitting a PR:
 .\scripts\validate-docs.ps1 -Path playfab-docs/economy-monetization
 ```
 
+For validator changes, run the image-path regression tests:
+
+```powershell
+.\scripts\validate-docs.Tests.ps1
+```
+
+Image validation checks the destination, excluding an optional single- or
+double-quoted image title, while still rejecting missing image files.
+
 ### Local Preview
 
 Install the **Learn Authoring Pack** VS Code extension for local markdown preview.

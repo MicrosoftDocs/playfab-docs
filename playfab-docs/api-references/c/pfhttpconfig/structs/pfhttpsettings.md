@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFHttpSettings"
-description: "Struct that defines generic Http settings for PlayFab HTTP requests. Currently holds settings to enable gzip compression on all sdk responses."
+description: "Struct that defines generic HTTP settings for PlayFab HTTP requests. Currently holds settings to enable gzip compression on all SDK responses."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 09/08/2026
+ms.date: 11/13/2026
 ---
 
 # PFHttpSettings  
 
-Struct that defines generic Http settings for PlayFab HTTP requests. Currently holds settings to enable gzip compression on all sdk responses.  
+Struct that defines generic HTTP settings for PlayFab HTTP requests. Currently holds settings to enable gzip compression on all SDK responses.  
 
 ## Syntax  
   

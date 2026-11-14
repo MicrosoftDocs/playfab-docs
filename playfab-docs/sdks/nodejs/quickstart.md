@@ -1,9 +1,9 @@
 ---
-title: NodeJS quickstart
+title: "Node.js quickstart"
 author: joannaleecy
 description: This guide will help you make your first API call in NodeJS.
 ms.author: jenelleb
-ms.date: 06/11/2018
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, nodejs, javascript
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Quickstart: PlayFab client library for NodeJS
 
-Get started with the PlayFab client library for NodeJS to make your first PlayFab API call and authenticate a player. Follow steps to install the package and try out example code for basic tasks.
+Get started with the PlayFab client library for Node.js to make your first PlayFab API call and authenticate a player. Follow steps to install the package and try out example code for basic tasks.
 
 
 

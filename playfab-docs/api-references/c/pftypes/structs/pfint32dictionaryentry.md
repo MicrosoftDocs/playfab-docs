@@ -5,7 +5,7 @@ description: "Dictionary entry for an associative array with int32_t values."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFInt32DictionaryEntry  
@@ -26,11 +26,11 @@ typedef struct PFInt32DictionaryEntry {
 **`key`** &nbsp; const char*  
 *is null-terminated*  
   
-TBD  
+The key of the entry.  
   
 **`value`** &nbsp; int32_t  
   
-TBD  
+The `int32_t` value associated with `key`.  
   
   
 ## Requirements  

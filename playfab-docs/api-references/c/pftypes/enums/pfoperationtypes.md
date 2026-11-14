@@ -5,7 +5,7 @@ description: "OperationTypes enum."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFOperationTypes  
@@ -36,7 +36,7 @@ enum class PFOperationTypes  : uint32_t
   
 ## Requirements  
   
-**Header:** PFTypes.h
+**Header:** playfab/services/PFTypes.h
   
 ## See also  
 [PFTypes members](../pftypes_members.md)  

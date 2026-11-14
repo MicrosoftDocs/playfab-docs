@@ -3,7 +3,7 @@ title: What is PlayFab Economy?
 author: thomasgu
 description: Landing page for Economy.
 ms.author: thomg
-ms.date: 02/20/2025
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, game, items, virtual, currencies, stores, ugc, user generated content
@@ -35,7 +35,7 @@ PlayFab Economy covers various aspects of your game's virtual economy, such as i
 PlayFab Economy also provides a suite of tools to support game economy best practices.
 **Our best Practice tools include:**
 
-* **Catalog Search**: V2 has been built from the ground up to support large catalogs, and a key component to that is the SearchItems api which supports filtering, select satements and ordering. For more information, see our documentation on [SearchItems](economy-v2/catalog/search.md).
+* **Catalog Search**: V2 has been built from the ground up to support large catalogs, and a key component to that is the SearchItems API which supports filtering, select satements and ordering. For more information, see our documentation on [SearchItems](economy-v2/catalog/search.md).
 
 * **Multiple Currencies**: Most games utilize at least two virtual currencies. Many use a "soft" currency that can be earned in-game through play, and a "hard" currency that can be bought. Having dual currencies gives you more control over your economy, since you can determine which items can be bought. See our tutorial on [Currencies](economy/tutorials/currencies.md).
 

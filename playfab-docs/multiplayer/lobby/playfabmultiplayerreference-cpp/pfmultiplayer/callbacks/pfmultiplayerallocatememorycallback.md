@@ -5,7 +5,7 @@ description: "A callback invoked every time a new memory buffer must be dynamica
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/23/2021
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerAllocateMemoryCallback  
@@ -15,11 +15,10 @@ A callback invoked every time a new memory buffer must be dynamically allocated 
 ## Syntax  
   
 ```cpp
-typedef
-void* (*PFMultiplayerAllocateMemoryCallback)(  
+void* PFMULTIPLAYER_API PFMultiplayerAllocateMemoryCallback(  
     size_t size,  
-    uint32_t memoryTypeId  
-)  
+    PFMultiplayerMemoryType memoryTypeId  
+);  
 ```  
   
 ### Parameters  
@@ -28,13 +27,15 @@ void* (*PFMultiplayerAllocateMemoryCallback)(
   
 The size of the allocation to be made. This value will never be zero.  
   
-**`memoryTypeId`** &nbsp; uint32_t  
+**`memoryTypeId`** &nbsp; PFMultiplayerMemoryType  
   
-An opaque identifier representing the PlayFab Multiplayer library internal category of memory being allocated. This value should be ignored.  
+An opaque identifier representing the PlayFab Multiplayer library internal category of memory being allocated. Generally, you can ignore this value, but you can use it to help diagnose and debug Multiplayer memory allocations.  
   
   
 ### Return value
 Type: void*
+  
+*_Ret_maybenull_, _Post_writable_byte_size_(size)*  
   
 A pointer to an allocated block of memory of the specified size, or nullptr if the allocation failed.
   

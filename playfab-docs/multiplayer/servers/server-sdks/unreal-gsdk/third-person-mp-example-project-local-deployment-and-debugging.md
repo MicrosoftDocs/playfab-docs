@@ -3,7 +3,7 @@ title: GSDK Project Testing and Debugging
 author: joannaleecy
 description: Deploying an Unreal GSDK Project to the local machine for testing
 ms.author: jenelleb
-ms.date: 12/08/2021
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer servers, gsdk, unreal
@@ -50,7 +50,7 @@ It is not required that you have all of these in the same location, but it's lik
 
 First, you'll need to configure your LocalMultiplayerAgent to execute your server project. The first iteration runs the process directly on your local PC without any isolation.
 
-In Explorer, find and open the file: ```{depot}\MpsAgent\LocalMultiplayerAgent\MultiplayerSettings.json```. An abbreviated version of this file with the parts important to this guide are as follows [NOTE the escaped \\'s for paths in the json - this is a json file, and thus it's required to escape all \\'s as \\\\]:
+In Explorer, find and open the file: ```{depot}\MpsAgent\LocalMultiplayerAgent\MultiplayerSettings.json```. An abbreviated version of this file with the parts important to this guide are as follows [NOTE the escaped \\'s for paths in the JSON - this is a JSON file, and thus it's required to escape all \\'s as \\\\]:
 
 ```json
 {
@@ -86,7 +86,7 @@ In Explorer, find and open the file: ```{depot}\MpsAgent\LocalMultiplayerAgent\M
 }
 ```
 
-For the purposes of this guide, the parts of the json file obscured by ```...``` above, just utilize the project defaults. The purpose and values for the important fields are as follows:
+For the purposes of this guide, the parts of the JSON file obscured by ```...``` above, just utilize the project defaults. The purpose and values for the important fields are as follows:
 
 * RunContainer: For this guide, this will always be false. Setting this to true requires Docker.
     * When true, the ProcessStartParameters/StartGameCommand is ignored, and ContainerStartParameters/StartGameCommand is used instead
@@ -103,7 +103,7 @@ For the purposes of this guide, the parts of the json file obscured by ```...```
     * The GSDK plugin is hard-coded to look for a port with the name: gameport
     * The GSDK plugin [SetDefaultServerHostPort](https://github.com/PlayFab/gsdk/blob/master/UnrealPlugin/Source/PlayfabGSDK/Private/GSDKUtils.cpp#L147) method will internally override the internal Unreal server-hosting port to match this port
     * The GSDK plugin will _only_ use the port named **gameport**, which is configured in **PortMappingsList** when using LocalMultiplayerAgent.
-    * This json lets you locally test driving this port number from MPS, and ensures your GSDK plugin will receive it properly
+    * This JSON lets you locally test driving this port number from MPS, and ensures your GSDK plugin will receive it properly
 * ContainerStartParameters/StartGameCommand: While RunContainer is false, this is unused.
     * When RunContainer==true, it supersedes the ProcessStartParameters/StartGameCommand
     * This path is the internal path within the docker container, and will be the sum of AssetDetails/MountPath, plus the internal path-to-exe in your zip file defined by AssetDetails/LocalFilePath

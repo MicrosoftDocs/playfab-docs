@@ -1,16 +1,16 @@
 ---
 author: ScottMunroMS
 title: "PartyXblStateChangeResult"
-description: "Results for Party Xbox Live Helper library operations that generate state changes."
+description: "Results for Party XBOX Live Helper library operations that generate state changes."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/14/2023
+ms.date: "11/13/2026"
 ---
 
 # PartyXblStateChangeResult  
 
-Results for Party Xbox Live Helper library operations that generate state changes.    
+Results for Party XBOX Live Helper library operations that generate state changes.    
 
 ## Syntax  
   
@@ -36,10 +36,10 @@ enum class PartyXblStateChangeResult
 | Succeeded | The operation succeeded. |  
 | UnknownError | An unknown error occurred. |  
 | CanceledByTitle | Another title operation canceled this operation. |  
-| UserNotAuthorized | The Xbox Live user or PlayFab Entity associated with the PartyXblLocalChatUser is not authorized to perform this request. |  
+| UserNotAuthorized | The XBOX Live user or PlayFab Entity associated with the PartyXblLocalChatUser is not authorized to perform this request. |  
 | LoginToPlayFabThrottled | The operation failed because too many logins have been attempted for this title. |  
 | PartyServiceError | The operation failed because of an unexpected error in the Party Service. |  
-| XboxLiveServiceTemporarilyUnavailable | The Xbox Live service is temporarily unavailable. |  
+| XboxLiveServiceTemporarilyUnavailable | The XBOX Live service is temporarily unavailable. |  
 | InternetConnectivityError | The local device has internet connectivity issues which caused the operation to fail. |  
 | PlayFabRateLimitExceeded | The rate limit for the PlayFab Service has been reached. |  
   
@@ -47,6 +47,10 @@ enum class PartyXblStateChangeResult
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../party-sdks.md).
   
 ## See also  
 [PartyXboxLive members](../partyxboxlive_members.md)  

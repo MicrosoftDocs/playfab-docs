@@ -5,7 +5,7 @@ description: "PFTreatmentAssignment data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFTreatmentAssignment  
@@ -16,7 +16,7 @@ PFTreatmentAssignment data model.
   
 ```cpp
 typedef struct PFTreatmentAssignment {  
-    PFVariable const* variables;  
+    PFVariable const* const* variables;  
     uint32_t variablesCount;  
     const char* const* variants;  
     uint32_t variantsCount;  
@@ -25,10 +25,10 @@ typedef struct PFTreatmentAssignment {
   
 ### Members  
   
-**`variables`** &nbsp; [PFVariable](pfvariable.md) const*  
+**`variables`** &nbsp; [PFVariable](pfvariable.md) const* const*  
 *may be nullptr*  
   
-(Optional) List of the experiment variables.
+(Optional) List of the experiment variables. An array of `variablesCount` pointers.
   
 **`variablesCount`** &nbsp; uint32_t  
   

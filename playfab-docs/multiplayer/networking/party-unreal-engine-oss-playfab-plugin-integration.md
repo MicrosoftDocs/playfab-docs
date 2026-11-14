@@ -3,7 +3,7 @@ title: PlayFab SDK Unreal Engine Marketplace Plugin Integration Guide
 description: Guidance on how to integrate the PlayFab SDK UE Marketplace Plugin into your existing PlayFab Online Subsystem integrated project.
 author: SahilAshar
 ms.author: rachelwu
-ms.date: 02/15/2024
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, unreal, unreal engine, unreal engine 4, unreal engine 5, ue4, ue5, middleware
@@ -175,7 +175,7 @@ You can also jump to the [Full Code Example](#full-code-example).
     }
     ```
 
-5. **Use PlayFab SDK Plugin APIs**: With `LoginResult` populated, you can now use the PlayFab SDk Plugin APIs however you wish. This state is considered "authenticated".
+5. **Use PlayFab SDK Plugin APIs**: With `LoginResult` populated, you can now use the PlayFab SDK Plugin APIs however you wish. This state is considered "authenticated".
 
 ## Full Code Example
 ```cpp

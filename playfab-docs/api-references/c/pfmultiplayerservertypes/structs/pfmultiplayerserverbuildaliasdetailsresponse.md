@@ -5,7 +5,7 @@ description: "PFMultiplayerServerBuildAliasDetailsResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerBuildAliasDetailsResponse  
@@ -18,7 +18,7 @@ PFMultiplayerServerBuildAliasDetailsResponse data model.
 typedef struct PFMultiplayerServerBuildAliasDetailsResponse {  
     const char* aliasId;  
     const char* aliasName;  
-    PFMultiplayerServerBuildSelectionCriterion const* buildSelectionCriteria;  
+    PFMultiplayerServerBuildSelectionCriterion const* const* buildSelectionCriteria;  
     uint32_t buildSelectionCriteriaCount;  
 } PFMultiplayerServerBuildAliasDetailsResponse;  
 ```
@@ -28,14 +28,14 @@ typedef struct PFMultiplayerServerBuildAliasDetailsResponse {
 **`aliasId`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) The guid string alias Id of the alias to be created or updated.
+(Optional) The GUID string alias Id of the alias to be created or updated.
   
 **`aliasName`** &nbsp; const char*  
 *is null-terminated*  
   
 (Optional) The alias name.
   
-**`buildSelectionCriteria`** &nbsp; [PFMultiplayerServerBuildSelectionCriterion](pfmultiplayerserverbuildselectioncriterion.md) const*  
+**`buildSelectionCriteria`** &nbsp; [PFMultiplayerServerBuildSelectionCriterion](pfmultiplayerserverbuildselectioncriterion.md) const* const*  
 *may be nullptr*  
   
 (Optional) Array of build selection criteria.

@@ -5,7 +5,7 @@ description: Completes a GetTokenAndSignature operation.
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/07/2021
+ms.date: "11/13/2026"
 ---
 
 # PartyXblManager::CompleteGetTokenAndSignatureRequest  
@@ -57,6 +57,10 @@ This should only be called in response to a [PartyXblTokenAndSignatureRequestedS
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../../../party-sdks.md).
   
 ## See also  
 [PartyXblManager](../partyxblmanager.md)  

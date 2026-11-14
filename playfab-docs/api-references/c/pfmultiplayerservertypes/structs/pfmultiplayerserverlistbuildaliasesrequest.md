@@ -1,16 +1,16 @@
 ---
 author: jasonsandlin
 title: "PFMultiplayerServerListBuildAliasesRequest"
-description: "PFMultiplayerServerListBuildAliasesRequest data model. Returns a list of summarized details of all multiplayer server builds for a title."
+description: "Request object for PFMultiplayerServerListBuildAliasesAsync, which lists details of all build aliases for a title."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerListBuildAliasesRequest  
 
-PFMultiplayerServerListBuildAliasesRequest data model. Returns a list of summarized details of all multiplayer server builds for a title.  
+Request object for [PFMultiplayerServerListBuildAliasesAsync](../../pfmultiplayerserver/functions/pfmultiplayerserverlistbuildaliasesasync.md), which lists details of all build aliases for a title.  
 
 ## Syntax  
   
@@ -40,6 +40,7 @@ Count of customTags
 (Optional) The page size for the request.
   
 **`skipToken`** &nbsp; const char*  
+*may be nullptr*  
 *is null-terminated*  
   
 (Optional) The skip token for the paged request.

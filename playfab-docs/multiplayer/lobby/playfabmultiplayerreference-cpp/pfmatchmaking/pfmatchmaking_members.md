@@ -5,7 +5,7 @@ description: "PFMultiplayer C/C++ API overview - PFMatchmaking.h"
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/15/2023
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayer C/C++ API overview - PFMatchmaking.h
@@ -25,7 +25,7 @@ ms.date: 11/15/2023
 | [PFMultiplayerCreateServerBackfillTicket](functions/pfmultiplayercreateserverbackfillticket.md) | Creates a server backfill ticket. |  
 | [PFMultiplayerDestroyMatchmakingTicket](functions/pfmultiplayerdestroymatchmakingticket.md) | Destroys the matchmaking ticket. |  
 | [PFMultiplayerFinishProcessingMatchmakingStateChanges](functions/pfmultiplayerfinishprocessingmatchmakingstatechanges.md) | Returns an array of matchmaking state changes that were being processed. |  
-| [PFMultiplayerJoinMatchmakingTicketFromId](functions/pfmultiplayerjoinmatchmakingticketfromid.md) | Joins one or more multiple local users to a matchmaking ticket using a ticket ID and queue name. |  
+| [PFMultiplayerJoinMatchmakingTicketFromId](functions/pfmultiplayerjoinmatchmakingticketfromid.md) | Joins one or more local users to a matchmaking ticket by using a ticket ID and queue name. |  
 | [PFMultiplayerStartProcessingMatchmakingStateChanges](functions/pfmultiplayerstartprocessingmatchmakingstatechanges.md) | Retrieves an array of all matchmaking state changes to process since the last such call. |  
   
 ## Structures  

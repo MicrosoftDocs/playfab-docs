@@ -3,7 +3,7 @@ title: Running an HTTP server for testing
 author: antnguyen89
 description: Describes how to install and run an HTTP server for testing.
 ms.author: antnguyen
-ms.date: 02/20/2025
+ms.date: "11/13/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, config, testing, http, server
@@ -16,7 +16,7 @@ In some scenarios, you may need to run a local HTTP server for test purposes. Fo
 
 ## Prerequisites
 
-- Installed [Node.JS](https://nodejs.org/en/)
+- Installed [Node.js](https://nodejs.org/en/)
 
 ## Installing HTTP server using npm
 

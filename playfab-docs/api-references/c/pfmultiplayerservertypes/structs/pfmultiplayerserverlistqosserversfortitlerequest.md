@@ -5,7 +5,7 @@ description: "PFMultiplayerServerListQosServersForTitleRequest data model. Retur
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: "11/13/2026"
 ---
 
 # PFMultiplayerServerListQosServersForTitleRequest  
@@ -37,12 +37,12 @@ Count of customTags
 **`includeAllRegions`** &nbsp; bool const*  
 *may be nullptr*  
   
-(Optional) Indicates that the response should contain Qos servers for all regions, including those where there are no builds deployed for the title.
+(Optional) Indicates that the response should contain QoS servers for all regions, including those where there are no builds deployed for the title.
   
 **`routingPreference`** &nbsp; const char*  
 *is null-terminated*  
   
-(Optional) Indicates the Routing Preference used by the Qos servers. The default Routing Preference is Microsoft.
+(Optional) Indicates the Routing Preference used by the QoS servers. The default Routing Preference is Microsoft.
   
   
 ## Requirements  

@@ -5,7 +5,7 @@ description: Optionally configures the processor on which internal Party library
 ms.author: jdewey
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 08/29/2023
+ms.date: "11/13/2026"
 ---
 
 # PartyManager::SetThreadAffinityMask  
@@ -15,7 +15,7 @@ Optionally configures the processor on which internal Party library threads run.
 ## Syntax  
   
 ```cpp
-PartyError SetThreadAffinityMask(  
+static PartyError SetThreadAffinityMask(  
     PartyThreadId threadId,  
     uint64_t threadAffinityMask  
 )  

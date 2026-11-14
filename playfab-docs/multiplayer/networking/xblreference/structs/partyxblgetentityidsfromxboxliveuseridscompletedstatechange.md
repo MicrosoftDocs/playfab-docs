@@ -1,11 +1,11 @@
 ---
 author: ScottMunroMS
 title: "PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange"
-description: "Information specific to the *GetEntityIdsFromXboxLiveUserIdsCompleted* type of state change."
+description: "Reference for the PartyXblGetEntityIdsFromXboxLiveUserIdsCompleted state change returning PlayFab Entity IDs mapped from XBOX user IDs."
 ms.author: scmunro
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 04/22/2022
+ms.date: "11/13/2026"
 ---
 
 # PartyXblGetEntityIdsFromXboxLiveUserIdsCompletedStateChange  
@@ -38,7 +38,7 @@ A diagnostic value providing additional troubleshooting information regarding an
   
 **`xboxLiveSandbox`** &nbsp; [PartyString](../../reference/typedefs.md)  
   
-The device's Xbox Live sandbox which was used for this operation.
+The device's XBOX Live sandbox which was used for this operation.
   
 **`localChatUser`** &nbsp; [PartyXblLocalChatUser](../classes/PartyXblLocalChatUser/partyxbllocalchatuser.md)*  
   
@@ -50,17 +50,21 @@ The async identifier provided to the call associated with this state change.
   
 **`entityIdMappingCount`** &nbsp; uint32_t  
   
-The number of Xbox Live User Id to PlayFab Entity Id mappings.
+The number of XBOX user ID to PlayFab Entity Id mappings.
   
 **`entityIdMappings`** &nbsp; const [PartyXblXboxUserIdToPlayFabEntityIdMapping](partyxblxboxuseridtoplayfabentityidmapping.md)*  
 *array of size `entityIdMappingCount`*  
   
-A list of Xbox Live User Id to PlayFab Entity Id mappings.
+A list of XBOX user ID to PlayFab Entity Id mappings.
   
   
 ## Requirements  
   
 **Header:** PartyXboxLive.h
+
+**Library:** PartyXboxLive.lib
+
+**Supported platforms:** Windows PC, XBOX One family consoles, and XBOX Series X|S consoles, in the XBOX Game Development Kit (GDK). For the Party SDKs for other platforms, see [PlayFab Party SDKs](../../party-sdks.md).
   
 ## See also  
 [PartyXboxLive members](../partyxboxlive_members.md)  

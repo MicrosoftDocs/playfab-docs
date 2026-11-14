@@ -5,7 +5,7 @@ description: "PFInventoryGetTransactionHistoryResponse data model."
 ms.author: jasonsa
 ms.topic: reference
 ms.service: azure-playfab
-ms.date: 11/19/2024
+ms.date: 11/13/2026
 ---
 
 # PFInventoryGetTransactionHistoryResponse  
@@ -17,7 +17,7 @@ PFInventoryGetTransactionHistoryResponse data model.
 ```cpp
 typedef struct PFInventoryGetTransactionHistoryResponse {  
     const char* continuationToken;  
-    PFInventoryTransaction const* transactions;  
+    PFInventoryTransaction const* const* transactions;  
     uint32_t transactionsCount;  
 } PFInventoryGetTransactionHistoryResponse;  
 ```
@@ -29,10 +29,10 @@ typedef struct PFInventoryGetTransactionHistoryResponse {
   
 (Optional) An opaque token used to retrieve the next page of items, if any are available. Should be null on initial request.
   
-**`transactions`** &nbsp; [PFInventoryTransaction](pfinventorytransaction.md) const*  
+**`transactions`** &nbsp; [PFInventoryTransaction](pfinventorytransaction.md) const* const*  
 *may be nullptr*  
   
-(Optional) The requested inventory transactions.
+(Optional) The requested inventory transactions. An array of `transactionsCount` pointers.
   
 **`transactionsCount`** &nbsp; uint32_t  
   
