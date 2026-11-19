@@ -3,7 +3,7 @@ title: PlayFab Party QoS measurements
 description: The role of QoS measurements in PlayFab Party.
 author: ScottMunroMS
 ms.author: scmunro
-ms.date: 04/15/2020
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, qos, regions, accessible, chat
@@ -97,7 +97,7 @@ if (m_qosResultsReady)
 
 ### Regional price differences
 
-Keep in mind that all Party regions are not charged equally. For information about regional price differences, see [our pricing page](https://playfab.com/pricing/).
+Keep in mind that all Party regions are not charged equally. For information about regional price differences, see [our pricing page](https://developer.microsoft.com/games/products/playfab/pricing/).
 
 ## Using optimal regions for accessible chat features
 

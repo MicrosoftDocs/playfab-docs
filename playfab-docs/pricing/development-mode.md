@@ -1,94 +1,71 @@
 ---
-title: Development Mode
+title: "Evaluation Mode"
+description: "Explore PlayFab services in Evaluation Mode, learn its 1,000-player lifetime limit, and move beyond it with XBOX Partner benefits or usage-based billing."
 author: joannaleecy
-description: Describes the features and limits of Development Mode titles.
 ms.author: jenelleb
-ms.date: 09/09/2020
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, pricing, dev mode, development mode, title, meter, meters
 ms.localizationpriority: medium
+keywords: playfab, pricing, evaluation mode, development mode, title, meter, meters
+ms.date: '11/19/2026'
 ---
 
-# Titles in Development Mode
+# Evaluation Mode
+
+Evaluation Mode is a limited, no-charge title state for exploring PlayFab services, with a lifetime limit of 1,000 unique player accounts per title. New PlayFab titles begin in this state.
+
+Use Evaluation Mode when you want to explore a PlayFab service and determine whether it meets your needs. When you're ready to move beyond exploration, transition out of Evaluation Mode to use production-scale capacity and features beyond Evaluation Mode limits.
+
+If your game is coming to XBOX, [link a qualifying Partner Center product](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md) to receive [XBOX Partner benefits](../get-started/mode-overview.md). These benefits include the foundational set of PlayFab services at no additional cost. Enable usage-based billing for additional paid features and capacity.
+
+## Identify an Evaluation title
+
+Game Manager displays an **Evaluation** label on the title in the studio title list and within the title's navigation. You can also review the title's current limits in Game Manager.
+
+## Evaluation Mode limits
+
+An Evaluation title is limited to 1,000 lifetime unique player accounts. The limit counts every player account ever created for the title. It isn't a monthly active-user or daily active-user limit. After the title reaches this limit, PlayFab rejects requests to create additional player accounts.
+
+> [!NOTE]
+> While a title remains in Evaluation Mode, PlayFab doesn't count usage of services available in Evaluation Mode toward the title's billable meters.
+
+The following example shows how PlayFab treats usage for two fictional titles:
+
+| Title | Billing state | Example PlayStream usage | Billing treatment |
+| --- | --- | ---: | --- |
+| Fun Game | Usage-based billing | 1,000,000 events | Charged according to the applicable [meter rate](Meters/meters.md) |
+| Fun Game 2: The Return of Fun | Evaluation Mode | 100,000 events | No usage charge while the title remains within Evaluation limits |
+
+This example illustrates billing treatment only. Both titles remain subject to service-specific limits and API rate limits.
+
+Evaluation titles also have service-specific operational and API limits. To view the current limits for a title, open the title in Game Manager and select **Settings** > **Limits**. For details about how API limits are applied, see [API rate limits](../live-service-management/service-gateway/throttling/what-is-throttling.md). Features that aren't available in Evaluation Mode, including CloudScript (classic), [Multiplayer Servers](../multiplayer/servers/index.md), Insights, automation and experimentation, and legacy APIs, aren't listed as allowances. Enable usage-based billing to access paid features and capacity.
 
 > [!IMPORTANT]
-> When you're ready to scale up, it's important to make sure you switch your title from "Development Mode" to "Live." To make this change, use the **Launch** button on the Game Overview page or the PlayFab main dashboard. This change ensures that the title isn't limited to 100 unique users.
+> Requests to APIs that aren't available in Evaluation Mode return a permissions error and don't complete.
 
-> [!NOTE] 
-> Development Mode is being replaced by Foundation Mode as of March 11, 2026. To access PlayFab services with no monthly bill for the duration of your development cycle, we recommend [creating new titles in Foundation Mode](../get-started/foundation-onboarding.md). All titles that ship to an Xbox storefront will also get Foundation Mode services included as part of their platform agreement. 
+## Move beyond Evaluation Mode
 
-Developers can evaluate PlayFab services risk free using Development Mode, with no monthly bills up to the first 1000 unique users. Once a title in Development Mode hits this limit, no additional users can be created until a title is moved to a live mode. 
+When you're ready to move beyond Evaluation limits, choose one or both of the following options:
 
-Titles can be [launched](title-launches.md) through Game Manager and is then considered live. Launching a title removes all Development Mode limitations. 
+- **Enable usage-based billing.** Attach a payment instrument to the studio and turn on usage-based billing for the title. The title can then use paid PlayFab services and additional capacity. PlayFab charges usage according to the applicable [meters and rates](Meters/meters.md). There is no separate **Launch Title** step.
+- **Link an XBOX product.** If your game is coming to XBOX, [link its Partner Center product to the PlayFab title](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md). A qualifying linked title receives the foundational set of PlayFab services at no additional cost through [XBOX Partner benefits](../get-started/mode-overview.md). A payment instrument isn't required when the title uses only those included services.
+- **Use both.** An XBOX-linked title can also enable usage-based billing. The title receives its included XBOX Partner benefits. PlayFab charges paid features and usage outside those benefits according to the applicable meters and rates.
 
-By default, every title created starts in Development Mode. The **My Studios and Titles** main page indicate which state a title is in through a mark on the bottom, left corner of the title block. This indicator can also be viewed at the top of the left nav within a title. Titles in Development Mode are labeled **Development**. Live titles are blank.
+## Frequently asked questions
 
-**My Studios view of Development Mode title tag**
+### Do I need to launch the title in Game Manager?
 
-![My Studios view of Development Mode title tag](pricingV2-media/development-mode-title-tag.png "My Studios view of Development Mode title tag")
+No. You don't need to use a separate **Launch Title** action. To move beyond Evaluation Mode, enable usage-based billing, link a qualifying XBOX product, or use both.
 
-**Title page view of Development Mode title tag**
+### Does linking an XBOX product enable paid PlayFab features?
 
-![Title page view of Development Mode title tag](pricingV2-media/dev-mode-title-tag-titlePage.PNG "Title page view of Development Mode title tag")
+Linking a qualifying XBOX product provides the foundational set of PlayFab services at no additional cost through XBOX Partner benefits. Features and capacity outside those benefits require usage-based billing.
 
-**Live title with blank tag**
+### Is Multiplayer Servers available in Evaluation Mode?
 
-![Live title with blank tag](pricingV2-media/live-mode-title.PNG "Live title with blank tag")
+No. Multiplayer Servers isn't available in Evaluation Mode. To use Multiplayer Servers, enable usage-based billing. PlayFab charges compute, storage, and network usage according to the applicable rates.
 
-> [!NOTE]
-> As long as your title is in Development Mode, consumption isn't counted towards any of your billable meters.
+## See also
 
-The example below shows how meter consumption is reflected in the billing for a fictional customer called Fun Studios:
-
-| Title | Title mode | Meter Consumption |
-| --- | --- | --- |
-| Fun Game | Live | 1 million PlayStream events |
-| Fun Game 2: The Return of Fun | Development Mode | 100,000 PlayStream events
-
-When Fun Studios visits their Billing Summary page, they only see the consumption for their Live title, Fun Game, count against their Standard Plan included resources.
-
-**For more information on these topics, check out these pages:**
-
-- [Pricing Meters](Meters/meters.md)
-- [Account Upgrades](account-upgrades.md)
-- [Billing Summary and Base Rate](billingDetails.md)
-
-## Limits
-
-There are some studio and title limits associated with Development Mode:
-
-### Studio limits
-
-| Limit | Amount |
-| --- | --- |
-| Titles in Development Mode | 10 Titles |
-
-### Title limits
-
-| Limit | Amount |
-| --- | --- |
-| Unique users | 1000 users created |
-| PlayStream events | 1 million events |
-| Telemetry events | 1 million events |
-| Profile reads | 5 million reads |
-| Profile writes | 1 million writes |
-| Profile storage | 2 gigabytes (GB) |
-| Entity statistics reads | 5 million reads |
-| Entity statistics writes | 1 million writes |
-| Entity statistics storage | 100 Stat definitions, versions = 1 |
-| Entity leaderboard reads | 5 million reads |
-| Entity leaderboard writes | 1 million writes |
-| Entity leaderboard storage | 50 Leaderboard definitions, 10,000 rows, versions = 1 |
-| Content and configuration reads | 20,000 reads |
-| Content and configuration writes | 15,000 writes |
-| Content and configuration storage | 2 GB |
-| CloudScript execution time | 20,000 GB-s |
-| CloudScript total executions | 200,000 executions |
-| Insights credits | Insights Performance Level 1 |
-
-**Definition of unique users:**
-Unique users are the total number of players ever created in your Development Mode title, which is distinct from monthly active users or daily active users.
-
-> [!NOTE]
-> You can learn more about title limits at [PlayFab Pricing](https://www.playfab.com/pricing).
+- [XBOX Partner benefits](../get-started/mode-overview.md)
+- [Link an XBOX product to a PlayFab title](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md)

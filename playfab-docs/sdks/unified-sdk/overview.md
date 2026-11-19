@@ -3,7 +3,7 @@ title: PlayFab Unified SDK
 author: Jeffrey-Shi
 description: Overview of the PlayFab Unified SDK
 ms.author: jeffshi
-ms.date: "11/13/2026"
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playfab sdk, unified sdk
@@ -41,9 +41,9 @@ The following table shows platform and game engine support for the PlayFab Unifi
 
 | Platform                              | C/C++ SDK | C/C++ NuGet | Unreal Engine | Unity |
 |---------------------------------------|-----------|-------------|---------------|-------|
-| **Windows (PC and Handheld)**         | GDK 2510+ | — | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unreal) | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unity) |
-| **XBOX (One, Series S/X, Cloud)**     | GDK 2510+ | — | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unreal) | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unity) |
-| **Steam Deck**                        | GDK 2510+ | — | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unreal) | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unity) |
+| **Windows (PC and Handheld)**         | October 2025 GDK and later | — | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unreal) | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unity) |
+| **XBOX (One, Series S/X, Cloud)**     | October 2025 GDK and later | — | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unreal) | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unity) |
+| **Steam Deck**                        | October 2025 GDK and later | — | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unreal) | [GitHub](https://github.com/PlayFab/PlayFabSDK_Unity) |
 | **PlayStation®5** ¹                   | [Azure DevOps](https://dev.azure.com/PlayFabPrivate/PS5) | [Azure DevOps](https://dev.azure.com/PlayFabPrivate/PS5/_artifacts/feed/PS5GeneralV2) | ¹ | ¹ |
 | **PlayStation®4** ¹                   | [Azure DevOps](https://dev.azure.com/PlayFabPrivate/PS4) | [Azure DevOps](https://dev.azure.com/PlayFabPrivate/PS4/_artifacts/feed/PS4GeneralV2) | ¹ | ¹ |
 | **Nintendo Switch 2** ¹               | [Azure DevOps](https://dev.azure.com/PlayFabPrivate/Switch2) | [Azure DevOps](https://dev.azure.com/PlayFabPrivate/Switch2/_artifacts/feed/Switch2GeneralV2) | ¹ | ¹ |

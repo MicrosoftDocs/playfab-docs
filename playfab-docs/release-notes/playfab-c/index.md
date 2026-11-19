@@ -3,7 +3,7 @@ title: PlayFab Services C/C++ SDK Release Notes
 author: amccalib
 description: PlayFab Services C/C++ SDK Release Notes.
 ms.author: andmcc
-ms.date: 09/04/2026
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 # PlayFab Services C/C++ SDK Release Notes
 
 These release notes are for __PlayFabCSdk__. For release notes for other PlayFab Services SDKs, see [Other Services SDK Release Notes](../index.md).
-
-> [!NOTE]
-> For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab)
 
 ## 2604.0.1
 
@@ -52,7 +49,7 @@ Date: September 4, 2026
 - Updated `PlayFab::Wrappers::Exception::what()` to include the `HRESULT` in its message.
 - Exported `PF_API` symbols with default visibility on iOS and macOS, and fixed a macOS launch crash when using the Apple Unified SDK.
 - Fixed sized `operator delete` overrides on Clang-based toolchains so custom memory hooks are honored.
-- Updated GDK projects to use the `x64` project platform required by the GDK 2510 layout and added support for retargeting projects to the Visual Studio 2026 `v145` toolset.
+- Updated GDK projects to use the `x64` project platform required by the October 2025 GDK layout and added support for retargeting projects to the Visual Studio 2026 `v145` toolset.
 - Pinned the Android `com.google.android.gms:play-services-games-v2` dependency to version 21.0.0 to retain `minSdkVersion 21` compatibility.
 
 ### Game Save updates

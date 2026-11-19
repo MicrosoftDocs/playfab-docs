@@ -1,9 +1,9 @@
 ---
 title: Insights Management Commands
 author: joannaleecy
-description: management commands for title adx
+description: "Reference for retired PlayFab Insights management and data control commands, such as show queries, retention policy, create table, ingest, and purge."
 ms.author: jenelleb
-ms.date: 07/23/2026    
+ms.date: "11/19/2026"    
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights, explorer

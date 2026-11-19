@@ -1,9 +1,9 @@
 ---
 title: NodeJS SDK
 author: joannaleecy
-description: Landing page for the PlayFab NodeJS SDK. 
+description: "Download the PlayFab Node.js SDK, which provides models, methods, an HTTP wrapper, and JSON serialization for the PlayFab API, via GitHub or npm." 
 ms.author: jenelleb
-ms.date: 01/22/2021
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, nodejs, javascript, npm javascript playfab, npm javascript

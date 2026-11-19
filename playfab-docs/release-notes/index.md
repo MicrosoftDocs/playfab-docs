@@ -3,17 +3,13 @@ title: PlayFab Services SDK Release Notes 2026
 author: Vicodex
 description: PlayFab Services SDK Release Notes for 2026.
 ms.author: victorku
-ms.date: "11/13/2026"
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, development, release, apis, features
 ms.localizationpriority: medium
 ---
 # PlayFab Services SDK Release Notes 2026
-
-> [!NOTE]
->   For release notes about service releases and product updates, see the [release notes](https://github.com/PlayFab/PlayFab/releases) section on [PlayFab's public GitHub repository](https://github.com/PlayFab/PlayFab).
-
 
 ## 260922
 

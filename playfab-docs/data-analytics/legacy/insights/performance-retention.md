@@ -3,7 +3,7 @@ title: Performance and retention
 author: joannaleecy
 description: Performance and retention for PlayFab insights
 ms.author: jenelleb
-ms.date: 07/23/2026
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights
@@ -88,12 +88,12 @@ Paid titles are charged an overage fee of one credit for every 2.7m (2,700,000) 
 Event Archives allow customers to export all or some of their data on a regular schedule to Azure Blob or AWS S3. For more information, see [Exporting Data](export.md).
 
 ### *Credits Per Hour*
-Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). For more information about Insights Credit Pricing, see [PlayFab pricing](https://playfab.com/pricing/).
+Insights is billed per minute at the credits per hour rate (Credits Per Hour / 60). For more information about Insights Credit Pricing, see [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/).
 
 ## Retention
 ![Insights Retention](media/insights-retention.png)
 
-The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, which fulfills most GDPR compliance regulations. Retention can be set globally or by table using [Management Commands](management-commands.md). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://playfab.com/pricing/).
+The retention setting allows a studio to set the total number of days data is kept. The default setting is 30 days, which fulfills most GDPR compliance regulations. Retention can be set globally or by table using [Management Commands](management-commands.md). Retention is charged at a rate of 50 credits per terabyte month, studios are only charged for what is in use by day. For more information about Insights Credit Pricing, see [Insights Credit Pricing](https://developer.microsoft.com/games/products/playfab/pricing/).
 
 **Example**
 A studio has 10 terabytes of data stored at the beginning of the month and doesn't increase that storage. The total cost would be 500 (10 TB * 50 credits/TB) Credits. 

@@ -3,7 +3,7 @@ title: Insights Best Practices
 author: joannaleecy
 description: PlayFab Insights best practices and FAQs
 ms.author: jenelleb
-ms.date: 07/23/2026
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, insights
@@ -149,7 +149,7 @@ Summarize
 
 ### Will I lose data if my volume of events is higher than what is allowed by my performance level?
 
-- No, but you will be charged for overrages. Overages are measured in the number of Insights Credits consumed. Insights Credit prices can be found on [PlayFab.com/Pricing](https://playfab.com/pricing/).
+- No, but you will be charged for overrages. Overages are measured in the number of Insights Credits consumed. Insights Credit prices can be found on [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/).
 
 ### How do I decide by performance level?
 

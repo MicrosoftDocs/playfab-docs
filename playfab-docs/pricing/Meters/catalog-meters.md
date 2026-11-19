@@ -3,7 +3,7 @@ title: Economy Pricing Meters
 author: wesjong
 description: Describes Economy Catalog's billable meters.
 ms.author: wesjong
-ms.date: 9/13/2021
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, monetization, ugc, pricing, meters
@@ -86,7 +86,7 @@ If a title is the only title using UGC in the studio, and the title has 4 GB of 
 
 ## Resources
 
-* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)
+* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/)
 * See [Consumption Best Practices](../consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game
 
 ## Relevant APIs
