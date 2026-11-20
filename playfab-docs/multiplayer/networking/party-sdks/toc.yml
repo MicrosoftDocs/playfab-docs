@@ -34,15 +34,15 @@
     href: ../party-unreal-engine-using-older-versions.md
   - name: PlayFab OnlineSubsystem Release notes
     href: ../unreal-release-notes.md
-- name: Xbox and Xbox Network
+- name: XBOX and XBOX Network
   items:
-  - name: Xbox Requirements
+  - name: XBOX Requirements
     href: ../xbox-requirements.md
   - name: Use Party with MPSD
     href: ../using-mpsd.md
-  - name: Xbox Network Free Program FAQ
+  - name: XBOX Network Free Program FAQ
     href: ../xbl-discount.yml
-  - name: Xbox Network Helper Library
+  - name: XBOX Network Helper Library
     items:
     - name: Overview
       href: ../party-xbox-live-guide.md
@@ -50,5 +50,5 @@
       href: ../party-xboxlive-relnotes.md
     - name: API Reference
       href: ../xblreference/partyxboxlive_members.md
-- name: Logging
+- name: Diagnostic tracing/logging in PlayFab Party
   href: ../party-logging.md

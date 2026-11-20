@@ -3,7 +3,7 @@ title: Server Anonymous Login Authentication
 author: antnguyen
 description: Learn how to set up and configure PlayFab authentication using anonymous login APIs with server-side protection.
 ms.author: antnguyen
-ms.date: 05/15/2025
+ms.date: 11/20/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, authentication, server, anonymous login, customid
@@ -56,7 +56,10 @@ To enhance the security of anonymous login, PlayFab implemented a crucial securi
 
 ### 1. Set up your development environment
 
-1. Download the JavaScript SDK from the [JavaScript SDK documentation](https://learn.microsoft.com/gaming/playfab/sdks/javascript/)
+> [!NOTE]
+> The PlayFab JavaScript and Node.js SDKs are no longer supported. This sample uses them only to show the API call sequence. You can make the same calls with a [supported PlayFab SDK](../../../sdks/playfab-sdk-intro.md) or the [PlayFab REST API](/rest/api/playfab/).
+
+1. Download the JavaScript SDK from the [PlayFab JavaScriptSDK repository](https://github.com/PlayFab/JavaScriptSDK).
 2. Install the required Node.js packages:
 
 ```bash

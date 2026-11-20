@@ -3,7 +3,7 @@ title: PlayFab SDK Products
 author: Jeffrey-Shi
 description: Overview of PlayFab SDK product lines - v1 Standalone SDKs and v2 Unified SDK
 ms.author: jeffshi
-ms.date: 03/28/2026
+ms.date: 11/20/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playfab sdk, unified sdk, standalone sdk, sdk products
@@ -12,14 +12,15 @@ ms.localizationpriority: medium
 
 # PlayFab SDK products
 
-The **PlayFab Unified SDK (v2)** is the next generation of PlayFab SDKs. It consolidates all PlayFab client libraries into a single, cohesive product. It provides a modern, streamlined development experience with unified authentication, automatic token management, and consistent APIs across all components. The Unified SDK is the primary focus of ongoing development—all new features, platform support, and improvements target v2 first.
+The **PlayFab Unified SDK (v2)** is the modern generation of PlayFab SDKs. It consolidates all PlayFab client libraries into a single, cohesive product. It provides a modern, streamlined development experience with unified authentication, automatic token management, and consistent APIs across all components. The Unified SDK is the primary focus of ongoing development—all new features, platform support, and improvements target v2 first.
 
 **For new projects**, we recommend the **PlayFab Unified SDK (v2)** if the currently supported platforms meet your requirements. **Existing projects** using v1 Standalone SDKs can [migrate to v2](unified-sdk/migrating-from-v1.md) to take advantage of the unified architecture.
 
-The **v1 Standalone SDKs** remain supported for now and provide broader platform coverage for projects that require platforms not yet supported in v2.
+> [!NOTE]
+> The v1 Standalone SDKs will be discontinued on April 30, 2027 for all platforms. Please [migrate your projects to v2](unified-sdk/migrating-from-v1.md) (Unified SDK) which has been available since GDK 2510.
 
 > [!IMPORTANT]
-> v1 and v2 SDKs cannot be used together in the same project. If you need a platform not yet supported in v2, use v1 for all components.
+> v1 and v2 SDKs cannot be used together in the same project. If you need a platform not supported in v2, use v1 for that platform.
 
 ## PlayFab Unified SDK (v2)
 
@@ -64,7 +65,7 @@ The following examples illustrate how v2 simplifies common tasks compared to v1:
 
 ## PlayFab Standalone SDKs (v1)
 
-The [v1 Standalone SDKs](sdk-overview.md) consist of separate SDK packages for different PlayFab features. While they're still fully supported, they require managing multiple SDK installations and manual coordination between components. v1 SDKs continue to receive critical fixes, but new features and platform support are developed exclusively for v2.
+The [v1 Standalone SDKs](sdk-overview.md) consist of separate SDK packages for different PlayFab features.
 
 ### SDK components (v1)
 
@@ -79,7 +80,7 @@ The following table compares platform support between the v2 Unified SDK and v1 
 | Platform | v2 (Unified SDK) | v1 (Standalone SDKs) |
 |----------|:-----------------:|:--------------------:|
 | Windows (PC and Handheld) | ✅ Supported | ✅ Supported |
-| Xbox (One, Series S/X, Cloud) | ✅ Supported | ✅ Supported |
+| XBOX (One, Series S/X, Cloud) | ✅ Supported | ✅ Supported |
 | Steam Deck | ✅ Supported | ❌ Not currently supported |
 | PlayStation 4 ¹ | ✅ Supported | ✅ Supported |
 | PlayStation 5 ¹ | ✅ Supported | ✅ Supported |

@@ -27,15 +27,3 @@ landingContent:
         links:
           - text: SDK Generator quickstart
             url: ../sdkgenerator/quickstart.md
-
-  # Card
-  - title: Postman
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Postman
-            url: ../postman/index.md
-      - linkListType: quickstart
-        links:
-          - text: Postman quickstart
-            url: ../postman/postman-quickstart.md

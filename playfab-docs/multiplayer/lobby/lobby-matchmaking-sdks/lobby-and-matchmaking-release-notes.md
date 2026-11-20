@@ -3,7 +3,7 @@ title: PlayFab Multiplayer C++ SDK Release Notes
 author: ScottMunroMS
 description: Release notes for PlayFab Multiplayer's C++ SDK
 ms.author: scmunro
-ms.date: 08/19/2026
+ms.date: 11/20/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, release notes
@@ -11,6 +11,25 @@ ms.localizationpriority: medium
 ---
 
 # PlayFab Multiplayer C++ SDK release notes
+## 1.9.8
+
+November 17, 2026
+
+### Bug fixes
+
+- Fixed an issue where lobby creation and other PubSub-dependent operations could keep failing after PubSub successfully reconnected, for example after the device resumed from sleep.
+- Fixed an issue where a title could crash during process-exit if PlayFab Multiplayer was still initialized.
+- Fixed an issue where PubSub could attempt to reconnect a connection that was being cleaned up.
+- PubSub unsubscribe and connection-lifetime extension failures now return specific errors, such as `XBOX_E_PUBSUB_CONNECTION_NOT_FOUND_FOR_ENTITY` and `XBOX_E_PUBSUB_TOO_MANY_REQUESTS`, instead of generic HTTP status errors.
+- Fixed duplicated trace messages in PlayFab Multiplayer logs.
+- GDK: PlayFab Multiplayer no longer depends on XCurl.dll. HTTP and WebSocket traffic now directly use WinHTTP.
+- Fixed a rare crash when PlayFab Multiplayer was uninitialized while an HTTP request was in progress.
+- Fixed an issue on Windows and GDK where, after a transient network failure, all subsequent HTTP requests could fail until the title restarted.
+- GDK: Fixed an issue where a slow WebSocket connection attempt could delay the title's suspend past its deadline.
+- GDK: Telemetry captured from the GDK version of the library running on Steam Deck via Proton now reflects correct DeviceMake, DeviceModel, and OS Version values corresponding to the Steam Deck.
+- iOS, macOS, Android, Linux: Debug logging now respects the configured logging area flags.
+- Updated OpenSSL to 3.5.7 for iOS, macOS, Linux, Android, PlayStation, and Nintendo builds.
+
 ## 1.9.5
 
 August 13, 2026
@@ -215,7 +234,7 @@ February 11, 2025
 - Fixed a regression introduced in version 1.7.8 that assigned the `PFMultiplayerServerDetails::region` value to `PFMultiplayerServerDetails::fqdn`.
 - Fixed an issue where the properties associated with a new member weren't immediately available until a subsequent `Updated` state change. Now, as soon as a `MemberAdded` state change is provided to the game, [PFLobbyGetMemberConnectionStatus()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberconnectionstatus.md), [PFLobbyGetMemberPropertyKeys()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberpropertykeys.md), and [PFLobbyGetMemberProperty()](../playfabmultiplayerreference-cpp/pflobby/functions/pflobbygetmemberproperty.md) provide the most up-to-date information associated with the member. To preserve compatibility for games that took a dependency on the previous behavior, the first `Updated` state change after the member is added continues to provide this initial list of property keys as if they were new properties.
 - Fixed a couple of issues where the library could crash when [PFMultiplayerUninitialize()](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) was called while cleaning up internal web request resources.
-- Fixed an issue for GDK Xbox where the library could crash during suspend while cleaning up internal state associated with the invite listener.
+- Fixed an issue for GDK XBOX where the library could crash during suspend while cleaning up internal state associated with the invite listener.
 - Fixed an issue for Android where the library could crash when when [PFMultiplayerUninitialize()](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) was called while cleaning up JavaVM attached threads.
 - Fixed an issue for macOS where the library was incorrectly symlinked, which could surface as build breaks when integrating the library.
 
@@ -242,8 +261,8 @@ August 12, 2024
 
 ### Bug fixes
 
-- Fixed an issue for GDK Xbox where some events weren't queued after suspending and resuming a title.
-- Fixed a crash for GDK Xbox after suspending and resuming a title.
+- Fixed an issue for GDK XBOX where some events weren't queued after suspending and resuming a title.
+- Fixed a crash for GDK XBOX after suspending and resuming a title.
 - Updated [PFMultiplayerCreateServerBackfillTicket](../playfabmultiplayerreference-cpp/pfmatchmaking/functions/pfmultiplayercreateserverbackfillticket.md) to automatically handle failures when a match member is already a member of too many tickets. In this situation, the SDK automatically cancels existing tickets for members of the backfill ticket and retries ticket creation.
 
 ## 1.7.5
@@ -418,7 +437,7 @@ October 25, 2022
 ### Bug fixes
 
 - Fixed a bug where the library spawned unnecessary, short-lived threads.
-- On Windows, Xbox, and Android, fixed a bug where the library might attempt web requests before a previously recorded retry-after period expires.
+- On Windows, XBOX, and Android, fixed a bug where the library might attempt web requests before a previously recorded retry-after period expires.
 - Improved the error message if a web server can't be reached.
 
 ## 1.4.0
@@ -435,7 +454,7 @@ September 20, 2022
 
 ### Bug fixes
 
-- Fixed a bug that caused WebSocket resources to leak memory when calling [PFMultiplayerUninitialize](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) or when the library internally handled app suspension on Xbox consoles.
+- Fixed a bug that caused WebSocket resources to leak memory when calling [PFMultiplayerUninitialize](../playfabmultiplayerreference-cpp/pfmultiplayer/functions/pfmultiplayeruninitialize.md) or when the library internally handled app suspension on XBOX consoles.
 
 ## 1.3.0
 
@@ -518,7 +537,7 @@ March 4, 2022
 
 ### New features
 
-- GDK: Added support for automatically handling suspend and resume on Xbox.
+- GDK: Added support for automatically handling suspend and resume on XBOX.
 
 ### Bug fixes
 
