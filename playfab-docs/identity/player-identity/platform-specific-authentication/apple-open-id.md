@@ -1,9 +1,9 @@
 ---
 title: "Set up Sign In with Apple for PlayFab"
-description: "How to set up Sign In with Apple in PlayFab."
+description: "Set up Sign in with Apple for PlayFab by configuring your Application Identifier in the Apple developer portal and installing the Apple add-on."
 author: antnguyen89
 ms.author: antnguyen
-ms.date: 02/20/2025
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, OpenID, Apple, Auth 2.0

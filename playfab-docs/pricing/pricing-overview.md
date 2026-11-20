@@ -3,7 +3,7 @@ title: PlayFab Pricing Overview
 author: cybtachyon
 description: Overview of PlayFab pricing and easy access to pricing documentation.
 ms.author: shtarwar
-ms.date: 09/17/2020
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, pricing, transition, modern pricing, legacy pricing, base rate
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ---
 # PlayFab pricing overview
 
-**Want to learn more about PlayFab pricing?** The following articles can help you understand PlayFab's pricing model, how to view your estimated bill, and how to manage account upgrades and titles launches through Game Manager. View the most up-to-date offers and prices at [https://www.playfab.com/pricing](https://www.playfab.com/pricing).
+**Want to learn more about PlayFab pricing?** The following articles can help you understand PlayFab's pricing model, how to view your estimated bill, and how to manage account upgrades and titles launches through Game Manager. View the most up-to-date offers and prices at [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/).
 
 1. **[Billing Summary](billingDetails.md):** View past and present estimated costs.
 
@@ -21,15 +21,15 @@ ms.localizationpriority: medium
 
 4. **[Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md):** Learn about multiplayer server (MPS) pricing when MPS is enabled.
 
-5. **[Party Pricing](meters/meters.md#party):** Learn about Party pricing when Party is enabled.
+5. **[Party Pricing](Meters/meters.md#party):** Learn about Party pricing when Party is enabled.
 
 6. **[Economy V2 Catalog Pricing](Meters/catalog-meters.md):** Learn about Economy V2 Catalog pricing.
 
 7. **[Experiments Pricing](../live-service-management/game-configuration/experiments/pricing.md):** Learn about Experiments pricing when used.
 
-8. **[Technical Support](Support.md):** Access technical support included in paid account plans.
+8. **[Technical Support](support.md):** Access technical support included in paid account plans.
 
-9. **[Account Support](Support.md):** Access account support included for all account plans.
+9. **[Account Support](support.md):** Access account support included for all account plans.
 
 10. **[Upgrading Accounts](account-upgrades.md):** Upgrade your account plan using the self-serve plans experience in Game Manager.
 

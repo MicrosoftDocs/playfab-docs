@@ -3,7 +3,7 @@ title: Quality-of-service (QoS) beacons to measure player latency to Azure
 author: joannaleecy
 description: Describes how to use QoS data to inform the ranking of Azure regions used while requesting a multiplayer server.
 ms.author: jenelleb
-ms.date: 01/17/2019
+ms.date: 11/20/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer servers, thunderhead, azure, qos, c++ sdk
@@ -37,7 +37,7 @@ This is the typical flow for using these beacons in the context of a player devi
 6. Measure the time between sending the UDP message and receiving a response.
 
 ## Using the quality-of-service SDK
-The PlayFab [C# SDK](https://github.com/PlayFab/CSharpSDK) and [cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk) provide an implementation of the QoS ping code. You can build an SDK and use it as a helper library in your PC games, reference the C# NuGet package, or use the code as an example for other platforms.
+The PlayFab [C# SDK](https://github.com/PlayFab/CSharpSDK) provides an implementation of the QoS ping code. The legacy [cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk) also contains an implementation, but that SDK is no longer supported; use its code only as an example. You can build an SDK and use it as a helper library in your PC games, reference the C# NuGet package, or use the code as an example for other platforms.
 
 Each API returns a `QosResult` which contains a sorted list of regions along with the average ping time to each region.
 
@@ -60,7 +60,7 @@ Parameters:
 ```
 
 ### C++
-There are the two QoS APIs available in the [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk).
+There are the two QoS APIs available in the legacy [PlayFab cross-platform (CPP) SDK](https://github.com/PlayFab/XPlatCppSdk). That SDK is no longer supported, so use this code only as a reference implementation.
 
 The code is located in [*PlayFabQosApi.cpp*](https://github.com/PlayFab/XPlatCppSdk/blob/master/code/source/playfab/QoS/PlayFabQoSApi.cpp). 
 

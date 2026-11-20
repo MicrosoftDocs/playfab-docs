@@ -3,7 +3,7 @@ title: Push Notifications quickstart
 author: joannaleecy
 description: Describes the Push Notification system in PlayFab.
 ms.author: jenelleb
-ms.date: 10/26/2018
+ms.date: 11/20/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, engagement, push notification
@@ -172,4 +172,4 @@ The following resources provide additional information about the topics in this 
 - [Firebase Unity SDK](https://firebase.google.com/docs/unity/setup):  An all-in-one FCM solution for Unity. This SDK, among all other features, allows you to receive and process push notifications sent via FCM.
 - [Push It Real Good: How to Get Players to Say Yes to Push Notifications](https://blog.playfab.com/blog/push-it-real-good-how-get-players-say-yes-push-notifications/): This blog post details additional strategies and techniques for using push notifications.
 - [Push Notifications](https://blog.playfab.com/blog/push-sep-17): This blog post describes the most recent upgrade in Push functionality, and switching to FCM as the primary plugin for Android.
-- [Postman Quickstart](../../../../sdks/postman/postman-quickstart.md): This quickstart shows you how to test our APIs using Postman.
+- [PlayFab REST API reference](/rest/api/playfab/): This reference describes the PlayFab APIs that you can call to test push notifications.

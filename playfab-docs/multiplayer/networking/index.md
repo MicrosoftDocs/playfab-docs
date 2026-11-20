@@ -3,7 +3,7 @@ title: PlayFab Party overview
 author: joannaleecy
 description: Learn about PlayFab Party real-time chat and data communication libraries for your game.
 ms.author: jenelleb
-ms.date: 10/13/2020
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party
@@ -20,7 +20,7 @@ This topic provides a high-level overview of Party features. For details, see [P
 
 ## Features
 
-Party is designed for use on many platforms like Android, iOS, Linux, Nintendo Switch, PlayStation&#174;, PC, and Xbox. Party also provides C/C++ SDKs and SDKs for use with game engines like Unity and Unreal. For a complete list, see [Party SDKs](party-sdks.md).
+Party is designed for use on many platforms like Android, iOS, Linux, Nintendo Switch, PlayStation&#174;, PC, and XBOX. Party also provides C/C++ SDKs and SDKs for use with game engines like Unity and Unreal. For a complete list, see [Party SDKs](party-sdks.md).
 
 * [Interoperable multiplayer infrastructure](party-features.md#interoperable-multiplayer-infrastructure)
     * Cross-network/cross-platform multiplayer game experiences.
@@ -41,7 +41,7 @@ Party is designed for use on many platforms like Android, iOS, Linux, Nintendo S
     * Integrates with custom discovery systems&mdash;players finding other players.
     * Policy enforcement for connectivity and communication.
 
-Party is included at no extra cost in [Foundation Mode](../../get-started/mode-overview.md) for eligible Xbox ecosystem developers. For other usage, see [PlayFab pricing](https://playfab.com/pricing/). To learn about the meters that drive billing, see [Party pricing](../../pricing/Meters/meters.md#party). For guidance on combining Party with other Xbox and PlayFab multiplayer services, see [Multiplayer design guidance](/gaming/gdk/docs/services/multiplayer/overviews/multiplayer-design-guidance-xbox-pc-gdk).
+Party is included at no extra cost in [Foundation Mode](../../get-started/mode-overview.md) for eligible XBOX ecosystem developers. For other usage, see [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/). To learn about the meters that drive billing, see [Party pricing](../../pricing/Meters/meters.md#party). For guidance on combining Party with other XBOX and PlayFab multiplayer services, see [Multiplayer design guidance](/gaming/gdk/docs/services/multiplayer/overviews/multiplayer-design-guidance-xbox-pc-gdk).
 
 If you are interested, here is a video of our presentation at Microsoft Game Dev 2021. The presentation explains the above Party features in greater detail with demos and includes a quickstart tutorial. 
 

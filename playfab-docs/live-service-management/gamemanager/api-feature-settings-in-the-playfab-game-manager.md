@@ -3,7 +3,7 @@ title: API Feature Settings in the PlayFab Game Manager
 author: joannaleecy
 description: Describes the options in the PlayFab Game Manager for managing the behavior of PlayFab APIs.
 ms.author: jenelleb
-ms.date: 06/11/2018
+ms.date: 11/20/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, config, game manager, api access, privacy
@@ -25,7 +25,7 @@ To find the screen for configuring these options:
 Some of these check boxes are obvious, while some are not. In this tutorial, we will go into detail about several of them.
 
 > [!NOTE]
-> Several screenshots and demonstrations in this tutorial utilize [Postman](../../sdks/postman/postman-quickstart.md).
+> Several screenshots and demonstrations in this tutorial show direct calls to the [PlayFab REST API](/rest/api/playfab/) made with Postman, a third-party API client.
 
 ## Requiring valid JSON for custom data values
 

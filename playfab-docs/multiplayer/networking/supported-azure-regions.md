@@ -3,7 +3,7 @@ title: Supported Azure regions
 description: Provides a list of the Azure regions currently supported by PlayFab Party
 author: ScottMunroMS
 ms.author: scmunro
-ms.date: 04/14/2020
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, regions
@@ -40,6 +40,6 @@ Network egress charges depend on the regions in which your Party networks are ho
 
 For more information about region selection, see [Selecting regions for Party networks](concepts-regions.md#selecting-regions-for-party-networks).
 
-You can view the current Party rates at [PlayFab pricing](https://playfab.com/pricing).
+You can view the current Party rates at [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/).
 
 For more information about Azure regions, see the [Azure documentation](https://azure.microsoft.com/global-infrastructure/regions/).

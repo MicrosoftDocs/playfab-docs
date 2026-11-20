@@ -3,7 +3,7 @@ title: Economy v2 Virtual Currency Quickstart
 author: fprotti96
 description: In this quickstart, you set up your first virtual currencies via the APIs.
 ms.author: fprotti
-ms.date: 02/20/2025
+ms.date: 11/20/2026
 ms.topic: quickstart
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, currency, virtual currency
@@ -19,11 +19,11 @@ Get started with PlayFab Economy by using the [PlayFab Services SDK](../../../sd
 ## Prerequisites
 
 * A [PlayFab developer account](https://developer.playfab.com)
-* The PlayFab Beta SDK (You can find more information on the [Postman Quickstart](../../../sdks/postman/postman-quickstart.md#adding-playfab-collections))
+* A [PlayFab Services SDK](../../../sdks/playfab-sdk-intro.md) or another way to call the [PlayFab REST API](/rest/api/playfab/)
 
 ## Get a title entity token
 
-To make changes to your title config data via the APIs, you first need to obtain a title entity token. You can find more information on the [Postman Quickstart](../../../sdks/postman/postman-quickstart.md#getting-a-title-entity-token)
+To make changes to your title config data via the APIs, you first need to obtain a title entity token. To get a title entity token, call [GetEntityToken](/rest/api/playfab/authentication/authentication/get-entity-token) with your title secret key.
 
 ## Create a new virtual currency
 

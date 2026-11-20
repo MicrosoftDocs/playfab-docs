@@ -30,5 +30,5 @@
     href: multiplayer-unity-overview.md
   - name: Multiplayer Unity plugin quickstart
     href: multiplayer-unity-plugin-quickstart.md
-- name: Logging
+- name: Diagnostic tracing/logging in PlayFab Lobby and Matchmaking
   href: lobby-matchmaking-logging.md

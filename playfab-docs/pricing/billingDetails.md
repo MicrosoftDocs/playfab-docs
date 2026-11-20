@@ -3,7 +3,7 @@ title: Billing Summary + Base Rate
 author: joannaleecy
 description: Describes the billing summary page.
 ms.author: jenelleb
-ms.date: 08/28/2026
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, pricing, billing, bill, invoice, meter, meters
@@ -62,16 +62,16 @@ To view the billing details page for your studio, navigate to the My Studios and
 
 The base rate charge includes:
 
-1. **Meter usage** amounts that are specified at [PlayFab pricing](https://www.playfab.com/pricing). Once meter usage across live titles associated to an account surpasses the included amounts (above), an account's live title usage is charged based on the meter rates found at [PlayFab pricing](https://www.playfab.com/pricing) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
+1. **Meter usage** amounts that are specified at [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/). Once meter usage across live titles associated to an account surpasses the included amounts (above), an account's live title usage is charged based on the meter rates found at [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/) (also listed under the "Rate" column on the Billing Summary page). These costs are referred to as "Pay-As-You-Go" charges.
 
     > [!NOTE]
     > Titles in [Development Mode](development-mode.md) aren't counted against included base rate usage.
 
-2. **[Technical support](Support.md)** that is determined by the [account level](account-upgrades.md).
+2. **[Technical support](support.md)** that is determined by the [account level](account-upgrades.md).
 
 ## Additional Section Definitions
 
-**Pay-As-You-Go Charges:** Pay-As-You-Go charges are the cost of individual meter usage per title in an account that exceeds usage amounts that are part of the plan. The per-meter prices can be found at [PlayFab pricing](https://www.playfab.com/pricing) or under the "Rate" column on the billing summary page.
+**Pay-As-You-Go Charges:** Pay-As-You-Go charges are the cost of individual meter usage per title in an account that exceeds usage amounts that are part of the plan. The per-meter prices can be found at [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/) or under the "Rate" column on the billing summary page.
 
 **Additional Charges:** Additional charges include any charges not directly tied to the meter-usage pricing plan. For example, charges for Multiplayer Servers (MPS) and Add-ons may appear in the additional charges section.
 
@@ -79,4 +79,4 @@ The base rate charge includes:
 
 > [Multiplayer Server Pricing](../multiplayer/servers/billing-for-thunderhead.md)
 >
-> [Party Pricing](meters/meters.md#party)
+> [Party Pricing](Meters/meters.md#party)

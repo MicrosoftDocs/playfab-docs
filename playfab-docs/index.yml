@@ -100,15 +100,6 @@ conceptualContent:
             - url: sdks/c-sharp/index.md
               itemType: reference
               text: C#
-            - url: sdks/java/index.md
-              itemType: reference
-              text: Java
-            - url: sdks/javascript/index.md
-              itemType: reference
-              text: JavaScript
-            - url: sdks/python/index.md
-              itemType: reference
-              text: Python
           footerLink: 
             url: sdks/languages/index.yml
             text: See more
@@ -142,18 +133,12 @@ conceptualContent:
             - url: sdks/unreal/index.md
               itemType: reference
               text: Unreal Engine
-            - url: sdks/cocos2d-x/index.md
-              itemType: reference
-              text: Cocos2D-x
 
         - title: Tools & utilities
           links:
               - url: sdks/sdkgenerator/index.md
                 itemType: reference
                 text: SDK Generator
-              - url: sdks/postman/index.md
-                itemType: reference
-                text: Postman
 # tools section (optional)
 # tools:
 #   title: Client libraries, scripting, and tools

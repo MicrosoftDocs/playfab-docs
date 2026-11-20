@@ -3,7 +3,7 @@ title: Player Inventory Quickstart
 author: wesjong
 description: In this quickstart, you purchase your first item and check your player's inventory via the APIs.
 ms.author: wesjong
-ms.date: 02/20/2025
+ms.date: 11/20/2026
 ms.topic: quickstart
 ms.service: azure-playfab
 keywords: playfab, commerce, economy, inventory
@@ -19,7 +19,7 @@ Get familiarized with Player Inventories by using the PlayFab Beta SDK to purcha
 ## Prerequisites
 
 * A [PlayFab developer account](https://developer.playfab.com)
-* The PlayFab Beta SDK (You can find more information on the [Postman Quickstart](../../../sdks/postman/postman-quickstart.md#adding-playfab-collections))
+* A [PlayFab Services SDK](../../../sdks/playfab-sdk-intro.md) or another way to call the [PlayFab REST API](/rest/api/playfab/)
 * At least one item in your catalog (You can find more information on the [Economy v2 Quickstart](../quickstart.md))
 * At least one player with sufficient virtual currency to purchase an item
 

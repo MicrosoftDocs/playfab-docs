@@ -3,7 +3,7 @@ title: "Migration Guide: PlayFab Standalone SDK (v1) to PlayFab Unified SDK (v2)
 author: Jeffrey-Shi
 description: Complete guide for migrating from PlayFab v1 SDKs to the new Unified SDK v2
 ms.author: jeffshi
-ms.date: 09/30/2025
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playfab sdk, unified sdk, migration, v2
@@ -34,15 +34,15 @@ The PlayFab Unified SDK v2 introduces several key improvements:
 - Each service had distinct ExtensionLibrary names in GDK
 - Multiple downloads required for different PlayFab services from GitHub
 
-**New layout (GDK 2510 and onward):**
+**New layout (October 2025 GDK and later):**
 - Single unified PlayFab SDK
-- Platform-organized structure with subfolders (xbox, windows, etc.)
+- Platform-organized structure with subfolders (`xbox`, `windows`, etc.)
 - All headers consolidated in one includes folder (Core, Services, Multiplayer, Party, GameSave)
 - Combined libraries in unified lib folder
 
 #### Updating Your Project References
 
-During the transition period (GDK 2510), both old and new SDKs coexist. To migrate:
+During the transition period (October 2025 GDK), both old and new SDKs coexist. To migrate:
 
 1. **Remove old references**: Delete references to PlayFab.Services.Cpp, PlayFab.Party.Cpp, and other individual SDK extensions
 2. **Add unified reference**: Reference the new PlayFab Unified SDK or update include/library paths to the unified locations
@@ -138,7 +138,7 @@ PartyError err = partyManager.CreateLocalUser(entityHandle, &localUser);
 3. **Pass entity handles**: Use `PFEntityHandle` directly instead of string parameters
 4. **Remove token refresh logic**: Delete code that periodically checks or refreshes Party tokens
 5. **Update dependencies**: Ensure PlayFab Core is initialized before `PartyManager::Initialize()`
-6. **Remove Xbox-specific calls**: Replace `PartyXblManagerInitialize()` with generic `PartyInitialize()` on Xbox
+6. **Remove XBOX-specific calls**: Replace `PartyXblManagerInitialize()` with generic `PartyInitialize()` on XBOX
 
 ### PlayFab Multiplayer (Lobby & Matchmaking)
 

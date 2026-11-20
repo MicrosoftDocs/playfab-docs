@@ -1,5 +1,180 @@
 {
     "redirections": [
+        {
+            "source_path": "playfab-docs/sdks/cocos2d-x/Licenses/libcurl-License.md",
+            "redirect_url": "/gaming/playfab/sdks/game-engines/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/cocos2d-x/Licenses/openssl-license.md",
+            "redirect_url": "/gaming/playfab/sdks/game-engines/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/cocos2d-x/Licenses/rapidjson-license.md",
+            "redirect_url": "/gaming/playfab/sdks/game-engines/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/cocos2d-x/Licenses/zlib-license.md",
+            "redirect_url": "/gaming/playfab/sdks/game-engines/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/cocos2d-x/index.md",
+            "redirect_url": "/gaming/playfab/sdks/game-engines/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/cocos2d-x/license.md",
+            "redirect_url": "/gaming/playfab/sdks/game-engines/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/cocos2d-x/quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/game-engines/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/java/Licenses/google-gson-license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/java/Licenses/hamcrest-license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/java/Licenses/junit-license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/java/index.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/java/license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/java/quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/javascript/Licenses/jquery-license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/javascript/Licenses/qunit-license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/javascript/index.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/javascript/license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/javascript/quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/lua/Licenses/json-lua-license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/lua/Licenses/luasec-license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/lua/index.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/lua/license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/lua/quickstart-corona.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/lua/quickstart-defold.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/nodejs/index.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/nodejs/nodeunit-license.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/nodejs/quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/playfab-cpp/index.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-gdk.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-linux.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-windows.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/postman/index.md",
+            "redirect_url": "/gaming/playfab/sdks/tools/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/postman/postman-quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/tools/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/python/index.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "playfab-docs/sdks/python/quickstart.md",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
+            "redirect_document_id": false
+        },
          {
             "source_path": "playfab-docs/api-references/events/player-action-executed.md",
             "redirect_url": "/gaming/playfab/api-references/events/playstream/player-action-executed",
@@ -17,7 +192,7 @@
         },
         {
             "source_path": "playfab-docs/sdks/playfab-cpp/quickstart-xbox.md",
-            "redirect_url": "/gaming/playfab/sdks/playfab-cpp/quickstart-gdk",
+            "redirect_url": "/gaming/playfab/sdks/languages/",
             "redirect_document_id": false
         },
         { 

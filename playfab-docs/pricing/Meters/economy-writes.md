@@ -3,7 +3,7 @@ title: Inventory Writes Meter API Description
 author: cybtachyon
 description: This article details the APIs that cause economy writes meter to increment.
 ms.author: fprotti
-ms.date: 09/07/2020
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, pricing
@@ -26,5 +26,5 @@ The following APIs cause the Economy v2 writes meter to increment.
 
 ## Resources
 
-* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)
+* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/)
 * See [Consumption Best Practices](../consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game

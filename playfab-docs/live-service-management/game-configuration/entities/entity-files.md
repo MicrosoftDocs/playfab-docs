@@ -3,7 +3,7 @@ title: Entity files
 author: joannaleecy
 description: Describes the terminology, concepts, and design of Entities in the PlayFab APIs.
 ms.author: jenelleb
-ms.date: 10/26/2018
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, data, entities, accounts
@@ -211,6 +211,31 @@ public class EntityFileExample : MonoBehaviour
     - Finalize an atomic upload operation.
   - The entity doesn't consider the file upload complete, nor reflect any changes to other callers until the atomic upload operation is finalized successfully.
 
+## File limits and pending uploads
+
+Each entity has limits on how large a file can be and how many files it can hold. To see the current values for your title, go to Game Manager and select **Settings** > **Limits**.
+
+| Limit | What it controls |
+|-------|------------------|
+| File size (`TitleFileSizeLimit`) | The maximum size of a single file. It applies to each file on its own, not to the total across all of an entity's files. |
+| File count for title player accounts (`TitlePlayerAccountFileCount`) | The maximum number of files on a single title player account. |
+
+### How uploads are counted
+
+Uploading a file is a three step process: `InitiateFileUploads`, upload the data, then `FinalizeFileUploads`. Until the last step succeeds, the upload is pending.
+
+- **File size is checked when you finalize.** `FinalizeFileUploads` measures the uploaded file and compares it to the file size limit. Other files on the entity are not added in. If the file is too large, the call returns `OverLimit` and the file is not saved. If you were replacing an existing file, the existing file is unchanged.
+- **Pending uploads do not count toward the file size limit.** A file has no measured size until it is finalized.
+- **A pending new file uses one of the entity's file slots.** The slot is reserved as soon as `InitiateFileUploads` succeeds, so it counts toward the file count limit even before you finalize.
+- **A pending replacement does not use an extra slot.** It reuses the slot of the file it replaces, and the existing file stays live until the upload is finalized.
+
+### Abandoned uploads
+
+If you never finalize an upload, the service normally aborts it about 15 minutes after `InitiateFileUploads`. For a new file, this frees its slot. For a replacement, the existing file is unchanged.
+
+To release a pending upload sooner, or if a slot is still held after 15 minutes, call `AbortFileUploads` with that file name.
+
+`GetFiles` returns only files that have been finalized. It omits new files that are still pending, and it shows a pending replacement as its existing version. There is no read only call that lists pending uploads. If `InitiateFileUploads` returns `EntityFileOperationPending`, another upload of that file is still pending. It might belong to another client that is actively uploading, so wait for it to finish, or coordinate with that client first. Once you have confirmed the pending upload is abandoned, call `AbortFileUploads` for that file name and then start the upload again, as shown in the example above, which assumes only one client uploads a file at a time.
 ## Game Manager and entities
 
 The Game Manager allows you to manipulate objects and files for players. The player overview has been updated to show both the title player and master player account information.

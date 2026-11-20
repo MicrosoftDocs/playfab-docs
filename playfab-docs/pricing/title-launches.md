@@ -1,63 +1,37 @@
 ---
-title: Title launches
+title: "Title states and transitions"
+description: "Understand title access options, how new titles move beyond Evaluation Mode, and how existing Development Mode titles transition."
 author: joannaleecy
-description: Describes how to launch titles in Game Manager.
 ms.author: jenelleb
-ms.date: 7/20/2022
 ms.topic: article
 ms.service: azure-playfab
-keywords: playfab, pricing, titles, launch, live
 ms.localizationpriority: medium
+keywords: playfab, pricing, titles, launch, live
+ms.date: '11/19/2026'
 ---
 
-# Title launches
+# Title states and transitions
 
-Customers can upgrade their account plan and launch titles using the self-service upgrade and launch experiences found in Game Manager.
+New PlayFab titles begin in **Evaluation Mode**, a limited, no-charge title state for exploring PlayFab services. The legacy **Launch** step isn't part of the new-title experience.
 
-## Title modes
+This article explains the access options available to new titles, how to move beyond Evaluation Mode, and transition considerations for existing Development Mode titles.
 
-A PlayFab title has two possible modes.
+## Title access options
 
-1. **Development mMde:** A title in Development Mode doesn't incur costs when you're using the core services. Use this mode to experiment with most of PlayFab offerings. A title in Development Mode is subjected to specific total player accounts and meter usage limits as determined by PlayFab. For more information about the included limits, see [development-mode.md](development-mode.md).
+New PlayFab titles begin in Evaluation Mode. When a title needs features or capacity beyond Evaluation Mode limits, enable usage-based billing, link a qualifying XBOX product, or use both.
 
-1. **Live:** A live title uses metering to measure your usage. You're charged according to the paid service account plan and rate. Any meter usage over what is included in the account plan's base rate results in charges per meter consumed. For more information, see [Meters/meters.md](Meters/meters.md).
+- **Evaluation Mode:** Explore PlayFab services before adopting them for your game. Evaluation titles have a lifetime limit of 1,000 unique player accounts and service-specific limits. No setup is required. See [Evaluation Mode](development-mode.md).
+- **Usage-based billing:** Attach a payment instrument to the studio and enable usage-based billing for the title. The title can then use paid PlayFab features and additional capacity. PlayFab charges usage according to the applicable meters and rates.
+- **XBOX Partner benefits:** If the game is coming to XBOX, [link a qualifying Partner Center product](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md). The title receives the foundational set of PlayFab services at no additional cost while the game continues to ship on the XBOX Store. See [XBOX Partner benefits](../get-started/mode-overview.md).
 
-    > [!NOTE]
-    > Ensure you move your PlayFab title out of Development Mode before releasing your game. A title in Development Mode will continue to have the total player accounts limit as determined by PlayFab. Moving to Live removes that limit. To convert a title from Development Mode to Live, go to the title in PlayFab portal and select the **Launch** button. For instructions, see below.
+XBOX Partner benefits and usage-based billing are independent. A title can receive XBOX Partner benefits, enable usage-based billing, or use both.
 
-## Launching a title
+## Existing Development Mode titles
 
-> [!WARNING]
-> Launching a title is a permanent action. The title cannot return to Development Mode after the launch is completed.
+Existing titles in Development Mode transition individually to per-title billing. Before transitioning a title, you can review its readiness, current bill, and estimated bill under the studio billing settings.
 
-To be able to move a title from Development Mode to Live, a title must be in a Studio with a paid account plan.
+## Before moving beyond Evaluation Mode
 
-### Launching a title with a Free to Start plan
-
-Titles may only be changed to Live in Studios owned by paid accounts. Follow the steps in the section below to upgrade your free account to a paid account first. After the upgrade, you'll see the launch option to switch your title from Development Mode to Live.
-
-### Launching a title within a Paid Account Plan
-
-To launch a title within a paid account plan:
-
-1. Sign in to [https://developer.playfab.com/](https://developer.playfab.com/)
-
-2. Navigate to the **My Studios** page and identify the **Development Mode** title to be launched.
-
-3. Select the down arrow on the title to open the drop-down menu.
-
-4. From the drop-down, select **Launch Title**.
-
-5. If the title is linked to a free account plan, **Launch Title** takes you to the account upgrade flow described in the **Upgrading from Free to Paid** section. Once the title is linked to a paid account, continue to the next step.
-
-6. A pop-up will prompt you to confirm the title launch. Once **Launch Title** is selected, the launch is complete, and the title is no longer bound by [development-mode.md](development-mode.md) limits.
-
-## Frequently asked questions
-
-Q: What happens when I launch my title for the world to sign up and play but it's still in PlayFab Development Mode?
-
-A: Because your title is in Development Mode, there is a limit on the total number of player accounts that can be created in that title. Once your title reaches that limit, all requests to create new player accounts will be denied which will impact the player experience.  To remove the player accounts limit, you have to move the title out of Development Mode. 
-
-Q: I'm using the **Free to Start** plan. Do I need to switch my title to Live at launch?
-
-A: In the **Free to Start** plan, you don't have the **Launch** option to switch your title from Development Mode to Live. You must first upgrade to a paid tier (pay-as-you-go or higher) to have the launch option made available to you.
+- **Player cap:** Evaluation titles have a lifetime limit of 1,000 unique player accounts. Enable usage-based billing, link a qualifying XBOX product, or use both before the title reaches this limit.
+- **Event configuration:** Service-generated PlayStream events can contribute to usage charges. If you don't need real-time processing or automation for an event, consider using lower-cost Telemetry or disabling unwanted events. See [Enable or disable service-generated events](../data-analytics/ingest-data/opt-in-events.md).
+- **Acceptable use:** XBOX Partner benefits are subject to the [PlayFab Acceptable Use Policy](https://developer.microsoft.com/en-us/games/products/playfab/acceptable-use/).

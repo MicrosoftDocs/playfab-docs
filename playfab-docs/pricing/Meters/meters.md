@@ -3,7 +3,7 @@ title: Pricing Meters
 author: nathankong-microsoft
 description: Describes each of the pricing meters in the new pricing model.
 ms.author: jenelleb
-ms.date: 9/10/2020
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, pricing, meters
@@ -147,5 +147,5 @@ PlayFab Economy v2 is a massively scalable read-oriented service that can handle
 
 ## Additional resources
 
-* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://playfab.com/pricing/)
+* For the most up-to-date view of prices per meter, see [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/)
 * See [Consumption Best Practices](../consumption-best-practices.md) to learn how to maintain the lowest rate of meter usage and cost for your game

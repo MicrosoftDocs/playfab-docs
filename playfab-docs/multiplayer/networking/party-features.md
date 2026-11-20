@@ -3,7 +3,7 @@ title: PlayFab Party features
 author: joannaleecy
 description: Learn about the features of PlayFab Party.
 ms.author: jenelleb
-ms.date: 10/13/2020
+ms.date: "11/19/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, multiplayer, networking, party
@@ -78,7 +78,7 @@ Party chat offers the following communication functionalities.
 
 - **Text moderation:** Text chat can be moderated in real-time to filter out offensive language. For more information, see [Using text moderation](../../community/voice-communications/concepts-text-moderation.md).
 
-Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://playfab.com/pricing/) and [Party pricing](../../pricing/Meters/meters.md#party).
+Speech-to-text, text-to-speech, and real-time translation use Azure Cognitive Services to power these functionalities. We recommend associating the activation of these capabilities under the Ease of Access player settings. For information about rates and pricing, see [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/) and [Party pricing](../../pricing/Meters/meters.md#party).
 
 To learn more, see [Understanding how Party chat works](../../community/voice-communications/concepts-chat.md). For more guidance on how to use the accessibility features that are provided by Party, see [Text-to-speech guidelines](../../community/voice-communications/party-text-to-speech-ux-guidelines.md) and [Speech-to-text guidelines](../../community/voice-communications/party-speech-to-text-ux-guidelines.md).
 
@@ -112,7 +112,7 @@ Games have policies in place to determine if real-time chat or data communicatio
 
 Your game is responsible for defining and determining what these policies are. This is based on gameplay, privacy, and privilege implementation. For example, restricted accounts can chat only with players who are friends and must be on a particular social platform (limiting chat capabilities for players who are on behavioral bans) or simply enforcing gameplay rules to allow only players who are on the same/opposing team to chat.
 
-We have a helper module for the Xbox Live social platform. It helps takes care of common tasks that are needed to integrate their privilege ecosystems with Party. For more information, see [Party Xbox Live Helper Library](xbox-requirements.md#playfab-party-xbox-live-helper-library).
+We have a helper module for the XBOX Live social platform. It helps takes care of common tasks that are needed to integrate their privilege ecosystems with Party. For more information, see [Party XBOX Live Helper Library](xbox-requirements.md#playfab-party-xbox-live-helper-library).
 
 ## See also
 

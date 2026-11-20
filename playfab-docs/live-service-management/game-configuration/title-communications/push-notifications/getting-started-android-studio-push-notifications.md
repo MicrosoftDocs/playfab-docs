@@ -3,7 +3,7 @@ title: Getting Started with Android Studio and Push Notifications
 author: joannaleecy
 description: Describes how to get up and running with Android PlayFab Integration with Push Notifications.
 ms.author: jenelleb
-ms.date: 10/26/2018
+ms.date: 11/20/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, engagement, push notification, google, android
@@ -198,7 +198,10 @@ This concludes configuring your PlayFab title.
 
 ### Chapter 4: Configuring Android studio project
 
-In order to utilize the PlayFab JavaSDK, you will need the PlayFab Client JavaSDK and its dependency, Google GSON.
+> [!NOTE]
+> The PlayFab Java SDK is no longer supported. This tutorial uses it only to show the integration steps. For new Android projects, use the [PlayFab Services C/C++ SDK](../../../../sdks/c/quickstart-android.md).
+
+To use the PlayFab Java SDK, you will need the PlayFab Client JavaSDK and its dependency, Google GSON.
 
 - Download the PlayFab client JavaSDK JAR library here.
 
