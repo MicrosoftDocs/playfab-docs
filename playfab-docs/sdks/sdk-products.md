@@ -1,9 +1,9 @@
 ---
 title: PlayFab SDK Products
-author: Jeffrey-Shi
-description: Overview of PlayFab SDK product lines - v1 Standalone SDKs and v2 Unified SDK
-ms.author: jeffshi
-ms.date: 11/20/2026
+author: edigonzales
+description: Compare the PlayFab Unified SDK (v2) with the Standalone SDKs (v1), including included components, key benefits, supported platforms, and migration.
+ms.author: edigonzales
+ms.date: 11/24/2026
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playfab sdk, unified sdk, standalone sdk, sdk products
@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 # PlayFab SDK products
 
-The **PlayFab Unified SDK (v2)** is the modern generation of PlayFab SDKs. It consolidates all PlayFab client libraries into a single, cohesive product. It provides a modern, streamlined development experience with unified authentication, automatic token management, and consistent APIs across all components. The Unified SDK is the primary focus of ongoing development—all new features, platform support, and improvements target v2 first.
+The **PlayFab Unified SDK (v2)** is the modern generation of PlayFab SDKs. It consolidates all PlayFab client libraries into a single, cohesive product. It provides a modern, streamlined development experience with unified authentication, automatic token management, and consistent APIs across all components. The Unified SDK is the primary focus of ongoing development. All new features, platform support, and improvements target v2 first.
 
-**For new projects**, we recommend the **PlayFab Unified SDK (v2)** if the currently supported platforms meet your requirements. **Existing projects** using v1 Standalone SDKs can [migrate to v2](unified-sdk/migrating-from-v1.md) to take advantage of the unified architecture.
+**For new projects**, PlayFab recommends the **PlayFab Unified SDK (v2)** if the currently supported platforms meet your requirements. **Existing projects** using v1 Standalone SDKs can [migrate to v2](unified-sdk/migrating-from-v1.md) to take advantage of the unified architecture.
 
 > [!NOTE]
 > The v1 Standalone SDKs will be discontinued on April 30, 2027 for all platforms. Please [migrate your projects to v2](unified-sdk/migrating-from-v1.md) (Unified SDK) which has been available since GDK 2510.
@@ -40,10 +40,10 @@ The Unified SDK bundles the following components into a single installation:
 
 ### Key benefits
 
-- **Single SDK**: One installation and update process for all PlayFab features—no more managing separate packages for Services, Party, and Multiplayer
+- **Single SDK**: One installation and update process for all PlayFab features, with no more managing separate packages for Services, Party, and Multiplayer
 - **Unified authentication**: Authenticate once and receive a single `PFEntityHandle` that works across all components. No more retrieving and passing entity tokens manually between services
 - **Automatic token management**: Background token refresh handles Entity Token renewal automatically, preventing session expiration during extended gameplay without any workaround code
-- **Consistent programming model**: All components follow standardized patterns for initialization, API calls, error handling, and async operations—learn one pattern, use it everywhere
+- **Consistent programming model**: All components follow standardized patterns for initialization, API calls, error handling, and async operations: learn one pattern, use it everywhere
 - **Custom memory management**: Plug in your own memory allocators through `PFMemoryHooks` for fine-grained control in resource-constrained or high-performance environments
 - **Advanced thread control**: `XTaskQueue` integration provides flexible dispatch modes (Manual, ThreadPool, SerializedThreadPool, Immediate) so you can control exactly how and where async work executes
 - **Built-in debug tracing**: Extensible tracing system for monitoring API requests, responses, and errors across all components from a single debug output

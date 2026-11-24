@@ -1,9 +1,9 @@
 ---
 title: Entity files
-author: joannaleecy
+author: edigonzales
 description: Describes the terminology, concepts, and design of Entities in the PlayFab APIs.
-ms.author: jenelleb
-ms.date: "11/19/2026"
+ms.author: edigonzales
+ms.date: "11/24/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, data, entities, accounts
@@ -235,7 +235,7 @@ If you never finalize an upload, the service normally aborts it about 15 minutes
 
 To release a pending upload sooner, or if a slot is still held after 15 minutes, call `AbortFileUploads` with that file name.
 
-`GetFiles` returns only files that have been finalized. It omits new files that are still pending, and it shows a pending replacement as its existing version. There is no read only call that lists pending uploads. If `InitiateFileUploads` returns `EntityFileOperationPending`, another upload of that file is still pending. It might belong to another client that is actively uploading, so wait for it to finish, or coordinate with that client first. Once you have confirmed the pending upload is abandoned, call `AbortFileUploads` for that file name and then start the upload again, as shown in the example above, which assumes only one client uploads a file at a time.
+`GetFiles` returns only files that have been finalized. It omits new files that are still pending, and it shows a pending replacement as its existing version. There is no read only call that lists pending uploads. If `InitiateFileUploads` returns `EntityFileOperationPending`, another upload of that file is still pending. It might belong to another client that is actively uploading, so wait for it to finish, or coordinate with that client first. Once you have confirmed the pending upload is abandoned, call `AbortFileUploads` for that file name and then start the upload again. The example above assumes only one client uploads a file at a time.
 ## Game Manager and entities
 
 The Game Manager allows you to manipulate objects and files for players. The player overview has been updated to show both the title player and master player account information.
