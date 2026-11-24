@@ -118,7 +118,7 @@ public class PartyHost : MonoBehaviour
 
 Other players need the network ID to join. To share the network ID through a lobby, see [Integrate Party with Lobby using Multiplayer SDK](../../multiplayer/networking/party-lobby-integration.md).
 
-Party networking and voice chat are included at no extra cost for eligible XBOX ecosystem developers through [Foundation Mode](../../get-started/mode-overview.md). Party Cognitive Services and other services might have an extra cost. For details, see [Billing for PlayFab Party](../../pricing/Meters/meters.md#party).
+Party networking and voice chat are included at no extra cost for eligible XBOX ecosystem developers through [Foundation Mode](../../get-started/foundation-benefits.md). Party Cognitive Services and other services might have an extra cost. For details, see [Billing for PlayFab Party](../../pricing/Meters/meters.md#party).
 
 ### Lobby and Matchmaking
 

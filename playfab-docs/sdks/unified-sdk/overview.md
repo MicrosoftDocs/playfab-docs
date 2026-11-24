@@ -1,9 +1,9 @@
 ---
 title: PlayFab Unified SDK
-author: Jeffrey-Shi
+author: edigonzales
 description: Overview of the PlayFab Unified SDK
-ms.author: jeffshi
-ms.date: "11/19/2026"
+ms.author: edigonzales
+ms.date: "11/24/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playfab sdk, unified sdk
@@ -19,7 +19,7 @@ The PlayFab Unified SDK is the next-generation development platform that consoli
 The standalone [PlayFab Services C/C++ SDK](../c/index.md) (released in 2023) introduced modern development practices such as automatic token refresh, improved memory management, and enhanced thread control. However, other standalone SDKs—like PlayFab Party and PlayFab Multiplayer—didn't adopt these improvements. The Unified SDK brings these components together into a cohesive, modernized SDK.
 
 > [!NOTE]
-> Existing PlayFab standalone SDKs (v1) remain supported, but we recommend the PlayFab Unified SDK (v2) for new projects.
+> Existing PlayFab standalone SDKs (v1) remain supported, but PlayFab recommends the PlayFab Unified SDK (v2) for new projects.
 
 ## Key benefits
 

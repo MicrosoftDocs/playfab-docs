@@ -1,9 +1,9 @@
 ---
 title: "Migration Guide: PlayFab Standalone SDK (v1) to PlayFab Unified SDK (v2)"
-author: Jeffrey-Shi
+author: edigonzales
 description: Complete guide for migrating from PlayFab v1 SDKs to the new Unified SDK v2
-ms.author: jeffshi
-ms.date: "11/19/2026"
+ms.author: edigonzales
+ms.date: "11/24/2026"
 ms.topic: article
 ms.service: azure-playfab
 keywords: playfab, playfab sdk, unified sdk, migration, v2
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This guide helps you migrate from the older PlayFab v1 SDKs to the new PlayFab Unified SDK v2. The unified SDK consolidates previously separate SDKs (Core, Services, Party, Multiplayer) into a single, integrated solution with improved interoperability and simplified authentication.
 
-## Overview of Changes
+## Overview of changes
 
 The PlayFab Unified SDK v2 introduces several key improvements:
 
@@ -24,9 +24,9 @@ The PlayFab Unified SDK v2 introduces several key improvements:
 - **Improved interoperability**: Seamless communication between different PlayFab services
 - **Streamlined project structure**: Single SDK installation instead of multiple separate packages
 
-## Project Structure Changes
+## Project structure changes
 
-### For GDK Users
+### For GDK users
 
 **Legacy layout (GDK 2504 and earlier):**
 - Separate extensions for each SDK component
@@ -40,7 +40,7 @@ The PlayFab Unified SDK v2 introduces several key improvements:
 - All headers consolidated in one includes folder (Core, Services, Multiplayer, Party, GameSave)
 - Combined libraries in unified lib folder
 
-#### Updating Your Project References
+#### Updating your project references
 
 During the transition period (October 2025 GDK), both old and new SDKs coexist. To migrate:
 
@@ -48,36 +48,36 @@ During the transition period (October 2025 GDK), both old and new SDKs coexist. 
 2. **Add unified reference**: Reference the new PlayFab Unified SDK or update include/library paths to the unified locations
 3. **Plan for future**: Microsoft will remove old folders in future GDK releases (possibly by 2026), so update project files accordingly
 
-### For GitHub/Standalone Users
+### For GitHub/standalone users
 
 - Replace multiple SDK downloads with the single unified SDK package
 - Update project paths to use the new platform-organized folder structure
 
 
-## Authentication and Entity Handling
+## Authentication and entity handling
 
 The concept of entities and entity tokens exists in both versions, but how you use them has been simplified in v2.
 
-### Token Management Changes
+### Token management changes
 
 **PlayFab Standalone SDKs (v1) Approach:**
 - Manual token retrieval using `PFAuthenticationGetEntityTokenAsync`
 - Manual token refresh when tokens expire
-- Passing entity ID and token strings to other services (e.g., `partyManager.CreateLocalUser(entityId, titlePlayerEntityToken, &localUser)`)
+- Passing entity ID and token strings to other services (for example, `partyManager.CreateLocalUser(entityId, titlePlayerEntityToken, &localUser)`)
 
 **PlayFab Unified SDK (v2) Approach:**
 - Automatic token management by the Core SDK
 - Background token refresh before expiry
-- Pass `PFEntityHandle` directly to other services (e.g., `partyManager.CreateLocalUser(entityHandle, &localUser)`)
+- Pass `PFEntityHandle` directly to other services (for example, `partyManager.CreateLocalUser(entityHandle, &localUser)`)
 
-### Migration Steps for Authentication
+### Migration steps for authentication
 
 1. **Remove manual token management**: Delete code that manually retrieves or checks PlayFab tokens
 2. **Store entity handles**: Keep the `PFEntityHandle` from login and use it across all PlayFab services
 3. **Update service calls**: Replace entity ID/token parameters with entity handles
 4. **Handle re-authentication**: Use `PFAuthenticationReLogin*Async` APIs for re-authentication scenarios
 
-## Breaking API Changes by Component
+## Breaking API changes by component
 
 ### PlayFab Core
 
@@ -93,11 +93,11 @@ The concept of entities and entity tokens exists in both versions, but how you u
 - Most Service calls remain unchanged
 - Update include paths to point to unified SDK headers
 
-### PlayFab Party (Networking/Voice)
+### PlayFab Party (networking/voice)
 
 **Migration Impact**: Small changes required
 
-#### Initialization Changes
+#### Initialization changes
 
 **v1 Initialization:**
 ```cpp
@@ -117,7 +117,7 @@ partyInitConfig.networkingTaskQueue = nullptr;
 PartyError err = partyManager.Initialize(&partyInitConfig);
 ```
 
-#### Local User Creation Changes
+#### Local user creation changes
 
 **v1 Approach:**
 ```cpp
@@ -131,7 +131,7 @@ PartyLocalUser* localUser = nullptr;
 PartyError err = partyManager.CreateLocalUser(entityHandle, &localUser);
 ```
 
-#### Migration Steps for Party
+#### Migration steps for Party
 
 1. **Update initialization**: Replace simple `PartyManager::Initialize()` call with configuration struct approach
 2. **Remove token retrieval**: Delete any code that manually gets entity ID/token for Party
@@ -146,7 +146,7 @@ PartyError err = partyManager.CreateLocalUser(entityHandle, &localUser);
 
 Core concepts (Lobby, matchmaking Ticket) remain the same, but functions now expect entity handles instead of strings.
 
-#### Lobby Operations Changes
+#### Lobby operations changes
 
 **v1 Approach:**
 ```cpp
@@ -159,16 +159,16 @@ HRESULT hr = PFMultiplayerJoinLobby(pfmHandle, &newMember, connectionString, &jo
 HRESULT hr = PFMultiplayerJoinLobbyWithEntityHandle(pfmHandle, entityHandle, connectionString, &joinConfig, nullptr, &lobby);
 ```
 
-#### Migration Steps for Multiplayer
+#### Migration steps for Multiplayer
 
 1. **Update function calls**: Replace PlayFab ID and entity token parameters with `PFEntityHandle`
 2. **Remove authentication steps**: Delete separate "Authenticate Multiplayer" calls
 3. **Initialize explicitly**: Call `PFMultiplayerInitialize()` and potentially `PFMultiplayerStartProcessing()`
 4. **Update matchmaking**: Use entity handles in matchmaking ticket creation
 
-## General Migration Checklist
+## General migration checklist
 
-### Code Updates
+### Code updates
 
 - [ ] **Update include paths**: Point to unified SDK include directory
 - [ ] **Update library linking**: Link unified libraries instead of separate ones
@@ -176,7 +176,7 @@ HRESULT hr = PFMultiplayerJoinLobbyWithEntityHandle(pfmHandle, entityHandle, con
 - [ ] **Replace manual token management**: Remove token caching and refresh logic
 - [ ] **Update initialization order**: Ensure PlayFab Core initializes before other services
 
-### Testing Checklist
+### Testing checklist
 
 After migration, verify each subsystem:
 
@@ -186,7 +186,7 @@ After migration, verify each subsystem:
 - [ ] **Error handling**: All PlayFab calls handle errors appropriately
 - [ ] **Multi-user scenarios**: Multiple local users work if applicable
 
-### Common Issues and Solutions
+### Common issues and solutions
 
 **Compiler errors about missing parameters**: 
 - Check if function signatures changed to require `PFEntityHandle`
@@ -199,27 +199,27 @@ After migration, verify each subsystem:
 **Performance regressions**:
 - Rare, but verify v2 doesn't introduce issues in performance-critical code paths
 
-## Benefits of Migration
+## Benefits of migration
 
-### Code Simplification
+### Code simplification
 
 - **Reduced complexity**: Remove workaround code for v1's service separation
 - **Unified error handling**: All PlayFab services use consistent error reporting
 - **Centralized authentication**: One login flow for all PlayFab features
 
-### Improved Interoperability
+### Improved interoperability
 
 - **Seamless integration**: Adding new PlayFab features requires minimal setup
 - **Better multi-user support**: Unified SDK handles multiple local users more effectively
 - **Consistent entity model**: Same authentication approach across all services
 
-### Future-Proofing
+### Future-proofing
 
 - **Active development**: v2 is the actively maintained version
 - **New features**: Future PlayFab capabilities will target the unified SDK
 - **Long-term support**: v1 SDKs will eventually be deprecated
 
-## Next Steps
+## Next steps
 
 1. **Update project structure**: Migrate to unified SDK layout
 2. **Refactor authentication**: Implement entity handle-based approach

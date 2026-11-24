@@ -41,7 +41,7 @@ Party is designed for use on many platforms like Android, iOS, Linux, Nintendo S
     * Integrates with custom discovery systems&mdash;players finding other players.
     * Policy enforcement for connectivity and communication.
 
-Party is included at no extra cost in [Foundation Mode](../../get-started/mode-overview.md) for eligible XBOX ecosystem developers. For other usage, see [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/). To learn about the meters that drive billing, see [Party pricing](../../pricing/Meters/meters.md#party). For guidance on combining Party with other XBOX and PlayFab multiplayer services, see [Multiplayer design guidance](/gaming/gdk/docs/services/multiplayer/overviews/multiplayer-design-guidance-xbox-pc-gdk).
+Party is included at no extra cost in [Foundation Mode](../../get-started/foundation-benefits.md) for eligible XBOX ecosystem developers. For other usage, see [PlayFab pricing](https://developer.microsoft.com/games/products/playfab/pricing/). To learn about the meters that drive billing, see [Party pricing](../../pricing/Meters/meters.md#party). For guidance on combining Party with other XBOX and PlayFab multiplayer services, see [Multiplayer design guidance](/gaming/gdk/docs/services/multiplayer/overviews/multiplayer-design-guidance-xbox-pc-gdk).
 
 If you are interested, here is a video of our presentation at Microsoft Game Dev 2021. The presentation explains the above Party features in greater detail with demos and includes a quickstart tutorial. 
 

@@ -7172,6 +7172,16 @@
               "source_path": "playfab-docs/multiplayer/lobby/lobby-and-matchmaking-real-time-notifications.md",
               "redirect_url": "/gaming/playfab/multiplayer/lobby/lobby-and-matchmaking-real-time-messages",
               "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/get-started/mode-overview.md",
+              "redirect_url": "/gaming/playfab/get-started/foundation-benefits",
+              "redirect_document_id": false
+            },
+            {
+              "source_path": "playfab-docs/get-started/foundation-onboarding.md",
+              "redirect_url": "/gaming/playfab/get-started/foundation-benefits",
+              "redirect_document_id": false
             }
         ]
 }
