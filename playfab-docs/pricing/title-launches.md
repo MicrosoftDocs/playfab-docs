@@ -22,7 +22,7 @@ New PlayFab titles begin in Evaluation Mode. When a title needs features or capa
 
 - **Evaluation Mode:** Explore PlayFab services before adopting them for your game. Evaluation titles have a lifetime limit of 1,000 unique player accounts and service-specific limits. No setup is required. See [Evaluation Mode](development-mode.md).
 - **Usage-based billing:** Attach a payment instrument to the studio and enable usage-based billing for the title. The title can then use paid PlayFab features and additional capacity. PlayFab charges usage according to the applicable meters and rates.
-- **XBOX Partner benefits:** If the game is coming to XBOX, [link a qualifying Partner Center product](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md). The title receives the foundational set of PlayFab services at no additional cost while the game continues to ship on the XBOX Store. See [XBOX Partner benefits](../get-started/mode-overview.md).
+- **XBOX Partner benefits:** If the game is coming to XBOX, [link a qualifying Partner Center product](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md). The title receives the foundational set of PlayFab services at no additional cost while the game continues to ship on the XBOX Store. See [XBOX Partner benefits](../get-started/foundation-benefits.md).
 
 XBOX Partner benefits and usage-based billing are independent. A title can receive XBOX Partner benefits, enable usage-based billing, or use both.
 

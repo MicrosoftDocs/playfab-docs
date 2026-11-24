@@ -16,7 +16,7 @@ Evaluation Mode is a limited, no-charge title state for exploring PlayFab servic
 
 Use Evaluation Mode when you want to explore a PlayFab service and determine whether it meets your needs. When you're ready to move beyond exploration, transition out of Evaluation Mode to use production-scale capacity and features beyond Evaluation Mode limits.
 
-If your game is coming to XBOX, [link a qualifying Partner Center product](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md) to receive [XBOX Partner benefits](../get-started/mode-overview.md). These benefits include the foundational set of PlayFab services at no additional cost. Enable usage-based billing for additional paid features and capacity.
+If your game is coming to XBOX, [link a qualifying Partner Center product](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md) to receive [XBOX Partner benefits](../get-started/foundation-benefits.md). These benefits include the foundational set of PlayFab services at no additional cost. Enable usage-based billing for additional paid features and capacity.
 
 ## Identify an Evaluation title
 
@@ -48,7 +48,7 @@ Evaluation titles also have service-specific operational and API limits. To view
 When you're ready to move beyond Evaluation limits, choose one or both of the following options:
 
 - **Enable usage-based billing.** Attach a payment instrument to the studio and turn on usage-based billing for the title. The title can then use paid PlayFab services and additional capacity. PlayFab charges usage according to the applicable [meters and rates](Meters/meters.md). There is no separate **Launch Title** step.
-- **Link an XBOX product.** If your game is coming to XBOX, [link its Partner Center product to the PlayFab title](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md). A qualifying linked title receives the foundational set of PlayFab services at no additional cost through [XBOX Partner benefits](../get-started/mode-overview.md). A payment instrument isn't required when the title uses only those included services.
+- **Link an XBOX product.** If your game is coming to XBOX, [link its Partner Center product to the PlayFab title](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md). A qualifying linked title receives the foundational set of PlayFab services at no additional cost through [XBOX Partner benefits](../get-started/foundation-benefits.md). A payment instrument isn't required when the title uses only those included services.
 - **Use both.** An XBOX-linked title can also enable usage-based billing. The title receives its included XBOX Partner benefits. PlayFab charges paid features and usage outside those benefits according to the applicable meters and rates.
 
 ## Frequently asked questions
@@ -67,5 +67,5 @@ No. Multiplayer Servers isn't available in Evaluation Mode. To use Multiplayer S
 
 ## See also
 
-- [XBOX Partner benefits](../get-started/mode-overview.md)
+- [XBOX Partner benefits](../get-started/foundation-benefits.md)
 - [Link an XBOX product to a PlayFab title](../identity/player-identity/platform-specific-authentication/xbox-live-add-on.md)

@@ -49,8 +49,8 @@ https://github.com/playfab/PlayFabPartyUnity (public access)
 - VoIP
 - Support for the following platforms:
     - GDK:
-        - Xbox Series X|S
-        - Xbox One
+        - XBOX Series X|S
+        - XBOX One
         - PC
     - Windows
     - iOS
@@ -80,7 +80,7 @@ https://github.com/playfab/PlayFabPartyUnity (public access)
     - Party dynamic libraries for PS4, PS5
     - Party static libraries for Switch
 - PlayFab "core" Unity SDK plugin (can be updated independently if needed)
-- Xbox Live authentication and policy provider API, currently supported on GDK platform only
+- XBOX Live authentication and policy provider API, currently supported on GDK platform only
 
 ## Party Unity plugin versions and compatibility between platforms
 Party Unity plugin is published and available for download at several distribution points (Git repos), depending on the platform. Access to some distribution points is restricted and requires a request to your Microsoft Representative.
@@ -116,6 +116,6 @@ We support all recent versions of Unity starting with Unity 2017. However, your 
 
 ## Pricing
 
-**Party networking and voice chat are included at no extra cost for eligible Xbox ecosystem developers through [Foundation Mode](../../get-started/mode-overview.md).**
+**Party networking and voice chat are included at no extra cost for eligible XBOX ecosystem developers through [Foundation Mode](../../get-started/foundation-benefits.md).**
 
 Party Cognitive Services and other services may have a cost associated with them. For details, see [Billing for PlayFab Party](../../pricing/Meters/meters.md#party) or reach out to your Microsoft Representative.
